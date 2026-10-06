@@ -1,0 +1,208 @@
+{
+  "name": "Tanque",
+  "level": 4,
+  "race": {},
+  "stats": {
+    "str": {
+      "name": "FUE",
+      "value": 5
+    },
+    "dex": {
+      "name": "DES",
+      "value": 1
+    },
+    "con": {
+      "name": "CON",
+      "value": 4
+    },
+    "itl": {
+      "name": "INT",
+      "value": 1
+    },
+    "wis": {
+      "name": "SAB",
+      "value": 1
+    },
+    "cha": {
+      "name": "CAR",
+      "value": 2
+    }
+  },
+  "talents": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "stat": "dex",
+      "level": 0
+    },
+    "performance": {
+      "name": "Actuación",
+      "stat": "cha",
+      "level": 0
+    },
+    "arcana": {
+      "name": "Arcanismo",
+      "stat": "itl",
+      "level": 0
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "stat": "str",
+      "level": 0
+    },
+    "insight": {
+      "name": "Averiguar Intenciones",
+      "stat": "wis",
+      "level": 0
+    },
+    "focus": {
+      "name": "Concentración",
+      "stat": "itl",
+      "level": 0
+    },
+    "wreck": {
+      "name": "Destrozar",
+      "stat": "str",
+      "level": 0
+    },
+    "deception": {
+      "name": "Engaño",
+      "stat": "cha",
+      "level": 0
+    },
+    "heroics": {
+      "name": "Heroísmo",
+      "stat": "str",
+      "level": 0
+    },
+    "intimidate": {
+      "name": "Intimidar",
+      "stat": "str/cha",
+      "level": 0
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "stat": "dex",
+      "level": 0
+    },
+    "perception": {
+      "name": "Percepción",
+      "stat": "wis",
+      "level": 0
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "stat": "cha",
+      "level": 0
+    },
+    "first-aid": {
+      "name": "Primeros Auxilios",
+      "stat": "wis",
+      "level": 0
+    },
+    "health": {
+      "name": "Salud",
+      "stat": "con",
+      "level": 0
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "stat": "dex",
+      "level": 0
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "stat": "wis",
+      "level": 0
+    },
+    "tinker": {
+      "name": "Trastear",
+      "stat": "itl",
+      "level": 0
+    },
+    "willpower": {
+      "name": "Voluntad",
+      "stat": "cha",
+      "level": 0
+    }
+  },
+  "ranks": [
+    {
+      "id": "estilo_coloso",
+      "name": "Estilo Coloso",
+      "category": "Marcial",
+      "stat": "str",
+      "reserve": "chi",
+      "rank": 2,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "estilo_coloso--1--ataque-poderoso,estilo_coloso--1--golpe-desestabilizador,estilo_coloso--1--proteger-aliado,estilo_coloso--2--gran-barrido,estilo_coloso--2--reposicion-forzosa,estilo_coloso--2--lanzamiento,estilo_coloso--3--golpe-demoledor,estilo_coloso--3--carga-salvaje,estilo_coloso--3--golpe-aturdidor,estilo_coloso--4--golpe-ascendente,estilo_coloso--4--golpe-por-golpe,estilo_coloso--4--maestria-de-estilo,estilo_coloso--4--secuencia-de-golpes,estilo_coloso--5--impacto-meteoro,estilo_coloso--5--impacto-mortal,estilo_coloso--5--proyeccion-de-chi"
+    },
+    {
+      "id": "fortitud",
+      "name": "Fortitud",
+      "category": "Combate",
+      "stat": "con",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "fortitud--1--armadura-natural,fortitud--1--segundo-aliento,fortitud--2--duro-de-pelar,fortitud--2--resiliencia,fortitud--3--hasta-la-muerte,fortitud--3--constitucion-ferrea,fortitud--4--muro-viviente,fortitud--4--aguantar-los-elementos,fortitud--5--sanacion-rapida,fortitud--5--una-ultima-resistencia"
+    },
+    {
+      "id": "ira",
+      "name": "Ira",
+      "category": "Combate",
+      "stat": "str",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "ira--1--ira-de-combate,ira--1--demostracion-terrorifica,ira--2--frenesi-de-batalla,ira--2--resistencia-salvaje,ira--3--ira-temeraria,ira--3--hasta-el-limite,ira--4--golpe-de-adrenalina,ira--4--furia-imparable,ira--5--superar-los-limites,ira--5--furia-invulnerable"
+    },
+    {
+      "id": "ascendencia_primigenia",
+      "name": "Ascendencia Primigenia",
+      "category": "Ascendencias",
+      "stat": "wis",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "ascendencia_primigenia--1--forma-de-la-bestia,ascendencia_primigenia--1--aspecto-primigenio,ascendencia_primigenia--2--infusion-espiritual,ascendencia_primigenia--2--comunion-con-la-naturaleza,ascendencia_primigenia--3--transformacion-animal,ascendencia_primigenia--3--llamar-a-los-espiritus,ascendencia_primigenia--4--vinculo-primigenio,ascendencia_primigenia--4--sanacion-espiritual,ascendencia_primigenia--5--aura-primigenia,ascendencia_primigenia--5--paso-espiritual,ascendencia_primigenia--6--despertar-la-bestia"
+    }
+  ],
+  "spells": {
+    "patron": {
+      "name": "",
+      "domains": [],
+      "damage_type": ""
+    },
+    "picks": {}
+  },
+  "equipment": {
+    "armor": {
+      "eqab": "",
+      "name": "Pesada",
+      "penalty": -4,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 6
+        }
+      ]
+    },
+    "mainHand": {
+      "eqab": "hacha-de-batalla",
+      "name": "Hacha de Batalla",
+      "style": "duelist"
+    },
+    "secondHand": {
+      "eqab": "escudo,parada-con-escudo",
+      "name": "Escudo",
+      "style": "shield"
+    },
+    "head": {},
+    "bag": []
+  },
+  "archetypes": []
+}

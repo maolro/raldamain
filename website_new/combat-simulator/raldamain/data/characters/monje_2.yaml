@@ -1,0 +1,121 @@
+id: monje_2
+name: Monje
+source: builds/monje.md
+level: 2
+impactos: 6
+chi: 6
+stats: {FUE: 1, DES: 4, CON: 2, INT: 1, SAB: 3, CAR: 1}
+ranks: {estilo_duelista: 1, guerrero_divino: 1, fortitud: 1}
+
+umbrales: {general: 2}
+# Printed as-is. Note VOL (+5) and MEN (+2) do not match CON+CAR (3) and
+# INT+SAB (4) -- worth checking the source statblock.
+saves: {fis: "5", vol: "5", men: "2"}
+initiative: "4"
+preferred_row: front
+actions: 3
+reactions: 2
+defense: parada
+skilled_defense: true  # Defensa Hábil
+
+abilities:
+  - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "5"}
+  - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "4"}
+
+  - id: golpe
+    name: Golpe
+    cost: {actions: 1}
+    reach: adyacente
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "2d6+4", dtype: contundente}
+    upgrades: &golpe_upgrades
+      - id: secuencia_de_ataques
+        name: Secuencia de Ataques
+        cost: {chi: 1}
+        extra_attacks: 1
+  - id: golpe_azote_radiante
+    name: "Golpe (Azote Divino: Radiante)"
+    cost: {actions: 1, chi: 1}
+    reach: adyacente
+    tags: [weapon, physical]
+    notes: "Azote Divino -- 1d6 daño elemental, contado aparte para umbrales (+1d6 por Rango en Guerrero Divino)."
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "2d6+4", dtype: contundente}
+          - {kind: damage, damage: "1d6", dtype: radiante}
+    upgrades: *golpe_upgrades
+  - id: golpe_azote_sonico
+    name: "Golpe (Azote Divino: Sónico)"
+    cost: {actions: 1, chi: 1}
+    reach: adyacente
+    tags: [weapon, physical]
+    notes: "Azote Divino -- ver variante Radiante."
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "2d6+4", dtype: contundente}
+          - {kind: damage, damage: "1d6", dtype: sonico}
+    upgrades: *golpe_upgrades
+
+  - id: truco_de_combate
+    name: Truco de Combate
+    tags: [physical]
+    cost: {actions: 1}
+    reach: adyacente
+    effects:
+      - kind: save
+        save: fis
+        dc: "5"
+        on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+    notes: The rules let the target pick FÍS, VOL or MEN; modelled as FÍS.
+
+  - id: truco_rapido
+    name: Truco Rápido
+    tags: [physical]
+    # The same effect as Truco de Combate, bought with chi instead of an
+    # action, so it can be declared before swinging in the same turn.
+    cost: {chi: 1}
+    bonus_action: true
+    reach: adyacente
+    effects:
+      - kind: save
+        save: fis
+        dc: "5"
+        on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+
+  - id: onda_trueno
+    name: Onda Trueno
+    cost: {actions: 2, chi: 1}
+    area: radio_corto
+    tags: [spell, divine, mental]
+    effects:
+      - kind: save
+        save: vol
+        dc: "4"
+        on_fail:
+          - {kind: damage, damage: "1d6+3", dtype: sonico}
+          - {kind: apply_effect, effect: desconcertado, duration: 1}
+
+  - id: toque_sanador
+    name: Toque Sanador
+    cost: {actions: 1, chi: 1}
+    targeting: ally
+    reach: toque
+    tags: [divine, heal]
+    effects:
+      - {kind: heal, amount: 1, to: target}
+
+  - id: instinto_de_supervivencia
+    name: Instinto de Supervivencia
+    cost: {uses_per_combat: 3, chi_when_exhausted: 1}
+    is_reaction: true
+    is_reroll: true
+    reroll_scope: self
+    reroll_kinds: [attack, defense]

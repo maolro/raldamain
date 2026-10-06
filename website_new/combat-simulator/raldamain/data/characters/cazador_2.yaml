@@ -1,0 +1,136 @@
+id: cazador_2
+name: Cazador
+source: builds/cazador.md
+level: 2
+impactos: 6
+chi: 6
+stats: {FUE: 2, DES: 4, CON: 2, INT: 1, SAB: 2, CAR: 1}
+ranks: {estilo_asesino: 1, reflejos: 1, rastrear: 1}
+
+umbrales: {general: 2, fisico: 4}
+# Reflejos Superiores' permanent Ventaja on FÍS is baked into the pool.
+saves: {fis: "6+1d6", vol: "3", men: "3"}
+initiative: "5"
+preferred_row: back  # Arco is ranged; only the Daga needs the front.
+actions: 3
+reactions: 2
+defense: esquiva
+
+abilities:
+  - id: esquiva
+    name: Esquiva
+    is_defense: true
+    tags: [physical]
+    roll: "5"
+
+  - id: arco
+    name: Arco
+    cost: {actions: 2}
+    reach: media
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "3d6+4", dtype: perforante}
+    upgrades:
+      - id: ataque_furtivo_arco
+        name: Ataque Furtivo
+        cost: {chi: 1}
+        damage_dice: 1
+        on_hit:
+          - {kind: apply_effect, effect: herido_1}
+
+  - id: daga
+    name: Daga
+    cost: {actions: 1}
+    reach: adyacente
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "2d6+4", dtype: perforante}
+    upgrades:
+      - id: ataque_furtivo_daga
+        name: Ataque Furtivo
+        cost: {chi: 1}
+        damage_dice: 1
+        on_hit:
+          - {kind: apply_effect, effect: herido_1}
+
+  - id: apuntar_ataque
+    name: Apuntar Ataque
+    cost: {actions: 1}
+    targeting: self
+    effects:
+      - {kind: self_buff, effect: apuntado}
+
+  - id: analizar_enemigo
+    name: Analizar Enemigo
+    cost: {actions: 1, chi: 1}
+    targeting: enemy
+    reach: media
+    effects:
+      - kind: self_buff
+        effect: analizado
+        duration: combat
+        against_target: true
+
+  - id: instinto_de_supervivencia
+    name: Instinto de Supervivencia
+    cost: {uses_per_combat: 3, chi_when_exhausted: 1}
+    is_reaction: true
+    is_reroll: true
+    # "Repite un tiro de Destreza": his own attacks and Esquiva only.
+    reroll_scope: self
+    reroll_kinds: [attack, defense]
+
+  - id: siempre_preparado_cadena
+    name: "Siempre Preparado (Cadena)"
+    cost: {actions: 1, chi: 1}
+    reach: corta
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "2d6+4", dtype: contundente}
+    notes: >
+      Rastrear I: "obtienes de inmediato un objeto consumible de coste 1".
+      El enredo alternativo de la Cadena no está modelado.
+
+  - id: siempre_preparado_bomba
+    name: "Siempre Preparado (Bomba)"
+    cost: {actions: 2, chi: 1}
+    reach: media
+    area: radio_corto
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "2d6+4", dtype: fuego}
+    notes: El elemento de la Bomba se elige al usarla; se asume Fuego.
+
+  - id: siempre_preparado_bomba_humo
+    name: "Siempre Preparado (Bomba de Humo)"
+    cost: {actions: 1, chi: 1}
+    reach: media
+    area: radio_corto
+    tags: [physical]
+    effects:
+      - kind: save
+        save: fis
+        dc: "5"
+        on_fail:
+          - {kind: apply_effect, effect: cegado, duration: 1}
+
+  - id: siempre_preparado_pocion
+    name: "Siempre Preparado (Poción de Sanación)"
+    cost: {actions: 1, chi: 1}
+    targeting: self
+    tags: [heal]
+    effects:
+      - {kind: heal, amount: 1, to: self}
+      - {kind: cleanse, to: self}

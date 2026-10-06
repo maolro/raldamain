@@ -1,0 +1,110 @@
+# Converted from builds/elementalista-fuego.md's niv-8 block.
+id: elementalista_8
+name: Elementalista de Fuego (niv 8)
+source: builds/elementalista-fuego.md
+level: 8
+impactos: 6
+chi: 12
+ranks: {magia_fuego: 3, mente_desencadenada: 3, reflejos: 2, estilo_duelista: 1}
+umbrales: {general: 8, fuego: 12, frio: 12}
+saves: {fis: "6+1d6", vol: "8", men: "3"}
+initiative: "7"
+preferred_row: back
+actions: 3
+reactions: 2
+defense: parada
+skilled_defense: true
+immunities: [desconcertado, desconcertado_2, desconcertado_3]
+abilities:
+  - {id: parada, name: Parada, is_defense: true, tags: [mental], roll: "9"}
+  - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "9"}
+  - id: golpe
+    name: Golpe
+    cost: {actions: 1}
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "1d8+6", dtype: contundente}]
+    upgrades:
+      - {id: secuencia_de_ataques, name: Secuencia de Ataques, cost: {chi: 1}, extra_attacks: 1}
+  - id: llamarada
+    name: Llamarada
+    cost: {actions: 1}
+    reach: media
+    tags: [spell, mental, fire]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "1d8+6", dtype: fuego}]
+    upgrades:
+      - {id: llamarada_potenciada, name: Llamarada Potenciada, cost: {actions: 1}, damage_dice: 1}
+  - id: bola_de_fuego
+    name: Bola de Fuego
+    cost: {actions: 1, chi: 1}
+    reach: media
+    area: radio_pequeno
+    tags: [spell, mental, fire]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "2d8+6", dtype: fuego}]
+    upgrades:
+      - {id: bola_de_fuego_potenciada, name: Bola de Fuego Potenciada, cost: {actions: 1}, damage_dice: 1}
+  - id: aliento_de_fuego
+    name: Aliento de Fuego
+    cost: {actions: 2, chi: 1}
+    area: cono_pequeno
+    tags: [spell, mental, fire]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "2d8+6", dtype: fuego}]
+    upgrades: [{id: aliento_potenciado, name: Aliento Potenciado, cost: {chi: 1}, damage_dice: 1}]
+  - id: inmolacion
+    name: Inmolación
+    cost: {actions: 1, chi: 2}
+    area: radio_corto
+    tags: [spell, mental, fire]
+    notes: "Salvación adicional contra quemarse en llamas (efecto persistente) no modelada."
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "3d8+6", dtype: fuego}]
+    upgrades: [{id: inmolacion_potenciada, name: Inmolación Potenciada, cost: {chi: 1}, damage_dice: 1}]
+  - id: truco_de_combate
+    name: Truco de Combate
+    tags: [physical]
+    cost: {actions: 1}
+    notes: "RAW permite elegir entre salvación Física, Voluntad o Mental; se modela solo Física."
+    effects:
+      - {kind: save, save: fis, dc: "9", on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+  - {id: maestro_de_las_llamas, name: Maestro de las Llamas, cost: {actions: 2, chi: 2},
+     targeting: self, effects: [{kind: self_buff, effect: maestro_de_las_llamas}]}
+  - id: propulsion
+    name: Propulsión
+    cost: {actions: 1, chi: 1}
+    implemented: false
+    notes: Flight/reposition ability -- the sim is positionless for movement.
+  - {id: mente_desencadenada, name: Mente Desencadenada, cost: {actions: 1},
+     targeting: self, effects: [{kind: self_buff, effect: mente_desencadenada_r3, duration: 6}]}
+  - {id: evasion, name: Evasión, cost: {reactions: 1, chi: 1}, is_reaction: true,
+     trigger: on_defend, targeting: self,
+     effects: [{kind: note, text: "+10 a Esquiva", defense_bonus: 10}]}
+  - id: muro_de_fuego
+    name: Muro de Fuego
+    cost: {reactions: 1, chi: 1}
+    is_reaction: true
+    trigger: on_damaged
+    targeting: self
+    effects:
+      - kind: wall
+        amount: 6
+        duration: 3
+        to: self
+        name: Muro de Fuego
+        protects_allies: true
+        retaliate: {save: fis, dc: "9", damage: "1d8+6", dtype: fuego}
+  - {id: instinto_de_supervivencia, name: Instinto de Supervivencia,
+     cost: {uses_per_combat: 4, chi_when_exhausted: 1}, is_reaction: true,
+     is_reroll: true, reroll_scope: self, reroll_kinds: [attack, defense]}

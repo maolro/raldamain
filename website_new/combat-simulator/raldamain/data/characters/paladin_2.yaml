@@ -1,0 +1,126 @@
+id: paladin_2
+name: Paladín
+source: builds/paladin.md
+level: 2
+impactos: 6
+chi: 6
+stats: {FUE: 4, DES: 1, CON: 2, INT: 1, SAB: 1, CAR: 3}
+ranks: {estilo_coloso: 1, guerrero_divino: 1, fortitud: 1}
+
+umbrales: {general: 4, fisico: 8}
+saves: {fis: "5", vol: "5", men: "2"}
+initiative: "1"
+preferred_row: front
+actions: 3
+reactions: 2
+# Two defence rolls but no Defensa Hábil, so only one is used; the weapon
+# parry is the stronger of the two.
+defense: parada_arma
+
+abilities:
+  - {id: parada_arma, name: Parada de Arma, is_defense: true, tags: [physical], roll: "5"}
+  - id: parada_magica
+    name: Parada Mágica
+    is_defense: true
+    tags: [magic]
+    roll: "4"
+    implemented: false
+    notes: >
+      Without Defensa Hábil the Paladín picks one defence; the sim always takes
+      the weapon parry, so the magic parry never fires. Choosing per damage type
+      needs the defender to know what is incoming before rolling.
+
+  - id: mandoble
+    name: Mandoble
+    cost: {actions: 2}
+    reach: adyacente
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "3d6+4", dtype: cortante}
+    upgrades: &mandoble_upgrades
+      - id: golpe_desestabilizador
+        name: Golpe Desestabilizador
+        cost: {chi: 1}
+        applies_on_parry: true
+        on_hit:
+          - kind: save
+            save: fis
+            dc: "5"
+            on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+  - id: mandoble_azote_radiante
+    name: "Mandoble (Azote Divino: Radiante)"
+    cost: {actions: 2, chi: 1}
+    reach: adyacente
+    tags: [weapon, physical]
+    notes: "Azote Divino -- 1d6 daño elemental, contado aparte para umbrales (+1d6 por Rango en Guerrero Divino)."
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "3d6+4", dtype: cortante}
+          - {kind: damage, damage: "1d6", dtype: radiante}
+    upgrades: *mandoble_upgrades
+  - id: mandoble_azote_fuego
+    name: "Mandoble (Azote Divino: Fuego)"
+    cost: {actions: 2, chi: 1}
+    reach: adyacente
+    tags: [weapon, physical]
+    notes: "Azote Divino -- ver variante Radiante."
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "3d6+4", dtype: cortante}
+          - {kind: damage, damage: "1d6", dtype: fuego}
+    upgrades: *mandoble_upgrades
+
+  - id: ataque_poderoso
+    name: Ataque Poderoso
+    cost: {actions: 1}
+    targeting: self
+    effects:
+      - {kind: self_buff, effect: ataque_poderoso}
+
+  - id: llamarada
+    name: Llamarada
+    cost: {actions: 1}
+    reach: media
+    tags: [spell, divine, mental]
+    effects:
+      - kind: attack
+        attack_roll: "4"
+        on_hit:
+          - {kind: damage, damage: "1d6+3", dtype: fuego}
+
+  - id: toque_sanador
+    name: Toque Sanador
+    cost: {actions: 1, chi: 1}
+    targeting: ally
+    reach: toque
+    tags: [divine, heal]
+    effects:
+      - {kind: heal, amount: 1, to: target}
+
+  - id: segundo_aliento
+    name: Segundo Aliento
+    cost: {reactions: 1, chi: 1}
+    is_reaction: true
+    trigger: on_damaged
+    targeting: self
+    effects:
+      - {kind: umbral_boost, amount: 3, duration: 1, to: self, tags: [consume_on_umbral]}
+
+  - id: proteger_aliado
+    name: Proteger Aliado
+    cost: {reactions: 1}
+    is_reaction: true
+    trigger: on_ally_attacked
+    effects:
+      - {kind: intercept}
+    notes: >
+      Steps in front of an ally: the protector rolls their own defence and
+      takes the damage.  Works against ranged attacks too, which is how a front
+      row can shield a back row it could not otherwise screen.

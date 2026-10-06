@@ -1,0 +1,96 @@
+id: luchador_2
+name: Luchador
+source: builds/luchador.md
+level: 2
+impactos: 6
+chi: 6
+stats: {FUE: 2, DES: 4, CON: 2, INT: 1, SAB: 2, CAR: 1}
+ranks: {estilo_duelista: 1, reflejos: 1, ira: 1}
+
+umbrales: {general: 2, fisico: 4}
+# FÍS carries a permanent Ventaja from Reflejos Superiores; the second (1d6)
+# in the statblock is Ira, which the buff supplies.
+saves: {fis: "6+1d6", vol: "3", men: "3"}
+initiative: "5"
+preferred_row: front
+actions: 3
+reactions: 2
+defense: parada
+# Defensa Hábil: rolls both Parada and Esquiva and keeps the better result.
+skilled_defense: true
+
+abilities:
+  - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "5"}
+  - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "4"}
+
+  - id: espada
+    name: Espada
+    cost: {actions: 2}
+    reach: adyacente
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "3d6+4", dtype: perforante}
+    upgrades:
+      - id: secuencia_de_ataques
+        name: Secuencia de Ataques
+        cost: {chi: 1}
+        # "Un segundo ataque ... no conservará ninguno de los bonificadores del
+        # anterior", so the chained swing is resolved with no upgrades at all.
+        extra_attacks: 1
+
+  - id: truco_de_combate
+    name: Truco de Combate
+    tags: [physical]
+    cost: {actions: 1}
+    reach: adyacente
+    effects:
+      - kind: save
+        save: fis
+        dc: "5"
+        on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+    notes: >
+      The rules let the target pick FÍS, VOL or MEN; modelled as FÍS only.
+
+  - id: truco_rapido
+    name: Truco Rápido
+    tags: [physical]
+    # The same effect as Truco de Combate, bought with chi instead of an
+    # action, so it can be declared before swinging in the same turn.
+    cost: {chi: 1}
+    bonus_action: true
+    reach: adyacente
+    effects:
+      - kind: save
+        save: fis
+        dc: "5"
+        on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+
+  - id: ira
+    name: Ira
+    cost: {actions: 1}
+    targeting: self
+    effects:
+      - {kind: self_buff, effect: ira, duration: 6}
+
+  - id: demostracion_terrorifica
+    name: Demostración Terrorífica
+    cost: {actions: 1, chi: 1}
+    area: radio_medio
+    reach: media
+    tags: [mental]
+    effects:
+      - kind: save
+        save: vol
+        dc: "5"
+        on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]
+
+  - id: instinto_de_supervivencia
+    name: Instinto de Supervivencia
+    cost: {uses_per_combat: 3, chi_when_exhausted: 1}
+    is_reaction: true
+    is_reroll: true
+    reroll_scope: self
+    reroll_kinds: [attack, defense]

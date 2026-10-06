@@ -1,0 +1,463 @@
+# monsters/abisales.md
+#
+# Note the shared identity: every abisal below Campeón is **Inmune a Mentales y
+# Miedo**, which turns off a large slice of the party's control kit -- the
+# Bárbaro's Demostración Terrorífica, the Bardo's whole rank, Halo Luminoso's
+# rider.  That is the defining tactical fact about this faction.
+
+  - id: engendro_abisal
+    name: Engendro Abisal
+    source: monsters/abisales.md
+    level: 2
+    faith: abisal
+    role: esbirro_elite
+    impactos: 2
+    umbrales: {general: 4, fisico: 8, magico: 8, radiante: 4}
+    saves: {fis: "5+1d6", vol: "5", men: "2"}
+    initiative: "2"
+    preferred_row: front
+    actions: 2
+    reactions: 1
+    defense: parada
+    immunities:
+      - miedo_1
+      - miedo_2
+      - miedo_3
+      - miedo_4
+      - desconcertado
+      - desconcertado_2
+      - desconcertado_3
+      - maldito
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "5"}
+      - id: mordisco
+        name: Mordisco
+        cost: {actions: 1}
+        tags: [natural, physical]
+        effects:
+          - kind: attack
+            attack_roll: "5+1d6"
+            on_hit:
+              - {kind: damage, damage: "1d6+4", dtype: perforante}
+              - kind: save
+                save: vol
+                dc: "5"
+                on_fail: [{kind: apply_effect, effect: enfermado_1, duration: 3}]
+      - id: garra
+        name: Garra
+        cost: {actions: 1}
+        tags: [natural, physical]
+        effects:
+          - kind: attack
+            attack_roll: "5+1d6"
+            on_hit: [{kind: damage, damage: "1d6+4", dtype: cortante}]
+        notes: The Agarra option is not modelled (no grapple state).
+      - id: hacha
+        name: Hacha
+        cost: {actions: 2}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "5+1d6"
+            on_hit:
+              - {kind: damage, damage: "2d6+4", dtype: cortante}
+              - kind: save
+                save: fis
+                dc: "5+1d6"
+                on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+      - id: grito_terrorifico
+        name: Grito Terrorífico
+        cost: {actions: 1}
+        area: radio_medio
+        reach: media
+        tags: [mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "5+1d6"
+            on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]
+      - id: proteger_aliado
+        name: Proteger Aliado
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_ally_attacked
+        effects: [kind: intercept]
+      - id: segundo_aliento
+        name: Segundo Aliento
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}]
+
+  - id: fanatico_abisal
+    name: Fanático Abisal
+    source: monsters/abisales.md
+    level: 5
+    faith: abisal
+    role: miniboss
+    impactos: 6
+  # Tierra Consagrada's Ventaja is already folded into the printed pools.
+    umbrales: {general: 4, fisico: 8, magico: 8, radiante: 4}
+    saves: {fis: "4", vol: "7+1d6", men: "7+1d6"}
+    initiative: "4"
+    preferred_row: back
+    actions: 3
+    reactions: 2
+    defense: esquiva
+    immunities: [miedo_1, miedo_2, miedo_3, miedo_4, desconcertado, desconcertado_2, desconcertado_3, maldito]
+    abilities:
+      - {id: esquiva, name: Esquiva, is_defense: true, roll: "1d6+7"}
+      - id: escupitajo_toxico
+        name: Escupitajo Tóxico
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "1d6+5", dtype: acido}]
+      - id: miasma_abisal
+        name: Miasma Abisal
+        cost: {actions: 2}
+        area: cono_pequeno
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit:
+              - {kind: damage, damage: "2d6+5", dtype: acido}
+              - kind: save
+                save: vol
+                dc: "7+1d6"
+                on_fail: [{kind: apply_effect, effect: enfermado_1, duration: 3}]
+      - id: maldicion
+        name: Maldición
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: maldito, duration: combat}]
+      - id: consagrar_la_tierra
+        name: Consagrar la Tierra (Abisal)
+        cost: {actions: 2}
+        targeting: self
+        tags: [divine]
+        notes: "El equivalente abisal de la consagración -- ver sectarios.yaml/asesino_sacro."
+        effects:
+          - {kind: consecrate, dc: "7+1d6"}
+          - {kind: self_buff, effect: consagrando}
+      - id: distraccion_ilusoria
+        name: Distracción Ilusoria
+        cost: {actions: 1}
+        area: radio_corto
+        reach: media
+        tags: [spell, mental, illusion]
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: desconcertado, duration: 1}]
+      - id: invocacion_abisal
+        name: Invocación Abisal
+        cost: {actions: 2}
+        targeting: self
+        effects:
+          - {kind: summon, statblock: engendro_abisal, amount: 1}
+      - id: salto_espacial
+        name: Salto Espacial
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects:
+          - {kind: note, text: "+10 a Esquiva y un paso", defense_bonus: 10}
+      - id: infortunio
+        name: Infortunio
+        cost: {reactions: 1}
+        is_reaction: true
+        is_reroll: true
+        reroll_scope: enemy
+        reroll_kinds: [attack, defense, save]
+      - id: crear_ilusion
+        name: Crear Ilusión
+        cost: {actions: 1}
+        implemented: false
+        notes: Illusions need a fiction layer the sim does not have.
+      - id: invisibilidad
+        name: Invisibilidad
+        cost: {reactions: 1}
+        is_reaction: true
+        implemented: false
+        notes: Needs a concealment/targeting state the sim does not track.
+
+  - id: guerrero_abisal
+    name: Guerrero Abisal
+    source: monsters/abisales.md
+    level: 5
+    faith: abisal
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 12, magico: 8, radiante: 4}
+    saves: {fis: "7+1d6", vol: "7+1d6", men: "4"}
+    initiative: "4"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: parada
+    immunities:
+      - miedo_1
+      - miedo_2
+      - miedo_3
+      - miedo_4
+      - desconcertado
+      - desconcertado_2
+      - desconcertado_3
+      - maldito
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "1d6+7"}
+      - id: hacha_de_mano
+        name: Hacha de Mano
+        cost:
+          actions: 1
+        tags:
+          - weapon
+          - physical
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+      - id: mordisco
+        name: Mordisco
+        cost:
+          actions: 1
+        tags:
+          - natural
+          - physical
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit:
+              - {kind: damage, damage: "2d6+5", dtype: perforante}
+              - kind: save
+                save: vol
+                dc: "5"
+                on_fail: [{kind: apply_effect, effect: enfermado_1, duration: 3}]
+      - id: secuencia_de_ataques
+        name: Secuencia de Ataques
+        cost: {actions: 2}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+      - id: ataque_torbellino
+        name: Ataque Torbellino
+        cost: {actions: 2}
+        area: radio_corto
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "3d6+5", dtype: cortante}]
+      - id: escupitajo_toxico
+        name: Escupitajo Tóxico
+        cost: {actions: 1}
+        reach: media
+        tags: [natural]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "1d6+5", dtype: acido}]
+      - id: grito_terrorifico
+        name: Grito Terrorífico
+        cost: {actions: 1}
+        area: radio_medio
+        reach: media
+        tags: [mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]
+      - id: proteger_aliado
+        name: Proteger Aliado
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_ally_attacked
+        effects: [kind: intercept]
+      - id: parada_superior
+        name: Parada Superior
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects: [{kind: note, text: "+10 a Parada", defense_bonus: 10}]
+      - id: segundo_aliento
+        name: Segundo Aliento
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}]
+      - id: atrapar_arma
+        name: Atrapar Arma
+        cost: {actions: 1}
+        reach: adyacente
+        tags: [weapon, physical]
+        notes: >
+          "Tiro enfrentado" is already exactly attack-vs-defence in this
+          engine, so this is modelled as a zero-damage attack: a hit
+          entangles both combatants and locks the target out of
+          weapon-tagged abilities, a miss provokes an Apertura the same way
+          any other missed attack does, and it can simply be paid for again
+          next action to retry.
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit:
+              - {kind: apply_effect, effect: enredado, duration: 2, to: target}
+              - {kind: apply_effect, effect: arma_atrapada, duration: 2, to: target}
+              - {kind: self_buff, effect: enredado, duration: 2}
+
+  - id: campeon_abisal
+    name: Campeón Abisal
+    source: monsters/abisales.md
+    level: 8
+    faith: abisal
+    role: boss
+    impactos: 12
+    # Retuned against real level-8 build data (builds/*.md) and base-info.md's
+    # Miniboss -> Boss transformation rule:
+    #   - flat modifier 9 already matched a real level-8 PC's own baseline
+    #     exactly (both Barbaro and Clerigo builds show "+9" unbuffed) -- kept.
+    #   - "Reduce todos sus tiros por un dado y su daño también por un dado,
+    #     pero recibirá una segunda fase donde recibirá dichas mejoras": phase
+    #     1 drops from 2d6/2d8 to 1d6/1d8, Despertar Abisal (phase 2) restores
+    #     the die via its own advantage/damage_dice modifiers.
+    #   - Campeon's declared rank build (Ascendencia Abisal III, Guerrero
+    #     Divino III, Estilo Duelista II, Presencia I) has no Fortitud- or
+    #     Reflejos-line rank, so fisico has no textual basis for a bonus --
+    #     dropped from 10 to a plain floor. magico stays elevated: Ascendencia
+    #     Abisal III's "Tocado por la Locura" grants Resistencia Mágica =
+    #     Rango+1 = +4, on top of the same floor.
+    #   - actions/reactions corrected to the Miniboss->Boss formula (+2
+    #     actions/+1 reaction over the 3/2 Miniboss baseline = 5/3), not the
+    #     6/2 it had drifted to.
+    umbrales: {general: 5, fisico: 5, magico: 10, radiante: 5}
+    saves: {fis: "9+1d6", vol: "9+1d6", men: "9"}
+    initiative: "6"
+    preferred_row: front
+    actions: 5
+    reactions: 3
+    defense: parada
+  # Despertar Abisal: at 6 impactos lost it becomes a monstrosity.
+    phases:
+      - {impactos_lost: 6, name: "Despertar Abisal", effect: despertar_abisal}
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "9+1d6"}
+      - id: espada_maldita
+        name: Espada Maldita
+        cost:
+          actions: 1
+        tags:
+          - weapon
+          - physical
+        notes: The "damage cannot be healed" clause is not modelled.
+        effects:
+          - kind: attack
+            attack_roll: "9+1d6"
+            on_hit: [{kind: damage, damage: "1d8+6", dtype: cortante}]
+      - id: garra
+        name: Garra
+        cost: {actions: 1}
+        tags: [natural, physical]
+        effects:
+          - kind: attack
+            attack_roll: "9+1d6"
+            on_hit: [{kind: damage, damage: "1d8+6", dtype: cortante}]
+      - id: asalto_psiquico
+        name: Asalto Psíquico
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: save
+            save: men
+            dc: "9+1d6"
+            on_fail: [{kind: apply_effect, effect: desconcertado, duration: 1}]
+      - id: drenar_vida
+        name: Drenar Vida
+        cost: {actions: 2}
+        tags: [spell, mental]
+        lifesteal: true
+        effects:
+          - kind: attack
+            attack_roll: "9+1d6"
+            on_hit: [{kind: damage, damage: "1d8+6", dtype: necrotico}]
+      - id: ataque_torbellino
+        name: Ataque Torbellino
+        cost: {actions: 2}
+        area: radio_corto
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "9+1d6"
+            on_hit: [{kind: damage, damage: "2d8+6", dtype: cortante}]
+      - id: invocacion_abisal
+        name: Invocación Abisal
+        cost:
+          actions: 3
+        targeting: self
+        effects:
+          - {kind: summon, statblock: engendro_abisal, amount: 1}
+      - id: resistencia_adaptiva
+        name: Resistencia Adaptiva
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: umbral_boost, amount: 5, duration: 1, to: self, tags: [consume_on_umbral]}]
+      - id: vinculo_parasitico
+        name: Vínculo Parasítico
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_attacked
+        effects:
+          - {kind: redirect, valid_targets: [engendro_abisal]}
+      - id: aura_protectora
+        name: Aura Protectora
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_save_fail
+        targeting: self
+        effects: [{kind: note, text: "+10 a un tiro de salvación", save_bonus: 10}]
+      - id: atrapar_arma
+        name: Atrapar Arma
+        cost: {actions: 1}
+        reach: adyacente
+        tags: [weapon, physical]
+        notes: >
+          "Tiro enfrentado" is already exactly attack-vs-defence in this
+          engine, so this is modelled as a zero-damage attack: a hit
+          entangles both combatants and locks the target out of
+          weapon-tagged abilities, a miss provokes an Apertura the same way
+          any other missed attack does, and it can simply be paid for again
+          next action to retry.
+        effects:
+          - kind: attack
+            attack_roll: "9+1d6"
+            on_hit:
+              - {kind: apply_effect, effect: enredado, duration: 2, to: target}
+              - {kind: apply_effect, effect: arma_atrapada, duration: 2, to: target}
+              - {kind: self_buff, effect: enredado, duration: 2}

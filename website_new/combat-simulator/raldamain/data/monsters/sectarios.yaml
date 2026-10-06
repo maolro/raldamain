@@ -1,0 +1,591 @@
+# monsters/sectarios.md -- the Secta Abisal cult roster (minion -> boss ladder).
+#
+# Dice-budget methodology (resolved this session): contested rolls (attack,
+# defense, ability-DCs) settle on flat_mod + 1d6 at every tier from esbirro_elite
+# up through boss -- the same "PC's real ceiling is +1d6, +2d6 is only reached by
+# double-stacking a resource" principle already applied to aventureros.yaml's
+# minibosses and to campeon_abisal.  The source doc's native drafts ran hotter
+# (elite minions at +2d6, level-8 minibosses at +3d6/+2d6); those have been
+# softened by 1-2 dice below to match.  Chuul keeps ONE +2d6 "signature" 2-action
+# AoE pair (Lanzarrocas/Gran Barrido), mirroring trasgo_comando's Ataque Furtivo --
+# tier differentiation comes from chassis size (impactos/actions/reactions), not
+# from dice, so a single elevated finisher is flavour, not a balance lever.
+#
+# A handful of narrative riders have no engine equivalent yet (armour breaking,
+# "damage that cannot be healed", Confusion/Ralentizado status ladders, mind
+# control, flight-only clauses, condition-targeted redirects). Each is marked
+# with a `notes:` line explaining what was dropped, rather than inventing new
+# mechanics on the fly -- consistent with how the rest of this codebase flags
+# assumed/unimplemented content.
+
+  - id: acolito_secta
+    name: Acólito de la Secta
+    source: monsters/sectarios.md
+    level: 2
+    faith: abisal
+    role: esbirro
+    impactos: 2
+    umbrales: {general: 4, fisico: 12}
+    saves: {fis: "5", vol: "5+1d6", men: "5"}
+    initiative: "5"
+    preferred_row: front
+    actions: 1
+    reactions: 0
+    defense: esquiva
+    # Inmune: Mentales -- reusing the same condition list abisales.yaml already
+    # uses for that exact tag.
+    immunities: [miedo_1, miedo_2, miedo_3, miedo_4, desconcertado, desconcertado_2, desconcertado_3, maldito]
+    abilities:
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "5+1d6"}
+      - id: daga
+        name: Daga
+        cost: {actions: 1}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "5+1d6"
+            on_hit:
+              - {kind: damage, damage: "1d6+4", dtype: perforante}
+              - {kind: damage, damage: "1d6", dtype: necrotico}
+      - id: asalto_psiquico
+        name: Asalto Psíquico
+        cost: {actions: 1}
+        reach: media
+        tags: [mental]
+        effects:
+          - {kind: save, save: men, dc: "5", on_fail: [{kind: apply_effect, effect: desconcertado, duration: 1}]}
+      - id: rayo_energia_negativa
+        name: Rayo de Energía Negativa
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, magic]
+        notes: "El daño no puede sanarse -- no modelado, se aplica como daño normal."
+        effects:
+          - kind: attack
+            attack_roll: "5+1d6"
+            on_hit: [{kind: damage, damage: "1d6+4", dtype: necrotico}]
+
+  - id: doppelganger
+    name: Doppelganger
+    source: monsters/sectarios.md
+    level: 5
+    faith: abisal
+    role: esbirro_elite
+    impactos: 2
+    umbrales: {general: 4, fisico: 8}
+    saves: {fis: "7+1d6", vol: "7+1d6", men: "7"}
+    initiative: "4"
+    preferred_row: front
+    actions: 2
+    reactions: 1
+    defense: esquiva
+    immunities: [cegado]     # Inmune: Visuales
+    abilities:
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "7+1d6"}
+      - id: golpe
+        name: Golpe
+        cost: {actions: 1}
+        reach: corta
+        tags: [natural, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit:
+              - {kind: damage, damage: "2d6+5", dtype: contundente}
+              - {kind: apply_effect, effect: enredado, duration: 2, to: target}
+      - id: daga
+        name: Daga
+        cost: {actions: 1}
+        reach: media
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit:
+              - {kind: damage, damage: "2d6+5", dtype: perforante}
+              - {kind: apply_effect, effect: herido_1, to: target}
+      - id: cambiaformas
+        name: Cambiaformas
+        cost: {actions: 1}
+        targeting: self
+        notes: >
+          Camouflage/social ability -- no combat effect the bot-driven sim can
+          exploit (it depends on a "ser querido" relationship the sim doesn't
+          model). Kept as a note-only action so the ability inventory stays
+          faithful to the source.
+        effects: [{kind: note, text: "Se transforma para parecerse a otro humanoide."}]
+      - id: drenar_sangre
+        name: Drenar Sangre
+        cost: {actions: 1}
+        targeting: enemy
+        notes: "Solo afecta a objetivos Enredado -- la restricción de objetivo no se modela; se trata como un ataque de salvación normal."
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail:
+              - {kind: damage, damage: "1d6+5", dtype: necrotico}
+              - {kind: heal, amount: 1, to: self}
+      - id: cuerpo_de_goma
+        name: Cuerpo de Goma
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        notes: "RAW excluye daño Cortante; aproximado aquí como resistencia a todo el daño físico por simplicidad."
+        effects: [{kind: umbral_boost, amount: 8, duration: 1, to: self, tags: [consume_on_umbral]}]
+      - id: evasion
+        name: Evasión
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]
+
+  - id: chuul
+    name: Chuul
+    source: monsters/sectarios.md
+    level: 5
+    faith: abisal
+    role: esbirro_elite
+    impactos: 2
+    umbrales: {general: 4, fisico: 12}
+    saves: {fis: "7+1d6", vol: "7+1d6", men: "4"}
+    initiative: "4"
+    preferred_row: front
+    actions: 2
+    reactions: 1
+    defense: parada
+    immunities: [miedo_1, miedo_2, miedo_3, miedo_4, desconcertado, desconcertado_2, desconcertado_3, maldito]   # Inmune: Mentales, Miedo
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "7+1d6"}
+      - id: pinza
+        name: Pinza
+        cost: {actions: 1}
+        reach: corta
+        tags: [natural, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit:
+              - {kind: damage, damage: "2d6+5", dtype: cortante}
+              - {kind: apply_effect, effect: enredado, duration: 2, to: target}
+      - id: constriccion
+        name: Constricción
+        cost: {actions: 1}
+        targeting: enemy
+        notes: "Solo afecta a objetivos Enredado -- restricción de objetivo no modelada, tirada de salvación normal. Rompe armadura no modelado."
+        effects:
+          - kind: save
+            save: fis
+            dc: "7+1d6"
+            on_fail:
+              - {kind: damage, damage: "2d6+5", dtype: fuerza}
+              - {kind: apply_effect, effect: herido_1, to: target}
+      - id: lanzarrocas
+        name: Lanzarrocas
+        cost: {actions: 2}
+        reach: media
+        area: radio_corto
+        tags: [natural, physical]
+        notes: "Efecto de caída sobre voladores no modelado (el simulador no rastrea vuelo)."
+        effects:
+          - kind: attack
+            attack_roll: "7+2d6"
+            on_hit: [{kind: damage, damage: "4d6+5", dtype: contundente}]
+      - id: gran_barrido
+        name: Gran Barrido
+        cost: {actions: 2}
+        area: radio_corto
+        tags: [natural, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+2d6"
+            on_hit:
+              - {kind: damage, damage: "3d6+5", dtype: contundente}
+              - {kind: apply_effect, effect: desventaja_defensiva, duration: 2, to: target}
+      - id: concha
+        name: Concha
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        notes: "El bloqueo de movimiento/ataque durante el resto de la ronda no se modela a nivel de reacción."
+        effects: [{kind: umbral_boost, amount: 12, duration: 1, to: self, tags: [consume_on_umbral]}]
+      - id: escudo_humano
+        name: Escudo Humano
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_attacked
+        targeting: self
+        implemented: false
+        notes: >
+          Not implemented: redirects to "any Enredado target", but the engine's
+          `redirect` effect only supports a fixed statblock-id allowlist, not a
+          condition-based target filter. Left as a documented gap rather than an
+          approximation that would silently misbehave.
+        effects: []
+
+  - id: asesino_sacro
+    name: Asesino Sacro
+    source: monsters/sectarios.md
+    level: 8
+    faith: abisal
+    role: miniboss
+    archetype: striker
+    impactos: 6
+    # Striker archetype (see tools/enemy_from_build.py): Estilo Asesino III +
+    # Reflejos II read as a precision/evasion build, not a tank -- trading
+    # umbral for a flat +2 on attack/defense only (save DCs untouched, since
+    # those are about presence/willpower, not agility). Numbers cross-checked
+    # against a from-scratch draft generated by that tool from this exact
+    # rank list (estilo_asesino:3, guerrero_divino:3, reflejos:2, rastrear:1);
+    # the tool's independent derivation landed on the same +2/-3 split.
+    # A same-tier tank (Gólem de Carne) keeps the higher umbral/flat roll this
+    # replaces; if you want the full tank<->striker contrast, soften its roll
+    # by the same amount this raises Asesino Sacro's.
+    umbrales: {general: 2, fisico: 7, magico: 10}
+    saves: {fis: "9+1d6", vol: "9+1d6", men: "9+1d6"}
+    initiative: "9"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: esquiva
+    immunities: [infortunio, maldito]   # Inmune: Repetir Tiros
+    abilities:
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "11+1d6"}
+      - id: cuchilla
+        name: Cuchilla
+        cost: {actions: 1}
+        reach: media
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "11+1d6"
+            on_hit:
+              - {kind: damage, damage: "2d8+6", dtype: cortante}
+              - {kind: damage, damage: "2d8", dtype: necrotico}
+      - id: drenar_vida
+        name: Drenar Vida
+        cost: {actions: 1}
+        targeting: enemy
+        notes: "El daño no puede sanarse -- no modelado, se aplica como daño normal."
+        effects:
+          - kind: save
+            save: vol
+            dc: "9+1d6"
+            on_fail:
+              - {kind: damage, damage: "2d8+6", dtype: necrotico}
+              - {kind: heal, amount: 1, to: self}
+      - id: paso_del_asesino
+        name: Paso del Asesino
+        cost: {actions: 2}
+        reach: adyacente
+        tags: [weapon, physical]
+        notes: "Movimiento sin provocar aperturas no modelado (el simulador es posicional-nulo para el movimiento)."
+        effects:
+          - kind: attack
+            attack_roll: "11+1d6"
+            on_hit:
+              - {kind: damage, damage: "4d8+6", dtype: cortante}
+              - {kind: damage, damage: "2d8", dtype: necrotico}
+              - {kind: apply_effect, effect: herido_1, to: target}
+              - {kind: apply_effect, effect: desventaja_defensiva, duration: 2, to: target}
+      - id: golpe_mortal
+        name: Golpe Mortal
+        cost: {actions: 2}
+        reach: adyacente
+        tags: [weapon, physical]
+        notes: "Maldición de estadística específica no modelada; se aplica Maldición de Mala Suerte (reroll_worst) como aproximación general."
+        effects:
+          - kind: attack
+            attack_roll: "11+1d6"
+            on_hit:
+              - {kind: damage, damage: "3d8+6", dtype: fuerza}
+              - {kind: damage, damage: "2d8", dtype: necrotico}
+              - kind: save
+                save: vol
+                dc: "9+1d6"
+                on_fail: [{kind: apply_effect, effect: maldito, to: target}]
+      - id: consagrar_la_tierra
+        name: Consagrar la Tierra (Abisal)
+        cost: {actions: 2, chi: 0}
+        targeting: self
+        tags: [divine]
+        notes: >
+          The cult's own consecration -- the mirror of the Clérigo's, and the
+          reason terrain control matters: a Celestial caster has to break this
+          back to neutral before claiming the ground for their own god.
+        effects:
+          - {kind: consecrate, dc: "9+1d6"}
+          - {kind: self_buff, effect: consagrando}
+      - id: sugestion
+        name: Sugestión
+        cost: {actions: 1}
+        reach: media
+        tags: [mental]
+        notes: "Forzar una acción específica no se modela (bot-controlado); se aplica solo la Desventaja defensiva."
+        effects:
+          - {kind: save, save: men, dc: "9+1d6", on_fail: [{kind: apply_effect, effect: desventaja_defensiva, duration: 2, to: target}]}
+      - id: provocar_terror
+        name: Provocar Terror
+        cost: {actions: 2}
+        area: radio_medio
+        tags: [mental]
+        notes: "Curar Miedo/Confusión a todos los aliados no modelado (sin objetivo party-wide en el motor); solo se aplica el efecto sobre los enemigos."
+        effects:
+          - {kind: save, save: vol, dc: "9+1d6", on_fail: [{kind: apply_effect, effect: miedo_2, duration: 2}]}
+      - id: evasion
+        name: Evasión
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects: [{kind: note, text: "+10 a Esquiva", defense_bonus: 10}]
+      - id: aura_de_proteccion
+        name: Aura de Protección
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_save_fail
+        targeting: self
+        notes: "RAW limita el bono a tiros contra hechizos; aproximado como cualquier tiro de salvación, igual que Aura Protectora en otros statblocks."
+        effects: [{kind: note, text: "+10 a un tiro de salvación", save_bonus: 10}]
+      - id: toque_sanador
+        name: Toque Sanador
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: heal, amount: 1, to: self}, {kind: cleanse, to: self}]
+
+  - id: golem_de_carne
+    name: Gólem de Carne
+    source: monsters/sectarios.md
+    level: 8
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 10, fisico: 15, magico: 15, fuego: 5, necrotico: 99, electrico: 99}
+    saves: {fis: "9+1d6", vol: "9+1d6", men: "6"}
+    initiative: "3"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: parada
+    # Inmune: Mentales, Aflicciones, Veneno, Necrótico, Eléctrico. Damage-type
+    # immunities are approximated as very high umbrales (see above); condition
+    # immunities reuse the existing ladder ids.
+    immunities: [miedo_1, miedo_2, miedo_3, miedo_4, desconcertado, desconcertado_2, desconcertado_3, maldito, herido_1, herido_2, herido_3, fatiga_1, fatiga_2, enfermado_1]
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "9+1d6"}
+      - id: golpe
+        name: Golpe
+        cost: {actions: 1}
+        area: radio_corto
+        tags: [natural, physical]
+        effects:
+          - kind: attack
+            attack_roll: "9+1d6"
+            on_hit: [{kind: damage, damage: "3d8+6", dtype: contundente}]
+      - id: agarre
+        name: Agarre
+        cost: {actions: 1}
+        reach: adyacente
+        tags: [natural, physical]
+        effects:
+          - kind: attack
+            attack_roll: "9+1d6"
+            on_hit:
+              - {kind: damage, damage: "3d8+6", dtype: contundente}
+              - {kind: apply_effect, effect: enredado, duration: 2, to: target}
+      - id: carga_arrolladora
+        name: Carga Arrolladora
+        cost: {actions: 2}
+        area: radio_corto
+        tags: [natural, physical]
+        notes: "Destruir barreras a su paso no se modela."
+        effects:
+          - kind: attack
+            attack_roll: "9+1d6"
+            on_hit: [{kind: damage, damage: "5d8+6", dtype: contundente}]
+      - id: descarga_de_punetazos
+        name: Descarga de Puñetazos
+        cost: {actions: 2}
+        reach: adyacente
+        tags: [natural, physical]
+        effects:
+          - kind: attack
+            attack_roll: "9+1d6"
+            on_hit: [{kind: damage, damage: "3d8+6", dtype: contundente}]
+          - kind: attack
+            attack_roll: "9+1d6"
+            on_hit:
+              - {kind: damage, damage: "3d8+6", dtype: contundente}
+              - kind: save
+                save: vol
+                dc: "9+1d6"
+                on_fail: [{kind: apply_effect, effect: aturdido, to: target}]
+      - id: golpe_destructor
+        name: Golpe Destructor
+        cost: {actions: 2}
+        reach: adyacente
+        tags: [natural, physical]
+        notes: "Rompe armadura y quita contador de escudo no modelado más allá de un rider de Desventaja defensiva."
+        effects:
+          - kind: attack
+            attack_roll: "9+1d6"
+            on_hit:
+              - {kind: damage, damage: "5d8+6", dtype: contundente}
+              - kind: save
+                save: fis
+                dc: "9+1d6"
+                on_fail: [{kind: apply_effect, effect: desventaja_defensiva, duration: 2, to: target}]
+      - id: grito_terrorifico
+        name: Grito Terrorífico
+        cost: {actions: 1}
+        area: radio_medio
+        tags: [mental]
+        effects:
+          - {kind: save, save: vol, dc: "9+1d6", on_fail: [{kind: apply_effect, effect: miedo_1, duration: 1}]}
+      - id: segundo_aliento
+        name: Segundo Aliento
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: umbral_boost, amount: 5, duration: 1, to: self, tags: [consume_on_umbral]}, {kind: cleanse, to: self}]
+      - id: reposicion_forzosa
+        name: Reposición Forzosa
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_miss
+        effects: [{kind: apply_effect, effect: desventaja_defensiva, duration: 2, to: target}]
+      - id: escudo_humano
+        name: Escudo Humano
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_attacked
+        targeting: self
+        implemented: false
+        notes: >
+          Not implemented: redirects to "a target it is grappling", which
+          needs a per-combatant grapple-target link the engine doesn't track.
+          Left as a documented gap rather than a silent approximation.
+        effects: []
+
+  - id: matriarca_lamia
+    name: Matriarca Lamia
+    source: monsters/sectarios.md
+    level: 11
+    faith: abisal
+    role: boss
+    impactos: 12
+    umbrales: {general: 5, fisico: 15, magico: 15}
+    saves: {fis: "11", vol: "11+1d6", men: "11+1d6"}
+    initiative: "4"
+    preferred_row: front
+    actions: 6
+    reactions: 2
+    defense: parada
+    immunities: [miedo_1, miedo_2, miedo_3, miedo_4, desconcertado, desconcertado_2, desconcertado_3, maldito]   # Inmune: Mentales
+    # Despertar Abisal: at 6 impactos lost, reuses the same buff campeon_abisal
+    # uses -- Ventaja on attack/defence/save, +1 damage die, +5 to every umbral.
+    phases:
+      - {impactos_lost: 6, name: "Despertar Abisal", effect: despertar_abisal}
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "11+1d6"}
+      - id: lanza
+        name: Lanza
+        cost: {actions: 1}
+        area: radio_corto
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "11+1d6"
+            on_hit:
+              - {kind: damage, damage: "2d8+7", dtype: perforante}
+              - {kind: damage, damage: "2d8", dtype: psiquico}
+      - id: sobrecarga_mental
+        name: Sobrecarga Mental
+        cost: {actions: 1}
+        area: radio_corto
+        tags: [mental]
+        notes: "Confusión II no modelada (sin ladder definido); se aplica Desconcertado II como aproximación de un estado mental disruptivo."
+        effects:
+          - kind: save
+            save: men
+            dc: "11+1d6"
+            on_fail:
+              - {kind: damage, damage: "2d8+7", dtype: psiquico}
+              - {kind: apply_effect, effect: desconcertado_2, duration: 1, to: target}
+      - id: tajo_aereo
+        name: Tajo Aéreo
+        cost: {actions: 2}
+        area: radio_medio
+        tags: [weapon, physical]
+        notes: "Aproximado con area radio_medio (sin forma de columna); efecto de caída sobre voladores no modelado."
+        effects:
+          - kind: attack
+            attack_roll: "11+1d6"
+            on_hit:
+              - {kind: damage, damage: "4d8+7", dtype: perforante}
+              - {kind: damage, damage: "2d8", dtype: psiquico}
+      - id: secuencia_de_ataques
+        name: Secuencia de Ataques
+        cost: {actions: 2}
+        area: radio_corto
+        tags: [weapon, physical]
+        notes: "Bono creciente por golpe consecutivo (+2/+2) aproximado como tres ataques de Lanza estándar."
+        effects:
+          - kind: attack
+            attack_roll: "11+1d6"
+            on_hit: [{kind: damage, damage: "2d8+7", dtype: perforante}, {kind: damage, damage: "2d8", dtype: psiquico}]
+          - kind: attack
+            attack_roll: "11+1d6"
+            on_hit: [{kind: damage, damage: "2d8+7", dtype: perforante}, {kind: damage, damage: "2d8", dtype: psiquico}]
+          - kind: attack
+            attack_roll: "11+1d6"
+            on_hit: [{kind: damage, damage: "2d8+7", dtype: perforante}, {kind: damage, damage: "2d8", dtype: psiquico}]
+      - id: geas
+        name: Geas
+        cost: {actions: 1}
+        reach: media
+        tags: [mental]
+        notes: "Control mental total no se modela (bot-controlado); solo se aplica Desconcertado como aproximación de la coacción parcial."
+        effects:
+          - {kind: save, save: men, dc: "11+1d6", on_fail: [{kind: apply_effect, effect: desconcertado, duration: 1, to: target}]}
+      - id: petrificacion
+        name: Petrificación
+        cost: {actions: 1}
+        reach: media
+        tags: [mental]
+        notes: "Ralentizado II con escalado por ronda no modelado (sin ladder definido); aproximado como Desventaja defensiva."
+        effects:
+          - {kind: save, save: vol, dc: "11+1d6", on_fail: [{kind: apply_effect, effect: desventaja_defensiva, duration: 2, to: target}]}
+      - id: doble_ilusorio
+        name: Doble Ilusorio
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        notes: "No funciona contra ataques de área -- restricción de área no modelada."
+        effects: [{kind: note, text: "+10 defensivo (falla automática)", defense_bonus: 10}]
+      - id: invisibilidad
+        name: Invisibilidad
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]
+      - id: persecucion
+        name: Persecución
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_miss
+        effects: [{kind: apply_effect, effect: desventaja_defensiva, duration: 2, to: target}]
+      - id: vida_falsa
+        name: Vida Falsa
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: heal, amount: 1, to: self}, {kind: cleanse, to: self}]

@@ -1,0 +1,217 @@
+{
+  "name": "Elementalista",
+  "level": 4,
+  "race": {},
+  "stats": {
+    "str": {
+      "name": "FUE",
+      "value": 1
+    },
+    "dex": {
+      "name": "DES",
+      "value": 4
+    },
+    "con": {
+      "name": "CON",
+      "value": 2
+    },
+    "itl": {
+      "name": "INT",
+      "value": 1
+    },
+    "wis": {
+      "name": "SAB",
+      "value": 1
+    },
+    "cha": {
+      "name": "CAR",
+      "value": 5
+    }
+  },
+  "talents": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "stat": "dex",
+      "level": 0
+    },
+    "performance": {
+      "name": "Actuación",
+      "stat": "cha",
+      "level": 0
+    },
+    "arcana": {
+      "name": "Arcanismo",
+      "stat": "itl",
+      "level": 0
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "stat": "str",
+      "level": 0
+    },
+    "insight": {
+      "name": "Averiguar Intenciones",
+      "stat": "wis",
+      "level": 0
+    },
+    "focus": {
+      "name": "Concentración",
+      "stat": "itl",
+      "level": 0
+    },
+    "wreck": {
+      "name": "Destrozar",
+      "stat": "str",
+      "level": 0
+    },
+    "deception": {
+      "name": "Engaño",
+      "stat": "cha",
+      "level": 0
+    },
+    "heroics": {
+      "name": "Heroísmo",
+      "stat": "str",
+      "level": 0
+    },
+    "intimidate": {
+      "name": "Intimidar",
+      "stat": "str/cha",
+      "level": 0
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "stat": "dex",
+      "level": 0
+    },
+    "perception": {
+      "name": "Percepción",
+      "stat": "wis",
+      "level": 0
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "stat": "cha",
+      "level": 0
+    },
+    "first-aid": {
+      "name": "Primeros Auxilios",
+      "stat": "wis",
+      "level": 0
+    },
+    "health": {
+      "name": "Salud",
+      "stat": "con",
+      "level": 0
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "stat": "dex",
+      "level": 0
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "stat": "wis",
+      "level": 0
+    },
+    "tinker": {
+      "name": "Trastear",
+      "stat": "itl",
+      "level": 0
+    },
+    "willpower": {
+      "name": "Voluntad",
+      "stat": "cha",
+      "level": 0
+    }
+  },
+  "ranks": [
+    {
+      "id": "magia_fuego",
+      "name": "Magia de Fuego",
+      "category": "Elementalismo",
+      "stat": "cha",
+      "reserve": "chi",
+      "rank": 2,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_fuego--1--llamarada,magia_fuego--1--aliento-de-fuego,magia_fuego--1--fuego-interno,magia_fuego--2--muro-de-llamas,magia_fuego--2--bola-de-fuego,magia_fuego--2--infusion-de-fuego,magia_fuego--3--erupcion-abrasadora,magia_fuego--3--propulsion,magia_fuego--3--elemento-del-poder,magia_fuego--4--renacer-del-fenix,magia_fuego--4--torbellino-de-fuego,magia_fuego--4--maestro-de-las-llamas,magia_fuego--5--lluvia-de-brasas,magia_fuego--5--rayo-de-plasma,magia_fuego--5--llama-viviente,magia_fuego--6--forma-elemental",
+      "stats": [
+        {
+          "stat": "cha",
+          "rank": 4,
+          "boost": 1
+        },
+        {
+          "stat": "con",
+          "rank": 6,
+          "boost": 1
+        }
+      ],
+      "parry_tag": "Fuego"
+    },
+    {
+      "id": "reflejos",
+      "name": "Reflejos",
+      "category": "Combate",
+      "stat": "dex",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "reflejos--1--velocidad-superior,reflejos--1--instinto-de-supervivencia,reflejos--2--giro-defensivo,reflejos--2--evasion,reflejos--3--giro-defensivo,reflejos--3--gran-acrobata,reflejos--4--sexto-sentido,reflejos--4--punto-ciego,reflejos--5--libertad-de-movimiento,reflejos--5--reflejos-supremos"
+    },
+    {
+      "id": "mente_desencadenada",
+      "name": "Mente Desencadenada",
+      "category": "Combate",
+      "stat": "itl",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "mente_desencadenada--1--mente-desencadenada,mente_desencadenada--1--agilidad-mental,mente_desencadenada--2--poder-del-dolor,mente_desencadenada--2--conocimiento-arcano,mente_desencadenada--3--concentracion-superior,mente_desencadenada--3--poder-de-la-locura,mente_desencadenada--4--sentido-arcano,mente_desencadenada--4--psique-retorcida,mente_desencadenada--5--division-mental,mente_desencadenada--5--mente-sobre-cuerpo"
+    },
+    {
+      "id": "estilo_duelista",
+      "name": "Estilo Duelista",
+      "category": "Marcial",
+      "stat": "str/dex",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "estilo_duelista--1--defensa-habil,estilo_duelista--1--secuencia-de-ataques,estilo_duelista--1--truco-de-combate,estilo_duelista--2--atrapar-arma,estilo_duelista--2--ataque-torbellino,estilo_duelista--2--persecucion,estilo_duelista--2--secuencia-de-golpes,estilo_duelista--3--carga-del-espadachin,estilo_duelista--3--contrataque,estilo_duelista--3--espadas-trabadas,estilo_duelista--4--maestria-de-arma,estilo_duelista--4--cortar-el-acero,estilo_duelista--4--impacto-aereo,estilo_duelista--5--muerte-por-mil-cortes,estilo_duelista--5--partir-montanas,estilo_duelista--5--proyeccion-de-chi"
+    }
+  ],
+  "spells": {
+    "patron": {
+      "name": "",
+      "domains": [],
+      "damage_type": ""
+    },
+    "picks": {}
+  },
+  "equipment": {
+    "armor": {
+      "eqab": "",
+      "name": "Ligera",
+      "penalty": 0,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 2
+        }
+      ]
+    },
+    "mainHand": {
+      "name": "Golpe",
+      "eqab": "golpe",
+      "style": "duelist"
+    },
+    "secondHand": {},
+    "head": {},
+    "bag": []
+  },
+  "archetypes": []
+}

@@ -1,0 +1,1300 @@
+# Structured rank-ability library -- the machine-readable twin of ranks/*.md.
+#
+# Schema per rank tree:
+#   <rank_id>:
+#     name: <display name>
+#     source: ranks/<file>.md
+#     ranks:
+#       <level>:
+#         passives: [ {target: umbral|save|stat|defense|immunity, key, amount} ]
+#         abilities: [ <ability dict, same DSL as character YAML abilities> ]
+#
+# "passives" are folded into the character's baked umbral/save/stat numbers ONCE
+# at build time (they are not toggled -- Resistencia Natural is always on).
+# "abilities" become real entries in the character's abilities list.
+#
+# An ability with `rider: true` is an attack UPGRADE (a chi-cost technique
+# bolted onto a weapon/spell attack: Golpe Desestabilizador, Ataque Furtivo),
+# not a standalone action.  sim/tools/build_gen.py attaches those to every
+# eligible attack instead of emitting them as top-level abilities.
+#
+# Formula convention (see engine/rank_formula.py); every {{...}} token is
+# resolved per-character at assembly time:
+#   RANGO  the character's level in THIS rank tree
+#   MOD    the level-derived contested-roll modifier (3 + 2*TIER: +5 at niv 2,
+#          +7 at niv 5, +9 at niv 8 ...) -- shared by attack rolls, defence
+#          rolls and save DCs on every build, verified against builds/*.md
+#   DIE    damage die size for this rank (d6 at I-II, d8 at III-IV, d10 at V+)
+#   TIER   ceil(level/3);  NIVEL  the character's level
+#   FUE/DES/CON/INT/SAB/CAR  the character's stats
+#   {{max(SAB,CAR)}} renders the "SAB/CAR" either-stat text in the source.
+#
+# Coverage: ALL 24 rank trees in ranks/, Rango I-II (enough to build any
+# character up to niv 5-6).  Rango III+ is deliberately out of scope until
+# level 8+ builds are being generated -- add it the same way.
+
+# =========================================================== combate.md
+
+fortitud:
+  name: Fortitud
+  source: ranks/combate.md
+  ranks:
+    1:
+      passives:
+        - {target: umbral, key: general, amount: "{{RANGO+1}}",
+           text: "Resistencia Natural: aumenta todos sus umbrales por un valor igual a su Rango + 1."}
+      abilities:
+        - id: segundo_aliento
+          name: Segundo Aliento
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_damaged
+          targeting: self
+          effects:
+            - {kind: umbral_boost, amount: "{{RANGO+2}}", duration: 1, to: self,
+               tags: [consume_on_umbral]}
+          text: "Aumenta sus umbrales por Rango + 2 contra el siguiente ataque o reduce un efecto de estado por un paso."
+    2:
+      passives:
+        - {target: save, key: vol, amount: "advantage:1",
+           text: "Difícil de Matar: Ventaja en tiros de salvación de Voluntad."}
+        - {target: umbral, key: necrotico, amount: "{{RANGO+2}}",
+           text: "Constitución Férrea: Resistencia igual a tu Rango + 2 al daño Necrótico."}
+        - {target: umbral, key: veneno, amount: "{{RANGO+2}}",
+           text: "Constitución Férrea: Resistencia igual a tu Rango + 2 al daño Veneno."}
+      notes: >
+        Difícil de Matar's "keeps acting at 0 impactos" half is not modelled
+        (the engine drops a combatant at 0); only its Voluntad advantage is.
+
+ira:
+  name: Ira
+  source: ranks/combate.md
+  ranks:
+    1:
+      abilities:
+        - {id: ira, name: Ira, cost: {actions: 1}, targeting: self,
+           effects: [{kind: self_buff, effect: ira, duration: 6}],
+           text: "Ventaja en tiros físicos (ataque, defensa, habilidad, salvación) y +1 dado de daño base durante 6 rondas."}
+        - id: demostracion_terrorifica
+          name: Demostración Terrorífica
+          cost: {actions: 1, chi: 1}
+          area: radio_medio
+          reach: media
+          tags: [mental]
+          effects:
+            - {kind: save, save: vol, dc: "{{MOD}}",
+               on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]}
+          text: "Todos los enemigos en un radio medio fallan salvación de Voluntad o sufren Miedo I."
+    2:
+      abilities:
+        - {id: ira, name: Ira, cost: {actions: 1}, targeting: self,
+           effects: [{kind: self_buff, effect: ira_r2, duration: 6}],
+           text: "Como Rango I, y mientras estés en Ira aumentas todos tus umbrales por un valor igual a tu Rango (Resistencia Salvaje) e ignoras Herido I y II."}
+      passives:
+        - {target: immunity, key: herido_1,
+           text: "Resistencia Salvaje: ignoras Herido I mientras estés en Ira (modelado como inmunidad permanente)."}
+        - {target: immunity, key: herido_2,
+           text: "Resistencia Salvaje: ignoras Herido II mientras estés en Ira."}
+        - id: frenesi_de_batalla
+          name: Frenesí de Batalla
+          cost: {actions: 1}
+          targeting: self
+          effects:
+            - {kind: self_buff, effect: frenesi_de_batalla, duration: 1}
+          text: >
+            Puede recibir Ventaja en todos sus tiros de ataque esta ronda a
+            costa de Desventaja en todos sus tiros defensivos.
+      notes: >
+        Frenesí de Batalla is modelled (see conditions.yaml) but not wired
+        into any scripted build's maintain list -- GreedyPolicy has no branch
+        that prices "more damage" against "easier to hit", so a bot told to
+        always take it would use it even when the defensive downside is
+        dangerous. Probe it directly rather than through the standard sweep.
+
+mente_desencadenada:
+  name: Mente Desencadenada
+  source: ranks/combate.md
+  ranks:
+    1:
+      abilities:
+        - {id: mente_desencadenada, name: Mente Desencadenada, cost: {actions: 1}, targeting: self,
+           effects: [{kind: self_buff, effect: mente_desencadenada, duration: 6}],
+           text: "Ventaja en tiros mentales (ataque, defensa, habilidad, salvación) y +1 dado de daño mágico durante 6 rondas."}
+      notes: "Agilidad Mental (Rango + 2 niveles de talento) es progresión fuera de combate -- sin efecto simulable."
+    2:
+      abilities:
+        - {id: mente_desencadenada, name: Mente Desencadenada, cost: {actions: 1}, targeting: self,
+           effects: [{kind: self_buff, effect: mente_desencadenada_r2, duration: 6}],
+           text: "Como Rango I, y mientras estés en Mente Desencadenada ignoras Herido I/II y aumentas tus umbrales por un valor igual a tu Rango (Poder del Dolor)."}
+      notes: "Conocimiento Arcano (aprendes dos hechizos de Rango I) se resuelve en la build spec eligiendo un árbol mágico adicional."
+
+presencia:
+  name: Presencia
+  source: ranks/combate.md
+  ranks:
+    1:
+      abilities:
+        - {id: voz_del_comandante, name: Voz del Comandante,
+           cost: {uses_per_combat: "{{RANGO+2}}", chi_when_exhausted: 1}, bonus_action: true,
+           targeting: ally, reach: media, effects: [{kind: grant_advantage, to: target}],
+           text: "Un aliado a distancia media recibe Ventaja en su siguiente tiro. Rango + 2 usos por combate."}
+      passives:
+        - {target: save, key: vol, amount: "advantage:1",
+           text: "Voluntad Poderosa: Ventaja en salvación de Voluntad."}
+        - {target: save_substitute, key: men, from: vol,
+           text: "Voluntad Poderosa: puedes cambiar tu tiro de salvación Mental por tu tiro de Presencia (CAR); modelado como MEN = max(MEN, VOL)."}
+    2:
+      abilities:
+        - id: revigorar
+          name: Revigorar
+          cost: {actions: 1, chi: 1}
+          targeting: ally
+          reach: media
+          effects:
+            - {kind: heal, amount: 1, to: target}
+            - {kind: cleanse, to: target}
+          text: "Un aliado a distancia media recupera un impacto temporal y se cura de Miedo/Confusión/Desconcertado."
+        - id: provocacion
+          name: Provocación
+          cost: {actions: 1, chi: 1}
+          area: radio_medio
+          reach: media
+          tags: [mental]
+          effects:
+            - {kind: save, save: men, dc: "{{MOD}}",
+               on_fail: [{kind: apply_effect, effect: provocado, duration: 1}]}
+          text: "Todos los enemigos a distancia media fallan salvación Mental o deben atacarte y tienen Desventaja en su siguiente tiro defensivo."
+
+rastrear:
+  name: Rastrear
+  source: ranks/combate.md
+  ranks:
+    1:
+      abilities:
+        - id: analizar_enemigo
+          name: Analizar Enemigo
+          cost: {actions: 1, chi: 1}
+          targeting: enemy
+          reach: media
+          effects:
+            - {kind: self_buff, effect: analizado, duration: combat, against_target: true}
+          text: "Ventaja en ataque, defensa, habilidad y +1 dado de daño contra un enemigo específico hasta que caiga o acabe el combate."
+        - id: siempre_preparado_pocion
+          name: "Siempre Preparado (Poción de Sanación)"
+          cost: {actions: 1, chi: 1}
+          targeting: self
+          tags: [heal]
+          effects:
+            - {kind: heal, amount: 1, to: self}
+            - {kind: cleanse, to: self}
+          text: "Obtienes de inmediato un objeto consumible de coste 1. Se modela la opción más usada (Poción de Sanación); build_gen puede emitir las variantes Bomba/Cadena/Bomba de Humo."
+    2:
+      abilities: []
+      notes: >
+        Acechar (invisibilidad) y Terreno Predilecto (ventaja en Percepción/
+        Sigilo en un terreno) no tienen efecto de combate simulable -- el motor
+        no modela ocultamiento ni terreno.
+
+reflejos:
+  name: Reflejos
+  source: ranks/combate.md
+  ranks:
+    1:
+      passives:
+        - {target: save, key: fis, amount: "advantage:1",
+           text: "Reflejos Superiores: Ventaja en tiros de salvación Físicos."}
+        - {target: initiative, key: initiative, amount: "{{RANGO}}",
+           text: "Reflejos Superiores: +Rango a tu tiro de Iniciativa."}
+      abilities:
+        - id: instinto_de_supervivencia
+          name: Instinto de Supervivencia
+          cost: {uses_per_combat: "{{RANGO+2}}", chi_when_exhausted: 1}
+          is_reaction: true
+          is_reroll: true
+          reroll_scope: self
+          reroll_kinds: [attack, defense]
+          text: "Repite un tiro de Destreza (tratado como ataque/defensa propios) y te quedas con el que más te convenga. Rango + 2 usos por combate."
+    2:
+      abilities:
+        - {id: evasion, name: Evasión, cost: {reactions: 1, chi: 1}, is_reaction: true,
+           trigger: on_defend, targeting: self,
+           effects: [{kind: note, text: "+10 a Esquiva", defense_bonus: 10}],
+           text: "Suma +10 a un tiro de Esquiva y te mueves un paso sin provocar aperturas."}
+      passives:
+        - {target: umbral, key: general, amount: "{{RANGO+1}}",
+           text: "Giro Defensivo: aumenta todos tus umbrales por un valor igual a tu Rango + 1."}
+
+# =========================================================== marciales.md
+
+estilo_coloso:
+  name: Estilo Coloso
+  source: ranks/marciales.md
+  ranks:
+    1:
+      abilities:
+        - id: golpe_desestabilizador
+          name: Golpe Desestabilizador
+          rider: true
+          cost: {chi: 1}
+          applies_on_parry: true
+          on_hit:
+            - {kind: save, save: fis, dc: "{{MOD}}",
+               on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+          text: "Rider de ataque cuerpo a cuerpo (1 chi): el objetivo falla salvación Físico o es empujado y sufre Desventaja en su siguiente tiro defensivo."
+        - {id: ataque_poderoso, name: Ataque Poderoso, cost: {actions: 1}, targeting: self,
+           effects: [{kind: self_buff, effect: ataque_poderoso}],
+           text: "Tu siguiente ataque recibe un dado de daño adicional."}
+        - {id: proteger_aliado, name: Proteger Aliado, cost: {reactions: 1},
+           is_reaction: true, trigger: on_ally_attacked, effects: [{kind: intercept}],
+           text: "Interceptas un ataque dirigido a un aliado, usando tu propio tiro defensivo."}
+    2:
+      abilities:
+        - id: gran_barrido
+          name: Gran Barrido
+          rider: true
+          cost: {chi: 2}
+          damage_dice: 1
+          area: radio_pequeno
+          text: "Rider de ataque cuerpo a cuerpo: golpea a todos en un radio pequeño, +1 dado de daño, empuja al impactar. Cuesta 2 chi bajo la regla PA (área +1 PA, dado +1 PA)."
+        - id: reposicion_forzosa
+          name: Reposición Forzosa
+          rider: true
+          cost: {chi: 1}
+          on_miss:
+            - {kind: save, save: fis, dc: "{{MOD}}",
+               on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+          text: "Rider de ataque (1 chi): un enemigo que esquivó tu ataque falla salvación Físico o sufre Desventaja en su siguiente tiro defensivo."
+        - id: lanzamiento
+          name: Lanzamiento
+          rider: true
+          cost: {chi: 1}
+          damage_dice: 1
+          text: "Rider de ataque (1 chi): lanzas tu arma a distancia media, +1 dado de daño (el cambio de alcance no está modelado como campo aparte)."
+
+estilo_duelista:
+  name: Estilo Duelista
+  source: ranks/marciales.md
+  ranks:
+    1:
+      abilities:
+        - {id: secuencia_de_ataques, name: Secuencia de Ataques, rider: true,
+           cost: {chi: 1}, extra_attacks: 1,
+           text: "Rider de ataque (1 chi): un segundo ataque contra el mismo objetivo como acción bonus, sin las mejoras del primero."}
+        - id: truco_de_combate
+          name: Truco de Combate
+          cost: {actions: 1}
+          tags: [physical]
+          effects:
+            - {kind: save, save: fis, dc: "{{MOD}}",
+               on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+          text: "Un objetivo al alcance de tu arma falla salvación (Físico/Voluntad/Mental) o sufre Desventaja en su siguiente tiro defensivo. Se modela solo la variante Físico."
+        - id: truco_rapido
+          name: Truco Rápido
+          cost: {chi: 1}
+          bonus_action: true
+          tags: [physical]
+          effects:
+            - {kind: save, save: fis, dc: "{{MOD}}",
+               on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+          text: >
+            Modo alternativo de Truco de Combate (1 chi en vez de 1 Acción):
+            se usa como acción bonus ANTES de atacar. Es lo que hace la
+            habilidad relevante -- pagada con una Acción compite con atacar y
+            nunca sale a cuenta; pagada con chi prepara el ataque del mismo turno.
+      passives:
+        - {target: defense, key: skilled, amount: 1,
+           text: "Defensa Hábil: al defenderte, tira dos métodos y quédate con el mejor."}
+    2:
+      abilities:
+        - id: ataque_torbellino
+          name: Ataque Torbellino
+          rider: true
+          cost: {chi: 1}
+          damage_dice: 1
+          area: radio_corto
+          text: "Rider de ataque (1 chi): golpea a todos en un radio corto, +1 dado de daño; puedes moverte antes o después sin provocar aperturas."
+        - id: atrapar_arma
+          name: Atrapar Arma
+          cost: {actions: 1}
+          reach: adyacente
+          tags: [weapon, physical]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit:
+                - {kind: apply_effect, effect: enredado, duration: 2, to: target}
+                - {kind: apply_effect, effect: arma_atrapada, duration: 2, to: target}
+                - {kind: self_buff, effect: enredado, duration: 2}
+          text: "Tiro enfrentado: el objetivo queda Enredado y no puede usar su arma hasta escapar, pero tu arma queda atrapada igual. Modelado como ataque sin daño."
+      notes: "Persecución (contraatacar a un enemigo que se mueve) necesita seguimiento de movimiento que el motor no tiene."
+
+estilo_asesino:
+  name: Estilo Asesino
+  source: ranks/marciales.md
+  ranks:
+    1:
+      abilities:
+        - {id: apuntar_ataque, name: Apuntar Ataque, cost: {actions: 1}, targeting: self,
+           effects: [{kind: self_buff, effect: apuntado}],
+           text: "Recibe +2 (+4 a Rango III, +6 a Rango V) en tu siguiente tiro de ataque."}
+        - id: ataque_furtivo
+          name: Ataque Furtivo
+          rider: true
+          cost: {chi: 1}
+          damage_dice: 1
+          on_hit:
+            - {kind: apply_effect, effect: herido_1, duration: 3}
+          text: "Rider de ataque (1 chi): +1 dado de daño y provoca Herido I al impactar."
+      notes: "Robo Rápido (robar un objeto al impactar) no tiene efecto de combate simulable."
+    2:
+      abilities:
+        - id: ataque_triple
+          name: Ataque Triple
+          rider: true
+          cost: {chi: 1}
+          area: radio_corto
+          text: "Rider de ataque (1 chi): golpea hasta tres objetivos con el mismo ataque, aplicando las mejoras a todos (aproximado con área)."
+        - id: presionar_defensas
+          name: Presionar Defensas
+          rider: true
+          cost: {chi: 1}
+          on_hit:
+            - {kind: save, save: men, dc: "{{MOD}}",
+               on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+          text: "Rider de ataque (1 chi): el objetivo falla salvación Mental o Desventaja en su tiro defensivo (RAW es antes de atacar; aproximado como rider on_hit)."
+        - id: secuencia_punaladas
+          name: Secuencia de Puñaladas
+          rider: true
+          cost: {chi: 1}
+          extra_attacks: 1
+          text: "Rider de ataque (1 chi): segundo ataque contra el mismo objetivo como acción bonus, sin sus mejoras."
+    3:
+      abilities:
+        - id: salto_del_asesino
+          name: Salto del Asesino
+          rider: true
+          cost: {chi: 2}
+          damage_dice: 1
+          on_hit:
+            - {kind: apply_effect, effect: desventaja_defensiva}
+          text: "Rider de ataque cuerpo a cuerpo (2 chi): +1 dado de daño; el objetivo tiene Desventaja defendiéndose."
+        - id: golpe_penetrante
+          name: Golpe Penetrante
+          rider: true
+          cost: {chi: 2}
+          dtype: fuerza
+          text: "Rider de ataque (2 chi): trata los umbrales del objetivo como si fuera daño Fuerza (bypassa grupo)."
+      passives:
+        - {target: attack, key: apuntado_bonus, amount: 4,
+           text: "Apuntar Ataque sube a +4 a este Rango (era +2)."}
+      notes: "Velocidad Extrema (Esquiva simultánea a otro método + paso gratis al esquivar) ya cubierto por skilled_defense; el paso gratis no se modela (posicional)."
+
+# =========================================================== divinos.md
+
+guerrero_divino:
+  name: Guerrero Divino
+  source: ranks/divinos.md
+  ranks:
+    1:
+      abilities:
+        - id: azote_divino
+          name: Azote Divino
+          rider: true
+          divine_smite: true
+          cost: {chi: 1}
+          on_hit:
+            - {kind: damage, damage: "{{RANGO}}d{{DIE}}", dtype: "{{DIVINE_DTYPE}}"}
+          text: "Rider de ataque (1 chi): tu siguiente ataque provoca {{RANGO}}d{{DIE}} daño elemental adicional de un tipo asociado a tu dios, contado APARTE para umbrales."
+          notes: >
+            `divine_smite: true` tells build_gen to emit one sibling ATTACK per
+            damage type the character's god allows (build spec's `divine_dtypes`)
+            rather than a single rider -- the upgrade picker takes every
+            affordable upgrade unconditionally, so a genuine choice between
+            mutually exclusive dtypes has to live at the ability level.
+            The separate on_hit `damage` entry is what makes it divide by its
+            own umbral: resolver.py runs each on_hit damage node through its
+            own _apply_damage call.
+    2:
+      abilities:
+        - {id: guerrero_de_la_fe, name: Guerrero de la Fe, cost: {actions: 1}, targeting: self,
+           effects: [{kind: self_buff, effect: guerrero_de_la_fe, duration: 6}],
+           text: "Ventaja en ataque, defensa, magia divina y salvaciones de Voluntad/Mental durante 6 rondas."}
+        - id: azote_castigador
+          name: Azote Castigador
+          rider: true
+          cost: {chi: 1}
+          on_hit:
+            - {kind: save, save: vol, dc: "{{MOD}}",
+               on_fail: [{kind: apply_effect, effect: maldito}]}
+          text: "Rider de ataque (1 chi): al impactar, el objetivo falla salvación de Voluntad o queda maldito (aproximado con la condición genérica maldito)."
+        - {id: milagro_menor, name: Milagro Menor,
+           cost: {uses_per_combat: "{{RANGO+2}}", chi_when_exhausted: 1}, is_reaction: true,
+           is_reroll: true, reroll_scope: any, reroll_kinds: [attack, defense, save],
+           text: "Un aliado o enemigo repite un tiro y se queda con el resultado que más te convenga. Rango + 2 usos por combate."}
+    3:
+      abilities:
+        - id: aura_protectora
+          name: Aura Protectora
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_save_fail
+          targeting: self
+          effects: [{kind: note, text: "+10 a un tiro de salvación", save_bonus: 10}]
+          text: "Reacción (1 chi): al fallar una salvación, +10 al tiro (RAW la restringe a hechizos; aproximado como cualquier salvación, como en otros statblocks de este proyecto)."
+        - id: presencia_divina
+          name: Presencia Divina
+          cost: {actions: 1, chi: 2}
+          area: radio_medio
+          reach: media
+          tags: [divine, mental]
+          effects:
+            - {kind: save, save: vol, dc: "{{MOD}}",
+               on_fail: [{kind: apply_effect, effect: miedo_2, duration: 2}]}
+          text: >
+            Tus aliados reducen Miedo/Confusión/Desconcertado por 1, tus
+            enemigos fallan salvación de Voluntad o sufren Miedo II. La
+            reducción de aliados no se modela: "to: allies" no es un objetivo
+            real en el motor (solo "self" tiene manejo especial en
+            _resolve_recipients; cualquier otro valor cae de vuelta a la
+            lista de `targets` del ability, que para un área de enemigos sería
+            -- incorrectamente -- los propios enemigos). Solo se modela el
+            lado ofensivo hasta que exista un objetivo "todos los aliados".
+      passives:
+        - {target: umbral, key: magico, amount: "{{RANGO+1}}",
+           text: "Aura Protectora (pasiva): Resistencia a Magia igual a tu Rango + 1."}
+      notes: "Aprender 2 hechizos de Rango II del dios no es simulable genéricamente -- depende de qué dios."
+
+magia_divina:
+  name: Magia Divina
+  source: ranks/divinos.md
+  ranks:
+    1:
+      abilities:
+        - {id: milagro_menor, name: Milagro Menor,
+           cost: {uses_per_combat: "{{RANGO+2}}", chi_when_exhausted: 1}, is_reaction: true,
+           is_reroll: true, reroll_scope: any, reroll_kinds: [attack, defense, save],
+           text: "Un aliado o enemigo repite un tiro y se queda con el resultado que más te convenga. Rango + 2 usos por combate."}
+    2:
+      abilities:
+        - id: consagrar_la_tierra
+          name: Consagrar la Tierra
+          cost: {actions: 2, chi: 1}
+          targeting: self
+          tags: [divine]
+          effects:
+            # `consecrate` walks the battlefield's faith track one step; the
+            # buff itself is handed out by Resolver._sync_consecration to
+            # everyone of the holding faith, so it is NOT a self_buff.
+            - {kind: consecrate, dc: "{{MOD}}"}
+            # Stay channelling: contest_consecration re-rolls every round
+            # while the caster keeps focus.
+            - {kind: self_buff, effect: consagrando}
+          text: >
+            El campo de batalla queda consagrado a tu dios, otorgando a TI y a
+            todo adorador del mismo dios Ventaja en ataque, defensa y magia
+            divina. Si otro dios ya lo tiene consagrado, hacéis tiros
+            enfrentados y el éxito lo devuelve a neutral (reclamarlo cuesta un
+            segundo éxito). Mientras mantengas la concentración repites el
+            tiro cada ronda.
+      notes: "Manifestación Divina (limpiar/maldecir a distancia, efecto elegido por el DJ) no modelada -- necesita una decisión de arbitraje."
+
+# ======================================================== ascendencias.md
+
+ascendencia_primigenia:
+  name: Ascendencia Primigenia
+  source: ranks/ascendencias.md
+  ranks:
+    1:
+      abilities:
+        - {id: forma_de_la_bestia, name: Forma de la Bestia, cost: {actions: 1}, targeting: self,
+           effects: [{kind: self_buff, effect: forma_de_la_bestia, duration: 6}],
+           text: "Ventaja en tiros físicos y de Sabiduría, +Rango+1 a tus umbrales, durante 6 rondas."}
+    2:
+      passives:
+        - {target: stat, key: SAB, amount: 1,
+           text: "Aumenta tu estadística de Sabiduría por 1."}
+      abilities:
+        - id: fuerza_salvaje
+          name: Fuerza Salvaje
+          rider: true
+          natural_only: true
+          cost: {chi: 1}
+          damage_dice: 1
+          text: "Rider de ataque natural (1 chi): +1 dado de daño (o Enredar); cuenta como Mágico para Inmunidades."
+
+ascendencia_celestial:
+  name: Ascendencia Celestial
+  source: ranks/ascendencias.md
+  ranks:
+    1:
+      abilities:
+        - {id: canalizacion_celestial, name: Canalización Celestial, cost: {actions: 1},
+           targeting: self, effects: [{kind: self_buff, effect: canalizacion_celestial, duration: 6}],
+           text: "Ventaja en TODOS tus tiros (ataque, defensa, salvación, habilidad) durante 6 rondas."}
+      passives:
+        - {target: save, key: vol, amount: "advantage:1",
+           text: "Nacido de los Cielos: Ventaja en salvación de Voluntad."}
+        - {target: umbral, key: radiante, amount: "{{RANGO+1}}",
+           text: "Nacido de los Cielos: Resistencia igual a tu Rango + 1 al daño Radiante."}
+        - {target: umbral, key: fuego, amount: "{{RANGO+1}}",
+           text: "Nacido de los Cielos: Resistencia igual a tu Rango + 1 al daño Fuego."}
+    2:
+      passives:
+        - {target: stat, key: CAR, amount: 1,
+           text: "Aumenta tu estadística de Carisma por 1."}
+        - {target: immunity, key: fatiga_1,
+           text: "Fuerza Vital: Inmunidad a Fatigado al entrar en Canalización Celestial (modelado como permanente)."}
+        - {target: immunity, key: enfermado_1,
+           text: "Fuerza Vital: Inmunidad a Enfermado."}
+      abilities:
+        - {id: canalizacion_celestial, name: Canalización Celestial, cost: {actions: 1},
+           targeting: self, effects: [{kind: self_buff, effect: canalizacion_celestial_r2, duration: 6}],
+           text: "Como Rango I, y Fuerza Vital añade +Rango+1 a tus umbrales Físico y Mágico mientras dure."}
+
+ascendencia_abisal:
+  name: Ascendencia Abisal
+  source: ranks/ascendencias.md
+  ranks:
+    1:
+      abilities:
+        - {id: furia_abisal, name: Furia Abisal, cost: {actions: 1}, targeting: self,
+           effects: [{kind: self_buff, effect: despertar_abisal, duration: 6}],
+           text: "Ventaja en TODOS tus tiros (ataque, defensa, salvación, habilidad) durante 6 rondas."}
+      passives:
+        - {target: save, key: men, amount: "advantage:1",
+           text: "Tocado por la Locura: Ventaja en tiros de salvación Mentales."}
+        - {target: umbral, key: magico, amount: "{{RANGO+1}}",
+           text: "Tocado por la Locura: Resistencia Mágica igual a tu Rango + 1."}
+    2:
+      passives:
+        - {target: stat, key: CAR, amount: 1,
+           text: "Aumenta tu estadística de CAR por 1."}
+      abilities:
+        - id: mutacion
+          name: Mutación
+          rider: true
+          natural_only: true
+          cost: {chi: 1}
+          damage_dice: 1
+          text: "Rider de ataque natural (1 chi): +1 dado de daño base. Las otras opciones (movimiento especial, Resistencia elemental, Veneno) no son riders de daño y no se modelan."
+
+# ============================================================ arcanos.md
+
+evocacion:
+  name: Magia Evocación
+  source: ranks/arcanos.md
+  ranks:
+    1:
+      abilities:
+        - id: rayo_arcano
+          name: Rayo Arcano
+          cost: {actions: 1}
+          reach: media
+          tags: [spell, mental]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "1d{{DIE}}+{{INT}}", dtype: fuerza}]
+          upgrades:
+            - {id: rayo_potenciado, name: Rayo Potenciado, cost: {chi: 1}, damage_dice: 1}
+          text: "Distancia media, 1d6 + INT daño Fuerza. (1 chi) Añade un dado de daño adicional."
+        - id: descarga_energia
+          name: Descarga de Energía
+          cost: {actions: 2, chi: 1}
+          reach: media
+          area: cono_pequeno
+          tags: [spell, mental]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "2d{{DIE}}+{{INT}}", dtype: fuerza}]
+          upgrades:
+            - {id: descarga_ampliada, name: Descarga Ampliada, cost: {chi: 1}, damage_dice: 1}
+          text: "Cono pequeño, 2d6 + INT daño Fuerza. (1 chi) Aumenta el tamaño y un dado de daño."
+        - id: transformacion_elemental
+          name: Transformación Elemental
+          elemental_swap: true
+          cost: {chi: 1}
+          text: "Cambias el tipo de daño de uno de tus hechizos a otro tipo mágico de tu elección, cediendo el bypass universal de Fuerza a cambio de explotar una debilidad puntual."
+          notes: >
+            `elemental_swap: true` tells build_gen to emit sibling copies of
+            every Evocación attack, one per swappable dtype, for the same
+            mutually-exclusive-choice reason as Azote Divino.
+    2:
+      abilities:
+        - id: muro_de_energia
+          name: Muro de Energía
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_damaged
+          targeting: self
+          effects:
+            - kind: wall
+              amount: "{{RANGO*3}}"
+              duration: 3
+              to: self
+              name: Muro de Energía
+              protects_allies: true
+              retaliate: {save: fis, dc: "{{MOD}}", damage: "1d{{DIE}}+{{CAR}}", dtype: fuego}
+          text: "Crea un muro que absorbe Rango x 3 puntos de daño; los atacantes cuerpo a cuerpo fallan salvación Físico o sufren 1d6 + CAR daño Fuego."
+        - id: metamagia
+          name: Metamagia
+          metamagic: true
+          cost: {chi: 1}
+          text: "Mejora un hechizo: +1 paso de alcance, +1 paso de área, +1 dado de daño, o relanzarlo como acción bonus. Acumulable con el Empoderar del hechizo."
+          notes: >
+            `metamagic: true` tells build_gen to attach the damage / area /
+            recast variants as extra upgrades on every Evocación attack.
+
+magia_espacial:
+  name: Magia Espacial
+  source: ranks/arcanos.md
+  ranks:
+    1:
+      abilities:
+        - {id: redirigir_ataque, name: Redirigir Ataque, cost: {reactions: 1, chi: 1},
+           is_reaction: true, trigger: on_miss, effects: [{kind: redirect_miss}],
+           text: "Redirige un ataque fallido hacia otro objetivo o repite el tuyo."}
+        - {id: salto_espacial, name: Salto Espacial, cost: {reactions: 1, chi: 1},
+           is_reaction: true, trigger: on_defend, targeting: self,
+           effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}],
+           text: "Suma +10 a un tiro defensivo y te teletransportas un paso sin provocar aperturas."}
+      notes: "Bolsillo Interdimensional es utilidad fuera de combate."
+    2:
+      abilities: []
+      notes: "ranks/arcanos.md no define todavía un Rango II para Magia Espacial."
+
+magia_protectora:
+  name: Magia Protectora
+  source: ranks/arcanos.md
+  ranks:
+    1:
+      abilities:
+        - id: armadura_arcana
+          name: Armadura Arcana
+          cost: {actions: 1, chi: 1}
+          targeting: ally
+          reach: toque
+          tags: [spell]
+          effects:
+            # Physical AND magical thresholds, permanent for the fight, and
+            # castable on an ally -- `duration: combat` is what makes it stick.
+            # Named effect id so re-casting refreshes rather than stacks
+            # (add_effect dedupes by id) -- "Este hechizo no es acumulable".
+            - {kind: umbral_boost, effect: armadura_arcana, name: Armadura Arcana,
+               amount: "{{RANGO*2}}", duration: combat, to: target,
+               dtypes: [fisico, magico]}
+          text: "Toque, aumenta los umbrales Físico y Mágico del objetivo por Rango x 2 durante el resto del combate. No es acumulable consigo mismo."
+      notes: >
+        Contrahechizo (contrarrestar un hechizo en vuelo) y Disrupción Arcana
+        (deshabilitar un objeto mágico) necesitan interrupciones dirigidas a
+        efectos concretos que el motor no expone.
+    2:
+      abilities: []
+      notes: "ranks/arcanos.md no define todavía un Rango II para Magia Protectora."
+
+magia_temporal:
+  name: Magia Temporal
+  source: ranks/arcanos.md
+  ranks:
+    1:
+      abilities:
+        - {id: premonicion, name: Premonición,
+           cost: {uses_per_combat: "{{RANGO+2}}", chi_when_exhausted: 1}, is_reaction: true,
+           is_reroll: true, reroll_scope: self, reroll_kinds: [attack, defense, save],
+           text: "Repite un tiro y quédate con el mejor. Rango + 2 usos por combate."}
+        - {id: reparacion_rapida, name: Reparación Rápida, cost: {actions: 1, chi: 1},
+           targeting: ally, reach: media, tags: [heal],
+           effects: [{kind: heal, amount: 1, to: target}, {kind: cleanse, to: target}],
+           text: "Cercano, un objetivo recupera un impacto o se cura de un efecto de estado."}
+        - id: robar_el_tiempo
+          name: Robar el Tiempo
+          cost: {actions: 1, chi: 1}
+          reach: toque
+          tags: [spell, mental]
+          effects:
+            - kind: save
+              save: vol
+              dc: "{{MOD}}"
+              on_fail:
+                - {kind: damage, damage: "1d{{DIE}}+{{INT}}", dtype: fuerza}
+                - {kind: apply_effect, effect: fatiga_1, duration: 1}
+          text: "Toque, el afectado falla Voluntad o sufre 1d6 + INT daño Fuerza y Fatiga I esta ronda."
+    2:
+      abilities: []
+      notes: "ranks/arcanos.md no define todavía un Rango II para Magia Temporal."
+
+magia_transmutacion:
+  name: Magia Transmutación
+  source: ranks/arcanos.md
+  ranks:
+    1:
+      abilities:
+        - {id: reparar_la_carne, name: Reparar la Carne, cost: {actions: 1, chi: 1},
+           targeting: ally, reach: adyacente, tags: [heal],
+           effects: [{kind: heal, amount: 1, to: target}, {kind: cleanse, to: target}],
+           text: "Adyacente, cura un impacto al objetivo o elimina un efecto de estado."}
+        - id: transmutacion_forzada
+          name: Transmutación Forzada
+          cost: {actions: 1, chi: 1}
+          reach: adyacente
+          tags: [spell, mental]
+          effects:
+            - kind: save
+              save: vol
+              dc: "{{MOD}}"
+              on_fail:
+                - {kind: damage, damage: "1d{{DIE}}+{{INT}}", dtype: fuerza}
+                - {kind: apply_effect, effect: herido_1, duration: 3}
+          text: "Toque, el afectado falla Voluntad o sufre 1d6 + INT daño Fuerza y Herido I."
+      notes: "Inyección Transmutadora otorga sentidos/movimientos especiales -- sin efecto de combate simulable."
+    2:
+      abilities:
+        - id: resistencia_adaptiva
+          name: Resistencia Adaptiva
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_damaged
+          targeting: self
+          effects:
+            - {kind: umbral_boost, amount: "{{RANGO*2}}", duration: 1, to: self,
+               tags: [consume_on_umbral]}
+          text: "Aumenta tu umbral contra un tipo de daño específico por Rango x 2 (modelado como todos los umbrales contra el siguiente ataque)."
+        - id: absorber_esencia
+          name: Absorber Esencia
+          cost: {actions: 1, chi: 1}
+          reach: adyacente
+          tags: [spell, mental]
+          effects:
+            - kind: save
+              save: vol
+              dc: "{{MOD}}"
+              on_fail:
+                - {kind: damage, damage: "2d{{DIE}}+{{INT}}", dtype: fuerza}
+                - {kind: heal, amount: 1, to: self}
+          text: "Toque, el afectado falla Voluntad o sufre 2d6 + INT daño Fuerza; si le provocas un impacto te curas uno."
+
+# ====================================================== elementalismos.md
+
+magia_fuego:
+  name: Magia Fuego
+  source: ranks/elementalismos.md
+  ranks:
+    1:
+      passives:
+        - {target: umbral, key: fuego, amount: "{{RANGO+1}}",
+           text: "Fuego Interno: Resistencia igual a tu Rango + 1 al daño Fuego."}
+        - {target: umbral, key: frio, amount: "{{RANGO+1}}",
+           text: "Fuego Interno: Resistencia igual a tu Rango + 1 al daño Frío."}
+      abilities:
+        - id: llamarada
+          name: Llamarada
+          cost: {actions: 1}
+          reach: media
+          tags: [spell, mental, fire]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "1d{{DIE}}+{{CAR}}", dtype: fuego}]
+          upgrades:
+            - {id: llamarada_potenciada, name: Llamarada Potenciada, cost: {actions: 1}, damage_dice: 1}
+          text: "Distancia media, 1d6 + CAR daño Fuego. Puedes gastar una Acción para +1d6."
+        - id: aliento_de_fuego
+          name: Aliento de Fuego
+          cost: {actions: 2, chi: 1}
+          area: cono_pequeno
+          tags: [spell, mental, fire]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "2d{{DIE}}+{{CAR}}", dtype: fuego}]
+          upgrades:
+            - {id: aliento_potenciado, name: Aliento Potenciado, cost: {chi: 1}, damage_dice: 1}
+          text: "Cono pequeño, 2d6 + CAR daño Fuego. (1 chi) +1 dado de daño y área."
+    2:
+      abilities:
+        - id: bola_de_fuego
+          name: Bola de Fuego
+          cost: {actions: 1, chi: 1}
+          reach: media
+          area: radio_pequeno
+          tags: [spell, mental, fire]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "1d{{DIE}}+{{CAR}}", dtype: fuego}]
+          upgrades:
+            - {id: bola_potenciada, name: Bola de Fuego Potenciada, cost: {actions: 1}, damage_dice: 1}
+          text: "Distancia media, radio pequeño, 1d6 + CAR daño Fuego."
+        - id: muro_de_fuego
+          name: Muro de Fuego
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_damaged
+          targeting: self
+          effects:
+            - kind: wall
+              amount: "{{RANGO*3}}"
+              duration: 3
+              to: self
+              name: Muro de Fuego
+              protects_allies: true
+              retaliate: {save: fis, dc: "{{MOD}}", damage: "1d{{DIE}}+{{CAR}}", dtype: fuego}
+          text: "Crea un muro que absorbe Rango x 3 puntos de daño; los atacantes cuerpo a cuerpo fallan salvación Físico o sufren 1d6 + CAR daño Fuego."
+
+magia_acido:
+  name: Magia Ácido
+  source: ranks/elementalismos.md
+  ranks:
+    1:
+      passives:
+        - {target: umbral, key: acido, amount: "{{RANGO+1}}",
+           text: "Hijo del Pantano: Resistencia igual a tu Rango + 1 al daño Ácido."}
+        - {target: umbral, key: necrotico, amount: "{{RANGO+1}}",
+           text: "Hijo del Pantano: Resistencia igual a tu Rango + 1 al daño Necrótico."}
+      abilities:
+        - id: escupitajo_acido
+          name: Escupitajo Ácido
+          cost: {actions: 1}
+          reach: media
+          tags: [spell, mental, acid]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "1d{{DIE}}+{{CAR}}", dtype: acido}]
+          text: "Distancia media, 1d6 + CAR daño Ácido y Roto I a la armadura (rotura no modelada)."
+        - id: aliento_toxico
+          name: Aliento Tóxico
+          cost: {actions: 2, chi: 1}
+          area: cono_pequeno
+          tags: [spell, mental, acid]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "2d{{DIE}}+{{CAR}}", dtype: acido}]
+          upgrades:
+            - {id: aliento_toxico_potenciado, name: Aliento Tóxico Potenciado, cost: {chi: 1}, damage_dice: 1}
+          text: "Cono pequeño, 2d6 + CAR daño Ácido. (1 chi) +1 dado de daño y área."
+    2:
+      abilities: []
+      notes: "ranks/elementalismos.md no define todavía un Rango II para Magia Ácido."
+
+magia_naturaleza:
+  name: Magia Naturaleza
+  source: ranks/elementalismos.md
+  ranks:
+    1:
+      abilities:
+        - id: enmaranar
+          name: Enmarañar
+          cost: {actions: 1}
+          reach: media
+          tags: [spell, nature, wisdom, mental]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: apply_effect, effect: enredado, duration: 2}]
+          text: "Distancia media, el objetivo queda Enredado hasta que escape."
+        - id: espinas_de_madera
+          name: Espinas de Madera
+          cost: {actions: 1}
+          reach: media
+          tags: [spell, nature, wisdom, mental]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit:
+                - {kind: damage, damage: "1d{{DIE}}+{{SAB}}", dtype: perforante,
+                   dtype_if: {effect: enredado, dtype: fuerza}}
+          upgrades:
+            - {id: espinas_potenciadas, name: Espinas Potenciadas, cost: {chi: 1}, damage_dice: 1}
+          text: "Distancia media, 1d6 + SAB daño Perforante; cuenta como Fuerza contra un objetivo Enredado."
+        - {id: pulso_vital, name: Pulso Vital, cost: {actions: 1, chi: 1}, targeting: ally,
+           reach: media, tags: [divine, heal], effects: [{kind: heal, amount: 1, to: target}],
+           text: "Un objetivo a distancia media recupera un impacto o se cura de un efecto de estado."}
+    2:
+      abilities:
+        - id: raices_devoradoras
+          name: Raíces Devoradoras
+          cost: {actions: 2, chi: 1}
+          reach: media
+          area: radio_medio
+          tags: [spell, nature, wisdom, mental]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit:
+                - {kind: damage, damage: "2d{{DIE}}+{{SAB}}", dtype: contundente}
+                - {kind: apply_effect, effect: enredado, duration: 2}
+          text: "Distancia media, cilindro medio (aproximado con radio), 2d6 + SAB daño Contundente y Enredados."
+        - id: muro_de_zarzas
+          name: Muro de Zarzas
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_damaged
+          targeting: self
+          effects:
+            - kind: wall
+              amount: "{{RANGO*3}}"
+              duration: 3
+              to: self
+              name: Muro de Zarzas
+              protects_allies: true
+              retaliate: {save: fis, dc: "{{MOD}}", damage: "2d{{DIE}}+{{SAB}}", dtype: perforante,
+                          effect: enredado, effect_duration: 2}
+          text: "Crea un muro que absorbe Rango x 3 puntos de daño; los atacantes cuerpo a cuerpo fallan Físico o sufren 2d6 + SAB Perforante y quedan Enredados."
+
+magia_tierra:
+  name: Magia Tierra
+  source: ranks/elementalismos.md
+  ranks:
+    1:
+      passives:
+        - {target: umbral, key: fisico, amount: "{{RANGO+1}}",
+           text: "Vínculo con la Tierra: Resistencia igual a tu Rango + 1 al daño Físico."}
+      abilities:
+        - id: pedrada
+          name: Pedrada
+          cost: {actions: 1}
+          reach: media
+          tags: [spell, nature, wisdom, mental]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "2d{{DIE}}+{{SAB}}", dtype: contundente}]
+          upgrades:
+            - {id: pedrada_potenciada, name: Pedrada Potenciada, cost: {chi: 1}, damage_dice: 1, area: radio_pequeno}
+          text: "Distancia media, 2d6 + SAB daño Contundente. (1 chi) +1 paso de área y +1 dado."
+        - id: terratemblor
+          name: Terratemblor
+          cost: {actions: 2, chi: 1}
+          area: radio_corto
+          tags: [spell, nature, wisdom, mental]
+          effects:
+            - kind: save
+              save: fis
+              dc: "{{MOD}}"
+              on_fail:
+                - {kind: damage, damage: "3d{{DIE}}+{{SAB}}", dtype: contundente}
+                - {kind: apply_effect, effect: desconcertado, duration: 1}
+          text: "Radio corto, los objetivos fallan Físico o sufren 3d6 + SAB Contundente, Empujados y Desconcertados una ronda."
+    2:
+      abilities:
+        - id: abrazo_de_la_tierra
+          name: Abrazo de la Tierra
+          cost: {actions: 1, chi: 1}
+          reach: media
+          tags: [spell, nature, wisdom, mental]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit:
+                - {kind: damage, damage: "2d{{DIE}}+{{SAB}}", dtype: contundente}
+                - {kind: apply_effect, effect: enredado, duration: 2}
+          text: "Distancia media, 2d6 + SAB daño Contundente y el objetivo queda Enredado."
+        - id: muro_de_piedra
+          name: Muro de Piedra
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_damaged
+          targeting: self
+          effects:
+            - kind: wall
+              amount: "{{RANGO*6}}"
+              duration: 3
+              to: self
+              name: Muro de Piedra
+              protects_allies: true
+          text: "Crea un muro que absorbe Rango x 6 puntos de daño. La rotura de armas no-mágicas no está modelada."
+
+magia_tormenta:
+  name: Magia Tormenta
+  source: ranks/elementalismos.md
+  ranks:
+    1:
+      passives:
+        - {target: umbral, key: electrico, amount: "{{RANGO+1}}",
+           text: "Alma de la Tormenta: Resistencia igual a tu Rango + 1 al daño Eléctrico."}
+        - {target: umbral, key: sonico, amount: "{{RANGO+1}}",
+           text: "Alma de la Tormenta: Resistencia igual a tu Rango + 1 al daño Sónico."}
+      abilities:
+        - id: arco_electrico
+          name: Arco Eléctrico
+          cost: {actions: 1}
+          reach: media
+          tags: [spell, mental, storm]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "1d{{DIE}}+{{max(SAB,CAR)}}", dtype: electrico}]
+          text: "Distancia media, 1d6 + SAB/CAR daño Eléctrico."
+        - id: onda_trueno
+          name: Onda Trueno
+          cost: {actions: 2, chi: 1}
+          area: radio_corto
+          tags: [spell, mental, storm]
+          effects:
+            - kind: save
+              save: vol
+              dc: "{{MOD}}"
+              on_fail:
+                - {kind: damage, damage: "1d{{DIE}}+{{max(SAB,CAR)}}", dtype: sonico}
+                - {kind: apply_effect, effect: desconcertado, duration: 1}
+          text: "Radio corto, los objetivos fallan Voluntad o sufren 1d6 + SAB/CAR daño Sónico y quedan Desconcertados una ronda."
+    2:
+      abilities:
+        - id: relampago
+          name: Relámpago
+          cost: {actions: 1, chi: 1}
+          reach: media
+          area: radio_pequeno
+          tags: [spell, mental, storm]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "2d{{DIE}}+{{max(SAB,CAR)}}", dtype: electrico}]
+          text: "Línea media (aproximada con radio pequeño), 2d6 + SAB/CAR daño Eléctrico."
+        - id: barrera_electrica
+          name: Barrera Eléctrica
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_damaged
+          targeting: self
+          effects:
+            - kind: wall
+              amount: "{{RANGO*3}}"
+              duration: 3
+              to: self
+              name: Barrera Eléctrica
+              protects_allies: true
+              retaliate: {save: fis, dc: "{{MOD}}", damage: "1d{{DIE}}+{{CAR}}", dtype: electrico}
+          text: "Crea un muro que absorbe Rango x 3 puntos de daño; los atacantes cuerpo a cuerpo fallan Físico o sufren 1d6 + CAR daño Eléctrico."
+
+# ========================================================== ocultismos.md
+
+magia_vida:
+  name: Magia Vida
+  source: ranks/ocultismos.md
+  ranks:
+    1:
+      abilities:
+        - id: rayo_luminoso
+          name: Rayo Luminoso
+          cost: {actions: 1}
+          reach: media
+          tags: [spell, divine, mental]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "1d{{DIE}}+{{max(SAB,CAR)}}", dtype: radiante}]
+          upgrades:
+            - {id: rayo_potenciado, name: Rayo Potenciado, cost: {chi: 1}, damage_dice: 1}
+          text: "Distancia media, 1d6 + SAB/CAR daño Radiante. (1 chi) Añade un dado de daño adicional."
+        - {id: toque_sanador, name: Toque Sanador, cost: {actions: 1, chi: 1},
+           targeting: ally, reach: toque, tags: [divine, heal],
+           effects: [{kind: heal, amount: 1, to: target}],
+           text: "Toque, cura un impacto a un aliado adyacente."}
+        - id: halo_luminoso
+          name: Halo Luminoso
+          cost: {actions: 1, chi: 1}
+          area: radio_corto
+          tags: [spell, divine, mental]
+          effects:
+            - kind: save
+              save: vol
+              dc: "{{MOD}}"
+              on_fail:
+                - {kind: damage, damage: "1d{{DIE}}+{{max(SAB,CAR)}}", dtype: radiante}
+                - {kind: apply_effect, effect: cegado, duration: 1}
+          text: "Radio corto, los objetivos fallan Voluntad o sufren 1d6 + SAB/CAR daño Radiante y quedan Cegados una ronda."
+    2:
+      abilities:
+        - id: muro_luminoso
+          name: Muro Luminoso
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_damaged
+          targeting: self
+          effects:
+            - {kind: umbral_boost, amount: "{{RANGO*2}}", duration: 1, to: self,
+               tags: [consume_on_umbral]}
+            - kind: wall
+              amount: 0
+              duration: 1
+              to: self
+              name: Muro Luminoso
+              retaliate: {save: vol, dc: "{{MOD}}", damage: "1d{{DIE}}+{{max(SAB,CAR)}}",
+                          dtype: radiante, effect: cegado, effect_duration: 1}
+          text: "Aumenta todos tus umbrales por Rango x 2; los atacantes cuerpo a cuerpo fallan Voluntad o sufren 1d6 + SAB/CAR Radiante y quedan Cegados."
+      notes: "Vínculo Vital (compartir impactos con un aliado) necesita un enlace entre combatientes que el motor no modela."
+
+nigromancia:
+  name: Nigromancia
+  source: ranks/ocultismos.md
+  ranks:
+    1:
+      passives:
+        - {target: umbral, key: necrotico, amount: "{{RANGO+1}}",
+           text: "Aspecto de No-Muerto: Resistencia igual a tu Rango + 1 al daño Necrótico."}
+        - {target: umbral, key: frio, amount: "{{RANGO+1}}",
+           text: "Aspecto de No-Muerto: Resistencia igual a tu Rango + 1 al daño Frío."}
+      abilities:
+        - id: rayo_energia_negativa
+          name: Rayo de Energía Negativa
+          cost: {actions: 1}
+          reach: media
+          tags: [spell, mental]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "1d{{DIE}}+{{max(INT,CAR)}}", dtype: necrotico}]
+          upgrades:
+            - {id: rayo_negativo_potenciado, name: Rayo Potenciado, cost: {chi: 1}, damage_dice: 1}
+          text: "Distancia media, 1d6 + INT/CAR daño Necrótico que no puede curarse (la prohibición de curación no está modelada)."
+        - id: drenar_vida
+          name: Drenar Vida
+          cost: {actions: 1, chi: 1}
+          reach: adyacente
+          tags: [spell, mental]
+          effects:
+            - kind: save
+              save: vol
+              dc: "{{MOD}}"
+              on_fail:
+                - {kind: damage, damage: "1d{{DIE}}+{{max(INT,CAR)}}", dtype: necrotico}
+                - {kind: heal, amount: 1, to: self}
+          text: "Adyacente, el objetivo falla Voluntad o sufre 1d6 + INT/CAR daño Necrótico; si le provocas un impacto te curas uno."
+    2:
+      abilities:
+        - id: animar_no_muerto
+          name: Animar No-Muerto
+          cost: {actions: 2, chi: 1}
+          targeting: self
+          effects:
+            - {kind: summon, statblock: acolito_secta, amount: 1}
+          text: "Distancia media, anima un cadáver como un Zombi o Esqueleto de nivel 2. Se usa acolito_secta como stand-in de nivel 2 hasta que existan statblocks de no-muertos."
+      notes: "Vínculo Parasítico (transferir impactos recibidos) necesita un enlace entre combatientes que el motor no modela."
+
+magia_mental:
+  name: Magia Mental
+  source: ranks/ocultismos.md
+  ranks:
+    1:
+      passives:
+        - {target: save, key: men, amount: "advantage:1",
+           text: "Escudo Mental: Ventaja en tus tiros de salvación Mentales."}
+      abilities:
+        - id: asalto_psiquico
+          name: Asalto Psíquico
+          cost: {actions: 1, chi: 1}
+          reach: media
+          tags: [spell, mental]
+          effects:
+            - kind: save
+              save: men
+              dc: "{{MOD}}"
+              on_fail:
+                - {kind: damage, damage: "1d{{DIE}}+{{max(INT,CAR)}}", dtype: psiquico}
+                - {kind: apply_effect, effect: desconcertado, duration: 1}
+          text: "Distancia media, el afectado falla Mental o queda Desconcertado y sufre 1d8 + INT/CAR daño Psíquico."
+      notes: "Leer Pensamientos no tiene efecto de combate."
+    2:
+      abilities:
+        - id: alterar_emociones
+          name: Alterar Emociones
+          cost: {actions: 1, chi: 1}
+          area: radio_pequeno
+          reach: media
+          tags: [spell, mental]
+          effects:
+            - {kind: save, save: men, dc: "{{MOD}}",
+               on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]}
+          text: "Radio pequeño, los afectados fallan Mental o reciben Miedo I / Confusión I / Fatiga I a tu elección. Se modela Miedo I."
+        - id: precognicion
+          name: Precognición
+          cost: {chi: 1}
+          targeting: self
+          effects:
+            - {kind: self_buff, effect: apuntado}
+          text: "Antes de un tiro contra un objetivo, este falla salvación Mental o recibes +Rango+2 al tiro. Aproximado con el buff genérico apuntado (+2)."
+      notes: "Sugestión (ordenar una acción concreta) necesita control del bot enemigo."
+
+magia_ilusoria:
+  name: Magia Ilusoria
+  source: ranks/ocultismos.md
+  ranks:
+    1:
+      abilities:
+        - id: distraccion_ilusoria
+          name: Distracción Ilusoria
+          cost: {actions: 1, chi: 1}
+          area: radio_pequeno
+          reach: media
+          tags: [spell, mental, illusion]
+          effects:
+            - {kind: save, save: men, dc: "{{MOD}}",
+               on_fail: [{kind: apply_effect, effect: desconcertado, duration: 1}]}
+          text: "Radio pequeño, los objetivos fallan Mental o quedan Desconcertados durante una ronda."
+      notes: "Crear Ilusión e Imagen Fantasmal necesitan una capa de ficción que el motor no tiene."
+    2:
+      abilities:
+        - id: asalto_fantasmal
+          name: Asalto Fantasmal
+          cost: {actions: 1, chi: 1}
+          reach: media
+          tags: [spell, mental, illusion]
+          effects:
+            - kind: save
+              save: men
+              dc: "{{MOD}}"
+              on_fail:
+                - {kind: damage, damage: "1d{{DIE}}+{{INT}}", dtype: fuerza}
+                - {kind: apply_effect, effect: enredado, duration: 2}
+          text: "Distancia media, el objetivo falla Mental o percibe ilusiones: Confundido, Enredado o 1d6 + INT daño Fuerza. Se modelan daño + Enredado."
+      notes: >
+        Invisibilidad y Engaño Ilusorio (fallo automático de un tiro enemigo)
+        necesitan visibilidad e interrupción de tiros en vuelo.
+
+magia_sombria:
+  name: Magia Sombría
+  source: ranks/ocultismos.md
+  ranks:
+    1:
+      abilities:
+        - id: tajo_de_oscuridad
+          name: Tajo de Oscuridad
+          cost: {actions: 1}
+          reach: media
+          tags: [spell, mental, shadow]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "1d{{DIE}}+{{CAR}}", dtype: frio}]
+          upgrades:
+            - {id: tajo_ampliado, name: Tajo Ampliado, cost: {chi: 1}, area: radio_pequeno}
+          text: "Distancia media, 1d6 + CAR daño Frío que no puede curarse (la prohibición de curación no está modelada)."
+      notes: "Sigilo Sombrío y Crear Oscuridad dependen de iluminación y ocultamiento, que el motor no modela."
+    2:
+      abilities:
+        - id: bola_sombra
+          name: Bola Sombra
+          cost: {actions: 1, chi: 1}
+          reach: media
+          area: radio_corto
+          tags: [spell, mental, shadow]
+          effects:
+            - kind: attack
+              attack_roll: "{{MOD}}"
+              on_hit: [{kind: damage, damage: "2d{{DIE}}+{{CAR}}", dtype: frio}]
+          upgrades:
+            - {id: bola_sombra_potenciada, name: Bola Sombra Potenciada, cost: {chi: 1}, damage_dice: 1}
+          text: "Distancia media, radio corto, 2d6 + CAR daño Frío."
+        - id: salto_sombrio
+          name: Salto Sombrío
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_defend
+          targeting: self
+          effects:
+            - {kind: note, text: "+10 defensivo (evita el ataque)", defense_bonus: 10}
+          text: "Evita automáticamente un ataque y te teletransportas a una zona a oscuras. Aproximado con +10 defensivo (el motor no modela la evasión automática ni la oscuridad)."

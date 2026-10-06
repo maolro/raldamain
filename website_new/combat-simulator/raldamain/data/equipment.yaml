@@ -1,0 +1,91 @@
+# Equipment catalog (source: equipment/equipamiento.md, "Básico").
+#
+# PE = Puntos de Equipo.  A character's PE budget is generally equal to
+# their level (base-info.md convention, per design discussion).  Weapons are
+# already baked directly into each build's attack abilities (0 PE), so the
+# budget in practice is spent on armor and consumables.
+#
+# `armor` entries add straight to umbrales (requires the listed stat to
+# wear).  `consumable` entries are ability templates: a class ability like
+# Siempre Preparado grants access to them by reference (see cazador_2.yaml /
+# cazador_5.yaml's siempre_preparado_* abilities), rather than every carried
+# consumable being separately authored per character.
+
+armor:
+  pechera:
+    name: Pechera
+    pe: 0
+    umbral: {fisico: 2}
+    requires: {FUE: 2}
+  armadura_pesada:
+    name: Armadura Pesada
+    pe: 0
+    umbral: {fisico: 4}
+    requires: {FUE: 4}
+  armadura_completa:
+    name: Armadura Completa
+    pe: 1
+    umbral: {fisico: 6}
+    requires: {FUE: 6}
+
+weapons:
+  espada_corta: {name: Espada Corta, pe: 0, actions: 1, reach: adyacente, damage: "1d6", stat: [FUE, DES], dtype: cortante}
+  garrote: {name: Garrote, pe: 0, actions: 1, reach: adyacente, damage: "1d6", stat: [FUE, DES], dtype: contundente}
+  daga: {name: Daga, pe: 0, actions: 1, reach: media, damage: "1d6", stat: [DES], dtype: perforante}
+  arco_largo: {name: Arco Largo, pe: 0, actions: 2, reach: lejana, damage: "2d6", stat: [DES], dtype: perforante, no_parada: true}
+  espada_larga: {name: Espada Larga, pe: 0, actions: 2, reach: adyacente, damage: "2d6", stat: [FUE], dtype: cortante}
+  gran_hacha: {name: Gran Hacha, pe: 0, actions: 2, reach: adyacente, damage: "3d6", stat: [FUE], dtype: cortante, desventaja_defensiva: true}
+  gran_martillo: {name: Gran Martillo, pe: 0, actions: 2, reach: adyacente, damage: "3d6", stat: [FUE], dtype: contundente, desventaja_defensiva: true}
+  cadena: {name: Cadena, pe: 1, actions: 1, reach: corta, damage: "1d6", stat: [FUE, DES], dtype: contundente, control_option: enredado}
+
+# Consumables the Cazador's Siempre Preparado (1 Acción, 1 chi -- "obtienes
+# de inmediato un objeto consumible de coste 1") can pull out on the spot.
+# Modelled as full ability templates so Siempre Preparado just grants access
+# to them; a character who actually *carries* one of these under their own
+# PE budget would use the same template without the Siempre Preparado tax.
+consumables:
+  cadena:
+    name: Cadena
+    pe: 1
+    actions: 1
+    reach: corta
+    tags: [weapon, physical]
+    effect: {kind: attack, damage: "1d6", dtype: contundente}
+    notes: >
+      "En lugar de hacer daño, puede escoger Enredar al objetivo" -- the
+      control option (apply enredado instead of damage) is not modelled;
+      this always resolves as the damage option.
+  bomba:
+    name: Bomba
+    pe: 1
+    actions: 1
+    reach: media
+    area: radio_corto
+    tags: [weapon, physical]
+    effect: {kind: attack, damage: "2d6", dtype: fuego}
+    notes: "Element is player-chosen at use time; defaulted to fuego for the sim."
+  bomba_de_humo:
+    name: Bomba de Humo
+    pe: 1
+    actions: 1
+    reach: media
+    area: radio_corto
+    tags: [physical]
+    effect: {kind: save, save: fis, on_fail: [{kind: apply_effect, effect: cegado, duration: 1}]}
+  pocion_de_sanacion:
+    name: Poción de Sanación
+    pe: 1
+    actions: 1
+    targeting: self
+    tags: [heal]
+    effect: {kind: heal, amount: 1, cleanse: true}
+
+alchemicals_not_modelled:
+  mutageno_cognatogeno:
+    name: Mutágeno / Cognatógeno
+    pe: 2
+    notes: >
+      Grants Ventaja on Físico or Mental rolls for 6 rounds, does not stack
+      with Ira/Mente Desencadenada, causes fatigue on end and risks
+      addiction on overuse -- not modelled; mechanically redundant with
+      those buffs while the sim has no addiction/long-term-cost tracking.

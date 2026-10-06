@@ -1,0 +1,1050 @@
+# monsters/aventureros.md -- rival adventurers, all niv 5 Minibosses.
+#
+# These are the closest thing in the bestiary to "a party fights a party", so
+# they are the fairest test of whether the Miniboss role is tuned: they use the
+# same shapes the PCs do rather than monster-only tricks.
+
+  - id: espia
+    name: Espía
+    source: monsters/aventureros.md
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 8}
+    saves: {fis: "7+2d6", vol: "4", men: "7"}
+    initiative: "7"
+    preferred_row: back
+    actions: 3
+    reactions: 2
+    defense: esquiva
+    abilities:
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "1d6+7"}
+      - id: punalada_debilitante
+        name: Puñalada Debilitante
+        cost: {actions: 1}
+        reach: adyacente
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+9"
+            on_hit:
+              - {kind: damage, damage: "3d6+5", dtype: perforante}
+              - {kind: apply_effect, effect: herido_1, duration: 3}
+      - id: secuencia_de_ataques
+        name: Secuencia de Ataques
+        cost: {actions: 2}
+        reach: media
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: perforante}]
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: perforante}]
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: perforante}]
+      - id: dardo_venenoso
+        name: Dardo Venenoso
+        cost: {actions: 1}
+        reach: media
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit:
+              - {kind: damage, damage: "3d6+5", dtype: perforante}
+              - kind: save
+                save: vol
+                dc: "10"
+                on_fail: [{kind: apply_effect, effect: enfermado_1, duration: 3}]
+      - id: bomba_de_fuego
+        name: Bomba de Fuego
+        cost: {actions: 2}
+        reach: media
+        area: radio_corto
+        tags: [weapon]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "3d6+5", dtype: fuego}]
+      - id: presionar_defensas
+        name: Presionar Defensas
+        cost: {actions: 1}
+        reach: media
+        tags: [mental]
+        effects:
+          - {kind: self_buff, effect: apuntado}
+          - kind: save
+            save: men
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+      - id: evasion
+        name: Evasión
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects: [{kind: note, text: "+10 a Esquiva", defense_bonus: 10}]
+      - id: bomba_de_humo
+        name: Bomba de Humo
+        cost: {actions: 2}
+        implemented: false
+        notes: Concealment and hiding need battlefield state the sim lacks.
+      - id: acechar
+        name: Acechar
+        cost: {reactions: 1}
+        is_reaction: true
+        implemented: false
+        notes: Stealth needs cover/concealment state.
+
+  - id: mago_aprendiz
+    name: Mago Aprendiz
+    source: monsters/aventureros.md
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 8, magico: 8}
+    saves: {fis: "4", vol: "7", men: "7+2d6"}
+    initiative: "4"
+    preferred_row: back
+    actions: 3
+    reactions: 2
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [mental], roll: "1d6+7"}
+      - id: rayo_arcano
+        name: Rayo Arcano
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: fuerza}]
+      - id: descarga_energia
+        name: Descarga de Energía
+        cost: {actions: 2}
+        reach: media
+        area: cono_pequeno
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "3d6+5", dtype: fuerza}]
+      - id: onda_trueno
+        name: Onda Trueno
+        cost: {actions: 2}
+        area: radio_pequeno
+        tags: [spell, mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail:
+              - {kind: damage, damage: "2d6+5", dtype: sonico}
+              - {kind: apply_effect, effect: ensordecido, duration: 1}
+      - id: robar_el_tiempo
+        name: Robar el Tiempo
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: fatiga_1, duration: 1}]
+      - id: reparacion_temporal
+        name: Reparación Temporal
+        cost: {actions: 2}
+        targeting: ally
+        reach: toque
+        tags: [spell, heal]
+        effects:
+          - {kind: heal, amount: 1, to: target}
+          - {kind: cleanse, to: target}
+      - id: salto_espacial
+        name: Salto Espacial
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects: [{kind: note, text: "+10 al tiro defensivo", defense_bonus: 10}]
+      - id: muro_de_energia
+        name: Muro de Energía
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}]
+        notes: The retaliation damage against melee attackers is not modelled.
+      - id: redirigir_ataque
+        name: Redirigir Ataque
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_miss
+        effects: [kind: redirect_miss]
+      - id: neblina
+        name: Neblina
+        cost: {actions: 2}
+        implemented: false
+        notes: Concealment needs battlefield state.
+      - id: contrahechizo
+        name: Contrahechizo
+        cost: {reactions: 1}
+        is_reaction: true
+        implemented: false
+        notes: Needs a hook on enemy spellcasting.
+
+  - id: veterano
+    name: Veterano
+    source: monsters/aventureros.md
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 12}
+    saves: {fis: "7+1d6", vol: "7+1d6", men: "4"}
+    initiative: "1"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "1d6+7"}
+      - id: espada_larga
+        name: Espada Larga
+        cost: {actions: 2}
+        area: radio_corto
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "4d6+5", dtype: cortante}]
+      - id: golpe_de_escudo
+        name: Golpe de Escudo
+        cost: {actions: 1}
+        reach: adyacente
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit:
+              - {kind: damage, damage: "3d6+5", dtype: contundente}
+              - kind: save
+                save: fis
+                dc: "7"
+                on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+      - id: ballesta
+        name: Ballesta
+        cost: {actions: 3}
+        reach: larga
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "5d6+5", dtype: perforante}]
+      - id: ataque_poderoso
+        name: Ataque Poderoso
+        cost: {actions: 1}
+        targeting: self
+        effects: [{kind: self_buff, effect: ataque_poderoso}]
+      - id: segundo_aliento
+        name: Segundo Aliento
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}]
+      - id: proteger_aliado
+        name: Proteger Aliado
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_ally_attacked
+        effects: [kind: intercept]
+      - id: reposicion_forzosa
+        name: Reposición Forzosa
+        cost: {reactions: 1}
+        is_reaction: true
+        implemented: false
+        notes: Needs an "enemy dodged successfully" trigger.
+
+# --- Esbirro Élite variants, exactly as the VARIANTES notes prescribe -------
+  - id: mago_aprendiz_elite
+    name: Mago Aprendiz (Élite)
+    source: monsters/aventureros.md
+    level: 5
+    role: esbirro_elite
+    impactos: 2
+    umbrales: {general: 10, fisico: 15, magico: 15}
+    saves: {fis: "4", vol: "7", men: "7+2d6"}
+    initiative: "4"
+    preferred_row: back
+    actions: 2
+    reactions: 1
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [mental], roll: "7+2d6"}
+      - id: rayo_arcano
+        name: Rayo Arcano
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "7+2d6"
+            on_hit: [{kind: damage, damage: "3d6+5", dtype: fuerza}]
+      - id: descarga_energia
+        name: Descarga de Energía
+        cost: {actions: 2}
+        reach: media
+        area: cono_pequeno
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "7+2d6"
+            on_hit: [{kind: damage, damage: "4d6+5", dtype: fuerza}]
+      - id: salto_espacial
+        name: Salto Espacial
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects: [{kind: note, text: "+10 al tiro defensivo", defense_bonus: 10}]
+
+  - id: veterano_elite
+    name: Veterano (Élite)
+    source: monsters/aventureros.md
+    level: 5
+    role: esbirro_elite
+    impactos: 2
+    umbrales: {general: 10, fisico: 20}
+    saves: {fis: "7+1d6", vol: "7+1d6", men: "4"}
+    initiative: "1"
+    preferred_row: front
+    actions: 2
+    reactions: 1
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "7+2d6"}
+      - id: espada_larga
+        name: Espada Larga
+        cost: {actions: 2}
+        area: radio_corto
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+2d6"
+            on_hit: [{kind: damage, damage: "5d6+5", dtype: cortante}]
+      - id: golpe_de_escudo
+        name: Golpe de Escudo
+        cost: {actions: 1}
+        reach: adyacente
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+2d6"
+            on_hit:
+              - {kind: damage, damage: "4d6+5", dtype: contundente}
+              - kind: save
+                save: fis
+                dc: "7+1d6"
+                on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+      - id: ballesta
+        name: Ballesta
+        cost: {actions: 2}
+        reach: larga
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+2d6"
+            on_hit: [{kind: damage, damage: "6d6+5", dtype: perforante}]
+      - id: segundo_aliento
+        name: Segundo Aliento
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}]
+
+# ============================================================================
+# Level-5 PC builds, converted to chi-less Miniboss NPCs.
+#
+# Methodology (see the balance discussion in sim/README.md for the source
+# reasoning):
+#   - Chassis: 6 impactos, 3 actions, 2 reactions per round (base-info.md's
+#     Miniboss template), no chi at all.
+#   - Umbrales pinned to the 4/8/12 menu (level-5 tier): general stays at
+#     the 4-floor; fisico/magico get 4 (undefended), 8 (moderate) or 12
+#     (specialised) depending on which axis the class's own ranks actually
+#     invest in -- Tank archetypes go high on both, Striker low on both,
+#     Spellcaster/Supporter high magico + low fisico.
+#   - Attack and defence rolls get the class's signature sustained
+#     self-buff (Ira, Guerrero de la Fe, Canalizacion Celestial, Mente
+#     Desencadenada, Forma de la Bestia) permanently folded in as "+1d6" --
+#     the real ceiling a level-5 PC reaches by spending an action on it, per
+#     this session's dice-baseline finding. The buff-activation ability
+#     itself is dropped as redundant, EXCEPT recast as "Segunda Marcha": a
+#     free, no-chi second gear that stacks one more Ventaja die on top
+#     (scope: all, so it also lifts saves), for a solo miniboss that wants
+#     a mid-fight escalation.
+#   - Damage dice: a chi-less build can't toggle Ataque Furtivo/Rayo
+#     Potenciado/etc. per swing, so their expected value is folded in as a
+#     flat rate instead -- a "normal" 1-action attack gets +1 die (one
+#     assumed chi-rider), a "powerful" 2-action attack gets +2 dice (two
+#     stacked riders). This is why powerful attacks cost 2 actions in the
+#     first place: the per-round action pool (3) is what rate-limits them
+#     to at most once a round, the same job chi used to do.
+#   - Upgrades that only added damage dice are folded into that rate.
+#     Upgrades with a distinct effect (a push, a status, an extra target)
+#     are split out into their own standalone action instead of dropped.
+#   - Saves are left exactly as printed in the source PC build (no buff
+#     baked in) -- Segunda Marcha's scope:"all" already lifts them when a
+#     miniboss chooses to pop it, so the baseline stays honest to a
+#     "before actively surging" state.
+#   - Where a class's kit doesn't naturally support the recommended 6
+#     actions / 4 reactions, the count is left short rather than padding
+#     with invented, un-grounded content -- a generic "Reflejo de Combate"
+#     (+10 defensive) reaction is the only filler used, and only to round
+#     out an otherwise-thin reaction list.
+
+  - id: barbaro_mercenario
+    name: Bárbaro Mercenario
+    source: builds/barbaro.md (niv 5, converted to Miniboss -- see notes above)
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 12, magico: 4}
+    saves: {fis: "7", vol: "5", men: "3"}
+    initiative: "1"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: parada
+    immunities: [herido_1, herido_2]
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "7"}
+      - id: gran_hacha
+        name: Gran Hacha
+        cost: {actions: 2}
+        area: radio_pequeno
+        tags: [weapon, physical]
+      # Golpe Desestabilizador (Estilo Coloso I) and Reposicion Forzosa
+      # (Estilo Coloso II) are chi-cost riders on the real PC's swing, not
+      # separate attacks -- folded permanently into this one instead of
+      # split into a cheaper standalone action, which was steering the bot
+      # into spamming a weaker "normal" attack for the same rider value.
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit:
+              - {kind: damage, damage: "5d6+5", dtype: cortante}
+              - {kind: save, save: fis, dc: "7+1d6", on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+            on_miss:
+              - {kind: save, save: fis, dc: "7+1d6", on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+      - id: lanza
+        name: Lanza
+        cost: {actions: 1}
+        reach: media
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "3d6+5", dtype: perforante}]
+      - id: lanzamiento
+        name: Lanzamiento
+        cost: {actions: 2}
+        reach: media
+        tags: [weapon, physical]
+        notes: "Estilo Coloso II: lanza su arma a distancia media con el mismo peso que un golpe cuerpo a cuerpo."
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "5d6+5", dtype: cortante}]
+      - id: demostracion_terrorifica
+        name: Demostración Terrorífica
+        cost: {actions: 1}
+        area: radio_medio
+        reach: media
+        tags: [mental]
+        effects:
+          - {kind: save, save: vol, dc: "7+1d6", on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]}
+      - {id: segunda_marcha, name: Segunda Marcha, cost: {actions: 1}, targeting: self, effects: [{kind: self_buff, effect: segunda_marcha}]}
+      - {id: segundo_aliento, name: Segundo Aliento, cost: {reactions: 1}, is_reaction: true, trigger: on_damaged, targeting: self, effects: [{kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}]}
+      - {id: proteger_aliado, name: Proteger Aliado, cost: {reactions: 1}, is_reaction: true, trigger: on_ally_attacked, effects: [kind: intercept]}
+      - {id: reflejo_de_combate, name: Reflejo de Combate, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]}
+
+  - id: cazador_explorador
+    name: Cazador Explorador
+    source: builds/cazador.md (niv 5, converted to Miniboss -- see notes above)
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 8, magico: 4}
+    saves: {fis: "7+1d6", vol: "3", men: "4"}
+    initiative: "5"
+    preferred_row: back
+    actions: 3
+    reactions: 2
+    defense: esquiva
+    abilities:
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "5"}
+      - id: arco
+        name: Arco
+        cost: {actions: 2}
+        reach: media
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7"
+            on_hit: [{kind: damage, damage: "5d6+4", dtype: perforante}]
+      - id: daga
+        name: Daga
+        cost: {actions: 1}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "5"
+            on_hit: [{kind: damage, damage: "3d6+4", dtype: perforante}]
+      - id: cadena
+        name: Cadena
+        cost: {actions: 1}
+        reach: corta
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7"
+            on_hit: [{kind: damage, damage: "3d6+5", dtype: contundente}]
+        notes: El enredo alternativo de la Cadena no está modelado.
+      - id: bomba
+        name: Bomba
+        cost: {actions: 2}
+        reach: media
+        area: radio_corto
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7"
+            on_hit: [{kind: damage, damage: "4d6+5", dtype: fuego}]
+      - id: bomba_de_humo
+        name: Bomba de Humo
+        cost: {actions: 1}
+        reach: media
+        area: radio_corto
+        tags: [physical]
+        effects:
+          - {kind: save, save: fis, dc: "7", on_fail: [{kind: apply_effect, effect: cegado, duration: 1}]}
+      - id: pocion_de_sanacion
+        name: Poción de Sanación
+        cost: {actions: 1}
+        targeting: self
+        tags: [heal]
+        effects:
+          - {kind: heal, amount: 1, to: self}
+          - {kind: cleanse, to: self}
+      - {id: instinto_de_supervivencia, name: Instinto de Supervivencia, cost: {uses_per_combat: 3}, is_reaction: true, is_reroll: true, reroll_scope: self, reroll_kinds: [attack, defense]}
+      - {id: evasion, name: Evasión, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 a Esquiva", defense_bonus: 10}]}
+      - {id: reflejo_de_combate, name: Reflejo de Combate, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]}
+
+  - id: clerigo_peregrino
+    name: Clérigo Peregrino
+    source: builds/clerigo-celestial.md (niv 5, converted to Miniboss -- see notes above)
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 4, magico: 8}
+    saves: {fis: "2", vol: "6+2d6", men: "6"}
+    initiative: "1"
+    preferred_row: back
+    actions: 3
+    reactions: 2
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [divine], roll: "7+1d6"}
+      - id: maza
+        name: Maza
+        cost: {actions: 2}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "5d6+5", dtype: contundente}]
+      - id: rayo_luminoso
+        name: Rayo Luminoso
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, divine, mental]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: radiante}]
+      - id: aliento_de_fuego
+        name: Aliento de Fuego
+        cost: {actions: 2}
+        area: cono_pequeno
+        tags: [spell, divine, mental]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "4d6+5", dtype: fuego}]
+      - id: halo_luminoso
+        name: Halo Luminoso
+        cost: {actions: 1}
+        area: radio_corto
+        tags: [spell, divine, mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail:
+              - {kind: damage, damage: "2d6+5", dtype: radiante}
+              - {kind: apply_effect, effect: cegado, duration: 1}
+      - {id: toque_sanador, name: Toque Sanador, cost: {actions: 1}, targeting: ally, reach: toque, tags: [divine, heal], effects: [{kind: heal, amount: 1, to: target}]}
+      - {id: armadura_del_mago, name: Armadura del Mago, cost: {actions: 1}, targeting: ally, reach: toque, tags: [divine], effects: [{kind: umbral_boost, amount: 4, duration: combat, to: target}]}
+      - id: muro_luminoso
+        name: Muro Luminoso
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects:
+          - {kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}
+          - kind: wall
+            amount: 0
+            duration: 1
+            to: self
+            name: Muro Luminoso
+            retaliate: {save: vol, dc: "7+1d6", damage: "2d6+5", dtype: radiante, effect: cegado, effect_duration: 1}
+      - {id: milagro_menor, name: Milagro Menor, cost: {uses_per_combat: 4}, is_reaction: true, is_reroll: true, reroll_scope: any, reroll_kinds: [attack, defense, save]}
+      - {id: reflejo_de_combate, name: Reflejo de Combate, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]}
+
+  - id: mago_itinerante
+    name: Mago Itinerante
+    source: builds/mago.md (niv 5, converted to Miniboss -- see notes above)
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 4, magico: 8}
+    saves: {fis: "3", vol: "5", men: "6"}
+    initiative: "2"
+    preferred_row: back
+    actions: 3
+    reactions: 2
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [mental], roll: "7+1d6"}
+      - id: rayo_arcano
+        name: Rayo Arcano
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: fuerza}]
+      - id: descarga_energia
+        name: Descarga de Energía
+        cost: {actions: 2}
+        reach: media
+        area: cono_pequeno
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "4d6+5", dtype: fuerza}]
+      - {id: armadura_arcana, name: Armadura Arcana, cost: {actions: 1}, targeting: ally, reach: toque, tags: [spell], effects: [{kind: umbral_boost, amount: 4, duration: combat, to: target}]}
+      - {id: segunda_marcha, name: Segunda Marcha, cost: {actions: 1}, targeting: self, effects: [{kind: self_buff, effect: segunda_marcha}]}
+      - {id: premonicion, name: Premonición, cost: {uses_per_combat: 3}, is_reaction: true, is_reroll: true, reroll_scope: self, reroll_kinds: [attack, defense, save]}
+      - {id: salto_espacial, name: Salto Espacial, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]}
+      - {id: redirigir_ataque, name: Redirigir Ataque, cost: {reactions: 1}, is_reaction: true, trigger: on_miss, effects: [kind: redirect_miss]}
+      - id: muro_de_energia
+        name: Muro de Energía
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects:
+          - kind: wall
+            amount: 6
+            duration: 3
+            to: self
+            name: Muro de Energía
+            protects_allies: true
+            retaliate: {save: fis, dc: "7+1d6", damage: "1d6+3", dtype: fuego}
+
+  - id: luchador_campeon
+    name: Luchador Campeón
+    source: builds/luchador.md (niv 5, converted to Miniboss -- see notes above)
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 8, magico: 8}
+    saves: {fis: "7+1d6", vol: "5+1d6", men: "4"}
+    initiative: "6"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: parada
+    skilled_defense: true
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "7+1d6"}
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "7+1d6"}
+      - id: espada
+        name: Espada
+        cost: {actions: 2}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "5d6+4", dtype: perforante}]
+      - id: ataque_torbellino
+        name: Ataque Torbellino
+        cost: {actions: 2}
+        area: radio_corto
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "5d6+4", dtype: perforante}]
+      - id: truco_de_combate
+        name: Truco de Combate
+        tags: [physical]
+        cost: {actions: 1}
+        effects:
+          - {kind: save, save: fis, dc: "7+1d6", on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+      - id: demostracion_terrorifica
+        name: Demostración Terrorífica
+        cost: {actions: 1}
+        area: radio_medio
+        reach: media
+        tags: [mental]
+        effects:
+          - {kind: save, save: vol, dc: "7+1d6", on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]}
+      - {id: segunda_marcha, name: Segunda Marcha, cost: {actions: 1}, targeting: self, effects: [{kind: self_buff, effect: segunda_marcha}]}
+      - {id: instinto_de_supervivencia, name: Instinto de Supervivencia, cost: {uses_per_combat: 4}, is_reaction: true, is_reroll: true, reroll_scope: self, reroll_kinds: [attack, defense]}
+      - id: muro_de_fuego
+        name: Muro de Fuego
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects:
+          - kind: wall
+            amount: 6
+            duration: 3
+            to: self
+            name: Muro de Fuego
+            protects_allies: true
+            retaliate: {save: fis, dc: "7+1d6", damage: "2d6+5", dtype: fuego}
+      - {id: evasion, name: Evasión, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 a Esquiva", defense_bonus: 10}]}
+      - {id: reflejo_de_combate, name: Reflejo de Combate, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]}
+
+  - id: monje_peregrino
+    name: Monje Peregrino
+    source: builds/monje.md (niv 5, converted to Miniboss -- see notes above)
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 4, magico: 4}
+    saves: {fis: "6+1d6", vol: "3", men: "5"}
+    initiative: "5"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: parada
+    skilled_defense: true
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "7+1d6"}
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "6+1d6"}
+      - id: golpe
+        name: Golpe
+        cost: {actions: 1}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "3d6+5", dtype: contundente}]
+      - id: onda_trueno
+        name: Onda Trueno
+        cost: {actions: 2}
+        area: radio_corto
+        tags: [spell, divine, mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "6+1d6"
+            on_fail:
+              - {kind: damage, damage: "3d6+4", dtype: sonico}
+              - {kind: apply_effect, effect: desconcertado, duration: 1}
+      - id: truco_de_combate
+        name: Truco de Combate
+        tags: [physical]
+        cost: {actions: 1}
+        effects:
+          - {kind: save, save: fis, dc: "7+1d6", on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+      - {id: toque_sanador, name: Toque Sanador, cost: {actions: 1}, targeting: ally, reach: toque, tags: [divine, heal], effects: [{kind: heal, amount: 1, to: target}]}
+      - {id: segunda_marcha, name: Segunda Marcha, cost: {actions: 1}, targeting: self, effects: [{kind: self_buff, effect: segunda_marcha}]}
+      - {id: instinto_de_supervivencia, name: Instinto de Supervivencia, cost: {uses_per_combat: 3}, is_reaction: true, is_reroll: true, reroll_scope: self, reroll_kinds: [attack, defense]}
+      - {id: milagro_menor, name: Milagro Menor, cost: {uses_per_combat: 4}, is_reaction: true, is_reroll: true, reroll_scope: any, reroll_kinds: [attack, defense, save]}
+      - {id: reflejo_de_combate, name: Reflejo de Combate, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]}
+
+  - id: paladin_justiciero
+    name: Paladín Justiciero
+    source: builds/paladin.md (niv 5, converted to Miniboss -- see notes above)
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 8, magico: 8}
+    saves: {fis: "6", vol: "6+1d6", men: "2"}
+    initiative: "1"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: parada_arma
+    abilities:
+      - {id: parada_arma, name: Parada de Arma, is_defense: true, tags: [physical], roll: "7+1d6"}
+      - id: mandoble
+        name: Mandoble
+        cost: {actions: 2}
+        tags: [weapon, physical]
+      # Golpe Desestabilizador (Estilo Coloso I) and Reposicion Forzosa
+      # (Estilo Coloso II) are chi-cost riders on the real PC's swing, not
+      # separate attacks -- folded permanently into this one instead of
+      # split into a cheaper standalone action, which was steering the bot
+      # into spamming a weaker "normal" attack for the same rider value.
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit:
+              - {kind: damage, damage: "5d6+5", dtype: cortante}
+              - {kind: save, save: fis, dc: "7+1d6", on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+            on_miss:
+              - {kind: save, save: fis, dc: "7+1d6", on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+      - id: gran_barrido
+        name: Gran Barrido
+        cost: {actions: 2}
+        area: radio_pequeno
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "5d6+5", dtype: cortante}]
+      - id: llamarada
+        name: Llamarada
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, divine, mental]
+        effects:
+          - kind: attack
+            attack_roll: "6+1d6"
+            on_hit: [{kind: damage, damage: "2d6+4", dtype: fuego}]
+      - {id: toque_sanador, name: Toque Sanador, cost: {actions: 1}, targeting: ally, reach: toque, tags: [divine, heal], effects: [{kind: heal, amount: 1, to: target}]}
+      - {id: segunda_marcha, name: Segunda Marcha, cost: {actions: 1}, targeting: self, effects: [{kind: self_buff, effect: segunda_marcha}]}
+      - {id: segundo_aliento, name: Segundo Aliento, cost: {reactions: 1}, is_reaction: true, trigger: on_damaged, targeting: self, effects: [{kind: umbral_boost, amount: 3, duration: 1, to: self, tags: [consume_on_umbral]}]}
+      - {id: proteger_aliado, name: Proteger Aliado, cost: {reactions: 1}, is_reaction: true, trigger: on_ally_attacked, effects: [kind: intercept]}
+      - {id: milagro_menor, name: Milagro Menor, cost: {uses_per_combat: 4}, is_reaction: true, is_reroll: true, reroll_scope: any, reroll_kinds: [attack, defense, save]}
+      - {id: reflejo_de_combate, name: Reflejo de Combate, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]}
+
+  - id: bardo_trotamundos
+    name: Bardo Trotamundos
+    source: builds/bardo.md (niv 5, converted to Miniboss -- see notes above)
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 4, magico: 4}
+    saves: {fis: "4", vol: "7+1d6", men: "7+1d6"}
+    initiative: "2"
+    preferred_row: back
+    actions: 3
+    reactions: 2
+    defense: parada
+    abilities:
+      - id: parada
+        name: Parada
+        is_defense: true
+        tags: [mental]
+        roll: "7+1d6"
+        notes: ASSUMED -- builds/bardo.md still lists no defensive roll at niv 5.
+      - id: asalto_psiquico
+        name: Asalto Psíquico
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: save
+            save: men
+            dc: "7+1d6"
+            on_fail:
+              - {kind: apply_effect, effect: desconcertado, duration: 1}
+              - {kind: damage, damage: "2d8+5", dtype: psiquico}
+      - id: distraccion_ilusoria
+        name: Distracción Ilusoria
+        cost: {actions: 1}
+        area: radio_pequeno
+        reach: media
+        tags: [spell, mental, illusion]
+        effects:
+          - {kind: save, save: men, dc: "7+1d6", on_fail: [{kind: apply_effect, effect: desconcertado, duration: 1}]}
+      - id: alterar_emociones
+        name: Alterar Emociones
+        cost: {actions: 1}
+        area: radio_pequeno
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - {kind: save, save: men, dc: "7+1d6", on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]}
+      - id: provocacion
+        name: Provocación
+        cost: {actions: 1}
+        area: radio_medio
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - {kind: save, save: men, dc: "7+1d6", on_fail: [{kind: apply_effect, effect: provocado, duration: 1}]}
+      - {id: revigorar, name: Revigorar, cost: {actions: 1}, targeting: ally, reach: media, effects: [{kind: heal, amount: 1, to: target}, {kind: cleanse, to: target}]}
+      - {id: segunda_marcha, name: Segunda Marcha, cost: {actions: 1}, targeting: self, effects: [{kind: self_buff, effect: segunda_marcha}]}
+      - {id: reflejo_de_combate, name: Reflejo de Combate, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]}
+
+  - id: druida_salvaje
+    name: Druida Salvaje
+    source: builds/druida.md (niv 5, converted to Miniboss -- see notes above)
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 4, magico: 8}
+    saves: {fis: "3", vol: "4", men: "7"}
+    initiative: "2"
+    preferred_row: back
+    actions: 3
+    reactions: 2
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "7+1d6"}
+      - id: raices_devoradoras
+        name: Raíces Devoradoras
+        cost: {actions: 2}
+        reach: media
+        area: radio_pequeno
+        tags: [spell, nature, wisdom, mental]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit:
+              - {kind: damage, damage: "4d6+5", dtype: contundente}
+              - {kind: apply_effect, effect: enredado, duration: 2}
+      - id: espinas_de_madera
+        name: Espinas de Madera
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, nature, wisdom, mental]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit:
+              - {kind: damage, damage: "2d6+5", dtype: perforante, dtype_if: {effect: enredado, dtype: fuerza}}
+      - id: enmaranar
+        name: Enmarañar
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, nature, wisdom, mental]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: apply_effect, effect: enredado, duration: 2}]
+      - {id: pulso_vital, name: Pulso Vital, cost: {actions: 1}, targeting: ally, reach: media, tags: [divine, heal], effects: [{kind: heal, amount: 1, to: target}]}
+      - {id: analizar_enemigo, name: Analizar Enemigo, cost: {actions: 1}, targeting: enemy, reach: media, effects: [{kind: self_buff, effect: analizado, duration: combat, against_target: true}]}
+      - {id: segunda_marcha, name: Segunda Marcha, cost: {actions: 1}, targeting: self, effects: [{kind: self_buff, effect: segunda_marcha}]}
+      - id: muro_de_zarzas
+        name: Muro de Zarzas
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects:
+          - kind: wall
+            amount: 6
+            duration: 3
+            to: self
+            name: Muro de Zarzas
+            protects_allies: true
+            retaliate: {save: fis, dc: "7+1d6", damage: "2d6+5", dtype: perforante, effect: enredado, effect_duration: 2}
+      - {id: milagro_menor, name: Milagro Menor, cost: {uses_per_combat: 4}, is_reaction: true, is_reroll: true, reroll_scope: any, reroll_kinds: [attack, defense, save]}
+      - {id: reflejo_de_combate, name: Reflejo de Combate, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]}
+
+  - id: piromante_errante
+    name: Piromante Errante
+    source: builds/elementalista-fuego.md (niv 5, converted to Miniboss -- see notes above)
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 4, magico: 8}
+    saves: {fis: "5+1d6", vol: "6", men: "3"}
+    initiative: "6"
+    preferred_row: back
+    actions: 3
+    reactions: 2
+    defense: parada
+    skilled_defense: true
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [mental], roll: "7+1d6"}
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "7"}
+      - id: aliento_de_fuego
+        name: Aliento de Fuego
+        cost: {actions: 2}
+        area: cono_pequeno
+        tags: [spell, mental, fire]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "4d6+5", dtype: fuego}]
+      - id: llamarada
+        name: Llamarada
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental, fire]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: fuego}]
+      - id: bola_de_fuego
+        name: Bola de Fuego
+        cost: {actions: 1}
+        reach: media
+        area: radio_pequeno
+        tags: [spell, mental, fire]
+        effects:
+          - kind: attack
+            attack_roll: "7+1d6"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: fuego}]
+      - id: golpe
+        name: Golpe
+        cost: {actions: 1}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "7"
+            on_hit: [{kind: damage, damage: "3d6+5", dtype: contundente}]
+      - id: truco_de_combate
+        name: Truco de Combate
+        tags: [physical]
+        cost: {actions: 1}
+        effects:
+          - {kind: save, save: fis, dc: "7", on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+      - {id: segunda_marcha, name: Segunda Marcha, cost: {actions: 1}, targeting: self, effects: [{kind: self_buff, effect: segunda_marcha}]}
+      - {id: instinto_de_supervivencia, name: Instinto de Supervivencia, cost: {uses_per_combat: 4}, is_reaction: true, is_reroll: true, reroll_scope: self, reroll_kinds: [attack, defense]}
+      - id: muro_de_fuego
+        name: Muro de Fuego
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects:
+          - kind: wall
+            amount: 6
+            duration: 3
+            to: self
+            name: Muro de Fuego
+            protects_allies: true
+            retaliate: {save: fis, dc: "7+1d6", damage: "2d6+5", dtype: fuego}
+      - {id: evasion, name: Evasión, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 a Esquiva", defense_bonus: 10}]}
+      - {id: reflejo_de_combate, name: Reflejo de Combate, cost: {reactions: 1}, is_reaction: true, trigger: on_defend, targeting: self, effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]}

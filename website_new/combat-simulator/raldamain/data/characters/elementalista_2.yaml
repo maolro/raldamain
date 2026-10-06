@@ -1,0 +1,76 @@
+id: elementalista_2
+name: Elementalista de Fuego
+source: builds/elementalista-fuego.md
+level: 2
+impactos: 6
+chi: 6
+stats: {FUE: 1, DES: 3, CON: 1, INT: 1, SAB: 2, CAR: 4}
+ranks: {magia_fuego: 1, mente_desencadenada: 1, reflejos: 1}
+
+umbrales: {general: 2, fuego: 4, frio: 4}
+# FÍS carries Reflejos Superiores' permanent Ventaja; the (1d6) on VOL and MEN
+# is Mente Desencadenada, supplied by the buff.
+saves: {fis: "4+1d6", vol: "5", men: "3"}
+initiative: "3"
+preferred_row: back
+actions: 3
+reactions: 2
+defense: parada
+
+abilities:
+  - id: parada
+    name: Parada
+    is_defense: true
+    tags: [mental]
+    roll: "5"
+    notes: >
+      Printed as "+5+1d6" without parentheses, unlike the Mago's "+5+(1d6)".
+      Read as the Mago's is -- base +5, with Mente Desencadenada supplying the
+      die -- since both are Mente Desencadenada casters.
+  - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "4"}
+
+  - id: llamarada
+    name: Llamarada
+    cost: {actions: 1}
+    reach: media
+    tags: [spell, mental, fire]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "1d6+4", dtype: fuego}
+    notes: >
+      Two riders are unmodelled: spending an extra Action for +1d6, and the
+      1-chi "attack an additional target" (the engine has no per-upgrade target
+      count).
+
+  - id: aliento_de_fuego
+    name: Aliento de Fuego
+    cost: {actions: 2, chi: 1}
+    area: cono_pequeno
+    tags: [spell, mental, fire]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "2d6+4", dtype: fuego}
+    upgrades:
+      - id: aliento_ampliado
+        name: Aliento Ampliado
+        cost: {chi: 1}
+        damage_dice: 1
+
+  - id: mente_desencadenada
+    name: Mente Desencadenada
+    cost: {actions: 1}
+    targeting: self
+    effects:
+      - {kind: self_buff, effect: mente_desencadenada, duration: 6}
+
+  - id: instinto_de_supervivencia
+    name: Instinto de Supervivencia
+    cost: {uses_per_combat: 3, chi_when_exhausted: 1}
+    is_reaction: true
+    is_reroll: true
+    reroll_scope: self
+    reroll_kinds: [attack, defense]

@@ -1,0 +1,121 @@
+# Converted from builds/clerigo-celestial.md's niv-8 block.
+id: clerigo_8
+name: Clérigo Celestial (niv 8)
+source: builds/clerigo-celestial.md
+level: 8
+impactos: 6
+chi: 18
+ranks: {magia_divina: 3, magia_vida: 3, presencia: 1, ascendencia_celestial: 2}
+umbrales: {general: 2, fuego: 4, radiante: 4}   # +[7] físico/mágico and +[4] fuego/radiante from Armadura del Mago + Canalización Celestial r2
+saves: {fis: "2", vol: "8+2d6", men: "8"}
+initiative: "1"
+preferred_row: back
+actions: 3
+reactions: 2
+defense: parada
+immunities: [fatiga_1, enfermado_1]
+abilities:
+  - {id: parada, name: Parada, is_defense: true, tags: [divine], roll: "9"}
+  - id: maza
+    name: Maza
+    cost: {actions: 2}
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "2d8+6", dtype: contundente}]
+    upgrades:
+      - {id: maza_radiante, name: Maza (Radiante), cost: {chi: 1},
+         on_hit: [{kind: damage, damage: "2d8", dtype: radiante}]}
+  - id: rayo_luminoso
+    name: Rayo Luminoso
+    cost: {actions: 1}
+    reach: media
+    tags: [spell, divine, mental]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "1d8+6", dtype: radiante}]
+    upgrades: [{id: rayo_potenciado, name: Rayo Potenciado, cost: {chi: 1}, damage_dice: 1}]
+  - id: aliento_de_fuego
+    name: Aliento de Fuego
+    cost: {actions: 2, chi: 1}
+    area: cono_pequeno
+    tags: [spell, divine, mental]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "2d8+6", dtype: fuego}]
+    upgrades: [{id: aliento_potenciado, name: Aliento Potenciado, cost: {chi: 1}, damage_dice: 1}]
+  - id: halo_luminoso
+    name: Halo Luminoso
+    cost: {actions: 1, chi: 1}
+    area: radio_corto
+    tags: [spell, divine, mental]
+    effects:
+      - kind: save
+        save: vol
+        dc: "9"
+        on_fail:
+          - {kind: damage, damage: "1d8+6", dtype: radiante}
+          - {kind: apply_effect, effect: cegado, duration: 1}
+  - {id: toque_sanador, name: Toque Sanador, cost: {actions: 1, chi: 1},
+     targeting: ally, reach: toque, tags: [divine, heal],
+     effects: [{kind: heal, amount: 1, to: target}]}
+  - {id: sanacion_superior, name: Sanación Superior, cost: {actions: 1, chi: 2},
+     targeting: ally, reach: toque, tags: [divine, heal],
+     effects: [{kind: heal, amount: 2, to: target}, {kind: cleanse, to: target}]}
+  - id: manifestacion_divina
+    name: Manifestación Divina
+    cost: {actions: 1, chi: 1}
+    implemented: false
+    notes: Freeform "remove an effect or inflict a GM-adjudicated curse" -- needs judgment-call support the sim doesn't have.
+  - {id: telarana_de_vida, name: Telaraña de Vida, cost: {actions: 2, chi: 2},
+     targeting: self, effects: [{kind: self_buff, effect: telarana_de_vida}]}
+  - id: vinculo_vital
+    name: Vínculo Vital
+    cost: {actions: 2, chi: 1}
+    implemented: false
+    notes: Damage-sharing link between two combatants isn't modeled.
+  - {id: armadura_del_mago, name: Armadura del Mago, cost: {actions: 1, chi: 1},
+     targeting: ally, reach: toque, tags: [divine],
+     effects: [{kind: umbral_boost, amount: 4, duration: combat, to: target}]}
+  - {id: consagrar_la_tierra, name: Consagrar la Tierra, cost: {actions: 2, chi: 1},
+     targeting: self, effects: [{kind: self_buff, effect: consagrar_la_tierra}]}
+  - {id: canalizacion_celestial, name: Canalización Celestial, cost: {actions: 1},
+     targeting: self, effects: [{kind: self_buff, effect: canalizacion_celestial_r2, duration: 6}]}
+  - id: muro_luminoso
+    name: Muro Luminoso
+    cost: {reactions: 1, chi: 1}
+    is_reaction: true
+    trigger: on_damaged
+    targeting: self
+    effects:
+      - kind: wall
+        amount: 9
+        duration: 1
+        to: self
+        name: Muro Luminoso
+        retaliate: {save: vol, dc: "9", damage: "1d6+6", dtype: radiante,
+                    effect: cegado, effect_duration: 1}
+  - id: luz_viviente
+    name: Luz Viviente
+    cost: {reactions: 1, chi: 1}
+    is_reaction: true
+    implemented: false
+    notes: Auto-dodge + teleport reposition isn't modeled.
+  - {id: voz_del_comandante, name: Voz del Comandante,
+     cost: {uses_per_combat: 3, chi_when_exhausted: 1}, bonus_action: true,
+     targeting: ally, reach: media, effects: [{kind: grant_advantage, to: target}]}
+  - {id: milagro_menor, name: Milagro Menor,
+     cost: {uses_per_combat: 4, chi_when_exhausted: 1}, is_reaction: true,
+     is_reroll: true, reroll_scope: any, reroll_kinds: [attack, defense, save]}
+  - id: contrahechizo
+    name: Contrahechizo
+    cost: {reactions: 1}
+    is_reaction: true
+    implemented: false
+    notes: Countering an in-flight enemy spell needs a targeted-spell-interrupt mechanic the sim doesn't have.
+  - {id: premonicion, name: Premonición,
+     cost: {uses_per_combat: 4, chi_when_exhausted: 1}, is_reaction: true,
+     is_reroll: true, reroll_scope: self, reroll_kinds: [attack, defense, save]}

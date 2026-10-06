@@ -1,0 +1,508 @@
+# monsters/trasgos.md -- the full goblin roster.
+#
+# Reaction economy note: the free Parada/Esquiva roll costs nothing (base-info
+# says every defender simply "tirará Parada o Esquiva"); only the numbered
+# reactions consume the pool.  That is why the Trasgo has 0 reactions but still
+# lists an Esquiva.
+
+  - id: trasgo
+    name: Trasgo
+    source: monsters/trasgos.md
+    level: 0
+    role: esbirro
+    impactos: 1
+    umbrales: {general: 2}
+    saves: {fis: "5", vol: "0", men: "0"}
+    initiative: "5"
+    preferred_row: front
+    actions: 1
+    reactions: 0
+    defense: esquiva
+    abilities:
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "5+1d6"}
+      - id: cuchilla_envenenada
+        name: Cuchilla envenenada
+        cost: {actions: 1}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "5"
+            on_hit: [{kind: damage, damage: "1d6+3", dtype: cortante}]
+      - id: petardo
+        name: Petardo
+        cost: {actions: 1}
+        reach: media
+        tags: [weapon]
+        effects:
+          - kind: attack
+            attack_roll: "5"
+            on_hit: [{kind: damage, damage: "1d6+2", dtype: fuego}]
+      - id: truco_sucio
+        name: Truco Sucio
+        cost: {actions: 1}
+        effects:
+          - kind: save
+            save: fis
+            dc: "5"
+            on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+
+  - id: perro_trasgo
+    name: Perro trasgo
+    source: monsters/trasgos.md
+    level: 0
+    role: esbirro
+    impactos: 1
+    umbrales: {general: 2, fisico: 4}
+    saves: {fis: "5", vol: "2", men: "-2"}
+    initiative: "5"
+    preferred_row: front
+    actions: 1
+    reactions: 0
+    defense: esquiva
+    abilities:
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "5"}
+      - id: mordisco
+        name: Mordisco
+        cost: {actions: 1}
+        tags: [natural, physical]
+        effects:
+          - kind: attack
+            attack_roll: "5"
+            on_hit:
+              - {kind: damage, damage: "1d4+4", dtype: perforante}
+              - kind: save
+                save: vol
+                dc: "2"
+                on_fail: [{kind: apply_effect, effect: enfermado_1, duration: 3}]
+
+  - id: trasgo_cantor
+    name: Trasgo Cantor
+    source: monsters/trasgos.md
+    level: 2
+    role: esbirro_elite
+    impactos: 2
+    umbrales: {general: 2}
+    saves: {fis: "5", vol: "5", men: "2"}
+    initiative: "5"
+    preferred_row: back
+    actions: 2
+    reactions: 1
+    defense: esquiva
+    abilities:
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "5+1d6"}
+      - id: latigo
+        name: Látigo
+        cost: {actions: 1}
+        reach: corta
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "5+1d6"
+            on_hit: [{kind: damage, damage: "1d6+4", dtype: contundente}]
+      - id: grito_de_guerra
+        name: Grito de Guerra
+        cost: {actions: 1}
+        targeting: self
+        effects: [kind: ally_attack]
+      - id: cancion_molesta
+        name: Canción Molesta
+        cost: {actions: 1}
+        area: radio_corto
+        tags: [mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "5"
+            on_fail: [{kind: apply_effect, effect: desconcertado, duration: 1}]
+      - id: revigorar
+        name: Revigorar
+        cost: {actions: 1}
+        targeting: ally
+        effects: [{kind: heal, amount: 1, to: target}]
+        notes: >
+          The rules offer "cure a condition OR heal an impacto"; only the heal
+          branch is modelled, so the bot never picks the cleanse option.
+      - id: sacrificar_trasgo
+        name: Sacrificar Trasgo
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_attacked
+        effects:
+          - {kind: redirect, valid_targets: [trasgo, perro_trasgo]}
+      - id: infortunio
+        name: Infortunio
+        cost: {reactions: 1}
+        is_reaction: true
+        is_reroll: true
+      # "Un enemigo repite un tiro y se queda con el resultado que menos le
+      # convenga": enemies only, and always kept at the worse result -- unlike
+      # Milagro Menor, which works on either side.
+        reroll_scope: enemy
+        reroll_kinds: [attack, defense, save]
+
+  - id: trasgo_comando
+    name: Trasgo Comando
+    source: monsters/trasgos.md
+    level: 2
+    role: esbirro_elite
+    impactos: 2
+    umbrales: {general: 2, fisico: 4}
+    saves: {fis: "5+1d6", vol: "2", men: "2"}
+    initiative: "8"
+    preferred_row: front
+    actions: 2
+    reactions: 1
+    defense: esquiva
+    abilities:
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "5+1d6"}
+      - id: cuchilla
+        name: Cuchilla
+        cost: {actions: 1}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "5+1d6"
+            on_hit: [{kind: damage, damage: "1d6+4", dtype: cortante}]
+      - id: arco_corto
+        name: Arco Corto
+        cost: {actions: 1}
+        reach: media
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "5+1d6"
+            on_hit: [{kind: damage, damage: "1d6+4", dtype: perforante}]
+      - id: ataque_furtivo
+        name: Ataque Furtivo
+        cost: {actions: 2}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "5+2d6"
+            on_hit:
+              - {kind: damage, damage: "2d6+4", dtype: cortante}
+              - {kind: apply_effect, effect: herido_1}
+      - id: provocacion
+        name: Provocación
+        cost: {actions: 1}
+        area: radio_medio
+        tags: [mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "5"
+            on_fail: [{kind: apply_effect, effect: provocado, duration: 1}]
+      - id: sacrificar_trasgo
+        name: Sacrificar Trasgo
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_attacked
+        effects:
+          - {kind: redirect, valid_targets: [trasgo, perro_trasgo]}
+      - id: maniobras_evasivas
+        name: Maniobras Evasivas
+        cost: {reactions: 1}
+        is_reaction: true
+        implemented: false
+        notes: >
+          Bouncing a missed attack onto an adjacent enemy needs positional data;
+          the sim is positionless.
+
+  - id: trasgo_chaman
+    name: Trasgo Chamán
+    source: monsters/trasgos.md
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4}
+  # Tierra Consagrada's Ventaja is already folded into these pools.
+    saves: {fis: "4", vol: "7", men: "7+1d6"}
+    initiative: "4"
+    preferred_row: back
+    actions: 3
+    reactions: 2
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, roll: "1d6+7"}
+      - id: llamarada
+        name: Llamarada
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "1d6+5", dtype: fuego}]
+      - id: espina_de_madera
+        name: Espina de Madera
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "1d6+5", dtype: perforante}]
+      - id: aliento_de_fuego
+        name: Aliento de Fuego
+        cost: {actions: 2}
+        area: cono_pequeno
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: fuego}]
+      - id: enmaranar
+        name: Enmarañar
+        cost: {actions: 2}
+        area: radio_pequeno
+        tags: [spell, mental]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: apply_effect, effect: enredado, duration: 2}]
+      - id: maldicion_mala_suerte
+        name: Maldición de Mala Suerte
+        cost: {actions: 1}
+        reach: media
+        tags: [spell, mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: maldito, duration: combat}]
+      - id: pulso_de_vida
+        name: Pulso de Vida
+        cost: {actions: 1}
+        targeting: ally
+        reach: media
+        effects: [{kind: heal, amount: 1, to: target}]
+      - id: regeneracion
+        name: Regeneración
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: heal, amount: 1, to: self}]
+      - id: muro_de_zarzas
+        name: Muro de Zarzas
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects:
+          - kind: wall
+            amount: 6
+            duration: 3
+            to: self
+            name: Muro de Zarzas
+            retaliate: {save: fis, dc: "7+1d6", damage: "2d6+5", dtype: perforante, effect: enredado, effect_duration: 2}
+      - id: infortunio
+        name: Infortunio
+        cost: {reactions: 1}
+        is_reaction: true
+        is_reroll: true
+      # "Un enemigo repite un tiro y se queda con el resultado que menos le
+      # convenga": enemies only, and always kept at the worse result -- unlike
+      # Milagro Menor, which works on either side.
+        reroll_scope: enemy
+        reroll_kinds: [attack, defense, save]
+
+  - id: trasgo_jefe
+    name: Trasgo Jefe
+    source: monsters/trasgos.md
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 8}
+    saves: {fis: "7+1d6", vol: "7", men: "4"}
+    initiative: "4"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: esquiva
+    abilities:
+      - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "1d6+7"}
+      - id: rajaperros
+        name: Rajaperros
+        cost: {actions: 1}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+      - id: secuencia_de_ataques
+        name: Secuencia de Ataques
+        cost: {actions: 2}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+        notes: >
+          Modelled as three Rajaperros against the same target.  The rules let
+          each of the three be a Truco Sucio instead.
+      - id: ataque_torbellino
+        name: Ataque Torbellino
+        cost: {actions: 2}
+        area: radio_corto
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "3d6+5", dtype: cortante}]
+      - id: truco_sucio
+        name: Truco Sucio
+        cost: {actions: 1}
+        effects:
+          - kind: save
+            save: fis
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+      - id: grito_de_guerra
+        name: Grito de Guerra
+        cost: {actions: 1}
+        targeting: self
+        effects: [kind: ally_attack]
+      - id: provocacion
+        name: Provocación
+        cost: {actions: 1}
+        area: radio_medio
+        tags: [mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: provocado, duration: 1}]
+      - id: evasion
+        name: Evasión
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects:
+          - {kind: note, text: "+10 a Esquiva y un paso de movimiento", defense_bonus: 10}
+      - id: sacrificar_trasgo
+        name: Sacrificar Trasgo
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_attacked
+        effects:
+          - {kind: redirect, valid_targets: [trasgo, perro_trasgo]}
+      - id: atrapar_arma
+        name: Atrapar Arma
+        cost: {actions: 1}
+        reach: adyacente
+        tags: [weapon, physical]
+        notes: >
+          "Tiro enfrentado" is already exactly attack-vs-defence in this
+          engine, so this is modelled as a zero-damage attack: a hit entangles
+          both combatants and locks the target out of weapon-tagged
+          abilities, a miss provokes an Apertura the same way any other
+          missed attack does, and it can simply be paid for again next action
+          to retry.
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit:
+              - {kind: apply_effect, effect: enredado, duration: 2, to: target}
+              - {kind: apply_effect, effect: arma_atrapada, duration: 2, to: target}
+              - {kind: self_buff, effect: enredado, duration: 2}
+
+  - id: osgo
+    name: Osgo
+    source: monsters/trasgos.md
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 12}
+    saves: {fis: "7+1d6", vol: "7+1d6", men: "4"}
+    initiative: "4"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "1d6+7"}
+      - id: hacha_de_mano
+        name: Hacha de Mano
+        cost: {actions: 1}
+        reach: media
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "3d6+5", dtype: cortante}]
+      - id: maza
+        name: Maza
+        cost: {actions: 2}
+        area: radio_corto
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit:
+              - {kind: damage, damage: "4d6+5", dtype: contundente}
+              - kind: save
+                save: fis
+                dc: "7"
+                on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+      - id: disparo_letal
+        name: Disparo Letal
+        cost: {actions: 2}
+        reach: media
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit:
+              - {kind: damage, damage: "4d6+5", dtype: perforante}
+              - {kind: apply_effect, effect: herido_1}
+      - id: furia_asesina
+        name: Furia Asesina
+        cost: {actions: 3}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "2d6+7"
+            on_hit: [{kind: damage, damage: "3d6+1d6+5", dtype: cortante}]
+          - kind: attack
+            attack_roll: "2d6+7"
+            on_hit: [{kind: damage, damage: "3d6+1d6+5", dtype: cortante}]
+        notes: >
+          Modelled as the two-Hacha option.  The Desventaja on its own defensive
+          rolls is not applied -- this overstates Furia Asesina slightly.
+      - id: mirada_terrorifica
+        name: Mirada Terrorífica
+        cost: {actions: 1}
+        area: radio_medio
+        tags: [mental]
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]
+      - id: segundo_aliento
+        name: Segundo Aliento
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}]
+      - id: acechar
+        name: Acechar
+        cost: {reactions: 1}
+        is_reaction: true
+        implemented: false
+        notes: Stealth needs cover/concealment state.
+      - id: reposicion_forzosa
+        name: Reposición Forzosa
+        cost: {reactions: 1}
+        is_reaction: true
+        implemented: false
+        notes: Needs an "enemy dodged successfully" trigger.

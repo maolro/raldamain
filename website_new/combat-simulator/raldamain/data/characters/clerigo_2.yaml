@@ -1,0 +1,85 @@
+id: clerigo_2
+name: Clérigo Celestial
+source: builds/clerigo-celestial.md
+level: 2
+impactos: 6
+chi: 6
+stats: {FUE: 1, DES: 1, CON: 2, INT: 1, SAB: 4, CAR: 3}
+ranks: {magia_divina: 1, magia_vida: 1, presencia: 1}
+
+umbrales: {general: 2}
+# Voluntad Poderosa's permanent Ventaja on VOL is baked into the pool.
+saves: {fis: "2", vol: "5+1d6", men: "5"}
+initiative: "1"
+preferred_row: back
+actions: 3
+reactions: 2
+defense: parada
+
+abilities:
+  - id: parada
+    name: Parada
+    is_defense: true
+    tags: [divine]
+    roll: "5"
+
+  - id: rayo_luminoso
+    name: Rayo Luminoso
+    cost: {actions: 1}
+    reach: media
+    tags: [spell, divine, mental]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "1d6+4", dtype: radiante}
+    upgrades:
+      - id: rayo_potenciado
+        name: Rayo Potenciado
+        cost: {chi: 1}
+        damage_dice: 1
+
+  - id: halo_luminoso
+    name: Halo Luminoso
+    cost: {actions: 1, chi: 1}
+    area: radio_corto
+    tags: [spell, divine, mental]
+    effects:
+      - kind: save
+        save: vol
+        dc: "5"
+        on_fail:
+          - {kind: damage, damage: "1d6+4", dtype: radiante}
+          - {kind: apply_effect, effect: cegado, duration: 1}
+
+  - id: toque_sanador
+    name: Toque Sanador
+    cost: {actions: 1, chi: 1}
+    targeting: ally
+    reach: toque
+    tags: [divine, heal]
+    effects:
+      - {kind: heal, amount: 1, to: target}
+    notes: >
+      The undead-damage branch is omitted; no goblin in this set is undead.
+
+  - id: voz_del_comandante
+    name: Voz del Comandante
+    # Activating is a bonus action: it costs neither actions nor reactions.
+    # Once the three free uses are spent, each further use costs 1 chi.
+    cost: {uses_per_combat: 3, chi_when_exhausted: 1}
+    bonus_action: true
+    targeting: ally
+    reach: media
+    effects:
+      - {kind: grant_advantage, to: target}
+
+  - id: milagro_menor
+    name: Milagro Menor
+    cost: {uses_per_combat: 3, chi_when_exhausted: 1}
+    is_reaction: true
+    is_reroll: true
+    # "Un aliado o enemigo repite un tiro": works on either side, keeping
+    # whichever result suits the Clérigo.
+    reroll_scope: any
+    reroll_kinds: [attack, defense, save]

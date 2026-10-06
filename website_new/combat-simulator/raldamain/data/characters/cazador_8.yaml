@@ -1,0 +1,118 @@
+# Converted from builds/cazador.md's niv-8 block.
+id: cazador_8
+name: Cazador (niv 8)
+source: builds/cazador.md
+level: 8
+impactos: 6
+chi: 18
+ranks: {estilo_asesino: 3, reflejos: 3, rastrear: 2, ascendencia_primigenia: 1}
+umbrales: {general: 6, fisico: 8}       # +[2] from Forma de la Bestia
+saves: {fis: "8+1d6", vol: "4", men: "5"}
+initiative: "9"
+preferred_row: back
+actions: 4
+reactions: 2
+defense: esquiva
+skilled_defense: true
+abilities:
+  - {id: esquiva, name: Esquiva, is_defense: true, tags: [physical], roll: "9"}
+  - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "9"}
+  - id: arco_encantado
+    name: Arco Encantado
+    cost: {actions: 2}
+    reach: media
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "2d8+6", dtype: perforante}]
+    upgrades:
+      - {id: ataque_furtivo, name: Ataque Furtivo, cost: {chi: 1}, damage_dice: 1,
+         on_hit: [{kind: apply_effect, effect: herido_1, duration: 3}]}
+      - {id: ataque_triple, name: Ataque Triple, cost: {chi: 1}, area: radio_corto,
+         notes: "Estilo Asesino III: hasta 3 objetivos con el mismo ataque."}
+      - id: presionar_defensas
+        name: Presionar Defensas
+        cost: {chi: 1}
+        on_hit:
+          - {kind: save, save: men, dc: "9", on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+        notes: "RAW es antes de atacar; aproximado como rider on_hit. Anulación por Premonición no modelada."
+      - {id: secuencia_de_punaladas, name: Secuencia de Puñaladas, cost: {chi: 1}, extra_attacks: 1}
+      - {id: golpe_penetrante, name: Golpe Penetrante, cost: {chi: 2},
+         notes: "Tratar umbrales como daño Fuerza no modelado -- sin efecto numérico."}
+  - id: daga_venenosa
+    name: Daga Venenosa
+    cost: {actions: 1}
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "1d8+6", dtype: perforante}
+          - {kind: damage, damage: "1d8", dtype: acido}
+    upgrades:
+      - {id: robo_rapido, name: Robo Rápido, cost: {chi: 1}, notes: "Robo de objetos no modelado -- sin efecto numérico."}
+      - id: salto_del_asesino
+        name: Salto del Asesino
+        cost: {chi: 2}
+        damage_dice: 1
+        on_hit: [{kind: apply_effect, effect: desventaja_defensiva}]
+        notes: "Movimiento no modelado."
+  - {id: apuntar_ataque, name: Apuntar Ataque, cost: {actions: 1}, targeting: self,
+     effects: [{kind: self_buff, effect: apuntado}]}
+  - id: siempre_preparado_cadena
+    name: "Siempre Preparado (Cadena)"
+    cost: {actions: 1, chi: 1}
+    reach: corta
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "2d8+6", dtype: contundente}]
+    notes: El enredo alternativo de la Cadena no está modelado.
+  - id: siempre_preparado_bomba
+    name: "Siempre Preparado (Bomba)"
+    cost: {actions: 2, chi: 1}
+    reach: media
+    area: radio_corto
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "2d8+6", dtype: fuego}]
+    notes: El elemento de la Bomba se elige al usarla; se asume Fuego.
+  - id: siempre_preparado_bomba_humo
+    name: "Siempre Preparado (Bomba de Humo)"
+    cost: {actions: 1, chi: 1}
+    reach: media
+    area: radio_corto
+    tags: [physical]
+    effects:
+      - kind: save
+        save: fis
+        dc: "9"
+        on_fail: [{kind: apply_effect, effect: cegado, duration: 1}]
+  - id: siempre_preparado_pocion
+    name: "Siempre Preparado (Poción de Sanación)"
+    cost: {actions: 1, chi: 1}
+    targeting: self
+    tags: [heal]
+    effects:
+      - {kind: heal, amount: 1, to: self}
+      - {kind: cleanse, to: self}
+  - id: acechar
+    name: Acechar
+    cost: {actions: 1, chi: 1}
+    implemented: false
+    notes: Stealth/invisibility-adjacent, needs targeting-visibility support.
+  - {id: analizar_enemigo, name: Analizar Enemigo, cost: {actions: 1, chi: 1},
+     targeting: enemy, reach: media,
+     effects: [{kind: self_buff, effect: analizado, duration: combat, against_target: true}]}
+  - {id: forma_de_la_bestia, name: Forma de la Bestia, cost: {actions: 1}, targeting: self,
+     effects: [{kind: self_buff, effect: forma_de_la_bestia, duration: 6}]}
+  - {id: instinto_de_supervivencia, name: Instinto de Supervivencia,
+     cost: {uses_per_combat: 5, chi_when_exhausted: 1}, is_reaction: true,
+     is_reroll: true, reroll_scope: self, reroll_kinds: [attack, defense]}
+  - {id: evasion, name: Evasión, cost: {reactions: 1, chi: 1}, is_reaction: true,
+     trigger: on_defend, targeting: self,
+     effects: [{kind: note, text: "+10 a Esquiva", defense_bonus: 10}]}

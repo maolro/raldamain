@@ -448,6 +448,14 @@ function initLoaders() {
         if (e.dataTransfer.files[0]) loadFile(e.dataTransfer.files[0]);
     });
 
+    const fichaId = new URLSearchParams(location.search).get('ficha');
+    if (fichaId) {
+        // Served by the Taller de Raldamain: load data/statblocks/<id>.json
+        fetch('/api/fichas/' + encodeURIComponent(fichaId), { cache: 'no-store' })
+            .then(r => r.ok ? r.json() : Promise.reject())
+            .then(obj => loadCharacterObject(obj, (obj.name || fichaId) + ' · Ficha'))
+            .catch(() => flash('No se pudo cargar la ficha «' + fichaId + '» (¿abriste la Mesa desde el Taller?)'));
+    }
     if (new URLSearchParams(location.search).get('load') === 'creador') {
         // main.js loads its data asynchronously; the character itself is ready immediately
         loadFromCreador();

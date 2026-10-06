@@ -60,6 +60,10 @@ new Vue({
         activeToggles: [],
         copyLabel: 'Copiar ficha (Markdown)',
         formKey: 0,
+        // Taller de Raldamain (tools/taller.py): save sheets to data/statblocks
+        tallerMode: false,
+        fichaId: '',
+        fichaLabel: '💾 Guardar ficha',
         // The Mesa de Pruebas sets this so loading a file there never overwrites the Creador character
         noPersist: !!window.STATBLOCK_NO_PERSIST,
     },
@@ -684,6 +688,58 @@ ${reactions}
             return mod >= 0 ? `+${mod}` : `${mod}`;
         },
         // "Nueva ficha": back to an empty character (asks first)
+        // ---- Taller de Raldamain ---------------------------------------------
+        // Only when the page is served by tools/taller.py (it answers /api/taller):
+        // ?ficha=<id> loads data/statblocks/<id>.json, ?ficha=new starts a blank one.
+        async initTaller() {
+            try {
+                const r = await fetch('/api/taller', { cache: 'no-store' });
+                if (!r.ok) return;
+                this.tallerMode = !!(await r.json()).ok;
+            } catch (e) { return; }
+            const ficha = new URLSearchParams(location.search).get('ficha');
+            if (ficha === 'new') {
+                this.fichaId = '';
+                this.loadCharacter(this.blankCharacter());
+                this.getData("mytalents", '/data/builder/talents.json');
+            } else if (ficha) {
+                const r = await fetch('/api/fichas/' + encodeURIComponent(ficha), { cache: 'no-store' });
+                if (r.ok) { this.loadCharacter(await r.json()); this.fichaId = ficha; }
+                else alert('No se encontró la ficha «' + ficha + '».');
+            }
+        },
+        async saveFicha() {
+            const suggested = this.fichaId || (this.charactername || 'ficha').toLowerCase()
+                .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+            let id = this.fichaId;
+            if (!id) {
+                id = (prompt('Nombre del archivo de la ficha (data/statblocks/<id>.json):', suggested) || '').trim();
+                if (!id) return;
+                const exists = await fetch('/api/fichas/' + encodeURIComponent(id), { cache: 'no-store' });
+                if (exists.ok && !confirm('Ya existe la ficha «' + id + '». ¿Sobrescribirla?')) return;
+            }
+            const r = await fetch('/api/fichas/' + encodeURIComponent(id), {
+                method: 'PUT', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(this.characterData()),
+            });
+            const d = await r.json().catch(() => ({}));
+            if (!r.ok) { alert('No se pudo guardar: ' + (d.error || r.status)); return; }
+            this.fichaId = id;
+            history.replaceState(null, '', location.pathname + '?ficha=' + encodeURIComponent(id));
+            this.fichaLabel = '✓ Guardada';
+            setTimeout(() => { this.fichaLabel = '💾 Guardar ficha'; }, 2000);
+        },
+        blankCharacter() {
+            return {
+                name: 'Nombre', level: 1, race: {},
+                stats: {
+                    str: { name: "FUE", value: 0 }, dex: { name: "DES", value: 0 }, con: { name: "CON", value: 0 },
+                    itl: { name: "INT", value: 0 }, wis: { name: "SAB", value: 0 }, cha: { name: "CAR", value: 0 }
+                },
+                talents: {}, ranks: [], archetypes: [], spells: {},
+                equipment: { armor: {}, mainHand: {}, secondHand: {}, head: {}, bag: [] },
+            };
+        },
         resetCharacter() {
             if (!confirm('¿Borrar la ficha actual y empezar una nueva? Esta acción no se puede deshacer (descarga la ficha antes si quieres conservarla).')) return;
             this.loadCharacter({
@@ -1629,6 +1685,7 @@ ${reactions}
             this.loadCharacter(saved);
         else
             this.getData("mytalents", '/data/builder/talents.json');
+        this.initTaller();
     },
     watch: {
         characterSnapshot: function () { this.persistCharacter(); },

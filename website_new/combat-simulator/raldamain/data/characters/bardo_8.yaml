@@ -1,0 +1,98 @@
+# Converted from builds/bardo.md's niv-8 block.
+id: bardo_8
+name: Bardo (niv 8)
+source: builds/bardo.md
+level: 8
+impactos: 6
+chi: 18
+ranks: {presencia: 3, magia_ilusoria: 2, magia_mental: 2, mente_desencadenada: 2}
+umbrales: {general: 2}      # +[2] from Mente Desencadenada (Poder del Dolor r2)
+saves: {fis: "5", vol: "8+1d6", men: "9+1d6"}   # VOL/MEN baselines already include Voluntad Poderosa / Escudo Mental's static Ventaja
+initiative: "4"
+preferred_row: back
+actions: 3
+reactions: 2
+defense: parada
+abilities:
+  - {id: parada, name: Parada, is_defense: true, tags: [mental], roll: "8"}
+  - id: onda_trueno
+    name: Onda Trueno
+    cost: {actions: 2, chi: 1}
+    area: radio_corto
+    tags: [spell, mental]
+    effects:
+      - kind: save
+        save: vol
+        dc: "8"
+        on_fail:
+          - {kind: damage, damage: "1d6+6", dtype: sonico}
+          - {kind: apply_effect, effect: desconcertado, duration: 1}
+    upgrades:
+      - {id: onda_trueno_potenciada, name: Onda Trueno Potenciada, cost: {chi: 1}, damage_dice: 1, notes: "Máximo 2 usos por ataque -- no aplicado como límite explícito."}
+  - id: asalto_fantasmal
+    name: Asalto Fantasmal
+    cost: {actions: 1, chi: 1}
+    reach: media
+    tags: [spell, mental, illusion]
+    notes: "El 'o' entre Confundido/Enredado/daño se aproxima como daño + Enredado juntos. Confusión no modelada (sin ladder definido)."
+    effects:
+      - kind: save
+        save: men
+        dc: "8"
+        on_fail:
+          - {kind: damage, damage: "1d6+6", dtype: fuerza}
+          - {kind: apply_effect, effect: enredado, duration: 2}
+  - id: crear_ilusion
+    name: Crear Ilusión
+    cost: {actions: 1}
+    implemented: false
+    notes: Illusions need a fiction layer.
+  - id: leer_pensamientos
+    name: Leer Pensamientos
+    cost: {actions: 1}
+    implemented: false
+    notes: No mechanical effect the sim can act on.
+  - id: invisibilidad
+    name: Invisibilidad
+    cost: {actions: 1, chi: 1}
+    implemented: false
+    notes: Illusions need a fiction layer.
+  - id: sugestion
+    name: Sugestión
+    cost: {actions: 1, chi: 1}
+    implemented: false
+    notes: Commanding an enemy's next action needs policy-level support.
+  - id: asalto_psiquico
+    name: Asalto Psíquico
+    cost: {actions: 1, chi: 1}
+    reach: media
+    tags: [spell, mental]
+    effects:
+      - {kind: save, save: men, dc: "8", on_fail: [{kind: apply_effect, effect: desconcertado, duration: 1}]}
+  - id: alterar_emociones
+    name: Alterar Emociones
+    cost: {actions: 1, chi: 1}
+    area: radio_pequeno
+    reach: media
+    tags: [spell, mental]
+    effects:
+      - {kind: save, save: men, dc: "8", on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]}
+  - {id: revigorar, name: Revigorar, cost: {actions: 1, chi: 1}, targeting: ally,
+     reach: media, effects: [{kind: heal, amount: 1, to: target}, {kind: cleanse, to: target}]}
+  - id: provocacion
+    name: Provocación
+    cost: {actions: 1, chi: 1}
+    area: radio_medio
+    reach: media
+    tags: [spell, mental]
+    effects:
+      - {kind: save, save: men, dc: "8", on_fail: [{kind: apply_effect, effect: provocado, duration: 1}]}
+  - {id: inspirar_heroismo, name: Inspirar Heroísmo, cost: {actions: 1, chi: 2},
+     targeting: ally, reach: media, effects: [{kind: apply_effect, effect: heroismo_inspirado, to: target}]}
+  - {id: mente_desencadenada, name: Mente Desencadenada, cost: {actions: 1},
+     targeting: self, effects: [{kind: self_buff, effect: mente_desencadenada_r2, duration: 6}]}
+  - {id: voz_del_comandante, name: Voz del Comandante,
+     cost: {uses_per_combat: 5, chi_when_exhausted: 1}, bonus_action: true,
+     targeting: ally, reach: media, effects: [{kind: grant_advantage, to: target}]}
+  - {id: imagen_fantasmal, name: Imagen Fantasmal, cost: {reactions: 1, chi: 1},
+     is_reaction: true, implemented: false, notes: Illusions need a fiction layer.}

@@ -1,0 +1,154 @@
+# Converted from builds/druida.md's niv-8 block.
+id: druida_8
+name: Druida (niv 8)
+source: builds/druida.md
+level: 8
+impactos: 6
+chi: 12
+ranks: {magia_naturaleza: 3, magia_divina: 3, ascendencia_primigenia: 2, rastrear: 1}
+umbrales: {general: 2}      # +[2] from Forma de la Bestia
+saves: {fis: "4", vol: "5", men: "8"}
+initiative: "2"
+preferred_row: back
+actions: 3
+reactions: 2
+defense: parada
+abilities:
+  - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "9"}
+  - id: enmaranar
+    name: Enmarañar
+    cost: {actions: 1}
+    reach: media
+    tags: [spell, nature, wisdom, mental]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: apply_effect, effect: enredado, duration: 2}]
+  - id: espinas_de_madera
+    name: Espinas de Madera
+    cost: {actions: 1}
+    reach: media
+    tags: [spell, nature, wisdom, mental]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit:
+          - {kind: damage, damage: "1d8+6", dtype: perforante,
+             dtype_if: {effect: enredado, dtype: fuerza}}
+    upgrades: [{id: espinas_potenciadas, name: Espinas Potenciadas, cost: {chi: 1}, damage_dice: 1}]
+  - id: raices_devoradoras
+    name: Raíces Devoradoras
+    cost: {actions: 1, chi: 1}
+    reach: media
+    area: radio_medio
+    tags: [spell, nature, wisdom, mental]
+    notes: "Aproximado con area radio_medio (RAW es un cilindro); Desventaja por contacto con el suelo no modelada."
+    effects:
+      - kind: attack
+        attack_roll: "7"
+        on_hit:
+          - {kind: damage, damage: "2d8+6", dtype: contundente}
+          - {kind: apply_effect, effect: enredado, duration: 2}
+  - id: halo_luminoso
+    name: Halo Luminoso
+    cost: {actions: 1, chi: 1}
+    area: radio_corto
+    tags: [spell, divine, mental]
+    effects:
+      - kind: save
+        save: vol
+        dc: "9"
+        on_fail:
+          - {kind: damage, damage: "1d8+6", dtype: radiante}
+          - {kind: apply_effect, effect: cegado, duration: 1}
+  - {id: pulso_vital, name: Pulso Vital, cost: {actions: 1, chi: 1}, targeting: ally,
+     reach: media, tags: [divine, heal], effects: [{kind: heal, amount: 1, to: target}]}
+  - id: manifestacion_divina
+    name: Manifestación Divina
+    cost: {actions: 1, chi: 1}
+    implemented: false
+    notes: Freeform "remove an effect or inflict a GM-adjudicated curse" -- needs judgment-call support the sim doesn't have.
+  - id: siempre_preparado_pocion
+    name: "Siempre Preparado (Poción de Sanación)"
+    cost: {actions: 1, chi: 1}
+    targeting: self
+    tags: [heal]
+    notes: "Solo se modela la opción de Poción de Sanación; otros consumibles no se especifican en el build."
+    effects:
+      - {kind: heal, amount: 1, to: self}
+      - {kind: cleanse, to: self}
+  - id: polen_toxico
+    name: Polen Tóxico
+    cost: {actions: 2, chi: 2}
+    area: radio_medio
+    tags: [spell, nature, wisdom, mental]
+    notes: "RAW ofrece un efecto a elegir entre daño/Aturdido/Fatiga II/Confundido II; se modela solo el daño. Persistencia de la nube no modelada."
+    effects:
+      - {kind: save, save: vol, dc: "9", on_fail: [{kind: damage, damage: "2d8+6", dtype: veneno}]}
+  - id: animar_plantas
+    name: Animar Plantas
+    cost: {actions: 3, chi: 2}
+    implemented: false
+    notes: Summons a level-5 Elemental de Plantas ally -- no such statblock exists yet.
+  - id: guardian_de_la_fe
+    name: Guardián de la Fe
+    cost: {actions: 3, chi: 2}
+    implemented: false
+    notes: Summons a level-5 divine creature ally -- no such statblock exists yet.
+  - id: distraccion_ilusoria
+    name: Distracción Ilusoria
+    cost: {actions: 1, chi: 1}
+    area: radio_pequeno
+    reach: media
+    tags: [spell, mental, illusion]
+    effects:
+      - {kind: save, save: men, dc: "9", on_fail: [{kind: apply_effect, effect: desconcertado, duration: 1}]}
+  - id: sugestion
+    name: Sugestión
+    cost: {actions: 1, chi: 1}
+    implemented: false
+    notes: Commanding an enemy's next action needs policy-level support.
+  - id: crear_ilusion
+    name: Crear Ilusión
+    cost: {actions: 1}
+    implemented: false
+    notes: Illusions need a fiction layer.
+  - {id: consagrar_la_tierra, name: Consagrar la Tierra, cost: {actions: 2, chi: 1},
+     targeting: self, effects: [{kind: self_buff, effect: consagrar_la_tierra}]}
+  - {id: forma_de_la_bestia, name: Forma de la Bestia, cost: {actions: 1}, targeting: self,
+     effects: [{kind: self_buff, effect: forma_de_la_bestia, duration: 6}]}
+  - {id: analizar_enemigo, name: Analizar Enemigo, cost: {actions: 1, chi: 1},
+     targeting: enemy, reach: media,
+     effects: [{kind: self_buff, effect: analizado, duration: combat, against_target: true}]}
+  - {id: crecimiento_acelerado, name: Crecimiento Acelerado, cost: {actions: 2, chi: 2},
+     targeting: self, effects: [{kind: self_buff, effect: crecimiento_acelerado}]}
+  - {id: milagro_menor, name: Milagro Menor,
+     cost: {uses_per_combat: 4, chi_when_exhausted: 1}, is_reaction: true,
+     is_reroll: true, reroll_scope: any, reroll_kinds: [attack, defense, save]}
+  - id: muro_de_zarzas
+    name: Muro de Zarzas
+    cost: {reactions: 1, chi: 1}
+    is_reaction: true
+    trigger: on_damaged
+    targeting: self
+    effects:
+      - kind: wall
+        amount: 6
+        duration: 3
+        to: self
+        name: Muro de Zarzas
+        protects_allies: true
+        retaliate: {save: fis, dc: "9", damage: "2d8+6", dtype: perforante,
+                    effect: enredado, effect_duration: 2}
+  - id: engano_ilusorio
+    name: Engaño Ilusorio
+    cost: {reactions: 1, chi: 1}
+    is_reaction: true
+    implemented: false
+    notes: Forcing an automatic-fail on an enemy's in-flight roll needs a reactive-interrupt mechanic the sim doesn't have.
+  - id: contrahechizo
+    name: Contrahechizo
+    cost: {reactions: 1}
+    is_reaction: true
+    implemented: false
+    notes: Countering an in-flight enemy spell needs a targeted-spell-interrupt mechanic the sim doesn't have.

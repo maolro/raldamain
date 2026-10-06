@@ -1,0 +1,100 @@
+id: barbaro_2
+name: Bárbaro
+source: builds/barbaro.md
+level: 2
+impactos: 6
+chi: 6
+stats: {FUE: 4, DES: 1, CON: 3, INT: 1, SAB: 2, CAR: 1}
+ranks: {estilo_coloso: 1, ira: 1, fortitud: 1}
+
+# Resistencia Natural (+2) is already folded in, as in the statblock.
+umbrales: {general: 4, fisico: 8}
+# Base pools only -- the +(1d6) shown in the statblock comes from Ira.
+saves: {fis: "5", vol: "4", men: "3"}
+initiative: "1"
+preferred_row: front  # Tank: melee only, holds the line.
+actions: 3
+reactions: 2
+defense: parada
+
+abilities:
+  - id: parada
+    name: Parada
+    is_defense: true
+    tags: [physical]
+    roll: "5"
+
+  - id: gran_hacha
+    name: Gran Hacha
+    cost: {actions: 2}
+    reach: adyacente
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "3d6+4", dtype: cortante}
+    upgrades:
+      - id: golpe_desestabilizador
+        name: Golpe Desestabilizador
+        cost: {chi: 1}
+        applies_on_parry: true
+        notes: >
+          The "funciona incluso con una Parada exitosa" clause is not modelled;
+          the rider only fires on a hit.
+        on_hit:
+          - kind: save
+            save: fis
+            dc: "5"
+            on_fail:
+              - {kind: apply_effect, effect: desventaja_defensiva}
+
+  - id: ataque_poderoso
+    name: Ataque Poderoso
+    cost: {actions: 1}
+    targeting: self
+    effects:
+      - {kind: self_buff, effect: ataque_poderoso}
+
+  - id: ira
+    name: Ira
+    cost: {actions: 1}
+    targeting: self
+    effects:
+      - {kind: self_buff, effect: ira, duration: 6}
+    notes: >
+      The chi drain when Ira ends is not modelled -- fights resolve well inside
+      six rounds, so it never triggers at this level.
+
+  - id: demostracion_terrorifica
+    name: Demostración Terrorífica
+    cost: {actions: 1, chi: 1}
+    area: radio_medio
+    tags: [mental]
+    effects:
+      - kind: save
+        save: vol
+        dc: "5"
+        on_fail:
+          - {kind: apply_effect, effect: miedo_1, duration: 2}
+
+  - id: segundo_aliento
+    name: Segundo Aliento
+    cost: {reactions: 1, chi: 1}
+    is_reaction: true
+    trigger: on_damaged
+    targeting: self
+    effects:
+      - {kind: umbral_boost, amount: 3, duration: 1, to: self, tags: [consume_on_umbral]}
+
+  - id: proteger_aliado
+    name: Proteger Aliado
+    cost: {reactions: 1}
+    is_reaction: true
+    trigger: on_ally_attacked
+    effects:
+      - {kind: intercept}
+    notes: >
+      Steps in front of an ally: the protector rolls their own defence and
+      takes the damage.  Works against ranged attacks too, which is how a front
+      row can shield a back row it could not otherwise screen.

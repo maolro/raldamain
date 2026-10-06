@@ -215,3 +215,25 @@
 .builder-sidebar::-webkit-scrollbar-thumb:hover {
     background: var(--accent-gold);
 }
+
+/* Taller de Raldamain (tools/taller.py) */
+.builder-actions-inline .taller-save {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}
+
+.builder-actions-inline .taller-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 12px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.builder-actions-inline .taller-link:hover {
+    border-color: var(--accent-gold);
+    color: var(--accent-gold);
+}

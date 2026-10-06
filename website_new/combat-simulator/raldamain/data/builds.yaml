@@ -1,0 +1,175 @@
+# Character build specs -- the INPUT to tools/build_gen.py.
+#
+# A build is just (level, stats, ranks, weapons).  Everything else --
+# abilities, umbrales, saves, attack modifiers, chi -- is derived, so this
+# file is the only place a character has to be edited.  Regenerate with:
+#
+#     python -m tools.build_gen --write-all --level 5
+#
+# Stats are the printed arrays from builds/*.md.  They obey the creation rule
+# (base array 3,2,2,2,1,1 = 11 points, max 4 at creation) plus +1 per level,
+# capped at TIER+3 -- validate with engine/stat_progression.py.
+#
+# Saves are derived, not stored: FIS = FUE+DES, VOL = CON+CAR, MEN = INT+SAB,
+# which reproduces the printed save line on 9 of the 10 niv-5 builds exactly
+# (Bárbaro's printed FÍS +7 is one higher than its own stats allow -- treated
+# as a typo in builds/barbaro.md rather than replicated).
+#
+# `weapons` carry explicit dice because the sim's weapon table (2-action melee
+# = 3 dice, 1-action = 2 dice, bow = 3 dice to pay for not being able to Parry)
+# deliberately differs from the printed builds, which show base dice with the
+# Ira/buff die already folded in.  `stat` is the stat backing damage -- an
+# Infusión Elemental/Luminosa caster swings off their casting stat.
+
+barbaro_5:
+  name: Bárbaro (niv 5)
+  source: builds/barbaro.md
+  level: 5
+  faith: "primigenio"
+  stats: {FUE: 5, DES: 1, CON: 4, INT: 1, SAB: 2, CAR: 1}
+  ranks: {estilo_coloso: 2, ira: 2, fortitud: 1, ascendencia_primigenia: 1}
+  umbral_bonus: {general: 2, fisico: 6}   # armadura pesada
+  preferred_row: front
+  defense: parada
+  defense_name: Parada
+  defense_tags: [physical]
+  weapons:
+    - {id: gran_hacha, name: Gran Hacha, actions: 2, dtype: cortante, stat: FUE}
+    - {id: lanza, name: Lanza, actions: 1, dtype: perforante, stat: FUE, reach: media}
+
+bardo_5:
+  name: Bardo (niv 5)
+  source: builds/bardo.md
+  level: 5
+  faith: "primigenio"
+  stats: {FUE: 1, DES: 3, CON: 2, INT: 2, SAB: 1, CAR: 5}
+  ranks: {presencia: 2, magia_ilusoria: 1, magia_mental: 2, mente_desencadenada: 1}
+  preferred_row: back
+  defense: parada
+  defense_name: Parada
+  defense_tags: [mental]
+
+cazador_5:
+  name: Cazador (niv 5)
+  source: builds/cazador.md
+  level: 5
+  faith: "primigenio"
+  stats: {FUE: 2, DES: 5, CON: 2, INT: 1, SAB: 3, CAR: 1}
+  ranks: {estilo_asesino: 2, reflejos: 2, rastrear: 1, ascendencia_primigenia: 1}
+  umbral_bonus: {fisico: 2}               # armadura ligera
+  preferred_row: back
+  defense: esquiva
+  defense_name: Esquiva
+  defense_tags: [physical]
+  weapons:
+    - {id: arco, name: Arco, actions: 2, dtype: perforante, stat: DES, reach: media}
+    - {id: daga, name: Daga, actions: 1, dtype: perforante, stat: DES}
+
+clerigo_5:
+  name: Clérigo Celestial (niv 5)
+  source: builds/clerigo-celestial.md
+  level: 5
+  faith: "celestial"
+  stats: {FUE: 1, DES: 1, CON: 2, INT: 1, SAB: 5, CAR: 4}
+  ranks: {magia_divina: 2, magia_vida: 2, presencia: 1, ascendencia_celestial: 1}
+  preferred_row: back
+  defense: parada
+  defense_name: Parada
+  defense_tags: [divine]
+  weapons:
+    # Infusión Luminosa: swings off the Magia de Vida stat, not FUE.
+    - {id: maza, name: Maza, actions: 2, dtype: contundente, stat: SAB}
+
+druida_5:
+  name: Druida (niv 5)
+  source: builds/druida.md
+  level: 5
+  faith: "primigenio"
+  stats: {FUE: 1, DES: 2, CON: 2, INT: 2, SAB: 5, CAR: 2}
+  ranks: {magia_naturaleza: 2, magia_divina: 2, ascendencia_primigenia: 1, rastrear: 1}
+  preferred_row: back
+  defense: parada
+  defense_name: Parada
+  defense_tags: [physical]
+
+elementalista_5:
+  name: Elementalista de Fuego (niv 5)
+  source: builds/elementalista-fuego.md
+  level: 5
+  faith: "primigenio"
+  stats: {FUE: 1, DES: 4, CON: 1, INT: 1, SAB: 2, CAR: 5}
+  ranks: {magia_fuego: 2, mente_desencadenada: 1, reflejos: 2, estilo_duelista: 1}
+  preferred_row: back
+  defense: parada
+  defense_name: Parada
+  defense_tags: [mental]
+  extra_defenses:
+    - {id: esquiva, name: Esquiva, tags: [physical]}
+  weapons:
+    # Infusión Elemental: swings off the Magia de Fuego stat.
+    - {id: golpe, name: Golpe, actions: 1, dtype: contundente, stat: CAR}
+
+luchador_5:
+  name: Luchador (niv 5)
+  source: builds/luchador.md
+  level: 5
+  faith: "celestial"
+  stats: {FUE: 2, DES: 5, CON: 2, INT: 1, SAB: 1, CAR: 3}
+  ranks: {estilo_duelista: 2, reflejos: 2, ira: 1, presencia: 1}
+  umbral_bonus: {general: 2, fisico: 2}   # armadura media
+  preferred_row: front
+  defense: parada
+  defense_name: Parada
+  defense_tags: [physical]
+  extra_defenses:
+    - {id: esquiva, name: Esquiva, tags: [physical]}
+  weapons:
+    - {id: espada, name: Espada, actions: 1, dtype: cortante, stat: DES}
+
+mago_5:
+  name: Mago (niv 5)
+  source: builds/mago.md
+  level: 5
+  faith: ""    # sin dios: no puede consagrar
+  stats: {FUE: 1, DES: 2, CON: 2, INT: 5, SAB: 1, CAR: 3}
+  ranks: {evocacion: 2, mente_desencadenada: 2, magia_espacial: 1, magia_protectora: 1}
+  preferred_row: back
+  defense: parada
+  defense_name: Parada
+  defense_tags: [mental]
+  # Transformación Elemental: one sibling spell per swappable magic dtype.
+  swap_dtypes: [fuego, frio, electrico, acido]
+
+monje_5:
+  name: Monje (niv 5)
+  source: builds/monje.md
+  level: 5
+  faith: "celestial"
+  stats: {FUE: 1, DES: 5, CON: 2, INT: 1, SAB: 4, CAR: 1}
+  ranks: {estilo_duelista: 2, guerrero_divino: 2, fortitud: 1, reflejos: 1}
+  chi: 6                      # printed as 6, not the derived 12
+  preferred_row: front
+  defense: parada
+  defense_name: Parada
+  defense_tags: [physical]
+  extra_defenses:
+    - {id: esquiva, name: Esquiva, tags: [physical]}
+  divine_dtypes: [radiante, sonico]
+  weapons:
+    - {id: golpe, name: Golpe, actions: 1, dtype: contundente, stat: DES}
+
+paladin_5:
+  name: Paladín (niv 5)
+  source: builds/paladin.md
+  level: 5
+  faith: "celestial"
+  stats: {FUE: 5, DES: 1, CON: 2, INT: 1, SAB: 1, CAR: 4}
+  ranks: {estilo_coloso: 2, guerrero_divino: 2, fortitud: 1, ascendencia_celestial: 1}
+  preferred_row: front
+  defense: parada_arma
+  defense_name: Parada de Arma
+  defense_tags: [physical]
+  divine_dtypes: [radiante, fuego]
+  umbral_bonus: {fisico: 4}               # armadura pesada
+  weapons:
+    - {id: mandoble, name: Mandoble, actions: 2, dtype: cortante, stat: FUE}

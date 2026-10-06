@@ -1,0 +1,527 @@
+# Conditions and buffs.
+#
+# `assumed: true` marks a reading the SIMULATOR invented because the rules
+# documents name the condition but never define it mechanically.  Every fight
+# report lists which assumed effects were in play, so nothing here can quietly
+# distort your results.  Correct these first -- they are the cheapest accuracy
+# win in the whole project.
+#
+# Convention: Ventaja = +1d6 on the roll, Desventaja = -1d6.
+
+# ---------------------------------------------------------------- self buffs
+ira:
+  name: Ira
+  kind: buff
+  duration: 6
+  modifiers:
+    - {scope: physical, advantage: 1, damage_dice: 1}
+
+mente_desencadenada:
+  name: Mente Desencadenada
+  kind: buff
+  duration: 6
+  modifiers:
+    - {scope: mental, advantage: 1, damage_dice: 1}
+
+forma_de_la_bestia:
+  name: Forma de la Bestia
+  kind: buff
+  duration: 6
+  notes: >
+    Ventaja on physical and Sabiduría rolls, +2 umbrales.  The cordura cost on
+    ending is not modelled.
+  modifiers:
+    - {scope: physical, advantage: 1}
+    - {scope: wisdom, advantage: 1}     # SAB-based attacks and skills
+    - {scope: save_men, advantage: 1}
+    - {scope: umbral, umbral: 2}
+
+despertar_abisal:
+  name: Despertar Abisal
+  kind: buff
+  duration: null
+  notes: >
+    Campeón Abisal's second phase: Ventaja on attack, defence and saves, an
+    extra damage die, and +5 to every umbral.
+    damage_dice is on its own scope:"all" line rather than bundled with the
+    scope:"attack" line above it -- damage-dice matching checks
+    {"damage", *ability.tags}, which never contains the literal word
+    "attack", so a damage_dice bundled under scope:"attack" silently never
+    applied. scope:"all" always matches; giving it its own line (rather than
+    just widening the attack-roll line to "all") avoids double-granting
+    advantage on defense/save, which already have their own lines below.
+  modifiers:
+    - {scope: attack, advantage: 1}
+    - {scope: all, damage_dice: 1}
+    - {scope: defense, advantage: 1}
+    - {scope: save, advantage: 1}
+    - {scope: umbral, umbral: 5}
+
+frenesi_de_batalla:
+  name: Frenesí de Batalla
+  kind: buff
+  duration: 1     # "esta ronda" -- re-declared each round it's wanted, not maintained like Ira
+  notes: >
+    Ira (Rango II). Ventaja on attack at the cost of Desventaja on defence,
+    for the round. This is the Bárbaro's route to 2d6 on offence without a
+    second resource (Ira already grants +1d6; this stacks a second on top of
+    it) -- the trade is real, not free, since it also inflicts -1d6 on every
+    defensive roll that round. GreedyPolicy has no branch that weighs "more
+    damage now" against "more likely to get hit back", so this is not wired
+    into any scripted build's maintain list; it exists to be probed directly.
+  modifiers:
+    - {scope: attack, advantage: 1}
+    - {scope: defense, advantage: -1}
+
+ira_r2:
+  name: Ira (Rango II)
+  kind: buff
+  duration: 6
+  notes: Adds Resistencia Salvaje's umbral bonus on top of Rank I's Ventaja.
+  modifiers:
+    - {scope: physical, advantage: 1, damage_dice: 1}
+    - {scope: umbral, umbral: 4}
+
+guerrero_de_la_fe:
+  name: Guerrero de la Fe
+  kind: buff
+  duration: 6
+  # Same font of power as the TERRAIN blessing specifically (Consagrar la
+  # Tierra) -- see stack_group's docstring in effects.py. A paladin standing
+  # on ground already consecrated to their god gets nothing extra from also
+  # paying this ability's cost, and vice versa; only the stronger stays.
+  # Canalización Celestial is a SEPARATE resource (its own rank tree, its own
+  # action/chi) and deliberately stacks with this -- see its own comment.
+  stack_group: bendicion_divina
+  modifiers:
+    - {scope: attack, advantage: 1}
+    - {scope: defense, advantage: 1}
+    - {scope: save_vol, advantage: 1}
+    - {scope: save_men, advantage: 1}
+
+segunda_marcha:
+  name: Segunda Marcha
+  kind: buff
+  duration: null
+  notes: >
+    Miniboss "second gear" -- a further permanent Ventaja stacked on top of
+    a chi-less build's already-baked-in first die, modelling a level-5 PC
+    reaching a second Ventaja source mid-fight (a second buff, an ally's
+    support). See aventureros.yaml's niv-5 conversions for the methodology.
+  modifiers:
+    - {scope: all, advantage: 1}
+
+consagrar_la_tierra:
+  name: Consagrar la Tierra
+  kind: buff
+  duration: null
+  stack_group: bendicion_divina   # see guerrero_de_la_fe's comment
+  notes: >
+    Magia Divina II. Granted to EVERY combatant whose `faith` matches the
+    faith currently holding the battlefield -- caster included, and across
+    side lines (a celestial paladin fighting alongside an abyssal cultist
+    gains nothing from the cultist's consecration).  Never applied directly:
+    Resolver._sync_consecration adds and removes it so the set of blessed
+    combatants always matches CombatState.consecration.
+
+    ONE modifier line (scope: all), not one line per scope: a divine attack
+    roll carries both an "attack" tag and a "divine" tag, so separate
+    {scope: attack} and {scope: divine} lines both matched the same roll and
+    silently doubled this buff's Ventaja on any divine attack/DC (observed as
+    a Clérigo's DC swelling to 3-4 dice off just this + Canalización
+    Celestial). scope: all matches once per roll, no matter how many of the
+    ability's tags it satisfies.
+  modifiers:
+    - {scope: all, advantage: 1}
+
+consagrando:
+  name: Consagrando
+  kind: buff
+  duration: null
+  notes: >
+    Marks a caster who is still channelling Consagrar la Tierra.  Carries no
+    modifiers of its own -- it is the flag Resolver.contest_consecration reads
+    each round to decide who presses their claim on the ground, and it keeps
+    working only while its holder stays focused (no Desventaja-inflicting or
+    incapacitating status).
+  modifiers: []
+
+canalizacion_celestial:
+  name: Canalización Celestial
+  kind: buff
+  duration: 6
+  notes: >
+    Deliberately NOT in guerrero_de_la_fe's stack_group: Canalización
+    Celestial (Ascendencia Celestial I) and Guerrero de la Fe (Guerrero
+    Divino II) are two different rank trees a Paladín invests in separately,
+    each with its own action/chi cost, so stacking them to 2d6 is the
+    intended "spend two resources for a real double-stack" case this
+    session's dice-ceiling methodology is built on -- unlike Consagrar la
+    Tierra, which is free once the ground is held and would let a paladin
+    reach the same Ventaja without ever paying for either ability.
+  modifiers:
+    - {scope: all, advantage: 1}
+
+mente_desencadenada_r2:
+  name: Mente Desencadenada (Rango II)
+  kind: buff
+  duration: 6
+  notes: Adds Poder del Dolor's umbral bonus on top of Rank I's Ventaja.
+  modifiers:
+    - {scope: mental, advantage: 1, damage_dice: 1}
+    - {scope: umbral, umbral: 2}
+
+ira_r3:
+  name: Ira (Rango III)
+  kind: buff
+  duration: 6
+  notes: Niv-8 Bárbaro/Luchador -- same Resistencia Salvaje umbral scaling as Rank II, one step further per the niv-8 header bracket.
+  modifiers:
+    - {scope: physical, advantage: 1, damage_dice: 1}
+    - {scope: umbral, umbral: 5}
+
+ira_temeraria:
+  name: Ira Temeraria
+  kind: buff
+  duration: 6
+  notes: >
+    Bárbaro-only rider stacked alongside ira_r3 (see barbaro_8.yaml) -- Ventaja
+    on mental rolls while in Ira. The "ignore Miedo/Desconcertado while in Ira"
+    half is instead baked into barbaro_8's static immunities list, matching how
+    Resistencia Salvaje's Herido immunity is already handled at niv 5.
+  modifiers:
+    - {scope: mental, advantage: 1}
+
+mente_desencadenada_r3:
+  name: Mente Desencadenada (Rango III)
+  kind: buff
+  duration: 6
+  notes: Niv-8 Elementalista -- Poder del Dolor's umbral bonus goes to 3 at this rank.
+  modifiers:
+    - {scope: mental, advantage: 1, damage_dice: 1}
+    - {scope: umbral, umbral: 3}
+
+canalizacion_celestial_r2:
+  name: Canalización Celestial (Ascendencia Celestial II)
+  kind: buff
+  duration: 6
+  notes: >
+    Niv-8 Clérigo -- Fuerza Vital adds +3 to physical/magic umbrales on top
+    of Rank I's Ventaja. Not in guerrero_de_la_fe's stack_group -- see plain
+    canalizacion_celestial's comment.
+  modifiers:
+    - {scope: all, advantage: 1}
+    - {scope: umbral, umbral: 3}
+
+telarana_de_vida:
+  name: Telaraña de Vida
+  kind: buff
+  duration: null
+  notes: Niv-8 Clérigo capstone -- Ventaja and +1 damage die on Magia de Vida (and, per RAW, weapon/Fuego/Ascendencia Celestial attacks), lasting the rest of combat.
+  modifiers:
+    - {scope: all, advantage: 1, damage_dice: 1}
+
+heroismo_inspirado:
+  name: Inspirar Heroísmo
+  kind: buff
+  duration: null
+  notes: Niv-8 Bardo -- Ventaja on attack/defense/ability for the rest of combat. Not the same mechanic as Voz del Comandante's one-shot ventaja_otorgada.
+  modifiers:
+    - {scope: all, advantage: 1}
+
+crecimiento_acelerado:
+  name: Crecimiento Acelerado
+  kind: buff
+  duration: null
+  notes: Niv-8 Druida capstone -- Ventaja and +1 damage die on Magia de Naturaleza, lasting the rest of combat.
+  modifiers:
+    - {scope: all, advantage: 1, damage_dice: 1}
+
+maestro_de_las_llamas:
+  name: Maestro de las Llamas
+  kind: buff
+  duration: null
+  notes: Niv-8 Elementalista capstone -- Ventaja and +1 damage die on Magia de Fuego, lasting the rest of combat.
+  modifiers:
+    - {scope: all, advantage: 1, damage_dice: 1}
+
+analizado:
+  name: Analizar Enemigo
+  kind: buff
+  duration: null            # lasts the whole combat
+  modifiers:
+    - {scope: all, advantage: 1, damage_dice: 1}
+
+ataque_poderoso:
+  name: Ataque Poderoso
+  kind: buff
+  duration: 2
+  tags: [consume_on_attack]
+  modifiers:
+    - {scope: damage, damage_dice: 1}
+
+apuntado:
+  name: Apuntar Ataque
+  kind: buff
+  duration: 2
+  tags: [consume_on_attack]
+  modifiers:
+    - {scope: attack, flat: 2}
+
+ventaja_otorgada:
+  name: Ventaja otorgada
+  kind: buff
+  duration: 1
+  tags: [consume_on_attack, consume_on_defense]
+  modifiers:
+    - {scope: all, advantage: 1}
+
+asistido:
+  name: Asistido (+2)
+  kind: buff
+  family: asistido
+  level: 1
+  duration: 2
+  tags: [consume_on_attack, consume_on_defense]
+  modifiers:
+    - {scope: all, flat: 2}
+
+asistido_2:
+  name: Asistido (+4)
+  kind: buff
+  family: asistido
+  level: 2
+  duration: 2
+  tags: [consume_on_attack, consume_on_defense]
+  modifiers:
+    - {scope: all, flat: 4}
+
+asistido_3:
+  name: Asistido (+6)
+  kind: buff
+  family: asistido
+  level: 3
+  duration: 2
+  tags: [consume_on_attack, consume_on_defense]
+  notes: Ceiling -- Assist stacks to +6 and no further.
+  modifiers:
+    - {scope: all, flat: 6}
+
+# --------------------------------------------------------------- conditions
+desventaja_defensiva:
+  name: Desventaja defensiva
+  duration: 2
+  tags: [consume_on_defense]
+  notes: >
+    Explicit in the rules: "Desventaja en su siguiente tiro defensivo".
+  modifiers:
+    - {scope: defense, advantage: -1}
+
+miedo_1:
+  name: Miedo I
+  family: miedo
+  level: 1
+  duration: 2
+  assumed: true
+  notes: Assumed to be Desventaja on attack rolls. Not defined in base-info.md.
+  modifiers:
+    - {scope: attack, advantage: -1}
+
+miedo_2:
+  name: Miedo II
+  family: miedo
+  level: 2
+  duration: 2
+  assumed: true
+  notes: Presencia IV hands out Miedo I-IV by level difference, so the ladder exists.
+  modifiers:
+    - {scope: attack, advantage: -2}
+
+miedo_3:
+  name: Miedo III
+  family: miedo
+  level: 3
+  duration: 2
+  assumed: true
+  modifiers:
+    - {scope: attack, advantage: -2}
+    - {scope: defense, advantage: -1}
+
+miedo_4:
+  name: Miedo IV
+  family: miedo
+  level: 4
+  duration: 2
+  assumed: true
+  notes: Top rung -- the target is too terrified to act.
+  incapacitates: true
+  modifiers:
+    - {scope: all, advantage: -3}
+
+# --- Status ladders -----------------------------------------------------
+# Conditions sharing a `family` escalate instead of stacking: applying one to
+# a target that already has it promotes them a rung.  Each level adds another
+# die of Desventaja, so the ladder speaks the system's existing currency.
+# The rules already name Herido II, Miedo II-IV and Fatiga II.
+
+desconcertado:
+  name: Desconcertado I
+  family: desconcertado
+  level: 1
+  duration: 1
+  modifiers:
+    - {scope: all, advantage: -1}
+
+desconcertado_2:
+  name: Desconcertado II
+  family: desconcertado
+  level: 2
+  duration: 1
+  assumed: true
+  notes: Ladder rung invented by the sim -- 2 dice of Desventaja.
+  modifiers:
+    - {scope: all, advantage: -2}
+
+desconcertado_3:
+  name: Desconcertado III
+  family: desconcertado
+  level: 3
+  duration: 2
+  assumed: true
+  notes: >
+    Ladder rung invented by the sim -- 3 dice of Desventaja and an action lost.
+  lose_actions: 1
+  modifiers:
+    - {scope: all, advantage: -3}
+
+herido_1:
+  name: Herido I
+  family: herido
+  level: 1
+  duration: 3
+  assumed: true
+  notes: Assumed to be Desventaja on physical rolls.
+  modifiers:
+    - {scope: physical, advantage: -1}
+
+herido_2:
+  name: Herido II
+  family: herido
+  level: 2
+  duration: 3
+  assumed: true
+  notes: >
+    Named in the rules (the Bárbaro is immune to Herido I and II) but never
+    defined; assumed to be 2 dice of Desventaja on physical rolls.
+  modifiers:
+    - {scope: physical, advantage: -2}
+
+herido_3:
+  name: Herido III
+  family: herido
+  level: 3
+  duration: 3
+  assumed: true
+  modifiers:
+    - {scope: physical, advantage: -3}
+
+cegado:
+  name: Cegado
+  duration: 1
+  assumed: true
+  notes: Assumed to be Desventaja on attack and defence rolls.
+  modifiers:
+    - {scope: attack, advantage: -1}
+    - {scope: defense, advantage: -1}
+
+enredado:
+  name: Enredado
+  duration: 2
+  assumed: true
+  notes: >
+    Assumed to be Desventaja on defence and no movement.  Movement is not
+    modelled (the sim is positionless), so only the defence penalty bites.
+  modifiers:
+    - {scope: defense, advantage: -1}
+
+arma_atrapada:
+  name: Arma Atrapada
+  duration: 2
+  assumed: true
+  notes: >
+    Atrapar Arma's weapon-lock. No roll modifier -- the effect is purely
+    that weapon-tagged abilities are filtered out of what the bot considers
+    usable (see GreedyPolicy._usable) while this is active. Policy-level
+    rather than engine-enforced, the same way every other "is this ability
+    legal right now" check in this codebase (row reach, chi affordability)
+    already lives in the policy layer, not a separate hard gate.
+  modifiers: []
+
+fatiga_1:
+  name: Fatiga I
+  family: fatiga
+  level: 1
+  duration: 2
+  assumed: true
+  notes: Named in the rules (Ira's backlash, Robar el Tiempo) but never defined.
+  modifiers:
+    - {scope: physical, advantage: -1}
+
+fatiga_2:
+  name: Fatiga II
+  family: fatiga
+  level: 2
+  duration: 2
+  assumed: true
+  modifiers:
+    - {scope: physical, advantage: -2}
+
+ensordecido:
+  name: Ensordecido
+  duration: 1
+  assumed: true
+  notes: >
+    No combat penalty modelled -- deafness matters for perception and for
+    auditory effects, neither of which the sim tracks.
+
+enfermado_1:
+  name: Enfermado I
+  duration: 3
+  assumed: true
+  notes: Assumed to be Desventaja on physical rolls.
+  modifiers:
+    - {scope: physical, advantage: -1}
+
+provocado:
+  name: Provocado
+  duration: 1
+  assumed: true
+  notes: >
+    Rules say the target may only attack the provoker AND has Desventaja on its
+    next defensive roll.  Only the defensive half is modelled; the targeting
+    restriction needs policy-level support.
+  modifiers:
+    - {scope: defense, advantage: -1}
+
+aturdido:
+  name: Aturdido
+  duration: 1
+  incapacitates: true
+  assumed: true
+  notes: Assumed to mean no actions and no defence roll for one round.
+
+infortunio:
+  name: Infortunio
+  duration: 1
+  assumed: true
+  notes: >
+    Rules apply this to a single roll; modelled as one round of rolling twice
+    and keeping the worse result.
+  modifiers:
+    - {scope: all, reroll_worst: true}
+
+maldito:
+  name: Maldición de Mala Suerte
+  duration: null
+  modifiers:
+    - {scope: all, reroll_worst: true}

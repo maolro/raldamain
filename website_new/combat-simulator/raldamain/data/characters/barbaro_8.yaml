@@ -1,0 +1,103 @@
+# Converted from builds/barbaro.md's niv-8 block. Reading convention: parenthesised
+# dice in the source prose are CONDITIONAL (Ira, double-stacking) and are stripped
+# from the stored base pool -- both the attack roll AND the damage dice, unlike
+# barbaro_5.yaml where the damage die was left pre-folded into the base pool while
+# the attack roll was stripped (an inconsistency: with Ira's self_buff also adding
+# damage_dice:1, that niv-5 file double-counts the bonus die whenever Ira is
+# actually toggled on. Flagged for a separate fix pass; not replicated here).
+id: barbaro_8
+name: Bárbaro (niv 8)
+source: builds/barbaro.md
+level: 8
+impactos: 6
+chi: 18
+ranks: {estilo_coloso: 3, ira: 3, fortitud: 2, ascendencia_primigenia: 1}
+umbrales: {general: 8, fisico: 16, necrotico: 12, veneno: 12}   # +[5] from Ira (ira_r3)
+saves: {fis: "9", vol: "6+1d6", men: "4"}
+initiative: "1"
+preferred_row: front
+actions: 3
+reactions: 2
+defense: parada
+# Duro de Pelar's "acts past 0" isn't modelled; Ira Temeraria's Miedo/Desconcertado
+# immunity is baked in statically here rather than gated on Ira being active,
+# matching how Resistencia Salvaje's Herido immunity is already handled at niv 5.
+immunities: [herido_1, herido_2, miedo_1, miedo_2, miedo_3, miedo_4, desconcertado, desconcertado_2, desconcertado_3]
+abilities:
+  - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "9"}
+  - id: gran_hacha
+    name: Gran Hacha
+    cost: {actions: 2}
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "2d8+6", dtype: cortante}]
+    upgrades:
+      - id: golpe_desestabilizador
+        name: Golpe Desestabilizador
+        cost: {chi: 1}
+        applies_on_parry: true
+        on_hit:
+          - {kind: save, save: fis, dc: "9", on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+      - {id: gran_barrido, name: Gran Barrido, cost: {chi: 1}, damage_dice: 1, area: radio_pequeno}
+      - id: reposicion_forzosa
+        name: Reposición Forzosa
+        cost: {chi: 1}
+        on_miss:
+          - {kind: save, save: fis, dc: "9", on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]}
+      - id: lanzamiento
+        name: Lanzamiento
+        cost: {chi: 1}
+        damage_dice: 1
+        notes: "Estilo Coloso II: también cambia el alcance a distancia media -- no modelado. Caída de objetivos voladores no modelada."
+      - id: carga_arrolladora
+        name: Carga Arrolladora
+        cost: {chi: 2}
+        damage_dice: 2
+        notes: "Movimiento a través de enemigos y destrucción de barreras no modelados -- se trata como un ataque potenciado normal."
+      - id: impacto_demoledor
+        name: Impacto Demoledor
+        cost: {chi: 2}
+        damage_dice: 1
+        notes: "Roto de armadura y quitar Contador de Escudo no modelados más allá del dado de daño extra."
+      - id: golpe_aturdidor
+        name: Golpe Aturdidor
+        cost: {chi: 1}
+        on_hit:
+          - {kind: save, save: vol, dc: "9", on_fail: [{kind: apply_effect, effect: aturdido}]}
+  - id: lanza
+    name: Lanza
+    cost: {actions: 1}
+    reach: media
+    tags: [weapon, physical]
+    effects:
+      - kind: attack
+        attack_roll: "9"
+        on_hit: [{kind: damage, damage: "1d8+6", dtype: perforante}]
+  - {id: ataque_poderoso, name: Ataque Poderoso, cost: {actions: 1}, targeting: self, effects: [{kind: self_buff, effect: ataque_poderoso}]}
+  - id: ira
+    name: Ira
+    cost: {actions: 1}
+    targeting: self
+    effects:
+      - {kind: self_buff, effect: ira_r3, duration: 6}
+      - {kind: self_buff, effect: ira_temeraria, duration: 6}
+  - id: ira_temeraria_reaccion
+    name: Ira Temeraria (Salvación)
+    cost: {reactions: 1, chi: 1}
+    is_reaction: true
+    trigger: on_save_fail
+    targeting: self
+    notes: "RAW limita el bono a tiros de salvación Mentales; aproximado como cualquier tiro de salvación, igual que Aura Protectora en otros statblocks."
+    effects: [{kind: note, text: "+10 a un tiro de salvación", save_bonus: 10}]
+  - id: demostracion_terrorifica
+    name: Demostración Terrorífica
+    cost: {actions: 1, chi: 1}
+    area: radio_medio
+    reach: media
+    tags: [mental]
+    effects:
+      - {kind: save, save: vol, dc: "9", on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]}
+  - {id: segundo_aliento, name: Segundo Aliento, cost: {reactions: 1, chi: 1}, is_reaction: true, trigger: on_damaged, targeting: self, effects: [{kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}]}
+  - {id: proteger_aliado, name: Proteger Aliado, cost: {reactions: 1}, is_reaction: true, trigger: on_ally_attacked, effects: [kind: intercept]}

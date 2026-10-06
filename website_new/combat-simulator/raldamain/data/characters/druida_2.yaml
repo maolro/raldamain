@@ -1,0 +1,75 @@
+id: druida_2
+name: Druida
+source: builds/druida.md
+level: 2
+impactos: 6
+chi: 6
+stats: {FUE: 1, DES: 2, CON: 2, INT: 1, SAB: 4, CAR: 2}
+ranks: {magia_naturaleza: 1, magia_divina: 1, ascendencia_primigenia: 1}
+
+# 2+[2]: the bracketed 2 is Forma de la Bestia, supplied by the buff.
+umbrales: {general: 2}
+# The (1d6) throughout is Forma de la Bestia (Ventaja on physical and SAB).
+saves: {fis: "3", vol: "4", men: "5"}
+initiative: "2"
+preferred_row: back
+actions: 3
+reactions: 2
+defense: parada
+
+abilities:
+  - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "5"}
+
+  - id: espinas_de_madera
+    name: Espinas de Madera
+    cost: {actions: 1}
+    reach: media
+    tags: [spell, nature, wisdom, mental]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "1d6+4", dtype: perforante}
+    upgrades:
+      - id: espinas_potenciadas
+        name: Espinas Potenciadas
+        cost: {chi: 1}
+        damage_dice: 1
+    notes: >
+      The "treats defences as one level lower against Enredado targets" clause
+      is not modelled -- umbrales have no level ladder in the engine.
+
+  - id: enmaranar
+    name: Enmarañar
+    cost: {actions: 1}
+    reach: media
+    tags: [spell, nature, wisdom, mental]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: apply_effect, effect: enredado, duration: 2}
+
+  - id: pulso_vital
+    name: Pulso Vital
+    cost: {actions: 1, chi: 1}
+    targeting: ally
+    reach: media
+    tags: [divine, heal]
+    effects:
+      - {kind: heal, amount: 1, to: target}
+
+  - id: forma_de_la_bestia
+    name: Forma de la Bestia
+    cost: {actions: 1}
+    targeting: self
+    effects:
+      - {kind: self_buff, effect: forma_de_la_bestia, duration: 6}
+
+  - id: milagro_menor
+    name: Milagro Menor
+    cost: {uses_per_combat: 3, chi_when_exhausted: 1}
+    is_reaction: true
+    is_reroll: true
+    reroll_scope: any
+    reroll_kinds: [attack, defense, save]

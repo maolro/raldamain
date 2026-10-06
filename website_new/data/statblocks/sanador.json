@@ -1,0 +1,229 @@
+{
+  "name": "Sanador",
+  "level": 4,
+  "race": {},
+  "stats": {
+    "str": {
+      "name": "FUE",
+      "value": 1
+    },
+    "dex": {
+      "name": "DES",
+      "value": 1
+    },
+    "con": {
+      "name": "CON",
+      "value": 2
+    },
+    "itl": {
+      "name": "INT",
+      "value": 1
+    },
+    "wis": {
+      "name": "SAB",
+      "value": 5
+    },
+    "cha": {
+      "name": "CAR",
+      "value": 4
+    }
+  },
+  "talents": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "stat": "dex",
+      "level": 0
+    },
+    "performance": {
+      "name": "Actuación",
+      "stat": "cha",
+      "level": 0
+    },
+    "arcana": {
+      "name": "Arcanismo",
+      "stat": "itl",
+      "level": 0
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "stat": "str",
+      "level": 0
+    },
+    "insight": {
+      "name": "Averiguar Intenciones",
+      "stat": "wis",
+      "level": 0
+    },
+    "focus": {
+      "name": "Concentración",
+      "stat": "itl",
+      "level": 0
+    },
+    "wreck": {
+      "name": "Destrozar",
+      "stat": "str",
+      "level": 0
+    },
+    "deception": {
+      "name": "Engaño",
+      "stat": "cha",
+      "level": 0
+    },
+    "heroics": {
+      "name": "Heroísmo",
+      "stat": "str",
+      "level": 0
+    },
+    "intimidate": {
+      "name": "Intimidar",
+      "stat": "str/cha",
+      "level": 0
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "stat": "dex",
+      "level": 0
+    },
+    "perception": {
+      "name": "Percepción",
+      "stat": "wis",
+      "level": 0
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "stat": "cha",
+      "level": 0
+    },
+    "first-aid": {
+      "name": "Primeros Auxilios",
+      "stat": "wis",
+      "level": 0
+    },
+    "health": {
+      "name": "Salud",
+      "stat": "con",
+      "level": 0
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "stat": "dex",
+      "level": 0
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "stat": "wis",
+      "level": 0
+    },
+    "tinker": {
+      "name": "Trastear",
+      "stat": "itl",
+      "level": 0
+    },
+    "willpower": {
+      "name": "Voluntad",
+      "stat": "cha",
+      "level": 0
+    }
+  },
+  "ranks": [
+    {
+      "id": "magia_divina",
+      "name": "Magia Divina",
+      "category": "Religión",
+      "stat": "wis",
+      "reserve": "chi",
+      "rank": 2,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_divina--1--milagro-menor,magia_divina--1--enviado-de-los-dioses,magia_divina--1--oracion,magia_divina--2--manifestacion-divina,magia_divina--2--consagrar-la-tierra,magia_divina--2--canalizar-divinidad,magia_divina--3--adivinacion,magia_divina--3--proteccion-divina,magia_divina--4--castigo-divino,magia_divina--4--llamar-a-los-dioses,magia_divina--5--palabra-divina,magia_divina--5--exaltado,magia_divina--6--ira-de-dios"
+    },
+    {
+      "id": "magia_vida",
+      "name": "Magia de Vida",
+      "category": "Divina",
+      "stat": "wis",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_vida--1--toque-sanador,magia_vida--1--rayo-luminoso,magia_vida--1--halo-cegador,magia_vida--2--vinculo-vital,magia_vida--2--barrera-luminosa,magia_vida--2--arma-solar,magia_vida--3--luz-viviente,magia_vida--3--sanacion-superior,magia_vida--3--telarana-de-vida,magia_vida--4--espadas-de-justicia,magia_vida--4--transferencia-vital,magia_vida--4--castigo-celestial,magia_vida--5--explosion-solar,magia_vida--5--milagro-de-sanacion,magia_vida--5--sello-de-regeneracion,magia_vida--6--fuente-de-toda-la-vida"
+    },
+    {
+      "id": "presencia",
+      "name": "Presencia",
+      "category": "Combate",
+      "stat": "cha",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "presencia--1--voz-del-comandante,presencia--1--voluntad-poderosa"
+    },
+    {
+      "id": "ascendencia_celestial",
+      "name": "Ascendencia Celestial",
+      "category": "Ascendencias",
+      "stat": "wis",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "ascendencia_celestial--1--nacido-de-los-cielos,ascendencia_celestial--1--canalizacion-celestial,ascendencia_celestial--2--golpe-trascendente,ascendencia_celestial--2--sentido-vital,ascendencia_celestial--2--cuerpo-puro,ascendencia_celestial--3--angel-protector,ascendencia_celestial--3--alma-indomable,ascendencia_celestial--4--alas-angelicales,ascendencia_celestial--4--vision-verdadera,ascendencia_celestial--5--regeneracion-celestial,ascendencia_celestial--5--alma-ascendida,ascendencia_celestial--6--angel-vengador",
+      "stats": [
+        {
+          "stat": "cha",
+          "rank": 2,
+          "boost": 1
+        },
+        {
+          "stat": "con",
+          "rank": 4,
+          "boost": 1
+        },
+        {
+          "stat": "wis",
+          "rank": 6,
+          "boost": 1
+        }
+      ]
+    }
+  ],
+  "spells": {
+    "patron": {
+      "name": "",
+      "domains": [
+        "magia_protectora",
+        "magia_fuego"
+      ],
+      "damage_type": ""
+    },
+    "picks": {
+      "magia_divina--2--canalizar-divinidad#0": [
+        "magia_protectora--1--armadura-del-mago",
+        "magia_fuego--1--aliento-de-fuego"
+      ]
+    }
+  },
+  "equipment": {
+    "armor": {
+      "eqab": "",
+      "name": "Ligera",
+      "penalty": 0,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 2
+        }
+      ]
+    },
+    "mainHand": {
+      "eqab": "daga",
+      "name": "Daga",
+      "style": "light"
+    },
+    "secondHand": {},
+    "head": {},
+    "bag": []
+  },
+  "archetypes": []
+}

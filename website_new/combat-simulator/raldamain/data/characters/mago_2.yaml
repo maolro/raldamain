@@ -1,0 +1,172 @@
+id: mago_2
+name: Mago
+source: builds/mago.md
+level: 2
+impactos: 6
+chi: 6
+stats: {FUE: 1, DES: 2, CON: 2, INT: 4, SAB: 1, CAR: 2}
+ranks: {evocacion: 1, mente_desencadenada: 1, magia_espacial: 1}
+
+umbrales: {general: 2}
+# Base pools -- the +(1d6) in the statblock is Mente Desencadenada.
+saves: {fis: "3", vol: "4", men: "5"}
+initiative: "2"
+preferred_row: back
+actions: 3
+reactions: 2
+defense: parada
+
+abilities:
+  - id: parada
+    name: Parada
+    is_defense: true
+    tags: [mental]
+    roll: "5"
+    notes: >
+      Tagged mental because the statblock shows Mente Desencadenada raising the
+      Parada roll ("todos sus tiros ... incluyendo defensa").
+
+  - id: rayo_arcano
+    name: Rayo Arcano
+    cost: {actions: 1}
+    reach: media
+    tags: [spell, mental]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "1d6+4", dtype: fuerza}
+    upgrades:
+      - id: rayo_potenciado
+        name: Rayo Potenciado
+        cost: {chi: 1}
+        damage_dice: 1
+  - &rayo_transformado
+    id: rayo_arcano_fuego
+    name: "Rayo Arcano (Transformación Elemental: Fuego)"
+    cost: {actions: 1, chi: 1}
+    reach: media
+    tags: [spell, mental]
+    notes: "Transformación Elemental -- cambia el tipo de daño a un tipo mágico específico, cediendo el bypass universal de Fuerza a cambio de explotar una debilidad puntual."
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "1d6+4", dtype: fuego}
+    upgrades:
+      - id: rayo_potenciado_fuego
+        name: Rayo Potenciado
+        cost: {chi: 1}
+        damage_dice: 1
+  - <<: *rayo_transformado
+    id: rayo_arcano_frio
+    name: "Rayo Arcano (Transformación Elemental: Frío)"
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit: [{kind: damage, damage: "1d6+4", dtype: frio}]
+    upgrades: [{id: rayo_potenciado_frio, name: Rayo Potenciado, cost: {chi: 1}, damage_dice: 1}]
+  - <<: *rayo_transformado
+    id: rayo_arcano_electrico
+    name: "Rayo Arcano (Transformación Elemental: Eléctrico)"
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit: [{kind: damage, damage: "1d6+4", dtype: electrico}]
+    upgrades: [{id: rayo_potenciado_electrico, name: Rayo Potenciado, cost: {chi: 1}, damage_dice: 1}]
+  - <<: *rayo_transformado
+    id: rayo_arcano_acido
+    name: "Rayo Arcano (Transformación Elemental: Ácido)"
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit: [{kind: damage, damage: "1d6+4", dtype: acido}]
+    upgrades: [{id: rayo_potenciado_acido, name: Rayo Potenciado, cost: {chi: 1}, damage_dice: 1}]
+
+  - id: descarga_energia
+    name: Descarga de Energía
+    cost: {actions: 2, chi: 1}
+    reach: media
+    area: cono_pequeno
+    tags: [spell, mental]
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit:
+          - {kind: damage, damage: "2d6+4", dtype: fuerza}
+    upgrades:
+      - id: descarga_ampliada
+        name: Descarga Ampliada
+        cost: {chi: 1}
+        damage_dice: 1
+  - &descarga_transformada
+    id: descarga_energia_fuego
+    name: "Descarga de Energía (Transformación Elemental: Fuego)"
+    cost: {actions: 2, chi: 2}
+    reach: media
+    area: cono_pequeno
+    tags: [spell, mental]
+    notes: "Transformación Elemental -- ver Rayo Arcano."
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit: [{kind: damage, damage: "2d6+4", dtype: fuego}]
+    upgrades: [{id: descarga_ampliada_fuego, name: Descarga Ampliada, cost: {chi: 1}, damage_dice: 1}]
+  - <<: *descarga_transformada
+    id: descarga_energia_frio
+    name: "Descarga de Energía (Transformación Elemental: Frío)"
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit: [{kind: damage, damage: "2d6+4", dtype: frio}]
+    upgrades: [{id: descarga_ampliada_frio, name: Descarga Ampliada, cost: {chi: 1}, damage_dice: 1}]
+  - <<: *descarga_transformada
+    id: descarga_energia_electrico
+    name: "Descarga de Energía (Transformación Elemental: Eléctrico)"
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit: [{kind: damage, damage: "2d6+4", dtype: electrico}]
+    upgrades: [{id: descarga_ampliada_electrico, name: Descarga Ampliada, cost: {chi: 1}, damage_dice: 1}]
+  - <<: *descarga_transformada
+    id: descarga_energia_acido
+    name: "Descarga de Energía (Transformación Elemental: Ácido)"
+    effects:
+      - kind: attack
+        attack_roll: "5"
+        on_hit: [{kind: damage, damage: "2d6+4", dtype: acido}]
+    upgrades: [{id: descarga_ampliada_acido, name: Descarga Ampliada, cost: {chi: 1}, damage_dice: 1}]
+
+  - id: mente_desencadenada
+    name: Mente Desencadenada
+    cost: {actions: 1}
+    targeting: self
+    effects:
+      - {kind: self_buff, effect: mente_desencadenada, duration: 6}
+
+  - id: salto_espacial
+    name: Salto Espacial
+    cost: {reactions: 1, chi: 1}
+    is_reaction: true
+    trigger: on_defend
+    targeting: self
+    effects:
+      - {kind: note, text: "+10 al tiro defensivo y teletransporte", defense_bonus: 10}
+
+  - id: redirigir_ataque
+    name: Redirigir Ataque
+    cost: {reactions: 1, chi: 1}
+    is_reaction: true
+    trigger: on_miss
+    effects:
+      - {kind: redirect_miss}
+    notes: >
+      Re-aims any missed attack at a new target and rerolls it -- an enemy's
+      whiff turned onto their own line, or a reroll of a friendly swing.  The
+      redirected attack cannot itself be redirected.
+
+  - id: bolsillo_interdimensional
+    name: Bolsillo Interdimensional
+    cost: {actions: 1}
+    implemented: false
+    notes: Out-of-combat utility.

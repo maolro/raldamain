@@ -1,0 +1,208 @@
+# Reference Miniboss templates for a level-2 party.
+#
+# These are not bestiary entries -- they are the construction rules made
+# executable, so any new Miniboss can be checked against them:
+#
+#   python -m raldamain.cli.minibosses --enemies "plantilla_equilibrada, \
+#       plantilla_antimarcial, plantilla_antilanzador"
+#
+# Shared chassis (identical across all three, only the umbrales differ):
+#   6 impactos | 3 acciones | 2 reacciones
+#   ataque +7+2d6 | defensa +7+2d6 | salvaciones +7+1d6 / +7 / +4
+#   daño base 2d6+5
+#   one 1-action attack and one 2-action / 3-attack signature  -> ~2.5 atk/round
+#   two defensive reactions (a +10 and an umbral boost)
+#
+# Umbral budget: fisico + magico ~= 14, neither below 4, neither above 12.
+
+  - id: plantilla_equilibrada
+    name: Plantilla Equilibrada
+    source: design template
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 6, magico: 6}
+    saves: {fis: "7+1d6", vol: "7", men: "4"}
+    initiative: "4"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "1d6+7"}
+      - id: golpe
+        name: Golpe
+        cost: {actions: 1}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+      - id: secuencia
+        name: Secuencia de Ataques
+        cost: {actions: 2}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+      - id: provocacion
+        name: Provocación
+        cost: {actions: 1}
+        area: radio_medio
+        reach: media
+        tags: [mental]
+      # A deliberately attractive non-damage button: it dilutes the Miniboss's
+      # own turn, which is what keeps its output in band.
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+      - id: evasion
+        name: Evasión
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]
+      - id: segundo_aliento
+        name: Segundo Aliento
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}]
+
+# Anti-martial: armour plate. Warriors bounce, casters cut through.
+  - id: plantilla_antimarcial
+    name: Plantilla Anti-Marcial
+    source: design template
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 10, magico: 4} # presupuesto 14
+    saves: {fis: "7+1d6", vol: "7", men: "4"}
+    initiative: "4"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "1d6+7"}
+      - id: golpe
+        name: Golpe
+        cost: {actions: 1}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+      - id: secuencia
+        name: Secuencia de Ataques
+        cost: {actions: 2}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+      - id: provocacion
+        name: Provocación
+        cost: {actions: 1}
+        area: radio_medio
+        reach: media
+        tags: [mental]
+      # A deliberately attractive non-damage button: it dilutes the Miniboss's
+      # own turn, which is what keeps its output in band.
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+      - id: evasion
+        name: Evasión
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]
+      - id: segundo_aliento
+        name: Segundo Aliento
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}]
+
+# Anti-martial: armour plate. Warriors bounce, casters cut through.
+
+# Anti-caster: warded. Spells fizzle, steel bites.
+  - id: plantilla_antilanzador
+    name: Plantilla Anti-Lanzador
+    source: design template
+    level: 5
+    role: miniboss
+    impactos: 6
+    umbrales: {general: 4, fisico: 4, magico: 10} # presupuesto 14
+    saves: {fis: "7+1d6", vol: "7", men: "4"}
+    initiative: "4"
+    preferred_row: front
+    actions: 3
+    reactions: 2
+    defense: parada
+    abilities:
+      - {id: parada, name: Parada, is_defense: true, tags: [physical], roll: "1d6+7"}
+      - id: golpe
+        name: Golpe
+        cost: {actions: 1}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+      - id: secuencia
+        name: Secuencia de Ataques
+        cost: {actions: 2}
+        tags: [weapon, physical]
+        effects:
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+          - kind: attack
+            attack_roll: "1d6+7"
+            on_hit: [{kind: damage, damage: "2d6+5", dtype: cortante}]
+      - id: provocacion
+        name: Provocación
+        cost: {actions: 1}
+        area: radio_medio
+        reach: media
+        tags: [mental]
+      # A deliberately attractive non-damage button: it dilutes the Miniboss's
+      # own turn, which is what keeps its output in band.
+        effects:
+          - kind: save
+            save: vol
+            dc: "7+1d6"
+            on_fail: [{kind: apply_effect, effect: desventaja_defensiva}]
+      - id: evasion
+        name: Evasión
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_defend
+        targeting: self
+        effects: [{kind: note, text: "+10 defensivo", defense_bonus: 10}]
+      - id: segundo_aliento
+        name: Segundo Aliento
+        cost: {reactions: 1}
+        is_reaction: true
+        trigger: on_damaged
+        targeting: self
+        effects: [{kind: umbral_boost, amount: 4, duration: 1, to: self, tags: [consume_on_umbral]}]
+
+# Anti-martial: armour plate. Warriors bounce, casters cut through.
