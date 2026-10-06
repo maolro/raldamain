@@ -31,11 +31,7 @@
           "toggle": {
             "label": "Analizar Enemigo",
             "damage": "+1 dado",
-            "adv": [
-              "Ataque",
-              "Defensa",
-              "Habilidad"
-            ]
+            "adv_all": true
           }
         },
         {
