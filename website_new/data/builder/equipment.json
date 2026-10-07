@@ -221,8 +221,7 @@
             "name": "Martillo de Guerra",
             "styles": [
                 "coloso"
-            ],
-            "ep": 1
+            ]
         },
         "mosqueton": {
             "eqab": "mosqueton",
