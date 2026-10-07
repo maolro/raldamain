@@ -102,7 +102,7 @@
         "name": "Espada Ropera",
         "range": "Adyacente",
         "skill": "armas-de-duelo",
-        "tags": "Físico, Ataque, Duelo",
+        "tags": "Físico, Ataque",
         "type": "Accion"
     },
     "garra": {
