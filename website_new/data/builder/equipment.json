@@ -232,6 +232,7 @@
             "eqab": "pistola-de-mano",
             "name": "Pistola de Mano",
             "styles": [
+                "duelo",
                 "asesino"
             ]
         },
