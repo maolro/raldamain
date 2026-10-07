@@ -254,7 +254,8 @@
             "name": "Rifle Francotirador",
             "styles": [
                 "asesino"
-            ]
+            ],
+            "ep": 2
         },
         "sable": {
             "eqab": "sable",
