@@ -28,6 +28,17 @@
         "tags": "Objeto",
         "type": "Accion"
     },
+    "bomba-2": {
+        "area": "Radio Corto",
+        "cost": "1 Acción",
+        "damage": "1d6",
+        "damage_type": "Fuego",
+        "description": "",
+        "name": "Bomba",
+        "range": "Medio",
+        "tags": "Físico, Ataque, Asesino",
+        "type": "Accion"
+    },
     "cadena": {
         "cost": "2 Acciones",
         "damage": "1d10",
@@ -282,16 +293,5 @@
         "range": "Adyacente",
         "tags": "Físico, Ataque, Duelo",
         "type": "Accion"
-    },
-    "bomba-2": {
-        "name": "Bomba",
-        "type": "Accion",
-        "cost": "1 Acción",
-        "tags": "Físico, Ataque, Asesino",
-        "range": "Medio",
-        "damage": "1d6",
-        "damage_type": "Fuego",
-        "description": "",
-        "area": "Radio Corto"
     }
 }

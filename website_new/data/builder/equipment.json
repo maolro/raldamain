@@ -73,6 +73,13 @@
                 "asesino"
             ]
         },
+        "bomba": {
+            "eqab": "bomba-2",
+            "name": "Bomba",
+            "styles": [
+                "asesino"
+            ]
+        },
         "cadena": {
             "eqab": "cadena",
             "name": "Cadena",
@@ -224,7 +231,8 @@
             "eqab": "rifle-de-asalto",
             "name": "Fusil",
             "styles": [
-                "duelo"
+                "duelo",
+                "asesino"
             ]
         },
         "rifle-francotirador": {
@@ -239,13 +247,6 @@
             "name": "Sable",
             "styles": [
                 "duelo"
-            ]
-        },
-        "bomba": {
-            "name": "Bomba",
-            "eqab": "bomba-2",
-            "styles": [
-                "asesino"
             ]
         }
     }
