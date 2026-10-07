@@ -453,6 +453,19 @@ select.inp{cursor:pointer}
         <div class="field"><div class="lbl">Fundamentos (una línea por item; acepta HTML)</div>
           <textarea class="inp" id="f-fund" rows="3"
             oninput="setF('fundamentals',this.value.split('\\n').filter(Boolean))"></textarea></div>
+        <div class="field">
+          <label class="chk" id="f-parry-lbl" style="align-self:flex-start"
+            title="El rango da un tiro defensivo propio (como Parada / Esquiva): el personaje se defiende con la estadística principal + Rango">
+            <input type="checkbox" id="f-parry-on" onchange="setParryOn(this.checked)"> 🛡 Tiene tiro defensivo (Parada)</label>
+          <div class="row3" id="f-parry-fields" style="margin-top:6px">
+            <div class="field"><div class="lbl">Nombre</div>
+              <input class="inp" id="f-parry-name" placeholder="Parada mágica" oninput="setParry('name',this.value)"></div>
+            <div class="field"><div class="lbl">Etiqueta</div>
+              <input class="inp" id="f-parry-tag" placeholder="Ilusoria" oninput="setParry('tag',this.value)"></div>
+            <div class="field"><div class="lbl">Protege contra (opcional)</div>
+              <input class="inp" id="f-parry-against" placeholder="ataques físicos y mágicos" oninput="setParry('against',this.value)"></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -681,6 +694,34 @@ async function loadGit() {
   } catch(e) { el.textContent = '⎇ ?'; }
 }
 
+// ── Tiro defensivo (Parada) ───────────────────────────────────────────────────
+// rank.parry = { name: "Parada mágica", tag: "Ilusoria", against: "…" }; absent = no defensive roll
+function renderParry() {
+  const p = S.rank && S.rank.parry;
+  document.getElementById('f-parry-on').checked = !!p;
+  document.getElementById('f-parry-lbl').classList.toggle('on', !!p);
+  document.getElementById('f-parry-fields').style.display = p ? '' : 'none';
+  document.getElementById('f-parry-name').value = p ? (p.name || '') : '';
+  document.getElementById('f-parry-tag').value = p ? (p.tag || '') : '';
+  document.getElementById('f-parry-against').value = p ? (p.against || '') : '';
+}
+function setParryOn(on) {
+  if (!S.rank) return;
+  if (on) {
+    const title = S.rank.title || '';
+    const tag = title.replace(/^Magia (de )?/, '') || title;
+    S.rank.parry = { name: 'Parada mágica', tag: tag, against: '' };
+  } else {
+    delete S.rank.parry;
+  }
+  renderParry(); renderToolbar();
+}
+function setParry(k, v) {
+  if (!S.rank || !S.rank.parry) return;
+  S.rank.parry[k] = v.trim();
+  renderToolbar();
+}
+
 // ── Draft ─────────────────────────────────────────────────────────────────────
 // Ranks are drafts unless explicitly marked "draft": false
 function isDraft(r) { return !r || r.draft !== false; }
@@ -723,6 +764,7 @@ function renderEditor() {
   document.getElementById('f-stats').value = (S.rank.stats||[]).join(', ');
   document.getElementById('f-desc').value  = S.rank.description||'';
   document.getElementById('f-fund').value  = (S.rank.fundamentals||[]).join('\\n');
+  renderParry();
 
   // meta toggle state
   const mb = document.getElementById('meta-body');

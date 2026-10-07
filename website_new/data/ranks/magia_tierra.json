@@ -9,6 +9,11 @@
     "Chi"
   ],
   "description": "Controlas la tierra y la roca para aplastar a tus enemigos, dominar el campo de batalla y resistir los golpes más devastadores. Tu magia es lenta e implacable: cada ataque destruye el terreno, cada defensa aplasta al que se atreve a atacarte.",
+  "parry": {
+    "name": "Parada mágica",
+    "tag": "Tierra",
+    "against": "Tierra, Agua, Aire, Fuego y Tormenta"
+  },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría + Rango.",

@@ -280,6 +280,17 @@ def character_spec(path: Path) -> dict[str, Any]:
                       "tags": ["physical"], "roll": str(esquiva)})
     defenses.append((esquiva, "esquiva"))
 
+    # Rank defensive rolls ("parry" set in the rank editor): main stat + Rango
+    for rid, rango in ranks.items():
+        parry = (rank_data().get(rid) or {}).get("parry")
+        if not parry:
+            continue
+        roll = max(stats.get(s, 0) for s in rank_main_stats(rid)) + rango
+        did = f"parada_{rid}"
+        abilities.append({"id": did, "name": f"{parry.get('name') or 'Parada mágica'} ({parry.get('tag') or rid})",
+                          "is_defense": True, "tags": ["magic"], "roll": str(roll)})
+        defenses.append((roll, did))
+
     melee = False
     seen: set[str] = set()
     items = [equipment.get("mainHand"), equipment.get("secondHand"), equipment.get("head")] + list(equipment.get("bag") or [])

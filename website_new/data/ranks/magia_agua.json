@@ -9,6 +9,11 @@
     "Chi"
   ],
   "description": "Tienes un control absoluto sobre el agua en estado fluido. Puedes usarla para sanar, protegerte con muros y tentáculos, o desatar su furia en forma de torrentes, olas colosales y tsunamis capaces de devastar el campo de batalla.",
+  "parry": {
+    "name": "Parada mágica",
+    "tag": "Agua",
+    "against": "Agua, Fuego, Tierra, Aire o Ácido"
+  },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría + Rango.",

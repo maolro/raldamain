@@ -10,6 +10,11 @@
     "Innato"
   ],
   "description": "Controlas las llamas para causar destrucción, alterar el campo de batalla y protegerte.",
+  "parry": {
+    "name": "Parada mágica",
+    "tag": "Fuego",
+    "against": "Fuego, Frío, Radiante, Agua y Naturaleza"
+  },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Carisma + Rango.",

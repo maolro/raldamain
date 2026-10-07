@@ -209,20 +209,11 @@ new Vue({
                                     attributes: attributeIds.join(',')
                                 };
                                 if (statBoosts) rankEntry.stats = statBoosts;
-                                // Detect magic parry from fundamentals
-                                for (const f of (rankData.fundamentals || [])) {
-                                    if (/parada m[aá]gica/i.test(f)) {
-                                        const m = f.match(/[Uu]sas ([^<]+?) para/);
-                                        if (m) {
-                                            const used = m[1].trim();
-                                            const tagM = used.match(/[Mm]agia de (.+)/);
-                                            rankEntry.parry_tag = tagM ? tagM[1] : used;
-                                        } else {
-                                            const titleM = rankData.title.match(/[Mm]agia de (.+)/);
-                                            rankEntry.parry_tag = titleM ? titleM[1] : rankData.title;
-                                        }
-                                        break;
-                                    }
+                                // Defensive roll of the rank ("Tiro defensivo" in the rank editor)
+                                if (rankData.parry) {
+                                    rankEntry.parry_tag = rankData.parry.tag || rankData.title;
+                                    rankEntry.parry_name = rankData.parry.name || 'Parada mágica';
+                                    rankEntry.parry_against = rankData.parry.against || '';
                                 }
 
 
@@ -1482,7 +1473,7 @@ ${reactions}
             const esquivaAdv = this.abilityAdvantageCount({ tags: 'Reflejos, Defensiva' }, ['dex']);
             lines.push(`<b>Esquiva</b> (Reflejos, Defensiva): ${fmtMod(esquivaMod, esquivaAdv)} para defenderse`);
 
-            // Parada Mágica — one per magic rank with a parry_tag
+            // Rank defensive rolls (Parada mágica…) — one per rank with "parry"
             const seenParry = new Set();
             for (const key in this.myranks) {
                 const rk = this.myranks[key];
@@ -1495,7 +1486,8 @@ ${reactions}
                 const mod = statVal === '-' ? null : statVal + rk.rank;
                 const parryAdv = this.abilityAdvantageCount({ tags: rd.parry_tag + ', Defensiva' }, [mainStatKey]);
                 const modStr = mod === null ? '-' : fmtMod(mod, parryAdv);
-                lines.push(`<b>Parada Mágica</b> (${rd.parry_tag}, Defensiva): ${modStr} para defenderse`);
+                const vs = rd.parry_against ? ` contra ${rd.parry_against}` : '';
+                lines.push(`<b>${rd.parry_name || 'Parada mágica'}</b> (${rd.parry_tag}, Defensiva): ${modStr} para defenderse${vs}`);
             }
 
             // Parada — one per weapon style equipped (deduped)

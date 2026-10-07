@@ -6,6 +6,11 @@
   "image": "magia_naturaleza.jpg",
   "stats": [],
   "description": "Manipula las plantas y la naturaleza para atrapar a tus enemigos y llamar a poderosos guardianes.",
+  "parry": {
+    "name": "Parada mágica",
+    "tag": "Naturaleza",
+    "against": ""
+  },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría + Rango.",

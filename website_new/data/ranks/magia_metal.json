@@ -10,6 +10,11 @@
     "Chi"
   ],
   "description": "Controlas el metal con precisión mortal, arrancando armas de las manos de tus enemigos, desatando tormentas de fragmentos cortantes y clavando espinas metálicas en puntos vitales. Tu magia es quirúrgica y letal: no destruye el terreno como la tierra, sino a los que se atreven a ponerse en tu camino.",
+  "parry": {
+    "name": "Parada mágica",
+    "tag": "Metal",
+    "against": "Metal, Tierra, Físico, Cortante y Tormenta"
+  },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría/Carisma + Rango.",

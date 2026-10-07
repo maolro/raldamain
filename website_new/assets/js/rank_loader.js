@@ -129,6 +129,11 @@ function renderRankPage(data) {
     data.fundamentals.forEach(rule => {
         fundList.innerHTML += `<li>${linkStatusEffects(rule)}</li>`;
     });
+    // Defensive roll set in the rank editor, unless a fundamental already explains it
+    if (data.parry && !data.fundamentals.some(f => /parada|esquiva/i.test(f))) {
+        const vs = data.parry.against ? ` contra ${data.parry.against}` : '';
+        fundList.innerHTML += `<li><strong>${data.parry.name || 'Parada mágica'}:</strong> Usas ${data.title} para tus tiros defensivos${vs}.</li>`;
+    }
 
     // D. Build the Abilities (The Complex Part)
     const container = document.getElementById("abilities-container");

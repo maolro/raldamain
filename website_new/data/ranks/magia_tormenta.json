@@ -9,6 +9,11 @@
     "Chi"
   ],
   "description": "Controlas la faceta más destructiva del clima, desatando descargas eléctricas devastadoras y truenos ensordecedores. Aprovechas la conductividad del campo de batalla, te mueves a la velocidad del rayo y desatas tormentas que amplifican cada uno de tus ataques.",
+  "parry": {
+    "name": "Parada mágica",
+    "tag": "Tormenta",
+    "against": "Tormenta, Fuego, Radiante, Tierra y Naturaleza"
+  },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría/Carisma + Rango.",

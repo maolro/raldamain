@@ -9,6 +9,11 @@
     "Chi"
   ],
   "description": "Controlas el agua en su estado sólido de forma agresiva. Creas armas de hielo, congelas a tus enemigos, invocas ventiscas y manipulas la temperatura ambiental para llevar el frío extremo al campo de batalla.",
+  "parry": {
+    "name": "Parada mágica",
+    "tag": "Hielo",
+    "against": "Fuego, Agua, Frío, Naturaleza y Ácido"
+  },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría + Rango.",

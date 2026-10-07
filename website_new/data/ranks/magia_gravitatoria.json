@@ -9,6 +9,11 @@
     "Chi"
   ],
   "description": "Controlas las fuerzas fundamentales para manipular la gravedad. Atraes, repeles y aplastas a tus enemigos o alteras la densidad de los objetos.",
+  "parry": {
+    "name": "Parada Gravitatoria",
+    "tag": "Gravitatoria",
+    "against": "Aire, Tierra, Agua, Gravedad y Telekinesia"
+  },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Inteligencia + Rango.",

@@ -10,6 +10,11 @@
     "Chi"
   ],
   "description": "Tienes un control absoluto sobre el aire, manipulándolo para crear desde brisas hasta huracanes y desastres naturales. Tus hechizos se centran en el movimiento, empujar enemigos, crear barreras de viento y asfixiar a tus oponentes.",
+  "parry": {
+    "name": "Parada mágica",
+    "tag": "Aire",
+    "against": "Naturaleza, Gravitatoria, Agua y Telekinesia"
+  },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría/Carisma + Rango.",

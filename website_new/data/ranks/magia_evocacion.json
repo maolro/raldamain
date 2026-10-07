@@ -9,6 +9,11 @@
     "Chi"
   ],
   "description": "Te especializas en la forma más destructiva del chi, provocando explosiones elementales y ráfagas de energía pura. Tu agilidad mental te permite lanzar numerosos hechizos y mantener la concentración bajo presión.",
+  "parry": {
+    "name": "Parada mágica",
+    "tag": "Evocación",
+    "against": "Fuego, Frío, Radiante, Madera, Tierra o Agua"
+  },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Inteligencia + Rango.",
