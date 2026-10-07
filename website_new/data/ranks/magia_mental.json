@@ -11,13 +11,13 @@
   "description": "Manipulas la psique de tus enemigos para leer pensamientos, alterar emociones y controlar voluntades. Puedes sanar la cordura de aliados o destrozar la de tus rivales.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
-    "<strong>Estadística principal:</strong> Inteligencia + Rango."
+    "<strong>Estadística principal:</strong> Inteligencia/Carisma + Rango."
   ],
   "levels": [
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Asalto Mental",
@@ -25,11 +25,11 @@
             "Mental",
             "Cordura"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción, 1 Chi",
           "range": "Medio",
-          "crit": "Objetivo queda con Aturdido-2 durante 1 ronda.",
-          "desc": "Atacas la cordura del objetivo, infligiendo Rango + 1 de daño a Cordura e interrumpiendo su concentración. El objetivo resiste con Concentración o Averiguar Intenciones. Si su Cordura llega a 0, cae Inconsciente.",
-          "empower": "Afecta a un objetivo adicional."
+          "empower": "Afecta a un objetivo adicional.",
+          "desc": "El objetivo debe tener éxito en un tiro de salvación Mental o sufre 1d6 + INT/CAR daño Psíquico y queda Desconcertado una ronda.",
+          "show_mod": true
         },
         {
           "name": "Leer Pensamientos",
@@ -37,22 +37,24 @@
             "Mental",
             "Duradera"
           ],
-          "cost": "2 acciones, 1 chi",
-          "area": "Esfera grande",
-          "duration": "Concentración",
-          "desc": "Detectas la presencia de criaturas en el área y lees sus pensamientos superficiales. Como acción, puedes leer un pensamiento profundo (el objetivo resiste con Concentración o Averiguar Intenciones).",
-          "empower": "Como reacción, previenes la acción de un enemigo detectado (Ventaja en tu tiro defensivo)."
+          "cost": "1 Acción",
+          "desc": "Tu objetivo debe tener éxito en un tiro de salvación Mental o lees sus pensamientos superficiales. ",
+          "range": "Medio",
+          "show_mod": true,
+          "empower": "Aumenta el área afectada a un radio corto (medio si gastas 2 chi)"
         },
         {
           "name": "Escudo Mental",
           "tags": [
             "Mental",
-            "Duradera"
+            "Pasiva"
           ],
-          "cost": "2 acciones",
           "duration": "Concentración",
-          "desc": "Usas Magia Mental para defenderte de efectos Mentales. Tu Cordura aumenta en una cantidad igual a tu Rango. Bloquea intentos de detección de pensamientos.",
-          "empower": "Otorgas el beneficio a un aliado al tacto."
+          "desc": "Tienes Ventaja en tus tiros de salvación Mentales y tus pensamientos superficiales no pueden ser leídos.",
+          "empower": "Le otorgas esta habilidad a un objetivo que puedas tocar durante una hora.",
+          "saves": [
+            "Mental"
+          ]
         }
       ]
     },

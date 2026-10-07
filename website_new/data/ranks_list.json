@@ -247,9 +247,9 @@
     "name": "Magia Mental",
     "category": "Ocultismo",
     "image": "magia_mental.jpg",
-    "description": "Lee pensamientos, controla voluntades ajenas y causa daño psíquico.",
+    "description": "Manipulas la psique de tus enemigos para leer pensamientos, alterar emociones y controlar voluntades. Puedes sanar la cordura de aliados o destrozar la de tus rivales.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_ilusoria",
