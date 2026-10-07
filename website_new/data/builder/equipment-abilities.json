@@ -87,11 +87,10 @@
         "cost": "1 Acción",
         "damage": "1d8",
         "damage_type": "Cortante",
-        "description": "",
         "name": "Espada Larga",
         "range": "Adyacente",
         "skill": "armas-de-duelo",
-        "tags": "Físico, Ataque, Duelo",
+        "tags": "Físico, Ataque",
         "type": "Accion"
     },
     "espada-ropera": {
@@ -258,7 +257,7 @@
         "cost": "1 Acción",
         "damage": "2d8",
         "damage_type": "Perforante",
-        "description": "Debe recargarse tras hacer seis disparos.",
+        "description": "Debe recargarse empleando 2 Acciones tras hacer seis disparos.",
         "name": "Pistola de Mano",
         "range": "Distancia media",
         "skill": "armas-a-distancia",
@@ -266,13 +265,14 @@
         "type": "Accion"
     },
     "rifle-de-asalto": {
-        "cost": "2 Acciones",
+        "cost": "1 Acción",
         "damage": "3d8",
         "damage_type": "Perforante",
         "name": "Fusil",
         "range": "Lejano",
-        "tags": "Físico, Ataque, Duelo",
-        "type": "Accion"
+        "tags": "Físico, Ataque",
+        "type": "Accion",
+        "description": "Debes emplear una Acción para cargar esta arma tras cada disparo."
     },
     "rifle-francotirador": {
         "cost": "2 Acciones",
