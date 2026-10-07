@@ -109,7 +109,8 @@
             "eqab": "escudo,parada-con-escudo",
             "name": "Escudo",
             "styles": [
-                "coloso"
+                "coloso",
+                "duelo"
             ]
         },
         "espada-larga": {
