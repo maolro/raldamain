@@ -10,3 +10,6 @@ website_new/nul
 ### Python ###
 __pycache__/
 *.pyc
+
+### Simulator cache ###
+.cache/

@@ -22,9 +22,10 @@ from __future__ import annotations
 import json
 import re
 import unicodedata
-from functools import lru_cache
 from pathlib import Path
 from typing import Any
+
+from . import cache
 
 #: website_new/ (this file lives in website_new/combat-simulator/raldamain/data/)
 WEBSITE_DIR = Path(__file__).resolve().parents[3]
@@ -169,16 +170,25 @@ def roman_level(text: str) -> int:
 
 # ─────────────────────────────────────────────────────────────── website data
 
-@lru_cache(maxsize=1)
+_RANKS: dict[str, Any] = {"key": None, "value": {}}
+
+
 def rank_data() -> dict[str, dict[str, Any]]:
-    out = {}
-    for p in sorted(RANKS_DIR.glob("*.json")):
-        try:
-            d = json.loads(p.read_text(encoding="utf-8"))
-            out[d.get("id", p.stem)] = d
-        except Exception:
-            continue
-    return out
+    """Website rank files by id, re-read only when the ranks folder changes."""
+    key = cache.fingerprint([RANKS_DIR])
+    if _RANKS["key"] != key:
+        out = {}
+        for p in sorted(RANKS_DIR.glob("*.json")):
+            try:
+                d = cache.load_json(p)
+                out[d.get("id", p.stem)] = d
+            except Exception:
+                continue
+        _RANKS.update(key=key, value=out)
+    return _RANKS["value"]
+
+
+rank_data.cache_clear = lambda: _RANKS.update(key=None)  # type: ignore[attr-defined]
 
 
 def rank_main_stats(rank_id: str) -> list[str]:
@@ -202,12 +212,14 @@ def rank_main_stats(rank_id: str) -> list[str]:
     return ["CAR"]
 
 
-@lru_cache(maxsize=1)
 def equipment_abilities() -> dict[str, Any]:
     try:
-        return json.loads(EQUIPMENT_ABILITIES.read_text(encoding="utf-8"))
+        return cache.load_json(EQUIPMENT_ABILITIES)
     except Exception:
         return {}
+
+
+equipment_abilities.cache_clear = lambda: None  # type: ignore[attr-defined]
 
 
 # ─────────────────────────────────────────────────────────────── characters
@@ -497,16 +509,46 @@ def creature_spec(path: Path) -> dict[str, Any]:
 
 # ─────────────────────────────────────────────────────────────── roster
 
+def website_fingerprint() -> tuple:
+    """Changes whenever a stat block, creature, rank or equipment file changes."""
+    return cache.fingerprint([STATBLOCKS_DIR, CREATURES_DIR, RANKS_DIR, EQUIPMENT_ABILITIES])
+
+
+#: Converted specs per file: {path: ((file key, shared key), spec)}
+_CONVERTED: dict[str, tuple[tuple, dict[str, Any]]] = {}
+
+
 def website_roster() -> tuple[dict[str, dict[str, Any]], list[str]]:
-    """({id: spec}, [errors]) for every stat block and bestiary creature."""
+    """({id: spec}, [errors]) for every stat block and bestiary creature.
+
+    Each file is converted once and reconverted only when it changes (or, for
+    stat blocks, when the rank / equipment data they depend on changes).
+    """
+    shared = cache.fingerprint([RANKS_DIR, EQUIPMENT_ABILITIES])
     roster: dict[str, dict[str, Any]] = {}
     errors: list[str] = []
+    seen: set[str] = set()
     for folder, convert in ((STATBLOCKS_DIR, character_spec), (CREATURES_DIR, creature_spec)):
+        if not folder.exists():
+            continue
         for p in sorted(folder.glob("*.json")):
-            try:
-                spec = convert(p)
-            except Exception as e:  # keep going: one broken file must not hide the rest
-                errors.append(f"{p.name}: {e}")
-                continue
+            seen.add(str(p))
+            key = (cache.file_key(p), shared if convert is character_spec else None)
+            hit = _CONVERTED.get(str(p))
+            if hit and hit[0] == key:
+                spec = hit[1]
+            else:
+                try:
+                    spec = convert(p)
+                except Exception as e:  # keep going: one broken file must not hide the rest
+                    errors.append(f"{p.name}: {e}")
+                    continue
+                _CONVERTED[str(p)] = (key, spec)
+            if spec["id"] in roster:
+                # A creature named like a stat block (e.g. "maton"): the stat block keeps
+                # the plain id and the creature gets a suffix, so neither hides the other
+                spec = {**spec, "id": f"{spec['id']}_criatura"}
             roster[spec["id"]] = spec
+    for gone in set(_CONVERTED) - seen:  # deleted files
+        del _CONVERTED[gone]
     return roster, errors

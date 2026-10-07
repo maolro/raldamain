@@ -4,12 +4,10 @@ from __future__ import annotations
 
 import re
 from copy import deepcopy
-from functools import lru_cache
 from pathlib import Path
 from typing import Any, Iterable
 
-import yaml
-
+from . import cache
 from ..engine.dice import DicePool
 from ..engine.effects import EffectRegistry
 from ..engine.entities import Combatant, build_combatant
@@ -22,18 +20,28 @@ _COUNT = re.compile(r"^\s*(?:(\d+)\s*[x*]\s*)?(.+?)(?:\s*[x*]\s*(\d+))?\s*$", re
 _ROW = re.compile(r"^(.*?)@(front|back)$", re.I)
 
 
-@lru_cache(maxsize=1)
+#: Built once per conditions.yaml version (see cache.py)
+_REGISTRY: dict[str, Any] = {"key": None, "value": None}
+
+
 def load_conditions() -> EffectRegistry:
-    raw = yaml.safe_load((DATA_DIR / "conditions.yaml").read_text(encoding="utf-8"))
-    return EffectRegistry.from_dict(raw or {})
+    path = DATA_DIR / "conditions.yaml"
+    key = cache.file_key(path)
+    if _REGISTRY["key"] != key:
+        _REGISTRY.update(key=key, value=EffectRegistry.from_dict(cache.load_yaml(path) or {}))
+    return _REGISTRY["value"]
 
 
-@lru_cache(maxsize=1)
 def load_rank_library() -> dict[str, Any]:
     path = DATA_DIR / "ranks.yaml"
     if not path.exists():
         return {}
-    return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    return cache.load_yaml(path) or {}
+
+
+# Old lru_cache API, kept for callers that still clear it
+load_conditions.cache_clear = lambda: _REGISTRY.update(key=None)  # type: ignore[attr-defined]
+load_rank_library.cache_clear = lambda: None  # type: ignore[attr-defined]
 
 
 def _apply_passive(
@@ -249,9 +257,8 @@ def assemble_from_ranks(spec: dict[str, Any]) -> dict[str, Any]:
     return spec
 
 
-@lru_cache(maxsize=1)
 def load_equipment() -> dict[str, Any]:
-    return yaml.safe_load((DATA_DIR / "equipment.yaml").read_text(encoding="utf-8")) or {}
+    return cache.load_yaml(DATA_DIR / "equipment.yaml") or {}
 
 
 def apply_equipment(spec: dict[str, Any], item_ids: Iterable[str]) -> dict[str, Any]:
@@ -300,45 +307,109 @@ def apply_equipment(spec: dict[str, Any], item_ids: Iterable[str]) -> dict[str, 
 ROSTER_ERRORS: list[str] = []
 
 
+#: Which sources make up the roster.  The simulator's own YAML characters and
+#: monsters are on by default (the CLI tools use them); the Taller app turns them
+#: off and works only with the website's stat blocks and bestiary.
+ROSTER_SOURCES = {"yaml": True, "website": True}
+
+#: How often (seconds) to re-check the source files for changes
+ROSTER_CHECK_EVERY = 1.0
+
+_ROSTER: dict[str, Any] = {"key": None, "value": None, "checked": 0.0, "assembled": {}}
+
+
+def set_roster_sources(yaml: bool = True, website: bool = True) -> None:
+    ROSTER_SOURCES.update(yaml=yaml, website=website)
+    reload_roster()
+
+
 def reload_roster() -> None:
-    """Forget cached data so edited stat blocks / creatures are picked up."""
-    load_roster.cache_clear()
-    load_rank_library.cache_clear()
-    from . import website
-    website.rank_data.cache_clear()
-    website.equipment_abilities.cache_clear()
+    """Forget the roster so the next call re-reads its sources (normally not
+    needed: changed files are detected automatically)."""
+    _ROSTER.update(key=None, checked=0.0)
+    _ROSTER["assembled"].clear()
 
 
-@lru_cache(maxsize=1)
+def _roster_key() -> tuple:
+    from .website import website_fingerprint
+    key: list[Any] = [tuple(sorted(ROSTER_SOURCES.items())), cache.fingerprint([DATA_DIR / "ranks.yaml"])]
+    if ROSTER_SOURCES["yaml"]:
+        key.append(cache.fingerprint(sorted(p for p in DATA_DIR.rglob("*.yaml") if p.name != "conditions.yaml")))
+    if ROSTER_SOURCES["website"]:
+        key.append(website_fingerprint())
+    return tuple(key)
+
+
 def load_roster() -> dict[str, dict[str, Any]]:
     """Every statblock, keyed by id.  Files may hold one block or a list.
 
-    Besides this folder's YAML, includes the website's stat blocks
-    (data/statblocks) and bestiary (data/creatures) -- see website.py.
+    Sources (see ROSTER_SOURCES): this folder's YAML, and the website's stat
+    blocks (data/statblocks) and bestiary (data/creatures) -- see website.py.
+    The result is cached and rebuilt only when one of those files changes.
     """
-    roster: dict[str, dict[str, Any]] = {}
-    for path in sorted(DATA_DIR.rglob("*.yaml")):
-        if path.name == "conditions.yaml":
-            continue
-        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
-        blocks = doc if isinstance(doc, list) else [doc]
-        for block in blocks:
-            if not block or "id" not in block:
-                continue
-            if block["id"] in roster:
-                raise ValueError(f"duplicate statblock id {block['id']!r} in {path}")
-            roster[block["id"]] = block
+    import time
+    now = time.monotonic()
+    if _ROSTER["value"] is not None and now - _ROSTER["checked"] < ROSTER_CHECK_EVERY:
+        return _ROSTER["value"]
+    _ROSTER["checked"] = now
+    key = _roster_key()
+    if _ROSTER["value"] is not None and key == _ROSTER["key"]:
+        return _ROSTER["value"]
 
-    from .website import website_roster
-    web, errors = website_roster()
-    ROSTER_ERRORS[:] = errors
-    for sid, spec in web.items():
-        key = sid
-        if key in roster:  # a website id that clashes with a YAML one gets a suffix
-            key = f"{sid}_{spec.get('origin', 'web')}"
-            spec["id"] = key
-        roster[key] = spec
+    roster: dict[str, dict[str, Any]] = {}
+    if ROSTER_SOURCES["yaml"]:
+        for path in sorted(DATA_DIR.rglob("*.yaml")):
+            if path.name in ("conditions.yaml", "ranks.yaml", "equipment.yaml"):
+                continue
+            doc = cache.load_yaml(path)
+            blocks = doc if isinstance(doc, list) else [doc]
+            for block in blocks:
+                if not isinstance(block, dict) or "id" not in block:
+                    continue
+                if block["id"] in roster:
+                    raise ValueError(f"duplicate statblock id {block['id']!r} in {path}")
+                roster[block["id"]] = block
+
+    if ROSTER_SOURCES["website"]:
+        from .website import website_roster
+        web, errors = website_roster()
+        ROSTER_ERRORS[:] = errors
+        for sid, spec in web.items():
+            rid = sid
+            if rid in roster:  # a website id that clashes with a YAML one gets a suffix
+                rid = f"{sid}_{spec.get('origin', 'web')}"
+                spec = {**spec, "id": rid}
+            roster[rid] = spec
+    else:
+        ROSTER_ERRORS[:] = []
+
+    _ROSTER.update(key=key, value=roster)
+    _ROSTER["assembled"].clear()
     return roster
+
+
+# Old lru_cache API
+load_roster.cache_clear = reload_roster  # type: ignore[attr-defined]
+
+
+def prepared_spec(statblock_id: str) -> dict[str, Any]:
+    """A roster spec with its ranks and equipment applied, cached per roster version.
+
+    Assembling (ranks.yaml abilities, riders, learned spells) is the same for
+    every fight, so a 500-fight batch now does it once instead of 500 times.
+    Callers must treat the returned dict as read-only.
+    """
+    roster = load_roster()
+    spec = roster[statblock_id]
+    done = _ROSTER["assembled"].get(statblock_id)
+    if done is not None:
+        return done
+    if spec.get("pull_from_ranks"):
+        spec = assemble_from_ranks(spec)
+    if spec.get("equipment"):
+        spec = apply_equipment(spec, spec["equipment"])
+    _ROSTER["assembled"][statblock_id] = spec
+    return spec
 
 
 def parse_group(text: str) -> list[tuple[str, int, str | None]]:
@@ -421,10 +492,12 @@ def make_side(
         spec = roster[statblock_id]
         if soften_npc and spec.get("role") in ("miniboss", "boss"):
             spec = soften_contested_dice(spec, soften_npc)
-        if spec.get("pull_from_ranks"):
-            spec = assemble_from_ranks(spec)
-        if spec.get("equipment"):
-            spec = apply_equipment(spec, spec["equipment"])
+            if spec.get("pull_from_ranks"):
+                spec = assemble_from_ranks(spec)
+            if spec.get("equipment"):
+                spec = apply_equipment(spec, spec["equipment"])
+        else:
+            spec = prepared_spec(statblock_id)
         for i in range(count):
             name = spec.get("name", statblock_id)
             if count > 1:
@@ -441,7 +514,7 @@ def summon_factory(registry: EffectRegistry, policy_override: str | None = None)
     """A callable the resolver can use to bring reinforcements onto the field."""
 
     def make(statblock_id: str, side: str, index: int) -> Combatant:
-        spec = load_roster()[statblock_id]
+        spec = prepared_spec(statblock_id)
         name = f"{spec.get('name', statblock_id)} {index + 1}"
         uid = f"{side}:{statblock_id}:{index}"
         c = build_combatant(spec, registry, uid, side, name)

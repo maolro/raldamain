@@ -10,6 +10,7 @@ Taller de Raldamain — local app for stat blocks and combat testing.
              own YAML characters / monsters (combat-simulator/raldamain).
 
 Usage:  python tools/taller.py      → http://localhost:5180
+        (TALLER_PORT=<n> for another port, TALLER_NO_BROWSER=1 to not open the browser)
 Needs:  pip install flask pyyaml
 """
 
@@ -32,9 +33,14 @@ sys.path.insert(0, str(BASE / "combat-simulator"))
 
 from raldamain.data import website                       # noqa: E402
 from raldamain.data.loader import (                      # noqa: E402
-    ROSTER_ERRORS, assemble_from_ranks, load_conditions, load_roster, make_side, reload_roster)
+    ROSTER_ERRORS, load_conditions, load_roster, make_side, prepared_spec, reload_roster, set_roster_sources)
+from raldamain.cli.parallel import run_batch_parallel   # noqa: E402
 from raldamain.engine.encounter import Encounter         # noqa: E402
 from raldamain.metrics.collector import aggregate, fight_metrics, format_report  # noqa: E402
+
+# The Taller works only with the website's stat blocks and bestiary
+# (the simulator's own YAML characters / monsters stay available to the CLI)
+set_roster_sources(yaml=False, website=True)
 
 app = Flask(__name__)
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]{0,59}$")
@@ -92,7 +98,7 @@ def ficha_summary(p: Path) -> dict:
                      if k in website.STAT_ABBR},
            "ranks": ranks, "gear": gear, "modified": p.stat().st_mtime}
     try:  # combat numbers, as the simulator sees them
-        spec = assemble_from_ranks(website.character_spec(p))  # with rank passives, as simulated
+        spec = prepared_spec(p.stem)  # cached; with rank passives, as simulated
         out["combat"] = {"impactos": spec["impactos"], "chi": spec["chi"], "umbrales": spec["umbrales"],
                          "saves": spec["saves"], "initiative": spec["initiative"]}
     except Exception as e:
@@ -147,11 +153,10 @@ def api_ficha_delete(fid):
 
 @app.route("/api/sim/roster")
 def api_roster():
-    reload_roster()
-    roster = load_roster()
+    roster = load_roster()  # cached; changed files are picked up automatically
     out = []
     for sid, s in roster.items():
-        origin = s.get("origin") or ("pj" if s.get("role", "pj") == "pj" else "monstruo")
+        origin = s.get("origin") or "bestiario"
         out.append({"id": sid, "name": s.get("name", sid), "level": int(s.get("level") or 0),
                     "origin": origin, "role": s.get("role", "pj"), "row": s.get("preferred_row", "front")})
     out.sort(key=lambda x: (x["origin"], x["level"], x["name"]))
@@ -173,7 +178,7 @@ def api_run():
     party, enemies = roster_text(body.get("party")), roster_text(body.get("enemies"))
     if not party or not enemies:
         return jsonify({"error": "Elige al menos un combatiente en cada bando."}), 400
-    runs = max(1, min(500, int(body.get("runs") or 1)))
+    runs = max(1, min(2000, int(body.get("runs") or 1)))
     seed = int(body.get("seed") or 1)
     config = {"turn_structure": body.get("turn_structure") or "full_turn",
               "max_rounds": max(1, min(60, int(body.get("max_rounds") or 30))),
@@ -187,10 +192,8 @@ def api_run():
             m["ability_usage"] = dict(m["ability_usage"])
             return jsonify({"mode": "single", "log": result.log.text(), "metrics": m,
                             "winner": result.winner, "rounds": result.rounds})
-        rows = []
-        for i in range(runs):
-            combatants = make_side(party, "party", registry) + make_side(enemies, "enemigos", registry)
-            rows.append(fight_metrics(Encounter(combatants, registry, seed=seed + i, config=config).run()))
+        make_side(party, "party", registry), make_side(enemies, "enemigos", registry)  # fail fast on bad ids
+        rows = run_batch_parallel(party, enemies, runs, seed0=seed, config=config)  # spread over CPU cores
         agg = aggregate(rows)
         return jsonify({"mode": "batch", "report": format_report(agg), "runs": runs,
                         "party_win_rate": agg["party_win_rate"], "draw_rate": agg["draw_rate"],
@@ -367,7 +370,7 @@ load();
 SIM = r"""
 <main class="tl-wrap">
   <h1 class="tl-h1">Simulador de combate</h1>
-  <p class="tl-sub">Fichas (<code>data/statblocks</code>), Bestiario (<code>data/creatures</code>) y los personajes y monstruos del simulador.
+  <p class="tl-sub">Fichas (<code>data/statblocks</code>) y Bestiario (<code>data/creatures</code>).
     Una simulación muestra el combate completo; varias dan estadísticas.</p>
   <div id="errors"></div>
 
@@ -386,7 +389,7 @@ SIM = r"""
       <div id="side-enemies" class="sim-side"></div>
 
       <div class="sim-opts">
-        <label>Simulaciones <input id="runs" class="inp" type="number" min="1" max="500" value="1" style="width:80px"></label>
+        <label>Simulaciones <input id="runs" class="inp" type="number" min="1" max="2000" value="1" style="width:80px"></label>
         <label>Semilla <input id="seed" class="inp" type="number" value="1" style="width:80px"></label>
         <label>Turnos <select id="turns" class="inp"><option value="full_turn">Turno completo</option><option value="cycle">Por ciclos</option></select></label>
         <label><input id="pos" type="checkbox" checked> Filas (vanguardia / retaguardia)</label>
@@ -426,7 +429,7 @@ SIM = r"""
 </style>
 
 <script>
-const ORIGINS = { ficha: 'Fichas', bestiario: 'Bestiario', pj: 'PJ simulador', monstruo: 'Monstruos simulador' };
+const ORIGINS = { ficha: 'Fichas', bestiario: 'Bestiario' };
 let ROSTER = [], ORIGIN = '';
 const SIDES = { party: [], enemies: [] };
 const esc = s => String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
@@ -520,8 +523,10 @@ def taller_sim():
 
 
 if __name__ == "__main__":
-    url = "http://localhost:5180/taller"
+    port = int(__import__("os").environ.get("TALLER_PORT", 5180))
+    url = f"http://localhost:{port}/taller"
     print(f"\nTaller de Raldamain  ->  {url}")
     print(f"Fichas               ->  {STATBLOCKS}\n")
-    threading.Thread(target=lambda: (__import__("time").sleep(0.9), webbrowser.open(url)), daemon=True).start()
-    app.run(host="127.0.0.1", port=5180, debug=False, use_reloader=False)
+    if not __import__("os").environ.get("TALLER_NO_BROWSER"):
+        threading.Thread(target=lambda: (__import__("time").sleep(0.9), webbrowser.open(url)), daemon=True).start()
+    app.run(host="127.0.0.1", port=port, debug=False, use_reloader=False)

@@ -12,7 +12,7 @@ policies are attached.
 
 from __future__ import annotations
 
-import random
+from functools import lru_cache
 from typing import Sequence
 
 from ..engine.abilities import Ability, Effect, Upgrade
@@ -20,21 +20,45 @@ from ..engine.dice import D20_EXPR, DicePool
 from ..engine.entities import Combatant
 from ..engine.resolver import CombatState
 
-_EST_RNG = random.Random(20250815)
 D20 = DicePool.parse(D20_EXPR)
-_HIT_CACHE: dict[tuple, float] = {}
-_IMP_CACHE: dict[tuple, float] = {}
-SAMPLES = 400
 
 
-def _sample(pool: DicePool, adv: int) -> int:
-    total = pool.flat
+# Probability estimates for the AI.  They are computed EXACTLY from the dice
+# distributions (no sampling), so they are deterministic: the same fight with
+# the same seed now plays out identically no matter which fights ran before it
+# in the same process.  (A shared Monte Carlo sampler used to make every
+# estimate -- and so every AI decision -- depend on how many estimates earlier
+# fights had drawn.)
+
+@lru_cache(maxsize=8192)
+def _distribution(pool: DicePool, adv: int = 0) -> tuple[tuple[int, float], ...]:
+    """Exact distribution of ``pool`` (+ ``adv`` d6, negative = Desventaja)."""
+    dist: dict[int, float] = {pool.flat: 1.0}
     dice = pool.dice + (((adv, 6),) if adv else ())
     for count, sides in dice:
         sign = 1 if count > 0 else -1
+        face_p = 1.0 / sides
         for _ in range(abs(count)):
-            total += sign * _EST_RNG.randint(1, sides)
-    return total
+            nxt: dict[int, float] = {}
+            for total, p in dist.items():
+                for face in range(1, sides + 1):
+                    key = total + sign * face
+                    nxt[key] = nxt.get(key, 0.0) + p * face_p
+            dist = nxt
+    return tuple(sorted(dist.items()))
+
+
+@lru_cache(maxsize=8192)
+def _p_greater(a: DicePool, a_adv: int, b: DicePool, b_adv: int) -> float:
+    """P(roll of a > roll of b)."""
+    da, db = _distribution(a, a_adv), _distribution(b, b_adv)
+    prob, cum_b, j = 0.0, 0.0, 0  # cum_b = P(b < value)
+    for value, pa in da:
+        while j < len(db) and db[j][0] < value:
+            cum_b += db[j][1]
+            j += 1
+        prob += pa * cum_b
+    return prob
 
 
 def hit_probability(
@@ -48,15 +72,12 @@ def hit_probability(
     """
     if dfn is None:
         return 1.0
-    key = (str(atk), atk_adv, str(dfn), dfn_adv)
-    cached = _HIT_CACHE.get(key)
-    if cached is not None:
-        return cached
-    a, d = D20 + atk, D20 + dfn
-    wins = sum(1 for _ in range(SAMPLES) if _sample(a, atk_adv) > _sample(d, dfn_adv))
-    prob = wins / SAMPLES
-    _HIT_CACHE[key] = prob
-    return prob
+    return _p_greater(D20 + atk, atk_adv, D20 + dfn, dfn_adv)
+
+
+@lru_cache(maxsize=8192)
+def _expected_impactos(pool: DicePool, umbral: int) -> float:
+    return sum(p * (max(0, value) // umbral) for value, p in _distribution(pool, 0))
 
 
 def expected_impactos(damage: DicePool, extra_dice: int, umbral: int) -> float:
@@ -64,29 +85,14 @@ def expected_impactos(damage: DicePool, extra_dice: int, umbral: int) -> float:
     if umbral <= 0:
         umbral = 1
     pool = damage.with_dice(extra_dice, damage.largest_die) if extra_dice else damage
-    key = (str(pool), umbral)
-    cached = _IMP_CACHE.get(key)
-    if cached is not None:
-        return cached
-    total = sum(max(0, _sample(pool, 0)) // umbral for _ in range(SAMPLES))
-    mean = total / SAMPLES
-    _IMP_CACHE[key] = mean
-    return mean
+    return _expected_impactos(pool, umbral)
 
 
 def save_fail_probability(dc: DicePool, save: DicePool | None) -> float:
     """P(the target fails).  The caster rolls the DC, so both sides get a d20."""
     if save is None:
         return 1.0
-    key = ("save", str(dc), str(save))
-    cached = _HIT_CACHE.get(key)
-    if cached is not None:
-        return cached
-    s, c = D20 + save, D20 + dc
-    fails = sum(1 for _ in range(SAMPLES) if _sample(s, 0) < _sample(c, 0))
-    prob = fails / SAMPLES
-    _HIT_CACHE[key] = prob
-    return prob
+    return _p_greater(D20 + dc, 0, D20 + save, 0)
 
 
 # --------------------------------------------------------------------- policy
