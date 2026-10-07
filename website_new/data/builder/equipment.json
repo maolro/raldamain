@@ -119,7 +119,8 @@
             "styles": [
                 "coloso",
                 "duelo"
-            ]
+            ],
+            "ep": 1
         },
         "espada-ropera": {
             "eqab": "espada-ropera",
@@ -127,7 +128,8 @@
             "styles": [
                 "duelo",
                 "asesino"
-            ]
+            ],
+            "ep": 1
         },
         "garra": {
             "eqab": "garra",
@@ -252,6 +254,7 @@
             "eqab": "sable",
             "name": "Sable",
             "styles": [
+                "coloso",
                 "duelo"
             ]
         }

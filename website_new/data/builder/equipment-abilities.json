@@ -84,8 +84,8 @@
         "type": "Accion"
     },
     "espada-larga": {
-        "cost": "2 Acciones",
-        "damage": "2d6",
+        "cost": "1 Acción",
+        "damage": "1d8",
         "damage_type": "Cortante",
         "description": "",
         "name": "Espada Larga",
@@ -291,7 +291,7 @@
         "description": "",
         "name": "Sable",
         "range": "Adyacente",
-        "tags": "Físico, Ataque, Duelo",
+        "tags": "Físico, Ataque",
         "type": "Accion"
     }
 }
