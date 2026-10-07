@@ -144,7 +144,9 @@
             "eqab": "golpe",
             "name": "Golpe",
             "styles": [
-                "duelo"
+                "coloso",
+                "duelo",
+                "asesino"
             ]
         },
         "golpe-serpiente": {
