@@ -40,14 +40,14 @@
         "type": "Accion"
     },
     "cadena": {
-        "cost": "2 Acciones",
-        "damage": "1d10",
+        "cost": "1 Acción",
+        "damage": "1d8",
         "damage_type": "Contundente",
-        "description": "",
+        "description": "En lugar de hacer daño, puede Enredar al objetivo.",
         "name": "Cadena",
-        "range": "Distancia cercana",
+        "range": "Cercana",
         "skill": "cadenas",
-        "tags": "Físico, Ataque, Cadena",
+        "tags": "Físico, Ataque",
         "type": "Accion"
     },
     "daga": {

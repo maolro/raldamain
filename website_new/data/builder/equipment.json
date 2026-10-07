@@ -85,8 +85,10 @@
             "eqab": "cadena",
             "name": "Cadena",
             "styles": [
+                "duelo",
                 "asesino"
-            ]
+            ],
+            "ep": 1
         },
         "daga": {
             "eqab": "daga",
