@@ -225,6 +225,7 @@
             "eqab": "mosqueton",
             "name": "Mosquetón",
             "styles": [
+                "duelo",
                 "asesino"
             ]
         },
