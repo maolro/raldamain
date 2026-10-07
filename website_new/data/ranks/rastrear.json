@@ -49,7 +49,7 @@
             "Mejora"
           ],
           "cost": "1 Acción, 1 Chi",
-          "desc": "Obtienes de inmediato un objeto consumible de coste 1. Algunas opciones para objetos de esta categoría son los siguientes:\n- Poción de Sanación (1 Acción): Cura un impacto o un efecto de estado\n- Bomba (1 Acción): Distancia media, Radio corto, provoca 1d6 + INT/SAB daño Fuego\n- Veneno: Al impactar con un arma, el afectado debe tener éxito en un tiro de salvación de Voluntad o sufre 1d6 daño Veneno y un efecto entre Enfermado I, Fatigado I, Ralentizado I o Confundido I",
+          "desc": "Obtienes de inmediato un objeto consumible de coste 1. Algunas opciones para objetos de esta categoría son los siguientes:\n- **Poción de Sanación** (1 Acción): Cura un impacto o un efecto de estado\n- **Bomba** (1 Acción): Distancia media, Radio corto, provoca 1d6 + INT/DES daño Fuego\n- **Veneno**: Al impactar con un arma, el afectado debe tener éxito en un tiro de salvación de Voluntad o sufre 1d6 daño Veneno y un efecto entre Enfermado I, Fatigado I, Ralentizado I o Confundido I",
           "show_mod": true
         }
       ]
