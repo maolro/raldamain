@@ -1571,8 +1571,5 @@ if __name__ == "__main__":
     url = "http://localhost:5174"
     print(f"\\nRank Editor  →  {url}")
     print(f"Archivos     →  {RANKS_DIR}\\n")
-    threading.Thread(
-        target=lambda: (__import__("time").sleep(0.9), webbrowser.open(url)),
-        daemon=True
-    ).start()
-    app.run(host="127.0.0.1", port=5174, debug=False, use_reloader=False)
+    import live_reload
+    live_reload.run(app, 5174, url)  # restarts on code edits; open pages reload

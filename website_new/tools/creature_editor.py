@@ -1650,7 +1650,7 @@ init();
 # ── Start ─────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
+    import live_reload
     url = "http://localhost:5175"
-    threading.Timer(0.8, lambda: webbrowser.open(url)).start()
     print(f"Creature Editor → {url}")
-    app.run(port=5175, debug=False)
+    live_reload.run(app, 5175, url)  # restarts on code edits; open pages reload

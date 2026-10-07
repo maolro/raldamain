@@ -432,6 +432,8 @@ SIM = r"""
 const ORIGINS = { ficha: 'Fichas', bestiario: 'Bestiario' };
 let ROSTER = [], ORIGIN = '';
 const SIDES = { party: [], enemies: [] };
+// live reload: keep the chosen sides -- ask before reloading
+function dirty() { return SIDES.party.length + SIDES.enemies.length > 0; }
 const esc = s => String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
 
 async function init() {
@@ -527,6 +529,11 @@ if __name__ == "__main__":
     url = f"http://localhost:{port}/taller"
     print(f"\nTaller de Raldamain  ->  {url}")
     print(f"Fichas               ->  {STATBLOCKS}\n")
-    if not __import__("os").environ.get("TALLER_NO_BROWSER"):
-        threading.Thread(target=lambda: (__import__("time").sleep(0.9), webbrowser.open(url)), daemon=True).start()
-    app.run(host="127.0.0.1", port=port, debug=False, use_reloader=False)
+    import live_reload
+    # restarts on code edits (Taller + simulator); open pages also reload when
+    # the Creador / Mesa files or the rank & equipment data change
+    live_reload.run(app, port, url, open_browser=not __import__("os").environ.get("TALLER_NO_BROWSER"),
+                    watch=["*.html", "assets/js/**/*.js", "assets/css/*.css",
+                           "data/builder/*.json", "data/ranks/*.json"],
+                    extra_files=[BASE / "combat-simulator" / "raldamain" / "data" / "ranks.yaml",
+                                 BASE / "combat-simulator" / "raldamain" / "data" / "conditions.yaml"])
