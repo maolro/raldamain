@@ -69,127 +69,184 @@
         "arco": {
             "eqab": "arco",
             "name": "Arco",
-            "style": "ranged"
+            "styles": [
+                "asesino"
+            ]
         },
         "cadena": {
             "eqab": "cadena",
             "name": "Cadena",
-            "style": "light"
+            "styles": [
+                "asesino"
+            ]
         },
         "daga": {
             "eqab": "daga",
             "name": "Daga",
-            "style": "light"
+            "styles": [
+                "asesino"
+            ]
         },
         "escopeta": {
             "eqab": "escopeta",
             "name": "Escopeta",
-            "style": "duelist"
+            "styles": [
+                "coloso",
+                "duelo"
+            ]
         },
         "escudo": {
             "eqab": "escudo,parada-con-escudo",
             "name": "Escudo",
-            "style": "heavy"
+            "styles": [
+                "coloso"
+            ]
         },
         "espada-larga": {
             "eqab": "espada-larga",
             "name": "Espada Larga",
-            "style": "duelist"
+            "styles": [
+                "coloso",
+                "duelo"
+            ]
         },
         "espada-ropera": {
             "eqab": "espada-ropera",
             "name": "Espada Ropera",
-            "style": "duelist"
+            "styles": [
+                "duelo",
+                "asesino"
+            ]
         },
         "garra": {
             "eqab": "garra",
             "name": "Garra",
-            "style": "light"
+            "styles": [
+                "asesino"
+            ]
         },
         "garrote": {
             "eqab": "garrote",
             "name": "Garrote",
-            "style": "duelist"
+            "styles": [
+                "coloso",
+                "duelo"
+            ]
         },
         "golpe": {
             "eqab": "golpe",
             "name": "Golpe",
-            "style": "duelist"
+            "styles": [
+                "duelo"
+            ]
         },
         "golpe-serpiente": {
             "eqab": "golpe-serpiente",
             "name": "Golpe Serpiente",
-            "style": "flex"
+            "styles": [
+                "coloso",
+                "duelo",
+                "asesino"
+            ]
         },
         "gran-hacha": {
             "eqab": "gran-hacha",
             "name": "Gran Hacha",
-            "style": "heavy"
+            "styles": [
+                "coloso"
+            ]
         },
         "gran-maza": {
             "eqab": "gran-maza",
             "name": "Gran Maza",
-            "style": "heavy"
+            "styles": [
+                "coloso"
+            ]
         },
         "hacha-de-batalla": {
             "eqab": "hacha-de-batalla",
             "name": "Hacha de Batalla",
-            "style": "duelist"
+            "styles": [
+                "coloso",
+                "duelo"
+            ]
         },
         "jabalina": {
             "eqab": "jabalina",
             "name": "Jabalina",
-            "style": "ranged"
+            "styles": [
+                "asesino"
+            ]
         },
         "lanza": {
             "eqab": "lanza",
             "name": "Lanza",
-            "style": "duelist"
+            "styles": [
+                "duelo"
+            ]
         },
         "latigo": {
             "eqab": "latigo",
             "name": "Látigo",
-            "style": "light"
+            "styles": [
+                "asesino"
+            ]
         },
         "mandoble": {
             "eqab": "mandoble",
             "name": "Mandoble",
-            "style": "heavy"
+            "styles": [
+                "coloso"
+            ]
         },
         "martillo-de-guerra": {
             "eqab": "martillo-de-guerra",
             "name": "Martillo de Guerra",
-            "style": "heavy"
+            "styles": [
+                "coloso"
+            ]
         },
         "mosqueton": {
             "eqab": "mosqueton",
             "name": "Mosquetón",
-            "style": "ranged"
+            "styles": [
+                "asesino"
+            ]
         },
         "pistola-de-mano": {
             "eqab": "pistola-de-mano",
             "name": "Pistola de Mano",
-            "style": "ranged"
+            "styles": [
+                "asesino"
+            ]
         },
         "rifle-de-asalto": {
             "eqab": "rifle-de-asalto",
             "name": "Fusil",
-            "style": "duelist"
+            "styles": [
+                "duelo"
+            ]
         },
         "rifle-francotirador": {
             "eqab": "rifle-francotirador",
             "name": "Rifle Francotirador",
-            "style": "ranged"
+            "styles": [
+                "asesino"
+            ]
         },
         "sable": {
             "eqab": "sable",
             "name": "Sable",
-            "style": "duelist"
+            "styles": [
+                "duelo"
+            ]
         },
         "bomba": {
             "name": "Bomba",
             "eqab": "bomba-2",
-            "style": "ranged"
+            "styles": [
+                "asesino"
+            ]
         }
     }
 }

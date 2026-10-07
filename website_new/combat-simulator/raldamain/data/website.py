@@ -32,6 +32,7 @@ WEBSITE_DIR = Path(__file__).resolve().parents[3]
 STATBLOCKS_DIR = WEBSITE_DIR / "data" / "statblocks"
 CREATURES_DIR = WEBSITE_DIR / "data" / "creatures"
 RANKS_DIR = WEBSITE_DIR / "data" / "ranks"
+EQUIPMENT = WEBSITE_DIR / "data" / "builder" / "equipment.json"
 EQUIPMENT_ABILITIES = WEBSITE_DIR / "data" / "builder" / "equipment-abilities.json"
 
 #: Creador stat keys → simulator stat names
@@ -224,10 +225,36 @@ equipment_abilities.cache_clear = lambda: None  # type: ignore[attr-defined]
 
 # ─────────────────────────────────────────────────────────────── characters
 
-def _weapon_roll(tags: str, stats: dict[str, int], ranks: dict[str, int]) -> tuple[int, int]:
-    """(attack modifier, damage stat) for a weapon, like the Creador's weaponRoll."""
+LEGACY_STYLES = {"heavy": ["coloso"], "duelist": ["duelo"], "light": ["asesino"], "ranged": ["asesino"],
+                 "flex": ["coloso", "duelo", "asesino"], "shield": []}
+
+
+def weapon_styles(item: dict[str, Any]) -> list[str]:
+    """Coloso / Duelo / Asesino styles of a weapon: the current equipment list
+    wins over the copy saved in the sheet, and old sheets use ``style``."""
+    weapons = (cache.load_json(EQUIPMENT) if EQUIPMENT.exists() else {}).get("weapons", {})
+    cur = next((w for w in weapons.values() if w.get("name") == item.get("name")
+                and (w.get("eqab") or "") == (item.get("eqab") or "")), None)
+    src = cur or item
+    if isinstance(src.get("styles"), list):
+        return src["styles"]
+    return LEGACY_STYLES.get(src.get("style") or "", [])
+
+
+def _weapon_roll(tags: str, stats: dict[str, int], ranks: dict[str, int],
+                 styles: list[str] | None = None) -> tuple[int, int]:
+    """(attack modifier, damage stat) for a weapon, like the Creador's weaponRoll:
+    the best of the weapon's styles, or the attack's tags for weapons without them."""
     t = plain(tags)
     fue, des = stats.get("FUE", 0), stats.get("DES", 0)
+    options = {
+        "coloso": (fue + ranks.get("estilo_coloso", 0), fue),
+        "duelo": (max(fue, des) + ranks.get("estilo_duelista", 0), max(fue, des)),
+        "asesino": (des + ranks.get("estilo_asesino", 0), des),
+    }
+    picks = [options[s] for s in styles or [] if s in options]
+    if picks:
+        return max(picks)
     if "pesad" in t:
         return fue + ranks.get("estilo_coloso", 0), fue
     if "duelo" in t:
@@ -309,7 +336,8 @@ def character_spec(path: Path) -> dict[str, Any]:
                 if ab.get("type") != "Pasiva":
                     unmodelled.append(ab.get("name", ab_id))
                 continue
-            mod, stat = _weapon_roll(tags, stats, ranks)
+            is_weapon = item is equipment.get("mainHand") or item is equipment.get("secondHand")
+            mod, stat = _weapon_roll(tags, stats, ranks, weapon_styles(item) if is_weapon else None)
             dice = ab.get("damage")
             dtype = dtype_key(ab.get("damage_type", ""))
             if not dice:  # legacy text template: "+MOD para atacar, …, 1d8 + STAT daño Cortante."

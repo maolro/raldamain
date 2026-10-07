@@ -655,24 +655,40 @@ ${reactions}
             };
             input.click();
         },
-        weaponMod(weapon) {
-            if (!weapon || !weapon.name || !weapon.style || weapon.style === 'shield') return null;
-            const str = this.finalStats.str.value;
-            const dex = this.finalStats.dex.value;
-            const strV = str === '-' ? -99 : str;
-            const dexV = dex === '-' ? -99 : dex;
-            const colosoRk   = this.getRank('estilo_coloso');
-            const duelistaRk = this.getRank('estilo_duelista');
-            const asesinоRk  = this.getRank('estilo_asesino');
-            let mod;
-            switch (weapon.style) {
-                case 'heavy':   mod = strV + colosoRk; break;
-                case 'duelist': mod = Math.max(strV, dexV) + duelistaRk; break;
-                case 'light':
-                case 'ranged':  mod = dexV + asesinоRk; break;
-                case 'flex':    mod = Math.max(strV + colosoRk, Math.max(strV, dexV) + duelistaRk, dexV + asesinоRk); break;
-                default:        mod = Math.max(strV, dexV); break;
+        // Styles of a weapon (Coloso / Duelo / Asesino; several allowed). The current
+        // equipment list wins over the copy saved in the sheet; old sheets use "style".
+        weaponStyles(weapon) {
+            if (!weapon || !weapon.name) return [];
+            const legacy = { heavy: ['coloso'], duelist: ['duelo'], light: ['asesino'], ranged: ['asesino'],
+                             flex: ['coloso', 'duelo', 'asesino'], shield: [] };
+            const list = (this.eqList && this.eqList.weapons) || {};
+            const cur = Object.values(list).find(w => w && w.name === weapon.name && (w.eqab || '') === (weapon.eqab || ''));
+            const src = cur || weapon;
+            if (Array.isArray(src.styles)) return src.styles;
+            return src.style ? (legacy[src.style] || []) : [];
+        },
+        // Best modifier among the styles: { mod, stat, statKey, style } (style = null with no styles)
+        bestWeaponStyle(styles, missing) {
+            const fs = this.finalStats;
+            const strV = fs.str.value === '-' ? missing : fs.str.value;
+            const dexV = fs.dex.value === '-' ? missing : fs.dex.value;
+            const best = strV >= dexV ? { stat: strV, statKey: 'str' } : { stat: dexV, statKey: 'dex' };
+            const opts = {
+                coloso:  { stat: strV, statKey: 'str', rk: this.getRank('estilo_coloso') },
+                duelo:   { ...best, rk: this.getRank('estilo_duelista') },
+                asesino: { stat: dexV, statKey: 'dex', rk: this.getRank('estilo_asesino') },
+            };
+            let res = null;
+            for (const s of styles || []) {
+                const o = opts[s];
+                if (o && (!res || o.stat + o.rk > res.mod)) res = { mod: o.stat + o.rk, stat: o.stat, statKey: o.statKey, style: s };
             }
+            return res || { mod: best.stat, stat: best.stat, statKey: best.statKey, style: null };
+        },
+        weaponMod(weapon) {
+            const styles = this.weaponStyles(weapon);
+            if (!styles.length) return null;
+            let mod = this.bestWeaponStyle(styles, -99).mod;
             // "Usar el modificador de este rango" → Tiros de arma (attacks and weapon Parada)
             const repl = this.modReplacements['Arma'];
             if (repl && repl.value > mod) mod = repl.value;
@@ -944,13 +960,8 @@ ${reactions}
             return (list || []).map(s => STAT_ABBR[s] || s);
         },
         // Stat used by a weapon style's modifier
-        weaponStatKeys(style) {
-            const fs = this.finalStats;
-            const str = fs.str.value === '-' ? -99 : fs.str.value;
-            const dex = fs.dex.value === '-' ? -99 : fs.dex.value;
-            if (style === 'heavy') return ['str'];
-            if (style === 'light' || style === 'ranged') return ['dex'];
-            return [str >= dex ? 'str' : 'dex'];
+        weaponStatKeys(weapon) {
+            return [this.bestWeaponStyle(this.weaponStyles(weapon), -99).statKey];
         },
         // Advantage dice for a roll. statKeys = stats in the roll's modifier (defaults to the
         // ability's rank stat); "Ventaja en tiros con la estadística" boosts match on them.
@@ -1003,7 +1014,9 @@ ${reactions}
             const duelistaRk = this.getRank('estilo_duelista');
             const asesinоRk  = this.getRank('estilo_asesino');
             let stat, mod, statKey;
-            if (tags.includes('pesada') || tags.includes('pesado')) {
+            if (obj.weapon_styles && obj.weapon_styles.length) {
+                ({ stat, mod, statKey } = this.bestWeaponStyle(obj.weapon_styles, 0));
+            } else if (tags.includes('pesada') || tags.includes('pesado')) {
                 stat = strV; mod = strV + colosoRk; statKey = 'str';
             } else if (tags.includes('duelo')) {
                 stat = Math.max(strV, dexV); mod = Math.max(strV, dexV) + duelistaRk; statKey = strV >= dexV ? 'str' : 'dex';
@@ -1262,6 +1275,8 @@ ${reactions}
                             let atb = { ...this.eqAtb[eid] };
                             if (atb.skill)
                                 atb["rank"] = this.getRank(atb.skill);
+                            if (key === 'mainHand' || key === 'secondHand')
+                                atb.weapon_styles = this.weaponStyles(slot);
                             abSwitch(atb);
                         }
                     }
@@ -1492,11 +1507,12 @@ ${reactions}
             }
 
             // Parada — one per weapon style equipped (deduped)
-            const styleTagMap = { heavy: 'Pesadas', duelist: 'Duelo', light: 'Ligeras', ranged: 'A Distancia', flex: 'Flexible' };
+            const styleName = { coloso: 'Coloso', duelo: 'Duelo', asesino: 'Asesino' };
             const seenWeap = new Set();
             for (const weapon of [this.equipment.mainHand, this.equipment.secondHand]) {
-                if (!weapon || !weapon.name || !weapon.style || weapon.style === 'shield') continue;
-                const tag = styleTagMap[weapon.style] || weapon.style;
+                const styles = this.weaponStyles(weapon);
+                if (!styles.length) continue;
+                const tag = styles.map(s => styleName[s] || s).join('/');
                 if (seenWeap.has(tag)) continue;
                 seenWeap.add(tag);
                 let mod = this.weaponMod(weapon);
@@ -1504,7 +1520,7 @@ ${reactions}
                 const paradaRepl = this.modReplacements['Parada'];
                 if (paradaRepl && paradaRepl.value > parseInt(mod, 10))
                     mod = (paradaRepl.value >= 0 ? '+' : '') + paradaRepl.value;
-                const parryAdv = this.abilityAdvantageCount({ tags: tag + ', Defensiva' }, this.weaponStatKeys(weapon.style));
+                const parryAdv = this.abilityAdvantageCount({ tags: tag + ', Defensiva' }, this.weaponStatKeys(weapon));
                 const modStr = parryAdv > 0 ? mod + '+' + parryAdv + 'd6' : mod;
                 lines.push(`<b>Parada</b> (${tag}, Defensiva): ${modStr} para defenderse`);
             }
@@ -1525,13 +1541,14 @@ ${reactions}
                 { label: 'MP', weapon: this.equipment.mainHand },
                 { label: 'MS', weapon: this.equipment.secondHand }
             ];
-            const styleLabel = { heavy: 'Coloso', duelist: 'Duelista', light: 'Asesino', ranged: 'Asesino', flex: 'flex', shield: null };
+            const styleLabel = { coloso: 'Coloso', duelo: 'Duelista', asesino: 'Asesino' };
             return slots
                 .filter(s => s.weapon && s.weapon.name)
                 .map(s => {
                     const mod = this.weaponMod(s.weapon);
                     const modStr = mod ? (atkAdv ? mod + '+1d6' : mod) : null;
-                    const style = s.weapon.style ? styleLabel[s.weapon.style] : null;
+                    const styles = this.weaponStyles(s.weapon);
+                    const style = styles.length ? styleLabel[this.bestWeaponStyle(styles, -99).style] : null;
                     const suffix = [modStr, style ? `(${style})` : null].filter(Boolean).join(' ');
                     return suffix ? `${s.weapon.name} ${suffix}` : s.weapon.name;
                 })

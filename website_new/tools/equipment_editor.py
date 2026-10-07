@@ -196,14 +196,18 @@ const SLOTS = [
   ['head',    'Cabeza'],
   ['bag',     'Bolsa'],
 ];
+// Weapon styles: a weapon may belong to several, the best modifier applies
 const STYLES = [
-  ['heavy',   'Pesada — FUE + Coloso'],
-  ['duelist', 'Duelo — FUE/DES + Duelista'],
-  ['light',   'Ligera — DES + Asesino'],
-  ['ranged',  'A distancia — DES + Asesino'],
-  ['flex',    'Flexible — el mejor estilo'],
-  ['shield',  'Escudo (sin ataque propio)'],
+  ['coloso',  'Coloso', 'FUE + Estilo Coloso'],
+  ['duelo',   'Duelo', 'mejor de FUE/DES + Estilo Duelista'],
+  ['asesino', 'Asesino', 'DES + Estilo Asesino'],
 ];
+const LEGACY_STYLE = { heavy: ['coloso'], duelist: ['duelo'], light: ['asesino'], ranged: ['asesino'],
+                       flex: ['coloso', 'duelo', 'asesino'], shield: [] };
+function itemStyles(it) {
+  if (Array.isArray(it.styles)) return it.styles;
+  return it.style ? (LEGACY_STYLE[it.style] || []) : [];
+}
 const TYPES = [['Accion','Acción'], ['Reaccion','Reacción'], ['Pasiva','Pasiva']];
 const SAVE_TYPES = ['Físico','Voluntad','Mental'];
 const STAT_ABBRS = ['FUE','DES','CON','INT','SAB','CAR'];
@@ -324,14 +328,19 @@ function renderItem() {
           </div>
         </div>` : ''}
       ${slot === 'weapons' ? `
-        <div class="row2">
-          <div class="field"><div class="lbl">Estilo (modificador de Parada y equipo)</div>
-            <select class="inp" onchange="setItem('style', this.value)">
-              ${STYLES.map(([v, l]) => `<option value="${v}" ${it.style === v ? 'selected' : ''}>${l}</option>`).join('')}
-            </select></div>
-          <div class="hint" style="align-self:end">El tiro de ataque usa las etiquetas del ataque:
-            Pesada → FUE + Coloso · Duelo → FUE/DES + Duelista · Ligera / A Distancia → DES + Asesino.</div>
+        <div class="field"><div class="lbl">Estilos del arma (ataque y Parada usan el mejor modificador)</div>
+          <div class="chk-group">
+            ${STYLES.map(([v, l, d]) => { const on = itemStyles(it).includes(v);
+              return `<label class="chk ${on ? 'on' : ''}" title="${d}"><input type="checkbox" ${on ? 'checked' : ''}
+                onchange="toggleStyle('${v}', this.checked)"> ${l} <span style="opacity:.6">· ${d}</span></label>`; }).join('')}
+          </div>
+          <div class="hint">${itemStyles(it).length ? '' : 'Sin estilo: sin Parada y el ataque usa el mejor de FUE/DES sin rango de estilo.'}</div>
         </div>` : ''}
+      <div class="row2">
+        <div class="field"><div class="lbl">Coste (PE · Puntos de Equipo)</div>
+          <input class="inp" type="number" min="0" step="1" value="${esc(it.ep != null ? it.ep : '')}" placeholder="0"
+            oninput="setItemNum('ep', this.value)"></div>
+      </div>
       <div class="row2">
         <button class="btn danger" style="justify-self:start" onclick="delItem()">✕ Eliminar objeto</button>
       </div>
@@ -422,6 +431,14 @@ function preview(t) { return t && typeof formatRichText === 'function' && (t.inc
 // ── Setters ──────────────────────────────────────────────────────────────────
 function touched() { renderToolbar(); }
 function setItem(k, v) { item()[k] = v; if (k === 'name') renderSidebar(); touched(); }
+function toggleStyle(v, on) {
+  const it = item();
+  const arr = itemStyles(it).filter(x => x !== v);
+  if (on) arr.push(v);
+  it.styles = STYLES.map(s => s[0]).filter(s => arr.includes(s));
+  delete it.style;
+  touched(); renderItem();
+}
 function setItemNum(k, v) { const it = item(); v = v.trim(); if (!v) delete it[k]; else { const n = Number(v); it[k] = isNaN(n) ? v : n; } touched(); }
 function setUmb(i, k, v) { const u = item().umbrales[i]; if (k === 'value') { const n = Number(v); u.value = v.trim() !== '' && !isNaN(n) ? n : v; } else u[k] = v; touched(); }
 function addUmb() { const it = item(); (it.umbrales || (it.umbrales = [])).push({ value: 2, categories: 'Físico' }); touched(); renderItem(); }
@@ -446,7 +463,7 @@ function newItem(slot) {
   let key = slug(name); if (!key) return;
   while (S.eq[slot][key]) key += '-2';
   const it = { name, eqab: '' };
-  if (slot === 'weapons') it.style = 'duelist';
+  if (slot === 'weapons') it.styles = ['duelo'];
   if (slot === 'armor') { it.umbrales = [{ value: 2, categories: 'Físico' }]; it.penalty = 0; }
   S.eq[slot][key] = it;
   // Weapons get their attack ability right away
