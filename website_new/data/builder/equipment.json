@@ -229,7 +229,8 @@
             "styles": [
                 "duelo",
                 "asesino"
-            ]
+            ],
+            "ep": 1
         },
         "pistola-de-mano": {
             "eqab": "pistola-de-mano",
@@ -245,7 +246,8 @@
             "styles": [
                 "duelo",
                 "asesino"
-            ]
+            ],
+            "ep": 2
         },
         "rifle-francotirador": {
             "eqab": "rifle-francotirador",
