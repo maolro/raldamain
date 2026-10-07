@@ -58,7 +58,7 @@
         "name": "Daga",
         "range": "Adyacente o Distancia media",
         "skill": "armas-ligeras",
-        "tags": "Físico, Ataque, Ligera, A Distancia",
+        "tags": "Físico, Ataque, A Distancia",
         "type": "Accion"
     },
     "escopeta": {
