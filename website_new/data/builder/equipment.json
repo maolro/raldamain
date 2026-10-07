@@ -221,7 +221,8 @@
             "name": "Martillo de Guerra",
             "styles": [
                 "coloso"
-            ]
+            ],
+            "ep": 1
         },
         "mosqueton": {
             "eqab": "mosqueton",
@@ -230,11 +231,7 @@
                 "duelo",
                 "asesino"
             ],
-            "ep": 1,
-            "reload": {
-                "actions": 2,
-                "shots": 1
-            }
+            "ep": 1
         },
         "pistola-de-mano": {
             "eqab": "pistola-de-mano",
@@ -243,11 +240,7 @@
                 "duelo",
                 "asesino"
             ],
-            "ep": 2,
-            "reload": {
-                "actions": 2,
-                "shots": 6
-            }
+            "ep": 2
         },
         "rifle-de-asalto": {
             "eqab": "rifle-de-asalto",
@@ -256,11 +249,7 @@
                 "duelo",
                 "asesino"
             ],
-            "ep": 2,
-            "reload": {
-                "actions": 1,
-                "shots": 1
-            }
+            "ep": 2
         },
         "rifle-francotirador": {
             "eqab": "rifle-francotirador",

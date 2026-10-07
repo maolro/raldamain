@@ -219,12 +219,12 @@
     },
     "martillo-de-guerra": {
         "cost": "1 Acción",
-        "damage": "2d6",
+        "damage": "1d8",
         "damage_type": "Contundente",
         "name": "Martillo de Guerra",
         "range": "Adyacente",
         "skill": "armas-pesadas",
-        "tags": "Físico, Ataque, Pesada",
+        "tags": "Físico, Ataque",
         "type": "Accion"
     },
     "mordisco": {
@@ -239,7 +239,7 @@
         "cost": "1 Acción",
         "damage": "3d8",
         "damage_type": "Perforante",
-        "description": "Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d8 daño obligatorio al portador.",
+        "description": "Debe recargarse tras cada disparo empleando 2 Acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d8 daño obligatorio al portador.",
         "name": "Mosquetón",
         "range": "Distancia lejana",
         "skill": "armas-a-distancia",
@@ -257,7 +257,7 @@
         "cost": "1 Acción",
         "damage": "2d8",
         "damage_type": "Perforante",
-        "description": "",
+        "description": "Debe recargarse empleando 2 Acciones tras hacer seis disparos.",
         "name": "Pistola de Mano",
         "range": "Distancia media",
         "skill": "armas-a-distancia",
@@ -272,7 +272,7 @@
         "range": "Lejano",
         "tags": "Físico, Ataque",
         "type": "Accion",
-        "description": ""
+        "description": "Debes emplear una Acción para cargar esta arma tras cada disparo."
     },
     "rifle-francotirador": {
         "cost": "2 Acciones",
