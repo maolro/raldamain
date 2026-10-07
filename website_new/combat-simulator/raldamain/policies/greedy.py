@@ -251,6 +251,9 @@ class GreedyPolicy(Policy):
         if any(e.kind == "change_row" for e in ability.effects):
             return self._change_row_value(state, actor, ability)
 
+        if any(e.kind == "reload" for e in ability.effects):
+            return self._reload_value(state, actor, ability)
+
         if any(e.kind == "ally_attack" for e in ability.effects):
             helpers = [a for a in state.allies_of(actor) if a.abilities]
             if not helpers or not enemies:
@@ -476,6 +479,32 @@ class GreedyPolicy(Policy):
         return total / max(1, ability.actions), [], []
 
     # ------------------------------------------------------------ positioning
+    def _reload_value(self, state: CombatState, actor: Combatant, ability: Ability):
+        """Reloading is worth the shot it gives back: nearly a full attack when
+        the weapon is empty, only a sliver when it is merely partly spent (top
+        up only if nothing better is on offer). Another weapon in hand that
+        hits harder simply outbids it."""
+        group = next(e.raw.get("ammo", "") for e in ability.effects if e.kind == "reload")
+        full = actor.ammo_max.get(group, 0)
+        left = actor.ammo.get(group, full)
+        if not full or left >= full:
+            return None
+        best = 0.0
+        for ab in actor.abilities.values():
+            if ab.ammo != group or not ab.implemented:
+                continue
+            for t in state.legal_targets(actor, ab):
+                best = max(best, self._attack_value(state, actor, ab, t, ()))
+        if best <= 0:
+            return None
+        # leave room to shoot afterwards: an empty gun with no actions left
+        # after reloading still gains next turn's shot, but less of it
+        after = actor.actions_left - ability.actions
+        factor = 0.8 if left == 0 else 0.15 * (full - left) / full
+        if after <= 0:
+            factor *= 0.6
+        return best * factor, [actor], []
+
     def _change_row_value(self, state: CombatState, actor: Combatant, ability: Ability):
         """Step back when badly hurt and screened; step up when nobody screens."""
         if not state.positioning or actor.used_this_round.get(ability.id, 0):
@@ -733,7 +762,10 @@ class GreedyPolicy(Policy):
                 -up.chi,
             )
 
-        candidates = [u for u in ability.upgrades if u.implemented and worth(u)]
+        # Reloading weapons: an extra attack needs a shot left after the first one
+        spare = actor.ammo.get(ability.ammo, 99) - 1 if ability.ammo else 99
+        candidates = [u for u in ability.upgrades if u.implemented and worth(u)
+                      and u.extra_attacks <= spare]
         # Best-first so an exclusion group keeps its strongest member and the
         # chi budget is spent on the riders that actually move the needle.
         candidates.sort(key=value, reverse=True)
@@ -937,6 +969,7 @@ class GreedyPolicy(Policy):
                 or ability.actions <= 0
                 or ability.actions > budget
                 or ability.chi > actor.chi
+                or not actor.loaded(ability)
                 or not state.can_reach(ability, provoker)
             ):
                 continue

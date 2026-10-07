@@ -426,7 +426,15 @@ new Vue({
                     if (obj.area) head.push(obj.area);
                     if (dmgLabel) head.push(dmgLabel);
                     if (obj.duration) head.push(obj.duration);
-                    const body = [head.join(', '), desc].filter(Boolean).join('. ');
+                    // Recarga: "Recarga (2 Acciones) tras 6 disparos"
+                    let reloadStr = '';
+                    if (obj.weapon_reload) {
+                        const r = obj.weapon_reload;
+                        const acc = `${r.actions} ${r.actions === 1 ? 'Acción' : 'Acciones'}`;
+                        reloadStr = `<b>Recarga</b> (<span class="sb-cost">${acc}</span>) `
+                            + (r.shots === 1 ? 'tras cada disparo' : `tras ${r.shots} disparos`);
+                    }
+                    const body = [head.join(', '), reloadStr, desc].filter(Boolean).join('. ');
                     if (body) formattedString += ': ' + body;
                 } else {
                     // Other abilities: "alcance, área, duración, +X — 2d6 daño Fuego — Descripción"
@@ -657,13 +665,21 @@ ${reactions}
         },
         // Styles of a weapon (Coloso / Duelo / Asesino; several allowed). The current
         // equipment list wins over the copy saved in the sheet; old sheets use "style".
+        weaponDef(weapon) {
+            const list = (this.eqList && this.eqList.weapons) || {};
+            return Object.values(list).find(w => w && (weapon.eqab ? w.eqab === weapon.eqab : w.name === weapon.name)) || weapon;
+        },
+        // Recarga of a weapon: { actions, shots } or null
+        weaponReload(weapon) {
+            if (!weapon || !weapon.name) return null;
+            const r = this.weaponDef(weapon).reload;
+            return r && r.shots > 0 ? r : null;
+        },
         weaponStyles(weapon) {
             if (!weapon || !weapon.name) return [];
             const legacy = { heavy: ['coloso'], duelist: ['duelo'], light: ['asesino'], ranged: ['asesino'],
                              flex: ['coloso', 'duelo', 'asesino'], shield: [] };
-            const list = (this.eqList && this.eqList.weapons) || {};
-            const cur = Object.values(list).find(w => w && w.name === weapon.name && (w.eqab || '') === (weapon.eqab || ''));
-            const src = cur || weapon;
+            const src = this.weaponDef(weapon);
             if (Array.isArray(src.styles)) return src.styles;
             return src.style ? (legacy[src.style] || []) : [];
         },
@@ -1275,8 +1291,10 @@ ${reactions}
                             let atb = { ...this.eqAtb[eid] };
                             if (atb.skill)
                                 atb["rank"] = this.getRank(atb.skill);
-                            if (key === 'mainHand' || key === 'secondHand')
+                            if (key === 'mainHand' || key === 'secondHand') {
                                 atb.weapon_styles = this.weaponStyles(slot);
+                                atb.weapon_reload = this.weaponReload(slot);
+                            }
                             abSwitch(atb);
                         }
                     }
@@ -1506,24 +1524,35 @@ ${reactions}
                 lines.push(`<b>${rd.parry_name || 'Parada mágica'}</b> (${rd.parry_tag}, Defensiva): ${modStr} para defenderse${vs}`);
             }
 
-            // Parada — one per weapon style equipped (deduped)
+            // Parada — a single line: the best weapon in hand. An item with its own
+            // Parada ability (Parada con Escudo) shows that one instead of a generic copy.
             const styleName = { coloso: 'Coloso', duelo: 'Duelo', asesino: 'Asesino' };
-            const seenWeap = new Set();
+            const ownParry = (weapon) => String(weapon.eqab || '').split(',').map(x => x.trim()).some(id => {
+                const ab = this.eqAtb && this.eqAtb[id];
+                return ab && /parada/i.test(ab.name || '') && /defensiv/i.test(ab.tags || '');
+            });
+            let bestParry = null;
+            let ownBest = -Infinity;  // best item Parada ability (already listed among the reactions)
             for (const weapon of [this.equipment.mainHand, this.equipment.secondHand]) {
                 const styles = this.weaponStyles(weapon);
-                if (!styles.length) continue;
-                const tag = styles.map(s => styleName[s] || s).join('/');
-                if (seenWeap.has(tag)) continue;
-                seenWeap.add(tag);
-                let mod = this.weaponMod(weapon);
-                if (!mod) continue;
-                const paradaRepl = this.modReplacements['Parada'];
-                if (paradaRepl && paradaRepl.value > parseInt(mod, 10))
-                    mod = (paradaRepl.value >= 0 ? '+' : '') + paradaRepl.value;
-                const parryAdv = this.abilityAdvantageCount({ tags: tag + ', Defensiva' }, this.weaponStatKeys(weapon));
-                const modStr = parryAdv > 0 ? mod + '+' + parryAdv + 'd6' : mod;
-                lines.push(`<b>Parada</b> (${tag}, Defensiva): ${modStr} para defenderse`);
+                if (styles.length && ownParry(weapon))
+                    ownBest = Math.max(ownBest, this.bestWeaponStyle(styles, -99).mod);
             }
+            for (const weapon of [this.equipment.mainHand, this.equipment.secondHand]) {
+                const styles = this.weaponStyles(weapon);
+                if (!styles.length || ownParry(weapon)) continue;
+                let mod = parseInt(this.weaponMod(weapon), 10);
+                if (isNaN(mod)) continue;
+                const paradaRepl = this.modReplacements['Parada'];
+                if (paradaRepl && paradaRepl.value > mod) mod = paradaRepl.value;
+                const best = this.bestWeaponStyle(styles, -99);
+                const tag = styleName[best.style] || best.style;
+                const adv = this.abilityAdvantageCount({ tags: tag + ', Defensiva' }, [best.statKey]);
+                if (!bestParry || mod > bestParry.mod || (mod === bestParry.mod && adv > bestParry.adv))
+                    bestParry = { mod, adv, tag };
+            }
+            if (bestParry && bestParry.mod > ownBest)
+                lines.push(`<b>Parada</b> (${bestParry.tag}, Defensiva): ${fmtMod(bestParry.mod, bestParry.adv)} para defenderse`);
 
             return lines.join('<br><br>');
         },

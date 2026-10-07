@@ -233,12 +233,20 @@ def weapon_styles(item: dict[str, Any]) -> list[str]:
     """Coloso / Duelo / Asesino styles of a weapon: the current equipment list
     wins over the copy saved in the sheet, and old sheets use ``style``."""
     weapons = (cache.load_json(EQUIPMENT) if EQUIPMENT.exists() else {}).get("weapons", {})
-    cur = next((w for w in weapons.values() if w.get("name") == item.get("name")
-                and (w.get("eqab") or "") == (item.get("eqab") or "")), None)
+    cur = next((w for w in weapons.values()
+                if (w.get("eqab") == item["eqab"] if item.get("eqab") else w.get("name") == item.get("name"))), None)
     src = cur or item
     if isinstance(src.get("styles"), list):
         return src["styles"]
     return LEGACY_STYLES.get(src.get("style") or "", [])
+
+
+def weapon_reload(item: dict[str, Any]) -> dict[str, Any] | None:
+    """``{"actions": A, "shots": N}`` of a reloading weapon (current list first)."""
+    weapons = (cache.load_json(EQUIPMENT) if EQUIPMENT.exists() else {}).get("weapons", {})
+    cur = next((w for w in weapons.values()
+                if (w.get("eqab") == item["eqab"] if item.get("eqab") else w.get("name") == item.get("name"))), None)
+    return (cur or item).get("reload")
 
 
 def _weapon_roll(tags: str, stats: dict[str, int], ranks: dict[str, int],
@@ -349,7 +357,7 @@ def character_spec(path: Path) -> dict[str, Any]:
                 dtype = dtype_key(m.group(2))
             reach = reach_from(ab.get("range"))
             melee = melee or reach in ("adyacente", "toque")
-            abilities.append({
+            weapon_ab = {
                 "id": f"arma_{ab_id.replace('-', '_')}",
                 "name": ab.get("name", ab_id),
                 "cost": {"actions": parse_cost(ab.get("cost")).get("actions", 1)},
@@ -357,7 +365,20 @@ def character_spec(path: Path) -> dict[str, Any]:
                 "tags": ["weapon", "physical"],
                 "effects": [{"kind": "attack", "attack_roll": str(mod),
                              "on_hit": [{"kind": "damage", "damage": f"{dice}+{stat}", "dtype": dtype}]}],
-            })
+            }
+            # Recarga: every attack spends a shot; "Recargar" refills the weapon
+            reload = (weapon_reload(item) or {}) if is_weapon else {}
+            if int(reload.get("shots") or 0) > 0:
+                group = "ammo_" + re.sub(r"[^a-z0-9]+", "_", plain(item.get("eqab") or item.get("name") or ab_id))
+                weapon_ab["ammo"] = {"group": group, "shots": int(reload["shots"])}
+                if f"recargar_{group}" not in seen:
+                    seen.add(f"recargar_{group}")
+                    abilities.append({
+                        "id": f"recargar_{group}", "name": f"Recargar {item.get('name') or ab.get('name', ab_id)}",
+                        "cost": {"actions": int(reload.get("actions") or 1)}, "targeting": "self",
+                        "tags": ["reload"], "effects": [{"kind": "reload", "ammo": group}],
+                    })
+            abilities.append(weapon_ab)
             if reach in ("adyacente", "toque") and f"parada_{mod}" not in seen:
                 seen.add(f"parada_{mod}")
                 abilities.append({"id": f"parada_{ab_id.replace('-', '_')}", "name": f"Parada ({ab.get('name', ab_id)})",

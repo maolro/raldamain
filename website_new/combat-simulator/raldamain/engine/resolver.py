@@ -188,6 +188,8 @@ class Resolver:
     ) -> list[AttackOutcome]:
         if not free:
             actor.pay(ability, as_reaction=as_reaction)
+        elif ability.ammo and ability.ammo in actor.ammo:
+            actor.ammo[ability.ammo] -= 1
         for up in upgrades:
             actor.chi -= up.chi
 
@@ -366,6 +368,14 @@ class Resolver:
 
         elif kind == "summon":
             self._summon(actor, effect, indent)
+
+        elif kind == "reload":
+            group = effect.raw.get("ammo", "")
+            if group in actor.ammo_max:
+                actor.ammo[group] = actor.ammo_max[group]
+                n = actor.ammo[group]
+                self.log.line(f"{actor.name} recarga ({n} {'disparo' if n == 1 else 'disparos'})", indent)
+                self.log.event("reload", actor=actor.id, side=actor.side, ammo=group)
 
         elif kind == "change_row":
             actor.row = "back" if actor.row == "front" else "front"
@@ -670,6 +680,11 @@ class Resolver:
             living = [t for t in targets if t.alive]
             if not living:
                 break
+            if ability.ammo and ability.ammo in actor.ammo:
+                if actor.ammo[ability.ammo] <= 0:
+                    self.log.line(f"{actor.name} no tiene disparos para un segundo ataque", indent)
+                    break
+                actor.ammo[ability.ammo] -= 1  # each attack spends a shot
             self.log.line(f"{actor.name} encadena un segundo ataque:", indent)
             outcomes += self._attack_volley(
                 actor, living[:1], effect, ability, (), indent + 1

@@ -230,7 +230,11 @@
                 "duelo",
                 "asesino"
             ],
-            "ep": 1
+            "ep": 1,
+            "reload": {
+                "actions": 2,
+                "shots": 1
+            }
         },
         "pistola-de-mano": {
             "eqab": "pistola-de-mano",
@@ -239,7 +243,11 @@
                 "duelo",
                 "asesino"
             ],
-            "ep": 2
+            "ep": 2,
+            "reload": {
+                "actions": 2,
+                "shots": 6
+            }
         },
         "rifle-de-asalto": {
             "eqab": "rifle-de-asalto",
@@ -248,7 +256,11 @@
                 "duelo",
                 "asesino"
             ],
-            "ep": 2
+            "ep": 2,
+            "reload": {
+                "actions": 1,
+                "shots": 1
+            }
         },
         "rifle-francotirador": {
             "eqab": "rifle-francotirador",

@@ -37,6 +37,7 @@ EFFECT_KINDS = {
     "halve_impactos",  # Resiliencia
     "summon",  # bring reinforcements onto the field (Invocación Abisal)
     "change_row",  # step between the front and back rows
+    "reload",  # refill a weapon's magazine (``ammo: <group>``)
     "advance",  # push past the enemy front row to reach their back row
     "consecrate",  # contest the battlefield's faith track (Consagrar la Tierra)
     "note",  # flavour only, no mechanics
@@ -245,6 +246,10 @@ class Ability:
     reroll_scope: str = "self"  # "self" | "any" (allies and enemies alike)
     reroll_kinds: tuple[str, ...] = ()  # "attack" | "defense" | "save"
 
+    # --- reloading weapons: every use spends a shot from the ``ammo`` magazine
+    ammo: str = ""
+    ammo_shots: int = 0
+
     # --- limited-use abilities that keep working for chi once the uses run out
     chi_when_exhausted: int = 0
     #: Drenar Vida: a connecting hit heals the attacker.
@@ -278,6 +283,8 @@ class Ability:
             reroll_kinds=tuple(raw.get("reroll_kinds", [])),
             chi_when_exhausted=int(cost.get("chi_when_exhausted", 0)),
             raw_lifesteal=bool(raw.get("lifesteal", False)),
+            ammo=(raw.get("ammo") or {}).get("group", ""),
+            ammo_shots=int((raw.get("ammo") or {}).get("shots", 0)),
         )
 
     # ------------------------------------------------------------------ query

@@ -101,6 +101,9 @@ class Combatant:
     active: list[ActiveEffect] = field(default_factory=list)
     uses: dict[str, int] = field(default_factory=dict)
     used_this_round: dict[str, int] = field(default_factory=dict)
+    #: Reloading weapons: shots left / magazine size per ammo group
+    ammo: dict[str, int] = field(default_factory=dict)
+    ammo_max: dict[str, int] = field(default_factory=dict)
 
     policy: Any = None
     row: str = "front"  # "front" | "back"
@@ -152,6 +155,8 @@ class Combatant:
             for a in self.abilities.values()
             if a.uses_per_combat is not None
         }
+        self.ammo_max = {a.ammo: a.ammo_shots for a in self.abilities.values() if a.ammo and a.ammo_shots}
+        self.ammo = dict(self.ammo_max)  # weapons start loaded
         self.refresh_round()
 
     def refresh_round(self) -> None:
@@ -315,9 +320,15 @@ class Combatant:
             cost += ability.chi_when_exhausted
         return cost
 
+    def loaded(self, ability: Ability) -> bool:
+        """False for a reloading weapon with an empty magazine."""
+        return not ability.ammo or self.ammo.get(ability.ammo, 1) > 0
+
     def can_afford(self, ability: Ability, as_reaction: bool = False) -> bool:
         if not ability.implemented:
             return False
+        if not self.loaded(ability):
+            return False  # empty: reload first
         if self.total_chi_cost(ability) > self.chi:
             return False
         if self.exhausted(ability) and not ability.chi_when_exhausted:
@@ -336,6 +347,8 @@ class Combatant:
         if ability.id in self.uses and self.uses[ability.id] > 0:
             self.uses[ability.id] -= 1
         self.used_this_round[ability.id] = self.used_this_round.get(ability.id, 0) + 1
+        if ability.ammo and ability.ammo in self.ammo:
+            self.ammo[ability.ammo] -= 1  # one shot per attack made with the weapon
         if ability.bonus_action:
             return
         if as_reaction:

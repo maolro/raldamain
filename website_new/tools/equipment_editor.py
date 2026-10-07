@@ -335,7 +335,25 @@ function renderItem() {
                 onchange="toggleStyle('${v}', this.checked)"> ${l} <span style="opacity:.6">· ${d}</span></label>`; }).join('')}
           </div>
           <div class="hint">${itemStyles(it).length ? '' : 'Sin estilo: sin Parada y el ataque usa el mejor de FUE/DES sin rango de estilo.'}</div>
-        </div>` : ''}
+        </div>
+        <div class="field">
+          <label class="chk ${it.reload ? 'on' : ''}" style="align-self:flex-start"
+            title="Armas de fuego, ballestas…: cada ataque gasta un disparo; sin disparos hay que recargar">
+            <input type="checkbox" ${it.reload ? 'checked' : ''} onchange="setReloadOn(this.checked)"> 🔫 Recarga</label>
+        </div>
+        ${it.reload ? `
+        <div class="sub">
+          <div class="sub-hd">🔫 Recarga</div>
+          <div class="row2">
+            <div class="field"><div class="lbl">Acciones para recargar</div>
+              <input class="inp" type="number" min="1" step="1" value="${esc(it.reload.actions)}"
+                oninput="setReload('actions', this.value)"></div>
+            <div class="field"><div class="lbl">Disparos antes de recargar</div>
+              <input class="inp" type="number" min="1" step="1" value="${esc(it.reload.shots)}"
+                oninput="setReload('shots', this.value)"></div>
+          </div>
+          <div class="hint">Cada ataque hecho con el arma gasta un disparo. 1 disparo = recargar tras cada disparo.</div>
+        </div>` : ''}` : ''}
       <div class="row2">
         <div class="field"><div class="lbl">Coste (PE · Puntos de Equipo)</div>
           <input class="inp" type="number" min="0" step="1" value="${esc(it.ep != null ? it.ep : '')}" placeholder="0"
@@ -431,6 +449,17 @@ function preview(t) { return t && typeof formatRichText === 'function' && (t.inc
 // ── Setters ──────────────────────────────────────────────────────────────────
 function touched() { renderToolbar(); }
 function setItem(k, v) { item()[k] = v; if (k === 'name') renderSidebar(); touched(); }
+function setReloadOn(on) {
+  const it = item();
+  if (on) it.reload = { actions: 1, shots: 1 }; else delete it.reload;
+  touched(); renderItem();
+}
+function setReload(k, v) {
+  const it = item(); if (!it.reload) return;
+  const n = parseInt(v, 10);
+  it.reload[k] = isNaN(n) || n < 1 ? 1 : n;
+  touched();
+}
 function toggleStyle(v, on) {
   const it = item();
   const arr = itemStyles(it).filter(x => x !== v);
