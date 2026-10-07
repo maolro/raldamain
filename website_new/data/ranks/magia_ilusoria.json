@@ -11,7 +11,8 @@
   "description": "Engañas los sentidos y manipulas la realidad percibida mediante la energía del entorno. Creas imágenes, sonidos y sensaciones falsas para confundir, disfrazarte, volverte invisible o crear monstruos y terrenos ilusorios que pueden llegar a matar.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
-    "<strong>Estadística principal:</strong> Inteligencia + Rango."
+    "<strong>Estadística principal:</strong> Inteligencia + Rango.",
+    "<strong>Parada mágica:</strong> Usas Magia Ilusoria para defenderte de ataques físicos y mágicos."
   ],
   "levels": [
     {
