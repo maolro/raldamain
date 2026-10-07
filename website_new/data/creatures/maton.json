@@ -69,8 +69,8 @@
     {
       "name": "Golpe Poderoso",
       "desc": "El objetivo tira FÍS +5+1d6 o es empujado y recibe Desventaja en su siguiente tiro defensivo. Funciona con objetivos que hayan detenido el ataque con Parada.",
-      "attacks": 2,
-      "cost": 1,
+      "attacks": 1,
+      "cost": 2,
       "bonus": "+5+1d6",
       "range": "Adyacente",
       "damage": "3d6 + 4 Contundente"
