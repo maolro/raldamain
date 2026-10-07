@@ -213,7 +213,8 @@
             "eqab": "mandoble",
             "name": "Mandoble",
             "styles": [
-                "coloso"
+                "coloso",
+                "duelo"
             ]
         },
         "martillo-de-guerra": {
