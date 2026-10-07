@@ -281,7 +281,7 @@
         "description": "Tienes Desventaja atacando a enemigos a distancia corta o inferior.",
         "name": "Rifle Francotirador",
         "range": "Extremo",
-        "tags": "Físico, Ataque, Asesino",
+        "tags": "Físico, Ataque",
         "type": "Accion"
     },
     "sable": {
