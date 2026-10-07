@@ -264,7 +264,8 @@
             "styles": [
                 "coloso",
                 "duelo"
-            ]
+            ],
+            "ep": 1
         }
     }
 }
