@@ -1032,11 +1032,12 @@ ${reactions}
         characterSnapshot: function () {
             return JSON.stringify(this.characterData());
         },
-        // Base "General" damage threshold = CON (CAR for beings without CON, like the old PV rule); never below 0
+        // Base "General" damage threshold = CON or 2, whichever is higher
+        // (CAR for beings without CON, like the old PV rule)
         baseUmbral: function () {
             const fs = this.finalStats;
             const v = fs.con.value !== '-' ? fs.con.value : fs.cha.value;
-            return v === '-' ? 0 : Math.max(0, v);
+            return v === '-' ? 2 : Math.max(2, v);
         },
         // Tier (1-7) from the level; drives stat limit (3 + Tier) and talent limit (Tier + 1)
         tier: function () {

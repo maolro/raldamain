@@ -101,7 +101,8 @@ def _attach_riders(abilities: list[dict[str, Any]], riders: list[tuple[str, dict
         upgrade = {k: v for k, v in rider.items() if k not in ("rider", "text")}
         hosts = [
             a for a in abilities
-            if any(e.get("kind") == "attack" for e in a.get("effects", []))
+            if any(e.get("kind") == "attack" and any(h.get("kind") == "damage" for h in e.get("on_hit", []))
+                   for e in a.get("effects", []))  # a damaging attack, not a manoeuvre
             and (("weapon" in a.get("tags", [])) if rank_id.startswith("estilo_")
                  else a.get("_rank") == rank_id)
         ]

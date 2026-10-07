@@ -188,6 +188,30 @@ class Policy:
         """Step in front of ``target`` and take the hit instead?"""
         return False
 
+    def choose_parry_reaction(
+        self,
+        state: CombatState,
+        user: Combatant,
+        opponent: Combatant,
+        reaction: Ability,
+    ) -> bool:
+        """Atrapar Arma and other ``on_parry`` reactions: use it unless every
+        condition it would apply is already on the opponent, keeping the
+        reactions this policy holds in reserve."""
+        if user.reactions_left <= getattr(self, "hold_reactions", 0):
+            return False
+        applied: set[str] = set()
+
+        def walk(effects) -> None:
+            for e in effects:
+                if e.kind == "apply_effect" and e.effect_id:
+                    applied.add(e.effect_id)
+                walk(e.on_fail)
+                walk(e.on_hit)
+
+        walk(reaction.effects)
+        return not applied or not all(opponent.has_effect(x) for x in applied)
+
     def choose_redirect_miss(
         self,
         state: CombatState,

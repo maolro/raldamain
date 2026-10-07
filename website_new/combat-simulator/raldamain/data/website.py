@@ -257,8 +257,8 @@ def character_spec(path: Path) -> dict[str, Any]:
     if isinstance(penalty, int) and -stats["FUE"] > penalty:
         stats["DES"] += penalty
 
-    # Umbrales: General = CON, armour on top (General raises every threshold)
-    general = max(0, stats["CON"])
+    # Umbrales: General = CON (minimum 2), armour on top (General raises every threshold)
+    general = max(2, stats["CON"])
     umbrales: dict[str, int] = {"general": general}
     for u in armor.get("umbrales") or []:
         for cat in str(u.get("categories", "General")).split(","):

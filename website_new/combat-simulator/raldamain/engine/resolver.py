@@ -746,6 +746,9 @@ class Resolver:
             for up in upgrades:
                 for sub in up.on_miss:
                     self._apply_effect(actor, sub, [target], ability, upgrades, indent + 1)
+            # Atrapar Arma and friends: reactions to a successful Parada
+            if defense is not None:
+                self._parry_reactions(actor, target, ability, target.defense, indent)
             # Redirigir Ataque: someone may re-aim the failed swing rather than
             # let it become an Apertura.
             if self._redirect_miss(actor, target, effect, ability, upgrades, indent):
@@ -1083,6 +1086,42 @@ class Resolver:
                     self._redirect_depth -= 1
                 return True
         return False
+
+    def _parry_reactions(
+        self, attacker: Combatant, defender: Combatant, ability: Ability,
+        defense: Ability | None, indent: int,
+    ) -> None:
+        """Reactions with ``trigger: on_parry`` (Atrapar Arma).
+
+        Offered when an attack has just been stopped by a *Parada* (not an
+        Esquiva): to the defender if it was a weapon attack ("detienes el ataque
+        de un arma enemiga"), and to the attacker ("un enemigo detiene tu ataque
+        usando Parada").  The reaction's effects land on the other combatant.
+        """
+        if defense is None or "parada" not in defense.name.lower():
+            return
+        chances = [(attacker, defender)]
+        if "weapon" in ability.tags:
+            chances.insert(0, (defender, attacker))
+        for user, opponent in chances:
+            if not user.alive or not opponent.alive or user.policy is None:
+                continue
+            for react in user.abilities.values():
+                if not react.implemented or react.trigger != "on_parry":
+                    continue
+                if not user.can_afford(react, as_reaction=True):
+                    continue
+                if not user.policy.choose_parry_reaction(self.state, user, opponent, react):
+                    continue
+                user.pay(react, as_reaction=True)
+                self.log.line(
+                    f"{user.name} reacciona con {react.name} ({react.cost_label()}) contra {opponent.name}",
+                    indent,
+                )
+                self.log.event("reaction", actor=user.id, side=user.side, ability=react.id, trigger="on_parry")
+                for eff in react.effects:
+                    self._apply_effect(user, eff, [opponent], react, [], indent + 1)
+                break  # one reaction per user per parry
 
     def _wall_retaliation(
         self, attacker: Combatant, target: Combatant, ability: Ability, indent: int

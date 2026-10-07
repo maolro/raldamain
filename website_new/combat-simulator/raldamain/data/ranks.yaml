@@ -315,17 +315,18 @@ estilo_duelista:
           text: "Rider de ataque (1 chi): golpea a todos en un radio corto, +1 dado de daño; puedes moverte antes o después sin provocar aperturas."
         - id: atrapar_arma
           name: Atrapar Arma
-          cost: {actions: 1}
-          reach: adyacente
-          tags: [weapon, physical]
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_parry
+          tags: [physical]
           effects:
-            - kind: attack
-              attack_roll: "{{MOD}}"
-              on_hit:
+            - kind: save
+              save: fis
+              dc: "{{MOD}}"
+              on_fail:
                 - {kind: apply_effect, effect: enredado, duration: 2, to: target}
                 - {kind: apply_effect, effect: arma_atrapada, duration: 2, to: target}
-                - {kind: self_buff, effect: enredado, duration: 2}
-          text: "Tiro enfrentado: el objetivo queda Enredado y no puede usar su arma hasta escapar, pero tu arma queda atrapada igual. Modelado como ataque sin daño."
+          text: "Reacción (1 chi) cuando un enemigo detiene tu ataque con Parada o detienes con Parada el ataque de un arma enemiga: salvación Físico o queda Enredado y no puede atacar con su arma. El intento de desarmar (1 acción) no está modelado."
       notes: "Persecución (contraatacar a un enemigo que se mueve) necesita seguimiento de movimiento que el motor no tiene."
 
 estilo_asesino:
