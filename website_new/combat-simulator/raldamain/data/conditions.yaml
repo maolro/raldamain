@@ -272,7 +272,7 @@ ventaja_otorgada:
   name: Ventaja otorgada
   kind: buff
   duration: 1
-  tags: [consume_on_attack, consume_on_defense]
+  tags: [consume_on_roll]
   modifiers:
     - {scope: all, advantage: 1}
 
@@ -282,7 +282,7 @@ asistido:
   family: asistido
   level: 1
   duration: 2
-  tags: [consume_on_attack, consume_on_defense]
+  tags: [consume_on_roll]
   modifiers:
     - {scope: all, flat: 2}
 
@@ -292,7 +292,7 @@ asistido_2:
   family: asistido
   level: 2
   duration: 2
-  tags: [consume_on_attack, consume_on_defense]
+  tags: [consume_on_roll]
   modifiers:
     - {scope: all, flat: 4}
 
@@ -302,7 +302,7 @@ asistido_3:
   family: asistido
   level: 3
   duration: 2
-  tags: [consume_on_attack, consume_on_defense]
+  tags: [consume_on_roll]
   notes: Ceiling -- Assist stacks to +6 and no further.
   modifiers:
     - {scope: all, flat: 6}

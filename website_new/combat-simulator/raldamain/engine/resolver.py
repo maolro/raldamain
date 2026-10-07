@@ -170,6 +170,7 @@ class Resolver:
             second = self.roller.roll(effective, advantage=adv)
             if second.total < result.total:
                 result = second
+        actor.consume_on_roll(tags, opp_id)
         return result
 
     # -------------------------------------------------------------- abilities

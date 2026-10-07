@@ -234,6 +234,20 @@ class Combatant:
                 expired.append(e.name)
         return expired
 
+    def consume_on_roll(self, tags: Iterable[str], opponent_id: str | None = None) -> list[str]:
+        """Spend the ``consume_on_roll`` effects (Asistido, Ventaja otorgada)
+        that just boosted a real roll with ``tags``: they help one roll only."""
+        tags = set(tags)
+        if "initiative" in tags:
+            return []
+        spent = []
+        for e in list(self.active):
+            if ("consume_on_roll" in e.spec.tags and e.relevant_to(opponent_id)
+                    and any(m.applies_to(tags) for m in e.spec.modifiers)):
+                self.active.remove(e)
+                spent.append(e.name)
+        return spent
+
     def consume_single_use(self, tag: str) -> None:
         for e in list(self.active):
             if tag in e.spec.tags:
@@ -249,6 +263,9 @@ class Combatant:
         reroll = False
         for eff in self.active:
             if not eff.relevant_to(opponent_id):
+                continue
+            # one-roll help (Asistido) is given for an action, never for initiative
+            if "initiative" in tags and "consume_on_roll" in eff.spec.tags:
                 continue
             for mod in eff.spec.modifiers:
                 if mod.applies_to(tags):
