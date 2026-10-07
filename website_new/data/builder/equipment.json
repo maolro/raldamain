@@ -238,7 +238,8 @@
             "styles": [
                 "duelo",
                 "asesino"
-            ]
+            ],
+            "ep": 2
         },
         "rifle-de-asalto": {
             "eqab": "rifle-de-asalto",
