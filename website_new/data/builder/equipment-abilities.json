@@ -218,8 +218,8 @@
         "type": "Accion"
     },
     "martillo-de-guerra": {
-        "cost": "1 Acción",
-        "damage": "1d8",
+        "cost": "2 Acciones",
+        "damage": "2d6",
         "damage_type": "Contundente",
         "name": "Martillo de Guerra",
         "range": "Adyacente",
