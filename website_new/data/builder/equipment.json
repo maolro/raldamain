@@ -79,7 +79,8 @@
             "name": "Bomba",
             "styles": [
                 "asesino"
-            ]
+            ],
+            "ep": 1
         },
         "cadena": {
             "eqab": "cadena",
@@ -103,7 +104,8 @@
             "styles": [
                 "coloso",
                 "duelo"
-            ]
+            ],
+            "ep": 2
         },
         "escudo": {
             "eqab": "escudo,parada-con-escudo",
