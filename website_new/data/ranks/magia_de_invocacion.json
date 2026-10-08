@@ -1,0 +1,15 @@
+{
+  "id": "magia_de_invocacion",
+  "title": "Magia de Invocación",
+  "category": "Especial",
+  "draft": true,
+  "image": "magia_de_invocacion.jpg",
+  "stats": [],
+  "description": "",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
+    "<strong>Estadística principal:</strong> Carisma + Rango.",
+    "<strong>Parada mágica:</strong> Usas esta magia para tiros de parada y salvaciones."
+  ],
+  "levels": []
+}
