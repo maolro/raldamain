@@ -461,7 +461,8 @@ class Resolver:
             return
         self._mark_escape(inst)
         if target.add_effect(inst):
-            self.log.line(f"{target.name} sufre {inst.name}", indent)
+            verb = "activa" if inst.spec.kind == "buff" and actor.id == target.id else                    "recibe" if inst.spec.kind == "buff" else "sufre"
+            self.log.line(f"{target.name} {verb} {inst.name}", indent)
             self.log.event(
                 "effect_applied",
                 actor=actor.id,

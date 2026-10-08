@@ -160,9 +160,33 @@ def roll_expr(text: Any) -> str:
     return t[1:] if t.startswith("+") else t
 
 
+LADDERS = {"herid": "herido", "miedo": "miedo", "fatiga": "fatiga", "enfermad": "enfermado"}
+ROMANS = {"i": 1, "ii": 2, "iii": 3, "iv": 4}
+
+
 def conditions_in(text: str) -> list[str]:
     t = plain(text)
-    return [cid for pattern, cid in CONDITION_WORDS if re.search(pattern, t)]
+    out = [cid for pattern, cid in CONDITION_WORDS if re.search(pattern, t)]
+    # Herido / Miedo / Fatiga with their rung: "Herido III", "Miedo II"
+    for stem, family in LADDERS.items():
+        m = re.search(stem + r"\w*\s+(iv|iii|ii|i)\b", t)
+        if m or (family == "herido" and re.search(r"herid", t)):
+            level = ROMANS[m.group(1)] if m else 1
+            out = [c for c in out if not c.startswith(family)] + [f"{family}_{level}"]
+    return out
+
+
+SAVE_IN_TEXT = re.compile(
+    r"(?:salvacion|tiro|tira)\s+(?:de\s+)?(?:salvacion\s+)?(?:de\s+)?(fis\w*|vol\w*|men\w*)(?:\s+contra)?\s*([+-]?\s*\d+(?:\s*\+\s*\d+d\d+)?)?")
+
+
+def save_in_text(text: str) -> tuple[str, str] | None:
+    """("fis", "7+1d6") from "...tiro de salvación FÍS +7+1d6 o queda enredado"."""
+    m = SAVE_IN_TEXT.search(plain(text))
+    if not m:
+        return None
+    save = {"f": "fis", "v": "vol", "m": "men"}[m.group(1)[0]]
+    return save, (m.group(2) or "").replace(" ", "").lstrip("+")
 
 
 def roman_level(text: str) -> int:
@@ -447,7 +471,14 @@ def _creature_action(a: dict[str, Any], idx: int, is_reaction: bool = False) -> 
 
     if a.get("bonus") and dice and not is_reaction:
         hit = [{"kind": "damage", "damage": dice, "dtype": dtype}]
-        hit += [{"kind": "apply_effect", "effect": c, "duration": 2} for c in conditions_in(desc)[:1]]
+        conds = [{"kind": "apply_effect", "effect": c, "duration": 2} for c in conditions_in(desc)[:3]]
+        rider_save = save_in_text(desc) if conds else None
+        if rider_save:  # "...debe superar un tiro de salvación FÍS +7+1d6 o queda Enredado"
+            hit.append({"kind": "save", "save": rider_save[0],
+                        "dc": roll_expr(rider_save[1]) if rider_save[1] else roll_expr(a["bonus"]),
+                        "on_fail": conds})
+        else:
+            hit += conds
         base.update({"cost": {"actions": cost.get("actions", 1), "chi": cost.get("chi", 0)},
                      "effects": [{"kind": "attack", "attack_roll": roll_expr(a["bonus"]), "on_hit": hit}] * times})
         if "fisic" in tags or base["reach"] in ("adyacente", "toque"):
@@ -461,7 +492,7 @@ def _creature_action(a: dict[str, Any], idx: int, is_reaction: bool = False) -> 
         fail: list[dict[str, Any]] = []
         if dice:
             fail.append({"kind": "damage", "damage": dice, "dtype": dtype})
-        fail += [{"kind": "apply_effect", "effect": c, "duration": 2} for c in conditions_in(desc)[:1]]
+        fail += [{"kind": "apply_effect", "effect": c, "duration": 2} for c in conditions_in(desc)[:3]]
         if fail and not is_reaction:
             base.update({"cost": {"actions": cost.get("actions", 1), "chi": cost.get("chi", 0)},
                          "effects": [{"kind": "save", "save": save, "dc": roll_expr(m.group(2) if m else "0"),

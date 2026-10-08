@@ -95,15 +95,15 @@ ira:
                on_fail: [{kind: apply_effect, effect: miedo_1, duration: 2}]}
           text: "Todos los enemigos en un radio medio fallan salvación de Voluntad o sufren Miedo I."
     2:
-      abilities:
-        - {id: ira, name: Ira, cost: {actions: 1}, targeting: self,
-           effects: [{kind: self_buff, effect: ira_r2, duration: 6}],
-           text: "Como Rango I, y mientras estés en Ira aumentas todos tus umbrales por un valor igual a tu Rango (Resistencia Salvaje) e ignoras Herido I y II."}
       passives:
         - {target: immunity, key: herido_1,
            text: "Resistencia Salvaje: ignoras Herido I mientras estés en Ira (modelado como inmunidad permanente)."}
         - {target: immunity, key: herido_2,
            text: "Resistencia Salvaje: ignoras Herido II mientras estés en Ira."}
+      abilities:
+        - {id: ira, name: Ira, cost: {actions: 1}, targeting: self,
+           effects: [{kind: self_buff, effect: ira_r2, duration: 6}],
+           text: "Como Rango I, y mientras estés en Ira aumentas todos tus umbrales por un valor igual a tu Rango (Resistencia Salvaje) e ignoras Herido I y II."}
         - id: frenesi_de_batalla
           name: Frenesí de Batalla
           cost: {actions: 1}

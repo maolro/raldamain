@@ -16,6 +16,7 @@ from typing import Sequence
 
 from ..engine.abilities import AREA_TARGET_COUNT, Ability, Upgrade
 from ..engine.dice import DicePool
+from ..engine.effects import ActiveEffect
 from ..engine.entities import Combatant
 from ..engine.resolver import CombatState
 from .base import (
@@ -253,6 +254,10 @@ class GreedyPolicy(Policy):
         if any(e.kind == "change_row" for e in ability.effects):
             return self._change_row_value(state, actor, ability)
 
+        if ability.effects and all(e.kind in ("self_buff", "note") for e in ability.effects) \
+                and any(e.kind == "self_buff" for e in ability.effects):
+            return self._buff_value(state, actor, ability)
+
         if any(e.kind == "escape" for e in ability.effects):
             return self._escape_value(state, actor)
 
@@ -484,6 +489,96 @@ class GreedyPolicy(Policy):
         return total / max(1, ability.actions), [], []
 
     # ------------------------------------------------------------ positioning
+    # ---------------------------------------------------------------- buffs
+    #: How many rounds a combat-long buff is expected to keep paying off
+    BUFF_HORIZON = 3
+
+    def _offence_per_action(self, state: CombatState, actor: Combatant, against: str | None = None) -> float:
+        best = 0.0
+        for ab in actor.abilities.values():
+            if not ab.is_attack or not ab.implemented or ab.actions <= 0:
+                continue
+            for t in state.legal_targets(actor, ab):
+                if against and t.id != against:
+                    continue
+                best = max(best, self._attack_value(state, actor, ab, t, ()) / ab.actions)
+        return best
+
+    def _incoming_per_round(self, state: CombatState, actor: Combatant) -> float:
+        """Expected harm from every living enemy's best attack on ``actor``."""
+        total = 0.0
+        for foe in state.enemies_of(actor):
+            best = 0.0
+            for ab in foe.abilities.values():
+                if not ab.is_attack or not ab.implemented or ab.actions <= 0:
+                    continue
+                if actor not in state.legal_targets(foe, ab):
+                    continue
+                best = max(best, self._attack_value(state, foe, ab, actor, ()) / ab.actions)
+            total += best * max(1, foe.actions_max)
+        return total
+
+    def _buff_value(self, state: CombatState, actor: Combatant, ability: Ability):
+        """Ira, Forma de la Bestia, Frenesí de Batalla…: put the buff on for a
+        moment and re-measure.  Offence = how much better the actor's best
+        attack gets, for the actions it will still take while the buff lasts;
+        defence = how much less the enemies' attacks hurt (negative for
+        Frenesí's Desventaja on defence).  Worth it only when the sum beats a
+        plain attack with the same action."""
+        enemies = state.enemies_of(actor)
+        effs = [e for e in ability.effects if e.kind == "self_buff" and e.effect_id]
+        if not enemies or not effs:
+            return None
+        specs = [state.registry.get(e.effect_id) for e in effs]
+        if all(actor.has_effect(sp.id) for sp in specs):
+            return None  # already running
+        bound = any(e.raw.get("against_target") for e in effs)
+        target = None
+        if bound:  # Analizar Enemigo and friends: only versus the chosen enemy
+            target = max(enemies, key=lambda e: (e.impactos, e.level))
+
+        off0 = self._offence_per_action(state, actor, target.id if target else None)
+        inc0 = self._incoming_per_round(state, actor)
+        added = []
+        for e, sp in zip(effs, specs):
+            if actor.has_effect(sp.id):
+                continue
+            inst = ActiveEffect(sp, e.duration if e.duration is not None else sp.duration, actor.id,
+                                target.id if target and e.raw.get("against_target") else None)
+            actor.active.append(inst)
+            added.append(inst)
+        try:
+            off1 = self._offence_per_action(state, actor, target.id if target else None)
+            inc1 = self._incoming_per_round(state, actor)
+        finally:
+            for inst in added:
+                if inst in actor.active:
+                    actor.active.remove(inst)
+
+        duration = min((e.duration if e.duration is not None else 99) for e in effs)
+        after_cost = max(0, actor.actions_left - ability.actions)
+        one_shot = any(t in sp.tags for sp in specs
+                       for t in ("consume_on_attack", "consume_on_roll", "consume_on_defense", "consume_on_umbral"))
+        if one_shot:
+            # Ataque Poderoso, Apuntar…: spent by the next attack (or hit) it helps
+            cheapest = min((ab.actions for ab in actor.abilities.values()
+                            if ab.is_attack and ab.implemented and ab.actions > 0), default=1)
+            actions = cheapest if after_cost >= cheapest or duration > 1 else 0
+            exposure = 0.5
+        elif duration <= 1:
+            # "esta ronda": the actions left this turn, and the enemy attacks
+            # still to come before the round ends (about half a round)
+            actions = after_cost
+            exposure = 0.5
+        else:
+            rounds = min(duration, self.BUFF_HORIZON)
+            actions = after_cost + (rounds - 1) * actor.actions_max
+            exposure = rounds - 0.5
+        value = (off1 - off0) * actions + (inc0 - inc1) * exposure
+        if value <= 0.05:
+            return None
+        return value / max(1, ability.actions), ([target] if target else [actor]), []
+
     # ---------------------------------------------------- conditions on self
     def _relief(self, state: CombatState, user: Combatant, eff) -> float:
         """What lowering ``eff`` one step is worth to ``user``: the value an
