@@ -1,6 +1,7 @@
 {
     "armor": {
         "full": {
+            "ep": 1,
             "eqab": "",
             "name": "Completa",
             "penalty": -6,
@@ -9,8 +10,7 @@
                     "categories": "Físico",
                     "value": 8
                 }
-            ],
-            "ep": 1
+            ]
         },
         "heavy": {
             "eqab": "",
@@ -75,21 +75,21 @@
             ]
         },
         "bomba": {
+            "ep": 1,
             "eqab": "bomba-2",
             "name": "Bomba",
             "styles": [
                 "asesino"
-            ],
-            "ep": 1
+            ]
         },
         "cadena": {
+            "ep": 1,
             "eqab": "cadena",
             "name": "Cadena",
             "styles": [
                 "duelo",
                 "asesino"
-            ],
-            "ep": 1
+            ]
         },
         "daga": {
             "eqab": "daga",
@@ -99,13 +99,13 @@
             ]
         },
         "escopeta": {
+            "ep": 2,
             "eqab": "escopeta",
             "name": "Escopeta",
             "styles": [
                 "coloso",
                 "duelo"
-            ],
-            "ep": 2
+            ]
         },
         "escudo": {
             "eqab": "escudo,parada-con-escudo",
@@ -116,22 +116,22 @@
             ]
         },
         "espada-larga": {
+            "ep": 1,
             "eqab": "espada-larga",
             "name": "Espada Larga",
             "styles": [
                 "coloso",
                 "duelo"
-            ],
-            "ep": 1
+            ]
         },
         "espada-ropera": {
+            "ep": 1,
             "eqab": "espada-ropera",
             "name": "Espada Ropera",
             "styles": [
                 "duelo",
                 "asesino"
-            ],
-            "ep": 1
+            ]
         },
         "garra": {
             "eqab": "garra",
@@ -225,48 +225,52 @@
             ]
         },
         "mosqueton": {
+            "ep": 1,
             "eqab": "mosqueton",
             "name": "Mosquetón",
             "styles": [
                 "duelo",
                 "asesino"
-            ],
-            "ep": 1
+            ]
         },
         "pistola-de-mano": {
+            "ep": 2,
             "eqab": "pistola-de-mano",
             "name": "Pistola de Mano",
             "styles": [
                 "duelo",
                 "asesino"
-            ],
-            "ep": 2
+            ]
         },
         "rifle-de-asalto": {
+            "ep": 2,
             "eqab": "rifle-de-asalto",
             "name": "Fusil",
             "styles": [
                 "duelo",
                 "asesino"
             ],
-            "ep": 2
+            "reload": {
+                "actions": 1,
+                "shots": 1
+            }
         },
         "rifle-francotirador": {
+            "ep": 2,
             "eqab": "rifle-francotirador",
             "name": "Rifle Francotirador",
             "styles": [
                 "asesino"
-            ],
-            "ep": 2
+            ]
         },
         "sable": {
+            "ep": 1,
             "eqab": "sable",
             "name": "Sable",
             "styles": [
                 "coloso",
                 "duelo"
-            ],
-            "ep": 1
+            ]
         }
     }
 }
