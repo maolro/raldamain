@@ -177,6 +177,12 @@ def main(argv: list[str]) -> int:
         return 2
 
     bind_children_to_launcher()
+    try:  # keep the website's /simulador file list in step with the simulator package
+        import build_sim_manifest
+        if build_sim_manifest.main():
+            print("combat-simulator/web_manifest.json actualizado (súbelo con el resto de cambios)")
+    except Exception as e:
+        print(f"(no se pudo actualizar web_manifest.json: {e})")
     print("Herramientas de Raldamain — Ctrl+C para detenerlas todas\n")
     procs: dict[str, subprocess.Popen] = {}
     started = []

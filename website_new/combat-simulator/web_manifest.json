@@ -1,0 +1,30 @@
+{
+ "files": [
+  "raldamain/__init__.py",
+  "raldamain/data/__init__.py",
+  "raldamain/data/builds.yaml",
+  "raldamain/data/cache.py",
+  "raldamain/data/conditions.yaml",
+  "raldamain/data/equipment.yaml",
+  "raldamain/data/loader.py",
+  "raldamain/data/ranks.yaml",
+  "raldamain/data/website.py",
+  "raldamain/engine/__init__.py",
+  "raldamain/engine/abilities.py",
+  "raldamain/engine/dice.py",
+  "raldamain/engine/effects.py",
+  "raldamain/engine/encounter.py",
+  "raldamain/engine/entities.py",
+  "raldamain/engine/log.py",
+  "raldamain/engine/rank_formula.py",
+  "raldamain/engine/resolver.py",
+  "raldamain/engine/stat_progression.py",
+  "raldamain/metrics/__init__.py",
+  "raldamain/metrics/collector.py",
+  "raldamain/policies/__init__.py",
+  "raldamain/policies/base.py",
+  "raldamain/policies/greedy.py",
+  "raldamain/policies/scripts.py",
+  "raldamain/web.py"
+ ]
+}

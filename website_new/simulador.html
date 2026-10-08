@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Combate | Raldamain</title>
+    <meta name="description" content="Sube fichas del Creador y criaturas del bestiario y simula combates en tu navegador.">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20261008">
+    <link rel="stylesheet" href="/assets/css/simulador.css?v=20261008">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/assets/js/components.js"></script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="container sim-page">
+        <div class="sim-head">
+            <div>
+                <h1 class="section-title sim-title">Simulador de Combate <span class="sim-beta">beta</span></h1>
+                <p class="sim-intro">Sube tus fichas (<b>Descargar</b> en el Creador) o criaturas del bestiario en <code>.json</code>,
+                    forma los dos bandos y simula. Todo ocurre en tu navegador: tus archivos se guardan solo aquí.</p>
+            </div>
+            <span id="engine" class="sim-engine loading" title="El simulador se ejecuta en tu navegador">Cargando…</span>
+        </div>
+
+        <div class="sim-grid">
+            <!-- Uploads -->
+            <section class="sim-panel">
+                <div class="sim-panel-head">
+                    <h2>Tus fichas</h2>
+                    <button id="clear-all" class="sim-link" hidden>Borrar todo</button>
+                </div>
+                <label id="drop" class="sim-drop">
+                    <input id="file" type="file" accept=".json,application/json" multiple hidden>
+                    <span class="sim-drop-icon">⇪</span>
+                    <span><b>Arrastra archivos .json</b> o haz clic para elegirlos</span>
+                    <small>Fichas del Creador o criaturas del bestiario</small>
+                </label>
+                <div id="uploads" class="sim-list"></div>
+            </section>
+
+            <!-- Sides + options -->
+            <section class="sim-panel">
+                <h2>Grupo</h2>
+                <div id="side-party" class="sim-side"></div>
+                <h2 class="sim-gap">Enemigos</h2>
+                <div id="side-enemies" class="sim-side"></div>
+
+                <div class="sim-opts">
+                    <label>Simulaciones
+                        <input id="runs" type="number" min="1" max="1000" value="1">
+                    </label>
+                    <label>Semilla
+                        <input id="seed" type="number" value="1">
+                    </label>
+                    <label>Turnos
+                        <select id="turns">
+                            <option value="full_turn">Turno completo</option>
+                            <option value="cycle">Por ciclos</option>
+                        </select>
+                    </label>
+                    <label class="sim-check"><input id="pos" type="checkbox" checked> Filas (vanguardia / retaguardia)</label>
+                </div>
+                <div class="sim-actions">
+                    <button id="run" class="cta-button sim-run" disabled>⚔ Simular</button>
+                    <button id="stop" class="sim-stop" hidden>Detener</button>
+                </div>
+                <div id="progress" class="sim-progress" hidden><div></div></div>
+                <p class="sim-hint">1 simulación muestra el combate completo; varias dan estadísticas.</p>
+            </section>
+        </div>
+
+        <section id="result" class="sim-result" hidden>
+            <div id="summary" class="sim-summary"></div>
+            <pre id="out" class="sim-out"></pre>
+        </section>
+    </main>
+
+    <div id="toast" class="sim-toast" hidden></div>
+
+    <footer>
+        <p>&copy; 2020 Raldamain Studios. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/assets/js/simulador.js?v=20261008"></script>
+</body>
+</html>
