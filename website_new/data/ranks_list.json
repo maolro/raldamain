@@ -331,5 +331,14 @@
     "description": "",
     "draft": true,
     "partial": true
+  },
+  {
+    "id": "cadenas",
+    "name": "Cadenas",
+    "category": "Marcial",
+    "image": "cadenas.jpg",
+    "description": "",
+    "draft": true,
+    "partial": false
   }
 ]
