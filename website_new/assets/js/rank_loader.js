@@ -137,14 +137,18 @@ function renderRankPage(data) {
 
     // D. Build the Abilities (The Complex Part)
     const container = document.getElementById("abilities-container");
-    
-    data.levels.forEach(level => {
+    // Three-level ranks (Iniciado · Profesional · Maestro) unlock at character levels 1, 7 and 13
+    const threeTier = (data.levels || []).map(l => String(l.title || '').trim().toLowerCase()).join('|') === 'iniciado|profesional|maestro';
+    const UNLOCK = threeTier ? [1, 7, 13] : null;
+
+    data.levels.forEach((level, li) => {
         // Create the "Rank Header" (e.g., Rank I)
         let levelHTML = `
             <div class="rank-section">
                 <div class="rank-level-header">
                     <span class="rank-number">${level.rank}</span>
                     <span class="rank-title">${level.title}</span>
+                    ${UNLOCK ? `<span class="rank-unlock" style="margin-left:auto;font-size:0.8rem;opacity:.75" title="Rango de tres niveles: se desbloquea como si fuera Rango ${['I','III','V'][li]}">Nivel ${UNLOCK[li]}</span>` : ''}
                 </div>
         `;
 

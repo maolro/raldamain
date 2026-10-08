@@ -198,8 +198,15 @@ new Vue({
 
                                 let statsArr = rankData.stats || [];
                                 let statBoosts = parseStatBoosts(rankData.levels || []);
+                                // Character level that unlocks each rank level. Ranks with only
+                                // three levels (Iniciado · Profesional · Maestro) unlock them as
+                                // if they were I, III and V: at levels 1, 7 and 13.
+                                const titles = (rankData.levels || []).map(l => String(l.title || '').trim().toLowerCase());
+                                const threeTier = titles.join('|') === 'iniciado|profesional|maestro';
                                 let rankEntry = {
                                     name: rankData.title,
+                                    unlock: threeTier ? [1, 7, 13] : [1, 4, 7, 10, 13, 16],
+                                    three_tier: threeTier,
                                     category: entry.category,
                                     stat: rankMainStat(rankData),
                                     reserve: getReserve(),

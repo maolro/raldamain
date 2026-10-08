@@ -10,7 +10,7 @@ Vue.component('v-rankpage', {
         <b class="mr-1">Rangos a distribuir:</b>{{ rktotal }}
     </div>
     <div v-for="(value, index) in myranks" :key="index">
-        <v-rank-selecter v-bind:ranks="ranks" :index="index" :limit="ranklimit" :enableval="rktotal" 
+        <v-rank-selecter v-bind:ranks="ranks" :index="index" :limit="ranklimit" :level="level" :enableval="rktotal" 
         :placeholder="value.id" :baselevel="value.rank"
         @update-rank-level="handleRankLevelUpdate" @remove-rank="removeRank">
         </v-rank-selecter>

@@ -160,6 +160,7 @@ Los Rangos representan los poderes de combate de tu personaje. Cada personaje ti
 * Empiezas con **2 Rangos** a Nivel 1 y ganas **+1 Rango** cada vez que subes de nivel.
 * Los Rangos se distribuyen entre tus diferentes disciplinas (normalmente 4, máximo 5).
 * Subir un Rango a II, III, etc. requiere alcanzar el nivel mínimo indicado.
+* Los Rangos de **tres niveles** (Iniciado · Profesional · Maestro) se desbloquean como si fueran Rangos I, III y V: su nivel II requiere **nivel 7** y su nivel III, **nivel 13**.
 
 ### Tiros de Rango
 
