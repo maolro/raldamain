@@ -205,5 +205,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "veterano",
+    "name": "Veterano",
+    "type": "Humanoide",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]

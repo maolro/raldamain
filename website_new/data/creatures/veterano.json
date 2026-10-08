@@ -1,0 +1,110 @@
+{
+  "id": "veterano",
+  "name": "Veterano",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+1d6",
+    "VOL": "+7+2d6",
+    "MEN": "+4"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General"
+    },
+    {
+      "value": 12,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 8",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [
+    {
+      "name": "Espada Larga",
+      "desc": "",
+      "cost": 1,
+      "tags": [
+        "Ataque",
+        "Físico"
+      ],
+      "range": "Adyacente",
+      "damage": "3d6 + 5 Cortante",
+      "bonus": "+7+1d6"
+    },
+    {
+      "desc": "Si impacta a un objetivo volador, tira VOL +7+1d6 o cae al suelo.",
+      "name": "Fusil",
+      "tags": [
+        "Ataque",
+        "Físico",
+        "A Distancia",
+        "Coloso"
+      ],
+      "cost": 2,
+      "damage": "5d6 + 5 Perforante",
+      "bonus": "+7+1d6"
+    },
+    {
+      "name": "Gran Barrido",
+      "desc": "Los afectados tiran FÍS +7+1d6 o son empujados y tienen Desventaja en su siguiente tiro defensivo.",
+      "cost": 2,
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Coloso"
+      ],
+      "damage": "5d6 + 5 Cortante",
+      "area": "Radio Corto"
+    },
+    {
+      "name": "Liderazgo",
+      "desc": "Hasta tres aliados que alcance reciben Ventaja en su siguiente tiro de ataque o defensa.",
+      "tags": [
+        "Presencia"
+      ],
+      "cost": 1,
+      "range": "Medio"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Segundo Aliento",
+      "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba o reduce un efecto de estado por un paso.",
+      "cost": 1,
+      "tags": [
+        "Fortitud"
+      ],
+      "ability_id": "segundo-aliento_1791462133271"
+    },
+    {
+      "name": "Proteger Aliado",
+      "desc": "Se mueve hasta un paso para interceptar un ataque hecho contra un aliado, pudiendo así emplear su tiro defensivo en lugar del suyo y recibir el daño del ataque si falla.",
+      "tags": [
+        "Coloso"
+      ],
+      "cost": 1,
+      "ability_id": "proteger-aliado_1791462080348"
+    },
+    {
+      "name": "Parada",
+      "desc": "",
+      "bonus": "+7+1d6",
+      "tags": [
+        "Coloso"
+      ]
+    }
+  ],
+  "lore": "",
+  "tags": []
+}
