@@ -231,7 +231,11 @@
             "styles": [
                 "duelo",
                 "asesino"
-            ]
+            ],
+            "reload": {
+                "actions": 2,
+                "shots": 1
+            }
         },
         "pistola-de-mano": {
             "ep": 2,

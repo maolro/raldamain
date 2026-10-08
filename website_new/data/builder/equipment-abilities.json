@@ -239,7 +239,6 @@
         "cost": "1 Acción",
         "damage": "3d8",
         "damage_type": "Perforante",
-        "description": "Debe recargarse tras cada disparo empleando 2 Acciones. Si el portador saca un 1 natural en un ataque el arma explotará, quedando inutilizada e infligiendo 2d8 daño obligatorio al portador.",
         "name": "Mosquetón",
         "range": "Distancia lejana",
         "skill": "armas-a-distancia",
