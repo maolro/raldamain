@@ -66,8 +66,7 @@
           ],
           "cost": "2 Acciones, 1 Chi",
           "area": "Radio corto",
-          "crit": "Los objetivos quedan con Confundido-2 hasta que reciban sanación.",
-          "desc": "Los objetivos deben tener éxito en un tiro de Voluntad o sufren 1d6 + SAB/CAR daño Radiante y quedan Cegados una ronda. ",
+          "desc": "Los objetivos deben tener éxito en un tiro de Voluntad o sufren 1d6 + SAB/CAR daño Radiante y quedan Desconcertados una ronda. ",
           "empower": "Permanece como un aura durante una ronda, haciendo así que todo objetivo que te impacte sufra sus efectos."
         }
       ]
