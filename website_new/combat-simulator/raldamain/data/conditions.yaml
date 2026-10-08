@@ -320,6 +320,7 @@ desventaja_defensiva:
 miedo_1:
   name: Miedo I
   family: miedo
+  escape: vol          # 1 acción: repetir la salvación (Voluntad) para bajar un paso
   level: 1
   duration: 2
   assumed: true
@@ -330,6 +331,7 @@ miedo_1:
 miedo_2:
   name: Miedo II
   family: miedo
+  escape: vol          # 1 acción: repetir la salvación (Voluntad) para bajar un paso
   level: 2
   duration: 2
   assumed: true
@@ -340,6 +342,7 @@ miedo_2:
 miedo_3:
   name: Miedo III
   family: miedo
+  escape: vol          # 1 acción: repetir la salvación (Voluntad) para bajar un paso
   level: 3
   duration: 2
   assumed: true
@@ -350,6 +353,7 @@ miedo_3:
 miedo_4:
   name: Miedo IV
   family: miedo
+  escape: vol          # 1 acción: repetir la salvación (Voluntad) para bajar un paso
   level: 4
   duration: 2
   assumed: true
@@ -436,6 +440,7 @@ cegado:
 
 enredado:
   name: Enredado
+  escape: fis          # 1 acción: repetir la salvación (Físico) para librarse
   duration: 2
   assumed: true
   notes: >

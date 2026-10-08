@@ -54,6 +54,15 @@ fortitud:
             - {kind: umbral_boost, amount: "{{RANGO+2}}", duration: 1, to: self,
                tags: [consume_on_umbral]}
           text: "Aumenta sus umbrales por Rango + 2 contra el siguiente ataque o reduce un efecto de estado por un paso."
+        - id: segundo_aliento_estado
+          name: Segundo Aliento
+          cost: {reactions: 1, chi: 1}
+          is_reaction: true
+          trigger: on_condition
+          targeting: self
+          effects:
+            - {kind: reduce_condition, to: self}
+          text: "La otra opción de Segundo Aliento: justo al sufrir un efecto de estado, lo reduce un paso (Herido II pasa a Herido I; uno sin niveles desaparece)."
     2:
       passives:
         - {target: save, key: vol, amount: "advantage:1",

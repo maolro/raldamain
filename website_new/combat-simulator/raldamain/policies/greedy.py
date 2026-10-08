@@ -19,6 +19,7 @@ from ..engine.dice import DicePool
 from ..engine.entities import Combatant
 from ..engine.resolver import CombatState
 from .base import (
+    D20,
     Choice,
     Policy,
     attack_effect,
@@ -27,6 +28,7 @@ from .base import (
     expected_impactos,
     hit_probability,
     save_fail_probability,
+    _p_greater,
 )
 
 KILL_BONUS = 0.75
@@ -250,6 +252,9 @@ class GreedyPolicy(Policy):
 
         if any(e.kind == "change_row" for e in ability.effects):
             return self._change_row_value(state, actor, ability)
+
+        if any(e.kind == "escape" for e in ability.effects):
+            return self._escape_value(state, actor)
 
         if any(e.kind == "reload" for e in ability.effects):
             return self._reload_value(state, actor, ability)
@@ -479,6 +484,66 @@ class GreedyPolicy(Policy):
         return total / max(1, ability.actions), [], []
 
     # ------------------------------------------------------------ positioning
+    # ---------------------------------------------------- conditions on self
+    def _relief(self, state: CombatState, user: Combatant, eff) -> float:
+        """What lowering ``eff`` one step is worth to ``user``: the value an
+        enemy gets from it now minus what the rung below would still give,
+        scaled down if it is about to wear off anyway."""
+        enemies = state.enemies_of(user)
+        if not enemies:
+            return 0.0
+        foe = enemies[0]
+        here = self._raw_condition_value(state, foe, user, eff.spec)
+        lower = state.registry.prev_level(eff.spec.family, eff.spec.level)
+        there = self._raw_condition_value(state, foe, user, lower) if lower is not None else 0.0
+        if eff.spec.incapacitates:
+            here += HEAL_VALUE  # losing whole turns: worth a lot to get out of
+        left = eff.rounds_left if eff.rounds_left is not None else 3
+        return max(0.0, here - there) * min(1.0, left / 2)
+
+    def _escape_chance(self, state: CombatState, user: Combatant, eff) -> float:
+        esc = eff.payload.get("escape") or {}
+        save = esc.get("save") or eff.spec.escape
+        pool = user.saves.get(save)
+        if pool is None or esc.get("dc") is None:
+            return 0.0
+        tags = ("save", f"save_{save}") + {"fis": ("physical",), "vol": ("physical", "mental"),
+                                           "men": ("mental",)}.get(save, ())
+        adv, flat, _ = user.modifiers_for(tags)
+        if flat:
+            pool = pool + DicePool(flat=flat)
+        # the saver wins ties: P(save >= dc) = 1 - P(dc > save)
+        return 1.0 - _p_greater(D20 + esc["dc"], 0, D20 + pool, adv)
+
+    def _escape_value(self, state: CombatState, actor: Combatant):
+        """Librarse is worth the chance of success times the relief -- weighed
+        by choose_action against simply attacking with that action."""
+        best = 0.0
+        for eff in actor.active:
+            if eff.spec.escape and eff.payload.get("escape"):
+                best = max(best, self._escape_chance(state, actor, eff) * self._relief(state, actor, eff))
+        if best <= 0.05:
+            return None
+        return best, [actor], []
+
+    def choose_escape_target(self, state: CombatState, user: Combatant, options: list):
+        return max(options, key=lambda e: self._escape_chance(state, user, e) * self._relief(state, user, e))
+
+    def choose_condition_reaction(self, state: CombatState, user: Combatant, effect, reaction: Ability) -> bool:
+        """Segundo Aliento on a condition: worth it when the relief is real,
+        and paid from chi beyond the defensive reserve unless it is severe
+        (the same reaction and chi also buy the umbral boost against a hit)."""
+        relief = self._relief(state, user, effect)
+        if relief < CONDITION_VALUE * 0.5:
+            return False
+        spare_chi = user.chi - user.total_chi_cost(reaction) >= self.defensive_chi_reserve(user)
+        severe = relief >= CONDITION_VALUE * 1.5 or effect.spec.incapacitates
+        if not spare_chi and not severe:
+            return False
+        if user.reactions_left <= 1 and not severe:
+            return False  # keep the last reaction for a defence
+        return True
+
     def _reload_value(self, state: CombatState, actor: Combatant, ability: Ability):
         """Reloading is worth the shot it gives back: nearly a full attack when
         the weapon is empty, only a sliver when it is merely partly spent (top

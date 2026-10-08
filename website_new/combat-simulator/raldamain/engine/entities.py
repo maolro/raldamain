@@ -48,6 +48,14 @@ POSITIONING_ACTIONS: list[dict[str, Any]] = [
         "effects": [{"kind": "change_row"}],
     },
     {
+        # Enredado / Miedo: spend an action repeating the save that caused it
+        "id": "librarse",
+        "name": "Librarse",
+        "cost": {"actions": 1},
+        "targeting": "self",
+        "effects": [{"kind": "escape"}],
+    },
+    {
         "id": "ayudar",
         "name": "Ayudar",
         "cost": {"actions": 1},

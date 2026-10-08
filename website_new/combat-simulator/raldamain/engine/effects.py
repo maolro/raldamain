@@ -71,6 +71,10 @@ class EffectSpec:
     stack_group: str = ""
     assumed: bool = False  # True = the sim invented this reading of the rule
     notes: str = ""
+    #: Enredado / Miedo: the affected character may spend 1 action to repeat
+    #: this save ("fis" / "vol") against the original DC; success frees them
+    #: or, on a ladder, lowers it one step.
+    escape: str = ""
 
     @property
     def strength(self) -> tuple[int, int]:
@@ -101,6 +105,7 @@ class EffectSpec:
             stack_group=raw.get("stack_group", ""),
             assumed=bool(raw.get("assumed", False)),
             notes=raw.get("notes", ""),
+            escape=raw.get("escape", ""),
         )
 
 
@@ -169,6 +174,15 @@ class EffectRegistry:
     @classmethod
     def from_dict(cls, raw: dict[str, Any]) -> "EffectRegistry":
         return cls({k: EffectSpec.from_dict(k, v or {}) for k, v in raw.items()})
+
+    def prev_level(self, family: str, level: int) -> EffectSpec | None:
+        """The rung below ``level`` on a status ladder (None at the bottom)."""
+        if not family or level <= 1:
+            return None
+        return next(
+            (sp for sp in self.specs.values() if sp.family == family and sp.level == level - 1),
+            None,
+        )
 
     def next_level(self, family: str, level: int) -> EffectSpec | None:
         """The next rung of a status ladder, or None if already at the top."""

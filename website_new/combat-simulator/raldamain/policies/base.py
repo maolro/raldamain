@@ -13,7 +13,7 @@ policies are attached.
 from __future__ import annotations
 
 from functools import lru_cache
-from typing import Sequence
+from typing import Any, Sequence
 
 from ..engine.abilities import Ability, Effect, Upgrade
 from ..engine.dice import D20_EXPR, DicePool
@@ -187,6 +187,16 @@ class Policy:
     ) -> bool:
         """Step in front of ``target`` and take the hit instead?"""
         return False
+
+    def choose_condition_reaction(
+        self, state: CombatState, user: Combatant, effect: Any, reaction: Ability
+    ) -> bool:
+        """Segundo Aliento against a condition that just landed: no by default."""
+        return False
+
+    def choose_escape_target(self, state: CombatState, user: Combatant, options: list) -> Any:
+        """Which escapable condition Librarse tries first (None: the highest rung)."""
+        return None
 
     def choose_parry_reaction(
         self,

@@ -186,6 +186,7 @@ class Resolver:
         extra_adv: int = 0,
         out_of_turn: bool = False,
     ) -> list[AttackOutcome]:
+        self._cond_src = None
         if not free:
             actor.pay(ability, as_reaction=as_reaction)
         elif ability.ammo and ability.ammo in actor.ammo:
@@ -377,6 +378,16 @@ class Resolver:
                 self.log.line(f"{actor.name} recarga ({n} {'disparo' if n == 1 else 'disparos'})", indent)
                 self.log.event("reload", actor=actor.id, side=actor.side, ammo=group)
 
+        elif kind == "escape":
+            self._escape(actor, indent)
+
+        elif kind == "reduce_condition":
+            for t in self._resolve_recipients(actor, targets, effect.to):
+                worst = max((e for e in t.active if e.spec.kind == "condition"),
+                            key=lambda e: e.spec.level, default=None)
+                if worst is not None:
+                    self._step_down(t, worst, indent, ability.name)
+
         elif kind == "change_row":
             actor.row = "back" if actor.row == "front" else "front"
             where = "la vanguardia" if actor.row == "front" else "la retaguardia"
@@ -430,6 +441,7 @@ class Resolver:
                     return
                 target.active.remove(current)
                 inst = ActiveEffect(promoted, inst.rounds_left, actor.id, against_id)
+                self._mark_escape(inst, current)
                 self.log.line(
                     f"{target.name}: {current.name} sube a {promoted.name}", indent
                 )
@@ -441,11 +453,13 @@ class Resolver:
                     effect=promoted.id,
                     level=promoted.level,
                 )
+                self._condition_reactions(actor, target, inst, indent)
                 return
         if target.immune_to(effect.effect_id):
             self.log.line(f"{target.name} es inmune a {inst.name}", indent)
             self.log.event("immune", target=target.id, effect=effect.effect_id)
             return
+        self._mark_escape(inst)
         if target.add_effect(inst):
             self.log.line(f"{target.name} sufre {inst.name}", indent)
             self.log.event(
@@ -454,6 +468,93 @@ class Resolver:
                 target=target.id,
                 effect=effect.effect_id,
             )
+            self._condition_reactions(actor, target, inst, indent)
+
+    # ------------------------------------------------- shaking off conditions
+    def _mark_escape(self, inst: ActiveEffect, previous: ActiveEffect | None = None) -> None:
+        """Remember the save and DC an escapable condition (Enredado, Miedo) is
+        repeated against.  An escalated rung keeps the stronger of the two DCs'
+        sources simply by taking the newest one."""
+        if not inst.spec.escape:
+            return
+        src = getattr(self, "_cond_src", None) or {}
+        old = previous.payload.get("escape") if previous is not None else None
+        if src.get("dc") is None and old:
+            inst.payload["escape"] = dict(old)
+            return
+        inst.payload["escape"] = {
+            "save": src.get("save") or inst.spec.escape,
+            "dc": src.get("dc") if src.get("dc") is not None else DicePool(flat=5),
+            "source": src.get("source") or inst.source_id,
+        }
+
+    def _step_down(self, target: Combatant, eff: ActiveEffect, indent: int, why: str) -> None:
+        """Lower a condition one rung (Miedo II -> Miedo I); bottom rung or no
+        ladder: it is gone."""
+        if eff not in target.active:
+            return
+        lower = self.state.registry.prev_level(eff.spec.family, eff.spec.level)
+        target.active.remove(eff)
+        if lower is not None:
+            new = ActiveEffect(lower, eff.rounds_left, eff.source_id, eff.against_id)
+            new.payload = dict(eff.payload)
+            target.active.append(new)
+            self.log.line(f"{target.name}: {eff.name} baja a {lower.name} ({why})", indent)
+        else:
+            self.log.line(f"{target.name} se libra de {eff.name} ({why})", indent)
+        self.log.event("condition_reduced", target=target.id, effect=eff.id,
+                       to=lower.id if lower is not None else None, why=why)
+
+    def _condition_reactions(
+        self, actor: Combatant, target: Combatant, inst: ActiveEffect, indent: int
+    ) -> None:
+        """Segundo Aliento: right after an enemy saddles you with a harmful
+        condition, a reaction may knock it down one step."""
+        if inst.spec.kind != "condition" or actor.side == target.side:
+            return
+        if not target.alive or target.policy is None:
+            return
+        for react in target.abilities.values():
+            if not react.implemented or react.trigger != "on_condition":
+                continue
+            if not target.can_afford(react, as_reaction=True):
+                continue
+            if not target.policy.choose_condition_reaction(self.state, target, inst, react):
+                continue
+            target.pay(react, as_reaction=True)
+            self.log.line(f"{target.name} reacciona con {react.name} ({react.cost_label()})", indent)
+            self.log.event("reaction", actor=target.id, side=target.side, ability=react.id,
+                           trigger="on_condition")
+            self._step_down(target, inst, indent + 1, react.name)
+            return
+
+    def _escape(self, actor: Combatant, indent: int) -> None:
+        """Librarse: repeat the save of the worst escapable condition."""
+        options = [e for e in actor.active if e.spec.escape and e.payload.get("escape")]
+        if not options:
+            self.log.line(f"{actor.name} no tiene nada de lo que librarse", indent)
+            return
+        pick = None
+        if actor.policy is not None:
+            pick = actor.policy.choose_escape_target(self.state, actor, options)
+        eff = pick or max(options, key=lambda e: e.spec.level)
+        esc = eff.payload["escape"]
+        save = esc["save"]
+        src = next((c for c in self.state.combatants if c.id == esc.get("source")), None)
+        if src is not None and src.alive:
+            dc_roll = self.roll_for(src, esc["dc"], ("save_dc",), actor)
+        else:
+            dc_roll = self.roller.roll(D20 + esc["dc"])
+        tags = ("save", f"save_{save}") + {"fis": ("physical",), "vol": ("physical", "mental"),
+                                           "men": ("mental",)}.get(save, ())
+        save_roll = self.roll_for(actor, actor.saves.get(save, DicePool()), tags, src)
+        success = save_roll.total >= dc_roll.total
+        self.log.line(
+            f"{actor.name} intenta librarse de {eff.name}: salvación {save.upper()} {save_roll} "
+            f"vs {dc_roll} -> {'SUPERA' if success else 'FALLA'}", indent)
+        self.log.event("escape", actor=actor.id, side=actor.side, effect=eff.id, success=success)
+        if success:
+            self._step_down(actor, eff, indent + 1, "Librarse")
 
     # ----------------------------------------------------- consecrated ground
     def _consecrate(self, actor: Combatant, effect: Effect, indent: int) -> bool:
@@ -779,6 +880,8 @@ class Resolver:
         )
         self._wall_retaliation(actor, target, ability, indent)
         outcome = AttackOutcome(True, atk, defense, target=target)
+        # a condition riding a hit is escaped against that attack roll
+        self._cond_src = {"save": None, "dc": effect.attack_roll, "source": actor.id}
         for sub in effect.on_hit:
             if sub.kind == "damage":
                 dealt, imp, wasted = self._roll_and_apply_damage(
@@ -1472,6 +1575,8 @@ class Resolver:
             success=success,
         )
         branch = effect.on_success if success else effect.on_fail
+        # conditions applied now can be shaken off by repeating this save
+        self._cond_src = {"save": effect.save, "dc": effect.dc, "source": actor.id}
         for sub in branch:
             if sub.kind == "damage":
                 self._roll_and_apply_damage(

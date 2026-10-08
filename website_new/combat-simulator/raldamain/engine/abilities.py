@@ -37,6 +37,8 @@ EFFECT_KINDS = {
     "halve_impactos",  # Resiliencia
     "summon",  # bring reinforcements onto the field (Invocación Abisal)
     "change_row",  # step between the front and back rows
+    "escape",  # 1 action: repeat the save of an Enredado / Miedo to shake it off
+    "reduce_condition",  # Segundo Aliento: lower a condition one step
     "reload",  # refill a weapon's magazine (``ammo: <group>``)
     "advance",  # push past the enemy front row to reach their back row
     "consecrate",  # contest the battlefield's faith track (Consagrar la Tierra)
