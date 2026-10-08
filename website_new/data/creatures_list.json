@@ -214,5 +214,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "comando",
+    "name": "Comando",
+    "type": "Humanoide",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]

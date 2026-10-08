@@ -1,0 +1,39 @@
+{
+  "id": "comando",
+  "name": "Comando",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+0",
+    "VOL": "+0",
+    "MEN": "+0"
+  },
+  "umbrales": [],
+  "immune": [],
+  "senses": "",
+  "speed": "",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 0
+  },
+  "traits": [],
+  "actions": [],
+  "reactions": [
+    {
+      "name": "Evasión",
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico.",
+      "move": 10,
+      "id": "evasion_1778692238910",
+      "type": "reaction",
+      "tags": [
+        "Reflejos"
+      ]
+    }
+  ],
+  "lore": "",
+  "tags": []
+}
