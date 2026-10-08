@@ -358,5 +358,14 @@
     "description": "",
     "draft": true,
     "partial": false
+  },
+  {
+    "id": "ingenieria",
+    "name": "Ingeniería",
+    "category": "Ciencia",
+    "image": "ingenieria.jpg",
+    "description": "",
+    "draft": true,
+    "partial": false
   }
 ]
