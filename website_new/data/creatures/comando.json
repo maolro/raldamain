@@ -7,20 +7,74 @@
   "description": "",
   "hits": 2,
   "saves": {
-    "FÍS": "+0",
-    "VOL": "+0",
-    "MEN": "+0"
+    "FÍS": "+7+2d6",
+    "VOL": "+7",
+    "MEN": "+7"
   },
-  "umbrales": [],
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General"
+    },
+    {
+      "value": 12,
+      "categories": "Físico"
+    }
+  ],
   "immune": [],
-  "senses": "",
-  "speed": "",
+  "senses": "Olfato, Visión Nocturna",
+  "speed": "Paso 8",
   "combat": {
     "acciones": 2,
-    "reacciones": 0
+    "reacciones": 1
   },
   "traits": [],
-  "actions": [],
+  "actions": [
+    {
+      "desc": "El objetivo sufre Herido I",
+      "name": "Daga",
+      "cost": 1,
+      "damage": "3d6 + 5 Perforante",
+      "range": "Medio",
+      "tags": [
+        "Ataque",
+        "Físico",
+        "A Distancia"
+      ],
+      "bonus": "+7+2d6",
+      "attacks": 1
+    },
+    {
+      "name": "Rifle Francotirador",
+      "desc": "El objetivo sufre Herido I",
+      "range": "Extremo",
+      "cost": 2,
+      "bonus": "+7+2d6",
+      "damage": "5d6 + 5 Perforante",
+      "tags": [
+        "Ataque",
+        "Físico",
+        "A Distancia"
+      ]
+    },
+    {
+      "name": "Trampa",
+      "cost": 1,
+      "range": "Medio",
+      "desc": "El objetivo está Enredado hasta que escape. Puede preparar este objeto como una trampa, haciendo que se active en cualquier momento de la ronda y que el afectado tenga que tener éxito en un tiro de salvación Mental o tiene Desventaja defendiéndose."
+    },
+    {
+      "name": "Secuencia de Puñaladas",
+      "tags": [
+        "Ataque",
+        "Físico"
+      ],
+      "bonus": "+7+3d6",
+      "cost": 2,
+      "attacks": 3,
+      "damage": "3d6 + 5 Perforante"
+    }
+  ],
   "reactions": [
     {
       "name": "Evasión",
@@ -28,6 +82,16 @@
       "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico.",
       "move": 10,
       "id": "evasion_1778692238910",
+      "type": "reaction",
+      "tags": [
+        "Reflejos"
+      ]
+    },
+    {
+      "name": "Golpe de Fortuna",
+      "cost": 1,
+      "desc": "Repite un tiro de Salvación o anula un efecto de Repetir sobre él.",
+      "id": "golpe-de-fortuna_1791476584028",
       "type": "reaction",
       "tags": [
         "Reflejos"
