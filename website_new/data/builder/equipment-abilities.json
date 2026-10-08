@@ -272,7 +272,7 @@
         "type": "Accion"
     },
     "rifle-francotirador": {
-        "cost": "2 Acciones",
+        "cost": "1 Acción",
         "damage": "3d8",
         "damage_type": "Perforante",
         "description": "Tienes Desventaja atacando a enemigos a distancia corta o inferior.",
