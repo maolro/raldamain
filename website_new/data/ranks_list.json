@@ -349,5 +349,14 @@
     "description": "",
     "draft": true,
     "partial": false
+  },
+  {
+    "id": "quimica",
+    "name": "Química",
+    "category": "Ciencia",
+    "image": "quimica.jpg",
+    "description": "",
+    "draft": true,
+    "partial": false
   }
 ]
