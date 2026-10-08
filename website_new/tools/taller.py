@@ -87,6 +87,7 @@ EMBED_CSS = """<style>
 #navbar-container, footer { display: none !important; }
 body { padding-top: 0 !important; }
 .creature-hero { height: 170px !important; min-height: 0 !important; }
+.creature-action-btn.ghost { display: none !important; }
 </style>"""
 
 

@@ -22,11 +22,11 @@
     <meta name="twitter:image" content="/assets/images/raldamain_logo.png">
 
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/creature_style.css">
+    <link rel="stylesheet" href="/assets/css/creature_style.css?v=20261008">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="/assets/js/meta-tags.js"></script>
     <script src="/assets/js/components.js"></script>
-    <script src="/assets/js/creature_loader.js"></script>
+    <script src="/assets/js/creature_loader.js?v=20261008"></script>
 </head>
 <body>
 
@@ -100,6 +100,14 @@
                 <p class="legendary-intro" id="legendary-intro"></p>
                 <div class="statblock-section-content" id="statblock-legendary"></div>
             </div>
+        </div>
+
+        <!-- Download the stat block / try it in the simulator -->
+        <div class="creature-actions" id="creature-actions" hidden>
+            <a id="creature-download" class="creature-action-btn" href="#" download
+               title="Descarga la ficha de la criatura para subirla al Simulador de Combate">⬇ Descargar ficha (.json)</a>
+            <a class="creature-action-btn ghost" href="/simulador"
+               title="Sube el archivo descargado y enfréntala a tus personajes">⚔ Probar en el simulador</a>
         </div>
 
         <!-- Lore Section -->

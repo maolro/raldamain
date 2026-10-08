@@ -58,7 +58,16 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!response.ok) throw new Error("Creature not found");
             return response.json();
         })
-        .then(data => renderCreaturePage(data))
+        .then(data => {
+            renderCreaturePage(data);
+            // Download the creature's own file, ready to upload to /simulador
+            const dl = document.getElementById("creature-download");
+            if (dl) {
+                dl.href = `/data/creatures/${creatureId}.json`;
+                dl.setAttribute("download", `${creatureId}.json`);
+                document.getElementById("creature-actions").hidden = false;
+            }
+        })
         .catch(err => {
             console.error(err);
             document.getElementById("creature-name").innerText = "Criatura no encontrada";

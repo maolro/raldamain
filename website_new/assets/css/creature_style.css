@@ -818,3 +818,36 @@
         font-size: 1.5rem;
     }
 }
+
+/* ── Download / simulator buttons under the statblock ── */
+.creature-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 1.5rem 0 0.5rem;
+}
+.creature-actions[hidden] { display: none; }
+.creature-action-btn {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 5px;
+    background: var(--accent-gold);
+    color: var(--primary-black);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+.creature-action-btn.ghost {
+    background: transparent;
+    color: var(--text-main);
+    border: 1px solid #555;
+}
+.creature-action-btn:hover { filter: brightness(1.1); }
+.creature-action-btn.ghost:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
+
+/* Bestiary cards: small "download .json" link next to "Ver Estadísticas" */
+.card-links { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.card-download { color: var(--text-muted); font-size: 0.8rem; text-decoration: none; border: 1px solid #444;
+    border-radius: 4px; padding: 2px 8px; }
+.card-download:hover { color: var(--accent-gold); border-color: var(--accent-gold); }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestiario | Raldamain</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/creature_style.css">
+    <link rel="stylesheet" href="./assets/css/creature_style.css?v=20261008">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script src="./assets/js/components.js"></script>
 
@@ -268,7 +268,11 @@
                             <span class="creature-type-label">${creature.type} | ${creature.size}</span>
                             <h3>${creature.name}</h3>
                             <p>${creature.description}</p>
-                            <a href="/criatura/${creature.id}" class="read-more">Ver Estadísticas &rarr;</a>
+                            <div class="card-links">
+                                <a href="/criatura/${creature.id}" class="read-more">Ver Estadísticas &rarr;</a>
+                                <a href="/data/creatures/${creature.id}.json" download="${creature.id}.json" class="card-download"
+                                   title="Descargar la ficha (.json) para el Simulador de Combate">⬇ .json</a>
+                            </div>
                         </div>
                     </article>
                 `;
