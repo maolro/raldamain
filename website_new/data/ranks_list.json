@@ -376,5 +376,14 @@
     "description": "",
     "draft": true,
     "partial": false
+  },
+  {
+    "id": "magia_transmutacion",
+    "name": "Magia de Transmutación",
+    "category": "Arcana",
+    "image": "magia_transmutacion.jpg",
+    "description": "",
+    "draft": true,
+    "partial": false
   }
 ]
