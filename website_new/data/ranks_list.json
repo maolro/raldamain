@@ -317,10 +317,10 @@
   {
     "id": "magia_de_invocacion",
     "name": "Magia de Invocación",
-    "category": "Especial",
+    "category": "Ocultismo",
     "image": "magia_de_invocacion.jpg",
     "description": "",
     "draft": true,
-    "partial": false
+    "partial": true
   }
 ]
