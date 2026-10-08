@@ -315,15 +315,6 @@
     "partial": false
   },
   {
-    "id": "magia_de_invocacion",
-    "name": "Magia de Invocación",
-    "category": "Ocultismo",
-    "image": "magia_de_invocacion.jpg",
-    "description": "",
-    "draft": true,
-    "partial": true
-  },
-  {
     "id": "compañero_jurado",
     "name": "Compañero Jurado",
     "category": "Combate",
