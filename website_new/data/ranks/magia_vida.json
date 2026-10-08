@@ -85,11 +85,11 @@
             "Toque",
             "Duradero"
           ],
-          "cost": "3 acciones, 1 chi",
-          "range": "Toque",
+          "range": "Adyacente",
           "duration": "Concentración",
-          "desc": "Creas un enlace vital con un aliado. Como reacción, puedes absorber la mitad del daño que reciba el aliado vinculado. Además, puedes lanzarle hechizos de sanación a distancia mientras el vínculo persista.",
-          "empower": "Lanzas Toque Sanador al aliado vinculado como acción bonus."
+          "desc": "Compartes vida con el objetivo, permitiéndote absorber hasta la mitad de los impactos que reciba (redondeando hacia abajo). Solo puedes tener un vínculo activo y es necesario que se encuentre a distancia media.",
+          "cost": "2 Acciones, 1 Chi",
+          "empower": "El aliado vinculado recupera un impacto. "
         },
         {
           "name": "Barrera Luminosa",
@@ -99,28 +99,25 @@
             "Duradera",
             "Radiante"
           ],
-          "cost": "1 acción, 1 chi",
+          "cost": "1 Reacción, 1 Chi",
           "range": "Medio",
           "area": "Esfera pequeña o línea media",
-          "crit": "Los objetivos quedan con Confundido-2 hasta recibir curación.",
-          "duration": "Concentración",
-          "desc": "Creas un muro de luz sólida que bloquea ataques a distancia. Las criaturas que intenten cruzarlo sufren 1d6 + Rango daño Radiante y quedan con Confundido-1. Puede desplegarse como reacción para uso defensivo.",
+          "duration": "Una Ronda",
+          "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo RANGOx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación de Voluntad o sufren 1d6 + CAR daño Radiante y Desconcertado I durante una ronda.",
           "empower": "La barrera daña a las criaturas cercanas como si intentaran cruzarla."
         },
         {
-          "name": "Arma Solar",
+          "name": "Infusión Luminosa",
           "tags": [
             "Vida",
-            "Ataque",
-            "Radiante",
-            "Duradera"
+            "Pasiva"
           ],
-          "cost": "2 acciones, 1 chi",
-          "area": "Línea mediana",
-          "crit": "El objetivo queda con Confundido-1 durante una ronda.",
-          "duration": "Concentración",
-          "desc": "Creas un arma de luz pura con un ataque inicial en línea que inflige 1d6 + CAR daño Radiante. Mientras el hechizo persista, puedes atacar como acción (1d6 + CAR daño Radiante a distancia media).",
-          "empower": "Realizas un ataque adicional contra un objetivo diferente."
+          "desc": "Puedes emplear tu modificador de Magia de Vidapara tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Magia de Vida.",
+          "replace_mod": [
+            "Esquiva",
+            "Arma"
+          ],
+          "empower": "Un ataque de arma provoca 1d6 daño Radiante al impactar."
         }
       ]
     },
