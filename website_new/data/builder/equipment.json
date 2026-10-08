@@ -269,7 +269,11 @@
             "name": "Rifle Francotirador",
             "styles": [
                 "asesino"
-            ]
+            ],
+            "reload": {
+                "actions": 1,
+                "shots": 1
+            }
         },
         "sable": {
             "ep": 1,
