@@ -6,6 +6,7 @@ Needs:  pip install flask
 """
 
 import json
+import subprocess
 import sys
 import threading
 import webbrowser
@@ -66,6 +67,51 @@ def api_save(rid):
     p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     _sync_ranks_list(data)
     git = _git_push([str(p), str(RANKS_LIST)], f"Update rank: {data.get('title', rid)}")
+    return jsonify({"ok": True, "git": git})
+
+def _rank_path(rid):
+    """data/ranks/<rid>.json, refusing anything that would leave that folder."""
+    p = (RANKS_DIR / f"{rid}.json").resolve()
+    return p if p.parent == RANKS_DIR.resolve() else None
+
+def _fichas_using(rid):
+    """Saved character sheets (data/statblocks) that have this rank."""
+    out = []
+    for f in sorted((BASE / "data" / "statblocks").glob("*.json")):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        if any(r.get("id") == rid and r.get("rank") for r in d.get("ranks") or []):
+            out.append(d.get("name") or f.stem)
+    return out
+
+@app.route("/api/rank/<rid>/usage")
+def api_usage(rid):
+    return jsonify({"fichas": _fichas_using(rid)})
+
+@app.route("/api/rank/<rid>", methods=["DELETE"])
+def api_delete(rid):
+    p = _rank_path(rid)
+    if p is None or not p.exists():
+        return jsonify({"error": "not found"}), 404
+    title = rid
+    try:
+        title = json.loads(p.read_text(encoding="utf-8")).get("title", rid)
+    except Exception:
+        pass
+    # Only a file git already knows can be committed as deleted
+    tracked = subprocess.run(["git", "ls-files", "--error-unmatch", "--", str(p)], cwd=BASE,
+                             capture_output=True).returncode == 0
+    p.unlink()
+    try:
+        entries = json.loads(RANKS_LIST.read_text(encoding="utf-8")) if RANKS_LIST.exists() else []
+        entries = [e for e in entries if e.get("id") != rid]
+        RANKS_LIST.write_text(json.dumps(entries, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception:
+        pass
+    files = ([str(p)] if tracked else []) + [str(RANKS_LIST)]
+    git = _git_push(files, f"Delete rank: {title}")
     return jsonify({"ok": True, "git": git})
 
 @app.route("/api/git")
@@ -422,6 +468,8 @@ select.inp{cursor:pointer}
     <button class="btn" id="draft-btn" style="display:none" onclick="toggleDraft()"
       title="Borrador global: el rango entero aparece como 'En construcción' en la web. En versión final, cada nivel marcado como borrador sigue en construcción."></button>
     <button class="btn pri" id="save-btn" style="display:none" onclick="saveRank()">💾 Guardar</button>
+    <button class="btn danger" id="del-rank-btn" style="display:none" onclick="deleteRank()"
+      title="Borra el rango entero (archivo y entrada en la lista de rangos) y lo publica en GitHub">🗑 Eliminar</button>
   </div>
 
   <!-- ── Edit view ── -->
@@ -648,6 +696,31 @@ async function saveRank() {
   } catch(e) { toast('Error: '+e.message,'err'); }
 }
 
+// ── Delete whole rank ────────────────────────────────────────────────────────
+async function deleteRank() {
+  if (!S.rank) return;
+  const { id, title } = S.rank;
+  let usedBy = [];
+  try { usedBy = (await api('GET', `/api/rank/${id}/usage`)).fichas || []; } catch(e) {}
+  const warn = usedBy.length
+    ? `\n\n⚠ Lo usan estas fichas: ${usedBy.join(', ')}. Perderán este rango al abrirlas en el Creador.`
+    : '';
+  if (!confirm(`¿Eliminar el rango «${title}» entero?\n\nSe borra data/ranks/${id}.json y su entrada en la lista de rangos, y se publica en GitHub.${warn}`)) return;
+  if (usedBy.length && !confirm(`Confirma de nuevo: eliminar «${title}» aunque lo usen ${usedBy.length} ficha(s).`)) return;
+  try {
+    const res = await api('DELETE', `/api/rank/${id}`);
+    S.all = S.all.filter(r => r.id !== id);
+    S.rank = null; S.saved = null; S.lv = 0;
+    const git = res.git||'';
+    if (git === 'ok')                        toast(`«${title}» eliminado y publicado en GitHub ✓`, 'ok');
+    else if (git === 'nothing')              toast(`«${title}» eliminado ✓`, 'ok');
+    else if (git.startsWith('wrong-branch')) toast(`«${title}» eliminado — sin push: estás en la rama "${git.split(':')[1]}"`, 'err');
+    else if (git)                            toast(`«${title}» eliminado — git: ` + git, 'err');
+    loadGit();
+    renderCats(); renderSidebar(); fillCmpSelects(); renderAll();
+  } catch(e) { toast('Error: '+e.message,'err'); }
+}
+
 document.addEventListener('keydown', e => {
   if ((e.ctrlKey||e.metaKey) && e.key==='s') { e.preventDefault(); saveRank(); }
 });
@@ -674,6 +747,7 @@ function renderToolbar() {
   const sb = document.getElementById('save-btn');
   sb.style.display = S.rank?'':'none';
   sb.classList.toggle('pri', d);
+  document.getElementById('del-rank-btn').style.display = S.rank?'':'none';
   const db = document.getElementById('draft-btn');
   db.style.display = S.rank?'':'none';
   if (S.rank) {
