@@ -102,7 +102,7 @@
           "range": "Medio",
           "area": "Esfera pequeña o línea media",
           "duration": "Una Ronda",
-          "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo RANGOx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación de Voluntad o sufren 1d6 + CAR daño Radiante y Desconcertado I durante una ronda.",
+          "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo RANGOx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación de Voluntad o sufren 1d6 + SAB/CAR daño Radiante y Desconcertado I durante una ronda.",
           "empower": "La barrera daña a las criaturas cercanas como si intentaran cruzarla."
         },
         {
