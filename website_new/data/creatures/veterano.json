@@ -69,7 +69,7 @@
     },
     {
       "name": "Liderazgo",
-      "desc": "Hasta tres aliados que alcance reciben Ventaja en su siguiente tiro de ataque o defensa.",
+      "desc": "Hasta tres personajes que alcance reciben Ventaja en su siguiente tiro de ataque o defensa.",
       "tags": [
         "Presencia"
       ],
