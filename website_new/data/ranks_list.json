@@ -340,5 +340,14 @@
     "description": "",
     "draft": true,
     "partial": false
+  },
+  {
+    "id": "artes_marciales",
+    "name": "Artes Marciales",
+    "category": "Sin categoría",
+    "image": "artes_marciales.jpg",
+    "description": "",
+    "draft": true,
+    "partial": false
   }
 ]
