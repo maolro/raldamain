@@ -322,5 +322,14 @@
     "description": "",
     "draft": true,
     "partial": true
+  },
+  {
+    "id": "compañero_jurado",
+    "name": "Compañero Jurado",
+    "category": "Combate",
+    "image": "compañero_jurado.jpg",
+    "description": "",
+    "draft": true,
+    "partial": true
   }
 ]
