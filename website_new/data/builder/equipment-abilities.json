@@ -256,7 +256,6 @@
         "cost": "1 Acción",
         "damage": "2d8",
         "damage_type": "Perforante",
-        "description": "Debe recargarse empleando 2 Acciones tras hacer seis disparos.",
         "name": "Pistola de Mano",
         "range": "Distancia media",
         "skill": "armas-a-distancia",
