@@ -1569,7 +1569,7 @@ init();
 
 if __name__ == "__main__":
     url = "http://localhost:5174"
-    print(f"\\nRank Editor  →  {url}")
-    print(f"Archivos     →  {RANKS_DIR}\\n")
+    print(f"\nRank Editor  →  {url}")
+    print(f"Archivos     →  {RANKS_DIR}\n")
     import live_reload
     live_reload.run(app, 5174, url)  # restarts on code edits; open pages reload

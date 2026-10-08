@@ -2,21 +2,25 @@
 
 ``run(app, port, url)`` replaces ``app.run``:
 
-* the server restarts itself whenever one of its Python files changes (the
-  tool itself, ``git_sync``, the combat simulator package…) -- Werkzeug's
-  reloader, which watches every imported module;
+* the server restarts itself whenever one of the repo's Python files it
+  imported changes (the tool itself, ``git_sync``, the combat simulator
+  package…) -- and only that tool: editing the rank editor does not restart
+  the Taller.  After a crash (a half-saved file with a syntax error) it waits
+  for the next save and starts again;
 * every HTML page it serves gets a tiny script that polls ``/__live``.  When
   the server restarted, or a watched site file (``watch=`` globs: the
   Creador's JS/CSS/HTML for the Taller) changed, the page reloads itself --
   unless it has unsaved changes (a global ``dirty()`` returning true), in
   which case it shows a banner and waits for you to save.
 
-The browser opens once, from the reloader's parent process, not on every
+The browser opens once, from the supervising parent process, not on every
 restart.  ``LIVE_RELOAD=0`` turns it all off.
 """
 from __future__ import annotations
 
 import os
+import subprocess
+import sys
 import threading
 import time
 import webbrowser
@@ -101,13 +105,102 @@ class _QuietPolls:
 def run(app, port: int, url: str | None = None, open_browser: bool = True,
         watch: Iterable[str] = (), extra_files: Iterable[str | Path] = ()) -> None:
     enabled = os.environ.get("LIVE_RELOAD", "1") != "0"
+    # RALDAMAIN_PORT_OFFSET: run a second copy of every tool next to the usual one (tests)
+    offset = int(os.environ.get("RALDAMAIN_PORT_OFFSET") or 0)
+    if offset:
+        port += offset
+        url = url.replace(f":{port - offset}", f":{port}") if url else url
     if enabled:
         install(app, watch)
         import logging
         logging.getLogger("werkzeug").addFilter(_QuietPolls())
-    # With the reloader the parent only watches files; the child serves.
-    is_child = os.environ.get("WERKZEUG_RUN_MAIN") == "true"
+    # RALDAMAIN_NO_BROWSER=1: the launcher (tools/launch_all.py) opens the tabs itself.
+    is_child = os.environ.get(CHILD_ENV) == "1"
+    if os.environ.get("RALDAMAIN_NO_BROWSER"):
+        open_browser = False
     if open_browser and url and not is_child:
         threading.Thread(target=lambda: (time.sleep(1.2), webbrowser.open(url)), daemon=True).start()
-    app.run(host="127.0.0.1", port=port, debug=False, use_reloader=enabled,
-            extra_files=[str(f) for f in extra_files] or None)
+    if not enabled:
+        app.run(host="127.0.0.1", port=port, debug=False, use_reloader=False)
+        return
+    extra = [Path(f).resolve() for f in extra_files]
+    if not is_child:
+        _supervise(extra)  # the parent only restarts the serving child
+        return
+    threading.Thread(target=_watch_imports, args=(extra,), daemon=True).start()
+    app.run(host="127.0.0.1", port=port, debug=False, use_reloader=False)
+
+
+# ── Reloader ─────────────────────────────────────────────────────────────────
+# Werkzeug's own reloaders watch every .py under sys.path (all of tools/ and,
+# with "stat", site-packages too), so editing one tool restarted all of them.
+# This one watches only the repo files the tool actually imported.
+
+CHILD_ENV = "RALDAMAIN_LIVE_CHILD"
+RESTART_CODE = 3
+REPO = Path(__file__).resolve().parent.parent
+
+
+def _imported_repo_files() -> list[Path]:
+    files = []
+    for mod in list(sys.modules.values()):
+        f = getattr(mod, "__file__", None)
+        if not f:
+            continue
+        p = Path(f).resolve()
+        if p.suffix == ".py" and REPO in p.parents:
+            files.append(p)
+    return files
+
+
+def _mtimes(paths: Iterable[Path]) -> dict[Path, int]:
+    out = {}
+    for p in paths:
+        try:
+            out[p] = p.stat().st_mtime_ns
+        except OSError:
+            pass
+    return out
+
+
+def _watch_imports(extra: list[Path]) -> None:
+    """Child: exit with RESTART_CODE as soon as an imported repo file changes."""
+    seen = _mtimes(_imported_repo_files() + extra)
+    while True:
+        time.sleep(1)
+        files = _imported_repo_files() + extra  # modules imported later count too
+        for p, m in _mtimes(files).items():
+            if p not in seen:
+                seen[p] = m
+            elif m != seen[p]:
+                print(f" * Detected change in '{p}', reloading", flush=True)
+                os._exit(RESTART_CODE)
+
+
+def _repo_sources(extra: list[Path]) -> list[Path]:
+    roots = [REPO / "tools", REPO / "combat-simulator" / "raldamain"]
+    files = [p for r in roots if r.exists() for p in r.rglob("*.py") if "__pycache__" not in p.parts]
+    return files + extra
+
+
+def _supervise(extra: list[Path]) -> None:
+    """Parent: run the tool as a child; restart it after a code change, and
+    after a crash once some source file changes (the fix)."""
+    env = dict(os.environ, **{CHILD_ENV: "1"})
+    while True:
+        try:
+            code = subprocess.call([sys.executable, *sys.argv], env=env)
+        except KeyboardInterrupt:
+            return
+        if code == RESTART_CODE:
+            continue
+        if code in (0, -2, 0xC000013A):  # normal exit / Ctrl+C (Windows: STATUS_CONTROL_C_EXIT)
+            return
+        print(f" ⚠ se detuvo (código {code}); se reinicia cuando guardes el arreglo…", flush=True)
+        before = _mtimes(_repo_sources(extra))
+        try:
+            while _mtimes(_repo_sources(extra)) == before:
+                time.sleep(1)
+        except KeyboardInterrupt:
+            return
+        print(" ↻ archivo guardado: reiniciando", flush=True)
