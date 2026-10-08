@@ -268,7 +268,6 @@
         "cost": "1 Acción",
         "damage": "3d8",
         "damage_type": "Perforante",
-        "description": "Debes emplear una Acción para cargar esta arma tras cada disparo.",
         "name": "Fusil",
         "range": "Lejano",
         "tags": "Físico, Ataque",
