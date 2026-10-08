@@ -47,6 +47,14 @@ module.exports = {
       else if (req.url === '/creador') {
         req.url = '/creador.html';
       }
+      // 11. Handle "/simulador" -> serve "simulador.html" (combat simulator in the browser)
+      else if (req.url === '/simulador' || req.url.startsWith('/simulador?')) {
+        req.url = '/simulador.html' + req.url.slice('/simulador'.length);
+      }
+      // 12. Handle "/mesa" -> serve "mesa.html"
+      else if (req.url === '/mesa' || req.url.startsWith('/mesa?')) {
+        req.url = '/mesa.html' + req.url.slice('/mesa'.length);
+      }
       next();
     }
   ]
