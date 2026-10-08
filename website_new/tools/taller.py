@@ -29,6 +29,7 @@ except ImportError:
 
 BASE = Path(__file__).resolve().parent.parent           # website_new/
 STATBLOCKS = BASE / "data" / "statblocks"
+CREATURES = BASE / "data" / "creatures"
 sys.path.insert(0, str(BASE / "combat-simulator"))
 
 from raldamain.data import website                       # noqa: E402
@@ -72,9 +73,21 @@ def website_file(path):
         path = f"{path}.html"
     if not (BASE / path).is_file():
         abort(404)
+    if path == "templates/view-criatura.html" and request.args.get("embed"):
+        # Bestiario pop-up: the published creature page, without the site's
+        # navbar/footer and with nothing to click away to
+        html = (BASE / path).read_text(encoding="utf-8").replace("</head>", EMBED_CSS + "</head>", 1)
+        return Response(html, mimetype="text/html", headers={"Cache-Control": "no-cache"})
     resp = send_from_directory(BASE, path)
     resp.headers["Cache-Control"] = "no-cache"
     return resp
+
+
+EMBED_CSS = """<style>
+#navbar-container, footer { display: none !important; }
+body { padding-top: 0 !important; }
+.creature-hero { height: 170px !important; min-height: 0 !important; }
+</style>"""
 
 
 # ─────────────────────────────────────────────────────────────── fichas API
@@ -147,6 +160,52 @@ def api_ficha_delete(fid):
     p.unlink()
     reload_roster()
     return jsonify({"ok": True})
+
+
+# ─────────────────────────────────────────────────────────────── bestiario API
+
+def creature_summary(p: Path, sim_ids: dict[str, str]) -> dict:
+    """At-a-glance numbers for a bestiary creature, in the same units as the
+    fichas (Impactos, umbrales and saves as the simulator reads them)."""
+    d = json.loads(p.read_text(encoding="utf-8"))
+    level = int(d.get("level") or 1)
+    combat = d.get("combat") or {}
+    attacks = [{"name": a.get("name", ""), "bonus": a.get("bonus", ""), "damage": a.get("damage", ""),
+                "area": a.get("area", ""), "cost": a.get("cost")}
+               for a in d.get("actions") or [] if a.get("bonus") or a.get("damage")]
+    defenses = [{"name": r.get("name", ""), "bonus": r.get("bonus", "")}
+                for r in d.get("reactions") or [] if r.get("bonus")]
+    out = {"id": p.stem, "name": d.get("name") or p.stem, "level": level, "tier": tier_for(level),
+           "category": d.get("tier") or "", "type": d.get("type") or "", "size": d.get("size") or "",
+           "tags": d.get("tags") or [], "description": d.get("description") or "",
+           "hits": d.get("hits"), "actions": combat.get("acciones"), "reactions": combat.get("reacciones"),
+           "umbrales": d.get("umbrales") or [], "saves": d.get("saves") or {}, "immune": d.get("immune") or [],
+           "speed": d.get("speed") or "", "senses": d.get("senses") or "",
+           "attacks": attacks, "defenses": defenses,
+           "traits": [t.get("name", "") for t in d.get("traits") or []],
+           "image": (BASE / "assets" / "images" / "creatures" / f"{p.stem}.jpg").exists(),
+           "sim_id": sim_ids.get(p.name), "modified": p.stat().st_mtime}
+    try:  # combat numbers, as the simulator sees them
+        spec = website.creature_spec(p)
+        out["combat"] = {"impactos": spec["impactos"], "umbrales": spec["umbrales"], "saves": spec["saves"],
+                         "initiative": spec["initiative"]}
+    except Exception as e:
+        out["combat_error"] = str(e)
+    return out
+
+
+@app.route("/api/bestiario")
+def api_bestiario():
+    # simulator id of each creature file (clashes with a ficha get "_criatura")
+    sim_ids = {Path(s.get("source", "")).name: sid for sid, s in load_roster().items()
+               if s.get("origin") == "bestiario" and s.get("source")}
+    items, errors = [], []
+    for p in sorted(CREATURES.glob("*.json")):
+        try:
+            items.append(creature_summary(p, sim_ids))
+        except Exception as e:
+            errors.append(f"{p.name}: {e}")
+    return jsonify({"creatures": items, "errors": errors})
 
 
 # ─────────────────────────────────────────────────────────────── simulator API
@@ -243,6 +302,7 @@ body { min-height: 100vh; }
   <span class="tl-title">Taller de Raldamain</span>
   <nav class="tl-nav">
     <a href="/taller" class="__N1__">📚 Fichas</a>
+    <a href="/taller/bestiario" class="__N3__">🐉 Bestiario</a>
     <a href="/creador.html?ficha=new">✚ Nueva ficha</a>
     <a href="/taller/simulador" class="__N2__">⚔ Simulador</a>
   </nav>
@@ -251,7 +311,9 @@ body { min-height: 100vh; }
 
 
 def page(title, body, nav):
-    head = HEAD.replace("__TITLE__", title).replace("__N1__", "on" if nav == 1 else "").replace("__N2__", "on" if nav == 2 else "")
+    head = HEAD.replace("__TITLE__", title)
+    for n in (1, 2, 3):
+        head = head.replace(f"__N{n}__", "on" if nav == n else "")
     return Response(head + body + "\n</body></html>", mimetype="text/html")
 
 
@@ -363,6 +425,178 @@ async function del(id, name) {
   await fetch('/api/fichas/' + id, { method: 'DELETE' });
   load();
 }
+load();
+</script>
+"""
+
+BESTIARIO = r"""
+<main class="tl-wrap">
+  <h1 class="tl-h1">Bestiario</h1>
+  <p class="tl-sub">Criaturas de <code>data/creatures</code>, con los mismos números que las fichas para compararlas.
+    Pulsa una para ver su ficha completa. (Solo lectura: se editan en el Editor de Criaturas.)</p>
+
+  <div class="fx-row">
+    <input id="q" class="inp" placeholder="Buscar por nombre, tipo, etiqueta o ataque…" oninput="render()">
+    <select id="f-tier" class="inp" onchange="render()"><option value="">Todos los Tiers</option></select>
+    <select id="f-cat" class="inp" onchange="render()"><option value="">Todas las categorías</option></select>
+    <select id="f-sort" class="inp" onchange="render()">
+      <option value="level">Orden: nivel</option><option value="name">Orden: nombre</option>
+      <option value="hits">Orden: Impactos</option><option value="umbral">Orden: umbral General</option>
+    </select>
+    <span class="muted" id="count" style="margin-left:auto;font-size:0.85rem"></span>
+  </div>
+  <div id="types" class="filter-container"></div>
+  <div id="errors"></div>
+  <div class="card-grid" id="grid"><p class="muted">Cargando criaturas…</p></div>
+</main>
+
+<div id="bx-modal" class="bx-modal" hidden onclick="if (event.target === this) closeCreature()">
+  <div class="bx-panel">
+    <div class="bx-bar">
+      <span id="bx-title" class="tl-title" style="font-size:1rem"></span>
+      <span style="margin-left:auto;display:flex;gap:6px">
+        <a id="bx-sim" class="btn-ghost" href="#">⚔ Simular contra</a>
+        <a id="bx-web" class="btn-ghost" href="#" target="_blank">↗ Abrir página</a>
+        <button class="btn-ghost" onclick="closeCreature()">✕</button>
+      </span>
+    </div>
+    <iframe id="bx-frame" title="Ficha de la criatura"></iframe>
+  </div>
+</div>
+
+<style>
+.fx-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+.fx-row #q { flex: 1 1 260px; }
+.filter-container { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+.filter-btn { padding: 6px 16px; font-size: 0.85rem; font-weight: bold; border: 1px solid var(--accent-gold); cursor: pointer;
+  border-radius: 4px; background: var(--secondary-black); color: var(--text-main); }
+.filter-btn.active { background: var(--accent-gold); color: var(--primary-black); }
+.bx-card { cursor: pointer; transition: border-color .15s, transform .15s; }
+.bx-card:hover { border-color: var(--accent-gold); transform: translateY(-2px); }
+.bx-img { height: 92px; background-size: cover; background-position: center 30%; position: relative; }
+.bx-img.none { height: 6px; background: linear-gradient(90deg, var(--accent-gold), transparent); }
+.bx-badge { position: absolute; top: 8px; right: 8px; font-family: var(--font-heading); font-size: 0.78rem;
+  padding: 2px 9px; border-radius: 4px; color: #fff; }
+.bx-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.bx-head h3 { margin-bottom: 0; }
+.bx-tier { font-family: var(--font-heading); color: var(--accent-gold); font-size: 0.85rem; white-space: nowrap; }
+.bx-sub { color: var(--text-muted); font-size: 0.8rem; }
+.bx-tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0; }
+.bx-tag { font-size: 0.75rem; padding: 1px 7px; border: 1px solid #555; border-radius: 3px; color: var(--text-muted); }
+.bx-tag.cat { border-color: var(--accent-gold); color: var(--accent-gold); }
+.bx-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 3px; margin: 8px 0; text-align: center; }
+.bx-stat { background: rgba(255,242,0,0.04); border-radius: 3px; padding: 3px 0; font-size: 0.8rem; }
+.bx-stat b { display: block; color: var(--accent-gold); font-size: 0.7rem; }
+.bx-line { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+.bx-line strong { color: var(--text-main); }
+.bx-atk { font-size: 0.8rem; line-height: 1.45; margin-top: 6px; }
+.bx-atk .n { color: var(--text-main); font-weight: bold; }
+.bx-atk .d { color: #f5d76e; }
+.card-content { display: flex; flex-direction: column; }
+.bx-modal { position: fixed; inset: 0; background: rgba(0,0,0,.72); z-index: 50; display: flex;
+  align-items: center; justify-content: center; padding: 3vh 2vw; }
+.bx-modal[hidden] { display: none; }
+.bx-panel { background: var(--primary-black); border: 1px solid var(--accent-gold); border-radius: 8px;
+  width: min(1000px, 100%); height: 94vh; display: flex; flex-direction: column; overflow: hidden; }
+.bx-bar { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-bottom: 1px solid #333;
+  background: var(--secondary-black); flex-wrap: wrap; }
+#bx-frame { flex: 1; width: 100%; border: 0; background: var(--primary-black); }
+</style>
+
+<script>
+let CREATURES = [];
+let TYPE = '';
+const esc = s => String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+const UMB = { general: 'General', fisico: 'Físico', magico: 'Magia' };
+const levelColor = l => l <= 3 ? '#2d8a4e' : l <= 6 ? '#b8860b' : l <= 9 ? '#c0392b' : l <= 12 ? '#8e44ad' : '#1a1a2e';
+
+async function load() {
+  const d = await (await fetch('/api/bestiario')).json();
+  CREATURES = d.creatures;
+  document.getElementById('errors').innerHTML = (d.errors || []).map(e => `<p class="err">⚠ ${esc(e)}</p>`).join('');
+  document.getElementById('f-tier').innerHTML = '<option value="">Todos los Tiers</option>' +
+    [...new Set(CREATURES.map(c => c.tier))].sort((a, b) => a - b).map(t => `<option value="${t}">Tier ${t}</option>`).join('');
+  const cats = [...new Set(CREATURES.map(c => c.category).filter(Boolean))].sort();
+  const fc = document.getElementById('f-cat');
+  fc.innerHTML = '<option value="">Todas las categorías</option>' + cats.map(c => `<option>${esc(c)}</option>`).join('');
+  fc.style.display = cats.length ? '' : 'none';
+  const types = [...new Set(CREATURES.map(c => c.type).filter(Boolean))].sort();
+  document.getElementById('types').innerHTML = ['', ...types].map(t =>
+    `<button class="filter-btn ${t === TYPE ? 'active' : ''}" data-t="${esc(t)}" onclick="setType(this.dataset.t)">${t ? esc(t) : 'Todos'}</button>`).join('');
+  render();
+  const open = new URLSearchParams(location.search).get('c');
+  if (open) openCreature(open);
+}
+function setType(t) {
+  TYPE = t;
+  document.querySelectorAll('#types .filter-btn').forEach(b => b.classList.toggle('active', b.dataset.t === t));
+  render();
+}
+function generalUmbral(c) { return c.combat ? (c.combat.umbrales.general ?? 0) : 0; }
+function render() {
+  const q = document.getElementById('q').value.toLowerCase();
+  const tier = document.getElementById('f-tier').value;
+  const cat = document.getElementById('f-cat').value;
+  const sort = document.getElementById('f-sort').value;
+  const text = c => [c.name, c.type, c.category, ...c.tags, ...c.traits, ...c.attacks.map(a => a.name)].join(' ').toLowerCase();
+  let list = CREATURES.filter(c => (!q || text(c).includes(q)) && (!tier || String(c.tier) === tier)
+    && (!cat || c.category === cat) && (!TYPE || c.type === TYPE));
+  list.sort((a, b) => sort === 'name' ? a.name.localeCompare(b.name)
+    : sort === 'hits' ? (b.hits || 0) - (a.hits || 0) || a.level - b.level
+    : sort === 'umbral' ? generalUmbral(b) - generalUmbral(a) || a.level - b.level
+    : a.level - b.level || a.name.localeCompare(b.name));
+  document.getElementById('count').textContent = `${list.length} de ${CREATURES.length}`;
+  const grid = document.getElementById('grid');
+  if (!list.length) { grid.innerHTML = '<p class="muted" style="font-style:italic">No hay criaturas con estos filtros.</p>'; return; }
+  grid.innerHTML = list.map(card).join('');
+}
+function card(c) {
+  const k = c.combat || {};
+  const umb = (c.umbrales || []).map(u => `<strong>${esc(u.value)}</strong> ${esc(u.categories)}`).join(' · ')
+    || (k.umbrales ? Object.entries(k.umbrales).map(([n, v]) => `<strong>${v}</strong> ${UMB[n] || n}`).join(' · ') : '');
+  const saves = Object.entries(c.saves || {}).map(([n, v]) => `${esc(n)} <strong>${esc(v)}</strong>`).join(' ');
+  const def = c.defenses.map(d => `${esc(d.name)} <strong>${esc(d.bonus)}</strong>`).join(' · ');
+  const stat = (label, v) => `<div class="bx-stat"><b>${label}</b>${v ?? '-'}</div>`;
+  const atks = c.attacks.slice(0, 3).map(a => `<div><span class="n">${esc(a.name)}</span>
+      ${a.bonus ? `<span class="d">${esc(a.bonus)}</span>` : ''}${a.damage ? ` · <span class="d">${esc(a.damage)}</span>` : ''}${a.area ? ` · ${esc(a.area)}` : ''}</div>`).join('')
+    + (c.attacks.length > 3 ? `<div class="muted">+${c.attacks.length - 3} más…</div>` : '');
+  return `
+  <article class="card bx-card" onclick="openCreature('${c.id}')" title="Ver ficha completa">
+    <div class="bx-img ${c.image ? '' : 'none'}" ${c.image ? `style="background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.65)),url('/assets/images/creatures/${c.id}.jpg')"` : ''}>
+      ${c.image ? `<span class="bx-badge" style="background:${levelColor(c.level)}">Nvl ${c.level}</span>` : ''}
+    </div>
+    <div class="card-content">
+      <div class="bx-head"><h3>${esc(c.name)}</h3><span class="bx-tier">Niv ${c.level} · Tier ${c.tier}</span></div>
+      <span class="bx-sub">${esc([c.type, c.size].filter(Boolean).join(' · '))}</span>
+      <div class="bx-tags">${c.category ? `<span class="bx-tag cat">${esc(c.category)}</span>` : ''}${c.tags.filter(t => t !== c.type).map(t => `<span class="bx-tag">${esc(t)}</span>`).join('')}</div>
+      <div class="bx-stats">${stat('Impactos', c.hits)}${stat('Acc.', c.actions)}${stat('Reac.', c.reactions)}${stat('Inic.', k.initiative != null ? '+' + k.initiative : null)}${stat('Umbral G.', k.umbrales ? k.umbrales.general : null)}</div>
+      <div class="bx-line">Umbrales ${umb || '—'}</div>
+      <div class="bx-line">Salv. ${saves || '—'}</div>
+      ${def ? `<div class="bx-line">Defensa ${def}</div>` : ''}
+      ${c.immune.length ? `<div class="bx-line">Inmune <strong>${esc(c.immune.join(', '))}</strong></div>` : ''}
+      ${atks ? `<div class="bx-atk">${atks}</div>` : ''}
+      ${c.combat_error ? `<p class="err">${esc(c.combat_error)}</p>` : ''}
+    </div>
+  </article>`;
+}
+function openCreature(id) {
+  const c = CREATURES.find(x => x.id === id);
+  if (!c) return;
+  document.getElementById('bx-title').textContent = `${c.name} · Niv ${c.level} · Tier ${c.tier}`;
+  document.getElementById('bx-frame').src = `/criatura/${encodeURIComponent(id)}?embed=1`;
+  document.getElementById('bx-web').href = `/criatura/${encodeURIComponent(id)}`;
+  const sim = document.getElementById('bx-sim');
+  sim.style.display = c.sim_id ? '' : 'none';
+  sim.href = `/taller/simulador?enemies=${encodeURIComponent(c.sim_id || '')}`;
+  document.getElementById('bx-modal').hidden = false;
+  history.replaceState(null, '', `?c=${encodeURIComponent(id)}`);
+}
+function closeCreature() {
+  document.getElementById('bx-modal').hidden = true;
+  document.getElementById('bx-frame').src = 'about:blank';
+  history.replaceState(null, '', location.pathname);
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCreature(); });
 load();
 </script>
 """
@@ -517,6 +751,11 @@ init();
 @app.route("/taller")
 def taller_fichas():
     return page("Fichas", FICHAS, 1)
+
+
+@app.route("/taller/bestiario")
+def taller_bestiario():
+    return page("Bestiario", BESTIARIO, 3)
 
 
 @app.route("/taller/simulador")
