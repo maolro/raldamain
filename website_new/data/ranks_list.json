@@ -168,7 +168,7 @@
     "image": "magia_tormenta.jpg",
     "description": "Controlas la faceta más destructiva del clima, desatando descargas eléctricas devastadoras y truenos ensordecedores. Aprovechas la conductividad del campo de batalla, te mueves a la velocidad del rayo y desatas tormentas que amplifican cada uno de tus ataques.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_aire",
