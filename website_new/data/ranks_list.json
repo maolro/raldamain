@@ -366,7 +366,7 @@
     "image": "magia_transmutacion.jpg",
     "description": "",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "ascendencia_draconica",

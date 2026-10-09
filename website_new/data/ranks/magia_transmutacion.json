@@ -10,5 +10,58 @@
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Inteligencia + Rango."
   ],
-  "levels": []
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "draft": false,
+      "abilities": [
+        {
+          "name": "Inyección Transmutadora",
+          "tags": [],
+          "desc": "El afectado recibirá una de las siguientes mejoras durante el resto del combate. Puede obtener otras mejoras alternativas bajo discreción del DJ.\n- Un sentido especial entre Visión Nocturna u Olfato\n- Un movimiento especial entre Escalada, Excavar o Natación\n- Un nuevo ataque natural entre Mordisco, Tentáculo, Pinza o Garra\n- La capacidad de respirar bajo el agua",
+          "range": "Adyacente",
+          "cost": "1 Acción, 1 Chi"
+        },
+        {
+          "name": "Reparar la Carne",
+          "tags": [],
+          "desc": "Cura un impacto al objetivo o elimina un efecto de estado o hechizo de Transmutación que tenga activo. Solo puedes afectar a seres biológicos",
+          "cost": "1 Acción, 1 Chi",
+          "range": "Adyacente"
+        },
+        {
+          "name": "Transmutación Forzada",
+          "tags": [],
+          "desc": "El afectado debe tener éxito en un tiro de salvación de Voluntad o sufre 1d6 + INT daño Fuerza, Herido I y puedes quitarle u otorgarle un efecto equivalente a Inyección Transmutadora. Solo puedes afectar a seres biológicos.",
+          "empower": "Aumenta el daño base por un dado o afecta a un objetivo adicional.",
+          "cost": "1 Acción, 1 Chi"
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "draft": true,
+      "abilities": []
+    }
+  ]
 }
