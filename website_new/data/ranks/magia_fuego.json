@@ -52,7 +52,7 @@
           "cost": "2 Acciones, 1 Chi",
           "area": "Cono pequeño",
           "desc": "Este ataque prende objetos inflambales y elimina efectos de Hielo, Agua o Naturaleza.",
-          "empower": "Aumenta tamaño un paso y añade un dado de daño adicional.",
+          "empower": "Aumenta el daño base por un dado. Si has empoderado dos veces, aumenta el área por un paso.",
           "damage": "2d6 + CAR",
           "damage_type": "Fuego"
         },
