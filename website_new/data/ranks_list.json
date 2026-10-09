@@ -312,7 +312,7 @@
     "image": "magia_naturaleza.jpg",
     "description": "Manipula las plantas y la naturaleza para atrapar a tus enemigos y llamar a poderosos guardianes.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "compañero_jurado",

@@ -106,6 +106,24 @@
           "empower": "Aumenta el daño base de un ataque Físico hecho con un arma natural o de madera por un dado."
         }
       ]
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "draft": true,
+      "abilities": []
     }
   ]
 }
