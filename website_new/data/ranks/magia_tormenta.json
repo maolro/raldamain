@@ -26,19 +26,18 @@
       "draft": true,
       "abilities": [
         {
-          "name": "Toque Chispeante",
+          "name": "Arco Eléctrico",
           "tags": [
             "Tormenta",
             "Ataque",
-            "Eléctrico",
-            "Toque"
+            "Eléctrico"
           ],
-          "cost": "1 acción",
-          "range": "Cuerpo a cuerpo",
-          "duration": "Instantáneo",
-          "crit": "El objetivo queda con Aturdido-2 durante una ronda.",
-          "desc": "Canaliza una descarga eléctrica a través del contacto directo que inflige 1d6 + SAB/CAR daño Eléctrico al objetivo. Los enemigos que lleven armadura metálica tienen Desventaja en sus tiros defensivos contra este ataque.",
-          "empower": "Haz un ataque contra un objetivo adicional o realiza un segundo ataque contra el mismo objetivo, que deberá emplear su mismo resultado defensivo."
+          "cost": "1 Acción",
+          "range": "Medio",
+          "desc": "Los objetivos con armadura metálica tienen Desventaja defendiéndose.",
+          "empower": "Ataca a un objetivo adicional.",
+          "damage": "1d6",
+          "damage_type": "Eléctrico"
         },
         {
           "name": "Onda Trueno",
@@ -48,12 +47,11 @@
             "Área",
             "Sónico"
           ],
-          "cost": "2 acciones, 1 chi",
-          "area": "Radio cercano",
+          "cost": "2 Acciones, 1 Chi",
+          "area": "Radio corto",
           "duration": "Instantáneo",
-          "crit": "Los afectados quedan ensordecidos durante una ronda.",
-          "desc": "Emites un estallido de energía sónica que inflige 2d6 + SAB/CAR daño Sónico a todos los que se encuentren en el área y los empuja un paso. Los afectados deben superar un tiro de salvación de Voluntad o quedan ensordecidos una ronda. Este ataque destruye objetos frágiles e interrupe efectos Auditivos.",
-          "empower": "Aumenta el radio un paso y el daño un dado adicional."
+          "empower": "Aumenta el daño base por un dado. Si has empoderado dos veces, aumenta el área por un paso.",
+          "desc": "Los afectados deben tener éxito en un tiro de Voluntad o sufren 1d6 + SAB/CAR daño Sónico y quedan Desconcertados una ronda. Este ataque destruye objetos frágiles e interrumpe efectos auditivos."
         },
         {
           "name": "Alma de la Tormenta",
@@ -62,7 +60,13 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia al daño Eléctrico y Sónico, además de Inmunidad a los efectos del rayo y el trueno. Puedes sentir la presencia de todo aquello que conduzca la corriente eléctrica a distancia media, incluyendo criaturas con armaduras metálicas, masas de agua y superficies conductoras."
+          "desc": "Obtienes Resistencia RANGO+1 al daño Eléctrico y Sónico. Puedes sentir la presencia de todo aquello que conduzca corriente eléctrica a distancia media.",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Eléctrico, Sónico"
+            }
+          ]
         }
       ]
     },
