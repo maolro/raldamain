@@ -229,9 +229,9 @@
     "name": "Magia Sombría",
     "category": "Ocultismo",
     "image": "magia_sombria.jpg",
-    "description": "Control de la oscuridad, creación de clones sombríos y transformación en sombra.",
+    "description": "Manipulas la energía del plano sombrío para drenar la vitalidad, crear zonas de oscuridad absoluta y materializar pesadillas. Tus poderes se centran en el control del campo de batalla, el engaño mediante clones y la corrupción de la mente y el cuerpo de tus enemigos mediante el frío y maldiciones.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "nigromancia",

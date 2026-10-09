@@ -17,23 +17,8 @@
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
-        {
-          "name": "Toque Drenador",
-          "tags": [
-            "Sombría",
-            "Toque",
-            "Aflicción",
-            "Frío"
-          ],
-          "cost": "1 acción",
-          "range": "Cuerpo a cuerpo",
-          "crit": "El afectado queda con Fatigado-1 durante una ronda.",
-          "duration": "Instantáneo",
-          "desc": "Realizas un ataque de toque. El objetivo debe superar un tiro de salvación de CON o sufre 1d6 + Rango daño Frío. Además, reduce su Vitalidad y PV máximos (Aflicción nivel 1).",
-          "empower": "Aumenta el alcance a medio."
-        },
         {
           "name": "Tajo Umbrío",
           "tags": [
@@ -42,12 +27,12 @@
             "A Distancia",
             "Frío"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "range": "Medio",
-          "crit": "El afectado queda con Fatigado-1 durante una ronda.",
-          "duration": "Instantáneo",
-          "desc": "Lanzas un corte de energía sombría a distancia. Inflige 1d6 + Rango daño Frío y reduce la Vitalidad y PV máximos del objetivo (Aflicción nivel 1).",
-          "empower": "Afecta a una criatura adicional a distancia media."
+          "desc": "El daño de este ataque no puede curarse, y los objetivos en un lugar a oscuras tienen Desventaja defendiéndose de él.",
+          "empower": "Afecta a una criatura adicional a distancia media.",
+          "damage": "1d6",
+          "damage_type": "Frío"
         },
         {
           "name": "Crear Oscuridad",
@@ -56,12 +41,21 @@
             "Gaseosa",
             "Duradera"
           ],
-          "cost": "2 acciones, 1 chi",
+          "cost": "2 Acciones, 1 chi",
           "range": "Medio",
           "area": "Esfera pequeña",
           "duration": "Concentración",
-          "desc": "Creas una nube de oscuridad que apaga fuentes de luz y disipa hechizos de Vida de Rango menor. Las criaturas dentro quedan con Confundido-1 y obtienen ocultamiento.",
-          "empower": "Extiende el área a esfera mediana o mueve la nube un paso."
+          "desc": "Creas una nube de oscuridad en un radio medio, cegando a cada objetivo en ella y generando ocultamiento. Si hay fuentes de luz o efectos de Magia de Vida, deberás tener éxito en un tiro enfrentado para suprimirlas. ",
+          "empower": "Mueve la nube a otra posición o tira de nuevo para apagar las fuentes de luz."
+        },
+        {
+          "name": "Sigilo Sombrío",
+          "tags": [
+            "Sombría",
+            "Pasiva"
+          ],
+          "desc": "Te vuelves invisible si te encuentras en un lugar a oscuras. Este efecto permanecerá activo hasta que hagas un ataque o desaparezca dicha zona a oscuras.",
+          "cost": "1 Acción/Reacción"
         }
       ]
     },
