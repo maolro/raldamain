@@ -65,7 +65,7 @@
       "rank": "II",
       "title": "Adepto",
       "draft": false,
-      "passive": "Incrementa tu estadística de FUE y su limitador máximo en 1.",
+      "passive": "Incrementa tu estadística de CAR y su limitador máximo en 1.",
       "abilities": [
         {
           "name": "Mutación",
