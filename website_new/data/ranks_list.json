@@ -92,11 +92,11 @@
   {
     "id": "ascendencia_akhasica",
     "name": "Ascendencia Akhásica",
-    "category": "Ascendencia",
+    "category": "Ascendencias",
     "image": "ascendencia_akhasica.jpg",
-    "description": "Despierta poderes psíquicos y accede al conocimiento de la Memoria Akhásica.",
+    "description": "Conectas tu mente con la inteligencia colectiva del universo. Obtienes conocimiento absoluto, poderes psíquicos y la capacidad de alterar el destino.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "ascendencia_celestial",

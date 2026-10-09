@@ -18,7 +18,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Vínculo Akhásico",
@@ -26,26 +26,16 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Puedes repetir un tiro (ataque, defensa o salvación) y quedarte con el mejor resultado. Usos diarios: Rango + 2.",
+          "desc": "Repite un tiro de ataque, defensa o salvación y te quedas con el resultado que más te convenga. Esta habilidad puede emplearse RANGO+2 veces por combate.",
           "empower": "Recuperas un uso gastado de esta habilidad."
         },
         {
-          "name": "Hipercognición",
+          "name": "Sentido Mágico",
           "tags": [
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia a efectos Mentales. Aprendes cualquier idioma en 1 mes. Aprendes 2 hechizos (Mentales o Arcanos) de Rango I que usan INT y chi.",
-          "spell_grants": [
-            {
-              "count": 2,
-              "spell_rank": 1,
-              "sources": [
-                "rank:magia_mental",
-                "cat:Arcano"
-              ]
-            }
-          ]
+          "desc": "Eres capaz de deteectar la posición y fuerza de criaturas y auras mágicas a distancia media. Además, al interactuar con un objeto o lugar mágico eres capaz de identificar sus propiedades."
         }
       ]
     },
@@ -53,7 +43,7 @@
       "rank": "II",
       "title": "Adepto",
       "draft": true,
-      "passive": "Incrementa tu estadística de INT y su limitador máximo en +1.",
+      "passive": "Incrementa tu estadística de INT y su limitador máximo en 1",
       "abilities": [
         {
           "name": "Meditación Iluminada",
@@ -73,6 +63,24 @@
           ],
           "range": "Medio",
           "desc": "Detectas la posición y fuerza de criaturas y auras mágicas a distancia media. Al interactuar con un objeto o lugar mágico, identificas sus propiedades."
+        },
+        {
+          "name": "Hipercognición",
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
+          "spell_grants": [
+            {
+              "count": 2,
+              "spell_rank": 1,
+              "sources": [
+                "rank:magia_mental",
+                "cat:Arcano"
+              ]
+            }
+          ],
+          "desc": "Obtienes Ventaja en tiros de salvación Mentales y eres capaz de aprender cualquier idioma en 1 mes. Aprendes dos hechizos de Rango I pertenecientes a Magia Arcana o Mental, para los cuales puedes emplear tu modificador de Ascendencia Akhásica. "
         }
       ]
     },
