@@ -51,18 +51,15 @@
             "Innata",
             "Duradera"
           ],
-          "cost": "3 acciones, 1 chi",
           "duration": "Concentración",
-          "desc": "Entras en un estado de trance meditativo. Obtienes Ventaja en todos los tiros de INT e Inmunidad a ataques sorpresa."
-        },
-        {
-          "name": "Sentido Mágico",
-          "tags": [
-            "Innata",
-            "Pasiva"
-          ],
-          "range": "Medio",
-          "desc": "Detectas la posición y fuerza de criaturas y auras mágicas a distancia media. Al interactuar con un objeto o lugar mágico, identificas sus propiedades."
+          "desc": "Entras en un estado de trance meditativo, recibiendo Ventaja en todos tus tiros relacionados con tu estadística de Inteligencia. ",
+          "cost": "3 Acciones, 1 Chi",
+          "toggle": {
+            "label": "Meditación Iluminada",
+            "adv_stats": [
+              "INT"
+            ]
+          }
         },
         {
           "name": "Hipercognición",
