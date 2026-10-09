@@ -42,7 +42,7 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "passive": "Incrementa tu estadística de INT y su limitador máximo en 1",
       "abilities": [
         {
@@ -72,8 +72,13 @@
               "count": 2,
               "spell_rank": 1,
               "sources": [
+                "cat:Arcano",
                 "rank:magia_mental",
-                "cat:Arcano"
+                "rank:magia_evocacion",
+                "rank:magia_protectora",
+                "rank:magia_temporal",
+                "rank:magia_espacial",
+                "rank:magia_transmutacion"
               ]
             }
           ],
