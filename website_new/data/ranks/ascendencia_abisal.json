@@ -91,6 +91,22 @@
               "sources": [
                 "patron"
               ]
+            },
+            {
+              "count": 2,
+              "spell_rank": 2,
+              "sources": [
+                "patron"
+              ],
+              "from_rank": 4
+            },
+            {
+              "count": 2,
+              "spell_rank": 3,
+              "sources": [
+                "patron"
+              ],
+              "from_rank": 6
             }
           ]
         }
