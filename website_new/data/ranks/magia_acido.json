@@ -11,5 +11,85 @@
     "<strong>Estadística principal:</strong> Carisma + Rango.",
     "<strong>Parada mágica:</strong> Usas esta magia para tiros de parada y salvaciones."
   ],
-  "levels": []
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "draft": false,
+      "abilities": [
+        {
+          "name": "Escupitajo Ácido",
+          "tags": [
+            "Acido",
+            "Ataque"
+          ],
+          "desc": "Provoca Roto I a la armadura del objetivo. Si es detenido con Parada, provocará Roto I al arma del objetivo.",
+          "cost": "1 Acción",
+          "range": "Medio",
+          "damage": "1d6",
+          "damage_type": "Ácido",
+          "show_mod": false,
+          "empower": "Ataca a un objetivo adicional."
+        },
+        {
+          "name": "Aliento Tóxico",
+          "tags": [
+            "Acido",
+            "Ataque",
+            "Area"
+          ],
+          "desc": "Provoca Roto I a las armaduras de los afectados.",
+          "damage": "2d6",
+          "damage_type": "Ácido",
+          "area": "Cono Pequeño",
+          "cost": "2 Acciones, 1 Chi",
+          "show_mod": false,
+          "empower": "Aumenta el área afectada por un paso y el daño por un dado."
+        },
+        {
+          "name": "Hijo del Pantano",
+          "tags": [
+            "Acido",
+            "Pasiva"
+          ],
+          "desc": "Obtienes Resistencia RANGO+1 al daño Ácido y Necrótico, velocidad de Natación y no te afectan las enfermedades endémicas de los pantanos.",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Ácido, Necrótico"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "draft": true,
+      "abilities": []
+    }
+  ],
+  "parry": {
+    "name": "Parada mágica",
+    "tag": "Ácido",
+    "against": ""
+  }
 }

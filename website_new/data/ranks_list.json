@@ -384,6 +384,6 @@
     "image": "magia_acido.jpg",
     "description": "",
     "draft": true,
-    "partial": false
+    "partial": true
   }
 ]
