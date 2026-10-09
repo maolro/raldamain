@@ -18,7 +18,7 @@
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Forma de la Bestia",
@@ -67,7 +67,8 @@
             "Mejora"
           ],
           "cost": "1 chi",
-          "desc": "Cuando realizas un ataque físico, puedes imbuirlo con un hechizo que conozcas. Debes declarar el hechizo antes de realizar el tiro de ataque y pagar su coste de chi por separado. Si el ataque impacta, ambos efectos se activan simultáneamente. Para el hechizo imbuido, usa tu tiro de ataque y tu Rango de Ascendencia Primigenia como modificador en lugar de los del hechizo original."
+          "desc": "Aumenta el daño de un ataque natural por un dado o fuerzas a tu objetivo a tener éxito en un tiro de salvación Físico o queda Enredado. Este además contará como Mágico para los propósitos de Inmunidades.",
+          "show_mod": true
         },
         {
           "name": "Comunión con la Naturaleza",
@@ -76,7 +77,7 @@
             "Pasiva"
           ],
           "range": "Medio",
-          "desc": "Detectas la presencia de magia y de seres espirituales a distancia media. Aprendes 2 hechizos de Rango I o menos relacionados con tu patrón espiritual (usan chi). A Rango IV aprendes 2 hechizos adicionales de Rango II o menos, y a Rango VI aprendes 2 hechizos adicionales de Rango III o menos.",
+          "desc": "Eres capaz de detectar presencias mágicas y espirituales a distancia media. Aprendes dos hechizos de Rango I relacionados con tu patrón espiritual, para los cuales puedes emplear Ascendencia Primigenia para lanzarlos.",
           "spell_grants": [
             {
               "count": 2,
