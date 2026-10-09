@@ -50,7 +50,7 @@
           "cost": "2 Acciones, 1 Chi",
           "area": "Radio cercano",
           "desc": "Los objetivos en contacto con la tierra deben tener éxito en un tiro de salvación Físico o sufren 3d6 + SAB daño Contundente, son Empujados y quedan Ralentizados una ronda. Este ataque destruye objetos frágiles y convierte el área en terreno difícil",
-          "empower": "Aumenta el radio un paso y el daño un dado adicional, o lanza este hechizo de nuevo sobre la misma zona."
+          "empower": "Aumenta el daño base por un dado. Si has empoderado dos veces, aumenta el área por un paso."
         },
         {
           "name": "Vínculo con la Tierra",
