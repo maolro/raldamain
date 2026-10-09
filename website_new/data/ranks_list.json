@@ -240,7 +240,7 @@
     "image": "nigromancia.jpg",
     "description": "Tienes una fuerte conexión con el plano de los muertos, esclavizando cuerpos y corrompiendo almas. Drenas la vida, levantas ejércitos de no-muertos y manipulas energía negativa para aniquilar a tus enemigos.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_mental",
