@@ -45,7 +45,7 @@
           "range": "Medio",
           "damage": "1d6 + SAB",
           "damage_type": "Perforante/Cortante",
-          "empower": "Añade un dado de daño adicional y aumenta el área afectada por un paso."
+          "empower": "Aumenta el daño base por un dado y el radio a corto. Si has empoderado dos veces, aumenta el área a un radio medio."
         },
         {
           "name": "Pulso Vital",
