@@ -376,5 +376,14 @@
     "description": "",
     "draft": true,
     "partial": false
+  },
+  {
+    "id": "magia_acido",
+    "name": "Magia de Ácido",
+    "category": "Elementalismo",
+    "image": "magia_acido.jpg",
+    "description": "",
+    "draft": true,
+    "partial": false
   }
 ]

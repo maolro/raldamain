@@ -1,0 +1,15 @@
+{
+  "id": "magia_acido",
+  "title": "Magia de Ácido",
+  "category": "Elementalismo",
+  "draft": true,
+  "image": "magia_acido.jpg",
+  "stats": [],
+  "description": "",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
+    "<strong>Estadística principal:</strong> Carisma + Rango.",
+    "<strong>Parada mágica:</strong> Usas esta magia para tiros de parada y salvaciones."
+  ],
+  "levels": []
+}
