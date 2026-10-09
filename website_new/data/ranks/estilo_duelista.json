@@ -85,15 +85,6 @@
           ],
           "cost": "1 Chi",
           "desc": "En respuesta a que un enemigo se mueva, puedes movefrte y hacer un ataque inmediato contra él contra el cual recibirá Desventaja."
-        },
-        {
-          "name": "Secuencia de Golpes",
-          "tags": [
-            "Duelo",
-            "Mejora"
-          ],
-          "cost": "1 chi",
-          "desc": "Hace dos ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Solo puede usarse con armas de una mano."
         }
       ]
     },

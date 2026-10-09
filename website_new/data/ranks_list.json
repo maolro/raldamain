@@ -367,5 +367,14 @@
     "description": "",
     "draft": true,
     "partial": false
+  },
+  {
+    "id": "ascendencia_draconica",
+    "name": "Ascendencia Dracónica",
+    "category": "Ascendencias",
+    "image": "ascendencia_draconica.jpg",
+    "description": "",
+    "draft": true,
+    "partial": false
   }
 ]
