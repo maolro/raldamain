@@ -64,7 +64,7 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "passive": "Incrementa tu estadística de FUE y su limitador máximo en 1.",
       "abilities": [
         {
@@ -75,7 +75,7 @@
           ],
           "cost": "1 chi",
           "duration": "1 Ronda",
-          "desc": "Modificas tu cuerpo para obtener un beneficio a tu elección: Resistencia elemental, Anfibio, Vuelo, Arma Natural (1d6 daño, mejora con Rango), Toxina o Infusión mágica en ataques."
+          "desc": "Modificas tu cuerpo para obtener un beneficio a tu elección durante una ronda. Algunas opciones son las siguientes:\n- Obtienes la capacidad de Volar, Nadar o Excavar\n- Recibes Resistencia RANGO+1 contra un tipo de daño específico\n- Aumenta tus dados de daño base en ataques naturales por un dado"
         },
         {
           "name": "Poder Antinatural",
@@ -83,8 +83,7 @@
             "Innata",
             "Pasiva"
           ],
-          "range": "Medio",
-          "desc": "Obtienes vista ciega y detectas magia a distancia media. Aprendes 2 hechizos abisales de Rango I que puedes lanzar gastando chi.",
+          "desc": "Obtienes vista a ciegas y detectas magia a distancia media. Aprendes dos hechizos de Rango I relacionados con tu patrón abisal, los cuales pueden emplear tu modificador de Ascendencia Abisal.",
           "spell_grants": [
             {
               "count": 2,
