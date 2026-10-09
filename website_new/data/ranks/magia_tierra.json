@@ -12,18 +12,18 @@
   "parry": {
     "name": "Parada mágica",
     "tag": "Tierra",
-    "against": "Tierra, Agua, Aire, Fuego y Tormenta"
+    "against": ""
   },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Sabiduría + Rango.",
-    "<strong>Parada mágica:</strong> Usas Magia de Tierra para tiros de parada y salvaciones contra Tierra, Agua, Aire, Fuego y Tormenta."
+    "<strong>Parada mágica:</strong> Usas Magia de Tierra para tiros de parada."
   ],
   "levels": [
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Pedrada",
@@ -33,12 +33,11 @@
             "A distancia",
             "Físico"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "range": "Medio",
-          "duration": "Instantáneo",
-          "crit": "El objetivo sufre Herido-1.",
-          "desc": "Lanza una roca que inflige 2d6 + SAB daño Contundente al impactar. Necesitas contar con tierra suficiente para emplear esta habilidad.",
-          "empower": "Haz un ataque contra un objetivo adicional o realiza un segundo ataque contra el mismo objetivo, que deberá emplear su mismo resultado defensivo."
+          "empower": "Aumenta el área por un paso y el daño por un dado. ",
+          "damage": "2d6",
+          "damage_type": "Contundente"
         },
         {
           "name": "Erupción de Tierra",
@@ -48,11 +47,9 @@
             "Área",
             "Físico"
           ],
-          "cost": "2 acciones, 1 chi",
+          "cost": "2 Acciones, 1 Chi",
           "area": "Radio cercano",
-          "duration": "Instantáneo",
-          "crit": "Los afectados sufren Herido-1.",
-          "desc": "Sacudes el suelo bajo los pies de tus enemigos, haciendo brotar la tierra con violencia. Inflige 3d6 + SAB daño Contundente a todos los que se encuentren en el área, empuja un paso y deben tener éxito en un tiro de salvación Físico o quedan con Ralentizado-1. El área queda cubierta de terreno difícil y las estructuras pequeñas en ella son destruidas.",
+          "desc": "Los objetivos en contacto con la tierra deben tener éxito en un tiro de salvación Físico o sufren 3d6 + SAB daño Contundente, son Empujados y quedan Ralentizados una ronda. Este ataque destruye objetos frágiles y convierte el área en terreno difícil",
           "empower": "Aumenta el radio un paso y el daño un dado adicional, o lanza este hechizo de nuevo sobre la misma zona."
         },
         {
@@ -62,7 +59,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Desarrollas una conexión profunda con la tierra bajo tus pies. Mientras estés en contacto con el suelo, obtienes vista a ciegas a distancia media. Además, ganas una velocidad de Excavar igual a la mitad de tu velocidad base y Resistencia contra las Maniobras que intenten derribarte o desplazarte."
+          "desc": "Mientras estés en contacto con el suelo, obtienes vista a ciegas a distancia media, y ganas una velocidad de Excavar y Escalada igual a tu velocidad base."
         }
       ]
     },

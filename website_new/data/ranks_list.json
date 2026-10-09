@@ -157,9 +157,9 @@
     "name": "Magia de Tierra",
     "category": "Elementalismo",
     "image": "magia_tierra.jpg",
-    "description": "Mueve la tierra, crea defensas impenetrables y golpea con la fuerza de la montaña.",
+    "description": "Controlas la tierra y la roca para aplastar a tus enemigos, dominar el campo de batalla y resistir los golpes más devastadores. Tu magia es lenta e implacable: cada ataque destruye el terreno, cada defensa aplasta al que se atreve a atacarte.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_tormenta",
