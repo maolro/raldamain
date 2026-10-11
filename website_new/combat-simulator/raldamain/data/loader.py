@@ -89,23 +89,41 @@ def _norm_name(name: Any) -> str:
     return NAME_ALIASES.get(t, t)
 
 
+def _fill_words(obj: Any, words: dict[str, str]) -> Any:
+    """Text placeholders the numeric formulas can't evaluate, e.g. Azote
+    Divino's ``{{DIVINE_DTYPE}}`` → the character god's damage type."""
+    if isinstance(obj, str):
+        for k, v in words.items():
+            obj = obj.replace("{{" + k + "}}", v)
+        return obj
+    if isinstance(obj, list):
+        return [_fill_words(x, words) for x in obj]
+    if isinstance(obj, dict):
+        return {k: _fill_words(v, words) for k, v in obj.items()}
+    return obj
+
+
 def _attach_riders(abilities: list[dict[str, Any]], riders: list[tuple[str, dict[str, Any]]]) -> list[str]:
     """Bolt chi riders onto the attacks they belong to.
 
     A style rank's rider (Estilo Coloso, Duelista, Asesino) rides weapon
-    attacks; any other rank's rider rides that rank's own attacks.  Returns
-    the names of riders that found no attack to ride.
+    attacks; any other rank's rider rides that rank's own attacks -- or, for
+    a rank with no attacks of its own (Guerrero Divino's Azote Divino), the
+    weapon attacks.  Returns the names of riders that found no attack to ride.
     """
     orphans = []
+
+    def damaging(a: dict[str, Any]) -> bool:  # a damaging attack, not a manoeuvre
+        return any(e.get("kind") == "attack" and any(h.get("kind") == "damage" for h in e.get("on_hit", []))
+                   for e in a.get("effects", []))
+
     for rank_id, rider in riders:
-        upgrade = {k: v for k, v in rider.items() if k not in ("rider", "text")}
-        hosts = [
-            a for a in abilities
-            if any(e.get("kind") == "attack" and any(h.get("kind") == "damage" for h in e.get("on_hit", []))
-                   for e in a.get("effects", []))  # a damaging attack, not a manoeuvre
-            and (("weapon" in a.get("tags", [])) if rank_id.startswith("estilo_")
-                 else a.get("_rank") == rank_id)
-        ]
+        upgrade = {k: v for k, v in rider.items() if k not in ("rider", "text", "divine_smite", "notes")}
+        weapons = [a for a in abilities if damaging(a) and "weapon" in a.get("tags", [])]
+        if rank_id.startswith("estilo_"):
+            hosts = weapons
+        else:
+            hosts = [a for a in abilities if damaging(a) and a.get("_rank") == rank_id] or weapons
         for host in hosts:
             host.setdefault("upgrades", []).append(deepcopy(upgrade))
         if not hosts:
@@ -189,6 +207,7 @@ def assemble_from_ranks(spec: dict[str, Any]) -> dict[str, Any]:
                 modelled_names.setdefault(rank_id, set()).add(_norm_name(ability.get("name")))
                 if ability.get("id") in existing_ids:
                     continue
+                ability = _fill_words(ability, {"DIVINE_DTYPE": spec.get("divine_dtype") or "radiante"})
                 resolved = resolve_value(ability, int(rango), stats, char_level, extra)
                 resolved.pop("text", None)
                 if resolved.get("rider"):

@@ -89,6 +89,24 @@ def dtype_key(text: str) -> str:
     return DTYPE_KEYS.get(k, k or "general")
 
 
+#: Elemental domains → the damage type a god of that domain grants
+DOMAIN_DTYPES = {"magia_fuego": "fuego", "magia_hielo": "frio", "magia_tormenta": "electrico",
+                 "magia_vida": "radiante", "magia_divina": "radiante", "nigromancia": "necrotico",
+                 "magia_sombria": "necrotico", "magia_tierra": "contundente", "magia_agua": "contundente",
+                 "magia_aire": "cortante", "magia_metal": "perforante"}
+
+
+def divine_dtype(patron: dict[str, Any]) -> str:
+    """The damage type of the character's god: as chosen in the Creador, else
+    its first elemental domain, else Radiante."""
+    if (patron.get("damage_type") or "").strip():
+        return dtype_key(patron["damage_type"])
+    for dom in patron.get("domains") or []:
+        if dom in DOMAIN_DTYPES:
+            return DOMAIN_DTYPES[dom]
+    return "radiante"
+
+
 def parse_cost(cost: Any) -> dict[str, int]:
     """'2 Acciones', '1 Acción, 1 Chi', '1 Reacción', 1, '1' → {actions, reactions, chi}."""
     out: dict[str, int] = {}
@@ -426,6 +444,8 @@ def character_spec(path: Path) -> dict[str, Any]:
 
     faith = next((FAITH_BY_RANK[r] for r in ranks if r in FAITH_BY_RANK), "")
     return {
+        # Azote Divino's damage type: the god's (Hechizos tab) or one of its domains
+        "divine_dtype": divine_dtype((d.get("spells") or {}).get("patron") or {}),
         "id": path.stem,
         "name": d.get("name") or path.stem,
         "source": f"data/statblocks/{path.name}",
