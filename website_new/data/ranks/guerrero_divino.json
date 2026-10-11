@@ -76,29 +76,30 @@
             "Divina",
             "Pasiva"
           ],
-          "desc": "Obtienes Ventaja en tiros de ataque y defensa con armas y hechizos relacionados con tu dios, y Resistencia a efectos de Miedo y Mentales. Al terminar, pierdes chi igual al número de rondas activas (si no puedes pagar, quedas con Fatigado-3 o Inconsciente).",
+          "desc": "Obtienes Ventaja en tus tiros de ataque, defensa y magia divina además de tus tiros de salvación de Voluntad y Mentales. Este efecto dura hasta 6 rondas, y cuando acabe pierdes tanto chi como rondas pasadas en Guerrero Divino. Si esto te baja a chi negativo caerás *inconsciente* y recibes Fatiga II.",
           "toggle": {
             "label": "Guerrero de la Fe",
             "adv": [
-              "Ataque"
+              "Ataque",
+              "Defensa"
             ],
             "adv_tags": [
               "Divina"
             ],
-            "resistances": [
-              "Miedo",
-              "Mental"
+            "saves": [
+              "Mental",
+              "Voluntad"
             ]
           },
           "duration": "6 Rondas"
         },
         {
-          "name": "Plegaria de Batalla",
+          "name": "Milagro Menor",
           "tags": [
             "Divina",
-            "Ritual"
+            "Reacción"
           ],
-          "desc": "Durante un descanso corto, rezas junto a tus aliados. Los participantes obtienen 3 usos de Milagro Menor que persisten hasta ser gastados o hasta que pase un día."
+          "desc": "Un aliado o enemigo repite un tiro y se queda con el resultado que más te convenga (se puede anular con otras habilidades de repetición). Solo puede usarse Rango + 2 veces por combate y puedes recuperar un uso pagando 1 chi."
         },
         {
           "name": "Impacto Desacralizador",
