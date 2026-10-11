@@ -1133,10 +1133,14 @@ class GreedyPolicy(Policy):
                 or not state.can_reach(ability, provoker)
             ):
                 continue
-            value = self._attack_value(state, actor, ability, provoker, ())
+            # Same riders as on the actor's own turn (Azote Divino, Golpe
+            # Desestabilizador…), within the same chi budget and reserve
+            upgrades = self._pick_upgrades(actor, ability)
+            value = self._attack_value(state, actor, ability, provoker, upgrades)
+            value -= CHI_OPPORTUNITY * sum(u.chi for u in upgrades)
             score = value / max(1, ability.actions)
             if score > 0 and (best is None or score > best[0]):
-                best = (score, (ability, [provoker], []))
+                best = (score, (ability, [provoker], upgrades))
         return best[1] if best else None
 
     # -------------------------------------------------- limited-use budgeting
