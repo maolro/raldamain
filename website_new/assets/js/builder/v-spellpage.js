@@ -88,11 +88,11 @@ Vue.component('v-spellpage', {
             const n = this.r.patron.domains.length;
             return n >= MIN_DOMAINS && n <= MAX_DOMAINS ? 'ok' : 'low';
         },
-        // Magic branches that can be a domain (ranks of the magic categories)
+        // Magic branches that can be a domain: Elementalismo, Arcana and Ocultismo ranks
         domainOptions: function () {
-            const magic = ['Elementalismo', 'Arcano', 'Ocultismo', 'Divino'];
+            const magic = ['elementalismo', 'arcana', 'ocultismo'];
             return Object.keys(this.r.ranks)
-                .filter(id => magic.includes(this.r.ranks[id].category))
+                .filter(id => magic.includes(this.r.categoryKey(this.r.ranks[id].category)))
                 .map(id => ({ id, name: this.r.ranks[id].name, category: this.r.ranks[id].category }))
                 .sort((a, b) => a.name.localeCompare(b.name));
         },

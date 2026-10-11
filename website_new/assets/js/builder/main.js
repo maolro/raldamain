@@ -602,14 +602,20 @@ ${reactions}
             }
             return res;
         },
+        // Rank category names compared loosely: no accents or case, and the
+        // data's "Arcano" is the ranks' category "Arcana"
+        categoryKey(c) {
+            const k = String(c || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+            return { arcano: 'arcana' }[k] || k;
+        },
         // Rank ids a spell grant can draw from: "patron" (entity domains), "cat:Arcano", "rank:magia_mental"
         spellSourceRanks(sources) {
             const out = new Set();
             for (const src of sources) {
                 if (src === 'patron') (this.patron.domains || []).forEach(d => out.add(d));
                 else if (src.startsWith('cat:')) {
-                    const cat = src.slice(4);
-                    Object.keys(this.ranks).forEach(r => { if (this.ranks[r].category === cat) out.add(r); });
+                    const cat = this.categoryKey(src.slice(4));
+                    Object.keys(this.ranks).forEach(r => { if (this.categoryKey(this.ranks[r].category) === cat) out.add(r); });
                 }
                 else if (src.startsWith('rank:')) out.add(src.slice(5));
                 else out.add(src);
