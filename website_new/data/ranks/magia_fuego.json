@@ -309,10 +309,6 @@
             ],
             "damage": "+1 dado",
             "ce": "rango",
-            "immunities": [
-              "Aflicción",
-              "Toque"
-            ],
             "damage_tags": [
               "Fuego"
             ]
