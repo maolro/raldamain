@@ -20,6 +20,13 @@ BASE  = Path(__file__).parent.parent
 CDIR  = BASE / "data" / "creatures"
 CIDX  = BASE / "data" / "creatures_list.json"
 ABANK = BASE / "data" / "creatures_abilities.json"
+# Bonus per tier and LOW/MID/HIGH damage per tier (the "Tablas por Tier" tab)
+SCALING = BASE / "data" / "creature_scaling.json"
+# Library-only fields: not copied into the creatures that use the ability
+LIBRARY_ONLY = {"id", "tier"}
+
+sys.path.insert(0, str(Path(__file__).parent))
+from git_sync import git_push as _git_sync_push  # noqa: E402
 
 # ── helpers ───────────────────────────────────────────────────────────────────
 
@@ -54,7 +61,7 @@ def _propagate_ability(aid, ab_data):
             for entry in data.get(section, []):
                 if entry.get("ability_id") == aid:
                     for k, v in ab_data.items():
-                        if k != "id":
+                        if k not in LIBRARY_ONLY:
                             entry[k] = v
                     entry["ability_id"] = aid
                     modified = True
@@ -64,29 +71,9 @@ def _propagate_ability(aid, ab_data):
     return changed
 
 def _git_push(files, message):
-    """Stage files, commit, pull --rebase, push. Returns 'ok', 'nothing', or an error string."""
-    try:
-        subprocess.run(["git", "add", "--"] + files, cwd=BASE, check=True,
-                       capture_output=True, timeout=10)
-        r = subprocess.run(["git", "commit", "-m", message], cwd=BASE,
-                           capture_output=True, text=True, timeout=10)
-        if r.returncode != 0:
-            if "nothing to commit" in (r.stdout + r.stderr):
-                return "nothing"
-            return r.stderr.strip() or "commit error"
-        # Rebase on top of any remote commits so push is never rejected as non-fast-forward
-        subprocess.run(["git", "pull", "--rebase", "--autostash"], cwd=BASE,
-                       check=True, capture_output=True, timeout=60)
-        subprocess.run(["git", "push"], cwd=BASE, check=True,
-                       capture_output=True, timeout=90)
-        return "ok"
-    except subprocess.TimeoutExpired:
-        return "timeout"
-    except subprocess.CalledProcessError as e:
-        out = e.stderr
-        return (out.decode() if isinstance(out, bytes) else out or str(e)).strip()
-    except Exception as e:
-        return str(e)
+    """Commit only ``files`` and push (shared helper with the branch guard)."""
+    return _git_sync_push(files, message)
+
 
 # ── API ───────────────────────────────────────────────────────────────────────
 
@@ -139,6 +126,22 @@ def api_delete(cid):
     idx = [e for e in load_index() if e.get("id") != cid]
     save_index(idx)
     return jsonify({"ok": True})
+
+@app.route("/api/scaling")
+def api_scaling_get():
+    """The tier tables, or null to use the editor's built-in defaults."""
+    if SCALING.exists():
+        return Response(SCALING.read_text(encoding="utf-8"), mimetype="application/json")
+    return jsonify(None)
+
+@app.route("/api/scaling", methods=["POST"])
+def api_scaling_save():
+    data = request.get_json(force=True)
+    if not isinstance(data, dict) or not isinstance(data.get("bonus"), list) or not isinstance(data.get("damage"), list):
+        return jsonify({"error": "formato no válido"}), 400
+    SCALING.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    git = _git_push([str(SCALING)], "Update creature tier tables")
+    return jsonify({"ok": True, "git": git})
 
 @app.route("/api/abilities")
 def api_abilities():
@@ -396,6 +399,19 @@ select.inp{cursor:pointer}
   transition:all .15s;white-space:nowrap;font-family:inherit}
 .tab-btn:hover{background:var(--bg4);color:var(--text)}
 .tab-btn.on{background:var(--bg4);color:var(--gold);border-color:var(--goldd)}
+/* tier tables */
+.tbl{width:100%;border-collapse:collapse;font-size:12px}
+.tbl th{font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--text3);font-weight:600;padding:6px;text-align:left;border-bottom:1px solid var(--border)}
+.tbl td{padding:6px;border-bottom:1px solid var(--border);vertical-align:middle}
+.tbl .tier{font-weight:700;color:var(--gold);white-space:nowrap}
+.tbl .lv{font-size:10px;color:var(--text3)}
+.tbl input{background:var(--bg);border:1px solid var(--border2);color:var(--text);border-radius:4px;padding:3px 4px;font-size:12px}
+.tbl input.n{width:38px;text-align:center}
+.tbl input.b{width:92px}
+.tbl .dmg{display:flex;align-items:center;gap:3px;white-space:nowrap}
+.tbl .prev{font-size:10px;color:var(--text2);margin-top:3px}
+.tbl th.LOW{color:#4caf6a}.tbl th.MID{color:#f0c040}.tbl th.HIGH{color:#e74c3c}
+.tier-pill{font-size:9px;padding:1px 5px;border-radius:3px;border:1px solid var(--purple);color:var(--purple)}
 </style>
 </head>
 <body>
@@ -417,7 +433,9 @@ select.inp{cursor:pointer}
 <div class="main">
   <div class="tb">
     <button class="tab-btn btn" id="tab-creatures" onclick="setTab('creatures')" style="margin-right:4px">🐉 Criaturas</button>
-    <button class="tab-btn btn" id="tab-library" onclick="setTab('library')">📚 Biblioteca</button>
+    <button class="tab-btn btn" id="tab-library" onclick="setTab('library')" style="margin-right:4px">📚 Biblioteca</button>
+    <button class="tab-btn btn" id="tab-tables" onclick="setTab('tables')"
+      title="Bonus de ataque y daño LOW / MID / HIGH por Tier">📊 Tablas por Tier</button>
     <span class="tb-title" id="tb-title" style="margin-left:8px">Selecciona una criatura</span>
     <div style="flex:1"></div>
     <button class="btn on" id="cmp-btn" onclick="toggleMode()">⚖ Comparar</button>
@@ -581,7 +599,30 @@ select.inp{cursor:pointer}
       <div id="lib-tag-filters" class="pills"></div>
       <button class="btn sm" style="color:var(--green);border-color:var(--green);margin-left:auto" onclick="startNewAbility()">＋ Nueva habilidad</button>
     </div>
+    <div id="lib-tier-filters" class="pills"></div>
     <div id="lib-grid" class="ab-grid"></div>
+  </div>
+
+  <!-- Tier tables view -->
+  <div id="tables-view" class="scroll" style="display:none">
+    <div class="sec">
+      <div class="sec-hd">
+        <span>Bonus y daño por Tier</span>
+        <span id="tbl-dirty" style="font-size:11px;color:var(--gold);margin-left:8px"></span>
+        <div style="flex:1"></div>
+        <button class="btn sm" onclick="resetScaling()" title="Vuelve a los valores originales del editor (no guarda hasta pulsar Guardar)">↺ Valores por defecto</button>
+        <button class="btn sm pri" onclick="saveScaling()">💾 Guardar</button>
+      </div>
+      <div class="sec-body">
+        <div style="font-size:11px;color:var(--text3);margin-bottom:10px">
+          Cada fila es un Tier de criatura (por nivel). <b>Bonus</b> es el modificador de ataque / salvación;
+          <b>LOW / MID / HIGH</b> son los dados de daño (nº de dados · caras · fijo) que usan las habilidades con
+          «Tier de daño» y «Bonus escalado» al insertarlas en una criatura de ese nivel.
+          Cambiar la tabla no modifica las criaturas ya guardadas.
+        </div>
+        <div id="tbl-grid"></div>
+      </div>
+    </div>
   </div>
 
   <!-- Empty state -->
@@ -620,6 +661,7 @@ select.inp{cursor:pointer}
     <div style="padding:8px 14px;border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;gap:6px;align-items:center">
       <input class="inp" id="pick-search" placeholder="Buscar..." style="width:160px;flex-shrink:0" oninput="renderPickList()">
       <div id="pick-tag-filters" class="pills"></div>
+      <div id="pick-tier-filters" class="pills" style="flex-basis:100%"></div>
     </div>
     <div class="pick-list" id="pick-list"></div>
   </div>
@@ -642,6 +684,9 @@ const S = {
   abEdit: null,     // ability being edited
   pickCb: null,     // callback(ability) when pick modal confirms
   pickTag: '',      // active tag filter in pick modal
+  libTier: '',      // active ability-tier filter in library ('' all, 'I'…'VI', '-' none)
+  pickTier: '',     // same in the pick modal
+  scalingSaved: '', // JSON of the tier tables as last loaded/saved
 };
 
 const SAVE_FIELDS = ['name','cost','bonus','range','area','save','damage','move','desc'];
@@ -649,7 +694,7 @@ const KNOWN_SAVES = ['FÍS','VOL','MEN'];
 const KNOWN_TAGS = ['Elemental','No-muerto','Bestia','Humanoide','Dragón','Construcción',
   'Fiend','Celestial','Fey','Vegetal','Fuego','Agua','Aire','Tierra','Vuelo','Élite','Invocación','Jefe'];
 
-const DAMAGE_TIERS = [
+let DAMAGE_TIERS = [
   { min:1,  max:3,  LOW:[1,6,4],   MID:[2,6,4],   HIGH:[3,6,4]   },
   { min:4,  max:6,  LOW:[2,6,5],   MID:[3,6,5],   HIGH:[4,6,5]   },
   { min:7,  max:9,  LOW:[2,8,6],   MID:[3,8,6],   HIGH:[4,8,6]   },
@@ -659,7 +704,7 @@ const DAMAGE_TIERS = [
   { min:19, max:21, LOW:[4,12,10], MID:[5,12,10], HIGH:[6,12,10] },
 ];
 const PHYSICAL_TYPES = ['contundente','cortante','perforante'];
-const BONUS_TABLE = [
+let BONUS_TABLE = [
   { min:1,  max:3,  bonus:'+5+1d6'  },
   { min:4,  max:6,  bonus:'+7+2d6'  },
   { min:7,  max:9,  bonus:'+9+2d6'  },
@@ -674,6 +719,7 @@ async function init() {
   const list = await api('GET', '/api/creatures');
   S.all = list;
   S.abilities = await api('GET', '/api/abilities');
+  await loadScaling();
   buildTypeFilters();
   renderSidebar();
   setTab('creatures');
@@ -816,14 +862,14 @@ function renderAll() {
 
 function renderToolbar() {
   const d = dirty();
-  const isLib = S.tab === 'library';
+  const isLib = S.tab !== 'creatures';  // library or tier tables
 
   document.getElementById('cmp-btn').style.display = isLib ? 'none' : '';
   document.getElementById('cmp-btn').classList.toggle('on', S.mode==='compare');
   document.getElementById('cmp-btn').textContent = S.mode==='compare' ? '✏ Editar' : '⚖ Comparar';
 
   const t = document.getElementById('tb-title');
-  t.innerHTML = isLib ? 'Biblioteca de Habilidades'
+  t.innerHTML = S.tab === 'tables' ? 'Tablas por Tier' : isLib ? 'Biblioteca de Habilidades'
     : (S.creature ? `${d?'<span class="dot">●</span>':''}${S.creature.name}` : 'Selecciona una criatura');
 
   const sb = document.getElementById('save-btn');
@@ -1109,6 +1155,74 @@ function removeEntryTag(type, i, ti) {
   renderToolbar();
 }
 
+// ── Tier tables (editable, data/creature_scaling.json) ────────────────────────
+const DEFAULT_SCALING = JSON.stringify({ bonus: BONUS_TABLE, damage: DAMAGE_TIERS });
+function scalingJSON() { return JSON.stringify({ bonus: BONUS_TABLE, damage: DAMAGE_TIERS }); }
+function scalingDirty() { return !!S.scalingSaved && scalingJSON() !== S.scalingSaved; }
+async function loadScaling() {
+  try {
+    const d = await api('GET', '/api/scaling');
+    if (d && Array.isArray(d.bonus) && Array.isArray(d.damage)) { BONUS_TABLE = d.bonus; DAMAGE_TIERS = d.damage; }
+  } catch (e) { /* keep the built-in defaults */ }
+  S.scalingSaved = scalingJSON();
+}
+function avgDice(n, sides, flat) { return n * (sides + 1) / 2 + flat; }
+function renderScaling() {
+  const el = document.getElementById('tbl-grid');
+  const rows = DAMAGE_TIERS.map((band, i) => {
+    const b = BONUS_TABLE[i] || { bonus: '' };
+    const cell = tier => {
+      const [n, sides, flat] = band[tier];
+      return `<td><div class="dmg">
+          <input class="n" type="number" min="0" value="${n}" oninput="setDmg(${i},'${tier}',0,this.value)">d
+          <input class="n" type="number" min="2" value="${sides}" oninput="setDmg(${i},'${tier}',1,this.value)">+
+          <input class="n" type="number" value="${flat}" oninput="setDmg(${i},'${tier}',2,this.value)">
+        </div><div class="prev" id="prev-${i}-${tier}">${n}d${sides} + ${flat} · media ${avgDice(n, sides, flat)}</div></td>`;
+    };
+    return `<tr>
+      <td><div class="tier">Tier ${i + 1}</div><div class="lv">niv ${band.min}–${band.max}</div></td>
+      <td><input class="b" value="${esc(b.bonus)}" oninput="setBonus(${i},this.value)"></td>
+      ${cell('LOW')}${cell('MID')}${cell('HIGH')}
+    </tr>`;
+  }).join('');
+  el.innerHTML = `<table class="tbl"><thead><tr><th>Tier</th><th>Bonus</th>
+    <th class="LOW">LOW</th><th class="MID">MID</th><th class="HIGH">HIGH</th></tr></thead><tbody>${rows}</tbody></table>`;
+  markScaling();
+}
+function markScaling() {
+  document.getElementById('tbl-dirty').textContent = scalingDirty() ? '● sin guardar' : '';
+}
+function setBonus(i, v) {
+  BONUS_TABLE[i] = { ...(BONUS_TABLE[i] || { min: DAMAGE_TIERS[i].min, max: DAMAGE_TIERS[i].max }), bonus: v.trim() };
+  markScaling();
+}
+function setDmg(i, tier, k, v) {
+  const n = parseInt(v, 10);
+  if (isNaN(n)) return;
+  DAMAGE_TIERS[i][tier][k] = n;
+  const [a, b, c] = DAMAGE_TIERS[i][tier];
+  document.getElementById(`prev-${i}-${tier}`).textContent = `${a}d${b} + ${c} · media ${avgDice(a, b, c)}`;
+  markScaling();
+}
+function resetScaling() {
+  if (!confirm('¿Volver a los valores por defecto? (no se guarda hasta pulsar Guardar)')) return;
+  const d = JSON.parse(DEFAULT_SCALING);
+  BONUS_TABLE = d.bonus; DAMAGE_TIERS = d.damage;
+  renderScaling();
+}
+async function saveScaling() {
+  try {
+    const res = await api('POST', '/api/scaling', { bonus: BONUS_TABLE, damage: DAMAGE_TIERS });
+    S.scalingSaved = scalingJSON();
+    markScaling();
+    const git = res.git || '';
+    if (git === 'ok') toast('Tablas guardadas y publicadas en GitHub ✓', 'ok');
+    else if (git === 'nothing') toast('Tablas guardadas ✓ (sin cambios en git)', 'ok');
+    else if (git.startsWith('wrong-branch')) toast(`Tablas guardadas ✓ — sin push: estás en la rama "${git.split(':')[1]}"`, 'err');
+    else toast('Tablas guardadas ✓ — git: ' + git, 'err');
+  } catch (e) { toast('Error: ' + e.message, 'err'); }
+}
+
 // ── Damage / bonus tier helpers ───────────────────────────────────────────────
 function normalizeFormula(str) {
   return (str||'').replace(/\s*\+\s*/g, '+').trim();
@@ -1355,20 +1469,32 @@ function cmpHtml(c) {
 // ── Tab switching ─────────────────────────────────────────────────────────────
 function setTab(tab) {
   S.tab = tab;
-  document.getElementById('tab-creatures').classList.toggle('on', tab==='creatures');
-  document.getElementById('tab-library').classList.toggle('on', tab==='library');
-  const isLib = tab === 'library';
-  document.getElementById('lib-view').style.display = isLib ? 'flex' : 'none';
-  if (!isLib) {
+  for (const t of ['creatures', 'library', 'tables'])
+    document.getElementById('tab-' + t).classList.toggle('on', tab === t);
+  document.getElementById('lib-view').style.display = tab === 'library' ? 'flex' : 'none';
+  document.getElementById('tables-view').style.display = tab === 'tables' ? 'flex' : 'none';
+  if (tab === 'creatures') {
     renderAll();
   } else {
     document.getElementById('edit-scroll').style.display = 'none';
     document.getElementById('empty').style.display = 'none';
     document.getElementById('cmp-view').style.display = 'none';
-    renderLibrary();
+    if (tab === 'library') renderLibrary(); else renderScaling();
   }
   renderToolbar();
 }
+
+// ── Ability tiers (I-VI) ──────────────────────────────────────────────────────
+const ROMAN_TIERS = ['I', 'II', 'III', 'IV', 'V', 'VI'];
+function tierFilterHtml(current, setter) {
+  const opts = [['', 'Todos'], ...ROMAN_TIERS.map(r => [r, r]), ['-', 'Sin tier']];
+  return `<span style="font-size:10px;color:var(--text3);margin-right:2px">Tier:</span>` + opts.map(([v, l]) =>
+    `<span class="pill" style="cursor:pointer;${v === current ? 'border-color:var(--purple);color:var(--purple)' : ''}"
+      onclick="${setter}('${v}')">${l}</span>`).join('');
+}
+function tierMatches(a, f) { return !f || (f === '-' ? !a.tier : a.tier === f); }
+function setLibTier(v) { S.libTier = v; renderLibrary(); }
+function setPickTier(v) { S.pickTier = v; renderPickList(); }
 
 // ── Library ───────────────────────────────────────────────────────────────────
 function renderLibrary() {
@@ -1385,8 +1511,10 @@ function renderLibrary() {
   const filtered = S.abilities.filter(a => {
     const matchSearch = !search || a.name?.toLowerCase().includes(search);
     const matchTag = !activeTag || (a.tags||[]).includes(activeTag);
-    return matchSearch && matchTag;
+    return matchSearch && matchTag && tierMatches(a, S.libTier);
   });
+  const trEl = document.getElementById('lib-tier-filters');
+  if (trEl) trEl.innerHTML = tierFilterHtml(S.libTier, 'setLibTier');
 
   const groups = { action: [], passive: [], reaction: [] };
   filtered.forEach(a => (groups[a.type]??=[]).push(a));
@@ -1409,7 +1537,8 @@ function abCardHtml(a) {
   const tags = (a.tags||[]).map(t=>`<span class="pill" style="font-size:9px">${esc(t)}</span>`).join('');
   const tierColors = {LOW:'#4caf6a',MID:'#f0c040',HIGH:'#e74c3c'};
   const tierClr = tierColors[a.damage_tier];
-  const tierBadge = tierClr ? `<span style="font-size:9px;padding:1px 5px;border-radius:3px;border:1px solid ${tierClr};color:${tierClr}">${a.damage_tier}</span>` : '';
+  const tierBadge = (a.tier ? `<span class="tier-pill" title="Tier de la habilidad">T${a.tier}</span>` : '') +
+    (tierClr ? `<span style="font-size:9px;padding:1px 5px;border-radius:3px;border:1px solid ${tierClr};color:${tierClr}">${a.damage_tier}</span>` : '');
   const damageLabel = a.damage ? `Daño: ${formatDice(a.damage)}${a.damage_tier?` [${a.damage_tier}]`:''}` : '';
   const bonusLabel  = a.bonus  ? `Bonus: ${formatDice(a.bonus)}${a.bonus_scaled?' [⚖]':''}` : '';
   const stats = [
@@ -1432,7 +1561,7 @@ function abCardHtml(a) {
 
 // ── Ability edit ──────────────────────────────────────────────────────────────
 function startNewAbility() {
-  S.abEdit = { id: 'ab_'+Date.now(), name:'', type:'action', tags:[], cost:'', bonus:'', bonus_scaled:false, range:'', area:'', damage:'', damage_tier:'', damage_base_type:'', save:'', move:'', attacks:1, desc:'' };
+  S.abEdit = { id: 'ab_'+Date.now(), name:'', type:'action', tier:'', tags:[], cost:'', bonus:'', bonus_scaled:false, range:'', area:'', damage:'', damage_tier:'', damage_base_type:'', save:'', move:'', attacks:1, desc:'' };
   renderAbEdit();
 }
 
@@ -1464,6 +1593,11 @@ function renderAbEdit() {
           <div class="field"><div class="lbl">Ataques</div>
             <input class="inp" type="number" id="abe-attacks" value="${a.attacks||1}" min="1"
               oninput="S.abEdit.attacks=+this.value"></div>
+          <div class="field"><div class="lbl">Tier de la habilidad</div>
+            <select class="inp" id="abe-tier" onchange="S.abEdit.tier=this.value||undefined">
+              <option value="">— Sin tier —</option>
+              ${ROMAN_TIERS.map(r => `<option value="${r}" ${a.tier===r?'selected':''}>Tier ${r}</option>`).join('')}
+            </select></div>
         </div>
         <div class="field"><div class="lbl">Tags (Enter para añadir)</div>
           <div class="pills" id="abe-tags">${renderAbeTags()}</div></div>
@@ -1549,6 +1683,7 @@ async function deleteAbility(id) {
 function openPick(cb, typeFilter) {
   S.pickCb = cb;
   S.pickTag = '';
+  S.pickTier = '';
   S.pickTypeFilter = typeFilter || '';
   document.getElementById('pick-modal').style.display = 'flex';
   document.getElementById('pick-search').value = '';
@@ -1570,8 +1705,10 @@ function renderPickList() {
   const filtered = typeSource.filter(a => {
     const ms = !search || a.name?.toLowerCase().includes(search);
     const mt = !S.pickTag || (a.tags||[]).includes(S.pickTag);
-    return ms && mt;
+    return ms && mt && tierMatches(a, S.pickTier);
   });
+  const ptEl = document.getElementById('pick-tier-filters');
+  if (ptEl) ptEl.innerHTML = tierFilterHtml(S.pickTier, 'setPickTier');
   const colors = { action:'var(--blue)', passive:'var(--green)', reaction:'var(--orange)' };
   document.getElementById('pick-list').innerHTML = filtered.length
     ? filtered.map(a=>`
@@ -1579,6 +1716,7 @@ function renderPickList() {
           onclick="confirmPick('${a.id}')">
           <div style="display:flex;gap:6px;align-items:center">
             <span style="font-weight:600;font-size:12px;flex:1">${esc(a.name)}</span>
+            ${a.tier ? `<span class="tier-pill">T${a.tier}</span>` : ''}
             <span style="font-size:9px;color:${colors[a.type]||'var(--text2)'}">${esc(a.type)}</span>
           </div>
           ${(a.tags||[]).length?`<div>${(a.tags||[]).map(t=>`<span class="pill" style="font-size:9px">${esc(t)}</span>`).join('')}</div>`:''}
@@ -1598,6 +1736,7 @@ function insertFromBank(type, ab) {
   if (!S.creature) return;
   S.creature[type] ??= [];
   const entry = { ...ab };
+  delete entry.tier;  // library-only: which tier the ability is meant for
   const tgtLevel = S.creature.level || 1;
   if (entry.damage_tier) {
     entry.damage = scaleDamageStr(entry.damage_tier, entry.damage_base_type || '', tgtLevel);
@@ -1623,7 +1762,7 @@ function unlinkAbility(type, i) {
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
-function dirty() { return S.creature && JSON.stringify(S.creature)!==S.saved; }
+function dirty() { return (S.creature && JSON.stringify(S.creature)!==S.saved) || scalingDirty(); }
 function esc(s)  { return String(s??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
 
 async function api(method, url, body) {
