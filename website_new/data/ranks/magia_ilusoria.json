@@ -74,47 +74,44 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Engaño Ilusorio",
           "tags": [
             "Ilusoria",
-            "Arcana",
             "Visual",
             "Mejora"
           ],
-          "cost": "1 chi",
-          "desc": "Cuando fallas un ataque, el objetivo debe superar un tiro de Percepción o Averiguar Intenciones. Si falla, pierde su siguiente Reacción y malgasta las defensas que haya usado. Si el objetivo está bajo Imagen Fantasmal, falla automáticamente.",
-          "empower": "Tu ataque fallido era una ilusión: recuperas las acciones y el chi gastados en ese ataque."
+          "cost": "1 Chi",
+          "desc": "Al hacer un tiro de ataque o defensa, tu enemigo deberá tener éxito en un tiro de salvación Mental o fallará de manera automática su tiro enfrentado. Esta habilidad no funciona con ataques de área o efectos que no requieran contacto visual"
         },
         {
           "name": "Invisibilidad",
           "tags": [
             "Ilusoria",
-            "Arcana",
             "Visual",
             "Duradera"
           ],
-          "cost": "1 acción, 1 chi",
-          "duration": "Concentración",
-          "desc": "Te vuelves invisible. Tus ataques cuentan como sorpresa y usas Magia Ilusoria para Sigilo. Si te detectan, solo obtienes Ventaja en lugar de invisibilidad completa. El efecto se rompe al atacar o lanzar hechizos.",
-          "empower": "No te vuelves visible tras tu siguiente ataque o impacto recibido."
+          "cost": "1 Acción/Reacción, 1 Chi",
+          "duration": "Una ronda",
+          "desc": "Te vuelves invisible, haciendo así que todos tus ataques cuenten como Sorpresa y no puedas ser detectado salvo que se tenga éxito en un tiro de salvación Mental (en dicho caso, los ataques seguirán teniendo Desventaja salvo que el atacante tenga vista a ciegas). Este efecto se rompe al atacar o lanzar hechizos.",
+          "empower": "Afecta a un objetivo adicional, o vuelve a lanzar este hechizo sobre ti mismo tras atacar para no perder la Invisibilidad."
         },
         {
-          "name": "Terreno Alucinatorio",
           "tags": [
             "Ilusoria",
-            "Arcana",
             "Visual",
-            "Ambiental",
-            "Duradera"
+            "Duradera",
+            "Mental"
           ],
-          "cost": "3 acciones, 1 chi",
-          "area": "Radio grande",
+          "cost": "1 Acción, 1 Chi",
           "duration": "Concentración",
-          "desc": "Cambias la apariencia del terreno. Mientras dure, tu alcance ilusorio aumenta en +1 paso y obtienes Ventaja en Magia Ilusoria. Anula las ventajas de terreno reales que tengan los enemigos.",
-          "empower": "Tu siguiente hechizo Ilusorio cuesta -1 acción."
+          "desc": "El objetivo debe tener éxito en un tiro de salvación Mental o percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + INT daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos.",
+          "empower": "Afecta a todos los objetivos en un radio corto (medio si gastas 2 Chi)",
+          "range": "Medio",
+          "show_mod": true,
+          "name": "Asalto Fantasmal"
         }
       ]
     },
