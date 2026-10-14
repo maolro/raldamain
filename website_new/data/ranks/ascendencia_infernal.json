@@ -71,10 +71,8 @@
             "Mejora",
             "Maldición"
           ],
-          "cost": "1 chi",
-          "duration": "Una ronda",
-          "desc": "Tu siguiente impacto causa una herida infernal: reduce la Vitalidad y PV máximos del objetivo en una cantidad igual al daño infligido y aplica Herido-1 (permanente). Solo puede curarse con Magia de Vida potente.",
-          "empower": "N/A"
+          "cost": "1 Chi",
+          "desc": "Tu siguiente impacto causa una herida infernal, haciendo así que reduzca los impactos máximos del objetivo y provoque el efecto de estado Herido I. Solo puede curarse con Magia de Vida u otras habilidades mágicas de fuerza equivalente."
         },
         {
           "name": "Visión Infernal",
