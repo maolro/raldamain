@@ -23,12 +23,12 @@
       "draft": true,
       "abilities": [
         {
-          "name": "Resistencias Infernales",
+          "name": "Aspecto Infernal",
           "tags": [
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Ventaja en tiros de salvación Mentales y aumenta tus umbrales al daño Fuego y Frío por RANGO+1. Las criaturas infernales son amistosas hacia ti. Además, puedes ver en oscuridad mágica y no-mágica sin dificultades.",
+          "desc": "Obtienes Ventaja en tiros de salvación Mentales y aumenta tus umbrales al daño Fuego y Frío por RANGO+1. Las criaturas infernales son amistosas hacia ti, y puedes ver en oscuridad mágica y no-mágica sin dificultades.",
           "umbrales": [
             {
               "value": "RANGO+1",
