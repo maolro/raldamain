@@ -114,7 +114,7 @@
     "image": "ascendencia_infernal.jpg",
     "description": "Una voz del más allá clama tu nombre, prometiéndote poder y alterando tu cuerpo para asemejarlo al de los demonios. Rechazas tu humanidad para apostar con los regentes del infierno, obteniendo resistencias, poderes mágicos, carisma sobrenatural y la capacidad de invocar huestes infernales o transformarte en un Señor de la Sima.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "ascendencia_primigenia",

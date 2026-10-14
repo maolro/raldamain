@@ -20,7 +20,7 @@
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Aspecto Infernal",
@@ -54,7 +54,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "passive": "Aumenta tu estadística de CAR y su limitador por 1.",
       "abilities": [
         {
