@@ -68,12 +68,21 @@
           "desc": "Tu siguiente impacto causa una herida infernal, haciendo así que reduzca los impactos máximos del objetivo y provoque el efecto de estado Herido I. Solo puede curarse con Magia de Vida u otras habilidades mágicas de fuerza equivalente."
         },
         {
-          "name": "Visión Infernal",
+          "name": "Magia Negra",
           "tags": [
             "Innata",
             "Pasiva"
           ],
-          "desc": "Puedes ver con normalidad en oscuridad mágica y no mágica. Detectas seres inteligentes a distancia media. Tus hechizos Mentales tratan las resistencias enemigas como un paso inferior."
+          "desc": "Aprendes dos hechizos de Rango I relacionados con tu patrón infernal, para los cuales puedes emplear tu modificador de Ascendencia. Además, tus hechizos Mentales no podrán ser detectados cuando los lances, sean fracasos o éxitos.",
+          "spell_grants": [
+            {
+              "count": 2,
+              "spell_rank": 1,
+              "sources": [
+                "patron"
+              ]
+            }
+          ]
         }
       ]
     },
