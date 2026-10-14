@@ -40,21 +40,14 @@
           ]
         },
         {
-          "name": "Pacto del Diablo",
+          "name": "Fuerza del Diablo",
           "tags": [
             "Innata",
-            "Pasiva"
+            "Mejora"
           ],
-          "desc": "Estableces un pacto con fuerzas infernales. Aprendes dos hechizos de Rango I relacionados con tu patrón, los cuales pueden emplear to modificador de Ascendencia Infernal. ",
-          "spell_grants": [
-            {
-              "count": 2,
-              "spell_rank": 1,
-              "sources": [
-                "patron"
-              ]
-            }
-          ]
+          "desc": "Recibes Ventaja en todos tus tiros de ataque, defensa, salvación y habilidad. Este efecto dura hasta 6 rondas y cuando acabe reduces tu chi o tu cordura en 1 por cada 2 rondas que hayas pasado en él.",
+          "duration": "Max 6 Rondas",
+          "cost": "1 Acción"
         }
       ]
     },
