@@ -28,7 +28,16 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "El poder infernal muta tu cuerpo. Obtienes Resistencia a efectos Mentales, Aflicciones, daño de Fuego y de Frío. Las criaturas infernales son amistosas hacia ti."
+          "desc": "Obtienes Ventaja en tiros de salvación Mentales y aumenta tus umbrales al daño Fuego y Frío por RANGO+1. Las criaturas infernales son amistosas hacia ti.",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Fuego, Frío"
+            }
+          ],
+          "saves": [
+            "Mental"
+          ]
         },
         {
           "name": "Pacto del Diablo",
@@ -36,7 +45,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Estableces un pacto con fuerzas infernales. Aprendes dos hechizos de Rango I (Arcana, Elemental u Ocultismo) relacionados con tu patrón. Usan chi y tu bonificador de CAR + Rango. [AVISO AUTOR: La descripción original dice 'Usan chi en lugar de chi', lo cual es redundante. Verificar si debería decir 'usan chi en lugar de otra reserva'.]",
+          "desc": "Estableces un pacto con fuerzas infernales. Aprendes dos hechizos de Rango I relacionados con tu patrón, los cuales pueden emplear to modificador de Ascendencia Infernal. ",
           "spell_grants": [
             {
               "count": 2,

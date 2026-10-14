@@ -110,9 +110,9 @@
   {
     "id": "ascendencia_infernal",
     "name": "Ascendencia Infernal",
-    "category": "Ascendencia",
+    "category": "Ascendencias",
     "image": "ascendencia_infernal.jpg",
-    "description": "Pacto con entidades infernales para dominar a otros y usar magia prohibida a costa de tu alma.",
+    "description": "Una voz del más allá clama tu nombre, prometiéndote poder y alterando tu cuerpo para asemejarlo al de los demonios. Rechazas tu humanidad para apostar con los regentes del infierno, obteniendo resistencias, poderes mágicos, carisma sobrenatural y la capacidad de invocar huestes infernales o transformarte en un Señor de la Sima.",
     "draft": true,
     "partial": false
   },
