@@ -121,7 +121,7 @@
             "Parada",
             "Arma"
           ],
-          "empower": "Un ataque de arma provoca 1d6 daño Fuego al impactar."
+          "empower": "Un ataque de arma provoca RANGO-1d6 daño Fuego al impactar."
         }
       ]
     },
