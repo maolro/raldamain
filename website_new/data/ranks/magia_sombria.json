@@ -31,7 +31,7 @@
           "range": "Medio",
           "desc": "El daño de este ataque reducirá los impactos máximos del objetivo (se recupera con descanso largo o efectos que quiten Maldiciones), y los objetivos en un lugar a oscuras tienen Desventaja defendiéndose de él.",
           "empower": "Afecta a una criatura adicional a distancia media.",
-          "damage": "1d6",
+          "damage": "1d6 + CAR",
           "damage_type": "Frío"
         },
         {
