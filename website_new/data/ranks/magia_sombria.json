@@ -29,7 +29,7 @@
           ],
           "cost": "1 Acción",
           "range": "Medio",
-          "desc": "El daño de este ataque no puede curarse, y los objetivos en un lugar a oscuras tienen Desventaja defendiéndose de él.",
+          "desc": "El daño de este ataque reducirá los impactos máximos del objetivo (se recupera con descanso largo o efectos que quiten Maldiciones), y los objetivos en un lugar a oscuras tienen Desventaja defendiéndose de él.",
           "empower": "Afecta a una criatura adicional a distancia media.",
           "damage": "1d6",
           "damage_type": "Frío"
@@ -72,13 +72,14 @@
             "Área",
             "Frío"
           ],
-          "cost": "1 o más acciones, 1 chi",
+          "cost": "1 Acción, 1 Chi",
           "range": "Medio",
           "area": "Esfera pequeña",
           "crit": "El afectado queda con Fatigado-1 durante una ronda.",
-          "duration": "Instantáneo",
-          "desc": "Lanzas una explosión de energía sombría que inflige 1d6 + CAR daño Frío y reduce Vitalidad y PV máximos. Puedes cargarla: por cada 2 acciones adicionales gastadas (máximo 4 acciones totales), aumenta el daño en +1d6 y el radio en +1 paso. Requiere oscuridad para cargar.",
-          "empower": "Lanza una bola sombría adicional a otro objetivo."
+          "desc": "El daño de este ataque reduce ",
+          "empower": "Lanza una bola sombría adicional a otro objetivo.",
+          "damage": "1d6 + CAR",
+          "damage_type": "Frío"
         },
         {
           "name": "Capullo Sombrío",
