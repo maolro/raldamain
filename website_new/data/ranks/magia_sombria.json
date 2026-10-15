@@ -75,23 +75,19 @@
           "cost": "1 Acción, 1 Chi",
           "range": "Medio",
           "area": "Esfera pequeña",
-          "crit": "El afectado queda con Fatigado-1 durante una ronda.",
-          "desc": "El daño de este ataque reduce ",
-          "empower": "Lanza una bola sombría adicional a otro objetivo.",
+          "desc": "El daño de este ataque reducirá los impactos máximos del objetivo (se recupera con descanso largo o efectos que quiten Maldiciones). Además, puedes emplear una Acción para aumentar el daño por un dado.",
+          "empower": "Lanza una bola sombría adicional con las mismas cargas a otro objetivo.",
           "damage": "1d6 + CAR",
           "damage_type": "Frío"
         },
         {
-          "name": "Capullo Sombrío",
+          "name": "Salto Sombrío",
           "tags": [
             "Sombría",
-            "Defensiva",
-            "Duradera"
+            "Reacción"
           ],
-          "cost": "1 acción, 1 chi",
-          "duration": "Concentración",
-          "desc": "Te envuelves en sombras protectoras. Obtienes Vitalidad temporal igual a Rango x 3, Inmunidad a efectos de Toque y Ocultamiento. Los enemigos adyacentes sufren 1d6 + Rango daño Frío y reducción de Vitalidad y PV máximos.",
-          "empower": "Recuperas toda la Vitalidad temporal (solo en oscuridad)."
+          "cost": "1 Reacción, 1 Chi",
+          "desc": "Te teletransportas a un lugar que se encuentre a oscuras, evitándo automáticamente un ataque dirigido a ti. Esta habilidad solo puede usarse si te encuentras en un lugar a oscuras y no funciona contra ataques de área suficientemente grandes. "
         },
         {
           "name": "Oscuridad Devoradora",
@@ -104,7 +100,7 @@
           "range": "Medio",
           "crit": "El afectado queda con Fatigado-1 durante una ronda.",
           "duration": "Concentración",
-          "desc": "Solidificas la oscuridad para atrapar a un objetivo. El objetivo debe superar un tiro de Heroísmo o Destrozar contra tu Sombría o queda Enredado y sufre 1d6 + Rango daño Frío. Mientras permanezca atrapado, sufre daño recurrente cada vez que falle el tiro para escapar.",
+          "desc": "Puedes emplear tu modificador de Magia Sombría para tus tiros de ataque con armas o aplicar técnicas de armas a ataques de Magia Sombría.",
           "empower": "Afecta a un objetivo adicional."
         }
       ]
