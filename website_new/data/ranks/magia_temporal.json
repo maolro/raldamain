@@ -98,8 +98,9 @@
             "Arcana",
             "Reacción"
           ],
-          "cost": "1 Reacción, 2 Chi",
-          "desc": "En respuesta a sufrir un ataque de cualquier tipo, haces un pequeño salto temporal para que nunca haya ocurrido. No funciona contra efectos Mentales, Miedo ni Maldiciones."
+          "cost": "1 Reacción, 1 Chi",
+          "desc": "En respuesta a sufrir un ataque de cualquier tipo, haces un pequeño salto temporal para que tenga un 50% de probabilidad de fallar automáticamente. No funciona contra efectos Mentales, Miedo ni Maldiciones.",
+          "empower": "Aumenta la probabilidad que el efecto enemigo fracase a 100%."
         }
       ]
     },
