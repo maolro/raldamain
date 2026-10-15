@@ -90,18 +90,18 @@
           "desc": "Te teletransportas a un lugar que se encuentre a oscuras, evitándo automáticamente un ataque dirigido a ti. Esta habilidad solo puede usarse si te encuentras en un lugar a oscuras y no funciona contra ataques de área suficientemente grandes. "
         },
         {
-          "name": "Oscuridad Devoradora",
+          "name": "Infusión Sombría",
           "tags": [
             "Sombría",
-            "Agarre",
-            "Duradera"
+            "Pasiva"
           ],
-          "cost": "1 acción, 1 chi",
-          "range": "Medio",
-          "crit": "El afectado queda con Fatigado-1 durante una ronda.",
-          "duration": "Concentración",
-          "desc": "Puedes emplear tu modificador de Magia Sombría para tus tiros de ataque con armas o aplicar técnicas de armas a ataques de Magia Sombría.",
-          "empower": "Afecta a un objetivo adicional."
+          "desc": "Puedes emplear tu modificador de Magia Sombría para tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Magia Sombría.",
+          "empower": "Un ataque de arma provoca RANGO-1 d6 daño Frío adicional. ",
+          "replace_mod": [
+            "Arma",
+            "Parada",
+            "Esquiva"
+          ]
         }
       ]
     },
