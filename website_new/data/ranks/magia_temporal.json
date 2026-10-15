@@ -71,11 +71,11 @@
             "Mejora",
             "Duradero"
           ],
-          "cost": "2 acciones, 1 chi",
-          "range": "Medio",
-          "duration": "Concentración",
-          "desc": "El objetivo obtiene una acción adicional por turno y Ventaja en tiros de DES.",
-          "empower": "Afecta a un objetivo adicional."
+          "cost": "1 Acción, 1 Chi",
+          "range": "Adyacente",
+          "duration": "Dos Rondas",
+          "desc": "El afectado recibe una acción adicional en las siguientes dos rondas. ",
+          "empower": "Afecta a un objetivo adicional, o extiende el efecto para que dure una ronda adicional."
         },
         {
           "name": "Ralentizar",
@@ -84,25 +84,22 @@
             "Arcano",
             "Duradero"
           ],
-          "cost": "2 acciones, 1 chi",
+          "cost": "1 Acción/Reacción, 1 chi",
           "range": "Medio",
           "area": "Radio pequeño",
           "duration": "Concentración",
-          "desc": "Creas una zona de tiempo ralentizado. Los enemigos en su interior deben superar un tiro de salvación de Salud contra tu Magia Temporal o quedan Ralentizados. Puedes mover la zona como acción bonus.",
-          "empower": "Ralentizas el tiempo a tu alrededor, imponiendo Desventaja en ataques enemigos durante 1 ronda."
+          "desc": "Creas una zona de tiempo ralentizado. Los afectados deben tener éxito en un tiro de salvación de Voluntad o sufren Ralentizado I durante una ronda y pierden una Reacción.",
+          "empower": "Aumenta el nivel del efecto por un paso."
         },
         {
           "name": "Desplazamiento",
           "tags": [
             "Temporal",
             "Arcana",
-            "Defensiva",
             "Reacción"
           ],
-          "cost": "1 chi",
-          "duration": "Instantánea",
-          "desc": "Como reacción, reduces el daño de un impacto a 0 y evitas todos los efectos de estado directos. No funciona contra efectos Mentales, de Miedo ni Maldiciones.",
-          "empower": "N/A"
+          "cost": "1 Reacción, 2 Chi",
+          "desc": "En respuesta a sufrir un ataque de cualquier tipo, haces un pequeño salto temporal para que nunca haya ocurrido. No funciona contra efectos Mentales, Miedo ni Maldiciones."
         }
       ]
     },
