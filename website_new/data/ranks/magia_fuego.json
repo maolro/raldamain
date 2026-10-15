@@ -125,7 +125,10 @@
           "toggle": {
             "label": "Infusión de Fuego",
             "damage": "+(RANGO)d6",
-            "damage_type": "Fuego"
+            "damage_type": "Fuego",
+            "damage_tags": [
+              "Ataque+Físico"
+            ]
           }
         }
       ]
