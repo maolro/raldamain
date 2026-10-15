@@ -62,7 +62,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Bola Sombra",
@@ -96,12 +96,25 @@
             "Pasiva"
           ],
           "desc": "Puedes emplear tu modificador de Magia Sombría para tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Magia Sombría.",
-          "empower": "Un ataque de arma provoca RANGO-1 d6 daño Frío adicional. ",
+          "empower": "Un ataque físico provoca 2d6 daño Frío adicional. Este daño adicional aumenta por un dado por cada Rango adicional que recibas.",
           "replace_mod": [
             "Arma",
             "Parada",
             "Esquiva"
-          ]
+          ],
+          "toggle": {
+            "label": "Infusión Sombría",
+            "damage": "+(RANGO)d6",
+            "damage_type": "Frío",
+            "damage_tags": [
+              "Ataque+Físico"
+            ]
+          }
+        },
+        {
+          "name": "",
+          "tags": [],
+          "desc": ""
         }
       ]
     },
