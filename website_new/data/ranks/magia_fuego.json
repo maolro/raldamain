@@ -105,7 +105,7 @@
           "range": "Medio",
           "area": "Radio pequeño",
           "crit": "Afectados sufren quemadura media.",
-          "desc": "Prende objetos inflamables en el área afectada. Puedes emplear una Acción para aumentar el daño por 1d6.",
+          "desc": "Prende objetos inflamables en el área afectada. Puedes emplear una Acción para aumentar el daño por un dado.",
           "empower": "Lanza una bola adicional con la misma carga a otro objetivo.",
           "damage": "1d6",
           "damage_type": "Fuego"
