@@ -28,10 +28,10 @@
             "Mejora"
           ],
           "cost": "1 chi",
-          "desc": "Empoderas tu siguiente ataque físico con energía divina. Al impactar, infliges 1d6 daño adicional (tipo según tu dios). El daño aumenta a 2d6 a Rango III y a 3d6 a Rango VI. Solo puedes escoger un daño asociado con tu dios y debe declararse antes de atacar. ",
+          "desc": "Empoderas tu siguiente ataque físico con energía divina. Al impactar, infliges 1d6 daño adicional (tipo según tu dios). El daño aumenta por un dado en base a cada Rango que recibas. Solo puedes escoger un daño asociado con tu dios y debe declararse antes de atacar. ",
           "toggle": {
             "label": "Azote Divino",
-            "damage": "+(RANGO/3+1)d6",
+            "damage": "+(RANGO)d6",
             "damage_type": "PATRÓN",
             "damage_tags": [
               "Ataque+Físico"
