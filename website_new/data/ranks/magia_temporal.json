@@ -61,7 +61,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Acelerar",
