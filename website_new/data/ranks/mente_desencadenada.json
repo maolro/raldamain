@@ -60,7 +60,7 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Poder del Dolor",
@@ -69,7 +69,18 @@
             "Mental",
             "Pasiva"
           ],
-          "desc": "Mientras dure el estado Mente Desencadenada, ignoras los efectos de Herido-1 y Herido-2 (permanentes). Obtienes Resistencia a Aflicciones y Aturdido."
+          "desc": "Mientras te encuentres en Mente Desencadenada ignoras los efectos Herido I y II. además que aumentas tus umbrales por RANGO.",
+          "condition": "Mente Desencadenada",
+          "umbrales": [
+            {
+              "value": "RANGO",
+              "categories": "General"
+            }
+          ],
+          "immunities": [
+            "Herido I",
+            "Herido I"
+          ]
         },
         {
           "name": "Conocimiento Arcano",
@@ -78,15 +89,43 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Mientras dure el estado Mente Desencadenada, puedes lanzar 2 hechizos de Rango I (Arcano u Ocultismo) usando INT + Rango. Aprendes 1 hechizo nuevo cada vez que subes de rango.",
+          "desc": "Aprendes dos hechizos nuevos de Rango I, los cuales pueden emplear tu modificador de Mente Desencadenada. ",
           "spell_grants": [
             {
-              "count": "RANGO",
+              "count": 2,
               "spell_rank": 1,
               "sources": [
                 "cat:Arcano",
                 "cat:Ocultismo"
-              ]
+              ],
+              "from_rank": 2
+            },
+            {
+              "count": 1,
+              "spell_rank": 1,
+              "sources": [
+                "cat:Arcano",
+                "cat:Ocultismo"
+              ],
+              "from_rank": 3
+            },
+            {
+              "count": 1,
+              "spell_rank": 2,
+              "sources": [
+                "cat:Arcano",
+                "cat:Ocultismo"
+              ],
+              "from_rank": 4
+            },
+            {
+              "count": 1,
+              "spell_rank": 2,
+              "sources": [
+                "cat:Arcano",
+                "cat:Ocultismo"
+              ],
+              "from_rank": 5
             }
           ]
         }
