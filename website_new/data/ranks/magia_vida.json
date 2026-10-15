@@ -114,7 +114,12 @@
             "Esquiva",
             "Arma"
           ],
-          "empower": "Un ataque de arma provoca 1d6 daño Radiante al impactar."
+          "empower": "Un ataque físico provoca 2d6 daño Radiante adicional. Este daño adicional aumenta por un dado por cada Rango adicional que recibas.",
+          "toggle": {
+            "label": "",
+            "damage": "+(RANGO)d6",
+            "damage_type": "Radiante"
+          }
         }
       ]
     },
