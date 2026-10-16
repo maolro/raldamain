@@ -36,6 +36,18 @@ forma_de_la_bestia:
     - {scope: save_men, advantage: 1}
     - {scope: umbral, umbral: 2}
 
+furia_abisal:
+  name: Furia Abisal
+  kind: buff
+  duration: 6
+  notes: >
+    Ascendencia Abisal I: Ventaja en todos los tiros de Ataque, Defensa,
+    Salvación y Habilidad hasta 6 rondas (la pérdida de cordura al acabar no
+    se modela). Not to be confused with despertar_abisal, the Campeón
+    Abisal monster's boss phase.
+  modifiers:
+    - {scope: all, advantage: 1}
+
 despertar_abisal:
   name: Despertar Abisal
   kind: buff

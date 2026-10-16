@@ -106,7 +106,8 @@ ira:
            text: "Como Rango I, y mientras estés en Ira aumentas todos tus umbrales por un valor igual a tu Rango (Resistencia Salvaje) e ignoras Herido I y II."}
         - id: frenesi_de_batalla
           name: Frenesí de Batalla
-          cost: {actions: 1}
+          cost: {chi: 1}
+          bonus_action: true
           targeting: self
           effects:
             - {kind: self_buff, effect: frenesi_de_batalla, duration: 1}
@@ -568,7 +569,7 @@ ascendencia_abisal:
     1:
       abilities:
         - {id: furia_abisal, name: Furia Abisal, cost: {actions: 1}, targeting: self,
-           effects: [{kind: self_buff, effect: despertar_abisal, duration: 6}],
+           effects: [{kind: self_buff, effect: furia_abisal, duration: 6}],
            text: "Ventaja en TODOS tus tiros (ataque, defensa, salvación, habilidad) durante 6 rondas."}
       passives:
         - {target: save, key: men, amount: "advantage:1",

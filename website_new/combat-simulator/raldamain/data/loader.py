@@ -142,9 +142,12 @@ def _attach_riders(abilities: list[dict[str, Any]], riders: list[tuple[str, dict
                    for e in a.get("effects", []))
 
     for rank_id, rider in riders:
-        upgrade = {k: v for k, v in rider.items() if k not in ("rider", "text", "divine_smite", "notes")}
+        upgrade = {k: v for k, v in rider.items() if k not in ("rider", "text", "divine_smite", "notes", "natural_only")}
         weapons = [a for a in abilities if damaging(a) and "weapon" in a.get("tags", [])]
-        if rank_id.startswith("estilo_"):
+        if rider.get("natural_only"):  # Mutación: natural attacks only (Garra, Mordisco, Golpe…)
+            hosts = [a for a in abilities if damaging(a)
+                     and any(_word(t) == "natural" for t in a.get("_web_tags") or [])]
+        elif rank_id.startswith("estilo_"):
             hosts = weapons
         else:
             hosts = [a for a in abilities if damaging(a) and a.get("_rank") == rank_id] or weapons
