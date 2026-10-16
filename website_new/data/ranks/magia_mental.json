@@ -61,29 +61,29 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Sugestión",
           "tags": [
-            "Mental",
-            "Duradero"
+            "Mental"
           ],
-          "cost": "1 acción, 1 chi",
+          "cost": "1 Acción, 1 Chi",
           "range": "Medio",
-          "desc": "Implantas una orden o comportamiento lógico en la mente del objetivo. En combate, fuerzas al objetivo a realizar 1 acción específica.",
-          "empower": "Puedes reusar como acción bonus sin coste de chi."
+          "desc": "El afectado debe tener éxito en un tiro de salvación Mental o tomará un acción específica que le ordenes siempre y cuando esta resulte lógica para él. ",
+          "empower": "Aumenta el radio de este efecto a corto (medio si gastas 2 chi).",
+          "show_mod": true
         },
         {
-          "name": "Sanación Mental",
+          "name": "Precognición",
           "tags": [
             "Mental",
-            "Toque"
+            "Reacción"
           ],
-          "cost": "2 acciones, 1 chi",
-          "range": "Toque",
-          "desc": "Restauras Rango + 1 de Cordura al objetivo. Además, eliminas un hechizo Mental ajeno que lo afecte (mediante tiro enfrentado).",
-          "empower": "Eliminas un efecto Mental adicional."
+          "cost": "1 Reacción, 1 Chi",
+          "range": "Medio",
+          "desc": "Antes de hacer un tiro de ataque, defensa o habilidad contra un objetivo específico, este deberá tener éxito en un tiro de salvación Mental o recibirás un bonificador en el tiro igual a RANGO + 2.",
+          "empower": "Un aliado a distancia media recibe el bonificador en lugar que tú."
         },
         {
           "name": "Alterar Emociones",
@@ -91,10 +91,11 @@
             "Mental",
             "Duradero"
           ],
-          "cost": "1 acción, 1 chi",
+          "cost": "1 Acción, 1 Chi",
           "range": "Medio",
-          "desc": "Induces un estado emocional en el objetivo: Cansancio, Ira, Miedo, Calma o Valentía. El efecto persiste hasta que el objetivo se recupere o termine el combate.",
-          "empower": "Afecta a un objetivo adicional."
+          "desc": "El afectado debe tener éxito en un tiro de salvación Mental o una emoción de tu elección se potenciará en él, dándole el efecto Miedo I, Confusión I, Fatiga I o quitándole esos mismos efectos.",
+          "empower": "Aumenta el radio de este efecto a corto (medio si gastas 2 chi).",
+          "show_mod": true
         }
       ]
     },
