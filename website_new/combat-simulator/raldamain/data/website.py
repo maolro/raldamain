@@ -405,6 +405,7 @@ def character_spec(path: Path) -> dict[str, Any]:
                 "cost": {"actions": parse_cost(ab.get("cost")).get("actions", 1)},
                 "reach": reach,
                 "tags": ["weapon", "physical"],
+                "_web_tags": [t.strip() for t in str(tags).split(",") if t.strip()],
                 "effects": [{"kind": "attack", "attack_roll": str(mod),
                              "on_hit": [{"kind": "damage", "damage": f"{dice}+{stat}", "dtype": dtype}]}],
             }

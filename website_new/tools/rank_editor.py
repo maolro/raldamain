@@ -1291,7 +1291,7 @@ function resetShowMod(li,ai) {
 //   umbrales [{value, categories}] · hits · chi (ability only) · saves [Físico|Voluntad|Mental]
 //   replace_mod [targets that use this rank's modifier (stat + Rango) when higher]
 //   resistances [] · immunities []
-const PASSIVE_KEYS = ['umbrales','hits','chi','talpoints','saves','adv_stats','replace_mod','resistances','immunities','condition'];
+const PASSIVE_KEYS = ['umbrales','hits','chi','talpoints','saves','adv_stats','replace_mod','dice_up','resistances','immunities','condition'];
 const STAT_ABBRS = ['FUE','DES','CON','INT','SAB','CAR'];
 const SAVE_TYPES = ['Físico','Voluntad','Mental'];
 const REPLACE_TARGETS = ['Físico','Voluntad','Mental','Esquiva','Parada','Arma'];
@@ -1329,6 +1329,10 @@ function boostsHtml(o, li, ai, scope) {
     <div class="field" style="margin-top:6px">
       <div class="lbl" title="Si el modificador de este rango (estadística principal + Rango) es mayor, sustituye al de estos tiros">Usar el modificador de este rango (si es mayor) en</div>
       ${chkGroup(o, li, ai, scope, 'replace_mod', REPLACE_TARGETS, ['Salv. Físico','Salv. Voluntad','Salv. Mental','Esquiva','Parada','Tiros de arma'])}</div>
+    <div class="field" style="margin-top:6px">
+      <div class="lbl" title="Los ataques cuyas etiquetas o tipo de daño coincidan con alguno de la lista tiran un dado de daño más (2d6 → 3d6). Usa + para exigir varios a la vez: Fuego+Magia">+1 dado de daño a ataques de tipo (comas)</div>
+      <input class="inp" value="${esc((o.dice_up||[]).join(', '))}" placeholder="Naturales, Fuego…"
+        oninput="setBoostArr(${li},${ai},'${scope}','dice_up',this.value)"></div>
     <div class="row2" style="margin-top:6px">
       <div class="field"><div class="lbl">Resistencias (comas)</div>
         <input class="inp" value="${esc((o.resistances||[]).join(', '))}" placeholder="Miedo, Veneno…"

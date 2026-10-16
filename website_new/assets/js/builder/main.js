@@ -819,6 +819,7 @@ ${reactions}
             else if (t.adv && t.adv.length > 0) parts.push('Vent: ' + t.adv.join(', '));
             if (t.adv_tags && t.adv_tags.length > 0) parts.push('+1d6 ' + t.adv_tags.join('/'));
             if (t.saves && t.saves.length > 0) parts.push('Salv: ' + t.saves.join(', '));
+            if (t.dice_up && t.dice_up.length > 0) parts.push('+1 dado de daño: ' + t.dice_up.join(', '));
             if (t.adv_stats && t.adv_stats.length > 0) parts.push('+1d6 con ' + t.adv_stats.join('/'));
             if (t.damage) { const b = this.damageBoostOf(ab); parts.push('Daño: ' + b.dice + (b.type ? ' ' + b.type : '')); }
             if (t.umbrales && t.umbrales.length > 0)
@@ -922,7 +923,21 @@ ${reactions}
                 }
                 if (applies) boosts.push(this.damageBoostOf(ab));
             }
+            // "+1 dado de daño a ataques de tipo X" (passive, or a combat state while active)
+            for (const { o } of this.boostSources) {
+                if (!o.dice_up || !o.dice_up.length) continue;
+                if (o.dice_up.some(group => this.tagGroupMatches(tags, group)))
+                    boosts.push({ dice: '+1 dado', type: null });
+            }
             return boosts;
+        },
+        // "Fuego" / "Naturales" / "Fuego+Mágico" against an attack's tags + damage type,
+        // ignoring accents, case and plural (Naturales = Natural)
+        tagGroupMatches(tags, group) {
+            const norm = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+                .toLowerCase().trim().replace(/(es|s)$/, '');
+            const have = new Set(tags.map(norm));
+            return String(group).split('+').map(norm).filter(Boolean).every(t => have.has(t));
         },
         // A toggle's extra damage: { dice: "+1d6" | "+1 dado", type: "Radiante" | null }
         // type "PATRÓN" uses the higher entity's damage type (Hechizos tab)

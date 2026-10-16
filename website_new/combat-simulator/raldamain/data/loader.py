@@ -103,6 +103,30 @@ def _fill_words(obj: Any, words: dict[str, str]) -> Any:
     return obj
 
 
+def _word(s: Any) -> str:
+    w = _norm_name(s)
+    return re.sub(r"(es|s)$", "", w)
+
+
+def _apply_dice_up(abilities: list[dict[str, Any]], groups: list[str]) -> None:
+    """+1 damage die on every attack whose tags / damage type match one of
+    ``groups`` ("Naturales", "Fuego", "Fuego+Magico"), once per group."""
+    if not groups:
+        return
+    for ab in abilities:
+        for eff in ab.get("effects") or []:
+            if eff.get("kind") != "attack":
+                continue
+            for hit in eff.get("on_hit") or []:
+                if hit.get("kind") != "damage" or not isinstance(hit.get("damage"), str):
+                    continue
+                have = {_word(t) for t in list(ab.get("tags") or []) + list(ab.get("_web_tags") or [])}
+                have.add(_word(hit.get("dtype")))
+                n = sum(1 for g in groups if all(_word(x) in have for x in str(g).split("+") if x.strip()))
+                if n:
+                    hit["damage"] = re.sub(r"^\s*(\d+)d", lambda m: f"{int(m.group(1)) + n}d", hit["damage"], count=1)
+
+
 def _attach_riders(abilities: list[dict[str, Any]], riders: list[tuple[str, dict[str, Any]]]) -> list[str]:
     """Bolt chi riders onto the attacks they belong to.
 
@@ -153,6 +177,7 @@ def _auto_ability(raw: dict[str, Any], rank_id: str, rango: int, mod: int, stats
             "reach": reach_from(raw.get("range")),
             "area": area_from(raw.get("area")),
             "tags": ["spell"] + (["physical"] if "fisico" in _norm_name(" ".join(tags)) else []),
+            "_web_tags": list(raw.get("tags") or []),
             "effects": [{"kind": "attack", "attack_roll": str(mod),
                          "on_hit": [{"kind": "damage", "damage": damage,
                                      "dtype": dtype_key(raw.get("damage_type") or "general")}]}],
@@ -232,6 +257,11 @@ def assemble_from_ranks(spec: dict[str, Any]) -> dict[str, Any]:
                 continue
             for raw in level.get("abilities") or []:
                 if _norm_name(raw.get("name")) in known:
+                    # modelled in ranks.yaml: still give it the website tags
+                    # (Natural, Fuego…) that "+1 dado de daño" passives match on
+                    for ab in spec.get("abilities", []):
+                        if _norm_name(ab.get("name")) == _norm_name(raw.get("name")) and raw.get("tags"):
+                            ab.setdefault("_web_tags", list(raw["tags"]))
                     continue
                 auto = _auto_ability(raw, sim_id, int(rango), mod, stats)
                 if auto["id"] in existing_ids:
@@ -241,6 +271,19 @@ def assemble_from_ranks(spec: dict[str, Any]) -> dict[str, Any]:
                     continue
                 spec.setdefault("abilities", []).append(auto)
                 existing_ids.add(auto["id"])
+
+    # "+1 dado de daño a ataques de tipo X" set on website rank abilities
+    # (always-on ones; those tied to a combat state are left to the Creador)
+    dice_up = []
+    for web_id, rango in (spec.get("website_ranks") or {}).items():
+        for level in (rank_data().get(web_id) or {}).get("levels") or []:
+            lv = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6}.get(level.get("rank"), 99)
+            if lv > int(rango):
+                continue
+            for raw in level.get("abilities") or []:
+                if raw.get("dice_up") and not raw.get("condition"):
+                    dice_up.extend(raw["dice_up"])
+    spec["_dice_up"] = dice_up
 
     # Learned spells: the spell's own data, cast with the granting rank
     for sp in spec.get("learned_spells") or []:
@@ -271,6 +314,7 @@ def assemble_from_ranks(spec: dict[str, Any]) -> dict[str, Any]:
             existing_ids.add(resolved["id"])
 
     unmodelled += _attach_riders(spec.get("abilities", []), riders)
+    _apply_dice_up(spec.get("abilities", []), spec.pop("_dice_up", []))
     if unmodelled:
         spec.setdefault("abilities", []).extend(
             {"id": f"nm_{i}", "name": n, "implemented": False} for i, n in enumerate(sorted(set(unmodelled))))
