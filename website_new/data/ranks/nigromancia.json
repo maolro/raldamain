@@ -76,11 +76,11 @@
             "Maldición",
             "Duradera"
           ],
-          "cost": "3 acciones, 1 chi",
-          "range": "Cuerpo a cuerpo",
+          "cost": "2 Acciones, 1 chi",
+          "range": "Adyacente",
           "duration": "Concentración",
-          "desc": "Ligas tu vida a otra criatura (tiro de salvación de CON contra tu Nigromancia). Transfieres la mitad del daño que recibes a la criatura vinculada. Además, puedes lanzar hechizos de Toque a través del vínculo.",
-          "empower": "Transfieres Herido (permanente) o efecto negativo propio a la criatura vinculada."
+          "desc": "El afectado debe tener éxito en un tiro de Voluntad o formas un Vínculo Parasítico con él (si es hostil, antes debes ser capaz de tocarlo). Mientras permanezca activo, cada vez que sufras daño y te encuentras a distancia media de alguien con este vínculo, puedes transferirle hasta un impacto recibido. No obstante, si ha recibido el vínculo en contra de su voluntad cada vez que lo actives podrá reptir el tiro para intentar liberarse. ",
+          "empower": "Afecta a un objetivo adicional."
         },
         {
           "name": "Animar No-muerto",
@@ -88,11 +88,11 @@
             "Nigromancia",
             "Invocación"
           ],
-          "cost": "3 acciones, 1 chi",
+          "cost": "3 Acciones, 1 Chi",
           "range": "Medio",
           "duration": "Permanente",
-          "desc": "Levantas un cadáver como Zombi o Esqueleto bajo tu control. Puedes controlar un máximo de Rango x 3 no-muertos simultáneamente. Puedes lanzar hechizos de Toque desde la posición de un no-muerto controlado o sacrificarlo para evitar daño que recibirías.",
-          "empower": "Animas dos no-muertos adicionales."
+          "desc": "Levanta un cadáver como un Zombi o Esqueleto de nivel 2. Los no-muertos creados permanecerán activos hasta que sean destruidos y no puedes controlar a más no-muertos a la vez que tu Carisma x 5. Si tienes muchos, puedes agruparlos como ejércitos para simplificar su gestión, y a Rangos superiores aumenta la cantidad de No-Muertos por cada uso de este hechizo en  2.",
+          "empower": "Lanza este hechizo de nuevo sobre otro cadáver o cadáveres."
         },
         {
           "name": "Maldición Vampírica",
