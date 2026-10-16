@@ -96,7 +96,7 @@
             "Pasiva"
           ],
           "desc": "Puedes emplear tu modificador de Magia Sombría para tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Magia Sombría.",
-          "empower": "Un ataque físico provoca 2d6 daño Frío adicional. Este daño adicional aumenta por un dado por cada Rango adicional que recibas.",
+          "empower": "Un ataque físico provoca 2d6 daño Frío adicional. Este daño aumenta por un dado por cada Rango adicional que recibas.",
           "replace_mod": [
             "Arma",
             "Parada",
