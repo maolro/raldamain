@@ -61,14 +61,17 @@
       "draft": true,
       "abilities": [
         {
-          "name": "Infusión Espiritual",
+          "name": "Fuerza Animal",
           "tags": [
             "Innata",
             "Mejora"
           ],
-          "cost": "1 chi",
-          "desc": "Aumenta el daño de un ataque natural por un dado o fuerzas a tu objetivo a tener éxito en un tiro de salvación Físico o queda Enredado. Este además contará como Mágico para los propósitos de Inmunidades.",
-          "show_mod": true
+          "show_mod": true,
+          "desc": "Mientras te encuentres en Forma de la Bestia, aumentas el daño de tus ataques naturales por un dado y estos contarán como Mágicos para los propósitos de Umbrales.",
+          "condition": "Forma de la Bestia",
+          "toggle": {
+            "label": ""
+          }
         },
         {
           "name": "Comunión con la Naturaleza",
