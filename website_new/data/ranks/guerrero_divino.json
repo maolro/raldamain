@@ -2,7 +2,7 @@
   "id": "guerrero_divino",
   "title": "Guerrero Divino",
   "category": "Religión",
-  "draft": true,
+  "draft": false,
   "image": "guerrero_divino.jpg",
   "stats": [
     "Carisma",
