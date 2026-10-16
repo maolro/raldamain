@@ -231,11 +231,13 @@
     },
     "mordisco": {
         "cost": "1 Acción",
-        "description": "+MOD para atacar, Adyacente, 1DD + STAT daño Perforante.",
         "name": "Mordisco",
         "skill": "estilo-salvaje",
-        "tags": "Físico, Ataque, Marcial, Salvaje",
-        "type": "Accion"
+        "tags": "Físico, Ataque, Marcial",
+        "type": "Accion",
+        "range": "Adyacente",
+        "damage": "1d6",
+        "damage_type": "Perforante"
     },
     "mosqueton": {
         "cost": "1 Acción",
