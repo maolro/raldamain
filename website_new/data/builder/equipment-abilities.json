@@ -108,7 +108,7 @@
         "cost": "1 Acción",
         "name": "Garra",
         "skill": "estilo-salvaje",
-        "tags": "Físico, Ataque, Marcial, Salvaje",
+        "tags": "Físico, Ataque, Marcial, Natural",
         "type": "Accion",
         "range": "Adyacente",
         "damage": "1d6",
