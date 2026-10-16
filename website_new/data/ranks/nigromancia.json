@@ -95,17 +95,26 @@
           "empower": "Lanza este hechizo de nuevo sobre otro cadáver o cadáveres."
         },
         {
-          "name": "Maldición Vampírica",
+          "name": "Infusión Necrótica",
           "tags": [
-            "Nigromancia",
-            "Toque",
-            "Maldición"
+            "NIgromancia",
+            "Pasiva"
           ],
-          "cost": "1 acción, 1 chi",
-          "range": "Toque",
-          "duration": "Hasta que sea eliminada",
-          "desc": "Marcas a un enemigo con una maldición vampírica (tiro de salvación de CON contra tu Nigromancia). Mientras la maldición persista, recuperas Vitalidad igual a la mitad del daño Necrótico que le inflijas.",
-          "empower": "Afecta a un objetivo adicional o reduce el nivel de Herido (permanente) o aflicción propia cada vez que lo hieres."
+          "desc": "Puedes emplear tu modificador de Nigromancia para tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Nigromancia.",
+          "empower": "Un ataque físico provoca 2d6 daño Necrótico adicional. Este daño aumenta por un dado por cada Rango adicional que recibas.",
+          "replace_mod": [
+            "Arma",
+            "Parada",
+            "Esquiva"
+          ],
+          "toggle": {
+            "label": "Infusión Necrótica",
+            "damage": "+(RANGO)d6",
+            "damage_type": "Necrótico",
+            "damage_tags": [
+              "Ataque+Físico"
+            ]
+          }
         }
       ]
     },
