@@ -132,7 +132,7 @@
         "description": "",
         "name": "Golpe",
         "range": "Adyacente",
-        "tags": "Físico, Ataque, Duelo",
+        "tags": "Físico, Ataque, Marcial, Natural",
         "type": "Accion"
     },
     "golpe-serpiente": {
