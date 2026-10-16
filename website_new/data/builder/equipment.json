@@ -285,6 +285,15 @@
                 "coloso",
                 "duelo"
             ]
+        },
+        "hacha-de-mano": {
+            "name": "Hacha de Mano",
+            "eqab": "hacha-de-mano",
+            "styles": [
+                "coloso",
+                "duelo",
+                "asesino"
+            ]
         }
     }
 }

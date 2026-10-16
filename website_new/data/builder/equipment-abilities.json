@@ -294,5 +294,15 @@
         "range": "Adyacente",
         "tags": "Físico, Ataque",
         "type": "Accion"
+    },
+    "hacha-de-mano": {
+        "name": "Hacha de Mano",
+        "type": "Accion",
+        "cost": "1 Acción",
+        "tags": "Físico, Ataque, Marcial",
+        "range": "Adyacente o Distancia Media",
+        "damage": "1d6",
+        "damage_type": "Cortante",
+        "description": ""
     }
 }
