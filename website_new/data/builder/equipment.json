@@ -137,6 +137,8 @@
             "eqab": "garra",
             "name": "Garra",
             "styles": [
+                "coloso",
+                "duelo",
                 "asesino"
             ]
         },
@@ -228,52 +230,52 @@
             "ep": 1,
             "eqab": "mosqueton",
             "name": "Mosquetón",
-            "styles": [
-                "duelo",
-                "asesino"
-            ],
             "reload": {
                 "actions": 2,
                 "shots": 1
-            }
+            },
+            "styles": [
+                "duelo",
+                "asesino"
+            ]
         },
         "pistola-de-mano": {
             "ep": 2,
             "eqab": "pistola-de-mano",
             "name": "Pistola de Mano",
-            "styles": [
-                "duelo",
-                "asesino"
-            ],
             "reload": {
                 "actions": 2,
                 "shots": 6
-            }
+            },
+            "styles": [
+                "duelo",
+                "asesino"
+            ]
         },
         "rifle-de-asalto": {
             "ep": 2,
             "eqab": "rifle-de-asalto",
             "name": "Fusil",
-            "styles": [
-                "duelo",
-                "asesino"
-            ],
             "reload": {
                 "actions": 1,
                 "shots": 1
-            }
+            },
+            "styles": [
+                "duelo",
+                "asesino"
+            ]
         },
         "rifle-francotirador": {
             "ep": 2,
             "eqab": "rifle-francotirador",
             "name": "Rifle Francotirador",
-            "styles": [
-                "asesino"
-            ],
             "reload": {
                 "actions": 1,
                 "shots": 1
-            }
+            },
+            "styles": [
+                "asesino"
+            ]
         },
         "sable": {
             "ep": 1,

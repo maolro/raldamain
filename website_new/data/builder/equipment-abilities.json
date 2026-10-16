@@ -106,11 +106,13 @@
     },
     "garra": {
         "cost": "1 Acción",
-        "description": "+MOD para atacar, Adyacente, 1DD + STAT daño Cortante.",
         "name": "Garra",
         "skill": "estilo-salvaje",
         "tags": "Físico, Ataque, Marcial, Salvaje",
-        "type": "Accion"
+        "type": "Accion",
+        "range": "Adyacente",
+        "damage": "1d6",
+        "damage_type": "Cortante"
     },
     "garrote": {
         "cost": "1 Acción",
