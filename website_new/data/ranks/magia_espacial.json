@@ -70,11 +70,10 @@
             "Arcano",
             "Duradero"
           ],
-          "cost": "2 acciones, 1 chi",
+          "cost": "1 Acción/Reacción, 1 Chi",
           "range": "Cercano",
-          "duration": "Concentración",
-          "desc": "Creas un portal de tamaño humano que conecta con un punto lejano visible. Forzar a una criatura a cruzarlo requiere un empujón exitoso o que el objetivo falle un tiro de salvación de Salud.",
-          "empower": "Puedes crear el portal como reacción (1 Reacción) para esquivar un ataque o forzar a un enemigo a cruzar."
+          "duration": "Una Ronda",
+          "desc": "Creas un portal de tamaño humano que conecta con un punto lejano que puedas ver. Forzar a una criatura a cruzarlo requiere un empujón exitoso o que el objetivo falle un tiro de salvación Físico."
         },
         {
           "name": "Ancla Dimensional",
