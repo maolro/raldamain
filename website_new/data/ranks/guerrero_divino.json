@@ -120,7 +120,7 @@
     {
       "rank": "III",
       "title": "Rango III",
-      "draft": true,
+      "draft": false,
       "passive": "Aprendes dos hechizos de Rango II de tu dios (puedes usar chi).",
       "abilities": [
         {
