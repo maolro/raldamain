@@ -115,7 +115,7 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Abrazar la Locura",
@@ -123,7 +123,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Mientras estés en Furia Abisal, puedes reducir tu Cordura en 2 para recuperar 1 punto de chi. Puedes hacerlo un máximo de 3 veces por ronda."
+          "desc": "Mientras te encuentres en Furia Abisal, puedes reducir tu Cordura máxima en 1 para recuperar 3 chi. Esta habilidad no puede usarse más de una vez por ronda, y la reducción se recuperará al cabo de un día."
         },
         {
           "name": "Invocación Abisal",
@@ -133,8 +133,8 @@
           ],
           "cost": "3 acciones, 2 chi",
           "duration": "1 Hora",
-          "desc": "Invocas una criatura abisal con un Nivel máximo igual a Rango x 2. Puedes tener hasta 4 criaturas invocadas simultáneamente.",
-          "empower": "La criatura invocada recupera el 50% de su Vitalidad."
+          "desc": "Invocas una criatura abisal con un Nivel máximo igual a 5. Este nivel aumentará en 3 cada vez que obtengas un Rango adicional.",
+          "empower": "Invoca una criatura adicional"
         }
       ]
     },
