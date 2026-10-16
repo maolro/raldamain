@@ -44,7 +44,8 @@
             "Divina",
             "Pasiva"
           ],
-          "desc": "Detectas la posición de no-muertos, criaturas extraplanarias y presencias mágicas o divinas a distancia media. Identificas su fuerza aproximada y tipo."
+          "desc": "Detectas la posición de no-muertos, criaturas extraplanarias y presencias mágicas o divinas a distancia media. Identificas su fuerza aproximada y tipo.",
+          "show_mod": true
         },
         {
           "name": "Canalizar Divinidad",
@@ -60,6 +61,22 @@
               "sources": [
                 "patron"
               ]
+            },
+            {
+              "count": 2,
+              "spell_rank": 2,
+              "sources": [
+                "patron"
+              ],
+              "from_rank": 3
+            },
+            {
+              "count": 2,
+              "spell_rank": 3,
+              "sources": [
+                "patron"
+              ],
+              "from_rank": 5
             }
           ]
         }
@@ -121,7 +138,7 @@
       "rank": "III",
       "title": "Rango III",
       "draft": false,
-      "passive": "Aprendes dos hechizos de Rango II de tu dios (puedes usar chi).",
+      "passive": "Aprendes dos hechizos de Rango II vinculados con tu dios.",
       "abilities": [
         {
           "name": "Presencia Divina",
