@@ -42,6 +42,9 @@
               "DES",
               "CON",
               "SAB"
+            ],
+            "dice_up": [
+              "Natural"
             ]
           }
         },
