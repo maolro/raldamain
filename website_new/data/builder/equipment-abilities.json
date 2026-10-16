@@ -233,7 +233,7 @@
         "cost": "1 Acción",
         "name": "Mordisco",
         "skill": "estilo-salvaje",
-        "tags": "Físico, Ataque, Marcial",
+        "tags": "Físico, Ataque, Marcial, Natural",
         "type": "Accion",
         "range": "Adyacente",
         "damage": "1d6",
