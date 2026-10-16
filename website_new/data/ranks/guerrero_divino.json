@@ -132,11 +132,12 @@
             "Miedo",
             "Visual"
           ],
-          "cost": "2 acciones, 2 chi",
+          "cost": "1 Acción, 2 chi",
           "area": "Radio medio",
           "duration": "Concentración",
-          "desc": "Irradias una presencia sobrecogedora. Los enemigos a distancia media deben superar un tiro de Voluntad o Intimidar o sufren Miedo. Los aliados en el área obtienen Resistencia a efectos de Miedo y Mentales.",
-          "empower": "Un aliado recupera Vitalidad igual a Rango + 2 o cancelas un efecto de Moral enemiga sobre él."
+          "desc": "Irradias una presencia sobrecogedora. Tus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por 1, y tus enemigos deben tener éxito en un tiro de salvación de Voluntad o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor.",
+          "show_mod": true,
+          "empower": "Vuelve a lanzar esta habilidad la ronda siguiente sin la necesidad de gastar chi o acciones. No obstante, deberás mantener la concentración hasta entonces."
         },
         {
           "name": "Aura Protectora",
@@ -148,7 +149,14 @@
             "Arcano",
             "Divino"
           ],
-          "desc": "Obtienes Resistencia a efectos Arcanos y Divinos. Puedes gastar chi (igual al coste del hechizo del lanzador) para convertir un fallo en un tiro de salvación contra un hechizo en éxito."
+          "desc": "Aumenta tu umbral contra daño Mágico por RANGO + 1.",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Mágico"
+            }
+          ],
+          "empower": "Suma +10 a un tiro de salvación contra un hechizo de cualquier tipo."
         }
       ]
     },
