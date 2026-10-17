@@ -25,7 +25,7 @@
             "Innata",
             "Duradera"
           ],
-          "cost": "1 Chi",
+          "cost": "1 Acción, 1 Chi",
           "desc": "Recibes Ventaja en todos tus tiros de Ataque, Defensa, Habilidad y un dado de daño adicional contra un enemigo específico. Este efecto dura hasta que el enemigo sea derrotado o termine el combate.",
           "duration": "Max 6 Rondas",
           "toggle": {
