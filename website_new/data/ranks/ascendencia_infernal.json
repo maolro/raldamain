@@ -109,8 +109,8 @@
           ],
           "cost": "3 acciones, 2 chi",
           "duration": "Una hora",
-          "desc": "Invocas una criatura infernal con un Nivel máximo igual a Rango x 2. Puedes tener hasta 4 invocaciones simultáneas.",
-          "empower": "La criatura invocada recupera la mitad de su Vitalidad."
+          "desc": "Invocas una criatura abisal con un Nivel máximo igual a 5. Este nivel aumentará en 3 cada vez que obtengas un Rango adicional, y no puedes tener más de 4 criaturas invocadas a la vez.",
+          "empower": "Invoca una criatura adicional."
         }
       ]
     },
