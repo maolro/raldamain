@@ -68,7 +68,7 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Frenesí de Batalla",
