@@ -61,24 +61,32 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
-          "name": "Duro de Pelar",
+          "name": "Difícil de Matar",
           "tags": [
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia a daño Sónico, Aturdido y Maniobras. Inmune a efectos críticos de Aturdido y Ralentizado."
+          "desc": "Obtienes Ventaja en tiros de salvación de Voluntad y puedes seguir actuando una vez caigas a 0 impactos, solo muriendo o cayendo inconsciente cuando acabe la ronda.",
+          "saves": [
+            "Voluntad"
+          ]
         },
         {
-          "name": "Resiliencia",
+          "name": "Constitución Férrea",
           "tags": [
             "Innata",
-            "Defensiva"
+            "Pasiva"
           ],
-          "cost": "1 Reacción, 1 chi",
-          "desc": "Reduces el daño de un ataque a la mitad después de aplicar DEF y Resistencias."
+          "desc": "Obtienes aumenta tu umbral al daño Necrótico y Veneno por RANGO + 2, y todo veneno, herida o enfermedad que recibas tardará una ronda adicional en hacer efecto.",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Necrótico, Veneno"
+            }
+          ]
         }
       ]
     },
