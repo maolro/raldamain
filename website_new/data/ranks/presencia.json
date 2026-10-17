@@ -46,8 +46,30 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
-      "abilities": []
+      "draft": false,
+      "abilities": [
+        {
+          "name": "Revigorar",
+          "tags": [
+            "Presencia",
+            "Mental"
+          ],
+          "desc": "Un aliado a distancia media recibe un impacto temporal y se recupera del efecto Miedo, Confusión o Desconcertado.",
+          "empower": "Afecta a un objetivo adicional.",
+          "cost": "1 Acción, 1 Chi"
+        },
+        {
+          "name": "Provocación",
+          "tags": [
+            "Presencia",
+            "Mental"
+          ],
+          "cost": "1 Acción, 1 Chi",
+          "area": "Radio Medio",
+          "desc": "Todos los afectados deben tener éxito en un tiro de salvación Mental o deberán emplear su siguiente acción en atacarte y recibirán Desventaja en su siguiente tiro defensivo.",
+          "empower": "Vuelve a emplear esta habilidad sin la necesidad de emplear acciones después de recibir el primer ataque."
+        }
+      ]
     },
     {
       "rank": "III",

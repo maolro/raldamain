@@ -78,7 +78,7 @@
     "image": "presencia.jpg",
     "description": "Inspira y lidera a tus aliados para que superen sus límites.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "ascendencia_abisal",
