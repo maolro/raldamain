@@ -98,8 +98,8 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Manifiestas alas de murciélago. Obtienes Vuelo 2 y Ventaja en tiros de Esquiva. Como acción bonus, puedes hacer aparecer o desaparecer las alas. Si pierdes la concentración, las alas se desvanecen durante 1 ronda.",
-          "empower": "N/A"
+          "desc": "Manifiestas alas demoníacas al activar Fuerza del Diablo, las cuales te otorgan Vuelo 2 y Ventaja en tiros de Esquiva. Como acción bonus, puedes hacer aparecer o desaparecer las alas. Si pierdes la concentración, las alas se desvanecen durante 1 ronda.",
+          "condition": "Fuerza Demoníaca"
         },
         {
           "name": "Siervos del Contrato",
