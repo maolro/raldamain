@@ -134,7 +134,7 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Concentración Superior",
@@ -143,16 +143,16 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "No pierdes la concentración al recibir daño o efectos negativos, salvo por Herido-3 o superior, o incapacitación."
+          "desc": "Mientras te encuentres en Mente Desencadenada eres inmune a los efectos Desconcertado y Confundido, además que no perderás la concentración en efectos salvo que sufras los efectos de nivel 3 o superior."
         },
         {
-          "name": "Poder de la Locura",
+          "name": "Expoliar la Mente",
           "tags": [
             "Mente desencadenada",
             "Innata",
             "Pasiva"
           ],
-          "desc": "Mientras dure el estado Mente Desencadenada, puedes reducir tu Cordura en 2 para recuperar 1 punto de Chi. Usos por ronda: 3."
+          "desc": "Puedes reducir tu cordura máxima por 1 para recuperar 3 chi de tu reserva. Esta habilidad solo puede usarse una vez por ronda."
         }
       ]
     },
