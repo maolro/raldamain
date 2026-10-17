@@ -57,16 +57,17 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Acechar",
           "tags": [
             "Innata",
-            "Duradera"
+            "Duradera",
+            "Visual"
           ],
-          "cost": "1 chi",
-          "desc": "Te vuelves invisible mientras no seas detectado. El efecto termina al atacar o salir de tu escondite."
+          "cost": "1 Acción/Reacción, 1 Chi",
+          "desc": "Te ocultas de tal manera que cuentas como si fueras *invisible*. Necesitas tener ocultamiento o cubierta para activar esta habilidad."
         },
         {
           "name": "Maestro del Terreno",
@@ -74,7 +75,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Eliges un entorno predilecto (Bosque, Ciudad, Subterráneo, etc.). Obtienes Ventaja en tiros de Sigilo y Percepción en ese entorno, además de beneficios pasivos (ejemplos: vista ciega en subterráneo, inmunidad climática, etc.)."
+          "desc": "Eliges un entorno predilecto (Bosque, Ciudad, Subterráneo, etc.). Tienes Ventaja en tus tiros de Percepción y Sigilo en un terreno específico además de Inmunidad al terreno difícil de ese mismo."
         }
       ]
     },
