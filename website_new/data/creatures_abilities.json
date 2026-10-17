@@ -21,11 +21,10 @@
   },
   {
     "name": "Aliento de Fuego",
-    "bonus": "+7 + 2d6",
-    "area": "Cono 8",
-    "damage": "HIGH Fuego",
+    "area": "Cono Medio",
+    "damage": "2d6+4 Fuego",
     "move": "5",
-    "cost": 1,
+    "cost": "2",
     "desc": "Quemará los objetos inflamables en el área afectada. Al herir provocará una quemadura a los objetivos que lleven objetos metálicos o inflamables.",
     "range": "1",
     "id": "aliento-de-fuego_1778692098257",
@@ -36,7 +35,9 @@
       "Area"
     ],
     "damage_tier": "HIGH",
-    "damage_base_type": "Fuego"
+    "damage_base_type": "Fuego",
+    "tier": "I",
+    "bonus_scaled": true
   },
   {
     "name": "Evasión",
@@ -46,8 +47,10 @@
     "id": "evasion_1778692238910",
     "type": "reaction",
     "tags": [
-      "Reflejos"
-    ]
+      "Reflejos",
+      "Defensiva"
+    ],
+    "tier": "II"
   },
   {
     "name": "Muro de Fuego",
@@ -369,22 +372,6 @@
     "type": "passive"
   },
   {
-    "name": "Mordisco",
-    "desc": "El afectado debe tener éxito en un tiro salvación FÍS +7+1d6 o queda enredado y tropezado. ",
-    "bonus": "+7+2d6",
-    "damage": "4d6 + 5 Perforante/Radiante",
-    "move": "HALF",
-    "range": "1",
-    "cost": 1,
-    "tags": [
-      "Ataque",
-      "Fisico"
-    ],
-    "id": "mordisco_1778751352442",
-    "type": "action",
-    "damage_tier": "HIGH"
-  },
-  {
     "name": "Aliento Radiante",
     "desc": "",
     "bonus": "+7+2d6",
@@ -477,13 +464,14 @@
     "type": "reaction"
   },
   {
-    "desc": "Un aliado adyacente repite un tiro y se queda con el resultado que más le convenga.",
+    "desc": "Un objetivo a distancia media repite un tiro y se queda con el resultado que más te convenga. Puede ser anulada con otras habilidades de repetición.",
     "name": "Milagro Menor",
     "tags": [
       "Divina"
     ],
     "id": "milagro-menor_1778753435883",
-    "type": "reaction"
+    "type": "reaction",
+    "tier": "I"
   },
   {
     "name": "Halo Cegador",
@@ -546,68 +534,6 @@
     "move": "",
     "attacks": 1,
     "desc": "Todos los objetivos impactados quedan enredados (tiro salvación Físico para escapar). Cada vez que un objetivo fracase su tiro para escapar, sufrirá LOW daño Contundente/Perforante. El área afectada se convierte en terreno difícil. "
-  },
-  {
-    "id": "ab_1778929845703",
-    "name": "Devorar",
-    "type": "action",
-    "tags": [
-      "Fisico",
-      "Agarre"
-    ],
-    "cost": "1",
-    "bonus": "",
-    "range": "1",
-    "area": "",
-    "damage": "",
-    "damage_tier": "HIGH",
-    "damage_base_type": "Perforante",
-    "save": "",
-    "move": "",
-    "attacks": 1,
-    "desc": "El objetivo queda agarrado y engullido en su interior. Cada ronda que pase devorado sufrirá MID daño ácido. Puede escapar si logra provocar un impacto desde dentro o escapa de otra manera (a través de dos tiros de salvación Físicos). Esta habilidad solo funcionará contra enemigos cuyo tamaño sea dos veces inferior."
-  },
-  {
-    "id": "ab_1778930132296",
-    "name": "Chupasangre",
-    "type": "action",
-    "tags": [
-      "Sangre",
-      "Sanacion",
-      "Necrotico",
-      "Fisico"
-    ],
-    "cost": "1",
-    "bonus": "",
-    "range": "1",
-    "area": "",
-    "damage": "",
-    "damage_tier": "HIGH",
-    "damage_base_type": "Perforante/Necrótico",
-    "save": "",
-    "move": "",
-    "attacks": 1,
-    "desc": "El daño de este ataque no podrá ser sanado. Si esta criatura provoca un impacto / (X o más daño), se sanará un impacto o se recupera de un efecto de estado negativo."
-  },
-  {
-    "id": "ab_1778930247678",
-    "name": "Garras",
-    "type": "action",
-    "tags": [
-      "Fisico",
-      "Ataque"
-    ],
-    "cost": "1",
-    "bonus": "",
-    "range": "1",
-    "area": "",
-    "damage": "",
-    "damage_tier": "MID",
-    "damage_base_type": "Cortante",
-    "save": "",
-    "move": "",
-    "attacks": 2,
-    "desc": "Si impacta con ambos ataques, el objetivo sufre sangrado."
   },
   {
     "id": "ab_1778930291704",
@@ -712,27 +638,6 @@
     "desc": "Los afectados quedan embobados y bajo los efectos de Sugestión durante una ronda, obligados así a seguir una orden específica. Pueden repetir el tiro al principio de su siguiente turno para liberarse. "
   },
   {
-    "id": "ab_1778944470164",
-    "name": "Espinas de Madera",
-    "type": "action",
-    "tags": [
-      "Naturaleza",
-      "Ataque",
-      "Fisico"
-    ],
-    "cost": "1",
-    "bonus": "",
-    "range": "8",
-    "area": "",
-    "damage": "",
-    "damage_tier": "MID",
-    "damage_base_type": "Perforante",
-    "save": "",
-    "move": "",
-    "attacks": 2,
-    "desc": "El daño de este ataque cuenta como Fuerza contra objetivos enredados por efectos de naturaleza. "
-  },
-  {
     "id": "ab_1778944605648",
     "name": "Enmarañar",
     "type": "action",
@@ -821,19 +726,6 @@
     "type": "action"
   },
   {
-    "name": "Partir Montañas",
-    "damage": "7d10 + 9 Cortante",
-    "area": "Cono grande",
-    "desc": "Destruye todas las estructuras, muros y escudos que tengan los objetivos",
-    "cost": 2,
-    "tags": [
-      "Ataque",
-      "Fisico"
-    ],
-    "id": "partir-montanas_1788189181312",
-    "type": "action"
-  },
-  {
     "tags": [
       "Miedo",
       "Mental"
@@ -851,22 +743,6 @@
     "damage_base_type": "Psíquico"
   },
   {
-    "name": "Carga Arrolladora",
-    "move": 10,
-    "area": "Cada enemigo en su camino",
-    "damage": "6d10 + 9 Contundente",
-    "cost": 1,
-    "tags": [
-      "Ataque",
-      "Fisico"
-    ],
-    "desc": "Los afectados tiran VOL +15+3d6 o quedan Aturdidos. Destruye cada estructura en su camino",
-    "id": "carga-arrolladora_1788189184656",
-    "type": "action",
-    "damage_tier": "HIGH",
-    "damage_base_type": "Contundente"
-  },
-  {
     "name": "Golpe por Golpe",
     "desc": "Falla automáticamente un tiro defensivo para golpear al atacante sin que pueda defenderse. El atacante puede escoger fallar para no recibir el impacto.",
     "id": "golpe-por-golpe_1788189327012",
@@ -878,5 +754,303 @@
     "cost": 1,
     "id": "indomito_1788251108371",
     "type": "reaction"
+  },
+  {
+    "name": "Proteger Aliado",
+    "desc": "Se mueve hasta un paso para interceptar un ataque hecho contra un aliado, pudiendo así emplear su tiro defensivo en lugar del suyo y recibir el daño del ataque si falla.",
+    "tags": [
+      "Marcial",
+      "Coloso"
+    ],
+    "cost": 1,
+    "id": "proteger-aliado_1791462080348",
+    "type": "reaction",
+    "tier": "I"
+  },
+  {
+    "name": "Segundo Aliento",
+    "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba o reduce un efecto de estado por un paso.",
+    "cost": 1,
+    "tags": [
+      "Fortitud",
+      "Defensiva"
+    ],
+    "id": "segundo-aliento_1791462133271",
+    "type": "reaction",
+    "tier": "I"
+  },
+  {
+    "name": "Golpe de Fortuna",
+    "cost": 1,
+    "desc": "Repite un tiro de Salvación o anula un efecto de Repetir sobre él.",
+    "id": "golpe-de-fortuna_1791476584028",
+    "type": "reaction"
+  },
+  {
+    "id": "ab_1791812854218",
+    "name": "Ataque Poderoso",
+    "type": "action",
+    "tags": [
+      "Mejora",
+      "Maniobra",
+      "Marcial",
+      "Coloso"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "",
+    "area": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro de salvación de Voluntad contra +MOD o es empujado un paso y recibe Desventaja en su siguiente tiro defensivo.",
+    "tier": "I"
+  },
+  {
+    "id": "ab_1791813129637",
+    "name": "Gran Barrido",
+    "type": "action",
+    "tags": [
+      "Mejora",
+      "Maniobra",
+      "Marcial",
+      "Coloso"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Aumenta el daño de un ataque por un dado y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro de salvación Físico o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo.",
+    "tier": "II"
+  },
+  {
+    "id": "ab_1791813243344",
+    "name": "Lanzamiento",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Mejora",
+      "Marcial",
+      "Coloso"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Aumenta el alcance del ataque a Distancia Media y el daño por un dado. Si impacta a un objetivo volador, deberá tener éxito en un tiro de salvación de Voluntad o cae al suelo."
+  },
+  {
+    "id": "ab_1791817340811",
+    "name": "Secuencia de Ataques",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Mejora",
+      "Marcial",
+      "Duelo"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 0,
+    "desc": "Hace tres ataques de cualquier tipo con coste de una Acción."
+  },
+  {
+    "id": "ab_1791817464324",
+    "name": "Truco de Combate",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Marcial",
+      "Maniobra",
+      "Duelo"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Un objetivo que alcance con su arma tener éxito en un tiro de salvación Físico, Voluntad o Mental contra +MOD, o recibe Desventaja en su siguiente tiro defensivo. "
+  },
+  {
+    "id": "ab_1791817547641",
+    "name": "Ataque Furtivo",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Marcial",
+      "Mejora",
+      "Asesino"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 0,
+    "desc": "Su siguiente ataque recibe un modificador +2, aumenta su daño base por un dado y provoca Herido I al impactar."
+  },
+  {
+    "id": "ab_1791818049839",
+    "name": "Garra",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Ataque",
+      "Fisico",
+      "Arma"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "2d6 + 4",
+    "damage_tier": "MID",
+    "damage_base_type": "Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
+  },
+  {
+    "id": "ab_1791818112393",
+    "name": "Golpe",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Ataque",
+      "Fisico",
+      "Arma"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "2d6 + 4",
+    "damage_tier": "MID",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
+  },
+  {
+    "id": "ab_1791818158790",
+    "name": "Aguijón",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Ataque",
+      "Fisico",
+      "Arma"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Adyacente",
+    "area": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "",
+    "damage": "2d6+4"
+  },
+  {
+    "id": "ab_1791818387137",
+    "name": "Instinto de Supervivencia",
+    "type": "reaction",
+    "tier": "I",
+    "tags": [
+      "Reflejos",
+      "Defensiva"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Repite un tiro de Ataque, Defensa o Salvación que involucre la Destreza y se queda con el resultado que más le convenga."
+  },
+  {
+    "id": "ab_1791818470527",
+    "name": "Llamarada",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Fuego",
+      "Ataque"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "1d6 + 4 Fuego",
+    "damage_tier": "MID",
+    "damage_base_type": "Fuego",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
+  },
+  {
+    "name": "Agarre",
+    "desc": "El objetivo queda Enredado (+MOD FÍS para escapar).",
+    "tags": [
+      "Marcial",
+      "Ataque",
+      "Fisico",
+      "Agarre"
+    ],
+    "cost": 1,
+    "range": "Adyacente",
+    "id": "agarre_1791818660372",
+    "type": "action",
+    "bonus_scaled": true,
+    "tier": "I"
   }
 ]

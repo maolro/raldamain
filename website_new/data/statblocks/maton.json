@@ -1,5 +1,5 @@
 {
-  "name": "Matón",
+  "name": "Tanque (niv 2)",
   "level": 2,
   "race": {},
   "stats": {
@@ -181,11 +181,21 @@
       ]
     },
     "mainHand": {
-      "eqab": "garrote",
-      "name": "Garrote",
-      "style": "duelist"
+      "eqab": "hacha-de-batalla",
+      "name": "Hacha de Batalla",
+      "styles": [
+        "coloso",
+        "duelo"
+      ]
     },
-    "secondHand": {},
+    "secondHand": {
+      "eqab": "escudo,parada-con-escudo",
+      "name": "Escudo",
+      "styles": [
+        "coloso",
+        "duelo"
+      ]
+    },
     "head": {},
     "bag": []
   },

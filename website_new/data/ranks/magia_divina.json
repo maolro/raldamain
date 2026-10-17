@@ -78,7 +78,19 @@
           "cost": "2 Acciones, 1 Chi",
           "area": "Radio grande",
           "desc": "El campo de batalla queda consagrado a tu divinidad, otorgando a todos sus adoradores Ventaja en sus tiros de ataque, defensa y magias relacionadas con tu dios. La consagración permanece activa hasta que acabe el combate o sea eliminada, y puede hacerse permanente mediante un ritual.",
-          "duration": "6 Rondas"
+          "duration": "6 Rondas",
+          "toggle": {
+            "label": "Tierra Consagrada",
+            "adv": [
+              "Ataque",
+              "Defensa"
+            ],
+            "saves": [
+              "Físico",
+              "Voluntad",
+              "Mental"
+            ]
+          }
         },
         {
           "name": "Canalizar Divinidad",

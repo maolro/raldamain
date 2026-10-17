@@ -1,0 +1,282 @@
+{
+  "name": "Acechador Abisal (niv 5)",
+  "level": 5,
+  "race": {},
+  "stats": {
+    "str": {
+      "name": "FUE",
+      "value": 5
+    },
+    "dex": {
+      "name": "DES",
+      "value": 2
+    },
+    "con": {
+      "name": "CON",
+      "value": 3
+    },
+    "itl": {
+      "name": "INT",
+      "value": 1
+    },
+    "wis": {
+      "name": "SAB",
+      "value": 1
+    },
+    "cha": {
+      "name": "CAR",
+      "value": 3
+    }
+  },
+  "talents": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "stat": "dex",
+      "level": 0
+    },
+    "performance": {
+      "name": "Actuación",
+      "stat": "cha",
+      "level": 0
+    },
+    "arcana": {
+      "name": "Arcanismo",
+      "stat": "itl",
+      "level": 0
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "stat": "str",
+      "level": 0
+    },
+    "insight": {
+      "name": "Averiguar Intenciones",
+      "stat": "wis",
+      "level": 0
+    },
+    "focus": {
+      "name": "Concentración",
+      "stat": "itl",
+      "level": 0
+    },
+    "wreck": {
+      "name": "Destrozar",
+      "stat": "str",
+      "level": 0
+    },
+    "deception": {
+      "name": "Engaño",
+      "stat": "cha",
+      "level": 0
+    },
+    "heroics": {
+      "name": "Heroísmo",
+      "stat": "str",
+      "level": 0
+    },
+    "intimidate": {
+      "name": "Intimidar",
+      "stat": "str/cha",
+      "level": 0
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "stat": "dex",
+      "level": 0
+    },
+    "perception": {
+      "name": "Percepción",
+      "stat": "wis",
+      "level": 0
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "stat": "cha",
+      "level": 0
+    },
+    "first-aid": {
+      "name": "Primeros Auxilios",
+      "stat": "wis",
+      "level": 0
+    },
+    "health": {
+      "name": "Salud",
+      "stat": "con",
+      "level": 0
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "stat": "dex",
+      "level": 0
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "stat": "wis",
+      "level": 0
+    },
+    "tinker": {
+      "name": "Trastear",
+      "stat": "itl",
+      "level": 0
+    },
+    "willpower": {
+      "name": "Voluntad",
+      "stat": "cha",
+      "level": 0
+    }
+  },
+  "ranks": [
+    {
+      "id": "ira",
+      "name": "Ira",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Combate",
+      "stat": "str",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "ira--1--ira-de-combate,ira--1--demostracion-terrorifica,ira--2--frenesi-de-batalla,ira--2--resistencia-salvaje,ira--3--ira-temeraria,ira--3--hasta-el-limite,ira--4--golpe-de-adrenalina,ira--4--furia-imparable,ira--5--superar-los-limites,ira--5--furia-invulnerable"
+    },
+    {
+      "id": "estilo_duelista",
+      "name": "Estilo Duelista",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Marcial",
+      "stat": "str/dex",
+      "reserve": "chi",
+      "rank": 2,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "estilo_duelista--1--defensa-habil,estilo_duelista--1--secuencia-de-ataques,estilo_duelista--1--truco-de-combate,estilo_duelista--2--atrapar-arma,estilo_duelista--2--ataque-torbellino,estilo_duelista--2--persecucion,estilo_duelista--3--carga-del-espadachin,estilo_duelista--3--contrataque,estilo_duelista--3--espadas-trabadas,estilo_duelista--4--maestria-de-arma,estilo_duelista--4--cortar-el-acero,estilo_duelista--4--impacto-aereo,estilo_duelista--5--muerte-por-mil-cortes,estilo_duelista--5--partir-montanas,estilo_duelista--5--proyeccion-de-chi"
+    },
+    {
+      "id": "ascendencia_abisal",
+      "name": "Ascendencia Abisal",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Ascendencias",
+      "stat": "cha/con",
+      "reserve": "chi",
+      "rank": 2,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "ascendencia_abisal--1--tocado-por-la-locura,ascendencia_abisal--1--furia-abisal,ascendencia_abisal--2--mutacion,ascendencia_abisal--2--poder-antinatural,ascendencia_abisal--3--abrazar-la-locura,ascendencia_abisal--3--invocacion-abisal,ascendencia_abisal--4--rasgo-monstruoso-superior,ascendencia_abisal--4--paso-abisal,ascendencia_abisal--5--aura-del-caos,ascendencia_abisal--5--corrupcion-absoluta,ascendencia_abisal--6--transformacion-abisal",
+      "stats": [
+        {
+          "stat": "cha",
+          "rank": 2,
+          "boost": 1
+        },
+        {
+          "stat": "con",
+          "rank": 4,
+          "boost": 1
+        },
+        {
+          "stat": "dex",
+          "rank": 6,
+          "boost": 1
+        }
+      ]
+    },
+    {
+      "id": "fortitud",
+      "name": "Fortitud",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Combate",
+      "stat": "con",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "fortitud--1--armadura-natural,fortitud--1--segundo-aliento,fortitud--2--duro-de-pelar,fortitud--2--resiliencia,fortitud--3--hasta-la-muerte,fortitud--3--constitucion-ferrea,fortitud--4--muro-viviente,fortitud--4--aguantar-los-elementos,fortitud--5--sanacion-rapida,fortitud--5--una-ultima-resistencia"
+    }
+  ],
+  "spells": {
+    "patron": {
+      "name": "",
+      "domains": [
+        "magia_mental",
+        "magia_sombria",
+        "nigromancia",
+        "magia_espacial",
+        "magia_transmutacion"
+      ],
+      "damage_type": ""
+    },
+    "picks": {
+      "ascendencia_abisal--2--poder-antinatural#0": [
+        "magia_mental--1--asalto-mental",
+        "magia_sombria--1--crear-oscuridad"
+      ]
+    }
+  },
+  "equipment": {
+    "armor": {
+      "eqab": "",
+      "name": "Pesada",
+      "penalty": -4,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 6
+        }
+      ]
+    },
+    "mainHand": {
+      "eqab": "hacha-de-batalla",
+      "name": "Hacha de Batalla",
+      "styles": [
+        "coloso",
+        "duelo"
+      ]
+    },
+    "secondHand": {
+      "eqab": "garra",
+      "name": "Garra",
+      "styles": [
+        "coloso",
+        "duelo",
+        "asesino"
+      ]
+    },
+    "head": {
+      "eqab": "mordisco",
+      "name": "Mordisco"
+    },
+    "bag": []
+  },
+  "archetypes": []
+}

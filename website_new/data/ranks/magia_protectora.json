@@ -9,6 +9,11 @@
     "Chi"
   ],
   "description": "Te especializas en la defensa mágica, desviando o cerrando los conductos de chi para impedir el uso de magia hostil. Creas campos de fuerza, disipas hechizos, anulas objetos mágicos y proteges contra criaturas extraplanarias.",
+  "parry": {
+    "name": "Parada mágica",
+    "tag": "Protectora",
+    "against": "habilidades Arcanas"
+  },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
     "<strong>Estadística principal:</strong> Inteligencia + Rango.",
@@ -22,7 +27,7 @@
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Armadura del Mago",
@@ -31,10 +36,23 @@
             "Arcana",
             "Duradera"
           ],
-          "cost": "2 acciones",
-          "duration": "Concentración",
-          "desc": "Creas un campo de fuerza personal que otorga DEF base igual a Rango + 2 y Resistencia a efectos Arcanos. No se acumula con armaduras.",
-          "empower": "Otorgas los beneficios a un aliado al tacto."
+          "cost": "1 Acción, 1 Chi",
+          "desc": "Aumenta los umbrales Físico y Mágico del objetivo por un valor igual a tu Rango x 2 durante el resto del combate. Este hechizo no es acumulable.",
+          "duration": "6 Rondas",
+          "toggle": {
+            "label": "Armadura del Mago",
+            "umbrales": [
+              {
+                "value": "RANGOx2",
+                "categories": "Físico"
+              },
+              {
+                "value": "RANGOx2",
+                "categories": "Mágico"
+              }
+            ]
+          },
+          "range": "Adyacente"
         },
         {
           "name": "Contrahechizo",
@@ -43,8 +61,10 @@
             "Arcana",
             "Reacción"
           ],
-          "desc": "Como reacción (1 Reacción), intentas cancelar un hechizo arcano enemigo de Rango igual o inferior al tuyo +1 mediante un tiro enfrentado. No funciona contra hechizos míticos.",
-          "empower": "Éxito automático contra hechizos que cuesten X chi o menos. El lanzador puede pagar chi adicional para evitar la cancelación."
+          "desc": "Tira para contrarrestar cualquier hechizo lanzado a distancia media de ti, teniendo así que superar el tiro de magia del objetivo para lograrlo. ",
+          "empower": "Suma +5 a tu tiro o emplea esta habilidad sin que te cueste reacciones. ",
+          "cost": "1 Reacción",
+          "range": "Distancia Media"
         },
         {
           "name": "Disrupción Mágica",
@@ -54,11 +74,11 @@
             "Toque"
           ],
           "cost": "1 acción",
-          "range": "Toque",
-          "crit": "Repones 1 chi.",
+          "range": "Distancia Media",
           "duration": "Instantáneo",
-          "desc": "Suprimes las propiedades de un objeto mágico durante el resto del combate (tiro contra la dificultad del objeto). No afecta a artefactos.",
-          "empower": "Aumenta el alcance a medio."
+          "desc": "Un objeto mágico o glifo objetivo queda deshabilitado durante una ronda. Para lograrlo debes tirar contra una dificultad determinada por el DJ según el nivel del objeto, y no funciona en artefactos.",
+          "empower": "Aumenta el área afectada a un radio pequeño, o medio si gastas 2 chi.",
+          "show_mod": true
         }
       ]
     },

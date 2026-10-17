@@ -1,0 +1,190 @@
+{
+  "name": "Druida (niv 2)",
+  "level": 2,
+  "race": {},
+  "stats": {
+    "str": {
+      "name": "FUE",
+      "value": 1
+    },
+    "dex": {
+      "name": "DES",
+      "value": 2
+    },
+    "con": {
+      "name": "CON",
+      "value": 3
+    },
+    "itl": {
+      "name": "INT",
+      "value": 1
+    },
+    "wis": {
+      "name": "SAB",
+      "value": 4
+    },
+    "cha": {
+      "name": "CAR",
+      "value": 1
+    }
+  },
+  "talents": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "stat": "dex",
+      "level": 0
+    },
+    "performance": {
+      "name": "Actuación",
+      "stat": "cha",
+      "level": 0
+    },
+    "arcana": {
+      "name": "Arcanismo",
+      "stat": "itl",
+      "level": 0
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "stat": "str",
+      "level": 0
+    },
+    "insight": {
+      "name": "Averiguar Intenciones",
+      "stat": "wis",
+      "level": 0
+    },
+    "focus": {
+      "name": "Concentración",
+      "stat": "itl",
+      "level": 0
+    },
+    "wreck": {
+      "name": "Destrozar",
+      "stat": "str",
+      "level": 0
+    },
+    "deception": {
+      "name": "Engaño",
+      "stat": "cha",
+      "level": 0
+    },
+    "heroics": {
+      "name": "Heroísmo",
+      "stat": "str",
+      "level": 0
+    },
+    "intimidate": {
+      "name": "Intimidar",
+      "stat": "str/cha",
+      "level": 0
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "stat": "dex",
+      "level": 0
+    },
+    "perception": {
+      "name": "Percepción",
+      "stat": "wis",
+      "level": 0
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "stat": "cha",
+      "level": 0
+    },
+    "first-aid": {
+      "name": "Primeros Auxilios",
+      "stat": "wis",
+      "level": 0
+    },
+    "health": {
+      "name": "Salud",
+      "stat": "con",
+      "level": 0
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "stat": "dex",
+      "level": 0
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "stat": "wis",
+      "level": 0
+    },
+    "tinker": {
+      "name": "Trastear",
+      "stat": "itl",
+      "level": 0
+    },
+    "willpower": {
+      "name": "Voluntad",
+      "stat": "cha",
+      "level": 0
+    }
+  },
+  "ranks": [
+    {
+      "id": "magia_naturaleza",
+      "name": "Magia de Naturaleza",
+      "category": "Elementalismo",
+      "stat": "wis",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 2,
+      "attributes": "magia_naturaleza--1--enmaranar,magia_naturaleza--1--espinas-de-madera,magia_naturaleza--1--pulso-vital,magia_naturaleza--2--muro-de-zarzas,magia_naturaleza--2--raices-devoradoras,magia_naturaleza--2--infusion-elemental",
+      "parry_tag": "esta magia"
+    },
+    {
+      "id": "magia_divina",
+      "name": "Magia Divina",
+      "category": "Religión",
+      "stat": "wis",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_divina--1--milagro-menor,magia_divina--1--enviado-de-los-dioses,magia_divina--1--oracion,magia_divina--2--manifestacion-divina,magia_divina--2--consagrar-la-tierra,magia_divina--2--canalizar-divinidad,magia_divina--3--adivinacion,magia_divina--3--proteccion-divina,magia_divina--4--castigo-divino,magia_divina--4--llamar-a-los-dioses,magia_divina--5--palabra-divina,magia_divina--5--exaltado,magia_divina--6--ira-de-dios"
+    },
+    {
+      "id": "ascendencia_primigenia",
+      "name": "Ascendencia Primigenia",
+      "category": "Ascendencias",
+      "stat": "wis/con",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "ascendencia_primigenia--1--forma-de-la-bestia,ascendencia_primigenia--1--aspecto-primigenio,ascendencia_primigenia--2--infusion-espiritual,ascendencia_primigenia--2--comunion-con-la-naturaleza,ascendencia_primigenia--3--transformacion-animal,ascendencia_primigenia--3--llamar-a-los-espiritus,ascendencia_primigenia--4--vinculo-primigenio,ascendencia_primigenia--4--sanacion-espiritual,ascendencia_primigenia--5--aura-primigenia,ascendencia_primigenia--5--paso-espiritual,ascendencia_primigenia--6--despertar-la-bestia"
+    }
+  ],
+  "spells": {
+    "patron": {
+      "name": "",
+      "domains": [],
+      "damage_type": ""
+    },
+    "picks": {}
+  },
+  "equipment": {
+    "armor": {
+      "eqab": "",
+      "name": "Ligera",
+      "penalty": 0,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 2
+        }
+      ]
+    },
+    "mainHand": {},
+    "secondHand": {},
+    "head": {},
+    "bag": []
+  },
+  "archetypes": []
+}

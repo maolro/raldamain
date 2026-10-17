@@ -1,0 +1,245 @@
+{
+  "name": "Mago (niv 5)",
+  "level": 5,
+  "race": {},
+  "stats": {
+    "str": {
+      "name": "FUE",
+      "value": 2
+    },
+    "dex": {
+      "name": "DES",
+      "value": 1
+    },
+    "con": {
+      "name": "CON",
+      "value": 3
+    },
+    "itl": {
+      "name": "INT",
+      "value": 5
+    },
+    "wis": {
+      "name": "SAB",
+      "value": 2
+    },
+    "cha": {
+      "name": "CAR",
+      "value": 2
+    }
+  },
+  "talents": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "stat": "dex",
+      "level": 0
+    },
+    "performance": {
+      "name": "Actuación",
+      "stat": "cha",
+      "level": 0
+    },
+    "arcana": {
+      "name": "Arcanismo",
+      "stat": "itl",
+      "level": 0
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "stat": "str",
+      "level": 0
+    },
+    "insight": {
+      "name": "Averiguar Intenciones",
+      "stat": "wis",
+      "level": 0
+    },
+    "focus": {
+      "name": "Concentración",
+      "stat": "itl",
+      "level": 0
+    },
+    "wreck": {
+      "name": "Destrozar",
+      "stat": "str",
+      "level": 0
+    },
+    "deception": {
+      "name": "Engaño",
+      "stat": "cha",
+      "level": 0
+    },
+    "heroics": {
+      "name": "Heroísmo",
+      "stat": "str",
+      "level": 0
+    },
+    "intimidate": {
+      "name": "Intimidar",
+      "stat": "str/cha",
+      "level": 0
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "stat": "dex",
+      "level": 0
+    },
+    "perception": {
+      "name": "Percepción",
+      "stat": "wis",
+      "level": 0
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "stat": "cha",
+      "level": 0
+    },
+    "first-aid": {
+      "name": "Primeros Auxilios",
+      "stat": "wis",
+      "level": 0
+    },
+    "health": {
+      "name": "Salud",
+      "stat": "con",
+      "level": 0
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "stat": "dex",
+      "level": 0
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "stat": "wis",
+      "level": 0
+    },
+    "tinker": {
+      "name": "Trastear",
+      "stat": "itl",
+      "level": 0
+    },
+    "willpower": {
+      "name": "Voluntad",
+      "stat": "cha",
+      "level": 0
+    }
+  },
+  "ranks": [
+    {
+      "id": "magia_evocacion",
+      "name": "Magia de Evocación",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Arcana",
+      "stat": "itl",
+      "reserve": "chi",
+      "rank": 2,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_evocacion--1--rayo-arcano,magia_evocacion--1--transformacion-elemental,magia_evocacion--1--descarga-de-energia,magia_evocacion--2--muro-de-energia,magia_evocacion--2--infundir-arma,magia_evocacion--2--metamagia,magia_evocacion--3--meteoros-de-chi,magia_evocacion--3--combinar-hechizos,magia_evocacion--4--rayo-desintegrador,magia_evocacion--4--irradiacion-de-chi,magia_evocacion--5--canon-de-chi,magia_evocacion--5--maestro-elemental,magia_evocacion--6--aniquilacion-magica",
+      "parry_tag": "Evocación",
+      "parry_name": "Parada mágica",
+      "parry_against": "Fuego, Frío, Radiante, Madera, Tierra o Agua"
+    },
+    {
+      "id": "magia_espacial",
+      "name": "Magia Espacial",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Arcana",
+      "stat": "itl",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_espacial--1--salto-espacial,magia_espacial--1--redirigir-ataque,magia_espacial--1--bolsillo-interdimensional,magia_espacial--2--puerta-dimensional,magia_espacial--2--ancla-dimensional,magia_espacial--2--distorsion-espacial,magia_espacial--3--brecha-espacial,magia_espacial--3--portal-multiple,magia_espacial--3--invocar-extraplanario,magia_espacial--4--agujero-de-gusano,magia_espacial--4--cambio-de-posicion,magia_espacial--4--cierre-dimensional,magia_espacial--5--crear-demiplano,magia_espacial--5--puerta-interdimensional,magia_espacial--5--desfase-espacial,magia_espacial--6--extension-de-dominio",
+      "parry_tag": "Espacial",
+      "parry_name": "Parada Espacial",
+      "parry_against": ""
+    },
+    {
+      "id": "magia_temporal",
+      "name": "Magia Temporal",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Arcana",
+      "stat": "itl",
+      "reserve": "chi",
+      "rank": 2,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_temporal--1--premonicion,magia_temporal--1--alteracion-temporal,magia_temporal--1--robar-el-tiempo,magia_temporal--2--acelerar,magia_temporal--2--ralentizar,magia_temporal--2--desplazamiento,magia_temporal--3--vision,magia_temporal--3--predecir-movimiento,magia_temporal--3--dobles-temporales,magia_temporal--4--revertir-el-tiempo,magia_temporal--4--estasis,magia_temporal--4--ataque-retardado,magia_temporal--5--parar-el-tiempo,magia_temporal--5--vision-futura,magia_temporal--5--brecha-temporal,magia_temporal--6--retroceso-en-masa"
+    },
+    {
+      "id": "magia_protectora",
+      "name": "Magia Protectora",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Arcana",
+      "stat": "itl",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_protectora--1--armadura-del-mago,magia_protectora--1--contrahechizo,magia_protectora--1--disrupcion-magica,magia_protectora--2--eliminar-magia,magia_protectora--2--circulo-de-sellado,magia_protectora--2--sello-protector,magia_protectora--3--retener-persona,magia_protectora--3--glifo-magico,magia_protectora--3--absorber-chi,magia_protectora--4--campo-antimagico,magia_protectora--4--exilio,magia_protectora--4--esfera-de-fuerza,magia_protectora--5--disyuncion,magia_protectora--5--ligacion-planar,magia_protectora--5--invertir-chi,magia_protectora--6--sello-extraplanario",
+      "parry_tag": "Protectora",
+      "parry_name": "Parada mágica",
+      "parry_against": "habilidades Arcanas"
+    }
+  ],
+  "spells": {
+    "patron": {
+      "name": "",
+      "domains": [],
+      "damage_type": ""
+    },
+    "picks": {}
+  },
+  "equipment": {
+    "armor": {
+      "eqab": "",
+      "name": "Media",
+      "penalty": -2,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 4
+        }
+      ]
+    },
+    "mainHand": {},
+    "secondHand": {},
+    "head": {},
+    "bag": []
+  },
+  "archetypes": []
+}

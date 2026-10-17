@@ -1,6 +1,6 @@
 {
-  "name": "Elementalista",
-  "level": 4,
+  "name": "Elementalista (niv 5)",
+  "level": 5,
   "race": {},
   "stats": {
     "str": {
@@ -9,7 +9,7 @@
     },
     "dex": {
       "name": "DES",
-      "value": 4
+      "value": 5
     },
     "con": {
       "name": "CON",
@@ -129,6 +129,15 @@
     {
       "id": "magia_fuego",
       "name": "Magia de Fuego",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
       "category": "Elementalismo",
       "stat": "cha",
       "reserve": "chi",
@@ -148,15 +157,26 @@
           "boost": 1
         }
       ],
-      "parry_tag": "Fuego"
+      "parry_tag": "Fuego",
+      "parry_name": "Parada mágica",
+      "parry_against": "Fuego, Frío, Radiante, Agua y Naturaleza"
     },
     {
       "id": "reflejos",
       "name": "Reflejos",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
       "category": "Combate",
       "stat": "dex",
       "reserve": "chi",
-      "rank": 1,
+      "rank": 2,
       "freeranks": 0,
       "max": 5,
       "attributes": "reflejos--1--velocidad-superior,reflejos--1--instinto-de-supervivencia,reflejos--2--giro-defensivo,reflejos--2--evasion,reflejos--3--giro-defensivo,reflejos--3--gran-acrobata,reflejos--4--sexto-sentido,reflejos--4--punto-ciego,reflejos--5--libertad-de-movimiento,reflejos--5--reflejos-supremos"
@@ -164,6 +184,15 @@
     {
       "id": "mente_desencadenada",
       "name": "Mente Desencadenada",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
       "category": "Combate",
       "stat": "itl",
       "reserve": "chi",
@@ -175,13 +204,22 @@
     {
       "id": "estilo_duelista",
       "name": "Estilo Duelista",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
       "category": "Marcial",
       "stat": "str/dex",
       "reserve": "chi",
       "rank": 1,
       "freeranks": 0,
       "max": 5,
-      "attributes": "estilo_duelista--1--defensa-habil,estilo_duelista--1--secuencia-de-ataques,estilo_duelista--1--truco-de-combate,estilo_duelista--2--atrapar-arma,estilo_duelista--2--ataque-torbellino,estilo_duelista--2--persecucion,estilo_duelista--2--secuencia-de-golpes,estilo_duelista--3--carga-del-espadachin,estilo_duelista--3--contrataque,estilo_duelista--3--espadas-trabadas,estilo_duelista--4--maestria-de-arma,estilo_duelista--4--cortar-el-acero,estilo_duelista--4--impacto-aereo,estilo_duelista--5--muerte-por-mil-cortes,estilo_duelista--5--partir-montanas,estilo_duelista--5--proyeccion-de-chi"
+      "attributes": "estilo_duelista--1--defensa-habil,estilo_duelista--1--secuencia-de-ataques,estilo_duelista--1--truco-de-combate,estilo_duelista--2--atrapar-arma,estilo_duelista--2--ataque-torbellino,estilo_duelista--2--persecucion,estilo_duelista--3--carga-del-espadachin,estilo_duelista--3--contrataque,estilo_duelista--3--espadas-trabadas,estilo_duelista--4--maestria-de-arma,estilo_duelista--4--cortar-el-acero,estilo_duelista--4--impacto-aereo,estilo_duelista--5--muerte-por-mil-cortes,estilo_duelista--5--partir-montanas,estilo_duelista--5--proyeccion-de-chi"
     }
   ],
   "spells": {

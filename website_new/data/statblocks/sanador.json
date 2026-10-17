@@ -1,6 +1,6 @@
 {
-  "name": "Sanador",
-  "level": 4,
+  "name": "Clérigo Celestial (niv 5)",
+  "level": 5,
   "race": {},
   "stats": {
     "str": {
@@ -25,7 +25,7 @@
     },
     "cha": {
       "name": "CAR",
-      "value": 4
+      "value": 5
     }
   },
   "talents": {
@@ -143,10 +143,10 @@
       "category": "Divina",
       "stat": "wis",
       "reserve": "chi",
-      "rank": 1,
+      "rank": 2,
       "freeranks": 0,
       "max": 6,
-      "attributes": "magia_vida--1--toque-sanador,magia_vida--1--rayo-luminoso,magia_vida--1--halo-cegador,magia_vida--2--vinculo-vital,magia_vida--2--barrera-luminosa,magia_vida--2--arma-solar,magia_vida--3--luz-viviente,magia_vida--3--sanacion-superior,magia_vida--3--telarana-de-vida,magia_vida--4--espadas-de-justicia,magia_vida--4--transferencia-vital,magia_vida--4--castigo-celestial,magia_vida--5--explosion-solar,magia_vida--5--milagro-de-sanacion,magia_vida--5--sello-de-regeneracion,magia_vida--6--fuente-de-toda-la-vida"
+      "attributes": "magia_vida--1--toque-sanador,magia_vida--1--rayo-luminoso,magia_vida--1--halo-cegador,magia_vida--2--vinculo-vital,magia_vida--2--barrera-luminosa,magia_vida--2--infusion-luminosa,magia_vida--3--luz-viviente,magia_vida--3--sanacion-superior,magia_vida--3--telarana-de-vida,magia_vida--4--espadas-de-justicia,magia_vida--4--transferencia-vital,magia_vida--4--castigo-celestial,magia_vida--5--explosion-solar,magia_vida--5--milagro-de-sanacion,magia_vida--5--sello-de-regeneracion,magia_vida--6--fuente-de-toda-la-vida"
     },
     {
       "id": "presencia",
@@ -163,7 +163,7 @@
       "id": "ascendencia_celestial",
       "name": "Ascendencia Celestial",
       "category": "Ascendencias",
-      "stat": "wis",
+      "stat": "wis/cha",
       "reserve": "chi",
       "rank": 1,
       "freeranks": 0,

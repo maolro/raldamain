@@ -1,6 +1,6 @@
 {
-  "name": "Tanque",
-  "level": 4,
+  "name": "Tanque (niv 5)",
+  "level": 5,
   "race": {},
   "stats": {
     "str": {
@@ -25,7 +25,7 @@
     },
     "cha": {
       "name": "CAR",
-      "value": 2
+      "value": 3
     }
   },
   "talents": {
@@ -154,21 +154,21 @@
       "category": "Combate",
       "stat": "str",
       "reserve": "chi",
-      "rank": 1,
+      "rank": 2,
       "freeranks": 0,
       "max": 5,
       "attributes": "ira--1--ira-de-combate,ira--1--demostracion-terrorifica,ira--2--frenesi-de-batalla,ira--2--resistencia-salvaje,ira--3--ira-temeraria,ira--3--hasta-el-limite,ira--4--golpe-de-adrenalina,ira--4--furia-imparable,ira--5--superar-los-limites,ira--5--furia-invulnerable"
     },
     {
-      "id": "ascendencia_primigenia",
-      "name": "Ascendencia Primigenia",
-      "category": "Ascendencias",
-      "stat": "wis",
+      "id": "presencia",
+      "name": "Presencia",
+      "category": "Combate",
+      "stat": "cha",
       "reserve": "chi",
       "rank": 1,
       "freeranks": 0,
-      "max": 6,
-      "attributes": "ascendencia_primigenia--1--forma-de-la-bestia,ascendencia_primigenia--1--aspecto-primigenio,ascendencia_primigenia--2--infusion-espiritual,ascendencia_primigenia--2--comunion-con-la-naturaleza,ascendencia_primigenia--3--transformacion-animal,ascendencia_primigenia--3--llamar-a-los-espiritus,ascendencia_primigenia--4--vinculo-primigenio,ascendencia_primigenia--4--sanacion-espiritual,ascendencia_primigenia--5--aura-primigenia,ascendencia_primigenia--5--paso-espiritual,ascendencia_primigenia--6--despertar-la-bestia"
+      "max": 5,
+      "attributes": "presencia--1--voz-del-comandante,presencia--1--voluntad-poderosa"
     }
   ],
   "spells": {
@@ -194,7 +194,10 @@
     "mainHand": {
       "eqab": "hacha-de-batalla",
       "name": "Hacha de Batalla",
-      "style": "duelist"
+      "styles": [
+        "coloso",
+        "duelo"
+      ]
     },
     "secondHand": {
       "eqab": "escudo,parada-con-escudo",

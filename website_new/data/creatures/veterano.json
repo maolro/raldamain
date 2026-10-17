@@ -83,18 +83,22 @@
       "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba o reduce un efecto de estado por un paso.",
       "cost": 1,
       "tags": [
-        "Fortitud"
+        "Fortitud",
+        "Defensiva"
       ],
-      "ability_id": "segundo-aliento_1791462133271"
+      "ability_id": "segundo-aliento_1791462133271",
+      "type": "reaction"
     },
     {
       "name": "Proteger Aliado",
       "desc": "Se mueve hasta un paso para interceptar un ataque hecho contra un aliado, pudiendo así emplear su tiro defensivo en lugar del suyo y recibir el daño del ataque si falla.",
       "tags": [
+        "Marcial",
         "Coloso"
       ],
       "cost": 1,
-      "ability_id": "proteger-aliado_1791462080348"
+      "ability_id": "proteger-aliado_1791462080348",
+      "type": "reaction"
     },
     {
       "name": "Parada",

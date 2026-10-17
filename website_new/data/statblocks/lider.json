@@ -1,6 +1,6 @@
 {
-  "name": "Líder",
-  "level": 4,
+  "name": "Luchador (niv 5)",
+  "level": 5,
   "race": {},
   "stats": {
     "str": {
@@ -13,7 +13,7 @@
     },
     "con": {
       "name": "CON",
-      "value": 2
+      "value": 3
     },
     "itl": {
       "name": "INT",
@@ -130,7 +130,7 @@
       "id": "estilo_duelista",
       "name": "Estilo Duelista",
       "category": "Marcial",
-      "stat": "str",
+      "stat": "str/dex",
       "reserve": "chi",
       "rank": 2,
       "freeranks": 0,
@@ -143,7 +143,7 @@
       "category": "Combate",
       "stat": "dex",
       "reserve": "chi",
-      "rank": 1,
+      "rank": 2,
       "freeranks": 0,
       "max": 5,
       "attributes": "reflejos--1--velocidad-superior,reflejos--1--instinto-de-supervivencia,reflejos--2--giro-defensivo,reflejos--2--evasion,reflejos--3--giro-defensivo,reflejos--3--gran-acrobata,reflejos--4--sexto-sentido,reflejos--4--punto-ciego,reflejos--5--libertad-de-movimiento,reflejos--5--reflejos-supremos"
