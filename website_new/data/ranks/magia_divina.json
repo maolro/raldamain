@@ -114,7 +114,7 @@
     {
       "rank": "III",
       "title": "Rango III",
-      "draft": true,
+      "draft": false,
       "passive": "Aprendes dos hechizos de Rango II de una magia relacionada con tu dios.",
       "abilities": [
         {
@@ -123,19 +123,18 @@
             "Divina",
             "Ritual"
           ],
-          "desc": "Una vez al día, recibes visiones del pasado, presente o futuro. Las visiones son más claras y detalladas si posees un objeto o te encuentras en un lugar relacionado con la consulta."
+          "desc": "Una vez al día recibes visiones del pasado, presente o futuro. Las visiones serán más claras si posees un objeto o te encuentras en un lugar relacionado con lo que buscas consultar."
         },
         {
-          "name": "Protección Divina",
+          "name": "Guardián de la Fe",
           "tags": [
             "Divina",
-            "Sostenida",
-            "Defensiva"
+            "Invocación"
           ],
-          "cost": "2 acciones, 2 chi",
-          "duration": "Concentración",
-          "desc": "Canalizas protección divina para defenderte. Obtienes 1 Reacción defensiva adicional por ronda usando Magia Divina. Como reacción al ser impactado, puedes lanzar un hechizo Divino como acción bonus contra el atacante.",
-          "empower": "Reduces el daño de un ataque recibido en Rango x 2 antes de aplicar defensas."
+          "cost": "3 acciones, 2 chi",
+          "duration": "1 hora",
+          "desc": "Invoca una criatura relacionada con tu dios de nivel 5, la cual permanecerá en el campo de batalla durante una hora. El nivel de la invocación aumentará por 3 por cada Rango adicional que recibas y no puede tener activas más de 4 invocaciones.",
+          "empower": "Invoca una criatura adicional."
         }
       ]
     },
