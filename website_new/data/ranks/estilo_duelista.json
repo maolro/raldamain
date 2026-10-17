@@ -91,34 +91,42 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
-          "name": "Carga del Espadachín",
+          "name": "Tajo Aéreo",
           "tags": [
             "Duelo",
             "Mejora"
           ],
-          "cost": "1 chi",
-          "desc": "Realiza un movimiento como acción bonus y ataca a cada enemigo en su camino, recibiendo un dado de daño adicional en cada ataque."
+          "cost": "2 Chi",
+          "desc": "Salta dos pasos hacia el cielo y ataca a cada objetivo en una columna media, aumentando el daño base por dos dados. Si impactas a un objetivo volador, deberá tener éxito en un tiro de salvación Físico o caerá al suelo.",
+          "show_mod": true,
+          "toggle": {
+            "label": "Tajo Aéreo",
+            "damage": "+2 dado",
+            "damage_tags": [
+              "Ataque+Físico"
+            ]
+          }
         },
         {
-          "name": "Contrataque",
+          "name": "Combo Mortal",
+          "tags": [
+            "Duelo",
+            "Mejora"
+          ],
+          "cost": "1 Chi",
+          "desc": "Tu ataque no provoca aperturas y el siguiente ataque que hagas contra el mismo objetivo recibirá +2 a su tiro e ataque y daño. Si vuelves a usar esta habilidad en un ataque ya mejorado, incrementa todos los modificadores por 2 hasta un máximo de 6. "
+        },
+        {
           "tags": [
             "Duelo",
             "Reacción"
           ],
-          "cost": "1 reacción, 2 chi",
-          "desc": "En respuesta a ser atacado, realiza un ataque como reacción. Al impactar, interrumpe la acción enemiga y gasta toda su reserva de chi empleada en ella, incluyendo si el objetivo emplea una reacción defensiva."
-        },
-        {
-          "name": "Espadas Trabadas",
-          "tags": [
-            "Duelo",
-            "Maniobra"
-          ],
-          "cost": "1 chi",
-          "desc": "Al ser detenido con Parada, puede forzar al afectado a superar un tiro físico o su arma queda agarrada. Si el arma ya está agarrada, puede usar esta habilidad para desarmarle. Cada intento de repetir el tiro cuesta una acción y provoca apertura."
+          "cost": "1 Reacción, 1 Chi",
+          "desc": "Suma +10 a un tiro de Parada contra un ataque enemigo. Si detienes un ataque de área, podrás proteger a tus aliados cercanos de él.",
+          "name": "Parada Superior"
         }
       ]
     },
