@@ -93,15 +93,16 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
-          "name": "Hasta la Muerte",
+          "name": "Resiliencia",
           "tags": [
             "Innata",
-            "Pasiva"
+            "Reacción"
           ],
-          "desc": "Puedes seguir luchando a 0 PV o menos, realizando tiros de muerte. Tu Herido (permanente) se reduce un nivel."
+          "desc": "Divide la cantidad de impactos recibidos por un ataque a la mitad, redondeando hacia abajo.",
+          "cost": "1 Reacción, 1 Chi"
         },
         {
           "name": "Constitución Férrea",
@@ -109,7 +110,12 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia a Aflicciones y daño Necrótico. Inmune a efectos críticos de Enfermado."
+          "desc": "Obtienes RANGO contadores de escudo, los cuales permanecerán activos durante el resto del combate.",
+          "cost": "2 Acciones, 2 Chi",
+          "toggle": {
+            "label": "Muro Viviente",
+            "ce": "Rango"
+          }
         }
       ]
     },
