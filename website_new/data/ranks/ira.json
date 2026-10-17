@@ -106,7 +106,7 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Ira Temeraria",
@@ -114,7 +114,15 @@
             "Ira",
             "Pasiva"
           ],
-          "desc": "Mientras dure la Ira, obtienes Inmunidad a Miedo y efectos Mentales. Al entrar en Ira, suprimes cualquier efecto activo de estos tipos."
+          "desc": "Obtienes Ventaja en tiros de salvación Mentales, además que ignoras los efectos Miedo y Deconcertado mientras te encuentres en Ira.",
+          "immunities": [
+            "Miedo",
+            "Desconcertado"
+          ],
+          "saves": [
+            "Mental"
+          ],
+          "empower": "Recibes +10 en un tiro de salvación contra un efecto Mental."
         },
         {
           "name": "Hasta el Límite",
@@ -122,7 +130,7 @@
             "Pasiva",
             "Innata"
           ],
-          "desc": "Puedes reducir tu Vitalidad máxima en 2 o tus PV máximos en 1 para recuperar 1 punto de Chi. Usos por ronda: 3. La reducción se recupera con un descanso largo."
+          "desc": "Puedes reducir tus impactos máximos por 1 para recuperar 3 chi. Esta habilidad no puede usarse más de una vez por ronda, y te recuperarás hasta que hagas un descanso largo."
         }
       ]
     },
