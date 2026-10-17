@@ -93,7 +93,7 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Golpe Penetrante",
@@ -101,8 +101,8 @@
             "Asesino",
             "Mejora"
           ],
-          "cost": "2 chi",
-          "desc": "Tu siguiente ataque ignora la defensa otorgada por la armadura del objetivo y cuenta como mágico para los propósitos de resistencias e inmunidades."
+          "cost": "2 Chi",
+          "desc": "Tu siguiente ataque tratará los umbrales del objetivo como si provocase daño Fuerza."
         },
         {
           "name": "Paso del Asesino",
@@ -110,16 +110,16 @@
             "Asesino",
             "Mejora"
           ],
-          "cost": "1 chi",
-          "desc": "Antes de atacar, te mueves como acción bonus sin provocar aperturas. El objetivo sufre Desventaja en su tiro defensivo como si se tratase de un ataque sorpresa. Este efecto se puede anular gantando una Premonición y no funciona contra enemigos con Visión Futura."
+          "cost": "2 Chi",
+          "desc": "Te mueves hasta un paso y haces un ataque con un dado de daño adicional, contra el cual tu objetivo tendrá Deventaja defendiéndose. Solo funciona con armas cuerpo a cuerpo."
         },
         {
-          "name": "Cuchillada",
+          "name": "Velocidad Extrema",
           "tags": [
             "Asesino",
             "Pasiva"
           ],
-          "desc": "Puedes tirar Parada además de Esquiva en todos tus tiros defensivos y quedarte con el mejor resultado. Además, puedes realizar un movimiento como acción bonus al atacar o defenderte, el cual sí provoca aperturas."
+          "desc": "Puedes tirar Esquiva a la vez que otro método defensivo y quedarte con el resultado que más te convenga. Además, cada vez que tengas éxito en un tiro defensivo de Esquiva puedes moverte un paso sin provocar aperturas"
         }
       ]
     },
