@@ -83,7 +83,7 @@
             "Visual",
             "Mejora"
           ],
-          "cost": "1 Chi",
+          "cost": "1 Reacción, 1 Chi",
           "desc": "Al hacer un tiro de ataque o defensa, tu enemigo deberá tener éxito en un tiro de salvación Mental o fallará de manera automática su tiro enfrentado. Esta habilidad no funciona con ataques de área o efectos que no requieran contacto visual"
         },
         {
