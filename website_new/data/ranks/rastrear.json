@@ -82,15 +82,16 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Lo he visto Antes",
           "tags": [
             "Innata",
-            "Pasiva"
+            "Reacción"
           ],
-          "desc": "Cuando te defiendes de un ataque o habilidad que el mismo enemigo ya haya usado contra ti anteriormente, puedes repetir el tiro defensivo y quedarte con el mejor resultado."
+          "desc": "Obtienes +10 en un tiro de defensa o salvación contra un efecto que un enemigo objetivo ya haya usado contra ti.",
+          "cost": "1 Chi"
         },
         {
           "name": "Inescrutable",
@@ -98,7 +99,10 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia a efectos Mentales y de Miedo. Eres inmune a lectura de mente y predicción de movimientos."
+          "desc": "Tienes Ventaja en tiros de salvación Mentales y no puedes ser detectado de manera pasiva por Telepatía, Sexto Sentido u otros efectos capaces de predecirte.",
+          "saves": [
+            "Mental"
+          ]
         }
       ]
     },
