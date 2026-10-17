@@ -82,21 +82,21 @@
       "draft": true,
       "abilities": [
         {
-          "name": "Giro Defensivo",
+          "name": "Sexto Sentido",
           "tags": [
             "Innata",
             "Pasiva"
           ],
-          "desc": "Reduces todo el daño recibido en (Rango + 1) antes de aplicar la DEF. Solo se aplica si te queda al menos 1 Reacción disponible.",
+          "desc": "Tienes Vista a Ciegas a una distancia media, permitiéndote sentir objetivos ocultos e ignorar Ocultamiento. ",
           "empower": "Recuperas 1 Reacción gastada."
         },
         {
-          "name": "Gran Acróbata",
+          "name": "Reflejos Asombrosos",
           "tags": [
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Inmunidad a Terreno Difícil y al estado Ralentizado. Obtienes Velocidad de Escalada 1 y Resistencia a daño de Caídas.",
+          "desc": "Obtienes una Acción adicional y aumentas todas tus velocidades por un paso. ",
           "empower": "Te levantas inmediatamente del estado Ralentizado."
         }
       ]
