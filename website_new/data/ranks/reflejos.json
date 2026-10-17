@@ -79,7 +79,7 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Sexto Sentido",
