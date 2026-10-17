@@ -117,7 +117,7 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Golpe Demoledor",
@@ -125,8 +125,15 @@
             "Pesado",
             "Mejora"
           ],
-          "cost": "1 chi",
-          "desc": "Al impactar, eliminas un contador de escudo del objetivo y rompes su armadura. Si el objetivo detiene tu ataque con Parada, puedes emplear esta habilidad para romper su arma. No funciona contra objetos con dureza superior a la de tu arma."
+          "cost": "2 chi",
+          "desc": "Tu siguiente ataque aumenta su daño base por dos dados, y al impactar provoca Roto II al objetivo. Si el objetivo logra detener tu ataque con su arma puedes romperle esa misma si es de dureza menor, lo cual se hace superando un tiro de habilidad de arma contra una dificultad escogida por el DJ.",
+          "toggle": {
+            "label": "Impacto Demoledor",
+            "damage": "+2 dado",
+            "damage_tags": [
+              "Ataque+Físico"
+            ]
+          }
         },
         {
           "name": "Carga Salvaje",
@@ -136,7 +143,14 @@
           ],
           "cost": "2 chi",
           "range": "Línea media",
-          "desc": "Te mueves como acción bonus y atacas a cada enemigo en tu camino. Estos ataques provocan +1d6 daño y al impactar empujan y dejan con Ralentizado-1 a los objetivos."
+          "desc": "Te mueves tanto como tu velocidad y atacas a cada enemigo en tu camino, aumentando el daño base de tu ataque por un dado y empujando al impactar. Este ataque romperá también todas las barreras a su paso.",
+          "toggle": {
+            "label": "Carga Salvaje",
+            "damage": "+1 dado",
+            "damage_tags": [
+              "Ataque+Físico"
+            ]
+          }
         },
         {
           "name": "Golpe Aturdidor",
@@ -144,8 +158,8 @@
             "Pesado",
             "Mejora"
           ],
-          "cost": "2 chi",
-          "desc": "Al impactar, el objetivo debe superar un tiro de salvación de Voluntad o queda con Aturdido-2 durante una ronda. Se declara al impactar."
+          "cost": "1 chi",
+          "desc": "Al impactar con un ataque, el objetivo debe tener éxito en un tiro de salvación de Voluntad o quedará Desconcertado II hasta el final de ronda."
         }
       ]
     },
