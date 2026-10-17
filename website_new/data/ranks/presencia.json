@@ -74,8 +74,31 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
-      "abilities": []
+      "draft": false,
+      "abilities": [
+        {
+          "name": "Indómito",
+          "tags": [
+            "Presencia",
+            "Reacción"
+          ],
+          "desc": "El objetivo suma +10 a un tiro de Salvación. Esta habilidad solo puede usarse una vez por tiro y únicamente en aliados.",
+          "range": "Medio",
+          "cost": "2 Chi"
+        },
+        {
+          "name": "Inspirar Heroísmo",
+          "tags": [
+            "Presencia",
+            "Duradera",
+            "Mejora"
+          ],
+          "desc": "El objetivo recibe Ventaja en todos sus tiros de ataque, defensa y habilidad durante el resto de combate. Esta habilidad no es acumulable consigo misma. ",
+          "range": "Medio",
+          "cost": "1 Acción, 2 Chi",
+          "empower": "Afecta a un objetivo adicional con esta habilidad."
+        }
+      ]
     },
     {
       "rank": "IV",
