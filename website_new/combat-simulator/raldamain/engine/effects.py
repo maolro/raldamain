@@ -26,6 +26,7 @@ class Modifier:
     umbral: int = 0  # bonus to damage thresholds
     damage_dice: int = 0  # extra dice of the attack's base die size
     reroll_worst: bool = False  # forced to roll twice and keep the worse result
+    exclude: tuple[str, ...] = ()  # never applies to rolls with these tags (Ira: firearm)
 
     @classmethod
     def from_dict(cls, raw: dict[str, Any]) -> "Modifier":
@@ -36,10 +37,14 @@ class Modifier:
             umbral=int(raw.get("umbral", 0)),
             damage_dice=int(raw.get("damage_dice", 0)),
             reroll_worst=bool(raw.get("reroll_worst", False)),
+            exclude=tuple(raw.get("exclude") or ()),
         )
 
     def applies_to(self, tags: Iterable[str]) -> bool:
-        return self.scope == "all" or self.scope in set(tags)
+        tags = set(tags)
+        if self.exclude and tags.intersection(self.exclude):
+            return False
+        return self.scope == "all" or self.scope in tags
 
 
 @dataclass(frozen=True)

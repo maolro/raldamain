@@ -69,7 +69,7 @@
         "description": "",
         "name": "Escopeta",
         "range": "Adyacente",
-        "tags": "Físico, Ataque, Duelo, Coloso",
+        "tags": "Físico, Ataque, Duelo, Coloso, Arma de Fuego",
         "type": "Accion"
     },
     "escudo": {
@@ -246,7 +246,7 @@
         "name": "Mosquetón",
         "range": "Distancia lejana",
         "skill": "armas-a-distancia",
-        "tags": "Físico, Ataque, A Distancia",
+        "tags": "Físico, Ataque, A Distancia, Arma de Fuego",
         "type": "Accion",
         "description": "No puede ser infundida con hechizos ni recibir mejoras mágicas."
     },
@@ -264,7 +264,7 @@
         "name": "Pistola de Mano",
         "range": "Distancia media",
         "skill": "armas-a-distancia",
-        "tags": "Físico, Ataque, A Distancia",
+        "tags": "Físico, Ataque, A Distancia, Arma de Fuego",
         "type": "Accion",
         "description": "No puede ser infundida con hechizos ni recibir mejoras mágicas."
     },
@@ -274,7 +274,7 @@
         "damage_type": "Perforante",
         "name": "Fusil",
         "range": "Lejano",
-        "tags": "Físico, Ataque",
+        "tags": "Físico, Ataque, Arma de Fuego",
         "type": "Accion",
         "description": "No puede ser infundida con hechizos ni recibir mejoras mágicas."
     },

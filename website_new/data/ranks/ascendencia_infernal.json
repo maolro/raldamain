@@ -65,7 +65,7 @@
             "Maldición"
           ],
           "cost": "1 Chi",
-          "desc": "Tu siguiente impacto causa una herida infernal, haciendo así que reduzca los impactos máximos del objetivo y provoque el efecto de estado Herido I. Solo puede curarse con Magia de Vida u otras habilidades mágicas de fuerza equivalente."
+          "desc": "Tu siguiente impacto causa una herida infernal, haciendo así que reduzca los impactos máximos del objetivo y provoque el efecto de estado Herido I. Solo puede curarse con Magia de Vida u otras habilidades mágicas de fuerza equivalente. No puede aplicarse a Armas de Fuego."
         },
         {
           "name": "Magia Negra",

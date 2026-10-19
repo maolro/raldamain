@@ -97,7 +97,7 @@
             "Arcano",
             "Pasiva"
           ],
-          "desc": "Puedes emplear tu modificador de Magia de Evocación para tus tiros de ataque con armas, o aplicar técnicas de armas a ataques de Magia de Evocación. "
+          "desc": "Puedes emplear tu modificador de Magia de Evocación para tus tiros de ataque con armas, o aplicar técnicas de armas a ataques de Magia de Evocación. No puede aplicarse a Armas de Fuego."
         },
         {
           "name": "Metamagia",

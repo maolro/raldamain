@@ -105,7 +105,7 @@
             "Pasiva",
             "Aire"
           ],
-          "desc": "Tus ataques físicos cuentan como mágicos y aumentan su alance por un paso. Además, puedes emplear tu modificador de Magia de Aire para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos.",
+          "desc": "Tus ataques físicos cuentan como mágicos y aumentan su alance por un paso. Además, puedes emplear tu modificador de Magia de Aire para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos. No puede aplicarse a Armas de Fuego.",
           "name": "Infusión de Viento"
         }
       ],

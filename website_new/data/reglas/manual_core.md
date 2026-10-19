@@ -326,6 +326,14 @@ Un **golpe crítico** se activa cuando sacas un **20 natural** en el d20.
 
 ---
 
+### Armas de Fuego
+
+Pistolas, fusiles, escopetas, mosquetones y rifles llevan la etiqueta **Arma de Fuego**:
+
+* **Recarga:** tras gastar sus disparos hay que emplear las Acciones indicadas para recargarla.
+* **Sin furia ni trance:** sus ataques no reciben los beneficios de **Ira** ni de **Mente Desencadenada**.
+* **Sin infusiones:** no pueden infundirse con hechizos ni potenciarse con efectos de rango (Infusiones, Infundir Arma, Azote Divino, Arma Profana…), ni usar el modificador de otro rango en sus tiros. Las técnicas de estilo (Coloso, Duelista, Asesino) sí se aplican.
+
 ## Distancias y Áreas de Efecto
 
 ### Tabla de Distancias

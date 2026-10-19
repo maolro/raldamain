@@ -14,14 +14,14 @@ ira:
   kind: buff
   duration: 6
   modifiers:
-    - {scope: physical, advantage: 1, damage_dice: 1}
+    - {scope: physical, advantage: 1, damage_dice: 1, exclude: [firearm]}
 
 mente_desencadenada:
   name: Mente Desencadenada
   kind: buff
   duration: 6
   modifiers:
-    - {scope: mental, advantage: 1, damage_dice: 1}
+    - {scope: mental, advantage: 1, damage_dice: 1, exclude: [firearm]}
 
 forma_de_la_bestia:
   name: Forma de la Bestia
@@ -82,8 +82,8 @@ frenesi_de_batalla:
     damage now" against "more likely to get hit back", so this is not wired
     into any scripted build's maintain list; it exists to be probed directly.
   modifiers:
-    - {scope: attack, advantage: 1}
-    - {scope: defense, advantage: -1}
+    - {scope: attack, advantage: 1, exclude: [firearm]}
+    - {scope: defense, advantage: -1, exclude: [firearm]}
 
 ira_r2:
   name: Ira (Rango II)
@@ -91,7 +91,7 @@ ira_r2:
   duration: 6
   notes: Adds Resistencia Salvaje's umbral bonus on top of Rank I's Ventaja.
   modifiers:
-    - {scope: physical, advantage: 1, damage_dice: 1}
+    - {scope: physical, advantage: 1, damage_dice: 1, exclude: [firearm]}
     - {scope: umbral, umbral: 4}
 
 guerrero_de_la_fe:
@@ -180,7 +180,7 @@ mente_desencadenada_r2:
   duration: 6
   notes: Adds Poder del Dolor's umbral bonus on top of Rank I's Ventaja.
   modifiers:
-    - {scope: mental, advantage: 1, damage_dice: 1}
+    - {scope: mental, advantage: 1, damage_dice: 1, exclude: [firearm]}
     - {scope: umbral, umbral: 2}
 
 ira_r3:
@@ -189,7 +189,7 @@ ira_r3:
   duration: 6
   notes: Niv-8 Bárbaro/Luchador -- same Resistencia Salvaje umbral scaling as Rank II, one step further per the niv-8 header bracket.
   modifiers:
-    - {scope: physical, advantage: 1, damage_dice: 1}
+    - {scope: physical, advantage: 1, damage_dice: 1, exclude: [firearm]}
     - {scope: umbral, umbral: 5}
 
 ira_temeraria:
@@ -202,7 +202,7 @@ ira_temeraria:
     half is instead baked into barbaro_8's static immunities list, matching how
     Resistencia Salvaje's Herido immunity is already handled at niv 5.
   modifiers:
-    - {scope: mental, advantage: 1}
+    - {scope: mental, advantage: 1, exclude: [firearm]}
 
 mente_desencadenada_r3:
   name: Mente Desencadenada (Rango III)
@@ -210,7 +210,7 @@ mente_desencadenada_r3:
   duration: 6
   notes: Niv-8 Elementalista -- Poder del Dolor's umbral bonus goes to 3 at this rank.
   modifiers:
-    - {scope: mental, advantage: 1, damage_dice: 1}
+    - {scope: mental, advantage: 1, damage_dice: 1, exclude: [firearm]}
     - {scope: umbral, umbral: 3}
 
 canalizacion_celestial_r2:

@@ -98,7 +98,7 @@
             "Pasiva",
             "Naturaleza"
           ],
-          "desc": "Puedes emplear tu modificador de Magia de Naturaleza para tus tiros de ataque con armas o aplicar técnicas de armas a ataques de Magia de Naturaleza.",
+          "desc": "Puedes emplear tu modificador de Magia de Naturaleza para tus tiros de ataque con armas o aplicar técnicas de armas a ataques de Magia de Naturaleza. No puede aplicarse a Armas de Fuego.",
           "replace_mod": [
             "Arma",
             "Parada"

@@ -109,7 +109,7 @@
             "Vida",
             "Pasiva"
           ],
-          "desc": "Puedes emplear tu modificador de Magia de Vidapara tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Magia de Vida.",
+          "desc": "Puedes emplear tu modificador de Magia de Vidapara tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Magia de Vida. No puede aplicarse a Armas de Fuego.",
           "replace_mod": [
             "Esquiva",
             "Arma"

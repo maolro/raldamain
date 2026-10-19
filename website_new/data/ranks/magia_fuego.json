@@ -116,7 +116,7 @@
             "Fuego",
             "Pasiva"
           ],
-          "desc": "Puedes emplear tu modificador de Magia de Fuego para tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Magia de Fuego.",
+          "desc": "Puedes emplear tu modificador de Magia de Fuego para tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Magia de Fuego. No puede aplicarse a Armas de Fuego.",
           "replace_mod": [
             "Parada",
             "Arma"

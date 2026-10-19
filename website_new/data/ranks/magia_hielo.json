@@ -103,7 +103,7 @@
             "Hielo",
             "Pasiva"
           ],
-          "desc": "Tus ataques físicos cuentan como mágicos además de contar como Hielo para los propósitos de Vulnerabilidades y mejoras mágicas. Además, puedes emplear tu modificador de Magia de Hielo para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos."
+          "desc": "Tus ataques físicos cuentan como mágicos además de contar como Hielo para los propósitos de Vulnerabilidades y mejoras mágicas. Además, puedes emplear tu modificador de Magia de Hielo para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos. No puede aplicarse a Armas de Fuego."
         }
       ],
       "passive": "Aumenta tu estadística de Constitución por 1."

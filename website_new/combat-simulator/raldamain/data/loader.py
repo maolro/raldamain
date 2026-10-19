@@ -150,7 +150,9 @@ def _attach_riders(abilities: list[dict[str, Any]], riders: list[tuple[str, dict
         elif rank_id.startswith("estilo_"):
             hosts = weapons
         else:
-            hosts = [a for a in abilities if damaging(a) and a.get("_rank") == rank_id] or weapons
+            # rank effects (Azote Divino, Arma Profana…) cannot infuse firearms
+            hosts = [a for a in abilities if damaging(a) and a.get("_rank") == rank_id] or \
+                    [a for a in weapons if "firearm" not in a.get("tags", [])]
         for host in hosts:
             host.setdefault("upgrades", []).append(deepcopy(upgrade))
         if not hosts:

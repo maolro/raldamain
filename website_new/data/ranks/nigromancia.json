@@ -100,7 +100,7 @@
             "NIgromancia",
             "Pasiva"
           ],
-          "desc": "Puedes emplear tu modificador de Nigromancia para tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Nigromancia.",
+          "desc": "Puedes emplear tu modificador de Nigromancia para tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Nigromancia. No puede aplicarse a Armas de Fuego.",
           "empower": "Un ataque físico provoca 2d6 daño Necrótico adicional. Este daño aumenta por un dado por cada Rango adicional que recibas.",
           "replace_mod": [
             "Arma",

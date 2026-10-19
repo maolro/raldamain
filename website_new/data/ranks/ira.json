@@ -33,7 +33,7 @@
             "Mejora"
           ],
           "duration": "Max 6 rondas",
-          "desc": "Recibes Ventaja en todos sus tiros relacionados con estadísticas Físicas, incluyendo ataque, defensa, habilidad y salvación, además que aumentas su daño base por un dado. Este efecto dura hasta 6 rondas y cuando acabe pierdes tanto Chi como rondas en Ira. Si esto te baja a chi negativo, recibirás el efecto Fatiga II.",
+          "desc": "Recibes Ventaja en todos sus tiros relacionados con estadísticas Físicas, incluyendo ataque, defensa, habilidad y salvación, además que aumentas su daño base por un dado. Este efecto dura hasta 6 rondas y cuando acabe pierdes tanto Chi como rondas en Ira. Si esto te baja a chi negativo, recibirás el efecto Fatiga II. No afecta a las Armas de Fuego.",
           "toggle": {
             "label": "Ira",
             "damage": "+1 dado",
@@ -78,7 +78,7 @@
             "Pasiva"
           ],
           "cost": "1 chi",
-          "desc": "Puedes recibir Ventaja en todos sus tiros de ataque esta ronda a costa de recibir Desventaja en todos sus tiros defensivos.",
+          "desc": "Puedes recibir Ventaja en todos sus tiros de ataque esta ronda a costa de recibir Desventaja en todos sus tiros defensivos. No afecta a las Armas de Fuego.",
           "toggle": {
             "label": "Frenesí de Batalla",
             "adv": [

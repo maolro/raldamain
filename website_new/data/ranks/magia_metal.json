@@ -105,7 +105,7 @@
             "Metal",
             "Pasiva"
           ],
-          "desc": "Impregnas tus armas metálicas con tu control elemental, agudizando su filo más allá de sus límites naturales. Tus ataques con armas metálicas infligen un dado de daño adicional al impactar y cuentan como hechos de material superior a efectos de romper objetos y superar resistencias. Puedes emplear tu modificador de Magia de Metal para todos tus tiros de técnicas de combate y aplicar técnicas de combate a tus ataques elementales. "
+          "desc": "Impregnas tus armas metálicas con tu control elemental, agudizando su filo más allá de sus límites naturales. Tus ataques con armas metálicas infligen un dado de daño adicional al impactar y cuentan como hechos de material superior a efectos de romper objetos y superar resistencias. Puedes emplear tu modificador de Magia de Metal para todos tus tiros de técnicas de combate y aplicar técnicas de combate a tus ataques elementales. No puede aplicarse a Armas de Fuego."
         }
       ]
     },

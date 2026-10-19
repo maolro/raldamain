@@ -714,12 +714,24 @@ ${reactions}
             }
             return res || { mod: best.stat, stat: best.stat, statKey: best.statKey, style: null };
         },
+        // Armas de Fuego: no Ira / Mente Desencadenada, no infusions or modifier swaps
+        isFirearm(obj) {
+            return /arma de fuego/i.test(String((obj && obj.tags) || ''));
+        },
+        itemIsFirearm(weapon) {
+            if (!weapon || !weapon.name) return false;
+            return String(this.weaponDef(weapon).eqab || '').split(',').map(x => x.trim())
+                .some(id => this.eqAtb && this.eqAtb[id] && this.isFirearm(this.eqAtb[id]));
+        },
+        firearmIgnores(ab) {
+            return ['ira', 'mente_desencadenada'].includes(ab && ab.skill);
+        },
         weaponMod(weapon) {
             const styles = this.weaponStyles(weapon);
             if (!styles.length) return null;
             let mod = this.bestWeaponStyle(styles, -99).mod;
             // "Usar el modificador de este rango" → Tiros de arma (attacks and weapon Parada)
-            const repl = this.modReplacements['Arma'];
+            const repl = this.itemIsFirearm(weapon) ? null : this.modReplacements['Arma'];
             if (repl && repl.value > mod) mod = repl.value;
             return mod >= 0 ? `+${mod}` : `${mod}`;
         },
@@ -888,8 +900,10 @@ ${reactions}
             // otherwise only apply to attack/improvement abilities and weapon abilities
             if (!hasDamageField && hasRankSkill && !tags.includes('ataque') && !tags.includes('mejora')) return [];
             const boosts = [];
+            const firearm = tags.includes('arma de fuego');
             for (const ab of this.toggleableAbilities) {
                 if (!this.isToggleActive(ab.toggle.label)) continue;
+                if (firearm && this.firearmIgnores(ab)) continue;
                 const t = ab.toggle;
                 if (!t.damage) continue;
                 let applies = false;
@@ -1019,8 +1033,10 @@ ${reactions}
             // Always-on (and conditional) passive stat advantage
             for (const ab of this.activeAbilities)
                 if (ab.adv_stats && statHit(ab.adv_stats)) count++;
+            const firearm = tags.includes('arma de fuego');
             for (const ab of this.toggleableAbilities) {
                 if (!this.isToggleActive(ab.toggle.label)) continue;
+                if (firearm && this.firearmIgnores(ab)) continue;
                 const t = ab.toggle;
                 let grants = false;
                 if (t.adv) {
@@ -1069,7 +1085,7 @@ ${reactions}
             } else {
                 stat = Math.max(strV, dexV); mod = Math.max(strV, dexV); statKey = strV >= dexV ? 'str' : 'dex';
             }
-            const armaRepl = this.modReplacements['Arma'];
+            const armaRepl = this.isFirearm(obj) ? null : this.modReplacements['Arma'];
             if (armaRepl && armaRepl.value > mod) mod = armaRepl.value;
             const advCount = this.abilityAdvantageCount(obj, [statKey]);
             const advStr = advCount > 0 ? '+' + advCount + 'd6' : '';
@@ -1593,7 +1609,8 @@ ${reactions}
                 .join(', ');
         },
         weaponString: function () {
-            const atkAdv = this.toggleBuffs.adv.includes('Ataque');
+            const atkAdvFor = (w) => this.toggleableAbilities.some(ab => this.isToggleActive(ab.toggle.label)
+                && (ab.toggle.adv || []).includes('Ataque') && !(this.itemIsFirearm(w) && this.firearmIgnores(ab)));
             const slots = [
                 { label: 'MP', weapon: this.equipment.mainHand },
                 { label: 'MS', weapon: this.equipment.secondHand }
@@ -1603,7 +1620,7 @@ ${reactions}
                 .filter(s => s.weapon && s.weapon.name)
                 .map(s => {
                     const mod = this.weaponMod(s.weapon);
-                    const modStr = mod ? (atkAdv ? mod + '+1d6' : mod) : null;
+                    const modStr = mod ? (atkAdvFor(s.weapon) ? mod + '+1d6' : mod) : null;
                     const styles = this.weaponStyles(s.weapon);
                     const style = styles.length ? styleLabel[this.bestWeaponStyle(styles, -99).style] : null;
                     const suffix = [modStr, style ? `(${style})` : null].filter(Boolean).join(' ');

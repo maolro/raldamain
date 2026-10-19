@@ -404,7 +404,7 @@ def character_spec(path: Path) -> dict[str, Any]:
                 "name": ab.get("name", ab_id),
                 "cost": {"actions": parse_cost(ab.get("cost")).get("actions", 1)},
                 "reach": reach,
-                "tags": ["weapon", "physical"],
+                "tags": ["weapon", "physical"] + (["firearm"] if "arma de fuego" in plain(tags) else []),
                 "_web_tags": [t.strip() for t in str(tags).split(",") if t.strip()],
                 "effects": [{"kind": "attack", "attack_roll": str(mod),
                              "on_hit": [{"kind": "damage", "damage": f"{dice}+{stat}", "dtype": dtype}]}],
