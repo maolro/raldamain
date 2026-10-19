@@ -129,12 +129,13 @@
           "name": "Guardián de la Fe",
           "tags": [
             "Divina",
-            "Invocación"
+            "Duradera"
           ],
-          "cost": "3 acciones, 2 chi",
-          "duration": "1 hora",
-          "desc": "Invoca una criatura relacionada con tu dios de nivel 5, la cual permanecerá en el campo de batalla durante una hora. El nivel de la invocación aumentará por 3 por cada Rango adicional que recibas y no puede tener activas más de 4 invocaciones.",
-          "empower": "Invoca una criatura adicional."
+          "cost": "2 Acciones, 2 chi",
+          "duration": "6 rondas",
+          "desc": "Manifiestas la presencia de tu dios en la forma de un guardián incorpóreo, el cual permanecerá en tu posición y te otorga *contadores de escudo* iguales a tu Rango. Además, tendrá 2 Acciones al turno y podrá hacer ataques con ellas o apoyar. Cada Ataque le costará una acción, tendrá alcance medio, tirará tu modificador de Magia Divina y provocará 3d8 + INT/SAB daño de un tipo relacionado con tu dios. Este guardián se desvanecerá si pierdes todos los contadores y puede ser Exiliado (usará entonces tus tiros de salvación)",
+          "empower": "Recuperas la mitad de los contadores de escudo (redondeando hacia abajo).",
+          "show_mod": true
         }
       ]
     },
