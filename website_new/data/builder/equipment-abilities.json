@@ -264,7 +264,8 @@
         "range": "Distancia media",
         "skill": "armas-a-distancia",
         "tags": "Físico, Ataque, A Distancia",
-        "type": "Accion"
+        "type": "Accion",
+        "description": "No puede ser infundida con hechizos ni recibir mejoras mágicas."
     },
     "rifle-de-asalto": {
         "cost": "1 Acción",
