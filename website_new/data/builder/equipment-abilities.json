@@ -247,7 +247,8 @@
         "range": "Distancia lejana",
         "skill": "armas-a-distancia",
         "tags": "Físico, Ataque, A Distancia",
-        "type": "Accion"
+        "type": "Accion",
+        "description": "No puede ser infundida con hechizos ni recibir mejoras mágicas."
     },
     "parada-con-escudo": {
         "description": "+MOD para defenderse. Funciona contra ataques cuerpo a cuerpo y a distancia",
