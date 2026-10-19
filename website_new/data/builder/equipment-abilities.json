@@ -275,7 +275,8 @@
         "name": "Fusil",
         "range": "Lejano",
         "tags": "Físico, Ataque",
-        "type": "Accion"
+        "type": "Accion",
+        "description": "No puede ser infundida con hechizos ni recibir mejoras mágicas."
     },
     "rifle-francotirador": {
         "cost": "1 Acción",
