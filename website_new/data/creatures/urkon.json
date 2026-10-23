@@ -1,0 +1,143 @@
+{
+  "id": "urkon",
+  "name": "Urkon",
+  "type": "Abisal",
+  "size": "Pequeño",
+  "level": 2,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5+1d6",
+    "VOL": "+5+1d6",
+    "MEN": "+5+1d6"
+  },
+  "umbrales": [
+    {
+      "value": 2,
+      "categories": "General"
+    },
+    {
+      "value": 4,
+      "categories": "Físico, Mágico"
+    }
+  ],
+  "immune": [
+    "Mental",
+    "Aflicciones",
+    "Miedo"
+  ],
+  "senses": "Vista a Ciegas",
+  "speed": "Paso 1, Escalada 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "name": "Abisal",
+      "desc": "Aumenta su Umbral Mágico por una categoría, recibe Inmunidad a efectos Mentales, Aflicciones y Miedo, y sus ataques físicos reciben un dado de daño adicional o provocan 1d6 daño de un tipo de su elección.",
+      "tags": [
+        "Innato"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "id": "ab_1791818158790",
+      "name": "Aguijón",
+      "type": "action",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma"
+      ],
+      "cost": "1",
+      "bonus": "+5 + 1d6",
+      "bonus_scaled": true,
+      "range": "Adyacente",
+      "area": "",
+      "damage_tier": "MID",
+      "damage_base_type": "Perforante",
+      "save": "",
+      "move": "",
+      "attacks": 1,
+      "desc": "",
+      "damage": "1d6 + 4 Perforante, 1d6 Ácido"
+    },
+    {
+      "id": "ab_1791817547641",
+      "name": "Ataque Furtivo",
+      "type": "action",
+      "tags": [
+        "Marcial",
+        "Mejora",
+        "Asesino"
+      ],
+      "cost": "1",
+      "bonus": "",
+      "bonus_scaled": false,
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": "",
+      "attacks": 0,
+      "desc": "Su siguiente ataque recibe un modificador +2, aumenta su daño base por un dado y provoca Herido I al impactar."
+    },
+    {
+      "id": "ab_1778930291704",
+      "name": "Aliento Ácido",
+      "type": "action",
+      "tags": [
+        "Acido",
+        "Ataque",
+        "Area"
+      ],
+      "cost": 2,
+      "bonus": "",
+      "range": "",
+      "area": "Cono Pequeño",
+      "damage": "2d6 + 4 Ácido",
+      "damage_tier": "HIGH",
+      "damage_base_type": "Ácido",
+      "save": "",
+      "move": "",
+      "attacks": 1,
+      "desc": "Provoca una quemadura a todos los impactados y corroe madera u otros materiales frágiles, provocando así el efecto de estado roto."
+    },
+    {
+      "id": "ab_1792755871036",
+      "name": "Asalto Psíquico",
+      "type": "action",
+      "tags": [
+        "Mental"
+      ],
+      "cost": "2",
+      "bonus_scaled": true,
+      "range": "Medio",
+      "area": "",
+      "damage_tier": "LOW",
+      "damage_base_type": "Psíquico",
+      "move": "",
+      "attacks": 1,
+      "desc": "El objetivo debe tener éxito en un tiro de salvación Mental o sufre 1d6 + 4 daño Psíquico y queda Desconcertado una ronda."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Esquiva",
+      "desc": "",
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "name": "Explosión Mortal",
+      "desc": "Al morir, hace un ataque inmediato que provoca 1d6 + 4 daño Ácido",
+      "cost": 1,
+      "bonus": "+5 + 1d6"
+    }
+  ],
+  "lore": "",
+  "tags": []
+}

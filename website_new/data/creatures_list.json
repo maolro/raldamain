@@ -223,5 +223,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "urkon",
+    "name": "Urkon",
+    "type": "Abisal",
+    "level": 2,
+    "size": "Pequeño",
+    "image": "",
+    "description": ""
   }
 ]
