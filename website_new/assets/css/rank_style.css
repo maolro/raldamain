@@ -162,6 +162,15 @@
     color: var(--accent-gold);
 }
 
+.stat-pill.damage-pill {
+    border-color: #6b2a24;
+    background: rgba(231, 76, 60, 0.06);
+}
+
+.stat-pill.damage-pill span {
+    color: #ff6b5b;
+}
+
 /* Draft ranks: "En construcción" */
 .meta-badge.draft-badge {
     border-color: #e07b39;

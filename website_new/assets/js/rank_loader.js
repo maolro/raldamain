@@ -40,6 +40,11 @@ function linkStatusEffects(text) {
     return processed;
 }
 
+// "1d6+CAR" / "RANGOd6 + SAB" → "1d6 + CAR" / "Rangod6 + SAB" (keeps "SAB/CAR" together)
+function formatDamage(v) {
+    return String(v).replace(/RANGO/g, 'Rango').replace(/\s*\+\s*/g, ' + ').trim();
+}
+
 // "RANGO+1" → "Rango + 1" for display
 function formatRankValue(v) {
     return String(v).replace(/RANGO/g, 'Rango').replace(/\s*([+\-x\/])\s*/g, ' $1 ').trim();
@@ -185,6 +190,8 @@ function renderRankPage(data) {
                     <div class="ability-stats">
                         ${ability.cost ? `<div class="stat-pill">Coste: <span>${ability.cost}</span></div>` : ''}
                         ${ability.range ? `<div class="stat-pill">Alcance: <span>${ability.range}</span></div>` : ''}
+                        ${ability.area ? `<div class="stat-pill">Área: <span>${ability.area}</span></div>` : ''}
+                        ${ability.damage ? `<div class="stat-pill damage-pill">Daño: <span>${formatDamage(ability.damage)}${ability.damage_type ? ' ' + ability.damage_type : ''}</span></div>` : ''}
                         ${ability.duration ? `<div class="stat-pill">Duración: <span>${ability.duration}</span></div>` : ''}
                         ${(ability.umbrales || []).map(u => `<div class="stat-pill umbral-pill">Umbral ${u.categories || 'General'}: <span>+${formatRankValue(u.value)}</span></div>`).join('')}
                         ${ability.hits ? `<div class="stat-pill umbral-pill">Impactos: <span>+${formatRankValue(ability.hits)}</span></div>` : ''}
@@ -197,10 +204,10 @@ function renderRankPage(data) {
                         ${(ability.replace_mod || []).length ? `<div class="stat-pill umbral-pill">Usa este rango en: <span>${ability.replace_mod.map(t => t === 'Arma' ? 'Tiros de arma' : t).join(', ')}</span></div>` : ''}
                     </div>
 
-                    <div class="ability-desc">
-                        ${linkStatusEffects(formatRichText(ability.desc))}
-                        ${ability.crit ? `<br><br><em style="color:#ff6b6b">Crítico:</em> ${linkStatusEffects(formatRichText(ability.crit))}` : ''}
-                    </div>
+                    ${ability.desc || ability.crit ? `<div class="ability-desc">
+                        ${ability.desc ? linkStatusEffects(formatRichText(ability.desc)) : ''}
+                        ${ability.crit ? `${ability.desc ? '<br><br>' : ''}<em style="color:#ff6b6b">Crítico:</em> ${linkStatusEffects(formatRichText(ability.crit))}` : ''}
+                    </div>` : ''}
 
                     ${ability.empower ? `
                     <div class="empower-box">
