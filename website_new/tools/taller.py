@@ -30,6 +30,10 @@ except ImportError:
 BASE = Path(__file__).resolve().parent.parent           # website_new/
 STATBLOCKS = BASE / "data" / "statblocks"
 CREATURES = BASE / "data" / "creatures"
+CREATURE_INDEX = BASE / "data" / "creatures_list.json"
+CREATURE_ABILITIES = BASE / "data" / "creatures_abilities.json"
+CREATURE_SCALING = BASE / "data" / "creature_scaling.json"
+PAGES = Path(__file__).resolve().parent  # taller_tabla.html, taller_criatura.html
 sys.path.insert(0, str(BASE / "combat-simulator"))
 
 from raldamain.data import website                       # noqa: E402
@@ -209,6 +213,174 @@ def api_bestiario():
     return jsonify({"creatures": items, "errors": errors})
 
 
+# ─────────────────────────────────────────────────────────────── stat table API
+
+SAVE_TAGS = {"fis": ("physical",), "vol": ("physical", "mental"), "men": ("mental",)}
+TARGET = "__objetivo__"  # stands in for "the chosen enemy" of buffs like Analizar Enemigo
+
+
+def _pool_text(pool, adv=0):
+    """'+7+2d6' — the pool plus advantage d6s, dice of the same size merged."""
+    dice = {}
+    for count, sides in list(pool.dice) + ([(adv, 6)] if adv else []):
+        dice[sides] = dice.get(sides, 0) + count
+    out = f"{pool.flat:+d}" if pool.flat or not dice else ""
+    for sides, count in sorted(dice.items(), key=lambda kv: -kv[0]):
+        if count:
+            out += f"{'+' if count > 0 else '-'}{abs(count)}d{sides}"
+    return out or "+0"
+
+
+def _dmg_text(pool):
+    """'2d8+5' — damage reads dice first."""
+    dice = {}
+    for count, sides in pool.dice:
+        dice[sides] = dice.get(sides, 0) + count
+    parts = [f"{count}d{sides}" for sides, count in sorted(dice.items(), key=lambda kv: -kv[0]) if count]
+    out = "+".join(parts)
+    if pool.flat:
+        out += f"{pool.flat:+d}" if out else str(pool.flat)
+    return out or "0"
+
+
+def _roll(c, pool, tags, opp=None):
+    adv, flat, _ = c.modifiers_for(tags, opp)
+    from raldamain.engine.dice import DicePool
+    total = pool + DicePool(flat=flat) if flat else pool
+    return {"text": _pool_text(total, adv), "avg": round(total.average + 3.5 * adv, 1)}
+
+
+def _lasting_buffs(c, reg):
+    """Self-buffs that last the fight (Ira, Mente Desencadenada, Furia Abisal…):
+    3+ rounds and not spent by a single attack."""
+    out = []
+    for ab in c.abilities.values():
+        effs = [e for e in ab.effects if e.kind == "self_buff" and e.effect_id]
+        if not ab.implemented or not effs or any(e.kind not in ("self_buff", "note") for e in ab.effects):
+            continue
+        for e in effs:
+            spec = reg.get(e.effect_id)
+            dur = e.duration if e.duration is not None else spec.duration
+            if (dur is not None and dur < 3) or any(t.startswith("consume_on") for t in spec.tags):
+                continue
+            out.append((ab.name, e, spec))
+    return out
+
+
+def _measure(c):
+    """Umbrales, saves, defence, initiative and every attack, as rolled now."""
+    from raldamain.engine.dice import DicePool
+    umb = {k: c.umbral_for(k) for k in ("general", "fisico", "magico")}
+    extra = {k: c.umbral_for(k) for k in sorted(c.umbrales) if k not in umb and c.umbrales[k] < 900}
+    immune = sorted(k for k, v in c.umbrales.items() if v >= 900)
+    saves = {k: _roll(c, pool, ("save", f"save_{k}", *SAVE_TAGS.get(k, ()))) for k, pool in sorted(c.saves.items())}
+    defs = [(d.name, _roll(c, d.roll, ("defense", *d.tags), TARGET)) for d in (c.defenses or ([c.defense] if c.defense else []))]
+    best_def = max(defs, key=lambda x: x[1]["avg"]) if defs else ("—", {"text": "—", "avg": 0})
+    attacks = []
+    for ab in c.abilities.values():
+        if not ab.implemented or ab.is_defense or ab.trigger or not ab.is_attack:
+            continue
+        atk_effects = [e for e in ab.effects if e.kind == "attack"]
+        eff = atk_effects[0]
+        roll = _roll(c, eff.attack_roll, ("attack", *ab.tags), TARGET)
+        dmg_nodes = [h.damage for h in eff.on_hit if h.kind == "damage" and h.damage is not None]
+        if not dmg_nodes:
+            continue
+        pool = DicePool()
+        for d in dmg_nodes:
+            pool = pool + d
+        extra_dice = c.damage_dice_bonus(("damage", *ab.tags), TARGET)
+        pool = pool.with_dice(extra_dice, pool.largest_die)
+        times = len(atk_effects)
+        actions = max(1, ab.actions)
+        attacks.append({"name": ab.name, "actions": ab.actions, "times": times, "bonus": roll,
+                        "damage": {"text": _dmg_text(pool), "avg": round(pool.average, 1)},
+                        "per_action": round(pool.average * times / actions, 1)})
+    attacks.sort(key=lambda a: -a["per_action"])
+    return {"impactos": c.max_impactos, "chi": c.max_chi, "umbrales": umb, "umbrales_extra": extra,
+            "immune": immune, "saves": saves, "defense": {"name": best_def[0], **best_def[1]},
+            "initiative": _roll(c, c.initiative, ("initiative", "physical")), "attacks": attacks}
+
+
+def stat_row(sid, entry, reg):
+    c = make_side(sid, "party", reg)[0]
+    base = _measure(c)
+    applied = []
+    for name, e, spec in _lasting_buffs(c, reg):
+        against = TARGET if e.raw.get("against_target") else None
+        dur = e.duration if e.duration is not None else spec.duration
+        if c.add_effect(reg.instantiate(e.effect_id, c.id, dur, against_id=against)):
+            applied.append(name + (" (vs. objetivo)" if against else ""))
+    buffed = _measure(c) if applied else base
+    origin = entry.get("origin") or "bestiario"
+    level = int(entry.get("level") or 0)
+    ranks = entry.get("website_ranks") or {}
+    return {"id": sid, "name": entry.get("name", sid), "origin": origin, "level": level,
+            "tier": tier_for(level) if level else 0, "ranks": ranks, "buffs": applied,
+            "base": base, "buffed": buffed}
+
+
+@app.route("/api/tabla")
+def api_tabla():
+    reg = load_conditions()
+    rows, errors = [], []
+    for sid, entry in load_roster().items():
+        try:
+            rows.append(stat_row(sid, entry, reg))
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"{sid}: {type(e).__name__}: {e}")
+    rows.sort(key=lambda r: (r["origin"] != "ficha", r["level"], r["name"]))
+    rank_names = {rid: (d.get("title") or rid) for rid, d in website.rank_data().items()}
+    return jsonify({"rows": rows, "errors": errors, "rank_names": rank_names})
+
+
+# ─────────────────────────────────────────────────────────────── creature creator API
+
+def _read_json(path, default):
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
+
+
+@app.route("/api/criaturas/<cid>", methods=["GET"])
+def api_criatura_get(cid):
+    p = CREATURES / f"{cid}.json"
+    if not ID_RE.match(cid) or not p.exists():
+        abort(404)
+    return Response(p.read_text(encoding="utf-8"), mimetype="application/json")
+
+
+@app.route("/api/criaturas/<cid>", methods=["PUT"])
+def api_criatura_put(cid):
+    if not ID_RE.match(cid):
+        return jsonify({"error": "id no válido (minúsculas, números, - y _)"}), 400
+    data = request.get_json(force=True)
+    if not isinstance(data, dict) or not data.get("name"):
+        return jsonify({"error": "la criatura necesita al menos un nombre"}), 400
+    data["id"] = cid
+    CREATURES.mkdir(parents=True, exist_ok=True)
+    (CREATURES / f"{cid}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    # keep the website's bestiary index in step (same fields as the creature editor)
+    idx = _read_json(CREATURE_INDEX, [])
+    entry = {"id": cid, "name": data.get("name", cid), "type": data.get("type", ""), "level": data.get("level", 0),
+             "size": data.get("size", ""), "image": data.get("image", ""), "description": data.get("description", "")}
+    for i, e in enumerate(idx):
+        if e.get("id") == cid:
+            idx[i] = entry
+            break
+    else:
+        idx.append(entry)
+    CREATURE_INDEX.write_text(json.dumps(idx, ensure_ascii=False, indent=2), encoding="utf-8")
+    reload_roster()
+    sim_id = next((sid for sid, s in load_roster().items()
+                   if s.get("origin") == "bestiario" and Path(s.get("source", "")).stem == cid), cid)
+    return jsonify({"ok": True, "id": cid, "sim_id": sim_id})
+
+
+@app.route("/api/criatura-biblioteca")
+def api_criatura_biblioteca():
+    return jsonify({"abilities": _read_json(CREATURE_ABILITIES, []),
+                    "scaling": _read_json(CREATURE_SCALING, None)})
+
+
 # ─────────────────────────────────────────────────────────────── simulator API
 
 @app.route("/api/sim/roster")
@@ -304,7 +476,9 @@ body { min-height: 100vh; }
   <nav class="tl-nav">
     <a href="/taller" class="__N1__">📚 Fichas</a>
     <a href="/taller/bestiario" class="__N3__">🐉 Bestiario</a>
+    <a href="/taller/tabla" class="__N4__">📊 Tabla</a>
     <a href="/creador.html?ficha=new">✚ Nueva ficha</a>
+    <a href="/taller/criatura" class="__N5__">✚ Nueva criatura</a>
     <a href="/taller/simulador" class="__N2__">⚔ Simulador</a>
   </nav>
 </header>
@@ -313,7 +487,7 @@ body { min-height: 100vh; }
 
 def page(title, body, nav):
     head = HEAD.replace("__TITLE__", title)
-    for n in (1, 2, 3):
+    for n in (1, 2, 3, 4, 5):
         head = head.replace(f"__N{n}__", "on" if nav == n else "")
     return Response(head + body + "\n</body></html>", mimetype="text/html")
 
@@ -434,7 +608,7 @@ BESTIARIO = r"""
 <main class="tl-wrap">
   <h1 class="tl-h1">Bestiario</h1>
   <p class="tl-sub">Criaturas de <code>data/creatures</code>, con los mismos números que las fichas para compararlas.
-    Pulsa una para ver su ficha completa. (Solo lectura: se editan en el Editor de Criaturas.)</p>
+    Pulsa una para ver su ficha completa y editarla en el creador de criaturas.</p>
 
   <div class="fx-row">
     <input id="q" class="inp" placeholder="Buscar por nombre, tipo, etiqueta o ataque…" oninput="render()">
@@ -445,6 +619,7 @@ BESTIARIO = r"""
       <option value="hits">Orden: Impactos</option><option value="umbral">Orden: umbral General</option>
     </select>
     <span class="muted" id="count" style="margin-left:auto;font-size:0.85rem"></span>
+    <a class="btn-gold" href="/taller/criatura">✚ Nueva criatura</a>
   </div>
   <div id="types" class="filter-container"></div>
   <div id="errors"></div>
@@ -456,6 +631,7 @@ BESTIARIO = r"""
     <div class="bx-bar">
       <span id="bx-title" class="tl-title" style="font-size:1rem"></span>
       <span style="margin-left:auto;display:flex;gap:6px">
+        <a id="bx-edit" class="btn-ghost" href="#">✏ Editar</a>
         <a id="bx-sim" class="btn-ghost" href="#">⚔ Simular contra</a>
         <a id="bx-web" class="btn-ghost" href="#" target="_blank">↗ Abrir página</a>
         <button class="btn-ghost" onclick="closeCreature()">✕</button>
@@ -586,6 +762,7 @@ function openCreature(id) {
   document.getElementById('bx-title').textContent = `${c.name} · Niv ${c.level} · Tier ${c.tier}`;
   document.getElementById('bx-frame').src = `/criatura/${encodeURIComponent(id)}?embed=1`;
   document.getElementById('bx-web').href = `/criatura/${encodeURIComponent(id)}`;
+  document.getElementById('bx-edit').href = `/taller/criatura?c=${encodeURIComponent(id)}`;
   const sim = document.getElementById('bx-sim');
   sim.style.display = c.sim_id ? '' : 'none';
   sim.href = `/taller/simulador?enemies=${encodeURIComponent(c.sim_id || '')}`;
@@ -754,6 +931,16 @@ def taller_fichas():
     return page("Fichas", FICHAS, 1)
 
 
+@app.route("/taller/tabla")
+def taller_tabla():
+    return page("Tabla", (PAGES / "taller_tabla.html").read_text(encoding="utf-8"), 4)
+
+
+@app.route("/taller/criatura")
+def taller_criatura():
+    return page("Creador de criaturas", (PAGES / "taller_criatura.html").read_text(encoding="utf-8"), 5)
+
+
 @app.route("/taller/bestiario")
 def taller_bestiario():
     return page("Bestiario", BESTIARIO, 3)
@@ -773,7 +960,7 @@ if __name__ == "__main__":
     # restarts on code edits (Taller + simulator); open pages also reload when
     # the Creador / Mesa files or the rank & equipment data change
     live_reload.run(app, port, url, open_browser=not __import__("os").environ.get("TALLER_NO_BROWSER"),
-                    watch=["*.html", "assets/js/**/*.js", "assets/css/*.css",
+                    watch=["*.html", "tools/taller_*.html", "assets/js/**/*.js", "assets/css/*.css",
                            "data/builder/*.json", "data/ranks/*.json"],
                     extra_files=[BASE / "combat-simulator" / "raldamain" / "data" / "ranks.yaml",
                                  BASE / "combat-simulator" / "raldamain" / "data" / "conditions.yaml"])

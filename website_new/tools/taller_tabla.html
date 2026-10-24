@@ -1,0 +1,188 @@
+<main class="tl-wrap tb-wrap">
+  <h1 class="tl-h1">Tabla de estadísticas</h1>
+  <p class="tl-sub">Umbrales, salvaciones, defensa y ataques de cada ficha tal como los calcula el simulador.
+    «Con mejoras duraderas» activa a la vez todas las mejoras de combate que duran (Ira, Mente Desencadenada,
+    Furia Abisal, Forma de la Bestia, Canalización…). Las de un solo uso (Ataque Poderoso) o de una ronda (Frenesí) no cuentan.</p>
+
+  <div class="tb-filters">
+    <input id="q" class="inp" placeholder="Buscar nombre, rango o mejora…">
+    <select id="f-origin" class="inp">
+      <option value="ficha">Fichas</option><option value="bestiario">Bestiario</option><option value="">Fichas y bestiario</option>
+    </select>
+    <select id="f-tier" class="inp"><option value="">Todos los Tiers</option></select>
+    <select id="f-rank" class="inp"><option value="">Todos los rangos</option></select>
+    <div class="tb-mode" role="group" aria-label="Valores">
+      <button id="m-buffed" class="on" type="button">Con mejoras duraderas</button>
+      <button id="m-base" type="button">Base</button>
+    </div>
+    <span id="count" class="muted tb-count"></span>
+  </div>
+  <div id="errors"></div>
+
+  <div class="tb-scroll">
+    <table class="tb" id="tbl">
+      <thead>
+        <tr class="grp">
+          <th colspan="5"></th><th colspan="3">Umbrales</th><th colspan="3">Salvaciones</th>
+          <th colspan="2"></th><th colspan="3">Mejor ataque (daño por acción)</th>
+        </tr>
+        <tr id="head"></tr>
+      </thead>
+      <tbody id="body"><tr><td class="muted" colspan="16">Calculando…</td></tr></tbody>
+    </table>
+  </div>
+  <p class="muted tb-note">Ventaja = +1d6 por dado (se acumulan hasta 4). Los valores de defensa y ataque incluyen las mejoras
+    «contra un objetivo» (Analizar Enemigo). Pulsa una fila para ver todos sus ataques.</p>
+</main>
+
+<style>
+.tb-wrap { max-width: 1500px; }
+.tb-filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
+.tb-filters #q { flex: 1 1 240px; }
+.tb-mode { display: inline-flex; border: 1px solid #555; border-radius: 4px; overflow: hidden; }
+.tb-mode button { background: none; border: 0; color: var(--text-muted); padding: 7px 12px; cursor: pointer; font-family: var(--font-body); }
+.tb-mode button.on { background: var(--accent-gold); color: #000; font-weight: bold; }
+.tb-count { margin-left: auto; font-size: .85rem; }
+.tb-scroll { overflow-x: auto; border: 1px solid #333; border-radius: 6px; max-height: 76vh; }
+.tb { border-collapse: collapse; width: 100%; font-size: .86rem; font-variant-numeric: tabular-nums; }
+.tb th, .tb td { padding: 6px 8px; border-bottom: 1px solid #2a2a2a; text-align: left; white-space: nowrap; vertical-align: top; }
+.tb thead th { position: sticky; background: var(--secondary-black); z-index: 2; }
+.tb thead tr.grp th { top: 0; font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted);
+  text-align: center; border-bottom: 0; padding-bottom: 0; }
+.tb thead tr#head th { top: 22px; font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--text-muted);
+  cursor: pointer; user-select: none; }
+.tb thead tr#head th:hover { color: var(--accent-gold); }
+.tb thead th.sorted { color: var(--accent-gold); }
+.tb thead th.sorted::after { content: attr(data-dir); margin-left: 4px; }
+.tb tbody tr.row { cursor: pointer; }
+.tb tbody tr.row:hover td { background: rgba(255, 242, 0, 0.04); }
+.tb td.name { white-space: normal; min-width: 220px; max-width: 300px; }
+.tb td.name b { display: block; color: var(--text-main); }
+.tb td.name small { color: var(--text-muted); font-size: .74rem; display: block; }
+.tb .chip { display: inline-block; font-size: .68rem; padding: 0 6px; margin: 2px 3px 0 0; border-radius: 3px;
+  border: 1px solid var(--accent-gold); color: var(--accent-gold); }
+.tb .chip.crt { border-color: #555; color: var(--text-muted); }
+.tb .v { display: block; color: var(--text-main); }
+.tb .v.up { color: #7ee08f; }
+.tb .was { display: block; font-size: .7rem; color: var(--text-muted); }
+.tb .avg { color: var(--text-muted); font-size: .74rem; }
+.tb td.atk { min-width: 150px; }
+.tb tr.detail td { background: rgba(255, 255, 255, 0.02); white-space: normal; }
+.tb .atk-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 6px 18px; font-size: .8rem; }
+.tb .atk-list div { border-left: 2px solid #444; padding-left: 8px; }
+.tb .imm { color: var(--text-muted); font-size: .72rem; display: block; }
+.tb-note { font-size: .8rem; margin-top: 10px; }
+</style>
+
+<script>
+const COLS = [
+  { key: 'name', label: 'Personaje', sort: r => r.name.toLowerCase() },
+  { key: 'level', label: 'Niv', sort: r => r.level },
+  { key: 'tier', label: 'T', sort: r => r.tier },
+  { key: 'imp', label: 'Imp', sort: (r, v) => v.impactos },
+  { key: 'chi', label: 'Chi', sort: (r, v) => v.chi },
+  { key: 'ug', label: 'General', sort: (r, v) => v.umbrales.general },
+  { key: 'uf', label: 'Físico', sort: (r, v) => v.umbrales.fisico },
+  { key: 'um', label: 'Mágico', sort: (r, v) => v.umbrales.magico },
+  { key: 'sf', label: 'FÍS', sort: (r, v) => (v.saves.fis || {}).avg || 0 },
+  { key: 'sv', label: 'VOL', sort: (r, v) => (v.saves.vol || {}).avg || 0 },
+  { key: 'sm', label: 'MEN', sort: (r, v) => (v.saves.men || {}).avg || 0 },
+  { key: 'def', label: 'Defensa', sort: (r, v) => v.defense.avg },
+  { key: 'ini', label: 'Inic.', sort: (r, v) => v.initiative.avg },
+  { key: 'atk', label: 'Ataque', sort: (r, v) => (v.attacks[0] || { bonus: { avg: 0 } }).bonus.avg },
+  { key: 'dmg', label: 'Daño', sort: (r, v) => (v.attacks[0] || { damage: { avg: 0 } }).damage.avg },
+  { key: 'dpa', label: 'Daño/acc.', sort: (r, v) => (v.attacks[0] || { per_action: 0 }).per_action },
+];
+let DATA = { rows: [], rank_names: {} };
+let MODE = 'buffed', SORT = { key: 'level', dir: 1 }, OPEN = new Set();
+const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+const roman = n => ['', 'I', 'II', 'III', 'IV', 'V', 'VI'][n] || n;
+const $ = id => document.getElementById(id);
+
+async function load() {
+  const d = await (await fetch('/api/tabla')).json();
+  DATA = d;
+  $('errors').innerHTML = (d.errors || []).map(e => `<p class="err">⚠ ${esc(e)}</p>`).join('');
+  const tiers = [...new Set(d.rows.map(r => r.tier).filter(Boolean))].sort((a, b) => a - b);
+  $('f-tier').innerHTML = '<option value="">Todos los Tiers</option>' + tiers.map(t => `<option value="${t}">Tier ${t}</option>`).join('');
+  const ranks = [...new Set(d.rows.flatMap(r => Object.keys(r.ranks)))].sort((a, b) => (d.rank_names[a] || a).localeCompare(d.rank_names[b] || b));
+  $('f-rank').innerHTML = '<option value="">Todos los rangos</option>' + ranks.map(k => `<option value="${k}">${esc(d.rank_names[k] || k)}</option>`).join('');
+  try { const m = localStorage.getItem('taller.tabla.mode'); if (m) setMode(m, false); } catch (e) {}
+  render();
+}
+function setMode(m, rerender = true) {
+  MODE = m;
+  $('m-buffed').classList.toggle('on', m === 'buffed');
+  $('m-base').classList.toggle('on', m === 'base');
+  try { localStorage.setItem('taller.tabla.mode', m); } catch (e) {}
+  if (rerender) render();
+}
+function cell(cur, base, fmt = x => x, isUp = (a, b) => a > b) {
+  const changed = MODE === 'buffed' && fmt(cur) !== fmt(base);
+  return `<span class="v${changed ? ' up' : ''}">${esc(fmt(cur))}</span>${changed ? `<span class="was">base ${esc(fmt(base))}</span>` : ''}`;
+}
+function roll(cur, base) {
+  if (!cur) return '—';
+  const changed = MODE === 'buffed' && base && cur.text !== base.text;
+  return `<span class="v${changed ? ' up' : ''}">${esc(cur.text)} <span class="avg">(${cur.avg})</span></span>${changed ? `<span class="was">base ${esc(base.text)}</span>` : ''}`;
+}
+function render() {
+  const q = $('q').value.toLowerCase();
+  const origin = $('f-origin').value, tier = $('f-tier').value, rank = $('f-rank').value;
+  const rn = DATA.rank_names;
+  let rows = DATA.rows.filter(r => (!origin || r.origin === origin) && (!tier || String(r.tier) === tier)
+    && (!rank || rank in r.ranks)
+    && (!q || [r.name, ...Object.keys(r.ranks).map(k => rn[k] || k), ...r.buffs].join(' ').toLowerCase().includes(q)));
+  const col = COLS.find(c => c.key === SORT.key) || COLS[1];
+  rows.sort((a, b) => {
+    const va = col.sort(a, a[MODE]), vb = col.sort(b, b[MODE]);
+    return (va < vb ? -1 : va > vb ? 1 : 0) * SORT.dir || a.name.localeCompare(b.name);
+  });
+  $('count').textContent = `${rows.length} de ${DATA.rows.length}`;
+  $('head').innerHTML = COLS.map(c => `<th data-k="${c.key}" class="${c.key === SORT.key ? 'sorted' : ''}" data-dir="${SORT.dir > 0 ? '▲' : '▼'}">${c.label}</th>`).join('');
+  $('body').innerHTML = rows.map(r => {
+    const v = r[MODE], b = r.base, a = v.attacks[0], ab = b.attacks[0];
+    const ranks = Object.entries(r.ranks).sort((x, y) => y[1] - x[1]).map(([k, n]) => `${rn[k] || k} ${roman(n)}`).join(' · ');
+    const chips = r.buffs.map(x => `<span class="chip">${esc(x)}</span>`).join('') + (r.origin === 'bestiario' ? '<span class="chip crt">Bestiario</span>' : '');
+    const extra = Object.entries(v.umbrales_extra).map(([k, n]) => `${k} ${n}`).join(' · ');
+    const main = `<tr class="row" data-id="${esc(r.id)}">
+      <td class="name"><b>${esc(r.name)}</b><small>${esc(ranks)}</small>${chips}</td>
+      <td>${r.level}</td><td>${r.tier || '—'}</td>
+      <td>${cell(v.impactos, b.impactos)}</td><td>${cell(v.chi, b.chi)}</td>
+      <td>${cell(v.umbrales.general, b.umbrales.general)}</td>
+      <td>${cell(v.umbrales.fisico, b.umbrales.fisico)}${extra ? `<span class="imm" title="Otros umbrales">${esc(extra)}</span>` : ''}</td>
+      <td>${cell(v.umbrales.magico, b.umbrales.magico)}${v.immune.length ? `<span class="imm">inmune: ${esc(v.immune.join(', '))}</span>` : ''}</td>
+      <td>${roll(v.saves.fis, b.saves.fis)}</td><td>${roll(v.saves.vol, b.saves.vol)}</td><td>${roll(v.saves.men, b.saves.men)}</td>
+      <td>${roll(v.defense, b.defense)}<span class="imm">${esc(v.defense.name)}</span></td>
+      <td>${roll(v.initiative, b.initiative)}</td>
+      <td class="atk">${a ? `<span class="v">${esc(a.name)}${a.times > 1 ? ` ×${a.times}` : ''}</span>${roll(a.bonus, ab && ab.name === a.name ? ab.bonus : null)}` : '—'}</td>
+      <td>${a ? roll(a.damage, ab && ab.name === a.name ? ab.damage : null) : '—'}</td>
+      <td>${a ? cell(a.per_action, ab && ab.name === a.name ? ab.per_action : a.per_action) : '—'}</td>
+    </tr>`;
+    if (!OPEN.has(r.id)) return main;
+    const list = v.attacks.map(x => {
+      const y = b.attacks.find(z => z.name === x.name);
+      return `<div><b>${esc(x.name)}</b> (${x.actions} acc${x.times > 1 ? `, ${x.times} ataques` : ''})<br>
+        ${esc(x.bonus.text)} para atacar · ${esc(x.damage.text)} daño (media ${x.damage.avg}) · ${x.per_action}/acción
+        ${MODE === 'buffed' && y && (y.bonus.text !== x.bonus.text || y.damage.text !== x.damage.text) ? `<br><span class="imm">base: ${esc(y.bonus.text)} · ${esc(y.damage.text)}</span>` : ''}</div>`;
+    }).join('') || '<div class="muted">Sin ataques simulados</div>';
+    return main + `<tr class="detail"><td colspan="16"><div class="atk-list">${list}</div></td></tr>`;
+  }).join('') || '<tr><td class="muted" colspan="16">No hay fichas con estos filtros.</td></tr>';
+}
+$('head').addEventListener('click', e => {
+  const th = e.target.closest('th'); if (!th) return;
+  const k = th.dataset.k;
+  SORT = SORT.key === k ? { key: k, dir: -SORT.dir } : { key: k, dir: k === 'name' ? 1 : -1 };
+  render();
+});
+$('body').addEventListener('click', e => {
+  const tr = e.target.closest('tr.row'); if (!tr) return;
+  const id = tr.dataset.id;
+  OPEN.has(id) ? OPEN.delete(id) : OPEN.add(id);
+  render();
+});
+['q', 'f-origin', 'f-tier', 'f-rank'].forEach(id => $(id).addEventListener(id === 'q' ? 'input' : 'change', render));
+$('m-buffed').addEventListener('click', () => setMode('buffed'));
+$('m-base').addEventListener('click', () => setMode('base'));
+load();
+</script>

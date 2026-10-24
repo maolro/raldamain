@@ -1,0 +1,479 @@
+<link rel="stylesheet" href="/assets/css/creature_style.css">
+<main class="tl-wrap cc-wrap">
+  <div class="cc-top">
+    <div>
+      <h1 class="tl-h1" id="cc-title">Nueva criatura</h1>
+      <p class="tl-sub" id="cc-sub">Rellena la información a la izquierda; la ficha se dibuja a la derecha tal como se verá en la web.</p>
+    </div>
+    <div class="cc-actions">
+      <span id="cc-dirty" class="cc-dirty"></span>
+      <a class="btn-ghost" href="/taller/bestiario">🐉 Bestiario</a>
+      <a class="btn-ghost" id="cc-web" href="#" target="_blank" hidden>↗ Ver en la web</a>
+      <a class="btn-ghost" id="cc-sim" href="#" hidden>⚔ Simular contra</a>
+      <button class="btn-gold" id="cc-save" type="button">💾 Guardar</button>
+    </div>
+  </div>
+
+  <div class="cc-grid">
+    <section class="cc-left">
+      <div class="cc-card">
+        <div class="cc-row">
+          <label class="cc-f cc-grow">Nombre<input id="f-name" class="inp" placeholder="Sabueso del Abismo"></label>
+          <label class="cc-f">ID (archivo)<input id="f-id" class="inp" placeholder="sabueso_abismo"></label>
+        </div>
+        <div class="cc-row">
+          <label class="cc-f">Tipo<input id="f-type" class="inp" list="dl-types" placeholder="Abisal"></label>
+          <label class="cc-f">Tamaño<select id="f-size" class="inp">
+            <option>Diminuto</option><option>Pequeño</option><option selected>Mediano</option><option>Grande</option>
+            <option>Enorme</option><option>Gigante</option><option>Colosal</option></select></label>
+          <label class="cc-f cc-num">Nivel<input id="f-level" class="inp" type="number" min="1" max="30"></label>
+          <label class="cc-f">Categoría<input id="f-cat" class="inp" list="dl-cats" placeholder="Esbirro Élite II"></label>
+        </div>
+        <div class="cc-tierline" id="cc-tierline"></div>
+        <label class="cc-f">Descripción<textarea id="f-desc" class="inp" rows="2"></textarea></label>
+        <div class="cc-row">
+          <label class="cc-f cc-grow">Etiquetas (comas)<input id="f-tags" class="inp" placeholder="Abisal, Élite"></label>
+          <label class="cc-f">Imagen<input id="f-image" class="inp" placeholder="sabueso_abismo.jpg"></label>
+        </div>
+        <label class="cc-f">Trasfondo<textarea id="f-lore" class="inp" rows="2"></textarea></label>
+      </div>
+
+      <nav class="cc-tabs" role="tablist">
+        <button data-tab="base" class="on" type="button">BASE</button>
+        <button data-tab="traits" type="button">PASIVAS <span id="n-traits"></span></button>
+        <button data-tab="actions" type="button">ACCIONES <span id="n-actions"></span></button>
+        <button data-tab="reactions" type="button">REACCIONES <span id="n-reactions"></span></button>
+      </nav>
+
+      <div class="cc-card" id="tab-base">
+        <div class="cc-row">
+          <label class="cc-f cc-num">Impactos<input id="f-hits" class="inp" type="number" min="1"></label>
+          <label class="cc-f cc-num">Acciones<input id="f-acc" class="inp" type="number" min="0"></label>
+          <label class="cc-f cc-num">Reacciones<input id="f-rea" class="inp" type="number" min="0"></label>
+        </div>
+        <div class="cc-sub">Tiros de salvación
+          <button type="button" class="btn-ghost cc-mini" id="btn-saves" title="Pone el bonus del Tier de la criatura en las tres salvaciones">Usar bonus del Tier</button></div>
+        <div class="cc-row">
+          <label class="cc-f">FÍS<input id="f-sfis" class="inp" placeholder="+7+1d6"></label>
+          <label class="cc-f">VOL<input id="f-svol" class="inp" placeholder="+7"></label>
+          <label class="cc-f">MEN<input id="f-smen" class="inp" placeholder="+4"></label>
+        </div>
+        <div class="cc-sub">Umbrales de daño
+          <span class="cc-quick">añadir: <button type="button" data-umb="General">General</button><button type="button" data-umb="Físico">Físico</button><button type="button" data-umb="Magia">Magia</button></span></div>
+        <div id="umb-list" class="cc-umbs"></div>
+        <div class="cc-row">
+          <label class="cc-f cc-grow">Inmunidades (comas)<input id="f-immune" class="inp" placeholder="Veneno, Miedo, Efectos físicos no mágicos"></label>
+        </div>
+        <div class="cc-row">
+          <label class="cc-f cc-grow">Sentidos<input id="f-senses" class="inp" placeholder="Visión en la oscuridad"></label>
+          <label class="cc-f cc-grow">Velocidad<input id="f-speed" class="inp" placeholder="Paso 8"></label>
+        </div>
+      </div>
+
+      <div class="cc-card" id="tab-list" hidden>
+        <div class="cc-listbar">
+          <button type="button" class="btn-gold cc-mini" id="btn-pick">＋ Desde la biblioteca</button>
+          <button type="button" class="btn-ghost cc-mini" id="btn-blank">＋ En blanco</button>
+          <span class="muted cc-hint" id="list-hint"></span>
+        </div>
+        <div id="entries" class="cc-entries"></div>
+      </div>
+    </section>
+
+    <aside class="cc-right">
+      <div id="preview"></div>
+    </aside>
+  </div>
+</main>
+
+<datalist id="dl-types"></datalist>
+<datalist id="dl-cats"></datalist>
+
+<div id="pick" class="cc-modal" hidden>
+  <div class="cc-panel">
+    <div class="cc-pickbar">
+      <b id="pick-title">Biblioteca</b>
+      <input id="pick-q" class="inp" placeholder="Buscar…">
+      <button type="button" class="btn-ghost" id="pick-close">✕</button>
+    </div>
+    <div class="cc-pickfilters"><div id="pick-tiers"></div><div id="pick-tags"></div></div>
+    <div id="pick-list" class="cc-picklist"></div>
+  </div>
+</div>
+
+<style>
+[hidden] { display: none !important; }  /* hidden tabs/links stay hidden despite their display rules */
+.cc-wrap { max-width: 1500px; }
+.cc-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+.cc-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.cc-dirty { color: var(--accent-gold); font-size: .85rem; }
+.cc-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
+.cc-right { position: sticky; top: 70px; max-height: calc(100vh - 90px); overflow-y: auto; }
+.cc-right .statblock { margin: 0 auto; }
+.cc-card { background: var(--secondary-black); border: 1px solid #333; border-radius: 8px; padding: 14px; display: grid; gap: 10px; }
+.cc-left { display: grid; gap: 12px; min-width: 0; }
+.cc-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.cc-f { display: flex; flex-direction: column; gap: 4px; font-size: .74rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; flex: 1 1 140px; min-width: 0; }
+.cc-f .inp { text-transform: none; letter-spacing: 0; width: 100%; }
+.cc-f textarea { resize: vertical; }
+.cc-grow { flex: 3 1 220px; }
+.cc-num { flex: 0 1 100px; }
+.cc-tierline { font-size: .82rem; color: var(--text-muted); }
+.cc-tierline b { color: var(--accent-gold); }
+.cc-tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+.cc-tabs button { background: none; border: 1px solid #444; color: var(--text-muted); border-radius: 4px 4px 0 0; padding: 7px 14px;
+  font: 600 .82rem var(--font-body); letter-spacing: .06em; cursor: pointer; }
+.cc-tabs button.on { border-color: var(--accent-gold); color: var(--accent-gold); }
+.cc-tabs span { opacity: .7; }
+.cc-sub { font-size: .74rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent-gold); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.cc-mini { padding: 3px 10px; font-size: .78rem; }
+.cc-quick { text-transform: none; letter-spacing: 0; color: var(--text-muted); font-size: .8rem; }
+.cc-quick button { background: none; border: 1px solid #555; color: var(--text-main); border-radius: 3px; padding: 1px 8px; margin-left: 4px; cursor: pointer; font-size: .76rem; }
+.cc-umbs { display: grid; gap: 6px; }
+.cc-umb { display: grid; grid-template-columns: 90px 1fr auto; gap: 6px; }
+.cc-x { background: none; border: 0; color: var(--text-muted); cursor: pointer; font-size: 1rem; padding: 0 6px; }
+.cc-x:hover { color: #e76a6a; }
+.cc-listbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.cc-hint { font-size: .8rem; }
+.cc-entries { display: grid; gap: 10px; }
+.cc-entry { border: 1px solid #333; border-left: 3px solid #555; border-radius: 6px; padding: 10px; display: grid; gap: 8px; background: rgba(255,255,255,.015); }
+.cc-entry.lib { border-left-color: var(--accent-gold); }
+.cc-entry-head { display: flex; gap: 6px; align-items: center; }
+.cc-entry-head .inp { flex: 1; font-weight: bold; }
+.cc-badge { font-size: .68rem; padding: 0 6px; border-radius: 3px; border: 1px solid #666; color: var(--text-muted); white-space: nowrap; }
+.cc-badge.gold { border-color: var(--accent-gold); color: var(--accent-gold); }
+.cc-badge.LOW { border-color: #4caf6a; color: #4caf6a; } .cc-badge.MID { border-color: #f0c040; color: #f0c040; } .cc-badge.HIGH { border-color: #e74c3c; color: #e74c3c; }
+.cc-modal { position: fixed; inset: 0; background: rgba(0,0,0,.7); z-index: 50; display: flex; align-items: center; justify-content: center; padding: 3vh 2vw; }
+.cc-modal[hidden] { display: none; }
+.cc-panel { width: min(760px, 100%); max-height: 88vh; background: var(--primary-black); border: 1px solid var(--accent-gold); border-radius: 8px; display: flex; flex-direction: column; overflow: hidden; }
+.cc-pickbar { display: flex; gap: 10px; align-items: center; padding: 10px 12px; border-bottom: 1px solid #333; }
+.cc-pickbar .inp { flex: 1; }
+.cc-pickfilters { padding: 8px 12px; border-bottom: 1px solid #333; display: grid; gap: 6px; }
+.cc-pickfilters button { background: none; border: 1px solid #444; color: var(--text-muted); border-radius: 3px; padding: 1px 8px; margin: 0 4px 4px 0; cursor: pointer; font-size: .76rem; }
+.cc-pickfilters button.on { border-color: var(--accent-gold); color: var(--accent-gold); }
+.cc-picklist { overflow-y: auto; padding: 8px 12px; display: grid; gap: 6px; }
+.cc-pickitem { border: 1px solid #2c2c2c; border-radius: 5px; padding: 8px 10px; cursor: pointer; display: grid; gap: 3px; }
+.cc-pickitem:hover { border-color: var(--accent-gold); }
+.cc-pickitem .t { display: flex; gap: 6px; align-items: center; }
+.cc-pickitem .t b { flex: 1; color: var(--text-main); }
+.cc-pickitem small { color: var(--text-muted); }
+@media (max-width: 1000px) { .cc-grid { grid-template-columns: 1fr; } .cc-right { position: static; max-height: none; } }
+</style>
+
+<script>
+// ── Tier tables (same defaults as the creature editor; data/creature_scaling.json overrides) ──
+let DAMAGE_TIERS = [
+  { min:1,  max:3,  LOW:[1,6,4],   MID:[2,6,4],   HIGH:[3,6,4]   },
+  { min:4,  max:6,  LOW:[2,6,5],   MID:[3,6,5],   HIGH:[4,6,5]   },
+  { min:7,  max:9,  LOW:[2,8,6],   MID:[3,8,6],   HIGH:[4,8,6]   },
+  { min:10, max:12, LOW:[3,8,7],   MID:[4,8,7],   HIGH:[5,8,7]   },
+  { min:13, max:15, LOW:[3,10,8],  MID:[4,10,8],  HIGH:[5,10,8]  },
+  { min:16, max:18, LOW:[4,10,9],  MID:[5,10,9],  HIGH:[6,10,9]  },
+  { min:19, max:21, LOW:[4,12,10], MID:[5,12,10], HIGH:[6,12,10] },
+];
+let BONUS_TABLE = [
+  { min:1, max:3, bonus:'+5+1d6' }, { min:4, max:6, bonus:'+7+2d6' }, { min:7, max:9, bonus:'+9+2d6' },
+  { min:10, max:12, bonus:'+11+3d6' }, { min:13, max:15, bonus:'+13+3d6' }, { min:16, max:18, bonus:'+15+4d6' },
+  { min:19, max:21, bonus:'+17+4d6' },
+];
+const PHYSICAL = ['contundente', 'cortante', 'perforante'];
+const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI'];
+const normF = s => (s || '').replace(/\s*\+\s*/g, '+').trim();
+const fmtDice = s => s ? normF(s).replace(/([a-z0-9])\+/gi, '$1 + ') : s;
+const bandOf = (tbl, lv) => tbl.find(b => lv >= b.min && lv <= b.max) || (lv > tbl[tbl.length - 1].max ? tbl[tbl.length - 1] : tbl[0]);
+const tierOf = lv => DAMAGE_TIERS.indexOf(bandOf(DAMAGE_TIERS, lv)) + 1;
+function scaleDamage(tier, type, lv) {
+  const [n, sides, flat] = bandOf(DAMAGE_TIERS, lv)[tier];
+  const phys = PHYSICAL.some(p => (type || '').toLowerCase().includes(p));
+  const dice = phys ? n : Math.max(0, n - 1);
+  const s = dice > 0 ? `${dice}d${sides} + ${flat}` : String(flat);
+  return type ? `${s} ${type}` : s;
+}
+
+// ── State ──
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+const slug = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+  .replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '').slice(0, 60);
+const LIST_TYPE = { traits: 'passive', actions: 'action', reactions: 'reaction' };
+const LIST_NAME = { traits: 'pasivas', actions: 'acciones', reactions: 'reacciones' };
+let C = null, SAVED = '', EXISTING = false, LIB = [], TAB = 'base', ID_TOUCHED = false, SIM_ID = '';
+let PICK = { q: '', tag: '', tier: '' };
+
+function blank() {
+  return { id: '', name: '', type: '', size: 'Mediano', level: 1, description: '', hits: 2,
+    saves: { 'FÍS': '+5', 'VOL': '+5', 'MEN': '+5' }, umbrales: [{ value: 4, categories: 'General' }],
+    immune: [], senses: '', speed: 'Paso 8', combat: { acciones: 2, reacciones: 1 },
+    traits: [], actions: [], reactions: [], lore: '', tags: [] };
+}
+function dirty() { return C && JSON.stringify(C) !== SAVED; }
+
+// ── Load ──
+async function init() {
+  window.updateMetaTags = () => {};  // the site renderer must not retitle this page
+  const [lib, bx] = await Promise.all([fetch('/api/criatura-biblioteca').then(r => r.json()), fetch('/api/bestiario').then(r => r.json())]);
+  LIB = lib.abilities || [];
+  if (lib.scaling && Array.isArray(lib.scaling.damage) && Array.isArray(lib.scaling.bonus)) { DAMAGE_TIERS = lib.scaling.damage; BONUS_TABLE = lib.scaling.bonus; }
+  const uniq = a => [...new Set(a.filter(Boolean))].sort();
+  $('dl-types').innerHTML = uniq((bx.creatures || []).map(c => c.type)).map(t => `<option value="${esc(t)}">`).join('');
+  $('dl-cats').innerHTML = uniq((bx.creatures || []).map(c => c.category)).map(t => `<option value="${esc(t)}">`).join('');
+  const id = new URLSearchParams(location.search).get('c');
+  if (id) {
+    const r = await fetch('/api/criaturas/' + encodeURIComponent(id), { cache: 'no-store' });
+    if (r.ok) { C = await r.json(); C.id = id; EXISTING = true; SIM_ID = (bx.creatures || []).find(x => x.id === id)?.sim_id || id; }
+  }
+  if (!C) C = blank();
+  normalize(C);
+  SAVED = JSON.stringify(C);
+  fillForm(); renderTab(); loadRenderer();
+}
+function normalize(c) {
+  c.saves = c.saves || {}; c.combat = c.combat || {}; c.umbrales = c.umbrales || [];
+  for (const k of ['traits', 'actions', 'reactions', 'immune', 'tags']) c[k] = Array.isArray(c[k]) ? c[k] : [];
+}
+
+// ── Form <-> data ──
+const FIELDS = [
+  ['f-name', 'name'], ['f-type', 'type'], ['f-size', 'size'], ['f-cat', 'tier'], ['f-desc', 'description'],
+  ['f-image', 'image'], ['f-lore', 'lore'], ['f-senses', 'senses'], ['f-speed', 'speed'],
+];
+function fillForm() {
+  for (const [el, k] of FIELDS) $(el).value = C[k] || '';
+  $('f-id').value = C.id || ''; $('f-id').disabled = EXISTING;
+  $('f-level').value = C.level || 1; $('f-hits').value = C.hits ?? 2;
+  $('f-acc').value = C.combat.acciones ?? 2; $('f-rea').value = C.combat.reacciones ?? 1;
+  $('f-sfis').value = C.saves['FÍS'] || ''; $('f-svol').value = C.saves['VOL'] || ''; $('f-smen').value = C.saves['MEN'] || '';
+  $('f-tags').value = C.tags.join(', '); $('f-immune').value = C.immune.join(', ');
+  renderUmbs(); headline();
+}
+function headline() {
+  $('cc-title').textContent = C.name || 'Nueva criatura';
+  $('cc-sub').textContent = EXISTING ? `data/creatures/${C.id}.json` : 'Rellena la información a la izquierda; la ficha se dibuja a la derecha tal como se verá en la web.';
+  const lv = +C.level || 1;
+  $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · bonus sugerido <b>${esc(bandOf(BONUS_TABLE, lv).bonus)}</b>
+    · daño LOW / MID / HIGH (físico): ${['LOW', 'MID', 'HIGH'].map(t => `<b>${esc(scaleDamage(t, 'Cortante', lv).replace(' Cortante', ''))}</b>`).join(' / ')} · mágico: un dado menos`;
+  $('cc-dirty').textContent = dirty() ? '● sin guardar' : '';
+  $('cc-web').hidden = $('cc-sim').hidden = !EXISTING;
+  if (EXISTING) { $('cc-web').href = '/criatura/' + encodeURIComponent(C.id); $('cc-sim').href = '/taller/simulador?enemies=' + encodeURIComponent(SIM_ID || C.id); }
+  for (const k of ['traits', 'actions', 'reactions']) $('n-' + k).textContent = C[k].length ? `(${C[k].length})` : '';
+}
+function changed() { headline(); schedulePreview(); }
+
+for (const [el, k] of FIELDS) $(el).addEventListener('input', e => { C[k] = e.target.value; if (!C[k] && k !== 'name') delete C[k]; changed(); });
+$('f-name').addEventListener('input', () => { if (!EXISTING && !ID_TOUCHED) { C.id = slug(C.name); $('f-id').value = C.id; } });
+$('f-id').addEventListener('input', e => { ID_TOUCHED = true; C.id = slug(e.target.value); changed(); });
+$('f-id').addEventListener('change', e => { e.target.value = C.id; });
+$('f-level').addEventListener('input', e => { C.level = Math.max(1, parseInt(e.target.value, 10) || 1); rescaleAll(); changed(); });
+$('f-hits').addEventListener('input', e => { C.hits = parseInt(e.target.value, 10) || 1; changed(); });
+$('f-acc').addEventListener('input', e => { C.combat.acciones = parseInt(e.target.value, 10) || 0; changed(); });
+$('f-rea').addEventListener('input', e => { C.combat.reacciones = parseInt(e.target.value, 10) || 0; changed(); });
+for (const [el, k] of [['f-sfis', 'FÍS'], ['f-svol', 'VOL'], ['f-smen', 'MEN']])
+  $(el).addEventListener('input', e => { C.saves[k] = e.target.value.trim(); if (!C.saves[k]) delete C.saves[k]; changed(); });
+const csv = s => s.split(',').map(x => x.trim()).filter(Boolean);
+$('f-tags').addEventListener('input', e => { C.tags = csv(e.target.value); changed(); });
+$('f-immune').addEventListener('input', e => { C.immune = csv(e.target.value); changed(); });
+$('btn-saves').addEventListener('click', () => {
+  const b = fmtDice(bandOf(BONUS_TABLE, +C.level || 1).bonus).replace(/\s/g, '');
+  C.saves = { 'FÍS': b, 'VOL': b, 'MEN': b }; fillForm(); changed();
+});
+
+// ── Umbrales ──
+function renderUmbs() {
+  $('umb-list').innerHTML = C.umbrales.map((u, i) => `<div class="cc-umb">
+      <input class="inp" type="number" value="${esc(u.value)}" data-i="${i}" data-k="value" aria-label="Valor">
+      <input class="inp" value="${esc(u.categories)}" data-i="${i}" data-k="categories" placeholder="General, Necrótico" aria-label="Tipos">
+      <button type="button" class="cc-x" data-del="${i}" title="Quitar">✕</button></div>`).join('')
+    || '<span class="muted">Sin umbrales.</span>';
+}
+$('umb-list').addEventListener('input', e => {
+  const i = e.target.dataset.i; if (i == null) return;
+  const k = e.target.dataset.k;
+  C.umbrales[i][k] = k === 'value' ? (parseInt(e.target.value, 10) || 0) : e.target.value;
+  changed();
+});
+$('umb-list').addEventListener('click', e => {
+  if (e.target.dataset.del == null) return;
+  C.umbrales.splice(+e.target.dataset.del, 1); renderUmbs(); changed();
+});
+document.querySelectorAll('[data-umb]').forEach(b => b.addEventListener('click', () => {
+  C.umbrales.push({ value: 4, categories: b.dataset.umb }); renderUmbs(); changed();
+}));
+
+// ── Tabs and ability lists ──
+document.querySelectorAll('.cc-tabs button').forEach(b => b.addEventListener('click', () => { TAB = b.dataset.tab; renderTab(); }));
+function renderTab() {
+  document.querySelectorAll('.cc-tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === TAB));
+  $('tab-base').hidden = TAB !== 'base';
+  $('tab-list').hidden = TAB === 'base';
+  if (TAB !== 'base') renderEntries();
+}
+const ENTRY_FIELDS = {
+  traits: [],
+  actions: [['cost', 'Coste (acc.)', 'num'], ['attacks', 'Ataques', 'num'], ['bonus', 'Bonus', ''], ['range', 'Alcance', ''],
+            ['area', 'Área', ''], ['damage', 'Daño', ''], ['save', 'Salvación', ''], ['move', 'Movimiento', ''], ['tags', 'Etiquetas (comas)', 'csv']],
+  reactions: [['cost', 'Coste (0 = libre)', 'num'], ['bonus', 'Bonus', ''], ['move', 'Movimiento', ''], ['tags', 'Etiquetas (comas)', 'csv']],
+};
+function renderEntries() {
+  const list = C[TAB];
+  $('list-hint').textContent = `Las habilidades de la biblioteca se escalan al nivel de la criatura (bonus y daño LOW/MID/HIGH).`;
+  $('entries').innerHTML = list.map((en, i) => {
+    const badges = (en.ability_id ? '<span class="cc-badge gold">biblioteca</span>' : '')
+      + (en.damage_tier ? `<span class="cc-badge ${en.damage_tier}">${en.damage_tier}</span>` : '')
+      + (en.bonus_scaled ? '<span class="cc-badge">bonus escalado</span>' : '');
+    const fields = ENTRY_FIELDS[TAB].map(([k, label, kind]) => {
+      const v = kind === 'csv' ? (en[k] || []).join(', ') : (en[k] ?? '');
+      return `<label class="cc-f">${label}<input class="inp" data-i="${i}" data-k="${k}" data-kind="${kind}" value="${esc(v)}"></label>`;
+    }).join('');
+    return `<div class="cc-entry${en.ability_id ? ' lib' : ''}">
+      <div class="cc-entry-head">
+        <input class="inp" data-i="${i}" data-k="name" value="${esc(en.name || '')}" placeholder="Nombre">${badges}
+        <button type="button" class="cc-x" data-move="${i}:-1" title="Subir">▲</button>
+        <button type="button" class="cc-x" data-move="${i}:1" title="Bajar">▼</button>
+        <button type="button" class="cc-x" data-rm="${i}" title="Quitar">✕</button>
+      </div>
+      ${fields ? `<div class="cc-row">${fields}</div>` : ''}
+      <label class="cc-f">Descripción<textarea class="inp" rows="2" data-i="${i}" data-k="desc">${esc(en.desc || '')}</textarea></label>
+    </div>`;
+  }).join('') || `<p class="muted">Sin ${LIST_NAME[TAB]} todavía.</p>`;
+}
+$('entries').addEventListener('input', e => {
+  const t = e.target, i = t.dataset.i; if (i == null) return;
+  const en = C[TAB][i], k = t.dataset.k, kind = t.dataset.kind;
+  let v = t.value;
+  if (kind === 'num') v = v.trim() === '' ? undefined : (isNaN(+v) ? v : +v);
+  else if (kind === 'csv') v = csv(v);
+  else v = v === '' && k !== 'name' ? undefined : v;
+  if (v === undefined || (Array.isArray(v) && !v.length)) delete en[k]; else en[k] = v;
+  if (k === 'damage') delete en.damage_tier;   // edited by hand: no longer follows the tier table
+  if (k === 'bonus') delete en.bonus_scaled;
+  changed();
+});
+$('entries').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  const list = C[TAB];
+  if (b.dataset.rm != null) list.splice(+b.dataset.rm, 1);
+  else if (b.dataset.move) {
+    const [i, d] = b.dataset.move.split(':').map(Number), j = i + d;
+    if (j < 0 || j >= list.length) return;
+    [list[i], list[j]] = [list[j], list[i]];
+  } else return;
+  renderEntries(); changed();
+});
+$('btn-blank').addEventListener('click', () => {
+  C[TAB].push(TAB === 'traits' ? { name: '', desc: '' } : TAB === 'actions' ? { name: '', cost: 1, desc: '' } : { name: '', cost: 1, desc: '' });
+  renderEntries(); changed();
+});
+
+// Library entries follow the tier tables while untouched
+function scaleEntry(en) {
+  const lv = +C.level || 1;
+  if (en.damage_tier) en.damage = scaleDamage(en.damage_tier, en.damage_base_type || '', lv);
+  if (en.bonus_scaled) en.bonus = fmtDice(bandOf(BONUS_TABLE, lv).bonus);
+}
+function rescaleAll() {
+  for (const k of ['actions', 'reactions', 'traits']) C[k].forEach(scaleEntry);
+  if (TAB !== 'base') renderEntries();
+}
+function insertFromLibrary(ab) {
+  const en = JSON.parse(JSON.stringify(ab));
+  en.ability_id = ab.id;
+  delete en.id; delete en.type; delete en.tier;
+  if (typeof en.cost === 'string' && en.cost.trim() !== '' && !isNaN(+en.cost)) en.cost = +en.cost;
+  for (const k of Object.keys(en)) if (en[k] === '' || en[k] == null) delete en[k];
+  scaleEntry(en);
+  C[TAB].push(en);
+  renderEntries(); changed();
+}
+
+// ── Library picker ──
+$('btn-pick').addEventListener('click', () => { PICK = { q: '', tag: '', tier: '' }; $('pick-q').value = ''; $('pick').hidden = false; renderPick(); $('pick-q').focus(); });
+$('pick-close').addEventListener('click', () => { $('pick').hidden = true; });
+$('pick').addEventListener('click', e => { if (e.target.id === 'pick') $('pick').hidden = true; });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') $('pick').hidden = true; });
+$('pick-q').addEventListener('input', e => { PICK.q = e.target.value.toLowerCase(); renderPick(); });
+function renderPick() {
+  const type = LIST_TYPE[TAB];
+  $('pick-title').textContent = `Biblioteca · ${LIST_NAME[TAB]}`;
+  const pool = LIB.filter(a => a.type === type);
+  const tags = [...new Set(pool.flatMap(a => a.tags || []))].sort();
+  $('pick-tiers').innerHTML = 'Tier: ' + [['', 'Todos'], ...ROMAN.map(r => [r, r]), ['-', 'Sin tier']]
+    .map(([v, l]) => `<button type="button" data-tier="${v}" class="${PICK.tier === v ? 'on' : ''}">${l}</button>`).join('');
+  $('pick-tags').innerHTML = tags.map(t => `<button type="button" data-tag="${esc(t)}" class="${PICK.tag === t ? 'on' : ''}">${esc(t)}</button>`).join('');
+  const list = pool.filter(a => (!PICK.q || (a.name || '').toLowerCase().includes(PICK.q) || (a.desc || '').toLowerCase().includes(PICK.q))
+    && (!PICK.tag || (a.tags || []).includes(PICK.tag)) && (!PICK.tier || (PICK.tier === '-' ? !a.tier : a.tier === PICK.tier)));
+  $('pick-list').innerHTML = list.map(a => `<div class="cc-pickitem" data-id="${esc(a.id)}">
+      <div class="t"><b>${esc(a.name)}</b>${a.tier ? `<span class="cc-badge gold">T${esc(a.tier)}</span>` : ''}${a.damage_tier ? `<span class="cc-badge ${a.damage_tier}">${a.damage_tier}</span>` : ''}</div>
+      <small>${esc([a.cost && `Coste ${a.cost}`, a.damage && `Daño ${a.damage}`, a.save && `Salv. ${a.save}`, (a.tags || []).join(', ')].filter(Boolean).join(' · '))}</small>
+      ${a.desc ? `<small>${esc(a.desc.slice(0, 160))}${a.desc.length > 160 ? '…' : ''}</small>` : ''}
+    </div>`).join('') || '<p class="muted">No hay habilidades con estos filtros.</p>';
+}
+$('pick-tiers').addEventListener('click', e => { const b = e.target.closest('button'); if (b) { PICK.tier = b.dataset.tier; renderPick(); } });
+$('pick-tags').addEventListener('click', e => { const b = e.target.closest('button'); if (b) { PICK.tag = PICK.tag === b.dataset.tag ? '' : b.dataset.tag; renderPick(); } });
+$('pick-list').addEventListener('click', e => {
+  const it = e.target.closest('.cc-pickitem'); if (!it) return;
+  const ab = LIB.find(a => a.id === it.dataset.id);
+  if (ab) { insertFromLibrary(ab); $('pick').hidden = true; }
+});
+
+// ── Preview: the website's own renderer on a fresh copy of its markup ──
+const PRISTINE = `
+  <div hidden><h1 id="creature-name"></h1><div id="hero-section"></div><div id="creature-meta"></div>
+    <div id="creature-lore"><p id="lore-text"></p></div><div id="creature-loot"><span id="loot-xp-value"></span><table><tbody id="loot-items"></tbody></table></div>
+    <div id="creature-tags"></div></div>
+  <div class="statblock" id="statblock">
+    <div class="statblock-header"><h2 id="statblock-name"></h2><p id="statblock-subtitle"></p></div>
+    <div class="statblock-combat" id="statblock-combat"></div>
+    <div class="statblock-separator"></div>
+    <div class="statblock-abilities" id="statblock-abilities"></div>
+    <div class="statblock-separator"></div>
+    <div class="statblock-properties" id="statblock-properties"></div>
+    <div class="statblock-separator" id="traits-separator"></div>
+    <div class="statblock-traits" id="statblock-traits"></div>
+    <div class="statblock-section"><h3 class="statblock-section-title">Acciones</h3><div class="statblock-section-content" id="statblock-actions"></div></div>
+    <div class="statblock-section" id="reactions-section" style="display:none"><h3 class="statblock-section-title">Reacciones</h3><div class="statblock-section-content" id="statblock-reactions"></div></div>
+    <div class="statblock-section" id="legendary-section" style="display:none"><h3 class="statblock-section-title">Acciones Legendarias</h3><p class="legendary-intro" id="legendary-intro"></p><div class="statblock-section-content" id="statblock-legendary"></div></div>
+  </div>`;
+let rendererReady = false, previewTimer = null;
+function loadRenderer() {
+  // added after load, so its own "load the creature from the URL" start-up never runs
+  const s = document.createElement('script');
+  s.src = '/assets/js/creature_loader.js?v=' + Date.now();
+  s.onload = () => { rendererReady = true; renderPreview(); };
+  document.body.appendChild(s);
+}
+function schedulePreview() { clearTimeout(previewTimer); previewTimer = setTimeout(renderPreview, 120); }
+function renderPreview() {
+  if (!rendererReady) return;
+  const el = $('preview');
+  el.innerHTML = PRISTINE;
+  const data = JSON.parse(JSON.stringify(C));
+  data.name = data.name || 'Nueva criatura';
+  try { renderCreaturePage(data); }
+  catch (e) { el.innerHTML = `<p class="err">No se pudo dibujar la ficha: ${esc(e.message)}</p>`; }
+}
+
+// ── Save ──
+$('cc-save').addEventListener('click', save);
+document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && e.key === 's') { e.preventDefault(); save(); } });
+async function save() {
+  if (!C.name) { alert('Ponle un nombre a la criatura.'); return; }
+  C.id = slug(C.id || C.name);
+  if (!C.id) { alert('El ID no es válido.'); return; }
+  if (!EXISTING) {
+    const r = await fetch('/api/criaturas/' + encodeURIComponent(C.id), { cache: 'no-store' });
+    if (r.ok && !confirm(`Ya existe la criatura «${C.id}». ¿Sobrescribirla?`)) return;
+  }
+  const res = await fetch('/api/criaturas/' + encodeURIComponent(C.id), {
+    method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(C) });
+  const d = await res.json();
+  if (!res.ok) { alert('No se pudo guardar: ' + (d.error || res.status)); return; }
+  EXISTING = true; SIM_ID = d.sim_id || C.id; SAVED = JSON.stringify(C);
+  history.replaceState(null, '', '?c=' + encodeURIComponent(C.id));
+  fillForm(); renderTab(); renderPreview();
+  $('cc-dirty').textContent = '✓ guardada';
+  setTimeout(() => { if (!dirty()) $('cc-dirty').textContent = ''; }, 2500);
+}
+window.addEventListener('beforeunload', e => { if (dirty()) { e.preventDefault(); e.returnValue = ''; } });
+
+init();
+</script>
