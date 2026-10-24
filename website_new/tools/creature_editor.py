@@ -106,12 +106,14 @@ def api_save(cid):
         "image":       data.get("image", ""),
         "description": data.get("description", ""),
     }
-    found = False
-    for i, e in enumerate(idx):
-        if e.get("id") == cid:
-            idx[i] = entry; found = True; break
-    if not found:
+    # creatures made as trials in the Taller ("published": false) stay off the website list
+    pos = next((i for i, e in enumerate(idx) if e.get("id") == cid), None)
+    if data.get("published") is False:
+        idx = [e for e in idx if e.get("id") != cid]
+    elif pos is None:
         idx.append(entry)
+    else:
+        idx[pos] = entry
     save_index(idx)
     git = _git_push(
         [str(CDIR / f"{cid}.json"), str(CIDX)],

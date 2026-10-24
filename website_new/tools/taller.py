@@ -169,7 +169,11 @@ def api_ficha_delete(fid):
 
 # ─────────────────────────────────────────────────────────────── bestiario API
 
-def creature_summary(p: Path, sim_ids: dict[str, str]) -> dict:
+def published_ids() -> set:
+    return {e.get("id") for e in _read_json(CREATURE_INDEX, [])}
+
+
+def creature_summary(p: Path, sim_ids: dict[str, str], listed: set | None = None) -> dict:
     """At-a-glance numbers for a bestiary creature, in the same units as the
     fichas (Impactos, umbrales and saves as the simulator reads them)."""
     d = json.loads(p.read_text(encoding="utf-8"))
@@ -189,7 +193,9 @@ def creature_summary(p: Path, sim_ids: dict[str, str]) -> dict:
            "attacks": attacks, "defenses": defenses,
            "traits": [t.get("name", "") for t in d.get("traits") or []],
            "image": (BASE / "assets" / "images" / "creatures" / f"{p.stem}.jpg").exists(),
-           "sim_id": sim_ids.get(p.name), "modified": p.stat().st_mtime}
+           "sim_id": sim_ids.get(p.name), "modified": p.stat().st_mtime,
+           # on the website's Bestiario only if it is in creatures_list.json
+           "published": p.stem in (listed if listed is not None else published_ids())}
     try:  # combat numbers, as the simulator sees them
         spec = website.creature_spec(p)
         out["combat"] = {"impactos": spec["impactos"], "umbrales": spec["umbrales"], "saves": spec["saves"],
@@ -205,9 +211,10 @@ def api_bestiario():
     sim_ids = {Path(s.get("source", "")).name: sid for sid, s in load_roster().items()
                if s.get("origin") == "bestiario" and s.get("source")}
     items, errors = [], []
+    listed = published_ids()
     for p in sorted(CREATURES.glob("*.json")):
         try:
-            items.append(creature_summary(p, sim_ids))
+            items.append(creature_summary(p, sim_ids, listed))
         except Exception as e:
             errors.append(f"{p.name}: {e}")
     return jsonify({"creatures": items, "errors": errors})
@@ -356,18 +363,20 @@ def api_criatura_put(cid):
     if not isinstance(data, dict) or not data.get("name"):
         return jsonify({"error": "la criatura necesita al menos un nombre"}), 400
     data["id"] = cid
+    data["published"] = data.get("published") is True  # trial creatures stay off the website
     CREATURES.mkdir(parents=True, exist_ok=True)
     (CREATURES / f"{cid}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    # keep the website's bestiary index in step (same fields as the creature editor)
+    # The website's Bestiario lists data/creatures_list.json: only published creatures go in it
     idx = _read_json(CREATURE_INDEX, [])
     entry = {"id": cid, "name": data.get("name", cid), "type": data.get("type", ""), "level": data.get("level", 0),
              "size": data.get("size", ""), "image": data.get("image", ""), "description": data.get("description", "")}
-    for i, e in enumerate(idx):
-        if e.get("id") == cid:
-            idx[i] = entry
-            break
-    else:
+    pos = next((i for i, e in enumerate(idx) if e.get("id") == cid), None)
+    if not data["published"]:
+        idx = [e for e in idx if e.get("id") != cid]
+    elif pos is None:
         idx.append(entry)
+    else:
+        idx[pos] = entry  # keep its place in the list
     CREATURE_INDEX.write_text(json.dumps(idx, ensure_ascii=False, indent=2), encoding="utf-8")
     reload_roster()
     sim_id = next((sid for sid, s in load_roster().items()
@@ -614,6 +623,9 @@ BESTIARIO = r"""
     <input id="q" class="inp" placeholder="Buscar por nombre, tipo, etiqueta o ataque…" oninput="render()">
     <select id="f-tier" class="inp" onchange="render()"><option value="">Todos los Tiers</option></select>
     <select id="f-cat" class="inp" onchange="render()"><option value="">Todas las categorías</option></select>
+    <select id="f-pub" class="inp" onchange="render()">
+      <option value="">Publicadas y en pruebas</option><option value="1">Solo publicadas</option><option value="0">Solo en pruebas</option>
+    </select>
     <select id="f-sort" class="inp" onchange="render()">
       <option value="level">Orden: nivel</option><option value="name">Orden: nombre</option>
       <option value="hits">Orden: Impactos</option><option value="umbral">Orden: umbral General</option>
@@ -661,6 +673,7 @@ BESTIARIO = r"""
 .bx-tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0; }
 .bx-tag { font-size: 0.75rem; padding: 1px 7px; border: 1px solid #555; border-radius: 3px; color: var(--text-muted); }
 .bx-tag.cat { border-color: var(--accent-gold); color: var(--accent-gold); }
+.bx-tag.draft { border-color: #b86b2e; color: #e0904f; }
 .bx-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 3px; margin: 8px 0; text-align: center; }
 .bx-stat { background: rgba(255,242,0,0.04); border-radius: 3px; padding: 3px 0; font-size: 0.8rem; }
 .bx-stat b { display: block; color: var(--accent-gold); font-size: 0.7rem; }
@@ -714,10 +727,11 @@ function render() {
   const q = document.getElementById('q').value.toLowerCase();
   const tier = document.getElementById('f-tier').value;
   const cat = document.getElementById('f-cat').value;
+  const pub = document.getElementById('f-pub').value;
   const sort = document.getElementById('f-sort').value;
   const text = c => [c.name, c.type, c.category, ...c.tags, ...c.traits, ...c.attacks.map(a => a.name)].join(' ').toLowerCase();
   let list = CREATURES.filter(c => (!q || text(c).includes(q)) && (!tier || String(c.tier) === tier)
-    && (!cat || c.category === cat) && (!TYPE || c.type === TYPE));
+    && (!cat || c.category === cat) && (!TYPE || c.type === TYPE) && (!pub || String(+c.published) === pub));
   list.sort((a, b) => sort === 'name' ? a.name.localeCompare(b.name)
     : sort === 'hits' ? (b.hits || 0) - (a.hits || 0) || a.level - b.level
     : sort === 'umbral' ? generalUmbral(b) - generalUmbral(a) || a.level - b.level
@@ -745,7 +759,7 @@ function card(c) {
     <div class="card-content">
       <div class="bx-head"><h3>${esc(c.name)}</h3><span class="bx-tier">Niv ${c.level} · Tier ${c.tier}</span></div>
       <span class="bx-sub">${esc([c.type, c.size].filter(Boolean).join(' · '))}</span>
-      <div class="bx-tags">${c.category ? `<span class="bx-tag cat">${esc(c.category)}</span>` : ''}${c.tags.filter(t => t !== c.type).map(t => `<span class="bx-tag">${esc(t)}</span>`).join('')}</div>
+      <div class="bx-tags">${c.published ? '' : '<span class="bx-tag draft" title="No aparece en el Bestiario de la web">No publicada</span>'}${c.category ? `<span class="bx-tag cat">${esc(c.category)}</span>` : ''}${c.tags.filter(t => t !== c.type).map(t => `<span class="bx-tag">${esc(t)}</span>`).join('')}</div>
       <div class="bx-stats">${stat('Impactos', c.hits)}${stat('Acc.', c.actions)}${stat('Reac.', c.reactions)}${stat('Inic.', k.initiative != null ? '+' + k.initiative : null)}${stat('Umbral G.', k.umbrales ? k.umbrales.general : null)}</div>
       <div class="bx-line">Umbrales ${umb || '—'}</div>
       <div class="bx-line">Salv. ${saves || '—'}</div>

@@ -108,6 +108,7 @@ function renderCreaturePage(data) {
         ${levelBadge}
         <div class="creature-meta-badge">${data.size}</div>
         <div class="creature-meta-badge">${data.type}</div>
+        ${data.published === false ? '<div class="creature-meta-badge" title="Criatura en pruebas del Taller">No publicada</div>' : ''}
     `;
 
     // D. Statblock header

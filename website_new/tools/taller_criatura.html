@@ -7,6 +7,8 @@
     </div>
     <div class="cc-actions">
       <span id="cc-dirty" class="cc-dirty"></span>
+      <label class="cc-pub" title="Si está desmarcada, la criatura solo existe en el Taller: no aparece en el Bestiario de la web">
+        <input type="checkbox" id="f-pub"> Publicada en la web</label>
       <a class="btn-ghost" href="/taller/bestiario">🐉 Bestiario</a>
       <a class="btn-ghost" id="cc-web" href="#" target="_blank" hidden>↗ Ver en la web</a>
       <a class="btn-ghost" id="cc-sim" href="#" hidden>⚔ Simular contra</a>
@@ -107,6 +109,9 @@
 .cc-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
 .cc-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .cc-dirty { color: var(--accent-gold); font-size: .85rem; }
+.cc-pub { display: inline-flex; gap: 6px; align-items: center; font-size: .85rem; color: var(--text-muted); border: 1px solid #444;
+  border-radius: 4px; padding: 5px 10px; cursor: pointer; }
+.cc-pub:has(input:checked) { border-color: var(--accent-gold); color: var(--accent-gold); }
 .cc-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
 .cc-right { position: sticky; top: 70px; max-height: calc(100vh - 90px); overflow-y: auto; }
 .cc-right .statblock { margin: 0 auto; }
@@ -204,7 +209,7 @@ function blank() {
   return { id: '', name: '', type: '', size: 'Mediano', level: 1, description: '', hits: 2,
     saves: { 'FÍS': '+5', 'VOL': '+5', 'MEN': '+5' }, umbrales: [{ value: 4, categories: 'General' }],
     immune: [], senses: '', speed: 'Paso 8', combat: { acciones: 2, reacciones: 1 },
-    traits: [], actions: [], reactions: [], lore: '', tags: [] };
+    traits: [], actions: [], reactions: [], lore: '', tags: [], published: false };
 }
 function dirty() { return C && JSON.stringify(C) !== SAVED; }
 
@@ -220,7 +225,12 @@ async function init() {
   const id = new URLSearchParams(location.search).get('c');
   if (id) {
     const r = await fetch('/api/criaturas/' + encodeURIComponent(id), { cache: 'no-store' });
-    if (r.ok) { C = await r.json(); C.id = id; EXISTING = true; SIM_ID = (bx.creatures || []).find(x => x.id === id)?.sim_id || id; }
+    if (r.ok) {
+      C = await r.json(); C.id = id; EXISTING = true;
+      const info = (bx.creatures || []).find(x => x.id === id) || {};
+      SIM_ID = info.sim_id || id;
+      if (typeof C.published !== 'boolean') C.published = !!info.published;  // website creatures already listed stay listed
+    }
   }
   if (!C) C = blank();
   normalize(C);
@@ -244,6 +254,7 @@ function fillForm() {
   $('f-acc').value = C.combat.acciones ?? 2; $('f-rea').value = C.combat.reacciones ?? 1;
   $('f-sfis').value = C.saves['FÍS'] || ''; $('f-svol').value = C.saves['VOL'] || ''; $('f-smen').value = C.saves['MEN'] || '';
   $('f-tags').value = C.tags.join(', '); $('f-immune').value = C.immune.join(', ');
+  $('f-pub').checked = !!C.published;
   renderUmbs(); headline();
 }
 function headline() {
@@ -271,6 +282,7 @@ for (const [el, k] of [['f-sfis', 'FÍS'], ['f-svol', 'VOL'], ['f-smen', 'MEN']]
   $(el).addEventListener('input', e => { C.saves[k] = e.target.value.trim(); if (!C.saves[k]) delete C.saves[k]; changed(); });
 const csv = s => s.split(',').map(x => x.trim()).filter(Boolean);
 $('f-tags').addEventListener('input', e => { C.tags = csv(e.target.value); changed(); });
+$('f-pub').addEventListener('change', e => { C.published = e.target.checked; changed(); });
 $('f-immune').addEventListener('input', e => { C.immune = csv(e.target.value); changed(); });
 $('btn-saves').addEventListener('click', () => {
   const b = fmtDice(bandOf(BONUS_TABLE, +C.level || 1).bonus).replace(/\s/g, '');
@@ -470,7 +482,7 @@ async function save() {
   EXISTING = true; SIM_ID = d.sim_id || C.id; SAVED = JSON.stringify(C);
   history.replaceState(null, '', '?c=' + encodeURIComponent(C.id));
   fillForm(); renderTab(); renderPreview();
-  $('cc-dirty').textContent = '✓ guardada';
+  $('cc-dirty').textContent = C.published ? '✓ guardada y publicada' : '✓ guardada (solo en el Taller)';
   setTimeout(() => { if (!dirty()) $('cc-dirty').textContent = ''; }, 2500);
 }
 window.addEventListener('beforeunload', e => { if (dirty()) { e.preventDefault(); e.returnValue = ''; } });
