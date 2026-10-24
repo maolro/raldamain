@@ -160,7 +160,8 @@ def _attach_riders(abilities: list[dict[str, Any]], riders: list[tuple[str, dict
     return orphans
 
 
-def _auto_ability(raw: dict[str, Any], rank_id: str, rango: int, mod: int, stats: dict[str, int]) -> dict[str, Any]:
+def _auto_ability(raw: dict[str, Any], rank_id: str, rango: int, mod: int, stats: dict[str, int],
+                  magic: bool = False) -> dict[str, Any]:
     """A website rank ability that ranks.yaml does not model yet.
 
     Plain attacks (tag Ataque + a Daño field) are simple enough to build
@@ -181,7 +182,9 @@ def _auto_ability(raw: dict[str, Any], rank_id: str, rango: int, mod: int, stats
             "cost": {"actions": cost.get("actions", 1), "chi": cost.get("chi", 0)},
             "reach": reach_from(raw.get("range")),
             "area": area_from(raw.get("area")),
-            "tags": ["spell"] + (["physical"] if "fisico" in _norm_name(" ".join(tags)) else []),
+            # a magic rank's attack is a spell even when it deals physical damage:
+            # Mente Desencadenada (mental) boosts it, Ira (physical) does not
+            "tags": ["spell"] + (["mental"] if magic else ["physical"] if "fisico" in _norm_name(" ".join(tags)) else []),
             "_web_tags": list(raw.get("tags") or []),
             "effects": [{"kind": "attack", "attack_roll": str(mod),
                          "on_hit": [{"kind": "damage", "damage": damage,
@@ -268,7 +271,8 @@ def assemble_from_ranks(spec: dict[str, Any]) -> dict[str, Any]:
                         if _norm_name(ab.get("name")) == _norm_name(raw.get("name")) and raw.get("tags"):
                             ab.setdefault("_web_tags", list(raw["tags"]))
                     continue
-                auto = _auto_ability(raw, sim_id, int(rango), mod, stats)
+                auto = _auto_ability(raw, sim_id, int(rango), mod, stats,
+                                     magic=_norm_name(data.get("category")) in ("elementalismo", "arcana", "ocultismo", "religion"))
                 if auto["id"] in existing_ids:
                     continue
                 if auto.get("implemented") is False:

@@ -891,8 +891,24 @@ ${reactions}
             if (literalExtra.length > 0) result += '+' + literalExtra.join('+');
             return result;
         },
+        // Magic: abilities of magic ranks (Elementalismo, Arcana, Ocultismo, Religión),
+        // learned spells and anything tagged Magia — even when the damage is physical
+        // (Pedrada, Espinas de Madera, Ferrokinesia…)
+        isMagicAbility(obj) {
+            if (obj.spell_stat) return true;
+            if (/(^|,)\s*magia\s*(,|$)/i.test(String(obj.tags || ''))) return true;
+            const rk = obj.skill && this.ranks[obj.skill];
+            return !!rk && ['elementalismo', 'arcana', 'ocultismo', 'religion'].includes(this.categoryKey(rk.category));
+        },
+        // Tags used to match combat states: a magic ability counts as Magia and never as
+        // Físico, so Mente Desencadenada boosts it and Ira does not
+        boostTags(obj) {
+            let tags = String(obj.tags || '').split(',').map(t => t.trim().toLowerCase()).filter(Boolean);
+            if (this.isMagicAbility(obj)) tags = tags.filter(t => t !== 'físico' && t !== 'fisico').concat(['magia']);
+            return tags;
+        },
         getDamageBoosts(obj) {
-            const tags = (obj.tags || '').split(',').map(t => t.trim().toLowerCase());
+            const tags = this.boostTags(obj);
             if (obj.damage_type) tags.push(obj.damage_type.toLowerCase());
             const hasRankSkill = !!(obj.skill && obj.skill in this.ranks);
             const hasDamageField = !!obj.damage;
@@ -1024,7 +1040,7 @@ ${reactions}
         // Advantage dice for a roll. statKeys = stats in the roll's modifier (defaults to the
         // ability's rank stat); "Ventaja en tiros con la estadística" boosts match on them.
         abilityAdvantageCount(obj, statKeys) {
-            const tags = (obj.tags || '').split(',').map(t => t.trim().toLowerCase());
+            const tags = this.boostTags(obj);
             if (!statKeys && obj.skill && obj.skill in this.ranks)
                 statKeys = [this.getMainStat(this.ranks[obj.skill].stat)];
             statKeys = statKeys || [];
