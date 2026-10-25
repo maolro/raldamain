@@ -11,7 +11,7 @@
   "description": "Canalizas el poder de tu dios a través de oraciones y devoción. Bendices aliados, consagras la tierra, castigas a infieles y realizas milagros. A medida que avanzas, tu dios te otorga acceso a magias específicas relacionadas con su dominio.",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
-    "<strong>Estadística principal:</strong> Sabiduría + Rango.",
+    "<strong>Estadística principal:</strong> Inteligencia/Sabiduría + Rango.",
     "<strong>Conocimiento de los dioses:</strong> Acceso a 3-5 magias relacionadas con tu dios a rangos superiores.",
     "<strong>Protección divina:</strong> Usas Magia Divina para defenderte de efectos Divinos o relacionados con tu dios."
   ],
