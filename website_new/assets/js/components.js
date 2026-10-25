@@ -1,5 +1,13 @@
 /* components.js */
 
+// ES / EN switch and translation (assets/js/i18n.js), on every page with the navbar
+(function () {
+    if (document.querySelector('script[src*="/assets/js/i18n.js"]')) return;
+    const s = document.createElement('script');
+    s.src = '/assets/js/i18n.js?v=20261025';
+    document.head.appendChild(s);
+})();
+
 document.addEventListener("DOMContentLoaded", function() {
     loadNavbar();
 });
@@ -28,6 +36,7 @@ function loadNavbar() {
             <input type="text" id="search-input" placeholder="Buscar información aquí...">
             <button type="button" id="search-button">🔍</button>
         </div>
+        <div class="lang-slot" data-lang-slot></div>
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -38,6 +47,7 @@ function loadNavbar() {
 
     // 3. Inject the HTML
     navContainer.innerHTML = navbarHTML;
+    if (window.RaldamainLang) window.RaldamainLang.mountSwitch(navContainer.querySelector('[data-lang-slot]'));
 
     // 4. Highlight the "Active" page automatically
     highlightActiveLink();

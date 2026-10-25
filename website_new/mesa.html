@@ -7,7 +7,7 @@
     <title>Mesa de Pruebas | Raldamain</title>
     <meta name="description" content="Ficha de personaje a pantalla completa con lanzador de dados para pruebas de juego.">
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=20261024">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20261025">
     <link rel="stylesheet" href="/assets/css/statblock.css?v=20261024">
     <link rel="stylesheet" href="/assets/css/mesa.css?v=20261024">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
     <!-- Loading a sheet here must never overwrite the Creador character -->
     <script>window.STATBLOCK_NO_PERSIST = true;</script>
+    <script src="/assets/js/i18n.js?v=20261025"></script>
     <script src="/assets/js/builder/v-statblock.js?v=20261024"></script>
 </head>
 
@@ -24,6 +25,7 @@
         <a href="/" class="mesa-home"><img src="/assets/images/raldamain_logo.png" alt="Raldamain"></a>
         <h1 class="mesa-title">Mesa de Pruebas</h1>
         <span class="mesa-sheet-name" id="sheet-name"></span>
+        <div class="lang-slot" data-lang-slot></div>
         <div class="mesa-load">
             <button id="back-creador" class="mesa-btn" title="Abre el Creador de Personajes con el personaje que tienes en pantalla">&larr; Volver al Creador</button>
             <label class="mesa-btn mesa-btn-primary">
