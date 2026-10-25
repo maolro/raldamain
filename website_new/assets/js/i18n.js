@@ -13,11 +13,11 @@
  */
 (function () {
     const KEY = 'raldamain.lang';
-    const CACHE_KEY = 'raldamain.tr.es-en.v1';
+    const CACHE_KEY = 'raldamain.tr.es-en.v2';
     const lang = () => { try { return localStorage.getItem(KEY) || 'es'; } catch (e) { return 'es'; } };
     const path = location.pathname;
     const SUPPORTED = /^\/(creador|mesa|rangos|rango\/|templates\/view-rango)/.test(path)
-        || /\/(creador|mesa|rangos)(\.html)?$/.test(path);
+        || /\/(creador|mesa|rangos|index)(\.html)?$/.test(path) || path === '/';
 
     // ── Glossary ──────────────────────────────────────────────────────────
     // Whole labels the translator gets wrong or that must match the rules' terms
@@ -56,7 +56,8 @@
     const EXACT_LC = {};
     for (const [k, v] of Object.entries(EXACT)) if (!(k.toLowerCase() in EXACT_LC)) EXACT_LC[k.toLowerCase()] = v;
     const lookup = text => {
-        const v = EXACT_LC[text.toLowerCase()];
+        // fixed labels, and names the glossary covers whole ("Ira", "Estilo Coloso")
+        const v = EXACT_LC[text.toLowerCase()] || TERM_LC[text.toLowerCase()];
         if (!v) return null;
         return /\p{L}/u.test(text) && text === text.toUpperCase() && text !== text.toLowerCase() ? v.toUpperCase() : v;
     };
@@ -93,6 +94,8 @@
     const SMALL_ES = new Set(['de', 'del', 'la', 'el', 'los', 'las', 'y', 'o', 'en', 'a', 'al', 'con', 'por']);
     function matchCase(es, en) {
         if (!en) return en;
+        // the translator sometimes answers in capitals ("RAGE"): follow the original instead
+        if (en === en.toUpperCase() && es !== es.toUpperCase()) en = en.toLowerCase();
         const words = es.split(/\s+/).filter(w => /\p{L}/u.test(w));
         const isTitle = words.length >= 2 && words.length <= 6 && !/[.:;]/.test(es)
             && words.every(w => SMALL_ES.has(w.toLowerCase()) || /^\p{Lu}/u.test(w));
@@ -104,6 +107,8 @@
     const STATS = { 'FUE': 'STR', 'DES': 'DEX', 'SAB': 'WIS', 'CAR': 'CHA', 'FÍS': 'PHY', 'FIS': 'PHY', 'VOL': 'WIL' };
 
     TERMS.sort((x, y) => y[0].length - x[0].length);  // longer phrases before the words inside them
+    const TERM_LC = {};
+    for (const [es, en] of TERMS) TERM_LC[es.toLowerCase()] = en[0].toUpperCase() + en.slice(1);
     const termRx = TERMS.map(([es, en]) => [new RegExp(`(^|[^\\p{L}])${es}(?=[^\\p{L}]|$)`, 'giu'), en]);
     const statRx = new RegExp(`(^|[^\\p{L}])(${Object.keys(STATS).join('|')})(?=[^\\p{L}]|$)`, 'gu');
     function glossary(text) {
@@ -186,8 +191,8 @@
         if (m && lookup(m[1].trim())) return setText(node, text, lookup(m[1].trim()) + ' ' + m[2]);
         if (cache[text]) return setText(node, text, cache[text]);
         const pre = glossary(text);
-        // nothing left to translate once the glossary is applied (abbreviations, numbers)
-        if (!translator || !/\p{Ll}{3,}/u.test(pre)) { if (pre !== text) setText(node, text, pre); return; }
+        // nothing left to translate once the glossary is applied (abbreviations like STR, numbers)
+        if (!translator || !/\p{L}{4,}/u.test(pre)) { if (pre !== text) setText(node, text, pre); return; }
         if (!queue.has(text)) queue.set(text, []);
         queue.get(text).push(node);
         pump();
@@ -238,9 +243,34 @@
         document.body.prepend(b);
     }
 
+    // For components that show a name inside an input (the Creador's pickers)
+    let readyResolve;
+    const ready = new Promise(r => { readyResolve = r; });
+    async function tr(text) {
+        if (lang() !== 'en' || !text) return text;
+        await ready;
+        const t = String(text).trim();
+        const ex = lookup(t);
+        if (ex) return ex;
+        if (cache[t]) return cache[t];
+        const pre = glossary(t);
+        if (!translator || !/\p{L}{4,}/u.test(pre)) return pre;
+        let en;
+        try { en = await translator.translate(pre); } catch (e) { en = pre; }
+        en = matchCase(t, en);
+        remember(t, en);
+        return en;
+    }
+    function trSync(text) {
+        if (lang() !== 'en' || !text) return null;
+        const t = String(text).trim();
+        return lookup(t) || cache[t] || null;
+    }
+
     async function start() {
         document.documentElement.lang = 'en';
         if (!SUPPORTED) {
+            readyResolve();
             banner(`🚧 This section is still in Spanish. The <a href="/creador">Character Builder</a> and the <a href="/rangos">Ranks</a> are available in English. <button type="button" data-back>Ver en español</button>`);
             document.querySelector('[data-back]').addEventListener('click', () => choose('es'));
             // menus still read in English
@@ -273,11 +303,12 @@
             banner(`Your browser can't translate the descriptions automatically, so only the interface is in English. Use your browser's "Translate page" for the rest, or open the site in Chrome or Edge. <button type="button" data-back>Ver en español</button>`);
             document.querySelector('[data-back]').addEventListener('click', () => choose('es'));
         }
+        readyResolve();
         walk(document.body);
         observe();
     }
 
-    window.RaldamainLang = { lang, choose, mountSwitch };
+    window.RaldamainLang = { lang, choose, mountSwitch, tr, trSync };
     const boot = () => {
         document.querySelectorAll('[data-lang-slot]').forEach(mountSwitch);
         if (lang() === 'en') start();

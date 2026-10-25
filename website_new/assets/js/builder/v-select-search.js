@@ -58,12 +58,19 @@ Vue.component('v-select-search', {
   methods: {
     filterOptions() {
       const query = this.searchQuery.toLowerCase();
+      // in English the list shows translated names: match either spelling
+      const L = window.RaldamainLang;
       this.filteredOptions = this.options.filter(option =>
         option.name.toLowerCase().includes(query)
+        || ((L && L.trSync(option.name)) || '').toLowerCase().includes(query)
       );
     },
     selectOption(option) {
       this.searchQuery = option.name; // Set input text to selected option's name
+      // English: show the translated name in the input (the selection itself stays the same key)
+      const L = window.RaldamainLang;
+      if (L && L.lang() === 'en')
+        L.tr(option.name).then(t => { if (this.searchQuery === option.name) this.searchQuery = t; });
       this.$emit('selected-key', option.key); // Emit the selected option's key
       this.dropdownVisible = false; // Hide the dropdown after selection
     },

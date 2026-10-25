@@ -4,7 +4,7 @@
 (function () {
     if (document.querySelector('script[src*="/assets/js/i18n.js"]')) return;
     const s = document.createElement('script');
-    s.src = '/assets/js/i18n.js?v=20261025';
+    s.src = '/assets/js/i18n.js?v=20261025b';
     document.head.appendChild(s);
 })();
 
