@@ -43,6 +43,37 @@ function formatDice(str) {
     return str.replace(/\s*\+\s*/g, '+').replace(/([a-z0-9])\+/gi, '$1 + ');
 }
 
+// Highlight saving throws (yellow) and damage (red) inside ability text.
+// Saves go first and are set aside, so the dice of a save DC ("FÍS +5 + 1d6") never turn red.
+const DMG_TYPES = 'Cortante|Perforante|Contundente|F[íi]sico|Fuego|Fr[íi]o|El[ée]ctrico|[ÁáAa]cido|S[óo]nico|Radiante|Necr[óo]tico|Arcano|M[áa]gico|Ps[íi]quico|Fuerza|Veneno|General|Agua|Tierra|Aire|Metal|Naturaleza|Sagrado|Sombr[íi]o';
+const SAVE_STAT = '(?:F[ÍIíi]S(?:ic[oa]s?)?|VOL(?:untad)?|MEN(?:tal(?:es)?)?)';
+const SAVE_NUM = '[+-]\\s*(?:MOD|\\d+)(?:\\s*\\+\\s*\\d*d\\d+)*';
+const SAVE_RES = [
+    // "tiro de salvación Físico +7 + 1d6", "salvación de Voluntad", "Salvación FÍS (CD +MOD)"
+    new RegExp(`(?:tiros?\\s+de\\s+)?salvaci[oó]n(?:es)?\\s+(?:de\\s+)?${SAVE_STAT}(?:\\s*(?:contra\\s+|\\(CD\\s*)?${SAVE_NUM}\\)?)?`, 'gi'),
+    // "+5 + 1d6 VOL", "+MOD FÍS"
+    new RegExp(`${SAVE_NUM}\\s+${SAVE_STAT}\\b`, 'g'),
+    // "FÍS +MOD", "VOL +7 + 1d6"
+    new RegExp(`\\b${SAVE_STAT}\\s*${SAVE_NUM}`, 'g'),
+];
+const DMG_RES = [
+    // "2d6 + 4 Perforante", "4d8 de daño Fuego", "1d6 daño", "3d6 + 5 de daño Contundente/Perforante"
+    new RegExp(`\\b\\d*d\\d+(?:\\s*\\+\\s*\\d+)?(?:\\s+(?:de\\s+)?da[ñn]o)?(?:\\s+(?:de\\s+)?(?:${DMG_TYPES})(?:\\s*\\/\\s*(?:${DMG_TYPES}))*)?`, 'gi'),
+    // "LOW daño Contundente", "MID de daño"
+    new RegExp(`\\b(?:LOW|MID|HIGH)\\s+(?:de\\s+)?da[ñn]o(?:\\s+(?:${DMG_TYPES})(?:\\s*\\/\\s*(?:${DMG_TYPES}))*)?`, 'g'),
+    // "10 de daño Fuego", "5 puntos de daño"
+    new RegExp(`\\b\\d+\\s+(?:puntos\\s+)?de\\s+da[ñn]o(?:\\s+(?:${DMG_TYPES}))?`, 'gi'),
+];
+function highlightCombatText(text) {
+    if (!text) return text;
+    const kept = [];
+    const keep = (html) => `\u0000${kept.push(html) - 1}\u0000`;
+    let out = String(text);
+    for (const re of SAVE_RES) out = out.replace(re, m => keep(`<span class="save-hl">${m}</span>`));
+    for (const re of DMG_RES) out = out.replace(re, m => keep(`<span class="damage">${m}</span>`));
+    return out.replace(/\u0000(\d+)\u0000/g, (_, i) => kept[+i]);
+}
+
 function getModifier(score) {
     const mod = Math.floor((score - 10) / 2);
     return mod >= 0 ? `+${mod}` : `${mod}`;
@@ -137,7 +168,7 @@ function renderCreaturePage(data) {
         traitsContainer.innerHTML = data.traits.map(trait => `
             <div class="trait-block">
                 <span class="trait-name">${trait.name}.</span>
-                <span class="trait-desc">${linkStatusEffects(parseInlineMarkdown(trait.desc))}</span>
+                <span class="trait-desc">${linkStatusEffects(parseInlineMarkdown(highlightCombatText(trait.desc)))}</span>
             </div>
         `).join('');
     } else {
@@ -181,7 +212,7 @@ function renderCreaturePage(data) {
             <div class="legendary-action action-block">
                 <span class="action-name">${action.name}</span>
                 <span class="legendary-cost">(Coste: ${action.cost})</span>.
-                <span class="action-desc">${linkStatusEffects(action.desc)}</span>
+                <span class="action-desc">${linkStatusEffects(highlightCombatText(action.desc))}</span>
             </div>
         `).join('');
     }
@@ -387,7 +418,7 @@ function renderAction(action, isNewFormat) {
     if (action.area) html += `${action.area}, `;
 
     // Save
-    if (action.save) html += `<strong>Salvación:</strong> ${action.save}. `;
+    if (action.save) html += `<strong>Salvación:</strong> <span class="save-hl">${action.save}</span>. `;
 
     // Damage
     if (action.damage) {
@@ -396,7 +427,7 @@ function renderAction(action, isNewFormat) {
 
     // Description
     if (action.desc) {
-        html += `<span class="action-desc">${linkStatusEffects(parseInlineMarkdown(action.desc))}</span>`;
+        html += `<span class="action-desc">${linkStatusEffects(parseInlineMarkdown(highlightCombatText(action.desc)))}</span>`;
     }
 
     // Movement
@@ -429,7 +460,7 @@ function renderReaction(reaction, isNewFormat) {
         html += `<span class="attack-bonus"> ${formatDice(reaction.bonus)}</span> para defenderse. `;
     }
     if (reaction.desc) {
-        html += `<span class="action-desc"> ${linkStatusEffects(parseInlineMarkdown(reaction.desc))}</span>`;
+        html += `<span class="action-desc"> ${linkStatusEffects(parseInlineMarkdown(highlightCombatText(reaction.desc)))}</span>`;
     }
     if (reaction.move != null && reaction.move !== '') {
         const moveText = typeof reaction.move === 'number' ? `Se mueve ${reaction.move} casillas` : reaction.move;

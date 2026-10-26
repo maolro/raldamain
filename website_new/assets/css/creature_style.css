@@ -308,6 +308,12 @@
     font-weight: bold;
 }
 
+/* Saving throws named in ability text */
+.save-hl {
+    color: #f0c040;
+    font-weight: bold;
+}
+
 /* --- NEW FORMAT: HITS + UD + SAVES --- */
 
 /* Override the combat container to stack vertically and center */
