@@ -1,0 +1,265 @@
+{
+  "name": "Profeta Abisal (niv 11)",
+  "level": 11,
+  "race": {},
+  "stats": {
+    "str": {
+      "name": "FUE",
+      "value": 2
+    },
+    "dex": {
+      "name": "DES",
+      "value": 1
+    },
+    "con": {
+      "name": "CON",
+      "value": 3
+    },
+    "itl": {
+      "name": "INT",
+      "value": 2
+    },
+    "wis": {
+      "name": "SAB",
+      "value": 7
+    },
+    "cha": {
+      "name": "CAR",
+      "value": 6
+    }
+  },
+  "talents": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "stat": "dex",
+      "level": 0
+    },
+    "performance": {
+      "name": "Actuación",
+      "stat": "cha",
+      "level": 0
+    },
+    "arcana": {
+      "name": "Arcanismo",
+      "stat": "itl",
+      "level": 0
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "stat": "str",
+      "level": 0
+    },
+    "insight": {
+      "name": "Averiguar Intenciones",
+      "stat": "wis",
+      "level": 0
+    },
+    "focus": {
+      "name": "Concentración",
+      "stat": "itl",
+      "level": 0
+    },
+    "wreck": {
+      "name": "Destrozar",
+      "stat": "str",
+      "level": 0
+    },
+    "deception": {
+      "name": "Engaño",
+      "stat": "cha",
+      "level": 0
+    },
+    "heroics": {
+      "name": "Heroísmo",
+      "stat": "str",
+      "level": 0
+    },
+    "intimidate": {
+      "name": "Intimidar",
+      "stat": "str/cha",
+      "level": 0
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "stat": "dex",
+      "level": 0
+    },
+    "perception": {
+      "name": "Percepción",
+      "stat": "wis",
+      "level": 0
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "stat": "cha",
+      "level": 0
+    },
+    "first-aid": {
+      "name": "Primeros Auxilios",
+      "stat": "wis",
+      "level": 0
+    },
+    "health": {
+      "name": "Salud",
+      "stat": "con",
+      "level": 0
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "stat": "dex",
+      "level": 0
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "stat": "wis",
+      "level": 0
+    },
+    "tinker": {
+      "name": "Trastear",
+      "stat": "itl",
+      "level": 0
+    },
+    "willpower": {
+      "name": "Voluntad",
+      "stat": "cha",
+      "level": 0
+    }
+  },
+  "ranks": [
+    {
+      "id": "magia_divina",
+      "name": "Magia Divina",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Religión",
+      "stat": "wis",
+      "reserve": "chi",
+      "rank": 4,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_divina--1--milagro-menor,magia_divina--1--enviado-de-los-dioses,magia_divina--1--oracion,magia_divina--2--manifestacion-divina,magia_divina--2--consagrar-la-tierra,magia_divina--2--canalizar-divinidad,magia_divina--3--adivinacion,magia_divina--3--guardian-de-la-fe,magia_divina--4--castigo-divino,magia_divina--4--llamar-a-los-dioses,magia_divina--5--palabra-divina,magia_divina--5--exaltado,magia_divina--6--ira-de-dios"
+    },
+    {
+      "id": "ascendencia_abisal",
+      "name": "Ascendencia Abisal",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Ascendencias",
+      "stat": "cha/con",
+      "reserve": "chi",
+      "rank": 3,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "ascendencia_abisal--1--tocado-por-la-locura,ascendencia_abisal--1--furia-abisal,ascendencia_abisal--2--mutacion,ascendencia_abisal--2--poder-antinatural,ascendencia_abisal--3--abrazar-la-locura,ascendencia_abisal--3--invocacion-abisal,ascendencia_abisal--4--rasgo-monstruoso-superior,ascendencia_abisal--4--paso-abisal,ascendencia_abisal--5--aura-del-caos,ascendencia_abisal--5--corrupcion-absoluta,ascendencia_abisal--6--transformacion-abisal",
+      "stats": [
+        {
+          "stat": "cha",
+          "rank": 2,
+          "boost": 1
+        },
+        {
+          "stat": "con",
+          "rank": 4,
+          "boost": 1
+        },
+        {
+          "stat": "dex",
+          "rank": 6,
+          "boost": 1
+        }
+      ]
+    },
+    {
+      "id": "mente_desencadenada",
+      "name": "Mente Desencadenada",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Combate",
+      "stat": "itl",
+      "reserve": "chi",
+      "rank": 2,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "mente_desencadenada--1--mente-desencadenada,mente_desencadenada--1--agilidad-mental,mente_desencadenada--2--poder-del-dolor,mente_desencadenada--2--conocimiento-arcano,mente_desencadenada--3--concentracion-superior,mente_desencadenada--3--expoliar-la-mente,mente_desencadenada--4--sentido-arcano,mente_desencadenada--4--psique-retorcida,mente_desencadenada--5--division-mental,mente_desencadenada--5--mente-sobre-cuerpo"
+    },
+    {
+      "id": "presencia",
+      "name": "Presencia",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Combate",
+      "stat": "cha",
+      "reserve": "chi",
+      "rank": 3,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "presencia--1--voz-del-comandante,presencia--1--voluntad-poderosa,presencia--2--revigorar,presencia--2--provocacion,presencia--3--indomito,presencia--3--inspirar-heroismo"
+    }
+  ],
+  "spells": {
+    "patron": {
+      "name": "",
+      "domains": [
+        "magia_espacial",
+        "magia_ilusoria",
+        "magia_temporal",
+        "nigromancia",
+        "magia_mental"
+      ],
+      "damage_type": "Necrótico"
+    },
+    "picks": {}
+  },
+  "equipment": {
+    "armor": {
+      "eqab": "",
+      "name": "Media",
+      "penalty": -2,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 4
+        }
+      ]
+    },
+    "mainHand": {
+      "eqab": "lanza",
+      "name": "Lanza",
+      "styles": [
+        "duelo"
+      ]
+    },
+    "secondHand": {},
+    "head": {},
+    "bag": []
+  },
+  "archetypes": []
+}

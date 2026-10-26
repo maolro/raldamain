@@ -1636,7 +1636,7 @@ function renderAbEdit() {
               <span style="font-size:11px;color:var(--text2)">Escalar al insertar</span>
             </label></div>
         </div>
-        <div class="field"><div class="lbl">Descripción</div>
+        <div class="field"><div class="lbl">Descripción <span style="font-weight:400;text-transform:none">· +MOD = bonus escalado de la criatura</span></div>
           <textarea class="inp" rows="3" oninput="S.abEdit.desc=this.value||undefined">${esc(a.desc||'')}</textarea></div>
         <div class="field"><div class="lbl">Movimiento</div>
           <input class="inp" value="${esc(a.move||'')}" oninput="S.abEdit.move=this.value||undefined"></div>
@@ -1746,6 +1746,11 @@ function insertFromBank(type, ab) {
   if (entry.bonus_scaled) {
     entry.bonus = formatDice(getBonusBand(tgtLevel).bonus);
   }
+  // "+MOD" anywhere in the text becomes the creature's scaled bonus
+  let mod = formatDice(getBonusBand(tgtLevel).bonus);
+  if (!/^[+-]/.test(mod)) mod = '+' + mod;
+  for (const k of Object.keys(entry))
+    if (typeof entry[k] === 'string') entry[k] = entry[k].replace(/\+MOD\b/gi, mod);
   S.creature[type].push(entry);
   const fn = type==='traits'?renderTraitCard : type==='actions'?renderActionCard:renderReactionCard;
   renderAbilityGrid(type+'-grid', S.creature[type], fn);

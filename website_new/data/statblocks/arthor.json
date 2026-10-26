@@ -1,0 +1,222 @@
+{
+  "name": "Arthor",
+  "level": 1,
+  "race": {
+    "name": "Humano"
+  },
+  "stats": {
+    "str": {
+      "name": "FUE",
+      "value": 0
+    },
+    "dex": {
+      "name": "DES",
+      "value": 0
+    },
+    "con": {
+      "name": "CON",
+      "value": 3
+    },
+    "itl": {
+      "name": "INT",
+      "value": 3
+    },
+    "wis": {
+      "name": "SAB",
+      "value": 4
+    },
+    "cha": {
+      "name": "CAR",
+      "value": 1
+    }
+  },
+  "talents": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "stat": "dex",
+      "level": 0
+    },
+    "performance": {
+      "name": "Actuación",
+      "stat": "cha",
+      "level": 0
+    },
+    "arcana": {
+      "name": "Arcanismo",
+      "stat": "itl",
+      "level": 2
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "stat": "str",
+      "level": 0
+    },
+    "insight": {
+      "name": "Averiguar Intenciones",
+      "stat": "wis",
+      "level": 0
+    },
+    "focus": {
+      "name": "Concentración",
+      "stat": "itl",
+      "level": 1
+    },
+    "wreck": {
+      "name": "Destrozar",
+      "stat": "str",
+      "level": 0
+    },
+    "deception": {
+      "name": "Engaño",
+      "stat": "cha",
+      "level": 0
+    },
+    "heroics": {
+      "name": "Heroísmo",
+      "stat": "str",
+      "level": 0
+    },
+    "intimidate": {
+      "name": "Intimidar",
+      "stat": "str/cha",
+      "level": 0
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "stat": "dex",
+      "level": 0
+    },
+    "perception": {
+      "name": "Percepción",
+      "stat": "wis",
+      "level": 2
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "stat": "cha",
+      "level": 0
+    },
+    "first-aid": {
+      "name": "Primeros Auxilios",
+      "stat": "wis",
+      "level": 0
+    },
+    "health": {
+      "name": "Salud",
+      "stat": "con",
+      "level": 0
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "stat": "dex",
+      "level": 0
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "stat": "wis",
+      "level": 0
+    },
+    "tinker": {
+      "name": "Trastear",
+      "stat": "itl",
+      "level": 2
+    },
+    "willpower": {
+      "name": "Voluntad",
+      "stat": "cha",
+      "level": 0
+    }
+  },
+  "ranks": [
+    {
+      "id": "magia_metal",
+      "name": "Magia de Metal",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Elementalismo",
+      "stat": "wis/cha",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_metal--1--ferrokinesia,magia_metal--1--manipular-metal,magia_metal--1--sentido-del-metal,magia_metal--2--nube-de-cuchillas,magia_metal--2--repulsion-magnetica,magia_metal--2--infusion-de-metal,magia_metal--3--espina-metalica,magia_metal--3--maestria-del-metal,magia_metal--3--hilos-de-acero,magia_metal--4--armadura-de-hierro,magia_metal--4--pulso-destructor,magia_metal--4--ferrokinesia,magia_metal--5--tormenta-de-acero,magia_metal--5--polvo-metalico,magia_metal--5--metal-liquido,magia_metal--6--forma-elemental",
+      "stats": [
+        {
+          "stat": "dex",
+          "rank": 2,
+          "boost": 1
+        },
+        {
+          "stat": "cha",
+          "rank": 4,
+          "boost": 1
+        },
+        {
+          "stat": "cha",
+          "rank": 6,
+          "boost": 1
+        }
+      ],
+      "parry_tag": "Metal",
+      "parry_name": "Parada mágica",
+      "parry_against": "Metal, Tierra, Físico, Cortante y Tormenta"
+    },
+    {
+      "id": "mente_desencadenada",
+      "name": "Mente Desencadenada",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Combate",
+      "stat": "itl",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "mente_desencadenada--1--mente-desencadenada,mente_desencadenada--1--agilidad-mental,mente_desencadenada--2--poder-del-dolor,mente_desencadenada--2--conocimiento-arcano,mente_desencadenada--3--concentracion-superior,mente_desencadenada--3--expoliar-la-mente,mente_desencadenada--4--sentido-arcano,mente_desencadenada--4--psique-retorcida,mente_desencadenada--5--division-mental,mente_desencadenada--5--mente-sobre-cuerpo"
+    }
+  ],
+  "spells": {
+    "patron": {
+      "name": "",
+      "domains": [],
+      "damage_type": ""
+    },
+    "picks": {}
+  },
+  "equipment": {
+    "armor": {
+      "eqab": "",
+      "name": "Ligera",
+      "penalty": 0,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 2
+        }
+      ]
+    },
+    "mainHand": {
+      "name": "Golpe",
+      "eqab": "golpe",
+      "style": "duelist"
+    },
+    "secondHand": {},
+    "head": {},
+    "bag": []
+  },
+  "archetypes": []
+}

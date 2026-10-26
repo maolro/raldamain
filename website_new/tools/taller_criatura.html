@@ -216,9 +216,7 @@ function dirty() { return C && JSON.stringify(C) !== SAVED; }
 // ── Load ──
 async function init() {
   window.updateMetaTags = () => {};  // the site renderer must not retitle this page
-  const [lib, bx] = await Promise.all([fetch('/api/criatura-biblioteca').then(r => r.json()), fetch('/api/bestiario').then(r => r.json())]);
-  LIB = lib.abilities || [];
-  if (lib.scaling && Array.isArray(lib.scaling.damage) && Array.isArray(lib.scaling.bonus)) { DAMAGE_TIERS = lib.scaling.damage; BONUS_TABLE = lib.scaling.bonus; }
+  const [, bx] = await Promise.all([loadLibrary(), fetch('/api/bestiario').then(r => r.json())]);
   const uniq = a => [...new Set(a.filter(Boolean))].sort();
   $('dl-types').innerHTML = uniq((bx.creatures || []).map(c => c.type)).map(t => `<option value="${esc(t)}">`).join('');
   $('dl-cats').innerHTML = uniq((bx.creatures || []).map(c => c.category)).map(t => `<option value="${esc(t)}">`).join('');
@@ -237,6 +235,21 @@ async function init() {
   SAVED = JSON.stringify(C);
   fillForm(); renderTab(); loadRenderer();
 }
+// The library is re-read whenever it may have changed (opening the picker, coming back to this tab),
+// so abilities saved in the creature editor's Biblioteca show up without reloading the page
+async function loadLibrary() {
+  const lib = await fetch('/api/criatura-biblioteca', { cache: 'no-store' }).then(r => r.json());
+  LIB = lib.abilities || [];
+  if (lib.scaling && Array.isArray(lib.scaling.damage) && Array.isArray(lib.scaling.bonus)) { DAMAGE_TIERS = lib.scaling.damage; BONUS_TABLE = lib.scaling.bonus; }
+}
+async function refreshLibrary() {
+  try { await loadLibrary(); } catch (e) { return; }
+  if (!C) return;
+  rescaleAll(); headline(); schedulePreview();
+  if (!$('pick').hidden) renderPick();
+}
+window.addEventListener('focus', refreshLibrary);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshLibrary(); });
 function normalize(c) {
   c.saves = c.saves || {}; c.combat = c.combat || {}; c.umbrales = c.umbrales || [];
   for (const k of ['traits', 'actions', 'reactions', 'immune', 'tags']) c[k] = Array.isArray(c[k]) ? c[k] : [];
@@ -327,24 +340,26 @@ const ENTRY_FIELDS = {
 };
 function renderEntries() {
   const list = C[TAB];
-  $('list-hint').textContent = `Las habilidades de la biblioteca se escalan al nivel de la criatura (bonus y daño LOW/MID/HIGH).`;
+  $('list-hint').textContent = `Las habilidades de la biblioteca se escalan al nivel de la criatura (bonus y daño LOW/MID/HIGH). Escribe +MOD en cualquier campo para usar el bonus escalado (ahora ${modText()}).`;
   $('entries').innerHTML = list.map((en, i) => {
     const badges = (en.ability_id ? '<span class="cc-badge gold">biblioteca</span>' : '')
       + (en.damage_tier ? `<span class="cc-badge ${en.damage_tier}">${en.damage_tier}</span>` : '')
-      + (en.bonus_scaled ? '<span class="cc-badge">bonus escalado</span>' : '');
+      + (en.bonus_scaled ? '<span class="cc-badge">bonus escalado</span>' : '')
+      + (en.mod_tpl ? `<span class="cc-badge" title="+MOD = ${esc(modText())}">+MOD</span>` : '');
+    const shown = k => (en.mod_tpl && en.mod_tpl[k] != null) ? en.mod_tpl[k] : en[k];
     const fields = ENTRY_FIELDS[TAB].map(([k, label, kind]) => {
-      const v = kind === 'csv' ? (en[k] || []).join(', ') : (en[k] ?? '');
+      const v = kind === 'csv' ? (en[k] || []).join(', ') : (shown(k) ?? '');
       return `<label class="cc-f">${label}<input class="inp" data-i="${i}" data-k="${k}" data-kind="${kind}" value="${esc(v)}"></label>`;
     }).join('');
     return `<div class="cc-entry${en.ability_id ? ' lib' : ''}">
       <div class="cc-entry-head">
-        <input class="inp" data-i="${i}" data-k="name" value="${esc(en.name || '')}" placeholder="Nombre">${badges}
+        <input class="inp" data-i="${i}" data-k="name" value="${esc(shown('name') || '')}" placeholder="Nombre">${badges}
         <button type="button" class="cc-x" data-move="${i}:-1" title="Subir">▲</button>
         <button type="button" class="cc-x" data-move="${i}:1" title="Bajar">▼</button>
         <button type="button" class="cc-x" data-rm="${i}" title="Quitar">✕</button>
       </div>
       ${fields ? `<div class="cc-row">${fields}</div>` : ''}
-      <label class="cc-f">Descripción<textarea class="inp" rows="2" data-i="${i}" data-k="desc">${esc(en.desc || '')}</textarea></label>
+      <label class="cc-f">Descripción<textarea class="inp" rows="2" data-i="${i}" data-k="desc">${esc(shown('desc') || '')}</textarea></label>
     </div>`;
   }).join('') || `<p class="muted">Sin ${LIST_NAME[TAB]} todavía.</p>`;
 }
@@ -355,11 +370,18 @@ $('entries').addEventListener('input', e => {
   if (kind === 'num') v = v.trim() === '' ? undefined : (isNaN(+v) ? v : +v);
   else if (kind === 'csv') v = csv(v);
   else v = v === '' && k !== 'name' ? undefined : v;
-  if (v === undefined || (Array.isArray(v) && !v.length)) delete en[k]; else en[k] = v;
+  const had = !!en.mod_tpl;
+  setModField(en, k, v);
+  if (had !== !!en.mod_tpl) { const pos = t.selectionStart; renderEntries(); refocus(i, k, pos); }
   if (k === 'damage') delete en.damage_tier;   // edited by hand: no longer follows the tier table
   if (k === 'bonus') delete en.bonus_scaled;
   changed();
 });
+// re-rendering the list (to add or drop the +MOD badge) loses the caret; put it back
+function refocus(i, k, pos) {
+  const el = $('entries').querySelector(`[data-i="${i}"][data-k="${k}"]`);
+  if (el) { el.focus(); try { el.setSelectionRange(pos, pos); } catch (e) {} }
+}
 $('entries').addEventListener('click', e => {
   const b = e.target.closest('button'); if (!b) return;
   const list = C[TAB];
@@ -376,11 +398,22 @@ $('btn-blank').addEventListener('click', () => {
   renderEntries(); changed();
 });
 
-// Library entries follow the tier tables while untouched
+// Library entries follow the tier tables while untouched.
+// "+MOD" in any text becomes the creature's scaled bonus; the text with +MOD is kept in mod_tpl
+// so it follows the level, and the saved fields hold the resolved values.
+const MOD_RE = /\+MOD\b/gi;
+const hasMod = v => typeof v === 'string' && /\+MOD\b/i.test(v);
+const modText = () => { const b = fmtDice(bandOf(BONUS_TABLE, +C.level || 1).bonus); return /^[+-]/.test(b) ? b : '+' + b; };
+function setModField(en, k, v) {
+  if (hasMod(v)) { (en.mod_tpl = en.mod_tpl || {})[k] = v; en[k] = v.replace(MOD_RE, modText()); return; }
+  if (en.mod_tpl) { delete en.mod_tpl[k]; if (!Object.keys(en.mod_tpl).length) delete en.mod_tpl; }
+  if (v === undefined || (Array.isArray(v) && !v.length)) delete en[k]; else en[k] = v;
+}
 function scaleEntry(en) {
   const lv = +C.level || 1;
   if (en.damage_tier) en.damage = scaleDamage(en.damage_tier, en.damage_base_type || '', lv);
   if (en.bonus_scaled) en.bonus = fmtDice(bandOf(BONUS_TABLE, lv).bonus);
+  for (const [k, t] of Object.entries(en.mod_tpl || {})) en[k] = t.replace(MOD_RE, modText());
 }
 function rescaleAll() {
   for (const k of ['actions', 'reactions', 'traits']) C[k].forEach(scaleEntry);
@@ -392,13 +425,14 @@ function insertFromLibrary(ab) {
   delete en.id; delete en.type; delete en.tier;
   if (typeof en.cost === 'string' && en.cost.trim() !== '' && !isNaN(+en.cost)) en.cost = +en.cost;
   for (const k of Object.keys(en)) if (en[k] === '' || en[k] == null) delete en[k];
+  for (const k of Object.keys(en)) if (hasMod(en[k])) setModField(en, k, en[k]);
   scaleEntry(en);
   C[TAB].push(en);
   renderEntries(); changed();
 }
 
 // ── Library picker ──
-$('btn-pick').addEventListener('click', () => { PICK = { q: '', tag: '', tier: '' }; $('pick-q').value = ''; $('pick').hidden = false; renderPick(); $('pick-q').focus(); });
+$('btn-pick').addEventListener('click', () => { PICK = { q: '', tag: '', tier: '' }; $('pick-q').value = ''; $('pick').hidden = false; renderPick(); $('pick-q').focus(); refreshLibrary(); });
 $('pick-close').addEventListener('click', () => { $('pick').hidden = true; });
 $('pick').addEventListener('click', e => { if (e.target.id === 'pick') $('pick').hidden = true; });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') $('pick').hidden = true; });
