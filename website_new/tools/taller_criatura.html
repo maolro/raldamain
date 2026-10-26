@@ -365,12 +365,12 @@ const ENTRY_FIELDS = {
 };
 function renderEntries() {
   const list = C[TAB];
-  $('list-hint').textContent = `Las habilidades de la biblioteca se escalan al nivel de la criatura (bonus y daño LOW/MID/HIGH). Escribe +MOD en cualquier campo para usar el bonus escalado (ahora ${modText()}).`;
+  $('list-hint').textContent = `Las habilidades de la biblioteca se escalan al nivel de la criatura (bonus y daño LOW/MID/HIGH). Palabras clave en cualquier campo: +MOD (ahora ${modText()}), TIER (ahora ${tierOf(+C.level || 1)}; admite TIER+1, TIERx2, (TIER+1)d6…) y LOW / MID / HIGH (dados de daño del Tier).`;
   $('entries').innerHTML = list.map((en, i) => {
     const badges = (en.ability_id ? '<span class="cc-badge gold">biblioteca</span>' : '')
       + (en.damage_tier ? `<span class="cc-badge ${en.damage_tier}">${en.damage_tier}</span>` : '')
       + (en.bonus_scaled ? '<span class="cc-badge">bonus escalado</span>' : '')
-      + (en.mod_tpl ? `<span class="cc-badge" title="+MOD = ${esc(modText())}">+MOD</span>` : '');
+      + (en.mod_tpl ? `<span class="cc-badge" title="+MOD = ${esc(modText())} · TIER = ${tierOf(+C.level || 1)}">fórmula</span>` : '');
     const shown = k => (en.mod_tpl && en.mod_tpl[k] != null) ? en.mod_tpl[k] : en[k];
     const fields = ENTRY_FIELDS[TAB].map(([k, label, kind]) => {
       const v = kind === 'csv' ? (en[k] || []).join(', ') : (shown(k) ?? '');
@@ -402,7 +402,7 @@ $('entries').addEventListener('input', e => {
   if (k === 'bonus') delete en.bonus_scaled;
   changed();
 });
-// re-rendering the list (to add or drop the +MOD badge) loses the caret; put it back
+// re-rendering the list (to add or drop the "fórmula" badge) loses the caret; put it back
 function refocus(i, k, pos) {
   const el = $('entries').querySelector(`[data-i="${i}"][data-k="${k}"]`);
   if (el) { el.focus(); try { el.setSelectionRange(pos, pos); } catch (e) {} }
@@ -424,13 +424,36 @@ $('btn-blank').addEventListener('click', () => {
 });
 
 // Library entries follow the tier tables while untouched.
-// "+MOD" in any text becomes the creature's scaled bonus; the text with +MOD is kept in mod_tpl
-// so it follows the level, and the saved fields hold the resolved values.
-const MOD_RE = /\+MOD\b/gi;
-const hasMod = v => typeof v === 'string' && /\+MOD\b/i.test(v);
+// Creature keywords in ability text, resolved for the creature's level:
+//   +MOD -> scaled bonus · TIER -> tier number, with arithmetic like the ranks' RANGO
+//   ("TIER+2", "TIERx2", "(TIER+1)d6") · LOW / MID / HIGH -> that damage tier's dice
+//   (one die fewer when the damage type that follows is a magic one)
+const KEY_RE = /\+MOD\b|\bTIER\b|\b(?:LOW|MID|HIGH)\b/;
+const KEY_FIELDS = ['name', 'desc', 'bonus', 'damage', 'range', 'area', 'save', 'move'];
+const TIER_EXPR = /\(\s*(?:\d+\s*[x×*]\s*)?TIER(?:\s*[+\-x×*/]\s*\d+)*\s*\)|(?:\d+\s*[x×*]\s*)?TIER(?:\s*[+\-x×*/]\s*\d+)*/g;
+const MAGIC_WORD = /^(?:fuego|fr[ií]o|el[ée]ctric|[áa]cid|s[óo]nic|radiante|necr[óo]tic|arcan|m[áa]gic|ps[íi]quic|fuerza|veneno|sagrad|sombr)/i;
+function resolveKeywords(text, mod, tier, damageFor) {
+  if (typeof text !== 'string' || !KEY_RE.test(text)) return text;
+  let out = text.replace(/\+MOD\b/g, mod);
+  out = out.replace(TIER_EXPR, m => {
+    const e = m.replace(/TIER/g, tier).replace(/[x×]/g, '*');
+    if (!/^[\d+\-*/ ().]+$/.test(e)) return m;
+    try { return String(Math.max(0, Math.floor(Function('return (' + e + ')')()))); } catch (err) { return m; }
+  });
+  return out.replace(/\b(LOW|MID|HIGH)\b((?:\s+(?:de\s+)?da[ñn]o)?\s+(?:de\s+)?([A-Za-zÁÉÍÓÚáéíóúñ]+))?/g, (m, t, rest, word) => {
+    const physical = !word || !MAGIC_WORD.test(word);
+    return damageFor(t, physical) + (rest || '');
+  });
+}
+// The text with keywords is kept in mod_tpl so it follows the level; the saved fields hold the resolved values.
+const hasMod = v => typeof v === 'string' && KEY_RE.test(v);
 const modText = () => { const b = fmtDice(bandOf(BONUS_TABLE, +C.level || 1).bonus); return /^[+-]/.test(b) ? b : '+' + b; };
+const resolveText = t => {
+  const lv = +C.level || 1;
+  return resolveKeywords(t, modText(), tierOf(lv), (tier, phys) => scaleDamage(tier, phys ? 'Cortante' : 'Fuego', lv).replace(/ \S+$/, ''));
+};
 function setModField(en, k, v) {
-  if (hasMod(v)) { (en.mod_tpl = en.mod_tpl || {})[k] = v; en[k] = v.replace(MOD_RE, modText()); return; }
+  if (KEY_FIELDS.includes(k) && hasMod(v)) { (en.mod_tpl = en.mod_tpl || {})[k] = v; en[k] = resolveText(v); return; }
   if (en.mod_tpl) { delete en.mod_tpl[k]; if (!Object.keys(en.mod_tpl).length) delete en.mod_tpl; }
   if (v === undefined || (Array.isArray(v) && !v.length)) delete en[k]; else en[k] = v;
 }
@@ -438,7 +461,7 @@ function scaleEntry(en) {
   const lv = +C.level || 1;
   if (en.damage_tier) en.damage = scaleDamage(en.damage_tier, en.damage_base_type || '', lv);
   if (en.bonus_scaled) en.bonus = fmtDice(bandOf(BONUS_TABLE, lv).bonus);
-  for (const [k, t] of Object.entries(en.mod_tpl || {})) en[k] = t.replace(MOD_RE, modText());
+  for (const [k, t] of Object.entries(en.mod_tpl || {})) en[k] = resolveText(t);
 }
 function rescaleAll() {
   for (const k of ['actions', 'reactions', 'traits']) C[k].forEach(scaleEntry);
@@ -452,7 +475,7 @@ function insertFromLibrary(ab) {
   delete en.id; delete en.type; delete en.tier;
   if (typeof en.cost === 'string' && en.cost.trim() !== '' && !isNaN(+en.cost)) en.cost = +en.cost;
   for (const k of Object.keys(en)) if (en[k] === '' || en[k] == null) delete en[k];
-  for (const k of Object.keys(en)) if (hasMod(en[k])) setModField(en, k, en[k]);
+  for (const k of KEY_FIELDS) if (hasMod(en[k])) setModField(en, k, en[k]);
   scaleEntry(en);
   C[TAB].push(en);
   renderEntries(); changed();

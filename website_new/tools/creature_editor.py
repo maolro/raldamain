@@ -1644,7 +1644,7 @@ function renderAbEdit() {
               <span style="font-size:11px;color:var(--text2)">Escalar al insertar</span>
             </label></div>
         </div>
-        <div class="field"><div class="lbl">Descripción <span style="font-weight:400;text-transform:none">· +MOD = bonus escalado de la criatura</span></div>
+        <div class="field"><div class="lbl">Descripción <span style="font-weight:400;text-transform:none">· +MOD = bonus escalado · TIER = Tier de la criatura (TIER+1, TIERx2…) · LOW/MID/HIGH = dados de daño</span></div>
           <textarea class="inp" rows="3" oninput="S.abEdit.desc=this.value||undefined">${esc(a.desc||'')}</textarea></div>
         <div class="field"><div class="lbl">Movimiento</div>
           <input class="inp" value="${esc(a.move||'')}" oninput="S.abEdit.move=this.value||undefined"></div>
@@ -1741,6 +1741,28 @@ function confirmPick(id) {
   closePick();
 }
 
+// Creature keywords in ability text, resolved for the creature's level:
+//   +MOD -> scaled bonus · TIER -> tier number, with arithmetic like the ranks' RANGO
+//   ("TIER+2", "TIERx2", "(TIER+1)d6") · LOW / MID / HIGH -> that damage tier's dice
+//   (one die fewer when the damage type that follows is a magic one)
+const KEY_RE = /\+MOD\b|\bTIER\b|\b(?:LOW|MID|HIGH)\b/;
+const KEY_FIELDS = ['name', 'desc', 'bonus', 'damage', 'range', 'area', 'save', 'move'];
+const TIER_EXPR = /\(\s*(?:\d+\s*[x×*]\s*)?TIER(?:\s*[+\-x×*/]\s*\d+)*\s*\)|(?:\d+\s*[x×*]\s*)?TIER(?:\s*[+\-x×*/]\s*\d+)*/g;
+const MAGIC_WORD = /^(?:fuego|fr[ií]o|el[ée]ctric|[áa]cid|s[óo]nic|radiante|necr[óo]tic|arcan|m[áa]gic|ps[íi]quic|fuerza|veneno|sagrad|sombr)/i;
+function resolveKeywords(text, mod, tier, damageFor) {
+  if (typeof text !== 'string' || !KEY_RE.test(text)) return text;
+  let out = text.replace(/\+MOD\b/g, mod);
+  out = out.replace(TIER_EXPR, m => {
+    const e = m.replace(/TIER/g, tier).replace(/[x×]/g, '*');
+    if (!/^[\d+\-*/ ().]+$/.test(e)) return m;
+    try { return String(Math.max(0, Math.floor(Function('return (' + e + ')')()))); } catch (err) { return m; }
+  });
+  return out.replace(/\b(LOW|MID|HIGH)\b((?:\s+(?:de\s+)?da[ñn]o)?\s+(?:de\s+)?([A-Za-zÁÉÍÓÚáéíóúñ]+))?/g, (m, t, rest, word) => {
+    const physical = !word || !MAGIC_WORD.test(word);
+    return damageFor(t, physical) + (rest || '');
+  });
+}
+
 // ── Insert from bank ──────────────────────────────────────────────────────────
 function insertFromBank(type, ab) {
   if (!S.creature) return;
@@ -1754,11 +1776,13 @@ function insertFromBank(type, ab) {
   if (entry.bonus_scaled) {
     entry.bonus = formatDice(getBonusBand(tgtLevel).bonus);
   }
-  // "+MOD" anywhere in the text becomes the creature's scaled bonus
+  // +MOD, TIER and LOW / MID / HIGH in the text take this creature's values
   let mod = formatDice(getBonusBand(tgtLevel).bonus);
   if (!/^[+-]/.test(mod)) mod = '+' + mod;
-  for (const k of Object.keys(entry))
-    if (typeof entry[k] === 'string') entry[k] = entry[k].replace(/\+MOD\b/gi, mod);
+  const tierNum = DAMAGE_TIERS.indexOf(getTierBand(tgtLevel)) + 1;
+  for (const k of KEY_FIELDS)
+    entry[k] = resolveKeywords(entry[k], mod, tierNum,
+      (t, phys) => scaleDamageStr(t, phys ? 'Cortante' : 'Fuego', tgtLevel).replace(/ \S+$/, ''));
   S.creature[type].push(entry);
   const fn = type==='traits'?renderTraitCard : type==='actions'?renderActionCard:renderReactionCard;
   renderAbilityGrid(type+'-grid', S.creature[type], fn);
