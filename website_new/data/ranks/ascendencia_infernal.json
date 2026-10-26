@@ -47,7 +47,11 @@
           ],
           "desc": "Recibes Ventaja en todos tus tiros de ataque, defensa, salvación y habilidad. Este efecto dura hasta 6 rondas y cuando acabe reduces tu chi o tu cordura en 1 por cada 2 rondas que hayas pasado en él.",
           "duration": "Max 6 Rondas",
-          "cost": "1 Acción"
+          "cost": "1 Acción",
+          "toggle": {
+            "label": "Fuerza del Diablo",
+            "adv_all": true
+          }
         }
       ]
     },
