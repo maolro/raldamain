@@ -29,10 +29,10 @@
             "Ataque",
             "Agarre"
           ],
-          "desc": "El objetivo queda Enredado hasta que escape.",
+          "desc": "El objetivo queda Enredado hasta que escape. Si ya está Enredado, pasará a estar Agarrado.",
           "cost": "1 Acción",
           "range": "Medio",
-          "empower": "Aumenta el área afectada por un paso."
+          "empower": "Aumenta el área afectada a un radio corto (medio si empoderas dos veces). "
         },
         {
           "name": "Espinas de Madera",
@@ -45,7 +45,7 @@
           "range": "Medio",
           "damage": "1d6 + SAB",
           "damage_type": "Perforante/Cortante",
-          "empower": "Aumenta el daño base por un dado y el radio a corto. Si has empoderado dos veces, aumenta el área a un radio medio."
+          "empower": "Aumenta el daño base por un dado. Si has empoderado dos veces, aumenta el área a un radio corto."
         },
         {
           "name": "Pulso Vital",
