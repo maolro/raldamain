@@ -43,11 +43,11 @@
             "label": "Armadura del Mago",
             "umbrales": [
               {
-                "value": "RANGOx2",
+                "value": "RANGO+1",
                 "categories": "Físico"
               },
               {
-                "value": "RANGOx2",
+                "value": "RANGO+1",
                 "categories": "Mágico"
               }
             ]
