@@ -53,12 +53,11 @@
           <label class="cc-f cc-num">Acciones<input id="f-acc" class="inp" type="number" min="0"></label>
           <label class="cc-f cc-num">Reacciones<input id="f-rea" class="inp" type="number" min="0"></label>
         </div>
-        <div class="cc-sub">Tiros de salvación
-          <button type="button" class="btn-ghost cc-mini" id="btn-saves" title="Pone el bonus del Tier de la criatura en las tres salvaciones">Usar bonus del Tier</button></div>
+        <div class="cc-sub">Tiros de salvación <span class="muted" style="font-weight:400">· A / M / B = bonus Alto, Medio o Bajo del Tier (siguen al nivel)</span></div>
         <div class="cc-row">
-          <label class="cc-f">FÍS<input id="f-sfis" class="inp" placeholder="+7+1d6"></label>
-          <label class="cc-f">VOL<input id="f-svol" class="inp" placeholder="+7"></label>
-          <label class="cc-f">MEN<input id="f-smen" class="inp" placeholder="+4"></label>
+          <label class="cc-f">FÍS<input id="f-sfis" class="inp" placeholder="+7+1d6"><span class="cc-lvls" data-save="FÍS"><button type="button" data-l="bonus">A</button><button type="button" data-l="mid">M</button><button type="button" data-l="low">B</button></span></label>
+          <label class="cc-f">VOL<input id="f-svol" class="inp" placeholder="+7"><span class="cc-lvls" data-save="VOL"><button type="button" data-l="bonus">A</button><button type="button" data-l="mid">M</button><button type="button" data-l="low">B</button></span></label>
+          <label class="cc-f">MEN<input id="f-smen" class="inp" placeholder="+4"><span class="cc-lvls" data-save="MEN"><button type="button" data-l="bonus">A</button><button type="button" data-l="mid">M</button><button type="button" data-l="low">B</button></span></label>
         </div>
         <div class="cc-sub">Umbrales de daño
           <span class="cc-quick">añadir: <button type="button" data-umb="General">General</button><button type="button" data-umb="Físico">Físico</button><button type="button" data-umb="Magia">Magia</button></span></div>
@@ -124,6 +123,9 @@
 .cc-grow { flex: 3 1 220px; }
 .cc-num { flex: 0 1 100px; }
 .cc-tierline { font-size: .82rem; color: var(--text-muted); }
+.cc-lvls { display: inline-flex; gap: 2px; margin-top: 3px; }
+.cc-lvls button { background: none; border: 1px solid #444; color: var(--text-muted); border-radius: 3px; padding: 0 6px; font-size: .72rem; cursor: pointer; }
+.cc-lvls button.on, .cc-lvls button:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
 .cc-tierline b { color: var(--accent-gold); }
 .cc-tabs { display: flex; gap: 4px; flex-wrap: wrap; }
 .cc-tabs button { background: none; border: 1px solid #444; color: var(--text-muted); border-radius: 4px 4px 0 0; padding: 7px 14px;
@@ -177,10 +179,15 @@ let DAMAGE_TIERS = [
   { min:19, max:21, LOW:[4,12,10], MID:[5,12,10], HIGH:[6,12,10] },
 ];
 let BONUS_TABLE = [
-  { min:1, max:3, bonus:'+5+1d6' }, { min:4, max:6, bonus:'+7+2d6' }, { min:7, max:9, bonus:'+9+2d6' },
-  { min:10, max:12, bonus:'+11+3d6' }, { min:13, max:15, bonus:'+13+3d6' }, { min:16, max:18, bonus:'+15+4d6' },
-  { min:19, max:21, bonus:'+17+4d6' },
+  { min:1,  max:3,  bonus:'+5+1d6',  mid:'+5+1d6',  low:'+5'  },
+  { min:4,  max:6,  bonus:'+7+2d6',  mid:'+7+1d6',  low:'+7'  },
+  { min:7,  max:9,  bonus:'+9+2d6',  mid:'+9+1d6',  low:'+9'  },
+  { min:10, max:12, bonus:'+11+3d6', mid:'+11+2d6', low:'+11' },
+  { min:13, max:15, bonus:'+13+3d6', mid:'+13+2d6', low:'+13' },
+  { min:16, max:18, bonus:'+15+4d6', mid:'+15+3d6', low:'+15' },
+  { min:19, max:21, bonus:'+17+4d6', mid:'+17+3d6', low:'+17' },
 ];
+const DEFAULT_BONUS = JSON.parse(JSON.stringify(BONUS_TABLE));
 const PHYSICAL = ['contundente', 'cortante', 'perforante'];
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI'];
 const normF = s => (s || '').replace(/\s*\+\s*/g, '+').trim();
@@ -240,7 +247,10 @@ async function init() {
 async function loadLibrary() {
   const lib = await fetch('/api/criatura-biblioteca', { cache: 'no-store' }).then(r => r.json());
   LIB = lib.abilities || [];
-  if (lib.scaling && Array.isArray(lib.scaling.damage) && Array.isArray(lib.scaling.bonus)) { DAMAGE_TIERS = lib.scaling.damage; BONUS_TABLE = lib.scaling.bonus; }
+  if (lib.scaling && Array.isArray(lib.scaling.damage) && Array.isArray(lib.scaling.bonus)) {
+    DAMAGE_TIERS = lib.scaling.damage;
+    BONUS_TABLE = lib.scaling.bonus.map((b, i) => ({ mid: (DEFAULT_BONUS[i] || {}).mid || b.bonus, low: (DEFAULT_BONUS[i] || {}).low || b.bonus, ...b }));
+  }
 }
 async function refreshLibrary() {
   try { await loadLibrary(); } catch (e) { return; }
@@ -268,13 +278,14 @@ function fillForm() {
   $('f-sfis').value = C.saves['FÍS'] || ''; $('f-svol').value = C.saves['VOL'] || ''; $('f-smen').value = C.saves['MEN'] || '';
   $('f-tags').value = C.tags.join(', '); $('f-immune').value = C.immune.join(', ');
   $('f-pub').checked = !!C.published;
-  renderUmbs(); headline();
+  renderUmbs(); headline(); markSaveLevels();
 }
 function headline() {
   $('cc-title').textContent = C.name || 'Nueva criatura';
   $('cc-sub').textContent = EXISTING ? `data/creatures/${C.id}.json` : 'Rellena la información a la izquierda; la ficha se dibuja a la derecha tal como se verá en la web.';
   const lv = +C.level || 1;
-  $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · bonus sugerido <b>${esc(bandOf(BONUS_TABLE, lv).bonus)}</b>
+  const band = bandOf(BONUS_TABLE, lv);
+  $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · bonus Alto / Medio / Bajo <b>${esc(band.bonus)}</b> / <b>${esc(band.mid || '')}</b> / <b>${esc(band.low || '')}</b>
     · daño LOW / MID / HIGH (físico): ${['LOW', 'MID', 'HIGH'].map(t => `<b>${esc(scaleDamage(t, 'Cortante', lv).replace(' Cortante', ''))}</b>`).join(' / ')} · mágico: un dado menos`;
   $('cc-dirty').textContent = dirty() ? '● sin guardar' : '';
   $('cc-web').hidden = $('cc-sim').hidden = !EXISTING;
@@ -292,15 +303,29 @@ $('f-hits').addEventListener('input', e => { C.hits = parseInt(e.target.value, 1
 $('f-acc').addEventListener('input', e => { C.combat.acciones = parseInt(e.target.value, 10) || 0; changed(); });
 $('f-rea').addEventListener('input', e => { C.combat.reacciones = parseInt(e.target.value, 10) || 0; changed(); });
 for (const [el, k] of [['f-sfis', 'FÍS'], ['f-svol', 'VOL'], ['f-smen', 'MEN']])
-  $(el).addEventListener('input', e => { C.saves[k] = e.target.value.trim(); if (!C.saves[k]) delete C.saves[k]; changed(); });
+  $(el).addEventListener('input', e => {
+    C.saves[k] = e.target.value.trim(); if (!C.saves[k]) delete C.saves[k];
+    if (C.save_scale) { delete C.save_scale[k]; if (!Object.keys(C.save_scale).length) delete C.save_scale; }
+    markSaveLevels(); changed();
+  });
 const csv = s => s.split(',').map(x => x.trim()).filter(Boolean);
 $('f-tags').addEventListener('input', e => { C.tags = csv(e.target.value); changed(); });
 $('f-pub').addEventListener('change', e => { C.published = e.target.checked; changed(); });
 $('f-immune').addEventListener('input', e => { C.immune = csv(e.target.value); changed(); });
-$('btn-saves').addEventListener('click', () => {
-  const b = fmtDice(bandOf(BONUS_TABLE, +C.level || 1).bonus).replace(/\s/g, '');
-  C.saves = { 'FÍS': b, 'VOL': b, 'MEN': b }; fillForm(); changed();
-});
+// Saves set from the Tier table follow the level; typing one by hand unlinks it
+const saveBonus = l => fmtDice(bandOf(BONUS_TABLE, +C.level || 1)[l] || '').replace(/\s/g, '');
+function rescaleSaves() {
+  for (const [k, l] of Object.entries(C.save_scale || {})) C.saves[k] = saveBonus(l);
+}
+function markSaveLevels() {
+  document.querySelectorAll('.cc-lvls').forEach(g => g.querySelectorAll('button')
+    .forEach(b => b.classList.toggle('on', (C.save_scale || {})[g.dataset.save] === b.dataset.l)));
+}
+document.querySelectorAll('.cc-lvls').forEach(g => g.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  (C.save_scale = C.save_scale || {})[g.dataset.save] = b.dataset.l;
+  rescaleSaves(); fillForm(); changed();
+}));
 
 // ── Umbrales ──
 function renderUmbs() {
@@ -417,6 +442,8 @@ function scaleEntry(en) {
 }
 function rescaleAll() {
   for (const k of ['actions', 'reactions', 'traits']) C[k].forEach(scaleEntry);
+  rescaleSaves();
+  $('f-sfis').value = C.saves['FÍS'] || ''; $('f-svol').value = C.saves['VOL'] || ''; $('f-smen').value = C.saves['MEN'] || '';
   if (TAB !== 'base') renderEntries();
 }
 function insertFromLibrary(ab) {
