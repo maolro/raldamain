@@ -37,7 +37,7 @@
             "Duradera"
           ],
           "cost": "1 Acción, 1 Chi",
-          "desc": "Aumenta los umbrales Físico y Mágico del objetivo por un valor igual a tu Rango x 2 durante el resto del combate. Este hechizo no es acumulable.",
+          "desc": "Aumenta los umbrales Físico y Mágico del objetivo por un valor igual a tu Rango + 1 durante el resto del combate. Este hechizo no es acumulable.",
           "duration": "6 Rondas",
           "toggle": {
             "label": "Armadura del Mago",
