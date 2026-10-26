@@ -106,7 +106,7 @@ class GreedyPolicy(Policy):
 
         best: tuple[float, Choice] | None = None
         fallback: tuple[int, Choice] | None = None
-        for ability in self._usable(actor):
+        for ability in self._usable(actor, state):
             scored = self.score(state, actor, ability)
             if scored is None:
                 continue
@@ -133,7 +133,7 @@ class GreedyPolicy(Policy):
     ) -> Choice | None:
         """The most valuable bonus action worth declaring right now."""
         best: tuple[float, Choice] | None = None
-        for ability in self._usable(actor):
+        for ability in self._usable(actor, state):
             if not ability.bonus_action or ability.actions > 0:
                 continue
             scored = self.score(state, actor, ability)
@@ -152,9 +152,13 @@ class GreedyPolicy(Policy):
                 best = (value, (ability, targets, upgrades))
         return best[1] if best else None
 
-    def _usable(self, actor: Combatant) -> list[Ability]:
+    def _usable(self, actor: Combatant, state: CombatState | None = None) -> list[Ability]:
         reserve = self.defensive_chi_reserve(actor)
         weapon_locked = actor.has_effect("arma_atrapada")
+        blocked = {t for e in actor.active for t in e.spec.blocks}  # Agarrado
+        # the mouth or tentacle holding someone can't be used again meanwhile
+        gripping = {e.payload.get("grip") for foe in (state.combatants if state else ())
+                    for e in foe.active if e.spec.grip and e.source_id == actor.id}
         out = []
         for a in actor.abilities.values():
             if (
@@ -165,6 +169,8 @@ class GreedyPolicy(Policy):
             ):
                 continue
             if weapon_locked and "weapon" in a.tags:
+                continue
+            if blocked & set(a.tags) or a.id in gripping:
                 continue
             if a.actions <= 0:
                 # Bonus actions cost no actions, so they would otherwise loop
@@ -814,6 +820,19 @@ class GreedyPolicy(Policy):
 
     def _raw_condition_value(self, state, actor, target, spec) -> float:
         """Value of a target sitting under ``spec``, ignoring what they already have."""
+        if spec.blocks:
+            # Agarrado: worth the offence it takes away, i.e. how much better the
+            # target's best blocked attack is than the best one it keeps
+            victim = (state.allies_of(target, include_self=False) or [actor])[0]
+            best = {True: 0.0, False: 0.0}
+            for ab in target.abilities.values():
+                if ab.is_attack and ab.implemented:
+                    v = self._attack_value(state, target, ab, victim, ()) / max(1, ab.actions)
+                    key = bool(set(spec.blocks) & set(ab.tags))
+                    best[key] = max(best[key], v)
+            return max(CONDITION_VALUE * 0.4, (best[True] - best[False]) * SETUP_WEIGHT)
+        if spec.dot:
+            return CONDITION_VALUE  # Veneno: its X rides the application, priced as a solid debuff
         setup = sum(
             -m.advantage
             for m in spec.modifiers

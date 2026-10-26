@@ -242,6 +242,7 @@ class Resolver:
     ) -> list[AttackOutcome]:
         kind = effect.kind
         out: list[AttackOutcome] = []
+        self._cur_ability = ability  # Agarrado / Veneno remember what applied them
 
         if kind == "attack":
             # One attack roll for the whole ability; every target defends
@@ -416,9 +417,43 @@ class Resolver:
     ) -> None:
         if not effect.effect_id:
             return
+        # "Veneno 1d6 (VOL +MOD...)": the text names which save shakes it off
+        src = getattr(self, "_cond_src", None)
+        if effect.raw.get("save") and src is not None:
+            self._cond_src = dict(src, save=effect.raw["save"])
+            try:
+                return self._attach_inner(actor, target, effect, indent, against_id)
+            finally:
+                self._cond_src = src
+        return self._attach_inner(actor, target, effect, indent, against_id)
+
+    def _attach_inner(
+        self,
+        actor: Combatant,
+        target: Combatant,
+        effect: Effect,
+        indent: int,
+        against_id: str | None = None,
+    ) -> None:
         inst = self.state.registry.instantiate(
             effect.effect_id, actor.id, effect.duration, against_id=against_id
         )
+        ability = getattr(self, "_cur_ability", None)
+        if inst.spec.grip:
+            inst.payload["grip"] = ability.id if ability is not None else ""
+        if inst.spec.dot:
+            inst.payload["dot"] = {"damage": effect.damage or DicePool(flat=1),
+                                   "dtype": effect.raw.get("dtype") or "veneno", "ability": ability}
+            current = next((e for e in target.active if e.id == inst.id), None)
+            if current is not None:
+                # Veneno doesn't stack: the larger X stays and the duration restarts
+                old = current.payload.get("dot")
+                if old is None or inst.payload["dot"]["damage"].average > old["damage"].average:
+                    current.payload["dot"] = inst.payload["dot"]
+                current.rounds_left = inst.rounds_left
+                self.log.line(f"{target.name}: se renueva {current.name} "
+                              f"({current.payload['dot']['damage']})", indent)
+                return
         # Status ladder: a second application escalates rather than stacking.
         if inst.spec.family:
             current = next(
@@ -476,7 +511,7 @@ class Resolver:
         """Remember the save and DC an escapable condition (Enredado, Miedo) is
         repeated against.  An escalated rung keeps the stronger of the two DCs'
         sources simply by taking the newest one."""
-        if not inst.spec.escape:
+        if not (inst.spec.escape or inst.spec.save_ends):
             return
         src = getattr(self, "_cond_src", None) or {}
         old = previous.payload.get("escape") if previous is not None else None
@@ -484,7 +519,7 @@ class Resolver:
             inst.payload["escape"] = dict(old)
             return
         inst.payload["escape"] = {
-            "save": src.get("save") or inst.spec.escape,
+            "save": src.get("save") or inst.spec.escape or inst.spec.save_ends,
             "dc": src.get("dc") if src.get("dc") is not None else DicePool(flat=5),
             "source": src.get("source") or inst.source_id,
         }
@@ -539,6 +574,11 @@ class Resolver:
         if actor.policy is not None:
             pick = actor.policy.choose_escape_target(self.state, actor, options)
         eff = pick or max(options, key=lambda e: e.spec.level)
+        if self._repeat_save(actor, eff, "intenta librarse de", indent):
+            self._step_down(actor, eff, indent + 1, "Librarse")
+
+    def _repeat_save(self, actor: Combatant, eff: ActiveEffect, verb: str, indent: int) -> bool:
+        """Repeat the save of ``eff`` against its original DC; True = success."""
         esc = eff.payload["escape"]
         save = esc["save"]
         src = next((c for c in self.state.combatants if c.id == esc.get("source")), None)
@@ -551,11 +591,39 @@ class Resolver:
         save_roll = self.roll_for(actor, actor.saves.get(save, DicePool()), tags, src)
         success = save_roll.total >= dc_roll.total
         self.log.line(
-            f"{actor.name} intenta librarse de {eff.name}: salvación {save.upper()} {save_roll} "
+            f"{actor.name} {verb} {eff.name}: salvación {save.upper()} {save_roll} "
             f"vs {dc_roll} -> {'SUPERA' if success else 'FALLA'}", indent)
         self.log.event("escape", actor=actor.id, side=actor.side, effect=eff.id, success=success)
-        if success:
-            self._step_down(actor, eff, indent + 1, "Librarse")
+        return success
+
+    # ------------------------------------------------------ start / end of turn
+    def start_turn(self, c: Combatant) -> None:
+        """Start of ``c``'s turn: a hold whose holder fell or is incapacitated
+        breaks, and Veneno deals its X."""
+        for eff in list(c.active):
+            if not eff.spec.grip:
+                continue
+            holder = next((x for x in self.state.combatants if x.id == eff.source_id), None)
+            if holder is None or not holder.alive or holder.incapacitated():
+                c.active.remove(eff)
+                self.log.line(f"{c.name} queda libre de {eff.name} (quien lo agarraba no puede sujetarlo)", 1)
+                self.log.event("condition_reduced", target=c.id, effect=eff.id, to=None, why="released")
+        for eff in list(c.active):
+            dot = eff.payload.get("dot") if eff.spec.dot else None
+            if not dot or not c.alive or dot.get("ability") is None:
+                continue
+            src = next((x for x in self.state.combatants if x.id == eff.source_id), None)
+            roll = self.roller.roll(dot["damage"])
+            self.log.line(f"{c.name} sufre {eff.name} al inicio de su turno", 1)
+            self._apply_damage(src if src is not None and src.alive else c, c, roll.total,
+                               dot["dtype"], dot["ability"], 2, str(roll))
+
+    def end_turn(self, c: Combatant) -> None:
+        """End of ``c``'s turn: Veneno and the like repeat their save for free."""
+        for eff in list(c.active):
+            if c.alive and eff.spec.save_ends and eff.payload.get("escape") and eff in c.active:
+                if self._repeat_save(c, eff, "repite la salvación contra", 1):
+                    self._step_down(c, eff, 2, "final del turno")
 
     # ----------------------------------------------------- consecrated ground
     def _consecrate(self, actor: Combatant, effect: Effect, indent: int) -> bool:

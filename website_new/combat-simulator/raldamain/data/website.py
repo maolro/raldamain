@@ -52,11 +52,11 @@ DTYPE_KEYS = {"fisico": "fisico", "magia": "magico", "magico": "magico", "genera
 
 #: Damage types (an immunity to one of these = an unreachable umbral)
 DAMAGE_TYPES = {"cortante", "perforante", "contundente", "fisico", "fuego", "frio", "electrico", "acido",
-                "sonico", "radiante", "necrotico", "arcano", "magico", "psiquico", "fuerza"}
+                "sonico", "radiante", "necrotico", "arcano", "magico", "psiquico", "fuerza", "veneno"}
 
 #: Condition names found in ability text → conditions.yaml ids
 CONDITION_WORDS = [
-    (r"aturdid", "aturdido"), (r"cegad", "cegado"), (r"enredad", "enredado"),
+    (r"aturdid", "aturdido"), (r"cegad", "cegado"), (r"enredad", "enredado"), (r"agarrad", "agarrado"),
     (r"desconcertad|confundid", "desconcertado"), (r"miedo", "miedo_1"),
     (r"envenenad|enfermad", "enfermado_1"), (r"fatiga", "fatiga_1"),
     (r"ensordecid", "ensordecido"), (r"provocad", "provocado"),
@@ -180,6 +180,44 @@ def roll_expr(text: Any) -> str:
 
 LADDERS = {"herid": "herido", "miedo": "miedo", "fatiga": "fatiga", "enfermad": "enfermado"}
 ROMANS = {"i": 1, "ii": 2, "iii": 3, "iv": 4}
+
+
+#: Conditions that last until escaped rather than the default 2 rounds
+COND_DURATION = {"agarrado": None}
+
+#: "Veneno 2d6 (FÍS +7 + 1d6, 3 rondas)" → the X and the duration
+VENENO_RE = re.compile(r"veneno\s+(\d+d\d+(?:\s*\+\s*\d+)?|\d+)(?:[^.]*?(\d+)\s+rondas?)?")
+
+
+#: "Agarrado (FÍS +MOD)", "Veneno 1d6 (+MOD VOL para resistir, 6 rondas)": the save in the parenthesis
+PAREN_SAVE = r"[^(.]{0,25}\(([^)]*)\)"
+
+
+def _paren_save(t: str, stem: str) -> str | None:
+    m = re.search(stem + PAREN_SAVE, t)
+    s = m and re.search(r"\b(fis|vol|men)", m.group(1))
+    return s.group(1) if s else None
+
+
+def rider_effects(text: str) -> list[dict[str, Any]]:
+    """apply_effect nodes for the conditions an ability's text names."""
+    t = plain(text)
+    out = []
+    for c in conditions_in(text)[:3]:
+        node = {"kind": "apply_effect", "effect": c, "duration": COND_DURATION.get(c, 2)}
+        save = _paren_save(t, c.split("_")[0][:6])
+        if save:
+            node["save"] = save
+        out.append(node)
+    m = VENENO_RE.search(t)
+    if m:
+        node = {"kind": "apply_effect", "effect": "veneno", "damage": m.group(1).replace(" ", ""),
+                "dtype": "veneno", "duration": int(m.group(2)) if m.group(2) else 3}
+        save = _paren_save(t, "veneno")
+        if save:
+            node["save"] = save
+        out.append(node)
+    return out
 
 
 def conditions_in(text: str) -> list[str]:
@@ -492,7 +530,7 @@ def _creature_action(a: dict[str, Any], idx: int, is_reaction: bool = False) -> 
 
     if a.get("bonus") and dice and not is_reaction:
         hit = [{"kind": "damage", "damage": dice, "dtype": dtype}]
-        conds = [{"kind": "apply_effect", "effect": c, "duration": 2} for c in conditions_in(desc)[:3]]
+        conds = rider_effects(desc)
         rider_save = save_in_text(desc) if conds else None
         if rider_save:  # "...debe superar un tiro de salvación FÍS +7+1d6 o queda Enredado"
             hit.append({"kind": "save", "save": rider_save[0],
@@ -513,7 +551,7 @@ def _creature_action(a: dict[str, Any], idx: int, is_reaction: bool = False) -> 
         fail: list[dict[str, Any]] = []
         if dice:
             fail.append({"kind": "damage", "damage": dice, "dtype": dtype})
-        fail += [{"kind": "apply_effect", "effect": c, "duration": 2} for c in conditions_in(desc)[:3]]
+        fail += rider_effects(desc)
         if fail and not is_reaction:
             base.update({"cost": {"actions": cost.get("actions", 1), "chi": cost.get("chi", 0)},
                          "effects": [{"kind": "save", "save": save, "dc": roll_expr(m.group(2) if m else "0"),
@@ -555,6 +593,8 @@ def creature_spec(path: Path) -> dict[str, Any]:
             continue
         if dtype_key(imm) in DAMAGE_TYPES:
             umbrales[dtype_key(imm)] = 999  # immune to that damage type
+            if dtype_key(imm) == "veneno":
+                immunities.append("veneno")  # ... and to the Veneno condition
             continue
         conds = conditions_in(imm)
         if re.search(r"mental", text):

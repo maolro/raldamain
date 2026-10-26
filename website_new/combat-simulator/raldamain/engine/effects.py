@@ -80,6 +80,17 @@ class EffectSpec:
     #: this save ("fis" / "vol") against the original DC; success frees them
     #: or, on a ladder, lowers it one step.
     escape: str = ""
+    #: Veneno: repeated automatically (no action) at the end of each of the
+    #: affected character's turns; success ends it.
+    save_ends: str = ""
+    #: Veneno X: the X damage stored on the application is dealt at the start
+    #: of each of the affected character's turns.
+    dot: bool = False
+    #: Agarrado: abilities carrying any of these tags can't be used meanwhile.
+    blocks: tuple[str, ...] = ()
+    #: Agarrado: the creature holding it can't use the ability it grabbed
+    #: with, and the hold breaks when that creature falls or is incapacitated.
+    grip: bool = False
 
     @property
     def strength(self) -> tuple[int, int]:
@@ -111,6 +122,10 @@ class EffectSpec:
             assumed=bool(raw.get("assumed", False)),
             notes=raw.get("notes", ""),
             escape=raw.get("escape", ""),
+            save_ends=raw.get("save_ends", ""),
+            dot=bool(raw.get("dot", False)),
+            blocks=tuple(raw.get("blocks", [])),
+            grip=bool(raw.get("grip", False)),
         )
 
 

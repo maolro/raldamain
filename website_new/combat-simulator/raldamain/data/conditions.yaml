@@ -461,6 +461,29 @@ enredado:
   modifiers:
     - {scope: defense, advantage: -1}
 
+agarrado:
+  name: Agarrado
+  escape: fis          # 1 acción: salvación FÍS contra el bonus de quien agarra
+  grip: true           # quien agarra no puede reusar esa habilidad; se suelta si cae o queda incapacitado
+  duration: null       # hasta librarse o hasta que se suelte
+  notes: >
+    Manual: no puede tomar acciones ni reacciones que requieran movimientos de
+    su cuerpo, no puede alejarse y pierde la Concentración. Modelled as: every
+    physical / weapon / natural ability is unusable; spells and other
+    abilities still work. Movement and Concentración are not modelled.
+  blocks: [physical, weapon, natural]
+  modifiers: []
+
+veneno:
+  name: Veneno
+  dot: true            # X de daño (el de la aplicación) al inicio de cada turno
+  save_ends: fis       # repite la salvación al final de cada turno; si la supera, termina
+  duration: 3
+  notes: >
+    Veneno X. A new application does not stack: the larger X stays and the
+    duration restarts.
+  modifiers: []
+
 arma_atrapada:
   name: Arma Atrapada
   duration: 2

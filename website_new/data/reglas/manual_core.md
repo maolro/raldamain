@@ -380,17 +380,37 @@ Las habilidades de área afectan a todas las criaturas dentro de una zona. Los t
 ## Efectos de Estado
 Ciertas habilidades imponen condiciones que afectan al combate. Los efectos de estado se acumulan si son de tipos diferentes, pero un mismo efecto **no se aplica dos veces** (ej: no puedes estar Tropezado dos veces).
 
+### Cómo se leen en las fichas
+
+En una ficha, un estado aparece siempre como **Estado (Salvación +MOD, duración)**:
+
+* **Salvación +MOD:** el afectado tira esa salvación (FÍS, VOL o MEN) contra el bonus de la criatura (+MOD) para librarse del estado o terminarlo.
+* **Duración:** rondas que dura como máximo. Si no se indica, dura hasta que el afectado lo supere.
+
+> **Mordisco.** 1 acción · Adyacente · +MOD · 2d6 + 4 Perforante. *Al impactar:* **Agarrado** (FÍS +MOD).
+>
+> **Aguijón.** 1 acción · Adyacente · +MOD · 1d6 + 4 Perforante. *Al impactar:* **Veneno 2d6** (FÍS +MOD, 3 rondas).
+
+**Cuándo actúa cada estado.** Todos los estados que se repiten siguen el mismo orden:
+
+1. **Al inicio del turno** del afectado se aplican su daño y sus penalizadores.
+2. **Al final de su turno** repite la salvación, si el estado lo permite (como Veneno). Si la supera, el estado termina.
+3. **Librarse** cuesta 1 acción y repite la salvación (Agarrado, Enredado, Miedo).
+4. Un mismo estado no se acumula consigo mismo: se queda el más fuerte y su duración se reinicia.
+
 ### Estados Básicos
 
 * **Aturdido:** No puede tomar acciones ni reacciones. No puede defenderse y falla automáticamente los tiros de Fuerza y Destreza.
 * **Tropezado (Derribado):** Está en el suelo, teniendo así Desventaja en sus tiros defensivos. Levantarse cuesta 1 acción.
-* **Agarrado:** No puede tomar acciones ni reacciones que requieran movimientos de su cuerpo. No puede alejarse. Pierde la Concentración. Liberarse requiere gastar 1 acción y superar un tiro de salvación Físico contra el personaje o efecto que agarra.
+* **Agarrado:** No puede tomar acciones ni reacciones que requieran movimientos de su cuerpo. No puede alejarse. Pierde la Concentración. Liberarse requiere gastar 1 acción y superar un tiro de salvación Físico contra el personaje o efecto que agarra. Dura hasta que se libere.
+  * **Quien agarra** sujeta con la parte del cuerpo o la habilidad con la que agarró (fauces, tentáculo, mano) y no puede volver a usarla mientras mantenga el agarre. El agarre termina si quien agarra se aleja, queda Aturdido o Inconsciente, o muere.
 * **Cegado:** Tiene Desventaja en todos sus tiros de ataque y defensa además que no puede hacer ataques a distancia. No puede explotar Aperturas visuales.
 * **Enredado:** No puede moverse y recibe Desventaja en sus tiros de ataque y defensa. Liberarse requiere gastar 1 acción y superar un tiro de salvación Físico contra el personaje o efecto que enreda.
 * **Confundido:** Al inicio de su turno, tira 1d6: 1-2 actúa normalmente, 3-4 no actúa, 5-6 ataca al aliado más cercano.
 * **Fatigado:** Desventaja en todos los tiros relacionados con estadísticas físicas.
 * **Exhausto:** Desventaja en todos sus tiros y es incapaz de mantener la concentración en efectos.
 * **Náuseas:** Recibe Desventaja en todos sus tiros y todas sus habilidades le cuestan una acción adicional para emplear.
+* **Veneno X:** Al inicio de cada uno de sus turnos sufre X de daño de Veneno (ej: *Veneno 2d6*). Al final de cada uno de sus turnos repite la salvación indicada; si la supera, el veneno termina. Si no se indica duración, dura 3 rondas. Un nuevo Veneno no se acumula: se queda el X mayor y la duración se reinicia. Quien es inmune al daño de Veneno también lo es a este estado.
 
 ### Estados de Miedo
 
@@ -405,7 +425,7 @@ El miedo es progresivo. Si recibes miedo mientras ya estás afectado, el nivel *
 
 ### Estados de Aflicción
 
-Las aflicciones representan maldiciones, venenos o efectos degenerativos. Son progresivas y se eliminan con habilidades de sanación o de Rango específicas (ej: *Toque Sanador*, *Sanación Superior*).
+Las aflicciones representan maldiciones, venenos o efectos degenerativos. Son progresivas y se eliminan con habilidades de sanación o de Rango específicas (ej: *Toque Sanador*, *Sanación Superior*). Un veneno que solo dura el combate es **Veneno X**; uno que sigue después del combate es una Aflicción.
 
 | Nivel | Efecto |
 | :--- | :--- |
@@ -464,7 +484,7 @@ Los ataques y habilidades infligen distintos tipos de daño. El tipo importa par
 | **Acción** | Unidad de acción durante tu turno. Tienes 3 por turno. |
 | **Acción bonus** | Acción gratuita que no consume tus 3 acciones. Solo disponible si una habilidad la otorga. |
 | **Aflicción** | Estado degenerativo progresivo (niveles 1-4). Se elimina con sanación. |
-| **Agarre** | Maniobra que reduce la velocidad del objetivo a 0. Rompe Concentración. |
+| **Agarrado** | Estado: no puede alejarse ni hacer acciones que requieran mover el cuerpo. Librarse: 1 acción + salvación FÍS. Rompe Concentración. |
 | **Ambiental** | Habilidad que altera el campo de batalla (terreno, clima, zona). |
 | **Apertura** | Ataque de oportunidad provocado por fallo o movimiento. Cuesta 1 reacción. |
 | **Chi** | Recurso usado para habilidades. |
@@ -491,6 +511,7 @@ Los ataques y habilidades infligen distintos tipos de daño. El tipo importa par
 | **Resistencia** | Reduce daño de un tipo a la mitad. |
 | **Resistencia Superior** | Dos fuentes de Resistencia. Reduce daño a ÷4. |
 | **Toque** | Habilidad que requiere contacto físico. Bloqueada por Inmunidad a Toque. |
+| **Veneno X** | Estado: X de daño de Veneno al inicio de cada turno; salvación al final del turno para terminarlo. |
 | **Ventaja** | Bonificación de +1d6 a un tiro. No se acumula. |
 | **Vigor** | Recurso usado para habilidades físicas y marciales. |
 | **Visual** | Habilidad que requiere línea de visión. Bloqueada por Ceguera. |

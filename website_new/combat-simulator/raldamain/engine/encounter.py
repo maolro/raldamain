@@ -80,6 +80,8 @@ class Encounter:
             summon_factory=summon_factory,
         )
         self.resolver = Resolver(self.state)
+        self._started: set[str] = set()  # who has begun / ended their turn this round
+        self._ended: set[str] = set()
         self.config = cfg
         self.seed = seed
         for c in combatants:
@@ -110,7 +112,14 @@ class Encounter:
             if not order or self.config["initiative_per_round"]:
                 order = self._roll_initiative()
 
+            self._started, self._ended = set(), set()
             self._take_round(order)
+            for c in state.living():  # cycle turns (or no actions left): the turn ends with the round
+                if c.id not in self._started:
+                    self._start_turn(c)
+                if c.alive and c.id not in self._ended:
+                    self._ended.add(c.id)
+                    self.resolver.end_turn(c)
 
             for c in state.combatants:
                 if c.alive:
@@ -183,10 +192,17 @@ class Encounter:
                 if self._combat_over():
                     return
                 self._take_turn(c, full=True)
+                if c.alive:
+                    self._ended.add(c.id)
+                    self.resolver.end_turn(c)
 
     def _take_turn(self, c: Combatant, full: bool) -> bool:
         """Spend actions. Returns True if the combatant did anything."""
         log = self.state.log
+        if c.id not in self._started:
+            self._start_turn(c)
+            if not c.alive:
+                return False
         if c.incapacitated():
             log.line(f"{c.name} está incapacitado y pierde su turno.")
             return False
@@ -205,6 +221,10 @@ class Encounter:
             if not full:
                 break
         return acted
+
+    def _start_turn(self, c: Combatant) -> None:
+        self._started.add(c.id)
+        self.resolver.start_turn(c)
 
     def _cycle_round(self, order: list[Combatant]) -> None:
         while not self._combat_over():
