@@ -385,5 +385,14 @@
     "description": "",
     "draft": true,
     "partial": true
+  },
+  {
+    "id": "magia_sangre",
+    "name": "Magia Sangre",
+    "category": "Elementalismo",
+    "image": "magia_sangre.jpg",
+    "description": "",
+    "draft": true,
+    "partial": false
   }
 ]
