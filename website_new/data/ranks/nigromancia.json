@@ -44,7 +44,7 @@
           "range": "Medio",
           "desc": "El daño de este ataque no puede curarse.",
           "empower": "Añade un dado de daño adicional.",
-          "damage": "1d6",
+          "damage": "1d6 + INT/CAR",
           "damage_type": "Necrótico"
         },
         {
