@@ -29,7 +29,7 @@
           ],
           "cost": "1 Acción, 1 Chi",
           "range": "Adyacente",
-          "desc": "El objetivo debe tener éxito en un tiro de salvación Voluntad o sufre 1d6 + INT/CAR daño Necrótico que no puede curarse. Si logras provocar por lo menos un impacto, puedes recuperar un impacto o curarte de un efecto de estado. Al emplear este efecto en un No-Muerto, puedes curarle un impacto o un efecto de estado.",
+          "desc": "El objetivo debe tener éxito en un tiro de salvación Voluntad o sufre 1d6 + INT/CAR daño Necrótico que reduce los impactos máximos del objetivo. Si logras provocar por lo menos un impacto, puedes recuperar un impacto o curarte de un efecto de estado. Al emplear este efecto en un No-Muerto, puedes curarle un impacto o un efecto de estado.",
           "empower": "Afecta a un objetivo adicional."
         },
         {
@@ -42,7 +42,7 @@
           ],
           "cost": "1 Acción",
           "range": "Medio",
-          "desc": "El daño de este ataque no puede curarse.",
+          "desc": "El daño de este ataque reduce los impactos máximos del objetivo.",
           "empower": "Añade un dado de daño adicional.",
           "damage": "1d6 + INT/CAR",
           "damage_type": "Necrótico"
