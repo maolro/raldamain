@@ -32,24 +32,23 @@
             "Maniobra",
             "Físico"
           ],
-          "cost": "1 acción",
-          "range": "Cercano",
-          "crit": "Objetivo sufre Herido-1.",
-          "desc": "Empujas al objetivo 1 paso con fuerza gravitatoria y lo derribas (Ralentizado-1). Si choca contra una superficie u otra criatura, inflige 1d6 + INT de daño. También puede disipar efectos ambientales en el área.",
-          "empower": "Afecta a todos los enemigos a distancia cercano o aumenta el daño de esta habilidad por un dado."
+          "cost": "1 Acción",
+          "range": "Medio",
+          "desc": "El objetivo debe tener éxito en un tiro de salvación Físico o es empujado un paso en cualquier dirección y sufre 1d6 + INT daño Contundente. ",
+          "empower": "Afecta a un objetivo adicional, o arrastra al objetivo un paso adicional y provócale un dado de daño adicional."
         },
         {
           "name": "Lanzamiento",
           "tags": [
             "Gravedad",
-            "Maniobra",
-            "Físico"
+            "Físico",
+            "Ataque"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "range": "Medio",
-          "crit": "Objetivo sufre Herido-1.",
-          "desc": "Empleas el poder de la gravedad para lanzar un objeto hacia un enemigo que puedas alcanzar, infligiéndole así 2d6 + INT daño Contundente, Cortante o Perforante al impactar además de empujarlo un paso. Necesitas contar con objetos del tamaño suficiente en tu entorno para usar esta habilidad.",
-          "empower": "Añade un dado de daño adicional al ataque y aumenta el radio de efecto por un paso, o haz un segundo ataque como secuencia contra el mismo punto."
+          "damage": "2d6 + INT",
+          "damage_type": "Contundente/Perforante/Cortante",
+          "empower": "Afecta a un objetivo adicional, o aumenta el daño base de este ataque por un dado. Si empoderas dos veces, aumenta el área a un radio corto."
         },
         {
           "name": "Pozo de Gravedad",
@@ -58,12 +57,11 @@
             "Sostenido",
             "Maniobra"
           ],
-          "cost": "2 acciones, 1 chi",
+          "cost": "2 Acciones, 1 Chi",
           "range": "Medio",
           "area": "Esfera pequeña",
           "duration": "Concentración",
-          "crit": "Afectados quedan con Ralentizado-1.",
-          "desc": "Creas una zona de alta gravedad. Todas las criaturas en su área deben tener éxito en un tiro de salvación Físico o serán arrastrados un paso hacia él y quedarán *Enredados*. Pueden repetir el tiro cada ronda para intentar escapar gastando una acción y aquellas criaturas que entren en un espacio afectado por el pozo deberán tener éxito en ese mismo tiro de salvación o sufrirán sus efectos.",
+          "desc": "Creas una zona de alta gravedad. Todas las criaturas en su área deben tener éxito en un tiro de salvación Físico o serán arrastrados un paso hacia él y quedarán Enredados. Aquellas criaturas que entren en un espacio afectado por el pozo deberán tener éxito en ese mismo tiro de salvación o sufrirán sus efectos.",
           "empower": "Crea un pozo adicional en otra posición, o emplea un efecto de Empuje Gravitatorio desde un pozo existente para arrastrar hacia su posición."
         }
       ]
