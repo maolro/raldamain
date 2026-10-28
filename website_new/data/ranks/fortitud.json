@@ -115,7 +115,8 @@
           "toggle": {
             "label": "Muro Viviente",
             "ce": "Rango"
-          }
+          },
+          "empower": "Recupera la mitad de sus contadores de escudo (redondeando hacia abajo)"
         }
       ]
     },
