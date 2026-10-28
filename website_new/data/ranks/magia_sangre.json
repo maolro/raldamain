@@ -15,7 +15,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Espasmos",
@@ -58,8 +58,46 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
-      "abilities": []
+      "draft": false,
+      "abilities": [
+        {
+          "name": "Biografía Sanguínea",
+          "tags": [
+            "Sangre",
+            "Duradera"
+          ],
+          "desc": "Analizas cuidadosamente una muestra de sangre durante un minuto para obtener información valiosa sobre ella, como el tiempo que lleva extraída, la salud de su propietario, sus capacidades físicas u otra información que vea adecuada el DJ. Si te vuelves a encontrar con un objetivo del que tengas una muestra, tendrás Ventaja en todos tus tiros de Magia de Sangre contra él.",
+          "cost": "3 Acciones, 1 Chi",
+          "duration": "Permanente",
+          "toggle": {
+            "label": "Biografía Sanguínea",
+            "adv_tags": [
+              "Sangre"
+            ]
+          }
+        },
+        {
+          "name": "Defensa Sanguínea",
+          "tags": [
+            "Sangre",
+            "Reacción"
+          ],
+          "desc": "Un objetivo que te haya impactado deberá tener éxito en un tiro de salvación de Voluntad o falla automáticamente su ataque. ",
+          "cost": "1 Reacción, 1 Chi",
+          "range": "Medio"
+        },
+        {
+          "name": "Armas de Sangre",
+          "tags": [
+            "Sangre",
+            "Duradera"
+          ],
+          "desc": "Crea un arma a partir de su propia sangre, la cual empleará su modificador de Magia de Sangre para todos sus tiros, costar  una Acción para utilizar y tendrá 2d6 daño base, el cual estará modificado por su estadística de SAB o CAR. ",
+          "cost": "1 Acción",
+          "duration": "6 rondas",
+          "empower": "Un ataque natural o de arma de sangre provoca 1d6 daño Necrótico al impactar. Si empodera una segunda vez, podrá curarse un impacto si ha provocado por lo menos un impacto con su arma de igual manera que Drenar Sangre."
+        }
+      ]
     },
     {
       "rank": "III",

@@ -393,6 +393,6 @@
     "image": "magia_sangre.jpg",
     "description": "",
     "draft": true,
-    "partial": false
+    "partial": true
   }
 ]
