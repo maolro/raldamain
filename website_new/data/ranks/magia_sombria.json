@@ -49,13 +49,18 @@
           "empower": "Mueve la nube a otra posición o tira de nuevo para apagar las fuentes de luz."
         },
         {
-          "name": "Sigilo Sombrío",
+          "name": "Aspecto Sombrío",
           "tags": [
             "Sombría",
             "Pasiva"
           ],
-          "desc": "Te vuelves invisible si te encuentras en un lugar a oscuras. Este efecto permanecerá activo hasta que hagas un ataque o desaparezca dicha zona a oscuras.",
-          "cost": "1 Acción/Reacción"
+          "desc": "Aumenta su Umbral al daño Frío y Necrótico por Rango + 1 y puede ver en la oscuridad sin dificultades. Además, no hace ruido al moverse salvo que lo desee y al ocultarse en un espacio a oscuras se vuelve invisible. ",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Frío, Necrótico"
+            }
+          ]
         }
       ]
     },
