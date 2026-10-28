@@ -30,7 +30,7 @@
           "cost": "1 Acción, 1 Chi",
           "range": "Adyacente",
           "desc": "El objetivo debe tener éxito en un tiro de salvación Voluntad o sufre 1d6 + INT/CAR daño Necrótico que reduce los impactos máximos del objetivo. Si logras provocar por lo menos un impacto, puedes recuperar un impacto o curarte de un efecto de estado. Al emplear este efecto en un No-Muerto, puedes curarle un impacto o un efecto de estado.",
-          "empower": "Afecta a un objetivo adicional."
+          "empower": "Aumenta el daño por un dado adicional."
         },
         {
           "name": "Descarga de Energía Negativa",
@@ -43,7 +43,7 @@
           "cost": "1 Acción",
           "range": "Medio",
           "desc": "El daño de este ataque reduce los impactos máximos del objetivo.",
-          "empower": "Añade un dado de daño adicional.",
+          "empower": "Afecta a un objetivo adicional que alcance.",
           "damage": "1d6 + INT/CAR",
           "damage_type": "Necrótico"
         },
