@@ -69,7 +69,7 @@
             "Innata",
             "Mejora"
           ],
-          "show_mod": true,
+          "show_mod": false,
           "desc": "Mientras te encuentres en Forma de la Bestia, aumentas el daño de tus ataques naturales por un dado y estos contarán como Mágicos para los propósitos de Umbrales.",
           "condition": "Forma de la Bestia",
           "toggle": {
