@@ -41,6 +41,17 @@
               "categories": "Necrótico"
             }
           ]
+        },
+        {
+          "name": "Drenar Sangre",
+          "tags": [
+            "Sangre",
+            "Afliccion"
+          ],
+          "desc": "El objetivo debe tener éxito en un tiro de salvación de Voluntad o sufre 1d6 + INT/SAB daño Necrótico. Si este ataque provoca por lo menos un impacto, te recuperas un impacto. Aquellos objetivos que hayan sufrido por lo menos un Impacto tienen Desventaja en este tiro.",
+          "cost": "1 Acción, 1 Chi",
+          "range": "Adyacente",
+          "empower": "Aumenta el daño por un dado y te recuperas hasta un impacto adicional si has provocado 2 o más impactos."
         }
       ]
     },
