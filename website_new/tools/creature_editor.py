@@ -618,7 +618,7 @@ select.inp{cursor:pointer}
       <div class="sec-body">
         <div style="font-size:11px;color:var(--text3);margin-bottom:10px">
           Cada fila es un Tier de criatura (por nivel). <b>Bonus Alto</b> es el modificador de ataque, el de +MOD y el de una salvación fuerte;
-          <b>Medio</b> y <b>Bajo</b> son las salvaciones media y débil;
+          <b>Medio</b> y <b>Bajo</b> son las salvaciones media y débil; <b>DD</b> son los dados que pone la palabra clave DD;
           <b>LOW / MID / HIGH</b> son los dados de daño (nº de dados · caras · fijo) que usan las habilidades con
           «Tier de daño» y «Bonus escalado» al insertarlas en una criatura de ese nivel.
           Cambiar la tabla no modifica las criaturas ya guardadas.
@@ -709,13 +709,13 @@ let DAMAGE_TIERS = [
 const PHYSICAL_TYPES = ['contundente','cortante','perforante'];
 // bonus = Alto (ataque, +MOD y salvación fuerte); mid / low = salvaciones Media y Baja
 let BONUS_TABLE = [
-  { min:1,  max:3,  bonus:'+5+1d6',  mid:'+5+1d6',  low:'+5'  },
-  { min:4,  max:6,  bonus:'+7+2d6',  mid:'+7+1d6',  low:'+7'  },
-  { min:7,  max:9,  bonus:'+9+2d6',  mid:'+9+1d6',  low:'+9'  },
-  { min:10, max:12, bonus:'+11+3d6', mid:'+11+2d6', low:'+11' },
-  { min:13, max:15, bonus:'+13+3d6', mid:'+13+2d6', low:'+13' },
-  { min:16, max:18, bonus:'+15+4d6', mid:'+15+3d6', low:'+15' },
-  { min:19, max:21, bonus:'+17+4d6', mid:'+17+3d6', low:'+17' },
+  { min:1,  max:3,  bonus:'+5+1d6',  mid:'+5+1d6',  low:'+5',  dd:'1d6' },
+  { min:4,  max:6,  bonus:'+7+2d6',  mid:'+7+1d6',  low:'+7',  dd:'2d6' },
+  { min:7,  max:9,  bonus:'+9+2d6',  mid:'+9+1d6',  low:'+9',  dd:'3d8' },
+  { min:10, max:12, bonus:'+11+3d6', mid:'+11+2d6', low:'+11', dd:'4d8' },
+  { min:13, max:15, bonus:'+13+3d6', mid:'+13+2d6', low:'+13', dd:'5d10' },
+  { min:16, max:18, bonus:'+15+4d6', mid:'+15+3d6', low:'+15', dd:'6d10' },
+  { min:19, max:21, bonus:'+17+4d6', mid:'+17+3d6', low:'+17', dd:'7d12' },
 ];
 
 // ── Init ──────────────────────────────────────────────────────────────────────
@@ -1168,7 +1168,7 @@ async function loadScaling() {
     const d = await api('GET', '/api/scaling');
     if (d && Array.isArray(d.bonus) && Array.isArray(d.damage)) {
       const defs = JSON.parse(DEFAULT_SCALING).bonus;  // tables saved before Medio/Bajo existed get the defaults
-      BONUS_TABLE = d.bonus.map((b, i) => ({ mid: (defs[i] || {}).mid || b.bonus, low: (defs[i] || {}).low || b.bonus, ...b }));
+      BONUS_TABLE = d.bonus.map((b, i) => ({ mid: (defs[i] || {}).mid || b.bonus, low: (defs[i] || {}).low || b.bonus, dd: (defs[i] || {}).dd || '', ...b }));
       DAMAGE_TIERS = d.damage;
     }
   } catch (e) { /* keep the built-in defaults */ }
@@ -1192,10 +1192,11 @@ function renderScaling() {
       <td><input class="b" value="${esc(b.bonus)}" oninput="setBonus(${i},'bonus',this.value)"></td>
       <td><input class="b" value="${esc(b.mid || '')}" oninput="setBonus(${i},'mid',this.value)"></td>
       <td><input class="b" value="${esc(b.low || '')}" oninput="setBonus(${i},'low',this.value)"></td>
+      <td><input class="b" value="${esc(b.dd || '')}" oninput="setBonus(${i},'dd',this.value)" title="Palabra clave DD"></td>
       ${cell('LOW')}${cell('MID')}${cell('HIGH')}
     </tr>`;
   }).join('');
-  el.innerHTML = `<table class="tbl"><thead><tr><th>Tier</th><th title="Ataque, +MOD y salvación fuerte">Bonus Alto</th><th>Medio</th><th>Bajo</th>
+  el.innerHTML = `<table class="tbl"><thead><tr><th>Tier</th><th title="Ataque, +MOD y salvación fuerte">Bonus Alto</th><th>Medio</th><th>Bajo</th><th title="Dados de daño: la palabra clave DD">DD</th>
     <th class="LOW">LOW</th><th class="MID">MID</th><th class="HIGH">HIGH</th></tr></thead><tbody>${rows}</tbody></table>`;
   markScaling();
 }
@@ -1644,7 +1645,7 @@ function renderAbEdit() {
               <span style="font-size:11px;color:var(--text2)">Escalar al insertar</span>
             </label></div>
         </div>
-        <div class="field"><div class="lbl">Descripción <span style="font-weight:400;text-transform:none">· +MOD = bonus escalado · TIER = Tier de la criatura (TIER+1, TIERx2…) · LOW/MID/HIGH = dados de daño</span></div>
+        <div class="field"><div class="lbl">Descripción <span style="font-weight:400;text-transform:none">· +MOD = bonus escalado · TIER = Tier de la criatura (TIER+1, TIERx2…) · DD = dados de daño del Tier · LOW/MID/HIGH = daño completo</span></div>
           <textarea class="inp" rows="3" oninput="S.abEdit.desc=this.value||undefined">${esc(a.desc||'')}</textarea></div>
         <div class="field"><div class="lbl">Movimiento</div>
           <input class="inp" value="${esc(a.move||'')}" oninput="S.abEdit.move=this.value||undefined"></div>
@@ -1744,14 +1745,15 @@ function confirmPick(id) {
 // Creature keywords in ability text, resolved for the creature's level:
 //   +MOD -> scaled bonus · TIER -> tier number, with arithmetic like the ranks' RANGO
 //   ("TIER+2", "TIERx2", "(TIER+1)d6") · LOW / MID / HIGH -> that damage tier's dice
-//   (one die fewer when the damage type that follows is a magic one)
-const KEY_RE = /\+MOD\b|\bTIER\b|\b(?:LOW|MID|HIGH)\b/;
+//   (one die fewer when the damage type that follows is a magic one) · DD -> the tier's damage dice
+const KEY_RE = /\+MOD\b|\bTIER\b|\bDD\b|\b(?:LOW|MID|HIGH)\b/;
 const KEY_FIELDS = ['name', 'desc', 'bonus', 'damage', 'range', 'area', 'save', 'move'];
 const TIER_EXPR = /\(\s*(?:\d+\s*[x×*]\s*)?TIER(?:\s*[+\-x×*/]\s*\d+)*\s*\)|(?:\d+\s*[x×*]\s*)?TIER(?:\s*[+\-x×*/]\s*\d+)*/g;
 const MAGIC_WORD = /^(?:fuego|fr[ií]o|el[ée]ctric|[áa]cid|s[óo]nic|radiante|necr[óo]tic|arcan|m[áa]gic|ps[íi]quic|fuerza|veneno|sagrad|sombr)/i;
-function resolveKeywords(text, mod, tier, damageFor) {
+function resolveKeywords(text, mod, tier, damageFor, dd) {
   if (typeof text !== 'string' || !KEY_RE.test(text)) return text;
   let out = text.replace(/\+MOD\b/g, mod);
+  if (dd) out = out.replace(/\bDD\b/g, dd);  // DD: the tier's damage dice
   out = out.replace(TIER_EXPR, m => {
     const e = m.replace(/TIER/g, tier).replace(/[x×]/g, '*');
     if (!/^[\d+\-*/ ().]+$/.test(e)) return m;
@@ -1782,7 +1784,8 @@ function insertFromBank(type, ab) {
   const tierNum = DAMAGE_TIERS.indexOf(getTierBand(tgtLevel)) + 1;
   for (const k of KEY_FIELDS)
     entry[k] = resolveKeywords(entry[k], mod, tierNum,
-      (t, phys) => scaleDamageStr(t, phys ? 'Cortante' : 'Fuego', tgtLevel).replace(/ \S+$/, ''));
+      (t, phys) => scaleDamageStr(t, phys ? 'Cortante' : 'Fuego', tgtLevel).replace(/ \S+$/, ''),
+      getBonusBand(tgtLevel).dd);
   S.creature[type].push(entry);
   const fn = type==='traits'?renderTraitCard : type==='actions'?renderActionCard:renderReactionCard;
   renderAbilityGrid(type+'-grid', S.creature[type], fn);
