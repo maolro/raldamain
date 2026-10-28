@@ -23,7 +23,7 @@
     {
       "rank": "I",
       "title": "Iniciado",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Pulso Gravitatorio",
@@ -38,7 +38,7 @@
           "empower": "Afecta a un objetivo adicional, o arrastra al objetivo un paso adicional y provócale un dado de daño adicional."
         },
         {
-          "name": "Lanzamiento",
+          "name": "Lanzamiento Telekinético",
           "tags": [
             "Gravedad",
             "Físico",
@@ -46,9 +46,10 @@
           ],
           "cost": "1 Acción",
           "range": "Medio",
-          "damage": "2d6 + INT",
+          "damage": "1d6 + INT",
           "damage_type": "Contundente/Perforante/Cortante",
-          "empower": "Afecta a un objetivo adicional, o aumenta el daño base de este ataque por un dado. Si empoderas dos veces, aumenta el área a un radio corto."
+          "empower": "Afecta a un objetivo adicional, o aumenta el daño base de este ataque por un dado. Si empoderas dos veces, aumenta el área a un radio corto.",
+          "desc": "Esta habilidad puede usarse de manera alternativa para mover un objeto un paso en cualquier dirección. Si dicho objeto está en manos de otro objetivo, debes superarle en un tiro de salvación Físico."
         },
         {
           "name": "Pozo de Gravedad",

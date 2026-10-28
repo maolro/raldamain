@@ -267,7 +267,7 @@
     "image": "magia_gravitatoria.jpg",
     "description": "Controlas las fuerzas fundamentales para manipular la gravedad. Atraes, repeles y aplastas a tus enemigos o alteras la densidad de los objetos.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_divina",
