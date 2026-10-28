@@ -36,7 +36,7 @@
           "range": "Medio",
           "desc": "Los objetivos con armadura metálica tienen Desventaja defendiéndose.",
           "empower": "Ataca a un objetivo adicional.",
-          "damage": "1d6",
+          "damage": "1d6 + SAB/CAR",
           "damage_type": "Eléctrico"
         },
         {
