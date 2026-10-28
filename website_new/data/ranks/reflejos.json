@@ -87,8 +87,7 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Tienes Vista a Ciegas a una distancia media, permitiéndote sentir objetivos ocultos e ignorar Ocultamiento. ",
-          "empower": "Recuperas 1 Reacción gastada."
+          "desc": "Tienes Vista a Ciegas a una distancia media, permitiéndote sentir objetivos ocultos e ignorar Ocultamiento. "
         },
         {
           "name": "Reflejos Asombrosos",
@@ -97,7 +96,7 @@
             "Pasiva"
           ],
           "desc": "Obtienes una Acción adicional y aumentas todas tus velocidades por un paso. ",
-          "empower": "Te levantas inmediatamente del estado Ralentizado."
+          "empower": "Te levantas inmediatamente del estado Tropezado."
         }
       ]
     },
