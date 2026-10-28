@@ -54,9 +54,10 @@
             "Presencia",
             "Mental"
           ],
-          "desc": "Un aliado a distancia media recibe un impacto temporal y se recupera del efecto Miedo, Confusión o Desconcertado.",
+          "desc": "Un aliado que alcance recibe un impacto temporal y se recupera del efecto Miedo, Confusión o Desconcertado.",
           "empower": "Afecta a un objetivo adicional.",
-          "cost": "1 Acción, 1 Chi"
+          "cost": "1 Acción, 1 Chi",
+          "range": "Medio"
         },
         {
           "name": "Provocación",
