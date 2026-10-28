@@ -55,9 +55,9 @@
         </div>
         <div class="cc-sub">Tiros de salvación <span class="muted" style="font-weight:400">· A / M / B = bonus Alto, Medio o Bajo del Tier (siguen al nivel)</span></div>
         <div class="cc-row">
-          <label class="cc-f">FÍS<input id="f-sfis" class="inp" placeholder="+7+1d6"><span class="cc-lvls" data-save="FÍS"><button type="button" data-l="bonus">A</button><button type="button" data-l="mid">M</button><button type="button" data-l="low">B</button></span></label>
-          <label class="cc-f">VOL<input id="f-svol" class="inp" placeholder="+7"><span class="cc-lvls" data-save="VOL"><button type="button" data-l="bonus">A</button><button type="button" data-l="mid">M</button><button type="button" data-l="low">B</button></span></label>
-          <label class="cc-f">MEN<input id="f-smen" class="inp" placeholder="+4"><span class="cc-lvls" data-save="MEN"><button type="button" data-l="bonus">A</button><button type="button" data-l="mid">M</button><button type="button" data-l="low">B</button></span></label>
+          <label class="cc-f">FÍS<input id="f-sfis" class="inp" placeholder="+7+1d6"><span class="cc-lvls" data-save="FÍS"><button type="button" data-l="extreme" title="Extremo: Alto + 1d6">E</button><button type="button" data-l="bonus" title="Alto">A</button><button type="button" data-l="mid" title="Medio">M</button><button type="button" data-l="low" title="Bajo">B</button></span></label>
+          <label class="cc-f">VOL<input id="f-svol" class="inp" placeholder="+7"><span class="cc-lvls" data-save="VOL"><button type="button" data-l="extreme" title="Extremo: Alto + 1d6">E</button><button type="button" data-l="bonus" title="Alto">A</button><button type="button" data-l="mid" title="Medio">M</button><button type="button" data-l="low" title="Bajo">B</button></span></label>
+          <label class="cc-f">MEN<input id="f-smen" class="inp" placeholder="+4"><span class="cc-lvls" data-save="MEN"><button type="button" data-l="extreme" title="Extremo: Alto + 1d6">E</button><button type="button" data-l="bonus" title="Alto">A</button><button type="button" data-l="mid" title="Medio">M</button><button type="button" data-l="low" title="Bajo">B</button></span></label>
         </div>
         <div class="cc-sub">Umbrales de daño
           <span class="cc-quick">añadir: <button type="button" data-umb="General">General</button><button type="button" data-umb="Físico">Físico</button><button type="button" data-umb="Magia">Magia</button></span></div>
@@ -285,7 +285,7 @@ function headline() {
   $('cc-sub').textContent = EXISTING ? `data/creatures/${C.id}.json` : 'Rellena la información a la izquierda; la ficha se dibuja a la derecha tal como se verá en la web.';
   const lv = +C.level || 1;
   const band = bandOf(BONUS_TABLE, lv);
-  $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · bonus Alto / Medio / Bajo <b>${esc(band.bonus)}</b> / <b>${esc(band.mid || '')}</b> / <b>${esc(band.low || '')}</b>
+  $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · bonus Extremo / Alto / Medio / Bajo <b>${esc(bandSave(band, 'extreme'))}</b> / <b>${esc(band.bonus)}</b> / <b>${esc(band.mid || '')}</b> / <b>${esc(band.low || '')}</b>
     · daño LOW / MID / HIGH (físico): ${['LOW', 'MID', 'HIGH'].map(t => `<b>${esc(scaleDamage(t, 'Cortante', lv).replace(' Cortante', ''))}</b>`).join(' / ')} · mágico: un dado menos`;
   $('cc-dirty').textContent = dirty() ? '● sin guardar' : '';
   $('cc-web').hidden = $('cc-sim').hidden = !EXISTING;
@@ -313,7 +313,10 @@ $('f-tags').addEventListener('input', e => { C.tags = csv(e.target.value); chang
 $('f-pub').addEventListener('change', e => { C.published = e.target.checked; changed(); });
 $('f-immune').addEventListener('input', e => { C.immune = csv(e.target.value); changed(); });
 // Saves set from the Tier table follow the level; typing one by hand unlinks it
-const saveBonus = l => fmtDice(bandOf(BONUS_TABLE, +C.level || 1)[l] || '').replace(/\s/g, '');
+// Extremo is one step beyond Alto: the Alto bonus + 1d6 (merged into its d6s when it has them)
+const plusD6 = b => /\d+d6/i.test(b) ? b.replace(/(\d+)d6/i, (m, n) => `${+n + 1}d6`) : (b ? b + '+1d6' : '+1d6');
+const bandSave = (band, l) => l === 'extreme' ? plusD6((band.bonus || '').replace(/\s/g, '')) : band[l] || '';
+const saveBonus = l => fmtDice(bandSave(bandOf(BONUS_TABLE, +C.level || 1), l)).replace(/\s/g, '');
 function rescaleSaves() {
   for (const [k, l] of Object.entries(C.save_scale || {})) C.saves[k] = saveBonus(l);
 }
