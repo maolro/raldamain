@@ -11,5 +11,62 @@
     "<strong>Estadística principal:</strong> Sabiduría/Carisma + Rango.",
     "<strong>Parada mágica:</strong> Usas esta magia para tiros de parada y salvaciones."
   ],
-  "levels": []
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "draft": true,
+      "abilities": [
+        {
+          "name": "Espasmos",
+          "tags": [
+            "Sangre",
+            "Afliccion"
+          ],
+          "desc": "El objetivo debe tener éxito en un tiro de salvación de Voluntad o se mueve de manera incontrolada, sufriendo Enfermado I y moviéndose un paso en una dirección aleatoria.",
+          "cost": "1 Acción",
+          "range": "Medio",
+          "empower": "Afecta a un objetivo adicional que puedas alcanzar."
+        },
+        {
+          "name": "Sentido Sanguíneo",
+          "tags": [
+            "Sangre",
+            "Pasiva"
+          ],
+          "desc": "Aumenta tu umbral al daño Necrótico por Rango + 1, y puedes sentir la presencia de todas las criaturas con sangre a distancia media. ",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Necrótico"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "draft": true,
+      "abilities": []
+    }
+  ]
 }
