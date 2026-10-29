@@ -85,7 +85,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Eliminar Magia",
@@ -98,17 +98,17 @@
           "cost": "1 Chi"
         },
         {
-          "name": "Círculo de Sellado",
+          "name": "Glifo de Protección",
           "tags": [
             "Protectora",
             "Arcana",
-            "Duradera"
+            "Duradera",
+            "Mejora"
           ],
-          "cost": "3 acciones, 1 chi",
-          "range": "Cuerpo a cuerpo",
-          "duration": "Hasta que sea eliminado",
-          "desc": "Trazas una barrera contra criaturas extraplanarias. No pueden cruzarla ni atacarte directamente (Desventaja en sus ataques). Los extraplanarios pueden intentar romperla con una acción (Dificultad Nivel + 3).",
-          "empower": "Trazas el círculo sobre un aliado para que se mueva con él."
+          "cost": "2 Acciones, 1 Chi",
+          "range": "Adyacente",
+          "duration": "Un día o hasta que se active",
+          "desc": "Inscribes un Glifo en una superficie de tu elección. Dicho Glifo tendrá guardado un hechizo que conozcas y puedes hacer que se active cuando tú desees o si se cumple cierta condición, lanzando entonces el hechizo (puede llegar a contar como Ataque Sorpresa). Una misma superficie o persona no puede tener más de cuatro glifos inscritos a la vez, y debes seguir pagando el coste de chi del hechizo infundido."
         },
         {
           "name": "Barrera de Fuerza",
