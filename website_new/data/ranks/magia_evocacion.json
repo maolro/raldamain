@@ -125,19 +125,39 @@
           ],
           "cost": "2 Acciones, 2 Chi",
           "duration": "Concentración",
-          "desc": "Obtienes Ventaja en todos tus tiros relacionados con Magia Arcana y tus hechizos Arcanos aumentan su daño base por un dado. "
+          "desc": "Obtienes Ventaja en todos tus tiros relacionados con Magia Arcana y tus hechizos Arcanos aumentan su daño base por un dado. ",
+          "toggle": {
+            "label": "Amplificación Arcana",
+            "damage_tags": [
+              "Arcano"
+            ],
+            "damage": "+1 dado",
+            "adv_tags": [
+              "Arcano"
+            ],
+            "adv": [
+              "Ataque",
+              "Defensa"
+            ]
+          }
         },
         {
           "name": "Combinar Hechizos",
           "tags": [
-            "Pasiva",
             "Evocación",
             "Arcano",
             "Mejora"
           ],
-          "cost": "2 chi",
-          "desc": "Fusionas dos hechizos en un solo lanzamiento. Lanzas el segundo como acción bonus tras el primero, pagando ambos costes. Si ambos son ataques, sus daños y efectos se combinan en un solo impacto.",
-          "empower": "N/A"
+          "cost": "2 Chi",
+          "desc": "Fusionas dos hechizos en uno solo, pudiendo así lanzar ambos gastando el menor coste en Acciones. Si ambos son ataques, harás un único ataque en el que se tiran los daños y efectos de cada uno por separado. "
+        },
+        {
+          "name": "Chi Interior",
+          "tags": [
+            "Evocación",
+            "Pasiva"
+          ],
+          "desc": "Una vez por ronda, puedes reducir tus impactos máximos por 1 para recuperar 3 Chi de tu reserva. "
         }
       ]
     },
