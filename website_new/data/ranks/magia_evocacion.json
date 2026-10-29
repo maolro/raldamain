@@ -97,7 +97,8 @@
             "Arcano",
             "Pasiva"
           ],
-          "desc": "Puedes emplear tu modificador de Magia de Evocación para tus tiros de ataque con armas, o aplicar técnicas de armas a ataques de Magia de Evocación. No puede aplicarse a Armas de Fuego."
+          "desc": "Puedes emplear tu modificador de Magia de Evocación para tus tiros de ataque con armas, o aplicar técnicas de armas a ataques de Magia de Evocación. No puede aplicarse a Armas de Fuego.",
+          "empower": "Provocas 1d6 daño Fuerza al impactar con tu ataque de arma."
         },
         {
           "name": "Metamagia",
@@ -113,8 +114,8 @@
     {
       "rank": "III",
       "title": "Rango III",
-      "draft": true,
-      "passive": "Tus hechizos de Evocación convierten daño a d8. ",
+      "draft": false,
+      "passive": "Tus hechizos de Evocación convierten sus dados de daño a d8. ",
       "abilities": [
         {
           "name": "Amplificación Arcana",
