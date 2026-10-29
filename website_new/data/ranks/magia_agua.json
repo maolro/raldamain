@@ -82,12 +82,12 @@
             "Defensivo",
             "Duradero"
           ],
-          "cost": "1 Acción/Reacción, 1 chi",
+          "cost": "1 Reacción, 1 Chi",
           "range": "Medio",
           "area": "Esfera pequeña o línea mediana",
           "duration": "Concentración",
-          "desc": "Crea una barrera de agua con PV iguales a tu Rango x 3, la cual protegerá a todos detrás de ella. Reduce el daño del ataque recibido por esa cantidad y detendrá automáticamente un efecto Gaseoso o de Fuego. Si se emplea contra un enemigo que ataque cuerpo a cuerpo, deberá tener éxito en un tiro de salvación Físico o será empujado hacia atrás (aquellos Incorpóreos fracasarán automáticamente). ",
-          "empower": "Recupera todos los PV del muro (requiere agua cercana)."
+          "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo RANGOx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación Físico o sufren 1d6 + CAR daño Contundente y quedan Enredados. ",
+          "show_mod": false
         },
         {
           "name": "Ola Chocante",
@@ -98,13 +98,14 @@
             "Físico",
             "Duradero"
           ],
-          "cost": "2 Acciones, 1 chi",
+          "cost": "2 Acciones, 1 Chi",
           "range": "Corto",
-          "area": "Línea mediana",
           "duration": "Concentración",
-          "desc": "Crea una ola que ataca a todas las criaturas en su área, infligiendo 2d6 + SAB daño Contundente además de empujar un paso y tropezar (hace falta un tiro de salvación Físico para resistir). Si mantienes la concentración, puedes mover la ola un paso cada ronda gastando una Acción, pudiendo así atacar a todo objetivo en su paso.",
           "empower": "Creas una segunda ola en dirección diferente. Cuando gastes una acción para controlar una ola, puedes mover a ambas y atacar a cada objetivo a su paso.",
-          "crit": "Los objetivos quedan con Ralentizado-1"
+          "area": "Radio Pequeño",
+          "damage": "3d6 + SAB",
+          "damage_type": "Contundente",
+          "desc": "Crea una Ola que ataca a todos los objetivos en el área afectada, quienes además deben tener éxito en un tiro de salvación Físico o son empujados un paso y tropezados. Si mantienes la concentración, cada ronda puedes emplear una Acción para mover la ola un paso y atacar a cada objetivo en su camino. "
         },
         {
           "name": "Infusión de Agua",
@@ -112,7 +113,8 @@
             "Agua",
             "Pasiva"
           ],
-          "desc": "Tus ataques físicos cuentan como mágicos y aumentan su alance por un paso además de contar como Agua para los propósitos de Vulnerabilidades y habilidades mágicas. Además, puedes emplear tu modificador de Magia de Agua para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos. No puede aplicarse a Armas de Fuego."
+          "desc": "Tus ataques físicos cuentan como mágicos y aumentan su alance por un paso además de contar como Agua para los propósitos de Vulnerabilidades y habilidades mágicas. Además, puedes emplear tu modificador de Magia de Agua para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos. No se aplica a Armas de Fuego.",
+          "empower": "Aumenta el daño de un ataque Físico por un dado y aumenta su alcance a cercano."
         }
       ],
       "passive": "Aumenta tu estadística de Constitución 1."
