@@ -114,20 +114,18 @@
       "rank": "III",
       "title": "Rango III",
       "draft": true,
-      "passive": "Tus hechizos de Evocación convierten daño a d8. Rango I cuesta -1 acción. Aprendes dos hechizos de Rango II de tu Especialidad.",
+      "passive": "Tus hechizos de Evocación convierten daño a d8. ",
       "abilities": [
         {
-          "name": "Meteoros de Chi",
+          "name": "Amplificación Arcana",
           "tags": [
             "Evocación",
             "Arcano",
-            "Duradero",
-            "Defensivo"
+            "Duradera"
           ],
-          "cost": "2 acciones, 2 chi",
+          "cost": "2 Acciones, 2 Chi",
           "duration": "Concentración",
-          "desc": "Obtienes contadores de escudo iguales a tu Rango. Mientras dure, puedes lanzar Rayo Arcano como acción bonus una vez por ronda.",
-          "empower": "Recuperas la mitad de tus contadores de escudo (solo si te queda al menos uno)."
+          "desc": "Obtienes Ventaja en todos tus tiros relacionados con Magia Arcana y tus hechizos Arcanos aumentan su daño base por un dado. "
         },
         {
           "name": "Combinar Hechizos",
