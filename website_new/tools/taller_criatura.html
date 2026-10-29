@@ -125,6 +125,7 @@
 .cc-tierline { font-size: .82rem; color: var(--text-muted); }
 .cc-lvls { display: inline-flex; gap: 2px; margin-top: 3px; }
 .cc-lvls button { background: none; border: 1px solid #444; color: var(--text-muted); border-radius: 3px; padding: 0 6px; font-size: .72rem; cursor: pointer; }
+.cc-umb .cc-x.on { border-color: var(--accent-gold); color: var(--accent-gold); }
 .cc-lvls button.on, .cc-lvls button:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
 .cc-tierline b { color: var(--accent-gold); }
 .cc-tabs { display: flex; gap: 4px; flex-wrap: wrap; }
@@ -179,13 +180,13 @@ let DAMAGE_TIERS = [
   { min:19, max:21, LOW:[4,12,10], MID:[5,12,10], HIGH:[6,12,10] },
 ];
 let BONUS_TABLE = [
-  { min:1,  max:3,  bonus:'+5+1d6',  mid:'+5+1d6',  low:'+5',  dd:'1d6' },
-  { min:4,  max:6,  bonus:'+7+2d6',  mid:'+7+1d6',  low:'+7',  dd:'2d6' },
-  { min:7,  max:9,  bonus:'+9+2d6',  mid:'+9+1d6',  low:'+9',  dd:'3d8' },
-  { min:10, max:12, bonus:'+11+3d6', mid:'+11+2d6', low:'+11', dd:'4d8' },
-  { min:13, max:15, bonus:'+13+3d6', mid:'+13+2d6', low:'+13', dd:'5d10' },
-  { min:16, max:18, bonus:'+15+4d6', mid:'+15+3d6', low:'+15', dd:'6d10' },
-  { min:19, max:21, bonus:'+17+4d6', mid:'+17+3d6', low:'+17', dd:'7d12' },
+  { min:1,  max:3,  bonus:'+5+1d6',  mid:'+5+1d6',  low:'+5',  dd:'1d6', umbral:2 },
+  { min:4,  max:6,  bonus:'+7+2d6',  mid:'+7+1d6',  low:'+7',  dd:'2d6', umbral:4 },
+  { min:7,  max:9,  bonus:'+9+2d6',  mid:'+9+1d6',  low:'+9',  dd:'3d8', umbral:8 },
+  { min:10, max:12, bonus:'+11+3d6', mid:'+11+2d6', low:'+11', dd:'4d8', umbral:12 },
+  { min:13, max:15, bonus:'+13+3d6', mid:'+13+2d6', low:'+13', dd:'5d10', umbral:16 },
+  { min:16, max:18, bonus:'+15+4d6', mid:'+15+3d6', low:'+15', dd:'6d10', umbral:20 },
+  { min:19, max:21, bonus:'+17+4d6', mid:'+17+3d6', low:'+17', dd:'7d12', umbral:24 },
 ];
 const DEFAULT_BONUS = JSON.parse(JSON.stringify(BONUS_TABLE));
 const PHYSICAL = ['contundente', 'cortante', 'perforante'];
@@ -214,9 +215,10 @@ let PICK = { q: '', tag: '', tier: '' };
 
 function blank() {
   return { id: '', name: '', type: '', size: 'Mediano', level: 1, description: '', hits: 2,
-    saves: { 'FÍS': '+5', 'VOL': '+5', 'MEN': '+5' }, umbrales: [{ value: 4, categories: 'General' }],
+    saves: { 'FÍS': '+5', 'VOL': '+5', 'MEN': '+5' }, umbrales: [{ value: 2, categories: 'General', tier_scaled: true }],
     immune: [], senses: '', speed: 'Paso 8', combat: { acciones: 2, reacciones: 1 },
-    traits: [], actions: [], reactions: [], lore: '', tags: [], published: false };
+    traits: [], actions: [], reactions: [{ name: 'Parada / Esquiva', desc: '', mod_tpl: { bonus: '+MOD' } }],
+    lore: '', tags: [], published: false };
 }
 function dirty() { return C && JSON.stringify(C) !== SAVED; }
 
@@ -237,7 +239,7 @@ async function init() {
       if (typeof C.published !== 'boolean') C.published = !!info.published;  // website creatures already listed stay listed
     }
   }
-  if (!C) C = blank();
+  if (!C) { C = blank(); rescaleAll(); }
   normalize(C);
   SAVED = JSON.stringify(C);
   fillForm(); renderTab(); loadRenderer();
@@ -249,7 +251,8 @@ async function loadLibrary() {
   LIB = lib.abilities || [];
   if (lib.scaling && Array.isArray(lib.scaling.damage) && Array.isArray(lib.scaling.bonus)) {
     DAMAGE_TIERS = lib.scaling.damage;
-    BONUS_TABLE = lib.scaling.bonus.map((b, i) => ({ mid: (DEFAULT_BONUS[i] || {}).mid || b.bonus, low: (DEFAULT_BONUS[i] || {}).low || b.bonus, dd: (DEFAULT_BONUS[i] || {}).dd || '', ...b }));
+    BONUS_TABLE = lib.scaling.bonus.map((b, i) => ({ mid: (DEFAULT_BONUS[i] || {}).mid || b.bonus, low: (DEFAULT_BONUS[i] || {}).low || b.bonus, dd: (DEFAULT_BONUS[i] || {}).dd || '',
+      umbral: (DEFAULT_BONUS[i] || {}).umbral ?? 0, ...b }));
   }
 }
 async function refreshLibrary() {
@@ -285,7 +288,7 @@ function headline() {
   $('cc-sub').textContent = EXISTING ? `data/creatures/${C.id}.json` : 'Rellena la información a la izquierda; la ficha se dibuja a la derecha tal como se verá en la web.';
   const lv = +C.level || 1;
   const band = bandOf(BONUS_TABLE, lv);
-  $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · bonus Extremo / Alto / Medio / Bajo <b>${esc(bandSave(band, 'extreme'))}</b> / <b>${esc(band.bonus)}</b> / <b>${esc(band.mid || '')}</b> / <b>${esc(band.low || '')}</b>
+  $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · umbral <b>${esc(band.umbral ?? '')}</b> · bonus Extremo / Alto / Medio / Bajo <b>${esc(bandSave(band, 'extreme'))}</b> / <b>${esc(band.bonus)}</b> / <b>${esc(band.mid || '')}</b> / <b>${esc(band.low || '')}</b>
     · daño LOW / MID / HIGH (físico): ${['LOW', 'MID', 'HIGH'].map(t => `<b>${esc(scaleDamage(t, 'Cortante', lv).replace(' Cortante', ''))}</b>`).join(' / ')} · mágico: un dado menos`;
   $('cc-dirty').textContent = dirty() ? '● sin guardar' : '';
   $('cc-web').hidden = $('cc-sim').hidden = !EXISTING;
@@ -331,9 +334,16 @@ document.querySelectorAll('.cc-lvls').forEach(g => g.addEventListener('click', e
 }));
 
 // ── Umbrales ──
+// An umbral marked tier_scaled takes the Tier table's value and follows the level; typing a value unlinks it
+const tierUmbral = () => +bandOf(BONUS_TABLE, +C.level || 1).umbral || 0;
+function rescaleUmbs() {
+  for (const u of C.umbrales) if (u.tier_scaled) u.value = tierUmbral();
+}
 function renderUmbs() {
   $('umb-list').innerHTML = C.umbrales.map((u, i) => `<div class="cc-umb">
       <input class="inp" type="number" value="${esc(u.value)}" data-i="${i}" data-k="value" aria-label="Valor">
+      <button type="button" class="cc-x${u.tier_scaled ? ' on' : ''}" data-tier="${i}"
+        title="${u.tier_scaled ? 'Sigue el Tier (' + tierUmbral() + '). Escribe un valor para fijarlo.' : 'Usar el valor del Tier (' + tierUmbral() + ')'}">T</button>
       <input class="inp" value="${esc(u.categories)}" data-i="${i}" data-k="categories" placeholder="General, Necrótico" aria-label="Tipos">
       <button type="button" class="cc-x" data-del="${i}" title="Quitar">✕</button></div>`).join('')
     || '<span class="muted">Sin umbrales.</span>';
@@ -342,9 +352,18 @@ $('umb-list').addEventListener('input', e => {
   const i = e.target.dataset.i; if (i == null) return;
   const k = e.target.dataset.k;
   C.umbrales[i][k] = k === 'value' ? (parseInt(e.target.value, 10) || 0) : e.target.value;
+  if (k === 'value' && C.umbrales[i].tier_scaled) {
+    delete C.umbrales[i].tier_scaled;
+    const t = $('umb-list').querySelector(`[data-tier="${i}"]`); if (t) t.classList.remove('on');
+  }
   changed();
 });
 $('umb-list').addEventListener('click', e => {
+  if (e.target.dataset.tier != null) {
+    const u = C.umbrales[+e.target.dataset.tier];
+    if (u.tier_scaled) delete u.tier_scaled; else { u.tier_scaled = true; u.value = tierUmbral(); }
+    renderUmbs(); changed(); return;
+  }
   if (e.target.dataset.del == null) return;
   C.umbrales.splice(+e.target.dataset.del, 1); renderUmbs(); changed();
 });
@@ -470,7 +489,7 @@ function scaleEntry(en) {
 }
 function rescaleAll() {
   for (const k of ['actions', 'reactions', 'traits']) C[k].forEach(scaleEntry);
-  rescaleSaves();
+  rescaleSaves(); rescaleUmbs(); renderUmbs();
   $('f-sfis').value = C.saves['FÍS'] || ''; $('f-svol').value = C.saves['VOL'] || ''; $('f-smen').value = C.saves['MEN'] || '';
   if (TAB !== 'base') renderEntries();
 }

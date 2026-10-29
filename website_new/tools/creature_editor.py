@@ -709,13 +709,13 @@ let DAMAGE_TIERS = [
 const PHYSICAL_TYPES = ['contundente','cortante','perforante'];
 // bonus = Alto (ataque, +MOD y salvación fuerte); mid / low = salvaciones Media y Baja
 let BONUS_TABLE = [
-  { min:1,  max:3,  bonus:'+5+1d6',  mid:'+5+1d6',  low:'+5',  dd:'1d6' },
-  { min:4,  max:6,  bonus:'+7+2d6',  mid:'+7+1d6',  low:'+7',  dd:'2d6' },
-  { min:7,  max:9,  bonus:'+9+2d6',  mid:'+9+1d6',  low:'+9',  dd:'3d8' },
-  { min:10, max:12, bonus:'+11+3d6', mid:'+11+2d6', low:'+11', dd:'4d8' },
-  { min:13, max:15, bonus:'+13+3d6', mid:'+13+2d6', low:'+13', dd:'5d10' },
-  { min:16, max:18, bonus:'+15+4d6', mid:'+15+3d6', low:'+15', dd:'6d10' },
-  { min:19, max:21, bonus:'+17+4d6', mid:'+17+3d6', low:'+17', dd:'7d12' },
+  { min:1,  max:3,  bonus:'+5+1d6',  mid:'+5+1d6',  low:'+5',  dd:'1d6', umbral:2 },
+  { min:4,  max:6,  bonus:'+7+2d6',  mid:'+7+1d6',  low:'+7',  dd:'2d6', umbral:4 },
+  { min:7,  max:9,  bonus:'+9+2d6',  mid:'+9+1d6',  low:'+9',  dd:'3d8', umbral:8 },
+  { min:10, max:12, bonus:'+11+3d6', mid:'+11+2d6', low:'+11', dd:'4d8', umbral:12 },
+  { min:13, max:15, bonus:'+13+3d6', mid:'+13+2d6', low:'+13', dd:'5d10', umbral:16 },
+  { min:16, max:18, bonus:'+15+4d6', mid:'+15+3d6', low:'+15', dd:'6d10', umbral:20 },
+  { min:19, max:21, bonus:'+17+4d6', mid:'+17+3d6', low:'+17', dd:'7d12', umbral:24 },
 ];
 
 // ── Init ──────────────────────────────────────────────────────────────────────
@@ -1168,7 +1168,8 @@ async function loadScaling() {
     const d = await api('GET', '/api/scaling');
     if (d && Array.isArray(d.bonus) && Array.isArray(d.damage)) {
       const defs = JSON.parse(DEFAULT_SCALING).bonus;  // tables saved before Medio/Bajo existed get the defaults
-      BONUS_TABLE = d.bonus.map((b, i) => ({ mid: (defs[i] || {}).mid || b.bonus, low: (defs[i] || {}).low || b.bonus, dd: (defs[i] || {}).dd || '', ...b }));
+      BONUS_TABLE = d.bonus.map((b, i) => ({ mid: (defs[i] || {}).mid || b.bonus, low: (defs[i] || {}).low || b.bonus, dd: (defs[i] || {}).dd || '',
+        umbral: (defs[i] || {}).umbral ?? 0, ...b }));
       DAMAGE_TIERS = d.damage;
     }
   } catch (e) { /* keep the built-in defaults */ }
@@ -1193,10 +1194,11 @@ function renderScaling() {
       <td><input class="b" value="${esc(b.mid || '')}" oninput="setBonus(${i},'mid',this.value)"></td>
       <td><input class="b" value="${esc(b.low || '')}" oninput="setBonus(${i},'low',this.value)"></td>
       <td><input class="b" value="${esc(b.dd || '')}" oninput="setBonus(${i},'dd',this.value)" title="Palabra clave DD"></td>
+      <td><input class="n" type="number" min="0" value="${esc(b.umbral ?? '')}" oninput="setBonus(${i},'umbral',this.value)" title="Umbral General por defecto"></td>
       ${cell('LOW')}${cell('MID')}${cell('HIGH')}
     </tr>`;
   }).join('');
-  el.innerHTML = `<table class="tbl"><thead><tr><th>Tier</th><th title="Ataque, +MOD y salvación fuerte">Bonus Alto</th><th>Medio</th><th>Bajo</th><th title="Dados de daño: la palabra clave DD">DD</th>
+  el.innerHTML = `<table class="tbl"><thead><tr><th>Tier</th><th title="Ataque, +MOD y salvación fuerte">Bonus Alto</th><th>Medio</th><th>Bajo</th><th title="Dados de daño: la palabra clave DD">DD</th><th title="Umbral General de una criatura nueva">Umbral</th>
     <th class="LOW">LOW</th><th class="MID">MID</th><th class="HIGH">HIGH</th></tr></thead><tbody>${rows}</tbody></table>`;
   markScaling();
 }
@@ -1204,7 +1206,8 @@ function markScaling() {
   document.getElementById('tbl-dirty').textContent = scalingDirty() ? '● sin guardar' : '';
 }
 function setBonus(i, field, v) {
-  BONUS_TABLE[i] = { ...(BONUS_TABLE[i] || { min: DAMAGE_TIERS[i].min, max: DAMAGE_TIERS[i].max }), [field]: v.trim() };
+  BONUS_TABLE[i] = { ...(BONUS_TABLE[i] || { min: DAMAGE_TIERS[i].min, max: DAMAGE_TIERS[i].max }),
+    [field]: field === 'umbral' ? (parseInt(v, 10) || 0) : v.trim() };
   markScaling();
 }
 function setDmg(i, tier, k, v) {
