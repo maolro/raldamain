@@ -69,7 +69,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "passive": "Aumenta tu estadística de Destreza por 1.",
       "abilities": [
         {
@@ -83,21 +83,19 @@
           "cost": "1 Acción, 1 chi",
           "area": "Esfera pequeña",
           "duration": "Concentración",
-          "crit": "Los afectados sufren Herido-1.",
-          "desc": "Crea una nube de fragmentos metálicos que inflige 3d6 + SAB/CAR daño Cortante y sangrado a todos los que alcance. Mientras mantengas la concentración, puedes gastar una acción para mover la nube, atacando a cada objetivo en su trayectoria.",
-          "empower": "Aumenta el área de efecto de la nube por un paso y su daño por un dado."
+          "empower": "Mantienes este efecto durante el resto de la ronda, pudiendo atacar con ella a cada objetivo que entre en su posición por primera vez.",
+          "range": "Medio",
+          "damage": "2d6 + SAB/CAR",
+          "damage_type": "Cortante/Perforante"
         },
         {
           "name": "Repulsión Magnética",
           "tags": [
             "Metal",
-            "Reacción",
-            "Duradera"
+            "Reacción"
           ],
-          "cost": "1 Reacción, 1 chi",
-          "duration": "Una ronda",
-          "desc": "Emites un pulso magnético que te hace inmune a todos los proyectiles metálicos pequeños durante esta ronda. Además, todas las criaturas que lleven armas o armaduras metálicas en distancia cercana deben superar un tiro de salvación Físico o son empujadas un paso hacia atrás.",
-          "empower": "Detienes automáticamente un ataque hecho con un proyectil metálico de cualquier tamaño o hecho por una criatura con armadura metálica."
+          "cost": "1 Reacción, 1 Chi",
+          "desc": "Detienes automáticamente un ataque hecho con un objeto metálico, o redirige un ataque metálico que hayas logrado detener hacia un objetivo diferente."
         },
         {
           "name": "Infusión de Metal",
@@ -105,7 +103,8 @@
             "Metal",
             "Pasiva"
           ],
-          "desc": "Impregnas tus armas metálicas con tu control elemental, agudizando su filo más allá de sus límites naturales. Tus ataques con armas metálicas infligen un dado de daño adicional al impactar y cuentan como hechos de material superior a efectos de romper objetos y superar resistencias. Puedes emplear tu modificador de Magia de Metal para todos tus tiros de técnicas de combate y aplicar técnicas de combate a tus ataques elementales. No puede aplicarse a Armas de Fuego."
+          "desc": "Puedes emplear tu modificador de Magia de Metal para tus tiros de ataque con armas o aplicar técnicas de armas a ataques de Magia de Metal. Estas cuentan además como Material Superior. ",
+          "empower": "Aumenta el daño de un ataque Natural o hecho con un arma metálica por un dado."
         }
       ]
     },
