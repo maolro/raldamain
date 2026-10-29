@@ -73,7 +73,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "passive": "Aumenta tu estadística de Destreza por 1.",
       "abilities": [
         {
@@ -109,7 +109,8 @@
             "Tormenta",
             "Pasiva"
           ],
-          "desc": "Impregnas tus golpes con energía eléctrica y vibración sónica. Tus ataques físicos cuentan como mágicos y como Eléctricos o Sónicos para los propósitos de Vulnerabilidades y mejoras mágicas. Puedes emplear tu modificador de Magia de Tormenta para todos tus tiros de ataque, defensa y técnicas relacionados con ellos."
+          "desc": "Puedes emplear tu modificador de Magia de Tormenta para tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Magia de Tormenta. No puede aplicarse a Armas de Fuego.",
+          "empower": "Provoca 2d6 daño Eléctrico al impactar con un ataque natural o hecho con un arma metálica. Este daño aumenta por un dado por cada Rango adicional que recibas. "
         }
       ]
     },
