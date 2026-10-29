@@ -66,7 +66,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "passive": "Aumenta tu estadística de Constitución por 1.",
       "abilities": [
         {
@@ -76,28 +76,25 @@
             "Defensivo",
             "Duradera"
           ],
-          "cost": "1 Acción/Reacción, 1 chi",
+          "cost": "1 Reacción, 1 Chi",
           "range": "Medio",
           "area": "Esfera pequeña o línea mediana",
           "duration": "Hasta que sea destruido",
-          "desc": "Levanta una barrera de roca maciza con PV iguales a tu Rango x 4. Esta habilidad puede emplearse como reacción para reducir el daño de un ataque recibido en la cantidad de PV restantes del muro. Si esta reducción anula el daño por completo, el arma del atacante queda rota. Además, cualquier criatura que golpee el muro cuerpo a cuerpo sufrirá 1d6 + SAB daño Contundente.",
-          "empower": "El muro recupera todos sus puntos de vida."
+          "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo RANGO x 6 puntos de daño. Si es impactado por un arma no-mágica, esta se romperá."
         },
         {
-          "name": "Lluvia de Piedras",
+          "name": "Abrazo de la Tierra",
           "tags": [
             "Tierra",
             "Ataque",
             "Área",
             "Físico"
           ],
-          "cost": "1+ acciones, 1 chi",
+          "cost": "1 Acción, 1 Chi",
           "range": "Medio",
-          "area": "Radio pequeño",
-          "duration": "Instantáneo",
-          "crit": "Los afectados quedan con Ralentizado-1.",
-          "desc": "Lanza una ráfaga de fragmentos de roca sobre el área afectada, infligiendo 2d6 + SAB daño Contundente o Perforante a todos los objetivos Si impactas a un objetivo volador, este debe tener éxito en un tiro de salvación Físico o cae al suelo. Puedes cargar con acciones adicionales, aumentando el daño en 1d6 y el área un paso por carga (máximo 2 cargas).",
-          "empower": "Lanza una segunda descarga sobre la misma zona o una diferente."
+          "desc": "El objetivo queda Enredado hasta que escape. Si impactas a un objetivo volador, este deberá tener éxito en un tiro de salvación Físico o caerá al suelo, y no podrá volver a volar hasta que escape del enredo.",
+          "empower": "Ataca a un objetivo adicional.",
+          "damage": "2d6 + SAB Contundente"
         },
         {
           "name": "Puños de Tierra",
@@ -105,7 +102,8 @@
             "Tierra",
             "Pasiva"
           ],
-          "desc": "Eres capaz de envolver tus extremidades con roca para infligir golpes devastadores. Tus ataques físicos infligen un dado de daño adicional al impactar y cuentan como hechos de material superior a efectos de romper objetos y superar resistencias. Puedes emplear tu modificador de Magia de Tierra para todos tus tiros de ataque, defensa y técnicas relacionados con ellos."
+          "desc": "Puedes emplear tu modificador de Magia de Tierra para tus tiros de ataque con armas o aplicar técnicas de armas a ataques de Magia de Tierra. Tus ataques Naturales contarán como Material Superior para determinar lo que pueden romper.",
+          "empower": "Aumenta el daño de un ataque natural o de arma por un dado."
         }
       ]
     },
