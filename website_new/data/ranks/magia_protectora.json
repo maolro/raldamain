@@ -91,14 +91,11 @@
           "name": "Eliminar Magia",
           "tags": [
             "Protectora",
-            "Arcana"
+            "Arcana",
+            "Mejora"
           ],
-          "cost": "1 acción, 1 chi",
-          "range": "Medio",
-          "crit": "Elimina todos los efectos Arcanos activos del objetivo.",
-          "duration": "Instantáneo",
-          "desc": "Anulas un hechizo Arcano duradero activo sobre el objetivo mediante un tiro enfrentado de Magia Arcana.",
-          "empower": "Afecta a un objetivo adicional o cancela un hechizo extra en el mismo objetivo."
+          "desc": "Al impactar con un ataque, el objetivo debe tener éxito en un tiro de salvación Mental o anula inmediatamente un hechizo Duradero o reacción defensiva Arcana. ",
+          "cost": "1 Chi"
         },
         {
           "name": "Círculo de Sellado",
@@ -114,18 +111,15 @@
           "empower": "Trazas el círculo sobre un aliado para que se mueva con él."
         },
         {
-          "name": "Sello Protector",
+          "name": "Barrera de Fuerza",
           "tags": [
             "Protectora",
             "Arcana",
-            "Duradera",
-            "Toque"
+            "Reacción"
           ],
-          "cost": "3 acciones, 1 chi",
-          "range": "Cuerpo a cuerpo",
-          "duration": "Seis rondas o hasta eliminado",
-          "desc": "Otorga Resistencia Arcana al objetivo y le permite usar Magia Protectora para defenderse. Puedes sacrificar el sello para convertir un fallo en un tiro defensivo arcano en éxito automático.",
-          "empower": "El objetivo repite un tiro defensivo arcano y elige el mejor resultado."
+          "desc": "Crea un muro que protege a todos en su área, absorbiendo RANGO x 6 puntos de daño. Es capaz de impedir el paso a criaturas incorpóreas y no se puede afectar con magia a las criaturas al otro lado.",
+          "range": "Medio",
+          "area": "Línea media o Radio pequeño"
         }
       ]
     },
