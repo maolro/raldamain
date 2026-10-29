@@ -43,7 +43,7 @@
           "range": "Medio",
           "empower": "Añade un dado de daño adicional.",
           "damage": "1d6 + INT",
-          "damage_type": "Fuerza"
+          "damage_type": "Arcano"
         },
         {
           "name": "Transformación Elemental",
@@ -66,7 +66,7 @@
           "area": "Cono pequeño",
           "empower": "Aumenta el tamaño del hechizo por un paso y recibe un dado de daño adicional.",
           "damage": "2d6 + INT",
-          "damage_type": "Fuerza"
+          "damage_type": "Arcano"
         }
       ]
     },
