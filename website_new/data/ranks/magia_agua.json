@@ -73,7 +73,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Muro de Agua",
@@ -126,19 +126,20 @@
       "passive": "Todos tus hechizos de Agua sustituyen sus dados de daño por d8.",
       "abilities": [
         {
-          "name": "Prisión Acuosa",
+          "name": "Tentáculos Acuosos",
           "tags": [
             "Agua",
             "Mejora",
             "Agarre",
             "Duradera"
           ],
-          "cost": "2 chi",
+          "cost": "2 Acciones, 2 chi",
           "range": "Medio",
-          "crit": "Objetivo con Fatigado-1 y se ahoga un paso adicional.",
           "duration": "Concentración",
-          "desc": "Al impactar con un ataque de agua, puedes forzar al afectado a tener éxito en un tiro de salvación Físico o queda agarrado. Mientras permanezca agarrado, estará también ahogado hasta que escape o el efecto sea eliminado.",
-          "empower": "Afecta a un objetivo adicional impactado."
+          "area": "Radio Medio",
+          "damage": "2d8 + SAB",
+          "damage_type": "Contundente",
+          "desc": "Los afectados deben tener éxito en un tiro de salvación Físico o quedan Agarrados hasta que escapen. Este hechizo permanecerá activo hasta que pierdas la concentración y puedes emplear una Acción para lanzarlo de nuevo sobre el área afectada. "
         },
         {
           "name": "Controlar el Agua",
