@@ -166,54 +166,42 @@
     {
       "rank": "IV",
       "title": "Experto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
-          "name": "Golpe Ascendente",
+          "name": "Coloso Andante",
           "tags": [
-            "Pesado",
-            "Mejora"
-          ],
-          "cost": "2 chi",
-          "desc": "Saltas verticalmente y realizas un ataque que provoca +2d6 daño. Contra un enemigo volador, este sufre Desventaja en su tiro defensivo y al impactar cae con Ralentizado-1 al suelo."
-        },
-        {
-          "name": "Golpe por Golpe",
-          "tags": [
-            "Pesado",
-            "Reacción"
-          ],
-          "cost": "1 reacción, 2 chi",
-          "desc": "Te dejas impactar por un ataque enemigo para impactar automáticamente al atacante. Ambos ataques se resuelven a la vez. Debes declarar esta habilidad en lugar de realizar Parada."
-        },
-        {
-          "name": "Maestría de Estilo",
-          "tags": [
-            "Pesado",
+            "Coloso",
             "Duradera"
           ],
-          "cost": "2 acciones, 2 chi",
-          "duration": "Seis rondas",
-          "desc": "Entras en un estado que te otorga Ventaja en todos tus tiros relacionados con Estilo Coloso y una cantidad de contadores de escudo igual a tu Rango. Termina si pierdes la concentración.",
+          "cost": "2 Acciones, 2 chi",
+          "desc": "Recibes Ventaja en todos tus tiros relacionados con Estilo Coloso además que recibes RANGO Contadores de Escudo.",
+          "duration": "Seis Rondas",
           "toggle": {
-            "label": "Maestría Coloso",
-            "adv": [
-              "Ataque"
-            ],
+            "label": "Coloso Andante",
             "adv_tags": [
-              "Pesado"
+              "Coloso"
             ],
             "ce": "rango"
           }
         },
         {
-          "name": "Secuencia de Golpes",
+          "name": "Golpe por Golpe",
           "tags": [
-            "Pesado",
+            "Coloso",
+            "Reacción"
+          ],
+          "cost": "1 Reacción, 2 Chi",
+          "desc": "Puedes fallar automáticamente un tiro defensivo para hacerle un ataque a tu enemigo contra el cual no puede defenderese. No puedes emplear esta habilidad como Reacción a esta misma, y el atacante puede escoger no aceptar el golpe por golpe y fallar."
+        },
+        {
+          "name": "Presión Constante",
+          "tags": [
+            "Coloso",
             "Mejora"
           ],
-          "cost": "1 chi",
-          "desc": "Realizas dos ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Al impactar, empujas al objetivo un paso y puedes perseguirlo como acción bonus. Debes declarar esta habilidad antes de atacar."
+          "cost": "2 chi",
+          "desc": "Haz un segundo ataque con las mismas mejoras que el anterior como acción bonus. No puedes aplicar esta habilidad en ataques gratuitos o reacciones."
         }
       ]
     },
