@@ -98,7 +98,7 @@
             "Pasiva"
           ],
           "desc": "Puedes emplear tu modificador de Magia de Evocación para tus tiros de ataque con armas, o aplicar técnicas de armas a ataques de Magia de Evocación. No puede aplicarse a Armas de Fuego.",
-          "empower": "Provocas 1d6 daño Fuerza al impactar con tu ataque de arma."
+          "empower": "Provocas 1d6 daño Fuego, Frío, Eléctrico o Ácido al impactar con tu ataque de arma."
         },
         {
           "name": "Metamagia",
