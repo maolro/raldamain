@@ -87,9 +87,7 @@
           "range": "Medio",
           "area": "Esfera pequeña o línea mediana",
           "duration": "Concentración",
-          "crit": "Los afectados quedan ensordecidos durante una ronda.",
-          "desc": "Crea una barrera de energía eléctrica con PV iguales a tu Rango x 3. Cualquier criatura que intente cruzarla sufre 1d6 + CAR daño Eléctrico y si lleva armadura metálica sufre un dado de daño adicional. Puede emplearse como reacción para reducir el daño de un ataque recibido en la cantidad de PV restantes de la barrera.",
-          "empower": "La barrera recupera todos sus puntos de vida."
+          "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo RANGOx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación Físico o sufren 1d6 + CAR daño Eléctrico y Ralentizado I. "
         },
         {
           "name": "Relámpago",
@@ -98,12 +96,12 @@
             "Ataque",
             "Eléctrico"
           ],
-          "cost": "1+ acciones, 1 chi",
+          "cost": "1+ Acciones, 1 Chi",
           "area": "Línea grande",
-          "duration": "Instantáneo",
-          "crit": "Los afectados quedan con Aturdido-2 durante una ronda.",
-          "desc": "Lanza una descarga eléctrica en línea recta que inflige 2d6 + CAR daño Eléctrico a todos los que alcance. Los objetivos con armadura metálica tienen Desventaja en sus tiros defensivos. Puedes cargar con acciones adicionales, aumentando el daño en 1d6 por carga (máximo 2 cargas). Si hay puntos conductores en el trayecto, el rayo puede saltar entre ellos e infligir daño a los que se encuentren cerca.",
-          "empower": "Lanza un relámpago adicional en otra dirección desde el punto de impacto con la misma cantidad de cargas."
+          "desc": "Los objetivos con armadura metálica tienen Desventaja en sus tiros defensivos. Puedes cargar con acciones adicionales, aumentando el daño en un dado por carga (máximo 2 veces).",
+          "empower": "El relámpago salta hacia otra dirección, atacando a todos los objetivos en una línea distinta.",
+          "damage": "2d6 + CAR ",
+          "damage_type": "Eléctrico"
         },
         {
           "name": "Ataques Infundidos",
