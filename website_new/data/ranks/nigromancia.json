@@ -125,12 +125,13 @@
       "passive": "Todos tus hechizos de Nigromancia sustituyen sus dados de daño por d8.",
       "abilities": [
         {
-          "name": "Aspecto de No-muerto",
+          "name": "Alma Corrompida",
           "tags": [
             "Nigromancia",
             "Pasiva"
           ],
-          "desc": "Adoptas rasgos de un tipo de no-muerto a tu elección. Ejemplos: veneno de Gul, toque de Momia, sugestión de Vampiro o defensas de Esqueleto o Zombi."
+          "desc": "Al sufrir daño Necrótico, puede en su lugar curarse un impacto o recuperarse de un efecto de estado. Para ello, el daño Necrótico debe por lo menos superar su umbral general.",
+          "cost": "1 Chi"
         },
         {
           "name": "Tormenta de Energía Negativa",
@@ -140,12 +141,11 @@
             "Área",
             "Necrótico"
           ],
-          "cost": "2 acciones, 2 chi",
+          "cost": "2 Acciones, 2 Chi",
           "area": "Radio corto",
-          "crit": "Los afectados quedan con Fatigado-2 hasta que se recuperen.",
-          "duration": "Instantáneo",
-          "desc": "Liberas una explosión de energía negativa que inflige 2d8 + CAR daño Necrótico (mitad en caso de éxito en el tiro de salvación). Reduce la Vitalidad y PV máximos de los afectados. Los no-muertos aliados en el área se curan Rango + 2 Vitalidad en lugar de recibir daño.",
-          "empower": "Aumenta el área a radio medio."
+          "empower": "Aumenta el daño por un dado. Si empoderas dos veces, aumenta el radio a Medio",
+          "range": "Medio",
+          "desc": "Los afectados deben tener éxito en un tiro de salvación de Voluntad o sufren 2d8 + INT/CAR daño Necrótico que reducirá sus impactos máximos. "
         },
         {
           "name": "Aura de Muerte",
@@ -154,11 +154,10 @@
             "Ambiental",
             "Duradera"
           ],
-          "cost": "2 acciones, 2 chi",
+          "cost": "2 Acciones, 2 Chi",
           "area": "Radio medio",
           "duration": "Concentración",
-          "desc": "Generas un aura de energía negativa. Obtienes Ventaja en tiros de Nigromancia dentro del área. Los enemigos no pueden recibir sanación mientras permanezcan en ella. Cuenta como Tierra Consagrada para no-muertos.",
-          "empower": "Tu siguiente hechizo de Nigromancia cuesta -1 acción."
+          "desc": "Generas un aura de energía negativa que te otorga Ventaja en todos tus tiros relacionados con Nigromancia y aumenta el daño de todos tus hechizos Necróticos por un dado. Las criaturas enemigas no pueden sanarse a distancia media y aquellas que mueran en el área afectada revivirán como No-Muertos menores bajo tu control."
         }
       ]
     },
