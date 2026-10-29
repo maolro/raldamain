@@ -61,7 +61,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Fuerza Animal",
@@ -115,17 +115,17 @@
     {
       "rank": "III",
       "title": "Rango III",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
-          "name": "Transformación Animal",
+          "name": "Transformación Primigenia",
           "tags": [
             "Innata",
             "Transmutación"
           ],
-          "cost": "1 acción, 2 chi",
+          "cost": "1 Acción, 2 Chi",
           "duration": "1 hora",
-          "desc": "Te transformas en un animal, recibiendo así dos mejoras entre Vuelo, Coraza, Tamaño Superior o Resistencia Elemental (u otras permitidas por el DJ) además que de tus estadísticas físicas pasan a ser 7 (si eran más bajas). Durará hasta una hora. \nComo alternativa, puedes convertirte en un animal normal de nivel máximo 4, el cual aumenta en 2 cada rango. Recibirás las estadísticas, acciones, habilidades pasivas y reacciones del animal. Si los PV y Vitalidad del animal son superirores a los tuyos, recibirás PV y Vitalidad temporal igual a la diferencia."
+          "desc": "Te transformas en un Animal o Espíritu de nivel 5 o menos, recibiendo así 2 Impactos Temporales y adoptando sus estadísticas y habilidades. Esta habilidad solo puede usarse en Forma de la Bestia y terminará cuando se te acaben los impactos temporales. El nivel máximo de tu Forma de la Bestia aumenta por 3 en cada Rango adicional que obtengas, y puedes montar estadísticas nuevas de animales u otras criaturas fantásticas bajo permiso del DJ."
         },
         {
           "name": "Llamar a los Espíritus",
@@ -133,10 +133,10 @@
             "Divina",
             "Invocación"
           ],
-          "cost": "3 acciones, 2 chi",
+          "cost": "3 Acciones, 2 Chi",
           "duration": "1 hora",
-          "desc": "Invocas un espíritu o animal con un Nivel igual o inferior a tu Rango x 2 (máximo 4 invocaciones simultáneas). La criatura invocada actúa en tu turno y obedece tus órdenes.",
-          "empower": "Invocas una criatura adicional con esta habilidad. Empoderar así te costará 2 chi."
+          "desc": "Invoca un Espíritu de nivel 5 o inferior, el cual obedecerá tus órdenes. El nivel de la invocación aumentará por 3 por cada Rango adicional que reciba, y no puedes tener activas más de 4 invocaciones.",
+          "empower": "Invocas una criatura adicional con esta habilidad. "
         }
       ]
     },
@@ -151,7 +151,13 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia a daño de Fuego, Frío, Eléctrico, Sónico y Radiante."
+          "desc": "Aumenta tus Umbrales al daño Fuego, Frío, Eléctrico, Sónico y Radiante por Rango + 2. ",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Fuego, Frío, Eléctrico, Sónico, Radiante"
+            }
+          ]
         },
         {
           "name": "Sanación Espiritual",
@@ -159,9 +165,7 @@
             "Innata",
             "Sanación"
           ],
-          "cost": "1 chi",
-          "desc": "Recuperas una cantidad de Vitalidad igual a tu Rango o reduces el nivel de Herido (permanente) en 1. Este efecto se anula durante 1 ronda si recibes daño de Hierro Frío.",
-          "empower": "En lugar del efecto normal, te recuperas de un efecto de estado o maldición. Si empoderas esta habilidad, no puedes usar el efecto base en el mismo turno."
+          "desc": "Al empezar una ronda en Forma de la Bestia, te recuperas de un impacto o reduces un efecto de estado por un paso. Este efecto se anula durante una ronda si eres herido por un arma de Hierro Frío."
         }
       ]
     },
