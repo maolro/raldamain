@@ -148,9 +148,9 @@
     "name": "Magia de Agua",
     "category": "Elementalismo",
     "image": "magia_agua.jpg",
-    "description": "Manipula las corrientes, sana heridas y adáptate como el agua.",
+    "description": "Tienes un control absoluto sobre el agua en estado fluido. Puedes usarla para sanar, protegerte con muros y tentáculos, o desatar su furia en forma de torrentes, olas colosales y tsunamis capaces de devastar el campo de batalla.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_tierra",

@@ -24,7 +24,7 @@
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Torrente",
@@ -36,10 +36,10 @@
           ],
           "cost": "1 Acción",
           "range": "Medio",
-          "crit": "el objetivo cae con Ralentizado-1",
-          "duration": "Instantáneo",
-          "desc": "Disparas un chorro a presión que provoca 1d6 + SAB daño Contundente además que empuja un paso al objetivo. Este ataque puede herir a seres incorpóreos y apagará todos los fuegos a su paso.",
-          "empower": "Haz un ataque contra un objetivo adicional o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo."
+          "desc": "Empuja un paso al objetivo. Este ataque puede herir a seres incorpóreos y apagará todos los fuegos a su paso.",
+          "empower": "Haz un ataque contra un objetivo adicional o aumenta el daño base por un dado. Si empoderas dos veces, ataca a cada objetivo en un radio corto.",
+          "damage": "1d6 + SAB",
+          "damage_type": "Contundente"
         },
         {
           "name": "Aguas de la Vida",
@@ -48,11 +48,10 @@
             "Toque",
             "Sanación"
           ],
-          "cost": "1 Acción/Reacción, 1 chi",
-          "range": "Toque",
-          "duration": "Instantáneo",
-          "desc": "Una criatura que toques se cura Rango + 2 Vitalidad y se cura de un efecto de estado negativo o reduce el nivel de Herido (permanente) por un paso. \nSi empleas esta habilidad contra un no-muerto, haz un tiro de ataque contra él que provoca 2d6 + SAB daño Radiante al impactar y lo ralentiza durante una ronda.",
-          "empower": "Aumenta el área de este efecto a un radio corto (medio si empoderas por segunda vez). No obstante, solo podrás afectar a criaturas que estén en contacto con el agua."
+          "cost": "1 Acción, 1 Chi",
+          "range": "Cercano",
+          "desc": "El objetivo recupera un impacto o se cura de un efecto de estado. Si empleas esta habilidad en un No-Muerto, haz un ataque contra él que provocará 1d6 + SAB daño Radiante al impactar.",
+          "empower": "Afecta a un objetivo adicional que puedas alcanzar. Si empoderas dos veces, afecta a cada objetivo en un radio corto."
         },
         {
           "name": "Adaptación Acuática",
@@ -61,7 +60,13 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes velocidad de natación igual a tu velocidad base y puedes respirar bajo el agua hasta un máximo de diez minutos. Además, si te encuentras en el agua recibes vista a ciegas a distancia media y puedes emplear tu tiro de Magia de Agua para todos tus tiros de Esquiva y de salvación Físicos."
+          "desc": "Aumenta tu Umbral Defensivo al daño Frío por Rango + 1. Obtienes también velocidad de natación igual a tu velocidad base y puedes respirar bajo el agua hasta un máximo de diez minutos. Además, si te encuentras en el agua recibes vista a ciegas a distancia media.",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Frío"
+            }
+          ]
         }
       ]
     },
