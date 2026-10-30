@@ -108,7 +108,8 @@
             "Hielo",
             "Pasiva"
           ],
-          "desc": "Tus ataques físicos cuentan como mágicos además de contar como Hielo para los propósitos de Vulnerabilidades y mejoras mágicas. Además, puedes emplear tu modificador de Magia de Hielo para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos. No puede aplicarse a Armas de Fuego."
+          "desc": "Puedes emplear tu modificador de Magia de Fuego para tus tiros de ataque con armas y esquiva, o aplicar técnicas de armas a ataques de Magia de Fuego. No puede aplicarse a Armas de Fuego.",
+          "empower": "Un ataque Físico provoca 2d6 daño Frío al impactar. Este daño aumenta por un dado por cada Rango adicional que recibas."
         }
       ],
       "passive": "Aumenta tu estadística de Constitución por 1."
