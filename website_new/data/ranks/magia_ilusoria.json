@@ -118,7 +118,6 @@
       "rank": "III",
       "title": "Rango III",
       "draft": false,
-      "passive": "Hechizos Ilusorios Rango I cuestan -1 acción. Ilusiones aumentan a esfera mediana y tienen sonido.",
       "abilities": [
         {
           "name": "Dobles Ilusorios",
