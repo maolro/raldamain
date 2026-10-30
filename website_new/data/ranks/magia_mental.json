@@ -75,15 +75,13 @@
           "show_mod": true
         },
         {
-          "name": "Precognición",
+          "name": "Infusión Psíquica",
           "tags": [
             "Mental",
-            "Reacción"
+            "Mejora"
           ],
           "cost": "1 Chi",
-          "range": "Medio",
-          "desc": "Antes de hacer un tiro de ataque, defensa o habilidad contra un objetivo específico, este deberá tener éxito en un tiro de salvación Mental o recibirás un bonificador en el tiro igual a RANGO + 2.",
-          "empower": "Un aliado a distancia media recibe el bonificador en lugar que tú."
+          "desc": "Tu siguiente ataque provocará 1d6 daño Psíquico adicional al impactar. Este daño mejorará por un dado por cada Rango adicional que recibas. "
         },
         {
           "name": "Alterar Emociones",
