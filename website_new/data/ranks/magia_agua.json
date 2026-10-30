@@ -139,7 +139,7 @@
           "area": "Radio Medio",
           "damage": "2d8 + SAB",
           "damage_type": "Contundente",
-          "desc": "Los afectados deben tener éxito en un tiro de salvación Físico o quedan Enredados hasta que escapen (si ya están Enredados, estarán Agarrados). Este hechizo permanecerá activo hasta que pierdas la concentración y puedes emplear una Acción para lanzarlo de nuevo sobre el área afectada. "
+          "desc": "Los afectados deben tener éxito en un tiro de salvación Físico o quedan Enredados hasta que escapen y se empiezan a Ahogar (si ya están Enredados, estarán Agarrados). Este hechizo permanecerá activo hasta que pierdas la concentración y puedes emplear una Acción para lanzarlo de nuevo sobre el área afectada. "
         },
         {
           "name": "Controlar el Agua",
