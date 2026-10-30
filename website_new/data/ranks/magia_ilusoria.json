@@ -77,16 +77,6 @@
       "draft": false,
       "abilities": [
         {
-          "name": "Engaño Ilusorio",
-          "tags": [
-            "Ilusoria",
-            "Visual",
-            "Mejora"
-          ],
-          "cost": "1 Reacción, 1 Chi",
-          "desc": "Antes de un tiro de ataque o defensa enfrentado contra un enemigo que pueda verte, este debe tener éxito en un tiro de salvación Mental o fallará de manera automática su tiro. Quien supere la salvación ya no puede ser afectado por esta habilidad durante el combate. No anula un 20 natural, ni funciona con ataques de área ni con efectos que no requieran contacto visual."
-        },
-        {
           "name": "Invisibilidad",
           "tags": [
             "Ilusoria",
@@ -112,6 +102,14 @@
           "range": "Medio",
           "show_mod": true,
           "name": "Asalto Fantasmal"
+        },
+        {
+          "name": "Infusión Ilusoria",
+          "tags": [
+            "Ilusoria",
+            "Pasiva"
+          ],
+          "desc": "Puedes emplear tu modificador de Magia Ilusoria para tus tiros de ataque y defensa con armas además de tus tiros de Esquiva. "
         }
       ]
     },
