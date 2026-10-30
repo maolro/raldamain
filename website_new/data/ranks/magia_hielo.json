@@ -23,7 +23,7 @@
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Espina de Hielo",
@@ -33,11 +33,11 @@
             "A distancia",
             "Físico"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "range": "Medio",
-          "duration": "Instantáneo",
-          "desc": "Ataca con un arma de hielo que provoca 1d6 + SAB daño Perforante, Cortante o Contundente. Puedes aplicar técnicas de combate a este ataque. ",
-          "empower": "Haz un ataque contra un objetivo adicional o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo."
+          "damage": "1d6 + SAB",
+          "damage_type": "Perforante/Cortante/Contundente",
+          "empower": "Haz un ataque contra un objetivo adicional o aumenta el daño por un dado. Si empoderas dos veces, ataca a cada objetivo en un radio corto."
         },
         {
           "name": "Rayo Gélido",
@@ -47,12 +47,12 @@
             "A distancia",
             "Frío"
           ],
-          "cost": "1 acción",
+          "cost": "1 Acción",
           "range": "Medio",
-          "crit": "El objetivo queda ralentizado una ronda.",
-          "duration": "Instantáneo",
-          "desc": "Infilge 1d6 + SAB daño Frío a un objetivo que alcance. Este ataque apagará los fuegos a su paso y congelará el agua.",
-          "empower": "Aumenta el tamaño a un radio corto y el daño por un dado. Si vuelve a empoderar, mejorará el tamaño a un radio medio y el daño por otro dado."
+          "desc": "Este ataque apagará los fuegos a su paso y congelará el agua.",
+          "empower": "Haz un ataque contra un objetivo adicional o aumenta el daño por un dado. Si empoderas dos veces, ataca a cada objetivo en un radio corto.",
+          "damage": "1d6 + SAB",
+          "damage_type": "Hielo"
         },
         {
           "name": "Adaptación al Frío",
@@ -60,7 +60,13 @@
             "Hielo",
             "Pasiva"
           ],
-          "desc": "Recibes Resistencia al daño Frío y Necrótico e Inmunidad a los efectos por el frío extremo. Puedes ver a través de neblinas naturales y mágicas sin dificultades."
+          "desc": "Aumenta tus Umbrales al daño Frío y Necrótico por RANGO+1 y recibes Inmunidad a los efectos por el frío extremo. Puedes ver a través de neblinas naturales y mágicas sin dificultades.",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Frío, Necrótico"
+            }
+          ]
         }
       ]
     },

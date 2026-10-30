@@ -139,9 +139,9 @@
     "name": "Magia de Hielo",
     "category": "Elementalismo",
     "image": "magia_hielo.jpg",
-    "description": "Congela a tus oponentes, crea estructuras de hielo y reduce la temperatura.",
+    "description": "Controlas el agua en su estado sólido de forma agresiva. Creas armas de hielo, congelas a tus enemigos, invocas ventiscas y manipulas la temperatura ambiental para llevar el frío extremo al campo de batalla.",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_agua",
