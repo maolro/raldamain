@@ -12,7 +12,7 @@
   "parry": {
     "name": "Parada mágica",
     "tag": "Hielo",
-    "against": "Fuego, Agua, Frío, Naturaleza y Ácido"
+    "against": ""
   },
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
@@ -73,7 +73,7 @@
     {
       "rank": "II",
       "title": "Rango II",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Muro de Hielo",
