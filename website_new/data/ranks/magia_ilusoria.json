@@ -109,7 +109,8 @@
             "Ilusoria",
             "Pasiva"
           ],
-          "desc": "Puedes emplear tu modificador de Magia Ilusoria para tus tiros de ataque y defensa con armas además de tus tiros de Esquiva. "
+          "desc": "Puedes emplear tu modificador de Magia Ilusoria para tus tiros de ataque y defensa de cualquier tipo además de tus tiros de Esquiva. ",
+          "empower": "Al hacer un tiro de ataque o defensa, el afectado debe tener éxito en un tiro de salvación Mental o tiene Desventaja en su tiro."
         }
       ]
     },
