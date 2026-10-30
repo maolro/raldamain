@@ -82,12 +82,11 @@
             "Defensiva",
             "Duradera"
           ],
-          "cost": "1 Acción/Reacción, 1 chi",
+          "cost": "1 Reacción, 1 Chi",
           "range": "Medio",
           "area": "Esfera pequeña o línea mediana",
-          "duration": "Instantánea",
-          "desc": "Crea una barrera sólida con PV iguales a tu Rango x 4. Este muro es Inmune a daño Frío pero Vulnerable a daño Contundente y Fuego. Si se emplea como reacción defensiva, reduce el daño de un ataque que recibas por un valor igual a sus PV. Puedes también emplear esta habilidad para anular inmediatamente un efecto de Agua de tamaño igual o menor que el muro. ",
-          "empower": "Recupera todos los puntos de vida perdidos."
+          "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo RANGOx3 puntos de daño. Si llega a ser destruido, todos los atacantes deben tener éxito en un tiro de salvación de Voluntad o sufren 1d6 + SAB daño Frío y Ralentizado I durante una ronda.",
+          "show_mod": true
         },
         {
           "name": "Neblina Polar",
@@ -96,12 +95,12 @@
             "Gaseosa",
             "Duradera"
           ],
-          "cost": "2 acciones, 1 chi",
+          "cost": "2 Acciones, 1 Chi",
           "area": "Esfera mediana",
           "duration": "Concentración",
-          "desc": "Crea una niebla fría que ciega y otorga ocultamiento. Todas las criaturas en su área de efecto deben tener éxito en un tiro de Voluntad o sufren 1d6 + SAB daño Frío y quedan ralentizadas durante una ronda. Puedes repetir este efecto en cada turno que esta habilidad permanezca activa empleando una acción.",
-          "empower": "Aumenta el área de efecto por un paso y el daño Frío por un dado.",
-          "crit": "Los afectados quedan con Aturdido-4 durante una ronda."
+          "desc": "Crea una niebla fría que ciega y otorga ocultamiento. Todas las criaturas en su área de efecto deben tener éxito en un tiro de Voluntad o sufren 1d6 + SAB daño Frío y quedan ralentizadas durante una ronda. Puedes repetir este efecto en cada turno que esta habilidad permanezca activa empleando una Acción.",
+          "empower": "Mueve la Neblina un paso en cualquier dirección, afectando de nuevo a sus objetivos.",
+          "range": "Medio"
         },
         {
           "name": "Infusión de Hielo",
