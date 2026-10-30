@@ -125,22 +125,20 @@
           "name": "Dobles Ilusorios",
           "tags": [
             "Ilusoria",
-            "Arcana",
             "Visual",
             "Defensiva",
             "Duradera"
           ],
-          "cost": "2 acciones, 2 chi",
+          "cost": "2 Acciones, 2 Chi",
           "range": "Cercano",
           "duration": "Concentración",
-          "desc": "Creas copias ilusorias de ti mismo (cantidad igual a tu Rango). Las copias se mueven y actúan, pero no pueden interactuar físicamente. Como reacción, puedes sacrificar un doble para absorber un impacto o anular un ataque fallido tuyo.",
-          "empower": "Creas Rango / 2 dobles adicionales (sin superar el máximo)."
+          "desc": "Crea RANGO dobles ilusorios, los cuales se moverán como tú desees. Cada vez que un ataque te impacte, puedes hacer que impacte a un doble en su lugar. También puedes sacrificar un doble para repetir un tiro de ataque que hagas.",
+          "empower": "Recuperas la mitad de tus dobles redondeando hacia abajo."
         },
         {
           "name": "Terror Ilusorio",
           "tags": [
             "Ilusoria",
-            "Arcana",
             "Visual",
             "Duradera",
             "Miedo"
@@ -150,21 +148,19 @@
           "area": "Radio medio",
           "crit": "Los afectados aumentan su nivel de miedo un paso adicional.",
           "duration": "Concentración",
-          "desc": "Creas una pesadilla visible. Toda criatura que la vea debe superar un tiro de Voluntad o Concentración o aumenta su nivel de Miedo cada turno. La ilusión se puede desmentir o destruir con un ataque de área.",
-          "empower": "Los atacantes deben superar un tiro de Voluntad o Concentración o no se atreven a atacar la ilusión."
+          "desc": "Invoca una criatura hecha de ilusiones equivalente a una criatura de nivel 5, la cual podrá atacar y emplear habilidades como si fuera real. Esta puede ser desmentida mediante un tiro de salvación Mental exitoso (esto cuesta una acción), lo cual impedirá que pueda seguir afectando a un objetivo que le haya desmentido. El nivel de la invocación aumenta por 3 en base a cada Rango adicional, y no puedes controlar más de cuatro criaturas a la vez.",
+          "empower": "Invoca a una criautra adicional."
         },
         {
-          "name": "Copiar Hechizo",
+          "name": "Terreno Alucinatorio",
           "tags": [
             "Ilusoria",
-            "Arcana",
-            "Visual",
-            "Mejora"
+            "Duradera",
+            "Visual"
           ],
-          "cost": "2 chi",
-          "duration": "Instantáneo",
-          "desc": "Simulas cualquier hechizo de tu Rango o inferior sin coste de chi (solo acciones). El hechizo no tiene efecto real. Si es una ilusión fantasmal, causa daño psicológico y efectos mentales (si reduce a 0 PV, el objetivo cae Inconsciente).",
-          "empower": "N/A"
+          "cost": "2 Acciones, 2 Chi",
+          "duration": "Concentración",
+          "desc": "Cambia todo el terreno a tu alrededor empleando ilusiones para que adopte la forma que desees. Obtienes también Ventaja en todos tus tiros de ataque, defensa y habilidad relacionados con Magia Ilusoria además que aumentas el daño de sus efectos por un dado."
         }
       ]
     },
