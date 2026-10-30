@@ -100,8 +100,7 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
-      "passive": "Hechizos Mentales de Rango I cuestan -1 acción.",
+      "draft": false,
       "abilities": [
         {
           "name": "Sobrecarga Mental",
@@ -109,24 +108,23 @@
             "Mental",
             "Cordura"
           ],
-          "cost": "1 acción, 2 chi",
+          "cost": "1 Acción, 2 Chi",
           "range": "Medio",
           "area": "Esfera pequeña",
-          "crit": "Daño a Cordura adicional igual a Rango + 1.",
-          "desc": "Ataque de área que inflige Rango + 1 de daño a Cordura a todas las criaturas en la zona y las deja con Confundido-1.",
-          "empower": "Lanzas el hechizo como acción bonus en otra área."
+          "empower": "Lanzas el hechizo como acción bonus en otra área.",
+          "desc": "Los afectados deben tener éxito en un tiro de salvación Mental o sufren 2d8 + INT/CAR daño Psíquico y Confundido II hasta que se recuperen (pueden tirar cada ronda para liberarse).",
+          "duration": "6 rondas"
         },
         {
           "name": "Geas",
           "tags": [
             "Mental"
           ],
-          "cost": "1 acción, 2 chi",
+          "cost": "1 Acción, 2 chi",
           "range": "Medio",
           "duration": "1 día",
-          "crit": "Reduce la Cordura del objetivo en Rango + 1.",
-          "desc": "Implantas una orden latente de cumplimiento forzoso en el objetivo. Puedes activar la orden para controlar al objetivo durante 1 ronda.",
-          "empower": "Afecta a un objetivo adicional."
+          "empower": "Afecta a un objetivo adicional.",
+          "desc": "El objetivo debe seguir una orden tuya sin negarse siempre y cuando no atente contra su vida o seres queridos. Puedes hacer que la orden se cumpla tan tarde como desees. Si tu objetivo tiene 0 Cordura, deberá obedecer tus órdenes durante el resto del combate."
         },
         {
           "name": "Telepatía",
@@ -134,7 +132,8 @@
             "Mental",
             "Pasiva"
           ],
-          "desc": "Estableces comunicación mental con criaturas que hayas detectado. Puedes lanzar hechizos mentales sin línea de visión contra objetivos detectados."
+          "desc": "Eres capaz de hablar telepáticamente con todas las criaturas pensantes a distancia media. Esto también te permite lanzar tus hechizos mentales contra cualquiera de ellas sin necesitar línea de visión ni ser detectado.",
+          "empower": "Un objetivo que puedas detectar debe tener éxito en un tiro de salvación Mental o lees su siguiente movimiento, recibiendo Ventaja en tu siguiente tiro de ataque, defensa o habilidad contra él."
         }
       ]
     },
