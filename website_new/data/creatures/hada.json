@@ -68,8 +68,8 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "cost": 1,
-      "desc": "El afectado  percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo.",
+      "cost": "1",
+      "desc": "El afectado percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo.",
       "name": "Asalto Fantasmal",
       "tags": [
         "Ilusorio",
@@ -79,7 +79,14 @@
       "mod_tpl": {
         "save": "MEN +MOD"
       },
-      "save": "MEN +7 + 2d6"
+      "save": "MEN +MOD",
+      "type": "action",
+      "bonus": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "move": ""
     },
     {
       "attacks": 1,

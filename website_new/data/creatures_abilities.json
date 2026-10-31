@@ -1228,10 +1228,10 @@
     "damage": "",
     "damage_tier": "",
     "damage_base_type": "",
-    "save": "",
+    "save": "MEN +MOD",
     "move": "",
     "attacks": 1,
-    "desc": "El objetivo debe tener éxito en un tiro de salvación Mental +MOD o percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo."
+    "desc": "El afectado percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo."
   },
   {
     "id": "ab_1793025042833",
