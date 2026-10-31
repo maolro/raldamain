@@ -26,7 +26,7 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "desc": "Es de naturaleza Celestial, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Radiante además que aumenta su Umbral Mágico por un paso. Tiene Sentido Vital y provoca 2d6 daño adicional con sus ataques físicos de un elemento específico.",
+      "desc": "Es de naturaleza Celestial, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Ilusiones además que aumenta su Umbral Mágico por un paso y su Umbral Radiante por dos pasos. Tiene Sentido Vital y provoca DD daño adicional con sus ataques físicos de un elemento específico.",
       "name": "Celestial",
       "tags": [
         "Celestial",
@@ -35,7 +35,17 @@
       "ability_id": "ab_1793450265798",
       "mod_tpl": {
         "desc": "Es de naturaleza Celestial, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Radiante además que aumenta su Umbral Mágico por un paso. Tiene Sentido Vital y provoca DD daño adicional con sus ataques físicos de un elemento específico."
-      }
+      },
+      "type": "passive",
+      "cost": "",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
     }
   ],
   "actions": [
