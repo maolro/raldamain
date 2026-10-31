@@ -3,7 +3,243 @@
   "name": "Arshalaní",
   "description": "",
   "format": "{surname} {name}",
-  "names": [],
+  "names": [
+    {
+      "name": "Adnan",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ahmet",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ahsen",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Alim",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Altan",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Arif",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Arslan",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Asim",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ayberk",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Aydin",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ayhan",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Azat",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Bahadir",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Bahtiyar",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Bakir",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Behram",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Berkant",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Bilal",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Bülent",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Burak",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Burhan",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Demir",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Deniz",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Doruk",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Dursun",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ekrem",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Emre",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ensar",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Erkin",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Eslem",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Evren",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Fahri",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Faysal",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Firat",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Gorkem",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Guvenj",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Hakan",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Halil",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Hamit",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jafer",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jahid",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jebrail",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jelal",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jevahir",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jevat",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jihangir",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Juneyt",
+      "gender": "m",
+      "meaning": ""
+    }
+  ],
   "surnames": [],
   "surname_rules": [],
   "patronymic_rules": []
