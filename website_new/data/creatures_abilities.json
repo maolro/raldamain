@@ -3495,5 +3495,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Una emoción de tu elección se potenciará en el afectado, dándole el efecto Miedo I, Confusión I, Fatiga I o quitándole esos mismos efectos."
+  },
+  {
+    "id": "ab_1793455613789",
+    "name": "Cuerpo Ácido",
+    "type": "passive",
+    "tier": "",
+    "tags": [
+      "Acido"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Ácido, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) y corroe los materiales por los que pasa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW daño Ácido de manera automática. No obstante, al estar hecho de líquido quedará congelado una ronda si sufre daño Frío y un elementalista de Ácido o Agua puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo."
   }
 ]
