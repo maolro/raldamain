@@ -3,6 +3,72 @@
   "name": "Iskarianos",
   "description": "",
   "format": "{name} {surname}",
-  "names": [],
+  "names": [
+    {
+      "name": "Byungho",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Daejung",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Doyun",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Hayun",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Hyunwu",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ilseong",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jaesong",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jeongun",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jimin",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jiwon",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Minkyu",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Seojin",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Yunwu",
+      "gender": "m",
+      "meaning": ""
+    }
+  ],
   "surnames": []
 }
