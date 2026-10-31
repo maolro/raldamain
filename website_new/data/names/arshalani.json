@@ -5,24 +5,19 @@
   "format": "{name} {surname}",
   "names": [
     {
-      "name": "Chandrial",
-      "gender": "m",
-      "meaning": "Voz de luz"
-    },
-    {
-      "name": "Rûstem",
-      "gender": "m",
-      "meaning": "Héroe de hierro"
-    },
-    {
       "name": "Bahram",
       "gender": "m",
       "meaning": "Marcial, guerrero-planeta"
     },
     {
-      "name": "Timûr",
+      "name": "Chandrial",
       "gender": "m",
-      "meaning": "Hierro"
+      "meaning": "Voz de luz"
+    },
+    {
+      "name": "Dilawer",
+      "gender": "m",
+      "meaning": "Valeroso, de corazón audaz"
     },
     {
       "name": "Ferzan",
@@ -35,11 +30,6 @@
       "meaning": "De los reyes"
     },
     {
-      "name": "Şivan",
-      "gender": "m",
-      "meaning": "Pastor"
-    },
-    {
       "name": "Mirzan",
       "gender": "m",
       "meaning": "Príncipe de la luz"
@@ -50,14 +40,19 @@
       "meaning": "Recién nacido, el heredero"
     },
     {
-      "name": "Zerdeşt",
+      "name": "Rûstem",
       "gender": "m",
-      "meaning": "Profeta de la llama dorada"
+      "meaning": "Héroe de hierro"
     },
     {
-      "name": "Dilawer",
+      "name": "Şivan",
       "gender": "m",
-      "meaning": "Valeroso, de corazón audaz"
+      "meaning": "Pastor"
+    },
+    {
+      "name": "Timûr",
+      "gender": "m",
+      "meaning": "Hierro"
     },
     {
       "name": "Xosraw",
@@ -65,9 +60,19 @@
       "meaning": "Rey de reyes"
     },
     {
-      "name": "Şehrazad",
+      "name": "Zerdeşt",
+      "gender": "m",
+      "meaning": "Profeta de la llama dorada"
+    },
+    {
+      "name": "Derya",
       "gender": "f",
-      "meaning": "Libre como la ciudad, elocuente"
+      "meaning": "El mar, la inmensidad"
+    },
+    {
+      "name": "Gohar",
+      "gender": "f",
+      "meaning": "Joya, piedra preciosa"
     },
     {
       "name": "Gulnaz",
@@ -75,9 +80,14 @@
       "meaning": "Gracia de flor"
     },
     {
-      "name": "Rûniya",
+      "name": "Hêvîdar",
       "gender": "f",
-      "meaning": "Ella de la luz"
+      "meaning": "Portadora de esperanza"
+    },
+    {
+      "name": "Leyla",
+      "gender": "f",
+      "meaning": "La noche, la amada nocturna"
     },
     {
       "name": "Nîlufar",
@@ -90,19 +100,14 @@
       "meaning": "Las Pléyades"
     },
     {
-      "name": "Zahra",
+      "name": "Rûniya",
       "gender": "f",
-      "meaning": "Flor radiante"
+      "meaning": "Ella de la luz"
     },
     {
-      "name": "Leyla",
+      "name": "Şehrazad",
       "gender": "f",
-      "meaning": "La noche, la amada nocturna"
-    },
-    {
-      "name": "Derya",
-      "gender": "f",
-      "meaning": "El mar, la inmensidad"
+      "meaning": "Libre como la ciudad, elocuente"
     },
     {
       "name": "Sîta",
@@ -115,14 +120,9 @@
       "meaning": "Señora"
     },
     {
-      "name": "Hêvîdar",
+      "name": "Zahra",
       "gender": "f",
-      "meaning": "Portadora de esperanza"
-    },
-    {
-      "name": "Gohar",
-      "gender": "f",
-      "meaning": "Joya, piedra preciosa"
+      "meaning": "Flor radiante"
     }
   ],
   "surnames": [
@@ -131,12 +131,12 @@
       "meaning": "Del linaje de Chandrial"
     },
     {
-      "name": "Zinariye",
-      "meaning": "Gente de las fortalezas"
-    },
-    {
       "name": "Rûnahîn",
       "meaning": "Gente de la luz"
+    },
+    {
+      "name": "Zinariye",
+      "meaning": "Gente de las fortalezas"
     }
   ]
 }

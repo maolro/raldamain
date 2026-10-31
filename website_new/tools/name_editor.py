@@ -15,6 +15,7 @@ Culture file:
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 try:
@@ -45,7 +46,9 @@ def _write(p: Path, data):
 
 
 def _key(s: str) -> str:
-    return (s or "").casefold().strip()
+    """Alphabetical key: accents ignored (Şehrazad goes with the S), ñ after n as in Spanish."""
+    s = (s or "").strip().casefold().replace("ñ", "n￿")
+    return "".join(ch for ch in unicodedata.normalize("NFD", s) if not unicodedata.combining(ch))
 
 
 def clean_culture(cid: str, c: dict) -> dict:
@@ -64,8 +67,8 @@ def clean_culture(cid: str, c: dict) -> dict:
             surnames[k] = {"name": name, "meaning": str(s.get("meaning") or "").strip() or surnames.get(k, {}).get("meaning", "")}
     return {"id": cid, "name": str(c.get("name") or cid).strip(), "description": str(c.get("description") or "").strip(),
             "format": c.get("format") if c.get("format") in FORMATS else FORMATS[0],
-            "names": sorted(names.values(), key=lambda n: ("mfu".index(n["gender"]), _key(n["name"]))),
-            "surnames": sorted(surnames.values(), key=lambda s: _key(s["name"]))}
+            "names": sorted(names.values(), key=lambda n: ("mfu".index(n["gender"]), _key(n["name"]), n["name"])),
+            "surnames": sorted(surnames.values(), key=lambda s: (_key(s["name"]), s["name"]))}
 
 
 def rebuild_index() -> list:
@@ -337,7 +340,10 @@ function itemRow(kind, i, e) {
     <input class="inp" value="${esc(e.meaning || '')}" data-kind="${kind}" data-i="${i}" data-k="meaning" placeholder="Significado (opcional)" aria-label="Significado">
     <button type="button" class="x" data-del="${kind}:${i}" title="Quitar">✕</button></div>`;
 }
+// the lists are always shown in alphabetical order (accents ignored, ñ after n), like the server stores them
+const ALPHA = new Intl.Collator('es', { sensitivity: 'base' });
 function column(title, kind, list) {
+  list = [...list].sort((a, b) => ALPHA.compare(a.e.name, b.e.name));
   return `<div class="lb-col"><h4>${title} <small>${list.length}</small></h4>
     ${list.map(({ e, i }) => itemRow(kind, i, e)).join('') || '<p class="lb-empty">Ninguno todavía.</p>'}</div>`;
 }
