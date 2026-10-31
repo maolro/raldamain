@@ -3,6 +3,72 @@
   "name": "Mazarinos",
   "description": "",
   "format": "{name} {surname}",
-  "names": [],
+  "names": [
+    {
+      "name": "Aleksandr",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Anton",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Gennady",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Gleb",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Kasimir",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Leonid",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ludomir",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Maksim",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Mikhail",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Pavel",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Sergey",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Vasil",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Zakhar",
+      "gender": "m",
+      "meaning": ""
+    }
+  ],
   "surnames": []
 }
