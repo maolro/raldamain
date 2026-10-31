@@ -3,6 +3,37 @@
   "name": "Mazarinos",
   "description": "",
   "format": "{name} {surname}",
-  "names": [],
+  "names": [
+    {
+      "name": "Armel",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Arzhor",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Emil",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Henri",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Sylvain",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Thibaut",
+      "gender": "m",
+      "meaning": ""
+    }
+  ],
   "surnames": []
 }
