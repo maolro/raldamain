@@ -1122,10 +1122,10 @@
     "damage": "",
     "damage_tier": "",
     "damage_base_type": "",
-    "save": "",
+    "save": "MEN +MOD",
     "move": "",
     "attacks": 1,
-    "desc": "El afectado debe tener éxito en un tiro MEN +MOD o tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él."
+    "desc": "El afectado tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él."
   },
   {
     "id": "ab_1793016212873",

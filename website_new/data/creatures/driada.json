@@ -99,8 +99,8 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "cost": 1,
-      "desc": "El afectado debe tener éxito en un tiro MEN +7 + 2d6 o tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él.",
+      "cost": "1",
+      "desc": "El afectado tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él.",
       "name": "Sugestión",
       "tags": [
         "Mental"
@@ -108,7 +108,16 @@
       "ability_id": "ab_1793016178131",
       "mod_tpl": {
         "desc": "El afectado debe tener éxito en un tiro MEN +MOD o tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él."
-      }
+      },
+      "type": "action",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "MEN +MOD",
+      "move": ""
     }
   ],
   "reactions": [

@@ -84,7 +84,7 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "cost": 1,
+      "cost": "1",
       "desc": "El afectado tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él.",
       "name": "Sugestión",
       "tags": [
@@ -94,7 +94,15 @@
       "mod_tpl": {
         "save": "MEN +MOD"
       },
-      "save": "MEN +7 + 2d6"
+      "save": "MEN +MOD",
+      "type": "action",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "move": ""
     }
   ],
   "reactions": [
