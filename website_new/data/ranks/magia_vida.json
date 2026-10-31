@@ -133,13 +133,10 @@
           "name": "Luz Viviente",
           "tags": [
             "Vida",
-            "Defensiva",
-            "Duradera"
+            "Reacción"
           ],
-          "cost": "2 acciones, 2 chi",
-          "duration": "Concentración",
-          "desc": "Tu cuerpo irradia luz viviente. Tu Velocidad aumenta en +1 y puedes usar una Reacción defensiva adicional por ronda. Obtienes Ventaja en tiros de Esquiva usando Magia de Vida.",
-          "empower": "Evasión: reduces el daño recibido a la mitad, desenganchas y te mueves 1 paso."
+          "cost": "1 Reacción, 1 Chi",
+          "desc": "Te transformas en luz, evitando automáticamente un ataque enemigo y teletransportándote a otra posición a distancia media. Esta habilidad no funciona si te encuentras en un lugar a oscuras ni contra ataques de área del tamaño suficiente."
         },
         {
           "name": "Sanación Superior",
@@ -148,11 +145,10 @@
             "Curación",
             "Toque"
           ],
-          "cost": "1 acción, 2 chi",
-          "range": "Cuerpo a cuerpo",
-          "duration": "Instantáneo",
-          "desc": "Curas Vitalidad y PV iguales a Rango + 2. Además, puedes reducir Herido (permanente) 2 pasos o eliminar completamente una Aflicción o Maldición.",
-          "empower": "Puedes lanzarlo como acción bonus sobre ti mismo o afectar a un objetivo adicional."
+          "cost": "1 Acción, 2 Chi",
+          "range": "Adyacente",
+          "desc": "El objetivo recupera 2 Impactos y se cura de todos los efectos de estado que tenga activos. ",
+          "empower": "Afecta a un objetivo adicional."
         },
         {
           "name": "Telaraña de Vida",
@@ -161,11 +157,21 @@
             "Curación",
             "Ambiental"
           ],
-          "cost": "2 acciones, 2 chi",
+          "cost": "2 Acciones, 2 Chi",
           "area": "Radio medio",
           "duration": "Concentración",
-          "desc": "Generas una red de energía vital en el área. Obtienes Ventaja en tiros de Vida y vista ciega para detectar criaturas vivas. Tus hechizos de sanación curan +2 adicional y su alcance aumenta a corto.",
-          "empower": "Lanzas un hechizo de Sanación como acción bonus."
+          "desc": "urante el resto del combate recibes Ventaja en todos tus tiros de Magia de Vida y aumenta su daño base de habilidades de Vida por un dado adicional. El espacio a distancia grande brillará con luz, requiriendo que todos los efectos Sombríos te superen en un tiro enfrentado además que no podrán crearse No-Muertos.",
+          "show_mod": true,
+          "toggle": {
+            "label": "Telaraña de Vida",
+            "damage": "+1 dado",
+            "damage_tags": [
+              "Vida"
+            ],
+            "adv_tags": [
+              "Vida"
+            ]
+          }
         }
       ]
     },
