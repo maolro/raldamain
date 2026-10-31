@@ -1,0 +1,150 @@
+{
+  "id": "chothgar",
+  "name": "Chothgar",
+  "description": "Pueblo guerrero creado por el Imperio Nataneo: nombre personal y apellido.",
+  "format": "{name} {surname}",
+  "names": [
+    {
+      "name": "Dahrum",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Kharun",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Khutarul",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Makaan",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Murakh",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Rakhzan",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Rumakh",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Tagur",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ulgaar",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Zakhur",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Beruda",
+      "gender": "f",
+      "meaning": ""
+    },
+    {
+      "name": "Darusha",
+      "gender": "f",
+      "meaning": ""
+    },
+    {
+      "name": "Khalzura",
+      "gender": "f",
+      "meaning": ""
+    },
+    {
+      "name": "Murketh",
+      "gender": "f",
+      "meaning": ""
+    },
+    {
+      "name": "Makshira",
+      "gender": "f",
+      "meaning": ""
+    },
+    {
+      "name": "Ruksa",
+      "gender": "f",
+      "meaning": ""
+    },
+    {
+      "name": "Ruthena",
+      "gender": "f",
+      "meaning": ""
+    },
+    {
+      "name": "Temulun",
+      "gender": "f",
+      "meaning": ""
+    },
+    {
+      "name": "Urdahra",
+      "gender": "f",
+      "meaning": ""
+    },
+    {
+      "name": "Zakhmira",
+      "gender": "f",
+      "meaning": ""
+    }
+  ],
+  "surnames": [
+    {
+      "name": "Dahru",
+      "meaning": ""
+    },
+    {
+      "name": "Galakh",
+      "meaning": ""
+    },
+    {
+      "name": "Khagan",
+      "meaning": ""
+    },
+    {
+      "name": "Murran",
+      "meaning": ""
+    },
+    {
+      "name": "Ruun",
+      "meaning": ""
+    },
+    {
+      "name": "Turash",
+      "meaning": ""
+    },
+    {
+      "name": "Urdun",
+      "meaning": ""
+    },
+    {
+      "name": "Varakh",
+      "meaning": ""
+    },
+    {
+      "name": "Zakhul",
+      "meaning": ""
+    },
+    {
+      "name": "Zurman",
+      "meaning": ""
+    }
+  ]
+}

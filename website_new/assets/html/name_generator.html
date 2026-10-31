@@ -1,0 +1,128 @@
+<!-- Generador de nombres. Lo usan el editor de nombres (tools/name_editor.py) y, más adelante, la web.
+     Solo lee archivos estáticos: data/names/index.json y data/names/<cultura>.json -->
+<section class="ng-wrap">
+  <div class="ng-pick">
+    <label for="ng-culture">Cultura</label>
+    <select id="ng-culture" class="ng-select"></select>
+  </div>
+  <p class="ng-desc" id="ng-desc"></p>
+
+  <div class="ng-window">
+    <ol class="ng-list" id="ng-list" aria-live="polite"></ol>
+    <div class="ng-buttons">
+      <button type="button" class="ng-btn" data-gender="m">Nombres masculinos</button>
+      <button type="button" class="ng-btn" data-gender="f">Nombres femeninos</button>
+    </div>
+  </div>
+  <p class="ng-hint">Pasa el ratón (o toca) un nombre para ver su significado.</p>
+</section>
+
+<style>
+.ng-wrap { max-width: 820px; margin: 0 auto; padding: 8px 0 24px; font-family: var(--font-body, 'Lato', sans-serif); }
+.ng-pick { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
+.ng-pick label { font-family: var(--font-heading, 'Cinzel', serif); color: var(--accent-gold, #fff200); font-size: 1.05rem; }
+.ng-select { background: var(--secondary-black, #1f1f1f); color: var(--text-main, #f0f0f0); border: 1px solid var(--accent-gold, #fff200);
+  border-radius: 4px; padding: 8px 12px; font-size: 1rem; min-width: 240px; cursor: pointer; font-family: inherit; }
+.ng-select:focus { outline: 2px solid var(--accent-gold, #fff200); outline-offset: 1px; }
+.ng-desc { text-align: center; color: var(--text-muted, #a0a0a0); font-size: 0.9rem; min-height: 1.2em; margin-bottom: 14px; }
+.ng-window { background: var(--secondary-black, #1f1f1f); border: 1px solid var(--accent-gold, #fff200); border-radius: 8px;
+  padding: 24px 16px 20px; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5); }
+.ng-list { list-style: none; margin: 0 0 16px; padding: 0; text-align: center; min-height: 10em; }
+.ng-list li { font-family: var(--font-heading, 'Cinzel', serif); font-weight: 700; color: var(--text-main, #f0f0f0);
+  font-size: clamp(1.15rem, 3.4vw, 1.7rem); line-height: 1.55; }
+.ng-list li + li { border-top: 1px solid #2c2c2c; }
+.ng-list .ng-empty { font-family: var(--font-body, 'Lato', sans-serif); font-weight: 400; font-size: 1rem; color: var(--text-muted, #a0a0a0); }
+/* each part of a name with a meaning shows it on hover / focus / tap */
+.ng-part { position: relative; }
+.ng-part[data-tip] { cursor: help; border-bottom: 1px dotted rgba(255, 242, 0, 0.55); outline: none; }
+.ng-part[data-tip]:hover, .ng-part[data-tip]:focus { color: var(--accent-gold, #fff200); }
+.ng-part[data-tip]:hover::after, .ng-part[data-tip]:focus::after {
+  content: attr(data-tip); position: absolute; left: 50%; bottom: calc(100% + 6px); transform: translateX(-50%); z-index: 5;
+  background: var(--primary-black, #0a0a0a); color: var(--text-main, #f0f0f0); border: 1px solid var(--accent-gold, #fff200);
+  border-radius: 4px; padding: 6px 10px;
+  font-family: var(--font-body, 'Lato', sans-serif); font-weight: 400; font-size: 0.85rem; line-height: 1.35;
+  white-space: normal; width: max-content; max-width: min(280px, 80vw); text-align: left; pointer-events: none; }
+.ng-buttons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.ng-btn { background: var(--secondary-black, #1f1f1f); color: var(--accent-gold, #fff200); border: 1px solid var(--accent-gold, #fff200);
+  border-radius: 4px; padding: 8px 20px; font-size: 0.95rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: all 0.3s; }
+.ng-btn:hover, .ng-btn:focus-visible { background: var(--accent-gold, #fff200); color: var(--primary-black, #0a0a0a); }
+.ng-btn[disabled] { opacity: 0.35; cursor: not-allowed; background: var(--secondary-black, #1f1f1f); color: var(--accent-gold, #fff200); }
+.ng-hint { text-align: center; color: var(--text-muted, #a0a0a0); font-size: 0.8rem; margin-top: 10px; }
+</style>
+
+<script>
+(() => {
+  const BASE = window.NG_DATA || '/data/names/';
+  const COUNT = 10;
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  const cache = {};
+  let culture = null, lastGender = 'm';
+
+  async function getJSON(url) {
+    const r = await fetch(url, { cache: 'no-cache' });
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  }
+  async function load(id) {
+    if (!cache[id]) cache[id] = await getJSON(BASE + encodeURIComponent(id) + '.json');
+    return cache[id];
+  }
+  // n distinct picks from list (repeats only when the list is shorter than n)
+  function pick(list, n) {
+    const out = [], pool = [];
+    while (out.length < n && list.length) {
+      if (!pool.length) pool.push(...list.map((_, i) => i).sort(() => Math.random() - 0.5));
+      out.push(list[pool.pop()]);
+    }
+    return out;
+  }
+  const part = e => e.meaning
+    ? `<span class="ng-part" tabindex="0" data-tip="${esc(e.name + ': ' + e.meaning)}">${esc(e.name)}</span>`
+    : `<span class="ng-part">${esc(e.name)}</span>`;
+
+  function generate(gender) {
+    lastGender = gender;
+    const list = $('ng-list');
+    if (!culture) return;
+    const given = (culture.names || []).filter(n => n.gender === gender || n.gender === 'u');
+    if (!given.length) {
+      list.innerHTML = `<li class="ng-empty">Esta cultura aún no tiene nombres ${gender === 'f' ? 'femeninos' : 'masculinos'}.</li>`;
+      return;
+    }
+    const surnames = culture.surnames || [];
+    const fmt = culture.format || '{name} {surname}';
+    const sur = surnames.length ? pick(surnames, COUNT) : [];
+    list.innerHTML = pick(given, COUNT).map((g, i) => {
+      const s = sur[i];
+      const html = fmt.replace('{name}', part(g)).replace('{surname}', s ? part(s) : '').trim();
+      return `<li>${html}</li>`;
+    }).join('');
+  }
+
+  async function choose(id) {
+    try { culture = await load(id); } catch (e) { $('ng-list').innerHTML = '<li class="ng-empty">No se pudo cargar esta cultura.</li>'; return; }
+    $('ng-desc').textContent = culture.description || '';
+    const has = g => (culture.names || []).some(n => n.gender === g || n.gender === 'u');
+    document.querySelectorAll('.ng-btn').forEach(b => b.disabled = !has(b.dataset.gender));
+    try { localStorage.setItem('raldamain.nombres.cultura', id); } catch (e) {}
+    generate(has(lastGender) ? lastGender : (has('m') ? 'm' : 'f'));
+  }
+
+  document.querySelectorAll('.ng-btn').forEach(b => b.addEventListener('click', () => generate(b.dataset.gender)));
+  $('ng-culture').addEventListener('change', e => choose(e.target.value));
+
+  (async () => {
+    let index = [];
+    try { index = await getJSON(BASE + 'index.json'); } catch (e) {}
+    index = index.filter(c => (c.count || {}).names);
+    if (!index.length) { $('ng-list').innerHTML = '<li class="ng-empty">Aún no hay culturas con nombres.</li>'; return; }
+    $('ng-culture').innerHTML = index.map(c => `<option value="${esc(c.id)}">${esc(c.name)}</option>`).join('');
+    let saved = ''; try { saved = localStorage.getItem('raldamain.nombres.cultura') || ''; } catch (e) {}
+    const first = index.some(c => c.id === saved) ? saved : index[0].id;
+    $('ng-culture').value = first;
+    choose(first);
+  })();
+  window.ngReload = () => { for (const k in cache) delete cache[k]; return choose($('ng-culture').value); };
+})();
+</script>
