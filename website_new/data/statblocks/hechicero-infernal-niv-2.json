@@ -1,0 +1,254 @@
+{
+  "name": "Hechicero Infernal (niv 2)",
+  "level": 2,
+  "race": {},
+  "stats": {
+    "str": {
+      "name": "FUE",
+      "value": 0
+    },
+    "dex": {
+      "name": "DES",
+      "value": 1
+    },
+    "con": {
+      "name": "CON",
+      "value": 2
+    },
+    "itl": {
+      "name": "INT",
+      "value": 2
+    },
+    "wis": {
+      "name": "SAB",
+      "value": 3
+    },
+    "cha": {
+      "name": "CAR",
+      "value": 4
+    }
+  },
+  "talents": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "stat": "dex",
+      "level": 0
+    },
+    "performance": {
+      "name": "Actuación",
+      "stat": "cha",
+      "level": 0
+    },
+    "arcana": {
+      "name": "Arcanismo",
+      "stat": "itl",
+      "level": 0
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "stat": "str",
+      "level": 0
+    },
+    "insight": {
+      "name": "Averiguar Intenciones",
+      "stat": "wis",
+      "level": 0
+    },
+    "focus": {
+      "name": "Concentración",
+      "stat": "itl",
+      "level": 0
+    },
+    "wreck": {
+      "name": "Destrozar",
+      "stat": "str",
+      "level": 0
+    },
+    "deception": {
+      "name": "Engaño",
+      "stat": "cha",
+      "level": 0
+    },
+    "heroics": {
+      "name": "Heroísmo",
+      "stat": "str",
+      "level": 0
+    },
+    "intimidate": {
+      "name": "Intimidar",
+      "stat": "str/cha",
+      "level": 0
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "stat": "dex",
+      "level": 0
+    },
+    "perception": {
+      "name": "Percepción",
+      "stat": "wis",
+      "level": 0
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "stat": "cha",
+      "level": 0
+    },
+    "first-aid": {
+      "name": "Primeros Auxilios",
+      "stat": "wis",
+      "level": 0
+    },
+    "health": {
+      "name": "Salud",
+      "stat": "con",
+      "level": 0
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "stat": "dex",
+      "level": 0
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "stat": "wis",
+      "level": 0
+    },
+    "tinker": {
+      "name": "Trastear",
+      "stat": "itl",
+      "level": 0
+    },
+    "willpower": {
+      "name": "Voluntad",
+      "stat": "cha",
+      "level": 0
+    }
+  },
+  "ranks": [
+    {
+      "id": "ascendencia_infernal",
+      "name": "Ascendencia Infernal",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Ascendencias",
+      "stat": "itl/cha",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "ascendencia_infernal--1--aspecto-infernal,ascendencia_infernal--1--fuerza-del-diablo,ascendencia_infernal--2--arma-profana,ascendencia_infernal--2--magia-negra,ascendencia_infernal--3--alas-demoniacas,ascendencia_infernal--3--siervos-del-contrato,ascendencia_infernal--4--presencia-majestuosa,ascendencia_infernal--4--cadenas-del-contrato,ascendencia_infernal--5--corrupcion-demoniaca,ascendencia_infernal--5--puertas-del-infierno,ascendencia_infernal--6--senor-de-la-sima",
+      "stats": [
+        {
+          "stat": "cha",
+          "rank": 2,
+          "boost": 1
+        },
+        {
+          "stat": "itl",
+          "rank": 4,
+          "boost": 1
+        },
+        {
+          "stat": "con",
+          "rank": 6,
+          "boost": 1
+        }
+      ]
+    },
+    {
+      "id": "magia_fuego",
+      "name": "Magia de Fuego",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Elementalismo",
+      "stat": "cha",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_fuego--1--llamarada,magia_fuego--1--aliento-de-fuego,magia_fuego--1--fuego-interno,magia_fuego--2--muro-de-llamas,magia_fuego--2--bola-de-fuego,magia_fuego--2--infusion-de-fuego,magia_fuego--3--erupcion-abrasadora,magia_fuego--3--propulsion,magia_fuego--3--elemento-del-poder,magia_fuego--4--renacer-del-fenix,magia_fuego--4--torbellino-de-fuego,magia_fuego--4--maestro-de-las-llamas,magia_fuego--5--lluvia-de-brasas,magia_fuego--5--rayo-de-plasma,magia_fuego--5--llama-viviente,magia_fuego--6--forma-elemental",
+      "stats": [
+        {
+          "stat": "cha",
+          "rank": 4,
+          "boost": 1
+        },
+        {
+          "stat": "con",
+          "rank": 6,
+          "boost": 1
+        }
+      ],
+      "parry_tag": "Fuego",
+      "parry_name": "Parada mágica",
+      "parry_against": "Fuego, Frío, Radiante, Agua y Naturaleza"
+    },
+    {
+      "id": "magia_divina",
+      "name": "Magia Divina",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Religión",
+      "stat": "itl/wis",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_divina--1--milagro-menor,magia_divina--1--enviado-de-los-dioses,magia_divina--1--oracion,magia_divina--2--manifestacion-divina,magia_divina--2--consagrar-la-tierra,magia_divina--2--canalizar-divinidad,magia_divina--3--adivinacion,magia_divina--3--guardian-de-la-fe,magia_divina--4--castigo-divino,magia_divina--4--llamar-a-los-dioses,magia_divina--5--palabra-divina,magia_divina--5--exaltado,magia_divina--6--ira-de-dios"
+    }
+  ],
+  "spells": {
+    "patron": {
+      "name": "",
+      "domains": [],
+      "damage_type": ""
+    },
+    "picks": {}
+  },
+  "equipment": {
+    "armor": {
+      "eqab": "",
+      "name": "Ligera",
+      "penalty": 0,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 2
+        }
+      ]
+    },
+    "mainHand": {
+      "eqab": "daga",
+      "name": "Daga",
+      "styles": [
+        "asesino"
+      ]
+    },
+    "secondHand": {},
+    "head": {},
+    "bag": []
+  },
+  "archetypes": []
+}

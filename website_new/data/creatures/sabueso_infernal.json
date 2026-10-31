@@ -1,0 +1,156 @@
+{
+  "id": "sabueso_infernal",
+  "name": "Sabueso Infernal",
+  "type": "Infernal",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 16,
+      "categories": "Físico, Fuego, Frío"
+    },
+    {
+      "value": 12,
+      "categories": "Magia"
+    }
+  ],
+  "immune": [
+    "Aflicciones",
+    "Mentales",
+    "Miedo"
+  ],
+  "senses": "Visión en la Oscuridad",
+  "speed": "Paso 2",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca 2d6 daño adicional de un elemento de su elección en ataques naturales.",
+      "name": "Infernal",
+      "tags": [
+        "Infernal",
+        "Innata"
+      ],
+      "ability_id": "ab_1793366059338",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca DD daño adicional de un elemento de su elección en ataques naturales."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage": "3d6 + 5 Perforante",
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "desc": "Provoca 2d6 daño Fuego adicional. El objetivo está Enredado (+7 + 2d6 FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada. ",
+      "name": "Mordisco",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1793008689989",
+      "mod_tpl": {
+        "desc": "Provoca DD daño Fuego adicional. El objetivo está Enredado (+MOD FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada. "
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "area": "Cono pequeño",
+      "bonus_scaled": true,
+      "cost": "2",
+      "damage_base_type": "Fuego",
+      "damage_tier": "HIGH",
+      "desc": "Quema los objetos inflamables en el área afectada. ",
+      "name": "Aliento de Fuego",
+      "range": "1",
+      "tags": [
+        "Fuego",
+        "Ataque",
+        "Area"
+      ],
+      "ability_id": "aliento-de-fuego_1778692098257",
+      "damage": "3d6 + 5 Fuego",
+      "bonus": "+7 + 2d6",
+      "type": "action"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +7 + 2d6 o es empujado un paso y cae Tropezado.",
+      "name": "Ataque Poderoso",
+      "tags": [
+        "Mejora",
+        "Maniobra",
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "ab_1791812854218",
+      "mod_tpl": {
+        "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +MOD o es empujado un paso y cae Tropezado."
+      },
+      "bonus": "+7 + 2d6"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "En respuesta a que un enemigo se aleje, puede moverse un paso para perseguirlo y hacerle un ataque inmediato contra el cual tendrá Desventaja defendiéndose",
+      "name": "Persecución",
+      "tags": [
+        "Marcial"
+      ],
+      "ability_id": "ab_1793014811103"
+    },
+    {
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "enjambre_de_ratas",
+  "name": "Enjambre de Ratas",
+  "type": "Bestia",
+  "size": "Grande",
+  "level": 2,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5+1d6",
+    "VOL": "+5+1d6",
+    "MEN": "+2"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General"
+    }
+  ],
+  "immune": [
+    "Fisicos",
+    "Aflicciones",
+    "Mentales",
+    "Miedo"
+  ],
+  "senses": "Visión en la Oscuridad",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "La criatura es un enjambre de criaturas más pequeñas, recibiendo Inmunidad a efectos Físicos, Aflicciones, Mentales y Miedo. No obstante, el daño de ataques de Área contará como si fuera Fuerza y no puede aumentar sus umbrales Físico o Mágico de ninguna manera.",
+      "name": "Enjambre",
+      "tags": [
+        "Pasiva"
+      ],
+      "ability_id": "ab_1793209340719"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Cada vez que impacte con un ataque físico, el afectado deberá tener éxito en un tiro VOL +5 + 1d6 o está infectado con una Plaga. Mientras permanezca infectado, no podrá recibir Sanación y cada día deberá repetir el tiro o reducirá sus impactos máximos por 1 y recibe Enfermado I. Si tiene dos éxitos, se recuperará de la plaga, pero hasta que lo haga puede infectar a otros aunque no tenga ningún efecto negativo.",
+      "name": "Plaga",
+      "tags": [
+        "Pasiva",
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793181221119",
+      "mod_tpl": {
+        "desc": "Cada vez que impacte con un ataque físico, el afectado deberá tener éxito en un tiro VOL +MOD o está infectado con una Plaga. Mientras permanezca infectado, no podrá recibir Sanación y cada día deberá repetir el tiro o reducirá sus impactos máximos por 1 y recibe Enfermado I. Si tiene dos éxitos, se recuperará de la plaga, pero hasta que lo haga puede infectar a otros aunque no tenga ningún efecto negativo."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Desprende un hedor putrefacto, provocando que toda criatura que empiece su turno en un espacio a distancia cercana o entre ahí deba tener éxito en un tiro VOL +5 + 1d6 o sufre Enfermado I durante una ronda. Si la criatura tiene éxito, no puede volver a ser afectada por esta habilidad.",
+      "name": "Hedor Putrefacto",
+      "tags": [
+        "Pasiva",
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793182921388",
+      "mod_tpl": {
+        "desc": "Desprende un hedor putrefacto, provocando que toda criatura que empiece su turno en un espacio a distancia cercana o entre ahí deba tener éxito en un tiro VOL +MOD o sufre Enfermado I durante una ronda. Si la criatura tiene éxito, no puede volver a ser afectada por esta habilidad."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": "1",
+      "damage": "2d6 + 4 Perforante",
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "name": "Aguijón",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1791818158790",
+      "bonus": "",
+      "desc": "Provoca los efectos de Plaga",
+      "type": "action",
+      "area": "",
+      "save": "",
+      "move": ""
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El objetivo está Enfermado I y el Enjambre se engancha a él, haciendo que le siga en sus movimientos. Solo puede quitarse el enjambre si les provoca un Impacto o entra en un entorno en el que no pueden sobrevivir como agua. Esta habilidad solo puede ser usada por Enjambres.",
+      "name": "Enjambre Devorador",
+      "tags": [
+        "Ataque",
+        "Agarre"
+      ],
+      "ability_id": "ab_1793209910460"
+    }
+  ],
+  "reactions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Dispersa su cuerpo por completo, evitando automáticamente un efecto que le tenga como objetivo explícito. Solo puede ser usada por Incorpóreos o Enjambres",
+      "name": "Dispersión",
+      "tags": [
+        "Defensiva"
+      ],
+      "ability_id": "ab_1793209849456"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

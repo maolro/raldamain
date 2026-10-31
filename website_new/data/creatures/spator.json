@@ -1,0 +1,143 @@
+{
+  "id": "spator",
+  "name": "Spator",
+  "type": "Infernal",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General"
+    },
+    {
+      "value": 16,
+      "categories": "Físico, Fuego, Frío"
+    },
+    {
+      "value": 12,
+      "categories": "Magia"
+    }
+  ],
+  "immune": [
+    "Aflicciones",
+    "Miedo",
+    "Mentales"
+  ],
+  "senses": "Visión en la Oscuridad",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca 2d6 daño adicional de un elemento de su elección en ataques naturales.",
+      "name": "Infernal",
+      "tags": [
+        "Infernal",
+        "Innata"
+      ],
+      "ability_id": "ab_1793366059338",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca DD daño adicional de un elemento de su elección en ataques naturales."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +7 + 2d6 o sufre un Veneno Mortal. Mientras permanezca envenenado, sufre 2d6 daño Necrótico y Enfermado I, y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo.",
+      "name": "Veneno Mortal",
+      "tags": [
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793203194188",
+      "mod_tpl": {
+        "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Mortal. Mientras permanezca envenenado, sufre DD daño Necrótico y Enfermado I, y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "name": "Lanza",
+      "range": "Medio",
+      "tags": [
+        "Arma",
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793104226616",
+      "damage": "3d6 + 5 Perforante",
+      "bonus": "+7 + 2d6",
+      "desc": "Provoca 2d6 daño Fuego adicional al impactar y Veneno Mortal."
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Aumenta el daño de un ataque por un dado y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro FÍS +7 + 2d6 o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo.",
+      "name": "Gran Barrido",
+      "tags": [
+        "Mejora",
+        "Maniobra",
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "ab_1791813129637",
+      "mod_tpl": {
+        "desc": "Aumenta el daño de un ataque por un dado y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro FÍS +MOD o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo."
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "cost": 1,
+      "desc": "Se mueve hasta un paso para interceptar un ataque hecho contra un aliado, pudiendo así emplear su tiro defensivo en lugar del suyo y recibir el daño del ataque si falla.",
+      "name": "Proteger Aliado",
+      "tags": [
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "proteger-aliado_1791462080348"
+    },
+    {
+      "ability_id": "salto-espacial_1778751219905",
+      "cost": 1,
+      "desc": "Añade +10 a su tiro de Esquiva y se teletransporta un paso al moverse.",
+      "name": "Salto Espacial",
+      "tags": [
+        "Espacial",
+        "Arcano"
+      ]
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

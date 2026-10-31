@@ -1,0 +1,144 @@
+{
+  "id": "golem_guardian",
+  "name": "Gólem Guardián",
+  "type": "Constructo",
+  "size": "Grande",
+  "level": 11,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+11+3d6",
+    "VOL": "+11+3d6",
+    "MEN": "+11"
+  },
+  "umbrales": [
+    {
+      "value": 15,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 20,
+      "categories": "Magia"
+    },
+    {
+      "value": 25,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [
+    "Aflicciones",
+    "Necrótico",
+    "Miedo",
+    "Mentales",
+    "Sanación",
+    "Moral"
+  ],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es un Constructo, recibiendo así Inmunidad a efectos Necróticos, Aflicciones, Mentales y Miedo, además que aumenta su Umbral Mágico por un paso. No obstante, no puede ser curado salvo por habilidades que lo especifiquen ni puede ser afectado por efectos de Presencia.",
+      "name": "Constructo",
+      "tags": [
+        "Pasiva",
+        "Innato"
+      ],
+      "ability_id": "ab_1793293889388"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Tiene a su alrededor un Campo Antimágico que le hace Inmune a efectos Arcanos de Rango 4 o menos y deshabilita objetos mágicos a distancia cercana. ",
+      "name": "Campo Antimágico",
+      "tags": [
+        "Protectora",
+        "Arcano"
+      ],
+      "ability_id": "ab_1793317397892",
+      "mod_tpl": {
+        "desc": "Tiene a su alrededor un Campo Antimágico que le hace Inmune a efectos Arcanos de Rango TIER o menos y deshabilita objetos mágicos a distancia cercana. "
+      }
+    }
+  ],
+  "actions": [
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Contundente",
+      "name": "Gran Golpe",
+      "range": "Adyacente",
+      "tags": [
+        "Arma",
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793316582629",
+      "damage": "4d8 + 7 Contundente",
+      "bonus": "+11 + 3d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Se mueve tanto como tu velocidad y ataca a cada enemigo en tu camino, aumentando el daño base de su ataque por un dado y empujando al impactar. Este ataque romperá también todas las barreras a su paso.",
+      "name": "Carga Poderosa",
+      "tags": [
+        "Coloso",
+        "Mejora",
+        "Marcial"
+      ],
+      "ability_id": "ab_1793208280826"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque aumenta su daño base por dos dados, y al impactar provoca Roto II al objetivo. Si el objetivo logra detener su ataque con su arma, puede romperle esa misma si es de dureza menor.",
+      "name": "Golpe Demoledor",
+      "tags": [
+        "Coloso",
+        "Mejora",
+        "Marcial"
+      ],
+      "ability_id": "ab_1793208339829"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada ",
+      "desc": "",
+      "bonus": "+11+2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Protege a todos en un radio corto, absorbiendo 24 puntos de daño. Si es impactado por un arma no-mágica, esta se romperá.",
+      "name": "Piel de Piedra",
+      "tags": [
+        "Tierra"
+      ],
+      "ability_id": "ab_1793294428604",
+      "mod_tpl": {
+        "desc": "Protege a todos en un radio corto, absorbiendo TIER x 6 puntos de daño. Si es impactado por un arma no-mágica, esta se romperá."
+      }
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

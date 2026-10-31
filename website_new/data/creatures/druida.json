@@ -1,0 +1,149 @@
+{
+  "id": "druida",
+  "name": "Druida",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7",
+    "VOL": "+7+2d6",
+    "MEN": "+7+1d6"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General"
+    },
+    {
+      "value": 8,
+      "categories": "Magia"
+    },
+    {
+      "value": 12,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [],
+  "senses": "Olfato, Visión en Oscuridad",
+  "speed": "Paso",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "damage_base_type": "Cortante/Perforante",
+      "damage_tier": "LOW",
+      "desc": "Cuenta como daño Fuerza al atacar a objetivos Enredados o Agarrados por efectos de Naturaleza.",
+      "name": "Espina de Madera",
+      "range": "Medio",
+      "tags": [
+        "Naturaleza",
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793031825227",
+      "damage": "2d6 + 5 Cortante/Perforante"
+    },
+    {
+      "area": "Cilindro Medio",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "damage_base_type": "Contundente",
+      "damage_tier": "MID",
+      "desc": "Los objetivos quedan Enredados hasta que escapen (FÍS +7 + 2d6). Aquellos en contacto con el suelo o con plantas tienen Desventaja defendiéndose. ",
+      "name": "Raíces Devoradoras",
+      "range": "Medio",
+      "tags": [
+        "Naturaleza",
+        "Ataque",
+        "Area"
+      ],
+      "ability_id": "ab_1793032852453",
+      "mod_tpl": {
+        "desc": "Los objetivos quedan Enredados hasta que escapen (FÍS +MOD). Aquellos en contacto con el suelo o con plantas tienen Desventaja defendiéndose. "
+      },
+      "damage": "3d6 + 5 Contundente"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Cura un Impacto o se recupera de un efecto de estado. ",
+      "name": "Pulso Vital",
+      "range": "Adyacente",
+      "tags": [
+        "Naturaleza",
+        "Sanacion"
+      ],
+      "ability_id": "ab_1793032184478"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Todos los objetivos deben tener éxito en un tiro MEN +7 + 2d6 o quedan Desconcertados durante una ronda. Podrán repetir el tiro si ocurre un suceso que les saque de la distracción, como sería sufrir daño.",
+      "name": "Distracción Ilusoria",
+      "range": "Radio Corto",
+      "tags": [
+        "Ilusorio"
+      ],
+      "ability_id": "ab_1793023582030",
+      "mod_tpl": {
+        "desc": "Todos los objetivos deben tener éxito en un tiro MEN +MOD o quedan Desconcertados durante una ronda. Podrán repetir el tiro si ocurre un suceso que les saque de la distracción, como sería sufrir daño."
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada Elemental",
+      "cost": 1,
+      "desc": "",
+      "bonus": "+7 + 2d6",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Crea un muro que protege a todos en su alcance, absorbiendo 6 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro FÍS +7 + 2d6 o sufren 2d6 + 5 daño Perforante y quedan Enredados.",
+      "name": "Muro de Zarzas",
+      "tags": [
+        "Naturaleza",
+        "Muro"
+      ],
+      "ability_id": "ab_1793032320692",
+      "mod_tpl": {
+        "desc": "Crea un muro que protege a todos en su alcance, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro FÍS +MOD o sufren LOW daño Perforante y quedan Enredados."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Se oculta de tal manera que es Invisible, impidiendo que pueda ser detectado. Debe encontrarse bajo cubierta u ocultamiento para emplear esta habilidad, y sus efectos acabarán cuando ataque.",
+      "name": "Acechar",
+      "tags": [
+        "Rastrear"
+      ],
+      "ability_id": "ab_1793014889431"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "FÍS": "low",
+    "VOL": "bonus",
+    "MEN": "mid"
+  }
+}

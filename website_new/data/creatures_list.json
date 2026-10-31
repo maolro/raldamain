@@ -9,93 +9,12 @@
     "description": ""
   },
   {
-    "id": "elemental_fuego_anciano",
-    "name": "Elemental de Fuego Primigenio",
-    "type": "Espíritu",
-    "level": 11,
-    "size": "Gigante",
-    "image": "creatures/elemental_fuego.jpg",
-    "description": ""
-  },
-  {
     "id": "elemental_agua",
     "name": "Elemental de Agua",
     "type": "Espíritu",
     "level": 5,
     "size": "Grande",
     "image": "creatures/elemental_agua.jpg",
-    "description": ""
-  },
-  {
-    "id": "elemental_agua_anciano",
-    "name": "Elemental de Agua Primigenio",
-    "type": "Espíritu",
-    "level": 11,
-    "size": "Gigante",
-    "image": "creatures/elemental_agua.jpg",
-    "description": ""
-  },
-  {
-    "id": "elemental_aire",
-    "name": "Elemental de Aire",
-    "type": "Espíritu",
-    "level": 5,
-    "size": "Grande",
-    "image": "creatures/elemental_aire.jpg",
-    "description": ""
-  },
-  {
-    "id": "elemental_aire_anciano",
-    "name": "Elemental de Aire Primigenio",
-    "type": "Espíritu",
-    "level": 11,
-    "size": "Gigante",
-    "image": "creatures/elemental_aire.jpg",
-    "description": ""
-  },
-  {
-    "id": "elemental_tierra",
-    "name": "Elemental de Tierra",
-    "type": "Espíritu",
-    "level": 5,
-    "size": "Grande",
-    "image": "creatures/elemental_tierra.jpg",
-    "description": ""
-  },
-  {
-    "id": "elemental_tierra_anciano",
-    "name": "Elemental de Tierra Primigenio",
-    "type": "Espíritu",
-    "level": 11,
-    "size": "Colosal",
-    "image": "creatures/elemental_tierra.jpg",
-    "description": ""
-  },
-  {
-    "id": "usiu",
-    "name": "Usiu, Sabueso Celestial",
-    "type": "Celestial",
-    "level": 5,
-    "size": "Mediano",
-    "image": "",
-    "description": "Espíritus celestiales que poseen el cuerpo de perros. Son extremadamente leales a sus amos y su manada, luchando a su lado hasta el final y protegiéndolos del mal."
-  },
-  {
-    "id": "aucuses",
-    "name": "Aucuses",
-    "type": "Celestial",
-    "level": 11,
-    "size": "Mediano",
-    "image": "",
-    "description": ""
-  },
-  {
-    "id": "planta_carnivora_gigante",
-    "name": "Planta Carnívora Gigante",
-    "type": "Planta",
-    "level": 11,
-    "size": "Enorme",
-    "image": "",
     "description": ""
   },
   {
@@ -135,15 +54,6 @@
     "description": ""
   },
   {
-    "id": "demilich",
-    "name": "Demilich",
-    "type": "No-muerto",
-    "level": 17,
-    "size": "Pequeño",
-    "image": "",
-    "description": ""
-  },
-  {
     "id": "kurungor",
     "name": "Kurungor",
     "type": "Abisal",
@@ -156,15 +66,6 @@
     "id": "tirano_sombrio",
     "name": "Tirano Sombrío",
     "type": "Abisal",
-    "level": 20,
-    "size": "Mediano",
-    "image": "",
-    "description": ""
-  },
-  {
-    "id": "empireo",
-    "name": "Empíreo",
-    "type": "Celestial",
     "level": 20,
     "size": "Mediano",
     "image": "",
@@ -189,24 +90,6 @@
     "description": ""
   },
   {
-    "id": "maton",
-    "name": "Matón",
-    "type": "Humanoide",
-    "level": 2,
-    "size": "Mediano",
-    "image": "",
-    "description": ""
-  },
-  {
-    "id": "saboteador",
-    "name": "Saboteador",
-    "type": "Humanoide",
-    "level": 2,
-    "size": "Mediano",
-    "image": "",
-    "description": ""
-  },
-  {
     "id": "veterano",
     "name": "Veterano",
     "type": "Humanoide",
@@ -225,12 +108,165 @@
     "description": ""
   },
   {
-    "id": "urkon",
-    "name": "Urkon",
-    "type": "Abisal",
-    "level": 2,
-    "size": "Pequeño",
+    "id": "elemental_de_planta",
+    "name": "Elemental de Planta",
+    "type": "Espíritu",
+    "level": 5,
+    "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "driada",
+    "name": "Dríada",
+    "type": "Espíritu",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "sabueso_infernal",
+    "name": "Sabueso Infernal",
+    "type": "Infernal",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "spator",
+    "name": "Spator",
+    "type": "Infernal",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "lobo_invernal",
+    "name": "Lobo Invernal",
+    "type": "Espíritu",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "oso",
+    "name": "Oso",
+    "type": "Bestia",
+    "level": 5,
+    "size": "Grande",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "aguila_gigante",
+    "name": "Águila Gigante",
+    "type": "Bestia",
+    "level": 5,
+    "size": "Grande",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "rinoceronte",
+    "name": "Rinoceronte",
+    "type": "Bestia",
+    "level": 8,
+    "size": "Grande",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "pulpo_gigante",
+    "name": "Pulpo Gigante",
+    "type": "Bestia",
+    "level": 8,
+    "size": "Grande",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "samsotiq",
+    "name": "Samsotiq",
+    "type": "Abisal",
+    "level": 8,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "ulataaki",
+    "name": "Ulataaki",
+    "type": "Abisal",
+    "level": 8,
+    "size": "Grande",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "golem_guardian",
+    "name": "Gólem Guardián",
+    "type": "Constructo",
+    "level": 11,
+    "size": "Grande",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "automata",
+    "name": "Autómata",
+    "type": "Constructo",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "espectro",
+    "name": "Espectro",
+    "type": "No-muerto",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "sombra",
+    "name": "Sombra",
+    "type": "No-muerto",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "esqueleto",
+    "name": "Esqueleto",
+    "type": "No-muerto",
+    "level": 2,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "gul",
+    "name": "Gul",
+    "type": "No-muerto",
+    "level": 2,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
+  },
+  {
+    "id": "usiu",
+    "name": "Usiu, Sabueso Celestial",
+    "type": "Celestial",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": "Espíritus celestiales que poseen el cuerpo de perros. Son extremadamente leales a sus amos y su manada, luchando a su lado hasta el final y protegiéndolos del mal."
   }
 ]

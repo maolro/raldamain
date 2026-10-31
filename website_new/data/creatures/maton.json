@@ -23,7 +23,7 @@
   ],
   "immune": [],
   "senses": "",
-  "speed": "Paso 8",
+  "speed": "Paso 1",
   "combat": {
     "acciones": 2,
     "reacciones": 1
@@ -39,13 +39,17 @@
         "Ataque",
         "Físico"
       ],
-      "bonus": "+5+1d6",
+      "bonus": "+5 + 1d6",
       "range": "Adyacente",
-      "damage": "2d6 + 4 Contundente"
+      "damage": "2d6 + 4 Contundente",
+      "mod_tpl": {
+        "damage": "MID Contundente",
+        "bonus": "+MOD"
+      }
     },
     {
       "name": "Agarre",
-      "desc": "El objetivo está Agarrado (+5+1d6 FÍS para escapar)",
+      "desc": "El objetivo está Agarrado (+5 + 1d6 FÍS para escapar)",
       "tags": [
         "Coloso",
         "Ataque",
@@ -53,27 +57,45 @@
         "Agarre"
       ],
       "cost": 1,
-      "bonus": "+5+1d6",
-      "range": "Adyacente"
+      "bonus": "+5 + 1d6",
+      "range": "Adyacente",
+      "mod_tpl": {
+        "bonus": "+MOD",
+        "desc": "El objetivo está Agarrado (+MOD FÍS para escapar)"
+      }
     },
     {
-      "name": "Presencia Intimidante",
-      "desc": "Todos los afectados sufren Miedo I esta ronda. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad.",
+      "attacks": 1,
+      "cost": 1,
+      "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +5 + 1d6 o es empujado un paso y cae Tropezado.",
+      "name": "Ataque Poderoso",
+      "tags": [
+        "Mejora",
+        "Maniobra",
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "ab_1791812854218",
+      "mod_tpl": {
+        "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +MOD o es empujado un paso y cae Tropezado.",
+        "bonus": "+MOD"
+      },
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "area": "Radio Medio",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +5 + 1d6 o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior.",
+      "name": "Demostración Terrorífica",
       "tags": [
         "Miedo"
       ],
-      "cost": 1,
-      "area": "Radio Medio",
-      "save": "VOL +5+1d6"
-    },
-    {
-      "name": "Golpe Poderoso",
-      "desc": "El objetivo tira FÍS +5+1d6 o es empujado y recibe Desventaja en su siguiente tiro defensivo. Funciona con objetivos que hayan detenido el ataque con Parada.",
-      "attacks": 1,
-      "cost": 2,
-      "bonus": "+5+1d6",
-      "range": "Adyacente",
-      "damage": "3d6 + 4 Contundente"
+      "ability_id": "ab_1793014679586",
+      "mod_tpl": {
+        "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +MOD o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior."
+      }
     }
   ],
   "reactions": [
@@ -105,5 +127,6 @@
     }
   ],
   "lore": "",
-  "tags": []
+  "tags": [],
+  "published": false
 }

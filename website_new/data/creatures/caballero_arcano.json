@@ -1,0 +1,152 @@
+{
+  "id": "caballero_arcano",
+  "name": "Caballero Arcano",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 8,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+9+1d6",
+    "VOL": "+9+1d6",
+    "MEN": "+9+2d6"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General"
+    },
+    {
+      "value": 15,
+      "categories": "Magia"
+    },
+    {
+      "value": 15,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [],
+  "senses": "Sentido Arcano",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Sus ataques Físicos provocan 3d8 daño Fuego, Frío, Eléctrico o Ácido al impactar, y pueden herir a criaturas Incorpóreas como si fueran ataques mágicos. Puede además cambiar el tipo de daño de sus hechizos como acción bonus al que más le convenga.",
+      "name": "Infusión Arcana",
+      "tags": [
+        "Arcana",
+        "Evocacion"
+      ],
+      "ability_id": "ab_1793279602697",
+      "mod_tpl": {
+        "desc": "Sus ataques Físicos provocan DD daño Fuego, Frío, Eléctrico o Ácido al impactar, y pueden herir a criaturas Incorpóreas como si fueran ataques mágicos. Puede además cambiar el tipo de daño de sus hechizos como acción bonus al que más le convenga."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 2,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Cortante",
+      "damage_tier": "MID",
+      "name": "Espada",
+      "tags": [
+        "Arma",
+        "Fisico",
+        "Ataque"
+      ],
+      "ability_id": "ab_1793105102759",
+      "damage": "3d8 + 6 Cortante",
+      "bonus": "+9 + 2d6",
+      "desc": "Provoca 3d8 daño Fuego, Frío, Eléctrico o Ácido al impactar."
+    },
+    {
+      "attacks": 2,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Arcano",
+      "damage_tier": "MID",
+      "name": "Rayo Arcano",
+      "tags": [
+        "Arcano",
+        "Ataque",
+        "Evocacion"
+      ],
+      "ability_id": "ab_1793279446716",
+      "damage": "2d8 + 6 Arcano",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque afectará a cada objetivo en un radio corto y aumenta su daño por un dado adicional. Además, puede moverse antes o después de atacar sin provocar aperturas.",
+      "name": "Ataque Torbellino",
+      "tags": [
+        "Duelo",
+        "Marcial",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793232469761"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": "1",
+      "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación Físico o sufren LOW daño Fuego, Frío, Ácido o Eléctrico.",
+      "name": "Muro de Energía",
+      "range": "Medio",
+      "tags": [
+        "Arcano",
+        "Evocacion"
+      ],
+      "ability_id": "ab_1793279538632",
+      "mod_tpl": {
+        "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro FÍS +MOD o sufren LOW daño Fuego, Frío, Ácido o Eléctrico."
+      },
+      "type": "reaction",
+      "bonus": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
+    },
+    {
+      "ability_id": "salto-espacial_1778751219905",
+      "cost": "1",
+      "desc": "Añade +10 a su tiro de Esquiva y se teletransporta un paso al moverse.",
+      "name": "Salto Espacial",
+      "tags": [
+        "Espacial",
+        "Arcano"
+      ],
+      "type": "reaction"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "MEN": "bonus",
+    "VOL": "mid",
+    "FÍS": "mid"
+  }
+}

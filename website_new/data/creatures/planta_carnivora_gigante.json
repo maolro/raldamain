@@ -46,7 +46,8 @@
       "tags": [
         "Naturaleza"
       ],
-      "ability_id": "planta_1778930785381"
+      "ability_id": "planta_1778930785381",
+      "type": "passive"
     }
   ],
   "actions": [
@@ -140,5 +141,6 @@
     }
   ],
   "lore": "",
-  "tags": []
+  "tags": [],
+  "published": false
 }

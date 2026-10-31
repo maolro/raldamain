@@ -7,9 +7,9 @@
   "description": "Espíritus celestiales que poseen el cuerpo de perros. Son extremadamente leales a sus amos y su manada, luchando a su lado hasta el final y protegiéndolos del mal.",
   "hits": 2,
   "saves": {
-    "FÍS": "+7+1d6",
-    "VOL": "+7+1d6",
-    "MEN": "+4"
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7"
   },
   "damageThreshold": {
     "magic": 0,
@@ -17,55 +17,80 @@
   },
   "immune": [],
   "senses": "Olfato",
-  "speed": "Paso 10",
+  "speed": "Paso 1",
   "combat": {
     "reacciones": 1,
     "acciones": 1
   },
   "traits": [
     {
-      "name": "Tácticas en Manada",
-      "desc": "Su iniciativa será siempre la más alta entre sus aliados y al atacar junto a ellos el objetivo solo podrá tirar defensa una vez como si fuera una secuencia.",
-      "ability_id": "tacticas-en-manada_1778751341323"
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Celestial, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Radiante además que aumenta su Umbral Mágico por un paso. Tiene Sentido Vital y provoca 2d6 daño adicional con sus ataques físicos de un elemento específico.",
+      "name": "Celestial",
+      "tags": [
+        "Celestial",
+        "Pasiva"
+      ],
+      "ability_id": "ab_1793450265798",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Celestial, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Radiante además que aumenta su Umbral Mágico por un paso. Tiene Sentido Vital y provoca DD daño adicional con sus ataques físicos de un elemento específico."
+      }
     }
   ],
   "actions": [
     {
-      "name": "Mordisco",
-      "desc": "El afectado hace un tiro salvación FÍS +7+1d6 o queda enredado y tropezado. ",
-      "bonus": "+7+2d6",
-      "damage": "4d6 + 5 Perforante/Radiante",
-      "move": 5,
-      "range": "1",
+      "attacks": 1,
+      "bonus_scaled": true,
       "cost": 1,
+      "damage": "3d6 + 5 Perforante",
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "desc": "Provoca 2d6 daño Radiante al impactar. El objetivo está Enredado (+7 + 2d6 FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada.",
+      "name": "Mordisco",
+      "range": "Adyacente",
       "tags": [
         "Ataque",
-        "Fisico"
-      ]
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1793008689989",
+      "mod_tpl": {
+        "desc": "Provoca 2d6 daño Radiante al impactar. El objetivo está Enredado (+MOD FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada."
+      },
+      "bonus": "+7 + 2d6"
     },
     {
-      "name": "Aliento Radiante",
-      "desc": "",
-      "bonus": "+7+2d6",
-      "area": "Cono 8",
-      "damage": "3d6 + 5 Radiante",
-      "range": "1",
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "damage_base_type": "Radiante",
+      "damage_tier": "MID",
+      "desc": "Los afectados sufren Desconcertado I una ronda. Este ataque disipará toda la oscuridad que alcance.",
+      "name": "Halo Cegador",
+      "save": "VOL +7 + 2d6",
       "tags": [
         "Vida",
-        "Ataque",
-        "Area"
+        "Radiante"
       ],
-      "cost": 1
+      "ability_id": "ab_1793450336476",
+      "mod_tpl": {
+        "save": "VOL +MOD"
+      },
+      "damage": "2d6 + 5 Radiante"
     },
     {
+      "cost": 1,
+      "desc": "El objetivo recupera 1 Impacto o se recupera de un efecto de estado.",
       "name": "Toque Sanador",
-      "desc": "El objetivo recupera 8 Vitalidad/1 Impacto y se cura de un efecto de estado negativo.",
-      "range": "1",
+      "range": "Adyacente",
       "tags": [
         "Vida",
         "Sanacion"
       ],
-      "cost": 1
+      "ability_id": "toque-sanador_1778751359599"
     }
   ],
   "reactions": [
@@ -73,31 +98,29 @@
       "desc": "",
       "name": "Esquiva",
       "bonus": "+7 + 2d6",
-      "move": "Se mueve hasta 5 casillas."
+      "mod_tpl": {
+        "bonus": "+MOD"
+      }
     },
     {
-      "name": "Salto Espacial",
-      "desc": "Añade +10 a su tiro de Esquiva y se teletransporta al moverse.",
-      "move": 8,
-      "tags": [
-        "Espacial"
-      ],
-      "ability_id": "salto-espacial_1778751219905"
-    },
-    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Absorbe la mitad de los impactos que recibiría un aliado a distancia media (redondeando hacia arriba). Solo puede establecer un vínculo así con un único aliado.",
       "name": "Vínculo Vital",
-      "desc": "Recibe el daño que sufriría un aliado a distancia 8. Ese daño contará como General para determinar si traspasa su umbral.",
       "tags": [
         "Vida"
       ],
-      "ability_id": "vinculo-vital_1778751231679"
+      "ability_id": "ab_1793450409220"
     },
     {
-      "desc": "Se sana un Impacto y se recupera de un efecto de estado negativo. ",
-      "name": "Sanación Rápida",
-      "ability_id": "sanacion-rapida_1778751268910",
+      "ability_id": "salto-espacial_1778751219905",
+      "cost": 1,
+      "desc": "Añade +10 a su tiro de Esquiva y se teletransporta un paso al moverse.",
+      "name": "Salto Espacial",
       "tags": [
-        "Sanacion"
+        "Espacial",
+        "Arcano"
       ]
     }
   ],
@@ -108,15 +131,24 @@
   "umbrales": [
     {
       "value": 16,
-      "categories": "Físico, Radiante"
+      "categories": "Físico, Radiante",
+      "tier_tpl": "T+2"
     },
     {
       "value": 12,
-      "categories": "Magia"
+      "categories": "Magia",
+      "tier_tpl": "T+1"
     },
     {
       "value": 8,
-      "categories": "General, Necrótico"
+      "categories": "General, Necrótico",
+      "tier_tpl": "T"
     }
-  ]
+  ],
+  "published": true,
+  "save_scale": {
+    "MEN": "low",
+    "VOL": "bonus",
+    "FÍS": "bonus"
+  }
 }

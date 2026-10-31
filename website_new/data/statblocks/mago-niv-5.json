@@ -173,8 +173,8 @@
       "parry_against": ""
     },
     {
-      "id": "magia_temporal",
-      "name": "Magia Temporal",
+      "id": "mente_desencadenada",
+      "name": "Mente Desencadenada",
       "unlock": [
         1,
         4,
@@ -184,13 +184,13 @@
         16
       ],
       "three_tier": false,
-      "category": "Arcana",
+      "category": "Combate",
       "stat": "itl",
       "reserve": "chi",
       "rank": 2,
       "freeranks": 0,
-      "max": 6,
-      "attributes": "magia_temporal--1--premonicion,magia_temporal--1--alteracion-temporal,magia_temporal--1--robar-el-tiempo,magia_temporal--2--acelerar,magia_temporal--2--ralentizar,magia_temporal--2--desplazamiento,magia_temporal--3--vision,magia_temporal--3--predecir-movimiento,magia_temporal--3--dobles-temporales,magia_temporal--4--revertir-el-tiempo,magia_temporal--4--estasis,magia_temporal--4--ataque-retardado,magia_temporal--5--parar-el-tiempo,magia_temporal--5--vision-futura,magia_temporal--5--brecha-temporal,magia_temporal--6--retroceso-en-masa"
+      "max": 5,
+      "attributes": "mente_desencadenada--1--mente-desencadenada,mente_desencadenada--1--agilidad-mental,mente_desencadenada--2--poder-del-dolor,mente_desencadenada--2--conocimiento-arcano,mente_desencadenada--3--concentracion-superior,mente_desencadenada--3--expoliar-la-mente,mente_desencadenada--4--sentido-arcano,mente_desencadenada--4--psique-retorcida,mente_desencadenada--5--division-mental,mente_desencadenada--5--mente-sobre-cuerpo"
     },
     {
       "id": "magia_protectora",
@@ -222,7 +222,12 @@
       "domains": [],
       "damage_type": ""
     },
-    "picks": {}
+    "picks": {
+      "mente_desencadenada--2--conocimiento-arcano#0": [
+        "magia_temporal--1--premonicion",
+        "magia_mental--1--asalto-mental"
+      ]
+    }
   },
   "equipment": {
     "armor": {

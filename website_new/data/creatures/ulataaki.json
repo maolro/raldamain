@@ -1,0 +1,156 @@
+{
+  "id": "ulataaki",
+  "name": "Ulataaki",
+  "type": "Abisal",
+  "size": "Grande",
+  "level": 8,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+9+1d6",
+    "VOL": "+9+1d6",
+    "MEN": "+9+2d6"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 15,
+      "categories": "Magia"
+    },
+    {
+      "value": 20,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [
+    "Aflicciones",
+    "Miedo",
+    "Mentales",
+    "Necrótico"
+  ],
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Abisal, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Necrótico además que aumenta su Umbral Mágico por un paso. Provoca 3d8 daño adicional con sus ataques físicos de un elemento específico.",
+      "name": "Abisal",
+      "tags": [
+        "Pasivo",
+        "Innato",
+        "Abisal"
+      ],
+      "ability_id": "ab_1793352156752",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Abisal, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Necrótico además que aumenta su Umbral Mágico por un paso. Provoca DD daño adicional con sus ataques físicos de un elemento específico."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al impactar con un ataque Natural, el objetivo debe tener éxito en un tiro VOL +9 + 2d6 o sufre 1d8 + 6 daño Fuerza, Herido I y una modificación forzosa sobre su cuerpo equivalente a Inyección Transmutadora, como puede ser ganar o perder movimientos especiales, sentidos especiales o mucho más. ",
+      "name": "Toque Transmutador",
+      "tags": [
+        "Transmutacion",
+        "Arcana"
+      ],
+      "ability_id": "ab_1793356722736",
+      "mod_tpl": {
+        "desc": "Al impactar con un ataque Natural, el objetivo debe tener éxito en un tiro VOL +MOD o sufre LOW daño Fuerza, Herido I y una modificación forzosa sobre su cuerpo equivalente a Inyección Transmutadora, como puede ser ganar o perder movimientos especiales, sentidos especiales o mucho más. "
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "cost": 1,
+      "damage_base_type": "Contundente",
+      "damage_tier": "LOW",
+      "desc": "Afecta hasta a tres objetivos. Al impactar, los afectados están Enredados (FÍS +9 + 2d6 para escapar) y puede arrastrarlos hasta un paso. Sufren también los efectos de Toque Transmutador.",
+      "name": "Tentáculo Múltiple",
+      "range": "Cercano",
+      "tags": [
+        "Fisico",
+        "Ataque",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1793212118942",
+      "mod_tpl": {
+        "desc": "Afecta hasta a tres objetivos. Al impactar, los afectados están Enredados (FÍS +MOD para escapar) y puede arrastrarlos hasta un paso. Sufren también los efectos de Toque Transmutador.",
+        "bonus": "+MOD"
+      },
+      "damage": "2d8 + 6 Contundente",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El objetivo tira MEN +9 + 2d6 o debe seguir una orden sin negarse, siempre y cuando no atente contra su vida o seres queridos. Si tiene éxito en el tiro, no podrá volverle a afectar con este hechizo. Puede hacer que la orden se cumpla tan tarde como desee. Si tu objetivo tiene 0 Cordura, deberá obedecer sus órdenes durante el resto del combate.",
+      "name": "Geas",
+      "range": "Medio",
+      "tags": [
+        "Mental"
+      ],
+      "ability_id": "ab_1793359948064",
+      "mod_tpl": {
+        "desc": "El objetivo tira MEN +MOD o debe seguir una orden sin negarse, siempre y cuando no atente contra su vida o seres queridos. Si tiene éxito en el tiro, no podrá volverle a afectar con este hechizo. Puede hacer que la orden se cumpla tan tarde como desee. Si tu objetivo tiene 0 Cordura, deberá obedecer sus órdenes durante el resto del combate."
+      }
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Los afectados deben tener éxito en un tiro MEN +9 + 2d6 o sufren 2d8 + 6 daño Psíquico y Confundido II hasta que se recuperen. Cada ronda pueden tirar para recuperarse del efecto.",
+      "name": "Sobrecarga Mental",
+      "range": "Medio",
+      "tags": [
+        "Mental"
+      ],
+      "ability_id": "ab_1793360035749",
+      "mod_tpl": {
+        "desc": "Los afectados deben tener éxito en un tiro MEN +MOD o sufren MID daño Psíquico y Confundido II hasta que se recuperen. Cada ronda pueden tirar para recuperarse del efecto."
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Un ataque impacta a un doble ilusorio suyo, fallando automáticamente. Esta habilidad no funicona con ataques de área suficientemente grandes ni con criaturas inmunes a ilusiones.",
+      "name": "Doble Ilusorio",
+      "tags": [
+        "Ilusorio"
+      ],
+      "ability_id": "ab_1793360223001"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "MEN": "bonus",
+    "VOL": "mid",
+    "FÍS": "mid"
+  },
+  "senses": "Telepatía",
+  "speed": "Natación 2"
+}

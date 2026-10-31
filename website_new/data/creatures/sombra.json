@@ -1,0 +1,133 @@
+{
+  "id": "sombra",
+  "name": "Sombra",
+  "type": "No-muerto",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General, Radiante"
+    },
+    {
+      "value": 8,
+      "categories": "Magia"
+    },
+    {
+      "value": 12,
+      "categories": "Frío"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Carece de cuerpo físico, recibiendo Inmunidad a efectos Físicos, Necróticos, Aflicciones, Mentales y Miedo. No obstante, sí puede ser herido por ataques mágicos y no puede aumentar su umbral Físico de ninguna manera.",
+      "name": "Incorpóreo",
+      "tags": [
+        "Pasiva"
+      ],
+      "ability_id": "ab_1793178784213"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Aumenta sus Umbrales al daño Frío y Necrótico por una categoría a costa de reducir su Umbral Radiante por una categoría. Además, recibe Visión a Oscuras, al ocultarse en un lugar a oscuras puede volverse invisible, y sus ataques físicos provocan 1d6 daño Frío al impactar. ",
+      "name": "Esencia Sombría",
+      "tags": [
+        "Pasiva",
+        "Sombria"
+      ],
+      "ability_id": "ab_1793178918639",
+      "type": "passive",
+      "cost": "",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": "1",
+      "desc": "El objetivo debe tener éxito en un tiro VOL +7 + 2d6 o sufre 2d6 + 5 daño Necrótico que no puede curarse. Si logra provocar por lo menos un impacto, puede recuperar un impacto o curarse de un efecto de estado. Al emplear este efecto en un No-Muerto, puede curarle un impacto o un efecto de estado.",
+      "name": "Drenar Vida",
+      "range": "Adyacente",
+      "tags": [
+        "Nigromancia",
+        "Necrotico",
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793179018622",
+      "mod_tpl": {
+        "desc": "El objetivo debe tener éxito en un tiro VOL +MOD o sufre MID daño Necrótico que no puede curarse. Si logra provocar por lo menos un impacto, puede recuperar un impacto o curarse de un efecto de estado. Al emplear este efecto en un No-Muerto, puede curarle un impacto o un efecto de estado."
+      },
+      "type": "action",
+      "bonus": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Crea una nube de oscuridad en un radio medio, cegando a cada objetivo en ella y generando ocultamiento. Si hay fuentes de luz o efectos de Magia de Vida, tira +7 + 2d6 para suprimirlas.",
+      "name": "Crear Oscuridad",
+      "range": "Media",
+      "tags": [
+        "Sombria",
+        "Visual",
+        "Duradera"
+      ],
+      "ability_id": "ab_1793178364243",
+      "mod_tpl": {
+        "desc": "Crea una nube de oscuridad en un radio medio, cegando a cada objetivo en ella y generando ocultamiento. Si hay fuentes de luz o efectos de Magia de Vida, tira +MOD para suprimirlas."
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Se teletransporta a un lugar que se encuentre a oscuras, evitándo automáticamente un ataque dirigido a él. Esta habilidad solo puede usarse si se encuentra en un lugar a oscuras y no funciona contra ataques de área suficientemente grandes. ",
+      "name": "Salto Sombrío",
+      "tags": [
+        "Sombria"
+      ],
+      "ability_id": "ab_1793178426078"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "FÍS": "bonus",
+    "MEN": "low",
+    "VOL": "bonus"
+  }
+}

@@ -9,24 +9,22 @@
     ],
     "cost": "1",
     "bonus": "",
-    "range": "4",
+    "range": "Medio",
     "area": "",
-    "damage": "MID Fuego",
     "save": "",
     "move": "",
     "attacks": 2,
     "desc": "Quema objetos inflamables que impacte.",
     "damage_tier": "MID",
-    "damage_base_type": "Fuego"
+    "damage_base_type": "Fuego",
+    "tier": "III",
+    "bonus_scaled": true
   },
   {
     "name": "Aliento de Fuego",
-    "area": "Cono Medio",
-    "damage": "2d6+4 Fuego",
-    "move": "5",
+    "area": "Cono pequeño",
     "cost": "2",
-    "desc": "Quemará los objetos inflamables en el área afectada. Al herir provocará una quemadura a los objetivos que lleven objetos metálicos o inflamables.",
-    "range": "1",
+    "desc": "Quema los objetos inflamables en el área afectada. ",
     "id": "aliento-de-fuego_1778692098257",
     "type": "action",
     "tags": [
@@ -42,8 +40,7 @@
   {
     "name": "Evasión",
     "cost": 1,
-    "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico.",
-    "move": 10,
+    "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
     "id": "evasion_1778692238910",
     "type": "reaction",
     "tags": [
@@ -51,14 +48,6 @@
       "Defensiva"
     ],
     "tier": "II"
-  },
-  {
-    "name": "Muro de Fuego",
-    "cost": 1,
-    "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo sufren 2d6 daño Fuego.",
-    "ability_id": "muro-de-fuego_1778692256831",
-    "id": "muro-de-fuego_1778692256831",
-    "type": "reaction"
   },
   {
     "name": "Absorber Fuego",
@@ -73,88 +62,44 @@
   },
   {
     "name": "Cuerpo de Fuego",
-    "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+    "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Fuego, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
     "id": "cuerpo-de-fuego_1778692691656",
     "type": "passive",
     "tags": [
       "Fuego"
-    ]
+    ],
+    "tier": "II"
   },
   {
     "name": "Cuerpo Líquido",
-    "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) y moja todos los espacios por los que pasa. No obstante, al estar hecho de Agua quedará congelado una ronda si sufre daño Frío y un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+    "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) y moja todos los espacios por los que pasa. No obstante, al estar hecho de Agua quedará congelado una ronda si sufre daño Frío y un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
     "id": "cuerpo-liquido_1778692889955",
     "type": "passive",
     "tags": [
       "Agua"
-    ]
-  },
-  {
-    "name": "Ola Chocante",
-    "cost": 2,
-    "bonus": "+7+2d6",
-    "damage": "HIGH Contundente",
-    "move": 10,
-    "desc": "Ataca a cada enemigo en su movimiento. Al impactar, los afectados deben tener éxito en un tiro de salvación físico o son empujados 8 casillas y quedan tropezados (4 casillas si tienen éxito). ",
-    "id": "ola-chocante_1778693300723",
-    "type": "action",
-    "tags": [
-      "Agua",
-      "Ataque",
-      "Area",
-      "Maniobra"
     ],
-    "damage_tier": "HIGH",
-    "damage_base_type": "Contundente",
-    "area": "Linea 10 "
-  },
-  {
-    "cost": 1,
-    "bonus": "+7+2d6",
-    "damage": "MID Contundente",
-    "move": "Puede moverse 4 pasos antes o después del ataque.",
-    "desc": "El objetivo es empujado 4 casillas por cada impacto.",
-    "name": "Golpes Fluidos",
-    "attacks": 2,
-    "range": "4",
-    "id": "golpes-fluidos_1778693302107",
-    "type": "action",
-    "tags": [
-      "Agua",
-      "Ataque"
-    ],
-    "damage_tier": "MID",
-    "damage_base_type": "Contundente"
-  },
-  {
-    "name": "Muro de Agua",
-    "cost": 1,
-    "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo serán lanzados 4 pasos hacia atrás si no logran hacer daño.",
-    "id": "muro-de-agua_1778693409061",
-    "type": "reaction",
-    "tags": [
-      "Agua"
-    ]
+    "tier": "II"
   },
   {
     "name": "Absorber Agua",
-    "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra sumergido en el agua o es impactado por un efecto de Agua que atraviese su umbral.",
-    "cost": 1,
+    "desc": "Al principio de su turno, recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra sumergido en el agua o es impactado por un efecto de Agua que atraviese su umbral.",
     "id": "absorber-agua_1778693562144",
-    "type": "reaction",
+    "type": "passive",
     "tags": [
       "Agua",
       "Sanacion"
-    ]
+    ],
+    "tier": "IV"
   },
   {
     "name": "Cuerpo de Aire",
-    "desc": "Puede colarse por cualquier abertura. Es inmune a todos los efectos físicos (ya incluido) y cuenta siempre como si fuera invisible. No obstante, un elementalista de Aire puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+    "desc": "Puede colarse por cualquier abertura. Es inmune a todos los efectos Físicos, Aflicciones, Miedo y Mentales (ya incluido) y cuenta siempre como si fuera invisible. No obstante, un elementalista de Aire puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
     "id": "cuerpo-de-aire_1778694356948",
     "type": "passive",
     "tags": [
       "Aire"
-    ]
+    ],
+    "tier": "II"
   },
   {
     "name": "Viento Cortante",
@@ -189,23 +134,6 @@
     ],
     "move": 2,
     "ability_id": "vendaval_1778706575166"
-  },
-  {
-    "name": "Vórtice Viviente",
-    "desc": "El objetivo será arrastrado a su posición y debe tener éxito en un tiro de salvación Físico o queda agarrado y se empieza a ahogar (queda enredado si lo consigue). Este ataque solo podrá resistirse con tiro de salvación por objetivos que estén en el agua.",
-    "cost": 1,
-    "bonus": "+7 + 2d6",
-    "range": "4",
-    "damage": "3d6 + 5 Contundente",
-    "type": "action",
-    "tags": [
-      "Agua",
-      "Ataque",
-      "Agarre"
-    ],
-    "id": "vortice-viviente_1778706814167",
-    "damage_tier": "MID",
-    "damage_base_type": "Contundente"
   },
   {
     "name": "Torbellino Viviente",
@@ -245,17 +173,6 @@
     "tags": [
       "Tierra"
     ]
-  },
-  {
-    "name": "Muro de Piedra",
-    "cost": 1,
-    "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo que reduzcan el daño a 0 sufren 3d6 daño Contundente (si atacaron con armas naturales) o su arma se rompe.",
-    "tags": [
-      "Tierra"
-    ],
-    "ability_id": "muro-de-piedra_1778712055897",
-    "id": "muro-de-piedra_1778712055897",
-    "type": "reaction"
   },
   {
     "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo. Solo puede emplear esta habilidad si está tocando la tierra.",
@@ -336,24 +253,16 @@
   },
   {
     "name": "Salto Espacial",
-    "desc": "Añade +10 a su tiro de Esquiva y se teletransporta al moverse.",
-    "move": 8,
+    "desc": "Añade +10 a su tiro de Esquiva y se teletransporta un paso al moverse.",
     "tags": [
-      "Espacial"
+      "Espacial",
+      "Arcano"
     ],
     "ability_id": "salto-espacial_1778751219905",
     "id": "salto-espacial_1778751219905",
-    "type": "reaction"
-  },
-  {
-    "name": "Vínculo Vital",
-    "desc": "Recibe el daño que sufriría un aliado a distancia 8. Ese daño contará como General para determinar si traspasa su umbral.",
-    "tags": [
-      "Vida"
-    ],
-    "ability_id": "vinculo-vital_1778751231679",
-    "id": "vinculo-vital_1778751231679",
-    "type": "reaction"
+    "type": "reaction",
+    "tier": "I",
+    "cost": "1"
   },
   {
     "desc": "Se sana un Impacto y se recupera de un efecto de estado negativo. ",
@@ -372,34 +281,17 @@
     "type": "passive"
   },
   {
-    "name": "Aliento Radiante",
-    "desc": "",
-    "bonus": "+7+2d6",
-    "area": "Cono 8",
-    "damage": "3d6 + 5 Radiante",
-    "range": "1",
-    "tags": [
-      "Vida",
-      "Ataque",
-      "Area"
-    ],
-    "cost": 1,
-    "id": "aliento-radiante_1778751356221",
-    "type": "action",
-    "damage_tier": "HIGH",
-    "damage_base_type": "Radiante"
-  },
-  {
     "name": "Toque Sanador",
-    "desc": "El objetivo recupera 8 Vitalidad/1 Impacto y se cura de un efecto de estado negativo.",
-    "range": "1",
+    "desc": "El objetivo recupera 1 Impacto o se recupera de un efecto de estado.",
+    "range": "Adyacente",
     "tags": [
       "Vida",
       "Sanacion"
     ],
-    "cost": 1,
+    "cost": "1",
     "id": "toque-sanador_1778751359599",
-    "type": "action"
+    "type": "action",
+    "tier": "I"
   },
   {
     "id": "rayos-luminosos_1778752957956",
@@ -412,13 +304,14 @@
     "cost": "1",
     "bonus": "",
     "area": "",
-    "damage": "3d8+7 Radiante",
     "save": "",
     "move": "",
     "damage_tier": "MID",
     "damage_base_type": "Radiante",
-    "range": "8",
-    "attacks": 3
+    "range": "Medio",
+    "attacks": 2,
+    "tier": "III",
+    "bonus_scaled": true
   },
   {
     "desc": "El afectado reduce su cordura por 6 y queda confundido durante una ronda.",
@@ -544,7 +437,7 @@
       "Ataque",
       "Area"
     ],
-    "cost": "1",
+    "cost": "2",
     "bonus": "",
     "range": "",
     "area": "Cono 8",
@@ -563,7 +456,8 @@
       "Naturaleza"
     ],
     "id": "planta_1778930785381",
-    "type": "passive"
+    "type": "passive",
+    "tier": "I"
   },
   {
     "name": "Raíces Parasíticas",
@@ -746,14 +640,13 @@
     "name": "Golpe por Golpe",
     "desc": "Falla automáticamente un tiro defensivo para golpear al atacante sin que pueda defenderse. El atacante puede escoger fallar para no recibir el impacto.",
     "id": "golpe-por-golpe_1788189327012",
-    "type": "reaction"
-  },
-  {
-    "name": "Indómito",
-    "desc": "Obtiene +10 en un tiro de salvación",
-    "cost": 1,
-    "id": "indomito_1788251108371",
-    "type": "reaction"
+    "type": "reaction",
+    "tags": [
+      "Coloso",
+      "Marcial"
+    ],
+    "cost": "1",
+    "tier": "IV"
   },
   {
     "name": "Proteger Aliado",
@@ -805,7 +698,7 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro de salvación de Voluntad contra +MOD o es empujado un paso y recibe Desventaja en su siguiente tiro defensivo.",
+    "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +MOD o es empujado un paso y cae Tropezado.",
     "tier": "I"
   },
   {
@@ -829,7 +722,7 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Aumenta el daño de un ataque por un dado y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro de salvación Físico o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo.",
+    "desc": "Aumenta el daño de un ataque por un dado y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro FÍS +MOD o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo.",
     "tier": "II"
   },
   {
@@ -853,7 +746,7 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Aumenta el alcance del ataque a Distancia Media y el daño por un dado. Si impacta a un objetivo volador, deberá tener éxito en un tiro de salvación de Voluntad o cae al suelo."
+    "desc": "Aumenta el alcance del ataque a Distancia Media y el daño por un dado. Si impacta a un objetivo volador, deberá tener éxito en un tiro de VOL +MOD o cae al suelo."
   },
   {
     "id": "ab_1791817340811",
@@ -899,7 +792,7 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Un objetivo que alcance con su arma tener éxito en un tiro de salvación Físico, Voluntad o Mental contra +MOD, o recibe Desventaja en su siguiente tiro defensivo. "
+    "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +MOD, o recibe Desventaja en su siguiente tiro defensivo. "
   },
   {
     "id": "ab_1791817547641",
@@ -932,14 +825,14 @@
     "tags": [
       "Ataque",
       "Fisico",
-      "Arma"
+      "Arma",
+      "Natural"
     ],
-    "cost": "",
+    "cost": "1",
     "bonus": "",
     "bonus_scaled": true,
     "range": "Adyacente",
     "area": "",
-    "damage": "2d6 + 4",
     "damage_tier": "MID",
     "damage_base_type": "Cortante",
     "save": "",
@@ -955,14 +848,14 @@
     "tags": [
       "Ataque",
       "Fisico",
-      "Arma"
+      "Arma",
+      "Natural"
     ],
     "cost": "1",
     "bonus": "",
     "bonus_scaled": true,
     "range": "Adyacente",
     "area": "",
-    "damage": "2d6 + 4",
     "damage_tier": "MID",
     "damage_base_type": "Contundente",
     "save": "",
@@ -978,7 +871,8 @@
     "tags": [
       "Ataque",
       "Fisico",
-      "Arma"
+      "Arma",
+      "Natural"
     ],
     "cost": "1",
     "bonus": "",
@@ -989,9 +883,7 @@
     "damage_base_type": "Perforante",
     "save": "",
     "move": "",
-    "attacks": 1,
-    "desc": "",
-    "damage": "2d6+4"
+    "attacks": 1
   },
   {
     "id": "ab_1791818387137",
@@ -1026,20 +918,19 @@
     ],
     "cost": "1",
     "bonus": "",
-    "bonus_scaled": false,
+    "bonus_scaled": true,
     "range": "Medio",
     "area": "",
-    "damage": "1d6 + 4 Fuego",
     "damage_tier": "MID",
     "damage_base_type": "Fuego",
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": ""
+    "desc": "Quema objetos inflamables que impacte."
   },
   {
     "name": "Agarre",
-    "desc": "El objetivo queda Enredado (+MOD FÍS para escapar).",
+    "desc": "El objetivo queda Agarrado (+MOD FÍS para escapar).",
     "tags": [
       "Marcial",
       "Ataque",
@@ -1052,5 +943,2536 @@
     "type": "action",
     "bonus_scaled": true,
     "tier": "I"
+  },
+  {
+    "name": "Explosión Mortal",
+    "desc": "Al morir, hace un ataque inmediato que provoca X daño Y",
+    "cost": 1,
+    "bonus": "+MOD",
+    "id": "explosion-mortal_1792755387840",
+    "type": "reaction"
+  },
+  {
+    "id": "ab_1793008689989",
+    "name": "Mordisco",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Ataque",
+      "Fisico",
+      "Arma",
+      "Natural"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "2d6 + 4",
+    "damage_tier": "MID",
+    "damage_base_type": "Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo está Enredado (+MOD FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada."
+  },
+  {
+    "id": "ab_1793012456608",
+    "name": "Tentáculo",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Ataque",
+      "Fisico",
+      "Natural",
+      "Arma"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Cercano",
+    "area": "",
+    "damage": "1d6 + 4 Contundente",
+    "damage_tier": "LOW",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo está Enredado (+MOD FÍS para escapar) y puede arrastrarlo un paso."
+  },
+  {
+    "id": "ab_1793013363262",
+    "name": "Derribo",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Marcial",
+      "Duelo",
+      "Mejora"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Antes de atacar, puede moverse un paso y el objetivo deberá tener éxito en un tiro de salvación FÍS +MOD o será Tropezado."
+  },
+  {
+    "id": "ab_1793014528491",
+    "name": "Combate en Equipo",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Presencia",
+      "Mejora"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 0,
+    "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante"
+  },
+  {
+    "id": "ab_1793014679586",
+    "name": "Demostración Terrorífica",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Miedo"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "area": "Radio Medio",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +MOD o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior."
+  },
+  {
+    "id": "ab_1793014811103",
+    "name": "Persecución",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Marcial"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "En respuesta a que un enemigo se aleje, puede moverse un paso para perseguirlo y hacerle un ataque inmediato contra el cual tendrá Desventaja defendiéndose"
+  },
+  {
+    "id": "ab_1793014889431",
+    "name": "Acechar",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Rastrear"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Se oculta de tal manera que es Invisible, impidiendo que pueda ser detectado. Debe encontrarse bajo cubierta u ocultamiento para emplear esta habilidad, y sus efectos acabarán cuando ataque."
+  },
+  {
+    "id": "ab_1793016178131",
+    "name": "Sugestión",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Mental"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El afectado debe tener éxito en un tiro MEN +MOD o tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él."
+  },
+  {
+    "id": "ab_1793016212873",
+    "name": "Invisibilidad",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Ilusorio",
+      "Visual"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Se vuelve Invisible hasta que ataque o lance un hechizo."
+  },
+  {
+    "id": "ab_1793023535387",
+    "name": "Crear Ilusión",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Ilusorio"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Creas una ilusión de un tamaño pequeño de un objeto, criatura o fenómeno físico que dura mientras mantenga la concentración. Puede ser desmentida con un tiro de salvación Mental +MOD."
+  },
+  {
+    "id": "ab_1793023582030",
+    "name": "Distracción Ilusoria",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Ilusorio"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Radio Corto",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Todos los objetivos deben tener éxito en un tiro MEN +MOD o quedan Desconcertados durante una ronda. Podrán repetir el tiro si ocurre un suceso que les saque de la distracción, como sería sufrir daño."
+  },
+  {
+    "id": "ab_1793023978219",
+    "name": "Esquiva",
+    "type": "reaction",
+    "tier": "I",
+    "tags": [
+      "Reflejos"
+    ],
+    "cost": "",
+    "bonus": "+MOD",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793024131874",
+    "name": "Asalto Fantasmal",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Ilusorio",
+      "Mental"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo debe tener éxito en un tiro de salvación Mental +MOD o percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo."
+  },
+  {
+    "id": "ab_1793025042833",
+    "name": "Asalto Psíquico",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Mental"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo debe tener éxito en un tiro MEN +MOD o sufre LOW daño Psíquico y queda Desconcertado una ronda. Si tiene éxito, no puede volver a ser afectado por este hechizo."
+  },
+  {
+    "id": "ab_1793031825227",
+    "name": "Espina de Madera",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Naturaleza",
+      "Ataque",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "LOW",
+    "damage_base_type": "Cortante/Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Cuenta como daño Fuerza al atacar a objetivos Enredados o Agarrados por efectos de Naturaleza."
+  },
+  {
+    "id": "ab_1793032019337",
+    "name": "Enmarañar",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Naturaleza",
+      "Agarre"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo queda Enredado hasta que escape (FÍS +MOD). Si ya está Enredado, pasará a estar Agarrado. Puede emplear una Acción adicional para afectar a cada objetivo en un radio corto en el alcance."
+  },
+  {
+    "id": "ab_1793032184478",
+    "name": "Pulso Vital",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Naturaleza",
+      "Sanacion"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Cura un Impacto o se recupera de un efecto de estado. "
+  },
+  {
+    "id": "ab_1793032320692",
+    "name": "Muro de Zarzas",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Naturaleza",
+      "Muro"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Crea un muro que protege a todos en su alcance, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro FÍS +MOD o sufren LOW daño Perforante y quedan Enredados."
+  },
+  {
+    "id": "ab_1793032852453",
+    "name": "Raíces Devoradoras",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Naturaleza",
+      "Ataque",
+      "Area"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "Cilindro Medio",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los objetivos quedan Enredados hasta que escapen (FÍS +MOD). Aquellos en contacto con el suelo o con plantas tienen Desventaja defendiéndose. "
+  },
+  {
+    "id": "ab_1793104129420",
+    "name": "Gran Hacha",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Arma",
+      "Ataque",
+      "Fisico"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 1
+  },
+  {
+    "id": "ab_1793104226616",
+    "name": "Lanza",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Arma",
+      "Ataque",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793104319863",
+    "name": "Lanza",
+    "type": "action",
+    "tier": "I",
+    "tags": [],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793105102759",
+    "name": "Espada",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Arma",
+      "Fisico",
+      "Ataque"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793105124177",
+    "name": "Arco",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Ataque",
+      "Arma",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Lejano",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "La criatura no puede emplear Parada para defenderse."
+  },
+  {
+    "id": "ab_1793178288462",
+    "name": "Tajo Umbrío",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Sombria",
+      "Ataque",
+      "Frio"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Frío",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El daño de este ataque reducirá los impactos máximos del objetivo (se recupera con descanso largo o efectos que quiten Maldiciones), y los objetivos en un lugar a oscuras tienen Desventaja defendiéndose de él."
+  },
+  {
+    "id": "ab_1793178364243",
+    "name": "Crear Oscuridad",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Sombria",
+      "Visual",
+      "Duradera"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Media",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Crea una nube de oscuridad en un radio medio, cegando a cada objetivo en ella y generando ocultamiento. Si hay fuentes de luz o efectos de Magia de Vida, tira +MOD para suprimirlas."
+  },
+  {
+    "id": "ab_1793178426078",
+    "name": "Salto Sombrío",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Sombria"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Se teletransporta a un lugar que se encuentre a oscuras, evitándo automáticamente un ataque dirigido a él. Esta habilidad solo puede usarse si se encuentra en un lugar a oscuras y no funciona contra ataques de área suficientemente grandes. "
+  },
+  {
+    "id": "ab_1793178615059",
+    "name": "Bola Sombra",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Sombria",
+      "Ataque",
+      "Area",
+      "Frio"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "Esfera Pequeña",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El daño de este ataque reducirá los impactos máximos del objetivo (se recupera con descanso largo o efectos que quiten Maldiciones). "
+  },
+  {
+    "id": "ab_1793178784213",
+    "name": "Incorpóreo",
+    "type": "passive",
+    "tier": "II",
+    "tags": [
+      "Pasiva"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Carece de cuerpo físico, recibiendo Inmunidad a efectos Físicos, Necróticos, Aflicciones, Mentales y Miedo. No obstante, sí puede ser herido por ataques mágicos y no puede aumentar su umbral Físico de ninguna manera."
+  },
+  {
+    "id": "ab_1793178918639",
+    "name": "Esencia Sombría",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Pasiva",
+      "Sombria"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Aumenta sus Umbrales al daño Frío y Necrótico por una categoría a costa de reducir su Umbral Radiante por una categoría. Además, recibe Visión a Oscuras, al ocultarse en un lugar a oscuras puede volverse invisible, y sus ataques físicos provocan 1d6 daño Frío al impactar. "
+  },
+  {
+    "id": "ab_1793179018622",
+    "name": "Drenar Vida",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Nigromancia",
+      "Necrotico",
+      "Afliccion"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo debe tener éxito en un tiro VOL +MOD o sufre MID daño Necrótico que no puede curarse. Si logra provocar por lo menos un impacto, puede recuperar un impacto o curarse de un efecto de estado. Al emplear este efecto en un No-Muerto, puede curarle un impacto o un efecto de estado."
+  },
+  {
+    "id": "ab_1793179277426",
+    "name": "Descarga de Energía Negativa",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Nigromancia",
+      "Ataque",
+      "Necrotico"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Necrótico",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El daño de este ataque reduce los impactos máximos del objetivo."
+  },
+  {
+    "id": "ab_1793180034692",
+    "name": "Crear No-Muerto",
+    "type": "passive",
+    "tier": "II",
+    "tags": [
+      "Nigromancia",
+      "Pasiva"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Al matar a una criatura con un efecto que provoque daño Necrótico, resucitará su cadáver como un no-muerto de categoría inferior (normalmente un Zombi o Esqueleto)."
+  },
+  {
+    "id": "ab_1793181221119",
+    "name": "Plaga",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Pasiva",
+      "Afliccion"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Cada vez que impacte con un ataque físico, el afectado deberá tener éxito en un tiro VOL +MOD o está infectado con una Plaga. Mientras permanezca infectado, no podrá recibir Sanación y cada día deberá repetir el tiro o reducirá sus impactos máximos por 1 y recibe Enfermado I. Si tiene dos éxitos, se recuperará de la plaga, pero hasta que lo haga puede infectar a otros aunque no tenga ningún efecto negativo."
+  },
+  {
+    "id": "ab_1793181368747",
+    "name": "Veneno Paralizante",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Pasiva",
+      "Afliccion"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Paralizante. Mientras permanezca envenenado, recibe Ralentizado I y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo."
+  },
+  {
+    "id": "ab_1793181456440",
+    "name": "No-Muerto",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Pasiva",
+      "Nigromancia"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Es un No-Muerto, recibiendo así Inmunidad a efectos Necróticos, Aflicciones, Miedo y Mentales, además que puede sentir la presencia de seres vivos a distancia media y no necesita comer ni respirar. No obstante, reducirá su umbral al daño Radiante por un paso y solo puede curarse con efectos Necróticos."
+  },
+  {
+    "id": "ab_1793182921388",
+    "name": "Hedor Putrefacto",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Pasiva",
+      "Afliccion"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Desprende un hedor putrefacto, provocando que toda criatura que empiece su turno en un espacio a distancia cercana o entre ahí deba tener éxito en un tiro VOL +MOD o sufre Enfermado I durante una ronda. Si la criatura tiene éxito, no puede volver a ser afectada por esta habilidad."
+  },
+  {
+    "id": "ab_1793184258319",
+    "name": "Lo He Visto Antes",
+    "type": "reaction",
+    "tier": "III",
+    "tags": [
+      "Rastrear"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Obtiene +10 en un tiro de defensa o salvación contra un efecto que un enemigo específico ya haya usado contra él."
+  },
+  {
+    "id": "ab_1793184456123",
+    "name": "Paso del Asesino",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Asesino",
+      "Mejora",
+      "Marcial"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Se mueve hasta un paso y hace un ataque de coste 1 Acción con un dado de daño adicional, contra el cual su objetivo tendrá Deventaja defendiéndose. Solo funciona con armas cuerpo a cuerpo."
+  },
+  {
+    "id": "ab_1793184515260",
+    "name": "Golpe Penetrante",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Asesino",
+      "Mejora",
+      "Marcial"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Su siguiente ataque recibe un modificador +2 y tratará los umbrales del objetivo como si provocase daño Fuerza."
+  },
+  {
+    "id": "ab_1793184569612",
+    "name": "Ataque Triple",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Asesino",
+      "Mejora",
+      "Marcial"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Su siguiente ataque puede afectar a hasta tres objetivos que pueda alcanzar. Los efectos adicionales que añada se aplican a todos los ataques."
+  },
+  {
+    "id": "ab_1793184653681",
+    "name": "Daga",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Arma",
+      "Ataque",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "LOW",
+    "damage_base_type": "Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793202840322",
+    "name": "Zarpazo Doble",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Ataque",
+      "Arma",
+      "Natural",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 2,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793202871031",
+    "name": "Puñalada Doble",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Arma",
+      "Ataque",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "LOW",
+    "damage_base_type": "Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 2,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793203194188",
+    "name": "Veneno Mortal",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Afliccion"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Mortal. Mientras permanezca envenenado, sufre DD daño Necrótico y Enfermado I, y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo."
+  },
+  {
+    "id": "ab_1793208194508",
+    "name": "Arco Eléctrico",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Tormenta",
+      "Ataque",
+      "Electrico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Eléctrico",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los objetivos con armadura metálica tienen Desventaja defendiéndose."
+  },
+  {
+    "id": "ab_1793208280826",
+    "name": "Carga Poderosa",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Coloso",
+      "Mejora",
+      "Marcial"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Se mueve tanto como tu velocidad y ataca a cada enemigo en tu camino, aumentando el daño base de su ataque por un dado y empujando al impactar. Este ataque romperá también todas las barreras a su paso."
+  },
+  {
+    "id": "ab_1793208339829",
+    "name": "Golpe Demoledor",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Coloso",
+      "Mejora",
+      "Marcial"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Su siguiente ataque aumenta su daño base por dos dados, y al impactar provoca Roto II al objetivo. Si el objetivo logra detener su ataque con su arma, puede romperle esa misma si es de dureza menor."
+  },
+  {
+    "id": "ab_1793208393211",
+    "name": "Golpe Aturdidor",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Coloso",
+      "Mejora",
+      "Marcial"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Su siguiente ataque aumenta su daño base por un dado, y al impactar el objetivo debe tener éxito en un tiro de salvación de Voluntad o quedará Desconcertado II hasta el final de ronda y es empujado un paso."
+  },
+  {
+    "id": "ab_1793208815332",
+    "name": "Resiliencia",
+    "type": "reaction",
+    "tier": "III",
+    "tags": [
+      "Fortitud"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Divide la cantidad de impactos recibidos por un ataque a la mitad, redondeando hacia abajo."
+  },
+  {
+    "id": "ab_1793209049506",
+    "name": "Muro Viviente",
+    "type": "passive",
+    "tier": "III",
+    "tags": [
+      "Pasiva",
+      "Fortitud"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Empieza el combate con TIER contadores de escudo."
+  },
+  {
+    "id": "ab_1793209211881",
+    "name": "Veneno Debilitante",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Pasiva",
+      "Afliccion"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Debilitante. Mientras permanezca envenenado, recibe Fatigado I y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo."
+  },
+  {
+    "id": "ab_1793209254030",
+    "name": "Telaraña",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Agarre"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Todos los afectados quedan Agarrados (FÍS +MOD para escapar). El área afectada se convierte además en terreno difícil, y las criaturas que entren en él deben tener éxito en un tiro FÍS +MOD o quedan Enredadas."
+  },
+  {
+    "id": "ab_1793209340719",
+    "name": "Enjambre",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Pasiva"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "La criatura es un enjambre de criaturas más pequeñas, recibiendo Inmunidad a efectos Físicos, Aflicciones, Mentales y Miedo. No obstante, el daño de ataques de Área contará como si fuera Fuerza y no puede aumentar sus umbrales Físico o Mágico de ninguna manera."
+  },
+  {
+    "id": "ab_1793209849456",
+    "name": "Dispersión",
+    "type": "reaction",
+    "tier": "I",
+    "tags": [
+      "Defensiva"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Dispersa su cuerpo por completo, evitando automáticamente un efecto que le tenga como objetivo explícito. Solo puede ser usada por Incorpóreos o Enjambres"
+  },
+  {
+    "id": "ab_1793209910460",
+    "name": "Enjambre Devorador",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Ataque",
+      "Agarre"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo está Enfermado I y el Enjambre se engancha a él, haciendo que le siga en sus movimientos. Solo puede quitarse el enjambre si les provoca un Impacto o entra en un entorno en el que no pueden sobrevivir como agua. Esta habilidad solo puede ser usada por Enjambres."
+  },
+  {
+    "id": "ab_1793211364350",
+    "name": "Infusión Vampírica",
+    "type": "passive",
+    "tier": "II",
+    "tags": [
+      "Sangre",
+      "Pasiva"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Sus ataques físicos provocan DD daño Necrótico al impactar. Si este daño provoca por lo menos un impacto, se curará un impacto."
+  },
+  {
+    "id": "ab_1793211962110",
+    "name": "Devorar",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Ataque",
+      "Fisico",
+      "Natural",
+      "Agarre"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Un objetivo de tamaño inferior que se encuentre Enredado debe tener éxito en un tiro FÍS +MOD o sufre MID daño Perforante y es Devorado. Mientras permanezca Devorado, sufre DD daño Ácido al principio de su turno y se encuentra Agarrado, y solo puede escapar si tiene éxito en un tiro FÍS +MOD para escapar y provoca daño suficiente para hacerle por lo menos un Impacto."
+  },
+  {
+    "id": "ab_1793212118942",
+    "name": "Tentáculo Múltiple",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Fisico",
+      "Ataque",
+      "Arma",
+      "Natural"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Cercano",
+    "area": "",
+    "damage": "",
+    "damage_tier": "LOW",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Afecta hasta a tres objetivos. Al impactar, los afectados están Enredados (FÍS +MOD para escapar) y puede arrastrarlos hasta un paso. "
+  },
+  {
+    "id": "ab_1793212304311",
+    "name": "Escudo Humano",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Agarre",
+      "Defensivo"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Un ataque que le haya fallado impacta en su lugar a un objetivo que tenga Enredado o Agarrado."
+  },
+  {
+    "id": "ab_1793230527481",
+    "name": "Arrastre Telekinético",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Gravitatorio",
+      "Maniobra"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo debe tener éxito en un tiro FÍS +MOD o es empujado un paso en cualquier dirección y sufre 1d6 + INT daño Contundente."
+  },
+  {
+    "id": "ab_1793230687815",
+    "name": "Espectral",
+    "type": "passive",
+    "tier": "II",
+    "tags": [
+      "Alma",
+      "Pasiva"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Es de naturaleza Espectral, haciendo así que pueda pasar a través de paredes y emplear la habilidad Posesión sin importar su categoría. No obstante, el daño Radiante le afectará en su umbral más bajo y puede ser Exorcizado."
+  },
+  {
+    "id": "ab_1793230794201",
+    "name": "Posesión",
+    "type": "action",
+    "tier": "V",
+    "tags": [
+      "Alma"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El afectado debe tener éxito en un tiro de VOL +MOD o posee su cuerpo, pudiendo así controlar sus acciones hasta que sea expulsado. Una víctima de posesión solo puede liberarse repitiendo este tiro y todo daño contra esta criatura que no sea por Exorcismo o habilidades similares afectará a la víctima poseída. Solo puede poseer una criatura a la vez, y si la intenta usar para suicidarse o herir a sus seres queridos el afectado puede repetir el tiro inmediatamente para liberarse."
+  },
+  {
+    "id": "ab_1793231214913",
+    "name": "Voz del Comandante",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Presencia"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Hasta tres aliados que alcance reciben Ventaja en su siguiente tiro de ataque o defensa."
+  },
+  {
+    "id": "ab_1793231310975",
+    "name": "Revigorar",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Presencia"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Un aliado que alcance recibe un impacto temporal y se recupera del efecto Miedo, Confusión o Desconcertado."
+  },
+  {
+    "id": "ab_1793231346837",
+    "name": "Provocación",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Presencia",
+      "Mental"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Todos los afectados deben tener éxito en un tiro MEN +MOD o deberán emplear su siguiente acción en atacarle y recibirán Desventaja en su siguiente tiro defensivo."
+  },
+  {
+    "id": "ab_1793231378591",
+    "name": "Indómito",
+    "type": "reaction",
+    "tier": "III",
+    "tags": [
+      "Presencia"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Suma +10 a un tiro de Salvación de cualquier tipo."
+  },
+  {
+    "id": "ab_1793232469761",
+    "name": "Ataque Torbellino",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Duelo",
+      "Marcial",
+      "Mejora"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Su siguiente ataque afectará a cada objetivo en un radio corto y aumenta su daño por un dado adicional. Además, puede moverse antes o después de atacar sin provocar aperturas."
+  },
+  {
+    "id": "ab_1793232509904",
+    "name": "Tajo Aéreo",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Duelo",
+      "Marcial",
+      "Mejora"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Salta dos pasos hacia el cielo y ataca a cada objetivo en una columna media, aumentando el daño base por dos dados. Si impacta a un objetivo volador, deberá tener éxito en un tiro FÍS +MOD o caerá al suelo."
+  },
+  {
+    "id": "ab_1793232584202",
+    "name": "Combo Mortal",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Duelo",
+      "Marcial",
+      "Mejora"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Hace tres ataques de coste máximo una Acción. Cada ataque consecutivo recibirá un modificador +2 al tiro de ataque y daño. "
+  },
+  {
+    "id": "ab_1793279446716",
+    "name": "Rayo Arcano",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Arcano",
+      "Ataque",
+      "Evocacion"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Arcano",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793279538632",
+    "name": "Muro de Energía",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Arcano",
+      "Evocacion"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación Físico o sufren LOW daño Fuego, Frío, Ácido o Eléctrico."
+  },
+  {
+    "id": "ab_1793279602697",
+    "name": "Infusión Arcana",
+    "type": "passive",
+    "tier": "II",
+    "tags": [
+      "Evocacion",
+      "Arcano"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Sus ataques Físicos provocan DD daño Fuego, Frío, Eléctrico o Ácido al impactar, y pueden herir a criaturas Incorpóreas como si fueran ataques mágicos. Puede además cambiar el tipo de daño de sus hechizos como acción bonus al que más le convenga."
+  },
+  {
+    "id": "ab_1793279931786",
+    "name": "Desplazamiento",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Arcano",
+      "Temporal"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Evita automáticamente un ataque de cualquier tipo. Esta habilidad puede anularse con otros Desplazamientos y solo puede usarse una vez por ronda."
+  },
+  {
+    "id": "ab_1793280024994",
+    "name": "Descarga de Energía",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Arcano",
+      "Evocacion",
+      "Ataque",
+      "Area"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "",
+    "area": "Cono Pequeño",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Arcano",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793280432437",
+    "name": "Rayo Doble",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Arcano",
+      "Ataque",
+      "Evocacion"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Arcano",
+    "save": "",
+    "move": "",
+    "attacks": 2,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793280468494",
+    "name": "Tajo Doble",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Arma",
+      "Ataque",
+      "Fisico",
+      "Marcial"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 2,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793280610420",
+    "name": "Bola de Fuego",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Fuego",
+      "Ataque",
+      "Area"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Fuego",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Quema los objetos inflamables en el área afectada."
+  },
+  {
+    "id": "ab_1793280673231",
+    "name": "Infusión de Fuego",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Fuego"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Sus ataques Físicos provocan DD daño Fuego al impactar y tiene visión térmica a distancia media. Aumenta su Umbral al daño Fuego y Frío por un paso, y reduce su Umbral a efectos de Agua por un paso. "
+  },
+  {
+    "id": "ab_1793280741893",
+    "name": "Muro de Fuego",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Fuego"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación Físico o sufren LOW daño Fuego."
+  },
+  {
+    "id": "ab_1793281236286",
+    "name": "Tormenta de Energía Negativa",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Nigromancia",
+      "Afliccion",
+      "Area"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los afectados tiran VOL +MOD o sufren HIGH daño Necrótico que reduce sus impactos máximos. "
+  },
+  {
+    "id": "ab_1793281289073",
+    "name": "Aura de Muerte",
+    "type": "passive",
+    "tier": "III",
+    "tags": [
+      "Nigromancia"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los hechizos de Sanación no funcionan a distancia media y toda criatura que muera en ese área revivirá como un No-Muerto menor bajo su control. Cada vez que sufra daño Necrótico que supere su Umbral General, se sanará un Impacto en su lugar. "
+  },
+  {
+    "id": "ab_1793281481718",
+    "name": "Vínculo Parasítico",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Nigromancia",
+      "Duradera"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo tira VOL +MOD o sufre un Vínculo Parasítico. Mientras permanezca activo, esta criatura puede transferirle hasta la mitad del daño que sufra. Esto hará que el daño sea Interno para ambos, ajustando así los impactos recibidos. El afectado puede repetir el tiro para intentar liberarse cada vez que sufra el daño."
+  },
+  {
+    "id": "ab_1793292525580",
+    "name": "Torrente",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Agua",
+      "Ataque"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "LOW",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Empuja un paso al impactar. Apaga los fuegos a su paso y puede herir a Incorpóreos como si fuera un ataque Mágico."
+  },
+  {
+    "id": "ab_1793292597929",
+    "name": "Muro de Agua",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Agua"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que le hagan ataques cuerpo a cuerpo tiran FÍS +MOD o sufren LOW daño Contundente y son Enredados."
+  },
+  {
+    "id": "ab_1793292674641",
+    "name": "Ola Chocante",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Agua"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Crea una Ola que ataca a todos los objetivos en el área afectada, quienes además deben tener éxito en un tiro de salvación Físico o son empujados un paso y tropezados. Si mantienes la concentración, cada ronda puedes emplear una Acción para mover la ola un paso y atacar a cada objetivo en su camino. "
+  },
+  {
+    "id": "ab_1793292744266",
+    "name": "Infusión de Agua",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Agua"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Sus ataques Físicos cuentan como Mágicos y aumentan su alcance a Cercano. Recibe también velocidad de Natación 1, es capaz de respirar bajo el agua sin dificultades y aumenta su Umbral al daño Frío y Ácido por un paso. "
+  },
+  {
+    "id": "ab_1793292852239",
+    "name": "Relámpago",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Tormenta",
+      "Eléctrico",
+      "Área"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": true,
+    "area": "Línea Grande",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Eléctrico",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los objetivos con armadura metálica tienen Desventaja defendiéndose. Si pasa por metal u otros materiales conductores, puede saltar hacia objetivos que estén a distancia cercana de ellos y atacarlos."
+  },
+  {
+    "id": "ab_1793293009330",
+    "name": "Onda Trueno",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Tormenta",
+      "Sonico"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los afectados deben tener éxito en un tiro de VOL +MOD o sufren MID daño Sónico y quedan Desconcertados I una ronda. Este hechizo romperá cristal y materiales frágiles. "
+  },
+  {
+    "id": "ab_1793293460928",
+    "name": "Vórtice",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Agua",
+      "Ataque",
+      "Agarre"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "",
+    "area": "Radio Medio",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los afectados deben tener éxito en un tiro FÍS +MOD o quedan Enredados. Si ya están Enredados, pasarán a estar Agarrados."
+  },
+  {
+    "id": "ab_1793293889388",
+    "name": "Constructo",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Pasiva",
+      "Innato"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Es un Constructo, recibiendo así Inmunidad a efectos Necróticos, Aflicciones, Mentales y Miedo, además que aumenta su Umbral Mágico por un paso. No obstante, no puede ser curado salvo por habilidades que lo especifiquen ni puede ser afectado por efectos de Presencia."
+  },
+  {
+    "id": "ab_1793294428604",
+    "name": "Muro de Piedra",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Tierra"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo TIER x 6 puntos de daño. Si es impactado por un arma no-mágica, esta se romperá."
+  },
+  {
+    "id": "ab_1793316582629",
+    "name": "Gran Golpe",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Arma",
+      "Ataque",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Adyacente",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
+  },
+  {
+    "id": "ab_1793317397892",
+    "name": "Campo Antimágico",
+    "type": "passive",
+    "tier": "IV",
+    "tags": [
+      "Protectora",
+      "Arcano"
+    ],
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Tiene a su alrededor un Campo Antimágico que le hace Inmune a efectos Arcanos de Rango TIER o menos y deshabilita objetos mágicos a distancia cercana. "
+  },
+  {
+    "id": "ab_1793352156752",
+    "name": "Abisal",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Pasivo",
+      "Innato",
+      "Abisal"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Es de naturaleza Abisal, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Necrótico además que aumenta su Umbral Mágico por un paso. Provoca DD daño adicional con sus ataques físicos de un elemento específico."
+  },
+  {
+    "id": "ab_1793352426035",
+    "name": "Pinza",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Ataque",
+      "Natural",
+      "Arma",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Cercano",
+    "area": "",
+    "damage": "",
+    "damage_tier": "LOW",
+    "damage_base_type": "Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo está Enredado (+MOD FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada."
+  },
+  {
+    "id": "ab_1793353371466",
+    "name": "Doble Pinza",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Natural",
+      "Arma"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "",
+    "damage_tier": "LOW",
+    "damage_base_type": "Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 2,
+    "desc": "El objetivo está Enredado (FÍS +MOD para escapar). Si ya está Enredado, pasará a estar Agarrado."
+  },
+  {
+    "id": "ab_1793356722736",
+    "name": "Toque Transmutador",
+    "type": "passive",
+    "tier": "II",
+    "tags": [
+      "Transmutacion",
+      "Arcana"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Al impactar con un ataque Natural, el objetivo debe tener éxito en un tiro VOL +MOD o sufre LOW daño Fuerza, Herido I y una modificación forzosa sobre su cuerpo equivalente a Inyección Transmutadora, como puede ser ganar o perder movimientos especiales, sentidos especiales o mucho más. "
+  },
+  {
+    "id": "ab_1793359948064",
+    "name": "Geas",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Mental"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo tira MEN +MOD o debe seguir una orden sin negarse, siempre y cuando no atente contra su vida o seres queridos. Si tiene éxito en el tiro, no podrá volverle a afectar con este hechizo. Puede hacer que la orden se cumpla tan tarde como desee. Si tu objetivo tiene 0 Cordura, deberá obedecer sus órdenes durante el resto del combate."
+  },
+  {
+    "id": "ab_1793360035749",
+    "name": "Sobrecarga Mental",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Mental"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los afectados deben tener éxito en un tiro MEN +MOD o sufren MID daño Psíquico y Confundido II hasta que se recuperen. Cada ronda pueden tirar para recuperarse del efecto."
+  },
+  {
+    "id": "ab_1793360223001",
+    "name": "Doble Ilusorio",
+    "type": "reaction",
+    "tier": "III",
+    "tags": [
+      "Ilusorio"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Un ataque impacta a un doble ilusorio suyo, fallando automáticamente. Esta habilidad no funicona con ataques de área suficientemente grandes ni con criaturas inmunes a ilusiones."
+  },
+  {
+    "id": "ab_1793364721686",
+    "name": "Golpe Disruptor",
+    "type": "passive",
+    "tier": "II",
+    "tags": [
+      "Protectora"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Al impactar con un ataque, el objetivo debe tener éxito en un tiro MEN +MOD o anula un hechizo defensivo que utilice o un efecto Duradero que tenga activo. Sus ataques pueden además herir a criaturas Incorpóreas como si fueran Mágicos."
+  },
+  {
+    "id": "ab_1793366059338",
+    "name": "Infernal",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Infernal",
+      "Innata"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca DD daño adicional de un elemento de su elección en ataques naturales."
+  },
+  {
+    "id": "ab_1793366127728",
+    "name": "Espiritual",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Espiritu",
+      "Innata"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan DD daño adicional de un elemento específico o aumentan su daño por un dado."
+  },
+  {
+    "id": "ab_1793368189281",
+    "name": "Cuerpo Líquido",
+    "type": "passive",
+    "tier": "II",
+    "tags": [
+      "Agua"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) y moja todos los espacios por los que pasa. No obstante, al estar hecho de Agua quedará congelado una ronda si sufre daño Frío y un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo. También desbloquea la habilidad Absorber Agua sin importar su categoría."
+  },
+  {
+    "id": "ab_1793368306469",
+    "name": "Golpes Fluidos",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Agua",
+      "Ataque"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "LOW",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 2,
+    "desc": "Empuja un paso al impactar. Apaga los fuegos a su paso y puede herir a Incorpóreos como si fuera un ataque Mágico."
+  },
+  {
+    "id": "ab_1793369528445",
+    "name": "Absorber Nutrientes",
+    "type": "passive",
+    "tier": "IV",
+    "tags": [
+      "Naturaleza"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Al principio de su turno, se cura un impacto y se recupera de un efecto de estado. Solo puede emplear esta habilidad si está en contacto con el suelo."
+  },
+  {
+    "id": "ab_1793370191750",
+    "name": "Neblina Polar",
+    "type": "action",
+    "tier": "II",
+    "tags": [],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los afectados deben tener éxito en un tiro VOL +MOD o sufren MID daño Frío y Ralentizado I. El área afectada se llena de una Neblina que otorga Ocultamiento, la cual permanecerá durante una ronda."
+  },
+  {
+    "id": "ab_1793370268521",
+    "name": "Rayo Gélido",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Hielo",
+      "Ataque"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Frío",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Puede emplear una Acción para aumentar el área afectada a un Radio Corto y aumentar el daño a HIGH."
+  },
+  {
+    "id": "ab_1793370315847",
+    "name": "Infusión de Hielo",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Hielo"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Sus ataques Físicos provocan DD daño Frío al impactar y puede ver en neblinas sin dificultades. Aumenta su Umbral al daño Necrótico y Frío por un paso, y reduce su Umbral a efectos de Fuego por un paso. "
+  },
+  {
+    "id": "ab_1793450265798",
+    "name": "Celestial",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Celestial",
+      "Pasiva"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Es de naturaleza Celestial, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Radiante además que aumenta su Umbral Mágico por un paso. Tiene Sentido Vital y provoca DD daño adicional con sus ataques físicos de un elemento específico."
+  },
+  {
+    "id": "ab_1793450336476",
+    "name": "Halo Cegador",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Vida",
+      "Radiante"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "Radio Corto",
+    "damage_tier": "MID",
+    "damage_base_type": "Radiante",
+    "save": "VOL +MOD",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los afectados sufren Desconcertado I una ronda. Este ataque disipará toda la oscuridad que alcance."
+  },
+  {
+    "id": "ab_1793450409220",
+    "name": "Vínculo Vital",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Vida"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Absorbe la mitad de los impactos que recibiría un aliado a distancia media (redondeando hacia arriba). Solo puede establecer un vínculo así con un único aliado."
+  },
+  {
+    "id": "ab_1793450520819",
+    "name": "Barrera Luminosa",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Vida"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación de Voluntad o sufren LOW daño Radiante y quedan Desconcertados una ronda."
+  },
+  {
+    "id": "ab_1793451634418",
+    "name": "Sanación Superior",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Vida"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo se cura dos impactos y se recupera de todos los efectos de estado y maldiciones que tenga activos."
   }
 ]

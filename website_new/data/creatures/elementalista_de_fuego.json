@@ -1,0 +1,155 @@
+{
+  "id": "elementalista_de_fuego",
+  "name": "Elementalista de Fuego",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General, Agua",
+      "tier_scaled": true
+    },
+    {
+      "value": 8,
+      "categories": "Físico"
+    },
+    {
+      "value": 8,
+      "categories": "Magia"
+    },
+    {
+      "value": 12,
+      "categories": "Fuego, Frío"
+    }
+  ],
+  "immune": [],
+  "senses": "Visión Térmica",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Sus ataques Físicos provocan DD daño Fuego al impactar y tiene visión térmica a distancia media. Aumenta su Umbral al daño Fuego y Frío por un paso, y reduce su Umbral a efectos de Agua por un paso. ",
+      "name": "Infusión de Fuego",
+      "tags": [
+        "Fuego"
+      ],
+      "ability_id": "ab_1793280673231",
+      "mod_tpl": {
+        "desc": "Sus ataques Físicos provocan DD daño Fuego al impactar y tiene visión térmica a distancia media. Aumenta su Umbral al daño Fuego y Frío por un paso, y reduce su Umbral a efectos de Agua por un paso. "
+      },
+      "type": "passive",
+      "cost": "",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Contundente",
+      "damage_tier": "MID",
+      "name": "Golpe",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1791818112393",
+      "damage": "3d6 + 5 Contundente",
+      "bonus": "+7 + 2d6",
+      "desc": "Provoca 2d6 daño Fuego adicional y quema objetos inflamables.",
+      "mod_tpl": {
+        "desc": "Provoca DD daño Fuego adicional y quema objetos inflamables."
+      }
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Fuego",
+      "damage_tier": "MID",
+      "desc": "Quema los objetos inflamables en el área afectada.",
+      "name": "Bola de Fuego",
+      "range": "Medio",
+      "tags": [
+        "Fuego",
+        "Ataque",
+        "Area"
+      ],
+      "ability_id": "ab_1793280610420",
+      "damage": "2d6 + 5 Fuego",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Hace tres ataques de cualquier tipo con coste de una Acción.",
+      "name": "Secuencia de Ataques",
+      "tags": [
+        "Mejora",
+        "Marcial",
+        "Duelo"
+      ],
+      "ability_id": "ab_1791817340811"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "ability_id": "muro-de-fuego_1778692256831",
+      "cost": 1,
+      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo sufren 2d6 daño Fuego.",
+      "name": "Muro de Fuego"
+    },
+    {
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "gul",
+  "name": "Gul",
+  "size": "Mediano",
+  "level": 2,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5+1d6",
+    "VOL": "+5+1d6",
+    "MEN": "+2"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General, Radiante"
+    },
+    {
+      "value": 8,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [
+    "Aflicciones",
+    "Necrótico",
+    "Miedo",
+    "Mentales"
+  ],
+  "senses": "Sentir Vida, Olfato",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es un No-Muerto, recibiendo así Inmunidad a efectos Necróticos, Aflicciones, Miedo y Mentales, además que puede sentir la presencia de seres vivos a distancia media y no necesita comer ni respirar. No obstante, reducirá su umbral al daño Radiante por un paso y solo puede curarse con efectos Necróticos.",
+      "name": "No-Muerto",
+      "tags": [
+        "Pasiva",
+        "Nigromancia"
+      ],
+      "ability_id": "ab_1793181456440"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Cada vez que impacte con un ataque físico, el afectado deberá tener éxito en un tiro VOL +5 + 1d6 o está infectado con una Plaga. Mientras permanezca infectado, no podrá recibir Sanación y cada día deberá repetir el tiro o reducirá sus impactos máximos por 1 y recibe Enfermado I. Si tiene dos éxitos, se recuperará de la plaga, pero hasta que lo haga puede infectar a otros aunque no tenga ningún efecto negativo. Si un objetivo con Plaga muere, reanimará como un Gul.",
+      "name": "Plaga Gul",
+      "tags": [
+        "Pasiva",
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793181221119",
+      "mod_tpl": {
+        "desc": "Cada vez que impacte con un ataque físico, el afectado deberá tener éxito en un tiro VOL +MOD o está infectado con una Plaga. Mientras permanezca infectado, no podrá recibir Sanación y cada día deberá repetir el tiro o reducirá sus impactos máximos por 1 y recibe Enfermado I. Si tiene dos éxitos, se recuperará de la plaga, pero hasta que lo haga puede infectar a otros aunque no tenga ningún efecto negativo. Si un objetivo con Plaga muere, reanimará como un Gul."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Paralizante. Mientras permanezca envenenado, recibe Ralentizado I y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo.",
+      "name": "Veneno Paralizante",
+      "tags": [
+        "Pasiva",
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793181368747",
+      "mod_tpl": {
+        "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Paralizante. Mientras permanezca envenenado, recibe Ralentizado I y cada ronda deberá repetir el tiro o el nivel del veneno aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo."
+      },
+      "type": "passive",
+      "cost": "",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": "1",
+      "damage": "1d6 + 4",
+      "damage_base_type": "Cortante",
+      "damage_tier": "MID",
+      "name": "Garra",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1791818049839",
+      "bonus": "",
+      "desc": "",
+      "type": "action",
+      "area": "",
+      "save": "",
+      "move": ""
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": "1",
+      "damage": "2d6 + 4",
+      "damage_base_type": "Perforante",
+      "name": "Mordisco",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1793008689989",
+      "bonus": "",
+      "desc": "El objetivo está Enredado (+MOD FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada.",
+      "type": "action",
+      "range": "Adyacente",
+      "area": "",
+      "damage_tier": "MID",
+      "save": "",
+      "move": ""
+    },
+    {
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "El objetivo queda Agarrado (+5 + 1d6 FÍS para escapar).",
+      "name": "Agarre",
+      "range": "Adyacente",
+      "tags": [
+        "Marcial",
+        "Ataque",
+        "Fisico",
+        "Agarre"
+      ],
+      "ability_id": "agarre_1791818660372",
+      "mod_tpl": {
+        "desc": "El objetivo queda Agarrado (+MOD FÍS para escapar)."
+      },
+      "bonus": "+5 + 1d6"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Esquiva / Parada",
+      "cost": 1,
+      "desc": "",
+      "bonus": "+5 + 1d6",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      }
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "type": "No-muerto",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

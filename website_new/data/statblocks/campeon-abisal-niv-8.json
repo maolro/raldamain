@@ -1,5 +1,5 @@
 {
-  "name": "Campeón Abisal (niv 8)",
+  "name": "Líder Abisal (niv 8)",
   "level": 8,
   "race": {},
   "stats": {
@@ -181,11 +181,11 @@
       "rank": 2,
       "freeranks": 0,
       "max": 5,
-      "attributes": "estilo_duelista--1--defensa-habil,estilo_duelista--1--secuencia-de-ataques,estilo_duelista--1--truco-de-combate,estilo_duelista--2--atrapar-arma,estilo_duelista--2--ataque-torbellino,estilo_duelista--2--persecucion,estilo_duelista--3--carga-del-espadachin,estilo_duelista--3--contrataque,estilo_duelista--3--espadas-trabadas,estilo_duelista--4--maestria-de-arma,estilo_duelista--4--cortar-el-acero,estilo_duelista--4--impacto-aereo,estilo_duelista--5--muerte-por-mil-cortes,estilo_duelista--5--partir-montanas,estilo_duelista--5--proyeccion-de-chi"
+      "attributes": "estilo_duelista--1--defensa-habil,estilo_duelista--1--secuencia-de-ataques,estilo_duelista--1--truco-de-combate,estilo_duelista--2--atrapar-arma,estilo_duelista--2--ataque-torbellino,estilo_duelista--2--persecucion,estilo_duelista--3--tajo-aereo,estilo_duelista--3--combo-mortal,estilo_duelista--3--parada-superior,estilo_duelista--4--maestria-de-arma,estilo_duelista--4--cortar-el-acero,estilo_duelista--4--impacto-aereo,estilo_duelista--5--muerte-por-mil-cortes,estilo_duelista--5--partir-montanas,estilo_duelista--5--proyeccion-de-chi"
     },
     {
-      "id": "ira",
-      "name": "Ira",
+      "id": "presencia",
+      "name": "Presencia",
       "unlock": [
         1,
         4,
@@ -196,12 +196,12 @@
       ],
       "three_tier": false,
       "category": "Combate",
-      "stat": "str",
+      "stat": "cha",
       "reserve": "chi",
       "rank": 1,
       "freeranks": 0,
       "max": 5,
-      "attributes": "ira--1--ira-de-combate,ira--1--demostracion-terrorifica,ira--2--frenesi-de-batalla,ira--2--resistencia-salvaje,ira--3--ira-temeraria,ira--3--hasta-el-limite,ira--4--golpe-de-adrenalina,ira--4--furia-imparable,ira--5--superar-los-limites,ira--5--furia-invulnerable"
+      "attributes": "presencia--1--voz-del-comandante,presencia--1--voluntad-poderosa,presencia--2--revigorar,presencia--2--provocacion,presencia--3--indomito,presencia--3--inspirar-heroismo"
     },
     {
       "id": "guerrero_divino",
@@ -251,9 +251,35 @@
     }
   },
   "equipment": {
-    "armor": {},
-    "mainHand": {},
-    "secondHand": {},
+    "armor": {
+      "eqab": "",
+      "name": "Media",
+      "penalty": -2,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 4
+        }
+      ]
+    },
+    "mainHand": {
+      "ep": 1,
+      "eqab": "espada-larga",
+      "name": "Espada Larga",
+      "styles": [
+        "coloso",
+        "duelo"
+      ]
+    },
+    "secondHand": {
+      "eqab": "garra",
+      "name": "Garra",
+      "styles": [
+        "coloso",
+        "duelo",
+        "asesino"
+      ]
+    },
     "head": {},
     "bag": []
   },

@@ -1,0 +1,141 @@
+{
+  "id": "nigromante",
+  "name": "Nigromante",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 8,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+9",
+    "VOL": "+9+2d6",
+    "MEN": "+9+2d6"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General"
+    },
+    {
+      "value": 15,
+      "categories": "Magia"
+    },
+    {
+      "value": 15,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [],
+  "senses": "Sentir Vida",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Los hechizos de Sanación no funcionan a distancia media y toda criatura que muera en ese área revivirá como un No-Muerto menor bajo su control. Cada vez que sufra daño Necrótico que supere su Umbral General, se sanará un Impacto en su lugar. ",
+      "name": "Aura de Muerte",
+      "tags": [
+        "Nigromancia"
+      ],
+      "ability_id": "ab_1793281289073"
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El objetivo debe tener éxito en un tiro VOL +9 + 2d6 o sufre 2d8 + 6 daño Necrótico que no puede curarse. Si logra provocar por lo menos un impacto, puede recuperar un impacto o curarse de un efecto de estado. Al emplear este efecto en un No-Muerto, puede curarle un impacto o un efecto de estado.",
+      "name": "Drenar Vida",
+      "range": "Adyacente",
+      "tags": [
+        "Nigromancia",
+        "Necrotico",
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793179018622",
+      "mod_tpl": {
+        "desc": "El objetivo debe tener éxito en un tiro VOL +MOD o sufre MID daño Necrótico que no puede curarse. Si logra provocar por lo menos un impacto, puede recuperar un impacto o curarse de un efecto de estado. Al emplear este efecto en un No-Muerto, puede curarle un impacto o un efecto de estado."
+      }
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Los afectados tiran VOL +9 + 2d6 o sufren 3d8 + 6 daño Necrótico que reduce sus impactos máximos. ",
+      "name": "Tormenta de Energía Negativa",
+      "range": "Medio",
+      "tags": [
+        "Nigromancia",
+        "Afliccion",
+        "Area"
+      ],
+      "ability_id": "ab_1793281236286",
+      "mod_tpl": {
+        "desc": "Los afectados tiran VOL +MOD o sufren HIGH daño Necrótico que reduce sus impactos máximos. "
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "El objetivo tira VOL +9 + 2d6 o sufre un Vínculo Parasítico. Mientras permanezca activo, esta criatura puede transferirle hasta la mitad del daño que sufra. Esto hará que el daño sea Interno para ambos, ajustando así los impactos recibidos. El afectado puede repetir el tiro para intentar liberarse cada vez que sufra el daño.",
+      "name": "Vínculo Parasítico",
+      "range": "Adyacente",
+      "tags": [
+        "Nigromancia",
+        "Duradera"
+      ],
+      "ability_id": "ab_1793281481718",
+      "mod_tpl": {
+        "desc": "El objetivo tira VOL +MOD o sufre un Vínculo Parasítico. Mientras permanezca activo, esta criatura puede transferirle hasta la mitad del daño que sufra. Esto hará que el daño sea Interno para ambos, ajustando así los impactos recibidos. El afectado puede repetir el tiro para intentar liberarse cada vez que sufra el daño."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Hasta tres aliados que alcance reciben Ventaja en su siguiente tiro de ataque o defensa.",
+      "name": "Voz del Comandante",
+      "range": "Medio",
+      "tags": [
+        "Presencia"
+      ],
+      "ability_id": "ab_1793231214913"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Suma +10 a un tiro de Salvación de cualquier tipo.",
+      "name": "Indómito",
+      "tags": [
+        "Presencia"
+      ],
+      "ability_id": "ab_1793231378591"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "VOL": "bonus",
+    "MEN": "bonus",
+    "FÍS": "low"
+  }
+}

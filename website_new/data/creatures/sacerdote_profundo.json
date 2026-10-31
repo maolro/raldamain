@@ -1,0 +1,155 @@
+{
+  "id": "sacerdote_profundo",
+  "name": "Sacerdote Profundo",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 8,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+9",
+    "VOL": "+9+2d6",
+    "MEN": "+9+2d6"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General"
+    },
+    {
+      "value": 15,
+      "categories": "Físico"
+    },
+    {
+      "value": 15,
+      "categories": "Magia"
+    },
+    {
+      "value": 20,
+      "categories": "Frío, Ácido"
+    }
+  ],
+  "immune": [],
+  "senses": "Vista a Oscuras (en Agua)",
+  "speed": "Paso 1, Natación 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Sus ataques Físicos cuentan como Mágicos y aumentan su alcance a Cercano. Recibe también velocidad de Natación 1, es capaz de respirar bajo el agua sin dificultades y aumenta su Umbral al daño Frío y Ácido por un paso. ",
+      "name": "Infusión de Agua",
+      "tags": [
+        "Agua"
+      ],
+      "ability_id": "ab_1793292744266"
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Eléctrico",
+      "desc": "Los objetivos con armadura metálica tienen Desventaja defendiéndose.",
+      "name": "Arco Eléctrico",
+      "range": "Medio",
+      "tags": [
+        "Tormenta",
+        "Ataque",
+        "Electrico"
+      ],
+      "ability_id": "ab_1793208194508",
+      "damage": "2d8 + 6 Eléctrico",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "area": "Radio Medio",
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": "2",
+      "damage_base_type": "Contundente",
+      "damage_tier": "MID",
+      "desc": "Los afectados deben tener éxito en un tiro FÍS +MOD o quedan Enredados. Si ya están Enredados, pasarán a estar Agarrados.",
+      "name": "Vórtice",
+      "tags": [
+        "Agua",
+        "Ataque",
+        "Agarre"
+      ],
+      "ability_id": "ab_1793293460928",
+      "mod_tpl": {
+        "desc": "Los afectados deben tener éxito en un tiro FÍS +MOD o quedan Enredados. Si ya están Enredados, pasarán a estar Agarrados."
+      },
+      "damage": "",
+      "bonus": "",
+      "type": "action",
+      "range": "",
+      "save": "",
+      "move": ""
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Los afectados deben tener éxito en un tiro de VOL +9 + 2d6 o sufren 2d8 + 6 daño Sónico y quedan Desconcertados I una ronda. Este hechizo romperá cristal y materiales frágiles. ",
+      "name": "Onda Trueno",
+      "tags": [
+        "Tormenta",
+        "Sonico"
+      ],
+      "ability_id": "ab_1793293009330",
+      "mod_tpl": {
+        "desc": "Los afectados deben tener éxito en un tiro de VOL +MOD o sufren MID daño Sónico y quedan Desconcertados I una ronda. Este hechizo romperá cristal y materiales frágiles. "
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Hasta tres aliados que alcance reciben Ventaja en su siguiente tiro de ataque o defensa.",
+      "name": "Voz del Comandante",
+      "range": "Medio",
+      "tags": [
+        "Presencia"
+      ],
+      "ability_id": "ab_1793231214913"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Crea un muro que protege a todos en su área, absorbiendo 9 puntos de daño. Todos los enemigos que le hagan ataques cuerpo a cuerpo tiran FÍS +9 + 2d6 o sufren 2d8 + 6 daño Contundente y son Enredados.",
+      "name": "Muro de Agua",
+      "tags": [
+        "Agua"
+      ],
+      "ability_id": "ab_1793292597929",
+      "mod_tpl": {
+        "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que le hagan ataques cuerpo a cuerpo tiran FÍS +MOD o sufren LOW daño Contundente y son Enredados."
+      }
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "MEN": "bonus",
+    "VOL": "bonus",
+    "FÍS": "low"
+  }
+}

@@ -1,101 +1,128 @@
 {
   "id": "elemental_fuego",
   "name": "Elemental de Fuego",
-  "tier": "Esbirro Élite II",
   "type": "Espíritu",
   "size": "Grande",
   "image": "creatures/elemental_fuego.jpg",
   "hits": 2,
   "saves": {
-    "FÍS": "+7+1d6",
-    "VOL": "+7+1d6",
-    "MEN": "+4"
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7"
   },
   "damageThreshold": {
     "magic": 12,
     "other": 8
   },
   "immune": [
-    "Efectos físicos no mágicos",
+    "Físicos",
     "Veneno",
     "Necrótico",
-    "Efectos mentales",
+    "Mentales",
     "Miedo",
-    "Terreno difícil",
-    "Fuego",
     "Fuego"
   ],
   "senses": "Sentido Vital",
-  "speed": "Paso 10, Vuelo 10",
+  "speed": "Paso 1, Vuelo 1",
   "combat": {
     "reacciones": 1,
-    "acciones": 1
+    "acciones": 2
   },
   "traits": [
     {
+      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Fuego, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 1d6 + 5  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
       "name": "Cuerpo de Fuego",
-      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 2d6 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo."
+      "tags": [
+        "Fuego"
+      ],
+      "ability_id": "cuerpo-de-fuego_1778692691656",
+      "mod_tpl": {
+        "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Fuego, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo."
+      }
     }
   ],
   "actions": [
     {
-      "id": "ab_1778690641452",
-      "name": "Asalto Abrasador",
-      "type": "action",
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Fuego",
+      "damage_tier": "MID",
+      "desc": "Quema los objetos inflamables en el área afectada.",
+      "name": "Bola de Fuego",
+      "range": "Medio",
       "tags": [
         "Fuego",
-        "Ataque"
+        "Ataque",
+        "Area"
       ],
-      "cost": "1",
-      "bonus": "+7+2d6",
-      "range": "4",
-      "area": "",
+      "ability_id": "ab_1793280610420",
       "damage": "2d6 + 5 Fuego",
-      "save": "",
-      "attacks": 2,
-      "desc": "Quema objetos inflamables que impacte.",
-      "move": 5
+      "bonus": "+7 + 2d6"
     },
     {
+      "area": "Cono pequeño",
+      "bonus_scaled": true,
+      "cost": 2,
+      "damage_base_type": "Fuego",
+      "damage_tier": "HIGH",
+      "desc": "Quema los objetos inflamables en el área afectada. ",
       "name": "Aliento de Fuego",
-      "bonus": "+7 + 2d6",
-      "area": "Cono 8",
+      "tags": [
+        "Fuego",
+        "Ataque",
+        "Area"
+      ],
+      "ability_id": "aliento-de-fuego_1778692098257",
       "damage": "3d6 + 5 Fuego",
-      "move": "5",
-      "cost": 1,
-      "desc": "Quemará los objetos inflamables en el área afectada. Al herir provocará una quemadura a los objetivos que lleven objetos metálicos o inflamables.",
-      "range": "1"
+      "bonus": "+7 + 2d6"
     },
     {
-      "name": "Combustión Espontánea",
-      "desc": "Solo puede afectar a objetivos que tengan una quemadura.",
-      "cost": 1,
-      "save": "VOL +7+1d6",
-      "damage": "2d6 + 5 Fuego",
-      "move": 5
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Hace tres ataques de cualquier tipo con coste de una Acción.",
+      "name": "Secuencia de Ataques",
+      "tags": [
+        "Mejora",
+        "Marcial",
+        "Duelo"
+      ],
+      "ability_id": "ab_1791817340811"
     }
   ],
   "reactions": [
     {
       "name": "Parada / Esquiva",
-      "bonus": "+7 + 2d6",
-      "move": "5"
+      "bonus": "+7 + 2d6"
     },
     {
-      "name": "Evasión",
-      "cost": 1,
-      "desc": "Obtiene +10 a su tirada de Esquiva.",
-      "move": 10
-    },
-    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": "1",
+      "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación Físico o sufren LOW daño Fuego.",
       "name": "Muro de Fuego",
-      "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo sufren 2d6 daño Fuego.",
-      "ability_id": "muro-de-fuego_1778692256831"
+      "tags": [
+        "Fuego"
+      ],
+      "ability_id": "ab_1793280741893",
+      "mod_tpl": {
+        "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación Físico o sufren LOW daño Fuego."
+      },
+      "type": "reaction",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
     },
     {
       "name": "Absorber Fuego",
-      "desc": "Recupera 1 Impacto si se encuentra un lugar en llamas o es impactado por un efecto de Fuego que atraviese su umbral.",
+      "desc": "Recupera 1 Impacto y se cura de un efecto de estado si se encuentra un lugar en llamas o es impactado por un efecto de Fuego que atraviese su umbral.",
       "cost": 1
     }
   ],
@@ -113,5 +140,11 @@
       "value": 8,
       "categories": "General"
     }
-  ]
+  ],
+  "published": true,
+  "save_scale": {
+    "MEN": "low",
+    "VOL": "bonus",
+    "FÍS": "bonus"
+  }
 }

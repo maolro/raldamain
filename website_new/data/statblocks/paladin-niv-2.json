@@ -9,11 +9,11 @@
     },
     "dex": {
       "name": "DES",
-      "value": 1
+      "value": 0
     },
     "con": {
       "name": "CON",
-      "value": 2
+      "value": 3
     },
     "itl": {
       "name": "INT",
@@ -147,6 +147,43 @@
       "attributes": "estilo_coloso--1--ataque-poderoso,estilo_coloso--1--golpe-desestabilizador,estilo_coloso--1--proteger-aliado,estilo_coloso--2--gran-barrido,estilo_coloso--2--reposicion-forzosa,estilo_coloso--2--lanzamiento,estilo_coloso--3--golpe-demoledor,estilo_coloso--3--carga-salvaje,estilo_coloso--3--golpe-aturdidor,estilo_coloso--4--golpe-ascendente,estilo_coloso--4--golpe-por-golpe,estilo_coloso--4--maestria-de-estilo,estilo_coloso--4--secuencia-de-golpes,estilo_coloso--5--impacto-meteoro,estilo_coloso--5--impacto-mortal,estilo_coloso--5--proyeccion-de-chi"
     },
     {
+      "id": "ascendencia_celestial",
+      "name": "Ascendencia Celestial",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Ascendencias",
+      "stat": "wis/cha",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "ascendencia_celestial--1--nacido-de-los-cielos,ascendencia_celestial--1--canalizacion-celestial,ascendencia_celestial--2--golpe-trascendente,ascendencia_celestial--2--sentido-vital,ascendencia_celestial--2--cuerpo-puro,ascendencia_celestial--3--angel-protector,ascendencia_celestial--3--alma-indomable,ascendencia_celestial--4--alas-angelicales,ascendencia_celestial--4--vision-verdadera,ascendencia_celestial--5--regeneracion-celestial,ascendencia_celestial--5--alma-ascendida,ascendencia_celestial--6--angel-vengador",
+      "stats": [
+        {
+          "stat": "cha",
+          "rank": 2,
+          "boost": 1
+        },
+        {
+          "stat": "con",
+          "rank": 4,
+          "boost": 1
+        },
+        {
+          "stat": "wis",
+          "rank": 6,
+          "boost": 1
+        }
+      ]
+    },
+    {
       "id": "guerrero_divino",
       "name": "Guerrero Divino",
       "unlock": [
@@ -164,27 +201,7 @@
       "rank": 1,
       "freeranks": 0,
       "max": 6,
-      "attributes": "guerrero_divino--1--azote-divino,guerrero_divino--1--sentido-divino,guerrero_divino--1--canalizar-divinidad,guerrero_divino--2--guerrero-de-la-fe,guerrero_divino--2--plegaria-de-batalla,guerrero_divino--2--impacto-desacralizador,guerrero_divino--3--presencia-divina,guerrero_divino--3--aura-protectora,guerrero_divino--4--hueste-divina,guerrero_divino--4--aliento-de-vida,guerrero_divino--4--golpe-exiliante,guerrero_divino--5--azote-ejecutor,guerrero_divino--5--explosion-divina,guerrero_divino--6--avatar-divino"
-    },
-    {
-      "id": "ira",
-      "name": "Ira",
-      "unlock": [
-        1,
-        4,
-        7,
-        10,
-        13,
-        16
-      ],
-      "three_tier": false,
-      "category": "Combate",
-      "stat": "str",
-      "reserve": "chi",
-      "rank": 1,
-      "freeranks": 0,
-      "max": 5,
-      "attributes": "ira--1--ira-de-combate,ira--1--demostracion-terrorifica,ira--2--frenesi-de-batalla,ira--2--resistencia-salvaje,ira--3--ira-temeraria,ira--3--hasta-el-limite,ira--4--golpe-de-adrenalina,ira--4--furia-imparable,ira--5--superar-los-limites,ira--5--furia-invulnerable"
+      "attributes": "guerrero_divino--1--azote-divino,guerrero_divino--1--sentido-divino,guerrero_divino--1--canalizar-divinidad,guerrero_divino--2--guerrero-de-la-fe,guerrero_divino--2--milagro-menor,guerrero_divino--2--azote-castigador,guerrero_divino--3--presencia-divina,guerrero_divino--3--aura-protectora,guerrero_divino--4--hueste-divina,guerrero_divino--4--aliento-de-vida,guerrero_divino--4--golpe-exiliante,guerrero_divino--5--azote-ejecutor,guerrero_divino--5--explosion-divina,guerrero_divino--6--avatar-divino"
     }
   ],
   "spells": {

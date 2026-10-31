@@ -43,11 +43,6 @@
       "damage": "2d6 + 4 Perforante"
     },
     {
-      "name": "Asalto Coordinado",
-      "cost": 1,
-      "desc": "Hace un ataque junto a un aliado, y ambos reciben +2 al tiro."
-    },
-    {
       "name": "Bomba",
       "desc": "",
       "cost": 2,
@@ -57,12 +52,29 @@
       "damage": "2d6 + 4 Fuego"
     },
     {
-      "name": "Pistola de Mano",
-      "desc": "Provoca Herido I al impactar",
-      "cost": 2,
-      "bonus": "+5+2d6",
-      "damage": "3d6 + 4 Perforante",
-      "range": "Adyacente"
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque recibe un modificador +2, aumenta su daño base por un dado y provoca Herido I al impactar.",
+      "name": "Ataque Furtivo",
+      "tags": [
+        "Marcial",
+        "Mejora",
+        "Asesino"
+      ],
+      "ability_id": "ab_1791817547641"
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
+      "tags": [
+        "Presencia",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793014528491"
     }
   ],
   "reactions": [
@@ -83,5 +95,6 @@
     }
   ],
   "lore": "",
-  "tags": []
+  "tags": [],
+  "published": false
 }

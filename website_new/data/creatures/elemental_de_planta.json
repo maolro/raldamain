@@ -1,0 +1,150 @@
+{
+  "id": "elemental_de_planta",
+  "name": "Elemental de Planta",
+  "type": "Espíritu",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "Fuego"
+    },
+    {
+      "value": 8,
+      "categories": "General"
+    },
+    {
+      "value": 12,
+      "categories": "Cortante, Ácido, Eléctrico"
+    },
+    {
+      "value": 16,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [
+    "Mentales",
+    "Miedo",
+    "Aflicciones",
+    "Sómico",
+    "Aturdimiento"
+  ],
+  "senses": "Sentido Vital",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "desc": "Es una planta viviente, siendo así Inmune a efectos Mentales, Miedo, Aturdimiento, Aflicciones y Sónicos, Resistencia a Ácido y Eléctrico a costa de Vulnerabilidad a efectos de Fuego y Cortantes (todo ya incluido). El terreno difícil por naturaleza no le afecta y puede camuflarse ahí.",
+      "name": "Planta",
+      "tags": [
+        "Naturaleza"
+      ],
+      "ability_id": "planta_1778930785381"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Al principio de su turno, se cura un impacto y se recupera de un efecto de estado. Solo puede emplear esta habilidad si está en contacto con el suelo.",
+      "name": "Absorber Nutrientes",
+      "tags": [
+        "Naturaleza"
+      ],
+      "ability_id": "ab_1793369528445"
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "damage_base_type": "Cortante/Perforante",
+      "damage_tier": "LOW",
+      "desc": "Cuenta como daño Fuerza al atacar a objetivos Enredados o Agarrados por efectos de Naturaleza.",
+      "name": "Espina de Madera",
+      "range": "Medio",
+      "tags": [
+        "Naturaleza",
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793031825227",
+      "damage": "2d6 + 5 Cortante/Perforante"
+    },
+    {
+      "area": "Cilindro Medio",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "damage_base_type": "Contundente",
+      "damage_tier": "MID",
+      "desc": "Los objetivos quedan Enredados hasta que escapen (FÍS +7 + 2d6). Aquellos en contacto con el suelo o con plantas tienen Desventaja defendiéndose. ",
+      "name": "Raíces Devoradoras",
+      "range": "Medio",
+      "tags": [
+        "Naturaleza",
+        "Ataque",
+        "Area"
+      ],
+      "ability_id": "ab_1793032852453",
+      "mod_tpl": {
+        "desc": "Los objetivos quedan Enredados hasta que escapen (FÍS +MOD). Aquellos en contacto con el suelo o con plantas tienen Desventaja defendiéndose. "
+      },
+      "damage": "3d6 + 5 Contundente"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Crea un muro que protege a todos en su alcance, absorbiendo 6 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro FÍS +7 + 2d6 o sufren 2d6 + 5 daño Perforante y quedan Enredados.",
+      "name": "Muro de Zarzas",
+      "tags": [
+        "Naturaleza",
+        "Muro"
+      ],
+      "ability_id": "ab_1793032320692",
+      "mod_tpl": {
+        "desc": "Crea un muro que protege a todos en su alcance, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro FÍS +MOD o sufren LOW daño Perforante y quedan Enredados."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Se oculta de tal manera que es Invisible, impidiendo que pueda ser detectado. Debe encontrarse bajo cubierta u ocultamiento para emplear esta habilidad, y sus efectos acabarán cuando ataque.",
+      "name": "Acechar",
+      "tags": [
+        "Rastrear"
+      ],
+      "ability_id": "ab_1793014889431"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

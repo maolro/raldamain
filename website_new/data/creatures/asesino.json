@@ -1,0 +1,128 @@
+{
+  "id": "asesino",
+  "name": "Asesino",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 8,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+9+3d6",
+    "VOL": "+9+2d6",
+    "MEN": "+9"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General",
+      "tier_scaled": true
+    },
+    {
+      "value": 15,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [],
+  "senses": "Vista a Ciegas",
+  "speed": "Paso 2, Salto 2",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +9 + 2d6 o sufre un Veneno Mortal. Mientras permanezca envenenado, sufre 3d8 daño Necrótico y Enfermado I, y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo.",
+      "name": "Veneno Mortal",
+      "tags": [
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793203194188",
+      "mod_tpl": {
+        "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Mortal. Mientras permanezca envenenado, sufre DD daño Necrótico y Enfermado I, y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 2,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "LOW",
+      "name": "Puñalada Doble",
+      "range": "Medio",
+      "tags": [
+        "Arma",
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793202871031",
+      "damage": "2d8 + 6 Perforante",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Se mueve hasta un paso y hace un ataque con un dado de daño adicional, contra el cual su objetivo tendrá Deventaja defendiéndose. Solo funciona con armas cuerpo a cuerpo.",
+      "name": "Paso del Asesino",
+      "tags": [
+        "Asesino",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793184456123"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque recibe un modificador +2 y tratará los umbrales del objetivo como si provocase daño Fuerza.",
+      "name": "Golpe Penetrante",
+      "tags": [
+        "Asesino",
+        "Mejora",
+        "Marcial"
+      ],
+      "ability_id": "ab_1793184515260"
+    }
+  ],
+  "reactions": [
+    {
+      "bonus": "+9+3d6",
+      "name": "Parada / Esquiva",
+      "ability_id": "parada--esquiva_1778753374110"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Obtiene +10 en un tiro de defensa o salvación contra un efecto que un enemigo específico ya haya usado contra él.",
+      "name": "Lo He Visto Antes",
+      "tags": [
+        "Rastrear"
+      ],
+      "ability_id": "ab_1793184258319"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Se oculta de tal manera que es Invisible, impidiendo que pueda ser detectado. Debe encontrarse bajo cubierta u ocultamiento para emplear esta habilidad, y sus efectos acabarán cuando ataque.",
+      "name": "Acechar",
+      "tags": [
+        "Rastrear"
+      ],
+      "ability_id": "ab_1793014889431"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "FÍS": "extreme",
+    "MEN": "low",
+    "VOL": "bonus"
+  }
+}

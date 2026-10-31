@@ -1,0 +1,150 @@
+{
+  "id": "automata",
+  "name": "Autómata",
+  "type": "Constructo",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General"
+    },
+    {
+      "value": 12,
+      "categories": "Magia"
+    },
+    {
+      "value": 16,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [
+    "Aflicciones",
+    "Necrótico",
+    "Miedo",
+    "Mentales",
+    "Sanación",
+    "Moral"
+  ],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es un Constructo, recibiendo así Inmunidad a efectos Necróticos, Aflicciones, Mentales y Miedo, además que aumenta su Umbral Mágico por un paso. No obstante, no puede ser curado salvo por habilidades que lo especifiquen ni puede ser afectado por efectos de Presencia.",
+      "name": "Constructo",
+      "tags": [
+        "Pasiva",
+        "Innato"
+      ],
+      "ability_id": "ab_1793293889388",
+      "type": "passive",
+      "cost": "",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Contundente",
+      "damage_tier": "MID",
+      "name": "Golpe",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1791818112393",
+      "damage": "3d6 + 5 Contundente",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Aumenta el daño de un ataque por un dado y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro FÍS +7 + 2d6 o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo.",
+      "name": "Gran Barrido",
+      "tags": [
+        "Mejora",
+        "Maniobra",
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "ab_1791813129637",
+      "mod_tpl": {
+        "desc": "Aumenta el daño de un ataque por un dado y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro FÍS +MOD o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo."
+      }
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Hace tres ataques de cualquier tipo con coste de una Acción.",
+      "name": "Secuencia de Ataques",
+      "tags": [
+        "Mejora",
+        "Marcial",
+        "Duelo"
+      ],
+      "ability_id": "ab_1791817340811"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada",
+      "desc": "",
+      "bonus": "+7+1d6"
+    },
+    {
+      "cost": 1,
+      "desc": "Se mueve hasta un paso para interceptar un ataque hecho contra un aliado, pudiendo así emplear su tiro defensivo en lugar del suyo y recibir el daño del ataque si falla.",
+      "name": "Proteger Aliado",
+      "tags": [
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "proteger-aliado_1791462080348"
+    },
+    {
+      "cost": 1,
+      "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba o reduce un efecto de estado por un paso.",
+      "name": "Segundo Aliento",
+      "tags": [
+        "Fortitud",
+        "Defensiva"
+      ],
+      "ability_id": "segundo-aliento_1791462133271"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

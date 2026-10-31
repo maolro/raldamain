@@ -1,0 +1,133 @@
+{
+  "id": "enjambre_de_aranas",
+  "name": "Enjambre de Arañas",
+  "type": "Bestia",
+  "size": "Grande",
+  "level": 2,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5+1d6",
+    "VOL": "+5+1d6",
+    "MEN": "+2"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General",
+      "tier_tpl": "T"
+    }
+  ],
+  "immune": [
+    "Fisicos",
+    "Aflicciones",
+    "Mentales",
+    "Miedo"
+  ],
+  "senses": "Visión en la Oscuridad",
+  "speed": "Paso 1, Escalada 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "La criatura es un enjambre de criaturas más pequeñas, recibiendo Inmunidad a efectos Físicos, Aflicciones, Mentales y Miedo. No obstante, el daño de ataques de Área contará como si fuera Fuerza y no puede aumentar sus umbrales Físico o Mágico de ninguna manera.",
+      "name": "Enjambre",
+      "tags": [
+        "Pasiva"
+      ],
+      "ability_id": "ab_1793209340719"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +5 + 1d6 o sufre un Veneno Debilitante. Mientras permanezca envenenado, recibe Fatigado I y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo.",
+      "name": "Veneno Debilitante",
+      "tags": [
+        "Pasiva",
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793209211881",
+      "mod_tpl": {
+        "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Debilitante. Mientras permanezca envenenado, recibe Fatigado I y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": "1",
+      "damage": "2d6 + 4 Perforante",
+      "damage_base_type": "Perforante",
+      "name": "Aguijón",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1791818158790",
+      "bonus": "+5 + 1d6",
+      "desc": "Provoca los efectos de Veneno Debilitante",
+      "type": "action",
+      "area": "",
+      "damage_tier": "MID",
+      "save": "",
+      "move": ""
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Todos los afectados quedan Agarrados (FÍS +5 + 1d6 para escapar). El área afectada se convierte además en terreno difícil, y las criaturas que entren en él deben tener éxito en un tiro FÍS +5 + 1d6 o quedan Enredadas.",
+      "name": "Telaraña",
+      "range": "Medio",
+      "tags": [
+        "Agarre"
+      ],
+      "ability_id": "ab_1793209254030",
+      "mod_tpl": {
+        "desc": "Todos los afectados quedan Agarrados (FÍS +MOD para escapar). El área afectada se convierte además en terreno difícil, y las criaturas que entren en él deben tener éxito en un tiro FÍS +MOD o quedan Enredadas."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El objetivo está Enfermado I y el Enjambre se engancha a él, haciendo que le siga en sus movimientos. Solo puede quitarse el enjambre si les provoca un Impacto o entra en un entorno en el que no pueden sobrevivir como agua. Esta habilidad solo puede ser usada por Enjambres.",
+      "name": "Enjambre Devorador",
+      "tags": [
+        "Ataque",
+        "Agarre"
+      ],
+      "ability_id": "ab_1793209910460"
+    }
+  ],
+  "reactions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Dispersa su cuerpo por completo, evitando automáticamente un efecto que le tenga como objetivo explícito. Solo puede ser usada por Incorpóreos o Enjambres",
+      "name": "Dispersión",
+      "tags": [
+        "Defensiva"
+      ],
+      "ability_id": "ab_1793209849456"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

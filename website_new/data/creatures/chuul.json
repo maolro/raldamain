@@ -1,0 +1,141 @@
+{
+  "id": "chuul",
+  "name": "Chuul",
+  "type": "Abisal",
+  "size": "Mediano",
+  "level": 8,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+9+2d6",
+    "VOL": "+9+2d6",
+    "MEN": "+9"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General",
+      "tier_scaled": true
+    },
+    {
+      "value": 15,
+      "categories": "Magia"
+    },
+    {
+      "value": 20,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1, Natación 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +9 + 2d6 o sufre un Veneno Paralizante. Mientras permanezca envenenado, recibe Ralentizado I y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo.",
+      "name": "Veneno Paralizante",
+      "tags": [
+        "Pasiva",
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793181368747",
+      "mod_tpl": {
+        "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Paralizante. Mientras permanezca envenenado, recibe Ralentizado I y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Abisal, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Necrótico además que aumenta su Umbral Mágico por un paso. Provoca 3d8 daño adicional con sus ataques físicos de un elemento específico.",
+      "name": "Abisal",
+      "tags": [
+        "Pasivo",
+        "Innato"
+      ],
+      "ability_id": "ab_1793352156752",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Abisal, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Necrótico además que aumenta su Umbral Mágico por un paso. Provoca DD daño adicional con sus ataques físicos de un elemento específico."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Empieza el combate con 3 contadores de escudo.",
+      "name": "Muro Viviente",
+      "tags": [
+        "Pasiva",
+        "Fortitud"
+      ],
+      "ability_id": "ab_1793209049506",
+      "mod_tpl": {
+        "desc": "Empieza el combate con TIER contadores de escudo."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 2,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Cortante",
+      "damage_tier": "LOW",
+      "desc": "Provoca 3d8 daño Ácido al impactar. El objetivo está Enredado (FÍS +9 + 2d6 para escapar) y afectado con Veneno Paralizante. Si ya está Enredado, pasará a estar Agarrado.",
+      "name": "Doble Pinza",
+      "range": "Adyacente",
+      "tags": [
+        "Natural",
+        "Arma"
+      ],
+      "ability_id": "ab_1793353371466",
+      "mod_tpl": {
+        "desc": "Provoca 3d8 daño Ácido al impactar. El objetivo está Enredado (FÍS +MOD para escapar) y afectado con Veneno Paralizante. Si ya está Enredado, pasará a estar Agarrado."
+      },
+      "damage": "2d8 + 6 Cortante",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque aumenta su daño base por dos dados, y al impactar provoca Roto II al objetivo. Si el objetivo logra detener su ataque con su arma, puede romperle esa misma si es de dureza menor.",
+      "name": "Golpe Demoledor",
+      "tags": [
+        "Coloso",
+        "Mejora",
+        "Marcial"
+      ],
+      "ability_id": "ab_1793208339829"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada",
+      "desc": "",
+      "bonus": "+9+1d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Divide la cantidad de impactos recibidos por un ataque a la mitad, redondeando hacia abajo.",
+      "name": "Resiliencia",
+      "tags": [
+        "Fortitud"
+      ],
+      "ability_id": "ab_1793208815332"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "VOL": "bonus",
+    "FÍS": "bonus",
+    "MEN": "low"
+  }
+}

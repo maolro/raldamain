@@ -1,0 +1,248 @@
+{
+  "name": "Acechador Abisal (niv 2)",
+  "level": 2,
+  "race": {},
+  "stats": {
+    "str": {
+      "name": "FUE",
+      "value": 1
+    },
+    "dex": {
+      "name": "DES",
+      "value": 4
+    },
+    "con": {
+      "name": "CON",
+      "value": 2
+    },
+    "itl": {
+      "name": "INT",
+      "value": 1
+    },
+    "wis": {
+      "name": "SAB",
+      "value": 1
+    },
+    "cha": {
+      "name": "CAR",
+      "value": 3
+    }
+  },
+  "talents": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "stat": "dex",
+      "level": 0
+    },
+    "performance": {
+      "name": "Actuación",
+      "stat": "cha",
+      "level": 0
+    },
+    "arcana": {
+      "name": "Arcanismo",
+      "stat": "itl",
+      "level": 0
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "stat": "str",
+      "level": 0
+    },
+    "insight": {
+      "name": "Averiguar Intenciones",
+      "stat": "wis",
+      "level": 0
+    },
+    "focus": {
+      "name": "Concentración",
+      "stat": "itl",
+      "level": 0
+    },
+    "wreck": {
+      "name": "Destrozar",
+      "stat": "str",
+      "level": 0
+    },
+    "deception": {
+      "name": "Engaño",
+      "stat": "cha",
+      "level": 0
+    },
+    "heroics": {
+      "name": "Heroísmo",
+      "stat": "str",
+      "level": 0
+    },
+    "intimidate": {
+      "name": "Intimidar",
+      "stat": "str/cha",
+      "level": 0
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "stat": "dex",
+      "level": 0
+    },
+    "perception": {
+      "name": "Percepción",
+      "stat": "wis",
+      "level": 0
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "stat": "cha",
+      "level": 0
+    },
+    "first-aid": {
+      "name": "Primeros Auxilios",
+      "stat": "wis",
+      "level": 0
+    },
+    "health": {
+      "name": "Salud",
+      "stat": "con",
+      "level": 0
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "stat": "dex",
+      "level": 0
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "stat": "wis",
+      "level": 0
+    },
+    "tinker": {
+      "name": "Trastear",
+      "stat": "itl",
+      "level": 0
+    },
+    "willpower": {
+      "name": "Voluntad",
+      "stat": "cha",
+      "level": 0
+    }
+  },
+  "ranks": [
+    {
+      "id": "estilo_asesino",
+      "name": "Estilo Asesino",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Marcial",
+      "stat": "dex",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "estilo_asesino--1--apuntar-ataque,estilo_asesino--1--ataque-furtivo,estilo_asesino--1--robo-rapido,estilo_asesino--2--presionar-defensas,estilo_asesino--2--secuencia-de-punaladas,estilo_asesino--2--ataque-triple,estilo_asesino--3--golpe-penetrante,estilo_asesino--3--paso-del-asesino,estilo_asesino--3--velocidad-extrema,estilo_asesino--4--maestria-de-arma,estilo_asesino--4--impacto-deshabilitante,estilo_asesino--4--furia-asesina,estilo_asesino--5--impacto-mortal,estilo_asesino--5--masacre,estilo_asesino--5--proyeccion-de-chi"
+    },
+    {
+      "id": "ascendencia_abisal",
+      "name": "Ascendencia Abisal",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Ascendencias",
+      "stat": "cha/con",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "ascendencia_abisal--1--tocado-por-la-locura,ascendencia_abisal--1--furia-abisal,ascendencia_abisal--2--mutacion,ascendencia_abisal--2--poder-antinatural,ascendencia_abisal--3--abrazar-la-locura,ascendencia_abisal--3--invocacion-abisal,ascendencia_abisal--4--rasgo-monstruoso-superior,ascendencia_abisal--4--paso-abisal,ascendencia_abisal--5--aura-del-caos,ascendencia_abisal--5--corrupcion-absoluta,ascendencia_abisal--6--transformacion-abisal",
+      "stats": [
+        {
+          "stat": "cha",
+          "rank": 2,
+          "boost": 1
+        },
+        {
+          "stat": "con",
+          "rank": 4,
+          "boost": 1
+        },
+        {
+          "stat": "dex",
+          "rank": 6,
+          "boost": 1
+        }
+      ]
+    },
+    {
+      "id": "guerrero_divino",
+      "name": "Guerrero Divino",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Religión",
+      "stat": "cha",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "guerrero_divino--1--azote-divino,guerrero_divino--1--sentido-divino,guerrero_divino--1--canalizar-divinidad,guerrero_divino--2--guerrero-de-la-fe,guerrero_divino--2--milagro-menor,guerrero_divino--2--azote-castigador,guerrero_divino--3--presencia-divina,guerrero_divino--3--aura-protectora,guerrero_divino--4--hueste-divina,guerrero_divino--4--aliento-de-vida,guerrero_divino--4--golpe-exiliante,guerrero_divino--5--azote-ejecutor,guerrero_divino--5--explosion-divina,guerrero_divino--6--avatar-divino"
+    }
+  ],
+  "spells": {
+    "patron": {
+      "name": "",
+      "domains": [
+        "magia_acido",
+        "magia_transmutacion",
+        "magia_mental"
+      ],
+      "damage_type": ""
+    },
+    "picks": {
+      "guerrero_divino--1--canalizar-divinidad#0": [
+        "magia_acido--1--aliento-toxico",
+        "magia_mental--1--asalto-mental"
+      ]
+    }
+  },
+  "equipment": {
+    "armor": {
+      "eqab": "",
+      "name": "Ligera",
+      "penalty": 0,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 2
+        }
+      ]
+    },
+    "mainHand": {
+      "eqab": "daga",
+      "name": "Daga",
+      "styles": [
+        "asesino"
+      ]
+    },
+    "secondHand": {},
+    "head": {},
+    "bag": []
+  },
+  "archetypes": []
+}

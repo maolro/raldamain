@@ -8,52 +8,60 @@
   "hits": 2,
   "saves": {
     "FÍS": "+11",
-    "VOL": "+11+1d6",
-    "MEN": "+11+2d6"
+    "VOL": "+11+3d6",
+    "MEN": "+11+3d6"
   },
   "umbrales": [
     {
-      "value": 30,
-      "categories": "Radiante"
-    },
-    {
-      "value": 25,
-      "categories": "Magia"
-    },
-    {
       "value": 20,
-      "categories": "General, Necrótico"
+      "categories": "Magia",
+      "tier_tpl": "T+1"
+    },
+    {
+      "value": 15,
+      "categories": "General, Necrótico",
+      "tier_tpl": "T"
     }
   ],
   "immune": [
     "Fuego",
-    "Veneno",
+    "Radiante",
     "Mental",
     "Miedo",
-    "Ilusion",
-    "Afliccion",
-    "Afliccion"
+    "Ilusiones",
+    "Aflicciones"
   ],
-  "senses": "Vision Verdadera, Leer Pensamientos",
-  "speed": "Vuelo 16",
+  "senses": "Vision Verdadera, Telepatía",
+  "speed": "Vuelo 2",
   "combat": {
     "acciones": 2,
     "reacciones": 1
   },
   "traits": [
     {
+      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Fuego, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 2d8 + 7  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
       "name": "Cuerpo de Fuego",
-      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 3d8 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
-      "id": "cuerpo-de-fuego_1778692691656",
-      "type": "passive",
       "tags": [
         "Fuego"
-      ]
+      ],
+      "ability_id": "cuerpo-de-fuego_1778692691656",
+      "mod_tpl": {
+        "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Fuego, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo."
+      }
     },
     {
-      "name": "Jinete",
-      "desc": "Se engancha a un aliado, empleándolo como montura. Esto hará que se mueva junto a él sin la necesidad de emplear movimiento.",
-      "ability_id": "jinete_1778753235567"
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Celestial, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Radiante además que aumenta su Umbral Mágico por un paso. Tiene Sentido Vital y provoca 4d8 daño adicional con sus ataques físicos de un elemento específico.",
+      "name": "Celestial",
+      "tags": [
+        "Celestial",
+        "Pasiva"
+      ],
+      "ability_id": "ab_1793450265798",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Celestial, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Radiante además que aumenta su Umbral Mágico por un paso. Tiene Sentido Vital y provoca DD daño adicional con sus ataques físicos de un elemento específico."
+      }
     }
   ],
   "actions": [
@@ -66,58 +74,29 @@
         "Ataque"
       ],
       "cost": "1",
-      "bonus": "+11+3d6",
+      "bonus": "+11 + 3d6",
       "area": "",
-      "damage": "3d8+7 Radiante",
+      "damage": "3d8 + 7 Radiante",
       "save": "",
       "move": "",
       "damage_tier": "MID",
-      "damage_base_type": "Fuego",
-      "range": "8",
+      "damage_base_type": "Radiante",
+      "range": "Medio",
       "ability_id": "rayos-luminosos_1778752957956",
       "attacks": 2,
-      "desc": "Afecta a tres objetivos diferentes con cada ataque."
+      "desc": "Afecta a tres objetivos diferentes con cada ataque.",
+      "bonus_scaled": true
     },
     {
+      "cost": 1,
+      "desc": "El objetivo recupera 1 Impacto o se recupera de un efecto de estado.",
       "name": "Toque Sanador",
-      "desc": "El objetivo recupera 12 Vitalidad/1 Impacto y se cura de un efecto de estado negativo.",
-      "range": "1",
+      "range": "Adyacente",
       "tags": [
         "Vida",
         "Sanacion"
       ],
-      "cost": 1,
-      "id": "toque-sanador_1778751359599",
-      "type": "action"
-    },
-    {
-      "desc": "El afectado reduce su cordura por 6 y queda confundido durante una ronda.",
-      "attacks": 2,
-      "cost": 1,
-      "save": "Mental +11+2d6",
-      "name": "Sobrecarga Mental",
-      "tags": [
-        "Mental"
-      ],
-      "ability_id": "sobrecarga-mental_1778753097013"
-    },
-    {
-      "name": "Tormenta Telekinética",
-      "bonus": "+7+2d6",
-      "area": "Cono 12",
-      "damage": "5d8 + 7 Contundente/Perforante/Cortante",
-      "id": "vendaval_1778706575166",
-      "type": "action",
-      "tags": [
-        "Telekinesia",
-        "Ataque",
-        "Area"
-      ],
-      "cost": 1,
-      "desc": "Empuja 4 casillas al impactar. El espacio afectado se convierte en terreno difícil y puede alterar el terreno a distancia 4 como desee, eliminando muros y barreras.",
-      "ability_id": "tormenta-telekinetica_1778753241551",
-      "damage_tier": "HIGH",
-      "damage_base_type": "Contundente/Perforante/Cortante"
+      "ability_id": "toque-sanador_1778751359599"
     }
   ],
   "reactions": [
@@ -137,11 +116,26 @@
       "type": "reaction"
     },
     {
-      "name": "Halo Cegador",
-      "desc": "Todos los que le vean deben tener éxito en un tiro de salvación de Voluntad +11+2d6 o quedan cegados una ronda, fallando automáticamente sus ataques. Los atacantes cuerpo a cuerpo sufrirán además 4d8 daño Radiante.",
-      "ability_id": "halo-cegador_1778753483283"
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Crea un muro que protege a todos en su área, absorbiendo 12 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación de Voluntad o sufren 2d8 + 7 daño Radiante y quedan Desconcertados una ronda.",
+      "name": "Barrera Luminosa",
+      "tags": [
+        "Vida"
+      ],
+      "ability_id": "ab_1793450520819",
+      "mod_tpl": {
+        "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación de Voluntad o sufren LOW daño Radiante y quedan Desconcertados una ronda."
+      }
     }
   ],
   "lore": "",
-  "tags": []
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "FÍS": "low",
+    "VOL": "bonus",
+    "MEN": "bonus"
+  }
 }

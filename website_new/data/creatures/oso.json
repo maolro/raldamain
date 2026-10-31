@@ -1,0 +1,148 @@
+{
+  "id": "oso",
+  "name": "Oso",
+  "type": "Bestia",
+  "size": "Grande",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 16,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [],
+  "senses": "Olfato",
+  "speed": "Paso 1, Natación 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": "1",
+      "damage": "2d6 + 4 Perforante",
+      "damage_base_type": "Perforante",
+      "desc": "El objetivo está Agarrado (+7 + 2d6 FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Agarrada.",
+      "name": "Mordisco",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1793008689989",
+      "mod_tpl": {
+        "desc": "El objetivo está Agarrado (+MOD FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Agarrada."
+      },
+      "bonus": "+7 + 2d6",
+      "type": "action",
+      "range": "Adyacente",
+      "area": "",
+      "save": "",
+      "move": ""
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Cortante",
+      "damage_tier": "MID",
+      "name": "Garra",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1791818049839",
+      "damage": "3d6 + 5 Cortante",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Aumenta el daño de un ataque por 1d6 y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro FÍS +7 + 2d6 o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo.",
+      "name": "Gran Barrido",
+      "tags": [
+        "Mejora",
+        "Maniobra",
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "ab_1791813129637",
+      "mod_tpl": {
+        "desc": "Aumenta el daño de un ataque por 1d6 y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro FÍS +MOD o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo."
+      }
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Hace tres ataques de cualquier tipo con coste de una Acción.",
+      "name": "Secuencia de Ataques",
+      "tags": [
+        "Mejora",
+        "Marcial",
+        "Duelo"
+      ],
+      "ability_id": "ab_1791817340811"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada",
+      "desc": "",
+      "bonus": "+7 + 2d6",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      }
+    },
+    {
+      "cost": 1,
+      "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba o reduce un efecto de estado por un paso.",
+      "name": "Segundo Aliento",
+      "tags": [
+        "Fortitud",
+        "Defensiva"
+      ],
+      "ability_id": "segundo-aliento_1791462133271"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "En respuesta a que un enemigo se aleje, puede moverse un paso para perseguirlo y hacerle un ataque inmediato contra el cual tendrá Desventaja defendiéndose",
+      "name": "Persecución",
+      "tags": [
+        "Marcial"
+      ],
+      "ability_id": "ab_1793014811103"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

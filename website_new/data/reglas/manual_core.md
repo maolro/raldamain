@@ -402,7 +402,7 @@ En una ficha, un estado aparece siempre como **Estado (Salvación +MOD, duració
 
 * **Aturdido:** No puede tomar acciones ni reacciones. No puede defenderse y falla automáticamente los tiros de Fuerza y Destreza.
 * **Tropezado (Derribado):** Está en el suelo, teniendo así Desventaja en sus tiros defensivos. Levantarse cuesta 1 acción.
-* **Agarrado:** No puede tomar acciones ni reacciones que requieran movimientos de su cuerpo. No puede alejarse. Pierde la Concentración. Liberarse requiere gastar 1 acción y superar un tiro de salvación Físico contra el personaje o efecto que agarra. Dura hasta que se libere.
+* **Agarrado:** No puede tomar acciones ni reacciones que requieran movimientos de su cuerpo, pudiendo únicamente defenderse con tiros de salvación Físicos. No puede alejarse. Pierde la Concentración. Liberarse requiere gastar 1 acción y superar un tiro de salvación Físico contra el personaje o efecto que agarra. Dura hasta que se libere.
   * **Quien agarra** sujeta con la parte del cuerpo o la habilidad con la que agarró (fauces, tentáculo, mano) y no puede volver a usarla mientras mantenga el agarre. El agarre termina si quien agarra se aleja, queda Aturdido o Inconsciente, o muere.
 * **Cegado:** Tiene Desventaja en todos sus tiros de ataque y defensa además que no puede hacer ataques a distancia. No puede explotar Aperturas visuales.
 * **Enredado:** No puede moverse y recibe Desventaja en sus tiros de ataque y defensa. Liberarse requiere gastar 1 acción y superar un tiro de salvación Físico contra el personaje o efecto que enreda.

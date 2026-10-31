@@ -1,0 +1,157 @@
+{
+  "id": "driada",
+  "name": "Dríada",
+  "type": "Espíritu",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+1d6",
+    "VOL": "+7+1d6",
+    "MEN": "+7+2d6"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 12,
+      "categories": "Magia"
+    },
+    {
+      "value": 12,
+      "categories": "Físico"
+    },
+    {
+      "value": 16,
+      "categories": "Eléctrico"
+    }
+  ],
+  "immune": [
+    "Aflicciones",
+    "Miedo",
+    "Mentales"
+  ],
+  "senses": "Sentido Vital",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan 2d6 daño adicional de un elemento específico o aumentan su daño por un dado.",
+      "name": "Espiritual",
+      "tags": [
+        "Espiritu",
+        "Innata"
+      ],
+      "ability_id": "ab_1793366127728",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan DD daño adicional de un elemento específico o aumentan su daño por un dado."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "damage_base_type": "Cortante/Perforante",
+      "damage_tier": "LOW",
+      "desc": "Cuenta como daño Fuerza al atacar a objetivos Enredados o Agarrados por efectos de Naturaleza.",
+      "name": "Espina de Madera",
+      "range": "Medio",
+      "tags": [
+        "Naturaleza",
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793031825227",
+      "damage": "2d6 + 5 Cortante/Perforante"
+    },
+    {
+      "area": "Cilindro Medio",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "damage_base_type": "Contundente",
+      "damage_tier": "MID",
+      "desc": "Los objetivos quedan Enredados hasta que escapen (FÍS +7 + 2d6). Aquellos en contacto con el suelo o con plantas tienen Desventaja defendiéndose. ",
+      "name": "Raíces Devoradoras",
+      "range": "Medio",
+      "tags": [
+        "Naturaleza",
+        "Ataque",
+        "Area"
+      ],
+      "ability_id": "ab_1793032852453",
+      "mod_tpl": {
+        "desc": "Los objetivos quedan Enredados hasta que escapen (FÍS +MOD). Aquellos en contacto con el suelo o con plantas tienen Desventaja defendiéndose. "
+      },
+      "damage": "3d6 + 5 Contundente"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El afectado debe tener éxito en un tiro MEN +7 + 2d6 o tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él.",
+      "name": "Sugestión",
+      "tags": [
+        "Mental"
+      ],
+      "ability_id": "ab_1793016178131",
+      "mod_tpl": {
+        "desc": "El afectado debe tener éxito en un tiro MEN +MOD o tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él."
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Crea un muro que protege a todos en su alcance, absorbiendo 6 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro FÍS +7 + 2d6 o sufren 2d6 + 5 daño Perforante y quedan Enredados.",
+      "name": "Muro de Zarzas",
+      "tags": [
+        "Naturaleza",
+        "Muro"
+      ],
+      "ability_id": "ab_1793032320692",
+      "mod_tpl": {
+        "desc": "Crea un muro que protege a todos en su alcance, absorbiendo TIERx3 puntos de daño. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro FÍS +MOD o sufren LOW daño Perforante y quedan Enredados."
+      }
+    },
+    {
+      "ability_id": "salto-espacial_1778751219905",
+      "cost": 1,
+      "desc": "Añade +10 a su tiro de Esquiva y se teletransporta un paso al moverse.",
+      "name": "Salto Espacial",
+      "tags": [
+        "Espacial",
+        "Arcano"
+      ]
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "MEN": "bonus",
+    "VOL": "mid",
+    "FÍS": "mid"
+  }
+}

@@ -32,7 +32,7 @@
   "traits": [
     {
       "name": "Cuerpo de Aire",
-      "desc": "Puede colarse por cualquier abertura. Es inmune a todos los efectos físicos (ya incluido) y cuenta siempre como si fuera invisible. No obstante, un elementalista de Aire puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+      "desc": "Puede colarse por cualquier abertura. Es inmune a todos los efectos Físicos, Aflicciones, Miedo y Mentales (ya incluido) y cuenta siempre como si fuera invisible. No obstante, un elementalista de Aire puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
       "ability_id": "cuerpo-de-aire_1778694356948",
       "type": "passive",
       "tags": [
@@ -123,5 +123,6 @@
       "value": 8,
       "categories": "General"
     }
-  ]
+  ],
+  "published": false
 }

@@ -1,0 +1,134 @@
+{
+  "id": "guerrero_chothgar",
+  "name": "Guerrero Chothgar",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 2,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5+1d6",
+    "VOL": "+5+1d6",
+    "MEN": "+2"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General"
+    },
+    {
+      "value": 12,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 2,
+      "damage_base_type": "Cortante",
+      "damage_tier": "HIGH",
+      "name": "Gran Hacha",
+      "tags": [
+        "Arma",
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793104129420",
+      "damage": "3d6 + 4 Cortante",
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": "1",
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "name": "Lanza",
+      "range": "Medio",
+      "tags": [
+        "Arma",
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793104226616",
+      "damage": "",
+      "type": "action",
+      "bonus": "",
+      "area": "",
+      "save": "",
+      "move": "",
+      "desc": ""
+    },
+    {
+      "area": "Radio Medio",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +5 + 1d6 o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior.",
+      "name": "Demostración Terrorífica",
+      "tags": [
+        "Miedo"
+      ],
+      "ability_id": "ab_1793014679586",
+      "mod_tpl": {
+        "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +MOD o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior."
+      }
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
+      "tags": [
+        "Presencia",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793014528491"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "bonus": "+5"
+    },
+    {
+      "cost": 1,
+      "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba o reduce un efecto de estado por un paso.",
+      "name": "Segundo Aliento",
+      "tags": [
+        "Fortitud",
+        "Defensiva"
+      ],
+      "ability_id": "segundo-aliento_1791462133271"
+    },
+    {
+      "cost": 1,
+      "desc": "Se mueve hasta un paso para interceptar un ataque hecho contra un aliado, pudiendo así emplear su tiro defensivo en lugar del suyo y recibir el daño del ataque si falla.",
+      "name": "Proteger Aliado",
+      "tags": [
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "proteger-aliado_1791462080348"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "name": "Pícaro (niv 8)",
+  "level": 8,
+  "race": {},
+  "stats": {
+    "str": {
+      "name": "FUE",
+      "value": 4
+    },
+    "dex": {
+      "name": "DES",
+      "value": 6
+    },
+    "con": {
+      "name": "CON",
+      "value": 4
+    },
+    "itl": {
+      "name": "INT",
+      "value": 1
+    },
+    "wis": {
+      "name": "SAB",
+      "value": 1
+    },
+    "cha": {
+      "name": "CAR",
+      "value": 2
+    }
+  },
+  "talents": {
+    "acrobatics": {
+      "name": "Acrobacias",
+      "stat": "dex",
+      "level": 0
+    },
+    "performance": {
+      "name": "Actuación",
+      "stat": "cha",
+      "level": 0
+    },
+    "arcana": {
+      "name": "Arcanismo",
+      "stat": "itl",
+      "level": 0
+    },
+    "athletics": {
+      "name": "Atletismo",
+      "stat": "str",
+      "level": 0
+    },
+    "insight": {
+      "name": "Averiguar Intenciones",
+      "stat": "wis",
+      "level": 0
+    },
+    "focus": {
+      "name": "Concentración",
+      "stat": "itl",
+      "level": 0
+    },
+    "wreck": {
+      "name": "Destrozar",
+      "stat": "str",
+      "level": 0
+    },
+    "deception": {
+      "name": "Engaño",
+      "stat": "cha",
+      "level": 0
+    },
+    "heroics": {
+      "name": "Heroísmo",
+      "stat": "str",
+      "level": 0
+    },
+    "intimidate": {
+      "name": "Intimidar",
+      "stat": "str/cha",
+      "level": 0
+    },
+    "sleight-of-hand": {
+      "name": "Juego de Manos",
+      "stat": "dex",
+      "level": 0
+    },
+    "perception": {
+      "name": "Percepción",
+      "stat": "wis",
+      "level": 0
+    },
+    "persuasion": {
+      "name": "Persuasión",
+      "stat": "cha",
+      "level": 0
+    },
+    "first-aid": {
+      "name": "Primeros Auxilios",
+      "stat": "wis",
+      "level": 0
+    },
+    "health": {
+      "name": "Salud",
+      "stat": "con",
+      "level": 0
+    },
+    "stealth": {
+      "name": "Sigilo",
+      "stat": "dex",
+      "level": 0
+    },
+    "survival": {
+      "name": "Supervivencia",
+      "stat": "wis",
+      "level": 0
+    },
+    "tinker": {
+      "name": "Trastear",
+      "stat": "itl",
+      "level": 0
+    },
+    "willpower": {
+      "name": "Voluntad",
+      "stat": "cha",
+      "level": 0
+    }
+  },
+  "ranks": [
+    {
+      "id": "estilo_asesino",
+      "name": "Estilo Asesino",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Marcial",
+      "stat": "dex",
+      "reserve": "chi",
+      "rank": 3,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "estilo_asesino--1--apuntar-ataque,estilo_asesino--1--ataque-furtivo,estilo_asesino--1--robo-rapido,estilo_asesino--2--presionar-defensas,estilo_asesino--2--secuencia-de-punaladas,estilo_asesino--2--ataque-triple,estilo_asesino--3--golpe-penetrante,estilo_asesino--3--paso-del-asesino,estilo_asesino--3--velocidad-extrema,estilo_asesino--4--maestria-de-arma,estilo_asesino--4--impacto-deshabilitante,estilo_asesino--4--furia-asesina,estilo_asesino--5--impacto-mortal,estilo_asesino--5--masacre,estilo_asesino--5--proyeccion-de-chi"
+    },
+    {
+      "id": "reflejos",
+      "name": "Reflejos",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Combate",
+      "stat": "dex",
+      "reserve": "chi",
+      "rank": 3,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "reflejos--1--velocidad-superior,reflejos--1--instinto-de-supervivencia,reflejos--2--giro-defensivo,reflejos--2--evasion,reflejos--3--sexto-sentido,reflejos--3--reflejos-asombrosos,reflejos--4--sexto-sentido,reflejos--4--punto-ciego,reflejos--5--libertad-de-movimiento,reflejos--5--reflejos-supremos"
+    },
+    {
+      "id": "rastrear",
+      "name": "Rastrear",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Combate",
+      "stat": "wis",
+      "reserve": "chi",
+      "rank": 2,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "rastrear--1--analizar-enemigo,rastrear--1--siempre-preparado,rastrear--2--acechar,rastrear--2--maestro-del-terreno,rastrear--3--lo-he-visto-antes,rastrear--3--inescrutable,rastrear--4--vista-de-lince,rastrear--4--cambio-repentino,rastrear--5--enemigo-juramentado,rastrear--5--coto-de-caza"
+    },
+    {
+      "id": "ira",
+      "name": "Ira",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Combate",
+      "stat": "str",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 5,
+      "attributes": "ira--1--ira-de-combate,ira--1--demostracion-terrorifica,ira--2--frenesi-de-batalla,ira--2--resistencia-salvaje,ira--3--ira-temeraria,ira--3--hasta-el-limite,ira--4--golpe-de-adrenalina,ira--4--furia-imparable,ira--5--superar-los-limites,ira--5--furia-invulnerable"
+    }
+  ],
+  "spells": {
+    "patron": {
+      "name": "",
+      "domains": [],
+      "damage_type": ""
+    },
+    "picks": {}
+  },
+  "equipment": {
+    "armor": {
+      "eqab": "",
+      "name": "Pesada",
+      "penalty": -4,
+      "umbrales": [
+        {
+          "categories": "Físico",
+          "value": 6
+        }
+      ]
+    },
+    "mainHand": {
+      "eqab": "daga",
+      "name": "Daga",
+      "styles": [
+        "asesino"
+      ]
+    },
+    "secondHand": {
+      "ep": 2,
+      "eqab": "pistola-de-mano",
+      "name": "Pistola de Mano",
+      "reload": {
+        "actions": 2,
+        "shots": 6
+      },
+      "styles": [
+        "duelo",
+        "asesino"
+      ]
+    },
+    "head": {},
+    "bag": []
+  },
+  "archetypes": []
+}

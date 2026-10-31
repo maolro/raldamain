@@ -1,14 +1,13 @@
 {
   "id": "elemental_agua",
   "name": "Elemental de Agua",
-  "tier": "Esbirro Élite II",
   "type": "Espíritu",
   "size": "Grande",
   "image": "creatures/elemental_agua.jpg",
   "hits": 2,
   "saves": {
-    "FÍS": "+7+1d6",
-    "VOL": "+7",
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
     "MEN": "+7"
   },
   "damageThreshold": {
@@ -16,69 +15,73 @@
     "other": 4
   },
   "immune": [
-    "Efectos físicos no mágicos",
-    "Veneno",
-    "Necrótico",
-    "Efectos mentales",
+    "Fisicos",
+    "Aflicciones",
+    "Mentales",
     "Miedo"
   ],
-  "senses": "Ecolocación",
-  "speed": "Paso 10, Natación 10",
+  "speed": "Paso 1, Natación 2",
   "combat": {
-    "acciones": 1,
+    "acciones": 2,
     "reacciones": 1
   },
   "traits": [
     {
+      "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) y moja todos los espacios por los que pasa. No obstante, al estar hecho de Agua quedará congelado una ronda si sufre daño Frío y un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
       "name": "Cuerpo Líquido",
-      "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) y moja todos los espacios por los que pasa. No obstante, al estar hecho de Agua quedará congelado una ronda si sufre daño Frío y un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
-      "id": "cuerpo-de-fuego_1778692691656",
-      "type": "passive",
       "tags": [
         "Agua"
-      ]
+      ],
+      "ability_id": "cuerpo-liquido_1778692889955",
+      "type": "passive"
     }
   ],
   "actions": [
     {
+      "attacks": 1,
+      "bonus_scaled": true,
       "cost": 1,
-      "bonus": "+7+2d6",
-      "damage": "3d6 + 5 Contundente",
-      "move": "Puede moverse 4 pasos antes o después del ataque.",
-      "desc": "El objetivo es empujado 4 casillas por cada impacto.",
-      "name": "Golpes Fluidos",
-      "attacks": 2,
-      "range": "4",
-      "type": "action",
+      "damage_base_type": "Contundente",
+      "damage_tier": "LOW",
+      "desc": "Empuja un paso al impactar. Apaga los fuegos a su paso y puede herir a Incorpóreos como si fuera un ataque Mágico.",
+      "name": "Torrente",
+      "range": "Medio",
       "tags": [
         "Agua",
         "Ataque"
-      ]
-    },
-    {
-      "name": "Ola Chocante",
-      "cost": 2,
-      "bonus": "+7+2d6",
-      "damage": "4d6 + 5 Contundente",
-      "move": 10,
-      "desc": "Ataca a cada enemigo en su movimiento. Al impactar, los afectados deben tener éxito en un tiro de salvación físico o son empujados 8 casillas y quedan tropezados (4 casillas si tienen éxito). "
-    },
-    {
-      "name": "Vórtice Viviente",
-      "desc": "El objetivo será arrastrado a su posición y debe tener éxito en un tiro de salvación Físico o queda agarrado y se empieza a ahogar (queda enredado si lo consigue). Este ataque solo podrá resistirse con tiro de salvación por objetivos que estén en el agua.",
-      "cost": 1,
-      "bonus": "+7 + 2d6",
-      "range": "4",
-      "damage": "3d6 + 5 Contundente",
-      "type": "action",
-      "tags": [
-        "Agua",
-        "Ataque",
-        "Agarre"
       ],
-      "ability_id": "vortice-viviente_1778706814167",
-      "damage_tier": "MID",
-      "damage_base_type": "Contundente"
+      "ability_id": "ab_1793292525580",
+      "damage": "2d6 + 5 Contundente",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "damage_base_type": "Contundente",
+      "damage_tier": "HIGH",
+      "desc": "Crea una Ola que ataca a todos los objetivos en el área afectada, quienes además deben tener éxito en un tiro de salvación Físico o son empujados un paso y tropezados. Si mantienes la concentración, cada ronda puedes emplear una Acción para mover la ola un paso y atacar a cada objetivo en su camino. ",
+      "name": "Ola Chocante",
+      "range": "Medio",
+      "tags": [
+        "Agua"
+      ],
+      "ability_id": "ab_1793292674641",
+      "damage": "4d6 + 5 Contundente"
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Hace tres ataques de cualquier tipo con coste de una Acción.",
+      "name": "Secuencia de Ataques",
+      "tags": [
+        "Mejora",
+        "Marcial",
+        "Duelo"
+      ],
+      "ability_id": "ab_1791817340811"
     }
   ],
   "reactions": [
@@ -88,35 +91,29 @@
       "move": 4
     },
     {
-      "name": "Evasión",
+      "attacks": 1,
+      "bonus_scaled": false,
       "cost": 1,
-      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico.",
-      "move": 10,
-      "id": "evasion_1778692238910",
-      "type": "reaction",
-      "tags": [
-        "Reflejos"
-      ]
-    },
-    {
+      "desc": "Crea un muro que protege a todos en su área, absorbiendo 6 puntos de daño. Todos los enemigos que le hagan ataques cuerpo a cuerpo tiran FÍS +7 + 2d6 o sufren 2d6 + 5 daño Contundente y son Enredados.",
       "name": "Muro de Agua",
-      "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo serán lanzados 4 pasos hacia atrás y tropezados si no logran hacer daño.",
-      "type": "reaction",
       "tags": [
         "Agua"
-      ]
+      ],
+      "ability_id": "ab_1793292597929",
+      "mod_tpl": {
+        "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que le hagan ataques cuerpo a cuerpo tiran FÍS +MOD o sufren LOW daño Contundente y son Enredados."
+      }
     },
     {
-      "name": "Absorber Agua",
-      "desc": "Recupera 1 Impacto si se encuentra sumergido en el agua o es impactado por un efecto de Agua que atraviese su umbral.",
       "cost": 1,
-      "id": "absorber-elemento_1778692436921",
-      "type": "reaction",
+      "desc": "Al principio de su turno, recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra sumergido en el agua o es impactado por un efecto de Agua que atraviese su umbral.",
+      "name": "Absorber Agua",
       "tags": [
-        "Fuego",
+        "Agua",
         "Sanacion"
-      ]
+      ],
+      "ability_id": "absorber-agua_1778693562144",
+      "type": "passive"
     }
   ],
   "lore": "Los elementales de agua son masas vivas de líquido en perpetuo movimiento. Pacientes y deliberados, fluyen alrededor de los obstáculos antes de golpear con la fuerza de las mareas. Absorben el calor del entorno, sofocan el fuego y asfixian a sus enemigos con una eficiencia silenciosa y letal.",
@@ -129,12 +126,20 @@
   "level": 5,
   "umbrales": [
     {
-      "value": 16,
-      "categories": "Fuego"
+      "value": 8,
+      "categories": "General",
+      "tier_tpl": "T"
     },
     {
-      "value": 8,
-      "categories": "General"
+      "value": 12,
+      "categories": "Magia"
     }
-  ]
+  ],
+  "published": true,
+  "save_scale": {
+    "FÍS": "bonus",
+    "MEN": "low",
+    "VOL": "bonus"
+  },
+  "senses": "Vista a Ciegas"
 }

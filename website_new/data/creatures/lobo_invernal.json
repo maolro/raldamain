@@ -1,0 +1,153 @@
+{
+  "id": "lobo_invernal",
+  "name": "Lobo Invernal",
+  "type": "Espíritu",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 12,
+      "categories": "Magia",
+      "tier_tpl": "T+1"
+    },
+    {
+      "value": 16,
+      "categories": "Físico, Frío",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [
+    "Aflicciones",
+    "Miedo",
+    "Mentales"
+  ],
+  "senses": "Sentido Mágico",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan 2d6 daño adicional de un elemento específico o aumentan su daño por un dado.",
+      "name": "Espiritual",
+      "tags": [
+        "Espiritu",
+        "Innata"
+      ],
+      "ability_id": "ab_1793366127728",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan DD daño adicional de un elemento específico o aumentan su daño por un dado."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage": "3d6 + 5 Perforante",
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "desc": "Provoca 2d6 daño Frío al impactar. El objetivo está Enredado (+7 + 2d6 FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada.",
+      "name": "Mordisco",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1793008689989",
+      "mod_tpl": {
+        "desc": "Provoca DD daño Frío al impactar. El objetivo está Enredado (+MOD FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada."
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +7 + 2d6 o es empujado un paso y cae Tropezado.",
+      "name": "Ataque Poderoso",
+      "tags": [
+        "Mejora",
+        "Maniobra",
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "ab_1791812854218",
+      "mod_tpl": {
+        "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +MOD o es empujado un paso y cae Tropezado."
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Los afectados deben tener éxito en un tiro VOL +7 + 2d6 o sufren 2d6 + 5 daño Frío y Ralentizado I. El área afectada se llena de una Neblina que otorga Ocultamiento, la cual permanecerá durante una ronda.",
+      "name": "Neblina Polar",
+      "range": "Medio",
+      "tags": [],
+      "ability_id": "ab_1793370191750",
+      "mod_tpl": {
+        "desc": "Los afectados deben tener éxito en un tiro VOL +MOD o sufren MID daño Frío y Ralentizado I. El área afectada se llena de una Neblina que otorga Ocultamiento, la cual permanecerá durante una ronda."
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "En respuesta a que un enemigo se aleje, puede moverse un paso para perseguirlo y hacerle un ataque inmediato contra el cual tendrá Desventaja defendiéndose",
+      "name": "Persecución",
+      "tags": [
+        "Marcial"
+      ],
+      "ability_id": "ab_1793014811103"
+    },
+    {
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

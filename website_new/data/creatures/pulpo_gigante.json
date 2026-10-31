@@ -1,0 +1,140 @@
+{
+  "id": "pulpo_gigante",
+  "name": "Pulpo Gigante",
+  "type": "Bestia",
+  "size": "Grande",
+  "level": 8,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+9+2d6",
+    "VOL": "+9+2d6",
+    "MEN": "+9"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General"
+    },
+    {
+      "value": 20,
+      "categories": "Físico"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Natación 2",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": "1",
+      "damage_base_type": "Contundente",
+      "desc": "Afecta hasta a tres objetivos. Al impactar, los afectados están Enredados (FÍS +9 + 2d6 para escapar) y puede arrastrarlos hasta un paso. ",
+      "name": "Tentáculo Múltiple",
+      "range": "Cercano",
+      "tags": [
+        "Fisico",
+        "Ataque",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1793212118942",
+      "mod_tpl": {
+        "damage": "LOW Contundente",
+        "desc": "Afecta hasta a tres objetivos. Al impactar, los afectados están Enredados (FÍS +MOD para escapar) y puede arrastrarlos hasta un paso. "
+      },
+      "damage": "2d8 + 6 Contundente",
+      "type": "action",
+      "bonus": "",
+      "area": "",
+      "save": "",
+      "move": ""
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Un objetivo de tamaño inferior que se encuentre Enredado debe tener éxito en un tiro FÍS +9 + 2d6 o sufre 3d8 + 6 daño Perforante y es Devorado. Mientras permanezca Devorado, sufre 3d8 daño Ácido al principio de su turno y se encuentra Agarrado, y solo puede escapar si tiene éxito en un tiro FÍS +9 + 2d6 para escapar y provoca daño suficiente para hacerle por lo menos un Impacto.",
+      "name": "Devorar",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Natural",
+        "Agarre"
+      ],
+      "ability_id": "ab_1793211962110",
+      "mod_tpl": {
+        "desc": "Un objetivo de tamaño inferior que se encuentre Enredado debe tener éxito en un tiro FÍS +MOD o sufre MID daño Perforante y es Devorado. Mientras permanezca Devorado, sufre DD daño Ácido al principio de su turno y se encuentra Agarrado, y solo puede escapar si tiene éxito en un tiro FÍS +MOD para escapar y provoca daño suficiente para hacerle por lo menos un Impacto."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Crea una nube de oscuridad, cegando a cada objetivo en ella y generando ocultamiento. Si hay fuentes de luz o efectos de Magia de Vida, tira +9 + 2d6 para suprimirlas.",
+      "name": "Tinta de Pulpo",
+      "range": "Media",
+      "tags": [
+        "Sombria",
+        "Visual",
+        "Duradera"
+      ],
+      "ability_id": "ab_1793178364243",
+      "mod_tpl": {
+        "desc": "Crea una nube de oscuridad, cegando a cada objetivo en ella y generando ocultamiento. Si hay fuentes de luz o efectos de Magia de Vida, tira +MOD para suprimirlas."
+      },
+      "area": "Radio medio"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Se mueve hasta un paso y hace un ataque de coste 1 Acción con un dado de daño adicional, contra el cual su objetivo tendrá Deventaja defendiéndose. Solo funciona con armas cuerpo a cuerpo.",
+      "name": "Paso del Asesino",
+      "tags": [
+        "Asesino",
+        "Mejora",
+        "Marcial"
+      ],
+      "ability_id": "ab_1793184456123"
+    }
+  ],
+  "reactions": [
+    {
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Un ataque que le haya fallado impacta en su lugar a un objetivo que tenga Enredado o Agarrado.",
+      "name": "Escudo Humano",
+      "tags": [
+        "Agarre",
+        "Defensivo"
+      ],
+      "ability_id": "ab_1793212304311"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}

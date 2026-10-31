@@ -1,0 +1,141 @@
+{
+  "id": "bandido",
+  "name": "Bandido",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 2,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5+2d6",
+    "VOL": "+5",
+    "MEN": "+2"
+  },
+  "umbrales": [
+    {
+      "value": 2,
+      "categories": "General"
+    },
+    {
+      "value": 4,
+      "categories": "Físico",
+      "tier_scaled": true
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "LOW",
+      "name": "Daga",
+      "range": "Medio",
+      "tags": [
+        "Arma",
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793184653681",
+      "damage": "1d6 + 4 Perforante"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "desc": "La criatura no puede emplear Parada para defenderse.",
+      "name": "Arco",
+      "range": "Lejano",
+      "tags": [
+        "Ataque",
+        "Arma",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793105124177",
+      "damage": "2d6 + 4 Perforante",
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque recibe un modificador +2, aumenta su daño base por un dado y provoca Herido I al impactar.",
+      "name": "Ataque Furtivo",
+      "tags": [
+        "Marcial",
+        "Mejora",
+        "Asesino"
+      ],
+      "ability_id": "ab_1791817547641"
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
+      "tags": [
+        "Presencia",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793014528491"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +5 + 1d6, o recibe Desventaja en su siguiente tiro defensivo. ",
+      "name": "Truco de Combate",
+      "tags": [
+        "Marcial",
+        "Maniobra",
+        "Duelo"
+      ],
+      "ability_id": "ab_1791817464324",
+      "mod_tpl": {
+        "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +MOD, o recibe Desventaja en su siguiente tiro defensivo. "
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Esquiva",
+      "cost": 1,
+      "desc": "",
+      "bonus": "+5 + 1d6",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Repite un tiro de Ataque, Defensa o Salvación que involucre la Destreza y se queda con el resultado que más le convenga.",
+      "name": "Instinto de Supervivencia",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "ab_1791818387137"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "FÍS": "extreme",
+    "VOL": "mid",
+    "MEN": "low"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "espectro",
+  "name": "Espectro",
+  "type": "No-muerto",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+1d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7+1d6"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General, Radiante"
+    },
+    {
+      "value": 8,
+      "categories": "Magia"
+    }
+  ],
+  "immune": [
+    "Fisicos",
+    "Aflicciones",
+    "Mentales",
+    "Miedo",
+    "Necrótico"
+  ],
+  "senses": "Sentido Vital",
+  "speed": "Vuelo 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Carece de cuerpo físico, recibiendo Inmunidad a efectos Físicos, Necróticos, Aflicciones, Mentales y Miedo. No obstante, sí puede ser herido por ataques mágicos y no puede aumentar su umbral Físico de ninguna manera.",
+      "name": "Incorpóreo",
+      "tags": [
+        "Pasiva"
+      ],
+      "ability_id": "ab_1793178784213"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Espectral, haciendo así que pueda pasar a través de paredes y emplear la habilidad Posesión sin importar su categoría. No obstante, el daño Radiante le afectará en su umbral más bajo y puede ser Exorcizado.",
+      "name": "Espectral",
+      "tags": [
+        "Alma",
+        "Pasiva"
+      ],
+      "ability_id": "ab_1793230687815"
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El objetivo debe tener éxito en un tiro VOL +7 + 2d6 o sufre 2d6 + 5 daño Necrótico que no puede curarse. Si logra provocar por lo menos un impacto, puede recuperar un impacto o curarse de un efecto de estado. Al emplear este efecto en un No-Muerto, puede curarle un impacto o un efecto de estado.",
+      "name": "Drenar Vida",
+      "range": "Adyacente",
+      "tags": [
+        "Nigromancia",
+        "Necrotico",
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793179018622",
+      "mod_tpl": {
+        "desc": "El objetivo debe tener éxito en un tiro VOL +MOD o sufre MID daño Necrótico que no puede curarse. Si logra provocar por lo menos un impacto, puede recuperar un impacto o curarse de un efecto de estado. Al emplear este efecto en un No-Muerto, puede curarle un impacto o un efecto de estado."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El objetivo debe tener éxito en un tiro FÍS +7 + 2d6 o es empujado un paso en cualquier dirección y sufre 1d6 + INT daño Contundente.",
+      "name": "Arrastre Telekinético",
+      "range": "Medio",
+      "tags": [
+        "Gravitatorio",
+        "Maniobra"
+      ],
+      "ability_id": "ab_1793230527481",
+      "mod_tpl": {
+        "desc": "El objetivo debe tener éxito en un tiro FÍS +MOD o es empujado un paso en cualquier dirección y sufre 1d6 + INT daño Contundente."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El afectado debe tener éxito en un tiro de VOL +7 + 2d6 o posee su cuerpo, pudiendo así controlar sus acciones hasta que sea expulsado. Una víctima de posesión solo puede liberarse repitiendo este tiro y todo daño contra esta criatura que no sea por Exorcismo o habilidades similares afectará a la víctima poseída. Solo puede poseer una criatura a la vez, y si la intenta usar para suicidarse o herir a sus seres queridos el afectado puede repetir el tiro inmediatamente para liberarse.",
+      "name": "Posesión",
+      "range": "Adyacente",
+      "tags": [
+        "Alma"
+      ],
+      "ability_id": "ab_1793230794201",
+      "mod_tpl": {
+        "desc": "El afectado debe tener éxito en un tiro de VOL +MOD o posee su cuerpo, pudiendo así controlar sus acciones hasta que sea expulsado. Una víctima de posesión solo puede liberarse repitiendo este tiro y todo daño contra esta criatura que no sea por Exorcismo o habilidades similares afectará a la víctima poseída. Solo puede poseer una criatura a la vez, y si la intenta usar para suicidarse o herir a sus seres queridos el afectado puede repetir el tiro inmediatamente para liberarse."
+      }
+    },
+    {
+      "area": "Radio Medio",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +7 + 2d6 o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior.",
+      "name": "Demostración Terrorífica",
+      "tags": [
+        "Miedo"
+      ],
+      "ability_id": "ab_1793014679586",
+      "mod_tpl": {
+        "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +MOD o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior."
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Esquiva / Parada",
+      "cost": 1,
+      "desc": "",
+      "bonus": "+7 + 2d6",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      }
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": true,
+  "save_scale": {
+    "FÍS": "mid",
+    "VOL": "bonus",
+    "MEN": "mid"
+  }
+}
