@@ -3,7 +3,28 @@
   "name": "Tangarinos",
   "description": "",
   "format": "{name} {surname}",
-  "names": [],
+  "names": [
+    {
+      "name": "Altan",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Arslan",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ayberk",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ayhan",
+      "gender": "m",
+      "meaning": ""
+    }
+  ],
   "surnames": [],
   "surname_rules": [],
   "patronymic_rules": []
