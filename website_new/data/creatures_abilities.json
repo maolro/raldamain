@@ -1249,10 +1249,10 @@
     "damage": "",
     "damage_tier": "",
     "damage_base_type": "",
-    "save": "",
+    "save": "MEN +MOD",
     "move": "",
     "attacks": 1,
-    "desc": "El objetivo debe tener éxito en un tiro MEN +MOD o sufre LOW daño Psíquico y queda Desconcertado una ronda. Si tiene éxito, no puede volver a ser afectado por este hechizo."
+    "desc": "El afectado sufre LOW daño Psíquico y queda Desconcertado una ronda. Si tiene éxito, no puede volver a ser afectado por este hechizo."
   },
   {
     "id": "ab_1793031825227",

@@ -116,8 +116,8 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "cost": 1,
-      "desc": "El objetivo debe tener éxito en un tiro MEN +11 + 3d6 o sufre 2d8 + 7 daño Psíquico y queda Desconcertado una ronda. Si tiene éxito, no puede volver a ser afectado por este hechizo.",
+      "cost": "1",
+      "desc": "El afectado sufre LOW daño Psíquico y queda Desconcertado una ronda. Si tiene éxito, no puede volver a ser afectado por este hechizo.",
       "name": "Asalto Psíquico",
       "range": "Medio",
       "tags": [
@@ -126,7 +126,15 @@
       "ability_id": "ab_1793025042833",
       "mod_tpl": {
         "desc": "El objetivo debe tener éxito en un tiro MEN +MOD o sufre LOW daño Psíquico y queda Desconcertado una ronda. Si tiene éxito, no puede volver a ser afectado por este hechizo."
-      }
+      },
+      "type": "action",
+      "bonus": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "MEN +MOD",
+      "move": ""
     }
   ],
   "reactions": [
