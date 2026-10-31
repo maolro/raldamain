@@ -183,14 +183,14 @@ let DAMAGE_TIERS = [
   { min:19, max:21, LOW:[4,12,10], MID:[5,12,10], HIGH:[6,12,10] },
 ];
 let BONUS_TABLE = [
-  { min:0,  max:0,  bonus:'+4',      mid:'+3',      low:'+1',  dd:'1d4', umbral:2 },
-  { min:1,  max:3,  bonus:'+5+1d6',  mid:'+5+1d6',  low:'+5',  dd:'1d6', umbral:2 },
-  { min:4,  max:6,  bonus:'+7+2d6',  mid:'+7+1d6',  low:'+7',  dd:'2d6', umbral:4 },
-  { min:7,  max:9,  bonus:'+9+2d6',  mid:'+9+1d6',  low:'+9',  dd:'3d8', umbral:8 },
-  { min:10, max:12, bonus:'+11+3d6', mid:'+11+2d6', low:'+11', dd:'4d8', umbral:12 },
-  { min:13, max:15, bonus:'+13+3d6', mid:'+13+2d6', low:'+13', dd:'5d10', umbral:16 },
-  { min:16, max:18, bonus:'+15+4d6', mid:'+15+3d6', low:'+15', dd:'6d10', umbral:20 },
-  { min:19, max:21, bonus:'+17+4d6', mid:'+17+3d6', low:'+17', dd:'7d12', umbral:24 },
+  { min:0,  max:0,  bonus:'+4',      mid:'+3',      low:'+1',  dd:'1d4', umbral:2, salto:2 },
+  { min:1,  max:3,  bonus:'+5+1d6',  mid:'+5+1d6',  low:'+5',  dd:'1d6', umbral:2, salto:4 },
+  { min:4,  max:6,  bonus:'+7+2d6',  mid:'+7+1d6',  low:'+7',  dd:'2d6', umbral:4, salto:4 },
+  { min:7,  max:9,  bonus:'+9+2d6',  mid:'+9+1d6',  low:'+9',  dd:'3d8', umbral:8, salto:5 },
+  { min:10, max:12, bonus:'+11+3d6', mid:'+11+2d6', low:'+11', dd:'4d8', umbral:12, salto:5 },
+  { min:13, max:15, bonus:'+13+3d6', mid:'+13+2d6', low:'+13', dd:'5d10', umbral:16, salto:6 },
+  { min:16, max:18, bonus:'+15+4d6', mid:'+15+3d6', low:'+15', dd:'6d10', umbral:20, salto:6 },
+  { min:19, max:21, bonus:'+17+4d6', mid:'+17+3d6', low:'+17', dd:'7d12', umbral:24, salto:7 },
 ];
 const DEFAULT_BONUS = JSON.parse(JSON.stringify(BONUS_TABLE));
 const DEFAULT_DAMAGE = JSON.parse(JSON.stringify(DAMAGE_TIERS));
@@ -268,7 +268,7 @@ async function loadLibrary() {
     withTier0(lib.scaling);
     DAMAGE_TIERS = lib.scaling.damage;
     BONUS_TABLE = lib.scaling.bonus.map((b, i) => ({ mid: (DEFAULT_BONUS[i] || {}).mid || b.bonus, low: (DEFAULT_BONUS[i] || {}).low || b.bonus, dd: (DEFAULT_BONUS[i] || {}).dd || '',
-      umbral: (DEFAULT_BONUS[i] || {}).umbral ?? 0, ...b }));
+      umbral: (DEFAULT_BONUS[i] || {}).umbral ?? 0, salto: (DEFAULT_BONUS[i] || {}).salto ?? 4, ...b }));
   }
 }
 async function refreshLibrary() {
@@ -305,7 +305,7 @@ function headline() {
   $('cc-sub').textContent = EXISTING ? `data/creatures/${C.id}.json` : 'Rellena la información a la izquierda; la ficha se dibuja a la derecha tal como se verá en la web.';
   const lv = lvOf();
   const band = bandOf(BONUS_TABLE, lv);
-  $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · umbral <b>${esc(band.umbral ?? '')}</b> · bonus Extremo / Alto / Medio / Bajo <b>${esc(bandSave(band, 'extreme'))}</b> / <b>${esc(band.bonus)}</b> / <b>${esc(band.mid || '')}</b> / <b>${esc(band.low || '')}</b>
+  $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · umbral <b>${esc(band.umbral ?? '')}</b> (salto ${esc(band.salto ?? '')}) · bonus Extremo / Alto / Medio / Bajo <b>${esc(bandSave(band, 'extreme'))}</b> / <b>${esc(band.bonus)}</b> / <b>${esc(band.mid || '')}</b> / <b>${esc(band.low || '')}</b>
     · daño LOW / MID / HIGH (físico): ${['LOW', 'MID', 'HIGH'].map(t => `<b>${esc(scaleDamage(t, 'Cortante', lv).replace(' Cortante', ''))}</b>`).join(' / ')} · mágico: un dado menos`;
   $('cc-dirty').textContent = dirty() ? '● sin guardar' : '';
   $('cc-web').hidden = $('cc-sim').hidden = !EXISTING;
@@ -350,12 +350,13 @@ document.querySelectorAll('.cc-lvls').forEach(g => g.addEventListener('click', e
 }));
 
 // ── Umbrales ──
-// An umbral written as T, T+1, T-2… takes the Tier table's umbral that many tiers up or down and follows the level
+// An umbral written as T, T+1, T-2… is the Tier's umbral plus that many times the Tier's jump (Salto),
+// and follows the level: level 5 (umbral 8, salto 4) T+2 = 16, T-1 = 4
 const UMB_TPL = /^\s*T\s*(?:([+-])\s*(\d+))?\s*$/i;
 function tierUmbral(tpl) {
   const m = UMB_TPL.exec(tpl || 'T'); if (!m) return null;
-  const j = BONUS_TABLE.indexOf(bandOf(BONUS_TABLE, lvOf())) + diceOff(m[1], m[2]);
-  return j < 0 ? 0 : +BONUS_TABLE[Math.min(j, BONUS_TABLE.length - 1)].umbral || 0;
+  const band = bandOf(BONUS_TABLE, lvOf());
+  return Math.max(0, (+band.umbral || 0) + diceOff(m[1], m[2]) * (+band.salto || 0));
 }
 function rescaleUmbs() {
   for (const u of C.umbrales) if (u.tier_tpl) u.value = tierUmbral(u.tier_tpl) ?? u.value;
@@ -364,7 +365,7 @@ const umbHint = u => u.tier_tpl ? `= ${u.value}` : '';
 function renderUmbs() {
   $('umb-list').innerHTML = C.umbrales.map((u, i) => `<div class="cc-umb">
       <span class="cc-umb-v"><input class="inp" value="${esc(u.tier_tpl || u.value)}" data-i="${i}" data-k="value" aria-label="Valor"
-        title="Un número, o T / T+1 / T-1… para seguir el umbral del Tier"><small class="muted" data-hint="${i}">${umbHint(u)}</small></span>
+        title="Un número, o T / T+1 / T-1… = umbral del Tier ± saltos del Tier"><small class="muted" data-hint="${i}">${umbHint(u)}</small></span>
       <input class="inp" value="${esc(u.categories)}" data-i="${i}" data-k="categories" placeholder="General, Necrótico" aria-label="Tipos">
       <button type="button" class="cc-x" data-del="${i}" title="Quitar">✕</button></div>`).join('')
     || '<span class="muted">Sin umbrales.</span>';
