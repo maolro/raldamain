@@ -5,16 +5,6 @@
   "format": "{name} {surname}",
   "names": [
     {
-      "name": "Bahram",
-      "gender": "m",
-      "meaning": "Marcial, guerrero-planeta"
-    },
-    {
-      "name": "Chandrial",
-      "gender": "m",
-      "meaning": "Voz de luz"
-    },
-    {
       "name": "Dilawer",
       "gender": "m",
       "meaning": "Valeroso, de corazón audaz"
@@ -58,36 +48,6 @@
       "name": "Zerdeşt",
       "gender": "m",
       "meaning": "Profeta de la llama dorada"
-    },
-    {
-      "name": "Perwîn",
-      "gender": "f",
-      "meaning": "Las Pléyades"
-    },
-    {
-      "name": "Rûniya",
-      "gender": "f",
-      "meaning": "Ella de la luz"
-    },
-    {
-      "name": "Şehrazad",
-      "gender": "f",
-      "meaning": "Libre como la ciudad, elocuente"
-    },
-    {
-      "name": "Sîta",
-      "gender": "f",
-      "meaning": "Plateada, pálida como la luna"
-    },
-    {
-      "name": "Xanim",
-      "gender": "f",
-      "meaning": "Señora"
-    },
-    {
-      "name": "Zahra",
-      "gender": "f",
-      "meaning": "Flor radiante"
     }
   ],
   "surnames": [],
