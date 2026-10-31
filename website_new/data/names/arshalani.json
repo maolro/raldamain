@@ -55,11 +55,6 @@
       "meaning": "Hierro"
     },
     {
-      "name": "Xosraw",
-      "gender": "m",
-      "meaning": "Rey de reyes"
-    },
-    {
       "name": "Zerdeşt",
       "gender": "m",
       "meaning": "Profeta de la llama dorada"
@@ -138,5 +133,7 @@
       "name": "Zinariye",
       "meaning": "Gente de las fortalezas"
     }
-  ]
+  ],
+  "surname_rules": [],
+  "patronymic_rules": []
 }
