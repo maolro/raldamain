@@ -1,16 +1,5 @@
 [
   {
-    "id": "arshalani",
-    "name": "Arshalaní",
-    "count": {
-      "names": 0,
-      "m": 0,
-      "f": 0,
-      "u": 0,
-      "surnames": 0
-    }
-  },
-  {
     "id": "chothgar",
     "name": "Chothgar",
     "count": {
@@ -63,6 +52,17 @@
       "f": 8,
       "u": 0,
       "surnames": 13
+    }
+  },
+  {
+    "id": "arshalani",
+    "name": "Tangarino",
+    "count": {
+      "names": 0,
+      "m": 0,
+      "f": 0,
+      "u": 0,
+      "surnames": 0
     }
   }
 ]
