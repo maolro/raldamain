@@ -55,7 +55,21 @@
       "attacks": 1,
       "bonus_scaled": false,
       "cost": 1,
-      "desc": "El objetivo debe tener éxito en un tiro de salvación Mental +7 + 2d6 o percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo.",
+      "desc": "Creas una ilusión de un tamaño pequeño de un objeto, criatura o fenómeno físico que dura mientras mantenga la concentración. Puede ser desmentida con un tiro de salvación Mental +7 + 2d6.",
+      "name": "Crear Ilusión",
+      "tags": [
+        "Ilusorio"
+      ],
+      "ability_id": "ab_1793023535387",
+      "mod_tpl": {
+        "desc": "Creas una ilusión de un tamaño pequeño de un objeto, criatura o fenómeno físico que dura mientras mantenga la concentración. Puede ser desmentida con un tiro de salvación Mental +MOD."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El afectado  percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo.",
       "name": "Asalto Fantasmal",
       "tags": [
         "Ilusorio",
@@ -63,8 +77,24 @@
       ],
       "ability_id": "ab_1793024131874",
       "mod_tpl": {
-        "desc": "El objetivo debe tener éxito en un tiro de salvación Mental +MOD o percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo."
-      }
+        "save": "MEN +MOD"
+      },
+      "save": "MEN +7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El afectado tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él.",
+      "name": "Sugestión",
+      "tags": [
+        "Mental"
+      ],
+      "ability_id": "ab_1793016178131",
+      "mod_tpl": {
+        "save": "MEN +MOD"
+      },
+      "save": "MEN +7 + 2d6"
     }
   ],
   "reactions": [
@@ -87,6 +117,16 @@
         "Visual"
       ],
       "ability_id": "ab_1793016212873"
+    },
+    {
+      "ability_id": "salto-espacial_1778751219905",
+      "cost": 1,
+      "desc": "Añade +10 a su tiro de Esquiva y se teletransporta un paso al moverse.",
+      "name": "Salto Espacial",
+      "tags": [
+        "Espacial",
+        "Arcano"
+      ]
     }
   ],
   "lore": "",
