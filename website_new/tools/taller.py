@@ -367,6 +367,27 @@ def api_criatura_put(cid):
     data["published"] = data.get("published") is True  # trial creatures stay off the website
     CREATURES.mkdir(parents=True, exist_ok=True)
     (CREATURES / f"{cid}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    _list_creature(cid, data)
+    reload_roster()
+    sim_id = next((sid for sid, s in load_roster().items()
+                   if s.get("origin") == "bestiario" and Path(s.get("source", "")).stem == cid), cid)
+    return jsonify({"ok": True, "id": cid, "sim_id": sim_id})
+
+
+@app.route("/api/criaturas/<cid>/publicada", methods=["PUT"])
+def api_criatura_publish(cid):
+    """The Bestiario pop-up's Publicada tick: only the published flag changes."""
+    p = CREATURES / f"{cid}.json"
+    if not ID_RE.match(cid) or not p.exists():
+        abort(404)
+    data = json.loads(p.read_text(encoding="utf-8"))
+    data["published"] = (request.get_json(force=True) or {}).get("published") is True
+    p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    _list_creature(cid, data)
+    return jsonify({"ok": True, "published": data["published"]})
+
+
+def _list_creature(cid: str, data: dict) -> None:
     # The website's Bestiario lists data/creatures_list.json: only published creatures go in it
     idx = _read_json(CREATURE_INDEX, [])
     entry = {"id": cid, "name": data.get("name", cid), "type": data.get("type", ""), "level": data.get("level", 0),
@@ -379,10 +400,6 @@ def api_criatura_put(cid):
     else:
         idx[pos] = entry  # keep its place in the list
     CREATURE_INDEX.write_text(json.dumps(idx, ensure_ascii=False, indent=2), encoding="utf-8")
-    reload_roster()
-    sim_id = next((sid for sid, s in load_roster().items()
-                   if s.get("origin") == "bestiario" and Path(s.get("source", "")).stem == cid), cid)
-    return jsonify({"ok": True, "id": cid, "sim_id": sim_id})
 
 
 @app.route("/api/criatura-biblioteca")
@@ -643,7 +660,9 @@ BESTIARIO = r"""
   <div class="bx-panel">
     <div class="bx-bar">
       <span id="bx-title" class="tl-title" style="font-size:1rem"></span>
-      <span style="margin-left:auto;display:flex;gap:6px">
+      <span style="margin-left:auto;display:flex;gap:6px;align-items:center">
+        <label class="bx-pub" title="Si está marcada, la criatura aparece en el Bestiario de la web">
+          <input type="checkbox" id="bx-pub" onchange="setPublished(this)"> Publicada</label>
         <a id="bx-edit" class="btn-ghost" href="#">✏ Editar</a>
         <a id="bx-sim" class="btn-ghost" href="#">⚔ Simular contra</a>
         <a id="bx-web" class="btn-ghost" href="#" target="_blank">↗ Abrir página</a>
@@ -691,6 +710,9 @@ BESTIARIO = r"""
   width: min(1000px, 100%); height: 94vh; display: flex; flex-direction: column; overflow: hidden; }
 .bx-bar { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-bottom: 1px solid #333;
   background: var(--secondary-black); flex-wrap: wrap; }
+.bx-pub { display: inline-flex; align-items: center; gap: 5px; font-size: 0.85rem; cursor: pointer; padding: 4px 8px;
+  border: 1px solid #555; border-radius: 4px; }
+.bx-pub:has(input:checked) { border-color: var(--accent-gold); color: var(--accent-gold); }
 #bx-frame { flex: 1; width: 100%; border: 0; background: var(--primary-black); }
 </style>
 
@@ -781,8 +803,27 @@ function openCreature(id) {
   const sim = document.getElementById('bx-sim');
   sim.style.display = c.sim_id ? '' : 'none';
   sim.href = `/taller/simulador?enemies=${encodeURIComponent(c.sim_id || '')}`;
+  const pub = document.getElementById('bx-pub');
+  pub.checked = !!c.published; pub.dataset.id = id;
   document.getElementById('bx-modal').hidden = false;
   history.replaceState(null, '', `?c=${encodeURIComponent(id)}`);
+}
+async function setPublished(box) {
+  const c = CREATURES.find(x => x.id === box.dataset.id);
+  if (!c) return;
+  box.disabled = true;
+  try {
+    const r = await fetch(`/api/criaturas/${encodeURIComponent(c.id)}/publicada`, {
+      method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ published: box.checked }) });
+    if (!r.ok) throw new Error(r.status);
+    c.published = (await r.json()).published;
+    render();
+    const f = document.getElementById('bx-frame'); f.src = f.src;  // its "No publicada" badge
+  } catch (e) {
+    box.checked = !!c.published;
+    alert('No se pudo cambiar la publicación: ' + e.message);
+  }
+  box.disabled = false;
 }
 function closeCreature() {
   document.getElementById('bx-modal').hidden = true;
