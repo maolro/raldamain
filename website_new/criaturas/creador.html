@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador de Criaturas | Raldamain</title>
+    <meta name="description" content="Crea tus propias criaturas con las habilidades del bestiario, descárgalas en .json y pruébalas en el Simulador.">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20261008">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/assets/js/components.js"></script>
+    <style>
+        /* the Taller's base styles, which the creature builder uses */
+        .tl-wrap { max-width: 1300px; margin: 0 auto; padding: 24px 16px 60px; }
+        .tl-h1 { font-family: var(--font-heading); color: var(--accent-gold); margin-bottom: 6px; }
+        .tl-sub { color: var(--text-muted); margin-bottom: 20px; }
+        .btn-gold { background: var(--accent-gold); color: #000; border: none; border-radius: 4px; padding: 8px 16px;
+            font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; font-family: var(--font-body); }
+        .btn-ghost { background: transparent; color: var(--text-main); border: 1px solid #555; border-radius: 4px; padding: 5px 11px;
+            cursor: pointer; text-decoration: none; display: inline-block; font-size: 0.85rem; font-family: var(--font-body); }
+        .btn-ghost:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
+        .inp { background: #151515; border: 1px solid #555; color: var(--text-main); border-radius: 4px; padding: 7px 10px;
+            font-family: var(--font-body); font-size: 0.9rem; }
+        .inp:focus { outline: none; border-color: var(--accent-gold); }
+        .muted { color: var(--text-muted); }
+        .err { color: #f0a060; font-size: 0.85rem; margin: 8px 0; }
+        #builder { min-height: 60vh; }
+        @media (max-width: 600px) { .tl-wrap { padding: 16px 16px 40px; } }
+    </style>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <div id="builder"><main class="tl-wrap"><p class="muted">Cargando el creador…</p></main></div>
+
+    <footer>
+        <p>&copy; 2020 Raldamain Studios. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // The same builder as the Taller's (assets/html/creature_builder.html), in website mode:
+        // the library comes from /data and creatures are downloaded instead of saved
+        window.CC_WEB = true;
+        (async () => {
+            const box = document.getElementById('builder');
+            try {
+                const r = await fetch('/assets/html/creature_builder.html', { cache: 'no-cache' });
+                if (!r.ok) throw new Error(r.status);
+                box.innerHTML = await r.text();
+                // scripts put in with innerHTML don't run: replace each with a live copy
+                for (const old of box.querySelectorAll('script')) {
+                    const s = document.createElement('script');
+                    s.textContent = old.textContent;
+                    old.replaceWith(s);
+                }
+            } catch (e) {
+                box.innerHTML = '<main class="tl-wrap"><p class="err">No se pudo cargar el creador de criaturas.</p></main>';
+            }
+        })();
+    </script>
+</body>
+</html>

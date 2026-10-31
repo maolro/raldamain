@@ -69,6 +69,20 @@
             cursor: pointer;
         }
 
+        /* Creador de Criaturas: looks like the navbar's Creador de Personajes button */
+        .creator-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+        .btn-creator {
+            border: 1px solid var(--accent-gold);
+            padding: 8px 16px;
+            border-radius: 4px;
+            color: var(--accent-gold);
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .btn-creator:hover { background-color: var(--accent-gold); color: var(--primary-black); }
+
         .sort-select:focus, .level-select:focus {
             outline: none;
             border-color: var(--accent-gold);
@@ -99,8 +113,9 @@
         </div> -->
 
         <!-- Search Bar -->
-        <div class="search-filter-container">
+        <div class="search-filter-container creator-row">
             <input type="text" id="creature-search" placeholder="Buscar criatura por nombre..." class="creature-search-input">
+            <a href="/criaturas/creador" class="btn-creator">Creador de Criaturas</a>
         </div>
 
         <!-- Filter Buttons -->

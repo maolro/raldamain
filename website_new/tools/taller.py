@@ -33,7 +33,8 @@ CREATURES = BASE / "data" / "creatures"
 CREATURE_INDEX = BASE / "data" / "creatures_list.json"
 CREATURE_ABILITIES = BASE / "data" / "creatures_abilities.json"
 CREATURE_SCALING = BASE / "data" / "creature_scaling.json"
-PAGES = Path(__file__).resolve().parent  # taller_tabla.html, taller_criatura.html
+PAGES = Path(__file__).resolve().parent  # taller_tabla.html
+CREATURE_BUILDER = BASE / "assets" / "html" / "creature_builder.html"  # also the website's /criaturas/creador
 sys.path.insert(0, str(BASE / "combat-simulator"))
 
 from raldamain.data import website                       # noqa: E402
@@ -952,7 +953,7 @@ def taller_tabla():
 
 @app.route("/taller/criatura")
 def taller_criatura():
-    return page("Creador de criaturas", (PAGES / "taller_criatura.html").read_text(encoding="utf-8"), 5)
+    return page("Creador de criaturas", CREATURE_BUILDER.read_text(encoding="utf-8"), 5)
 
 
 @app.route("/taller/bestiario")
@@ -974,7 +975,7 @@ if __name__ == "__main__":
     # restarts on code edits (Taller + simulator); open pages also reload when
     # the Creador / Mesa files or the rank & equipment data change
     live_reload.run(app, port, url, open_browser=not __import__("os").environ.get("TALLER_NO_BROWSER"),
-                    watch=["*.html", "tools/taller_*.html", "assets/js/**/*.js", "assets/css/*.css",
+                    watch=["*.html", "tools/taller_*.html", "assets/html/*.html", "criaturas/*.html", "assets/js/**/*.js", "assets/css/*.css",
                            "data/builder/*.json", "data/ranks/*.json"],
                     extra_files=[BASE / "combat-simulator" / "raldamain" / "data" / "ranks.yaml",
                                  BASE / "combat-simulator" / "raldamain" / "data" / "conditions.yaml"])

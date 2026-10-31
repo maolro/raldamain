@@ -7,9 +7,12 @@
     </div>
     <div class="cc-actions">
       <span id="cc-dirty" class="cc-dirty"></span>
-      <label class="cc-pub" title="Si está desmarcada, la criatura solo existe en el Taller: no aparece en el Bestiario de la web">
+      <label class="cc-pub cc-taller" title="Si está desmarcada, la criatura solo existe en el Taller: no aparece en el Bestiario de la web">
         <input type="checkbox" id="f-pub"> Publicada en la web</label>
-      <a class="btn-ghost" href="/taller/bestiario">🐉 Bestiario</a>
+      <a class="btn-ghost cc-taller" href="/taller/bestiario">🐉 Bestiario</a>
+      <button class="btn-ghost cc-web" id="cc-new" type="button" hidden>✚ Nueva</button>
+      <label class="btn-ghost cc-web" id="cc-open" title="Sigue editando una criatura que descargaste antes" hidden>📂 Abrir .json
+        <input type="file" id="cc-file" accept=".json,application/json" hidden></label>
       <a class="btn-ghost" id="cc-web" href="#" target="_blank" hidden>↗ Ver en la web</a>
       <a class="btn-ghost" id="cc-sim" href="#" hidden>⚔ Simular contra</a>
       <button class="btn-gold" id="cc-save" type="button">💾 Guardar</button>
@@ -238,14 +241,29 @@ const lvOf = () => { const n = parseInt(C.level, 10); return isNaN(n) ? 1 : n; }
 function dirty() { return C && JSON.stringify(C) !== SAVED; }
 
 // ── Load ──
+// On the website (/criaturas/creador, which sets CC_WEB) there is no server: the library and tier tables are
+// read from /data, creatures are downloaded as .json instead of saved, and the work in progress is kept in this browser
+const WEB = !!window.CC_WEB;
+const DRAFT_KEY = 'raldamain.creador_criaturas.v1';
+function readDraft() { try { return JSON.parse(localStorage.getItem(DRAFT_KEY) || 'null'); } catch (e) { return null; } }
+function writeDraft() { try { localStorage.setItem(DRAFT_KEY, JSON.stringify(C)); } catch (e) {} }
 async function init() {
   window.updateMetaTags = () => {};  // the site renderer must not retitle this page
-  const [, bx] = await Promise.all([loadLibrary(), fetch('/api/bestiario').then(r => r.json())]);
+  if (WEB) setupWeb();
+  const bestiary = WEB ? fetch('/data/creatures_list.json').then(r => r.json()).then(l => ({ creatures: l }))
+                       : fetch('/api/bestiario').then(r => r.json());
+  const [, bx] = await Promise.all([loadLibrary(), bestiary]);
   const uniq = a => [...new Set(a.filter(Boolean))].sort();
   $('dl-types').innerHTML = uniq((bx.creatures || []).map(c => c.type)).map(t => `<option value="${esc(t)}">`).join('');
   $('dl-cats').innerHTML = uniq((bx.creatures || []).map(c => c.category)).map(t => `<option value="${esc(t)}">`).join('');
   const id = new URLSearchParams(location.search).get('c');
-  if (id) {
+  if (WEB) {
+    // ?c=<id> starts from a bestiary creature; otherwise the draft left in this browser
+    const r = id && await fetch('/data/creatures/' + encodeURIComponent(id) + '.json').catch(() => null);
+    if (r && r.ok) { C = await r.json(); C.id = id; }
+    else C = readDraft();
+    if (C) SAVED = JSON.stringify(C);
+  } else if (id) {
     const r = await fetch('/api/criaturas/' + encodeURIComponent(id), { cache: 'no-store' });
     if (r.ok) {
       C = await r.json(); C.id = id; EXISTING = true;
@@ -256,13 +274,39 @@ async function init() {
   }
   if (!C) { C = blank(); rescaleAll(); }
   normalize(C);
-  SAVED = JSON.stringify(C);
+  if (!WEB || !SAVED) SAVED = JSON.stringify(C);
   fillForm(); renderTab(); loadRenderer();
+}
+function setupWeb() {
+  document.querySelectorAll('.cc-taller').forEach(el => el.hidden = true);
+  document.querySelectorAll('.cc-web').forEach(el => el.hidden = false);
+  $('cc-save').textContent = '⬇ Descargar .json';
+  $('cc-save').title = 'Descarga la criatura para probarla en el Simulador (no se guarda en la web)';
+  $('cc-new').addEventListener('click', () => {
+    if (dirty() && !confirm('¿Empezar una criatura nueva? La actual no se ha descargado.')) return;
+    C = blank(); rescaleAll(); normalize(C); SAVED = JSON.stringify(C); ID_TOUCHED = false;
+    fillForm(); renderTab(); changed();
+  });
+  $('cc-file').addEventListener('change', async e => {
+    const f = e.target.files[0]; e.target.value = '';
+    if (!f) return;
+    let d;
+    try { d = JSON.parse(await f.text()); } catch (err) { alert('Ese archivo no es un .json válido.'); return; }
+    if (!d || typeof d !== 'object' || !('hits' in d || 'actions' in d)) { alert('Ese archivo no parece una criatura.'); return; }
+    if (dirty() && !confirm('¿Abrir este archivo? La criatura actual no se ha descargado.')) return;
+    C = d; C.id = slug(C.id || C.name || f.name.replace(/\.json$/i, '')); ID_TOUCHED = true;
+    normalize(C); SAVED = JSON.stringify(C);
+    fillForm(); renderTab(); changed();
+  });
 }
 // The library is re-read whenever it may have changed (opening the picker, coming back to this tab),
 // so abilities saved in the creature editor's Biblioteca show up without reloading the page
 async function loadLibrary() {
-  const lib = await fetch('/api/criatura-biblioteca', { cache: 'no-store' }).then(r => r.json());
+  const lib = WEB
+    ? await Promise.all(['/data/creatures_abilities.json', '/data/creature_scaling.json']
+        .map(u => fetch(u, { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null)))
+        .then(([abilities, scaling]) => ({ abilities, scaling }))
+    : await fetch('/api/criatura-biblioteca', { cache: 'no-store' }).then(r => r.json());
   LIB = lib.abilities || [];
   if (lib.scaling && Array.isArray(lib.scaling.damage) && Array.isArray(lib.scaling.bonus)) {
     withTier0(lib.scaling);
@@ -302,17 +346,21 @@ function fillForm() {
 }
 function headline() {
   $('cc-title').textContent = C.name || 'Nueva criatura';
-  $('cc-sub').textContent = EXISTING ? `data/creatures/${C.id}.json` : 'Rellena la información a la izquierda; la ficha se dibuja a la derecha tal como se verá en la web.';
+  $('cc-sub').textContent = EXISTING ? `data/creatures/${C.id}.json`
+    : WEB ? 'Rellena la información a la izquierda y añade habilidades de la biblioteca; la ficha se dibuja a la derecha. '
+          + 'La criatura no se guarda en la web: descárgala en .json y súbela al Simulador para probarla.'
+    : 'Rellena la información a la izquierda; la ficha se dibuja a la derecha tal como se verá en la web.';
   const lv = lvOf();
   const band = bandOf(BONUS_TABLE, lv);
   $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · umbral <b>${esc(band.umbral ?? '')}</b> (salto ${esc(band.salto ?? '')}) · bonus Extremo / Alto / Medio / Bajo <b>${esc(bandSave(band, 'extreme'))}</b> / <b>${esc(band.bonus)}</b> / <b>${esc(band.mid || '')}</b> / <b>${esc(band.low || '')}</b>
     · daño LOW / MID / HIGH (físico): ${['LOW', 'MID', 'HIGH'].map(t => `<b>${esc(scaleDamage(t, 'Cortante', lv).replace(' Cortante', ''))}</b>`).join(' / ')} · mágico: un dado menos`;
-  $('cc-dirty').textContent = dirty() ? '● sin guardar' : '';
+  $('cc-dirty').textContent = dirty() ? (WEB ? '● sin descargar' : '● sin guardar') : '';
   $('cc-web').hidden = $('cc-sim').hidden = !EXISTING;
   if (EXISTING) { $('cc-web').href = '/criatura/' + encodeURIComponent(C.id); $('cc-sim').href = '/taller/simulador?enemies=' + encodeURIComponent(SIM_ID || C.id); }
+  if (WEB) { $('cc-sim').hidden = false; $('cc-sim').href = '/simulador'; $('cc-sim').target = '_blank'; $('cc-sim').textContent = '⚔ Simulador'; }
   for (const k of ['traits', 'actions', 'reactions']) $('n-' + k).textContent = C[k].length ? `(${C[k].length})` : '';
 }
-function changed() { headline(); schedulePreview(); }
+function changed() { headline(); schedulePreview(); if (WEB) writeDraft(); }
 
 for (const [el, k] of FIELDS) $(el).addEventListener('input', e => { C[k] = e.target.value; if (!C[k] && k !== 'name') delete C[k]; changed(); });
 $('f-name').addEventListener('input', () => { if (!EXISTING && !ID_TOUCHED) { C.id = slug(C.name); $('f-id').value = C.id; } });
@@ -610,6 +658,7 @@ async function save() {
   if (!C.name) { alert('Ponle un nombre a la criatura.'); return; }
   C.id = slug(C.id || C.name);
   if (!C.id) { alert('El ID no es válido.'); return; }
+  if (WEB) { download(); return; }
   if (!EXISTING) {
     const r = await fetch('/api/criaturas/' + encodeURIComponent(C.id), { cache: 'no-store' });
     if (r.ok && !confirm(`Ya existe la criatura «${C.id}». ¿Sobrescribirla?`)) return;
@@ -624,7 +673,21 @@ async function save() {
   $('cc-dirty').textContent = C.published ? '✓ guardada y publicada' : '✓ guardada (solo en el Taller)';
   setTimeout(() => { if (!dirty()) $('cc-dirty').textContent = ''; }, 2500);
 }
-window.addEventListener('beforeunload', e => { if (dirty()) { e.preventDefault(); e.returnValue = ''; } });
+// Website: the creature goes to a .json file (the Simulador and "Abrir .json" read it back)
+function download() {
+  const data = JSON.parse(JSON.stringify(C));
+  delete data.published;
+  const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
+  const a = Object.assign(document.createElement('a'), { href: url, download: C.id + '.json' });
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  SAVED = JSON.stringify(C); writeDraft();
+  fillForm();
+  $('cc-dirty').textContent = `✓ descargada: ${C.id}.json`;
+  setTimeout(() => { if (!dirty()) $('cc-dirty').textContent = ''; }, 2500);
+}
+// (on the website the draft stays in this browser, so leaving the page loses nothing)
+window.addEventListener('beforeunload', e => { if (!WEB && dirty()) { e.preventDefault(); e.returnValue = ''; } });
 
 init();
 </script>

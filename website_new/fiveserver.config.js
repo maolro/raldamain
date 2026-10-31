@@ -23,6 +23,10 @@ module.exports = {
       else if (req.url === '/criaturas') {
         req.url = '/criaturas.html';
       }
+      // 4b. Handle "/criaturas/creador" -> serve "criaturas/creador.html" (creature builder)
+      else if (req.url === '/criaturas/creador' || req.url.startsWith('/criaturas/creador?')) {
+        req.url = '/criaturas/creador.html' + req.url.slice('/criaturas/creador'.length);
+      }
       // 5. Handle "/mundo" -> serve "mundo.html"
       else if (req.url === '/mundo') {
         req.url = '/mundo.html';
