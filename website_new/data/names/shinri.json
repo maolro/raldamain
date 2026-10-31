@@ -2,7 +2,7 @@
   "id": "shinri",
   "name": "Shinri",
   "description": "",
-  "format": "{name} {surname}",
+  "format": "{surname} {name}",
   "names": [],
   "surnames": []
 }
