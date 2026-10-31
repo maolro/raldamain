@@ -1,7 +1,7 @@
 {
   "id": "arshalani",
   "name": "Arshalaní",
-  "description": "Lengua del Imperio de Arshalán: nombre personal y nombre de clan.",
+  "description": "",
   "format": "{name} {surname}",
   "names": [],
   "surnames": [],
