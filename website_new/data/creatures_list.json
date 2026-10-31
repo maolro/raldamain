@@ -277,5 +277,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "asesino",
+    "name": "Asesino",
+    "type": "Humanoide",
+    "level": 8,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
