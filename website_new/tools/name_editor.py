@@ -291,15 +291,45 @@ $('lb-new').addEventListener('click', async () => {
 });
 async function openCulture(id) { CUR = await api('GET', '/api/names/' + encodeURIComponent(id)); renderCults(); renderLib(); }
 
-// Every change saves at once (git goes in the background)
+// Every change saves at once (git goes in the background). If the editor can't be reached
+// (closed, restarting), the culture is kept in this browser and sent again every few seconds,
+// and when the page opens again; dirty() keeps live reload from reloading over it.
+const BACKUP_KEY = 'raldamain.nombres.pendientes';
+const readBackups = () => { try { return JSON.parse(localStorage.getItem(BACKUP_KEY) || '{}'); } catch (e) { return {}; } };
+const writeBackups = b => { try { localStorage.setItem(BACKUP_KEY, JSON.stringify(b)); } catch (e) {} };
+window.dirty = () => Object.keys(readBackups()).length > 0;
+let retryTimer = null;
 async function save(label) {
+  const b = readBackups(); b[CUR.id] = { culture: CUR, label }; writeBackups(b);
   try {
     const d = await api('PUT', '/api/names/' + encodeURIComponent(CUR.id), { culture: CUR, label });
+    const left = readBackups(); delete left[CUR.id]; writeBackups(left);
     CUR = d.culture;
     await loadIndex(); loadGit();
     toast('Guardado ✓' + (d.git === 'queued' ? ' · subiendo a GitHub…' : '') + gitNote(d.git), !!gitNote(d.git));
-  } catch (e) { toast('Error: ' + e.message, true); }
+  } catch (e) {
+    toast('⚠ No se pudo guardar (' + e.message + '). Los cambios quedan en este navegador y se enviarán solos.', true);
+    if (!retryTimer) retryTimer = setInterval(sendBackups, 3000);
+  }
 }
+// sends every culture still waiting; true when none is left
+async function sendBackups() {
+  const b = readBackups(), ids = Object.keys(b);
+  let sent = 0;
+  for (const id of ids) {
+    try {
+      const d = await api('PUT', '/api/names/' + encodeURIComponent(id), b[id]);
+      const left = readBackups(); delete left[id]; writeBackups(left); sent++;
+      if (CUR && CUR.id === id) CUR = d.culture;
+    } catch (e) { break; }  // still unreachable: try again later
+  }
+  if (sent) { toast(`Guardados ${sent} cambio(s) pendientes ✓`); await loadIndex().catch(() => {}); loadGit(); }
+  const done = !Object.keys(readBackups()).length;
+  if (done && retryTimer) { clearInterval(retryTimer); retryTimer = null; }
+  return done;
+}
+window.addEventListener('beforeunload', e => { if (window.dirty()) { e.preventDefault(); e.returnValue = ''; } });
+if (window.dirty()) sendBackups().then(done => { if (!done && !retryTimer) retryTimer = setInterval(sendBackups, 3000); });
 
 function itemRow(kind, i, e) {
   return `<div class="lb-item">
@@ -397,7 +427,10 @@ async function loadGit() {
     el.className = (!g.ok || g.error) ? 'bad' : g.pending ? 'busy' : 'ok';
     el.textContent = !g.ok ? `⎇ ${g.branch || '?'}: sin push` : g.pending ? `⏳ subiendo ${g.pending}` : g.error ? '⚠ git' : '✓ GitHub';
     el.title = g.error || 'Guardar es instantáneo: el commit y el push a GitHub se hacen en segundo plano';
-  } catch (e) { el.textContent = ''; }
+  } catch (e) {
+    el.className = 'bad'; el.textContent = '⚠ sin conexión';
+    el.title = 'El editor de nombres no responde (¿está cerrado?). Lo que guardes se queda en este navegador hasta que vuelva.';
+  }
 }
 loadGit(); setInterval(loadGit, 4000);
 loadIndex();
