@@ -5,46 +5,6 @@
   "format": "{name} {surname}",
   "names": [
     {
-      "name": "Arzhor",
-      "gender": "m",
-      "meaning": ""
-    },
-    {
-      "name": "Emil",
-      "gender": "m",
-      "meaning": ""
-    },
-    {
-      "name": "Henri",
-      "gender": "m",
-      "meaning": ""
-    },
-    {
-      "name": "Sylvain",
-      "gender": "m",
-      "meaning": ""
-    },
-    {
-      "name": "Thibaut",
-      "gender": "m",
-      "meaning": ""
-    },
-    {
-      "name": "Katerine",
-      "gender": "f",
-      "meaning": ""
-    },
-    {
-      "name": "Lisette",
-      "gender": "f",
-      "meaning": ""
-    },
-    {
-      "name": "Lucile",
-      "gender": "f",
-      "meaning": ""
-    },
-    {
       "name": "Maelle",
       "gender": "f",
       "meaning": ""
