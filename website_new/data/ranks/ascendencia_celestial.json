@@ -165,20 +165,13 @@
       "passive": "Incrementa tu estadística de CON y su limitador en +1.",
       "abilities": [
         {
-          "name": "Alas Angelicales",
-          "tags": [
-            "Innata",
-            "Pasiva"
-          ],
-          "desc": "Mientras Canalización Celestial esté activa, obtienes velocidad de vuelo 2 y Ventaja en tiros de Esquiva."
-        },
-        {
           "name": "Visión Verdadera",
           "tags": [
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Inmunidad a Ilusiones, lo que te permite percibir a seres invisibles y las formas verdaderas de seres cambiaformas. También obtienes Resistencia a efectos Mentales y Ventaja en tiros de Averiguar Intenciones."
+          "desc": "Obtienes Visión Verdadera, la cual te otorga Inmunidad a Ilusiones y te permite percibir a seres invisibles y las formas verdaderas de seres cambiaformas. ",
+          "empower": "Obtienes +10 en un tiro de Averiguar Intenciones o de salvación Mental."
         }
       ]
     },
