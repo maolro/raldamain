@@ -3,23 +3,7 @@
   "name": "Arshalaní",
   "description": "Lengua del Imperio de Arshalán: nombre personal y nombre de clan.",
   "format": "{name} {surname}",
-  "names": [
-    {
-      "name": "Rûstem",
-      "gender": "m",
-      "meaning": "Héroe de hierro"
-    },
-    {
-      "name": "Timûr",
-      "gender": "m",
-      "meaning": "Hierro"
-    },
-    {
-      "name": "Zerdeşt",
-      "gender": "m",
-      "meaning": "Profeta de la llama dorada"
-    }
-  ],
+  "names": [],
   "surnames": [],
   "surname_rules": [],
   "patronymic_rules": []
