@@ -13,19 +13,23 @@
   },
   "umbrales": [
     {
+      "value": 15,
+      "categories": "General, Necrótico",
+      "tier_tpl": "T"
+    },
+    {
       "value": 20,
       "categories": "Magia",
       "tier_tpl": "T+1"
     },
     {
-      "value": 15,
-      "categories": "General, Necrótico",
-      "tier_tpl": "T"
+      "value": 25,
+      "categories": "Radiante",
+      "tier_tpl": "T+2"
     }
   ],
   "immune": [
     "Fuego",
-    "Radiante",
     "Mental",
     "Miedo",
     "Ilusiones",
