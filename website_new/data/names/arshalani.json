@@ -2,7 +2,7 @@
   "id": "arshalani",
   "name": "Tangarino",
   "description": "",
-  "format": "{name} {surname}",
+  "format": "{surname} {name}",
   "names": [],
   "surnames": [],
   "surname_rules": [],
