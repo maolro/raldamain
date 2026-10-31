@@ -20,5 +20,16 @@
       "u": 0,
       "surnames": 10
     }
+  },
+  {
+    "id": "kratenses",
+    "name": "Kratenses",
+    "count": {
+      "names": 0,
+      "m": 0,
+      "f": 0,
+      "u": 0,
+      "surnames": 0
+    }
   }
 ]
