@@ -698,6 +698,7 @@ const KNOWN_TAGS = ['Elemental','No-muerto','Bestia','Humanoide','Dragón','Cons
   'Fiend','Celestial','Fey','Vegetal','Fuego','Agua','Aire','Tierra','Vuelo','Élite','Invocación','Jefe'];
 
 let DAMAGE_TIERS = [
+  { min:0,  max:0,  LOW:[1,4,2],   MID:[2,4,2],   HIGH:[3,4,2]   },
   { min:1,  max:3,  LOW:[1,6,4],   MID:[2,6,4],   HIGH:[3,6,4]   },
   { min:4,  max:6,  LOW:[2,6,5],   MID:[3,6,5],   HIGH:[4,6,5]   },
   { min:7,  max:9,  LOW:[2,8,6],   MID:[3,8,6],   HIGH:[4,8,6]   },
@@ -709,6 +710,7 @@ let DAMAGE_TIERS = [
 const PHYSICAL_TYPES = ['contundente','cortante','perforante'];
 // bonus = Alto (ataque, +MOD y salvación fuerte); mid / low = salvaciones Media y Baja
 let BONUS_TABLE = [
+  { min:0,  max:0,  bonus:'+4',      mid:'+3',      low:'+1',  dd:'1d4', umbral:2 },
   { min:1,  max:3,  bonus:'+5+1d6',  mid:'+5+1d6',  low:'+5',  dd:'1d6', umbral:2 },
   { min:4,  max:6,  bonus:'+7+2d6',  mid:'+7+1d6',  low:'+7',  dd:'2d6', umbral:4 },
   { min:7,  max:9,  bonus:'+9+2d6',  mid:'+9+1d6',  low:'+9',  dd:'3d8', umbral:8 },
@@ -1167,7 +1169,8 @@ async function loadScaling() {
   try {
     const d = await api('GET', '/api/scaling');
     if (d && Array.isArray(d.bonus) && Array.isArray(d.damage)) {
-      const defs = JSON.parse(DEFAULT_SCALING).bonus;  // tables saved before Medio/Bajo existed get the defaults
+      const dflt = JSON.parse(DEFAULT_SCALING), defs = dflt.bonus;  // tables saved before Medio/Bajo existed get the defaults
+      if (d.damage[0] && d.damage[0].min > 0) { d.damage.unshift(dflt.damage[0]); d.bonus.unshift(dflt.bonus[0]); }  // ... and Tier 0
       BONUS_TABLE = d.bonus.map((b, i) => ({ mid: (defs[i] || {}).mid || b.bonus, low: (defs[i] || {}).low || b.bonus, dd: (defs[i] || {}).dd || '',
         umbral: (defs[i] || {}).umbral ?? 0, ...b }));
       DAMAGE_TIERS = d.damage;
@@ -1189,7 +1192,7 @@ function renderScaling() {
         </div><div class="prev" id="prev-${i}-${tier}">${n}d${sides} + ${flat} · media ${avgDice(n, sides, flat)}</div></td>`;
     };
     return `<tr>
-      <td><div class="tier">Tier ${i + 1}</div><div class="lv">niv ${band.min}–${band.max}</div></td>
+      <td><div class="tier">Tier ${i + tierBase()}</div><div class="lv">niv ${band.min}–${band.max}</div></td>
       <td><input class="b" value="${esc(b.bonus)}" oninput="setBonus(${i},'bonus',this.value)"></td>
       <td><input class="b" value="${esc(b.mid || '')}" oninput="setBonus(${i},'mid',this.value)"></td>
       <td><input class="b" value="${esc(b.low || '')}" oninput="setBonus(${i},'low',this.value)"></td>
@@ -1245,6 +1248,7 @@ function formatDice(str) {
   if (!str) return str;
   return normalizeFormula(str).replace(/([a-z0-9])\+/gi, '$1 + ');
 }
+const tierBase = () => DAMAGE_TIERS[0].min > 0 ? 1 : 0;  // with a Tier 0 row, rows count from 0
 function getTierBand(level) {
   return DAMAGE_TIERS.find(b => level >= b.min && level <= b.max) || DAMAGE_TIERS[0];
 }
@@ -1300,7 +1304,7 @@ async function saveEntryToBank(type, i) {
     .replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') + '_' + Date.now();
   const abType = type==='actions'?'action' : type==='reactions'?'reaction' : 'passive';
   const ab = { ...entry, id, type: abType };
-  const lvl = S.creature.level || 1;
+  const lvl = S.creature.level ?? 1;
   if (ab.damage) {
     const parsed = parseDamage(ab.damage);
     const tier = detectDamageTier(ab.damage, lvl);
@@ -1788,7 +1792,7 @@ function insertFromBank(type, ab) {
   S.creature[type] ??= [];
   const entry = { ...ab };
   delete entry.tier;  // library-only: which tier the ability is meant for
-  const tgtLevel = S.creature.level || 1;
+  const tgtLevel = S.creature.level ?? 1;
   if (entry.damage_tier) {
     entry.damage = scaleDamageStr(entry.damage_tier, entry.damage_base_type || '', tgtLevel);
   }
@@ -1798,7 +1802,7 @@ function insertFromBank(type, ab) {
   // +MOD, TIER and LOW / MID / HIGH in the text take this creature's values
   let mod = formatDice(getBonusBand(tgtLevel).bonus);
   if (!/^[+-]/.test(mod)) mod = '+' + mod;
-  const tierNum = DAMAGE_TIERS.indexOf(getTierBand(tgtLevel)) + 1;
+  const tierNum = DAMAGE_TIERS.indexOf(getTierBand(tgtLevel)) + tierBase();
   for (const k of KEY_FIELDS)
     entry[k] = resolveKeywords(entry[k], mod, tierNum,
       (t, phys) => scaleDamageStr(t, phys ? 'Cortante' : 'Fuego', tgtLevel).replace(/ \S+$/, ''),

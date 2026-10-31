@@ -116,7 +116,7 @@ function renderCreaturePage(data) {
     if (typeof updateMetaTags === 'function') {
         updateMetaTags({
             title: `${data.name} | Raldamain Bestiario`,
-            description: `${data.type} ${data.tier ? '· ' + data.tier : (data.level ? 'de nivel ' + data.level : '')}. ${data.lore ? data.lore.substring(0, 150) + '...' : ''}`,
+            description: `${data.type} ${data.tier ? '· ' + data.tier : (data.level != null && data.level !== '' ? 'de nivel ' + data.level : '')}. ${data.lore ? data.lore.substring(0, 150) + '...' : ''}`,
             image: data.id ? `${window.location.origin}/assets/images/creatures/${data.id}.jpg` : `${window.location.origin}/assets/images/raldamain_logo.png`,
             url: window.location.href,
             type: 'article'
@@ -145,7 +145,7 @@ function renderCreaturePage(data) {
     // D. Statblock header
     document.getElementById("statblock-name").innerText = data.name;
     const subtitleEl = document.getElementById("statblock-subtitle");
-    if (data.level) {
+    if (data.level != null && data.level !== '') {
         subtitleEl.innerText = `${data.type} ${data.size}  ·  Nivel ${data.level}`;
         subtitleEl.style.display = '';
     } else {

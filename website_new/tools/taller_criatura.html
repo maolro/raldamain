@@ -28,7 +28,7 @@
           <label class="cc-f">Tamaño<select id="f-size" class="inp">
             <option>Diminuto</option><option>Pequeño</option><option selected>Mediano</option><option>Grande</option>
             <option>Enorme</option><option>Gigante</option><option>Colosal</option></select></label>
-          <label class="cc-f cc-num">Nivel<input id="f-level" class="inp" type="number" min="1" max="30"></label>
+          <label class="cc-f cc-num">Nivel<input id="f-level" class="inp" type="number" min="0" max="30"></label>
           <label class="cc-f">Categoría<input id="f-cat" class="inp" list="dl-cats" placeholder="Esbirro Élite II"></label>
         </div>
         <div class="cc-tierline" id="cc-tierline"></div>
@@ -173,6 +173,7 @@
 <script>
 // ── Tier tables (same defaults as the creature editor; data/creature_scaling.json overrides) ──
 let DAMAGE_TIERS = [
+  { min:0,  max:0,  LOW:[1,4,2],   MID:[2,4,2],   HIGH:[3,4,2]   },
   { min:1,  max:3,  LOW:[1,6,4],   MID:[2,6,4],   HIGH:[3,6,4]   },
   { min:4,  max:6,  LOW:[2,6,5],   MID:[3,6,5],   HIGH:[4,6,5]   },
   { min:7,  max:9,  LOW:[2,8,6],   MID:[3,8,6],   HIGH:[4,8,6]   },
@@ -182,6 +183,7 @@ let DAMAGE_TIERS = [
   { min:19, max:21, LOW:[4,12,10], MID:[5,12,10], HIGH:[6,12,10] },
 ];
 let BONUS_TABLE = [
+  { min:0,  max:0,  bonus:'+4',      mid:'+3',      low:'+1',  dd:'1d4', umbral:2 },
   { min:1,  max:3,  bonus:'+5+1d6',  mid:'+5+1d6',  low:'+5',  dd:'1d6', umbral:2 },
   { min:4,  max:6,  bonus:'+7+2d6',  mid:'+7+1d6',  low:'+7',  dd:'2d6', umbral:4 },
   { min:7,  max:9,  bonus:'+9+2d6',  mid:'+9+1d6',  low:'+9',  dd:'3d8', umbral:8 },
@@ -191,12 +193,22 @@ let BONUS_TABLE = [
   { min:19, max:21, bonus:'+17+4d6', mid:'+17+3d6', low:'+17', dd:'7d12', umbral:24 },
 ];
 const DEFAULT_BONUS = JSON.parse(JSON.stringify(BONUS_TABLE));
+const DEFAULT_DAMAGE = JSON.parse(JSON.stringify(DAMAGE_TIERS));
 const PHYSICAL = ['contundente', 'cortante', 'perforante'];
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI'];
 const normF = s => (s || '').replace(/\s*\+\s*/g, '+').trim();
 const fmtDice = s => s ? normF(s).replace(/([a-z0-9])\+/gi, '$1 + ') : s;
 const bandOf = (tbl, lv) => tbl.find(b => lv >= b.min && lv <= b.max) || (lv > tbl[tbl.length - 1].max ? tbl[tbl.length - 1] : tbl[0]);
-const tierOf = lv => DAMAGE_TIERS.indexOf(bandOf(DAMAGE_TIERS, lv)) + 1;
+// Tier 0 (level 0) is the first row when the table has it; the rest count from I
+const tierOf = lv => DAMAGE_TIERS.indexOf(bandOf(DAMAGE_TIERS, lv)) + (DAMAGE_TIERS[0].min > 0 ? 1 : 0);
+// Tables saved before Tier 0 existed get the default Tier 0 row in front
+function withTier0(scaling) {
+  if (scaling.damage[0] && scaling.damage[0].min > 0) {
+    scaling.damage.unshift(JSON.parse(JSON.stringify(DEFAULT_DAMAGE[0])));
+    scaling.bonus.unshift({ ...DEFAULT_BONUS[0] });
+  }
+  return scaling;
+}
 function scaleDamage(tier, type, lv) {
   const [n, sides, flat] = bandOf(DAMAGE_TIERS, lv)[tier];
   const phys = PHYSICAL.some(p => (type || '').toLowerCase().includes(p));
@@ -222,6 +234,7 @@ function blank() {
     traits: [], actions: [], reactions: [{ name: 'Parada / Esquiva', desc: '', mod_tpl: { bonus: '+MOD' } }],
     lore: '', tags: [], published: false };
 }
+const lvOf = () => { const n = parseInt(C.level, 10); return isNaN(n) ? 1 : n; };  // level 0 is valid
 function dirty() { return C && JSON.stringify(C) !== SAVED; }
 
 // ── Load ──
@@ -252,6 +265,7 @@ async function loadLibrary() {
   const lib = await fetch('/api/criatura-biblioteca', { cache: 'no-store' }).then(r => r.json());
   LIB = lib.abilities || [];
   if (lib.scaling && Array.isArray(lib.scaling.damage) && Array.isArray(lib.scaling.bonus)) {
+    withTier0(lib.scaling);
     DAMAGE_TIERS = lib.scaling.damage;
     BONUS_TABLE = lib.scaling.bonus.map((b, i) => ({ mid: (DEFAULT_BONUS[i] || {}).mid || b.bonus, low: (DEFAULT_BONUS[i] || {}).low || b.bonus, dd: (DEFAULT_BONUS[i] || {}).dd || '',
       umbral: (DEFAULT_BONUS[i] || {}).umbral ?? 0, ...b }));
@@ -279,7 +293,7 @@ const FIELDS = [
 function fillForm() {
   for (const [el, k] of FIELDS) $(el).value = C[k] || '';
   $('f-id').value = C.id || ''; $('f-id').disabled = EXISTING;
-  $('f-level').value = C.level || 1; $('f-hits').value = C.hits ?? 2;
+  $('f-level').value = lvOf(); $('f-hits').value = C.hits ?? 2;
   $('f-acc').value = C.combat.acciones ?? 2; $('f-rea').value = C.combat.reacciones ?? 1;
   $('f-sfis').value = C.saves['FÍS'] || ''; $('f-svol').value = C.saves['VOL'] || ''; $('f-smen').value = C.saves['MEN'] || '';
   $('f-tags').value = C.tags.join(', '); $('f-immune').value = C.immune.join(', ');
@@ -289,7 +303,7 @@ function fillForm() {
 function headline() {
   $('cc-title').textContent = C.name || 'Nueva criatura';
   $('cc-sub').textContent = EXISTING ? `data/creatures/${C.id}.json` : 'Rellena la información a la izquierda; la ficha se dibuja a la derecha tal como se verá en la web.';
-  const lv = +C.level || 1;
+  const lv = lvOf();
   const band = bandOf(BONUS_TABLE, lv);
   $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · umbral <b>${esc(band.umbral ?? '')}</b> · bonus Extremo / Alto / Medio / Bajo <b>${esc(bandSave(band, 'extreme'))}</b> / <b>${esc(band.bonus)}</b> / <b>${esc(band.mid || '')}</b> / <b>${esc(band.low || '')}</b>
     · daño LOW / MID / HIGH (físico): ${['LOW', 'MID', 'HIGH'].map(t => `<b>${esc(scaleDamage(t, 'Cortante', lv).replace(' Cortante', ''))}</b>`).join(' / ')} · mágico: un dado menos`;
@@ -304,7 +318,7 @@ for (const [el, k] of FIELDS) $(el).addEventListener('input', e => { C[k] = e.ta
 $('f-name').addEventListener('input', () => { if (!EXISTING && !ID_TOUCHED) { C.id = slug(C.name); $('f-id').value = C.id; } });
 $('f-id').addEventListener('input', e => { ID_TOUCHED = true; C.id = slug(e.target.value); changed(); });
 $('f-id').addEventListener('change', e => { e.target.value = C.id; });
-$('f-level').addEventListener('input', e => { C.level = Math.max(1, parseInt(e.target.value, 10) || 1); rescaleAll(); changed(); });
+$('f-level').addEventListener('input', e => { const n = parseInt(e.target.value, 10); C.level = isNaN(n) ? 1 : Math.max(0, n); rescaleAll(); changed(); });
 $('f-hits').addEventListener('input', e => { C.hits = parseInt(e.target.value, 10) || 1; changed(); });
 $('f-acc').addEventListener('input', e => { C.combat.acciones = parseInt(e.target.value, 10) || 0; changed(); });
 $('f-rea').addEventListener('input', e => { C.combat.reacciones = parseInt(e.target.value, 10) || 0; changed(); });
@@ -321,7 +335,7 @@ $('f-immune').addEventListener('input', e => { C.immune = csv(e.target.value); c
 // Saves set from the Tier table follow the level; typing one by hand unlinks it
 // Extremo is one step beyond Alto: the Alto bonus + 1d6 (merged into its d6s when it has them)
 const bandSave = (band, l) => l === 'extreme' ? shiftDice((band.bonus || '').replace(/\s/g, ''), 1).replace(/\s/g, '') : band[l] || '';
-const saveBonus = l => fmtDice(bandSave(bandOf(BONUS_TABLE, +C.level || 1), l)).replace(/\s/g, '');
+const saveBonus = l => fmtDice(bandSave(bandOf(BONUS_TABLE, lvOf()), l)).replace(/\s/g, '');
 function rescaleSaves() {
   for (const [k, l] of Object.entries(C.save_scale || {})) C.saves[k] = saveBonus(l);
 }
@@ -340,7 +354,7 @@ document.querySelectorAll('.cc-lvls').forEach(g => g.addEventListener('click', e
 const UMB_TPL = /^\s*T\s*(?:([+-])\s*(\d+))?\s*$/i;
 function tierUmbral(tpl) {
   const m = UMB_TPL.exec(tpl || 'T'); if (!m) return null;
-  const j = BONUS_TABLE.indexOf(bandOf(BONUS_TABLE, +C.level || 1)) + diceOff(m[1], m[2]);
+  const j = BONUS_TABLE.indexOf(bandOf(BONUS_TABLE, lvOf())) + diceOff(m[1], m[2]);
   return j < 0 ? 0 : +BONUS_TABLE[Math.min(j, BONUS_TABLE.length - 1)].umbral || 0;
 }
 function rescaleUmbs() {
@@ -389,12 +403,12 @@ const ENTRY_FIELDS = {
 };
 function renderEntries() {
   const list = C[TAB];
-  $('list-hint').textContent = `Las habilidades de la biblioteca se escalan al nivel de la criatura (bonus y daño LOW/MID/HIGH). Palabras clave en cualquier campo: +MOD (ahora ${modText()}; +MOD+1 / +MOD-1 suman o quitan un dado), TIER (ahora ${tierOf(+C.level || 1)}; admite TIER+1, TIERx2, (TIER+1)d6…) DD (ahora ${bandOf(BONUS_TABLE, +C.level || 1).dd || '—'}; DD+1, DD-1…) y LOW / MID / HIGH (dados de daño del Tier; HIGH+1…).`;
+  $('list-hint').textContent = `Las habilidades de la biblioteca se escalan al nivel de la criatura (bonus y daño LOW/MID/HIGH). Palabras clave en cualquier campo: +MOD (ahora ${modText()}; +MOD+1 / +MOD-1 suman o quitan un dado), TIER (ahora ${tierOflvOf()}; admite TIER+1, TIERx2, (TIER+1)d6…) DD (ahora ${bandOf(BONUS_TABLE, lvOf()).dd || '—'}; DD+1, DD-1…) y LOW / MID / HIGH (dados de daño del Tier; HIGH+1…).`;
   $('entries').innerHTML = list.map((en, i) => {
     const badges = (en.ability_id ? '<span class="cc-badge gold">biblioteca</span>' : '')
       + (en.damage_tier ? `<span class="cc-badge ${en.damage_tier}">${en.damage_tier}</span>` : '')
       + (en.bonus_scaled ? '<span class="cc-badge">bonus escalado</span>' : '')
-      + (en.mod_tpl ? `<span class="cc-badge" title="+MOD = ${esc(modText())} · TIER = ${tierOf(+C.level || 1)}">fórmula</span>` : '');
+      + (en.mod_tpl ? `<span class="cc-badge" title="+MOD = ${esc(modText())} · TIER = ${tierOflvOf()}">fórmula</span>` : '');
     const shown = k => (en.mod_tpl && en.mod_tpl[k] != null) ? en.mod_tpl[k] : en[k];
     const fields = ENTRY_FIELDS[TAB].map(([k, label, kind]) => {
       const v = kind === 'csv' ? (en[k] || []).join(', ') : (shown(k) ?? '');
@@ -486,9 +500,9 @@ function resolveKeywords(text, mod, tier, damageFor, dd) {
 }
 // The text with keywords is kept in mod_tpl so it follows the level; the saved fields hold the resolved values.
 const hasMod = v => typeof v === 'string' && KEY_RE.test(v);
-const modText = () => { const b = fmtDice(bandOf(BONUS_TABLE, +C.level || 1).bonus); return /^[+-]/.test(b) ? b : '+' + b; };
+const modText = () => { const b = fmtDice(bandOf(BONUS_TABLE, lvOf()).bonus); return /^[+-]/.test(b) ? b : '+' + b; };
 const resolveText = t => {
-  const lv = +C.level || 1;
+  const lv = lvOf();
   return resolveKeywords(t, modText(), tierOf(lv), (tier, phys) => scaleDamage(tier, phys ? 'Cortante' : 'Fuego', lv).replace(/ \S+$/, ''),
     bandOf(BONUS_TABLE, lv).dd);
 };
@@ -498,7 +512,7 @@ function setModField(en, k, v) {
   if (v === undefined || (Array.isArray(v) && !v.length)) delete en[k]; else en[k] = v;
 }
 function scaleEntry(en) {
-  const lv = +C.level || 1;
+  const lv = lvOf();
   if (en.damage_tier) en.damage = scaleDamage(en.damage_tier, en.damage_base_type || '', lv);
   if (en.bonus_scaled) en.bonus = fmtDice(bandOf(BONUS_TABLE, lv).bonus);
   for (const [k, t] of Object.entries(en.mod_tpl || {})) en[k] = resolveText(t);
