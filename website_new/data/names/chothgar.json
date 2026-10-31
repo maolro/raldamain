@@ -5,12 +5,37 @@
   "format": "{name} {surname}",
   "names": [
     {
+      "name": "Argul",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Chakhur",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
       "name": "Dahrum",
       "gender": "m",
       "meaning": ""
     },
     {
+      "name": "Khadagh",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Khaidu",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
       "name": "Kharun",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Khudu",
       "gender": "m",
       "meaning": ""
     },
@@ -21,6 +46,11 @@
     },
     {
       "name": "Makaan",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Megujin",
       "gender": "m",
       "meaning": ""
     },
@@ -40,7 +70,17 @@
       "meaning": ""
     },
     {
+      "name": "Senggum",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
       "name": "Tagur",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ugramal",
       "gender": "m",
       "meaning": ""
     },
@@ -146,5 +186,7 @@
       "name": "Zurman",
       "meaning": ""
     }
-  ]
+  ],
+  "surname_rules": [],
+  "patronymic_rules": []
 }
