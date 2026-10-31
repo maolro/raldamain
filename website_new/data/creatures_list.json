@@ -313,5 +313,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "hada",
+    "name": "Hada",
+    "type": "Espíritu",
+    "level": 5,
+    "size": "Diminuto",
+    "image": "",
+    "description": ""
   }
 ]
