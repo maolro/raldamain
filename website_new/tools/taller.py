@@ -38,7 +38,7 @@ CREATURE_BUILDER = BASE / "assets" / "html" / "creature_builder.html"  # also th
 sys.path.insert(0, str(BASE / "combat-simulator"))
 
 from raldamain.data import website                       # noqa: E402
-from git_sync import git_push                            # noqa: E402  (tools/ is on the path: this file's folder)
+from git_sync import git_push, git_status               # noqa: E402  (tools/ is on the path: this file's folder)
 from raldamain.data.loader import (                      # noqa: E402
     ROSTER_ERRORS, load_conditions, load_roster, make_side, prepared_spec, reload_roster, set_roster_sources)
 from raldamain.cli.parallel import run_batch_parallel   # noqa: E402
@@ -406,6 +406,11 @@ def _list_creature(cid: str, data: dict) -> None:
     CREATURE_INDEX.write_text(json.dumps(idx, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+@app.route("/api/git")
+def api_git():
+    return jsonify(git_status())
+
+
 @app.route("/api/criatura-biblioteca")
 def api_criatura_biblioteca():
     return jsonify({"abilities": _read_json(CREATURE_ABILITIES, []),
@@ -498,6 +503,9 @@ body { min-height: 100vh; }
 .inp:focus { outline: none; border-color: var(--accent-gold); }
 .muted { color: var(--text-muted); }
 .err { color: #f0a060; font-size: 0.85rem; margin: 8px 0; }
+.tl-git { font-size: 0.75rem; padding: 2px 8px; border: 1px solid #444; border-radius: 4px; color: var(--text-muted); white-space: nowrap; }
+.tl-git.ok { border-color: #2d5a3a; color: #5fae6e; } .tl-git.busy { border-color: #6a5a20; color: #d8b34a; }
+.tl-git.bad { border-color: #6a2020; color: #e76a6a; }
 </style>
 </head>
 <body>
@@ -512,7 +520,21 @@ body { min-height: 100vh; }
     <a href="/taller/criatura" class="__N5__">✚ Nueva criatura</a>
     <a href="/taller/simulador" class="__N2__">⚔ Simulador</a>
   </nav>
+  <span id="git-badge" class="tl-git"></span>
 </header>
+<script>
+// uploads of saved creatures still pending in the background, or the last git error
+async function tlGit() {
+  const el = document.getElementById('git-badge');
+  try {
+    const g = await (await fetch('/api/git', { cache: 'no-store' })).json();
+    el.className = 'tl-git ' + ((!g.ok || g.error) ? 'bad' : g.pending ? 'busy' : 'ok');
+    el.textContent = !g.ok ? `⎇ ${g.branch || '?'}: sin push` : g.pending ? `⏳ subiendo ${g.pending}` : g.error ? '⚠ git' : '✓ GitHub';
+    el.title = g.error || 'Guardar es instantáneo: el commit y el push a GitHub se hacen en segundo plano';
+  } catch (e) { el.textContent = ''; }
+}
+tlGit(); setInterval(tlGit, 4000);
+</script>
 """
 
 
@@ -822,7 +844,8 @@ async function setPublished(box) {
     if (!r.ok) throw new Error(r.status);
     const d = await r.json();
     c.published = d.published;
-    if (d.git && d.git !== 'ok' && d.git !== 'nothing') alert('Guardado, pero git: ' + d.git);
+    if (d.git && !['ok', 'nothing', 'queued'].includes(d.git)) alert('Guardado, pero git: ' + d.git);
+    if (typeof tlGit === 'function') tlGit();
     render();
     const f = document.getElementById('bx-frame'); f.src = f.src;  // its "No publicada" badge
   } catch (e) {

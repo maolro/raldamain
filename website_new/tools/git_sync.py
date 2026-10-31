@@ -8,10 +8,16 @@ because two `git pull --rebase --autostash` running at once can leave a rebase
 half done with the uncommitted work stashed away (2026-10-31: the creature library
 lost 100 abilities that way). A rebase left over from a crash or a timeout is
 finished off before the next save, and the stashed work is always put back.
+
+Saving is instant: git_push() queues the commit and a background thread commits and
+pushes it (see "Background sync" below).
 """
 
+import itertools
+import json
 import os
 import subprocess
+import threading
 import time
 from contextlib import contextmanager
 from pathlib import Path
@@ -29,9 +35,15 @@ def _git(*args, timeout=30):
                           text=True, encoding="utf-8", timeout=timeout)
 
 
+_GIT_DIR = None
+
+
 def _git_dir() -> Path:
-    r = _git("rev-parse", "--absolute-git-dir", timeout=10)
-    return Path(r.stdout.strip()) if r.returncode == 0 else BASE / ".git"
+    global _GIT_DIR
+    if _GIT_DIR is None:  # asked once: saves stay fast
+        r = _git("rev-parse", "--absolute-git-dir", timeout=10)
+        _GIT_DIR = Path(r.stdout.strip()) if r.returncode == 0 else BASE / ".git"
+    return _GIT_DIR
 
 
 @contextmanager
@@ -106,44 +118,159 @@ def current_branch():
 
 
 def git_status():
-    """{'branch', 'expected', 'ok'} for the editors' branch badge."""
+    """Branch badge of the editors: {'branch', 'expected', 'ok', 'pending', 'last', 'error', 'time'}.
+    pending = saves still waiting for their commit; last/error = how the latest background sync went."""
     branch = current_branch()
-    return {"branch": branch, "expected": GIT_BRANCH,
-            "ok": not GIT_BRANCH or branch == GIT_BRANCH}
+    st = _read_status()
+    return {"branch": branch, "expected": GIT_BRANCH, "ok": not GIT_BRANCH or branch == GIT_BRANCH,
+            "pending": len(_jobs()), "last": st.get("last", ""), "error": st.get("error", ""),
+            "time": st.get("time", 0)}
+
+
+# ── Background sync ───────────────────────────────────────────────────────────
+# git_push() only writes a job file and returns: the save is instant. A worker thread in each editor
+# process commits the queued jobs (one commit per save, from every editor) and then pulls and pushes
+# once for the whole batch. Jobs stay on disk until committed, so an editor restarted or closed
+# mid-save leaves them for the next worker, and the shared lock keeps the workers from overlapping.
+
+def _sync_dir() -> Path:
+    d = _git_dir() / "raldamain-sync"
+    (d / "queue").mkdir(parents=True, exist_ok=True)
+    return d
+
+
+def _jobs():
+    try:
+        return sorted((_sync_dir() / "queue").glob("*.json"))
+    except OSError:
+        return []
+
+
+def _read_status() -> dict:
+    try:
+        return json.loads((_sync_dir() / "status.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def _write_status(last, error=""):
+    try:
+        (_sync_dir() / "status.json").write_text(
+            json.dumps({"last": last, "error": error, "time": time.time()}, ensure_ascii=False), encoding="utf-8")
+    except OSError:
+        pass
+
+
+_wake = threading.Event()
+_worker = None
+_worker_guard = threading.Lock()
+_seq = itertools.count()
+
+
+def _ensure_worker():
+    global _worker
+    with _worker_guard:
+        if _worker is None or not _worker.is_alive():
+            _worker = threading.Thread(target=_work, name="git-sync", daemon=True)
+            _worker.start()
 
 
 def git_push(files, message):
-    """Commit only `files`, rebase on the remote branch and push.
-    Returns 'ok', 'nothing', 'wrong-branch:<name>' or an error string."""
+    """Queues a commit of `files` and returns at once: 'queued' or 'wrong-branch:<name>'.
+    The commit and the push happen in the background (git_status says how it went)."""
+    branch = current_branch()
+    if GIT_BRANCH and branch != GIT_BRANCH:
+        return f"wrong-branch:{branch or '?'}"
+    try:
+        q = _sync_dir() / "queue"
+        name = f"{time.time_ns():020d}-{os.getpid()}-{next(_seq):04d}"
+        tmp = q / (name + ".tmp")
+        tmp.write_text(json.dumps({"files": [str(f) for f in files], "message": message}, ensure_ascii=False),
+                       encoding="utf-8")
+        os.replace(tmp, q / (name + ".json"))  # the worker only reads complete jobs
+    except OSError as e:
+        return f"cola: {e}"
+    _ensure_worker()
+    _wake.set()
+    return "queued"
+
+
+def sync_now():
+    """Runs the queue in this thread (tests, scripts). Returns the sync result."""
+    return _drain()
+
+
+def _work():
+    while True:
+        time.sleep(0.3)  # saves made in a burst go out together
+        try:
+            _drain()
+        except Exception as e:  # never let the worker die
+            _write_status("error", str(e))
+        _wake.wait(timeout=60)  # every 60 s it also picks up jobs other editors left behind
+        _wake.clear()
+
+
+def _drain():
+    jobs = _jobs()
+    if not jobs and not _ahead():
+        return "nothing"
     try:
         with _sync_lock():
             _heal_rebase()
             if _rebase_state():  # a rebase someone is doing by hand: leave it alone
-                return "hay un rebase en curso: termínalo (git rebase --continue / --abort) y vuelve a guardar"
+                msg = "hay un rebase en curso: termínalo (git rebase --continue / --abort)"
+                _write_status("error", msg)
+                return msg
             branch = current_branch()
             if GIT_BRANCH and branch != GIT_BRANCH:
-                return f"wrong-branch:{branch or '?'}"
-            return _commit_and_push([str(f) for f in files], message, branch)
+                _write_status("error", f"wrong-branch:{branch or '?'}")
+                return f"wrong-branch:{branch or '?'}"  # the jobs wait until the branch is right again
+            errors = []
+            for job in _jobs():  # every editor's jobs, oldest first
+                try:
+                    d = json.loads(job.read_text(encoding="utf-8"))
+                    r = _commit(d.get("files") or [], d.get("message") or "Update")
+                    if r not in ("ok", "nothing"):
+                        errors.append(f"{d.get('message')}: {r}")
+                except (OSError, ValueError) as e:
+                    errors.append(f"{job.name}: {e}")
+                job.unlink(missing_ok=True)
+            r = _pull_push(branch) if _ahead(branch) else "nothing"
+            if r not in ("ok", "nothing"):
+                errors.append(r)
+            _write_status("error" if errors else "ok", "; ".join(errors))
+            return "; ".join(errors) or "ok"
     except TimeoutError as e:
-        return str(e)
-    except Exception as e:
+        _write_status("error", str(e))
         return str(e)
 
 
-def _commit_and_push(files, message, branch):
+def _ahead(branch=None) -> bool:
+    """True when there are local commits the remote doesn't have yet."""
+    branch = branch or current_branch()
+    r = _git("rev-list", "--count", f"origin/{branch}..HEAD", timeout=10)
+    return r.returncode == 0 and r.stdout.strip() not in ("", "0")
+
+
+def _commit(files, message):
     # A deleted file is committed as a deletion only if git knows it
     files = [f for f in files if Path(f).exists()
              or _git("ls-files", "--error-unmatch", "--", f, timeout=10).returncode == 0]
     if not files:
         return "nothing"
+    _git("add", "--", *files)
+    # Commit just these paths so other staged/modified files are never swept in
+    r = _git("commit", "-m", message, "--", *files)
+    if r.returncode != 0:
+        if "nothing to commit" in (r.stdout + r.stderr) or "no changes added" in (r.stdout + r.stderr):
+            return "nothing"
+        return r.stderr.strip() or "commit error"
+    return "ok"
+
+
+def _pull_push(branch):
     try:
-        _git("add", "--", *files)
-        # Commit just these paths so other staged/modified files are never swept in
-        r = _git("commit", "-m", message, "--", *files)
-        if r.returncode != 0:
-            if "nothing to commit" in (r.stdout + r.stderr) or "no changes added" in (r.stdout + r.stderr):
-                return "nothing"
-            return r.stderr.strip() or "commit error"
         # Rebase on the remote branch first (if it exists) so the push is never rejected
         if _git("ls-remote", "--exit-code", "--heads", "origin", branch, timeout=60).returncode == 0:
             marker = _git_dir() / "raldamain-sync.pulling"
@@ -152,7 +279,7 @@ def _commit_and_push(files, message, branch):
             if r.returncode == 0:
                 marker.unlink(missing_ok=True)
             else:
-                healed = _heal_rebase()  # the commit stays local; the uncommitted work comes back
+                healed = _heal_rebase()  # the commits stay local; the uncommitted work comes back
                 return "pull: " + (r.stderr.strip() or "error") + (f" ({healed})" if healed else "")
         r = _git("push", "-u", "origin", branch, timeout=120)
         if r.returncode != 0:
@@ -161,3 +288,8 @@ def _commit_and_push(files, message, branch):
     except subprocess.TimeoutExpired:
         healed = _heal_rebase()
         return "timeout" + (f" ({healed})" if healed else "")
+
+
+# Jobs an editor left behind (closed or restarted mid-save) go out when the next one starts
+if _jobs():
+    _ensure_worker()

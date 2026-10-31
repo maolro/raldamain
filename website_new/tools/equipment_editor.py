@@ -255,17 +255,21 @@ async function loadGit() {
   const el = document.getElementById('git-badge');
   try {
     const g = await api('GET', '/api/git');
-    el.className = g.ok ? 'ok' : 'bad';
-    el.textContent = g.ok ? `⎇ ${g.branch}` : `⎇ ${g.branch || '?'} (se espera ${g.expected}: no se hará push)`;
+    el.className = (!g.ok || g.error) ? 'bad' : 'ok';
+    el.textContent = !g.ok ? `⎇ ${g.branch || '?'} (se espera ${g.expected}: no se hará push)`
+      : `⎇ ${g.branch}` + (g.pending ? ` · ⏳ subiendo ${g.pending}` : g.error ? ' · ⚠ error de git' : ' · ✓ en GitHub');
+    el.title = g.error || 'Guardar es instantáneo: el commit y el push a GitHub se hacen en segundo plano';
   } catch (e) { el.textContent = '⎇ ?'; }
 }
+setInterval(loadGit, 4000);
 async function save() {
   try {
     const it = item();
     const res = await api('POST', '/api/data', { equipment: S.eq, abilities: S.ab, label: it ? it.name : '' });
     S.saved = JSON.stringify({ eq: S.eq, ab: S.ab });
     const git = res.git || '';
-    if (git === 'ok') toast('Guardado y publicado en GitHub ✓');
+    if (git === 'queued') { toast('Guardado ✓ · subiendo a GitHub…'); loadGit(); }
+    else if (git === 'ok') toast('Guardado y publicado en GitHub ✓');
     else if (git === 'nothing') toast('Guardado ✓ (sin cambios en git)');
     else if (git.startsWith('wrong-branch')) toast(`Guardado ✓ — sin push: estás en la rama "${git.split(':')[1]}"`, 'err');
     else if (git) toast('Guardado ✓ — git: ' + git, 'err');

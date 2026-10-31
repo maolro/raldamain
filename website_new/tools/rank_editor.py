@@ -25,7 +25,7 @@ RANKS_LIST = BASE / "data" / "ranks_list.json"
 
 # Guardar commits the rank (+ ranks_list.json) and pushes it (see git_sync.py for the branch guard)
 sys.path.insert(0, str(Path(__file__).parent))
-from git_sync import GIT_BRANCH, current_branch as _current_branch, git_push as _git_push  # noqa: E402
+from git_sync import GIT_BRANCH, current_branch as _current_branch, git_push as _git_push, git_status as _git_status  # noqa: E402
 
 def _is_draft(obj):
     return obj.get("draft", True) is not False
@@ -116,9 +116,7 @@ def api_delete(rid):
 
 @app.route("/api/git")
 def api_git():
-    branch = _current_branch()
-    return jsonify({"branch": branch, "expected": GIT_BRANCH,
-                    "ok": not GIT_BRANCH or branch == GIT_BRANCH})
+    return jsonify(_git_status())
 
 def _sync_ranks_list(data):
     try:
@@ -687,7 +685,8 @@ async function saveRank() {
     const entry = S.all.find(r=>r.id===S.rank.id);
     if (entry) { entry.draft = isDraft(S.rank); entry.partial = isPartial(S.rank); }
     const git = res.git||'';
-    if (git === 'ok')                     toast('Guardado y publicado en GitHub ✓', 'ok');
+    if (git === 'queued')                 toast('Guardado ✓ · subiendo a GitHub…', 'ok');
+    else if (git === 'ok')                toast('Guardado y publicado en GitHub ✓', 'ok');
     else if (git === 'nothing')           toast('Guardado ✓ (sin cambios en git)', 'ok');
     else if (git.startsWith('wrong-branch')) toast(`Guardado ✓ — sin push: estás en la rama "${git.split(':')[1]}"`, 'err');
     else if (git)                         toast('Guardado ✓ — git: ' + git, 'err');
@@ -712,7 +711,8 @@ async function deleteRank() {
     S.all = S.all.filter(r => r.id !== id);
     S.rank = null; S.saved = null; S.lv = 0;
     const git = res.git||'';
-    if (git === 'ok')                        toast(`«${title}» eliminado y publicado en GitHub ✓`, 'ok');
+    if (git === 'queued')                    toast(`«${title}» eliminado ✓ · subiendo a GitHub…`, 'ok');
+    else if (git === 'ok')                   toast(`«${title}» eliminado y publicado en GitHub ✓`, 'ok');
     else if (git === 'nothing')              toast(`«${title}» eliminado ✓`, 'ok');
     else if (git.startsWith('wrong-branch')) toast(`«${title}» eliminado — sin push: estás en la rama "${git.split(':')[1]}"`, 'err');
     else if (git)                            toast(`«${title}» eliminado — git: ` + git, 'err');
@@ -762,11 +762,14 @@ function renderToolbar() {
 async function loadGit() {
   const el = document.getElementById('git-badge');
   try {
-    const g = await api('GET','/api/git');
-    el.className = g.ok ? 'ok' : 'bad';
-    el.textContent = g.ok ? `⎇ ${g.branch}` : `⎇ ${g.branch||'?'} (se espera ${g.expected}: no se hará push)`;
-  } catch(e) { el.textContent = '⎇ ?'; }
+    const g = await api('GET', '/api/git');
+    el.className = (!g.ok || g.error) ? 'bad' : 'ok';
+    el.textContent = !g.ok ? `⎇ ${g.branch || '?'} (se espera ${g.expected}: no se hará push)`
+      : `⎇ ${g.branch}` + (g.pending ? ` · ⏳ subiendo ${g.pending}` : g.error ? ' · ⚠ error de git' : ' · ✓ en GitHub');
+    el.title = g.error || 'Guardar es instantáneo: el commit y el push a GitHub se hacen en segundo plano';
+  } catch (e) { el.textContent = '⎇ ?'; }
 }
+setInterval(loadGit, 4000);
 
 // ── Tiro defensivo (Parada) ───────────────────────────────────────────────────
 // rank.parry = { name: "Parada mágica", tag: "Ilusoria", against: "…" }; absent = no defensive roll

@@ -671,7 +671,8 @@ async function save() {
   history.replaceState(null, '', '?c=' + encodeURIComponent(C.id));
   fillForm(); renderTab(); renderPreview();
   $('cc-dirty').textContent = (C.published ? '✓ guardada y publicada' : '✓ guardada (solo en el Taller)')
-    + (d.git && d.git !== 'ok' && d.git !== 'nothing' ? ' — git: ' + d.git : '');
+    + (d.git === 'queued' ? ' · subiendo a GitHub…' : d.git && !['ok', 'nothing'].includes(d.git) ? ' — git: ' + d.git : '');
+  if (typeof tlGit === 'function') tlGit();
   setTimeout(() => { if (!dirty()) $('cc-dirty').textContent = ''; }, 2500);
 }
 // Website: the creature goes to a .json file (the Simulador and "Abrir .json" read it back)

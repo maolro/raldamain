@@ -26,7 +26,7 @@ SCALING = BASE / "data" / "creature_scaling.json"
 LIBRARY_ONLY = {"id", "tier"}
 
 sys.path.insert(0, str(Path(__file__).parent))
-from git_sync import git_push as _git_sync_push  # noqa: E402
+from git_sync import git_push as _git_sync_push, git_status  # noqa: E402
 
 # ── helpers ───────────────────────────────────────────────────────────────────
 
@@ -133,6 +133,10 @@ def api_delete(cid):
     save_index(idx)
     git = _git_push([str(p), str(CIDX)], f"Delete creature: {name}")
     return jsonify({"ok": True, "git": git})
+
+@app.route("/api/git")
+def api_git():
+    return jsonify(git_status())
 
 @app.route("/api/scaling")
 def api_scaling_get():
@@ -847,7 +851,28 @@ async function deleteCreature() {
 
 // ── Save ──────────────────────────────────────────────────────────────────────
 // " — git: …" after a save's toast when the commit/push didn't go through
-function gitNote(git) { return git && git !== 'ok' && git !== 'nothing' ? ' — git: ' + git : ''; }
+function gitNote(git) { return git && !['ok', 'nothing', 'queued'].includes(git) ? ' — git: ' + git : ''; }
+// floating badge: uploads pending in the background, or the last git error
+(function () {
+  const el = Object.assign(document.createElement('div'), { id: 'git-badge' });
+  el.style.cssText = 'position:fixed;left:10px;bottom:10px;z-index:999;font-size:10px;padding:2px 8px;border-radius:3px;'
+    + 'background:var(--bg2,#151515);border:1px solid #444;color:#999;font-family:inherit';
+  document.addEventListener('DOMContentLoaded', () => document.body.appendChild(el));
+  if (document.readyState !== 'loading') document.body.appendChild(el);
+})();
+async function loadGit() {
+  const el = document.getElementById('git-badge');
+  if (!el) return;  // the page is still loading
+  try {
+    const g = await api('GET', '/api/git');
+    el.style.color = (!g.ok || g.error) ? '#e76a6a' : g.pending ? '#d8b34a' : '#5fae6e';
+    el.textContent = !g.ok ? `⎇ ${g.branch || '?'} (se espera ${g.expected}: no se hará push)`
+      : `⎇ ${g.branch}` + (g.pending ? ` · ⏳ subiendo ${g.pending}` : g.error ? ' · ⚠ error de git' : ' · ✓ en GitHub');
+    el.title = g.error || 'Guardar es instantáneo: el commit y el push a GitHub se hacen en segundo plano';
+  } catch (e) { el.textContent = '⎇ ?'; }
+}
+setInterval(loadGit, 4000);
+loadGit();
 async function saveCreature() {
   if (!S.creature) return;
   try {
@@ -859,7 +884,8 @@ async function saveCreature() {
     renderSidebar();
     renderToolbar();
     const git = res.git||'';
-    if (git === 'ok')      toast('Guardado y publicado ✓', 'ok');
+    if (git === 'queued')  { toast('Guardado ✓ · subiendo a GitHub…', 'ok'); loadGit(); }
+    else if (git === 'ok') toast('Guardado y publicado ✓', 'ok');
     else if (git === 'nothing') toast('Guardado ✓ (sin cambios en git)', 'ok');
     else if (git)          toast('Guardado ✓ — push: ' + git, 'err');
     else                   toast('Guardado ✓', 'ok');
@@ -1246,7 +1272,8 @@ async function saveScaling() {
     S.scalingSaved = scalingJSON();
     markScaling();
     const git = res.git || '';
-    if (git === 'ok') toast('Tablas guardadas y publicadas en GitHub ✓', 'ok');
+    if (git === 'queued') toast('Tablas guardadas ✓ · subiendo a GitHub…', 'ok');
+    else if (git === 'ok') toast('Tablas guardadas y publicadas en GitHub ✓', 'ok');
     else if (git === 'nothing') toast('Tablas guardadas ✓ (sin cambios en git)', 'ok');
     else if (git.startsWith('wrong-branch')) toast(`Tablas guardadas ✓ — sin push: estás en la rama "${git.split(':')[1]}"`, 'err');
     else toast('Tablas guardadas ✓ — git: ' + git, 'err');
