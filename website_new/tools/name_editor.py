@@ -9,7 +9,11 @@ Needs:  pip install flask
 Culture file:
   {"id": "chothgar", "name": "Chothgar", "description": "…", "format": "{name} {surname}",
    "names":    [{"name": "Dahrum", "gender": "m", "meaning": ""}, …],   # gender: m, f or u (unisex)
-   "surnames": [{"name": "Galakh", "meaning": ""}, …]}
+   "surnames": [{"name": "Ivanov", "female": "Ivanova", "meaning": ""}, …],   # female: optional
+   "surname_rules":    [{"ending": "ov", "female": "ova"}, …],                   # feminine form of the rest
+   "patronymic_rules": [{"ending": "", "male": "sson", "female": "sdóttir"}, …]} # from the father's name
+  The format places {name}, {surname} and {patronymic}; an ending rule replaces the matching ending
+  (the longest one wins, "" = any name): Harald + {"ending": "", "male": "sson"} -> Haraldsson.
 """
 
 import json
@@ -33,7 +37,8 @@ NAMES = BASE / "data" / "names"
 INDEX = NAMES / "index.json"
 GENERATOR = BASE / "assets" / "html" / "name_generator.html"
 ID_RE = re.compile(r"^[a-z0-9_-]{1,60}$")
-FORMATS = ("{name} {surname}", "{surname} {name}", "{name}")
+FORMATS = ("{name} {surname}", "{surname} {name}", "{name}", "{name} {patronymic}",
+           "{name} {patronymic} {surname}", "{surname} {name} {patronymic}")
 GENDERS = ("m", "f", "u")
 
 
@@ -64,11 +69,29 @@ def clean_culture(cid: str, c: dict) -> dict:
         name = str(s.get("name") or "").strip()
         if name:
             k = _key(name)
-            surnames[k] = {"name": name, "meaning": str(s.get("meaning") or "").strip() or surnames.get(k, {}).get("meaning", "")}
+            entry = {"name": name, "meaning": str(s.get("meaning") or "").strip() or surnames.get(k, {}).get("meaning", "")}
+            female = str(s.get("female") or "").strip() or surnames.get(k, {}).get("female", "")
+            if female and female != name:
+                entry["female"] = female  # Ivanov -> Ivanova
+            surnames[k] = entry
     return {"id": cid, "name": str(c.get("name") or cid).strip(), "description": str(c.get("description") or "").strip(),
             "format": c.get("format") if c.get("format") in FORMATS else FORMATS[0],
             "names": sorted(names.values(), key=lambda n: ("mfu".index(n["gender"]), _key(n["name"]), n["name"])),
-            "surnames": sorted(surnames.values(), key=lambda s: (_key(s["name"]), s["name"]))}
+            "surnames": sorted(surnames.values(), key=lambda s: (_key(s["name"]), s["name"])),
+            # ending rules: the ending of the surname / the father's name is replaced by the rule's text
+            "surname_rules": _rules(c.get("surname_rules"), ("female",)),
+            "patronymic_rules": _rules(c.get("patronymic_rules"), ("male", "female"))}
+
+
+def _rules(rules, texts) -> list:
+    out, seen = [], set()
+    for r in rules or []:
+        ending = str((r or {}).get("ending") or "").strip()
+        rule = {"ending": ending, **{t: str(r.get(t) or "").strip() for t in texts}}
+        if any(rule[t] for t in texts) and ending.casefold() not in seen:
+            seen.add(ending.casefold())
+            out.append(rule)
+    return out  # in the author's order: the longest matching ending wins anyway
 
 
 def rebuild_index() -> list:
@@ -111,10 +134,19 @@ def api_put(cid):
     if not ID_RE.match(cid) or cid == "index":
         return jsonify({"error": "id no válido (minúsculas, números, - y _)"}), 400
     data = request.get_json(force=True) or {}
-    c = clean_culture(cid, data.get("culture") or {})
+    culture = dict(data.get("culture") or {})
     NAMES.mkdir(parents=True, exist_ok=True)
     p = NAMES / f"{cid}.json"
     new = not p.exists()
+    if not new:  # a page from before a field existed doesn't send it: keep what the file has
+        old = _read(p)
+        for k in ("surname_rules", "patronymic_rules"):
+            if k not in culture and k in old:
+                culture[k] = old[k]
+        old_female = {_key(s.get("name")): s["female"] for s in old.get("surnames") or [] if s.get("female")}
+        culture["surnames"] = [s if "female" in s or _key(s.get("name")) not in old_female
+                               else {**s, "female": old_female[_key(s.get("name"))]} for s in culture.get("surnames") or []]
+    c = clean_culture(cid, culture)
     _write(p, c)
     rebuild_index()
     what = data.get("label") or ("nueva cultura" if new else "")
@@ -213,6 +245,16 @@ body { min-height: 100vh; }
 .lb-col h4 small { color: var(--text-muted); font-family: var(--font-body); font-weight: 400; }
 .lb-item { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr) auto; gap: 4px; margin-bottom: 4px; }
 .lb-item .inp { padding: 4px 7px; font-size: 0.85rem; min-width: 0; }
+.lb-col.sur { grid-column: span 2; }
+@media (max-width: 900px) { .lb-col.sur { grid-column: auto; } }
+.lb-item.sur { grid-template-columns: minmax(0, 0.9fr) minmax(0, 0.9fr) minmax(0, 1.2fr) auto; }
+.lb-rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 18px; }
+.lb-rule { display: grid; gap: 4px; margin-bottom: 4px; }
+.lb-rule.sur { grid-template-columns: 1fr 1fr auto; } .lb-rule.pat { grid-template-columns: 1fr 1fr 1fr auto; }
+.lb-rule .inp { padding: 4px 7px; font-size: 0.85rem; min-width: 0; }
+.lb-rule.head { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .04em; }
+.lb-preview { margin-top: 8px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; }
+.lb-preview b { color: var(--text-main); font-weight: 400; }
 .lb-item .x { background: none; border: 1px solid #444; color: var(--text-muted); border-radius: 4px; cursor: pointer; padding: 0 7px; }
 .lb-item .x:hover { border-color: #e74c3c; color: #e76a6a; }
 .lb-empty { color: var(--text-muted); font-size: 0.85rem; }
@@ -335,8 +377,10 @@ window.addEventListener('beforeunload', e => { if (window.dirty()) { e.preventDe
 if (window.dirty()) sendBackups().then(done => { if (!done && !retryTimer) retryTimer = setInterval(sendBackups, 3000); });
 
 function itemRow(kind, i, e) {
-  return `<div class="lb-item">
+  return `<div class="lb-item${kind === 's' ? ' sur' : ''}">
     <input class="inp" value="${esc(e.name)}" data-kind="${kind}" data-i="${i}" data-k="name" aria-label="Nombre">
+    ${kind === 's' ? `<input class="inp" value="${esc(e.female || '')}" data-kind="s" data-i="${i}" data-k="female"
+      placeholder="${esc(femaleSurname({ name: e.name }) !== e.name ? femaleSurname({ name: e.name }) + ' (regla)' : 'Femenino (opc.)')}" aria-label="Forma femenina">` : ''}
     <input class="inp" value="${esc(e.meaning || '')}" data-kind="${kind}" data-i="${i}" data-k="meaning" placeholder="Significado (opcional)" aria-label="Significado">
     <button type="button" class="x" data-del="${kind}:${i}" title="Quitar">✕</button></div>`;
 }
@@ -344,8 +388,55 @@ function itemRow(kind, i, e) {
 const ALPHA = new Intl.Collator('es', { sensitivity: 'base' });
 function column(title, kind, list) {
   list = [...list].sort((a, b) => ALPHA.compare(a.e.name, b.e.name));
-  return `<div class="lb-col"><h4>${title} <small>${list.length}</small></h4>
+  return `<div class="lb-col${kind === 's' ? ' sur' : ''}"><h4>${title} <small>${list.length}</small></h4>
     ${list.map(({ e, i }) => itemRow(kind, i, e)).join('') || '<p class="lb-empty">Ninguno todavía.</p>'}</div>`;
+}
+// Same rules as the generator: the longest matching ending is replaced by the rule's text
+const FORMATS = [['{name} {surname}', 'Nombre Apellido'], ['{surname} {name}', 'Apellido Nombre'], ['{name}', 'Solo nombre'],
+  ['{name} {patronymic}', 'Nombre Patronímico (nórdico)'], ['{name} {patronymic} {surname}', 'Nombre Patronímico Apellido (ruso)'],
+  ['{surname} {name} {patronymic}', 'Apellido Nombre Patronímico']];
+function byEnding(word, rules) {
+  const w = word.toLocaleLowerCase();
+  return [...(rules || [])].sort((a, b) => (b.ending || '').length - (a.ending || '').length)
+    .find(r => w.endsWith((r.ending || '').toLocaleLowerCase()));
+}
+const swapEnding = (word, rule, text) => word.slice(0, word.length - (rule.ending || '').length) + (text || '');
+function femaleSurname(s) {
+  if (s.female) return s.female;
+  const r = byEnding(s.name, (CUR.surname_rules || []).filter(x => x.female));
+  return r ? swapEnding(s.name, r, r.female) : s.name;
+}
+function patronymic(father, g) {
+  const r = byEnding(father, CUR.patronymic_rules);
+  return r ? swapEnding(father, r, g === 'f' ? r.female : r.male) : '';
+}
+const PRESETS = {
+  nordico: { label: 'Nórdico', format: '{name} {patronymic}', surname_rules: [],
+    patronymic_rules: [{ ending: '', male: 'sson', female: 'sdóttir' }] },
+  ruso: { label: 'Ruso', format: '{name} {patronymic} {surname}',
+    patronymic_rules: [{ ending: '', male: 'ovich', female: 'ovna' }, { ending: 'a', male: 'ich', female: 'ichna' },
+      { ending: 'y', male: 'yevich', female: 'yevna' }, { ending: 'iy', male: 'ievich', female: 'ievna' }],
+    surname_rules: [{ ending: 'ov', female: 'ova' }, { ending: 'ev', female: 'eva' }, { ending: 'in', female: 'ina' },
+      { ending: 'sky', female: 'skaya' }, { ending: 'skiy', female: 'skaya' }] },
+};
+function ruleRows(kind) {
+  const list = kind === 'sur' ? (CUR.surname_rules || []) : (CUR.patronymic_rules || []);
+  const head = kind === 'sur' ? '<span>Termina en</span><span>Femenino</span><span></span>'
+    : '<span>Padre termina en</span><span>Hijo</span><span>Hija</span><span></span>';
+  const inp = (i, k, v, ph) => `<input class="inp" value="${esc(v || '')}" data-rule="${kind}" data-i="${i}" data-k="${k}" placeholder="${ph}">`;
+  return `<div class="lb-rule ${kind} head">${head}</div>` + list.map((r, i) => `<div class="lb-rule ${kind}">
+      ${inp(i, 'ending', r.ending, '(cualquiera)')}${kind === 'sur' ? inp(i, 'female', r.female, 'ova') : inp(i, 'male', r.male, 'sson') + inp(i, 'female', r.female, 'sdóttir')}
+      <button type="button" class="x" data-rule-del="${kind}:${i}" title="Quitar" style="background:none;border:1px solid #444;color:var(--text-muted);border-radius:4px;cursor:pointer;padding:0 7px">✕</button>
+    </div>`).join('') + `<button type="button" class="btn-ghost" data-rule-add="${kind}" style="margin-top:4px">＋ Regla</button>`;
+}
+function rulePreview() {
+  const dads = CUR.names.filter(n => n.gender !== 'f').slice(0, 3).map(n => n.name);
+  const surs = CUR.surnames.slice(0, 3);
+  const pat = (CUR.patronymic_rules || []).length && dads.length
+    ? dads.map(d => `${esc(d)} → <b>${esc(patronymic(d, 'm'))}</b> / <b>${esc(patronymic(d, 'f'))}</b>`).join(' · ') : '';
+  const sur = surs.filter(s => femaleSurname(s) !== s.name).map(s => `${esc(s.name)} → <b>${esc(femaleSurname(s))}</b>`).join(' · ');
+  return (pat ? `Patronímicos: ${pat}<br>` : '') + (sur ? `Apellidos femeninos: ${sur}` : '')
+    || 'Añade reglas (o una forma femenina en cada apellido) para ver ejemplos aquí.';
 }
 function renderLib() {
   if (!CUR) { $('lb-main').innerHTML = '<p class="muted">Elige o crea una cultura.</p>'; return; }
@@ -356,8 +447,7 @@ function renderLib() {
       <div class="lb-row">
         <label class="lb-f">Nombre<input class="inp" id="lb-name" value="${esc(CUR.name)}"></label>
         <label class="lb-f">Formato<select class="inp" id="lb-format">
-          ${[['{name} {surname}', 'Nombre Apellido'], ['{surname} {name}', 'Apellido Nombre'], ['{name}', 'Solo nombre']]
-            .map(([v, l]) => `<option value="${v}"${CUR.format === v ? ' selected' : ''}>${l}</option>`).join('')}</select></label>
+          ${FORMATS.map(([v, l]) => `<option value="${v}"${CUR.format === v ? ' selected' : ''}>${l}</option>`).join('')}</select></label>
         <label class="lb-f grow">Descripción (se ve en el generador)<input class="inp" id="lb-desc" value="${esc(CUR.description)}"></label>
         <button type="button" class="btn-ghost btn-danger" id="lb-delete">🗑 Eliminar cultura</button>
       </div>
@@ -371,10 +461,22 @@ function renderLib() {
       <textarea id="lb-bulk" class="inp" placeholder="Uno por línea. El significado es opcional, tras un guion, dos puntos o barra:
 Gulnaz - Gracia de flor
 Leyla: La noche
-Derya | El mar
-Zahra"></textarea>
+Zahra
+Apellidos con forma femenina: Ivanov/Ivanova - hijo de Iván"></textarea>
       <div class="lb-row" style="margin-top:8px"><button type="button" class="btn-gold" id="lb-add">＋ Añadir</button>
         <span class="muted" style="font-size:.85rem">Si un nombre ya existe con el mismo género, se actualiza su significado.</span></div>
+    </div>
+    <div class="lb-card">
+      <h3>Apellidos con género y patronímicos</h3>
+      <p class="muted" style="font-size:.85rem;margin-bottom:10px">Cada regla cambia la terminación: la más larga que encaje gana y una vacía vale para cualquier nombre.
+        Un apellido con forma femenina propia la usa siempre. El patronímico sale del nombre del padre (un nombre masculino al azar)
+        y aparece si el formato incluye «Patronímico».
+        Plantillas: ${Object.entries(PRESETS).map(([k, p]) => `<button type="button" class="btn-ghost" data-preset="${k}">${p.label}</button>`).join(' ')}</p>
+      <div class="lb-rules">
+        <div><h4 style="font-family:var(--font-heading);color:var(--accent-gold);font-size:.9rem;margin-bottom:6px">Apellidos femeninos</h4>${ruleRows('sur')}</div>
+        <div><h4 style="font-family:var(--font-heading);color:var(--accent-gold);font-size:.9rem;margin-bottom:6px">Patronímicos</h4>${ruleRows('pat')}</div>
+      </div>
+      <div class="lb-preview" id="lb-preview">${rulePreview()}</div>
     </div>
     <div class="lb-card"><div class="lb-cols">
       ${column('Masculinos', 'm', by('m'))}${column('Femeninos', 'f', by('f'))}${column('Unisex', 'u', by('u'))}
@@ -388,7 +490,12 @@ $('lb-main').addEventListener('click', async e => {
   if (e.target.id === 'lb-add') {
     const lines = $('lb-bulk').value.split('\n').map(l => l.trim()).filter(Boolean);
     if (!lines.length) return;
-    const parsed = lines.map(l => { const m = l.match(/^(.+?)\s*(?:\s[-–—]\s|:|\|)\s*(.*)$/); return m ? { name: m[1].trim(), meaning: m[2].trim() } : { name: l, meaning: '' }; });
+    const parsed = lines.map(l => {
+      const m = l.match(/^(.+?)\s*(?:\s[-–—]\s|:|\|)\s*(.*)$/);
+      const p = m ? { name: m[1].trim(), meaning: m[2].trim() } : { name: l, meaning: '' };
+      const f = ADD_KIND === 's' && p.name.match(/^(.+?)\s*\/\s*(.+)$/);  // Ivanov/Ivanova
+      return f ? { ...p, name: f[1].trim(), female: f[2].trim() } : p;
+    });
     for (const p of parsed) (ADD_KIND === 's' ? CUR.surnames : CUR.names).push(ADD_KIND === 's' ? p : { ...p, gender: ADD_KIND });
     const kindName = { m: 'masculino', f: 'femenino', u: 'unisex', s: 'apellido' }[ADD_KIND];
     await save(`+${parsed.length} ${kindName}${parsed.length > 1 ? (ADD_KIND === 'u' ? '' : 's') : ''}`);
@@ -399,6 +506,28 @@ $('lb-main').addEventListener('click', async e => {
     const [kind, i] = e.target.dataset.del.split(':'); const list = listOf(kind);
     const [gone] = list.splice(+i, 1);
     await save(`− ${gone.name}`); renderLib();
+    return;
+  }
+  const preset = e.target.dataset.preset;
+  if (preset) {
+    const p = PRESETS[preset];
+    if (((CUR.patronymic_rules || []).length || (CUR.surname_rules || []).length)
+        && !confirm(`¿Cambiar las reglas y el formato por la plantilla «${p.label}»?`)) return;
+    CUR.format = p.format; CUR.patronymic_rules = p.patronymic_rules.map(r => ({ ...r })); CUR.surname_rules = p.surname_rules.map(r => ({ ...r }));
+    await save('plantilla ' + p.label.toLowerCase()); renderLib();
+    return;
+  }
+  const add = e.target.dataset.ruleAdd;
+  if (add) {
+    const key = add === 'sur' ? 'surname_rules' : 'patronymic_rules';
+    (CUR[key] = CUR[key] || []).push(add === 'sur' ? { ending: '', female: '' } : { ending: '', male: '', female: '' });
+    renderLib();  // saved once the new rule has some text
+    return;
+  }
+  if (e.target.dataset.ruleDel) {
+    const [kind, i] = e.target.dataset.ruleDel.split(':');
+    (kind === 'sur' ? CUR.surname_rules : CUR.patronymic_rules).splice(+i, 1);
+    await save('reglas'); renderLib();
     return;
   }
   if (e.target.id === 'lb-delete') {
@@ -416,6 +545,16 @@ $('lb-main').addEventListener('change', async e => {
   if (t.id === 'lb-name') { CUR.name = t.value.trim() || CUR.name; await save('nombre'); renderLib(); return; }
   if (t.id === 'lb-format') { CUR.format = t.value; await save('formato'); return; }
   if (t.id === 'lb-desc') { CUR.description = t.value; await save('descripción'); return; }
+  if (t.dataset.rule) {
+    const key = t.dataset.rule === 'sur' ? 'surname_rules' : 'patronymic_rules';
+    const list = CUR[key] = CUR[key] || [];
+    // a new rule the server dropped while it was still empty: it comes back with this value
+    const r = list[+t.dataset.i] || (list[+t.dataset.i] = t.dataset.rule === 'sur' ? { ending: '', female: '' } : { ending: '', male: '', female: '' });
+    r[t.dataset.k] = t.value.trim();
+    $('lb-preview').innerHTML = rulePreview();
+    await save(t.dataset.rule === 'sur' ? 'apellidos femeninos' : 'patronímicos');
+    return;
+  }
   if (t.dataset.kind) {
     const e2 = listOf(t.dataset.kind)[+t.dataset.i]; if (!e2) return;
     const before = e2.name; e2[t.dataset.k] = t.value.trim();

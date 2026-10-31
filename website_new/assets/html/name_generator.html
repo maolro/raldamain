@@ -77,9 +77,37 @@
     }
     return out;
   }
-  const part = e => e.meaning
-    ? `<span class="ng-part" tabindex="0" data-tip="${esc(e.name + ': ' + e.meaning)}">${esc(e.name)}</span>`
-    : `<span class="ng-part">${esc(e.name)}</span>`;
+  const tipPart = (text, tip) => tip
+    ? `<span class="ng-part" tabindex="0" data-tip="${esc(tip)}">${esc(text)}</span>`
+    : `<span class="ng-part">${esc(text)}</span>`;
+  const part = e => tipPart(e.name, e.meaning ? e.name + ': ' + e.meaning : '');
+
+  // Ending rules ({ending, …}): the longest ending that matches wins; "" matches any name.
+  // The matched ending is replaced by the rule's text: Ivanov + {ending: "ov", female: "ova"} -> Ivanova
+  function byEnding(word, rules) {
+    const w = word.toLocaleLowerCase();
+    return [...(rules || [])].sort((a, b) => (b.ending || '').length - (a.ending || '').length)
+      .find(r => w.endsWith((r.ending || '').toLocaleLowerCase()));
+  }
+  const swapEnding = (word, rule, text) => word.slice(0, word.length - (rule.ending || '').length) + (text || '');
+
+  // a surname in the right gender: its own feminine form, else the culture's ending rules
+  function surnamePart(s, gender) {
+    let text = s.name;
+    if (gender === 'f') {
+      const rule = s.female ? null : byEnding(s.name, culture.surname_rules);
+      text = s.female || (rule ? swapEnding(s.name, rule, rule.female) : s.name);
+    }
+    return tipPart(text, s.meaning ? `${text}: ${s.meaning}` : '');
+  }
+  // father's name + the culture's patronymic ending: Harald -> Haraldsson / Haraldsdóttir
+  function patronymicPart(father, gender) {
+    const rule = byEnding(father.name, culture.patronymic_rules);
+    if (!rule) return '';
+    const text = swapEnding(father.name, rule, gender === 'f' ? rule.female : rule.male);
+    const tip = `${gender === 'f' ? 'Hija' : 'Hijo'} de ${father.name}` + (father.meaning ? ` (${father.meaning})` : '');
+    return tipPart(text, tip);
+  }
 
   function generate(gender) {
     lastGender = gender;
@@ -92,10 +120,14 @@
     }
     const surnames = culture.surnames || [];
     const fmt = culture.format || '{name} {surname}';
-    const sur = surnames.length ? pick(surnames, COUNT) : [];
+    const sur = surnames.length && fmt.includes('{surname}') ? pick(surnames, COUNT) : [];
+    const fathers = (culture.names || []).filter(n => n.gender === 'm' || n.gender === 'u');
+    const dads = fathers.length && fmt.includes('{patronymic}') && (culture.patronymic_rules || []).length ? pick(fathers, COUNT) : [];
     list.innerHTML = pick(given, COUNT).map((g, i) => {
-      const s = sur[i];
-      const html = fmt.replace('{name}', part(g)).replace('{surname}', s ? part(s) : '').trim();
+      const html = fmt.replace('{name}', part(g))
+        .replace('{patronymic}', dads[i] ? patronymicPart(dads[i], gender) : '')
+        .replace('{surname}', sur[i] ? surnamePart(sur[i], gender) : '')
+        .replace(/\s+/g, ' ').trim();
       return `<li>${html}</li>`;
     }).join('');
   }
