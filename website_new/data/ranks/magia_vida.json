@@ -86,7 +86,7 @@
           ],
           "range": "Adyacente",
           "duration": "Concentración",
-          "desc": "Compartes vida con el objetivo, permitiéndote absorber hasta la mitad de los impactos que reciba (redondeando hacia abajo). Solo puedes tener un vínculo activo y es necesario que se encuentre a distancia media.",
+          "desc": "Compartes vida con el objetivo, permitiéndote absorber hasta la mitad de los impactos que reciba (redondeando hacia arriba). Solo puedes tener un vínculo activo y es necesario que se encuentre a distancia media.",
           "cost": "2 Acciones, 1 Chi",
           "empower": "El aliado vinculado recupera un impacto. "
         },
