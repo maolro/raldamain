@@ -404,12 +404,12 @@ const ENTRY_FIELDS = {
 };
 function renderEntries() {
   const list = C[TAB];
-  $('list-hint').textContent = `Las habilidades de la biblioteca se escalan al nivel de la criatura (bonus y daño LOW/MID/HIGH). Palabras clave en cualquier campo: +MOD (ahora ${modText()}; +MOD+1 / +MOD-1 suman o quitan un dado), TIER (ahora ${tierOflvOf()}; admite TIER+1, TIERx2, (TIER+1)d6…) DD (ahora ${bandOf(BONUS_TABLE, lvOf()).dd || '—'}; DD+1, DD-1…) y LOW / MID / HIGH (dados de daño del Tier; HIGH+1…).`;
+  $('list-hint').textContent = `Las habilidades de la biblioteca se escalan al nivel de la criatura (bonus y daño LOW/MID/HIGH). Palabras clave en cualquier campo: +MOD (ahora ${modText()}; +MOD+1 / +MOD-1 suman o quitan un dado), TIER (ahora ${tierOf(lvOf())}; admite TIER+1, TIERx2, (TIER+1)d6…) DD (ahora ${bandOf(BONUS_TABLE, lvOf()).dd || '—'}; DD+1, DD-1…) y LOW / MID / HIGH (dados de daño del Tier; HIGH+1…).`;
   $('entries').innerHTML = list.map((en, i) => {
     const badges = (en.ability_id ? '<span class="cc-badge gold">biblioteca</span>' : '')
       + (en.damage_tier ? `<span class="cc-badge ${en.damage_tier}">${en.damage_tier}</span>` : '')
       + (en.bonus_scaled ? '<span class="cc-badge">bonus escalado</span>' : '')
-      + (en.mod_tpl ? `<span class="cc-badge" title="+MOD = ${esc(modText())} · TIER = ${tierOflvOf()}">fórmula</span>` : '');
+      + (en.mod_tpl ? `<span class="cc-badge" title="+MOD = ${esc(modText())} · TIER = ${tierOf(lvOf())}">fórmula</span>` : '');
     const shown = k => (en.mod_tpl && en.mod_tpl[k] != null) ? en.mod_tpl[k] : en[k];
     const fields = ENTRY_FIELDS[TAB].map(([k, label, kind]) => {
       const v = kind === 'csv' ? (en[k] || []).join(', ') : (shown(k) ?? '');
