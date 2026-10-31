@@ -1,0 +1,100 @@
+{
+  "id": "hada",
+  "name": "Hada",
+  "type": "Espíritu",
+  "size": "Diminuto",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+3d6",
+    "VOL": "+7+1d6",
+    "MEN": "+7+2d6"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General",
+      "tier_tpl": "T-1"
+    },
+    {
+      "value": 16,
+      "categories": "Magia",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [
+    "Aflicciones",
+    "Miedo",
+    "Mentales"
+  ],
+  "senses": "Sentido Mágico",
+  "speed": "Vuelo 2",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan 2d6 daño adicional de un elemento específico o aumentan su daño por un dado.",
+      "name": "Espiritual",
+      "tags": [
+        "Espiritu",
+        "Innata"
+      ],
+      "ability_id": "ab_1793366127728",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan DD daño adicional de un elemento específico o aumentan su daño por un dado."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El objetivo debe tener éxito en un tiro de salvación Mental +7 + 2d6 o percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo.",
+      "name": "Asalto Fantasmal",
+      "tags": [
+        "Ilusorio",
+        "Mental"
+      ],
+      "ability_id": "ab_1793024131874",
+      "mod_tpl": {
+        "desc": "El objetivo debe tener éxito en un tiro de salvación Mental +MOD o percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo."
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD+1"
+      },
+      "bonus": "+7 + 3d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Se vuelve Invisible hasta que ataque o lance un hechizo.",
+      "name": "Invisibilidad",
+      "tags": [
+        "Ilusorio",
+        "Visual"
+      ],
+      "ability_id": "ab_1793016212873"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "FÍS": "extreme",
+    "MEN": "bonus",
+    "VOL": "mid"
+  }
+}
