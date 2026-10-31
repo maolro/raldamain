@@ -124,10 +124,15 @@ def api_save(cid):
 @app.route("/api/creature/<cid>", methods=["DELETE"])
 def api_delete(cid):
     p = CDIR / f"{cid}.json"
-    if p.exists(): p.unlink()
+    name = cid
+    if p.exists():
+        try: name = json.loads(p.read_text(encoding="utf-8")).get("name") or cid
+        except Exception: pass
+        p.unlink()
     idx = [e for e in load_index() if e.get("id") != cid]
     save_index(idx)
-    return jsonify({"ok": True})
+    git = _git_push([str(p), str(CIDX)], f"Delete creature: {name}")
+    return jsonify({"ok": True, "git": git})
 
 @app.route("/api/scaling")
 def api_scaling_get():
@@ -173,13 +178,17 @@ def api_ability_upsert(aid):
         lst.append(data)
     save_abilities(lst)
     changed = _propagate_ability(aid, data)
-    return jsonify({"ok": True, "propagated": len(changed)})
+    # the library and every creature the change reached go in one commit
+    git = _git_push([str(ABANK), *changed], f"Update creature ability: {data.get('name', aid)}")
+    return jsonify({"ok": True, "propagated": len(changed), "git": git})
 
 @app.route("/api/ability/<aid>", methods=["DELETE"])
 def api_ability_delete(aid):
-    lst = [ab for ab in load_abilities() if ab.get("id") != aid]
-    save_abilities(lst)
-    return jsonify({"ok": True})
+    old = load_abilities()
+    name = next((ab.get("name") for ab in old if ab.get("id") == aid), None) or aid
+    save_abilities([ab for ab in old if ab.get("id") != aid])
+    git = _git_push([str(ABANK)], f"Delete creature ability: {name}")
+    return jsonify({"ok": True, "git": git})
 
 @app.route("/")
 def index():
@@ -820,7 +829,8 @@ async function deleteCreature() {
   if (!S.creature) return;
   if (!confirm(`¿Seguro que quieres eliminar a "${S.creature.name}" de forma permanente?`)) return;
   try {
-    await api('DELETE', `/api/creature/${S.creature.id}`);
+    const del = await api('DELETE', `/api/creature/${S.creature.id}`);
+    if (gitNote(del.git)) toast('Eliminada' + gitNote(del.git), 'err');
     S.creature = null;
     S.saved = '';
     S.mode = 'edit';
@@ -836,6 +846,8 @@ async function deleteCreature() {
 }
 
 // ── Save ──────────────────────────────────────────────────────────────────────
+// " — git: …" after a save's toast when the commit/push didn't go through
+function gitNote(git) { return git && git !== 'ok' && git !== 'nothing' ? ' — git: ' + git : ''; }
 async function saveCreature() {
   if (!S.creature) return;
   try {
@@ -1327,7 +1339,7 @@ async function saveEntryToBank(type, i) {
     const fn = type==='traits'?renderTraitCard : type==='actions'?renderActionCard:renderReactionCard;
     renderAbilityGrid(type+'-grid', S.creature[type], fn);
     renderToolbar();
-    toast(`Guardado en banco · ${res.propagated||0} criatura(s) sincronizadas`, 'ok');
+    toast(`Guardado en banco · ${res.propagated||0} criatura(s) sincronizadas` + gitNote(res.git), gitNote(res.git) ? 'err' : 'ok');
   } catch(e) { toast('Error: '+e.message, 'err'); }
 }
 
@@ -1683,7 +1695,7 @@ async function saveAbility() {
     const res = await api('POST', `/api/ability/${a.id}`, a);
     S.abilities = await api('GET', '/api/abilities');
     S.abEdit = null;
-    toast(`Guardado · propagado a ${res.propagated} criatura(s)`, 'ok');
+    toast(`Guardado · propagado a ${res.propagated} criatura(s)` + gitNote(res.git), gitNote(res.git) ? 'err' : 'ok');
     renderLibrary();
   } catch(e) { toast('Error: '+e.message, 'err'); }
 }
@@ -1692,9 +1704,9 @@ function closeAbEdit() { S.abEdit = null; renderLibrary(); }
 
 async function deleteAbility(id) {
   if (!confirm('¿Eliminar esta habilidad del banco?')) return;
-  await api('DELETE', `/api/ability/${id}`);
+  const res = await api('DELETE', `/api/ability/${id}`);
   S.abilities = await api('GET', '/api/abilities');
-  toast('Habilidad eliminada','ok');
+  toast('Habilidad eliminada' + gitNote(res.git), gitNote(res.git) ? 'err' : 'ok');
   renderLibrary();
 }
 

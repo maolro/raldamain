@@ -38,6 +38,7 @@ CREATURE_BUILDER = BASE / "assets" / "html" / "creature_builder.html"  # also th
 sys.path.insert(0, str(BASE / "combat-simulator"))
 
 from raldamain.data import website                       # noqa: E402
+from git_sync import git_push                            # noqa: E402  (tools/ is on the path: this file's folder)
 from raldamain.data.loader import (                      # noqa: E402
     ROSTER_ERRORS, load_conditions, load_roster, make_side, prepared_spec, reload_roster, set_roster_sources)
 from raldamain.cli.parallel import run_batch_parallel   # noqa: E402
@@ -368,10 +369,11 @@ def api_criatura_put(cid):
     CREATURES.mkdir(parents=True, exist_ok=True)
     (CREATURES / f"{cid}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     _list_creature(cid, data)
+    git = git_push([str(CREATURES / f"{cid}.json"), str(CREATURE_INDEX)], f"Update creature: {data.get('name', cid)}")
     reload_roster()
     sim_id = next((sid for sid, s in load_roster().items()
                    if s.get("origin") == "bestiario" and Path(s.get("source", "")).stem == cid), cid)
-    return jsonify({"ok": True, "id": cid, "sim_id": sim_id})
+    return jsonify({"ok": True, "id": cid, "sim_id": sim_id, "git": git})
 
 
 @app.route("/api/criaturas/<cid>/publicada", methods=["PUT"])
@@ -384,7 +386,9 @@ def api_criatura_publish(cid):
     data["published"] = (request.get_json(force=True) or {}).get("published") is True
     p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     _list_creature(cid, data)
-    return jsonify({"ok": True, "published": data["published"]})
+    git = git_push([str(p), str(CREATURE_INDEX)],
+                   f"{'Publish' if data['published'] else 'Unpublish'} creature: {data.get('name', cid)}")
+    return jsonify({"ok": True, "published": data["published"], "git": git})
 
 
 def _list_creature(cid: str, data: dict) -> None:
@@ -816,7 +820,9 @@ async function setPublished(box) {
     const r = await fetch(`/api/criaturas/${encodeURIComponent(c.id)}/publicada`, {
       method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ published: box.checked }) });
     if (!r.ok) throw new Error(r.status);
-    c.published = (await r.json()).published;
+    const d = await r.json();
+    c.published = d.published;
+    if (d.git && d.git !== 'ok' && d.git !== 'nothing') alert('Guardado, pero git: ' + d.git);
     render();
     const f = document.getElementById('bx-frame'); f.src = f.src;  // its "No publicada" badge
   } catch (e) {
