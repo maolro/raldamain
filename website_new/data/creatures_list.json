@@ -268,5 +268,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "elementalista_de_fuego",
+    "name": "Elementalista de Fuego",
+    "type": "Humanoide",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
