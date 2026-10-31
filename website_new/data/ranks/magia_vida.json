@@ -126,7 +126,7 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "passive": "Todos los dados de daño de Vida pasan a ser d8.",
       "abilities": [
         {
