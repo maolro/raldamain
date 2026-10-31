@@ -3,6 +3,52 @@
   "name": "Shinri",
   "description": "",
   "format": "{surname} {name}",
-  "names": [],
+  "names": [
+    {
+      "name": "Eiji",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Hajime",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Jiro",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Kenji",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Kosuke",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Shichiro",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Takahiro",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Toshiro",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Yuta",
+      "gender": "m",
+      "meaning": ""
+    }
+  ],
   "surnames": []
 }
