@@ -22,6 +22,17 @@
     }
   },
   {
+    "id": "iskarianos",
+    "name": "Iskarianos",
+    "count": {
+      "names": 0,
+      "m": 0,
+      "f": 0,
+      "u": 0,
+      "surnames": 0
+    }
+  },
+  {
     "id": "kratenses",
     "name": "Kratenses",
     "count": {
