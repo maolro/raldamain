@@ -69,26 +69,57 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "passive": "Incrementa tu estadística de CAR y su limitador máximo en +1.",
       "abilities": [
         {
-          "name": "Golpe Trascendente",
-          "tags": [
-            "Innata",
-            "Mejora"
-          ],
-          "cost": "1 chi",
-          "duration": "1 Ronda",
-          "desc": "Durante esta ronda, tus ataques físicos cuentan como mágicos. Además, al impactar puedes reducir tu chi en 2 para aumentar el daño en un valor igual a tu Rango + 1 (máximo una vez por ataque)."
-        },
-        {
-          "name": "Sentido Vital",
+          "name": "Fuerza Vital",
           "tags": [
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes vista ciega a distancia media y puedes identificar la magia lanzada a esa misma distancia."
+          "desc": "Al entrar en Canalización Celestial, aumenta tus umbrales Físicos y Mágicos por un valor igual a tu Rango + 1 además que recibes Inmunidad a Fatigado y Enfermado.",
+          "condition": "Canalización Celestial",
+          "umbrales": [
+            {
+              "value": "RANGO+1",
+              "categories": "Físico, Mágico"
+            }
+          ]
+        },
+        {
+          "name": "Magia Bendita",
+          "tags": [
+            "Innata",
+            "Pasiva"
+          ],
+          "desc": "Aprendes dos hechizos de Rango I relacionados con tu patrón celestial. Puedes emplear Ascendencia Celestial para lanzarlos. ",
+          "spell_grants": [
+            {
+              "count": 2,
+              "spell_rank": 1,
+              "sources": [
+                "patron"
+              ],
+              "from_rank": 2
+            },
+            {
+              "count": 2,
+              "spell_rank": 1,
+              "sources": [
+                "patron"
+              ],
+              "from_rank": 4
+            },
+            {
+              "count": 2,
+              "spell_rank": 1,
+              "sources": [
+                "patron"
+              ],
+              "from_rank": 6
+            }
+          ]
         },
         {
           "name": "Cuerpo Puro",
@@ -104,7 +135,7 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Ángel Protector",
@@ -112,19 +143,18 @@
             "Innata",
             "Invocación"
           ],
-          "cost": "3 acciones, 2 chi",
+          "cost": "3 Acciones, 2 Chi",
           "duration": "1 Hora",
-          "desc": "Invocas un celestial con un Nivel máximo igual a Rango x 2. Puedes tener hasta 4 criaturas invocadas simultáneamente.",
-          "empower": "La criatura invocada recupera el 50% de su Vitalidad."
+          "desc": "Invoca un Celestial de nivel 5, el cual permanecerá en el campo de batalla durante una hora. El nivel de la invocación aumentará por 3 por cada Rango adicional que reciba y no puede tener activas más de 4 invocaciones.",
+          "empower": "Invoca una criatura adicional."
         },
         {
-          "name": "Alma Indomable",
+          "name": "Alas Angelicales",
           "tags": [
             "Innata",
-            "Defensiva"
+            "Pasiva"
           ],
-          "cost": "1 chi",
-          "desc": "Como reacción, obtienes éxito automático en un tiro de salvación contra un efecto de cualquier tipo. Tu Vitalidad máxima se reduce en 2. No funciona contra habilidades míticas."
+          "desc": "Al entrar en Canalización Celestial, recibes velocidad de vuelo 2. Este rasgo puede convertirse en otro equivalente siempre y cuando lo permita el DJ."
         }
       ]
     },
