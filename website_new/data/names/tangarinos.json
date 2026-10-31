@@ -1,0 +1,10 @@
+{
+  "id": "tangarinos",
+  "name": "Tangarinos",
+  "description": "",
+  "format": "{name} {surname}",
+  "names": [],
+  "surnames": [],
+  "surname_rules": [],
+  "patronymic_rules": []
+}
