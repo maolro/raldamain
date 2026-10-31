@@ -3474,5 +3474,26 @@
     "move": "",
     "attacks": 1,
     "desc": "El objetivo se cura dos impactos y se recupera de todos los efectos de estado y maldiciones que tenga activos."
+  },
+  {
+    "id": "ab_1793455315254",
+    "name": "Alterar Emociones",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Mental"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "MEN +MOD",
+    "move": "",
+    "attacks": 1,
+    "desc": "Una emoción de tu elección se potenciará en el afectado, dándole el efecto Miedo I, Confusión I, Fatiga I o quitándole esos mismos efectos."
   }
 ]
