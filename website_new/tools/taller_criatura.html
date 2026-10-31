@@ -125,7 +125,9 @@
 .cc-tierline { font-size: .82rem; color: var(--text-muted); }
 .cc-lvls { display: inline-flex; gap: 2px; margin-top: 3px; }
 .cc-lvls button { background: none; border: 1px solid #444; color: var(--text-muted); border-radius: 3px; padding: 0 6px; font-size: .72rem; cursor: pointer; }
-.cc-umb .cc-x.on { border-color: var(--accent-gold); color: var(--accent-gold); }
+.cc-umb-v { display: flex; align-items: center; gap: 4px; }
+.cc-umb-v .inp { min-width: 0; }
+.cc-umb-v small { white-space: nowrap; }
 .cc-lvls button.on, .cc-lvls button:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
 .cc-tierline b { color: var(--accent-gold); }
 .cc-tabs { display: flex; gap: 4px; flex-wrap: wrap; }
@@ -138,7 +140,7 @@
 .cc-quick { text-transform: none; letter-spacing: 0; color: var(--text-muted); font-size: .8rem; }
 .cc-quick button { background: none; border: 1px solid #555; color: var(--text-main); border-radius: 3px; padding: 1px 8px; margin-left: 4px; cursor: pointer; font-size: .76rem; }
 .cc-umbs { display: grid; gap: 6px; }
-.cc-umb { display: grid; grid-template-columns: 90px 1fr auto; gap: 6px; }
+.cc-umb { display: grid; grid-template-columns: 120px 1fr auto; gap: 6px; }
 .cc-x { background: none; border: 0; color: var(--text-muted); cursor: pointer; font-size: 1rem; padding: 0 6px; }
 .cc-x:hover { color: #e76a6a; }
 .cc-listbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
@@ -215,7 +217,7 @@ let PICK = { q: '', tag: '', tier: '' };
 
 function blank() {
   return { id: '', name: '', type: '', size: 'Mediano', level: 1, description: '', hits: 2,
-    saves: { 'FÍS': '+5', 'VOL': '+5', 'MEN': '+5' }, umbrales: [{ value: 2, categories: 'General', tier_scaled: true }],
+    saves: { 'FÍS': '+5', 'VOL': '+5', 'MEN': '+5' }, umbrales: [{ value: 2, categories: 'General', tier_tpl: 'T' }],
     immune: [], senses: '', speed: 'Paso 8', combat: { acciones: 2, reacciones: 1 },
     traits: [], actions: [], reactions: [{ name: 'Parada / Esquiva', desc: '', mod_tpl: { bonus: '+MOD' } }],
     lore: '', tags: [], published: false };
@@ -265,6 +267,7 @@ window.addEventListener('focus', refreshLibrary);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) refreshLibrary(); });
 function normalize(c) {
   c.saves = c.saves || {}; c.combat = c.combat || {}; c.umbrales = c.umbrales || [];
+  for (const u of c.umbrales) if (u.tier_scaled) { u.tier_tpl = 'T'; delete u.tier_scaled; }
   for (const k of ['traits', 'actions', 'reactions', 'immune', 'tags']) c[k] = Array.isArray(c[k]) ? c[k] : [];
 }
 
@@ -317,8 +320,7 @@ $('f-pub').addEventListener('change', e => { C.published = e.target.checked; cha
 $('f-immune').addEventListener('input', e => { C.immune = csv(e.target.value); changed(); });
 // Saves set from the Tier table follow the level; typing one by hand unlinks it
 // Extremo is one step beyond Alto: the Alto bonus + 1d6 (merged into its d6s when it has them)
-const plusD6 = b => /\d+d6/i.test(b) ? b.replace(/(\d+)d6/i, (m, n) => `${+n + 1}d6`) : (b ? b + '+1d6' : '+1d6');
-const bandSave = (band, l) => l === 'extreme' ? plusD6((band.bonus || '').replace(/\s/g, '')) : band[l] || '';
+const bandSave = (band, l) => l === 'extreme' ? shiftDice((band.bonus || '').replace(/\s/g, ''), 1).replace(/\s/g, '') : band[l] || '';
 const saveBonus = l => fmtDice(bandSave(bandOf(BONUS_TABLE, +C.level || 1), l)).replace(/\s/g, '');
 function rescaleSaves() {
   for (const [k, l] of Object.entries(C.save_scale || {})) C.saves[k] = saveBonus(l);
@@ -334,16 +336,21 @@ document.querySelectorAll('.cc-lvls').forEach(g => g.addEventListener('click', e
 }));
 
 // ── Umbrales ──
-// An umbral marked tier_scaled takes the Tier table's value and follows the level; typing a value unlinks it
-const tierUmbral = () => +bandOf(BONUS_TABLE, +C.level || 1).umbral || 0;
-function rescaleUmbs() {
-  for (const u of C.umbrales) if (u.tier_scaled) u.value = tierUmbral();
+// An umbral written as T, T+1, T-2… takes the Tier table's umbral that many tiers up or down and follows the level
+const UMB_TPL = /^\s*T\s*(?:([+-])\s*(\d+))?\s*$/i;
+function tierUmbral(tpl) {
+  const m = UMB_TPL.exec(tpl || 'T'); if (!m) return null;
+  const j = BONUS_TABLE.indexOf(bandOf(BONUS_TABLE, +C.level || 1)) + diceOff(m[1], m[2]);
+  return j < 0 ? 0 : +BONUS_TABLE[Math.min(j, BONUS_TABLE.length - 1)].umbral || 0;
 }
+function rescaleUmbs() {
+  for (const u of C.umbrales) if (u.tier_tpl) u.value = tierUmbral(u.tier_tpl) ?? u.value;
+}
+const umbHint = u => u.tier_tpl ? `= ${u.value}` : '';
 function renderUmbs() {
   $('umb-list').innerHTML = C.umbrales.map((u, i) => `<div class="cc-umb">
-      <input class="inp" type="number" value="${esc(u.value)}" data-i="${i}" data-k="value" aria-label="Valor">
-      <button type="button" class="cc-x${u.tier_scaled ? ' on' : ''}" data-tier="${i}"
-        title="${u.tier_scaled ? 'Sigue el Tier (' + tierUmbral() + '). Escribe un valor para fijarlo.' : 'Usar el valor del Tier (' + tierUmbral() + ')'}">T</button>
+      <span class="cc-umb-v"><input class="inp" value="${esc(u.tier_tpl || u.value)}" data-i="${i}" data-k="value" aria-label="Valor"
+        title="Un número, o T / T+1 / T-1… para seguir el umbral del Tier"><small class="muted" data-hint="${i}">${umbHint(u)}</small></span>
       <input class="inp" value="${esc(u.categories)}" data-i="${i}" data-k="categories" placeholder="General, Necrótico" aria-label="Tipos">
       <button type="button" class="cc-x" data-del="${i}" title="Quitar">✕</button></div>`).join('')
     || '<span class="muted">Sin umbrales.</span>';
@@ -351,19 +358,14 @@ function renderUmbs() {
 $('umb-list').addEventListener('input', e => {
   const i = e.target.dataset.i; if (i == null) return;
   const k = e.target.dataset.k;
-  C.umbrales[i][k] = k === 'value' ? (parseInt(e.target.value, 10) || 0) : e.target.value;
-  if (k === 'value' && C.umbrales[i].tier_scaled) {
-    delete C.umbrales[i].tier_scaled;
-    const t = $('umb-list').querySelector(`[data-tier="${i}"]`); if (t) t.classList.remove('on');
-  }
+  const u = C.umbrales[i], v = e.target.value;
+  if (k !== 'value') u[k] = v;
+  else if (UMB_TPL.test(v)) { u.tier_tpl = v.replace(/\s/g, '').toUpperCase(); u.value = tierUmbral(u.tier_tpl); }
+  else { delete u.tier_tpl; u.value = parseInt(v, 10) || 0; }
+  const h = $('umb-list').querySelector(`[data-hint="${i}"]`); if (h) h.textContent = umbHint(u);
   changed();
 });
 $('umb-list').addEventListener('click', e => {
-  if (e.target.dataset.tier != null) {
-    const u = C.umbrales[+e.target.dataset.tier];
-    if (u.tier_scaled) delete u.tier_scaled; else { u.tier_scaled = true; u.value = tierUmbral(); }
-    renderUmbs(); changed(); return;
-  }
   if (e.target.dataset.del == null) return;
   C.umbrales.splice(+e.target.dataset.del, 1); renderUmbs(); changed();
 });
@@ -387,7 +389,7 @@ const ENTRY_FIELDS = {
 };
 function renderEntries() {
   const list = C[TAB];
-  $('list-hint').textContent = `Las habilidades de la biblioteca se escalan al nivel de la criatura (bonus y daño LOW/MID/HIGH). Palabras clave en cualquier campo: +MOD (ahora ${modText()}), TIER (ahora ${tierOf(+C.level || 1)}; admite TIER+1, TIERx2, (TIER+1)d6…) DD (ahora ${bandOf(BONUS_TABLE, +C.level || 1).dd || '—'}) y LOW / MID / HIGH (dados de daño del Tier).`;
+  $('list-hint').textContent = `Las habilidades de la biblioteca se escalan al nivel de la criatura (bonus y daño LOW/MID/HIGH). Palabras clave en cualquier campo: +MOD (ahora ${modText()}; +MOD+1 / +MOD-1 suman o quitan un dado), TIER (ahora ${tierOf(+C.level || 1)}; admite TIER+1, TIERx2, (TIER+1)d6…) DD (ahora ${bandOf(BONUS_TABLE, +C.level || 1).dd || '—'}; DD+1, DD-1…) y LOW / MID / HIGH (dados de daño del Tier; HIGH+1…).`;
   $('entries').innerHTML = list.map((en, i) => {
     const badges = (en.ability_id ? '<span class="cc-badge gold">biblioteca</span>' : '')
       + (en.damage_tier ? `<span class="cc-badge ${en.damage_tier}">${en.damage_tier}</span>` : '')
@@ -450,22 +452,36 @@ $('btn-blank').addEventListener('click', () => {
 //   +MOD -> scaled bonus · TIER -> tier number, with arithmetic like the ranks' RANGO
 //   ("TIER+2", "TIERx2", "(TIER+1)d6") · LOW / MID / HIGH -> that damage tier's dice
 //   (one die fewer when the damage type that follows is a magic one) · DD -> the tier's damage dice
-const KEY_RE = /\+MOD\b|\bTIER\b|\bDD\b|\b(?:LOW|MID|HIGH)\b/;
+//   MOD, DD and LOW / MID / HIGH take a dice offset written without spaces: "+MOD+1", "DD-1", "HIGH+2"
+//   add or remove that many dice ("DD + 4", with spaces, still adds a flat 4)
+const KEY_RE = /\+MOD\b|\bMOD[+-]\d+\b|\bTIER\b|\bDD\b|\b(?:LOW|MID|HIGH)\b/;
 const KEY_FIELDS = ['name', 'desc', 'bonus', 'damage', 'range', 'area', 'save', 'move'];
 const TIER_EXPR = /\(\s*(?:\d+\s*[x×*]\s*)?TIER(?:\s*[+\-x×*/]\s*\d+)*\s*\)|(?:\d+\s*[x×*]\s*)?TIER(?:\s*[+\-x×*/]\s*\d+)*/g;
 const MAGIC_WORD = /^(?:fuego|fr[ií]o|el[ée]ctric|[áa]cid|s[óo]nic|radiante|necr[óo]tic|arcan|m[áa]gic|ps[íi]quic|fuerza|veneno|sagrad|sombr)/i;
+// Adds n dice to the first NdX of s (removing the term at 0 dice); with no dice, adds n d6
+function shiftDice(s, n, minDice = 0) {
+  if (!n) return s;
+  const m = /(\d+)d(\d+)/i.exec(s);
+  if (!m) return n > 0 ? `${s} + ${n}d6` : s;
+  const k = Math.max(minDice, +m[1] + n);
+  if (k > 0) return s.slice(0, m.index) + `${k}d${m[2]}` + s.slice(m.index + m[0].length);
+  const left = s.slice(0, m.index).replace(/\s*\+\s*$/, ''), right = s.slice(m.index + m[0].length);
+  return (left ? left + right : right.replace(/^\s*\+\s*/, '')) || '0';
+}
+const diceOff = (sign, n) => sign ? (sign === '-' ? -n : +n) : 0;
 function resolveKeywords(text, mod, tier, damageFor, dd) {
   if (typeof text !== 'string' || !KEY_RE.test(text)) return text;
-  let out = text.replace(/\+MOD\b/g, mod);
-  if (dd) out = out.replace(/\bDD\b/g, dd);  // DD: the tier's damage dice
+  let out = text.replace(/(\+)?\bMOD(?:([+-])(\d+))?\b/g, (m, plus, sign, n) =>
+    plus || sign ? shiftDice(mod, diceOff(sign, n)) : m);
+  if (dd) out = out.replace(/\bDD(?:([+-])(\d+))?\b/g, (m, sign, n) => shiftDice(dd, diceOff(sign, n), 1));  // DD: the tier's damage dice
   out = out.replace(TIER_EXPR, m => {
     const e = m.replace(/TIER/g, tier).replace(/[x×]/g, '*');
     if (!/^[\d+\-*/ ().]+$/.test(e)) return m;
     try { return String(Math.max(0, Math.floor(Function('return (' + e + ')')()))); } catch (err) { return m; }
   });
-  return out.replace(/\b(LOW|MID|HIGH)\b((?:\s+(?:de\s+)?da[ñn]o)?\s+(?:de\s+)?([A-Za-zÁÉÍÓÚáéíóúñ]+))?/g, (m, t, rest, word) => {
+  return out.replace(/\b(LOW|MID|HIGH)(?:([+-])(\d+))?\b((?:\s+(?:de\s+)?da[ñn]o)?\s+(?:de\s+)?([A-Za-zÁÉÍÓÚáéíóúñ]+))?/g, (m, t, sign, n, rest, word) => {
     const physical = !word || !MAGIC_WORD.test(word);
-    return damageFor(t, physical) + (rest || '');
+    return shiftDice(damageFor(t, physical), diceOff(sign, n)) + (rest || '');
   });
 }
 // The text with keywords is kept in mod_tpl so it follows the level; the saved fields hold the resolved values.

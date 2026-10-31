@@ -1648,7 +1648,7 @@ function renderAbEdit() {
               <span style="font-size:11px;color:var(--text2)">Escalar al insertar</span>
             </label></div>
         </div>
-        <div class="field"><div class="lbl">Descripción <span style="font-weight:400;text-transform:none">· +MOD = bonus escalado · TIER = Tier de la criatura (TIER+1, TIERx2…) · DD = dados de daño del Tier · LOW/MID/HIGH = daño completo</span></div>
+        <div class="field"><div class="lbl">Descripción <span style="font-weight:400;text-transform:none">· +MOD = bonus escalado (+MOD+1 / +MOD-1 = un dado más / menos) · TIER = Tier de la criatura (TIER+1, TIERx2…) · DD = dados de daño del Tier · LOW/MID/HIGH = daño completo</span></div>
           <textarea class="inp" rows="3" oninput="S.abEdit.desc=this.value||undefined">${esc(a.desc||'')}</textarea></div>
         <div class="field"><div class="lbl">Movimiento</div>
           <input class="inp" value="${esc(a.move||'')}" oninput="S.abEdit.move=this.value||undefined"></div>
@@ -1749,22 +1749,36 @@ function confirmPick(id) {
 //   +MOD -> scaled bonus · TIER -> tier number, with arithmetic like the ranks' RANGO
 //   ("TIER+2", "TIERx2", "(TIER+1)d6") · LOW / MID / HIGH -> that damage tier's dice
 //   (one die fewer when the damage type that follows is a magic one) · DD -> the tier's damage dice
-const KEY_RE = /\+MOD\b|\bTIER\b|\bDD\b|\b(?:LOW|MID|HIGH)\b/;
+//   MOD, DD and LOW / MID / HIGH take a dice offset written without spaces: "+MOD+1", "DD-1", "HIGH+2"
+//   add or remove that many dice ("DD + 4", with spaces, still adds a flat 4)
+const KEY_RE = /\+MOD\b|\bMOD[+-]\d+\b|\bTIER\b|\bDD\b|\b(?:LOW|MID|HIGH)\b/;
 const KEY_FIELDS = ['name', 'desc', 'bonus', 'damage', 'range', 'area', 'save', 'move'];
 const TIER_EXPR = /\(\s*(?:\d+\s*[x×*]\s*)?TIER(?:\s*[+\-x×*/]\s*\d+)*\s*\)|(?:\d+\s*[x×*]\s*)?TIER(?:\s*[+\-x×*/]\s*\d+)*/g;
 const MAGIC_WORD = /^(?:fuego|fr[ií]o|el[ée]ctric|[áa]cid|s[óo]nic|radiante|necr[óo]tic|arcan|m[áa]gic|ps[íi]quic|fuerza|veneno|sagrad|sombr)/i;
+// Adds n dice to the first NdX of s (removing the term at 0 dice); with no dice, adds n d6
+function shiftDice(s, n, minDice = 0) {
+  if (!n) return s;
+  const m = /(\d+)d(\d+)/i.exec(s);
+  if (!m) return n > 0 ? `${s} + ${n}d6` : s;
+  const k = Math.max(minDice, +m[1] + n);
+  if (k > 0) return s.slice(0, m.index) + `${k}d${m[2]}` + s.slice(m.index + m[0].length);
+  const left = s.slice(0, m.index).replace(/\s*\+\s*$/, ''), right = s.slice(m.index + m[0].length);
+  return (left ? left + right : right.replace(/^\s*\+\s*/, '')) || '0';
+}
+const diceOff = (sign, n) => sign ? (sign === '-' ? -n : +n) : 0;
 function resolveKeywords(text, mod, tier, damageFor, dd) {
   if (typeof text !== 'string' || !KEY_RE.test(text)) return text;
-  let out = text.replace(/\+MOD\b/g, mod);
-  if (dd) out = out.replace(/\bDD\b/g, dd);  // DD: the tier's damage dice
+  let out = text.replace(/(\+)?\bMOD(?:([+-])(\d+))?\b/g, (m, plus, sign, n) =>
+    plus || sign ? shiftDice(mod, diceOff(sign, n)) : m);
+  if (dd) out = out.replace(/\bDD(?:([+-])(\d+))?\b/g, (m, sign, n) => shiftDice(dd, diceOff(sign, n), 1));  // DD: the tier's damage dice
   out = out.replace(TIER_EXPR, m => {
     const e = m.replace(/TIER/g, tier).replace(/[x×]/g, '*');
     if (!/^[\d+\-*/ ().]+$/.test(e)) return m;
     try { return String(Math.max(0, Math.floor(Function('return (' + e + ')')()))); } catch (err) { return m; }
   });
-  return out.replace(/\b(LOW|MID|HIGH)\b((?:\s+(?:de\s+)?da[ñn]o)?\s+(?:de\s+)?([A-Za-zÁÉÍÓÚáéíóúñ]+))?/g, (m, t, rest, word) => {
+  return out.replace(/\b(LOW|MID|HIGH)(?:([+-])(\d+))?\b((?:\s+(?:de\s+)?da[ñn]o)?\s+(?:de\s+)?([A-Za-zÁÉÍÓÚáéíóúñ]+))?/g, (m, t, sign, n, rest, word) => {
     const physical = !word || !MAGIC_WORD.test(word);
-    return damageFor(t, physical) + (rest || '');
+    return shiftDice(damageFor(t, physical), diceOff(sign, n)) + (rest || '');
   });
 }
 
