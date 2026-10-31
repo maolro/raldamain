@@ -15,8 +15,13 @@
     "magic": 0,
     "other": 0
   },
-  "immune": [],
-  "senses": "Olfato",
+  "immune": [
+    "Aflicciones",
+    "Mentales",
+    "Miedo",
+    "Ilusiones"
+  ],
+  "senses": "Olfato, Visión Verdadera",
   "speed": "Paso 1",
   "combat": {
     "reacciones": 1,
