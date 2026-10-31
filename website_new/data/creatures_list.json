@@ -286,5 +286,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "caballero_arcano",
+    "name": "Caballero Arcano",
+    "type": "Humanoide",
+    "level": 8,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
