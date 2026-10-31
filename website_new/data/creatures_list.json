@@ -295,5 +295,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "nigromante",
+    "name": "Nigromante",
+    "type": "Humanoide",
+    "level": 8,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
