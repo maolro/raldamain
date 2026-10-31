@@ -304,5 +304,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "barbaro",
+    "name": "Bárbaro",
+    "type": "Humanoide",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
