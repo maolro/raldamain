@@ -99,15 +99,6 @@
     "description": ""
   },
   {
-    "id": "comando",
-    "name": "Comando",
-    "type": "Humanoide",
-    "level": 5,
-    "size": "Mediano",
-    "image": "",
-    "description": ""
-  },
-  {
     "id": "elemental_de_planta",
     "name": "Elemental de Planta",
     "type": "Espíritu",
