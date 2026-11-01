@@ -167,7 +167,6 @@
       "rank": "IV",
       "title": "Rango IV",
       "draft": true,
-      "passive": "Hechizos Ilusorios Rango II cuestan -1 acción.",
       "abilities": [
         {
           "name": "Velo de Engaños",
@@ -210,7 +209,6 @@
       "rank": "V",
       "title": "Rango V",
       "draft": true,
-      "passive": "Hechizos Ilusorios Rango III cuestan -1 acción.",
       "abilities": [
         {
           "name": "Monstruo Ilusorio",
