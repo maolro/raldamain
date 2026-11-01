@@ -18,6 +18,7 @@ import json
 import re
 import sys
 import threading
+import unicodedata
 import webbrowser
 from pathlib import Path
 
@@ -376,6 +377,67 @@ def api_criatura_put(cid):
     return jsonify({"ok": True, "id": cid, "sim_id": sim_id, "git": git})
 
 
+def _creature_id(text: str) -> str:
+    """'Lobo de Prueba' -> 'lobo_de_prueba' (the same ids as the creature creator)."""
+    t = unicodedata.normalize("NFD", str(text or "")).encode("ascii", "ignore").decode().lower()
+    return re.sub(r"[^a-z0-9]+", "_", t).strip("_")[:60]
+
+
+@app.route("/api/criaturas/importar", methods=["POST"])
+def api_criaturas_importar():
+    """Creature .json files uploaded in the Bestiario (e.g. downloaded from the website's creature builder).
+    on_conflict: 'copy' (default: a new id like lobo_2), 'overwrite' or 'skip'. Imported creatures stay
+    off the website (published: false) unless they replace one that was published. One commit for the batch."""
+    body = request.get_json(force=True) or {}
+    mode = body.get("on_conflict") if body.get("on_conflict") in ("copy", "overwrite", "skip") else "copy"
+    results, files, names = [], [], []
+    taken = {q.stem for q in CREATURES.glob("*.json")}
+    for item in body.get("creatures") or []:
+        fname = str(item.get("file") or "")
+        d = item.get("data")
+        if not isinstance(d, dict) or not d.get("name") or not ("hits" in d or "actions" in d):
+            results.append({"file": fname, "ok": False, "error": "no parece una criatura (falta el nombre, los impactos o las acciones)"})
+            continue
+        cid = _creature_id(d.get("id") or d.get("name") or Path(fname).stem)
+        if not ID_RE.match(cid or ""):
+            results.append({"file": fname, "ok": False, "error": "no se pudo sacar un id válido del nombre"})
+            continue
+        replaced = cid in taken
+        if replaced and mode == "skip":
+            results.append({"file": fname, "ok": False, "id": cid, "skipped": True, "error": "ya existe: omitida"})
+            continue
+        if replaced and mode == "copy":
+            n = 2
+            while f"{cid[:56]}_{n}" in taken:
+                n += 1
+            cid, replaced = f"{cid[:56]}_{n}", False
+        old_pub = False
+        if replaced:
+            try:
+                old_pub = json.loads((CREATURES / f"{cid}.json").read_text(encoding="utf-8")).get("published") is True
+            except Exception:
+                pass
+        data = {**d, "id": cid, "published": old_pub}
+        CREATURES.mkdir(parents=True, exist_ok=True)
+        path = CREATURES / f"{cid}.json"
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        _list_creature(cid, data)
+        taken.add(cid)
+        files.append(str(path)); names.append(data["name"])
+        res = {"file": fname, "ok": True, "id": cid, "name": data["name"], "replaced": replaced}
+        try:  # does the simulator understand it?
+            website.creature_spec(path)
+        except Exception as e:
+            res["warning"] = f"el simulador no la puede leer: {e}"
+        results.append(res)
+    git = ""
+    if files:
+        shown = ", ".join(names[:5]) + (f" y {len(names) - 5} más" if len(names) > 5 else "")
+        git = git_push(files + [str(CREATURE_INDEX)], f"Import creatures: {shown}")
+        reload_roster()
+    return jsonify({"ok": True, "results": results, "git": git})
+
+
 @app.route("/api/criaturas/<cid>/publicada", methods=["PUT"])
 def api_criatura_publish(cid):
     """The Bestiario pop-up's Publicada tick: only the published flag changes."""
@@ -675,10 +737,14 @@ BESTIARIO = r"""
       <option value="hits">Orden: Impactos</option><option value="umbral">Orden: umbral General</option>
     </select>
     <span class="muted" id="count" style="margin-left:auto;font-size:0.85rem"></span>
+    <label class="btn-ghost" title="Añade criaturas desde archivos .json (por ejemplo, descargadas del Creador de Criaturas de la web). También puedes arrastrarlos aquí.">⬆ Subir .json
+      <input type="file" id="bx-upload" accept=".json,application/json" multiple hidden></label>
     <a class="btn-gold" href="/taller/criatura">✚ Nueva criatura</a>
   </div>
   <div id="types" class="filter-container"></div>
   <div id="errors"></div>
+  <div id="bx-imported"></div>
+  <div id="bx-drop" class="bx-drop" hidden>Suelta aquí los .json de criaturas para añadirlos al Bestiario</div>
   <div class="card-grid" id="grid"><p class="muted">Cargando criaturas…</p></div>
 </main>
 
@@ -736,6 +802,15 @@ BESTIARIO = r"""
   width: min(1000px, 100%); height: 94vh; display: flex; flex-direction: column; overflow: hidden; }
 .bx-bar { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-bottom: 1px solid #333;
   background: var(--secondary-black); flex-wrap: wrap; }
+.bx-drop { position: fixed; inset: 0; z-index: 60; display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,.75); border: 3px dashed var(--accent-gold); color: var(--accent-gold);
+  font-family: var(--font-heading); font-size: 1.4rem; pointer-events: none; }
+.bx-drop[hidden] { display: none; }
+.bx-import { background: var(--secondary-black); border: 1px solid #333; border-left: 3px solid var(--accent-gold); border-radius: 6px;
+  padding: 10px 14px; margin-bottom: 16px; font-size: 0.88rem; line-height: 1.6; }
+.bx-import .ok { color: #5fae6e; } .bx-import .bad { color: #e76a6a; } .bx-import .warn { color: #d8b34a; }
+.bx-import a { color: var(--accent-gold); cursor: pointer; text-decoration: underline; }
+.bx-card.new { border-color: var(--accent-gold); box-shadow: 0 0 0 1px var(--accent-gold); }
 .bx-pub { display: inline-flex; align-items: center; gap: 5px; font-size: 0.85rem; cursor: pointer; padding: 4px 8px;
   border: 1px solid #555; border-radius: 4px; }
 .bx-pub:has(input:checked) { border-color: var(--accent-gold); color: var(--accent-gold); }
@@ -801,7 +876,7 @@ function card(c) {
       ${a.bonus ? `<span class="d">${esc(a.bonus)}</span>` : ''}${a.damage ? ` · <span class="d">${esc(a.damage)}</span>` : ''}${a.area ? ` · ${esc(a.area)}` : ''}</div>`).join('')
     + (c.attacks.length > 3 ? `<div class="muted">+${c.attacks.length - 3} más…</div>` : '');
   return `
-  <article class="card bx-card" onclick="openCreature('${c.id}')" title="Ver ficha completa">
+  <article class="card bx-card${JUST_IMPORTED.has(c.id) ? ' new' : ''}" onclick="openCreature('${c.id}')" title="Ver ficha completa">
     <div class="bx-img ${c.image ? '' : 'none'}" ${c.image ? `style="background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.65)),url('/assets/images/creatures/${c.id}.jpg')"` : ''}>
       ${c.image ? `<span class="bx-badge" style="background:${levelColor(c.level)}">Nvl ${c.level}</span>` : ''}
     </div>
@@ -854,6 +929,59 @@ async function setPublished(box) {
   }
   box.disabled = false;
 }
+// ── Upload .json creatures into data/creatures ──
+let JUST_IMPORTED = new Set();
+async function importFiles(files) {
+  files = [...files].filter(f => /\.json$/i.test(f.name));
+  if (!files.length) return;
+  const items = [], bad = [];
+  for (const f of files) {
+    try { items.push({ file: f.name, data: JSON.parse(await f.text()) }); }
+    catch (e) { bad.push(`${f.name}: no es un .json válido`); }
+  }
+  // the ids they would get, to ask once about clashes with creatures already in the Bestiario
+  const idOf = d => String(d.id || d.name || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '').slice(0, 60);
+  const clash = items.filter(it => it.data && CREATURES.some(c => c.id === idOf(it.data)));
+  let mode = 'copy';
+  if (clash.length) {
+    const list = clash.map(it => `• ${it.data.name || it.file} (${idOf(it.data)})`).join('\n');
+    mode = confirm(`Ya hay criaturas con este id en el Bestiario:\n${list}\n\nAceptar = sobrescribirlas · Cancelar = añadirlas como copia (p. ej. lobo_2)`)
+      ? 'overwrite' : 'copy';
+  }
+  let d = { results: [] };
+  if (items.length) {
+    try {
+      const r = await fetch('/api/criaturas/importar', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ creatures: items, on_conflict: mode }) });
+      d = await r.json();
+      if (!r.ok) throw new Error(d.error || r.status);
+    } catch (e) { bad.push('No se pudo subir: ' + e.message); }
+  }
+  const done = (d.results || []).filter(x => x.ok);
+  JUST_IMPORTED = new Set(done.map(x => x.id));
+  const lines = done.map(x => `<span class="ok">✓</span> <a data-open="${esc(x.id)}">${esc(x.name)}</a> → data/creatures/${esc(x.id)}.json`
+      + (x.replaced ? ' (sobrescrita)' : '') + (x.warning ? ` <span class="warn">⚠ ${esc(x.warning)}</span>` : ''))
+    .concat((d.results || []).filter(x => !x.ok).map(x => `<span class="bad">✕</span> ${esc(x.file)}: ${esc(x.error)}`))
+    .concat(bad.map(b => `<span class="bad">✕</span> ${esc(b)}`));
+  const gitTxt = d.git === 'queued' ? ' · subiendo a GitHub…' : d.git && !['ok', 'nothing'].includes(d.git) ? ` · git: ${esc(d.git)}` : '';
+  document.getElementById('bx-imported').innerHTML = `<div class="bx-import"><b>${done.length} criatura(s) añadida(s)</b>
+    <span class="muted">— en pruebas: márcalas como Publicadas en su ficha para que salgan en la web${gitTxt}</span><br>${lines.join('<br>')}</div>`;
+  if (done.length) { await load(); if (typeof tlGit === 'function') tlGit(); }
+}
+document.getElementById('bx-upload').addEventListener('change', e => { importFiles(e.target.files); e.target.value = ''; });
+document.getElementById('bx-imported').addEventListener('click', e => { const a = e.target.closest('[data-open]'); if (a) openCreature(a.dataset.open); });
+// drag and drop anywhere on the page
+let dragDepth = 0;
+const hasFiles = e => [...(e.dataTransfer || {}).types || []].includes('Files');
+document.addEventListener('dragenter', e => { if (!hasFiles(e)) return; dragDepth++; document.getElementById('bx-drop').hidden = false; });
+document.addEventListener('dragleave', e => { if (!hasFiles(e)) return; if (--dragDepth <= 0) { dragDepth = 0; document.getElementById('bx-drop').hidden = true; } });
+document.addEventListener('dragover', e => { if (hasFiles(e)) e.preventDefault(); });
+document.addEventListener('drop', e => {
+  if (!hasFiles(e)) return;
+  e.preventDefault(); dragDepth = 0; document.getElementById('bx-drop').hidden = true;
+  importFiles(e.dataTransfer.files);
+});
 function closeCreature() {
   document.getElementById('bx-modal').hidden = true;
   document.getElementById('bx-frame').src = 'about:blank';
