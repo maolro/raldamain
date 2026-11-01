@@ -1,0 +1,153 @@
+{
+  "id": "armand_de_guern",
+  "name": "Armand de guern",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 5,
+  "description": "Guardaespaldas de los de Gint en Ustilus. Serio, de pocas palabras, con una debilidad por las cosas monas y la paciencia de un santo.",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+2d6",
+    "VOL": "+7+1d6",
+    "MEN": "+7+1d6"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 16,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 8",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "name": "Paso Terrestre",
+      "desc": "Puede moverse a través de roca y tierra empleando su velocidad de Excavar, ignorando así barreras y obstáculos a su paso.",
+      "ability_id": "cuerpo-de-tierra_1778707274474",
+      "tags": [
+        "Tierra"
+      ]
+    },
+    {
+      "name": "Infusión Arcana",
+      "tags": [
+        "Evocacion",
+        "Arcano"
+      ],
+      "bonus_scaled": false,
+      "attacks": 1,
+      "desc": "Sus ataques Físicos provocan 2d6 daño Fuego, Frío, Eléctrico o Ácido al impactar, y pueden herir a criaturas Incorpóreas como si fueran ataques mágicos. Puede además cambiar el tipo de daño de sus hechizos como acción bonus al que más le convenga.",
+      "ability_id": "ab_1793279602697",
+      "mod_tpl": {
+        "desc": "Sus ataques Físicos provocan DD daño Fuego, Frío, Eléctrico o Ácido al impactar, y pueden herir a criaturas Incorpóreas como si fueran ataques mágicos. Puede además cambiar el tipo de daño de sus hechizos como acción bonus al que más le convenga."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "name": "Rayo Arcano",
+      "tags": [
+        "Arcano",
+        "Ataque",
+        "Evocacion"
+      ],
+      "cost": 1,
+      "bonus_scaled": true,
+      "damage_tier": "MID",
+      "damage_base_type": "Arcano",
+      "attacks": 1,
+      "ability_id": "ab_1793279446716",
+      "damage": "2d6 + 5 Arcano",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "name": "Espada",
+      "tags": [
+        "Arma",
+        "Fisico",
+        "Ataque"
+      ],
+      "cost": 1,
+      "bonus_scaled": true,
+      "damage_tier": "MID",
+      "damage_base_type": "Cortante",
+      "attacks": 1,
+      "ability_id": "ab_1793105102759",
+      "damage": "3d6 + 5 Cortante",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "name": "Derribo",
+      "tags": [
+        "Marcial",
+        "Duelo",
+        "Mejora"
+      ],
+      "cost": 1,
+      "bonus_scaled": false,
+      "attacks": 1,
+      "desc": "Antes de atacar, puede moverse un paso y el objetivo deberá tener éxito en un tiro de salvación FÍS +7 + 2d6 o será Tropezado.",
+      "ability_id": "ab_1793013363262",
+      "mod_tpl": {
+        "desc": "Antes de atacar, puede moverse un paso y el objetivo deberá tener éxito en un tiro de salvación FÍS +MOD o será Tropezado."
+      }
+    },
+    {
+      "name": "Ola de Tierra",
+      "cost": 1,
+      "bonus": "+7+2d6",
+      "damage": "4d6 + 5 Contundente",
+      "move": 8,
+      "range": "1",
+      "area": "Linea 8",
+      "desc": "Todos los objetivos impactados son empujados 4 casillas y deben tener éxito en un tiro de salvación Físico o caen tropezados. Este ataque crea terreno difícil por donde pasa y elimina otros efectos en el suelo. ",
+      "tags": [
+        "Tierra",
+        "Ataque",
+        "Area",
+        "Maniobra"
+      ],
+      "ability_id": "ola-de-tierra_1778755219012"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo. Solo puede emplear esta habilidad si está tocando la tierra.",
+      "cost": 1,
+      "tags": [
+        "Tierra",
+        "Sanacion"
+      ],
+      "name": "Vínculo con la Tierra",
+      "ability_id": "vinculo-con-la-tierra_1778712119755"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "tier": "2",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "mid",
+    "MEN": "mid"
+  },
+  "published": false
+}
