@@ -67,7 +67,8 @@
           ],
           "cost": "1 Chi",
           "desc": "Proyectas un hechizo ilusorio en la mente de un objetivo, haciendo así que solo pueda verla él. Este deberá tener éxito en un tiro de salvación Mental y si falla la Ilusión pasará a ser un efecto Mental, haciendo así que no pueda ser desmentida por otros y solo pueda repetir el tiro si la ilusión contradice ampliamente la realidad.",
-          "empower": "Afecta a un objetivo adicional."
+          "empower": "Afecta a un objetivo adicional.",
+          "show_mod": true
         }
       ]
     },
