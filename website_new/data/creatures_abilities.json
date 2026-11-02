@@ -3281,6 +3281,6 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "El daño de sus ataques no se puede curar y provocan el efecto Herido I. Este efecto cuenta como un efecto de estado de categoría I, y se puede quitar con efectos de sanación."
+    "desc": "El daño de sus ataques no se puede curar. Además, al impactar con un ataque de arma o natural el afectado deberá tener éxito en un tiro VOL +MOD o sufre una Maldición, la cual le provoca DD daño Necrótico cada ronda y Enfermado I. Ambos efectos se pueden eliminar como si fueran un efecto de estado de categoría I. "
   }
 ]
