@@ -132,12 +132,6 @@
     "cost": "1"
   },
   {
-    "name": "Tácticas en Manada",
-    "desc": "Su iniciativa será siempre la más alta entre sus aliados y al atacar junto a ellos el objetivo solo podrá tirar defensa una vez como si fuera una secuencia.",
-    "id": "tacticas-en-manada_1778751341323",
-    "type": "passive"
-  },
-  {
     "name": "Toque Sanador",
     "desc": "El objetivo recupera 1 Impacto o se recupera de un efecto de estado.",
     "range": "Adyacente",
