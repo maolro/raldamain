@@ -153,23 +153,6 @@
     "ability_id": "vinculo-con-la-tierra_1778712119755"
   },
   {
-    "name": "Pedrada",
-    "cost": 1,
-    "bonus": "+7 + 2d6",
-    "range": "8",
-    "area": "Radio 2",
-    "damage": "5d8 + 7 Contundente",
-    "desc": "Todos los impactados deben tener éxito en un tiro de salvación de Voluntad o son aturdidos una ronda. Si impacta a un objetivo volador, caerá al suelo y sufrirá el daño de caída correspondiente. ",
-    "ability_id": "pedrada_1778747712364",
-    "type": "action",
-    "tags": [
-      "Tierra",
-      "Ataque",
-      "Area"
-    ],
-    "id": "pedrada_1778747712364"
-  },
-  {
     "name": "Torbellino de Fuego",
     "cost": 1,
     "bonus": "+11+3d6",
