@@ -54,14 +54,14 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +7 + 2d6 o sufre un Veneno Mortal. Mientras permanezca envenenado, sufre 2d6 daño Necrótico y Enfermado I, y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo.",
-      "name": "Veneno Mortal",
+      "desc": "El daño de sus ataques no se puede curar. Además, al impactar con un ataque de arma o natural el afectado deberá tener éxito en un tiro VOL +7 + 2d6 o sufre una Maldición, la cual le provoca 2d6 daño Necrótico cada ronda y Enfermado I. Ambos efectos se pueden eliminar como si fueran un efecto de estado de categoría I. ",
+      "name": "Heridas Infernales",
       "tags": [
-        "Afliccion"
+        "Infernal"
       ],
-      "ability_id": "ab_1793203194188",
+      "ability_id": "ab_1793631318284",
       "mod_tpl": {
-        "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Mortal. Mientras permanezca envenenado, sufre DD daño Necrótico y Enfermado I, y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo."
+        "desc": "El daño de sus ataques no se puede curar. Además, al impactar con un ataque de arma o natural el afectado deberá tener éxito en un tiro VOL +MOD o sufre una Maldición, la cual le provoca DD daño Necrótico cada ronda y Enfermado I. Ambos efectos se pueden eliminar como si fueran un efecto de estado de categoría I. "
       }
     }
   ],
