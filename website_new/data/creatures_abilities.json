@@ -3177,5 +3177,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Crea un muro que protege a todos en su área, absorbiendo RANGOx3 puntos de daño e impidiendo el paso de efectos gaseosos. Todos los enemigos que le hagan ataques cuerpo a cuerpo deben tirar FÍS +MOD o sufren LOW daño Cortante y son empujados un paso."
+  },
+  {
+    "id": "ab_1793630357969",
+    "name": "Tajo de los Vientos",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Aire"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Este ataque ignora ocultamiento."
   }
 ]
