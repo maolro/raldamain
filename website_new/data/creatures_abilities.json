@@ -581,14 +581,6 @@
     "tier": "I"
   },
   {
-    "name": "Explosión Mortal",
-    "desc": "Al morir, hace un ataque inmediato que provoca X daño Y",
-    "cost": 1,
-    "bonus": "+MOD",
-    "id": "explosion-mortal_1792755387840",
-    "type": "reaction"
-  },
-  {
     "id": "ab_1793008689989",
     "name": "Mordisco",
     "type": "action",
