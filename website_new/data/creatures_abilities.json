@@ -50,17 +50,6 @@
     "tier": "II"
   },
   {
-    "name": "Absorber Fuego",
-    "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra un lugar en llamas o es impactado por un efecto de Fuego que atraviese su umbral.",
-    "cost": 1,
-    "id": "absorber-elemento_1778692436921",
-    "type": "reaction",
-    "tags": [
-      "Fuego",
-      "Sanacion"
-    ]
-  },
-  {
     "name": "Cuerpo de Fuego",
     "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Fuego, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
     "id": "cuerpo-de-fuego_1778692691656",
@@ -118,17 +107,6 @@
     "ability_id": "torbellino-viviente_1778706845890",
     "damage_tier": "MID",
     "damage_base_type": "Cortante"
-  },
-  {
-    "name": "Muro de Aire",
-    "cost": 1,
-    "desc": "Aumenta todos sus umbrales de daño en 5. Los atacantes cuerpo a cuerpo sufren 4d8 daño Cortante.",
-    "id": "muro-de-aire_1778707098298",
-    "type": "reaction",
-    "tags": [
-      "Aire"
-    ],
-    "ability_id": "muro-de-aire_1778707098298"
   },
   {
     "name": "Paso Terrestre",
