@@ -3114,5 +3114,26 @@
     "move": "",
     "attacks": 1,
     "desc": "El objetivo queda Enredado hasta que escape. Si impacta a un objetivo volador, este deberá tener éxito en un tiro FÍS +MOD o caerá al suelo, y no podrá volver a volar hasta que escape."
+  },
+  {
+    "id": "ab_1793623155656",
+    "name": "Cuerpo de Roca",
+    "type": "passive",
+    "tier": "I",
+    "tags": [
+      "Tierra"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Tiene Inmunidad a Aflicciones, Heridas, Necrótico, Mentales y Miedo, además que aumenta su Umbral Mágico por un paso. Recibe velocidad de Excavar y Escalada 1, puede pasar a través de superficies rocosas como si no estuvieran además que tiene Vista a Ciegas a distancia media con todo objetivo en contacto con la tierra. No obstante, reducirá su umbral al daño Sónico por un paso."
   }
 ]
