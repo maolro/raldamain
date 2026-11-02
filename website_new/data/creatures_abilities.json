@@ -3367,5 +3367,26 @@
     "move": "",
     "attacks": 1,
     "desc": "El objetivo sufre Fatiga I durante una ronda. Si afecta a un objeto, este quedará Roto (en el caso que sea mágico, debe superar una dificultad escogida por el DJ tirando +MOD)"
+  },
+  {
+    "id": "ab_1793660429615",
+    "name": "Ralentizar",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Temporal"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "VOL +MOD",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los afectados sufren Ralentizado I hasta que salgan del área afectada y fallarán automáticamente el primer ataque que hagan en ella. Este hechizo permanecerá sobre el cmapo de batalla hasta que pierda la concentración, afectando de nuevo a cada criatura que entre ahí y otorgando Desventaja a ataques a distancia lanzados hacia ella.  "
   }
 ]
