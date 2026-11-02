@@ -3221,5 +3221,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Los afectados son empujados dos pasos y quedan tropezados."
+  },
+  {
+    "id": "ab_1793631060509",
+    "name": "Agarre del Aire",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Aire"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "FÍS +MOD",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo está Enredado y es arrastrado un paso en cualquier dirección, sufriendo LOW daño Contundente si choca con una superficie sólida. Si ya está Enredado, pasará entonces a estar Agarrado."
   }
 ]
