@@ -9,6 +9,12 @@ Taller de Raldamain — local app for stat blocks and combat testing.
   Simulador  fights between stat blocks, bestiary creatures and the simulator's
              own YAML characters / monsters (combat-simulator/raldamain).
 
+Data: stat blocks, creatures, ranks and the builder files are read from the
+SQLite mirror of data/ (tools/raldamain_db.py). Saves write the .json (the source
+of truth and the git history) and then record it in the database; anything that
+changes the .json files from outside (git rollback, pull, other editors) is picked
+up automatically before the next read.
+
 Usage:  python tools/taller.py      → http://localhost:5180
         (TALLER_PORT=<n> for another port, TALLER_NO_BROWSER=1 to not open the browser)
 Needs:  pip install flask pyyaml
@@ -40,6 +46,7 @@ sys.path.insert(0, str(BASE / "combat-simulator"))
 
 from raldamain.data import website                       # noqa: E402
 from git_sync import git_push, git_status               # noqa: E402  (tools/ is on the path: this file's folder)
+import raldamain_db                                      # noqa: E402
 from raldamain.data.loader import (                      # noqa: E402
     ROSTER_ERRORS, load_conditions, load_roster, make_side, prepared_spec, reload_roster, set_roster_sources)
 from raldamain.cli.parallel import run_batch_parallel   # noqa: E402
@@ -49,6 +56,11 @@ from raldamain.metrics.collector import aggregate, fight_metrics, format_report 
 # The Taller works only with the website's stat blocks and bestiary
 # (the simulator's own YAML characters / monsters stay available to the CLI)
 set_roster_sources(yaml=False, website=True)
+
+# Everything below reads the data from the SQLite mirror (synced with the .json files on start)
+DB = raldamain_db.Store(BASE)
+DB.sync()
+website.set_store(DB)
 
 app = Flask(__name__)
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]{0,59}$")
@@ -78,6 +90,11 @@ def website_file(path):
     target = BASE / path
     if not target.is_file() and (BASE / f"{path}.html").is_file():
         path = f"{path}.html"
+    if path.startswith("data/") and path.endswith(".json"):
+        DB.ensure_synced()
+        raw = DB.raw(path)  # the Creador / creature pages get their data from the database
+        if raw is not None:
+            return Response(raw, mimetype="application/json", headers={"Cache-Control": "no-cache"})
     if not (BASE / path).is_file():
         abort(404)
     if path == "templates/view-criatura.html" and request.args.get("embed"):
@@ -105,8 +122,16 @@ def api_taller():
     return jsonify({"ok": True})
 
 
-def ficha_summary(p: Path) -> dict:
-    d = json.loads(p.read_text(encoding="utf-8"))
+def _rel(p: Path) -> str:
+    return p.relative_to(BASE).as_posix()
+
+
+def ficha_summary(row) -> dict:
+    """``row``: a stat block's row from the database (DB.files_of)."""
+    p = BASE / row["path"]
+    if row["error"]:
+        raise ValueError(row["error"])
+    d = json.loads(row["raw"])
     ranks = [{"id": r.get("id"), "name": r.get("name") or r.get("id"), "rank": r.get("rank"),
               "category": r.get("category", "")}
              for r in d.get("ranks") or [] if r.get("id") and r.get("rank")]
@@ -117,7 +142,7 @@ def ficha_summary(p: Path) -> dict:
            "tier": tier_for(d.get("level") or 1), "race": (d.get("race") or {}).get("name", ""),
            "stats": {website.STAT_ABBR[k]: (v or {}).get("value") for k, v in (d.get("stats") or {}).items()
                      if k in website.STAT_ABBR},
-           "ranks": ranks, "gear": gear, "modified": p.stat().st_mtime}
+           "ranks": ranks, "gear": gear, "modified": row["mtime"]}
     try:  # combat numbers, as the simulator sees them
         spec = prepared_spec(p.stem)  # cached; with rank passives, as simulated
         out["combat"] = {"impactos": spec["impactos"], "chi": spec["chi"], "umbrales": spec["umbrales"],
@@ -129,22 +154,23 @@ def ficha_summary(p: Path) -> dict:
 
 @app.route("/api/fichas")
 def api_fichas():
-    STATBLOCKS.mkdir(parents=True, exist_ok=True)
+    DB.ensure_synced()
     items, errors = [], []
-    for p in sorted(STATBLOCKS.glob("*.json")):
+    for row in DB.files_of("statblock"):
         try:
-            items.append(ficha_summary(p))
+            items.append(ficha_summary(row))
         except Exception as e:
-            errors.append(f"{p.name}: {e}")
+            errors.append(f"{Path(row['path']).name}: {e}")
     return jsonify({"fichas": items, "errors": errors})
 
 
 @app.route("/api/fichas/<fid>", methods=["GET"])
 def api_ficha_get(fid):
-    p = STATBLOCKS / f"{fid}.json"
-    if not ID_RE.match(fid) or not p.exists():
+    DB.ensure_synced()
+    raw = DB.raw(f"data/statblocks/{fid}.json") if ID_RE.match(fid) else None
+    if raw is None:
         abort(404)
-    return Response(p.read_text(encoding="utf-8"), mimetype="application/json")
+    return Response(raw, mimetype="application/json")
 
 
 @app.route("/api/fichas/<fid>", methods=["PUT"])
@@ -156,6 +182,7 @@ def api_ficha_put(fid):
         return jsonify({"error": "no parece una ficha del Creador"}), 400
     STATBLOCKS.mkdir(parents=True, exist_ok=True)
     (STATBLOCKS / f"{fid}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    DB.record([STATBLOCKS / f"{fid}.json"])
     reload_roster()
     return jsonify({"ok": True, "id": fid})
 
@@ -166,6 +193,7 @@ def api_ficha_delete(fid):
     if not ID_RE.match(fid) or not p.exists():
         abort(404)
     p.unlink()
+    DB.record([p])
     reload_roster()
     return jsonify({"ok": True})
 
@@ -173,13 +201,22 @@ def api_ficha_delete(fid):
 # ─────────────────────────────────────────────────────────────── bestiario API
 
 def published_ids() -> set:
-    return {e.get("id") for e in _read_json(CREATURE_INDEX, [])}
+    DB.ensure_synced()
+    return {r["id"] for r in DB.query("SELECT id FROM creature_index")}
 
 
-def creature_summary(p: Path, sim_ids: dict[str, str], listed: set | None = None) -> dict:
+#: creature_spec per file, by content hash: {path: (sha1, spec)}
+_SPECS: dict[str, tuple[str, dict]] = {}
+
+
+def creature_summary(row, sim_ids: dict[str, str], listed: set | None = None) -> dict:
     """At-a-glance numbers for a bestiary creature, in the same units as the
-    fichas (Impactos, umbrales and saves as the simulator reads them)."""
-    d = json.loads(p.read_text(encoding="utf-8"))
+    fichas (Impactos, umbrales and saves as the simulator reads them).
+    ``row``: the creature's row from the database (DB.files_of)."""
+    p = BASE / row["path"]
+    if row["error"]:
+        raise ValueError(row["error"])
+    d = json.loads(row["raw"])
     level = int(d.get("level") or 1)
     combat = d.get("combat") or {}
     attacks = [{"name": a.get("name", ""), "bonus": a.get("bonus", ""), "damage": a.get("damage", ""),
@@ -196,11 +233,16 @@ def creature_summary(p: Path, sim_ids: dict[str, str], listed: set | None = None
            "attacks": attacks, "defenses": defenses,
            "traits": [t.get("name", "") for t in d.get("traits") or []],
            "image": (BASE / "assets" / "images" / "creatures" / f"{p.stem}.jpg").exists(),
-           "sim_id": sim_ids.get(p.name), "modified": p.stat().st_mtime,
+           "sim_id": sim_ids.get(p.name), "modified": row["mtime"],
            # on the website's Bestiario only if it is in creatures_list.json
            "published": p.stem in (listed if listed is not None else published_ids())}
-    try:  # combat numbers, as the simulator sees them
-        spec = website.creature_spec(p)
+    try:  # combat numbers, as the simulator sees them (converted again only when the file changes)
+        hit = _SPECS.get(row["path"])
+        if hit and hit[0] == row["sha1"]:
+            spec = hit[1]
+        else:
+            spec = website.creature_spec(p, d)
+            _SPECS[row["path"]] = (row["sha1"], spec)
         out["combat"] = {"impactos": spec["impactos"], "umbrales": spec["umbrales"], "saves": spec["saves"],
                          "initiative": spec["initiative"]}
     except Exception as e:
@@ -215,11 +257,11 @@ def api_bestiario():
                if s.get("origin") == "bestiario" and s.get("source")}
     items, errors = [], []
     listed = published_ids()
-    for p in sorted(CREATURES.glob("*.json")):
+    for row in DB.files_of("creature"):
         try:
-            items.append(creature_summary(p, sim_ids, listed))
+            items.append(creature_summary(row, sim_ids, listed))
         except Exception as e:
-            errors.append(f"{p.name}: {e}")
+            errors.append(f"{Path(row['path']).name}: {e}")
     return jsonify({"creatures": items, "errors": errors})
 
 
@@ -352,10 +394,11 @@ def _read_json(path, default):
 
 @app.route("/api/criaturas/<cid>", methods=["GET"])
 def api_criatura_get(cid):
-    p = CREATURES / f"{cid}.json"
-    if not ID_RE.match(cid) or not p.exists():
+    DB.ensure_synced()
+    raw = DB.raw(f"data/creatures/{cid}.json") if ID_RE.match(cid) else None
+    if raw is None:
         abort(404)
-    return Response(p.read_text(encoding="utf-8"), mimetype="application/json")
+    return Response(raw, mimetype="application/json")
 
 
 @app.route("/api/criaturas/<cid>", methods=["PUT"])
@@ -370,6 +413,7 @@ def api_criatura_put(cid):
     CREATURES.mkdir(parents=True, exist_ok=True)
     (CREATURES / f"{cid}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     _list_creature(cid, data)
+    DB.record([CREATURES / f"{cid}.json", CREATURE_INDEX])
     git = git_push([str(CREATURES / f"{cid}.json"), str(CREATURE_INDEX)], f"Update creature: {data.get('name', cid)}")
     reload_roster()
     sim_id = next((sid for sid, s in load_roster().items()
@@ -433,6 +477,7 @@ def api_criaturas_importar():
     git = ""
     if files:
         shown = ", ".join(names[:5]) + (f" y {len(names) - 5} más" if len(names) > 5 else "")
+        DB.record(files + [str(CREATURE_INDEX)])
         git = git_push(files + [str(CREATURE_INDEX)], f"Import creatures: {shown}")
         reload_roster()
     return jsonify({"ok": True, "results": results, "git": git})
@@ -448,6 +493,7 @@ def api_criatura_publish(cid):
     data["published"] = (request.get_json(force=True) or {}).get("published") is True
     p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     _list_creature(cid, data)
+    DB.record([p, CREATURE_INDEX])
     git = git_push([str(p), str(CREATURE_INDEX)],
                    f"{'Publish' if data['published'] else 'Unpublish'} creature: {data.get('name', cid)}")
     return jsonify({"ok": True, "published": data["published"], "git": git})
@@ -475,8 +521,18 @@ def api_git():
 
 @app.route("/api/criatura-biblioteca")
 def api_criatura_biblioteca():
-    return jsonify({"abilities": _read_json(CREATURE_ABILITIES, []),
-                    "scaling": _read_json(CREATURE_SCALING, None)})
+    DB.ensure_synced()
+    return jsonify({"abilities": DB.doc(_rel(CREATURE_ABILITIES), []),
+                    "scaling": DB.doc(_rel(CREATURE_SCALING), None)})
+
+
+@app.route("/api/db")
+def api_db():
+    """Is the SQLite mirror the same as the .json files? (imports whatever changed first)"""
+    synced = DB.sync()
+    out = DB.check()
+    out.update(db=str(DB.path), revision=DB.revision(), synced=synced)
+    return jsonify(out)
 
 
 # ─────────────────────────────────────────────────────────────── simulator API

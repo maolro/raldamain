@@ -27,6 +27,7 @@ LIBRARY_ONLY = {"id", "tier"}
 
 sys.path.insert(0, str(Path(__file__).parent))
 from git_sync import git_push as _git_sync_push, git_status  # noqa: E402
+import raldamain_db  # noqa: E402
 
 # ── helpers ───────────────────────────────────────────────────────────────────
 
@@ -71,7 +72,9 @@ def _propagate_ability(aid, ab_data):
     return changed
 
 def _git_push(files, message):
-    """Commit only ``files`` and push (shared helper with the branch guard)."""
+    """After every save: record ``files`` in the Taller's SQLite mirror, then commit
+    only them and push (shared helper with the branch guard)."""
+    raldamain_db.record(files)
     return _git_sync_push(files, message)
 
 

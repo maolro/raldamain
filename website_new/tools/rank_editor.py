@@ -26,6 +26,7 @@ RANKS_LIST = BASE / "data" / "ranks_list.json"
 # Guardar commits the rank (+ ranks_list.json) and pushes it (see git_sync.py for the branch guard)
 sys.path.insert(0, str(Path(__file__).parent))
 from git_sync import GIT_BRANCH, current_branch as _current_branch, git_push as _git_push, git_status as _git_status  # noqa: E402
+import raldamain_db  # noqa: E402  (the Taller's SQLite mirror of data/)
 
 def _is_draft(obj):
     return obj.get("draft", True) is not False
@@ -66,6 +67,7 @@ def api_save(rid):
     data = request.get_json(force=True)
     p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     _sync_ranks_list(data)
+    raldamain_db.record([p, RANKS_LIST])
     git = _git_push([str(p), str(RANKS_LIST)], f"Update rank: {data.get('title', rid)}")
     return jsonify({"ok": True, "git": git})
 
@@ -111,6 +113,7 @@ def api_delete(rid):
     except Exception:
         pass
     files = ([str(p)] if tracked else []) + [str(RANKS_LIST)]
+    raldamain_db.record([p, RANKS_LIST])
     git = _git_push(files, f"Delete rank: {title}")
     return jsonify({"ok": True, "git": git})
 

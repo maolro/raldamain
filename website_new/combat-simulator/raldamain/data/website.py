@@ -12,6 +12,10 @@ single source of truth:
 * ``data/creatures/*.json`` -- the bestiary (Impactos, Umbrales, saves, actions
   with ``bonus`` / ``damage`` / ``save``).
 
+The Taller reads the same files from its SQLite mirror instead (``set_store``,
+see tools/raldamain_db.py); without a store -- the CLI, the browser -- they are
+read from disk.
+
 Whatever cannot be expressed in the effect DSL is emitted with
 ``implemented: false`` so reports list it as "no modelado" instead of silently
 dropping it.
@@ -253,15 +257,45 @@ def roman_level(text: str) -> int:
 
 _RANKS: dict[str, Any] = {"key": None, "value": {}}
 
+#: Optional SQLite mirror of the data folder (tools/raldamain_db.Store); None = read the .json files
+STORE: Any = None
+
+
+def set_store(store: Any) -> None:
+    """Read stat blocks, creatures, ranks and equipment from ``store`` from now on."""
+    global STORE
+    STORE = store
+    _RANKS.update(key=None)
+    _CONVERTED.clear()
+
+
+def _store_files(folder: Path) -> list[tuple[Path, Any, Any]]:
+    """(path, change key, data loader) of each .json of a data folder, from the store."""
+    kind = {STATBLOCKS_DIR: "statblock", CREATURES_DIR: "creature", RANKS_DIR: "rank"}[folder]
+    STORE.ensure_synced()
+    return [(WEBSITE_DIR / r["path"], (r["sha1"], r["mtime_ns"]),
+             (lambda raw=r["raw"], err=r["error"]: json.loads(raw) if not err else _bad_json(err)))
+            for r in STORE.files_of(kind)]
+
+
+def _bad_json(error: str) -> Any:
+    raise ValueError(error)
+
 
 def rank_data() -> dict[str, dict[str, Any]]:
     """Website rank files by id, re-read only when the ranks folder changes."""
-    key = cache.fingerprint([RANKS_DIR])
+    if STORE is not None:
+        STORE.ensure_synced()
+        key = ("store", STORE.fingerprint("rank"))
+    else:
+        key = cache.fingerprint([RANKS_DIR])
     if _RANKS["key"] != key:
         out = {}
-        for p in sorted(RANKS_DIR.glob("*.json")):
+        files = (_store_files(RANKS_DIR) if STORE is not None else
+                 [(p, None, lambda p=p: cache.load_json(p)) for p in sorted(RANKS_DIR.glob("*.json"))])
+        for p, _key, load in files:
             try:
-                d = cache.load_json(p)
+                d = load()
                 out[d.get("id", p.stem)] = d
             except Exception:
                 continue
@@ -295,6 +329,8 @@ def rank_main_stats(rank_id: str) -> list[str]:
 
 def equipment_abilities() -> dict[str, Any]:
     try:
+        if STORE is not None:
+            return STORE.doc(EQUIPMENT_ABILITIES.relative_to(WEBSITE_DIR).as_posix(), {})
         return cache.load_json(EQUIPMENT_ABILITIES)
     except Exception:
         return {}
@@ -352,8 +388,10 @@ def _weapon_roll(tags: str, stats: dict[str, int], ranks: dict[str, int],
     return max(fue, des), max(fue, des)
 
 
-def character_spec(path: Path) -> dict[str, Any]:
-    d = json.loads(path.read_text(encoding="utf-8"))
+def character_spec(path: Path, d: dict[str, Any] | None = None) -> dict[str, Any]:
+    """``d``: the file's data when already loaded (from the store); else read from ``path``."""
+    if d is None:
+        d = json.loads(path.read_text(encoding="utf-8"))
     stats: dict[str, int] = {}
     for key, abbr in STAT_ABBR.items():
         v = ((d.get("stats") or {}).get(key) or {}).get("value", 0)
@@ -573,8 +611,10 @@ def _creature_action(a: dict[str, Any], idx: int, is_reaction: bool = False) -> 
     return base
 
 
-def creature_spec(path: Path) -> dict[str, Any]:
-    d = json.loads(path.read_text(encoding="utf-8"))
+def creature_spec(path: Path, d: dict[str, Any] | None = None) -> dict[str, Any]:
+    """``d``: the file's data when already loaded (from the store); else read from ``path``."""
+    if d is None:
+        d = json.loads(path.read_text(encoding="utf-8"))
     if "hits" not in d:
         raise ValueError("formato antiguo de criatura (sin 'hits')")
 
@@ -663,6 +703,9 @@ def creature_spec(path: Path) -> dict[str, Any]:
 
 def website_fingerprint() -> tuple:
     """Changes whenever a stat block, creature, rank or equipment file changes."""
+    if STORE is not None:
+        STORE.ensure_synced()
+        return ("store", STORE.revision())
     return cache.fingerprint([STATBLOCKS_DIR, CREATURES_DIR, RANKS_DIR, EQUIPMENT_ABILITIES])
 
 
@@ -676,22 +719,29 @@ def website_roster() -> tuple[dict[str, dict[str, Any]], list[str]]:
     Each file is converted once and reconverted only when it changes (or, for
     stat blocks, when the rank / equipment data they depend on changes).
     """
-    shared = cache.fingerprint([RANKS_DIR, EQUIPMENT_ABILITIES])
+    if STORE is not None:
+        shared = STORE.fingerprint("rank", "document")  # ranks + builder/equipment-abilities.json
+    else:
+        shared = cache.fingerprint([RANKS_DIR, EQUIPMENT_ABILITIES])
     roster: dict[str, dict[str, Any]] = {}
     errors: list[str] = []
     seen: set[str] = set()
     for folder, convert in ((STATBLOCKS_DIR, character_spec), (CREATURES_DIR, creature_spec)):
-        if not folder.exists():
+        if STORE is not None:
+            files = _store_files(folder)
+        elif folder.exists():
+            files = [(p, None, None) for p in sorted(folder.glob("*.json"))]
+        else:
             continue
-        for p in sorted(folder.glob("*.json")):
+        for p, file_key, load in files:
             seen.add(str(p))
-            key = (cache.file_key(p), shared if convert is character_spec else None)
+            key = (file_key or cache.file_key(p), shared if convert is character_spec else None)
             hit = _CONVERTED.get(str(p))
             if hit and hit[0] == key:
                 spec = hit[1]
             else:
                 try:
-                    spec = convert(p)
+                    spec = convert(p, load()) if load else convert(p)
                 except Exception as e:  # keep going: one broken file must not hide the rest
                     errors.append(f"{p.name}: {e}")
                     continue

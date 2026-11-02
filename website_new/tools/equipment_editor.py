@@ -21,6 +21,7 @@ except ImportError:
 
 sys.path.insert(0, str(Path(__file__).parent))
 from git_sync import git_push, git_status  # noqa: E402
+import raldamain_db  # noqa: E402  (the Taller's SQLite mirror of data/)
 
 app = Flask(__name__)
 BASE = Path(__file__).parent.parent
@@ -42,6 +43,7 @@ def api_save():
     data = request.get_json(force=True)
     EQUIPMENT.write_text(json.dumps(data["equipment"], ensure_ascii=False, indent=4), encoding="utf-8")
     ABILITIES.write_text(json.dumps(data["abilities"], ensure_ascii=False, indent=4), encoding="utf-8")
+    raldamain_db.record([EQUIPMENT, ABILITIES])
     what = data.get("label") or "equipamiento"
     git = git_push([str(EQUIPMENT), str(ABILITIES)], f"Update equipment: {what}")
     return jsonify({"ok": True, "git": git})
