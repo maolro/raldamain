@@ -43,7 +43,7 @@
   },
   "traits": [
     {
-      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Fuego, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 2d8 + 7  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Fuego, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo. Puede también obtener la habilidad Absorber Fuego sin importar su nivel.",
       "name": "Cuerpo de Fuego",
       "tags": [
         "Fuego"
@@ -51,7 +51,8 @@
       "ability_id": "cuerpo-de-fuego_1778692691656",
       "mod_tpl": {
         "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Fuego, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo."
-      }
+      },
+      "type": "passive"
     },
     {
       "attacks": 1,
