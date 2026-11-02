@@ -261,17 +261,6 @@
     "type": "reaction"
   },
   {
-    "desc": "Obtiene +10 en un tiro de salvación contra un hechizo, o un objetivo a distancia corta debe tirar MEN +15+3d6 o no podrá emplear hechizos como reacciones defensivas.",
-    "cost": 1,
-    "name": "Aura del Caos",
-    "tags": [
-      "Abisal"
-    ],
-    "ability_id": "aura-del-caos_1784290282931",
-    "id": "aura-del-caos_1784290282931",
-    "type": "reaction"
-  },
-  {
     "name": "Golpe por Golpe",
     "desc": "Falla automáticamente un tiro defensivo para golpear al atacante sin que pueda defenderse. El atacante puede escoger fallar para no recibir el impacto.",
     "id": "golpe-por-golpe_1788189327012",
