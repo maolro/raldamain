@@ -61,7 +61,7 @@
   },
   {
     "name": "Cuerpo Líquido",
-    "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) y moja todos los espacios por los que pasa. No obstante, al estar hecho de Agua quedará congelado una ronda si sufre daño Frío y un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
+    "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Aflicciones, Mentales y Miedo, y moja todos los espacios por los que pasa. No obstante, al estar hecho de Agua quedará congelado una ronda si sufre daño Frío y un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo. Puede también obtener la habilidad Absorber Agua sin importar su nivel.",
     "id": "cuerpo-liquido_1778692889955",
     "type": "passive",
     "tags": [
