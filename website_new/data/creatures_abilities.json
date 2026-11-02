@@ -383,7 +383,8 @@
     "cost": 1,
     "desc": "Repite un tiro de Salvación o anula un efecto de Repetir sobre él.",
     "id": "golpe-de-fortuna_1791476584028",
-    "type": "reaction"
+    "type": "reaction",
+    "tier": "I"
   },
   {
     "id": "ab_1791812854218",
