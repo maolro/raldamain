@@ -74,7 +74,7 @@
       "bonus_scaled": true,
       "cost": 1,
       "damage_base_type": "Cortante",
-      "name": "Tridente",
+      "name": "Mandoble",
       "tags": [
         "Arma",
         "Fisico",
@@ -90,16 +90,32 @@
     },
     {
       "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "El objetivo está Enredado (FÍS +9 + 2d6 para escapar), o Agarrado si ya se encuentra Enredado. Mientras se encuentre Enredado o Agarrado por este efecto, no podrá lanzar hechizos. ",
+      "name": "Retener Persona",
+      "tags": [
+        "Protectora",
+        "Agarre"
+      ],
+      "ability_id": "ab_1793638445258",
+      "mod_tpl": {
+        "desc": "El objetivo está Enredado (FÍS +MOD para escapar), o Agarrado si ya se encuentra Enredado. Mientras se encuentre Enredado o Agarrado por este efecto, no podrá lanzar hechizos. "
+      },
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
       "bonus_scaled": false,
-      "cost": 2,
-      "desc": "Se mueve tanto como tu velocidad y ataca a cada enemigo en tu camino, aumentando el daño base de su ataque por un dado y empujando al impactar. Este ataque romperá también todas las barreras a su paso.",
-      "name": "Carga Poderosa",
+      "cost": 1,
+      "desc": "Su siguiente ataque aumenta su daño base por dos dados, y al impactar provoca Roto II al objetivo. Si el objetivo logra detener su ataque con su arma, puede romperle esa misma si es de dureza menor.",
+      "name": "Golpe Demoledor",
       "tags": [
         "Coloso",
         "Mejora",
         "Marcial"
       ],
-      "ability_id": "ab_1793208280826"
+      "ability_id": "ab_1793208339829"
     }
   ],
   "reactions": [
