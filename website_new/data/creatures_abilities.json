@@ -232,24 +232,6 @@
     "type": "passive"
   },
   {
-    "name": "Tormenta Telekinética",
-    "bonus": "+7+2d6",
-    "area": "Cono 12",
-    "damage": "5d8 + 7 Contundente/Perforante/Cortante",
-    "id": "tormenta-telekinetica_1778753241551",
-    "type": "action",
-    "tags": [
-      "Telekinesia",
-      "Ataque",
-      "Area"
-    ],
-    "cost": 1,
-    "desc": "Empuja 4 casillas al impactar. El espacio afectado se convierte en terreno difícil y puede alterar el terreno a distancia 4 como desee, eliminando muros y barreras.",
-    "ability_id": "tormenta-telekinetica_1778753241551",
-    "damage_tier": "HIGH",
-    "damage_base_type": "Contundente/Perforante/Cortante"
-  },
-  {
     "name": "Parada / Esquiva",
     "bonus": "+7 + 2d6",
     "move": "5",
