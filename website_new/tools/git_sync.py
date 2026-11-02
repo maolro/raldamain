@@ -106,6 +106,41 @@ def _git_dir() -> Path:
     return _GIT_DIR
 
 
+def _pid_alive(pid: int) -> bool:
+    """Is this process still running? (os.kill(pid, 0) would kill it on Windows)"""
+    if os.name == "nt":
+        import ctypes
+        k32 = ctypes.windll.kernel32
+        h = k32.OpenProcess(0x1000, False, pid)  # PROCESS_QUERY_LIMITED_INFORMATION
+        if not h:
+            return ctypes.GetLastError() == 5  # access denied: it exists
+        try:
+            code = ctypes.c_ulong()
+            return bool(k32.GetExitCodeProcess(h, ctypes.byref(code))) and code.value == 259  # STILL_ACTIVE
+        finally:
+            k32.CloseHandle(h)
+    try:
+        os.kill(pid, 0)
+        return True
+    except ProcessLookupError:
+        return False
+    except OSError:
+        return True
+
+
+def _holder_alive(lock: Path) -> bool:
+    """False when the process that wrote the lock is gone. Unreadable or fresh locks count as alive."""
+    try:
+        pid = int(lock.read_text().strip() or 0)
+    except (OSError, ValueError):
+        return True
+    if not pid or pid == os.getpid():
+        return True
+    if time.time() - lock.stat().st_mtime < 2:
+        return True  # just written: let its owner finish creating it
+    return _pid_alive(pid)
+
+
 class LockBusy(TimeoutError):
     """Another editor's worker is syncing right now."""
 
@@ -131,7 +166,8 @@ def _sync_lock(wait=LOCK_WAIT):
             break
         except (FileExistsError, PermissionError):  # Windows: PermissionError while another process deletes it
             try:
-                if time.time() - lock.stat().st_mtime > LOCK_STALE:
+                # stale: its editor was closed or restarted mid-sync (live reload), or it went quiet too long
+                if not _holder_alive(lock) or time.time() - lock.stat().st_mtime > LOCK_STALE:
                     lock.unlink()
                     continue
             except FileNotFoundError:
