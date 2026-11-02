@@ -57,7 +57,16 @@
     "tags": [
       "Fuego"
     ],
-    "tier": "II"
+    "tier": "II",
+    "effects": {
+      "immune": [
+        "Físicos",
+        "Fuego",
+        "Aflicciones",
+        "Mentales",
+        "Miedo"
+      ]
+    }
   },
   {
     "name": "Cuerpo Líquido",
@@ -67,7 +76,15 @@
     "tags": [
       "Agua"
     ],
-    "tier": "II"
+    "tier": "II",
+    "effects": {
+      "immune": [
+        "Físicos",
+        "Aflicciones",
+        "Mentales",
+        "Miedo"
+      ]
+    }
   },
   {
     "name": "Absorber Agua",
@@ -88,7 +105,17 @@
     "tags": [
       "Aire"
     ],
-    "tier": "II"
+    "tier": "II",
+    "effects": {
+      "immune": [
+        "Físicos",
+        "Sónico",
+        "Necrótico",
+        "Aflicciones",
+        "Mentales",
+        "Miedo"
+      ]
+    }
   },
   {
     "name": "Torbellino Viviente",
@@ -172,7 +199,26 @@
     ],
     "id": "planta_1778930785381",
     "type": "passive",
-    "tier": "I"
+    "tier": "I",
+    "effects": {
+      "immune": [
+        "Mentales",
+        "Miedo",
+        "Aturdimiento",
+        "Aflicciones",
+        "Sónico"
+      ],
+      "umbrales": [
+        {
+          "categories": "Ácido, Eléctrico",
+          "steps": 1
+        },
+        {
+          "categories": "Fuego, Cortante",
+          "steps": -1
+        }
+      ]
+    }
   },
   {
     "name": "Golpe por Golpe",
@@ -1117,7 +1163,16 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Carece de cuerpo físico, recibiendo Inmunidad a efectos Físicos, Necróticos, Aflicciones, Mentales y Miedo. No obstante, sí puede ser herido por ataques mágicos y no puede aumentar su umbral Físico de ninguna manera."
+    "desc": "Carece de cuerpo físico, recibiendo Inmunidad a efectos Físicos, Necróticos, Aflicciones, Mentales y Miedo. No obstante, sí puede ser herido por ataques mágicos y no puede aumentar su umbral Físico de ninguna manera.",
+    "effects": {
+      "immune": [
+        "Físicos",
+        "Necrótico",
+        "Aflicciones",
+        "Mentales",
+        "Miedo"
+      ]
+    }
   },
   {
     "id": "ab_1793178918639",
@@ -1139,7 +1194,29 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Aumenta sus Umbrales al daño Frío y Necrótico por una categoría a costa de reducir su Umbral Radiante por una categoría. Además, recibe Visión a Oscuras, al ocultarse en un lugar a oscuras puede volverse invisible, y sus ataques físicos provocan 1d6 daño Frío al impactar. "
+    "desc": "Aumenta sus Umbrales al daño Frío y Necrótico por una categoría a costa de reducir su Umbral Radiante por una categoría. Además, recibe Visión a Oscuras, al ocultarse en un lugar a oscuras puede volverse invisible, y sus ataques físicos provocan 1d6 daño Frío al impactar. ",
+    "effects": {
+      "umbrales": [
+        {
+          "categories": "Frío, Necrótico",
+          "steps": 1
+        },
+        {
+          "categories": "Radiante",
+          "steps": -1
+        }
+      ],
+      "senses": [
+        "Visión a Oscuras"
+      ],
+      "extra_damage": [
+        {
+          "dice": "1d6",
+          "type": "Frío",
+          "on": "fisicos"
+        }
+      ]
+    }
   },
   {
     "id": "ab_1793179018622",
@@ -1273,7 +1350,24 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Es un No-Muerto, recibiendo así Inmunidad a efectos Necróticos, Aflicciones, Miedo y Mentales, además que puede sentir la presencia de seres vivos a distancia media y no necesita comer ni respirar. No obstante, reducirá su umbral al daño Radiante por un paso y solo puede curarse con efectos Necróticos."
+    "desc": "Es un No-Muerto, recibiendo así Inmunidad a efectos Necróticos, Aflicciones, Miedo y Mentales, además que puede sentir la presencia de seres vivos a distancia media y no necesita comer ni respirar. No obstante, reducirá su umbral al daño Radiante por un paso y solo puede curarse con efectos Necróticos.",
+    "effects": {
+      "immune": [
+        "Necrótico",
+        "Aflicciones",
+        "Mentales",
+        "Miedo"
+      ],
+      "umbrales": [
+        {
+          "categories": "Radiante",
+          "steps": -1
+        }
+      ],
+      "senses": [
+        "Sentido Vital"
+      ]
+    }
   },
   {
     "id": "ab_1793182921388",
@@ -1675,7 +1769,15 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "La criatura es un enjambre de criaturas más pequeñas, recibiendo Inmunidad a efectos Físicos, Aflicciones, Mentales y Miedo. No obstante, el daño de ataques de Área contará como si fuera Fuerza y no puede aumentar sus umbrales Físico o Mágico de ninguna manera."
+    "desc": "La criatura es un enjambre de criaturas más pequeñas, recibiendo Inmunidad a efectos Físicos, Aflicciones, Mentales y Miedo. No obstante, el daño de ataques de Área contará como si fuera Fuerza y no puede aumentar sus umbrales Físico o Mágico de ninguna manera.",
+    "effects": {
+      "immune": [
+        "Físicos",
+        "Aflicciones",
+        "Mentales",
+        "Miedo"
+      ]
+    }
   },
   {
     "id": "ab_1793209849456",
@@ -1740,7 +1842,16 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Sus ataques físicos provocan DD daño Necrótico al impactar. Si este daño provoca por lo menos un impacto, se curará un impacto."
+    "desc": "Sus ataques físicos provocan DD daño Necrótico al impactar. Si este daño provoca por lo menos un impacto, se curará un impacto.",
+    "effects": {
+      "extra_damage": [
+        {
+          "dice": "DD",
+          "type": "Necrótico",
+          "on": "fisicos"
+        }
+      ]
+    }
   },
   {
     "id": "ab_1793211962110",
@@ -2093,7 +2204,17 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Sus ataques Físicos provocan DD daño Fuego, Frío, Eléctrico o Ácido al impactar, y pueden herir a criaturas Incorpóreas como si fueran ataques mágicos. Puede además cambiar el tipo de daño de sus hechizos como acción bonus al que más le convenga."
+    "desc": "Sus ataques Físicos provocan DD daño Fuego, Frío, Eléctrico o Ácido al impactar, y pueden herir a criaturas Incorpóreas como si fueran ataques mágicos. Puede además cambiar el tipo de daño de sus hechizos como acción bonus al que más le convenga.",
+    "effects": {
+      "extra_damage": [
+        {
+          "dice": "DD",
+          "type": "",
+          "on": "fisicos",
+          "choose": true
+        }
+      ]
+    }
   },
   {
     "id": "ab_1793279931786",
@@ -2230,7 +2351,29 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Sus ataques Físicos provocan DD daño Fuego al impactar y tiene visión térmica a distancia media. Aumenta su Umbral al daño Fuego y Frío por un paso, y reduce su Umbral a efectos de Agua por un paso. "
+    "desc": "Sus ataques Físicos provocan DD daño Fuego al impactar y tiene visión térmica a distancia media. Aumenta su Umbral al daño Fuego y Frío por un paso, y reduce su Umbral a efectos de Agua por un paso. ",
+    "effects": {
+      "umbrales": [
+        {
+          "categories": "Fuego, Frío",
+          "steps": 1
+        },
+        {
+          "categories": "Agua",
+          "steps": -1
+        }
+      ],
+      "senses": [
+        "Visión Térmica"
+      ],
+      "extra_damage": [
+        {
+          "dice": "DD",
+          "type": "Fuego",
+          "on": "fisicos"
+        }
+      ]
+    }
   },
   {
     "id": "ab_1793280741893",
@@ -2402,7 +2545,18 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Sus ataques Físicos cuentan como Mágicos y aumentan su alcance a Cercano. Recibe también velocidad de Natación 1, es capaz de respirar bajo el agua sin dificultades y aumenta su Umbral al daño Frío y Ácido por un paso. "
+    "desc": "Sus ataques Físicos cuentan como Mágicos y aumentan su alcance a Cercano. Recibe también velocidad de Natación 1, es capaz de respirar bajo el agua sin dificultades y aumenta su Umbral al daño Frío y Ácido por un paso. ",
+    "effects": {
+      "umbrales": [
+        {
+          "categories": "Frío, Ácido",
+          "steps": 1
+        }
+      ],
+      "speed": [
+        "Natación 1"
+      ]
+    }
   },
   {
     "id": "ab_1793292852239",
@@ -2491,7 +2645,21 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Es un Constructo, recibiendo así Inmunidad a efectos Necróticos, Aflicciones, Mentales y Miedo, además que aumenta su Umbral Mágico por un paso. No obstante, no puede ser curado salvo por habilidades que lo especifiquen ni puede ser afectado por efectos de Presencia."
+    "desc": "Es un Constructo, recibiendo así Inmunidad a efectos Necróticos, Aflicciones, Mentales y Miedo, además que aumenta su Umbral Mágico por un paso. No obstante, no puede ser curado salvo por habilidades que lo especifiquen ni puede ser afectado por efectos de Presencia.",
+    "effects": {
+      "immune": [
+        "Necrótico",
+        "Aflicciones",
+        "Mentales",
+        "Miedo"
+      ],
+      "umbrales": [
+        {
+          "categories": "Magia",
+          "steps": 1
+        }
+      ]
+    }
   },
   {
     "id": "ab_1793294428604",
@@ -2579,7 +2747,29 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Es de naturaleza Abisal, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Necrótico además que aumenta su Umbral Mágico por un paso. Provoca DD daño adicional con sus ataques físicos de un elemento específico."
+    "desc": "Es de naturaleza Abisal, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Necrótico además que aumenta su Umbral Mágico por un paso. Provoca DD daño adicional con sus ataques físicos de un elemento específico.",
+    "effects": {
+      "immune": [
+        "Aflicciones",
+        "Mentales",
+        "Miedo",
+        "Necrótico"
+      ],
+      "umbrales": [
+        {
+          "categories": "Magia",
+          "steps": 1
+        }
+      ],
+      "extra_damage": [
+        {
+          "dice": "DD",
+          "type": "",
+          "on": "fisicos",
+          "choose": true
+        }
+      ]
+    }
   },
   {
     "id": "ab_1793352426035",
@@ -2750,7 +2940,35 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca DD daño adicional de un elemento de su elección en ataques naturales."
+    "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca DD daño adicional de un elemento de su elección en ataques naturales.",
+    "effects": {
+      "immune": [
+        "Aflicciones",
+        "Mentales",
+        "Miedo"
+      ],
+      "umbrales": [
+        {
+          "categories": "Magia",
+          "steps": 1
+        },
+        {
+          "categories": "Fuego, Frío",
+          "steps": 1
+        }
+      ],
+      "senses": [
+        "Vista a Oscuras"
+      ],
+      "extra_damage": [
+        {
+          "dice": "DD",
+          "type": "",
+          "on": "naturales",
+          "choose": true
+        }
+      ]
+    }
   },
   {
     "id": "ab_1793366127728",
@@ -2772,7 +2990,36 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan DD daño adicional de un elemento específico o aumentan su daño por un dado."
+    "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan DD daño adicional de un elemento específico o aumentan su daño por un dado.",
+    "effects": {
+      "immune": [
+        "Aflicciones",
+        "Mentales",
+        "Miedo"
+      ],
+      "umbrales": [
+        {
+          "categories": "Magia",
+          "steps": 1
+        },
+        {
+          "categories": "",
+          "steps": 1,
+          "choose": true
+        }
+      ],
+      "senses": [
+        "Sentido Mágico"
+      ],
+      "extra_damage": [
+        {
+          "dice": "DD",
+          "type": "",
+          "on": "naturales",
+          "choose": true
+        }
+      ]
+    }
   },
   {
     "id": "ab_1793368306469",
@@ -2877,7 +3124,26 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Sus ataques Físicos provocan DD daño Frío al impactar y puede ver en neblinas sin dificultades. Aumenta su Umbral al daño Necrótico y Frío por un paso, y reduce su Umbral a efectos de Fuego por un paso. "
+    "desc": "Sus ataques Físicos provocan DD daño Frío al impactar y puede ver en neblinas sin dificultades. Aumenta su Umbral al daño Necrótico y Frío por un paso, y reduce su Umbral a efectos de Fuego por un paso. ",
+    "effects": {
+      "umbrales": [
+        {
+          "categories": "Necrótico, Frío",
+          "steps": 1
+        },
+        {
+          "categories": "Fuego",
+          "steps": -1
+        }
+      ],
+      "extra_damage": [
+        {
+          "dice": "DD",
+          "type": "Frío",
+          "on": "fisicos"
+        }
+      ]
+    }
   },
   {
     "id": "ab_1793450265798",
@@ -2899,7 +3165,36 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Es de naturaleza Celestial, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Ilusiones además que aumenta su Umbral Mágico por un paso y su Umbral Radiante por dos pasos. Tiene Sentido Vital y provoca DD daño adicional con sus ataques físicos de un elemento específico."
+    "desc": "Es de naturaleza Celestial, recibiendo Inmunidad a Aflicciones, Mentales, Miedo y Ilusiones además que aumenta su Umbral Mágico por un paso y su Umbral Radiante por dos pasos. Tiene Sentido Vital y provoca DD daño adicional con sus ataques físicos de un elemento específico.",
+    "effects": {
+      "immune": [
+        "Aflicciones",
+        "Mentales",
+        "Miedo",
+        "Ilusiones"
+      ],
+      "umbrales": [
+        {
+          "categories": "Magia",
+          "steps": 1
+        },
+        {
+          "categories": "Radiante",
+          "steps": 1
+        }
+      ],
+      "senses": [
+        "Sentido Vital"
+      ],
+      "extra_damage": [
+        {
+          "dice": "DD",
+          "type": "",
+          "on": "fisicos",
+          "choose": true
+        }
+      ]
+    }
   },
   {
     "id": "ab_1793450336476",
@@ -3025,7 +3320,16 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Ácido, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) y corroe los materiales por los que pasa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW daño Ácido de manera automática. No obstante, al estar hecho de líquido quedará congelado una ronda si sufre daño Frío y un elementalista de Ácido o Agua puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo. Puede también obtener la habilidad Absorber Ácido sin importar su nivel, pero perderá todos sus Umbrales."
+    "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Ácido, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) y corroe los materiales por los que pasa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW daño Ácido de manera automática. No obstante, al estar hecho de líquido quedará congelado una ronda si sufre daño Frío y un elementalista de Ácido o Agua puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo. Puede también obtener la habilidad Absorber Ácido sin importar su nivel, pero perderá todos sus Umbrales.",
+    "effects": {
+      "immune": [
+        "Físicos",
+        "Ácido",
+        "Aflicciones",
+        "Mentales",
+        "Miedo"
+      ]
+    }
   },
   {
     "id": "ab_1793622955763",
@@ -3113,7 +3417,33 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Tiene Inmunidad a Aflicciones, Heridas, Necrótico, Mentales y Miedo, además que aumenta su Umbral Mágico por un paso. Recibe velocidad de Excavar y Escalada 1, puede pasar a través de superficies rocosas como si no estuvieran además que tiene Vista a Ciegas a distancia media con todo objetivo en contacto con la tierra. No obstante, reducirá su umbral al daño Sónico por un paso."
+    "desc": "Tiene Inmunidad a Aflicciones, Heridas, Necrótico, Mentales y Miedo, además que aumenta su Umbral Mágico por un paso. Recibe velocidad de Excavar y Escalada 1, puede pasar a través de superficies rocosas como si no estuvieran además que tiene Vista a Ciegas a distancia media con todo objetivo en contacto con la tierra. No obstante, reducirá su umbral al daño Sónico por un paso.",
+    "effects": {
+      "immune": [
+        "Heridas",
+        "Necrótico",
+        "Aflicciones",
+        "Mentales",
+        "Miedo"
+      ],
+      "umbrales": [
+        {
+          "categories": "Magia",
+          "steps": 1
+        },
+        {
+          "categories": "Sónico",
+          "steps": -1
+        }
+      ],
+      "speed": [
+        "Excavar 1",
+        "Escalada 1"
+      ],
+      "senses": [
+        "Vista a Ciegas"
+      ]
+    }
   },
   {
     "id": "ab_1793623479776",
