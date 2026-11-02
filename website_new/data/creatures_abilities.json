@@ -3156,5 +3156,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Al principio de su turno, recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra rodeado de llamas o es impactado por un efecto de Fuego que atraviese su umbral."
+  },
+  {
+    "id": "ab_1793630308486",
+    "name": "Muro de Vientos",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Aire"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "Línea Media o Rdaio Corto",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Crea un muro que protege a todos en su área, absorbiendo RANGOx3 puntos de daño e impidiendo el paso de efectos gaseosos. Todos los enemigos que le hagan ataques cuerpo a cuerpo deben tirar FÍS +MOD o sufren LOW daño Cortante y son empujados un paso."
   }
 ]
