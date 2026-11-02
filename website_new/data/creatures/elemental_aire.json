@@ -30,13 +30,20 @@
   },
   "traits": [
     {
-      "desc": "Puede colarse por cualquier abertura. Es inmune a todos los efectos Físicos, Aflicciones, Sónicos, Necróticos, Miedo y Mentales y cuenta siempre como si fuera invisible. No obstante, un elementalista de Aire puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo. Puede también obtener la habilidad Absorber Agua sin importar su nivel, pero perderá todos sus Umbrales.",
+      "desc": "Puede colarse por cualquier abertura. Es inmune a todos los efectos Físicos, Aflicciones, Sónicos, Necróticos, Miedo y Mentales y cuenta siempre como si fuera invisible. No obstante, un elementalista de Aire puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo. Esta habilidad le quitará además todos los Umbrales.",
       "name": "Cuerpo de Aire",
       "tags": [
         "Aire"
       ],
-      "ability_id": "cuerpo-de-aire_1778694356948",
-      "type": "passive"
+      "ability_id": "cuerpo-de-aire_1778694356948"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al principio de su turno, recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra en un entorno de fuertes vientos o es impactado por un efecto de Aire que atraviese su umbral.",
+      "name": "Absorber Aire",
+      "tags": [],
+      "ability_id": "ab_1793631216756"
     }
   ],
   "actions": [
@@ -75,6 +82,22 @@
         "save": "FÍS +MOD"
       },
       "damage": "4d6 + 5 Contundente"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El objetivo está Enredado y es arrastrado un paso en cualquier dirección, sufriendo 2d6 + 5 daño Contundente si choca con una superficie sólida. Si ya está Enredado, pasará entonces a estar Agarrado.",
+      "name": "Agarre del Aire",
+      "save": "FÍS +7 + 2d6",
+      "tags": [
+        "Aire"
+      ],
+      "ability_id": "ab_1793631060509",
+      "mod_tpl": {
+        "desc": "El objetivo está Enredado y es arrastrado un paso en cualquier dirección, sufriendo LOW daño Contundente si choca con una superficie sólida. Si ya está Enredado, pasará entonces a estar Agarrado.",
+        "save": "FÍS +MOD"
+      }
     }
   ],
   "reactions": [
@@ -97,16 +120,6 @@
       "mod_tpl": {
         "desc": "Crea un muro que protege a todos en su área, absorbiendo RANGOx3 puntos de daño e impidiendo el paso de efectos gaseosos. Todos los enemigos que le hagan ataques cuerpo a cuerpo deben tirar FÍS +MOD o sufren LOW daño Cortante y son empujados un paso."
       }
-    },
-    {
-      "cost": 1,
-      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
-      "name": "Evasión",
-      "tags": [
-        "Reflejos",
-        "Defensiva"
-      ],
-      "ability_id": "evasion_1778692238910"
     }
   ],
   "lore": "Los elementales de aire son remolinos conscientes de viento y tormenta. Se mueven a velocidades difíciles de seguir y atacan donde menos se espera. Su cuerpo es prácticamente invisible, delatado tan solo por una tenue distorsión del ambiente y el rugido del viento que los rodea.",
