@@ -890,6 +890,18 @@ magia_acido:
       abilities: []
       notes: "ranks/elementalismos.md no define todavía un Rango II para Magia Ácido."
 
+magia_hielo:
+  name: Magia Hielo
+  source: data/ranks/magia_hielo.json
+  # Only the passive is modelled here: the rest of Magia de Hielo is built from the website data
+  ranks:
+    1:
+      passives:
+        - {target: umbral, key: frio, amount: "{{RANGO+1}}",
+           text: "Adaptación al Frío: Resistencia igual a tu Rango + 1 al daño Frío."}
+        - {target: umbral, key: necrotico, amount: "{{RANGO+1}}",
+           text: "Adaptación al Frío: Resistencia igual a tu Rango + 1 al daño Necrótico."}
+
 magia_naturaleza:
   name: Magia Naturaleza
   source: ranks/elementalismos.md

@@ -6,7 +6,9 @@ Needs:  pip install flask
 """
 
 import json
+import re
 import subprocess
+import unicodedata
 import sys
 import threading
 import webbrowser
@@ -87,6 +89,40 @@ def _fichas_using(rid):
         if any(r.get("id") == rid and r.get("rank") for r in d.get("ranks") or []):
             out.append(d.get("name") or f.stem)
     return out
+
+ROMAN_TO_NUM = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6}
+
+
+def _kebab(name):
+    """The Creador's toKebab: lowercase, accents dropped, spaces -> '-' (assets/js/builder/main.js)."""
+    t = unicodedata.normalize("NFD", str(name or "").lower())
+    return re.sub(r"\s+", "-", "".join(c for c in t if not "\u0300" <= c <= "\u036f"))
+
+
+@app.route("/api/ability-ids")
+def api_ability_ids():
+    """Every rank ability with its unique slug id ("<rank>--<n>--<name>", a "--<k>" suffix for
+    repeated names in one rank), exactly as the Creador numbers them: for "Habilidades a elegir"."""
+    out = []
+    for f in sorted(RANKS_DIR.glob("*.json")):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        rid, ids = d.get("id", f.stem), []
+        for lv in d.get("levels", []):
+            n = ROMAN_TO_NUM.get(lv.get("rank"), 1)
+            for ab in lv.get("abilities", []):
+                aid = f"{rid}--{n}--{_kebab(ab.get('name', ''))}"
+                if aid in ids:
+                    aid += f"--{len(ids)}"
+                ids.append(aid)
+                tags = ab.get("tags") or []
+                kind = ("Pasiva" if not tags or "Pasiva" in tags else "Reacción" if "Reacción" in tags else "Acción")
+                out.append({"id": aid, "name": ab.get("name", ""), "rank": rid, "rank_title": d.get("title", rid),
+                            "level": lv.get("rank"), "type": kind})
+    return jsonify(out)
+
 
 @app.route("/api/rank/<rid>/usage")
 def api_usage(rid):
@@ -596,6 +632,7 @@ const S = {
   cmpA: null, cmpB: null,
   clipboard: null,  // { kind: 'level'|'ability', data: {...} }
   openBoost: {},    // "li-ai" -> passive-boost section opened without any value yet
+  abilityIds: [],   // [{id,name,rank,rank_title,level,type}] every ability's slug (for "Habilidades a elegir")
 };
 
 const TAGS = ['Duelo','Pasiva','Mejora','Reacción','Duradera','Maniobra',
@@ -622,6 +659,13 @@ async function init() {
   renderSidebar();
   renderCats();
   fillCmpSelects();
+  loadAbilityIds();
+}
+async function loadAbilityIds() {
+  try { S.abilityIds = await api('GET', '/api/ability-ids'); } catch (e) { S.abilityIds = []; }
+  let dl = document.getElementById('ability-id-dl');
+  if (!dl) { dl = document.createElement('datalist'); dl.id = 'ability-id-dl'; document.body.appendChild(dl); }
+  dl.innerHTML = S.abilityIds.map(a => `<option value="${esc(a.id)}">${esc(a.name)} · ${esc(a.rank_title)} ${a.level} · ${a.type}</option>`).join('');
 }
 
 // ── Dirty ────────────────────────────────────────────────────────────────────
@@ -684,6 +728,7 @@ async function saveRank() {
   if (!S.rank) return;
   try {
     const res = await api('POST', `/api/rank/${S.rank.id}`, S.rank);
+    loadAbilityIds();  // new or renamed abilities get their ids
     S.saved = JSON.stringify(S.rank);
     const entry = S.all.find(r=>r.id===S.rank.id);
     if (entry) { entry.draft = isDraft(S.rank); entry.partial = isPartial(S.rank); }
@@ -979,14 +1024,14 @@ function cardHtml(li, ab, ai) {
   const grantsSect = grants.length ? `
     <div class="boost-section">
       <div class="tog-hd">
-        <span class="boost-label" style="color:var(--purple)">📜 Otorga hechizos</span>
-        <span class="boost-hint">el personaje elige hechizos en la pestaña Hechizos</span>
+        <span class="boost-label" style="color:var(--purple)">📜 Otorga hechizos / habilidades a elegir</span>
+        <span class="boost-hint">el personaje elige en la pestaña Hechizos</span>
         <button class="btn sm" style="margin-left:auto" onclick="addGrant(${li},${ai})">＋ Regla</button>
       </div>
       ${grants.map((g,gi) => grantHtml(g, li, ai, gi)).join('')}
     </div>` : `
     <div class="boost-section">
-      <button class="emp-tog" style="color:var(--purple)" onclick="addGrant(${li},${ai})">📜 Añadir hechizos aprendidos</button>
+      <button class="emp-tog" style="color:var(--purple)" onclick="addGrant(${li},${ai})">📜 Añadir hechizos aprendidos o habilidades a elegir</button>
     </div>`;
 
   const toggleSect = 'toggle' in ab ? `
@@ -1161,8 +1206,55 @@ function setAbArr(li,ai,k,v)     { const ab=S.rank.levels[li].abilities[ai]; con
 // ── Spell grants ("Otorga hechizos") ─────────────────────────────────────────
 // spell_grants: [{ count: 2 | "RANGO", spell_rank: 1, from_rank?: 4,
 //                  sources: ["patron" | "cat:Arcano" | "rank:magia_mental", …] }]
+// or, for optional abilities the player chooses from a fixed list (any kind: pasiva, acción…):
+//                [{ count: 1, from_rank?: 2, label: "Pasiva elemental", options: ["magia_hielo--1--adaptacion-al-frio", …] }]
 const GRANT_CATS = ['Elementalismo','Arcano','Ocultismo','Divino'];
 function grantHtml(g, li, ai, gi) {
+  return Array.isArray(g.options) ? choiceGrantHtml(g, li, ai, gi) : spellGrantHtml(g, li, ai, gi);
+}
+const grantModeHtml = (g, li, ai, gi) => `
+      <div class="chk-group" style="margin-bottom:6px">
+        <label class="chk ${!Array.isArray(g.options)?'on':''}"><input type="radio" name="gm-${li}-${ai}-${gi}" ${!Array.isArray(g.options)?'checked':''}
+          onchange="setGrantMode(${li},${ai},${gi},'spells')">Hechizos de unas fuentes</label>
+        <label class="chk ${Array.isArray(g.options)?'on':''}"><input type="radio" name="gm-${li}-${ai}-${gi}" ${Array.isArray(g.options)?'checked':''}
+          onchange="setGrantMode(${li},${ai},${gi},'choice')">Habilidades a elegir (lista)</label>
+      </div>`;
+function choiceGrantHtml(g, li, ai, gi) {
+  const romanOpts = (cur) => `<option value="">—</option>` +
+    ROMAN.slice(0,6).map((r,i) => `<option value="${i+1}" ${cur==i+1?'selected':''}>${r}</option>`).join('');
+  const byId = Object.fromEntries(S.abilityIds.map(a => [a.id, a]));
+  const rows = g.options.map((id, oi) => {
+    const a = byId[id];
+    const info = !id ? '' : a ? `<span style="color:var(--text2)">${esc(a.name)} · ${esc(a.rank_title)} ${a.level} · ${a.type}</span>`
+      : `<span style="color:var(--red,#e76a6a)">⚠ no existe ninguna habilidad con este id</span>`;
+    return `<div style="display:flex;gap:6px;align-items:center;margin-top:4px">
+        <input class="inp" style="flex:1" list="ability-id-dl" value="${esc(id)}" placeholder="rango--nivel--habilidad"
+          onchange="setGrantOption(${li},${ai},${gi},${oi},this.value)">
+        <button class="btn sm danger" onclick="delGrantOption(${li},${ai},${gi},${oi})">×</button>
+      </div><div style="font-size:11px;margin:1px 0 0 2px">${info}</div>`;
+  }).join('');
+  return `
+    <div class="grant-row">
+      ${grantModeHtml(g, li, ai, gi)}
+      <div class="row3">
+        <div class="field"><div class="lbl" title="Cuántas habilidades de la lista elige el personaje (número o RANGO)">Elige</div>
+          <input class="inp" value="${esc(g.count!=null?g.count:'')}" placeholder="1"
+            oninput="setGrant(${li},${ai},${gi},'count',this.value)"></div>
+        <div class="field"><div class="lbl" title="Título de la elección en la pestaña Hechizos (vacío = el nombre de esta habilidad)">Nombre de la elección</div>
+          <input class="inp" value="${esc(g.label||'')}" placeholder="Pasiva elemental"
+            oninput="setGrantText(${li},${ai},${gi},'label',this.value)"></div>
+        <div class="field"><div class="lbl" title="Rango mínimo de ESTE rango para obtener la regla (vacío = el nivel de la habilidad)">Desde Rango</div>
+          <select class="inp" onchange="setGrant(${li},${ai},${gi},'from_rank',this.value)">${romanOpts(g.from_rank||'')}</select></div>
+      </div>
+      <div class="lbl" style="margin-top:6px" title="Cualquier habilidad de cualquier rango (pasiva, acción, reacción), por su id único">Habilidades (por id)</div>
+      ${rows || '<div style="font-size:11px;color:var(--text3)">Aún no hay ninguna: añade sus ids.</div>'}
+      <div style="display:flex;gap:6px;margin-top:6px">
+        <button class="btn sm" onclick="addGrantOption(${li},${ai},${gi})">＋ Habilidad</button>
+        <button class="btn sm danger" style="margin-left:auto" onclick="delGrant(${li},${ai},${gi})">× Quitar regla</button>
+      </div>
+    </div>`;
+}
+function spellGrantHtml(g, li, ai, gi) {
   const src = g.sources || [];
   const romanOpts = (cur, withNone) => (withNone ? `<option value="">—</option>` : '') +
     ROMAN.slice(0,6).map((r,i) => `<option value="${i+1}" ${cur==i+1?'selected':''}>${r}</option>`).join('');
@@ -1171,6 +1263,7 @@ function grantHtml(g, li, ai, gi) {
   const specific = src.filter(x => x.startsWith('rank:')).map(x => x.slice(5)).join(', ');
   return `
     <div class="grant-row">
+      ${grantModeHtml(g, li, ai, gi)}
       <div class="row3">
         <div class="field"><div class="lbl" title="Número o fórmula (RANGO, RANGO+1…)">Cantidad</div>
           <input class="inp" value="${esc(g.count!=null?g.count:'')}" placeholder="2 · RANGO"
@@ -1213,6 +1306,36 @@ function toggleGrantSrc(li,ai,gi,val,on) {
   const a = (g.sources||[]).filter(x => x !== val);
   if (on) a.push(val);
   g.sources = a;
+  renderToolbar(); renderLvl();
+}
+// Switch a rule between "spells from sources" and "abilities to choose from a list"
+function setGrantMode(li,ai,gi,mode) {
+  const g = grantOf(li,ai,gi);
+  if (mode === 'choice') {
+    delete g.sources; delete g.spell_rank;
+    g.options = g.options || [''];
+    if (g.count == null) g.count = 1;
+  } else {
+    delete g.options; delete g.label;
+    g.sources = g.sources || ['patron']; g.spell_rank = g.spell_rank || 1;
+  }
+  renderToolbar(); renderLvl();
+}
+function setGrantText(li,ai,gi,k,v) {
+  const g = grantOf(li,ai,gi); v = String(v).trim();
+  if (v) g[k] = v; else delete g[k];
+  renderToolbar();
+}
+function setGrantOption(li,ai,gi,oi,v) {
+  grantOf(li,ai,gi).options[oi] = String(v).trim();
+  renderToolbar(); renderLvl();
+}
+function addGrantOption(li,ai,gi) {
+  grantOf(li,ai,gi).options.push('');
+  renderToolbar(); renderLvl();
+}
+function delGrantOption(li,ai,gi,oi) {
+  grantOf(li,ai,gi).options.splice(oi,1);
   renderToolbar(); renderLvl();
 }
 function setGrantRanks(li,ai,gi,v) {

@@ -1387,7 +1387,7 @@ ${reactions}
                     const from = this.ranks[sp.skill] ? this.ranks[sp.skill].name : '';
                     const atb = { ...sp, skill: g.ownerSkill, rank: this.getRank(g.ownerSkill), spell_from: from,
                         spell_stat: this.ranks[g.ownerSkill] ? this.ranks[g.ownerSkill].stat : null };
-                    atb.tags = [`Hechizo (${from})`, sp.tags].filter(Boolean).join(', ');
+                    atb.tags = [g.choice ? `Elegida (${g.abilityName})` : `Hechizo (${from})`, sp.tags].filter(Boolean).join(', ');
                     abSwitch(atb);
                 }
             }
@@ -1646,7 +1646,10 @@ ${reactions}
         },
         // Spells the character may learn, from "spell_grants" on owned rank abilities:
         // [{ key, abilityName, ownerSkill, rankName, abilityRank, count, spellRank,
-        //    usesPatron, sourceText, groups: [{label, options:[{id,name,rank}]}], optionIds, optionCount }]
+        //    usesPatron, sourceText, groups: [{label, options:[{id,name,rank,type}]}], optionIds, optionCount,
+        //    choice, label, missing }]
+        // A grant with "options" (ability ids, any type or rank) is a choice among exactly those
+        // abilities instead (e.g. Vínculo Elemental: one elemental passive); "label" names the choice.
         spellGrants: function () {
             const res = [];
             const seen = new Set();
@@ -1663,17 +1666,25 @@ ${reactions}
                         if (g.from_rank && level < g.from_rank) return;
                         const count = Math.max(0, Math.floor(this.evalRankValue(g.count != null ? g.count : 1, owner)) || 0);
                         if (!count) return;
-                        const sources = g.sources && g.sources.length ? g.sources : ['patron'];
+                        const choice = Array.isArray(g.options) && g.options.length > 0;
+                        const sources = choice ? [] : g.sources && g.sources.length ? g.sources : ['patron'];
                         const spellRank = g.spell_rank || 1;
                         const srcRanks = this.spellSourceRanks(sources);
                         const groups = {};
                         const optionIds = [];
-                        for (const aid in this.attributes) {
-                            const a = this.attributes[aid];
-                            if (!srcRanks.includes(a.skill) || a.rank > spellRank || a.type === 'Pasiva') continue;
+                        const add = (aid, a) => {
                             const label = this.ranks[a.skill] ? this.ranks[a.skill].name : a.skill;
-                            (groups[label] || (groups[label] = [])).push({ id: aid, name: a.name, rank: a.rank });
+                            (groups[label] || (groups[label] = [])).push({ id: aid, name: a.name, rank: a.rank, type: a.type });
                             optionIds.push(aid);
+                        };
+                        if (choice) {
+                            for (const aid of g.options) if (aid in this.attributes) add(aid, this.attributes[aid]);
+                        } else {
+                            for (const aid in this.attributes) {
+                                const a = this.attributes[aid];
+                                if (!srcRanks.includes(a.skill) || a.rank > spellRank || a.type === 'Pasiva') continue;
+                                add(aid, a);
+                            }
                         }
                         res.push({
                             key: `${id}#${i}`,
@@ -1682,6 +1693,9 @@ ${reactions}
                             rankName: rd.name,
                             abilityRank: ab.rank,
                             count, spellRank,
+                            choice,
+                            label: g.label || '',
+                            missing: choice ? g.options.filter(aid => !(aid in this.attributes)) : [],
                             usesPatron: sources.includes('patron'),
                             sourceText: sources.map(src => src === 'patron' ? 'dominios de tu entidad'
                                 : src.startsWith('cat:') ? src.slice(4)

@@ -3,6 +3,8 @@
 // Grants come from the rank data ("spell_grants" on an ability, edited in the rank
 // editor); main.js turns them into $root.spellGrants. Picks live in $root.spellPicks,
 // the higher entity (name, 3-5 domains, damage type) in $root.patron.
+// A grant with a list of abilities ("options") is an optional ability the player
+// chooses (any kind: passive, action, reaction), shown under "Habilidades a elegir".
 // =============================================
 
 const MAX_DOMAINS = 5;
@@ -15,8 +17,8 @@ Vue.component('v-spellpage', {
         <h3 class="section-header">Hechizos</h3>
 
         <p v-if="!r.spellGrants.length" class="spell-empty">
-            Ningún rango de tu personaje otorga hechizos todavía
-            (por ejemplo Guerrero Divino I, Ascendencia Akhásica I o Ascendencia Abisal II).
+            Ningún rango de tu personaje otorga hechizos ni habilidades a elegir todavía
+            (por ejemplo Guerrero Divino I, Ascendencia Akhásica I o Ascendencia Dracónica II).
         </p>
 
         <!-- Higher entity: god, patron or spirit -->
@@ -47,8 +49,34 @@ Vue.component('v-spellpage', {
             </select>
         </div>
 
-        <!-- One box per grant -->
-        <div v-for="g in r.spellGrants" :key="g.key" class="spell-box">
+        <!-- Optional abilities: a choice among a fixed list (e.g. Vínculo Elemental) -->
+        <h4 v-if="choiceGrants.length" class="spell-group-title">Habilidades a elegir</h4>
+        <div v-for="g in choiceGrants" :key="g.key" class="spell-box spell-choice">
+            <h4 class="spell-box-title">{{ g.label || g.abilityName }}
+                <small>{{ g.label ? g.abilityName + ' · ' : '' }}{{ g.rankName }} {{ roman(g.abilityRank) }}</small></h4>
+            <p class="spell-hint">
+                Elige {{ g.count }} habilidad{{ g.count === 1 ? '' : 'es' }} de esta lista
+                · se usan con tu modificador de {{ g.rankName }}
+            </p>
+            <p v-if="g.missing.length" class="spell-warn">No existen (revisa el id en el editor de rangos): {{ g.missing.join(', ') }}</p>
+            <div v-for="i in g.count" :key="g.key + '-' + i" class="spell-slot">
+                <select class="form-control form-control-sm" :value="pick(g.key, i - 1)"
+                    @change="setPick(g.key, i - 1, $event.target.value)">
+                    <option value="">— Elige una habilidad —</option>
+                    <optgroup v-for="grp in g.groups" :key="grp.label" :label="grp.label">
+                        <option v-for="o in grp.options" :key="o.id" :value="o.id"
+                            :disabled="takenElsewhere(g.key, i - 1, o.id)">{{ o.name }} ({{ o.type }} · {{ roman(o.rank) }})</option>
+                    </optgroup>
+                </select>
+                <div v-if="pick(g.key, i - 1) && r.attributes[pick(g.key, i - 1)]" class="spell-desc">
+                    {{ short(r.attributes[pick(g.key, i - 1)].description) }}
+                </div>
+            </div>
+        </div>
+
+        <!-- One box per spell grant -->
+        <h4 v-if="choiceGrants.length && spellGrants.length" class="spell-group-title">Hechizos aprendidos</h4>
+        <div v-for="g in spellGrants" :key="g.key" class="spell-box">
             <h4 class="spell-box-title">{{ g.abilityName }}
                 <small>{{ g.rankName }} {{ roman(g.abilityRank) }}</small></h4>
             <p class="spell-hint">
@@ -83,6 +111,8 @@ Vue.component('v-spellpage', {
     },
     computed: {
         r: function () { return this.$root; },
+        choiceGrants: function () { return this.r.spellGrants.filter(g => g.choice); },
+        spellGrants: function () { return this.r.spellGrants.filter(g => !g.choice); },
         needsPatron: function () { return this.r.spellGrants.some(g => g.usesPatron); },
         domainState: function () {
             const n = this.r.patron.domains.length;

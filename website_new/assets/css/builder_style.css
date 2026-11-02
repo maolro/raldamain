@@ -198,6 +198,11 @@
 .spell-box-title small { color: var(--text-muted); font-family: var(--font-body); font-size: 0.8rem; margin-left: 6px; }
 .spell-hint { color: var(--text-muted); font-size: 0.8rem; margin-bottom: 0.5rem; }
 .spell-warn { color: #f0a060; font-size: 0.85rem; }
+/* "Habilidades a elegir": optional abilities from a fixed list (any kind) */
+.spell-group-title { font-family: var(--font-heading); color: var(--text-main); font-size: 0.95rem;
+    letter-spacing: 0.04em; text-transform: uppercase; margin: 0.4rem 0 0.6rem; opacity: 0.85; }
+.spell-box.spell-choice { border-left-color: #7fb3d5; }
+.spell-box.spell-choice .spell-box-title { color: #a9cfe8; }
 .spell-sub { font-weight: bold; font-size: 0.85rem; margin-bottom: 0.35rem; }
 .spell-count { font-weight: normal; font-size: 0.75rem; margin-left: 6px; padding: 0 6px; border-radius: 3px; }
 .spell-count.ok { color: #6fc98a; border: 1px solid #3a6; }

@@ -301,8 +301,17 @@ def assemble_from_ranks(spec: dict[str, Any]) -> dict[str, Any]:
         rango = int(char_ranks.get(owner, 1))
         tree = library.get(spell_rank) or {}
         wanted = _norm_name(sp["key"].replace("-", " "))
+        # A chosen passive ("Habilidades a elegir", e.g. Vínculo Elemental → Alma de la Tormenta):
+        # its ranks.yaml passives apply with the granting rank's Rango
+        level_tree = (tree.get("ranks") or {}).get(sp["level"]) or {}
+        passives = [ps for ps in level_tree.get("passives") or []
+                    if _norm_name(str(ps.get("text", "")).split(":")[0]) == wanted]
+        if passives:
+            for ps in passives:
+                _apply_passive(spec, ps, rango, stats, char_level, extra_for(owner))
+            continue
         found = None
-        for ability in ((tree.get("ranks") or {}).get(sp["level"]) or {}).get("abilities") or []:
+        for ability in level_tree.get("abilities") or []:
             if _norm_name(ability.get("name")) == wanted:
                 found = ability
                 break
