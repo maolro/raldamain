@@ -204,16 +204,6 @@
     "tier": "I"
   },
   {
-    "name": "Raíces Parasíticas",
-    "tags": [
-      "Naturaleza"
-    ],
-    "cost": 1,
-    "desc": "Transfiere la mitad del daño recibido a un objetivo enredado. Este daño es obligatorio y cuenta como General a la hora de determinar umbrales. ",
-    "id": "raices-parasiticas_1778931038697",
-    "type": "reaction"
-  },
-  {
     "name": "Muro de Espinas",
     "cost": 1,
     "desc": "Aumenta todos sus umbrales de daño en 5. Los atacantes cuerpo a cuerpo sufren 4d8 daño Perforante y deben tener éxito en un tiro de salvación Físico o quedan enredados.",
