@@ -8,8 +8,80 @@
   "description": "",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
-    "<strong>Estadística principal:</strong> Carisma + Rango.",
-    "<strong>Parada mágica:</strong> Usas esta magia para tiros de parada y salvaciones."
+    "<strong>Estadística principal:</strong> Carisma/Constitución + Rango.",
+    "<strong>Poder Elemental:</strong> Al escoger este Rango, debe escoger un elemento entre Fuego, Frío, Eléctrico y Ácido. Esta elección es irreversible y decidirá varias habilidades que otorga. "
   ],
-  "levels": []
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "draft": false,
+      "abilities": [
+        {
+          "name": "Furia Dracónica",
+          "tags": [
+            "Draconica",
+            "Mejora"
+          ],
+          "desc": "Despiertas el poder interno de un dragón. Mientras dure este efecto, recibes Ventaja en todos tus tiros y aumentas todos tus Umbrales por RANGO+1. No obstante, cuando acabe este efecto reducirás tus Impactos máximos en 1 por cada dos rondas pasadas en él. ",
+          "cost": "1 Acción",
+          "duration": "Máx 6 rondas",
+          "toggle": {
+            "label": "Furia Dracónica",
+            "adv_all": true,
+            "umbrales": [
+              {
+                "value": "RANGO+1",
+                "categories": "General"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Aliento del Dragón",
+          "tags": [
+            "Draconica",
+            "Ataque",
+            "Area"
+          ],
+          "cost": "2 Acciones, 1 Chi",
+          "area": "Cono pequeño",
+          "damage": "2d6 + CAR/CON",
+          "damage_type": "Fuego/Frío/Eléctrico/Ácido",
+          "desc": "El daño de este ataque será igual al elemento escogido. Recibe además un dado de daño adicional y aumenta su tamaño base en un paso por cada tamaño superior a mediano que tengas. ",
+          "empower": "Aumenta el daño base por un dado. Si empoderas dos veces, el área afectada aumentará por un paso."
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "VI",
+      "title": "Leyenda",
+      "draft": true,
+      "abilities": []
+    }
+  ]
 }

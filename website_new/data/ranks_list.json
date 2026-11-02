@@ -375,7 +375,7 @@
     "image": "ascendencia_draconica.jpg",
     "description": "",
     "draft": true,
-    "partial": false
+    "partial": true
   },
   {
     "id": "magia_acido",
