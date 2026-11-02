@@ -295,27 +295,6 @@
     "desc": "Todos los objetivos impactados quedan enredados (tiro salvación Físico para escapar). Cada vez que un objetivo fracase su tiro para escapar, sufrirá LOW daño Contundente/Perforante. El área afectada se convierte en terreno difícil. "
   },
   {
-    "id": "ab_1778930291704",
-    "name": "Aliento Ácido",
-    "type": "action",
-    "tags": [
-      "Acido",
-      "Ataque",
-      "Area"
-    ],
-    "cost": "2",
-    "bonus": "",
-    "range": "",
-    "area": "Cono 8",
-    "damage": "",
-    "damage_tier": "HIGH",
-    "damage_base_type": "Ácido",
-    "save": "",
-    "move": "",
-    "attacks": 1,
-    "desc": "Provoca una quemadura a todos los impactados y corroe madera u otros materiales frágiles, provocando así el efecto de estado roto."
-  },
-  {
     "name": "Planta",
     "desc": "Es una planta viviente, siendo así Inmune a efectos Mentales, Miedo, Aturdimiento, Aflicciones y Sónicos, Resistencia a Ácido y Eléctrico a costa de Vulnerabilidad a efectos de Fuego y Cortantes (todo ya incluido). El terreno difícil por naturaleza no le afecta y puede camuflarse ahí.",
     "tags": [
@@ -344,23 +323,6 @@
     "tags": [
       "Naturaleza"
     ]
-  },
-  {
-    "name": "Absorber Nutrientes",
-    "cost": 1,
-    "save": "Voluntad +11+2d6",
-    "area": "Radio 8",
-    "desc": "Solo afecta a objetivos enredados por plantas. Se sana 1 impacto por cada 20 puntos de daño que logra provocar. ",
-    "tags": [
-      "Naturaleza",
-      "Afliccion",
-      "Sanacion"
-    ],
-    "damage": "4d8+7 Necrótico",
-    "id": "absorber-nutrientes_1778942235047",
-    "type": "action",
-    "damage_tier": "HIGH",
-    "damage_base_type": "Necrótico"
   },
   {
     "id": "ab_1778944903955",
@@ -419,23 +381,6 @@
     "ability_id": "aura-del-caos_1784290282931",
     "id": "aura-del-caos_1784290282931",
     "type": "reaction"
-  },
-  {
-    "tags": [
-      "Miedo",
-      "Mental"
-    ],
-    "area": "Radio grande",
-    "save": "MEN +15+3d6",
-    "desc": "Provoca Miedo I objetivos de nivel 17 o menos, Miedo II a los de nivel 14 o menos, Miedo III a los de nivel 11 o menos y Miedo IV a los de nivel 8 o menos. Aquellos que tengan éxito no pueden volver a ser afectados.",
-    "attacks": 1,
-    "damage": "5d10 + 9 Psíquico",
-    "name": "Presencia Enloquecedora",
-    "cost": 2,
-    "id": "presencia-enloquecedora_1788189183314",
-    "type": "action",
-    "damage_tier": "HIGH",
-    "damage_base_type": "Psíquico"
   },
   {
     "name": "Golpe por Golpe",
