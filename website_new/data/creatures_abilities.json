@@ -3091,5 +3091,28 @@
     "move": "",
     "attacks": 1,
     "desc": "Los afectados son empujados y tropezados. Este ataque destruye las estructuras frágiles en el área afectada. Solo afecta a objetivos en contacto con la tierra."
+  },
+  {
+    "id": "ab_1793623101268",
+    "name": "Abrazo de la Tierra",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Tierra",
+      "Ataque",
+      "Agarre"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo queda Enredado hasta que escape. Si impacta a un objetivo volador, este deberá tener éxito en un tiro FÍS +MOD o caerá al suelo, y no podrá volver a volar hasta que escape."
   }
 ]
