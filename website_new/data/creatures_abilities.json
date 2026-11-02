@@ -255,28 +255,6 @@
     "type": "reaction"
   },
   {
-    "id": "ab_1778929633136",
-    "name": "Animar Plantas",
-    "type": "action",
-    "tags": [
-      "Naturaleza",
-      "Ataque",
-      "Area",
-      "Agarre"
-    ],
-    "cost": "1",
-    "bonus": "",
-    "range": "",
-    "area": "Cono 12/Radio 8",
-    "damage": "",
-    "damage_tier": "HIGH",
-    "damage_base_type": "Contundente/Perforante",
-    "save": "",
-    "move": "",
-    "attacks": 1,
-    "desc": "Todos los objetivos impactados quedan enredados (tiro salvación Físico para escapar). Cada vez que un objetivo fracase su tiro para escapar, sufrirá LOW daño Contundente/Perforante. El área afectada se convierte en terreno difícil. "
-  },
-  {
     "name": "Planta",
     "desc": "Es una planta viviente, siendo así Inmune a efectos Mentales, Miedo, Aturdimiento, Aflicciones y Sónicos, Resistencia a Ácido y Eléctrico a costa de Vulnerabilidad a efectos de Fuego y Cortantes (todo ya incluido). El terreno difícil por naturaleza no le afecta y puede camuflarse ahí.",
     "tags": [
