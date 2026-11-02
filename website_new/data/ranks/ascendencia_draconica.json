@@ -68,6 +68,16 @@
           "spell_grants": [
             {
               "count": 1,
+              "label": "Pasiva elemental",
+              "options": [
+                "magia_fuego--1--fuego-interno",
+                "magia_tormenta--1--alma-de-la-tormenta",
+                "magia_acido--1--hijo-del-pantano",
+                "magia_hielo--1--adaptacion-al-frio"
+              ]
+            },
+            {
+              "count": 1,
               "spell_rank": 2,
               "sources": [
                 "rank:magia_fuego",
