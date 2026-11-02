@@ -70,7 +70,7 @@
       "attacks": 1,
       "bonus_scaled": false,
       "cost": "1",
-      "desc": "El objetivo debe tener éxito en un tiro VOL +7 + 2d6 o sufre 2d6 + 5 daño Necrótico que no puede curarse. Si logra provocar por lo menos un impacto, puede recuperar un impacto o curarse de un efecto de estado. Al emplear este efecto en un No-Muerto, puede curarle un impacto o un efecto de estado.",
+      "desc": "El daño de este ataque no puede curarse (cuenta como un Efecto de categoría 1). Si logra provocar por lo menos un impacto, puede recuperar un impacto o curarse de un efecto de estado. Al emplear este efecto en un No-Muerto, puede curarle un impacto o un efecto de estado.",
       "name": "Drenar Vida",
       "range": "Adyacente",
       "tags": [
@@ -86,9 +86,9 @@
       "bonus": "",
       "area": "",
       "damage": "",
-      "damage_tier": "",
-      "damage_base_type": "",
-      "save": "",
+      "damage_tier": "MID",
+      "damage_base_type": "Necrótico",
+      "save": "VOL +MOD",
       "move": ""
     },
     {
