@@ -3,7 +3,283 @@
   "name": "Ustileses",
   "description": "",
   "format": "{name} {surname}",
-  "names": [],
+  "names": [
+    {
+      "name": "Abelardo",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Adolfo",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Agrimiro",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Agustín",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Alberto",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Albino",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Alfredo",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Amadeo",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Andrés",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Anselmo",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Arcadio",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Armando",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Artemio",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Aurelio",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Baldomero",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Basilio",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Beltrán",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Bernabé",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Blas",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Bruno",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Calisto",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Camilo",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Casimiro",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ciríaco",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Clemente",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Cornelio",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Dagoberto",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Dámaso",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Danilo",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Demetrio",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Donato",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Edelmiro",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Edmundo",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Efraín",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Eliseo",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Emiliano",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Ernesto",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Esteban",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Eulogio",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Evasisto",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Everardo",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Fabián",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Federico",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Felipe",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Félix",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Flavio",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Florián",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Gabino",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Gabriel",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Gastón",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Genaro",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Gervasio",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Gonzalo",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Gregorio",
+      "gender": "m",
+      "meaning": ""
+    },
+    {
+      "name": "Heraclio",
+      "gender": "m",
+      "meaning": ""
+    }
+  ],
   "surnames": [],
   "surname_rules": [],
   "patronymic_rules": []
