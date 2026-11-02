@@ -3135,5 +3135,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Al principio de su turno, recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra en contacto con la tierra."
+  },
+  {
+    "id": "ab_1793623604756",
+    "name": "Absorber Fuego",
+    "type": "passive",
+    "tier": "IV",
+    "tags": [
+      "Fuego"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Al principio de su turno, recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra rodeado de llamas o es impactado por un efecto de Fuego que atraviese su umbral."
   }
 ]
