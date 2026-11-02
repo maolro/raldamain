@@ -94,7 +94,10 @@
             "Agarre"
           ],
           "cost": "1 Acción, 1 Chi",
-          "range": "Medio"
+          "range": "Medio",
+          "name": "Agarre del Aire",
+          "desc": "El afectado debe tener éxito en un tiro de salvación Físico o queda Enredado y es arrastrado un paso en cualquier dirección, lo cual le provocaría 1d6 + SAB/CAR daño Contundente si choca con una superficie sólida. Si ya está Enredado por este efecto, pasará a estar Agarrado.",
+          "empower": "Afecta a un objetivo adicional que alcances con este hechizo."
         },
         {
           "tags": [
