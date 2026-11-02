@@ -3242,5 +3242,24 @@
     "move": "",
     "attacks": 1,
     "desc": "El objetivo está Enredado y es arrastrado un paso en cualquier dirección, sufriendo LOW daño Contundente si choca con una superficie sólida. Si ya está Enredado, pasará entonces a estar Agarrado."
+  },
+  {
+    "id": "ab_1793631216756",
+    "name": "Absorber Aire",
+    "type": "action",
+    "tier": "IV",
+    "tags": [],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Al principio de su turno, recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra en un entorno de fuertes vientos o es impactado por un efecto de Aire que atraviese su umbral."
   }
 ]
