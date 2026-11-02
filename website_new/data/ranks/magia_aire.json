@@ -34,12 +34,11 @@
             "Físico",
             "Área"
           ],
-          "cost": "2 Acciones, 1 chi",
-          "crit": "Los objetivos sufren Herido-1 (permanente).",
-          "duration": "Instantánea",
-          "desc": "Todos loos objetivos en el área afectada deben tener éxito en un tiro de salvación Físico o son empujados dos pasos y caen con Ralentizado-1. Este ataque disipará todos los efectos gaseosos a su paso y las criaturas voladoras afectadas caen al suelo. Además, si el objetivo empujado choca con una superficie física sufrirá entonces 3d6 + SAB/CAR daño Contundente (lo mismo ocurre con las caídas).",
+          "cost": "2 Acciones, 1 Chi",
+          "desc": "Todos loos objetivos en el área afectada deben tener éxito en un tiro de salvación Físico o sufren 3d6 + SAB daño Contundente y son empujados dos pasos. Este ataque disipará todos los efectos gaseosos a su paso y las criaturas voladoras afectadas caen al suelo. ",
           "empower": "Vuelve a emplear este hechizo en la misma zona sin la necesidad de gastar acciones adicionales.",
-          "area": "Cono Medio"
+          "area": "Cono Medio",
+          "show_mod": true
         },
         {
           "name": "Tajo de los Vientos",
@@ -51,10 +50,11 @@
           ],
           "cost": "1+ Acciones",
           "range": "Medio",
-          "crit": "El objetivo sufre Herido-1 (permanente).",
-          "duration": "Instantánea",
-          "desc": "Ataca con un tajo de aire comprimido que inflige 1d6 + SAB/CAR daño Cortante. Este ataque ignora ocultamiento y resistencias a ataques a distancia. \nPuedes gastar una acción adicional para incrementar el daño base de este ataque por 1d6 (máximo 2 acciones).",
-          "empower": "Haz un ataque contra un objetivo adicional o haz un segundo ataque contra el mismo objetivo contra el cual deberá emplear su mismo resultado defensivo."
+          "desc": "Este ataque ignora ocultamiento. Puedes gastar una acción adicional para incrementar el daño base de este ataque por un dado.",
+          "empower": "Haz un ataque contra un objetivo adicional o haz un segundo ataque contra el mismo objetivo.",
+          "damage": "1d6 + SAB/CAR",
+          "damage_type": "Cortante",
+          "show_mod": false
         },
         {
           "name": "Agilidad del Aire",
@@ -62,7 +62,11 @@
             "Aire",
             "Pasiva"
           ],
-          "desc": "Aumenta todas tus velocidades por un paso y obtienes velocidad de Salto igual a tu velocidad base. Además, puedes emplear tu modificador de Magia de Aire para todos tus tiros de Esquiva o de salvación Físicos."
+          "desc": "Aumenta todas tus velocidades por un paso y obtienes velocidad de Salto igual a tu velocidad base. Puedes también emplear tu modificador de Magia de Aire para todos tus tiros de salvación Físicos o Esquiva en el caso que sea más alto.",
+          "replace_mod": [
+            "Físico",
+            "Esquiva"
+          ]
         }
       ]
     },
