@@ -349,5 +349,14 @@
     "size": "Diminuto",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "kidemon",
+    "name": "Kidemon",
+    "type": "Infernal",
+    "level": 8,
+    "size": "Grande",
+    "image": "",
+    "description": ""
   }
 ]
