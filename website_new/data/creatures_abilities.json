@@ -3184,7 +3184,8 @@
     "type": "action",
     "tier": "I",
     "tags": [
-      "Aire"
+      "Aire",
+      "Ataque"
     ],
     "cost": "1",
     "bonus": "",
@@ -3192,7 +3193,7 @@
     "range": "Medio",
     "area": "",
     "damage": "",
-    "damage_tier": "MID",
+    "damage_tier": "LOW",
     "damage_base_type": "Cortante",
     "save": "",
     "move": "",
