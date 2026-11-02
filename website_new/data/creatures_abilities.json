@@ -102,22 +102,6 @@
     "tier": "II"
   },
   {
-    "name": "Viento Cortante",
-    "cost": 1,
-    "bonus": "+7+2d6",
-    "range": "8",
-    "damage": "3d6 + 5 Cortante",
-    "move": 5,
-    "desc": "Este ataque ignora ocultamiento, vientos fuertes y Resistencias a ataques a distancia.",
-    "attacks": 2,
-    "id": "viento-cortante_1778706447471",
-    "type": "action",
-    "tags": [
-      "Aire",
-      "Ataque"
-    ]
-  },
-  {
     "name": "Vendaval",
     "cost": 2,
     "bonus": "+7+2d6",
