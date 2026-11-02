@@ -1,0 +1,10 @@
+{
+  "id": "ustileses",
+  "name": "Ustileses",
+  "description": "",
+  "format": "{name} {surname}",
+  "names": [],
+  "surnames": [],
+  "surname_rules": [],
+  "patronymic_rules": []
+}
