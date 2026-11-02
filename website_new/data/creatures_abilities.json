@@ -226,18 +226,6 @@
     "bonus_scaled": true
   },
   {
-    "desc": "El afectado reduce su cordura por 6 y queda confundido durante una ronda.",
-    "attacks": 2,
-    "cost": 1,
-    "save": "Mental +11+2d6",
-    "name": "Sobrecarga Mental",
-    "tags": [
-      "Mental"
-    ],
-    "id": "sobrecarga-mental_1778753097013",
-    "type": "action"
-  },
-  {
     "name": "Jinete",
     "desc": "Se engancha a un aliado, empleándolo como montura. Esto hará que se mueva junto a él sin la necesidad de emplear movimiento.",
     "id": "jinete_1778753235567",
