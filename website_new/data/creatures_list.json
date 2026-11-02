@@ -331,5 +331,14 @@
     "size": "Grande",
     "image": "creatures/elemental_tierra.jpg",
     "description": ""
+  },
+  {
+    "id": "elemental_aire",
+    "name": "Elemental de Aire",
+    "type": "Espíritu",
+    "level": 5,
+    "size": "Grande",
+    "image": "creatures/elemental_aire.jpg",
+    "description": ""
   }
 ]
