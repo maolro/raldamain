@@ -141,18 +141,6 @@
     ]
   },
   {
-    "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo. Solo puede emplear esta habilidad si está tocando la tierra.",
-    "cost": 1,
-    "id": "vinculo-con-la-tierra_1778712119755",
-    "type": "reaction",
-    "tags": [
-      "Tierra",
-      "Sanacion"
-    ],
-    "name": "Vínculo con la Tierra",
-    "ability_id": "vinculo-con-la-tierra_1778712119755"
-  },
-  {
     "name": "Absorber Aire",
     "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra en un lugar con vientos fuertes o es impactado por un efecto de Aire que atraviese su umbral.",
     "cost": 1,
