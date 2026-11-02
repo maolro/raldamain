@@ -3282,5 +3282,27 @@
     "move": "",
     "attacks": 1,
     "desc": "El daño de sus ataques no se puede curar. Además, al impactar con un ataque de arma o natural el afectado deberá tener éxito en un tiro VOL +MOD o sufre una Maldición, la cual le provoca DD daño Necrótico cada ronda y Enfermado I. Ambos efectos se pueden eliminar como si fueran un efecto de estado de categoría I. "
+  },
+  {
+    "id": "ab_1793638445258",
+    "name": "Retener Persona",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Protectora",
+      "Agarre"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo está Enredado (FÍS +MOD para escapar), o Agarrado si ya se encuentra Enredado. Mientras se encuentre Enredado o Agarrado por este efecto, no podrá lanzar hechizos. "
   }
 ]
