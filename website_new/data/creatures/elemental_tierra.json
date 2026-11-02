@@ -7,8 +7,8 @@
   "image": "creatures/elemental_tierra.jpg",
   "hits": 2,
   "saves": {
-    "FÍS": "+7+1d6",
-    "VOL": "+7",
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
     "MEN": "+7"
   },
   "damageThreshold": {
@@ -19,73 +19,97 @@
   "immune": [
     "Veneno",
     "Necrótico",
-    "Efectos mentales",
+    "Mentales",
     "Miedo",
-    "Terreno difícil"
+    "Herido"
   ],
   "senses": "Sentir Vibraciones",
-  "speed": "Paso 8, Excavar 8",
+  "speed": "Paso 1, Excavar 1, Escalada 1",
   "combat": {
     "acciones": 1,
     "reacciones": 1
   },
   "traits": [
     {
-      "name": "Paso Terrestre",
-      "desc": "Puede moverse a través de roca y tierra empleando su velocidad de Excavar, ignorando así barreras y obstáculos a su paso.",
-      "ability_id": "cuerpo-de-tierra_1778707274474",
-      "type": "passive",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Tiene Inmunidad a Aflicciones, Heridas, Necrótico, Mentales y Miedo, además que aumenta su Umbral Mágico por un paso. Recibe velocidad de Excavar y Escalada 1, puede pasar a través de superficies rocosas como si no estuvieran además que tiene Vista a Ciegas a distancia media con todo objetivo en contacto con la tierra. No obstante, reducirá su umbral al daño Sónico por un paso. Desbloquea también Vínculo con la Tierra sin importar su nivel.",
+      "name": "Cuerpo de Roca",
       "tags": [
         "Tierra"
-      ]
+      ],
+      "ability_id": "ab_1793623155656"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al principio de su turno, recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra en contacto con la tierra.",
+      "name": "Vínculo con la Tierra",
+      "tags": [
+        "Tierra"
+      ],
+      "ability_id": "ab_1793623479776"
     }
   ],
   "actions": [
     {
+      "attacks": 1,
+      "bonus_scaled": true,
       "cost": 1,
-      "bonus": "+7+2d6",
-      "range": "1",
-      "damage": "3d6 + 5 Contundente",
-      "desc": "Al impactar, el objetivo es empujado 4 casillas. Si recibe ambos golpes, debe tener éxito en un tiro de salvación Físico o cae tropezado.",
-      "name": "Puños de Piedra",
-      "attacks": 2,
-      "type": "action",
-      "tags": [
-        "Tierra",
-        "Ataque",
-        "Maniobra"
-      ]
-    },
-    {
+      "damage_base_type": "Contundente",
+      "damage_tier": "MID",
+      "desc": "Puede emplear una Acción para aumentar el daño por un dado y el área a un radio corto.",
       "name": "Pedrada",
-      "cost": 1,
-      "bonus": "+7 + 2d6",
-      "range": "8",
-      "area": "Radio 2",
-      "damage": "4d6 + 5 Contundente",
-      "desc": "Todos los impactados deben tener éxito en un tiro de salvación de Voluntad o son aturdidos una ronda. Si impacta a un objetivo volador, caerá al suelo y sufrirá el daño de caída correspondiente. ",
-      "type": "action",
+      "range": "Medio",
       "tags": [
         "Tierra",
         "Ataque",
-        "Area"
-      ]
+        "Fisico"
+      ],
+      "ability_id": "ab_1793622955763",
+      "damage": "3d6 + 5 Contundente",
+      "bonus": "+7 + 2d6"
     },
     {
-      "name": "Ola de Tierra",
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "damage_base_type": "Contundente",
+      "damage_tier": "HIGH",
+      "desc": "Los afectados son empujados y tropezados. Este ataque destruye las estructuras frágiles en el área afectada. Solo afecta a objetivos en contacto con la tierra.",
+      "name": "Erupción de Tierra",
+      "range": "Medio",
+      "save": "FÍS +7 + 2d6",
+      "tags": [
+        "Tierra"
+      ],
+      "ability_id": "ab_1793623009993",
+      "mod_tpl": {
+        "save": "FÍS +MOD"
+      },
+      "damage": "4d6 + 5 Contundente"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
       "cost": 1,
-      "bonus": "+7+2d6",
-      "damage": "4d6 + 5 Contundente",
-      "move": 8,
-      "range": "1",
-      "area": "Linea 8",
-      "desc": "Todos los objetivos impactados son empujados 4 casillas y deben tener éxito en un tiro de salvación Físico o caen tropezados. Este ataque crea terreno difícil por donde pasa y elimina otros efectos en el suelo. ",
+      "damage_base_type": "Contundente",
+      "damage_tier": "MID",
+      "desc": "El objetivo queda Enredado hasta que escape. Si impacta a un objetivo volador, este deberá tener éxito en un tiro FÍS +7 + 2d6 o caerá al suelo, y no podrá volver a volar hasta que escape.",
+      "name": "Abrazo de la Tierra",
+      "range": "Medio",
       "tags": [
         "Tierra",
         "Ataque",
-        "Area",
-        "Maniobra"
-      ]
+        "Agarre"
+      ],
+      "ability_id": "ab_1793623101268",
+      "mod_tpl": {
+        "desc": "El objetivo queda Enredado hasta que escape. Si impacta a un objetivo volador, este deberá tener éxito en un tiro FÍS +MOD o caerá al suelo, y no podrá volver a volar hasta que escape."
+      },
+      "damage": "3d6 + 5 Contundente",
+      "bonus": "+7 + 2d6"
     }
   ],
   "reactions": [
@@ -94,24 +118,18 @@
       "bonus": "+7+2d6"
     },
     {
-      "name": "Muro de Piedra",
+      "attacks": 1,
+      "bonus_scaled": false,
       "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 8. Los atacantes cuerpo a cuerpo que reduzcan el daño a 0 sufren 3d6 daño Contundente (si atacaron con armas naturales) o su arma se rompe.",
+      "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo 12 puntos de daño. Si es impactado por un arma no-mágica, esta se romperá.",
+      "name": "Muro de Piedra",
       "tags": [
         "Tierra"
-      ]
-    },
-    {
-      "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo. Solo puede emplear esta habilidad si está tocando la tierra.",
-      "cost": 1,
-      "id": "absorber-elemento_1778692436921",
-      "type": "reaction",
-      "tags": [
-        "Tierra",
-        "Sanacion"
       ],
-      "name": "Vínculo con la Tierra",
-      "ability_id": "vinculo-con-la-tierra_1778712119755"
+      "ability_id": "ab_1793294428604",
+      "mod_tpl": {
+        "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo TIER x 6 puntos de daño. Si es impactado por un arma no-mágica, esta se romperá."
+      }
     }
   ],
   "lore": "Los elementales de tierra son colosos de piedra y arcilla convocados desde el Plano Elemental de la Tierra. Lentos pero absolutamente implacables, absorben castigos que destrozarían a cualquier otra criatura y devuelven cada golpe con fuerza aplastante. Su conexión con el suelo les otorga una resistencia casi indestructible mientras permanecen en contacto con la tierra firme.",
@@ -125,16 +143,24 @@
   "umbrales": [
     {
       "value": 16,
-      "categories": "Físico"
+      "categories": "Físico",
+      "tier_tpl": "T+2"
     },
     {
       "value": 12,
-      "categories": "Magia"
+      "categories": "Magia",
+      "tier_tpl": "T+1"
     },
     {
       "value": 8,
-      "categories": "General"
+      "categories": "General",
+      "tier_tpl": "T"
     }
   ],
-  "published": false
+  "published": false,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
 }
