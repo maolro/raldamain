@@ -340,5 +340,14 @@
     "size": "Grande",
     "image": "creatures/elemental_aire.jpg",
     "description": ""
+  },
+  {
+    "id": "diablillo",
+    "name": "Diablillo",
+    "type": "Infernal",
+    "level": 5,
+    "size": "Diminuto",
+    "image": "",
+    "description": ""
   }
 ]

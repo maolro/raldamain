@@ -8,21 +8,24 @@
   "hits": 2,
   "saves": {
     "FÍS": "+7+2d6",
-    "VOL": "+7+2d6",
+    "VOL": "+7+1d6",
     "MEN": "+7+2d6"
   },
   "umbrales": [
     {
-      "value": 2,
-      "categories": "General"
+      "value": 4,
+      "categories": "General",
+      "tier_tpl": "T-1"
     },
     {
-      "value": 6,
-      "categories": "Magia"
+      "value": 8,
+      "categories": "Físico",
+      "tier_tpl": "T"
     },
     {
-      "value": 6,
-      "categories": "Físico"
+      "value": 12,
+      "categories": "Magia",
+      "tier_tpl": "T+1"
     }
   ],
   "immune": [
@@ -37,15 +40,42 @@
     "acciones": 2,
     "reacciones": 1
   },
-  "traits": [],
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca 2d6 daño adicional de un elemento de su elección en ataques naturales.",
+      "name": "Infernal",
+      "tags": [
+        "Infernal",
+        "Innata"
+      ],
+      "ability_id": "ab_1793366059338",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca DD daño adicional de un elemento de su elección en ataques naturales."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "El daño de sus ataques no se puede curar. Además, al impactar con un ataque de arma o natural el afectado deberá tener éxito en un tiro VOL +7 + 2d6 o sufre una Maldición, la cual le provoca 2d6 daño Necrótico cada ronda y Enfermado I. Ambos efectos se pueden eliminar como si fueran un efecto de estado de categoría I. ",
+      "name": "Heridas Infernales",
+      "tags": [
+        "Infernal"
+      ],
+      "ability_id": "ab_1793631318284",
+      "mod_tpl": {
+        "desc": "El daño de sus ataques no se puede curar. Además, al impactar con un ataque de arma o natural el afectado deberá tener éxito en un tiro VOL +MOD o sufre una Maldición, la cual le provoca DD daño Necrótico cada ronda y Enfermado I. Ambos efectos se pueden eliminar como si fueran un efecto de estado de categoría I. "
+      }
+    }
+  ],
   "actions": [
     {
       "attacks": 1,
       "bonus_scaled": true,
-      "cost": "1",
-      "damage": "2d6+4",
+      "cost": 1,
       "damage_base_type": "Perforante",
-      "desc": "Al impactar, provoca Veneno 1d6 al objetivo (+MOD VOL para resistir, 6 rondas). ",
+      "damage_tier": "MID",
       "name": "Aguijón",
       "range": "Adyacente",
       "tags": [
@@ -55,116 +85,67 @@
         "Natural"
       ],
       "ability_id": "ab_1791818158790",
-      "mod_tpl": {
-        "desc": "Al impactar, provoca Veneno 2d6 al objetivo (+MOD VOL para resistir, 6 rondas). "
-      },
-      "bonus": "",
-      "type": "action",
-      "area": "",
-      "damage_tier": "MID",
-      "save": "",
-      "move": ""
+      "damage": "3d6 + 5 Perforante",
+      "bonus": "+7 + 2d6",
+      "desc": "El daño de este ataque no puede curarse, y al impactar provoca una Maldición."
     },
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "cost": "1",
+      "cost": 1,
       "desc": "El afectado tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él.",
       "name": "Sugestión",
+      "save": "MEN +7 + 2d6",
       "tags": [
         "Mental"
       ],
       "ability_id": "ab_1793016178131",
       "mod_tpl": {
-        "desc": "El afectado debe tener éxito en un tiro de salvación Mental +MOD o tomará un acción específica que le ordene siempre y cuando esta resulte lógica para él."
-      },
-      "type": "action",
-      "bonus": "",
-      "range": "",
-      "area": "",
-      "damage": "",
-      "damage_tier": "",
-      "damage_base_type": "",
-      "save": "MEN +MOD",
-      "move": ""
-    },
-    {
-      "attacks": 1,
-      "bonus_scaled": false,
-      "cost": 1,
-      "desc": "Creas una ilusión de un tamaño pequeño de un objeto, criatura o fenómeno físico que dura mientras mantenga la concentración. Puede ser desmentida con un tiro de salvación Mental +7 + 2d6.",
-      "name": "Crear Ilusión",
-      "tags": [
-        "Ilusorio"
-      ],
-      "ability_id": "ab_1793023535387",
-      "mod_tpl": {
-        "desc": "Creas una ilusión de un tamaño pequeño de un objeto, criatura o fenómeno físico que dura mientras mantenga la concentración. Puede ser desmentida con un tiro de salvación Mental +MOD."
+        "save": "MEN +MOD"
       }
-    },
-    {
-      "attacks": 1,
-      "bonus_scaled": false,
-      "cost": "1",
-      "desc": "El afectado percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo.",
-      "name": "Asalto Fantasmal",
-      "tags": [
-        "Ilusorio",
-        "Mental"
-      ],
-      "ability_id": "ab_1793024131874",
-      "mod_tpl": {
-        "desc": "El objetivo debe tener éxito en un tiro de salvación Mental +MOD o percibe ilusiones que le hacen sentirse Confundido, Enredado o sufre 1d6 + 4 daño Fuerza. Puede gastar una Acción en repetir este tiro para intentar liberarse, y al inicio de su turno puedes hacer que sufra de nuevo los mismos efectos. Si el objetivo se libera exitosamente, no puede volver a afectarlo con este hechizo."
-      },
-      "type": "action",
-      "bonus": "",
-      "area": "",
-      "damage": "",
-      "damage_tier": "",
-      "damage_base_type": "",
-      "save": "MEN +MOD",
-      "move": ""
     }
   ],
   "reactions": [
     {
       "attacks": 1,
-      "bonus": "+7 + 2d6",
-      "bonus_scaled": false,
+      "bonus": "+7 + 3d6",
       "name": "Esquiva",
-      "tags": [
-        "Reflejos"
-      ],
       "ability_id": "ab_1793023978219",
       "mod_tpl": {
-        "bonus": "+MOD"
+        "bonus": "+MOD+1"
       }
     },
     {
       "attacks": 1,
       "bonus_scaled": false,
       "cost": 1,
-      "desc": "Se vuelve invisible hasta que ataque o lance un hechizo. ",
+      "desc": "Se vuelve Invisible hasta que ataque o lance un hechizo.",
       "name": "Invisibilidad",
-      "tags": [],
+      "tags": [
+        "Ilusorio",
+        "Visual"
+      ],
       "ability_id": "ab_1793016212873"
     },
     {
       "ability_id": "salto-espacial_1778751219905",
+      "cost": 1,
       "desc": "Añade +10 a su tiro de Esquiva y se teletransporta un paso al moverse.",
       "name": "Salto Espacial",
       "tags": [
         "Espacial",
         "Arcano"
-      ],
-      "cost": "1",
-      "move": 8,
-      "type": "reaction"
+      ]
     }
   ],
   "lore": "",
   "tags": [
     "Infernal"
   ],
-  "published": false
+  "published": true,
+  "save_scale": {
+    "MEN": "bonus",
+    "VOL": "mid",
+    "FÍS": "bonus"
+  }
 }
