@@ -111,7 +111,124 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 });
 
+// ── PASSIVE EFFECTS ──────────────────────────────────────────────────────────
+// A passive (trait) can carry "effects" that the stat block applies on its own, like
+// the Creador does with a player's passives. The hand-written umbrales / immune /
+// senses / speed stay the creature's base; the passives are added on top:
+//   effects: { umbrales: [{ categories: "Magia", steps: 1, flat?: 0, amount?: 4, choose? }],
+//              immune: ["Miedo", …], senses: ["Sentido Vital"], speed: ["Natación 1"],
+//              extra_damage: [{ dice: "DD", dice_value?: "2d6", type: "Necrótico", on: "fisicos", choose? }] }
+// steps = steps of the Tier's umbral jump (Salto); amount / dice_value are resolved for the
+// creature's level by the creature builder (the tables below are only a fallback).
+// A threshold builds on the same umbral the simulator would use: the exact damage type,
+// else its group (Físico / Magia), else General. Mirrored in combat-simulator/raldamain/data/website.py.
+const CE_GROUPS = { cortante: 'fisico', perforante: 'fisico', contundente: 'fisico',
+    fuego: 'magico', frio: 'magico', electrico: 'magico', acido: 'magico', arcano: 'magico',
+    radiante: 'magico', necrotico: 'magico', psiquico: 'magico', sonico: 'magico',
+    agua: 'magico' };   // (water effects count as magic for a passive's umbral)
+const CE_KEYS = { fisico: 'fisico', magia: 'magico', magico: 'magico', general: 'general' };
+const CE_PHYS = ['cortante', 'perforante', 'contundente'];
+const CE_TYPE_WORDS = [...CE_PHYS, 'fuego', 'frio', 'electrico', 'acido', 'arcano', 'radiante', 'necrotico',
+    'psiquico', 'sonico', 'fuerza', 'veneno', 'magico'];
+const CE_MAGIC_TAGS = ['fuego', 'hielo', 'frio', 'agua', 'aire', 'tierra', 'tormenta', 'electric', 'acido', 'arcan',
+    'evocac', 'nigroman', 'necrot', 'mental', 'vida', 'sombr', 'radiant', 'sonic', 'psiqu', 'divin', 'magi'];
+const CE_SALTO = [[0, 2], [6, 4], [12, 5], [18, 6], [99, 7]];          // level ≤ n → Salto (fallback)
+const CE_DD = [[0, '1d4'], [3, '1d6'], [6, '2d6'], [9, '3d8'], [12, '4d8'], [15, '5d10'], [18, '6d10'], [99, '7d12']];
+
+function cePlain(s) { return String(s == null ? '' : s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim(); }
+function ceKey(cat) {
+    const k = cePlain(String(cat || '').split(/[/,]| o /)[0]);
+    return CE_KEYS[k] || k || 'general';
+}
+function ceSalto(level) { return CE_SALTO.find(([n]) => (+level || 0) <= n)[1]; }
+function ceDice(text, level) {
+    const m = /^\s*DD\s*(?:([+-])\s*(\d+))?\s*$/i.exec(String(text || ''));
+    if (!m) return String(text || '');
+    const dd = CE_DD.find(([n]) => (+level || 0) <= n)[1].split('d');
+    const off = m[1] ? (m[1] === '-' ? -1 : 1) * +m[2] : 0;   // DD+1 / DD-1: one die more / fewer
+    const n = Math.max(1, +dd[0] + off);
+    return `${n}d${dd[1]}`;
+}
+// Which attacks an extra damage rides: todos · fisicos · naturales · arma
+function ceAttackKind(action) {
+    const tags = cePlain((action.tags || []).join(' '));
+    const dmg = cePlain(action.damage);
+    const typed = CE_TYPE_WORDS.some(w => dmg.includes(w));
+    const phys = tags.includes('fisic') || CE_PHYS.some(w => dmg.includes(w))
+        || (!typed && !CE_MAGIC_TAGS.some(w => tags.includes(w)));
+    return { phys, natural: tags.includes('natural') || (phys && !tags.includes('arma')), arma: tags.includes('arma') };
+}
+function ceRides(action, on) {
+    if (!action || !action.bonus || !action.damage) return false;
+    const k = ceAttackKind(action);
+    return on === 'fisicos' ? k.phys : on === 'naturales' ? k.natural : on === 'arma' ? k.arma : true;
+}
+function ceAddWords(base, words) {
+    const list = String(base || '').split(',').map(s => s.trim()).filter(Boolean);
+    for (const w of words || []) if (w && !list.some(x => cePlain(x) === cePlain(w))) list.push(String(w).trim());
+    return list.join(', ');
+}
+
+function applyTraitEffects(data) {
+    const traits = (data.traits || []).filter(t => t && t.effects);
+    if (!traits.length || data._effects_applied) return data;
+    const out = JSON.parse(JSON.stringify(data));
+    out._effects_applied = true;   // applying twice would add every step twice
+    const level = out.level;
+
+    // Umbrales: total per category, groups (Magia / Físico / General) before the types that build on them
+    const touched = new Map();   // key → { name, amount }
+    for (const t of traits) for (const u of t.effects.umbrales || []) {
+        if (!String(u.categories || '').trim()) continue;   // "elige" not chosen yet
+        const amount = u.amount != null ? +u.amount : (+u.steps || 0) * ceSalto(level) + (+u.flat || 0);
+        for (const name of String(u.categories).split(',').map(s => s.trim()).filter(Boolean)) {
+            const key = ceKey(name);
+            const cur = touched.get(key) || { name, amount: 0 };
+            cur.amount += amount;
+            touched.set(key, cur);
+        }
+    }
+    if (touched.size) {
+        const entries = (out.umbrales || []).map(u => ({ ...u, cats: String(u.categories || 'General').split(',').map(s => s.trim()).filter(Boolean) }));
+        const value = {};
+        for (const e of entries) for (const c of e.cats) value[ceKey(c)] = +e.value || 0;
+        if (value.general == null) value.general = Object.keys(value).length ? Math.min(...Object.values(value)) : 2;
+        const baseOf = key => value[key] ?? (CE_GROUPS[key] && value[CE_GROUPS[key]]) ?? value.general;
+        const isGroup = k => ['general', 'magico', 'fisico'].includes(k);
+        const order = [...touched.keys()].sort((a, b) => isGroup(b) - isGroup(a));
+        const result = {};
+        for (const key of order) { result[key] = Math.max(0, baseOf(key) + touched.get(key).amount); value[key] = result[key]; }
+        for (const e of entries) e.cats = e.cats.filter(c => !(ceKey(c) in result));
+        const kept = entries.filter(e => e.cats.length);
+        for (const key of order) {
+            const name = touched.get(key).name;
+            const same = kept.find(e => +e.value === result[key]);
+            if (same) key === 'general' ? same.cats.unshift(name) : same.cats.push(name);
+            else kept.push({ value: result[key], cats: [name], from_traits: true });
+        }
+        out.umbrales = kept.map(({ cats, ...u }) => ({ ...u, categories: cats.join(', ') }));
+    }
+
+    const all = k => traits.flatMap(t => t.effects[k] || []);
+    const immune = [...(out.immune || [])];
+    for (const i of all('immune')) if (i && !immune.some(x => cePlain(x) === cePlain(i))) immune.push(i);
+    out.immune = immune;
+    if (all('senses').length) out.senses = ceAddWords(out.senses, all('senses'));
+    if (all('speed').length) out.speed = ceAddWords(out.speed, all('speed'));
+
+    for (const t of traits) for (const x of t.effects.extra_damage || []) {
+        if (!String(x.type || '').trim() || !x.dice) continue;   // element not chosen yet
+        const dice = x.dice_value || ceDice(x.dice, level);
+        for (const a of out.actions || []) if (ceRides(a, x.on || 'todos'))
+            (a.extra_damage = a.extra_damage || []).push({ dice, type: x.type, source: t.name });
+    }
+    return out;
+}
+
 function renderCreaturePage(data) {
+    // Passives with effects add their umbrales, immunities, senses and extra damage
+    if (data && data.hits != null) data = applyTraitEffects(data);
+
     // A. Meta tags
     if (typeof updateMetaTags === 'function') {
         updateMetaTags({
@@ -422,7 +539,10 @@ function renderAction(action, isNewFormat) {
 
     // Damage
     if (action.damage) {
-        html += `<span class="damage">${formatDice(action.damage)}</span>. `;
+        // + the extra damage its passives add (counted apart for umbrales)
+        const extra = (action.extra_damage || []).map(x =>
+            ` + <span class="damage" title="${x.source || ''}">${formatDice(x.dice)} ${x.type}</span>`).join('');
+        html += `<span class="damage">${formatDice(action.damage)}</span>${extra}. `;
     }
 
     // Description

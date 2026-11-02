@@ -216,7 +216,7 @@ def creature_summary(row, sim_ids: dict[str, str], listed: set | None = None) ->
     p = BASE / row["path"]
     if row["error"]:
         raise ValueError(row["error"])
-    d = json.loads(row["raw"])
+    d = website.apply_trait_effects(json.loads(row["raw"]))  # with its passives' umbrales, immunities, senses…
     level = int(d.get("level") or 1)
     combat = d.get("combat") or {}
     attacks = [{"name": a.get("name", ""), "bonus": a.get("bonus", ""), "damage": a.get("damage", ""),

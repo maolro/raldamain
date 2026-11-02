@@ -551,6 +551,138 @@ def character_spec(path: Path, d: dict[str, Any] | None = None) -> dict[str, Any
     }
 
 
+# ─────────────────────────────────────────────────────────────── creature passives
+
+# A passive (trait) can carry "effects" that apply on their own: umbrales (steps of the
+# Tier's Salto), immunities, senses, speed and extra damage on attacks. Same rules as
+# applyTraitEffects in assets/js/creature_loader.js (the stat block) -- keep them in step.
+CE_GROUPS = {"cortante": "fisico", "perforante": "fisico", "contundente": "fisico",
+             "fuego": "magico", "frio": "magico", "electrico": "magico", "acido": "magico", "arcano": "magico",
+             "radiante": "magico", "necrotico": "magico", "psiquico": "magico", "sonico": "magico",
+             "agua": "magico"}  # (agua: water effects count as magic for a passive's umbral, not a simulator damage type)
+CE_PHYS = ["cortante", "perforante", "contundente"]
+CE_TYPE_WORDS = CE_PHYS + ["fuego", "frio", "electrico", "acido", "arcano", "radiante", "necrotico",
+                           "psiquico", "sonico", "fuerza", "veneno", "magico"]
+CE_MAGIC_TAGS = ["fuego", "hielo", "frio", "agua", "aire", "tierra", "tormenta", "electric", "acido", "arcan",
+                 "evocac", "nigroman", "necrot", "mental", "vida", "sombr", "radiant", "sonic", "psiqu", "divin", "magi"]
+CE_SALTO = [(0, 2), (6, 4), (12, 5), (18, 6), (99, 7)]   # level <= n -> Salto (fallback when not resolved)
+CE_DD = [(0, "1d4"), (3, "1d6"), (6, "2d6"), (9, "3d8"), (12, "4d8"), (15, "5d10"), (18, "6d10"), (99, "7d12")]
+
+
+def _ce_salto(level: Any) -> int:
+    lv = int(level or 0)
+    return next(v for n, v in CE_SALTO if lv <= n)
+
+
+def _ce_dice(text: Any, level: Any) -> str:
+    m = re.match(r"^\s*DD\s*(?:([+-])\s*(\d+))?\s*$", str(text or ""), re.I)
+    if not m:
+        return str(text or "")
+    lv = int(level or 0)
+    n, die = next(v for k, v in CE_DD if lv <= k).split("d")
+    off = (-1 if m.group(1) == "-" else 1) * int(m.group(2)) if m.group(1) else 0
+    return f"{max(1, int(n) + off)}d{die}"
+
+
+def _ce_attack_kind(a: dict[str, Any]) -> dict[str, bool]:
+    tags = plain(" ".join(a.get("tags") or []))
+    dmg = plain(a.get("damage"))
+    typed = any(w in dmg for w in CE_TYPE_WORDS)
+    phys = "fisic" in tags or any(w in dmg for w in CE_PHYS) or (not typed and not any(w in tags for w in CE_MAGIC_TAGS))
+    return {"phys": phys, "natural": "natural" in tags or (phys and "arma" not in tags), "arma": "arma" in tags}
+
+
+def _ce_rides(a: dict[str, Any], on: str) -> bool:
+    if not a.get("bonus") or not a.get("damage"):
+        return False
+    k = _ce_attack_kind(a)
+    return {"fisicos": k["phys"], "naturales": k["natural"], "arma": k["arma"]}.get(on, True)
+
+
+def _ce_add_words(base: Any, words: list[str]) -> str:
+    items = [w.strip() for w in str(base or "").split(",") if w.strip()]
+    for w in words:
+        if w and not any(plain(x) == plain(w) for x in items):
+            items.append(str(w).strip())
+    return ", ".join(items)
+
+
+def apply_trait_effects(d: dict[str, Any]) -> dict[str, Any]:
+    """The creature with its passives' effects applied (a copy; ``d`` itself is untouched)."""
+    traits = [t for t in d.get("traits") or [] if isinstance(t, dict) and t.get("effects")]
+    if not traits or d.get("_effects_applied"):
+        return d
+    out = json.loads(json.dumps(d))
+    out["_effects_applied"] = True  # applying twice would add every step twice
+    level = out.get("level")
+
+    touched: dict[str, dict[str, Any]] = {}
+    for t in traits:
+        for u in t["effects"].get("umbrales") or []:
+            if not str(u.get("categories") or "").strip():
+                continue  # "elige" not chosen yet
+            amount = float(u["amount"]) if u.get("amount") is not None else \
+                float(u.get("steps") or 0) * _ce_salto(level) + float(u.get("flat") or 0)
+            for name in [c.strip() for c in str(u["categories"]).split(",") if c.strip()]:
+                cur = touched.setdefault(dtype_key(name), {"name": name, "amount": 0.0})
+                cur["amount"] += amount
+    if touched:
+        entries = [{**u, "cats": [c.strip() for c in str(u.get("categories") or "General").split(",") if c.strip()]}
+                   for u in out.get("umbrales") or []]
+        value: dict[str, int] = {}
+        for e in entries:
+            for c in e["cats"]:
+                value[dtype_key(c)] = int(e.get("value") or 0)
+        if "general" not in value:
+            value["general"] = min(value.values()) if value else 2
+
+        def base_of(key: str) -> int:
+            if key in value:
+                return value[key]
+            group = CE_GROUPS.get(key)
+            return value[group] if group and group in value else value["general"]
+
+        order = sorted(touched, key=lambda k: k not in ("general", "magico", "fisico"))  # groups first (stable)
+        result: dict[str, int] = {}
+        for key in order:
+            result[key] = max(0, int(base_of(key) + touched[key]["amount"]))
+            value[key] = result[key]
+        for e in entries:
+            e["cats"] = [c for c in e["cats"] if dtype_key(c) not in result]
+        kept = [e for e in entries if e["cats"]]
+        for key in order:
+            name = touched[key]["name"]
+            same = next((e for e in kept if int(e.get("value") or 0) == result[key]), None)
+            if same:
+                same["cats"].insert(0, name) if key == "general" else same["cats"].append(name)
+            else:
+                kept.append({"value": result[key], "cats": [name], "from_traits": True})
+        out["umbrales"] = [{**{k: v for k, v in e.items() if k != "cats"}, "categories": ", ".join(e["cats"])} for e in kept]
+
+    def every(k: str) -> list[Any]:
+        return [x for t in traits for x in t["effects"].get(k) or []]
+
+    immune = list(out.get("immune") or [])
+    for i in every("immune"):
+        if i and not any(plain(x) == plain(i) for x in immune):
+            immune.append(i)
+    out["immune"] = immune
+    if every("senses"):
+        out["senses"] = _ce_add_words(out.get("senses"), every("senses"))
+    if every("speed"):
+        out["speed"] = _ce_add_words(out.get("speed"), every("speed"))
+
+    for t in traits:
+        for x in t["effects"].get("extra_damage") or []:
+            if not str(x.get("type") or "").strip() or not x.get("dice"):
+                continue  # element not chosen yet
+            dice = x.get("dice_value") or _ce_dice(x["dice"], level)
+            for a in out.get("actions") or []:
+                if _ce_rides(a, x.get("on") or "todos"):
+                    a.setdefault("extra_damage", []).append({"dice": dice, "type": x["type"], "source": t.get("name")})
+    return out
+
+
 # ─────────────────────────────────────────────────────────────── creatures
 
 def _creature_action(a: dict[str, Any], idx: int, is_reaction: bool = False) -> dict[str, Any]:
@@ -568,6 +700,10 @@ def _creature_action(a: dict[str, Any], idx: int, is_reaction: bool = False) -> 
 
     if a.get("bonus") and dice and not is_reaction:
         hit = [{"kind": "damage", "damage": dice, "dtype": dtype}]
+        for x in a.get("extra_damage") or []:  # from passives (apply_trait_effects): counted apart for umbrales
+            xd, xt = dice_and_type(f"{x['dice']} {x['type']}")
+            if xd:
+                hit.append({"kind": "damage", "damage": xd, "dtype": xt})
         conds = rider_effects(desc)
         rider_save = save_in_text(desc) if conds else None
         if rider_save:  # "...debe superar un tiro de salvación FÍS +7+1d6 o queda Enredado"
@@ -617,6 +753,7 @@ def creature_spec(path: Path, d: dict[str, Any] | None = None) -> dict[str, Any]
         d = json.loads(path.read_text(encoding="utf-8"))
     if "hits" not in d:
         raise ValueError("formato antiguo de criatura (sin 'hits')")
+    d = apply_trait_effects(d)  # passives' umbrales, immunities and extra damage
 
     umbrales: dict[str, int] = {}
     for u in d.get("umbrales") or []:

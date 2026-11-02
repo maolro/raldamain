@@ -62,7 +62,12 @@ def _propagate_ability(aid, ab_data):
             for entry in data.get(section, []):
                 if entry.get("ability_id") == aid:
                     for k, v in ab_data.items():
-                        if k not in LIBRARY_ONLY:
+                        if k == "effects":
+                            # only creatures that already apply this passive's effects get the new ones:
+                            # the others have them written by hand in their base umbrales / immunities
+                            if "effects" in entry:
+                                entry[k] = _merge_choices(v, entry["effects"])
+                        elif k not in LIBRARY_ONLY:
                             entry[k] = v
                     entry["ability_id"] = aid
                     modified = True
@@ -70,6 +75,17 @@ def _propagate_ability(aid, ab_data):
             p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
             changed.append(str(p))
     return changed
+
+def _merge_choices(fresh, mine):
+    """The library's new effects, keeping the element each creature chose ("elige cada criatura")."""
+    out = json.loads(json.dumps(fresh or {}))
+    for key, field in (("umbrales", "categories"), ("extra_damage", "type")):
+        for i, item in enumerate(out.get(key) or []):
+            old = ((mine or {}).get(key) or [])
+            if item.get("choose") and i < len(old) and old[i].get(field):
+                item[field] = old[i][field]
+    return out
+
 
 def _git_push(files, message):
     """After every save: record ``files`` in the Taller's SQLite mirror, then commit
@@ -196,6 +212,14 @@ def api_ability_delete(aid):
     save_abilities([ab for ab in old if ab.get("id") != aid])
     git = _git_push([str(ABANK)], f"Delete creature ability: {name}")
     return jsonify({"ok": True, "git": git})
+
+@app.route("/assets/js/creature_effects.js")
+def creature_effects_js():
+    """The passives' effects editor, shared with the creature builder."""
+    js = BASE / "assets" / "js" / "creature_effects.js"
+    return Response(js.read_text(encoding="utf-8") if js.exists() else "", mimetype="application/javascript",
+                    headers={"Cache-Control": "no-cache"})
+
 
 @app.route("/")
 def index():
@@ -686,6 +710,7 @@ select.inp{cursor:pointer}
   </div>
 </div>
 
+<script src="/assets/js/creature_effects.js"></script>
 <script>
 // ── State ─────────────────────────────────────────────────────────────────────
 const S = {
@@ -1650,7 +1675,7 @@ function renderAbEdit() {
           <div class="field" style="flex:2"><div class="lbl">Nombre</div>
             <input class="inp" id="abe-name" value="${esc(a.name||'')}" oninput="S.abEdit.name=this.value"></div>
           <div class="field"><div class="lbl">Tipo</div>
-            <select class="inp" id="abe-type" onchange="S.abEdit.type=this.value">
+            <select class="inp" id="abe-type" onchange="S.abEdit.type=this.value;renderAbEdit()">
               <option value="action" ${a.type==='action'?'selected':''}>Acción</option>
               <option value="passive" ${a.type==='passive'?'selected':''}>Pasivo</option>
               <option value="reaction" ${a.type==='reaction'?'selected':''}>Reacción</option>
@@ -1703,9 +1728,25 @@ function renderAbEdit() {
           <textarea class="inp" rows="3" oninput="S.abEdit.desc=this.value||undefined">${esc(a.desc||'')}</textarea></div>
         <div class="field"><div class="lbl">Movimiento</div>
           <input class="inp" value="${esc(a.move||'')}" oninput="S.abEdit.move=this.value||undefined"></div>
+        ${a.type === 'passive' && window.CreatureEffects ? `<div id="abe-effects" data-ce-owner="lib">${abEffectsHtml()}</div>` : ''}
       </div>
     </div>`;
 }
+// ── Passive effects: added on their own to the stat block of every creature that takes this passive ──
+function abEffectsHtml() {
+  return CreatureEffects.html(S.abEdit.effects || {}, { creature: false }) +
+    `<div style="font-size:11px;color:var(--text3);margin-top:4px">Se aplican a las criaturas que inserten esta pasiva desde ahora.
+     Las que ya la tienen conservan sus umbrales e inmunidades puestos a mano (en el Creador pueden pulsar «Usar los efectos de la biblioteca»).</div>`;
+}
+function abEffectsEvent(e, kind) {
+  const box = e.target.closest && e.target.closest('#abe-effects');
+  if (!box || !S.abEdit || !window.CreatureEffects) return;
+  const eff = S.abEdit.effects || (S.abEdit.effects = {});
+  const r = kind === 'click' ? CreatureEffects.click(e, eff) && { structural: true } : CreatureEffects.input(e, eff);
+  if (r && r.structural) box.innerHTML = abEffectsHtml();
+}
+document.addEventListener('input', e => abEffectsEvent(e, 'input'));
+document.addEventListener('click', e => abEffectsEvent(e, 'click'));
 
 function renderAbeTags() {
   const tags = S.abEdit.tags||[];
@@ -1725,6 +1766,7 @@ async function saveAbility() {
   const a = S.abEdit; if (!a) return;
   if (!a.name) { toast('Nombre requerido','err'); return; }
   if (!a.id) a.id = a.name.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'') + '_' + Date.now();
+  if (a.type !== 'passive' || (window.CreatureEffects && CreatureEffects.isEmpty(a.effects))) delete a.effects;
   try {
     const res = await api('POST', `/api/ability/${a.id}`, a);
     S.abilities = await api('GET', '/api/abilities');

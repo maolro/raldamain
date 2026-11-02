@@ -68,6 +68,7 @@
         <div class="cc-row">
           <label class="cc-f cc-grow">Inmunidades (comas)<input id="f-immune" class="inp" placeholder="Veneno, Miedo, Efectos físicos no mágicos"></label>
         </div>
+        <div id="cc-passives" class="cc-passives" hidden></div>
         <div class="cc-row">
           <label class="cc-f cc-grow">Sentidos<input id="f-senses" class="inp" placeholder="Visión en la oscuridad"></label>
           <label class="cc-f cc-grow">Velocidad<input id="f-speed" class="inp" placeholder="Paso 8"></label>
@@ -117,6 +118,8 @@
 .cc-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: start; }
 .cc-right { position: sticky; top: 70px; max-height: calc(100vh - 90px); overflow-y: auto; }
 .cc-right .statblock { margin: 0 auto; }
+.cc-passives { border-left: 3px solid var(--accent-gold); background: rgba(255, 242, 0, .04); padding: 6px 10px; font-size: .82rem; line-height: 1.5; border-radius: 4px; }
+.cc-passives b { color: var(--accent-gold); }
 .cc-card { background: var(--secondary-black); border: 1px solid #333; border-radius: 8px; padding: 14px; display: grid; gap: 10px; }
 .cc-left { display: grid; gap: 12px; min-width: 0; }
 .cc-row { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -275,7 +278,7 @@ async function init() {
   if (!C) { C = blank(); rescaleAll(); }
   normalize(C);
   if (!WEB || !SAVED) SAVED = JSON.stringify(C);
-  fillForm(); renderTab(); loadRenderer();
+  fillForm(); renderTab(); loadRenderer(); loadEffects();
 }
 function setupWeb() {
   document.querySelectorAll('.cc-taller').forEach(el => el.hidden = true);
@@ -360,7 +363,26 @@ function headline() {
   if (WEB) { $('cc-sim').hidden = false; $('cc-sim').href = '/simulador'; $('cc-sim').target = '_blank'; $('cc-sim').textContent = '⚔ Simulador'; }
   for (const k of ['traits', 'actions', 'reactions']) $('n-' + k).textContent = C[k].length ? `(${C[k].length})` : '';
 }
-function changed() { headline(); schedulePreview(); if (WEB) writeDraft(); }
+function changed() { headline(); schedulePreview(); renderPassiveNote(); if (WEB) writeDraft(); }
+// Base tab: the umbrales / immunities / senses / speed the passives add on top of the fields above
+function renderPassiveNote() {
+  const el = $('cc-passives');
+  const withFx = (C.traits || []).filter(t => t.effects);
+  if (!withFx.length || typeof applyTraitEffects !== 'function') { el.hidden = true; return; }
+  const fx = applyTraitEffects(C);
+  const plainOf = x => String(x).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+  const added = (base, full) => (full || []).filter(x => !(base || []).some(y => plainOf(y) === plainOf(x)));
+  const words = v => String(v || '').split(',').map(x => x.trim()).filter(Boolean);
+  const parts = [`<b>Umbrales con las pasivas:</b> ${(fx.umbrales || []).map(u => `${esc(u.value)} (${esc(u.categories)})`).join(' · ') || '—'}`];
+  const imm = added(C.immune, fx.immune), sen = added(words(C.senses), words(fx.senses)), spd = added(words(C.speed), words(fx.speed));
+  if (imm.length) parts.push(`<b>Inmune:</b> + ${esc(imm.join(', '))}`);
+  if (sen.length) parts.push(`<b>Sentidos:</b> + ${esc(sen.join(', '))}`);
+  if (spd.length) parts.push(`<b>Velocidad:</b> + ${esc(spd.join(', '))}`);
+  const dmg = (fx.actions || []).filter(a => (a.extra_damage || []).length);
+  if (dmg.length) parts.push(`<b>Daño adicional:</b> ${dmg.map(a => `${esc(a.name)} + ${a.extra_damage.map(x => esc(x.dice + ' ' + x.type)).join(' + ')}`).join(' · ')}`);
+  el.innerHTML = `${parts.join('<br>')}<br><span class="muted">De: ${esc(withFx.map(t => t.name).join(', '))} · no hace falta añadirlo a mano arriba</span>`;
+  el.hidden = false;
+}
 
 for (const [el, k] of FIELDS) $(el).addEventListener('input', e => { C[k] = e.target.value; if (!C[k] && k !== 'name') delete C[k]; changed(); });
 $('f-name').addEventListener('input', () => { if (!EXISTING && !ID_TOUCHED) { C.id = slug(C.name); $('f-id').value = C.id; } });
@@ -472,9 +494,56 @@ function renderEntries() {
       </div>
       ${fields ? `<div class="cc-row">${fields}</div>` : ''}
       <label class="cc-f">Descripción<textarea class="inp" rows="2" data-i="${i}" data-k="desc">${esc(shown('desc') || '')}</textarea></label>
+      ${effectsBlock(en, i)}
     </div>`;
   }).join('') || `<p class="muted">Sin ${LIST_NAME[TAB]} todavía.</p>`;
 }
+// ── Passive effects (umbrales, immunities, senses, speed, extra damage added to the stat block) ──
+const effHint = (kind, it) => kind === 'umbral'
+  ? (it.amount != null ? `= ${it.amount > 0 ? '+' : ''}${it.amount}` : '')
+  : (it.dice_value && it.dice_value !== it.dice ? `= ${it.dice_value}` : '');
+function effectsBlock(en, i) {
+  if (TAB !== 'traits' || !window.CreatureEffects) return '';
+  if (en.effects) return `<div data-ce-owner="${i}">${CreatureEffects.html(en.effects, { creature: true, hint: effHint })}
+      <button type="button" class="cc-x" data-ce-off="${i}" style="margin-top:4px;font-size:.75rem">✕ Quitar los efectos automáticos</button></div>`;
+  const lib = en.ability_id && LIB.find(a => a.id === en.ability_id);
+  const fromLib = lib && lib.effects && !CreatureEffects.isEmpty(lib.effects)
+    ? `<button type="button" class="btn-gold cc-mini" data-ce-lib="${i}" title="${esc(CreatureEffects.summary(lib.effects))}">✦ Usar los efectos de la biblioteca</button>` : '';
+  return `<div class="cc-row">${fromLib}<button type="button" class="btn-ghost cc-mini" data-ce-start="${i}">✦ Añadir efectos automáticos</button></div>`;
+}
+function effectsChanged(en, box, structural) {
+  scaleEntry(en);
+  if (structural) renderEntries();
+  else box.querySelectorAll('[data-ce-hint]').forEach(h => {
+    const [k, idx] = h.dataset.ceHint.split('.');
+    const it = ((en.effects || {})[k] || [])[+idx];
+    h.textContent = it ? effHint(k === 'umbrales' ? 'umbral' : 'damage', it) : '';
+  });
+  changed();
+}
+$('entries').addEventListener('input', e => {
+  const box = e.target.closest('[data-ce-owner]');
+  if (!box || !window.CreatureEffects) return;
+  const en = C.traits[+box.dataset.ceOwner];
+  const r = en && en.effects && CreatureEffects.input(e, en.effects);
+  if (r) effectsChanged(en, box, r.structural);
+});
+$('entries').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b || !window.CreatureEffects) return;
+  const box = b.closest('[data-ce-owner]');
+  if (b.dataset.ceStart != null) { C.traits[+b.dataset.ceStart].effects = {}; renderEntries(); return; }
+  if (b.dataset.ceOff != null) { delete C.traits[+b.dataset.ceOff].effects; renderEntries(); changed(); return; }
+  if (b.dataset.ceLib != null) {
+    const en = C.traits[+b.dataset.ceLib], lib = LIB.find(a => a.id === en.ability_id);
+    if (!confirm(`Se añadirán a la ficha: ${CreatureEffects.summary(lib.effects)}\n\nSi ya habías puesto a mano en BASE los umbrales o inmunidades de esta pasiva, quítalos para que no cuenten dos veces.`)) return;
+    en.effects = JSON.parse(JSON.stringify(lib.effects));
+    scaleEntry(en); renderEntries(); changed(); return;
+  }
+  if (box) {
+    const en = C.traits[+box.dataset.ceOwner];
+    if (en && en.effects && CreatureEffects.click(e, en.effects)) effectsChanged(en, box, true);
+  }
+});
 $('entries').addEventListener('input', e => {
   const t = e.target, i = t.dataset.i; if (i == null) return;
   const en = C[TAB][i], k = t.dataset.k, kind = t.dataset.kind;
@@ -562,6 +631,11 @@ function setModField(en, k, v) {
 }
 function scaleEntry(en) {
   const lv = lvOf();
+  if (en.effects) {  // umbral steps × the Tier's Salto, extra damage dice (DD, DD+1…) for this level
+    const salto = +bandOf(BONUS_TABLE, lv).salto || 0;
+    for (const u of en.effects.umbrales || []) u.amount = (+u.steps || 0) * salto + (+u.flat || 0);
+    for (const x of en.effects.extra_damage || []) { if (x.dice) x.dice_value = resolveText(x.dice); else delete x.dice_value; }
+  }
   if (en.damage_tier) en.damage = scaleDamage(en.damage_tier, en.damage_base_type || '', lv);
   if (en.bonus_scaled) en.bonus = fmtDice(bandOf(BONUS_TABLE, lv).bonus);
   for (const [k, t] of Object.entries(en.mod_tpl || {})) en[k] = resolveText(t);
@@ -637,7 +711,14 @@ function loadRenderer() {
   // added after load, so its own "load the creature from the URL" start-up never runs
   const s = document.createElement('script');
   s.src = '/assets/js/creature_loader.js?v=' + Date.now();
-  s.onload = () => { rendererReady = true; renderPreview(); };
+  s.onload = () => { rendererReady = true; renderPreview(); renderPassiveNote(); };
+  document.body.appendChild(s);
+}
+// The passives' "effects" editor (shared with the ability library)
+function loadEffects() {
+  const s = document.createElement('script');
+  s.src = '/assets/js/creature_effects.js?v=' + Date.now();
+  s.onload = () => { if (TAB === 'traits') renderEntries(); };
   document.body.appendChild(s);
 }
 function schedulePreview() { clearTimeout(previewTimer); previewTimer = setTimeout(renderPreview, 120); }
