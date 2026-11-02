@@ -868,10 +868,14 @@ async function loadGit() {
   if (!el) return;  // the page is still loading
   try {
     const g = await api('GET', '/api/git');
-    el.style.color = (!g.ok || g.error) ? '#e76a6a' : g.pending ? '#d8b34a' : '#5fae6e';
+    el.style.color = (!g.ok || g.error) ? '#e76a6a' : (g.pending || g.unpushed || g.retry) ? '#d8b34a' : '#5fae6e';
+    const waiting = (g.pending || 0) + (g.unpushed || 0);
     el.textContent = !g.ok ? `⎇ ${g.branch || '?'} (se espera ${g.expected}: no se hará push)`
-      : `⎇ ${g.branch}` + (g.pending ? ` · ⏳ subiendo ${g.pending}` : g.error ? ' · ⚠ error de git' : ' · ✓ en GitHub');
-    el.title = g.error || 'Guardar es instantáneo: el commit y el push a GitHub se hacen en segundo plano';
+      : `⎇ ${g.branch}` + (g.retry ? ` · ⏳ reintentando ${g.retry}`
+        : g.error ? ` · ⚠ error de git${g.unpushed ? ` (${g.unpushed} sin subir)` : ''}`
+        : waiting ? ` · ⏳ subiendo ${waiting}` : ' · ✓ en GitHub');
+    el.title = g.error || (g.retry ? 'La subida se atascó, reintentando: ' + g.note
+      : 'Guardar es instantáneo: el commit y el push a GitHub se hacen en segundo plano');
   } catch (e) { el.textContent = '⎇ ?'; }
 }
 setInterval(loadGit, 4000);

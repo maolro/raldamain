@@ -646,9 +646,12 @@ async function tlGit() {
   const el = document.getElementById('git-badge');
   try {
     const g = await (await fetch('/api/git', { cache: 'no-store' })).json();
-    el.className = 'tl-git ' + ((!g.ok || g.error) ? 'bad' : g.pending ? 'busy' : 'ok');
-    el.textContent = !g.ok ? `⎇ ${g.branch || '?'}: sin push` : g.pending ? `⏳ subiendo ${g.pending}` : g.error ? '⚠ git' : '✓ GitHub';
-    el.title = g.error || 'Guardar es instantáneo: el commit y el push a GitHub se hacen en segundo plano';
+    const waiting = (g.pending || 0) + (g.unpushed || 0);
+    el.className = 'tl-git ' + ((!g.ok || g.error) ? 'bad' : (waiting || g.retry) ? 'busy' : 'ok');
+    el.textContent = !g.ok ? `⎇ ${g.branch || '?'}: sin push` : g.retry ? `⏳ reintentando ${g.retry}`
+      : g.error ? `⚠ git${g.unpushed ? ` · ${g.unpushed} sin subir` : ''}` : waiting ? `⏳ subiendo ${waiting}` : '✓ GitHub';
+    el.title = g.error || (g.retry ? 'La subida se atascó, reintentando: ' + g.note
+      : 'Guardar es instantáneo: el commit y el push a GitHub se hacen en segundo plano');
   } catch (e) { el.textContent = ''; }
 }
 tlGit(); setInterval(tlGit, 4000);
