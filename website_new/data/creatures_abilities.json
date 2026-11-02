@@ -2775,27 +2775,6 @@
     "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan DD daño adicional de un elemento específico o aumentan su daño por un dado."
   },
   {
-    "id": "ab_1793368189281",
-    "name": "Cuerpo Líquido",
-    "type": "passive",
-    "tier": "II",
-    "tags": [
-      "Agua"
-    ],
-    "cost": "",
-    "bonus": "",
-    "bonus_scaled": false,
-    "range": "",
-    "area": "",
-    "damage": "",
-    "damage_tier": "",
-    "damage_base_type": "",
-    "save": "",
-    "move": "",
-    "attacks": 1,
-    "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) y moja todos los espacios por los que pasa. No obstante, al estar hecho de Agua quedará congelado una ronda si sufre daño Frío y un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo. También desbloquea la habilidad Absorber Agua sin importar su categoría."
-  },
-  {
     "id": "ab_1793368306469",
     "name": "Golpes Fluidos",
     "type": "action",
