@@ -127,7 +127,6 @@
       "rank": "III",
       "title": "Rango III",
       "draft": true,
-      "passive": "Hechizos Protectores Rango I reducen coste -1 acción.",
       "abilities": [
         {
           "name": "Retener Persona",
@@ -136,25 +135,12 @@
             "Arcana",
             "Agarre"
           ],
-          "cost": "1 acción, 2 chi",
+          "cost": "1 Acción, 1 Chi",
           "range": "Medio",
-          "crit": "Aplica Eliminar Magia gratis sobre el objetivo.",
           "duration": "Concentración",
-          "desc": "Agarras al objetivo con cuerdas de chi (el objetivo resiste con Heroísmo o Acrobacias contra tu Magia Protectora). Mientras esté agarrado, no puede usar magia Arcana.",
-          "empower": "Afecta a un objetivo adicional."
-        },
-        {
-          "name": "Glifo Mágico",
-          "tags": [
-            "Protectora",
-            "Arcana",
-            "Duradera",
-            "Mejora"
-          ],
-          "cost": "3 acciones, 2 chi",
-          "duration": "Un día o hasta activación",
-          "desc": "Inscribes un hechizo conocido (Rango igual o inferior a tu Magia Protectora) en una superficie. El glifo se activa como acción bonus cuando se cumple la condición. Debes pagar el coste del hechizo inscrito al momento de la activación.",
-          "empower": "N/A"
+          "empower": "Afecta a un objetivo adicional.",
+          "desc": "El objetivo pasa a estar Enredado (Agarrado en el caso que ya esté Enredado). Mientras se encuentre Enredado o Agarrado por este efecto no podrá lanzar hechizos ni emplear habilidades mágicas, y aquellas habilidades que ya tenga activas se desactivarán. ",
+          "show_mod": true
         },
         {
           "name": "Absorber Chi",
@@ -162,7 +148,7 @@
             "Protectora",
             "Pasiva"
           ],
-          "desc": "Recuperas 1 chi cada vez que anulas magia con éxito (mediante Eliminar Magia, Disrupción Mágica o Contrahechizo). Al afectar a un enemigo con Magia Protectora, le drenas 1 chi y lo ganas tú."
+          "desc": "Recuperas 1 Chi cada vez que anulas un hechizo de manera exitosa con Contrahechizo, o afectas exitosamente a un objetivo con un hechizo de Magia Protectora."
         }
       ]
     },
