@@ -3047,5 +3047,28 @@
     "move": "",
     "attacks": 1,
     "desc": "Puede colarse por cualquier apertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Ácido, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) y corroe los materiales por los que pasa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW daño Ácido de manera automática. No obstante, al estar hecho de líquido quedará congelado una ronda si sufre daño Frío y un elementalista de Ácido o Agua puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo."
+  },
+  {
+    "id": "ab_1793622955763",
+    "name": "Pedrada",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Tierra",
+      "Ataque",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Puede emplear una Acción para aumentar el daño por un dado y el área a un radio corto."
   }
 ]
