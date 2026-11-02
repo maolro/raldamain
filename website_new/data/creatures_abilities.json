@@ -3366,6 +3366,6 @@
     "save": "VOL +MOD",
     "move": "",
     "attacks": 1,
-    "desc": "El objetivo sufr eFatiga I durante una ronda. Si afecta a un objeto, este quedará Roto (en el caso que sea mágico, debe superar una dificultad escogida por el DJ tirando +MOD)"
+    "desc": "El objetivo sufre Fatiga I durante una ronda. Si afecta a un objeto, este quedará Roto (en el caso que sea mágico, debe superar una dificultad escogida por el DJ tirando +MOD)"
   }
 ]
