@@ -3304,5 +3304,26 @@
     "move": "",
     "attacks": 1,
     "desc": "El objetivo está Enredado (FÍS +MOD para escapar), o Agarrado si ya se encuentra Enredado. Mientras se encuentre Enredado o Agarrado por este efecto, no podrá lanzar hechizos. "
+  },
+  {
+    "id": "ab_1793659443891",
+    "name": "Premonición",
+    "type": "reaction",
+    "tier": "I",
+    "tags": [
+      "Temporal"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Repite un tiro de cualquier tipo y se queda con el resultado que más le convenga. Esta habilidad también puede emplearse para que se pueda defender con normalidad de un ataque sorpresa o tener éxito automático en un tiro contra una finta o engaño. "
   }
 ]
