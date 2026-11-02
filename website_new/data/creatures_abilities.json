@@ -363,26 +363,6 @@
     "damage_base_type": "Necrótico"
   },
   {
-    "id": "ab_1778944605648",
-    "name": "Enmarañar",
-    "type": "action",
-    "tags": [
-      "Naturaleza",
-      "Agarre"
-    ],
-    "cost": "1",
-    "bonus": "",
-    "range": "",
-    "area": "Radio 8",
-    "damage": "",
-    "damage_tier": "",
-    "damage_base_type": "",
-    "save": "",
-    "move": "",
-    "attacks": 1,
-    "desc": "Todos los afectados quedan enredados y el área afectada se convierte en terreno difícil. Los objetivos ya enredados por este efecto serán impactados de manera automática y deben tener éxito en un tiro de salvación Físico o quedan agarrados hasta que escapen. "
-  },
-  {
     "id": "ab_1778944903955",
     "name": "Desfase Planar",
     "type": "reaction",
@@ -439,16 +419,6 @@
     "ability_id": "aura-del-caos_1784290282931",
     "id": "aura-del-caos_1784290282931",
     "type": "reaction"
-  },
-  {
-    "desc": "",
-    "name": "Miasma de Corrupción",
-    "tags": [
-      "Aficcion",
-      "Necrotico"
-    ],
-    "id": "miasma-de-corrupcion_1788189179789",
-    "type": "action"
   },
   {
     "tags": [
