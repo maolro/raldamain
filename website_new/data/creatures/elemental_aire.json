@@ -1,83 +1,79 @@
 {
   "id": "elemental_aire",
   "name": "Elemental de Aire",
-  "tier": "Esbirro Élite II",
   "type": "Espíritu",
   "size": "Grande",
   "image": "creatures/elemental_aire.jpg",
   "hits": 2,
   "saves": {
-    "FÍS": "+7+1d6",
-    "VOL": "+7+1d6",
-    "MEN": "+4"
+    "FÍS": "+7+2d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7"
   },
   "damageThreshold": {
     "magic": 8,
     "other": 4
   },
   "immune": [
-    "Efectos físicos no mágicos",
-    "Veneno",
+    "Físico",
     "Necrótico",
-    "Efectos mentales",
+    "Sónico",
+    "Mentales",
     "Miedo",
     "Terreno difícil"
   ],
   "senses": "Vista a ciegas",
-  "speed": "Vuelo 10",
+  "speed": "Vuelo 2",
   "combat": {
     "acciones": 1,
     "reacciones": 1
   },
   "traits": [
     {
-      "name": "Cuerpo de Aire",
       "desc": "Puede colarse por cualquier abertura. Es inmune a todos los efectos Físicos, Aflicciones, Sónicos, Necróticos, Miedo y Mentales y cuenta siempre como si fuera invisible. No obstante, un elementalista de Aire puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
-      "ability_id": "cuerpo-de-aire_1778694356948",
-      "type": "passive",
+      "name": "Cuerpo de Aire",
       "tags": [
         "Aire"
-      ]
+      ],
+      "ability_id": "cuerpo-de-aire_1778694356948"
     }
   ],
   "actions": [
     {
-      "name": "Viento Cortante",
+      "attacks": 1,
+      "bonus_scaled": true,
       "cost": 1,
-      "bonus": "+7+2d6",
-      "damage": "3d6 + 5 Cortante",
-      "move": 5,
-      "desc": "Este ataque ignora ocultamiento, vientos fuertes y Resistencias a ataques a distancia.",
-      "attacks": 2,
-      "range": "8",
-      "type": "action",
+      "damage_base_type": "Cortante",
+      "damage_tier": "LOW",
+      "desc": "Este ataque ignora ocultamiento.",
+      "name": "Tajo de los Vientos",
+      "range": "Medio",
       "tags": [
         "Aire",
         "Ataque"
-      ]
+      ],
+      "ability_id": "ab_1793630357969",
+      "damage": "2d6 + 5 Cortante",
+      "bonus": "+7 + 2d6"
     },
     {
-      "name": "Vendaval",
+      "attacks": 1,
+      "bonus_scaled": false,
       "cost": 2,
-      "bonus": "+7+2d6",
-      "area": "Cono 8",
-      "damage": "4d6 + 5 Contundente",
-      "desc": "Elimina efectos Gaseosos a su paso. Los objetivos impactados deben tener éxito en un tiro de salvación Físico o son empujados 8 casillas y caen tropezados (4 si tienen éxito). Aquellos objetivos voladores que fallen caen del cielo. ",
-      "type": "action",
+      "damage_base_type": "Contundente",
+      "damage_tier": "HIGH",
+      "desc": "Los afectados son empujados dos pasos y quedan tropezados.",
+      "name": "Vendaval",
+      "save": "FÍS +7 + 2d6",
       "tags": [
         "Aire",
-        "Ataque",
-        "Area",
-        "Maniobra"
-      ]
-    },
-    {
-      "name": "Torbellino Viviente",
-      "desc": "El objetivo será arrastrado a su posición y debe tener éxito en un tiro de salvación Físico o queda agarrado (si tiene éxito será enredado). Mientras permanezca agarrado, se moverá junto a esta criatura y sufrirá todo el daño que reciba siempre y cuando sea aplicable. ",
-      "range": "2",
-      "damage": "3d6 + 5 Cortante",
-      "move": 5,
-      "cost": 1
+        "Area"
+      ],
+      "ability_id": "ab_1793630439997",
+      "mod_tpl": {
+        "save": "FÍS +MOD"
+      },
+      "damage": "4d6 + 5 Contundente"
     }
   ],
   "reactions": [
@@ -87,36 +83,33 @@
       "move": 5
     },
     {
-      "name": "Evasión",
+      "area": "Línea Media o Rdaio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
       "cost": 1,
-      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico.",
-      "move": 10,
-      "id": "evasion_1778692238910",
-      "type": "reaction",
-      "tags": [
-        "Reflejos"
-      ]
-    },
-    {
-      "name": "Muro de Aire",
-      "cost": 1,
-      "desc": "Aumenta todos sus umbrales de daño en 5. Los atacantes cuerpo a cuerpo sufren 4d8 daño Cortante.",
-      "id": "muro-de-agua_1778693409061",
-      "type": "reaction",
+      "desc": "Crea un muro que protege a todos en su área, absorbiendo RANGOx3 puntos de daño e impidiendo el paso de efectos gaseosos. Todos los enemigos que le hagan ataques cuerpo a cuerpo deben tirar FÍS +7 + 2d6 o sufren 2d6 + 5 daño Cortante y son empujados un paso.",
+      "name": "Muro de Vientos",
       "tags": [
         "Aire"
       ],
-      "ability_id": "muro-de-aire_1778707098298"
+      "ability_id": "ab_1793630308486",
+      "mod_tpl": {
+        "desc": "Crea un muro que protege a todos en su área, absorbiendo RANGOx3 puntos de daño e impidiendo el paso de efectos gaseosos. Todos los enemigos que le hagan ataques cuerpo a cuerpo deben tirar FÍS +MOD o sufren LOW daño Cortante y son empujados un paso."
+      }
+    },
+    {
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
     }
   ],
   "lore": "Los elementales de aire son remolinos conscientes de viento y tormenta. Se mueven a velocidades difíciles de seguir y atacan donde menos se espera. Su cuerpo es prácticamente invisible, delatado tan solo por una tenue distorsión del ambiente y el rugido del viento que los rodea.",
-  "tags": [
-    "Elemental",
-    "Aire",
-    "Invocación",
-    "Vuelo",
-    "Élite"
-  ],
+  "tags": [],
   "level": 5,
   "umbrales": [
     {
@@ -124,5 +117,10 @@
       "categories": "General"
     }
   ],
-  "published": false
+  "published": false,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
 }
