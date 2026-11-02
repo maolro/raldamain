@@ -3246,7 +3246,7 @@
   {
     "id": "ab_1793631216756",
     "name": "Absorber Aire",
-    "type": "action",
+    "type": "passive",
     "tier": "IV",
     "tags": [],
     "cost": "",
