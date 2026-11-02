@@ -177,13 +177,6 @@
     "type": "passive"
   },
   {
-    "name": "Parada / Esquiva",
-    "bonus": "+7 + 2d6",
-    "move": "5",
-    "id": "parada--esquiva_1778753374110",
-    "type": "reaction"
-  },
-  {
     "desc": "Un objetivo a distancia media repite un tiro y se queda con el resultado que más te convenga. Puede ser anulada con otras habilidades de repetición.",
     "name": "Milagro Menor",
     "tags": [
@@ -202,16 +195,6 @@
     "id": "planta_1778930785381",
     "type": "passive",
     "tier": "I"
-  },
-  {
-    "name": "Muro de Espinas",
-    "cost": 1,
-    "desc": "Aumenta todos sus umbrales de daño en 5. Los atacantes cuerpo a cuerpo sufren 4d8 daño Perforante y deben tener éxito en un tiro de salvación Físico o quedan enredados.",
-    "id": "muro-de-espinas_1778931041786",
-    "type": "reaction",
-    "tags": [
-      "Naturaleza"
-    ]
   },
   {
     "name": "Golpe por Golpe",
