@@ -57,7 +57,37 @@
       "rank": "II",
       "title": "Adepto",
       "draft": true,
-      "abilities": []
+      "abilities": [
+        {
+          "name": "Vínculo Elemental",
+          "tags": [
+            "Draconica",
+            "Pasiva"
+          ],
+          "desc": "Obtienes una habilidad Pasiva relacionada con tu elemento escogido, que será una entre Fuego Interior (Fuego), Alma de Tormenta (Eléctrico), Hijo del Pantano (Ácido) o Adaptación al Frío (Hielo). Aprendes además dos hechizos de Rango II o menos relacionados con dicho elemento, para los cuales podrás emplear tus modificadores de Magia Dracónica. ",
+          "spell_grants": [
+            {
+              "count": 1,
+              "spell_rank": 2,
+              "sources": [
+                "rank:magia_fuego",
+                "rank:magia_hielo",
+                "rank:magia_acido",
+                "rank:magia_tormenta"
+              ],
+              "from_rank": 2
+            }
+          ]
+        },
+        {
+          "name": "Sentidos Dracónicos",
+          "tags": [
+            "Draconica",
+            "Pasiva"
+          ],
+          "desc": "Tienes un sentido de olfato en un radio grande y puedes sentir el calor de todas las criaturas a distancia media. Posees también un sexto sentido que te permite detectar la posición de objetos valiosos cercanos a ti."
+        }
+      ]
     },
     {
       "rank": "III",
