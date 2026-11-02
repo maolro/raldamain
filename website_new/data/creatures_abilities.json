@@ -273,40 +273,6 @@
     "type": "reaction"
   },
   {
-    "cost": 1,
-    "bonus": "+7+2d6",
-    "range": "12",
-    "damage": "4d8 + 7 Cortante",
-    "move": 5,
-    "desc": "Este ataque ignora ocultamiento, vientos fuertes y Resistencias a ataques a distancia. Si impacta con ambos ataques, rompe la armadura del objetivo y este pierde un contador de escudo (sufre una herida media si no tiene armadura).",
-    "id": "tajo-de-los-vientos_1778754690668",
-    "type": "action",
-    "tags": [
-      "Aire",
-      "Ataque"
-    ],
-    "attacks": 2,
-    "name": "Tajo de los Vientos"
-  },
-  {
-    "name": "Ola de Tierra",
-    "cost": 1,
-    "bonus": "+7+2d6",
-    "damage": "4d6 + 5 Contundente",
-    "move": 8,
-    "range": "1",
-    "area": "Linea 8",
-    "desc": "Todos los objetivos impactados son empujados 4 casillas y deben tener éxito en un tiro de salvación Físico o caen tropezados. Este ataque crea terreno difícil por donde pasa y elimina otros efectos en el suelo. ",
-    "tags": [
-      "Tierra",
-      "Ataque",
-      "Area",
-      "Maniobra"
-    ],
-    "id": "ola-de-tierra_1778755219012",
-    "type": "action"
-  },
-  {
     "id": "ab_1778929633136",
     "name": "Animar Plantas",
     "type": "action",
