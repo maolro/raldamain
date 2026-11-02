@@ -157,7 +157,7 @@
       "tier_tpl": "T"
     }
   ],
-  "published": false,
+  "published": true,
   "save_scale": {
     "FÍS": "bonus",
     "VOL": "bonus",
