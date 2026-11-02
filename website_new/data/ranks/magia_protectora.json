@@ -149,6 +149,17 @@
             "Pasiva"
           ],
           "desc": "Recuperas 1 Chi cada vez que anulas un hechizo de manera exitosa con Contrahechizo, o afectas exitosamente a un objetivo con un hechizo de Magia Protectora."
+        },
+        {
+          "name": "Glifo de Anulación",
+          "tags": [
+            "Protectora"
+          ],
+          "desc": "Al impactar, colocas un Glifo de Anulación sobre el objetivo. Mientras el glifo permanezca sobre él, no podrá lanzar hechizos pertenecientes a una rama mágica de tu elección. Este solo podrá quitarse con otros efectos de Magia Protectora y cuenta como un efecto de estado de nivel II para los propósitos de eliminación.",
+          "cost": "1 Acción, 2 Chi",
+          "range": "Adyacente",
+          "show_mod": true,
+          "duration": "Una hora o hasta que sea eliminado"
         }
       ]
     },
