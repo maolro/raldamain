@@ -3205,7 +3205,10 @@
     "name": "Vendaval",
     "type": "action",
     "tier": "I",
-    "tags": [],
+    "tags": [
+      "Aire",
+      "Area"
+    ],
     "cost": "2",
     "bonus": "",
     "bonus_scaled": false,
