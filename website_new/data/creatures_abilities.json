@@ -153,26 +153,6 @@
     "ability_id": "vinculo-con-la-tierra_1778712119755"
   },
   {
-    "name": "Torbellino de Fuego",
-    "cost": 1,
-    "bonus": "+11+3d6",
-    "damage": "4d8 + 7 Fuego",
-    "desc": "Todos los objetivos impactados sufren una quemadura. Este ataque llena los espacios por los que pase con fuego y solo podrá atacar a objetivos en su trayectoria.",
-    "tags": [
-      "Fuego",
-      "Ataque",
-      "Area"
-    ],
-    "ability_id": "ola-de-tierra_1778747893560",
-    "id": "ola-de-tierra_1778747893560",
-    "type": "action",
-    "move": 10,
-    "area": "Linea 10x4",
-    "range": "1",
-    "damage_tier": "HIGH",
-    "damage_base_type": "Fuego"
-  },
-  {
     "name": "Absorber Aire",
     "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra en un lugar con vientos fuertes o es impactado por un efecto de Aire que atraviese su umbral.",
     "cost": 1,
