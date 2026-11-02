@@ -171,12 +171,6 @@
     "bonus_scaled": true
   },
   {
-    "name": "Jinete",
-    "desc": "Se engancha a un aliado, empleándolo como montura. Esto hará que se mueva junto a él sin la necesidad de emplear movimiento.",
-    "id": "jinete_1778753235567",
-    "type": "passive"
-  },
-  {
     "desc": "Un objetivo a distancia media repite un tiro y se queda con el resultado que más te convenga. Puede ser anulada con otras habilidades de repetición.",
     "name": "Milagro Menor",
     "tags": [
