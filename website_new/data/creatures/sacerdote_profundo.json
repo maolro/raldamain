@@ -45,7 +45,17 @@
       "tags": [
         "Agua"
       ],
-      "ability_id": "ab_1793292744266"
+      "ability_id": "ab_1793292744266",
+      "type": "passive",
+      "cost": "",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
     }
   ],
   "actions": [
