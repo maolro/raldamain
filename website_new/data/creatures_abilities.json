@@ -3199,5 +3199,24 @@
     "move": "",
     "attacks": 1,
     "desc": "Este ataque ignora ocultamiento."
+  },
+  {
+    "id": "ab_1793630439997",
+    "name": "Vendaval",
+    "type": "action",
+    "tier": "I",
+    "tags": [],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Contundente",
+    "save": "FÍS +MOD",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los afectados son empujados dos pasos y quedan tropezados."
   }
 ]
