@@ -84,12 +84,12 @@
             "Arcano",
             "Duradero"
           ],
-          "cost": "1 Acción/Reacción, 1 Chi",
+          "cost": "1 Acción, 1 Chi",
           "range": "Medio",
           "area": "Radio pequeño",
           "duration": "Concentración",
-          "desc": "Creas una zona de tiempo ralentizado. Los afectados deben tener éxito en un tiro de salvación de Voluntad o sufren Ralentizado I durante una ronda y pierden una Reacción.",
-          "empower": "Aumenta el nivel del efecto por un paso."
+          "desc": "Creas una zona de tiempo ralentizado. Toda criatura que se encuentre ahí o entre en el área afectada debe tener éxito en un tiro de salvación de Voluntad o sufre Ralentizado I hasta que salga de ahí. Las criaturas ya afectadas deberán repetir el tiro al principio de su turno y en caso de fracaso el efecto empeorará por un paso.",
+          "empower": "Detienes automáticamente un ataque a distancia o una criatura afectada por el hechizo falla automáticamente su ataque. "
         },
         {
           "name": "Desplazamiento",
