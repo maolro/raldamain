@@ -35,9 +35,10 @@
           ],
           "cost": "1 Acción",
           "range": "Medio",
-          "empower": "Aumenta el área por un paso y el daño por un dado. ",
-          "damage": "2d6",
-          "damage_type": "Contundente"
+          "empower": "Aumenta el daño por un dado. Si empoderas dos veces, aumenta el área afectada a un radio corto.",
+          "damage": "1d6 + SAB",
+          "damage_type": "Contundente",
+          "desc": "Puedes emplear una Acción adicional para aumentar el daño por un dado."
         },
         {
           "name": "Erupción de Tierra",
@@ -48,7 +49,7 @@
             "Físico"
           ],
           "cost": "2 Acciones, 1 Chi",
-          "area": "Radio cercano",
+          "area": "Radio Corto",
           "desc": "Los objetivos en contacto con la tierra deben tener éxito en un tiro de salvación Físico o sufren 3d6 + SAB daño Contundente, son Empujados y quedan Ralentizados una ronda. Este ataque destruye objetos frágiles y convierte el área en terreno difícil",
           "empower": "Aumenta el daño base por un dado. Si has empoderado dos veces, aumenta el área por un paso."
         },
