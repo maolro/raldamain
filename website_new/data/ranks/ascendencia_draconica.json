@@ -56,7 +56,7 @@
     {
       "rank": "II",
       "title": "Adepto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Vínculo Elemental",
@@ -68,13 +68,13 @@
           "spell_grants": [
             {
               "count": 1,
-              "label": "Pasiva elemental",
               "options": [
                 "magia_fuego--1--fuego-interno",
-                "magia_tormenta--1--alma-de-la-tormenta",
                 "magia_acido--1--hijo-del-pantano",
+                "magia_tormenta--1--alma-de-la-tormenta",
                 "magia_hielo--1--adaptacion-al-frio"
-              ]
+              ],
+              "label": "Pasiva Elemental"
             },
             {
               "count": 1,
