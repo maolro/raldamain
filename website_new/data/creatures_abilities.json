@@ -3070,5 +3070,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Puede emplear una Acción para aumentar el daño por un dado y el área a un radio corto."
+  },
+  {
+    "id": "ab_1793623009993",
+    "name": "Erupción de Tierra",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Tierra"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Contundente",
+    "save": "FÍS +MOD",
+    "move": "",
+    "attacks": 1,
+    "desc": "Los afectados son empujados y tropezados. Este ataque destruye las estructuras frágiles en el área afectada. Solo afecta a objetivos en contacto con la tierra."
   }
 ]
