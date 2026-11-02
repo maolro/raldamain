@@ -24,7 +24,7 @@
     {
       "rank": "I",
       "title": "Rango I",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Vendaval",
@@ -35,7 +35,7 @@
             "Área"
           ],
           "cost": "2 Acciones, 1 Chi",
-          "desc": "Todos loos objetivos en el área afectada deben tener éxito en un tiro de salvación Físico o sufren 3d6 + SAB daño Contundente y son empujados dos pasos. Este ataque disipará todos los efectos gaseosos a su paso y las criaturas voladoras afectadas caen al suelo. ",
+          "desc": "Todos los objetivos en el área afectada deben tener éxito en un tiro de salvación Físico o sufren 3d6 + SAB daño Contundente y son empujados dos pasos. Este ataque disipará todos los efectos gaseosos a su paso y las criaturas voladoras afectadas caen al suelo. ",
           "empower": "Vuelve a emplear este hechizo en la misma zona sin la necesidad de gastar acciones adicionales.",
           "area": "Cono Medio",
           "show_mod": true
@@ -62,7 +62,7 @@
             "Aire",
             "Pasiva"
           ],
-          "desc": "Aumenta todas tus velocidades por un paso y obtienes velocidad de Salto igual a tu velocidad base. Puedes también emplear tu modificador de Magia de Aire para todos tus tiros de salvación Físicos o Esquiva en el caso que sea más alto.",
+          "desc": "Aumenta todas tus velocidades por un paso y obtienes velocidad de Salto igual a tu velocidad base, además que no sufres daño de caída salvo que estés incapacitado. Puedes también emplear tu modificador de Magia de Aire para todos tus tiros de salvación Físicos o Esquiva en el caso que sea más alto.",
           "replace_mod": [
             "Físico",
             "Esquiva"
@@ -82,27 +82,19 @@
             "Defensiva",
             "Duradera"
           ],
-          "cost": "1 reacción, 1 chi",
+          "cost": "1 Reacción, 1 Chi",
           "range": "Medio",
           "area": "Esfera pequeña o línea mediana",
           "duration": "Concentración",
-          "desc": "Crea una barrera con PV iguales a tu Rango x 3, la cual protegerá a todos detrás de ella. Reduce el daño del ataque recibido por esa cantidad y detendrá automáticamente un ataque a distancia o efecto Gaseoso. Si se emplea contra un enemigo que ataque cuerpo a cuerpo, deberá tener éxito en un tiro de salvación Físico o será empujado hacia atrás. ",
-          "empower": "Recupera todos los PV del muro."
+          "desc": "Crea un muro que protege a todos en un radio corto, absorbiendo RANGOx3 puntos de daño e impidiendo el paso de efectos gaseosos. Todos los enemigos que te hagan ataques cuerpo a cuerpo deben tener éxito en un tiro de salvación Físico o sufren 1d6 + CAR daño Cortante y son empujados un paso."
         },
         {
-          "name": "Esfera de Viento",
           "tags": [
             "Aire",
-            "Ataque",
-            "Cuerpo a cuerpo",
-            "Duradera"
+            "Agarre"
           ],
-          "cost": "1 acción, 1 chi",
-          "range": "Cuerpo a cuerpo",
-          "crit": "Herido-1 (permanente) y fallo automático en defensa.",
-          "duration": "Instantáneo",
-          "desc": "Haz un ataque con una esfera de vientos que provoca 3d6 + SAB/CAR daño Cortante al impactar. Además, el objetivo será empujado un pasos y cae con Ralentizado-1 (puede resistirse con un tiro de salvación Físico).",
-          "empower": "La esfera permanece en tu mano para lanzarla gratis hasta el final del siguiente turno."
+          "cost": "1 Acción, 1 Chi",
+          "range": "Medio"
         },
         {
           "tags": [
@@ -110,10 +102,14 @@
             "Aire"
           ],
           "desc": "Tus ataques físicos cuentan como mágicos y aumentan su alance por un paso. Además, puedes emplear tu modificador de Magia de Aire para todos tus tiros de ataque, defensa y técnicas de combate relacionados con ellos. No puede aplicarse a Armas de Fuego.",
-          "name": "Infusión de Viento"
+          "name": "Infusión de Viento",
+          "replace_mod": [
+            "Arma",
+            "Parada"
+          ],
+          "empower": "Aumenta el daño base de un ataque Físico o Natural por un dado."
         }
-      ],
-      "passive": "Aumenta estadística de Destreza por 1"
+      ]
     },
     {
       "rank": "III",
