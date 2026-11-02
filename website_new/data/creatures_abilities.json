@@ -214,28 +214,6 @@
     ]
   },
   {
-    "name": "Forma de Fuego",
-    "desc": "Se vuelve Incorpóreo hasta el final de ronda, recibiendo Inmunidad a efectos Físicos, Fuego, Mentales y Aflicciones a costa de reducir su Umbral de Daño al agua por 6. Solo podrá emplear efectos de Fuego en esta forma y puede salir antes si lo desea.",
-    "cost": 1,
-    "tags": [
-      "Fuego",
-      "Defensiva"
-    ],
-    "id": "forma-de-fuego_1783973232927",
-    "type": "reaction"
-  },
-  {
-    "name": "Uno con los Vientos",
-    "desc": "Se vuelve Incorpóreo hasta el final de ronda, recibiendo Inmunidad a efectos Físicos, Fuego, Mentales y Aflicciones a costa de recibir Desventaja contra efectos de Aire. Solo podrá emplear efectos de Aire en esta forma y puede salir antes si lo desea.",
-    "cost": 1,
-    "tags": [
-      "Aire",
-      "Defensiva"
-    ],
-    "id": "uno-con-los-vientos_1783973361403",
-    "type": "reaction"
-  },
-  {
     "name": "Golpe por Golpe",
     "desc": "Falla automáticamente un tiro defensivo para golpear al atacante sin que pueda defenderse. El atacante puede escoger fallar para no recibir el impacto.",
     "id": "golpe-por-golpe_1788189327012",
