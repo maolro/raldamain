@@ -3388,5 +3388,28 @@
     "move": "",
     "attacks": 1,
     "desc": "Los afectados sufren Ralentizado I hasta que salgan del área afectada y fallarán automáticamente el primer ataque que hagan en ella. Este hechizo permanecerá sobre el cmapo de batalla hasta que pierda la concentración, afectando de nuevo a cada criatura que entre ahí y otorgando Desventaja a ataques a distancia lanzados hacia ella.  "
+  },
+  {
+    "id": "ab_1793660792029",
+    "name": "Aliento del Dragón",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Draconico",
+      "Ataque",
+      "Area"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "",
+    "area": "Cono pequeño",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Fuego/Frío/Eléctrico/Ácido",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El daño de este ataque dependerá del tipo de dragón que sea. Además, el área afectada aumenta por un paso por cada nivel de tamaño adicional que tenga hasta llegar a un cono grande. "
   }
 ]
