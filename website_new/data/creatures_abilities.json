@@ -141,17 +141,6 @@
     ]
   },
   {
-    "name": "Absorber Aire",
-    "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra en un lugar con vientos fuertes o es impactado por un efecto de Aire que atraviese su umbral.",
-    "cost": 1,
-    "id": "absorber-aire_1778748254508",
-    "type": "reaction",
-    "tags": [
-      "Aire",
-      "Sanacion"
-    ]
-  },
-  {
     "name": "Salto Espacial",
     "desc": "Añade +10 a su tiro de Esquiva y se teletransporta un paso al moverse.",
     "tags": [
