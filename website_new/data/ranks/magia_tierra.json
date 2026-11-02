@@ -50,7 +50,7 @@
           ],
           "cost": "2 Acciones, 1 Chi",
           "area": "Radio Corto",
-          "desc": "Los objetivos en contacto con la tierra deben tener éxito en un tiro de salvación Físico o sufren 3d6 + SAB daño Contundente, son Empujados y quedan Ralentizados una ronda. Este ataque destruye objetos frágiles y convierte el área en terreno difícil",
+          "desc": "Los objetivos en contacto con la tierra deben tener éxito en un tiro de salvación Físico o sufren 3d6 + SAB daño Contundente, son empujados y tropezados. Este ataque destruye objetos frágiles y convierte el área en terreno difícil",
           "empower": "Aumenta el daño base por un dado. Si has empoderado dos veces, aumenta el área por un paso."
         },
         {
