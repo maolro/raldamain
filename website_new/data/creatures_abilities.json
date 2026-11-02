@@ -3114,5 +3114,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Tiene Inmunidad a Aflicciones, Heridas, Necrótico, Mentales y Miedo, además que aumenta su Umbral Mágico por un paso. Recibe velocidad de Excavar y Escalada 1, puede pasar a través de superficies rocosas como si no estuvieran además que tiene Vista a Ciegas a distancia media con todo objetivo en contacto con la tierra. No obstante, reducirá su umbral al daño Sónico por un paso."
+  },
+  {
+    "id": "ab_1793623479776",
+    "name": "Vínculo con la Tierra",
+    "type": "passive",
+    "tier": "IV",
+    "tags": [
+      "Tierra"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Al principio de su turno, recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra en contacto con la tierra."
   }
 ]
