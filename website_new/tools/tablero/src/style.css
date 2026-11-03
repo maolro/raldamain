@@ -270,3 +270,17 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .fog-modes .chip, .fog-presets .chip { padding: 3px 9px; }
 .panel.lv-panel { width: 290px; z-index: 31; }
 .fog-sel:not(:empty) { border-top: 1px solid var(--line); padding-top: 6px; display: grid; gap: 6px; }
+
+/* ── uses, rounds ── */
+.uses-list, .round-effects { display: grid; gap: 3px; }
+.use-row { display: flex; align-items: center; gap: 5px; font-size: 13px; }
+.use-row .use-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.use-row .btn.small { padding: 1px 7px; }
+.use-row b { min-width: 34px; text-align: center; }
+.use-row.spent .use-name, .use-row.spent b { color: var(--muted); text-decoration: line-through; }
+.use-add { display: flex; gap: 4px; }
+.use-add [data-use-name], .use-add [data-eff-name] { flex: 1; min-width: 0; }
+.use-add input[type=number] { width: 52px; }
+.use-add select { max-width: 92px; }
+.panel.round-panel { left: 64px; top: 230px; width: 330px; z-index: 22; }
+.round-chip { font: 700 12px var(--body); color: var(--gold); border: 1px solid var(--gold-dim); border-radius: 12px; padding: 2px 9px; }

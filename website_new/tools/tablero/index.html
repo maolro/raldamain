@@ -21,6 +21,7 @@
     <button class="btn small" id="undo" title="Deshacer (Ctrl+Z)">↶</button>
     <button class="btn small" id="redo" title="Rehacer (Ctrl+Y)">↷</button>
     <span class="status" id="status"></span>
+    <span class="round-chip" id="round-chip" hidden title="Ronda de combate"></span>
     <label class="newsize" title="Tamaño de los tokens que añades (arrastrando, pegando o desde la biblioteca)">Tokens nuevos
       <select id="new-size" class="inp">
         <option value="1">1×1</option><option value="2">2×2</option><option value="3">3×3</option><option value="4">4×4</option>
@@ -42,6 +43,7 @@
       <button class="tool" data-tool="text" title="Texto: clic para escribir en la capa activa (T · doble clic en un texto para editarlo)"><b>T</b></button>
       <button class="tool" data-tool="ruler" title="Regla: distancias, radios y conos en casillas (R · Alt: sin ajustar a las casillas)">📏</button>
       <button class="tool gm-only" data-tool="fog" title="Niebla y luz: zonas ocultas, oscuridad, paredes, fuentes de luz (N)">🌫</button>
+      <button class="tool gm-only" id="round-btn" title="Rondas: Nueva ronda y efectos que duran varias rondas (Ira, Mente Desencadenada…)">⏱</button>
     </div>
     <div class="group gm-only" id="layers"></div>
     <div class="group gm-only">
@@ -121,6 +123,9 @@
     <div class="fog-sel" id="fog-sel"></div>
   </div>
   <div class="panel lv-panel" id="lv-panel" hidden></div>
+  <div class="panel round-panel" id="round-panel" hidden></div>
+  <datalist id="uses-dl"><option value="Instinto de Supervivencia"><option value="Premonición"><option value="Voz del Comandante"><option value="Contadores de Escudo"></datalist>
+  <datalist id="effects-dl"><option value="Ira"><option value="Mente Desencadenada"><option value="Forma de la Bestia"><option value="Furia Abisal"><option value="Frenesí de Batalla"></datalist>
   <div class="panel tool-opts" id="text-opts" hidden>
     <h3>Texto</h3>
     <div class="swatches" data-for="text"></div>

@@ -96,6 +96,7 @@ const view = new BoardView({
   overlay() { updateHud(); },
   ruler(shape, done) { showMyRuler(shape, done); },
   fogPointer(kind, p, e) { fogPointer(kind, p, e.altKey); },
+  economyClick(id, kind, i) { spendEconomy(id, kind, i); },
 });
 view.canEdit = canEdit;
 view.badgeColor = it => {
@@ -105,7 +106,27 @@ view.badgeColor = it => {
 
 const sheets = new Sheets(toast, () => me?.pid ?? null);
 const statuses = new Statuses();
-view.markers = it => (it.statuses || []).map(s => ({ text: statuses.short(s), color: statuses.color(s.id) }));
+// under a token: its statuses, its ability uses (INSTINTO 2/3) and its turn-based effects (IRA 3)
+const shortName = (n: string) => (n.split(/\s+/)[0] || n).slice(0, 12);
+view.markers = it => [
+  ...(it.statuses || []).map(s => ({ text: statuses.short(s), color: statuses.color(s.id) })),
+  ...(it.uses || []).map(u => ({ text: `${shortName(u.name)} ${u.value}/${u.max}`, color: u.value > 0 ? '#6b5320' : '#3a3a3a' })),
+  ...((board?.round?.effects) || []).filter(f => f.token === it.id).map(f => ({ text: `${shortName(f.name)} ${f.left}`, color: '#8e2b2b' })),
+];
+
+// actions and reactions per round: the sheet's, else 3 and 2; statuses take some away
+view.economy = it => {
+  if (!isToken(it) || it.layer !== 'tokens' || !(it.sheet || it.economy || (it.controllers || []).length)) return null;
+  let actions = it.economy?.actions ?? 3, reactions = it.economy?.reactions ?? 2;
+  for (const s of it.statuses || []) {
+    const r = statuses.resolve(s);
+    if (!r) continue;
+    actions = r.level.no_actions ? 0 : actions - (r.level.actions || 0);
+    reactions = r.level.no_reactions ? 0 : reactions - (r.level.reactions || 0);
+  }
+  actions = Math.max(0, actions); reactions = Math.max(0, reactions);
+  return { actions, reactions, usedA: Math.min(it.used?.a || 0, actions), usedR: Math.min(it.used?.r || 0, reactions), editable: canEdit(it) };
+};
 
 const library = new Library($('library'), {
   place: meta => placeImages([meta], view.viewCenter()),
@@ -179,6 +200,8 @@ function restore(state: string) {
   board = JSON.parse(state);
   view.board = B();
   view.render();
+  renderRoundChip();
+  renderRoundPanel();
   view.select(sel.filter(id => view.item(id)));
   fillGridPanel();
   live?.push();      // the server refuses (and puts back) whatever this player may not change
@@ -233,6 +256,8 @@ function applyRemote(ch: Changes) {
   view.select([...view.selected].filter(id => view.item(id) && canEdit(view.item(id)!)));
   windows.sync(board.items);
   if (!statusPanel.hidden) renderStatusPanel();
+  renderRoundChip();
+  renderRoundPanel();
   if (ch.settings) { fillGridPanel(); if (ch.settings.fog && view.tool === 'fog') renderFogPanel(); }
 }
 let sheetReload = 0;
@@ -253,6 +278,7 @@ function connect(boardId: string) {
       fitted = b.id;
       view.setBoard(b, first);
       windows.sync(b.items);
+      renderRoundChip();
       undo = [snapshot()];
       redo = [];
       fillGridPanel();
@@ -803,7 +829,9 @@ function applyStats(it: BoardItem, st: SheetStats): boolean {
     seen[id] = v;
   }
   if (!Object.keys(bars).length) delete it.bars;
-  return JSON.stringify([it.bars, it.sheetMax]) !== before;
+  const econBefore = JSON.stringify(it.economy);
+  if (st.actions || st.reactions) it.economy = { actions: st.actions || 0, reactions: st.reactions || 0 };
+  return JSON.stringify([it.bars, it.sheetMax]) !== before || JSON.stringify(it.economy) !== econBefore;
 }
 
 /** A tiro from a token's sheet (1d20 + modifier) with its statuses' penalties: −1d6 per
@@ -910,6 +938,96 @@ function renderHud(it: BoardItem) {
     }).join('')}`;
 }
 
+// ── actions and reactions this round ──
+/** The i-th circle: spend it (and the ones before), or if spent, give it back (and the ones after) */
+function spendEconomy(id: string, kind: 'a' | 'r', i: number) {
+  const it = view.item(id);
+  if (!it || !canEdit(it)) return;
+  const used = { a: it.used?.a || 0, r: it.used?.r || 0 };
+  used[kind] = i < used[kind] ? i : i + 1;
+  if (used.a || used.r) it.used = used; else delete it.used;
+  view.render();
+  commit();
+}
+
+// ── ⏱ rounds (GM): Nueva ronda counts turn-based effects down and gives everyone their actions back ──
+function roundEdit() {
+  const b = B();
+  b.round = { n: b.round?.n || 1, effects: [...(b.round?.effects || [])].map(f => ({ ...f })) };
+  return b.round;
+}
+function renderRoundChip() {
+  const chip = $('round-chip'), r = board?.round;
+  chip.hidden = !r;
+  if (r) chip.textContent = `⏱ Ronda ${r.n}`;
+}
+function renderRoundPanel() {
+  const p = $('round-panel');
+  if (p.hidden || !board) return;
+  const r = B().round, tokens = B().items.filter(i => isToken(i) && i.layer !== 'map');
+  const sel = view.selectedItems().find(isToken);
+  const tokenName = (tid?: string) => !tid ? 'general' : (B().items.find(i => i.id === tid)?.name || '(token borrado)');
+  p.innerHTML = `<h3>⏱ Ronda ${r ? r.n : '—'}</h3>
+    <div class="row2"><button class="btn gold" data-round="next" title="Resta una ronda a cada efecto y vacía las acciones y reacciones gastadas">Nueva ronda ▶</button>
+      <button class="btn small" data-round="start" title="Ronda 1 (los efectos se quedan)">${r ? 'Volver a ronda 1' : 'Empezar combate'}</button></div>
+    <div class="fog-sec">Efectos por rondas</div>
+    <div class="round-effects">${(r?.effects || []).map(f => `<div class="use-row">
+        <span class="use-name">${esc(f.name)} <small class="muted">· ${esc(tokenName(f.token))}</small></span>
+        <button class="btn small" data-round="dec" data-id="${esc(f.id)}">−</button><b>${f.left}</b>
+        <button class="btn small" data-round="inc" data-id="${esc(f.id)}">+</button>
+        <button class="x" data-round="del" data-id="${esc(f.id)}" title="Quitar">✕</button></div>`).join('') || '<small class="muted">Ninguno.</small>'}</div>
+    <div class="use-add"><input class="inp" list="effects-dl" data-eff-name placeholder="Ira">
+      <input class="inp" type="number" min="1" max="99" value="6" data-eff-left title="Rondas">
+      <select class="inp" data-eff-token><option value="">General</option>${tokens.map(t => `<option value="${esc(t.id)}" ${t.id === sel?.id ? 'selected' : ''}>${esc(t.name || 'Token')}</option>`).join('')}</select>
+      <button class="btn small" data-round="add">Añadir</button></div>
+    <small class="muted">Nueva ronda: −1 a cada efecto (al llegar a 0 termina) y todos recuperan sus acciones y reacciones.</small>`;
+}
+function roundAction(action: string, id?: string) {
+  if (!board || !isGM()) return;
+  const p = $('round-panel');
+  if (action === 'next') {
+    const r = roundEdit();
+    r.n++;
+    const ended = r.effects.filter(f => f.left <= 1);
+    r.effects = r.effects.filter(f => f.left > 1).map(f => ({ ...f, left: f.left - 1 }));
+    for (const it of B().items) delete it.used;   // everyone's actions and reactions back
+    toast(`Ronda ${r.n}` + (ended.length ? ` · terminan: ${ended.map(f => f.name + (f.token ? ` (${B().items.find(i => i.id === f.token)?.name || 'token'})` : '')).join(', ')}` : ''));
+  } else if (action === 'start') {
+    roundEdit().n = 1;
+    for (const it of B().items) delete it.used;
+  } else if (action === 'add') {
+    const name = p.querySelector<HTMLInputElement>('[data-eff-name]')!.value.trim().slice(0, 40);
+    if (!name) { p.querySelector<HTMLInputElement>('[data-eff-name]')!.focus(); return; }
+    const left = Math.max(1, Math.min(99, Number(p.querySelector<HTMLInputElement>('[data-eff-left]')!.value) || 1));
+    const token = p.querySelector<HTMLSelectElement>('[data-eff-token]')!.value || undefined;
+    roundEdit().effects.push({ id: uid(), name, left, ...(token ? { token } : {}) });
+  } else {
+    const r = roundEdit(), f = r.effects.find(x => x.id === id);
+    if (!f) return;
+    if (action === 'dec') f.left = Math.max(1, f.left - 1);
+    else if (action === 'inc') f.left = Math.min(99, f.left + 1);
+    else if (action === 'del') r.effects = r.effects.filter(x => x.id !== id);
+  }
+  view.render();
+  commit();
+  renderRoundChip();
+  renderRoundPanel();
+}
+$('round-btn').addEventListener('click', () => {
+  const p = $('round-panel');
+  p.hidden = !p.hidden;
+  $('round-btn').classList.toggle('on', !p.hidden);
+  renderRoundPanel();
+});
+$('round-panel').addEventListener('click', e => {
+  const b = (e.target as HTMLElement).closest<HTMLElement>('[data-round]');
+  if (b) roundAction(b.dataset.round!, b.dataset.id);
+});
+$('round-panel').addEventListener('keydown', e => {
+  e.stopPropagation();
+  if (e.key === 'Enter' && (e.target as HTMLElement).matches('[data-eff-name], [data-eff-left]')) roundAction('add');
+});
+
 // ── status effects: a button beside the selected token opens the list ──
 const statusBtn = $<HTMLButtonElement>('status-btn');
 const statusPanel = $('status-panel');
@@ -956,7 +1074,40 @@ function renderStatusPanel() {
     ${(it.statuses || []).length ? `<div class="status-active">${(it.statuses || []).map(s => {
       const r = statuses.resolve(s);
       return `<div><b>${esc(statuses.label(s))}</b> ${esc(r ? statuses.summary(r.level) : '')}</div>`;
-    }).join('')}</div><button class="btn small danger" data-st-clear>Quitar todos</button>` : '<small class="muted">Se aplican solos a las tiradas hechas desde su ficha.</small>'}`;
+    }).join('')}</div><button class="btn small danger" data-st-clear>Quitar todos</button>` : '<small class="muted">Se aplican solos a las tiradas hechas desde su ficha.</small>'}
+    <div class="fog-sec">Usos <small class="muted">(habilidades con usos: se gastan en combate)</small></div>
+    <div class="uses-list">${(it.uses || []).map(u => `<div class="use-row ${u.value ? '' : 'spent'}">
+        <span class="use-name">${esc(u.name)}</span>
+        <button class="btn small" data-use="dec" data-id="${esc(u.id)}" title="Gastar uno">−</button>
+        <b>${u.value}/${u.max}</b>
+        <button class="btn small" data-use="inc" data-id="${esc(u.id)}" title="Recuperar uno">+</button>
+        <button class="x" data-use="del" data-id="${esc(u.id)}" title="Quitar">✕</button></div>`).join('') || '<small class="muted">Ninguno.</small>'}</div>
+    <div class="use-add"><input class="inp" list="uses-dl" data-use-name placeholder="Instinto de Supervivencia">
+      <input class="inp" type="number" min="1" max="20" value="3" data-use-max title="Usos (3 a 9 normalmente)">
+      <button class="btn small" data-use="add">Añadir</button></div>`;
+}
+
+/** An ability's uses on the token: add, spend (−), recover (+), remove */
+function changeUses(action: string, id?: string) {
+  const it = view.item(statusFor);
+  if (!it || !canEdit(it)) return;
+  const list = [...(it.uses || [])].map(u => ({ ...u }));
+  if (action === 'add') {
+    const name = statusPanel.querySelector<HTMLInputElement>('[data-use-name]')!.value.trim().slice(0, 40);
+    const max = Math.max(1, Math.min(20, Number(statusPanel.querySelector<HTMLInputElement>('[data-use-max]')!.value) || 3));
+    if (!name) { statusPanel.querySelector<HTMLInputElement>('[data-use-name]')!.focus(); return; }
+    list.push({ id: uid(), name, value: max, max });
+  } else {
+    const u = list.find(x => x.id === id);
+    if (!u) return;
+    if (action === 'dec') u.value = Math.max(0, u.value - 1);
+    else if (action === 'inc') u.value = Math.min(u.max, u.value + 1);
+    else if (action === 'del') list.splice(list.indexOf(u), 1);
+  }
+  if (list.length) it.uses = list; else delete it.uses;
+  view.render();
+  commit();
+  renderStatusPanel();
 }
 
 /** Put a status on the token at that level (the same level again: take it off) */
@@ -982,7 +1133,13 @@ statusBtn.addEventListener('click', () => {
   statusPanel.hidden = false;
   placeStatusPanel();
 });
+statusPanel.addEventListener('keydown', e => {
+  e.stopPropagation();
+  if (e.key === 'Enter' && (e.target as HTMLElement).matches('[data-use-name], [data-use-max]')) changeUses('add');
+});
 statusPanel.addEventListener('click', e => {
+  const u = (e.target as HTMLElement).closest<HTMLElement>('[data-use]');
+  if (u) { changeUses(u.dataset.use!, u.dataset.id); return; }
   const b = (e.target as HTMLElement).closest<HTMLElement>('[data-st]');
   if (b) setTokenStatus(b.dataset.st!, +b.dataset.lv!);
   else if ((e.target as HTMLElement).closest('[data-st-clear]')) {

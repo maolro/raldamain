@@ -35,6 +35,8 @@ export interface BoardEvents {
   overlay(): void;
   /** this browser's ruler changed (null: gone); done = the pointer was released */
   ruler(shape: RulerShape | null, done: boolean): void;
+  /** an action (a) or reaction (r) circle clicked: the i-th one */
+  economyClick(id: string, kind: 'a' | 'r', i: number): void;
   /** the Niebla y luz tool (GM): pointer on the board, in world coordinates */
   fogPointer(kind: 'down' | 'move' | 'up' | 'hover', p: Pt, e: FederatedPointerEvent): void;
 }
@@ -68,6 +70,8 @@ export class BoardView {
   canEdit: (it: BoardItem) => boolean = () => true;
   /** colour of the player controlling an item (a dot on it), or null */
   badgeColor: (it: BoardItem) => string | null = () => null;
+  /** a token's actions and reactions this round (circles at its left), or null for none */
+  economy: (it: BoardItem) => { actions: number; reactions: number; usedA: number; usedR: number; editable: boolean } | null = () => null;
   /** a token's status markers (under it) */
   markers: (it: BoardItem) => { text: string; color: string; title?: string }[] = () => [];
 
@@ -92,6 +96,7 @@ export class BoardView {
   private views = new Map<string, Container>();
   private barViews = new Map<string, Graphics>();   // a token's bars, above it (never rotated)
   private markViews = new Map<string, Container & { key?: string }>();   // its status markers, under it
+  private econViews = new Map<string, Container>();   // its action / reaction circles, at its left
   private textures = new Map<string, Texture>();
   private loading = new Set<string>();
   private images = new Map<string, ImageMeta>();
@@ -137,6 +142,8 @@ export class BoardView {
     this.barViews.clear();
     for (const m of this.markViews.values()) m.destroy({ children: true });
     this.markViews.clear();
+    for (const c of this.econViews.values()) c.destroy({ children: true });
+    this.econViews.clear();
     this.render();
     if (fit) this.fit();
     this.ev.selection([]);
@@ -208,6 +215,7 @@ export class BoardView {
     for (const [id, v] of this.views) if (!alive.has(id)) { v.destroy({ children: true }); this.views.delete(id); }
     for (const [id, g] of this.barViews) if (!alive.has(id)) { g.destroy(); this.barViews.delete(id); }
     for (const [id, m] of this.markViews) if (!alive.has(id)) { m.destroy({ children: true }); this.markViews.delete(id); }
+    for (const [id, c] of this.econViews) if (!alive.has(id)) { c.destroy({ children: true }); this.econViews.delete(id); }
     for (const id of [...this.selected]) if (!alive.has(id)) this.selected.delete(id);
     this.drawOverlay();
     this.refreshFog();
@@ -295,6 +303,43 @@ export class BoardView {
     }
     this.renderBars(it);
     this.renderMarkers(it);
+    this.renderEconomy(it);
+  }
+
+  /** Actions (gold) and reactions (blue) as circles down the token's left side: full = left,
+   *  hollow = spent this round. Clickable by whoever may change the token. */
+  private renderEconomy(it: BoardItem) {
+    const e = kindOf(it) === 'image' ? this.economy(it) : null;
+    let c = this.econViews.get(it.id);
+    if (!e || e.actions + e.reactions === 0) {
+      if (c) { c.destroy({ children: true }); this.econViews.delete(it.id); }
+      return;
+    }
+    if (!c) { c = new Container(); this.econViews.set(it.id, c); }
+    if (c.parent !== this.layers[it.layer]) this.layers[it.layer].addChild(c);
+    c.zIndex = it.z + 0.5;
+    c.removeChildren().forEach(x => x.destroy());
+    const z = this.zoom, a = (it.rotation || 0) * Math.PI / 180;
+    const bw = Math.abs(it.w * Math.cos(a)) + Math.abs(it.h * Math.sin(a));
+    const bh = Math.abs(it.w * Math.sin(a)) + Math.abs(it.h * Math.cos(a));
+    const r = 5 / z;   // the same size on screen at any zoom (the column may run past the token)
+    const x = it.x + it.w / 2 - bw / 2 - r - 14 / z;   // (clear of the selection's corner handles)
+    let y = it.y + it.h / 2 - bh / 2 + r * 1.2;
+    const dot = (kind: 'a' | 'r', i: number, used: boolean, color: number) => {
+      const g = new Graphics().circle(0, 0, r);
+      if (used) g.fill({ color: 0x111111, alpha: 0.85 }).stroke({ width: Math.max(1 / z, r * 0.3), color, alpha: 0.9 });
+      else g.fill({ color }).stroke({ width: Math.max(1 / z, r * 0.18), color: 0x000000 });
+      g.position.set(x, y);
+      g.label = `econ:${it.id}:${kind}:${i}`;
+      g.eventMode = e.editable ? 'static' : 'none';
+      g.cursor = 'pointer';
+      g.hitArea = new Rectangle(-r * 1.3, -r * 1.3, r * 2.6, r * 2.6);
+      c!.addChild(g);
+      y += r * 2.4;
+    };
+    for (let i = 0; i < e.actions; i++) dot('a', i, i < e.usedA, 0xf0c040);
+    y += r * 0.8;
+    for (let i = 0; i < e.reactions; i++) dot('r', i, i < e.usedR, 0x3a8ee6);
   }
 
   /** Status markers ("RAL II") in a row under the token, the same size on screen at any zoom */
@@ -511,7 +556,8 @@ export class BoardView {
     for (const r of this.rulers.values()) drawRuler(r.box, r.shape, this.board.grid.size, this.zoom, r.color, r.who);   // (text keeps its size)
     if (this.board) for (const it of this.board.items) {   // (their size follows the zoom)
       if (it.bars) this.renderBars(it);
-      if (it.statuses?.length) this.renderMarkers(it);
+      this.renderMarkers(it);
+      if (this.econViews.has(it.id)) this.renderEconomy(it);
     }
     this.drawOverlay();
     this.ev.view(this.zoom);
@@ -528,6 +574,11 @@ export class BoardView {
       return;
     }
     if (e.button !== 0) return;
+    if (label.startsWith('econ:')) {   // an action / reaction circle
+      const [, id, kind, i] = label.split(':');
+      this.ev.economyClick(id, kind as 'a' | 'r', +i);
+      return;
+    }
     if (this.tool === 'draw') {
       this.select([]);
       this.drag = { kind: 'draw', pts: [p.x, p.y] };

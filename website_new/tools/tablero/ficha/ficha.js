@@ -5,7 +5,8 @@
 // v-statblock (assets/js/builder/main.js computes it, as in the Mesa de Pruebas), a
 // creature with the Bestiario's renderer (assets/js/creature_loader.js). It answers:
 //   { type: 'ready' }                    loaded, waiting for a sheet
-//   { type: 'stats', hits, chi }         the sheet's Impactos and Chi (for the token's bars)
+//   { type: 'stats', hits, chi, actions, reactions }   the sheet's Impactos and Chi (the token's bars),
+//                                        and its actions and reactions per round
 //   { type: 'roll', roll, label, kind, stats }   a value clicked: load it in the Dados tab
 //                                        (kind: Ataque, Defensa, Salvación…; stats: FUE, DES…)
 (function () {
@@ -92,7 +93,9 @@
         const sb = document.getElementById('statblock');
         sb.classList.add('sb-rollable');
         sb.innerHTML = markRollables(sb.innerHTML, true);
-        post({ type: 'stats', hits: Number(data.hits) || 0, chi: Number(data.chi) || 0 });
+        const combat = data.combat || {};
+        post({ type: 'stats', hits: Number(data.hits) || 0, chi: Number(data.chi) || 0,
+            actions: Number(combat.acciones) || 0, reactions: Number(combat.reacciones) || 0 });
     }
 
     // ── character: the Creador's stat block (the Vue app of main.js) ──
@@ -116,7 +119,8 @@
                 clearTimeout(timer);
                 timer = setTimeout(() => {
                     if (!Object.keys(vm.ranks || {}).length) return report();
-                    post({ type: 'stats', hits: Number(vm.hits) || 0, chi: Number((vm.reserves || {}).chi) || 0 });
+                    post({ type: 'stats', hits: Number(vm.hits) || 0, chi: Number((vm.reserves || {}).chi) || 0,
+                        actions: Number(vm.actions) || 0, reactions: Number(vm.reactionCount) || 0 });
                 }, 400);
             };
             vm.$watch(() => [vm.hits, (vm.reserves || {}).chi, Object.keys(vm.ranks || {}).length].join('|'), report, { immediate: true });

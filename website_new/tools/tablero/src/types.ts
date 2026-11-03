@@ -46,6 +46,9 @@ export interface BoardItem {
   statuses?: TokenStatus[];   // efectos de estado (status.ts)
   light?: { bright: number; dim: number };      // a light it carries (squares; lighting.ts)
   vision?: { range: number; dark: number };     // its players' field of view (squares; range 0 = no limit)
+  uses?: { id: string; name: string; value: number; max: number }[];   // ability uses left (Instinto de Supervivencia 2/3)
+  economy?: { actions: number; reactions: number };   // actions and reactions per round (from its sheet)
+  used?: { a: number; r: number };                     // spent this round (Nueva ronda empties them)
 }
 
 /** A status effect on a token: data/status_effects.json's id and the level's index */
@@ -77,7 +80,11 @@ export interface Board {
   grid: GridSettings;
   items: BoardItem[];
   fog?: FogSettings;    // hidden areas and lighting (lighting.ts)
+  round?: RoundState;   // the combat round and its turn-based effects (GM)
 }
+
+/** ⏱ Ronda: the round number and the effects that last some rounds (Ira 6…), tied to a token or not */
+export interface RoundState { n: number; effects: { id: string; name: string; left: number; token?: string }[] }
 
 /** Niebla y luz (GM): hidden areas, and the lighting with its lights and walls */
 export interface FogSettings {
@@ -116,7 +123,7 @@ export interface SheetMeta {
   owner?: string;       // uploads: the player who uploaded it (missing: the GM)
   duplicate?: boolean;
 }
-export interface SheetStats { hits: number; chi: number }
+export interface SheetStats { hits: number; chi: number; actions?: number; reactions?: number }
 
 export const DEFAULT_CATEGORIES = ['Personajes', 'Criaturas', 'Tokens', 'Mapas', 'Objetos', 'Efectos', 'Otros'];
 
@@ -135,7 +142,7 @@ export interface Presence {
 export interface Changes {
   upserts: BoardItem[];
   removes: string[];
-  settings?: Partial<Pick<Board, 'name' | 'width' | 'height' | 'background' | 'grid' | 'fog'>>;
+  settings?: Partial<Pick<Board, 'name' | 'width' | 'height' | 'background' | 'grid' | 'fog' | 'round'>>;
   live?: boolean;       // mid-drag: shown, not an undo step
   by?: string;
 }

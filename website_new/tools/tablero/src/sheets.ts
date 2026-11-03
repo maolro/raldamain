@@ -15,7 +15,7 @@ const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g,
 const plain = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 export const KIND_NAME = { pj: 'Personaje', criatura: 'Criatura' } as const;
 
-type FrameMsg = { type: 'ready' } | { type: 'stats'; hits: number; chi: number }
+type FrameMsg = { type: 'ready' } | { type: 'stats'; hits: number; chi: number; actions?: number; reactions?: number }
   | { type: 'roll'; roll: string; label: string; kind?: string; stats?: string[] };
 
 /** Messages from the sheet iframes, to whoever opened each one */
@@ -98,7 +98,7 @@ export class Sheets {
         if (m.type !== 'stats') return;
         clearTimeout(timer);
         dropFrame(f);
-        resolve({ hits: m.hits, chi: m.chi });
+        resolve({ hits: m.hits, chi: m.chi, actions: m.actions, reactions: m.reactions });
       }, msg => { clearTimeout(timer); dropFrame(f); reject(new Error(msg)); }, 'sheet-probe');
     });
     p.catch(() => this.stats.delete(sid));

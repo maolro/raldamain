@@ -99,7 +99,7 @@ ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]{0,63}$")
 IMAGE_TYPES = {"image/png": "png", "image/jpeg": "jpg", "image/webp": "webp", "image/gif": "gif", "image/svg+xml": "svg"}
 MAX_IMAGE = 40 * 1024 * 1024  # bytes
 PLAYER_COLORS = ["#e6194b", "#3cb44b", "#4363d8", "#f58231", "#911eb4", "#42d4f4", "#f032e6", "#bfef45", "#fabed4", "#dcbeff"]
-BOARD_SETTINGS = ("name", "width", "height", "background", "grid", "fog")  # (fog: hidden areas, lighting, walls)
+BOARD_SETTINGS = ("name", "width", "height", "background", "grid", "fog", "round")  # (fog: hidden areas, lighting, walls; round: ⏱)
 
 app = Flask(__name__)
 _lock = threading.Lock()  # library.json and rooms.json writes
