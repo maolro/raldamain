@@ -1,6 +1,6 @@
 @echo off
-rem Abre el Editor de Rangos, Criaturas, Equipo, Nombres y el Taller (fichas + simulador).
-rem Doble clic, o desde una terminal: Herramientas.bat [--no-browser] [rangos criaturas equipo nombres taller]
+rem Abre el Editor de Rangos, Criaturas, Equipo, Nombres, el Tablero y el Taller (fichas + simulador).
+rem Doble clic, o desde una terminal: Herramientas.bat [--no-browser] [rangos criaturas equipo nombres tablero taller]
 title Herramientas de Raldamain
 cd /d "%~dp0"
 python tools\launch_all.py %*

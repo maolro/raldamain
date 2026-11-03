@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tablero de Raldamain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="top">
+    <span class="brand">Tablero</span>
+    <select id="board-pick" class="inp" title="Tablero abierto"></select>
+    <button class="btn small" id="board-new" title="Nuevo tablero">＋ Nuevo</button>
+    <button class="btn small" id="board-rename" title="Cambiar el nombre">✎</button>
+    <button class="btn small danger" id="board-delete" title="Eliminar este tablero">🗑</button>
+    <span class="sep"></span>
+    <button class="btn small" id="undo" title="Deshacer (Ctrl+Z)">↶</button>
+    <button class="btn small" id="redo" title="Rehacer (Ctrl+Y)">↷</button>
+    <span class="status" id="status"></span>
+    <span class="grow"></span>
+    <span class="role" title="Por ahora solo existe la vista del GM">👑 GM</span>
+  </header>
+
+  <aside class="tools">
+    <div class="group">
+      <button class="tool on" data-tool="select" title="Seleccionar y mover (V)">⬚</button>
+      <button class="tool" data-tool="pan" title="Mover la vista (H · o mantén Espacio · o arrastra con el botón derecho/central)">✋</button>
+    </div>
+    <div class="group" id="layers"></div>
+    <div class="group">
+      <button class="tool" id="grid-btn" title="Cuadrícula y página">#</button>
+    </div>
+    <div class="group zoom">
+      <button class="tool" id="zoom-in" title="Acercar">＋</button>
+      <span id="zoom-label">100%</span>
+      <button class="tool" id="zoom-out" title="Alejar">−</button>
+      <button class="tool" id="zoom-fit" title="Ver toda la página">⤢</button>
+    </div>
+  </aside>
+
+  <main id="stage">
+    <div class="drop-hint" id="drop-hint" hidden>Suelta las imágenes para añadirlas al tablero</div>
+    <div class="help" id="help">
+      <b>Arrastra</b> o <b>pega (Ctrl+V)</b> imágenes · <b>rueda</b>: zoom · <b>botón derecho / Espacio</b>: mover la vista ·
+      <b>Alt</b>: sin ajustar a la cuadrícula · <b>Mayús</b>: proporción libre al redimensionar
+    </div>
+  </main>
+
+  <aside class="library" id="library"></aside>
+
+  <div class="panel" id="grid-panel" hidden>
+    <h3>Cuadrícula y página</h3>
+    <label class="check"><input type="checkbox" id="g-show"> Mostrar cuadrícula</label>
+    <label class="check"><input type="checkbox" id="g-snap"> Ajustar a la cuadrícula</label>
+    <label>Tamaño de casilla (px)<input class="inp" type="number" id="g-size" min="10" max="400" step="1"></label>
+    <label>Color<input type="color" id="g-color"></label>
+    <label>Opacidad<input type="range" id="g-opacity" min="0" max="1" step="0.05"></label>
+    <div class="row2">
+      <label>Ancho (casillas)<input class="inp" type="number" id="p-width" min="1" max="300"></label>
+      <label>Alto (casillas)<input class="inp" type="number" id="p-height" min="1" max="300"></label>
+    </div>
+    <label>Fondo<input type="color" id="p-bg"></label>
+  </div>
+
+  <div class="menu" id="menu" hidden></div>
+  <div class="toast" id="toast" hidden></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

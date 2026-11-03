@@ -1,0 +1,19 @@
+{
+  "name": "raldamain-tablero",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Tablero de Raldamain: token board (GM draft). Served by tools/tablero.py.",
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "watch": "vite build --watch",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "pixi.js": "^8.5.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}

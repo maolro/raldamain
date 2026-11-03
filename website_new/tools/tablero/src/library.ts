@@ -1,0 +1,203 @@
+// The image library (right panel): every image dropped, pasted or uploaded, with a
+// name, a category and tags to filter by. Thumbnails can be dragged onto the board.
+import { api, imageUrl } from './api';
+import { DEFAULT_CATEGORIES, type ImageMeta } from './types';
+
+export const DRAG_TYPE = 'application/x-tablero-image';
+
+export interface LibraryEvents {
+  place(meta: ImageMeta): void;          // "Colocar en el tablero" / double click
+  changed(list: ImageMeta[]): void;      // images added, renamed or deleted
+  toast(msg: string, bad?: boolean): void;
+}
+
+const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+const plain = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+/** Width and height of an image file (works for SVG too) */
+function imageSize(file: Blob): Promise<{ width: number; height: number }> {
+  return new Promise(resolve => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => { resolve({ width: img.naturalWidth || 256, height: img.naturalHeight || 256 }); URL.revokeObjectURL(url); };
+    img.onerror = () => { resolve({ width: 256, height: 256 }); URL.revokeObjectURL(url); };
+    img.src = url;
+  });
+}
+
+export class Library {
+  list: ImageMeta[] = [];
+  private q = '';
+  private category = '';
+  private tags = new Set<string>();
+  private editing: string | null = null;
+
+  constructor(private el: HTMLElement, private ev: LibraryEvents) {
+    el.innerHTML = `
+      <div class="lib-head">
+        <h2>Biblioteca</h2><span class="lib-count" id="lib-count"></span>
+        <label class="btn small" title="Añadir imágenes a la biblioteca (también puedes arrastrarlas o pegarlas en el tablero)">⬆ Subir
+          <input type="file" id="lib-file" accept="image/*" multiple hidden></label>
+      </div>
+      <input id="lib-q" class="inp" placeholder="Buscar por nombre o etiqueta…">
+      <div class="lib-chips" id="lib-cats"></div>
+      <div class="lib-chips tags" id="lib-tags"></div>
+      <div class="lib-grid" id="lib-grid"></div>
+      <div class="lib-edit" id="lib-edit" hidden></div>
+      <datalist id="lib-cat-dl"></datalist>`;
+    this.$('lib-q').addEventListener('input', e => { this.q = plain((e.target as HTMLInputElement).value); this.renderGrid(); });
+    this.$('lib-file').addEventListener('change', async e => {
+      const input = e.target as HTMLInputElement;
+      const files = [...(input.files || [])];
+      input.value = '';
+      const added = await this.upload(files, this.category || 'Otros');
+      if (added.length) this.edit(added[added.length - 1].id);
+    });
+    this.$('lib-cats').addEventListener('click', e => {
+      const b = (e.target as HTMLElement).closest<HTMLElement>('[data-cat]');
+      if (b) { this.category = b.dataset.cat === this.category ? '' : b.dataset.cat!; this.render(); }
+    });
+    this.$('lib-tags').addEventListener('click', e => {
+      const b = (e.target as HTMLElement).closest<HTMLElement>('[data-tag]');
+      if (!b) return;
+      const t = b.dataset.tag!;
+      if (this.tags.has(t)) this.tags.delete(t); else this.tags.add(t);
+      this.render();
+    });
+    const grid = this.$('lib-grid');
+    grid.addEventListener('click', e => {
+      const t = (e.target as HTMLElement).closest<HTMLElement>('[data-id]');
+      if (t) this.edit(t.dataset.id!);
+    });
+    grid.addEventListener('dblclick', e => {
+      const t = (e.target as HTMLElement).closest<HTMLElement>('[data-id]');
+      const m = t && this.get(t.dataset.id!);
+      if (m) this.ev.place(m);
+    });
+    grid.addEventListener('dragstart', e => {
+      const t = (e.target as HTMLElement).closest<HTMLElement>('[data-id]');
+      if (!t || !e.dataTransfer) return;
+      e.dataTransfer.setData(DRAG_TYPE, t.dataset.id!);
+      e.dataTransfer.effectAllowed = 'copy';
+    });
+  }
+
+  private $(id: string) { return this.el.querySelector('#' + id) as HTMLElement; }
+  get(id: string) { return this.list.find(m => m.id === id); }
+  categories() {
+    return [...new Set([...DEFAULT_CATEGORIES, ...this.list.map(m => m.category).filter(Boolean)])];
+  }
+
+  async load() {
+    this.list = await api.images();
+    this.render();
+    this.ev.changed(this.list);
+  }
+
+  /** Upload image files (dropped, pasted or chosen). Returns their library entries. */
+  async upload(files: Blob[], category: string): Promise<ImageMeta[]> {
+    const out: ImageMeta[] = [];
+    for (const f of files) {
+      if (!f.type.startsWith('image/')) { this.ev.toast(`${(f as File).name || 'archivo'}: no es una imagen`, true); continue; }
+      const size = await imageSize(f);
+      const fileName = (f as File).name || '';
+      const name = fileName && !/^image\.\w+$/i.test(fileName) ? fileName.replace(/\.[^.]+$/, '')
+        : `Imagen pegada ${new Date().toLocaleTimeString('es', { hour: '2-digit', minute: '2-digit' })}`;
+      try {
+        const meta = await api.upload(f, { name, category, ...size });
+        if (!this.get(meta.id)) this.list.push(meta);
+        else this.ev.toast(`«${meta.name}» ya estaba en la biblioteca`);
+        out.push(this.get(meta.id)!);
+      } catch (e) {
+        this.ev.toast(`No se pudo subir ${name}: ${(e as Error).message}`, true);
+      }
+    }
+    if (out.length) { this.render(); this.ev.changed(this.list); }
+    return out;
+  }
+
+  edit(id: string | null) {
+    this.editing = id;
+    this.renderGrid();
+    this.renderEdit();
+  }
+
+  render() {
+    const cats = this.categories();
+    const count = (c: string) => this.list.filter(m => m.category === c).length;
+    this.$('lib-cats').innerHTML = cats.filter(c => count(c) || c === this.category)
+      .map(c => `<button class="chip ${c === this.category ? 'on' : ''}" data-cat="${esc(c)}">${esc(c)} <small>${count(c)}</small></button>`).join('');
+    const tagCount = new Map<string, number>();
+    for (const m of this.list) if (!this.category || m.category === this.category) for (const t of m.tags) tagCount.set(t, (tagCount.get(t) || 0) + 1);
+    const tags = [...new Set([...tagCount.keys(), ...this.tags])].sort((a, b) => a.localeCompare(b, 'es'));
+    this.$('lib-tags').innerHTML = tags.map(t => `<button class="chip tag ${this.tags.has(t) ? 'on' : ''}" data-tag="${esc(t)}">#${esc(t)} <small>${tagCount.get(t) || 0}</small></button>`).join('');
+    (this.$('lib-cat-dl') as HTMLDataListElement).innerHTML = cats.map(c => `<option value="${esc(c)}">`).join('');
+    this.renderGrid();
+    this.renderEdit();
+  }
+
+  private visible() {
+    return this.list.filter(m => (!this.category || m.category === this.category)
+      && [...this.tags].every(t => m.tags.includes(t))
+      && (!this.q || plain(m.name).includes(this.q) || m.tags.some(t => plain(t).includes(this.q))))
+      .sort((a, b) => b.created - a.created);
+  }
+
+  private renderGrid() {
+    const shown = this.visible();
+    this.$('lib-count').textContent = shown.length === this.list.length ? `${this.list.length}` : `${shown.length} / ${this.list.length}`;
+    this.$('lib-grid').innerHTML = shown.map(m => `
+      <figure class="thumb ${m.id === this.editing ? 'on' : ''}" data-id="${esc(m.id)}" draggable="true" title="${esc(m.name)} · ${esc(m.category)}${m.tags.length ? ' · #' + esc(m.tags.join(' #')) : ''}">
+        <img src="${imageUrl(m)}" alt="" loading="lazy" draggable="false"><figcaption>${esc(m.name)}</figcaption>
+      </figure>`).join('') || `<p class="muted">${this.list.length ? 'Ninguna imagen con estos filtros.' : 'Arrastra o pega imágenes en el tablero, o usa «Subir».'}</p>`;
+  }
+
+  private renderEdit() {
+    const box = this.$('lib-edit');
+    const m = this.editing ? this.get(this.editing) : undefined;
+    box.hidden = !m;
+    if (!m) return;
+    box.innerHTML = `
+      <div class="edit-head"><img src="${imageUrl(m)}" alt=""><div><b>${esc(m.name)}</b><small>${m.width}×${m.height}px</small></div>
+        <button class="x" data-act="close" title="Cerrar">✕</button></div>
+      <label>Nombre<input class="inp" data-f="name" value="${esc(m.name)}"></label>
+      <label>Categoría<input class="inp" data-f="category" list="lib-cat-dl" value="${esc(m.category)}"></label>
+      <label>Etiquetas <small class="muted">Enter para añadir</small>
+        <div class="tag-box">${m.tags.map((t, i) => `<span class="tag-pill">#${esc(t)}<button data-rm-tag="${i}" title="Quitar">×</button></span>`).join('')}
+          <input class="tag-inp" data-f="tag" placeholder="+ etiqueta"></div></label>
+      <div class="row"><button class="btn gold" data-act="place">Colocar en el tablero</button>
+        <button class="btn danger" data-act="delete">Eliminar</button></div>`;
+    const save = async (patch: Partial<ImageMeta>) => {
+      try {
+        Object.assign(m, await api.updateImage(m.id, patch));
+        this.render();
+        this.ev.changed(this.list);
+      } catch (e) { this.ev.toast('No se pudo guardar: ' + (e as Error).message, true); }
+    };
+    box.querySelectorAll<HTMLInputElement>('[data-f="name"],[data-f="category"]').forEach(inp =>
+      inp.addEventListener('change', () => save({ [inp.dataset.f!]: inp.value.trim() } as Partial<ImageMeta>)));
+    const tagInp = box.querySelector<HTMLInputElement>('[data-f="tag"]')!;
+    tagInp.addEventListener('keydown', e => {
+      if (e.key !== 'Enter' && e.key !== ',') return;
+      e.preventDefault();
+      const t = tagInp.value.trim().replace(/^#/, '');
+      if (t && !m.tags.some(x => x.toLowerCase() === t.toLowerCase())) save({ tags: [...m.tags, t] }).then(() => this.focusTag());
+      tagInp.value = '';
+    });
+    box.querySelectorAll<HTMLElement>('[data-rm-tag]').forEach(b =>
+      b.addEventListener('click', () => save({ tags: m.tags.filter((_, i) => i !== +b.dataset.rmTag!) })));
+    box.querySelector('[data-act="close"]')!.addEventListener('click', () => this.edit(null));
+    box.querySelector('[data-act="place"]')!.addEventListener('click', () => this.ev.place(m));
+    box.querySelector('[data-act="delete"]')!.addEventListener('click', async () => {
+      const { boards } = await api.imageUsage(m.id);
+      if (!confirm(`¿Eliminar «${m.name}» de la biblioteca?` + (boards.length ? `\n\nSe usa en: ${boards.join(', ')} (allí quedará un hueco marcado).` : ''))) return;
+      await api.deleteImage(m.id);
+      this.list = this.list.filter(x => x.id !== m.id);
+      this.editing = null;
+      this.render();
+      this.ev.changed(this.list);
+    });
+  }
+
+  private focusTag() { this.el.querySelector<HTMLInputElement>('[data-f="tag"]')?.focus(); }
+}
