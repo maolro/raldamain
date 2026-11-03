@@ -3,6 +3,7 @@
 import './style.css';
 import { api } from './api';
 import { BoardView, type Pt, type Tool } from './board';
+import { DiceRoller } from './dice';
 import { DRAG_TYPE, Library } from './library';
 import { kindOf, LAYERS, type Board, type BoardItem, type ImageMeta, type LayerId } from './types';
 
@@ -16,8 +17,8 @@ const PREFS = 'raldamain.tablero.prefs';
 const SWATCHES = ['#ffffff', '#111111', '#e03030', '#f08a24', '#fff200', '#3cb44b', '#3a8ee6', '#9b59d0', '#8b5a2b'];
 
 // tool settings, kept in this browser
-const prefs = { pen: { color: '#e03030', width: 6 }, text: { color: '#ffffff', size: 36 }, newSize: '1' };
-try { const p = JSON.parse(localStorage.getItem(PREFS) || '{}'); Object.assign(prefs.pen, p.pen); Object.assign(prefs.text, p.text); if (p.newSize) prefs.newSize = p.newSize; } catch { /* defaults */ }
+const prefs = { pen: { color: '#e03030', width: 6 }, text: { color: '#ffffff', size: 36 }, newSize: '1', side: 'library' };
+try { const p = JSON.parse(localStorage.getItem(PREFS) || '{}'); Object.assign(prefs.pen, p.pen); Object.assign(prefs.text, p.text); if (p.newSize) prefs.newSize = p.newSize; if (p.side) prefs.side = p.side; } catch { /* defaults */ }
 const savePrefs = () => { try { localStorage.setItem(PREFS, JSON.stringify(prefs)); } catch { /* private window */ } };
 
 // ── state ───────────────────────────────────────────────────────────────────
@@ -60,6 +61,19 @@ const library = new Library($('library'), {
   changed: list => view.setImages(list),
   toast,
 });
+
+const dice = new DiceRoller($('dice'), toast);
+
+// right panel tabs: Biblioteca / Dados
+function showSide(tab: string) {
+  prefs.side = tab === 'dice' ? 'dice' : 'library';
+  document.querySelectorAll<HTMLElement>('[data-side]').forEach(b => b.classList.toggle('on', b.dataset.side === prefs.side));
+  $('library').hidden = prefs.side !== 'library';
+  $('dice').hidden = prefs.side !== 'dice';
+  savePrefs();
+}
+document.querySelectorAll<HTMLElement>('[data-side]').forEach(b => b.addEventListener('click', () => showSide(b.dataset.side!)));
+showSide(prefs.side);
 
 // ── history and saving ──────────────────────────────────────────────────────
 const snapshot = () => JSON.stringify(board);
@@ -585,7 +599,7 @@ document.addEventListener('keyup', e => {
 
 // ── start ───────────────────────────────────────────────────────────────────
 // for the browser console (and tests): window.tablero.view / .board()
-(window as unknown as { tablero: unknown }).tablero = { view, library, board: () => board };
+(window as unknown as { tablero: unknown }).tablero = { view, library, dice, board: () => board };
 (async () => {
   await view.init(stage);
   bindDoubleClick();

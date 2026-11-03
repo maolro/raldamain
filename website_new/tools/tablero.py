@@ -102,6 +102,12 @@ def client_assets(name):
     return resp
 
 
+@app.route("/dice/<path:name>")
+def dice_images(name):
+    """The website's dice pictures (website_new/dice), for the Dados tab."""
+    return send_from_directory(TOOLS.parent / "dice", name)
+
+
 @app.route("/img/<name>")
 def image_file(name):
     resp = send_from_directory(IMAGES, name)
