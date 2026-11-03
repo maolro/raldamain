@@ -134,6 +134,7 @@ export interface ShareStatus {
   url: string;
   host: string;
   message?: string;
+  login_url?: string;   // logging-in: Cloudflare's page, to open it again
 }
 export interface JoinInfo { code: string; board: string; pid: string; key: string; name: string; color: string }
 

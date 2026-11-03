@@ -93,7 +93,10 @@ def status() -> dict:
     if not CERT.exists():
         login_pid = _read_int(DIR / "login.pid")
         if login_pid and _pid_alive(login_pid):
-            return {**out, "state": "logging-in", "message": "Autoriza raldamain.com en la página de Cloudflare que se abrió."}
+            # the page's address, to open it again if its tab was closed
+            m = re.search(r"https://dash\.cloudflare\.com/argotunnel\S+", _log_tail(SETUP_LOG))
+            return {**out, "state": "logging-in", "login_url": m.group(0) if m else "",
+                    "message": "Autoriza raldamain.com en la página de Cloudflare que se abrió."}
         return {**out, "state": "login"}
     if not TUNNEL.exists() or not CONFIG.exists():
         return {**out, "state": "setup"}

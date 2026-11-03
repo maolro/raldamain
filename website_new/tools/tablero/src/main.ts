@@ -411,7 +411,8 @@ function renderSharePanel() {
   body.innerHTML = ({
     missing: `<p>Falta el programa <b>cloudflared</b>. Instálalo con:</p><code class="share-code">winget install Cloudflare.cloudflared</code>`,
     login: `${steps(1)}<button class="btn gold" data-share="login">Conectar con Cloudflare</button>`,
-    'logging-in': `${steps(1)}<p class="muted">Esperando a que autorices raldamain.com en la página de Cloudflare…</p>`,
+    'logging-in': `${steps(1)}<p class="muted">Esperando a que autorices raldamain.com en la página de Cloudflare…</p>
+      ${s.login_url ? `<a class="btn small" href="${esc(s.login_url)}" target="_blank" rel="noopener">Abrir la página de Cloudflare</a>` : ''}`,
     setup: `${steps(2)}<button class="btn gold" data-share="setup">Crear ${esc(s.host)}</button>`,
     off: `${steps(3)}<p class="muted">Cerrado: solo se juega en este ordenador.</p><button class="btn gold" data-share="start">Abrir a internet</button>`,
     starting: `<p class="muted">Conectando con Cloudflare…</p>`,
