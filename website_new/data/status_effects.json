@@ -55,12 +55,20 @@
     {
       "id": "agarrado",
       "name": "Agarrado",
-      "description": "No puede tomar acciones ni reacciones que requieran mover el cuerpo; solo se defiende con salvaciones Físicas. No puede alejarse y pierde la Concentración. Librarse: 1 acción y una salvación FÍS.",
       "levels": [
         {
           "name": "",
-          "penalties": [],
-          "notes": "Solo se defiende con salvaciones FÍS. Librarse: 1 acción + salvación FÍS."
+          "penalties": [
+            {
+              "rolls": [
+                "Defensa"
+              ],
+              "stats": [],
+              "dice": 1
+            }
+          ],
+          "notes": "No puede emplear habilidades de Concentración. Librarse: 1 Acción y una salvación FÍS.",
+          "no_reactions": true
         }
       ]
     },
