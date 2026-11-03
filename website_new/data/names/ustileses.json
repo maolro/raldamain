@@ -1195,7 +1195,268 @@
       "meaning": ""
     }
   ],
-  "surnames": [],
+  "surnames": [
+    {
+      "name": "Aguilar",
+      "meaning": ""
+    },
+    {
+      "name": "Alamilla",
+      "meaning": ""
+    },
+    {
+      "name": "Alvarado",
+      "meaning": ""
+    },
+    {
+      "name": "Amador",
+      "meaning": ""
+    },
+    {
+      "name": "Araujo",
+      "meaning": ""
+    },
+    {
+      "name": "Arce",
+      "meaning": ""
+    },
+    {
+      "name": "Arias",
+      "meaning": ""
+    },
+    {
+      "name": "Arriola",
+      "meaning": ""
+    },
+    {
+      "name": "Belmonte",
+      "meaning": ""
+    },
+    {
+      "name": "Cabrera",
+      "meaning": ""
+    },
+    {
+      "name": "Calandri",
+      "meaning": ""
+    },
+    {
+      "name": "Calderón",
+      "meaning": ""
+    },
+    {
+      "name": "Camacho",
+      "meaning": ""
+    },
+    {
+      "name": "Cárdenas",
+      "meaning": ""
+    },
+    {
+      "name": "Cardoso",
+      "meaning": ""
+    },
+    {
+      "name": "Carmona",
+      "meaning": ""
+    },
+    {
+      "name": "Carrillo",
+      "meaning": ""
+    },
+    {
+      "name": "Casales",
+      "meaning": ""
+    },
+    {
+      "name": "Clemente",
+      "meaning": ""
+    },
+    {
+      "name": "Crespo",
+      "meaning": ""
+    },
+    {
+      "name": "Cuéllar",
+      "meaning": ""
+    },
+    {
+      "name": "Delgado",
+      "meaning": ""
+    },
+    {
+      "name": "Ecevarría",
+      "meaning": ""
+    },
+    {
+      "name": "Elisondo",
+      "meaning": ""
+    },
+    {
+      "name": "Escamilla",
+      "meaning": ""
+    },
+    {
+      "name": "Espinosa",
+      "meaning": ""
+    },
+    {
+      "name": "Esposito",
+      "meaning": ""
+    },
+    {
+      "name": "Estrada",
+      "meaning": ""
+    },
+    {
+      "name": "Fierro",
+      "meaning": ""
+    },
+    {
+      "name": "Figueroa",
+      "meaning": ""
+    },
+    {
+      "name": "Fonseca",
+      "meaning": ""
+    },
+    {
+      "name": "Gallardo",
+      "meaning": ""
+    },
+    {
+      "name": "Galves",
+      "meaning": ""
+    },
+    {
+      "name": "Garrido",
+      "meaning": ""
+    },
+    {
+      "name": "Gutiérrez",
+      "meaning": ""
+    },
+    {
+      "name": "Guzmán",
+      "meaning": ""
+    },
+    {
+      "name": "Herrero",
+      "meaning": ""
+    },
+    {
+      "name": "Lozano",
+      "meaning": ""
+    },
+    {
+      "name": "Macías",
+      "meaning": ""
+    },
+    {
+      "name": "Marín",
+      "meaning": ""
+    },
+    {
+      "name": "Merino",
+      "meaning": ""
+    },
+    {
+      "name": "Molina",
+      "meaning": ""
+    },
+    {
+      "name": "Montoya",
+      "meaning": ""
+    },
+    {
+      "name": "Narváez",
+      "meaning": ""
+    },
+    {
+      "name": "Noguera",
+      "meaning": ""
+    },
+    {
+      "name": "Ojeda",
+      "meaning": ""
+    },
+    {
+      "name": "Olmos",
+      "meaning": ""
+    },
+    {
+      "name": "Otero",
+      "meaning": ""
+    },
+    {
+      "name": "Padilla",
+      "meaning": ""
+    },
+    {
+      "name": "Peláez",
+      "meaning": ""
+    },
+    {
+      "name": "Peralta",
+      "meaning": ""
+    },
+    {
+      "name": "Quijada",
+      "meaning": ""
+    },
+    {
+      "name": "Rendón",
+      "meaning": ""
+    },
+    {
+      "name": "Rivas",
+      "meaning": ""
+    },
+    {
+      "name": "Romero",
+      "meaning": ""
+    },
+    {
+      "name": "Salcedo",
+      "meaning": ""
+    },
+    {
+      "name": "Santana",
+      "meaning": ""
+    },
+    {
+      "name": "Sepúlveda",
+      "meaning": ""
+    },
+    {
+      "name": "Solís",
+      "meaning": ""
+    },
+    {
+      "name": "Trevignio",
+      "meaning": ""
+    },
+    {
+      "name": "Varela",
+      "meaning": ""
+    },
+    {
+      "name": "Velesco",
+      "meaning": ""
+    },
+    {
+      "name": "Villalba",
+      "meaning": ""
+    },
+    {
+      "name": "Zambrano",
+      "meaning": ""
+    },
+    {
+      "name": "Zavala",
+      "meaning": ""
+    }
+  ],
   "surname_rules": [],
   "patronymic_rules": []
 }
