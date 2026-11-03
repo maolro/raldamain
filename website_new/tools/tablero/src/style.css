@@ -255,3 +255,6 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .share-code { display: block; background: #0d0d0d; border: 1px solid #333; padding: 6px 8px; border-radius: 4px; font-size: 12px; user-select: all; }
 .panel p { margin: 0; }
 .panel .small { font-size: 11px; }
+.players-away { display: block; line-height: 1.7; }
+.players-away .away { white-space: nowrap; }
+.players-away .x { font-size: 12px; padding: 0 2px; }

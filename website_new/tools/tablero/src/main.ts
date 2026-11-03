@@ -274,26 +274,32 @@ function renderPresence() {
     ? Object.entries(p.players).map(([pid, x]) => `${p.online.includes(pid) ? '●' : '○'} ${x.name}`).join('\n') + (PLAYER ? `\n${p.gm ? '● GM conectado' : '○ GM desconectado'}` : '')
     : 'Nadie se ha unido todavía';
   if (PLAYER && p) $('player-chip').innerHTML = `Sala <b>${esc(p.code || currentCode)}</b> · ${p.gm ? 'GM conectado' : '<span class="muted">GM desconectado</span>'}`;
-  if (!$('room-panel').hidden) renderRoomPanel();
   if (!$('players-panel').hidden) renderPlayersPanel();
 }
 
-// 👥: who is in the room. The GM gets the room panel (names, connected or not, ✕ to
-// remove someone); a player, the list of who is there.
+// 👥: the players connected now (the GM can remove them with ✕). The ones who joined
+// but are away are only named underneath. The invite code is in ✉ Invitar.
 $('presence').addEventListener('click', () => {
-  const panel = $(PLAYER ? 'players-panel' : 'room-panel');
+  const panel = $('players-panel');
   panel.hidden = !panel.hidden;
-  if (panel.hidden) return;
-  if (PLAYER) renderPlayersPanel(); else renderRoomPanel();
+  if (!panel.hidden) renderPlayersPanel();
 });
 
 function renderPlayersPanel() {
-  const p = presence;
-  const rows = p ? Object.entries(p.players).map(([pid, x]) => `<div class="room-player"><span class="dot" style="background:${esc(x.color)}"></span>${esc(x.name)}${pid === me?.pid ? ' <small class="muted">(tú)</small>' : ''}
-      <span class="state ${p.online.includes(pid) ? 'on' : ''}">${p.online.includes(pid) ? '● conectado' : '○ fuera'}</span></div>`).join('') : '';
-  $('players-body').innerHTML = `<div class="room-players">
-      <div class="room-player"><span class="dot" style="background:#fff200"></span>GM <span class="state ${p?.gm ? 'on' : ''}">${p?.gm ? '● conectado' : '○ fuera'}</span></div>
-      ${rows}</div>`;
+  const p = presence, all = p ? Object.entries(p.players) : [];
+  const here = all.filter(([pid]) => p!.online.includes(pid)), away = all.filter(([pid]) => !p!.online.includes(pid));
+  const kick = (pid: string) => isGM() ? `<button class="x" data-kick="${esc(pid)}" title="Sacar de la sala">✕</button>` : '';
+  const body = $('players-body');
+  body.innerHTML = `<div class="room-players">
+      ${PLAYER ? `<div class="room-player"><span class="dot" style="background:#fff200"></span>GM <span class="state ${p?.gm ? 'on' : ''}">${p?.gm ? '● conectado' : '○ fuera'}</span></div>` : ''}
+      ${here.map(([pid, x]) => `<div class="room-player"><span class="dot" style="background:${esc(x.color)}"></span>${esc(x.name)}${pid === me?.pid ? ' <small class="muted">(tú)</small>' : ''}
+        <span class="state on">● conectado</span>${kick(pid)}</div>`).join('') || (PLAYER ? '' : '<span class="muted">Nadie conectado ahora.</span>')}</div>
+    ${away.length ? `<small class="muted players-away">Fuera: ${away.map(([pid, x]) => `<span class="away">${esc(x.name)}${kick(pid)}</span>`).join(', ')}</small>` : ''}
+`;
+  body.querySelectorAll<HTMLElement>('[data-kick]').forEach(b => b.addEventListener('click', async () => {
+    if (!board || !confirm(`¿Sacar a ${playerName(b.dataset.kick!)} de la sala? Tendrá que volver a entrar con el código.`)) return;
+    await api.kick(B().id, b.dataset.kick!);
+  }));
 }
 
 // ── boards (GM) ─────────────────────────────────────────────────────────────
@@ -365,25 +371,14 @@ async function renderRoomPanel() {
     [`${base}/jugar?sala=${info.code}`, 'En este ordenador'],
     ...(info.lan ? [[`${info.lan}/jugar?sala=${info.code}`, 'Para jugadores en tu misma red'] as [string, string]] : []),
   ];
-  const online = new Set(presence?.online || []);
-  const players = Object.entries(info.players);
   body.innerHTML = `
     <div class="room-code" title="Código de invitación">${esc(info.code)}</div>
     ${links.map(([l, who]) => `<small class="muted">${esc(who)}</small><div class="room-link"><input class="inp" readonly value="${esc(l)}" title="${esc(who)}">
       <button class="btn small" data-copy="${esc(l)}">Copiar</button></div>`).join('')}
     ${info.public ? '' : '<small class="muted">Para jugar a distancia, abre el tablero a internet con «🌐 Compartir».</small>'}
-    <h3>Jugadores (${players.length})</h3>
-    <div class="room-players">${players.map(([pid, p]) => `<div class="room-player"><span class="dot" style="background:${esc(p.color)}"></span>${esc(p.name)}
-      <span class="state ${online.has(pid) ? 'on' : ''}">${online.has(pid) ? '● conectado' : '○ fuera'}</span>
-      <button class="x" data-kick="${esc(pid)}" title="Sacar de la sala">✕</button></div>`).join('') || '<span class="muted">Nadie todavía.</span>'}</div>
     <button class="btn danger small" id="room-close">Cerrar sala</button>`;
   body.querySelectorAll<HTMLElement>('[data-copy]').forEach(b => b.addEventListener('click', () => {
     navigator.clipboard?.writeText(b.dataset.copy!).then(() => toast('Enlace copiado'), () => toast(b.dataset.copy!));
-  }));
-  body.querySelectorAll<HTMLElement>('[data-kick]').forEach(b => b.addEventListener('click', async () => {
-    if (!confirm(`¿Sacar a ${playerName(b.dataset.kick!)} de la sala? Tendrá que volver a entrar con el código.`)) return;
-    await api.kick(B().id, b.dataset.kick!);
-    renderRoomPanel();
   }));
   $('room-close').addEventListener('click', async () => {
     if (!confirm('¿Cerrar la sala? Los jugadores saldrán del tablero y el código dejará de servir.')) return;
@@ -1115,7 +1110,7 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
 document.addEventListener('pointerdown', e => {
   const t = e.target as HTMLElement | null;
   if (!t?.closest?.('#menu')) $('menu').hidden = true;
-  if (!t?.closest?.('#room-panel, #invite-btn, #presence')) $('room-panel').hidden = true;
+  if (!t?.closest?.('#room-panel, #invite-btn')) $('room-panel').hidden = true;
   if (!t?.closest?.('#players-panel, #presence')) $('players-panel').hidden = true;
   if (!t?.closest?.('#share-panel, #share-btn')) $('share-panel').hidden = true;
   if (!t?.closest?.('#status-panel, #status-btn')) statusPanel.hidden = true;
