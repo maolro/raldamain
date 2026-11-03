@@ -133,7 +133,7 @@
         if (el.dataset.label) return el.dataset.label;
         // a talent ("Talentos: Arcanismo +5, Percepción +6"): the name just before the value
         const line = el.parentElement && el.parentElement.previousElementSibling;
-        if (line && /^Talentos/.test(line.textContent.trim())) {
+        if (line && /talentos/i.test(line.textContent)) {   // (Talentos, or the summary of Todos los talentos)
             const name = textBefore(el).split(',').pop().replace(/[\s+]+$/, '').trim();
             if (name) return name;
         }

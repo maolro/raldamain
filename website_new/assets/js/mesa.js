@@ -335,6 +335,14 @@ function initDice() {
 // Best-effort label: data-label, else the nearest preceding bold name (ability name)
 function labelFor(el) {
     if (el.dataset.label) return el.dataset.label;
+    // a talent ("Talentos: Arcanismo +5, Sigilo +4+1d6"): the name just before the value
+    const line = el.parentElement && el.parentElement.previousElementSibling;
+    if (line && /talentos/i.test(line.textContent)) {
+        let before = '';
+        for (let n = el.previousSibling; n && before.length < 60; n = n.previousSibling) before = n.textContent + before;
+        const name = before.split(',').pop().replace(/[\s+]+$/, '').trim();
+        if (name) return name;
+    }
     let n = el;
     if (n.parentElement && /^(B|STRONG)$/.test(n.parentElement.tagName)) n = n.parentElement;
     for (let depth = 0; n && depth < 4; depth++) {

@@ -83,6 +83,7 @@ Vue.component('v-statblock', {
         <div v-if="r.rkString" class="mb-1"><b>Rangos: </b>{{ r.rkString }}</div>
         <div v-if="r.equipmentString" class="mb-1"><b>Equipamiento: </b>{{ r.equipmentString }}</div>
         <div v-if="r.talstring" class="mb-1"><b>Talentos: </b><span v-html="h(r.talstring)"></span></div>
+        <details v-if="rollable && r.allTalentString" class="mb-1 sb-alltal"><summary><b>Todos los talentos</b> <small style="color: var(--text-muted);">(también sin entrenar: 1d20 + estadística + nivel)</small></summary><span v-html="h(r.allTalentString)"></span></details>
         <div v-if="r.arcString" class="mb-1"><b>Arquetipos: </b>{{ r.arcString }}</div>
         <div v-if="r.resistances.resistances" class="mb-1"><b>Resistencias: </b>{{ r.resistances.resistances }}</div>
         <div v-if="r.resistances.supresist" class="mb-1"><b>Resistencias Superiores: </b>{{ r.resistances.supresist }}</div>

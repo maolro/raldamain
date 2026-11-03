@@ -638,6 +638,20 @@ ${reactions}
                 return Number.parseInt(this.replaceTag(String(value), owner.rank, owner.skill));
             return Number.parseInt(value);
         },
+        // "Acrobacias +3, Sigilo +5+1d6": a talent's roll (stat + level, and the Ventaja its
+        // abilities give as d6) with the sign attached, so the Mesa and the Tablero can roll it
+        talentRolls(trainedOnly) {
+            const ts = [];
+            for (let key in this.mytalents) {
+                if (trainedOnly && !(this.mytalents[key].level > 0)) continue;
+                const statKey = this.talents[key] ? this.getMainStat(this.talents[key].stat) : null;
+                const adv = statKey ? this.abilityAdvantageCount({ tags: 'Habilidad' }, [statKey]) : 0;
+                const m = this.getMod(key);
+                const mod = m === '-' ? '–' : (m >= 0 ? '+' + m : String(m));
+                ts.push(this.mytalents[key].name + " " + mod + (adv > 0 && m !== '-' ? '+' + adv + 'd6' : ''));
+            }
+            return ts.join(", ");
+        },
         // A number the race gives (Razas tab of the rank editor): extra "ranks" or "chi".
         // From the race as it is now (a saved character keeps an older copy of its race);
         // no race chosen is Humano, the default (the race picker already shows it).
@@ -1192,18 +1206,11 @@ ${reactions}
             return (2 + this.level / 1 + this.finalStats.itl.value);
         },
         talstring: function () {
-            ts = [];
-            for (let key in this.mytalents) {
-                if (this.mytalents[key].level > 0) {
-                    const statKey = this.talents[key] ? this.getMainStat(this.talents[key].stat) : null;
-                    const adv = statKey ? this.abilityAdvantageCount({ tags: 'Habilidad' }, [statKey]) : 0;
-                    // "Acrobacias +3" (sign attached: clickable to roll in the Mesa and the Tablero)
-                    const m = this.getMod(key);
-                    const mod = m === '-' ? '–' : (m >= 0 ? '+' + m : String(m));
-                    ts.push(this.mytalents[key].name + " " + mod + (adv > 0 && m !== '-' ? '+' + adv + 'd6' : ''));
-                }
-            }
-            return ts.join(", ");
+            return this.talentRolls(true);
+        },
+        // Every talent, trained or not (1d20 + stat + level): the Mesa and the Tablero roll them
+        allTalentString: function () {
+            return this.talentRolls(false);
         },
         rkpoints: function () {
             rkSum = 0;
