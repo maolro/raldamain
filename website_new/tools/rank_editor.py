@@ -25,6 +25,7 @@ BASE       = Path(__file__).parent.parent
 RANKS_DIR  = BASE / "data" / "ranks"
 RANKS_LIST = BASE / "data" / "ranks_list.json"
 STATUS_EFFECTS = BASE / "data" / "status_effects.json"   # Efectos de estado (their own panel)
+RACES = BASE / "data" / "builder" / "races.json"            # Razas (the Creador's format; their own tab)
 
 # Guardar commits the rank (+ ranks_list.json) and pushes it (see git_sync.py for the branch guard)
 sys.path.insert(0, str(Path(__file__).parent))
@@ -175,6 +176,23 @@ def api_status_effects_save():
     git = _git_push([str(STATUS_EFFECTS)], "Update status effects")
     return jsonify({"ok": True, "git": git})
 
+@app.route("/api/races")
+def api_races():
+    return Response(RACES.read_text(encoding="utf-8") if RACES.exists() else "{}", mimetype="application/json")
+
+@app.route("/api/races", methods=["POST"])
+def api_races_save():
+    """The whole file: {id: {name, stats: [{stat, boost}], abilities: [...], ...}} (the Creador reads it as is)"""
+    data = request.get_json(force=True)
+    if not isinstance(data, dict) or not all(isinstance(v, dict) and v.get("name") for v in data.values()):
+        return jsonify({"error": "cada raza necesita un nombre"}), 400
+    if any(not re.fullmatch(r"[a-z0-9][a-z0-9_-]*", k) for k in data):
+        return jsonify({"error": "IDs de raza: minúsculas, números, - y _"}), 400
+    RACES.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    raldamain_db.record([RACES])
+    git = _git_push([str(RACES)], "Update races")
+    return jsonify({"ok": True, "git": git})
+
 @app.route("/api/git")
 def api_git():
     return jsonify(_git_status())
@@ -309,6 +327,10 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);
 
 /* ── Efectos de estado (their own panel) ── */
 .tab-btn.on{background:var(--bg4);color:var(--gold);border-color:var(--goldd)}
+#race-meta{padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.race-stats{display:flex;gap:8px;flex-wrap:wrap}
+.race-stats .field{width:74px}
+.race-note{font-size:11px;color:var(--text3)}
 #st-view{display:none;position:fixed;inset:0;left:var(--sw);z-index:9000;background:var(--bg);flex-direction:column}
 .st-tb{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--border);background:var(--bg2)}
 .st-tb .t{font-weight:700;color:var(--gold);letter-spacing:.5px}
@@ -545,7 +567,8 @@ select.inp{cursor:pointer}
 
 <div class="main">
   <div class="tb">
-    <button class="tab-btn btn on" onclick="closeStatus()">⚔ Rangos</button>
+    <button class="tab-btn btn on" id="tab-ranks" onclick="setKind('rank')">⚔ Rangos</button>
+    <button class="tab-btn btn" id="tab-races" onclick="setKind('race')" title="Razas: sus estadísticas y las habilidades que dan">🧬 Razas</button>
     <button class="tab-btn btn" onclick="openStatus()" title="Efectos de estado: Ralentizado, Enfermado, Fatigado… y sus penalizadores" style="margin-right:4px">✦ Estados</button>
     <span class="tb-title" id="tb-title">Selecciona un rango</span>
     <span id="clip-badge" title="Clic para limpiar portapapeles" onclick="clearClip()"></span>
@@ -602,6 +625,9 @@ select.inp{cursor:pointer}
       </div>
     </div>
 
+    <!-- Race: name, ID, stats -->
+    <div class="meta-box" id="race-meta" style="display:none"></div>
+
     <!-- Level tabs -->
     <div class="lvl-tabs" id="lvl-tabs"></div>
     <!-- Level content -->
@@ -637,7 +663,8 @@ select.inp{cursor:pointer}
 <!-- ── Efectos de estado ── -->
 <div id="st-view">
   <div class="st-tb">
-    <button class="tab-btn btn" onclick="closeStatus()">⚔ Rangos</button>
+    <button class="tab-btn btn" onclick="closeStatus();setKind('rank')">⚔ Rangos</button>
+    <button class="tab-btn btn" onclick="closeStatus();setKind('race')">🧬 Razas</button>
     <button class="tab-btn btn on" onclick="openStatus()" style="margin-right:4px">✦ Estados</button>
     <span class="t">Efectos de estado</span>
     <span style="font-size:11px;color:var(--text3)">Penalizadores que el Tablero aplica a las tiradas de los tokens afectados</span>
@@ -698,6 +725,8 @@ const S = {
   clipboard: null,  // { kind: 'level'|'ability', data: {...} }
   openBoost: {},    // "li-ai" -> passive-boost section opened without any value yet
   abilityIds: [],   // [{id,name,rank,rank_title,level,type}] every ability's slug (for "Habilidades a elegir")
+  kind: 'rank',     // 'rank' | 'race': what the sidebar lists and the editor edits
+  races: null,      // data/builder/races.json as loaded / last saved
 };
 
 const TAGS = ['Duelo','Pasiva','Mejora','Reacción','Duradera','Maniobra',
@@ -756,6 +785,7 @@ function refreshRankIdList() {
   dl.innerHTML = S.all.map(r => `<option value="${r.id}">${esc(r.title)}</option>`).join('');
 }
 function renderSidebar() {
+  if (S.kind === 'race') return renderRaceSidebar();
   refreshRankIdList();
   const filtered = S.all.filter(r => {
     const ms = !S.search || r.title.toLowerCase().includes(S.search) || r.id.includes(S.search);
@@ -780,6 +810,7 @@ function renderSidebar() {
 // ── Load rank ────────────────────────────────────────────────────────────────
 async function loadRank(id) {
   if (dirty() && !confirm('Cambios sin guardar. ¿Continuar?')) return;
+  if (S.kind === 'race') return loadRace(id);
   S.rank = await api('GET', `/api/rank/${id}`);
   S.saved = JSON.stringify(S.rank);
   S.lv = 0;
@@ -791,6 +822,7 @@ async function loadRank(id) {
 // ── Save ─────────────────────────────────────────────────────────────────────
 async function saveRank() {
   if (!S.rank) return;
+  if (S.rank._race) return saveRace();
   try {
     const res = await api('POST', `/api/rank/${S.rank.id}`, S.rank);
     loadAbilityIds();  // new or renamed abilities get their ids
@@ -811,6 +843,7 @@ async function saveRank() {
 // ── Delete whole rank ────────────────────────────────────────────────────────
 async function deleteRank() {
   if (!S.rank) return;
+  if (S.rank._race) return deleteRace();
   const { id, title } = S.rank;
   let usedBy = [];
   try { usedBy = (await api('GET', `/api/rank/${id}/usage`)).fichas || []; } catch(e) {}
@@ -862,7 +895,10 @@ function renderToolbar() {
   sb.classList.toggle('pri', d);
   document.getElementById('del-rank-btn').style.display = S.rank?'':'none';
   const db = document.getElementById('draft-btn');
-  db.style.display = S.rank?'':'none';
+  db.style.display = S.rank && !S.rank._race ?'':'none';
+  btn.style.display = S.kind === 'race' ? 'none' : '';
+  document.getElementById('meta-btn').style.display = S.kind === 'race' ? 'none' : '';
+  if (!S.rank) t.innerHTML = S.kind === 'race' ? 'Selecciona una raza' : 'Selecciona un rango';
   if (S.rank) {
     const dr = isDraft(S.rank);
     db.className = 'btn ' + (dr ? 'draft' : 'final');
@@ -950,6 +986,12 @@ function renderEditor() {
   document.getElementById('cmp-view').style.display    = 'none';
   if (!S.rank) return;
 
+  const race = !!S.rank._race;
+  document.querySelector('#edit-scroll > .meta-box:not(#race-meta)').style.display = race ? 'none' : '';
+  document.getElementById('race-meta').style.display = race ? '' : 'none';
+  document.getElementById('lvl-tabs').style.display = race ? 'none' : '';
+  if (race) { renderRaceMeta(); renderLvl(); return; }
+
   // meta fields
   document.getElementById('f-title').value = S.rank.title||'';
   document.getElementById('f-cat').value   = S.rank.category||'';
@@ -1002,6 +1044,16 @@ function renderLvl() {
   if (!lvls.length) { el.innerHTML='<div style="color:var(--text3)">Sin rangos. Pulsa ＋ para añadir.</div>'; return; }
   const lv = lvls[S.lv]; if (!lv) return;
   const abs = lv.abilities||[];
+  if (S.rank._race) {
+    const paste = S.clipboard?.kind==='ability'
+      ? `<button class="btn sm" style="color:var(--blue);border-color:var(--blue)" onclick="pasteAb(0)" title="Pegar habilidad copiada (también de un rango)">📋 Pegar habilidad</button>` : '';
+    el.innerHTML = `<div class="lvl-hd"><span class="tog-label">Habilidades de la raza</span>
+        <span class="race-note">Pasivas, acciones, ataques, hechizos… como las de un rango. Copia una habilidad de un rango y pégala aquí.</span>
+        <span style="flex:1"></span>${paste}</div>
+      <div class="grid">${abs.map((ab,ai)=>cardHtml(0,ab,ai)).join('')}
+        <button class="add-card" onclick="addAb(0)">＋ Añadir habilidad</button></div>`;
+    return;
+  }
 
   const canUp   = S.lv > 0;
   const canDown = S.lv < lvls.length - 1;
@@ -1785,6 +1837,7 @@ function autoNrId(title) {
 }
 
 function newRank() {
+  if (S.kind === 'race') return newRace();
   const m = document.getElementById('new-modal');
   document.getElementById('nr-title').value = '';
   document.getElementById('nr-id').value    = '';
@@ -1990,6 +2043,141 @@ async function saveStatus() {
     else if (git)                         toast('Guardado ✓ — git: ' + git, 'err');
     loadGit();
   } catch(e) { toast('Error: '+e.message, 'err'); }
+}
+
+// ── Razas ─────────────────────────────────────────────────────────────────────
+// data/builder/races.json in the Creador's format ({type, tags: "a, b", description}).
+// While edited, a race is a one-level "rank" (S.rank with _race) so its abilities use
+// the same cards as a rank's; converted back when saved.
+const RACE_STATS = [['str','FUE'],['dex','DES'],['con','CON'],['itl','INT'],['wis','SAB'],['cha','CAR']];
+
+// Creador ability → rank editor ability (tags as a list with its type, desc)
+function raceAbToRank(a) {
+  const { type, description, tags, ...rest } = a;
+  const list = Array.isArray(tags) ? [...tags] : String(tags || '').split(',').map(t => t.trim()).filter(Boolean);
+  if (type === 'Pasiva' && !list.includes('Pasiva')) list.push('Pasiva');
+  if (type === 'Reaccion' && !list.includes('Reacción')) list.push('Reacción');
+  return { ...rest, tags: list, desc: description || '' };
+}
+// rank editor ability → Creador ability (the type from the tags, as the Creador does for ranks)
+function rankAbToRace(a) {
+  const { desc, tags, ...rest } = a;
+  const list = tags || [];
+  const type = !list.length || list.includes('Pasiva') ? 'Pasiva' : list.includes('Reacción') ? 'Reaccion' : 'Accion';
+  const out = { ...rest, type, tags: list.join(', '), description: desc || '' };
+  if (!out.tags) delete out.tags;
+  return out;
+}
+
+async function setKind(kind) {
+  if (kind === S.kind) { closeStatus(); return; }
+  if (dirty() && !confirm('Cambios sin guardar. ¿Continuar?')) return;
+  S.kind = kind;
+  S.rank = null; S.saved = null; S.lv = 0; S.mode = 'edit';
+  document.getElementById('tab-ranks').classList.toggle('on', kind === 'rank');
+  document.getElementById('tab-races').classList.toggle('on', kind === 'race');
+  document.getElementById('sb-cats').style.display = kind === 'race' ? 'none' : '';
+  document.getElementById('sb-search').placeholder = kind === 'race' ? 'Buscar raza…' : 'Buscar rango…';
+  document.querySelector('.sb-hd').textContent = kind === 'race' ? '🧬 Razas' : '⚔ Rank Editor';
+  if (kind === 'race' && !S.races) {
+    try { S.races = await api('GET', '/api/races'); }
+    catch(e) { toast('No se pudieron cargar las razas: ' + e.message, 'err'); S.races = {}; }
+  }
+  renderSidebar(); renderAll();
+}
+
+function renderRaceSidebar() {
+  const el = document.getElementById('sb-list');
+  const list = Object.entries(S.races || {}).filter(([id, r]) => !S.search || (r.name||'').toLowerCase().includes(S.search) || id.includes(S.search))
+    .sort((a, b) => (a[1].name||'').localeCompare(b[1].name||'', 'es'));
+  el.innerHTML = list.map(([id, r]) => `
+    <div class="ri ${S.rank&&S.rank.id===id?'on':''} ${S.rank&&S.rank.id===id&&dirty()?'dirty':''}" onclick="loadRank('${esc(id)}')">
+      <div><div class="ri-name">${esc(r.name||id)}</div><div class="ri-id">${esc(id)} · ${(r.abilities||[]).length} hab.</div></div>
+    </div>`).join('') || '<div style="padding:10px 14px;font-size:11px;color:var(--text3)">Sin razas</div>';
+}
+
+function loadRace(id) {
+  const r = S.races[id];
+  if (!r) return;
+  const { name, stats, abilities, ...extra } = r;
+  S.rank = { _race: true, id, _orig: id, title: name || id, stats: deepCopy(stats || []), extra: deepCopy(extra),
+             draft: false, levels: [{ rank: '', abilities: (abilities || []).map(raceAbToRank) }] };
+  S.saved = JSON.stringify(S.rank);
+  S.lv = 0; S.openBoost = {};
+  renderAll(); renderSidebar();
+}
+
+function renderRaceMeta() {
+  const R = S.rank, boost = k => { const b = (R.stats||[]).find(x => x.stat === k); return b ? b.boost : ''; };
+  document.getElementById('race-meta').innerHTML = `
+    <div class="row2">
+      <div class="field"><div class="lbl">Nombre</div><input class="inp big" value="${esc(R.title||'')}" oninput="S.rank.title=this.value;renderToolbar()"></div>
+      <div class="field"><div class="lbl">ID</div><input class="inp" value="${esc(R.id||'')}" onchange="S.rank.id=slugify(this.value)||'';this.value=S.rank.id;renderToolbar()" title="Las fichas guardan su raza entera: cambiar el ID no las rompe"></div>
+    </div>
+    <div class="field"><div class="lbl">Estadísticas (+/−)</div>
+      <div class="race-stats">${RACE_STATS.map(([k, n]) => `<div class="field"><div class="lbl">${n}</div>
+        <input class="inp" type="number" value="${boost(k)}" placeholder="0" oninput="setRaceStat('${k}', this.value)"></div>`).join('')}</div></div>
+    ${Object.keys(R.extra||{}).length ? `<div class="race-note">También guarda: ${esc(Object.keys(R.extra).join(', '))} (se conserva tal cual).</div>` : ''}`;
+}
+function setRaceStat(k, v) {
+  const n = parseInt(v), list = (S.rank.stats || []).filter(x => x.stat !== k);
+  if (n) list.push({ stat: k, boost: n });
+  const order = RACE_STATS.map(x => x[0]);
+  S.rank.stats = list.sort((a, b) => order.indexOf(a.stat) - order.indexOf(b.stat));
+  renderToolbar();
+}
+
+async function saveRace() {
+  const R = S.rank;
+  if (!R.title || !R.id) { toast('La raza necesita nombre e ID', 'err'); return; }
+  if (R.id !== R._orig && S.races[R.id]) { toast(`Ya existe una raza con el ID «${R.id}»`, 'err'); return; }
+  const races = deepCopy(S.races), race = { name: R.title };
+  if ((R.stats||[]).length) race.stats = R.stats;
+  race.abilities = (R.levels[0].abilities || []).filter(a => a.name).map(rankAbToRace);
+  Object.assign(race, R.extra || {});
+  // the same position in the file (renamed: replaced in place)
+  const out = {};
+  let placed = false;
+  for (const [k, v] of Object.entries(races)) {
+    if (k === R._orig) { out[R.id] = race; placed = true; } else out[k] = v;
+  }
+  if (!placed) out[R.id] = race;
+  try {
+    const res = await api('POST', '/api/races', out);
+    S.races = out; R._orig = R.id; S.saved = JSON.stringify(R);
+    const git = res.git||'';
+    if (git === 'queued')                 toast('Raza guardada ✓ · subiendo a GitHub…', 'ok');
+    else if (git === 'ok')                toast('Raza guardada y publicada en GitHub ✓', 'ok');
+    else if (git === 'nothing')           toast('Raza guardada ✓ (sin cambios en git)', 'ok');
+    else if (git.startsWith('wrong-branch')) toast(`Guardado ✓ — sin push: estás en la rama "${git.split(':')[1]}"`, 'err');
+    else if (git)                         toast('Guardado ✓ — git: ' + git, 'err');
+    loadGit(); renderToolbar(); renderSidebar();
+  } catch(e) { toast('Error: '+e.message, 'err'); }
+}
+
+async function deleteRace() {
+  const R = S.rank;
+  if (!confirm(`¿Eliminar la raza «${R.title}»? Las fichas que la usan la conservan (guardan su raza entera), pero ya no aparecerá en el Creador.`)) return;
+  const out = deepCopy(S.races);
+  delete out[R._orig];
+  try {
+    const res = await api('POST', '/api/races', out);
+    S.races = out; S.rank = null; S.saved = null;
+    toast(`«${R.title}» eliminada ✓` + (res.git === 'queued' ? ' · subiendo a GitHub…' : ''), 'ok');
+    loadGit(); renderSidebar(); renderAll();
+  } catch(e) { toast('Error: '+e.message, 'err'); }
+}
+
+function newRace() {
+  if (dirty() && !confirm('Cambios sin guardar. ¿Continuar?')) return;
+  const name = prompt('Nombre de la nueva raza:', '');
+  if (!name) return;
+  let id = slugify(name), n = 2;
+  while (S.races[id]) id = slugify(name) + '-' + n++;
+  S.rank = { _race: true, id, _orig: null, title: name, stats: [], extra: {}, draft: false, levels: [{ rank: '', abilities: [] }] };
+  S.saved = '';   // new: unsaved until Guardar
+  S.lv = 0; S.openBoost = {};
+  renderAll(); renderSidebar();
 }
 
 // ── Start ─────────────────────────────────────────────────────────────────────
