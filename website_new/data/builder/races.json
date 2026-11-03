@@ -74,18 +74,25 @@
         "boost": 1
       },
       {
-        "stat": "wis",
-        "boost": -1
+        "stat": "cha",
+        "boost": 1
       }
     ],
+    "chi": 2,
     "abilities": [
       {
         "name": "Resistencia de Chothgar",
-        "type": "Pasiva",
-        "tags": "Innata",
         "hp": 2,
         "def": 2,
-        "description": "Aumenta sus PV máximos y su DEF base por 2 (ambos ya incluidos)."
+        "umbrales": [
+          {
+            "value": "RANGO+1",
+            "categories": "General"
+          }
+        ],
+        "type": "Pasiva",
+        "tags": "Innata, Pasiva",
+        "description": "Aumenta todos sus Umbrales por Rango + 1."
       }
     ]
   },
