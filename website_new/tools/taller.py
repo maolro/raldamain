@@ -21,6 +21,7 @@ Needs:  pip install flask pyyaml
 """
 
 import base64
+import hashlib
 import json
 import re
 import sys
@@ -424,6 +425,13 @@ def api_criatura_put(cid):
         CREATURE_IMAGES.mkdir(parents=True, exist_ok=True)
         picture.write_bytes(raw)
         data["image"] = f"{cid}.jpg"
+    # the picture's version: pages link <id>.jpg?v=<it>, so a replaced picture is never shown
+    # stale (raldamain.com's Cloudflare keeps images 4 hours in browsers whatever we ask)
+    stamp = image_version(cid)
+    if stamp:
+        data["image_v"] = stamp
+    else:
+        data.pop("image_v", None)
     CREATURES.mkdir(parents=True, exist_ok=True)
     (CREATURES / f"{cid}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     _list_creature(cid, data)
@@ -514,11 +522,19 @@ def api_criatura_publish(cid):
     return jsonify({"ok": True, "published": data["published"], "git": git})
 
 
+def image_version(cid: str) -> str:
+    """A short fingerprint of assets/images/creatures/<id>.jpg ('' if it has none)."""
+    p = CREATURE_IMAGES / f"{cid}.jpg"
+    return hashlib.sha1(p.read_bytes()).hexdigest()[:10] if p.exists() else ""
+
+
 def _list_creature(cid: str, data: dict) -> None:
     # The website's Bestiario lists data/creatures_list.json: only published creatures go in it
     idx = _read_json(CREATURE_INDEX, [])
     entry = {"id": cid, "name": data.get("name", cid), "type": data.get("type", ""), "level": data.get("level", 0),
              "size": data.get("size", ""), "image": data.get("image", ""), "description": data.get("description", "")}
+    if data.get("image_v"):
+        entry["image_v"] = data["image_v"]
     pos = next((i for i, e in enumerate(idx) if e.get("id") == cid), None)
     if not data["published"]:
         idx = [e for e in idx if e.get("id") != cid]

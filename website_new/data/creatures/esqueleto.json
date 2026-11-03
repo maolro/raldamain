@@ -141,5 +141,6 @@
     "VOL": "bonus",
     "MEN": "low"
   },
-  "image": "esqueleto.jpg"
+  "image": "esqueleto.jpg",
+  "image_v": "ec801c4e17"
 }

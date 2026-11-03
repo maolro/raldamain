@@ -234,7 +234,7 @@ function renderCreaturePage(data) {
         updateMetaTags({
             title: `${data.name} | Raldamain Bestiario`,
             description: `${data.type} ${data.tier ? '· ' + data.tier : (data.level != null && data.level !== '' ? 'de nivel ' + data.level : '')}. ${data.lore ? data.lore.substring(0, 150) + '...' : ''}`,
-            image: data.id ? `${window.location.origin}/assets/images/creatures/${data.id}.jpg` : `${window.location.origin}/assets/images/raldamain_logo.png`,
+            image: data.id ? `${window.location.origin}/assets/images/creatures/${data.id}.jpg${data.image_v ? '?v=' + data.image_v : ''}` : `${window.location.origin}/assets/images/raldamain_logo.png`,
             url: window.location.href,
             type: 'article'
         });
@@ -246,7 +246,7 @@ function renderCreaturePage(data) {
     document.getElementById("creature-name").innerText = data.name;
     const hero = document.getElementById("hero-section");
     // (no picture yet: the logo shows through underneath)
-    hero.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/assets/images/creatures/${data.id}.jpg') center/cover, url('/assets/images/raldamain_logo.png') center/220px no-repeat #111`;
+    hero.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/assets/images/creatures/${data.id}.jpg${data.image_v ? '?v=' + data.image_v : ''}') center/cover, url('/assets/images/raldamain_logo.png') center/220px no-repeat #111`;
 
     // C. Meta badges
     const metaContainer = document.getElementById("creature-meta");
