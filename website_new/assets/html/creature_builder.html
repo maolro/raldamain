@@ -38,7 +38,16 @@
         <label class="cc-f">Descripción<textarea id="f-desc" class="inp" rows="2"></textarea></label>
         <div class="cc-row">
           <label class="cc-f cc-grow">Etiquetas (comas)<input id="f-tags" class="inp" placeholder="Abisal, Élite"></label>
-          <label class="cc-f">Imagen<input id="f-image" class="inp" placeholder="sabueso_abismo.jpg"></label>
+          <label class="cc-f" id="img-field-web">Imagen<input id="f-image" class="inp" placeholder="sabueso_abismo.jpg"></label>
+          <div class="cc-f cc-img" id="img-field" hidden>Imagen
+            <div class="cc-imgdrop" id="img-drop" tabindex="0" title="Arrastra una imagen aquí, pégala (Ctrl+V) o elígela">
+              <img id="img-prev" alt="" hidden>
+              <span id="img-hint">Arrastra o pega (Ctrl+V)</span>
+              <label class="btn-mini">Elegir…<input type="file" id="img-file" accept="image/*" hidden></label>
+              <button type="button" class="btn-mini" id="img-clear" hidden title="No cambiar la imagen guardada">✕</button>
+            </div>
+            <small class="muted" id="img-note"></small>
+          </div>
         </div>
         <label class="cc-f">Trasfondo<textarea id="f-lore" class="inp" rows="2"></textarea></label>
       </div>
@@ -126,6 +135,16 @@
 .cc-f { display: flex; flex-direction: column; gap: 4px; font-size: .74rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .05em; flex: 1 1 140px; min-width: 0; }
 .cc-f .inp { text-transform: none; letter-spacing: 0; width: 100%; }
 .cc-f textarea { resize: vertical; }
+/* creature picture (Taller): dropped, pasted or chosen; saved with the creature */
+.cc-img { flex: 1 1 300px; }
+.cc-imgdrop span, .cc-imgdrop .btn-mini { white-space: nowrap; }
+.cc-imgdrop { display: flex; align-items: center; gap: 8px; min-height: 38px; padding: 4px 8px; border: 1px dashed var(--border, #444); border-radius: 6px;
+  text-transform: none; letter-spacing: 0; font-size: .8rem; cursor: pointer; }
+.cc-imgdrop.over, .cc-imgdrop:focus { border-color: var(--accent-gold, #c9a227); outline: none; }
+.cc-imgdrop img { height: 52px; width: 78px; object-fit: cover; border-radius: 4px; }
+.cc-img small { text-transform: none; letter-spacing: 0; }
+.btn-mini { cursor: pointer; border: 1px solid var(--border, #444); border-radius: 4px; padding: 2px 8px; background: none; color: inherit; font: inherit; }
+.btn-mini:hover { border-color: var(--accent-gold, #c9a227); }
 .cc-grow { flex: 3 1 220px; }
 .cc-num { flex: 0 1 100px; }
 .cc-tierline { font-size: .82rem; color: var(--text-muted); }
@@ -241,7 +260,7 @@ function blank() {
     lore: '', tags: [], published: false };
 }
 const lvOf = () => { const n = parseInt(C.level, 10); return isNaN(n) ? 1 : n; };  // level 0 is valid
-function dirty() { return C && JSON.stringify(C) !== SAVED; }
+function dirty() { return C && (JSON.stringify(C) !== SAVED || !!PENDING_IMG); }
 
 // ── Load ──
 // On the website (/criaturas/creador, which sets CC_WEB) there is no server: the library and tier tables are
@@ -278,6 +297,7 @@ async function init() {
   if (!C) { C = blank(); rescaleAll(); }
   normalize(C);
   if (!WEB || !SAVED) SAVED = JSON.stringify(C);
+  initImagePicker();
   fillForm(); renderTab(); loadRenderer(); loadEffects();
 }
 function setupWeb() {
@@ -288,7 +308,7 @@ function setupWeb() {
   $('cc-new').addEventListener('click', () => {
     if (dirty() && !confirm('¿Empezar una criatura nueva? La actual no se ha descargado.')) return;
     C = blank(); rescaleAll(); normalize(C); SAVED = JSON.stringify(C); ID_TOUCHED = false;
-    fillForm(); renderTab(); changed();
+    PENDING_IMG = null; fillForm(); renderTab(); changed();
   });
   $('cc-file').addEventListener('change', async e => {
     const f = e.target.files[0]; e.target.value = '';
@@ -299,7 +319,7 @@ function setupWeb() {
     if (dirty() && !confirm('¿Abrir este archivo? La criatura actual no se ha descargado.')) return;
     C = d; C.id = slug(C.id || C.name || f.name.replace(/\.json$/i, '')); ID_TOUCHED = true;
     normalize(C); SAVED = JSON.stringify(C);
-    fillForm(); renderTab(); changed();
+    PENDING_IMG = null; fillForm(); renderTab(); changed();
   });
 }
 // The library is re-read whenever it may have changed (opening the picker, coming back to this tab),
@@ -337,6 +357,63 @@ const FIELDS = [
   ['f-name', 'name'], ['f-type', 'type'], ['f-size', 'size'], ['f-cat', 'tier'], ['f-desc', 'description'],
   ['f-image', 'image'], ['f-lore', 'lore'], ['f-senses', 'senses'], ['f-speed', 'speed'],
 ];
+// ── Picture (Taller only): dropped, pasted or chosen → a JPEG sent with the next save,
+// which writes assets/images/creatures/<id>.jpg and publishes it with the creature.
+let PENDING_IMG = null, IMG_STAMP = Date.now();
+const IMG_MAX = 1600;   // longest side, px
+function toJpeg(file) {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file), img = new Image();
+    img.onload = () => {
+      const k = Math.min(1, IMG_MAX / Math.max(img.naturalWidth, img.naturalHeight));
+      const cv = document.createElement('canvas');
+      cv.width = Math.round(img.naturalWidth * k); cv.height = Math.round(img.naturalHeight * k);
+      const g = cv.getContext('2d');
+      g.fillStyle = '#000'; g.fillRect(0, 0, cv.width, cv.height);   // (transparent PNGs: black, not white)
+      g.drawImage(img, 0, 0, cv.width, cv.height);
+      URL.revokeObjectURL(url);
+      resolve(cv.toDataURL('image/jpeg', 0.88));
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('no es una imagen')); };
+    img.src = url;
+  });
+}
+async function takeImage(file) {
+  if (!file || !/^image\//.test(file.type)) return;
+  try { PENDING_IMG = await toJpeg(file); }
+  catch (e) { alert('No se pudo leer la imagen: ' + e.message); return; }
+  renderImage();
+  $('cc-dirty').textContent = '● sin guardar';
+}
+function renderImage() {
+  if (WEB) return;
+  const prev = $('img-prev'), saved = C && C.id && EXISTING;   // (the website shows <id>.jpg whatever the field says)
+  prev.hidden = !(PENDING_IMG || saved);
+  if (PENDING_IMG) prev.src = PENDING_IMG;
+  else if (saved) prev.src = '/assets/images/creatures/' + encodeURIComponent(C.id) + '.jpg?t=' + IMG_STAMP;
+  prev.onerror = () => { prev.hidden = true; };
+  $('img-clear').hidden = !PENDING_IMG;
+  $('img-hint').textContent = (PENDING_IMG ? 'Nueva · ' : '') + 'Arrastra o pega (Ctrl+V)';
+  $('img-note').textContent = PENDING_IMG ? 'Se guardará como ' + ((C && C.id) || 'id') + '.jpg al pulsar Guardar.' : '';
+}
+function initImagePicker() {
+  $('img-field').hidden = WEB;
+  $('img-field-web').hidden = !WEB;
+  if (WEB) return;
+  const drop = $('img-drop');
+  $('img-file').addEventListener('change', e => { takeImage(e.target.files[0]); e.target.value = ''; });
+  $('img-clear').addEventListener('click', e => { e.preventDefault(); PENDING_IMG = null; renderImage(); fillDirty(); });
+  drop.addEventListener('dragover', e => { e.preventDefault(); drop.classList.add('over'); });
+  drop.addEventListener('dragleave', () => drop.classList.remove('over'));
+  drop.addEventListener('drop', e => { e.preventDefault(); drop.classList.remove('over'); takeImage([...e.dataTransfer.files].find(f => /^image\//.test(f.type))); });
+  // a picture pasted anywhere on the page (text fields keep pasting text)
+  document.addEventListener('paste', e => {
+    const file = [...(e.clipboardData ? e.clipboardData.files : [])].find(f => /^image\//.test(f.type));
+    if (file) { e.preventDefault(); takeImage(file); }
+  });
+}
+function fillDirty() { $('cc-dirty').textContent = dirty() ? (WEB ? '● sin descargar' : '● sin guardar') : ''; }
+
 function fillForm() {
   for (const [el, k] of FIELDS) $(el).value = C[k] || '';
   $('f-id').value = C.id || ''; $('f-id').disabled = EXISTING;
@@ -358,6 +435,7 @@ function headline() {
   $('cc-tierline').innerHTML = `Tier <b>${tierOf(lv)}</b> · umbral <b>${esc(band.umbral ?? '')}</b> (salto ${esc(band.salto ?? '')}) · bonus Extremo / Alto / Medio / Bajo <b>${esc(bandSave(band, 'extreme'))}</b> / <b>${esc(band.bonus)}</b> / <b>${esc(band.mid || '')}</b> / <b>${esc(band.low || '')}</b>
     · daño LOW / MID / HIGH (físico): ${['LOW', 'MID', 'HIGH'].map(t => `<b>${esc(scaleDamage(t, 'Cortante', lv).replace(' Cortante', ''))}</b>`).join(' / ')} · mágico: un dado menos`;
   $('cc-dirty').textContent = dirty() ? (WEB ? '● sin descargar' : '● sin guardar') : '';
+  renderImage();
   $('cc-web').hidden = $('cc-sim').hidden = !EXISTING;
   if (EXISTING) { $('cc-web').href = '/criatura/' + encodeURIComponent(C.id); $('cc-sim').href = '/taller/simulador?enemies=' + encodeURIComponent(SIM_ID || C.id); }
   if (WEB) { $('cc-sim').hidden = false; $('cc-sim').href = '/simulador'; $('cc-sim').target = '_blank'; $('cc-sim').textContent = '⚔ Simulador'; }
@@ -744,10 +822,13 @@ async function save() {
     const r = await fetch('/api/criaturas/' + encodeURIComponent(C.id), { cache: 'no-store' });
     if (r.ok && !confirm(`Ya existe la criatura «${C.id}». ¿Sobrescribirla?`)) return;
   }
+  if (PENDING_IMG) C.image = C.id + '.jpg';   // the website shows assets/images/creatures/<id>.jpg
   const res = await fetch('/api/criaturas/' + encodeURIComponent(C.id), {
-    method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(C) });
+    method: 'PUT', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(PENDING_IMG ? { ...C, image_data: PENDING_IMG } : C) });
   const d = await res.json();
   if (!res.ok) { alert('No se pudo guardar: ' + (d.error || res.status)); return; }
+  if (PENDING_IMG) { PENDING_IMG = null; IMG_STAMP = Date.now(); }
   EXISTING = true; SIM_ID = d.sim_id || C.id; SAVED = JSON.stringify(C);
   history.replaceState(null, '', '?c=' + encodeURIComponent(C.id));
   fillForm(); renderTab(); renderPreview();

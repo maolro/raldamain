@@ -20,6 +20,7 @@ Usage:  python tools/taller.py      → http://localhost:5180
 Needs:  pip install flask pyyaml
 """
 
+import base64
 import json
 import re
 import sys
@@ -41,6 +42,7 @@ CREATURE_INDEX = BASE / "data" / "creatures_list.json"
 CREATURE_ABILITIES = BASE / "data" / "creatures_abilities.json"
 CREATURE_SCALING = BASE / "data" / "creature_scaling.json"
 PAGES = Path(__file__).resolve().parent  # taller_tabla.html
+CREATURE_IMAGES = BASE / "assets" / "images" / "creatures"   # <id>.jpg: the picture each creature page shows
 CREATURE_BUILDER = BASE / "assets" / "html" / "creature_builder.html"  # also the website's /criaturas/creador
 sys.path.insert(0, str(BASE / "combat-simulator"))
 
@@ -410,11 +412,24 @@ def api_criatura_put(cid):
         return jsonify({"error": "la criatura necesita al menos un nombre"}), 400
     data["id"] = cid
     data["published"] = data.get("published") is True  # trial creatures stay off the website
+    # a new picture (the builder sends it as a JPEG data URL): assets/images/creatures/<id>.jpg
+    picture = None
+    image_data = data.pop("image_data", None)
+    if image_data:
+        m = re.match(r"data:image/jpeg;base64,(.+)$", str(image_data), re.S)
+        raw = base64.b64decode(m.group(1), validate=False) if m else b""
+        if not raw.startswith(b"\xff\xd8\xff") or len(raw) > 12 * 1024 * 1024:
+            return jsonify({"error": "la imagen no es un JPEG válido (o pasa de 12 MB)"}), 400
+        picture = CREATURE_IMAGES / f"{cid}.jpg"
+        CREATURE_IMAGES.mkdir(parents=True, exist_ok=True)
+        picture.write_bytes(raw)
+        data["image"] = f"{cid}.jpg"
     CREATURES.mkdir(parents=True, exist_ok=True)
     (CREATURES / f"{cid}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     _list_creature(cid, data)
     DB.record([CREATURES / f"{cid}.json", CREATURE_INDEX])
-    git = git_push([str(CREATURES / f"{cid}.json"), str(CREATURE_INDEX)], f"Update creature: {data.get('name', cid)}")
+    git = git_push([str(CREATURES / f"{cid}.json"), str(CREATURE_INDEX)] + ([str(picture)] if picture else []),
+                   f"Update creature: {data.get('name', cid)}" + (" (+ imagen)" if picture else ""))
     reload_roster()
     sim_id = next((sid for sid, s in load_roster().items()
                    if s.get("origin") == "bestiario" and Path(s.get("source", "")).stem == cid), cid)
