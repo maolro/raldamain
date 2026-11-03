@@ -45,17 +45,10 @@
             "Mejora"
           ],
           "duration": "Max 6 Rondas",
-          "desc": "Recibes Ventaja en todos tus tiros de Ataque, Defensa, Salvación y Habilidad. Este efecto dura hasta 6 rondas y cuando acabe reduces tu cordura por 1 por cada 2 rondas que hayas pasado en él.",
+          "desc": "Despiertas el poder abisal en tu interior, otorgándote Ventaja en todos tus tiros. Este efecto dura hasta 6 rondas y cuando acabe reduces tu cordura por 1 por cada 2 rondas que hayas pasado en él.",
           "toggle": {
             "label": "Furia Abisal",
-            "adv": [
-              "Ataque",
-              "Defensa",
-              "Magia",
-              "Físico",
-              "Voluntad",
-              "Mental"
-            ]
+            "adv_all": true
           },
           "cost": "1 Acción"
         }
