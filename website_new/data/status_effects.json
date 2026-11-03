@@ -18,20 +18,6 @@
   ],
   "effects": [
     {
-      "id": "aturdido",
-      "name": "Aturdido",
-      "description": "No puede tomar acciones ni reacciones. No puede defenderse y falla automáticamente los tiros de Fuerza y Destreza.",
-      "levels": [
-        {
-          "name": "",
-          "penalties": [],
-          "no_actions": true,
-          "no_reactions": true,
-          "notes": "No puede defenderse; falla automáticamente los tiros de FUE y DES."
-        }
-      ]
-    },
-    {
       "id": "tropezado",
       "name": "Tropezado",
       "description": "Está en el suelo (Derribado). Levantarse cuesta 1 acción.",
@@ -74,7 +60,7 @@
     {
       "id": "cegado",
       "name": "Cegado",
-      "description": "Desventaja en todos sus tiros de ataque y defensa; no puede hacer ataques a distancia.",
+      "description": "Desventaja en todos sus tiros de ataque y defensa, y no puede hacer ataques a distancia.",
       "levels": [
         {
           "name": "",
