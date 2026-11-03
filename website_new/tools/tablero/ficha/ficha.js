@@ -10,6 +10,7 @@
 //                                        (kind: Ataque, Defensa, Salvación…; stats: FUE, DES…)
 (function () {
     const post = msg => window.parent.postMessage(msg, location.origin);
+    let tokenName = '';
     // a script that fails while drawing: said in the window, not only in the console
     const errors = [];
     window.addEventListener('error', e => errors.push(e.message));
@@ -51,16 +52,32 @@
         document.body.appendChild(s);
     });
 
-    let shown = false;
+    let shown = false, sheetKind = '';
+    // the token's name, shown as the stat block's (it changes when the token is renamed)
+    function showName(name) {
+        if (!name) return;
+        if (sheetKind === 'criatura') {
+            const h = document.getElementById('statblock-name');
+            if (h) h.textContent = name;
+        } else {
+            const app = document.getElementById('app'), vm = app && app.__vue__;
+            if (vm) vm.charactername = name;
+        }
+    }
     window.addEventListener('message', async e => {
-        if (e.origin !== location.origin || !e.data || e.data.type !== 'sheet' || shown) return;
+        if (e.origin !== location.origin || !e.data) return;
+        if (e.data.type === 'name') { showName(String(e.data.name || '')); return; }
+        if (e.data.type !== 'sheet' || shown) return;
         shown = true;
         const { kind, data } = e.data;
+        sheetKind = kind;
+        tokenName = String(e.data.name || '');
         try {
             // (main.js mounts the Creador on #app as soon as it loads: the markup goes first)
             if (kind !== 'criatura') document.getElementById('sheet').innerHTML = '<div id="app"><v-statblock rollable></v-statblock></div>';
             for (const src of SCRIPTS[kind] || SCRIPTS.pj) await loadScript(src);
             if (kind === 'criatura') showCreature(data); else showCharacter(data);
+            if (kind === 'criatura') showName(tokenName);
             document.getElementById('wait').hidden = true;
         } catch (err) {
             fail(err.message);
@@ -92,6 +109,7 @@
             clearInterval(wait);
             vm.activeToggles = [];
             vm.loadCharacter(data);
+            showName(tokenName);
             // Impactos and Chi settle once the ranks have loaded: report them when they stop changing
             let timer = 0;
             const report = () => {

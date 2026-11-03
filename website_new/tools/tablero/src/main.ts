@@ -432,7 +432,7 @@ function placeImages(metas: ImageMeta[], at: { x: number; y: number }) {
     const w = own ? (m.width || g * 4) : g * cells, h = own ? (m.height || g * 4) : g * cells;
     let x = at.x - w / 2 + n * (own ? g : w), y = at.y - h / 2;
     if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, h); }
-    const it = stamp({ id: uid(), kind: 'image', image: m.id, fit: !own, x, y, w, h, rotation: 0, layer, z: nextZ(layer), name: (m.sheet && sheets.get(m.sheet)?.name) || m.name });
+    const it = stamp({ id: uid(), kind: 'image', image: m.id, fit: !own, x, y, w, h, rotation: 0, layer, z: nextZ(layer), name: m.name });
     if (m.sheet && layer !== 'map') it.sheet = m.sheet;   // its sheet: the bars fill in from it
     B().items.push(it);
     ids.push(it.id);
@@ -741,12 +741,9 @@ function setSheet(items: BoardItem[], sid: string | null) {
   const list = items.filter(i => canEdit(i) && isToken(i));
   if (!list.length) return;
   for (const it of list) {
-    // a token still called by its picture's file name (or its old sheet) takes the sheet's name
-    const auto = !it.name || it.name === (it.image && library.get(it.image)?.name) || (!!it.sheet && it.name === sheets.get(it.sheet)?.name);
     delete it.sheetMax;
     if (sid) { it.sheet = sid; delete it.bars; }   // a new sheet: its bars, full
     else delete it.sheet;
-    if (sid && auto && sheets.get(sid)) it.name = sheets.get(sid)!.name;
   }
   view.render();
   commit();

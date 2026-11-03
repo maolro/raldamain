@@ -27,7 +27,7 @@ window.addEventListener('message', e => {
 });
 
 /** An iframe in `host` showing a sheet: fetched (with this browser's key) once its page is ready */
-function sheetFrame(host: HTMLElement, sid: string, on: (m: FrameMsg) => void, fail: (msg: string) => void, cls = ''): HTMLIFrameElement {
+function sheetFrame(host: HTMLElement, sid: string, on: (m: FrameMsg) => void, fail: (msg: string) => void, cls = '', name = ''): HTMLIFrameElement {
   const f = document.createElement('iframe');
   f.title = 'Ficha';
   f.className = cls;
@@ -37,7 +37,7 @@ function sheetFrame(host: HTMLElement, sid: string, on: (m: FrameMsg) => void, f
   frames.set(win, m => {
     if (m.type === 'ready') {
       api.sheet(sid)
-        .then(s => win.postMessage({ type: 'sheet', kind: s.kind, data: s.data }, location.origin))
+        .then(s => win.postMessage({ type: 'sheet', kind: s.kind, data: s.data, name }, location.origin))
         .catch(err => fail((err as Error).message));
     } else on(m);
   });
@@ -196,7 +196,7 @@ export interface WindowEvents {
   toast(msg: string, bad?: boolean): void;
 }
 
-interface Win { el: HTMLElement; frame: HTMLIFrameElement; sid: string; item: BoardItem }
+interface Win { el: HTMLElement; frame: HTMLIFrameElement; sid: string; item: BoardItem; shown?: string }
 
 export class SheetWindows {
   private wins = new Map<string, Win>();   // token id → its window
@@ -233,7 +233,8 @@ export class SheetWindows {
       win.frame = sheetFrame(el.querySelector('.sheet-win-body') as HTMLElement, win.sid, m => {
         if (m.type === 'roll') this.ev.roll(win.item, String(m.roll), String(m.label || 'Tirada'), String(m.kind || 'Habilidad'), Array.isArray(m.stats) ? m.stats.map(String) : []);
         else if (m.type === 'stats') { this.sheets.seen(win.sid, m); this.ev.stats(win.item.id, win.sid, m); }
-      }, msg => this.ev.toast('No se pudo abrir la ficha: ' + msg, true));
+      }, msg => this.ev.toast('No se pudo abrir la ficha: ' + msg, true), '', win.item.name || '');
+      win.shown = win.item.name || '';
     };
     this.wins.set(item.id, win);
     this.title(win);
@@ -268,10 +269,16 @@ export class SheetWindows {
 
   closeAll() { for (const id of [...this.wins.keys()]) this.close(id); }
 
+  /** The window (and the stat block in it) shows the token's name; the sheet's own only as a hint */
   private title(w: Win) {
-    const sheet = this.sheets.name(w.sid);
-    const name = w.item.name && w.item.name !== sheet ? `${w.item.name} · ${sheet}` : sheet;
-    (w.el.querySelector('.sheet-win-title') as HTMLElement).textContent = `📜 ${name}`;
+    const sheet = this.sheets.name(w.sid), name = w.item.name || sheet;
+    const t = w.el.querySelector('.sheet-win-title') as HTMLElement;
+    t.textContent = `📜 ${name}`;
+    t.title = `Ficha: ${sheet}`;
+    if (w.frame && w.shown !== undefined && w.shown !== (w.item.name || '')) {
+      w.shown = w.item.name || '';
+      w.frame.contentWindow?.postMessage({ type: 'name', name: w.shown }, location.origin);
+    }
     const banner = w.el.querySelector('.sheet-win-banner') as HTMLElement, text = this.ev.banner(w.item);
     banner.hidden = !text;
     banner.textContent = text;
