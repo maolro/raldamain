@@ -310,7 +310,8 @@ export class BoardView {
     const z = this.zoom, a = (it.rotation || 0) * Math.PI / 180;
     const bw = Math.abs(it.w * Math.cos(a)) + Math.abs(it.h * Math.sin(a));
     const bh = Math.abs(it.w * Math.sin(a)) + Math.abs(it.h * Math.cos(a));
-    const r = 5 / z, step = r * 2.4;   // the same size on screen at any zoom
+    // grows with the zoom like the token, but never under 5 px nor over 12 px on screen
+    const r = Math.min(12 / z, Math.max(5 / z, this.board.grid.size * 0.09)), step = r * 2.4;
     const left = it.x + it.w / 2 - bw / 2, top = it.y + it.h / 2 - bh / 2 + r * 1.4;
     const dot = (kind: 'a' | 'r', i: number, used: boolean, color: number, x: number) => {
       const g = new Graphics().circle(0, 0, r);

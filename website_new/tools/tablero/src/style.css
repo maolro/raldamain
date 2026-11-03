@@ -94,6 +94,7 @@ body { display: grid; grid-template: 48px 1fr / 56px 1fr 320px; grid-template-ar
 .panel label.check { display: flex; align-items: center; gap: 6px; color: var(--text); }
 .panel input[type=color] { width: 100%; height: 26px; background: none; border: 1px solid #444; border-radius: 4px; }
 .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.row2 > * { min-width: 0; }
 .menu { position: fixed; z-index: 30; min-width: 190px; background: var(--panel); border: 1px solid var(--gold-dim); border-radius: 6px; padding: 4px; box-shadow: 0 8px 30px rgba(0,0,0,.6); }
 .menu button { display: flex; width: 100%; justify-content: space-between; gap: 16px; background: none; border: 0; color: var(--text); padding: 6px 10px; text-align: left; cursor: pointer; border-radius: 4px; font: 13px var(--body); }
 .menu button:hover { background: var(--gold); color: var(--black); }
@@ -278,9 +279,12 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .use-row .btn.small { padding: 1px 7px; }
 .use-row b { min-width: 34px; text-align: center; }
 .use-row.spent .use-name, .use-row.spent b { color: var(--muted); text-decoration: line-through; }
-.use-add { display: flex; gap: 4px; }
-.use-add [data-use-name], .use-add [data-eff-name] { flex: 1; min-width: 0; }
-.use-add input[type=number] { width: 52px; }
-.use-add select { max-width: 92px; }
+.use-add { display: flex; flex-wrap: wrap; gap: 4px; }
+.use-add > * { min-width: 0; }
+.use-add [data-use-name], .use-add [data-eff-name] { flex: 1 1 140px; }
+.use-add input[type=number] { width: 56px; flex: none; }
+.use-add select { flex: 1 1 90px; }
 .panel.round-panel { left: 64px; top: 230px; width: 330px; z-index: 22; }
-.round-chip { font: 700 12px var(--body); color: var(--gold); border: 1px solid var(--gold-dim); border-radius: 12px; padding: 2px 9px; }
+.panel.round-panel .btn { white-space: normal; }
+.panel.round-panel [data-eff-name] { flex-basis: 100%; }
+.round-chip { font: 700 12px var(--body); color: var(--gold); border: 1px solid var(--gold-dim); border-radius: 12px; padding: 2px 9px; white-space: nowrap; flex: none; }
