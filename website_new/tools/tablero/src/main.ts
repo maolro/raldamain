@@ -101,6 +101,19 @@ const library = new Library($('library'), {
 });
 
 const dice = new DiceRoller($('dice'), toast);
+// on a board the server rolls (the GM sees every roll of the game, a player their own)
+dice.send = (terms, expr, label) => {
+  if (!live?.me) return Promise.reject(new Error('sin conexión con el tablero'));
+  return api.roll(live.boardId, { cid: live.me.cid, terms, expr, label });
+};
+// someone else's roll while the Dados tab is closed: a count on the tab
+let unseenRolls = 0;
+dice.onIncoming = () => {
+  if (prefs.side === 'dice') return;
+  unseenRolls++;
+  const tab = document.querySelector<HTMLElement>('[data-side="dice"]')!;
+  tab.dataset.count = String(unseenRolls);
+};
 
 const windows = new SheetWindows(sheets, {
   roll(item, roll, label) {
@@ -120,6 +133,7 @@ function showSide(tab: string) {
   document.querySelectorAll<HTMLElement>('[data-side]').forEach(b => b.classList.toggle('on', b.dataset.side === prefs.side));
   $('library').hidden = prefs.side !== 'library';
   $('dice').hidden = prefs.side !== 'dice';
+  if (prefs.side === 'dice') { unseenRolls = 0; delete document.querySelector<HTMLElement>('[data-side="dice"]')?.dataset.count; }
   savePrefs();
 }
 document.querySelectorAll<HTMLElement>('[data-side]').forEach(b => b.addEventListener('click', () => showSide(b.dataset.side!)));
@@ -208,8 +222,10 @@ let fitted = '';
 function connect(boardId: string) {
   live?.close();
   live = new Live(boardId, () => board, {
-    snapshot(b, who) {
+    snapshot(b, who, rolls) {
       me = who;
+      dice.showWho = who.role === 'gm';
+      dice.setHistory(rolls, `${b.id}:${who.pid || 'gm'}`);
       board = b;
       const first = fitted !== b.id;
       fitted = b.id;
@@ -223,6 +239,7 @@ function connect(boardId: string) {
     },
     remote: applyRemote,
     presence(p) { presence = p; renderPresence(); view.render(); },
+    roll(r) { dice.add(r, r.by === me?.pid || (!r.by && isGM())); },
     status: setStatus,
     closed(info) {
       if (!PLAYER) { if (info.deleted) toast('Este tablero se ha eliminado', true); return; }

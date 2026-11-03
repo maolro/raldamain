@@ -220,3 +220,5 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 @keyframes pool-pulse { from { box-shadow: 0 0 0 0 rgba(255,242,0,.6); border-color: var(--gold); } to { box-shadow: 0 0 0 10px rgba(255,242,0,0); } }
 .hud-name { background: none; border: 0; border-right: 1px solid #333; color: var(--gold); font: 700 13px var(--heading); padding: 2px 6px 2px 4px; min-width: 0; }
 .hud-name:focus { outline: 1px solid var(--gold); border-radius: 3px; background: #1d1d1d; }
+.log-who { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--muted); margin-bottom: 2px; }
+.side-tab[data-count]::after { content: attr(data-count); margin-left: 6px; background: var(--gold); color: var(--black); border-radius: 9px; padding: 0 6px; font-size: 11px; }

@@ -8,6 +8,8 @@ Tablero de Raldamain — a local token board for running games.
              and tags for filtering. Each player has their own.
   Salas      the GM opens a room for a board and shares its invite code; players join
              at /jugar with the code and a name, and everyone sees the board change live.
+  Tiradas    dice are rolled here, not in the browser, and kept per board: the GM sees
+             every roll of the game (players' and their own NPCs'), a player only their own.
   Fichas     stat blocks tied to tokens: the Taller's characters (data/statblocks), the
              Bestiario's creatures (data/creatures) or uploaded .json files. A token's
              sheet opens in a window over the board (/ficha, drawn by the website's own
@@ -35,6 +37,7 @@ stores everything under tools/tablero/storage/:
     library.json         their metadata: name, category, tags, size, owner (player id)
     boards/<id>.json     each board
     rooms.json           invite codes: board and players (name, colour, private key)
+    rolls/<board>.json   the board's dice rolls (the last 300)
     sheets/<id>.json     uploaded stat blocks · sheets.json: their name, kind and owner
     gm_key               the GM's key
 
@@ -74,6 +77,8 @@ LIBRARY = STORAGE / "library.json"
 BOARDS = STORAGE / "boards"
 ROOMS = STORAGE / "rooms.json"
 GM_KEY = STORAGE / "gm_key"
+ROLLS = STORAGE / "rolls"
+MAX_ROLLS = 300
 SHEETS = STORAGE / "sheets"
 SHEET_INDEX = STORAGE / "sheets.json"
 SITE = TOOLS.parent                      # the website: its stat block code and data
@@ -607,6 +612,7 @@ class Session:
         self.lock = threading.RLock()
         self.subs: dict[str, tuple[queue.Queue, str, str | None]] = {}  # connection id → (queue, role, player id)
         self._save_timer: threading.Timer | None = None
+        self.rolls: list[dict] = _read(ROLLS / f"{bid}.json", [])
 
     def visible(self, role: str, pid: str | None = None) -> dict:
         """The board as this role sees it: players never get the GM layer, nor the sheets
@@ -616,6 +622,11 @@ class Session:
         if role == "player":
             b["items"] = [player_item(it, pid) for it in b.get("items") or [] if it.get("layer") != "gm"]
         return b
+
+    def rolls_for(self, role: str, pid: str | None) -> list[dict]:
+        """The GM: every roll. A player: their own."""
+        with self.lock:
+            return [r for r in self.rolls if role == "gm" or r.get("by") == pid]
 
     def schedule_save(self):
         with self.lock:
@@ -686,7 +697,7 @@ def live_events(bid):
     def stream():
         try:
             yield "retry: 1500\n\n"
-            yield _event("snapshot", {"board": s.visible(role, pid), "me": me})
+            yield _event("snapshot", {"board": s.visible(role, pid), "me": me, "rolls": s.rolls_for(role, pid)})
             s.presence()
             while True:
                 try:
@@ -699,6 +710,64 @@ def live_events(bid):
 
     return Response(stream(), mimetype="text/event-stream",
                     headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+
+
+_random = secrets.SystemRandom()
+
+
+def roll_terms(terms) -> tuple[list[dict], int, bool] | None:
+    """[{sign, count, sides} | {sign, value}] → the same with the dice rolled, the total and
+    whether a d20 came up 20. None if it is not a sensible roll."""
+    if not isinstance(terms, list) or not 0 < len(terms) <= 30:
+        return None
+    out, total, crit = [], 0, False
+    for t in terms:
+        if not isinstance(t, dict):
+            return None
+        sign = -1 if t.get("sign") == -1 else 1
+        if "value" in t:
+            v = t["value"]
+            if not isinstance(v, int) or not 0 <= v <= 100000:
+                return None
+            out.append({"sign": sign, "value": v})
+            total += sign * v
+            continue
+        count, sides = t.get("count"), t.get("sides")
+        if not isinstance(count, int) or not isinstance(sides, int) or not 1 <= count <= 100 or not 1 <= sides <= 1000:
+            return None
+        rolls = [_random.randint(1, sides) for _ in range(count)]
+        crit = crit or (sides == 20 and sign > 0 and 20 in rolls)
+        out.append({"sign": sign, "count": count, "sides": sides, "rolls": rolls})
+        total += sign * sum(rolls)
+    return out, total, crit
+
+
+@app.route("/api/live/<bid>/roll", methods=["POST"])
+def live_roll(bid):
+    """{cid, terms, expr, label} → the roll, made here. It reaches the GM's pages and the
+    roller's other pages; other players never see it."""
+    role, pid, code = need_board(bid)
+    body = request.get_json(force=True) or {}
+    s = session(bid)
+    if s.board is None:
+        abort(404)
+    rolled = roll_terms(body.get("terms"))
+    if not rolled:
+        return jsonify({"error": "tirada no válida"}), 400
+    terms, total, crit = rolled
+    players = (rooms().get(code or room_of(bid)) or {}).get("players") or {}
+    p = players.get(pid) or {}
+    r = {"id": secrets.token_hex(5), "by": pid, "who": p.get("name", "Jugador") if pid else "GM",
+         "color": p.get("color", "#fff200") if pid else "#fff200",
+         "label": str(body.get("label") or "Tirada")[:80], "expr": str(body.get("expr") or "")[:80],
+         "terms": terms, "total": total, "crit": crit, "time": time.time() * 1000}
+    with s.lock:
+        s.rolls.append(r)
+        del s.rolls[:-MAX_ROLLS]
+        _write(ROLLS / f"{bid}.json", s.rolls)
+    s.send(lambda role_, pid_: _event("roll", r) if role_ == "gm" or (pid and pid_ == pid) else None,
+           exclude=body.get("cid"))
+    return jsonify(r)
 
 
 @app.route("/api/live/<bid>/changes", methods=["POST"])
@@ -940,6 +1009,7 @@ def api_board_delete(bid):
             s._save_timer.cancel()
         s.send(lambda role, pid: _event("closed", {"deleted": True}))
     p.unlink()
+    (ROLLS / f"{bid}.json").unlink(missing_ok=True)
     return jsonify({"ok": True})
 
 

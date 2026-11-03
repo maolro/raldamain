@@ -124,3 +124,19 @@ export interface Changes {
 
 export interface RoomInfo { code: string; players: Record<string, { name: string; color: string }>; lan: string }
 export interface JoinInfo { code: string; board: string; pid: string; key: string; name: string; color: string }
+
+/** A die term as rolled (its faces), or a flat modifier */
+export type RollTerm = { sign: number; count: number; sides: number; rolls?: number[] } | { sign: number; value: number };
+/** A roll of the game (made by the server on a board) */
+export interface RollRecord {
+  id?: string;
+  by?: string | null;   // player id (null: the GM)
+  who?: string;         // their name
+  color?: string;
+  label: string;
+  expr: string;
+  terms: RollTerm[];
+  total: number;
+  crit: boolean;
+  time: number;         // ms
+}

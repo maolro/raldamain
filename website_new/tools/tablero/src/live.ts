@@ -1,19 +1,22 @@
 // Live board: the server's copy of the board, shared with everyone in it (tools/tablero.py).
 //
-// The server pushes its changes as Server-Sent Events: "snapshot" (the whole board, on
-// connecting), "changes" (what others did), "presence" (who is in the room), "closed".
+// The server pushes its changes as Server-Sent Events: "snapshot" (the whole board, and
+// the rolls this browser may see, on connecting), "changes" (what others did), "presence"
+// (who is in the room), "roll" (the GM gets everyone's, a player their own made on another
+// page), "closed".
 // This browser sends what it changed as a diff against the last state both sides agreed
 // on (`synced`): items added or changed, items removed, board settings. The server
 // answers with what it refused (not allowed for this player), as it really is.
 import { api } from './api';
-import type { Board, BoardItem, Changes, Me, Presence } from './types';
+import type { Board, BoardItem, Changes, Me, Presence, RollRecord } from './types';
 
 export interface LiveHandlers {
   /** the whole board (on connecting and reconnecting) */
-  snapshot(board: Board, me: Me): void;
+  snapshot(board: Board, me: Me, rolls: RollRecord[]): void;
   /** someone else's changes, or the server putting back what it refused */
   remote(ch: Changes): void;
   presence(p: Presence): void;
+  roll(r: RollRecord): void;
   status(text: string, cls?: string): void;
   /** the room was closed, this player removed, or the board deleted */
   closed(info: { code?: string; kicked?: boolean; deleted?: boolean }): void;
@@ -43,6 +46,7 @@ export class Live {
       this.markSynced(ch);
     });
     es.addEventListener('presence', e => this.h.presence(JSON.parse((e as MessageEvent).data)));
+    es.addEventListener('roll', e => this.h.roll(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('closed', e => { this.close(); this.h.closed(JSON.parse((e as MessageEvent).data)); });
     es.onerror = () => { if (this.es === es) this.h.status('Reconectando…', 'error'); };
   }
@@ -58,7 +62,7 @@ export class Live {
     return this.sending || !!this.retry || (!!b && !!this.me && this.hasDiff(b));
   }
 
-  private onSnapshot({ board, me }: { board: Board; me: Me }) {
+  private onSnapshot({ board, me, rolls }: { board: Board; me: Me; rolls?: RollRecord[] }) {
     // reconnecting with changes the server never got: keep them on top of its board
     const cur = this.board();
     const local = this.me && cur ? this.diff(cur) : null;
@@ -72,7 +76,7 @@ export class Live {
       board.items = [...items.values()];
       if (local.settings) Object.assign(board, local.settings);
     }
-    this.h.snapshot(board, me);
+    this.h.snapshot(board, me, rolls || []);
     this.h.status('Conectado');
     if (local) this.push();
   }

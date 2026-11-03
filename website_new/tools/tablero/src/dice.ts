@@ -1,7 +1,12 @@
 // Dados tab: the Mesa de Pruebas dice roller (assets/js/mesa.js), same rules —
 // dice buttons build a pool, a modifier, a free expression ("+5" = 1d20+5, "2d6+4"),
-// and a history of rolls with every die shown (kept in this browser). A value clicked
-// in a token's sheet is loaded into the pool (load), to adjust before rolling.
+// and a history of rolls with every die shown. A value clicked in a token's sheet is
+// loaded into the pool (load), to adjust before rolling.
+//
+// On a board the dice are rolled by the server (`send`), which keeps the game's rolls:
+// the GM's history shows everyone's (with who rolled), a player's only their own.
+// "Borrar" only empties this browser's view; the GM still has every roll.
+import type { RollRecord, RollTerm } from './types';
 
 const DICE = [
   { sides: 4, img: '/dice/e/4.png' },
@@ -12,11 +17,10 @@ const DICE = [
   { sides: 20, img: '/dice/e/z.png' },
   { sides: -6, img: '/dice/e/d.png', title: 'Desventaja (−1d6)' },
 ];
-const HISTORY = 'raldamain.tablero.dice';
-const MAX_HISTORY = 80;
+const CLEARED = 'raldamain.tablero.dice.cleared';   // { context: time }: "Borrar" pressed then
+const MAX_HISTORY = 300;
 
 type Term = { sign: number; count: number; sides: number } | { sign: number; value: number };
-interface Roll { label: string; expr: string; breakdown: string; total: number; crit: boolean; time: number }
 
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const rollDie = (sides: number) => 1 + Math.floor(Math.random() * sides);
@@ -38,28 +42,43 @@ export function parseRoll(expr: string): Term[] | null {
   return terms;
 }
 
-function evaluate(terms: Term[]) {
+/** Roll here (no board to roll on) */
+function rollLocally(terms: Term[]): Pick<RollRecord, 'terms' | 'total' | 'crit'> {
   let total = 0, crit = false;
-  const parts = terms.map((t, i) => {
-    const op = t.sign < 0 ? '−' : (i === 0 ? '' : '+');
-    if ('value' in t) { total += t.sign * t.value; return `${op}${t.value}`; }
+  const out: RollTerm[] = terms.map(t => {
+    if ('value' in t) { total += t.sign * t.value; return t; }
     const rolls = Array.from({ length: t.count }, () => rollDie(t.sides));
     total += t.sign * rolls.reduce((a, b) => a + b, 0);
     if (t.sides === 20 && t.sign > 0 && rolls.includes(20)) crit = true;
-    const faces = rolls.map(r => `<span class="die-face ${r === t.sides ? 'die-max' : r === 1 ? 'die-min' : ''}">${r}</span>`).join('');
-    return `${op}${t.count}d${t.sides}<span class="die-faces">${faces}</span>`;
+    return { ...t, rolls };
   });
-  return { total, crit, breakdown: parts.join(' ') };
+  return { terms: out, total, crit };
+}
+
+/** "1d20 [9] + 2d6 [5][1] + 7", with every die shown */
+function breakdown(terms: RollTerm[]) {
+  return terms.map((t, i) => {
+    const op = t.sign < 0 ? '−' : (i === 0 ? '' : '+');
+    if ('value' in t) return `${op}${Number(t.value)}`;
+    const faces = (t.rolls || []).map(r => `<span class="die-face ${r === t.sides ? 'die-max' : r === 1 ? 'die-min' : ''}">${Number(r)}</span>`).join('');
+    return `${op}${Number(t.count)}d${Number(t.sides)}<span class="die-faces">${faces}</span>`;
+  }).join(' ');
 }
 
 export class DiceRoller {
   private pool = new Map<number, number>();   // sides → count (negative sides: a subtracted die)
   private mod = 0;
   private label = '';      // what the pool holds ("Lobo: Mordisco"), from a sheet
-  private history: Roll[] = [];
+  private history: RollRecord[] = [];
+  private context = '';    // whose history this is (board + who), for "Borrar"
+  /** roll on the board's server (set while connected) */
+  send: ((terms: Term[], expr: string, label: string) => Promise<RollRecord>) | null = null;
+  /** show who rolled (the GM's history has everyone's) */
+  showWho = false;
+  /** a roll from someone else arrived */
+  onIncoming: (r: RollRecord) => void = () => {};
 
   constructor(private el: HTMLElement, private toast: (msg: string, bad?: boolean) => void) {
-    try { this.history = JSON.parse(localStorage.getItem(HISTORY) || '[]'); } catch { this.history = []; }
     el.innerHTML = `
       <div class="dice-grid">${DICE.map(d => `
         <button class="die-btn" data-sides="${d.sides}" title="${d.title || 'Añadir 1d' + d.sides}">
@@ -108,7 +127,15 @@ export class DiceRoller {
       const inp = $('expr-input') as HTMLInputElement;
       if (inp.value.trim()) this.roll(inp.value.trim(), 'Expresión');
     });
-    $('clear-log').addEventListener('click', () => { this.history = []; this.save(); this.renderLog(); });
+    $('clear-log').addEventListener('click', () => {
+      this.history = [];
+      try {
+        const all = JSON.parse(localStorage.getItem(CLEARED) || '{}');
+        all[this.context] = Date.now();
+        localStorage.setItem(CLEARED, JSON.stringify(all));
+      } catch { /* private window */ }
+      this.renderLog();
+    });
     $('dice-log').addEventListener('click', e => {
       const b = (e.target as HTMLElement).closest<HTMLElement>('[data-reroll]');
       const r = b && this.history[+b.dataset.reroll!];
@@ -168,20 +195,36 @@ export class DiceRoller {
   }
 
   /** Roll an expression. A modifier on its own ("+5", "-1", "+5+1d6") is a tiro: 1d20 + modifier. */
-  roll(expr: string, label = 'Tirada') {
+  async roll(expr: string, label = 'Tirada') {
     let terms = parseRoll(expr);
     if (!terms && /^\d+$/.test(expr.trim())) terms = parseRoll('+' + expr);   // "5" = +5
     if (!terms) { this.toast(`No se puede tirar «${expr}»`, true); return; }
     if ((/^\s*[+\-−]/.test(expr) || /^\d+$/.test(expr.trim())) && 'value' in terms[0]) terms.unshift({ sign: 1, count: 1, sides: 20 });
-    const { total, crit, breakdown } = evaluate(terms);
-    this.history.unshift({ label, expr: expr.replace(/[()]/g, ''), breakdown, total, crit, time: Date.now() });
-    this.history.length = Math.min(this.history.length, MAX_HISTORY);
-    this.save();
-    this.renderLog(true);
+    const clean = expr.replace(/[()]/g, '');
+    if (this.send) {
+      try { this.add(await this.send(terms, clean, label)); }
+      catch (e) { this.toast('No se pudo tirar: ' + (e as Error).message, true); }
+      return;
+    }
+    this.add({ label, expr: clean, ...rollLocally(terms), time: Date.now() });
   }
 
-  private save() {
-    try { localStorage.setItem(HISTORY, JSON.stringify(this.history)); } catch { /* private window */ }
+  /** The history of this board (as the server keeps it for this browser), newest last */
+  setHistory(list: RollRecord[], context: string) {
+    this.context = context;
+    let cleared = 0;
+    try { cleared = JSON.parse(localStorage.getItem(CLEARED) || '{}')[context] || 0; } catch { /* none */ }
+    this.history = list.filter(r => r.time > cleared).reverse().slice(0, MAX_HISTORY);
+    this.renderLog();
+  }
+
+  /** A new roll: this browser's, or someone else's (GM) */
+  add(r: RollRecord, mine = true) {
+    if (r.id && this.history.some(x => x.id === r.id)) return;
+    this.history.unshift(r);
+    this.history.length = Math.min(this.history.length, MAX_HISTORY);
+    this.renderLog(true);
+    if (!mine) this.onIncoming(r);
   }
 
   private renderLog(fresh = false) {
@@ -192,9 +235,10 @@ export class DiceRoller {
     }
     log.innerHTML = this.history.map((r, i) => `
       <div class="log-entry${r.crit ? ' crit' : ''}${fresh && i === 0 ? ' fresh' : ''}">
+        ${this.showWho && r.who ? `<div class="log-who"><span class="dot" style="background:${esc(r.color || '#fff200')}"></span>${esc(r.who)}</div>` : ''}
         <div class="log-head"><span class="log-label">${esc(r.label)}${r.crit ? ' <span class="log-crit">¡Crítico!</span>' : ''}</span>
           <span class="log-time">${new Date(r.time).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}</span></div>
-        <div class="log-body"><span class="log-breakdown">${r.breakdown}</span><span class="log-total">${r.total}</span></div>
+        <div class="log-body"><span class="log-breakdown">${breakdown(r.terms)}</span><span class="log-total">${Number(r.total)}</span></div>
         <button class="log-reroll" data-reroll="${i}" title="Repetir ${esc(r.expr)}">↻</button>
       </div>`).join('');
   }
