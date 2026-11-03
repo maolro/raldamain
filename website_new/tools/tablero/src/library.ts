@@ -26,7 +26,10 @@ function imageSize(file: Blob): Promise<{ width: number; height: number }> {
 }
 
 export class Library {
+  /** every image this browser may see (its own, and the ones on the board) */
   list: ImageMeta[] = [];
+  /** which of them are shown in the panel: the GM's own, or this player's */
+  ownerFilter: (m: ImageMeta) => boolean = () => true;
   private q = '';
   private category = '';
   private tags = new Set<string>();
@@ -84,8 +87,10 @@ export class Library {
 
   private $(id: string) { return this.el.querySelector('#' + id) as HTMLElement; }
   get(id: string) { return this.list.find(m => m.id === id); }
+  private mine() { return this.list.filter(this.ownerFilter); }
+
   categories() {
-    return [...new Set([...DEFAULT_CATEGORIES, ...this.list.map(m => m.category).filter(Boolean)])];
+    return [...new Set([...DEFAULT_CATEGORIES, ...this.mine().map(m => m.category).filter(Boolean)])];
   }
 
   async load() {
@@ -124,11 +129,11 @@ export class Library {
 
   render() {
     const cats = this.categories();
-    const count = (c: string) => this.list.filter(m => m.category === c).length;
+    const count = (c: string) => this.mine().filter(m => m.category === c).length;
     this.$('lib-cats').innerHTML = cats.filter(c => count(c) || c === this.category)
       .map(c => `<button class="chip ${c === this.category ? 'on' : ''}" data-cat="${esc(c)}">${esc(c)} <small>${count(c)}</small></button>`).join('');
     const tagCount = new Map<string, number>();
-    for (const m of this.list) if (!this.category || m.category === this.category) for (const t of m.tags) tagCount.set(t, (tagCount.get(t) || 0) + 1);
+    for (const m of this.mine()) if (!this.category || m.category === this.category) for (const t of m.tags) tagCount.set(t, (tagCount.get(t) || 0) + 1);
     const tags = [...new Set([...tagCount.keys(), ...this.tags])].sort((a, b) => a.localeCompare(b, 'es'));
     this.$('lib-tags').innerHTML = tags.map(t => `<button class="chip tag ${this.tags.has(t) ? 'on' : ''}" data-tag="${esc(t)}">#${esc(t)} <small>${tagCount.get(t) || 0}</small></button>`).join('');
     (this.$('lib-cat-dl') as HTMLDataListElement).innerHTML = cats.map(c => `<option value="${esc(c)}">`).join('');
@@ -137,7 +142,7 @@ export class Library {
   }
 
   private visible() {
-    return this.list.filter(m => (!this.category || m.category === this.category)
+    return this.mine().filter(m => (!this.category || m.category === this.category)
       && [...this.tags].every(t => m.tags.includes(t))
       && (!this.q || plain(m.name).includes(this.q) || m.tags.some(t => plain(t).includes(this.q))))
       .sort((a, b) => b.created - a.created);
@@ -145,11 +150,12 @@ export class Library {
 
   private renderGrid() {
     const shown = this.visible();
-    this.$('lib-count').textContent = shown.length === this.list.length ? `${this.list.length}` : `${shown.length} / ${this.list.length}`;
+    const total = this.mine().length;
+    this.$('lib-count').textContent = shown.length === total ? `${total}` : `${shown.length} / ${total}`;
     this.$('lib-grid').innerHTML = shown.map(m => `
       <figure class="thumb ${m.id === this.editing ? 'on' : ''}" data-id="${esc(m.id)}" draggable="true" title="${esc(m.name)} · ${esc(m.category)}${m.tags.length ? ' · #' + esc(m.tags.join(' #')) : ''}">
         <img src="${imageUrl(m)}" alt="" loading="lazy" draggable="false"><figcaption>${esc(m.name)}</figcaption>
-      </figure>`).join('') || `<p class="muted">${this.list.length ? 'Ninguna imagen con estos filtros.' : 'Arrastra o pega imágenes en el tablero, o usa «Subir».'}</p>`;
+      </figure>`).join('') || `<p class="muted">${total ? 'Ninguna imagen con estos filtros.' : 'Arrastra o pega imágenes en el tablero, o usa «Subir».'}</p>`;
   }
 
   private renderEdit() {

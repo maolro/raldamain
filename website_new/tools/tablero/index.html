@@ -10,10 +10,13 @@
 <body>
   <header class="top">
     <span class="brand">Tablero</span>
-    <select id="board-pick" class="inp" title="Tablero abierto"></select>
-    <button class="btn small" id="board-new" title="Nuevo tablero">＋ Nuevo</button>
-    <button class="btn small" id="board-rename" title="Cambiar el nombre">✎</button>
-    <button class="btn small danger" id="board-delete" title="Eliminar este tablero">🗑</button>
+    <span class="gm-only top-group">
+      <select id="board-pick" class="inp" title="Tablero abierto"></select>
+      <button class="btn small" id="board-new" title="Nuevo tablero">＋ Nuevo</button>
+      <button class="btn small" id="board-rename" title="Cambiar el nombre">✎</button>
+      <button class="btn small danger" id="board-delete" title="Eliminar este tablero">🗑</button>
+    </span>
+    <span class="player-only room-chip" id="player-chip"></span>
     <span class="sep"></span>
     <button class="btn small" id="undo" title="Deshacer (Ctrl+Z)">↶</button>
     <button class="btn small" id="redo" title="Rehacer (Ctrl+Y)">↷</button>
@@ -24,7 +27,10 @@
         <option value="orig">Tamaño original</option>
       </select></label>
     <span class="grow"></span>
-    <span class="role" title="Por ahora solo existe la vista del GM">👑 GM</span>
+    <span class="presence" id="presence" title="Jugadores conectados">👥 0</span>
+    <button class="btn small gm-only" id="invite-btn" title="Abrir una sala para este tablero e invitar a los jugadores">✉ Invitar</button>
+    <button class="btn small player-only" id="leave-btn" title="Salir de la sala">Salir</button>
+    <span class="role" id="role-badge">👑 GM</span>
   </header>
 
   <aside class="tools">
@@ -34,8 +40,8 @@
       <button class="tool" data-tool="draw" title="Lápiz: dibujar en la capa activa (B · Mayús: línea recta)">✎</button>
       <button class="tool" data-tool="text" title="Texto: clic para escribir en la capa activa (T · doble clic en un texto para editarlo)"><b>T</b></button>
     </div>
-    <div class="group" id="layers"></div>
-    <div class="group">
+    <div class="group gm-only" id="layers"></div>
+    <div class="group gm-only">
       <button class="tool" id="grid-btn" title="Cuadrícula y página">#</button>
     </div>
     <div class="group zoom">
@@ -92,6 +98,22 @@
     <small class="muted">Clic en el tablero para escribir · Enter termina (Mayús+Enter: nueva línea) · doble clic en un texto para editarlo</small>
   </div>
   <textarea id="text-edit" class="text-edit" hidden spellcheck="false"></textarea>
+
+  <div class="panel room-panel" id="room-panel" hidden>
+    <h3>Sala de este tablero</h3>
+    <div id="room-body"></div>
+  </div>
+
+  <div class="join" id="join" hidden>
+    <form class="join-box" id="join-form">
+      <h1>Tablero de Raldamain</h1>
+      <p class="muted">Entra en la partida con el código que te ha dado el GM.</p>
+      <label>Código de la sala<input class="inp" id="join-code" placeholder="ABCD-1234" autocomplete="off" required></label>
+      <label>Tu nombre<input class="inp" id="join-name" placeholder="Nombre del jugador" maxlength="30" autocomplete="nickname" required></label>
+      <button class="btn gold" type="submit">Entrar</button>
+      <p class="join-error" id="join-error"></p>
+    </form>
+  </div>
 
   <div class="menu" id="menu" hidden></div>
   <div class="toast" id="toast" hidden></div>

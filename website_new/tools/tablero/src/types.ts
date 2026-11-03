@@ -27,6 +27,8 @@ export interface BoardItem {
   z: number;            // order inside its layer
   name?: string;
   locked?: boolean;
+  owner?: string;       // the player who added it (missing: the GM)
+  controllers?: string[];  // players who may move / change / delete it (the GM always can)
   // path: points (x, y, x, y…) inside a pw × ph box, scaled to w × h when resized
   points?: number[];
   pw?: number;
@@ -58,7 +60,7 @@ export interface Board {
   items: BoardItem[];
 }
 
-export interface BoardSummary { id: string; name: string; items: number; modified: number }
+export interface BoardSummary { id: string; name: string; items: number; modified: number; code?: string }
 
 export interface ImageMeta {
   id: string;
@@ -70,6 +72,30 @@ export interface ImageMeta {
   height: number;
   created: number;
   duplicate?: boolean;  // upload answer: this image was already in the library
+  owner?: string;       // the player who uploaded it (missing: the GM)
 }
 
 export const DEFAULT_CATEGORIES = ['Personajes', 'Criaturas', 'Tokens', 'Mapas', 'Objetos', 'Efectos', 'Otros'];
+
+/** Who this browser is in the live board (from the server) */
+export interface Me { role: 'gm' | 'player'; pid: string | null; cid: string; name: string; color: string }
+
+/** Who is in the room */
+export interface Presence {
+  code: string;
+  online: string[];     // player ids connected now
+  gm: boolean;          // is the GM connected
+  players: Record<string, { name: string; color: string }>;
+}
+
+/** A batch of board changes (sent and received) */
+export interface Changes {
+  upserts: BoardItem[];
+  removes: string[];
+  settings?: Partial<Pick<Board, 'name' | 'width' | 'height' | 'background' | 'grid'>>;
+  live?: boolean;       // mid-drag: shown, not an undo step
+  by?: string;
+}
+
+export interface RoomInfo { code: string; players: Record<string, { name: string; color: string }>; lan: string }
+export interface JoinInfo { code: string; board: string; pid: string; key: string; name: string; color: string }

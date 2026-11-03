@@ -54,6 +54,10 @@ export class BoardView {
   readonly selected = new Set<string>();
   /** pencil colour and thickness (world pixels) */
   pen = { color: '#e03030', width: 6 };
+  /** may this browser select / move / change the item (players: only tokens they control) */
+  canEdit: (it: BoardItem) => boolean = () => true;
+  /** colour of the player controlling an item (a dot on it), or null */
+  badgeColor: (it: BoardItem) => string | null = () => null;
 
   private world = new Container();
   private pageG = new Graphics();
@@ -113,6 +117,15 @@ export class BoardView {
   }
 
   item(id: string) { return this.board.items.find(i => i.id === id); }
+
+  /** Items being dragged, resized or rotated right now (incoming changes must not yank them) */
+  busyIds(): Set<string> {
+    const d = this.drag;
+    if (!d) return new Set();
+    if (d.kind === 'move') return new Set(d.orig.keys());
+    if (d.kind === 'resize' || d.kind === 'rotate') return new Set([d.id]);
+    return new Set();
+  }
   selectedItems() { return this.board.items.filter(i => this.selected.has(i.id)); }
 
   select(ids: string[]) {
@@ -135,7 +148,7 @@ export class BoardView {
 
   /** The topmost item of the active layer under a world point */
   itemAt(p: Pt): BoardItem | undefined {
-    return [...this.board.items].filter(i => i.layer === this.activeLayer)
+    return [...this.board.items].filter(i => i.layer === this.activeLayer && this.canEdit(i))
       .sort((a, b) => b.z - a.z)
       .find(i => {
         const a = -(i.rotation || 0) * Math.PI / 180, cx = i.x + i.w / 2, cy = i.y + i.h / 2;
@@ -194,8 +207,16 @@ export class BoardView {
     v.angle = it.rotation || 0;
     v.zIndex = it.z;
     v.hitArea = new Rectangle(-it.w / 2, -it.h / 2, it.w, it.h);
-    const active = it.layer === this.activeLayer;
+    const active = it.layer === this.activeLayer && this.canEdit(it);
     v.eventMode = active ? 'static' : 'none';
+    // whose token it is: a dot in the controlling player's colour
+    const color = this.badgeColor(it);
+    let badge = v.children[1] as Graphics | undefined;
+    if (color) {
+      if (!badge) { badge = new Graphics(); badge.eventMode = 'none'; v.addChild(badge); }
+      const r = Math.max(4, Math.min(it.w, it.h) * 0.09);
+      badge.clear().circle(it.w / 2 - r * 1.2, -it.h / 2 + r * 1.2, r).fill({ color }).stroke({ width: Math.max(1, r / 3), color: 0x000000 });
+    } else if (badge) badge.destroy();
     v.cursor = active && !it.locked ? 'move' : 'default';
     const child = v.children[0];
     if (child instanceof Text) {
@@ -479,7 +500,7 @@ export class BoardView {
       const r = { x1: Math.min(d.start.x, p.x), y1: Math.min(d.start.y, p.y), x2: Math.max(d.start.x, p.x), y2: Math.max(d.start.y, p.y) };
       this.marqueeG.clear();
       if (r.x2 - r.x1 < 3 / this.zoom && r.y2 - r.y1 < 3 / this.zoom) return;
-      const hit = this.board.items.filter(i => i.layer === this.activeLayer && i.x < r.x2 && i.x + i.w > r.x1 && i.y < r.y2 && i.y + i.h > r.y1);
+      const hit = this.board.items.filter(i => i.layer === this.activeLayer && this.canEdit(i) && i.x < r.x2 && i.x + i.w > r.x1 && i.y < r.y2 && i.y + i.h > r.y1);
       this.select([...(d.additive ? this.selected : []), ...hit.map(i => i.id)]);
     }
   }

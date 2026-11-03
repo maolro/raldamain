@@ -1,11 +1,16 @@
-// Tablero de Raldamain — GM board (first draft): boards, layers, grid, image library,
-// drag & drop / paste of images, pencil and text, undo, autosave.
+// Tablero de Raldamain: boards, layers, grid, image library, drag & drop / paste of
+// images, pencil and text, dice, undo — shared live with the players of a room.
+//
+//   /        the GM (only from this computer): every board, layer and setting
+//   /jugar   a player: joins a room with its invite code; sees the Tokens layer, adds
+//            their own tokens, drawings and texts, and changes only what they control
 import './style.css';
-import { api } from './api';
+import { api, setKey } from './api';
 import { BoardView, type Pt, type Tool } from './board';
 import { DiceRoller } from './dice';
 import { DRAG_TYPE, Library } from './library';
-import { kindOf, LAYERS, type Board, type BoardItem, type ImageMeta, type LayerId } from './types';
+import { Live } from './live';
+import { kindOf, LAYERS, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Presence } from './types';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -14,7 +19,10 @@ const typing = (e: Event) => !!(e.target as HTMLElement | null)?.closest?.('inpu
 const uid = () => Math.random().toString(36).slice(2, 10);
 const LAST_BOARD = 'raldamain.tablero.board';
 const PREFS = 'raldamain.tablero.prefs';
+const PLAYER_KEYS = 'raldamain.tablero.player';   // { code: { key, name } }: this browser's place in each room
 const SWATCHES = ['#ffffff', '#111111', '#e03030', '#f08a24', '#fff200', '#3cb44b', '#3a8ee6', '#9b59d0', '#8b5a2b'];
+const PLAYER = location.pathname.startsWith('/jugar');
+document.body.classList.toggle('player', PLAYER);
 
 // tool settings, kept in this browser
 const prefs = { pen: { color: '#e03030', width: 6 }, text: { color: '#ffffff', size: 36 }, newSize: '1', side: 'library' };
@@ -22,14 +30,16 @@ try { const p = JSON.parse(localStorage.getItem(PREFS) || '{}'); Object.assign(p
 const savePrefs = () => { try { localStorage.setItem(PREFS, JSON.stringify(prefs)); } catch { /* private window */ } };
 
 // ── state ───────────────────────────────────────────────────────────────────
-let board: Board;
+let board: Board | null = null;
+let live: Live | null = null;
+let me: Me | null = null;
+let presence: Presence | null = null;
 let undo: string[] = [], redo: string[] = [];
-let lastSaved = '';
-let saveTimer = 0, saving = false;
 let clipboard: BoardItem[] = [];
 
-// unsaved changes: live reload waits instead of reloading the page (tools/live_reload.py)
-(window as unknown as { dirty: () => boolean }).dirty = () => !!saveTimer || saving;
+// changes still on their way: live reload waits instead of reloading the page (tools/live_reload.py)
+(window as unknown as { dirty: () => boolean }).dirty = () => !!live?.pending();
+const B = () => board!;
 
 function toast(msg: string, bad = false) {
   const t = $('toast');
@@ -46,15 +56,35 @@ function setStatus(text: string, cls = '') {
   s.className = 'status ' + cls;
 }
 
+// ── permissions (the server checks them too) ────────────────────────────────
+const isGM = () => !PLAYER;
+const canEdit = (it: BoardItem) => isGM() || (!!me?.pid && it.layer === 'tokens' && (it.controllers || []).includes(me.pid));
+const playerName = (pid: string) => presence?.players[pid]?.name || pid;
+
+/** A new item: on a player's side it is theirs, on the Tokens layer */
+function stamp(it: BoardItem): BoardItem {
+  if (PLAYER && me?.pid) { it.layer = 'tokens'; it.owner = me.pid; it.controllers = [me.pid]; }
+  return it;
+}
+
 // ── board view ──────────────────────────────────────────────────────────────
+let liveTimer = 0;
 const view = new BoardView({
-  change(kind) { if (kind === 'commit') commit(); },
-  selection() { /* the overlay draws itself; nothing else to update yet */ },
+  change(kind) {
+    if (kind === 'commit') commit();
+    else if (!liveTimer) liveTimer = window.setTimeout(() => { liveTimer = 0; live?.push(true); }, 60);  // others see it move
+  },
+  selection() { /* the overlay draws itself */ },
   view(zoom) { $('zoom-label').textContent = `${Math.round(zoom * 100)}%`; },
   contextMenu(item, at) { openMenu(item, at); },
   drawn(points) { addStroke(points); },
-  textAt(at, item) { openTextEditor(at, item); },
+  textAt(at, item) { if (!item || canEdit(item)) openTextEditor(at, item); },
 });
+view.canEdit = canEdit;
+view.badgeColor = it => {
+  const pid = (it.controllers || [])[0];
+  return pid && presence?.players[pid] ? presence.players[pid].color : null;
+};
 
 const library = new Library($('library'), {
   place: meta => placeImages([meta], view.viewCenter()),
@@ -75,29 +105,30 @@ function showSide(tab: string) {
 document.querySelectorAll<HTMLElement>('[data-side]').forEach(b => b.addEventListener('click', () => showSide(b.dataset.side!)));
 showSide(prefs.side);
 
-// ── history and saving ──────────────────────────────────────────────────────
+// ── history and sending ─────────────────────────────────────────────────────
 const snapshot = () => JSON.stringify(board);
 
-/** A finished change: one undo step, then save */
+/** A finished change: one undo step, then send it to everyone */
 function commit() {
+  if (!board) return;
   const now = snapshot();
   const prev = undo[undo.length - 1];
   if (prev === now) return;
   undo.push(now);
   if (undo.length > 150) undo.shift();
   redo = [];
-  scheduleSave();
+  live?.push();
   updateUndoButtons();
 }
 
 function restore(state: string) {
   const sel = [...view.selected];
   board = JSON.parse(state);
-  view.board = board;
+  view.board = B();
   view.render();
   view.select(sel.filter(id => view.item(id)));
   fillGridPanel();
-  scheduleSave();
+  live?.push();      // the server refuses (and puts back) whatever this player may not change
   updateUndoButtons();
 }
 
@@ -118,56 +149,99 @@ function updateUndoButtons() {
   ($('undo') as HTMLButtonElement).disabled = undo.length < 2;
   ($('redo') as HTMLButtonElement).disabled = !redo.length;
 }
+window.addEventListener('beforeunload', e => { if (live?.pending()) e.preventDefault(); });
 
-function scheduleSave() {
-  clearTimeout(saveTimer);
-  setStatus('Sin guardar…', 'saving');
-  saveTimer = window.setTimeout(save, 500);
+/** Apply a batch of changes to a board (also to the undo states, so undo only takes back your own changes) */
+function patch(b: Board, ch: Changes, skip: Set<string> = new Set()) {
+  const up = new Map(ch.upserts.filter(i => !skip.has(i.id)).map(i => [i.id, i]));
+  const rm = new Set(ch.removes);
+  b.items = b.items.filter(i => !rm.has(i.id)).map(i => up.get(i.id) ?? i);
+  const have = new Set(b.items.map(i => i.id));
+  for (const it of up.values()) if (!have.has(it.id)) b.items.push(it);
+  if (ch.settings) Object.assign(b, ch.settings);
 }
 
-async function save() {
-  saveTimer = 0;
-  const data = snapshot();
-  if (data === lastSaved) { setStatus('Guardado'); return; }
-  saving = true;
-  setStatus('Guardando…', 'saving');
-  try {
-    await api.saveBoard(board);
-    lastSaved = data;
-    setStatus('Guardado');
-  } catch (e) {
-    setStatus('Error al guardar', 'error');
-    toast('No se pudo guardar el tablero: ' + (e as Error).message, true);
-    saveTimer = window.setTimeout(save, 3000);   // try again
-  } finally {
-    saving = false;
+let libReload = 0;
+function applyRemote(ch: Changes) {
+  if (!board) return;
+  patch(board, ch, view.busyIds());
+  if (!ch.live) {
+    const fix = (s: string) => { const b: Board = JSON.parse(s); patch(b, ch); return JSON.stringify(b); };
+    undo = undo.map(fix);
+    redo = redo.map(fix);
   }
+  // an image nobody here knows yet (another player's token): fetch its details
+  if (ch.upserts.some(i => i.image && !library.get(i.image)) && !libReload)
+    libReload = window.setTimeout(() => { libReload = 0; library.load(); }, 200);
+  view.render();
+  view.select([...view.selected].filter(id => view.item(id) && canEdit(view.item(id)!)));
+  if (ch.settings) fillGridPanel();
 }
-window.addEventListener('beforeunload', e => { if (saveTimer || saving) { e.preventDefault(); } });
 
-// ── boards ──────────────────────────────────────────────────────────────────
+// ── live connection ─────────────────────────────────────────────────────────
+let fitted = '';
+function connect(boardId: string) {
+  live?.close();
+  live = new Live(boardId, () => board, {
+    snapshot(b, who) {
+      me = who;
+      board = b;
+      const first = fitted !== b.id;
+      fitted = b.id;
+      view.setBoard(b, first);
+      undo = [snapshot()];
+      redo = [];
+      fillGridPanel();
+      updateUndoButtons();
+      renderRole();
+    },
+    remote: applyRemote,
+    presence(p) { presence = p; renderPresence(); view.render(); },
+    status: setStatus,
+    closed(info) {
+      if (!PLAYER) { if (info.deleted) toast('Este tablero se ha eliminado', true); return; }
+      forgetRoom(me ? currentCode : '');
+      showJoin(info.kicked ? 'El GM te ha sacado de la sala.' : info.deleted ? 'El GM ha eliminado el tablero.' : 'El GM ha cerrado la sala.');
+    },
+  });
+  live.connect();
+}
+
+function renderRole() {
+  $('role-badge').innerHTML = PLAYER && me ? `<span class="dot" style="background:${esc(me.color)}"></span> ${esc(me.name)}` : '👑 GM';
+}
+
+function renderPresence() {
+  const p = presence;
+  const el = $('presence');
+  const total = p ? Object.keys(p.players).length : 0;
+  const online = p ? p.online.length : 0;
+  el.textContent = `👥 ${online}${total ? '/' + total : ''} ${Math.max(online, total) === 1 ? 'jugador' : 'jugadores'}`;
+  el.classList.toggle('on', online > 0);
+  el.title = p && total
+    ? Object.entries(p.players).map(([pid, x]) => `${p.online.includes(pid) ? '●' : '○'} ${x.name}`).join('\n') + (PLAYER ? `\n${p.gm ? '● GM conectado' : '○ GM desconectado'}` : '')
+    : 'Nadie se ha unido todavía';
+  if (PLAYER && p) $('player-chip').innerHTML = `Sala <b>${esc(p.code || currentCode)}</b> · ${p.gm ? 'GM conectado' : '<span class="muted">GM desconectado</span>'}`;
+  if (!$('room-panel').hidden) renderRoomPanel();
+}
+
+// ── boards (GM) ─────────────────────────────────────────────────────────────
 async function refreshBoardList(selectId?: string) {
   const list = await api.boards();
   const pick = $<HTMLSelectElement>('board-pick');
-  pick.innerHTML = list.map(b => `<option value="${esc(b.id)}">${esc(b.name)} (${b.items})</option>`).join('');
+  pick.innerHTML = list.map(b => `<option value="${esc(b.id)}">${esc(b.name)} (${b.items})${b.code ? ' · sala ' + esc(b.code) : ''}</option>`).join('');
   const id = selectId || localStorage.getItem(LAST_BOARD) || list[0]?.id;
   pick.value = list.some(b => b.id === id) ? id! : list[0].id;
   return pick.value;
 }
 
-async function openBoard(id: string) {
-  if (saveTimer) { clearTimeout(saveTimer); await save(); }
-  board = await api.board(id);
-  board.items ||= [];
-  lastSaved = snapshot();
-  undo = [lastSaved];
-  redo = [];
+function openBoard(id: string) {
   localStorage.setItem(LAST_BOARD, id);
-  view.setBoard(board);
-  fillGridPanel();
-  updateUndoButtons();
-  setStatus('Guardado');
   $<HTMLSelectElement>('board-pick').value = id;
+  $('room-panel').hidden = true;
+  presence = null;
+  renderPresence();
+  connect(id);
 }
 
 $('board-pick').addEventListener('change', e => openBoard((e.target as HTMLSelectElement).value));
@@ -176,41 +250,136 @@ $('board-new').addEventListener('click', async () => {
   if (!name) return;
   const b = await api.createBoard(name);
   await refreshBoardList(b.id);
-  await openBoard(b.id);
+  openBoard(b.id);
 });
 $('board-rename').addEventListener('click', async () => {
-  const name = prompt('Nuevo nombre del tablero:', board.name);
-  if (!name || name === board.name) return;
-  board.name = name.trim();
+  const name = prompt('Nuevo nombre del tablero:', B().name);
+  if (!name || name === B().name) return;
+  B().name = name.trim();
   commit();
-  await save();
-  await refreshBoardList(board.id);
+  setTimeout(() => refreshBoardList(B().id), 600);
 });
 $('board-delete').addEventListener('click', async () => {
-  if (!confirm(`¿Eliminar el tablero «${board.name}»? Las imágenes siguen en la biblioteca.`)) return;
-  clearTimeout(saveTimer); saveTimer = 0;
-  await api.deleteBoard(board.id);
+  if (!confirm(`¿Eliminar el tablero «${B().name}»? Las imágenes siguen en la biblioteca. Si tiene sala, se cierra.`)) return;
+  live?.close();
+  await api.deleteBoard(B().id);
   localStorage.removeItem(LAST_BOARD);
-  await openBoard(await refreshBoardList());
+  openBoard(await refreshBoardList());
 });
 $('undo').addEventListener('click', doUndo);
 $('redo').addEventListener('click', doRedo);
 
+// ── room panel (GM): invite code, link, players ─────────────────────────────
+$('invite-btn').addEventListener('click', () => {
+  const p = $('room-panel');
+  p.hidden = !p.hidden;
+  if (!p.hidden) renderRoomPanel();
+});
+
+async function renderRoomPanel() {
+  if (!board) return;
+  const body = $('room-body');
+  const info = await api.room(B().id);
+  if (!info.code) {
+    body.innerHTML = `<p class="muted">Abre una sala para que los jugadores se unan a este tablero con un código.</p>
+      <button class="btn gold" id="room-open">Abrir sala</button>`;
+    $('room-open').addEventListener('click', async () => { await api.openRoom(B().id); refreshBoardList(B().id); renderRoomPanel(); });
+    return;
+  }
+  const base = location.origin;
+  const links = [`${base}/jugar?sala=${info.code}`, ...(info.lan ? [`${info.lan}/jugar?sala=${info.code}`] : [])];
+  const online = new Set(presence?.online || []);
+  const players = Object.entries(info.players);
+  body.innerHTML = `
+    <div class="room-code" title="Código de invitación">${esc(info.code)}</div>
+    ${links.map((l, i) => `<div class="room-link"><input class="inp" readonly value="${esc(l)}" title="${i ? 'Para jugadores en tu misma red' : 'En este ordenador'}">
+      <button class="btn small" data-copy="${esc(l)}">Copiar</button></div>`).join('')}
+    ${info.lan ? '' : '<small class="muted">Para jugadores en otros ordenadores de tu red, arranca el Tablero con TABLERO_LAN=1.</small>'}
+    <h3>Jugadores (${players.length})</h3>
+    <div class="room-players">${players.map(([pid, p]) => `<div class="room-player"><span class="dot" style="background:${esc(p.color)}"></span>${esc(p.name)}
+      <span class="state ${online.has(pid) ? 'on' : ''}">${online.has(pid) ? '● conectado' : '○ fuera'}</span>
+      <button class="x" data-kick="${esc(pid)}" title="Sacar de la sala">✕</button></div>`).join('') || '<span class="muted">Nadie todavía.</span>'}</div>
+    <button class="btn danger small" id="room-close">Cerrar sala</button>`;
+  body.querySelectorAll<HTMLElement>('[data-copy]').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard?.writeText(b.dataset.copy!).then(() => toast('Enlace copiado'), () => toast(b.dataset.copy!));
+  }));
+  body.querySelectorAll<HTMLElement>('[data-kick]').forEach(b => b.addEventListener('click', async () => {
+    if (!confirm(`¿Sacar a ${playerName(b.dataset.kick!)} de la sala? Tendrá que volver a entrar con el código.`)) return;
+    await api.kick(B().id, b.dataset.kick!);
+    renderRoomPanel();
+  }));
+  $('room-close').addEventListener('click', async () => {
+    if (!confirm('¿Cerrar la sala? Los jugadores saldrán del tablero y el código dejará de servir.')) return;
+    await api.closeRoom(B().id);
+    refreshBoardList(B().id);
+    renderRoomPanel();
+  });
+}
+
+// ── joining (players) ───────────────────────────────────────────────────────
+let currentCode = '';
+const savedRooms = (): Record<string, { key: string; name: string }> => { try { return JSON.parse(localStorage.getItem(PLAYER_KEYS) || '{}'); } catch { return {}; } };
+function rememberRoom(info: JoinInfo) {
+  const all = savedRooms();
+  all[info.code] = { key: info.key, name: info.name };
+  try { localStorage.setItem(PLAYER_KEYS, JSON.stringify(all)); localStorage.setItem(PLAYER_KEYS + '.name', info.name); } catch { /* private window */ }
+}
+function forgetRoom(code: string) {
+  const all = savedRooms();
+  delete all[code];
+  try { localStorage.setItem(PLAYER_KEYS, JSON.stringify(all)); } catch { /* private window */ }
+}
+
+function showJoin(error = '') {
+  live?.close();
+  live = null;
+  board = null;
+  $('join').hidden = false;
+  $('join-error').textContent = error;
+  const code = currentCode || new URLSearchParams(location.search).get('sala') || '';
+  $<HTMLInputElement>('join-code').value = code;
+  $<HTMLInputElement>('join-name').value = localStorage.getItem(PLAYER_KEYS + '.name') || '';
+  ($(code ? 'join-name' : 'join-code') as HTMLInputElement).focus();
+}
+
+async function enterRoom(info: JoinInfo) {
+  currentCode = info.code;
+  rememberRoom(info);
+  setKey(info.key);
+  history.replaceState(null, '', `/jugar?sala=${encodeURIComponent(info.code)}`);
+  $('join').hidden = true;
+  library.ownerFilter = m => m.owner === info.pid;
+  await library.load();
+  connect(info.board);
+}
+
+$('join-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const code = $<HTMLInputElement>('join-code').value.trim().toUpperCase();
+  const name = $<HTMLInputElement>('join-name').value.trim();
+  try {
+    const saved = savedRooms()[code];
+    await enterRoom(await api.join(code, name, saved?.key));
+  } catch (err) { $('join-error').textContent = (err as Error).message; }
+});
+$('leave-btn').addEventListener('click', () => { if (confirm('¿Salir de la sala? Podrás volver con el mismo código.')) showJoin(); });
+
 // ── adding images ───────────────────────────────────────────────────────────
-const nextZ = (layer: LayerId) => Math.max(0, ...board.items.filter(i => i.layer === layer).map(i => i.z)) + 1;
+const nextZ = (layer: LayerId) => Math.max(0, ...B().items.filter(i => i.layer === layer).map(i => i.z)) + 1;
 
 /** Put images on the active layer around a point: maps at their own size; tokens n×n squares
  *  (the "Tokens nuevos" size, 1×1 by default) with the whole image fitted inside, or at their own size */
 function placeImages(metas: ImageMeta[], at: { x: number; y: number }) {
+  if (!board) return;
   const g = board.grid.size, layer = view.activeLayer, ids: string[] = [];
   const cells = Number(prefs.newSize) || 0;   // 0 = "Tamaño original"
   metas.forEach((m, n) => {
     const own = layer === 'map' || !cells;
     const w = own ? (m.width || g * 4) : g * cells, h = own ? (m.height || g * 4) : g * cells;
     let x = at.x - w / 2 + n * (own ? g : w), y = at.y - h / 2;
-    if (board.grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, h); }
-    const it: BoardItem = { id: uid(), kind: 'image', image: m.id, fit: !own, x, y, w, h, rotation: 0, layer, z: nextZ(layer), name: m.name };
-    board.items.push(it);
+    if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, h); }
+    const it = stamp({ id: uid(), kind: 'image', image: m.id, fit: !own, x, y, w, h, rotation: 0, layer, z: nextZ(layer), name: m.name });
+    B().items.push(it);
     ids.push(it.id);
   });
   view.render();
@@ -221,11 +390,11 @@ function placeImages(metas: ImageMeta[], at: { x: number; y: number }) {
 const defaultCategory = () => (view.activeLayer === 'map' ? 'Mapas' : 'Tokens');
 
 async function addFiles(files: Blob[], at: { x: number; y: number }) {
-  if (!files.length) return;
+  if (!files.length || !board) return;
   setStatus('Subiendo imágenes…', 'saving');
   const metas = await library.upload(files, defaultCategory());
   if (metas.length) placeImages(metas, at);
-  else setStatus('Guardado');
+  else setStatus('Conectado');
 }
 
 // drag & drop: files from the computer, or thumbnails from the library
@@ -246,7 +415,7 @@ stage.addEventListener('drop', e => {
 
 // paste: an image from the clipboard (screenshot, copied image) or tokens copied with Ctrl+C
 document.addEventListener('paste', e => {
-  if (typing(e)) return;
+  if (typing(e) || !board) return;
   const files = [...(e.clipboardData?.files || [])].filter(f => f.type.startsWith('image/'));
   e.preventDefault();
   const at = view.pointer || view.viewCenter();
@@ -260,15 +429,15 @@ function copySelection() {
 }
 
 function pasteItems(at?: { x: number; y: number }, from = clipboard) {
-  if (!from.length) return;
+  if (!from.length || !board) return;
   const g = board.grid.size;
   const minX = Math.min(...from.map(i => i.x)), minY = Math.min(...from.map(i => i.y));
   const dx = at ? (view.snapPos(at.x - from[0].w / 2, from[0].w) - minX) : g;
   const dy = at ? (view.snapPos(at.y - from[0].h / 2, from[0].h) - minY) : g;
   const ids: string[] = [];
   for (const src of from) {
-    const it = { ...src, id: uid(), x: src.x + dx, y: src.y + dy, z: nextZ(src.layer) };
-    board.items.push(it);
+    const it = stamp({ ...src, id: uid(), x: src.x + dx, y: src.y + dy, z: nextZ(src.layer) });
+    B().items.push(it);
     ids.push(it.id);
   }
   view.render();
@@ -278,8 +447,8 @@ function pasteItems(at?: { x: number; y: number }, from = clipboard) {
 
 // ── item actions ────────────────────────────────────────────────────────────
 function deleteSelected() {
-  const ids = view.selected;
-  if (!ids.size) return;
+  const ids = new Set(view.selectedItems().filter(canEdit).map(i => i.id));
+  if (!ids.size || !board) return;
   board.items = board.items.filter(i => !ids.has(i.id));
   view.board = board;
   view.render();
@@ -289,7 +458,7 @@ function deleteSelected() {
 
 function toFront(front: boolean) {
   for (const it of view.selectedItems()) {
-    const zs = board.items.filter(i => i.layer === it.layer).map(i => i.z);
+    const zs = B().items.filter(i => i.layer === it.layer).map(i => i.z);
     it.z = front ? Math.max(...zs) + 1 : Math.min(...zs) - 1;
   }
   view.render();
@@ -305,50 +474,63 @@ function moveToLayer(layer: LayerId) {
 }
 
 function setCells(n: number) {
-  const g = board.grid.size;
+  const g = B().grid.size;
   for (const it of view.selectedItems().filter(i => kindOf(i) === 'image')) {
     const cx = it.x + it.w / 2, cy = it.y + it.h / 2;
     it.w = it.h = g * n;
     it.fit = true;   // the whole image inside the n×n squares
     it.x = cx - it.w / 2; it.y = cy - it.h / 2;
-    if (board.grid.snap) { it.x = view.snapPos(it.x, it.w); it.y = view.snapPos(it.y, it.h); }
+    if (B().grid.snap) { it.x = view.snapPos(it.x, it.w); it.y = view.snapPos(it.y, it.h); }
   }
   view.render();
   commit();
 }
 
+/** Give or take a player's control of the selected items */
+function toggleControl(pid: string, on: boolean) {
+  for (const it of view.selectedItems().filter(canEdit)) {
+    const c = new Set(it.controllers || []);
+    if (on) c.add(pid); else c.delete(pid);
+    it.controllers = [...c];
+  }
+  view.render();
+  view.select(view.selectedItems().filter(canEdit).map(i => i.id));
+  commit();
+}
+
 /** Map layer: line the page (and, if asked, the grid) up with a map image */
 function fitPageToMap(it: BoardItem, askCells: boolean) {
-  let size = board.grid.size;
+  const b = B();
+  let size = b.grid.size;
   if (askCells) {
     const guess = Math.max(1, Math.round(it.w / size));
     const ans = prompt(`¿Cuántas casillas de ancho tiene el mapa?\n(la imagen mide ${Math.round(it.w)} × ${Math.round(it.h)} px en el tablero)`, String(guess));
     const n = parseInt(ans || '', 10);
     if (!n || n < 1) return;
     size = it.w / n;
-    board.grid.size = Math.round(size * 1000) / 1000;
+    b.grid.size = Math.round(size * 1000) / 1000;
   }
   it.rotation = 0;
   it.x = 0; it.y = 0;
-  board.width = Math.max(1, Math.round(it.w / board.grid.size));
-  board.height = Math.max(1, Math.round(it.h / board.grid.size));
+  b.width = Math.max(1, Math.round(it.w / b.grid.size));
+  b.height = Math.max(1, Math.round(it.h / b.grid.size));
   view.render();
   view.fit();
   fillGridPanel();
   commit();
-  toast(`Página de ${board.width} × ${board.height} casillas de ${Math.round(board.grid.size * 10) / 10} px, ajustada al mapa`);
+  toast(`Página de ${b.width} × ${b.height} casillas de ${Math.round(b.grid.size * 10) / 10} px, ajustada al mapa`);
 }
 
 // ── pencil and text ─────────────────────────────────────────────────────────
 function addStroke(pts: number[]) {
-  if (pts.length < 2) return;
+  if (pts.length < 2 || !board) return;
   const pad = prefs.pen.width / 2 + 1;
   const xs = pts.filter((_, i) => i % 2 === 0), ys = pts.filter((_, i) => i % 2 === 1);
   const x = Math.min(...xs) - pad, y = Math.min(...ys) - pad;
   const w = Math.max(...xs) + pad - x, h = Math.max(...ys) + pad - y;
   const layer = view.activeLayer;
-  board.items.push({ id: uid(), kind: 'path', x, y, w, h, pw: w, ph: h, rotation: 0, layer, z: nextZ(layer),
-    points: pts.map((v, i) => Math.round((v - (i % 2 ? y : x)) * 10) / 10), color: prefs.pen.color, stroke: prefs.pen.width });
+  board.items.push(stamp({ id: uid(), kind: 'path', x, y, w, h, pw: w, ph: h, rotation: 0, layer, z: nextZ(layer),
+    points: pts.map((v, i) => Math.round((v - (i % 2 ? y : x)) * 10) / 10), color: prefs.pen.color, stroke: prefs.pen.width }));
   view.render();
   commit();
 }
@@ -386,29 +568,30 @@ function autosize() {
 
 function closeTextEditor(keep: boolean) {
   const ta = $<HTMLTextAreaElement>('text-edit');
-  if (!editing) return;
-  const { item, at } = editing;
+  if (!editing || !board) return;
+  const { item: orig, at } = editing;
   editing = null;
   ta.blur();   // now, not later: a late blur would close the next text box
   ta.hidden = true;
   const text = ta.value.replace(/\s+$/, '');
-  if (item) view.setHidden(item.id, false);
+  if (orig) view.setHidden(orig.id, false);
   if (!keep) { view.render(); return; }
+  const item = orig ? board.items.find(i => i.id === orig.id) : undefined;   // (it may have been replaced by an update meanwhile)
+  if (orig && !item) return;
   if (item) {
     if (!text) { board.items = board.items.filter(i => i !== item); view.select([]); }
     else if (text !== item.text) {
       const k = item.h / view.measureText(item).h;          // keep the size it was resized to
       item.text = text;
       const m = view.measureText(item);
-      const cx = item.x, cy = item.y;
-      item.w = m.w * k; item.h = m.h * k; item.x = cx; item.y = cy;
+      item.w = m.w * k; item.h = m.h * k;
     } else { view.render(); return; }
   } else {
     if (!text) return;
     const style = { text, color: prefs.text.color, fontSize: prefs.text.size };
     const m = view.measureText(style);
     const layer = view.activeLayer;
-    board.items.push({ id: uid(), kind: 'text', ...style, x: at.x, y: at.y - m.h / 2, w: m.w, h: m.h, rotation: 0, layer, z: nextZ(layer) });
+    board.items.push(stamp({ id: uid(), kind: 'text', ...style, x: at.x, y: at.y - m.h / 2, w: m.w, h: m.h, rotation: 0, layer, z: nextZ(layer) }));
   }
   view.render();
   commit();
@@ -429,14 +612,14 @@ $('text-edit').addEventListener('blur', () => {
 // double click a text with the select tool: edit it
 function bindDoubleClick() {
   view.app.canvas.addEventListener('dblclick', e => {
-    if (view.tool !== 'select') return;
+    if (view.tool !== 'select' || !board) return;
     const it = view.itemAt(view.clientToWorld(e.clientX, e.clientY));
     if (it && kindOf(it) === 'text') openTextEditor({ x: it.x, y: it.y }, it);
   });
 }
 
 function nudge(dx: number, dy: number) {
-  const items = view.selectedItems().filter(i => !i.locked);
+  const items = view.selectedItems().filter(i => !i.locked && canEdit(i));
   if (!items.length) return;
   for (const it of items) { it.x += dx; it.y += dy; }
   view.render();
@@ -444,45 +627,54 @@ function nudge(dx: number, dy: number) {
 }
 
 // ── context menu ────────────────────────────────────────────────────────────
+type Entry = [string, string, () => void, string?];
 function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
+  if (!board) return;
   const menu = $('menu');
   const sel = view.selectedItems();
-  const entries: [string, string, () => void][] = [];
+  const entries: Entry[] = [];
   if (item && sel.length) {
     const locked = sel.every(i => i.locked);
-    entries.push(
-      ['Al frente', '', () => toFront(true)],
-      ['Al fondo', '', () => toFront(false)],
-      ['-', '', () => {}],
-      ...LAYERS.filter(l => l.id !== item.layer).map(l => [`Mover a capa ${l.name}`, '', () => moveToLayer(l.id)] as [string, string, () => void]),
-      ['-', '', () => {}],
-      ...(kindOf(item) === 'text' ? [['Editar texto', 'doble clic', () => openTextEditor({ x: item.x, y: item.y }, item)]] as [string, string, () => void][] : []),
-      ...(kindOf(item) !== 'image' ? [] : item.layer === 'map' ? [
-        ['Ajustar la página a este mapa', '', () => fitPageToMap(item, false)],
-        ['Ajustar cuadrícula y página al mapa…', 'casillas', () => fitPageToMap(item, true)],
-      ] as [string, string, () => void][] : [1, 2, 3, 4].map(n => [`Tamaño ${n}×${n}`, 'casillas', () => setCells(n)] as [string, string, () => void])),
-      ['-', '', () => {}],
+    entries.push(['Al frente', '', () => toFront(true)], ['Al fondo', '', () => toFront(false)], ['-', '', () => {}]);
+    if (isGM()) entries.push(...LAYERS.filter(l => l.id !== item.layer).map(l => [`Mover a capa ${l.name}`, '', () => moveToLayer(l.id)] as Entry), ['-', '', () => {}]);
+    if (kindOf(item) === 'text') entries.push(['Editar texto', 'doble clic', () => openTextEditor({ x: item.x, y: item.y }, item)]);
+    if (kindOf(item) === 'image') {
+      if (item.layer === 'map' && isGM()) entries.push(['Ajustar la página a este mapa', '', () => fitPageToMap(item, false)],
+        ['Ajustar cuadrícula y página al mapa…', 'casillas', () => fitPageToMap(item, true)]);
+      else entries.push(...[1, 2, 3, 4].map(n => [`Tamaño ${n}×${n}`, 'casillas', () => setCells(n)] as Entry));
+    }
+    // who controls it: the GM, and the players who control it, can share it
+    const players = Object.entries(presence?.players || {});
+    if (players.length && item.layer !== 'map') {
+      entries.push(['-', '', () => {}], ['§Control de los jugadores', '', () => {}]);
+      for (const [pid, p] of players) {
+        const has = sel.every(i => (i.controllers || []).includes(pid));
+        entries.push([`${has ? '☑' : '☐'} ${p.name}${pid === me?.pid ? ' (tú)' : ''}`, has ? 'lo controla' : '', () => toggleControl(pid, !has), p.color]);
+      }
+    }
+    entries.push(['-', '', () => {}],
       [locked ? 'Desbloquear' : 'Bloquear', 'no se mueve', () => { sel.forEach(i => (i.locked = !locked)); view.render(); commit(); }],
       ['Duplicar', 'Ctrl+D', () => pasteItems(undefined, sel)],
       ['Copiar', 'Ctrl+C', copySelection],
-      ['Eliminar', 'Supr', deleteSelected],
-    );
+      ['Eliminar', 'Supr', deleteSelected]);
   } else {
-    entries.push(
-      ['Pegar aquí', 'Ctrl+V', () => pasteItems(view.clientToWorld(at.x, at.y))],
-      ['Ver toda la página', '', () => view.fit()],
-    );
+    entries.push(['Pegar aquí', 'Ctrl+V', () => pasteItems(view.clientToWorld(at.x, at.y))], ['Ver toda la página', '', () => view.fit()]);
   }
-  const title = item ? (sel.length > 1 ? `${sel.length} seleccionados` : item.name || 'Imagen') : 'Tablero';
-  menu.innerHTML = `<div class="title">${esc(title)}</div>` + entries.map(([label, hint], i) =>
-    label === '-' ? '<hr>' : `<button data-i="${i}">${esc(label)}<small>${esc(hint)}</small></button>`).join('');
+  const title = item ? (sel.length > 1 ? `${sel.length} seleccionados` : item.name || (kindOf(item) === 'text' ? 'Texto' : kindOf(item) === 'path' ? 'Dibujo' : 'Imagen')) : 'Tablero';
+  menu.innerHTML = `<div class="title">${esc(title)}</div>` + entries.map(([label, hint, , color], i) =>
+    label === '-' ? '<hr>' : label.startsWith('§') ? `<div class="title">${esc(label.slice(1))}</div>`
+      : `<button data-i="${i}" class="${color ? 'check' : ''}">${color ? `<span><span class="dot" style="background:${esc(color)}"></span> ` : ''}${esc(label)}${color ? '</span>' : ''}<small>${esc(hint)}</small></button>`).join('');
   menu.querySelectorAll<HTMLElement>('[data-i]').forEach(b => b.addEventListener('click', () => { menu.hidden = true; entries[+b.dataset.i!][2](); }));
   menu.hidden = false;
   const r = menu.getBoundingClientRect();
   menu.style.left = `${Math.min(at.x, innerWidth - r.width - 8)}px`;
   menu.style.top = `${Math.min(at.y, innerHeight - r.height - 8)}px`;
 }
-document.addEventListener('pointerdown', e => { if (!(e.target as HTMLElement | null)?.closest?.('#menu')) $('menu').hidden = true; });
+document.addEventListener('pointerdown', e => {
+  const t = e.target as HTMLElement | null;
+  if (!t?.closest?.('#menu')) $('menu').hidden = true;
+  if (!t?.closest?.('#room-panel, #invite-btn')) $('room-panel').hidden = true;
+});
 
 // ── toolbar: tools, layers, zoom ────────────────────────────────────────────
 function setTool(t: Tool) {
@@ -525,6 +717,7 @@ document.querySelectorAll<HTMLElement>('[data-tool]').forEach(b => b.addEventLis
 $('layers').innerHTML = LAYERS.map(l =>
   `<button class="tool layer ${l.id === view.activeLayer ? 'on' : ''}" data-layer="${l.id}" title="Capa ${l.name}: ${l.hint}">${l.name.toUpperCase()}</button>`).join('');
 function setLayer(l: LayerId) {
+  if (!isGM()) return;
   view.setActiveLayer(l);
   document.querySelectorAll<HTMLElement>('[data-layer]').forEach(b => b.classList.toggle('on', b.dataset.layer === l));
 }
@@ -534,13 +727,14 @@ $('zoom-in').addEventListener('click', () => view.zoomBy(1.25));
 $('zoom-out').addEventListener('click', () => view.zoomBy(0.8));
 $('zoom-fit').addEventListener('click', () => view.fit());
 
-// ── grid & page panel ───────────────────────────────────────────────────────
+// ── grid & page panel (GM) ──────────────────────────────────────────────────
 $('grid-btn').addEventListener('click', () => {
   const p = $('grid-panel');
   p.hidden = !p.hidden;
   $('grid-btn').classList.toggle('on', !p.hidden);
 });
 function fillGridPanel() {
+  if (!board) return;
   const g = board.grid;
   $<HTMLInputElement>('g-show').checked = g.show;
   $<HTMLInputElement>('g-snap').checked = g.snap;
@@ -553,6 +747,7 @@ function fillGridPanel() {
 }
 let gridCommit = 0;
 function gridChanged(apply: () => void) {
+  if (!board || !isGM()) return;
   apply();
   view.render();
   clearTimeout(gridCommit);
@@ -562,25 +757,25 @@ const num = (id: string, min: number, max: number, fallback: number) => {
   const v = Number($<HTMLInputElement>(id).value);
   return Number.isFinite(v) && v > 0 ? Math.min(max, Math.max(min, v)) : fallback;
 };
-$('g-show').addEventListener('change', e => gridChanged(() => (board.grid.show = (e.target as HTMLInputElement).checked)));
-$('g-snap').addEventListener('change', e => gridChanged(() => (board.grid.snap = (e.target as HTMLInputElement).checked)));
-$('g-size').addEventListener('input', () => gridChanged(() => (board.grid.size = num('g-size', 10, 400, board.grid.size))));
-$('g-color').addEventListener('input', e => gridChanged(() => (board.grid.color = (e.target as HTMLInputElement).value)));
-$('g-opacity').addEventListener('input', e => gridChanged(() => (board.grid.opacity = Number((e.target as HTMLInputElement).value))));
-$('p-width').addEventListener('input', () => gridChanged(() => (board.width = Math.round(num('p-width', 1, 300, board.width)))));
-$('p-height').addEventListener('input', () => gridChanged(() => (board.height = Math.round(num('p-height', 1, 300, board.height)))));
-$('p-bg').addEventListener('input', e => gridChanged(() => (board.background = (e.target as HTMLInputElement).value)));
+$('g-show').addEventListener('change', e => gridChanged(() => (B().grid.show = (e.target as HTMLInputElement).checked)));
+$('g-snap').addEventListener('change', e => gridChanged(() => (B().grid.snap = (e.target as HTMLInputElement).checked)));
+$('g-size').addEventListener('input', () => gridChanged(() => (B().grid.size = num('g-size', 10, 400, B().grid.size))));
+$('g-color').addEventListener('input', e => gridChanged(() => (B().grid.color = (e.target as HTMLInputElement).value)));
+$('g-opacity').addEventListener('input', e => gridChanged(() => (B().grid.opacity = Number((e.target as HTMLInputElement).value))));
+$('p-width').addEventListener('input', () => gridChanged(() => (B().width = Math.round(num('p-width', 1, 300, B().width)))));
+$('p-height').addEventListener('input', () => gridChanged(() => (B().height = Math.round(num('p-height', 1, 300, B().height)))));
+$('p-bg').addEventListener('input', e => gridChanged(() => (B().background = (e.target as HTMLInputElement).value)));
 
 // ── keyboard ────────────────────────────────────────────────────────────────
 document.addEventListener('keydown', e => {
-  if (typing(e)) return;
+  if (typing(e) || !board) return;
   const ctrl = e.ctrlKey || e.metaKey, k = e.key.toLowerCase();
   if (k === ' ' && !view.spaceDown) { view.spaceDown = true; view.app.canvas.style.cursor = 'grab'; e.preventDefault(); return; }
   if (ctrl && k === 'z' && !e.shiftKey) { e.preventDefault(); doUndo(); }
   else if (ctrl && (k === 'y' || (k === 'z' && e.shiftKey))) { e.preventDefault(); doRedo(); }
   else if (ctrl && k === 'c') copySelection();
   else if (ctrl && k === 'd') { e.preventDefault(); pasteItems(undefined, view.selectedItems()); }
-  else if (ctrl && k === 'a') { e.preventDefault(); view.select(board.items.filter(i => i.layer === view.activeLayer).map(i => i.id)); }
+  else if (ctrl && k === 'a') { e.preventDefault(); view.select(board.items.filter(i => i.layer === view.activeLayer && canEdit(i)).map(i => i.id)); }
   else if (k === 'delete' || k === 'backspace') { e.preventDefault(); deleteSelected(); }
   else if (k === 'escape') { view.select([]); $('menu').hidden = true; }
   else if (k === 'v' && !ctrl) setTool('select');
@@ -598,12 +793,32 @@ document.addEventListener('keyup', e => {
 });
 
 // ── start ───────────────────────────────────────────────────────────────────
-// for the browser console (and tests): window.tablero.view / .board()
-(window as unknown as { tablero: unknown }).tablero = { view, library, dice, board: () => board };
+// for the browser console (and tests): window.tablero.view / .board() / .me()
+(window as unknown as { tablero: unknown }).tablero = { view, library, dice, board: () => board, me: () => me, presence: () => presence, live: () => live };
 (async () => {
   await view.init(stage);
   bindDoubleClick();
   fillToolOptions();
+  renderPresence();
+  if (PLAYER) {
+    // back in a room this browser already joined: straight in; otherwise the join screen
+    const code = (new URLSearchParams(location.search).get('sala') || '').toUpperCase();
+    const saved = code ? savedRooms()[code] : undefined;
+    currentCode = code;
+    if (saved) {
+      try { await enterRoom(await api.join(code, '', saved.key)); return; } catch { forgetRoom(code); }
+    }
+    showJoin();
+    return;
+  }
+  try {
+    const gm = await api.gmKey();
+    setKey(gm.key);
+  } catch {
+    location.replace('/jugar' + location.search);   // not the GM's computer: join as a player
+    return;
+  }
+  library.ownerFilter = m => !m.owner;
   await library.load();
-  await openBoard(await refreshBoardList());
+  openBoard(await refreshBoardList());
 })().catch(e => { console.error(e); toast('No se pudo iniciar el tablero: ' + (e as Error).message, true); });

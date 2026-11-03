@@ -103,7 +103,8 @@ class _QuietPolls:
 
 
 def run(app, port: int, url: str | None = None, open_browser: bool = True,
-        watch: Iterable[str] = (), extra_files: Iterable[str | Path] = ()) -> None:
+        watch: Iterable[str] = (), extra_files: Iterable[str | Path] = (), host: str = "127.0.0.1") -> None:
+    """host: "0.0.0.0" to also accept other computers on the network (the Tablero's players)."""
     enabled = os.environ.get("LIVE_RELOAD", "1") != "0"
     # RALDAMAIN_PORT_OFFSET: run a second copy of every tool next to the usual one (tests)
     offset = int(os.environ.get("RALDAMAIN_PORT_OFFSET") or 0)
@@ -121,14 +122,14 @@ def run(app, port: int, url: str | None = None, open_browser: bool = True,
     if open_browser and url and not is_child:
         threading.Thread(target=lambda: (time.sleep(1.2), webbrowser.open(url)), daemon=True).start()
     if not enabled:
-        app.run(host="127.0.0.1", port=port, debug=False, use_reloader=False)
+        app.run(host=host, port=port, debug=False, use_reloader=False, threaded=True)
         return
     extra = [Path(f).resolve() for f in extra_files]
     if not is_child:
         _supervise(extra)  # the parent only restarts the serving child
         return
     threading.Thread(target=_watch_imports, args=(extra,), daemon=True).start()
-    app.run(host="127.0.0.1", port=port, debug=False, use_reloader=False)
+    app.run(host=host, port=port, debug=False, use_reloader=False, threaded=True)
 
 
 # ── Reloader ─────────────────────────────────────────────────────────────────
