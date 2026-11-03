@@ -15,7 +15,7 @@
     {
       "value": 10,
       "categories": "General",
-      "tier_scaled": true
+      "tier_tpl": "T"
     },
     {
       "value": 15,
@@ -124,5 +124,6 @@
     "FÍS": "extreme",
     "MEN": "low",
     "VOL": "bonus"
-  }
+  },
+  "image": "asesino.jpg"
 }
