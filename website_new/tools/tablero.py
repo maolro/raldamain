@@ -721,6 +721,7 @@ def live_events(bid):
                     yield ": ping\n\n"  # also notices closed connections
         finally:
             s.subs.pop(cid, None)
+            s.send(lambda r, q: _event("ruler", {"by": cid, "who": "", "color": "", "shape": None}))
             s.presence()
 
     return Response(stream(), mimetype="text/event-stream",
@@ -799,6 +800,28 @@ def live_roll(bid):
     s.send(lambda role_, pid_: _event("roll", r) if role_ == "gm" or (pid and pid_ == pid) else None,
            exclude=body.get("cid"))
     return jsonify(r)
+
+
+@app.route("/api/live/<bid>/ruler", methods=["POST"])
+def live_ruler(bid):
+    """{cid, shape: {mode, x1, y1, x2, y2} | null}: someone's ruler, shown live to everyone
+    else in the board (only while they share it; nothing is stored)."""
+    role, pid, code = need_board(bid)
+    body = request.get_json(force=True) or {}
+    s = session(bid)
+    shape = body.get("shape")
+    if shape is not None:
+        if not isinstance(shape, dict) or shape.get("mode") not in ("line", "radius", "cone") \
+                or not all(isinstance(shape.get(k), (int, float)) and abs(shape[k]) < 1e7 for k in ("x1", "y1", "x2", "y2")):
+            return jsonify({"error": "regla no válida"}), 400
+        shape = {k: shape[k] for k in ("mode", "x1", "y1", "x2", "y2")}
+    players = (rooms().get(code or room_of(bid)) or {}).get("players") or {}
+    p = players.get(pid) or {}
+    cid = str(body.get("cid") or "")[:20]
+    ev = {"by": cid, "who": clean_name(p.get("name")) if pid else "GM", "color": p.get("color", "#fff200") if pid else "#fff200",
+          "shape": shape}
+    s.send(lambda r, q: _event("ruler", ev), exclude=cid)
+    return jsonify({"ok": True})
 
 
 @app.route("/api/live/<bid>/changes", methods=["POST"])

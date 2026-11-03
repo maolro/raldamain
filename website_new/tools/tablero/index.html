@@ -40,6 +40,7 @@
       <button class="tool" data-tool="pan" title="Mover la vista (H · o mantén Espacio · o arrastra con el botón derecho/central)">✋</button>
       <button class="tool" data-tool="draw" title="Lápiz: dibujar en la capa activa (B · Mayús: línea recta)">✎</button>
       <button class="tool" data-tool="text" title="Texto: clic para escribir en la capa activa (T · doble clic en un texto para editarlo)"><b>T</b></button>
+      <button class="tool" data-tool="ruler" title="Regla: distancias, radios y conos en casillas (R · Alt: sin ajustar a las casillas)">📏</button>
     </div>
     <div class="group gm-only" id="layers"></div>
     <div class="group gm-only">
@@ -90,6 +91,12 @@
     <label>Color<input type="color" id="pen-color"></label>
     <label>Grosor <span id="pen-width-val"></span><input type="range" id="pen-width" min="1" max="60" step="1"></label>
     <small class="muted">Mayús: línea recta · se dibuja en la capa activa</small>
+  </div>
+  <div class="panel tool-opts" id="ruler-opts" hidden>
+    <h3 title="Arrastra desde el origen · se borra al medir de nuevo, cambiar de herramienta o con Esc · Alt: sin ajustar a las casillas">Regla</h3>
+    <div class="ruler-modes" id="ruler-modes"></div>
+    <label class="check"><input type="checkbox" id="ruler-public"> Visible para todos</label>
+    <small class="muted" id="ruler-hint"></small>
   </div>
   <div class="panel tool-opts" id="text-opts" hidden>
     <h3>Texto</h3>

@@ -155,3 +155,6 @@ export interface RollRecord {
   crit: boolean;
   time: number;         // ms
 }
+
+/** Someone's ruler, shared while they measure (shape null: they stopped) */
+export interface RulerEvent { by: string; who: string; color: string; shape: import('./ruler').RulerShape | null }

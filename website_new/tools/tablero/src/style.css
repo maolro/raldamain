@@ -258,3 +258,7 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .players-away { display: block; line-height: 1.7; }
 .players-away .away { white-space: nowrap; }
 .players-away .x { font-size: 12px; padding: 0 2px; }
+
+/* ── ruler ── */
+.ruler-modes { display: flex; gap: 4px; flex-wrap: wrap; }
+.ruler-modes .chip { padding: 3px 9px; }

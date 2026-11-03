@@ -58,5 +58,6 @@ export const api = {
     call<{ ok: boolean; refused: (Board['items'][number] | { id: string; removed: true })[] }>('POST', `/api/live/${bid}/changes`, body),
   roll: (bid: string, body: { cid: string; terms: RollTerm[]; expr: string; label: string; token?: string }) =>
     call<RollRecord>('POST', `/api/live/${bid}/roll`, body),
+  ruler: (bid: string, body: { cid: string; shape: unknown }) => call<{ ok: boolean }>('POST', `/api/live/${bid}/ruler`, body),
   eventsUrl: (bid: string) => `/api/live/${bid}/events?key=${encodeURIComponent(KEY)}`,
 };

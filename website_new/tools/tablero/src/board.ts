@@ -7,8 +7,9 @@
 import { Application, Assets, Container, FederatedPointerEvent, Graphics, Rectangle, Sprite, Text, Texture } from 'pixi.js';
 import { imageUrl } from './api';
 import { BARS, kindOf, type Board, type BoardItem, type ImageMeta, type LayerId } from './types';
+import { cellCenter, drawRuler, type RulerMode, type RulerShape } from './ruler';
 
-export type Tool = 'select' | 'pan' | 'draw' | 'text';
+export type Tool = 'select' | 'pan' | 'draw' | 'text' | 'ruler';
 export type Pt = { x: number; y: number };
 
 export const TEXT_FONT = 'Lato, system-ui, sans-serif';
@@ -31,6 +32,8 @@ export interface BoardEvents {
   textAt(world: Pt, item?: BoardItem): void;
   /** the selection outline was redrawn (zoom, move, render): things placed over it follow */
   overlay(): void;
+  /** this browser's ruler changed (null: gone); done = the pointer was released */
+  ruler(shape: RulerShape | null, done: boolean): void;
 }
 
 type Drag =
@@ -39,7 +42,8 @@ type Drag =
   | { kind: 'rotate'; id: string; orig: BoardItem }
   | { kind: 'pan'; start: Pt; orig: Pt; moved: boolean; button: number; target: string }
   | { kind: 'marquee'; start: Pt; additive: boolean }
-  | { kind: 'draw'; pts: number[] };
+  | { kind: 'draw'; pts: number[] }
+  | { kind: 'ruler'; a: { x: number; y: number } };
 
 const MIN_ZOOM = 0.08, MAX_ZOOM = 6;
 const HANDLE = 10;          // screen pixels
@@ -70,6 +74,10 @@ export class BoardView {
   private overlay = new Container();
   private marqueeG = new Graphics();
   private drawG = new Graphics();      // the stroke being drawn
+  private rulerLayer = new Container();   // rulers: this browser's ('me') and the ones others share
+  private rulers = new Map<string, { shape: RulerShape; color: string; who: string; box: Container }>();
+  /** what the ruler measures */
+  rulerMode: RulerMode = 'line';
   private views = new Map<string, Container>();
   private barViews = new Map<string, Graphics>();   // a token's bars, above it (never rotated)
   private markViews = new Map<string, Container & { key?: string }>();   // its status markers, under it
@@ -86,7 +94,7 @@ export class BoardView {
     host.appendChild(this.app.canvas);
     for (const l of Object.values(this.layers)) l.sortableChildren = true;
     this.layers.gm.alpha = 0.6;   // the GM sees the GM layer see-through
-    this.world.addChild(this.pageG, this.layers.map, this.gridG, this.layers.tokens, this.layers.gm, this.drawG, this.overlay, this.marqueeG);
+    this.world.addChild(this.pageG, this.layers.map, this.gridG, this.layers.tokens, this.layers.gm, this.drawG, this.overlay, this.marqueeG, this.rulerLayer);
     this.app.stage.addChild(this.world);
     const stage = this.app.stage;
     stage.eventMode = 'static';
@@ -153,7 +161,7 @@ export class BoardView {
 
   setTool(t: Tool) {
     this.tool = t;
-    this.app.canvas.style.cursor = { select: '', pan: 'grab', draw: 'crosshair', text: 'text' }[t];
+    this.app.canvas.style.cursor = { select: '', pan: 'grab', draw: 'crosshair', text: 'text', ruler: 'crosshair' }[t];
   }
 
   /** The topmost item of the active layer under a world point */
@@ -449,8 +457,26 @@ export class BoardView {
     this.viewChanged();
   }
 
+  /** Show (or with null, take away) a ruler: key 'me' for this browser's, else whose it is */
+  setRuler(key: string, shape: RulerShape | null, color: string, who = '') {
+    const old = this.rulers.get(key);
+    if (!shape) {
+      if (old) { old.box.destroy({ children: true }); this.rulers.delete(key); }
+      return;
+    }
+    const box = old?.box || new Container();
+    box.eventMode = 'none';
+    if (!old) this.rulerLayer.addChild(box);
+    this.rulers.set(key, { shape, color, who, box });
+    drawRuler(box, shape, this.board.grid.size, this.zoom, color, who);
+  }
+
+  /** Every ruler but this browser's (another board opened) */
+  clearRulers() { for (const k of [...this.rulers.keys()]) this.setRuler(k, null, ''); }
+
   private viewChanged() {
     this.drawPage();
+    for (const r of this.rulers.values()) drawRuler(r.box, r.shape, this.board.grid.size, this.zoom, r.color, r.who);   // (text keeps its size)
     if (this.board) for (const it of this.board.items) {   // (their size follows the zoom)
       if (it.bars) this.renderBars(it);
       if (it.statuses?.length) this.renderMarkers(it);
@@ -473,6 +499,12 @@ export class BoardView {
     if (this.tool === 'draw') {
       this.select([]);
       this.drag = { kind: 'draw', pts: [p.x, p.y] };
+      return;
+    }
+    if (this.tool === 'ruler') {
+      const a = cellCenter(p.x, p.y, this.board.grid.size, e.altKey);
+      this.drag = { kind: 'ruler', a };
+      this.ev.ruler({ mode: this.rulerMode, x1: a.x, y1: a.y, x2: a.x, y2: a.y }, false);
       return;
     }
     if (this.tool === 'text') {
@@ -533,6 +565,9 @@ export class BoardView {
       it.rotation = ((a % 360) + 360) % 360;
       this.renderItem(it); this.drawOverlay();
       this.ev.change('live');
+    } else if (d.kind === 'ruler') {
+      const b = cellCenter(p.x, p.y, this.board.grid.size, e.altKey);
+      this.ev.ruler({ mode: this.rulerMode, x1: d.a.x, y1: d.a.y, x2: b.x, y2: b.y }, false);
     } else if (d.kind === 'draw') {
       const n = d.pts.length;
       if (e.shiftKey) d.pts = [d.pts[0], d.pts[1], p.x, p.y];   // Shift: a straight line
@@ -555,6 +590,11 @@ export class BoardView {
     if (d.kind === 'draw') {
       this.drawG.clear();
       this.ev.drawn(d.pts);
+      return;
+    }
+    if (d.kind === 'ruler') {
+      const r = this.rulers.get('me');
+      if (r) this.ev.ruler(r.shape, true);
       return;
     }
     if (d.kind === 'pan') {

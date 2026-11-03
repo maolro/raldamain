@@ -15,6 +15,7 @@ import { DRAG_TYPE, Library } from './library';
 import { Live } from './live';
 import { SheetWindows, Sheets } from './sheets';
 import { Statuses } from './status';
+import { RULER_MODES, type RulerMode, type RulerShape } from './ruler';
 import { BARS, kindOf, LAYERS, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Presence, type ShareStatus, type SheetStats } from './types';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -30,8 +31,9 @@ const PLAYER = location.pathname.startsWith('/jugar');
 document.body.classList.toggle('player', PLAYER);
 
 // tool settings, kept in this browser
-const prefs = { pen: { color: '#e03030', width: 6 }, text: { color: '#ffffff', size: 36 }, newSize: '1', side: 'library' };
-try { const p = JSON.parse(localStorage.getItem(PREFS) || '{}'); Object.assign(prefs.pen, p.pen); Object.assign(prefs.text, p.text); if (p.newSize) prefs.newSize = p.newSize; if (p.side) prefs.side = p.side; } catch { /* defaults */ }
+const prefs = { pen: { color: '#e03030', width: 6 }, text: { color: '#ffffff', size: 36 }, newSize: '1', side: 'library',
+  ruler: 'line' as RulerMode };
+try { const p = JSON.parse(localStorage.getItem(PREFS) || '{}'); Object.assign(prefs.pen, p.pen); Object.assign(prefs.text, p.text); if (p.newSize) prefs.newSize = p.newSize; if (p.side) prefs.side = p.side; if (p.ruler) prefs.ruler = p.ruler; } catch { /* defaults */ }
 const savePrefs = () => { try { localStorage.setItem(PREFS, JSON.stringify(prefs)); } catch { /* private window */ } };
 
 // ── state ───────────────────────────────────────────────────────────────────
@@ -85,6 +87,7 @@ const view = new BoardView({
   drawn(points) { addStroke(points); },
   textAt(at, item) { if (!item || canEdit(item)) openTextEditor(at, item); },
   overlay() { updateHud(); },
+  ruler(shape, done) { showMyRuler(shape, done); },
 });
 view.canEdit = canEdit;
 view.badgeColor = it => {
@@ -233,6 +236,8 @@ function connect(boardId: string) {
   live = new Live(boardId, () => board, {
     snapshot(b, who, rolls) {
       me = who;
+      view.clearRulers();
+      myRuler = null;
       dice.showWho = who.role === 'gm';
       dice.setHistory(rolls, `${b.id}:${who.pid || 'gm'}`);
       board = b;
@@ -249,6 +254,7 @@ function connect(boardId: string) {
     remote: applyRemote,
     presence(p) { presence = p; renderPresence(); view.render(); },
     roll(r) { dice.add(r, r.by === me?.pid || (!r.by && isGM())); },
+    ruler(r) { view.setRuler('cid:' + r.by, r.shape, r.color, r.who); },
     status: setStatus,
     closed(info) {
       if (!PLAYER) { if (info.deleted) toast('Este tablero se ha eliminado', true); return; }
@@ -1116,14 +1122,64 @@ document.addEventListener('pointerdown', e => {
   if (!t?.closest?.('#status-panel, #status-btn')) statusPanel.hidden = true;
 });
 
+// ── ruler: lines, radii and cones in squares ────────────────────────────────
+// Only on this screen unless "Visible para todos": then everyone in the room sees it
+// live (the server relays it; it is never saved). Gone with the next measurement,
+// another tool or Esc.
+let myRuler: RulerShape | null = null;
+let rulerSent = 0, rulerQueued = false;
+const rulerPublic = () => $<HTMLInputElement>('ruler-public').checked;
+const myColor = () => me?.color || '#fff200';
+
+function showMyRuler(shape: RulerShape | null, done: boolean) {
+  const had = !!myRuler;
+  myRuler = shape;
+  view.setRuler('me', shape, myColor());
+  if (rulerPublic() && (shape || had)) sendRuler(done);
+}
+
+/** To the others (at most ~15 times a second while dragging; the last one always goes) */
+function sendRuler(force = false) {
+  if (!live?.me || !board) return;
+  const now = Date.now();
+  if (!force && now - rulerSent < 66) {
+    if (!rulerQueued) { rulerQueued = true; setTimeout(() => { rulerQueued = false; sendRuler(true); }, 70); }
+    return;
+  }
+  rulerSent = now;
+  api.ruler(live.boardId, { cid: live.me.cid, shape: myRuler }).catch(() => { /* next move sends it again */ });
+}
+
+function renderRulerOptions() {
+  $('ruler-modes').innerHTML = RULER_MODES.map(m => `<button class="chip ${m.id === prefs.ruler ? 'on' : ''}" data-mode="${m.id}" title="${esc(m.hint)}">${m.icon} ${m.name}</button>`).join('');
+  $('ruler-hint').textContent = RULER_MODES.find(m => m.id === prefs.ruler)!.hint;
+  view.rulerMode = prefs.ruler;
+}
+$('ruler-modes').addEventListener('click', e => {
+  const b = (e.target as HTMLElement).closest<HTMLElement>('[data-mode]');
+  if (!b) return;
+  prefs.ruler = b.dataset.mode as RulerMode;
+  savePrefs();
+  renderRulerOptions();
+  if (myRuler) showMyRuler({ ...myRuler, mode: prefs.ruler }, true);   // the same drag, measured the new way
+});
+$('ruler-public').addEventListener('change', () => {
+  // shown to everyone: send it now; hidden again: take it off their screens
+  if (rulerPublic()) { if (myRuler) sendRuler(true); }
+  else if (live?.me && board) api.ruler(live.boardId, { cid: live.me.cid, shape: null }).catch(() => {});
+});
+renderRulerOptions();
+
 // ── toolbar: tools, layers, zoom ────────────────────────────────────────────
 function setTool(t: Tool) {
   closeTextEditor(true);
+  if (t !== 'ruler') showMyRuler(null, true);   // a measurement doesn't outlive its tool
   view.setTool(t);
   document.querySelectorAll<HTMLElement>('[data-tool]').forEach(b => b.classList.toggle('on', b.dataset.tool === t));
   $('draw-opts').hidden = t !== 'draw';
   $('text-opts').hidden = t !== 'text';
-  if (t === 'draw' || t === 'text') { $('grid-panel').hidden = true; $('grid-btn').classList.remove('on'); }
+  $('ruler-opts').hidden = t !== 'ruler';
+  if (t === 'draw' || t === 'text' || t === 'ruler') { $('grid-panel').hidden = true; $('grid-btn').classList.remove('on'); }
 }
 
 // pencil / text options: colour swatches, colour picker, thickness / size
@@ -1217,11 +1273,12 @@ document.addEventListener('keydown', e => {
   else if (ctrl && k === 'd') { e.preventDefault(); pasteItems(undefined, view.selectedItems()); }
   else if (ctrl && k === 'a') { e.preventDefault(); view.select(board.items.filter(i => i.layer === view.activeLayer && canEdit(i)).map(i => i.id)); }
   else if (k === 'delete' || k === 'backspace') { e.preventDefault(); deleteSelected(); }
-  else if (k === 'escape') { view.select([]); $('menu').hidden = true; }
+  else if (k === 'escape') { view.select([]); $('menu').hidden = true; showMyRuler(null, true); }
   else if (k === 'v' && !ctrl) setTool('select');
   else if (k === 'h' && !ctrl) setTool('pan');
   else if (k === 'b' && !ctrl) setTool('draw');
   else if (k === 't' && !ctrl) setTool('text');
+  else if (k === 'r' && !ctrl) setTool('ruler');
   else if (k.startsWith('arrow')) {
     e.preventDefault();
     const step = e.shiftKey ? 1 : board.grid.size;   // Shift: one pixel
