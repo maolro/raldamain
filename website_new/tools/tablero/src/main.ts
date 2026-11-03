@@ -406,7 +406,7 @@ function placeImages(metas: ImageMeta[], at: { x: number; y: number }) {
     const w = own ? (m.width || g * 4) : g * cells, h = own ? (m.height || g * 4) : g * cells;
     let x = at.x - w / 2 + n * (own ? g : w), y = at.y - h / 2;
     if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, h); }
-    const it = stamp({ id: uid(), kind: 'image', image: m.id, fit: !own, x, y, w, h, rotation: 0, layer, z: nextZ(layer), name: m.name });
+    const it = stamp({ id: uid(), kind: 'image', image: m.id, fit: !own, x, y, w, h, rotation: 0, layer, z: nextZ(layer), name: (m.sheet && sheets.get(m.sheet)?.name) || m.name });
     if (m.sheet && layer !== 'map') it.sheet = m.sheet;   // its sheet: the bars fill in from it
     B().items.push(it);
     ids.push(it.id);
@@ -703,9 +703,12 @@ function setSheet(items: BoardItem[], sid: string | null) {
   const list = items.filter(i => canEdit(i) && isToken(i));
   if (!list.length) return;
   for (const it of list) {
+    // a token still called by its picture's file name (or its old sheet) takes the sheet's name
+    const auto = !it.name || it.name === (it.image && library.get(it.image)?.name) || (!!it.sheet && it.name === sheets.get(it.sheet)?.name);
     delete it.sheetMax;
     if (sid) { it.sheet = sid; delete it.bars; }   // a new sheet: its bars, full
     else delete it.sheet;
+    if (sid && auto && sheets.get(sid)) it.name = sheets.get(sid)!.name;
   }
   view.render();
   commit();
@@ -760,6 +763,7 @@ function updateHud() {
 function renderHud(it: BoardItem) {
   const sheet = it.sheet ? sheets.name(it.sheet) : '';
   hud.innerHTML = `
+    <input class="hud-name" data-name value="${esc(it.name || '')}" placeholder="Nombre" title="Nombre del token (Enter para cambiarlo)" size="${Math.max(6, Math.min(22, (it.name || '').length + 1))}">
     <button class="hud-btn" data-hud="sheet" data-pick-sheet title="${it.sheet ? `Abrir la ficha: ${esc(sheet)} (doble clic en el token)` : 'Elegir una ficha para este token'}">📜${it.sheet ? '' : '<small>＋</small>'}</button>
     ${it.sheet ? '<button class="hud-btn small" data-hud="change" data-pick-sheet title="Cambiar o quitar la ficha">▾</button>' : ''}
     ${BARS.map(b => {
@@ -795,9 +799,25 @@ function applyBarInput(inp: HTMLInputElement) {
   renderHud(it);
 }
 
+/** The name typed in the HUD */
+function applyName(inp: HTMLInputElement) {
+  const it = view.item(hudFor);
+  const name = inp.value.trim().slice(0, 60);
+  if (!it || !canEdit(it) || name === (it.name || '')) return;
+  if (name) it.name = name; else delete it.name;
+  commit();
+  windows.sync(B().items);
+  setTimeout(updateHud, 0);
+}
+
 hud.addEventListener('keydown', e => {
   e.stopPropagation();
   const inp = e.target as HTMLInputElement;
+  if (inp.dataset?.name !== undefined) {
+    if (e.key === 'Enter') { e.preventDefault(); applyName(inp); inp.blur(); }
+    else if (e.key === 'Escape') { e.preventDefault(); inp.value = view.item(hudFor)?.name || ''; inp.blur(); }
+    return;
+  }
   if (!inp.dataset?.bar) return;
   if (e.key === 'Enter') { e.preventDefault(); applyBarInput(inp); hud.querySelector<HTMLInputElement>(`[data-bar="${inp.dataset.bar}"][data-f="${inp.dataset.f}"]`)?.select(); }
   else if (e.key === 'Escape') { e.preventDefault(); inp.blur(); }
@@ -805,6 +825,7 @@ hud.addEventListener('keydown', e => {
 hud.addEventListener('focusin', e => { const inp = e.target as HTMLInputElement; if (inp.dataset?.bar) setTimeout(() => inp.select(), 0); });
 hud.addEventListener('focusout', e => {
   const inp = e.target as HTMLInputElement;
+  if (inp.dataset?.name !== undefined) { applyName(inp); return; }
   if (!inp.dataset?.bar) return;
   const it = view.item(hudFor);
   const v = it?.bars?.[inp.dataset.bar as BarId];
@@ -838,9 +859,9 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
       entries.push([tokens.some(i => i.sheet) ? 'Cambiar ficha…' : 'Elegir ficha…', tokens.length > 1 ? `${tokens.length} tokens` : '', () => chooseSheet(tokens, at)]);
       if (tokens.some(i => i.sheet)) entries.push(['Barras desde la ficha', 'llenas', () => resetBars(tokens)]);
       if (isGM()) {
-        const hidden = tokens.every(i => i.barsHidden);
-        entries.push([`${hidden ? '☑' : '☐'} Ocultar barras a los jugadores`, 'salvo a quien lo controla', () => {
-          tokens.forEach(i => { if (hidden) delete i.barsHidden; else i.barsHidden = true; });
+        const shown = tokens.every(i => i.barsShown);
+        entries.push([`${shown ? '☑' : '☐'} Barras visibles para todos`, 'si no, solo quien lo controla', () => {
+          tokens.forEach(i => { if (shown) delete i.barsShown; else i.barsShown = true; });
           view.render(); commit();
         }]);
       }

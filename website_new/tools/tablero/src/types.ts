@@ -42,7 +42,7 @@ export interface BoardItem {
   sheet?: string;       // SheetMeta.id
   bars?: Partial<Record<BarId, Bar>>;
   sheetMax?: Partial<Record<BarId, number>>;  // the sheet's values when last read (a bar whose max is still that follows the sheet)
-  barsHidden?: boolean; // the GM hides the bars from the players who don't control it
+  barsShown?: boolean;  // the GM shows the bars to every player (else only to who controls it)
 }
 
 export type BarId = 'hp' | 'chi';

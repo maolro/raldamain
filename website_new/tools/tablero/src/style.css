@@ -218,3 +218,5 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .pool-label { flex-basis: 100%; color: var(--gold); font: 700 12px var(--body); }
 .dice-pool.pulse { animation: pool-pulse .6s ease-out; }
 @keyframes pool-pulse { from { box-shadow: 0 0 0 0 rgba(255,242,0,.6); border-color: var(--gold); } to { box-shadow: 0 0 0 10px rgba(255,242,0,0); } }
+.hud-name { background: none; border: 0; border-right: 1px solid #333; color: var(--gold); font: 700 13px var(--heading); padding: 2px 6px 2px 4px; min-width: 0; }
+.hud-name:focus { outline: 1px solid var(--gold); border-radius: 3px; background: #1d1d1d; }

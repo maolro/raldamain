@@ -20,8 +20,8 @@ Who may do what is checked here, not in the browser:
            tokens, drawings and texts and can change, delete and share only the items
            they control. The GM, and whoever controls a token, can give its control to
            other players. Players open only the sheets of the tokens they control (and
-           the ones they uploaded); other tokens reach them without sheet, and without
-           bars if the GM hid them.
+           the ones they uploaded); other tokens reach them without sheet and without
+           bars (unless the GM shows a token's bars to everyone). The GM sees them all.
 
 Live sync: every open board is a session kept in memory. Browsers get its changes as
 Server-Sent Events (/api/live/<board>/events) and send theirs as small batches
@@ -586,15 +586,13 @@ PRIVATE_FIELDS = ("sheet", "sheetMax")  # a token's sheet: only for whoever cont
 
 def player_item(it: dict, pid: str | None) -> dict:
     """An item as a player sees it: tokens they don't control come without their sheet
-    (and without bars, if the GM hid them)."""
+    and without their bars (unless the GM shows that token's bars to everyone)."""
     if pid and pid in (it.get("controllers") or []):
         return it
-    if not any(k in it for k in PRIVATE_FIELDS) and not (it.get("barsHidden") and "bars" in it):
+    private = PRIVATE_FIELDS if it.get("barsShown") else PRIVATE_FIELDS + ("bars",)
+    if not any(k in it for k in private):
         return it
-    out = {k: v for k, v in it.items() if k not in PRIVATE_FIELDS}
-    if it.get("barsHidden"):
-        out.pop("bars", None)
-    return out
+    return {k: v for k, v in it.items() if k not in private}
 
 def _event(name: str, data) -> str:
     return f"event: {name}\ndata: {json.dumps(data, ensure_ascii=False)}\n\n"
@@ -733,13 +731,13 @@ def live_changes(bid):
                     it["owner"] = pid
                     if pid not in it["controllers"]:
                         it["controllers"].insert(0, pid)
-                    it.pop("barsHidden", None)
+                    it.pop("barsShown", None)
                 else:
                     it["owner"] = old.get("owner")
-                    if "barsHidden" in old:  # the GM's choice
-                        it["barsHidden"] = old["barsHidden"]
+                    if "barsShown" in old:  # the GM's choice
+                        it["barsShown"] = old["barsShown"]
                     else:
-                        it.pop("barsHidden", None)
+                        it.pop("barsShown", None)
                 # a sheet only from their own uploads (or the one the token already had)
                 if it.get("sheet") and it.get("sheet") != (old or {}).get("sheet") and not _sheet_choosable(it["sheet"], (role, pid, code)):
                     if (old or {}).get("sheet"):
