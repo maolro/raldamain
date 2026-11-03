@@ -358,5 +358,14 @@
     "size": "Grande",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "enjambre_de_ratas",
+    "name": "Enjambre de Ratas",
+    "type": "Bestia",
+    "level": 2,
+    "size": "Grande",
+    "image": "",
+    "description": ""
   }
 ]
