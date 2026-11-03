@@ -8,8 +8,9 @@ import { Application, Assets, Container, FederatedPointerEvent, Graphics, Rectan
 import { imageUrl } from './api';
 import { BARS, kindOf, type Board, type BoardItem, type ImageMeta, type LayerId } from './types';
 import { cellCenter, drawRuler, type RulerMode, type RulerShape } from './ruler';
+import { FogLayer, type FogView } from './lighting';
 
-export type Tool = 'select' | 'pan' | 'draw' | 'text' | 'ruler';
+export type Tool = 'select' | 'pan' | 'draw' | 'text' | 'ruler' | 'fog';
 export type Pt = { x: number; y: number };
 
 export const TEXT_FONT = 'Lato, system-ui, sans-serif';
@@ -34,6 +35,8 @@ export interface BoardEvents {
   overlay(): void;
   /** this browser's ruler changed (null: gone); done = the pointer was released */
   ruler(shape: RulerShape | null, done: boolean): void;
+  /** the Niebla y luz tool (GM): pointer on the board, in world coordinates */
+  fogPointer(kind: 'down' | 'move' | 'up' | 'hover', p: Pt, e: FederatedPointerEvent): void;
 }
 
 type Drag =
@@ -43,7 +46,8 @@ type Drag =
   | { kind: 'pan'; start: Pt; orig: Pt; moved: boolean; button: number; target: string }
   | { kind: 'marquee'; start: Pt; additive: boolean }
   | { kind: 'draw'; pts: number[] }
-  | { kind: 'ruler'; a: { x: number; y: number } };
+  | { kind: 'ruler'; a: { x: number; y: number } }
+  | { kind: 'fog' };
 
 const MIN_ZOOM = 0.08, MAX_ZOOM = 6;
 const HANDLE = 10;          // screen pixels
@@ -78,6 +82,13 @@ export class BoardView {
   private rulers = new Map<string, { shape: RulerShape; color: string; who: string; box: Container }>();
   /** what the ruler measures */
   rulerMode: RulerMode = 'line';
+  /** fog and lighting (lighting.ts): who sees what, set by the page */
+  fogView: () => FogView = () => ({ mode: 'gm', viewers: [], lights: [] });
+  /** the GM's fog editing marks (walls, lights, areas), drawn by the page */
+  fogMarks: (g: Graphics, zoom: number) => void = () => {};
+  private fog!: FogLayer;
+  private fogMarksG = new Graphics();
+  private fogPending = 0;
   private views = new Map<string, Container>();
   private barViews = new Map<string, Graphics>();   // a token's bars, above it (never rotated)
   private markViews = new Map<string, Container & { key?: string }>();   // its status markers, under it
@@ -93,8 +104,10 @@ export class BoardView {
       resolution: Math.min(window.devicePixelRatio || 1, 2) });
     host.appendChild(this.app.canvas);
     for (const l of Object.values(this.layers)) l.sortableChildren = true;
+    this.fog = new FogLayer(this.app.renderer);
+    this.fogMarksG.eventMode = 'none';
     this.layers.gm.alpha = 0.6;   // the GM sees the GM layer see-through
-    this.world.addChild(this.pageG, this.layers.map, this.gridG, this.layers.tokens, this.layers.gm, this.drawG, this.overlay, this.marqueeG, this.rulerLayer);
+    this.world.addChild(this.pageG, this.layers.map, this.gridG, this.layers.tokens, this.layers.gm, this.fog.container, this.fogMarksG, this.drawG, this.overlay, this.marqueeG, this.rulerLayer);
     this.app.stage.addChild(this.world);
     const stage = this.app.stage;
     stage.eventMode = 'static';
@@ -161,7 +174,7 @@ export class BoardView {
 
   setTool(t: Tool) {
     this.tool = t;
-    this.app.canvas.style.cursor = { select: '', pan: 'grab', draw: 'crosshair', text: 'text', ruler: 'crosshair' }[t];
+    this.app.canvas.style.cursor = { select: '', pan: 'grab', draw: 'crosshair', text: 'text', ruler: 'crosshair', fog: 'crosshair' }[t];
   }
 
   /** The topmost item of the active layer under a world point */
@@ -197,6 +210,23 @@ export class BoardView {
     for (const [id, m] of this.markViews) if (!alive.has(id)) { m.destroy({ children: true }); this.markViews.delete(id); }
     for (const id of [...this.selected]) if (!alive.has(id)) this.selected.delete(id);
     this.drawOverlay();
+    this.refreshFog();
+  }
+
+  /** Redraw the fog (at most once a frame) and the GM's marks */
+  refreshFog() {
+    if (this.fogPending || !this.board || !this.fog) return;
+    this.fogPending = requestAnimationFrame(() => {
+      this.fogPending = 0;
+      if (!this.board) return;
+      this.fog.update(this.board, this.fogView());
+      this.drawFogMarks();
+    });
+  }
+
+  drawFogMarks() {
+    this.fogMarksG.clear();
+    this.fogMarks(this.fogMarksG, this.zoom);
   }
 
   private renderItem(it: BoardItem) {
@@ -406,6 +436,7 @@ export class BoardView {
       }
       this.overlay.addChild(box);
     }
+    if (this.drag && this.drag.kind === 'move') this.refreshFog();
     this.ev.overlay();
   }
 
@@ -476,6 +507,7 @@ export class BoardView {
 
   private viewChanged() {
     this.drawPage();
+    this.drawFogMarks();   // (its lines keep their width on screen)
     for (const r of this.rulers.values()) drawRuler(r.box, r.shape, this.board.grid.size, this.zoom, r.color, r.who);   // (text keeps its size)
     if (this.board) for (const it of this.board.items) {   // (their size follows the zoom)
       if (it.bars) this.renderBars(it);
@@ -499,6 +531,11 @@ export class BoardView {
     if (this.tool === 'draw') {
       this.select([]);
       this.drag = { kind: 'draw', pts: [p.x, p.y] };
+      return;
+    }
+    if (this.tool === 'fog') {
+      this.drag = { kind: 'fog' };
+      this.ev.fogPointer('down', p, e);
       return;
     }
     if (this.tool === 'ruler') {
@@ -541,7 +578,8 @@ export class BoardView {
     const p = this.toWorld(e.global);
     if (e.global.x >= 0 && e.global.y >= 0 && e.global.x <= this.app.screen.width && e.global.y <= this.app.screen.height) this.pointer = p;
     const d = this.drag;
-    if (!d) return;
+    if (!d) { if (this.tool === 'fog') this.ev.fogPointer('hover', p, e); return; }
+    if (d.kind === 'fog') { this.ev.fogPointer('move', p, e); return; }
     if (d.kind === 'pan') {
       const dx = e.global.x - d.start.x, dy = e.global.y - d.start.y;
       if (Math.abs(dx) + Math.abs(dy) > 3) d.moved = true;
@@ -597,6 +635,7 @@ export class BoardView {
       if (r) this.ev.ruler(r.shape, true);
       return;
     }
+    if (d.kind === 'fog') { this.ev.fogPointer('up', this.toWorld(e.global), e); return; }
     if (d.kind === 'pan') {
       this.setTool(this.tool);
       if (!d.moved && d.button === 2) {

@@ -41,6 +41,7 @@
       <button class="tool" data-tool="draw" title="Lápiz: dibujar en la capa activa (B · Mayús: línea recta)">✎</button>
       <button class="tool" data-tool="text" title="Texto: clic para escribir en la capa activa (T · doble clic en un texto para editarlo)"><b>T</b></button>
       <button class="tool" data-tool="ruler" title="Regla: distancias, radios y conos en casillas (R · Alt: sin ajustar a las casillas)">📏</button>
+      <button class="tool gm-only" data-tool="fog" title="Niebla y luz: zonas ocultas, oscuridad, paredes, fuentes de luz (N)">🌫</button>
     </div>
     <div class="group gm-only" id="layers"></div>
     <div class="group gm-only">
@@ -98,6 +99,29 @@
     <label class="check"><input type="checkbox" id="ruler-public"> Visible para todos</label>
     <small class="muted" id="ruler-hint"></small>
   </div>
+  <div class="panel tool-opts fog-opts" id="fog-opts" hidden>
+    <h3>Niebla y luz</h3>
+    <div class="fog-sec">Zonas ocultas <small class="muted">(negras para los jugadores)</small></div>
+    <div class="fog-modes" data-group="areas"></div>
+    <div class="row2">
+      <button class="btn small" id="fog-hide-all" title="Toda la página oculta: luego revela zonas">Ocultar todo</button>
+      <button class="btn small" id="fog-show-all" title="Quita todas las zonas ocultas">Revelar todo</button>
+    </div>
+    <label>Densidad <span id="fog-density-val"></span><input type="range" id="fog-density" min="0.2" max="1" step="0.05"></label>
+    <div class="fog-sec">Iluminación</div>
+    <label class="check"><input type="checkbox" id="fog-on"> Iluminación dinámica</label>
+    <div id="fog-light-opts">
+      <label>Oscuridad <span id="fog-dark-val"></span><input type="range" id="fog-dark" min="0" max="1" step="0.05"></label>
+      <div class="fog-presets" id="fog-presets"></div>
+      <div class="fog-modes" data-group="light"></div>
+      <div id="fog-light-edit"></div>
+      <label class="check" title="Mira el tablero como lo verán los jugadores (con la visión de todos sus tokens)"><input type="checkbox" id="fog-preview"> Ver como jugador</label>
+      <small class="muted">Los tokens dan luz y visión desde su menú (clic derecho → Luz y visión).</small>
+    </div>
+    <div class="fog-modes" data-group="erase"></div>
+    <small class="muted" id="fog-hint"></small>
+  </div>
+  <div class="panel lv-panel" id="lv-panel" hidden></div>
   <div class="panel tool-opts" id="text-opts" hidden>
     <h3>Texto</h3>
     <div class="swatches" data-for="text"></div>

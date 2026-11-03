@@ -44,6 +44,8 @@ export interface BoardItem {
   sheetMax?: Partial<Record<BarId, number>>;  // the sheet's values when last read (a bar whose max is still that follows the sheet)
   barsShown?: boolean;  // the GM shows the bars to every player (else only to who controls it)
   statuses?: TokenStatus[];   // efectos de estado (status.ts)
+  light?: { bright: number; dim: number };      // a light it carries (squares; lighting.ts)
+  vision?: { range: number; dark: number };     // its players' field of view (squares; range 0 = no limit)
 }
 
 /** A status effect on a token: data/status_effects.json's id and the level's index */
@@ -74,6 +76,18 @@ export interface Board {
   background: string;
   grid: GridSettings;
   items: BoardItem[];
+  fog?: FogSettings;    // hidden areas and lighting (lighting.ts)
+}
+
+/** Niebla y luz (GM): hidden areas, and the lighting with its lights and walls */
+export interface FogSettings {
+  on: boolean;                      // dynamic lighting
+  base: 'visible' | 'hidden';       // the page starts visible or hidden (then areas reveal / hide)
+  density: number;                  // how dark hidden areas are for players (0-1)
+  darkness: number;                 // ambient darkness when lighting is on (0 day … 1 pitch black)
+  areas: { id: string; op: 'hide' | 'reveal'; x: number; y: number; w: number; h: number }[];
+  lights: { id: string; x: number; y: number; bright: number; dim: number }[];   // squares
+  walls: { id: string; pts: number[] }[];   // polylines: block light and sight
 }
 
 export interface BoardSummary { id: string; name: string; items: number; modified: number; code?: string }
@@ -121,7 +135,7 @@ export interface Presence {
 export interface Changes {
   upserts: BoardItem[];
   removes: string[];
-  settings?: Partial<Pick<Board, 'name' | 'width' | 'height' | 'background' | 'grid'>>;
+  settings?: Partial<Pick<Board, 'name' | 'width' | 'height' | 'background' | 'grid' | 'fog'>>;
   live?: boolean;       // mid-drag: shown, not an undo step
   by?: string;
 }

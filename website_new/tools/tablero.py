@@ -99,7 +99,7 @@ ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]{0,63}$")
 IMAGE_TYPES = {"image/png": "png", "image/jpeg": "jpg", "image/webp": "webp", "image/gif": "gif", "image/svg+xml": "svg"}
 MAX_IMAGE = 40 * 1024 * 1024  # bytes
 PLAYER_COLORS = ["#e6194b", "#3cb44b", "#4363d8", "#f58231", "#911eb4", "#42d4f4", "#f032e6", "#bfef45", "#fabed4", "#dcbeff"]
-BOARD_SETTINGS = ("name", "width", "height", "background", "grid")
+BOARD_SETTINGS = ("name", "width", "height", "background", "grid", "fog")  # (fog: hidden areas, lighting, walls)
 
 app = Flask(__name__)
 _lock = threading.Lock()  # library.json and rooms.json writes
@@ -856,13 +856,15 @@ def live_changes(bid):
                     it["owner"] = pid
                     if pid not in it["controllers"]:
                         it["controllers"].insert(0, pid)
-                    it.pop("barsShown", None)
+                    for k in ("barsShown", "light", "vision"):
+                        it.pop(k, None)
                 else:
                     it["owner"] = old.get("owner")
-                    if "barsShown" in old:  # the GM's choice
-                        it["barsShown"] = old["barsShown"]
-                    else:
-                        it.pop("barsShown", None)
+                    for k in ("barsShown", "light", "vision"):  # the GM's choices
+                        if k in old:
+                            it[k] = old[k]
+                        else:
+                            it.pop(k, None)
                 # a sheet only from their own uploads (or the one the token already had)
                 if it.get("sheet") and it.get("sheet") != (old or {}).get("sheet") and not _sheet_choosable(it["sheet"], (role, pid, code)):
                     if (old or {}).get("sheet"):

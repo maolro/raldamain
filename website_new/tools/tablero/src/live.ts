@@ -24,7 +24,7 @@ export interface LiveHandlers {
   closed(info: { code?: string; kicked?: boolean; deleted?: boolean }): void;
 }
 
-const settingsOf = (b: Board) => JSON.stringify({ name: b.name, width: b.width, height: b.height, background: b.background, grid: b.grid });
+const settingsOf = (b: Board) => JSON.stringify({ name: b.name, width: b.width, height: b.height, background: b.background, grid: b.grid, fog: b.fog });
 
 export class Live {
   me: Me | null = null;

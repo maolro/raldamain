@@ -16,6 +16,7 @@ import { Live } from './live';
 import { SheetWindows, Sheets } from './sheets';
 import { Statuses } from './status';
 import { RULER_MODES, type RulerMode, type RulerShape } from './ruler';
+import { DEFAULT_FOG, fogOf, lightsOf, viewersOf } from './lighting';
 import { BARS, kindOf, LAYERS, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Presence, type ShareStatus, type SheetStats } from './types';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -88,6 +89,7 @@ const view = new BoardView({
   textAt(at, item) { if (!item || canEdit(item)) openTextEditor(at, item); },
   overlay() { updateHud(); },
   ruler(shape, done) { showMyRuler(shape, done); },
+  fogPointer(kind, p, e) { fogPointer(kind, p, e.altKey); },
 });
 view.canEdit = canEdit;
 view.badgeColor = it => {
@@ -225,7 +227,7 @@ function applyRemote(ch: Changes) {
   view.select([...view.selected].filter(id => view.item(id) && canEdit(view.item(id)!)));
   windows.sync(board.items);
   if (!statusPanel.hidden) renderStatusPanel();
-  if (ch.settings) fillGridPanel();
+  if (ch.settings) { fillGridPanel(); if (ch.settings.fog && view.tool === 'fog') renderFogPanel(); }
 }
 let sheetReload = 0;
 
@@ -1072,6 +1074,7 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
       if (tokens.length === 1 && tokens[0].sheet) entries.push([`📜 Abrir ficha`, 'doble clic', () => openSheet(tokens[0])]);
       entries.push([tokens.some(i => i.sheet) ? 'Cambiar ficha…' : 'Elegir ficha…', tokens.length > 1 ? `${tokens.length} tokens` : '', () => chooseSheet(tokens, at)]);
       if (tokens.some(i => i.sheet)) entries.push(['Barras desde la ficha', 'llenas', () => resetBars(tokens)]);
+      if (isGM()) entries.push(['💡 Luz y visión…', 'iluminación', () => openLightVision(tokens, at)]);
       if (isGM()) {
         const shown = tokens.every(i => i.barsShown);
         entries.push([`${shown ? '☑' : '☐'} Barras visibles para todos`, 'si no, solo quien lo controla', () => {
@@ -1120,6 +1123,7 @@ document.addEventListener('pointerdown', e => {
   if (!t?.closest?.('#players-panel, #presence')) $('players-panel').hidden = true;
   if (!t?.closest?.('#share-panel, #share-btn')) $('share-panel').hidden = true;
   if (!t?.closest?.('#status-panel, #status-btn')) statusPanel.hidden = true;
+  if (!t?.closest?.('#lv-panel, #menu')) $('lv-panel').hidden = true;
 });
 
 // ── ruler: lines, radii and cones in squares ────────────────────────────────
@@ -1170,16 +1174,253 @@ $('ruler-public').addEventListener('change', () => {
 });
 renderRulerOptions();
 
+// ── niebla y luz (GM) ───────────────────────────────────────────────────────
+// Hidden areas (rectangles that hide or reveal), and the lighting: ambient darkness,
+// walls that block light and sight, light sources (placed here, or carried by tokens:
+// right-click → Luz y visión) and the tokens' fields of view. lighting.ts draws it.
+type FogMode = 'hide' | 'reveal' | 'wall' | 'light' | 'erase';
+const FOG_MODES: Record<string, { id: FogMode; name: string; hint: string }[]> = {
+  areas: [{ id: 'hide', name: '▭ Ocultar', hint: 'Arrastra un rectángulo para ocultarlo a los jugadores' },
+    { id: 'reveal', name: '▭ Revelar', hint: 'Arrastra un rectángulo para mostrarlo (sobre «Ocultar todo»)' }],
+  light: [{ id: 'wall', name: '▮ Paredes', hint: 'Clic en cada esquina; doble clic o Enter termina la pared. Bloquean la luz y la vista. Alt: sin ajustar' },
+    { id: 'light', name: '💡 Luz', hint: 'Clic para poner una fuente de luz (o arrastrar una ya puesta); sus radios, abajo' }],
+  erase: [{ id: 'erase', name: '✕ Borrar', hint: 'Clic en una zona, pared o luz para quitarla' }],
+};
+let fogMode: FogMode = 'hide';
+let fogPreview = false;
+let fogDrag: { start: Pt; now: Pt } | null = null;
+let wallDraft: number[] | null = null;
+let wallHover: Pt | null = null;
+let lastWallClick = 0;
+let selLight = '';
+let lightDrag = false;
+
+/** The board's fog settings, created on first use (changes go to everyone as a board setting) */
+function fogEdit() {
+  const b = B();
+  b.fog = { ...DEFAULT_FOG, ...(b.fog || {}) };
+  b.fog.areas = [...b.fog.areas]; b.fog.lights = [...b.fog.lights]; b.fog.walls = [...b.fog.walls];
+  return b.fog;
+}
+function fogChanged(now = true) {
+  view.refreshFog();
+  view.drawFogMarks();
+  clearTimeout(gridCommit);
+  if (now) commit(); else gridCommit = window.setTimeout(commit, 400);   // sliders: one undo step
+}
+
+// what this screen shows: the GM everything (or as the players), a player what their tokens see
+view.fogView = () => {
+  const b = B(), items = b.items.filter(i => i.layer !== 'gm');
+  const lights = lightsOf(b, items);
+  if (!PLAYER && !fogPreview) return { mode: 'gm', viewers: [], lights };
+  const mine = PLAYER ? items.filter(i => i.layer === 'tokens' && me?.pid && (i.controllers || []).includes(me.pid)) : items.filter(i => i.layer === 'tokens');
+  return { mode: PLAYER ? 'player' : 'preview', viewers: viewersOf(b, mine), lights };
+};
+
+// the GM's marks while the tool is open: walls, lights, hidden areas, what is being drawn
+view.fogMarks = (g, z) => {
+  if (PLAYER || view.tool !== 'fog' || !board) return;
+  const f = fogOf(B()), cell = B().grid.size;
+  for (const a of f.areas) g.rect(a.x, a.y, a.w, a.h).stroke({ width: 1.5 / z, color: a.op === 'hide' ? 0xe05050 : 0x50c050, alpha: 0.9 });
+  for (const w of f.walls) {
+    g.moveTo(w.pts[0], w.pts[1]);
+    for (let i = 2; i < w.pts.length; i += 2) g.lineTo(w.pts[i], w.pts[i + 1]);
+    g.stroke({ width: 4 / z, color: 0xff9f1c, cap: 'round', join: 'round' });
+  }
+  for (const l of f.lights) {
+    g.circle(l.x, l.y, Math.max(l.bright, l.dim) * cell).stroke({ width: 1 / z, color: 0xfff200, alpha: 0.4 });
+    if (l.bright) g.circle(l.x, l.y, l.bright * cell).stroke({ width: 1.5 / z, color: 0xfff200, alpha: 0.7 });
+    g.circle(l.x, l.y, 9 / z).fill({ color: l.id === selLight ? 0xffffff : 0xfff200 }).stroke({ width: 2 / z, color: 0x000000 });
+  }
+  if (wallDraft) {
+    const pts = wallHover ? [...wallDraft, wallHover.x, wallHover.y] : wallDraft;
+    g.moveTo(pts[0], pts[1]);
+    for (let i = 2; i < pts.length; i += 2) g.lineTo(pts[i], pts[i + 1]);
+    g.stroke({ width: 3 / z, color: 0xff9f1c, alpha: 0.7 });
+    for (let i = 0; i < wallDraft.length; i += 2) g.circle(wallDraft[i], wallDraft[i + 1], 4 / z).fill({ color: 0xff9f1c });
+  }
+  if (fogDrag) {
+    const r = rectOf(fogDrag.start, fogDrag.now);
+    g.rect(r.x, r.y, r.w, r.h).fill({ color: fogMode === 'hide' ? 0x000000 : 0x50c050, alpha: 0.35 }).stroke({ width: 2 / z, color: fogMode === 'hide' ? 0xe05050 : 0x50c050 });
+  }
+};
+
+const rectOf = (a: Pt, b: Pt) => ({ x: Math.min(a.x, b.x), y: Math.min(a.y, b.y), w: Math.abs(b.x - a.x), h: Math.abs(b.y - a.y) });
+/** Grid corner (areas, walls) or cell middle (lights); Alt: free */
+function fogSnap(p: Pt, free: boolean, middle = false): Pt {
+  const g = B().grid.size;
+  if (free) return p;
+  if (middle) return { x: Math.floor(p.x / g) * g + g / 2, y: Math.floor(p.y / g) * g + g / 2 };
+  return { x: Math.round(p.x / g) * g, y: Math.round(p.y / g) * g };
+}
+
+function fogPointer(kind: 'down' | 'move' | 'up' | 'hover', p: Pt, free: boolean) {
+  if (!board || PLAYER) return;
+  const cell = B().grid.size;
+  if (fogMode === 'hide' || fogMode === 'reveal') {
+    if (kind === 'down') fogDrag = { start: fogSnap(p, free), now: fogSnap(p, free) };
+    else if (kind === 'move' && fogDrag) fogDrag.now = fogSnap(p, free);
+    else if (kind === 'up' && fogDrag) {
+      const r = rectOf(fogDrag.start, fogDrag.now);
+      fogDrag = null;
+      if (r.w > 4 && r.h > 4) { fogEdit().areas.push({ id: uid(), op: fogMode, ...r }); fogChanged(); }
+    }
+    view.drawFogMarks();
+  } else if (fogMode === 'wall') {
+    const q = fogSnap(p, free);
+    if (kind === 'hover' || kind === 'move') { wallHover = q; view.drawFogMarks(); return; }
+    if (kind !== 'down') return;
+    const now = Date.now(), n = wallDraft?.length || 0;
+    const same = !!wallDraft && wallDraft[n - 2] === q.x && wallDraft[n - 1] === q.y;
+    if (wallDraft && (same || now - lastWallClick < 300)) { lastWallClick = 0; finishWall(); return; }   // double click: done
+    lastWallClick = now;
+    if (!wallDraft) wallDraft = [q.x, q.y]; else wallDraft.push(q.x, q.y);
+    view.drawFogMarks();
+  } else if (fogMode === 'light') {
+    const f = fogOf(B());
+    if (kind === 'down') {
+      const hit = [...f.lights].reverse().find(l => Math.hypot(l.x - p.x, l.y - p.y) < cell * 0.6);
+      if (hit) selLight = hit.id;
+      else {
+        const c = fogSnap(p, free, true), l = { id: uid(), x: c.x, y: c.y, bright: 4, dim: 8 };
+        fogEdit().lights.push(l);
+        selLight = l.id;
+        fogChanged();
+      }
+      lightDrag = true;
+      renderFogLightEdit();
+    } else if (kind === 'move' && lightDrag && selLight) {
+      const l = fogEdit().lights.find(x => x.id === selLight);
+      if (l) { const c = fogSnap(p, free, true); l.x = c.x; l.y = c.y; view.refreshFog(); view.drawFogMarks(); }
+    } else if (kind === 'up' && lightDrag) { lightDrag = false; fogChanged(); }
+    view.drawFogMarks();
+  } else if (fogMode === 'erase' && kind === 'down') {
+    const f = fogEdit(), tol = 10 / view.zoom;
+    const li = f.lights.findIndex(l => Math.hypot(l.x - p.x, l.y - p.y) < cell * 0.6);
+    if (li >= 0) { f.lights.splice(li, 1); fogChanged(); renderFogLightEdit(); return; }
+    const near = (w: { pts: number[] }) => {
+      for (let i = 0; i + 3 < w.pts.length; i += 2) {
+        const [x1, y1, x2, y2] = w.pts.slice(i, i + 4), dx = x2 - x1, dy = y2 - y1;
+        const t = Math.max(0, Math.min(1, ((p.x - x1) * dx + (p.y - y1) * dy) / (dx * dx + dy * dy || 1)));
+        if (Math.hypot(x1 + dx * t - p.x, y1 + dy * t - p.y) < tol) return true;
+      }
+      return false;
+    };
+    const wi = f.walls.findIndex(near);
+    if (wi >= 0) { f.walls.splice(wi, 1); fogChanged(); return; }
+    for (let i = f.areas.length - 1; i >= 0; i--) {
+      const a = f.areas[i];
+      if (p.x >= a.x && p.x <= a.x + a.w && p.y >= a.y && p.y <= a.y + a.h) { f.areas.splice(i, 1); fogChanged(); return; }
+    }
+  }
+}
+
+function finishWall() {
+  if (wallDraft && wallDraft.length >= 4) { fogEdit().walls.push({ id: uid(), pts: wallDraft }); wallDraft = null; fogChanged(); }
+  wallDraft = null;
+  wallHover = null;
+  if (board) view.drawFogMarks();
+}
+
+function renderFogPanel() {
+  if (!board) return;
+  const f = fogOf(B());
+  for (const [group, modes] of Object.entries(FOG_MODES)) {
+    $('fog-opts').querySelector(`[data-group="${group}"]`)!.innerHTML = modes.map(m =>
+      `<button class="chip ${m.id === fogMode ? 'on' : ''}" data-fog-mode="${m.id}" title="${esc(m.hint)}">${m.name}</button>`).join('');
+  }
+  $('fog-hint').textContent = Object.values(FOG_MODES).flat().find(m => m.id === fogMode)!.hint;
+  $<HTMLInputElement>('fog-density').value = String(f.density);
+  $('fog-density-val').textContent = `${Math.round(f.density * 100)}%`;
+  $<HTMLInputElement>('fog-on').checked = f.on;
+  $('fog-light-opts').hidden = !f.on;
+  $<HTMLInputElement>('fog-dark').value = String(f.darkness);
+  $('fog-dark-val').textContent = `${Math.round(f.darkness * 100)}%`;
+  $('fog-presets').innerHTML = ([[0, 'Día'], [0.5, 'Penumbra'], [0.85, 'Noche'], [1, 'Oscuridad total']] as [number, string][])
+    .map(([v, n]) => `<button class="chip ${Math.abs(f.darkness - v) < 0.01 ? 'on' : ''}" data-dark="${v}">${n}</button>`).join('');
+  $<HTMLInputElement>('fog-preview').checked = fogPreview;
+  renderFogLightEdit();
+}
+
+function renderFogLightEdit() {
+  const l = board ? fogOf(B()).lights.find(x => x.id === selLight) : undefined;
+  $('fog-light-edit').innerHTML = l && fogMode === 'light' ? `<div class="row2">
+      <label>Luz brillante (casillas)<input class="inp" type="number" min="0" max="60" data-light="bright" value="${l.bright}"></label>
+      <label>Hasta luz tenue<input class="inp" type="number" min="0" max="60" data-light="dim" value="${l.dim}"></label></div>` : '';
+}
+
+$('fog-opts').addEventListener('click', e => {
+  const t = e.target as HTMLElement;
+  const m = t.closest<HTMLElement>('[data-fog-mode]');
+  if (m) { finishWall(); fogMode = m.dataset.fogMode as FogMode; renderFogPanel(); view.drawFogMarks(); return; }
+  const d = t.closest<HTMLElement>('[data-dark]');
+  if (d && board) { fogEdit().darkness = +d.dataset.dark!; renderFogPanel(); fogChanged(); }
+});
+$('fog-opts').addEventListener('input', e => {
+  const t = e.target as HTMLInputElement;
+  if (!board) return;
+  if (t.id === 'fog-density') { fogEdit().density = +t.value; $('fog-density-val').textContent = `${Math.round(+t.value * 100)}%`; fogChanged(false); }
+  else if (t.id === 'fog-dark') { fogEdit().darkness = +t.value; $('fog-dark-val').textContent = `${Math.round(+t.value * 100)}%`; fogChanged(false); }
+  else if (t.dataset.light) {
+    const l = fogEdit().lights.find(x => x.id === selLight);
+    if (l) { l[t.dataset.light as 'bright' | 'dim'] = Math.max(0, Math.min(60, Number(t.value) || 0)); fogChanged(false); }
+  }
+});
+$('fog-opts').addEventListener('keydown', e => e.stopPropagation());
+$('fog-on').addEventListener('change', e => { fogEdit().on = (e.target as HTMLInputElement).checked; renderFogPanel(); fogChanged(); });
+$('fog-preview').addEventListener('change', e => { fogPreview = (e.target as HTMLInputElement).checked; view.refreshFog(); });
+$('fog-hide-all').addEventListener('click', () => { const f = fogEdit(); f.base = 'hidden'; f.areas = []; fogChanged(); });
+$('fog-show-all').addEventListener('click', () => { const f = fogEdit(); f.base = 'visible'; f.areas = []; fogChanged(); });
+
+/** A token's light and field of view (GM): right-click → Luz y visión */
+function openLightVision(items: BoardItem[], at: Pt) {
+  const panel = $('lv-panel'), it = items[0];
+  const light = it.light || { bright: 0, dim: 0 }, vis = it.vision;
+  panel.innerHTML = `<h3>Luz y visión ${items.length > 1 ? `(${items.length} tokens)` : `de ${esc(it.name || 'este token')}`}</h3>
+    <div class="fog-sec">Luz que da</div>
+    <div class="row2"><label>Brillante (casillas)<input class="inp" type="number" min="0" max="60" data-lv="bright" value="${light.bright || 0}"></label>
+      <label>Hasta tenue<input class="inp" type="number" min="0" max="60" data-lv="dim" value="${light.dim || 0}"></label></div>
+    <div class="fog-sec">Visión de sus jugadores</div>
+    <label class="check"><input type="checkbox" data-lv="has" ${vis ? 'checked' : ''}> Ve solo lo que tiene a la vista (paredes)</label>
+    <div class="row2"><label>Alcance (0 = sin límite)<input class="inp" type="number" min="0" max="200" data-lv="range" value="${vis?.range || 0}"></label>
+      <label>Ve en la oscuridad<input class="inp" type="number" min="0" max="60" data-lv="dark" value="${vis?.dark || 0}"></label></div>
+    <small class="muted">Casillas. La luz y la visión se notan con la iluminación dinámica activada (🌫).</small>
+    <button class="btn small" data-lv-close>Listo</button>`;
+  panel.hidden = false;
+  const r = panel.getBoundingClientRect();
+  panel.style.left = `${Math.min(at.x, innerWidth - r.width - 8)}px`;
+  panel.style.top = `${Math.min(at.y, innerHeight - r.height - 8)}px`;
+  const apply = () => {
+    const num = (k: string) => Math.max(0, Number(panel.querySelector<HTMLInputElement>(`[data-lv="${k}"]`)!.value) || 0);
+    const has = panel.querySelector<HTMLInputElement>('[data-lv="has"]')!.checked;
+    for (const t of items) {
+      const bright = num('bright'), dim = num('dim');
+      if (bright || dim) t.light = { bright, dim }; else delete t.light;
+      if (has) t.vision = { range: num('range'), dark: num('dark') }; else delete t.vision;
+    }
+    view.render();
+    commit();
+  };
+  panel.querySelectorAll('input').forEach(i => i.addEventListener('change', apply));
+  panel.addEventListener('keydown', e => e.stopPropagation());
+  panel.querySelector('[data-lv-close]')!.addEventListener('click', () => { panel.hidden = true; });
+}
+
 // ── toolbar: tools, layers, zoom ────────────────────────────────────────────
 function setTool(t: Tool) {
   closeTextEditor(true);
   if (t !== 'ruler') showMyRuler(null, true);   // a measurement doesn't outlive its tool
+  if (t !== 'fog') finishWall();
   view.setTool(t);
   document.querySelectorAll<HTMLElement>('[data-tool]').forEach(b => b.classList.toggle('on', b.dataset.tool === t));
   $('draw-opts').hidden = t !== 'draw';
   $('text-opts').hidden = t !== 'text';
   $('ruler-opts').hidden = t !== 'ruler';
-  if (t === 'draw' || t === 'text' || t === 'ruler') { $('grid-panel').hidden = true; $('grid-btn').classList.remove('on'); }
+  $('fog-opts').hidden = t !== 'fog';
+  if (t === 'fog') renderFogPanel();
+  view.drawFogMarks();
+  if (t === 'draw' || t === 'text' || t === 'ruler' || t === 'fog') { $('grid-panel').hidden = true; $('grid-btn').classList.remove('on'); }
 }
 
 // pencil / text options: colour swatches, colour picker, thickness / size
@@ -1273,12 +1514,14 @@ document.addEventListener('keydown', e => {
   else if (ctrl && k === 'd') { e.preventDefault(); pasteItems(undefined, view.selectedItems()); }
   else if (ctrl && k === 'a') { e.preventDefault(); view.select(board.items.filter(i => i.layer === view.activeLayer && canEdit(i)).map(i => i.id)); }
   else if (k === 'delete' || k === 'backspace') { e.preventDefault(); deleteSelected(); }
-  else if (k === 'escape') { view.select([]); $('menu').hidden = true; showMyRuler(null, true); }
+  else if (k === 'escape') { view.select([]); $('menu').hidden = true; showMyRuler(null, true); wallDraft = null; view.drawFogMarks(); }
   else if (k === 'v' && !ctrl) setTool('select');
   else if (k === 'h' && !ctrl) setTool('pan');
   else if (k === 'b' && !ctrl) setTool('draw');
   else if (k === 't' && !ctrl) setTool('text');
   else if (k === 'r' && !ctrl) setTool('ruler');
+  else if (k === 'n' && !ctrl && isGM()) setTool('fog');
+  else if (k === 'enter' && view.tool === 'fog') finishWall();
   else if (k.startsWith('arrow')) {
     e.preventDefault();
     const step = e.shiftKey ? 1 : board.grid.size;   // Shift: one pixel

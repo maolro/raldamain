@@ -262,3 +262,10 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 /* ── ruler ── */
 .ruler-modes { display: flex; gap: 4px; flex-wrap: wrap; }
 .ruler-modes .chip { padding: 3px 9px; }
+
+/* ── niebla y luz ── */
+.fog-opts { width: 270px; max-height: calc(100vh - 160px); overflow: auto; }
+.fog-sec { font: 700 12px var(--heading); color: var(--gold); margin-top: 4px; }
+.fog-modes, .fog-presets { display: flex; gap: 4px; flex-wrap: wrap; }
+.fog-modes .chip, .fog-presets .chip { padding: 3px 9px; }
+.panel.lv-panel { width: 290px; z-index: 31; }
