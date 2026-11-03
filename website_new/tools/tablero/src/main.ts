@@ -275,6 +275,25 @@ function renderPresence() {
     : 'Nadie se ha unido todavía';
   if (PLAYER && p) $('player-chip').innerHTML = `Sala <b>${esc(p.code || currentCode)}</b> · ${p.gm ? 'GM conectado' : '<span class="muted">GM desconectado</span>'}`;
   if (!$('room-panel').hidden) renderRoomPanel();
+  if (!$('players-panel').hidden) renderPlayersPanel();
+}
+
+// 👥: who is in the room. The GM gets the room panel (names, connected or not, ✕ to
+// remove someone); a player, the list of who is there.
+$('presence').addEventListener('click', () => {
+  const panel = $(PLAYER ? 'players-panel' : 'room-panel');
+  panel.hidden = !panel.hidden;
+  if (panel.hidden) return;
+  if (PLAYER) renderPlayersPanel(); else renderRoomPanel();
+});
+
+function renderPlayersPanel() {
+  const p = presence;
+  const rows = p ? Object.entries(p.players).map(([pid, x]) => `<div class="room-player"><span class="dot" style="background:${esc(x.color)}"></span>${esc(x.name)}${pid === me?.pid ? ' <small class="muted">(tú)</small>' : ''}
+      <span class="state ${p.online.includes(pid) ? 'on' : ''}">${p.online.includes(pid) ? '● conectado' : '○ fuera'}</span></div>`).join('') : '';
+  $('players-body').innerHTML = `<div class="room-players">
+      <div class="room-player"><span class="dot" style="background:#fff200"></span>GM <span class="state ${p?.gm ? 'on' : ''}">${p?.gm ? '● conectado' : '○ fuera'}</span></div>
+      ${rows}</div>`;
 }
 
 // ── boards (GM) ─────────────────────────────────────────────────────────────
@@ -1096,7 +1115,8 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
 document.addEventListener('pointerdown', e => {
   const t = e.target as HTMLElement | null;
   if (!t?.closest?.('#menu')) $('menu').hidden = true;
-  if (!t?.closest?.('#room-panel, #invite-btn')) $('room-panel').hidden = true;
+  if (!t?.closest?.('#room-panel, #invite-btn, #presence')) $('room-panel').hidden = true;
+  if (!t?.closest?.('#players-panel, #presence')) $('players-panel').hidden = true;
   if (!t?.closest?.('#share-panel, #share-btn')) $('share-panel').hidden = true;
   if (!t?.closest?.('#status-panel, #status-btn')) statusPanel.hidden = true;
 });

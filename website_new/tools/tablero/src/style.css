@@ -159,7 +159,8 @@ body { display: grid; grid-template: 48px 1fr / 56px 1fr 320px; grid-template-ar
 /* rooms: GM / player parts of the page, presence, invite panel, join screen */
 body.player .gm-only, body:not(.player) .player-only { display: none !important; }
 .top-group { display: contents; }
-.presence { color: var(--text); font-size: 13px; border: 1px solid #444; border-radius: 12px; padding: 2px 10px; cursor: default; white-space: nowrap; }
+.presence { color: var(--text); background: none; font: 13px var(--body); border: 1px solid #444; border-radius: 12px; padding: 2px 10px; cursor: pointer; white-space: nowrap; }
+.presence:hover { border-color: var(--gold); }
 .presence.on { border-color: #3cb44b; }
 .room-chip { display: flex; gap: 8px; align-items: center; font-size: 13px; }
 .room-chip b { color: var(--gold); font-family: var(--heading); letter-spacing: .05em; }

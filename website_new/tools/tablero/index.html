@@ -27,7 +27,7 @@
         <option value="orig">Tamaño original</option>
       </select></label>
     <span class="grow"></span>
-    <span class="presence" id="presence" title="Jugadores conectados">👥 0</span>
+    <button class="presence" id="presence" title="Jugadores de la sala">👥 0</button>
     <button class="btn small gm-only" id="share-btn" title="Abrir el tablero a internet (tablero.raldamain.com) para jugar a distancia">🌐 Compartir</button>
     <button class="btn small gm-only" id="invite-btn" title="Abrir una sala para este tablero e invitar a los jugadores">✉ Invitar</button>
     <button class="btn small player-only" id="leave-btn" title="Salir de la sala">Salir</button>
@@ -103,6 +103,11 @@
   <div class="panel room-panel share-panel" id="share-panel" hidden>
     <h3>Partida por internet</h3>
     <div id="share-body"></div>
+  </div>
+
+  <div class="panel room-panel" id="players-panel" hidden>
+    <h3>Jugadores de la sala</h3>
+    <div id="players-body"></div>
   </div>
 
   <div class="panel room-panel" id="room-panel" hidden>
