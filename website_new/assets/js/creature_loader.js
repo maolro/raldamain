@@ -245,7 +245,8 @@ function renderCreaturePage(data) {
     // B. Hero
     document.getElementById("creature-name").innerText = data.name;
     const hero = document.getElementById("hero-section");
-    hero.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/assets/images/creatures/${data.id}.jpg') center/cover`;
+    // (no picture yet: the logo shows through underneath)
+    hero.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/assets/images/creatures/${data.id}.jpg') center/cover, url('/assets/images/raldamain_logo.png') center/220px no-repeat #111`;
 
     // C. Meta badges
     const metaContainer = document.getElementById("creature-meta");

@@ -16,6 +16,11 @@
 /assets/css/*
   Cache-Control: no-cache
 
+# Imágenes de criaturas: el Taller las reemplaza (mismo nombre, <id>.jpg), así que el
+# navegador comprueba en cada visita si hay una nueva en vez de guardar la vieja 4 horas
+/assets/images/creatures/*
+  Cache-Control: no-cache
+
 # Simulador en el navegador (/simulador): el código Python del simulador
 /combat-simulator/*
   Cache-Control: no-cache

@@ -276,7 +276,7 @@
                 const levelColor = getLevelColor(creature.level);
                 const cardHTML = `
                     <article class="card creature-card">
-                        <div class="card-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('/assets/images/creatures/${creature.id}.jpg'); background-size: cover; background-position: center;">
+                        <div class="card-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('/assets/images/creatures/${creature.id}.jpg') center/cover, url('/assets/images/raldamain_logo.png') center/40% no-repeat #1a1a1a;">
                             <span class="creature-level-badge" style="background-color: ${levelColor};">Nvl ${creature.level}</span>
                         </div>
                         <div class="card-content">
