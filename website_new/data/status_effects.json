@@ -419,6 +419,82 @@
           "notes": "Ataques contra él: Desventaja. Sus ataques: Ventaja."
         }
       ]
+    },
+    {
+      "id": "herido",
+      "name": "Herido",
+      "description": "",
+      "levels": [
+        {
+          "name": "I",
+          "penalties": [
+            {
+              "rolls": [],
+              "stats": [
+                "FUE",
+                "DES",
+                "CON"
+              ],
+              "dice": 1
+            }
+          ],
+          "notes": "La primera vez que se cure, no recuperará impactos y en lugar se quita este efecto."
+        },
+        {
+          "name": "II",
+          "penalties": [
+            {
+              "rolls": [],
+              "stats": [
+                "FUE",
+                "DES",
+                "CON"
+              ],
+              "dice": 2
+            },
+            {
+              "rolls": [],
+              "stats": [
+                "INT",
+                "SAB",
+                "CAR"
+              ],
+              "dice": 1
+            }
+          ],
+          "notes": "La primera vez que se cure, no recuperará impactos y en lugar reduce este efecto por un paso."
+        },
+        {
+          "name": "III",
+          "penalties": [
+            {
+              "rolls": [],
+              "stats": [
+                "FUE",
+                "DES",
+                "CON"
+              ],
+              "dice": 3
+            },
+            {
+              "rolls": [],
+              "stats": [
+                "INT",
+                "SAB",
+                "CAR"
+              ],
+              "dice": 2
+            }
+          ]
+        },
+        {
+          "name": "IV",
+          "penalties": [],
+          "notes": "Sufre una herida crítica en una parte del cuerpo aleatoria (1: Cabeza, 2-3: Brazos, 4-5: Pecho, 6-8: Abdomen, 9-10: Piernas), la cual le matará en una ronda. Si se recupera, perderá una parte del cuerpo si es posible o recibirá secuelas. ",
+          "no_reactions": true,
+          "no_actions": true
+        }
+      ]
     }
   ]
 }
