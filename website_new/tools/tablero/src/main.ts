@@ -15,7 +15,7 @@ import { DRAG_TYPE, Library } from './library';
 import { Live } from './live';
 import { SheetWindows, Sheets } from './sheets';
 import { Statuses } from './status';
-import { BARS, kindOf, LAYERS, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Presence, type SheetStats } from './types';
+import { BARS, kindOf, LAYERS, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Presence, type ShareStatus, type SheetStats } from './types';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -340,14 +340,19 @@ async function renderRoomPanel() {
     return;
   }
   const base = location.origin;
-  const links = [`${base}/jugar?sala=${info.code}`, ...(info.lan ? [`${info.lan}/jugar?sala=${info.code}`] : [])];
+  // [link, who it is for]: by internet (while shared), on this computer, on the same network
+  const links: [string, string][] = [
+    ...(info.public ? [[`${info.public}/jugar?sala=${info.code}`, 'Por internet (tablero.raldamain.com)'] as [string, string]] : []),
+    [`${base}/jugar?sala=${info.code}`, 'En este ordenador'],
+    ...(info.lan ? [[`${info.lan}/jugar?sala=${info.code}`, 'Para jugadores en tu misma red'] as [string, string]] : []),
+  ];
   const online = new Set(presence?.online || []);
   const players = Object.entries(info.players);
   body.innerHTML = `
     <div class="room-code" title="Código de invitación">${esc(info.code)}</div>
-    ${links.map((l, i) => `<div class="room-link"><input class="inp" readonly value="${esc(l)}" title="${i ? 'Para jugadores en tu misma red' : 'En este ordenador'}">
+    ${links.map(([l, who]) => `<small class="muted">${esc(who)}</small><div class="room-link"><input class="inp" readonly value="${esc(l)}" title="${esc(who)}">
       <button class="btn small" data-copy="${esc(l)}">Copiar</button></div>`).join('')}
-    ${info.lan ? '' : '<small class="muted">Para jugadores en otros ordenadores de tu red, arranca el Tablero con TABLERO_LAN=1.</small>'}
+    ${info.public ? '' : '<small class="muted">Para jugar a distancia, abre el tablero a internet con «🌐 Compartir».</small>'}
     <h3>Jugadores (${players.length})</h3>
     <div class="room-players">${players.map(([pid, p]) => `<div class="room-player"><span class="dot" style="background:${esc(p.color)}"></span>${esc(p.name)}
       <span class="state ${online.has(pid) ? 'on' : ''}">${online.has(pid) ? '● conectado' : '○ fuera'}</span>
@@ -368,6 +373,73 @@ async function renderRoomPanel() {
     renderRoomPanel();
   });
 }
+
+// ── on the internet (GM): a Cloudflare Tunnel to tablero.raldamain.com ──────
+// One-time setup in two steps (connect with Cloudflare, create the address), then
+// open / close. While open, players join at https://tablero.raldamain.com/jugar.
+let share: ShareStatus | null = null;
+let shareCode = '';   // the open board's room code, for the link
+let sharePoll = 0;
+
+async function refreshShare() {
+  try { share = await api.share(); } catch { share = null; }
+  try { shareCode = board ? (await api.room(B().id)).code : ''; } catch { shareCode = ''; }
+  renderShareButton();
+  if (!$('share-panel').hidden) renderSharePanel();
+  // the steps that take a while (the browser login, connecting): look again shortly
+  clearTimeout(sharePoll);
+  if (share && ['logging-in', 'starting'].includes(share.state)) sharePoll = window.setTimeout(refreshShare, 1500);
+}
+
+function renderShareButton() {
+  const b = $('share-btn'), on = share?.state === 'on';
+  b.textContent = on ? '🌐 En internet' : '🌐 Compartir';
+  b.classList.toggle('live', on);
+  b.title = on ? `Abierto en ${share!.url} — los jugadores entran en ${share!.url}/jugar` : 'Abrir el tablero a internet (tablero.raldamain.com) para jugar a distancia';
+}
+
+function renderSharePanel() {
+  const s = share, body = $('share-body');
+  if (!s) { body.innerHTML = '<p class="muted">No se pudo consultar el estado.</p>'; return; }
+  const msg = s.message ? `<p class="share-msg">${esc(s.message)}</p>` : '';
+  const code = shareCode;
+  const link = `${s.url}/jugar${code ? '?sala=' + code : ''}`;
+  const steps = (n: number) => `<ol class="share-steps">
+      <li class="${n > 1 ? 'done' : 'now'}">Conectar con Cloudflare <small>(una vez: eliges raldamain.com en el navegador)</small></li>
+      <li class="${n > 2 ? 'done' : n === 2 ? 'now' : ''}">Crear la dirección <b>${esc(s.host)}</b> <small>(una vez)</small></li>
+      <li class="${n === 3 ? 'now' : ''}">Abrir la partida cuando juguéis</li></ol>`;
+  body.innerHTML = ({
+    missing: `<p>Falta el programa <b>cloudflared</b>. Instálalo con:</p><code class="share-code">winget install Cloudflare.cloudflared</code>`,
+    login: `${steps(1)}<button class="btn gold" data-share="login">Conectar con Cloudflare</button>`,
+    'logging-in': `${steps(1)}<p class="muted">Esperando a que autorices raldamain.com en la página de Cloudflare…</p>`,
+    setup: `${steps(2)}<button class="btn gold" data-share="setup">Crear ${esc(s.host)}</button>`,
+    off: `${steps(3)}<p class="muted">Cerrado: solo se juega en este ordenador.</p><button class="btn gold" data-share="start">Abrir a internet</button>`,
+    starting: `<p class="muted">Conectando con Cloudflare…</p>`,
+    on: `<p class="share-on">● Abierto en <b>${esc(s.url)}</b></p>
+      <p class="muted">Pasa este enlace a tus jugadores${code ? '' : ' (abre una sala con «✉ Invitar» para incluir su código)'}:</p>
+      <div class="room-link"><input class="inp" readonly value="${esc(link)}"><button class="btn small" data-copy="${esc(link)}">Copiar</button></div>
+      <p class="muted small">Tú sigues siendo el GM aquí, en este ordenador. Nadie puede ser GM desde internet. Al cerrar el Tablero se cierra también.</p>
+      <button class="btn danger small" data-share="stop">Cerrar a internet</button>`,
+    error: `<p class="share-err">Algo falló.</p><button class="btn small" data-share="setup">Reintentar</button>`,
+  } as Record<string, string>)[s.state] + msg;
+  body.querySelectorAll<HTMLElement>('[data-share]').forEach(b => b.addEventListener('click', async () => {
+    b.setAttribute('disabled', '');
+    b.textContent = '…';
+    try { share = await api.shareDo(b.dataset.share as 'login' | 'setup' | 'start' | 'stop'); }
+    catch (e) { toast('No se pudo: ' + (e as Error).message, true); }
+    await refreshShare();
+    if (board) renderRoomPanel();
+  }));
+  body.querySelectorAll<HTMLElement>('[data-copy]').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard?.writeText(b.dataset.copy!).then(() => toast('Enlace copiado'), () => toast(b.dataset.copy!));
+  }));
+}
+
+$('share-btn').addEventListener('click', () => {
+  const p = $('share-panel');
+  p.hidden = !p.hidden;
+  if (!p.hidden) { renderSharePanel(); refreshShare(); }
+});
 
 // ── joining (players) ───────────────────────────────────────────────────────
 let currentCode = '';
@@ -1024,6 +1096,7 @@ document.addEventListener('pointerdown', e => {
   const t = e.target as HTMLElement | null;
   if (!t?.closest?.('#menu')) $('menu').hidden = true;
   if (!t?.closest?.('#room-panel, #invite-btn')) $('room-panel').hidden = true;
+  if (!t?.closest?.('#share-panel, #share-btn')) $('share-panel').hidden = true;
   if (!t?.closest?.('#status-panel, #status-btn')) statusPanel.hidden = true;
 });
 
@@ -1171,5 +1244,6 @@ document.addEventListener('keyup', e => {
   }
   library.ownerFilter = m => !m.owner;
   await Promise.all([library.load(), sheets.load(), statuses.load()]);
+  refreshShare();
   openBoard(await refreshBoardList());
 })().catch(e => { console.error(e); toast('No se pudo iniciar el tablero: ' + (e as Error).message, true); });

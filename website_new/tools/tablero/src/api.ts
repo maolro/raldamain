@@ -1,6 +1,6 @@
 // The Tablero server (tools/tablero.py). Every request carries this browser's key
 // (the GM's, or a player's from joining a room): the server decides what it may do.
-import type { Board, BoardSummary, Changes, ImageMeta, JoinInfo, RollRecord, RollTerm, RoomInfo, SheetMeta } from './types';
+import type { Board, BoardSummary, Changes, ImageMeta, JoinInfo, RollRecord, RollTerm, RoomInfo, ShareStatus, SheetMeta } from './types';
 
 let KEY = '';
 export const setKey = (k: string) => { KEY = k; };
@@ -48,6 +48,8 @@ export const api = {
   boards: () => call<BoardSummary[]>('GET', '/api/boards'),
   createBoard: (name: string) => call<Board>('POST', '/api/boards', { name }),
   deleteBoard: (id: string) => call<{ ok: boolean }>('DELETE', `/api/boards/${id}`),
+  share: () => call<ShareStatus>('GET', '/api/share'),
+  shareDo: (action: 'login' | 'setup' | 'start' | 'stop') => call<ShareStatus>('POST', '/api/share', { action }),
   room: (bid: string) => call<RoomInfo>('GET', `/api/boards/${bid}/room`),
   openRoom: (bid: string) => call<RoomInfo>('POST', `/api/boards/${bid}/room`),
   closeRoom: (bid: string) => call<{ ok: boolean }>('DELETE', `/api/boards/${bid}/room`),

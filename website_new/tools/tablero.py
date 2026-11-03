@@ -41,6 +41,9 @@ stores everything under tools/tablero/storage/:
     sheets/<id>.json     uploaded stat blocks · sheets.json: their name, kind and owner
     gm_key               the GM's key
 
+Compartir  "🌐 Compartir" opens the board to the internet at https://tablero.raldamain.com
+           through a Cloudflare Tunnel from this computer (tools/tablero_share.py).
+
 Usage:  python tools/tablero.py   → http://localhost:5179   (players: /jugar)
         RALDAMAIN_NO_BROWSER=1 to not open the browser
         TABLERO_LAN=1 to let players on the same network join (http://<this PC's IP>:5179/jugar)
@@ -61,6 +64,9 @@ import sys
 import threading
 import time
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import tablero_share  # noqa: E402  (the Cloudflare Tunnel: tablero.raldamain.com)
 
 try:
     from flask import Flask, Response, abort, jsonify, request, send_from_directory
@@ -175,14 +181,20 @@ def need_board(bid: str):
     return w
 
 
+# set by a proxy or tunnel in front of this server: such a request came from elsewhere
+PROXY_HEADERS = ("Cf-Connecting-Ip", "Cf-Ray", "Cdn-Loop", "X-Forwarded-For", "X-Forwarded-Host", "X-Real-Ip", "Forwarded")
+
+
 def _local_request() -> bool:
-    """From this computer, by its own name (not a tunnel or someone on the network)."""
+    """From this computer, by its own name: not someone on the network, nor a request that
+    reached it through the tunnel (cloudflared also connects from this computer)."""
     try:
         loopback = ipaddress.ip_address(request.remote_addr or "").is_loopback
     except ValueError:
         loopback = False
     host = (request.host or "").rsplit(":", 1)[0].strip("[]").lower()
-    return loopback and host in ("localhost", "127.0.0.1", "::1")
+    proxied = any(h in request.headers for h in PROXY_HEADERS)
+    return loopback and host in ("localhost", "127.0.0.1", "::1") and not proxied
 
 
 def lan_ip() -> str:
@@ -272,6 +284,9 @@ def dice_images(name):
 def image_file(name):
     resp = send_from_directory(IMAGES, name)
     resp.headers["Cache-Control"] = "public, max-age=31536000, immutable"  # named by content: never changes
+    # an uploaded picture is only ever a picture: an SVG opened on its own runs no script
+    resp.headers["Content-Security-Policy"] = "default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; sandbox"
+    resp.headers["X-Content-Type-Options"] = "nosniff"
     return resp
 
 
@@ -886,7 +901,8 @@ def api_room(bid):
     room = rooms().get(code) or {}
     return jsonify({"code": code, "players": {pid: {"name": p.get("name"), "color": p.get("color")}
                                               for pid, p in (room.get("players") or {}).items()},
-                    "lan": f"http://{lan_ip()}:{PORT}" if LAN else ""})
+                    "lan": f"http://{lan_ip()}:{PORT}" if LAN else "",
+                    "public": tablero_share.url() if tablero_share.status()["state"] == "on" else ""})
 
 
 @app.route("/api/boards/<bid>/room", methods=["POST"])
@@ -963,6 +979,30 @@ def api_join():
         p = players[pid]
     session(room["board"]).presence()
     return jsonify({"code": code, "board": room["board"], "pid": pid, "key": p["key"], "name": p["name"], "color": p["color"]})
+
+
+# ─────────────────────────────────────────────────────────────── sharing (GM, this computer)
+
+@app.route("/api/share")
+def api_share():
+    need_gm()
+    if not _local_request():
+        abort(403)
+    return jsonify(tablero_share.status())
+
+
+@app.route("/api/share", methods=["POST"])
+def api_share_do():
+    """{action: login | setup | start | stop} (see tools/tablero_share.py)"""
+    need_gm()
+    if not _local_request():
+        abort(403)
+    action = str((request.get_json(force=True) or {}).get("action") or "")
+    fn = {"login": tablero_share.login, "setup": tablero_share.setup,
+          "start": tablero_share.start, "stop": tablero_share.stop}.get(action)
+    if not fn:
+        return jsonify({"error": "acción desconocida"}), 400
+    return jsonify(fn())
 
 
 # ─────────────────────────────────────────────────────────────── boards (GM)
@@ -1072,3 +1112,5 @@ if __name__ == "__main__":
     finally:
         if watcher:
             watcher.terminate()
+        if os.environ.get(live_reload.CHILD_ENV) != "1":
+            tablero_share.stop()  # closing the Tablero closes it to the internet too

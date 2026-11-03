@@ -126,7 +126,15 @@ export interface Changes {
   by?: string;
 }
 
-export interface RoomInfo { code: string; players: Record<string, { name: string; color: string }>; lan: string }
+export interface RoomInfo { code: string; players: Record<string, { name: string; color: string }>; lan: string; public?: string }
+
+/** The board on the internet (tools/tablero_share.py): a Cloudflare Tunnel to tablero.raldamain.com */
+export interface ShareStatus {
+  state: 'missing' | 'login' | 'logging-in' | 'setup' | 'off' | 'starting' | 'on' | 'error';
+  url: string;
+  host: string;
+  message?: string;
+}
 export interface JoinInfo { code: string; board: string; pid: string; key: string; name: string; color: string }
 
 /** A die term as rolled (its faces), or a flat modifier */
