@@ -6,7 +6,7 @@
 // item (so it rotates around its middle) holding its Sprite, its pencil stroke or its Text.
 import { Application, Assets, Container, FederatedPointerEvent, Graphics, Rectangle, Sprite, Text, Texture } from 'pixi.js';
 import { imageUrl } from './api';
-import { kindOf, type Board, type BoardItem, type ImageMeta, type LayerId } from './types';
+import { BARS, kindOf, type Board, type BoardItem, type ImageMeta, type LayerId } from './types';
 
 export type Tool = 'select' | 'pan' | 'draw' | 'text';
 export type Pt = { x: number; y: number };
@@ -29,6 +29,8 @@ export interface BoardEvents {
   drawn(points: number[]): void;
   /** text tool click (item: an existing text to edit) */
   textAt(world: Pt, item?: BoardItem): void;
+  /** the selection outline was redrawn (zoom, move, render): things placed over it follow */
+  overlay(): void;
 }
 
 type Drag =
@@ -67,6 +69,7 @@ export class BoardView {
   private marqueeG = new Graphics();
   private drawG = new Graphics();      // the stroke being drawn
   private views = new Map<string, Container>();
+  private barViews = new Map<string, Graphics>();   // a token's bars, above it (never rotated)
   private textures = new Map<string, Texture>();
   private loading = new Set<string>();
   private images = new Map<string, ImageMeta>();
@@ -106,6 +109,8 @@ export class BoardView {
     this.selected.clear();
     for (const v of this.views.values()) v.destroy({ children: true });
     this.views.clear();
+    for (const g of this.barViews.values()) g.destroy();
+    this.barViews.clear();
     this.render();
     if (fit) this.fit();
     this.ev.selection([]);
@@ -175,6 +180,7 @@ export class BoardView {
       this.renderItem(it);
     }
     for (const [id, v] of this.views) if (!alive.has(id)) { v.destroy({ children: true }); this.views.delete(id); }
+    for (const [id, g] of this.barViews) if (!alive.has(id)) { g.destroy(); this.barViews.delete(id); }
     for (const id of [...this.selected]) if (!alive.has(id)) this.selected.delete(id);
     this.drawOverlay();
   }
@@ -213,7 +219,7 @@ export class BoardView {
     const color = this.badgeColor(it);
     let badge = v.children[1] as Graphics | undefined;
     if (color) {
-      if (!badge) { badge = new Graphics(); badge.eventMode = 'none'; v.addChild(badge); }
+      if (!badge) { badge = new Graphics(); badge.eventMode = 'none'; badge.label = 'badge'; v.addChild(badge); }
       const r = Math.max(4, Math.min(it.w, it.h) * 0.09);
       badge.clear().circle(it.w / 2 - r * 1.2, -it.h / 2 + r * 1.2, r).fill({ color }).stroke({ width: Math.max(1, r / 3), color: 0x000000 });
     } else if (badge) badge.destroy();
@@ -243,6 +249,49 @@ export class BoardView {
       if (!meta) child.moveTo(-it.w / 2, -it.h / 2).lineTo(it.w / 2, it.h / 2).moveTo(it.w / 2, -it.h / 2).lineTo(-it.w / 2, it.h / 2)
         .stroke({ width: 2, color: 0xc04040 });
     }
+    this.renderBars(it);
+  }
+
+  /** Impactos / Chi bars over the token (Roll20 style): straight above its box, whatever its rotation */
+  private renderBars(it: BoardItem) {
+    const bars = BARS.map(b => ({ b, v: it.bars?.[b.id] })).filter(x => x.v && x.v.max > 0);
+    let g = this.barViews.get(it.id);
+    if (!bars.length || kindOf(it) !== 'image') {
+      if (g) { g.destroy(); this.barViews.delete(it.id); }
+      return;
+    }
+    if (!g) { g = new Graphics(); g.eventMode = 'none'; this.barViews.set(it.id, g); }
+    if (g.parent !== this.layers[it.layer]) this.layers[it.layer].addChild(g);
+    g.zIndex = it.z + 0.5;
+    const a = (it.rotation || 0) * Math.PI / 180;
+    const bw = Math.abs(it.w * Math.cos(a)) + Math.abs(it.h * Math.sin(a));
+    const bh = Math.abs(it.w * Math.sin(a)) + Math.abs(it.h * Math.cos(a));
+    const cx = it.x + it.w / 2, top = it.y + it.h / 2 - bh / 2;
+    const w = bw * 0.9, { h, gap } = this.barSize(bw);
+    g.clear();
+    bars.forEach(({ b, v }, i) => {
+      const y = top - gap - (bars.length - i) * (h + gap);
+      const f = Math.max(0, Math.min(1, v!.value / v!.max));
+      g!.rect(cx - w / 2, y, w, h).fill({ color: 0x000000, alpha: 0.65 });
+      if (f > 0) g!.rect(cx - w / 2, y, w * f, h).fill({ color: b.color });
+      g!.rect(cx - w / 2, y, w, h).stroke({ width: Math.max(1, h / 6), color: 0x000000 });
+    });
+  }
+
+  /** Screen position of the middle of an item's top edge, bars included (for the token HUD) */
+  topOf(it: BoardItem): Pt {
+    const a = (it.rotation || 0) * Math.PI / 180;
+    const bw = Math.abs(it.w * Math.cos(a)) + Math.abs(it.h * Math.sin(a));
+    const bh = Math.abs(it.w * Math.sin(a)) + Math.abs(it.h * Math.cos(a));
+    const n = BARS.filter(b => (it.bars?.[b.id]?.max || 0) > 0).length;
+    const { h, gap } = this.barSize(bw);
+    return this.toScreen({ x: it.x + it.w / 2, y: it.y + it.h / 2 - bh / 2 - gap - n * (h + gap) });
+  }
+
+  /** Bar thickness and spacing (world pixels): the same on screen at any zoom, never thicker than a fifth of the token */
+  private barSize(bw: number) {
+    const h = Math.min(bw * 0.2, 7 / this.zoom);
+    return { h, gap: h * 0.35 };
   }
 
   private loadTexture(meta: ImageMeta) {
@@ -303,6 +352,7 @@ export class BoardView {
       }
       this.overlay.addChild(box);
     }
+    this.ev.overlay();
   }
 
   // ── camera ────────────────────────────────────────────────────────────────
@@ -355,6 +405,7 @@ export class BoardView {
 
   private viewChanged() {
     this.drawPage();
+    if (this.board) for (const it of this.board.items) if (it.bars) this.renderBars(it);   // (their thickness follows the zoom)
     this.drawOverlay();
     this.ev.view(this.zoom);
   }
@@ -415,6 +466,7 @@ export class BoardView {
       if (Math.abs(dx) + Math.abs(dy) > 3) d.moved = true;
       this.world.position.set(d.orig.x + dx, d.orig.y + dy);
       this.ev.view(this.zoom);
+      this.ev.overlay();
     } else if (d.kind === 'move') {
       const dx = p.x - d.start.x, dy = p.y - d.start.y;
       if (!d.moved && Math.abs(dx) + Math.abs(dy) < 2 / this.zoom) return;

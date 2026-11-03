@@ -1,5 +1,6 @@
 // The image library (right panel): every image dropped, pasted or uploaded, with a
-// name, a category and tags to filter by. Thumbnails can be dragged onto the board.
+// name, a category and tags to filter by, and the stat block (ficha) its tokens get.
+// Thumbnails can be dragged onto the board.
 import { api, imageUrl } from './api';
 import { DEFAULT_CATEGORIES, type ImageMeta } from './types';
 
@@ -9,6 +10,9 @@ export interface LibraryEvents {
   place(meta: ImageMeta): void;          // "Colocar en el tablero" / double click
   changed(list: ImageMeta[]): void;      // images added, renamed or deleted
   toast(msg: string, bad?: boolean): void;
+  /** choose a sheet (the picker of sheets.ts) */
+  pickSheet(at: { x: number; y: number }, current: string | undefined, done: (sid: string | null) => void): void;
+  sheetName(id: string): string;
 }
 
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -154,7 +158,7 @@ export class Library {
     this.$('lib-count').textContent = shown.length === total ? `${total}` : `${shown.length} / ${total}`;
     this.$('lib-grid').innerHTML = shown.map(m => `
       <figure class="thumb ${m.id === this.editing ? 'on' : ''}" data-id="${esc(m.id)}" draggable="true" title="${esc(m.name)} · ${esc(m.category)}${m.tags.length ? ' · #' + esc(m.tags.join(' #')) : ''}">
-        <img src="${imageUrl(m)}" alt="" loading="lazy" draggable="false"><figcaption>${esc(m.name)}</figcaption>
+        <img src="${imageUrl(m)}" alt="" loading="lazy" draggable="false"><figcaption>${m.sheet ? '<span class="thumb-sheet" title="Con ficha">📜</span>' : ''}${esc(m.name)}</figcaption>
       </figure>`).join('') || `<p class="muted">${total ? 'Ninguna imagen con estos filtros.' : 'Arrastra o pega imágenes en el tablero, o usa «Subir».'}</p>`;
   }
 
@@ -171,11 +175,16 @@ export class Library {
       <label>Etiquetas <small class="muted">Enter para añadir</small>
         <div class="tag-box">${m.tags.map((t, i) => `<span class="tag-pill">#${esc(t)}<button data-rm-tag="${i}" title="Quitar">×</button></span>`).join('')}
           <input class="tag-inp" data-f="tag" placeholder="+ etiqueta"></div></label>
+      <label>Ficha <small class="muted">la llevarán sus tokens nuevos</small>
+        <div class="sheet-field">${m.sheet ? `<span class="sheet-name" title="${esc(m.sheet)}">📜 ${esc(this.ev.sheetName(m.sheet))}</span>` : '<span class="muted">Sin ficha</span>'}
+          <button class="btn small" data-act="sheet" data-pick-sheet>${m.sheet ? 'Cambiar…' : 'Elegir…'}</button></div></label>
       <div class="row"><button class="btn gold" data-act="place">Colocar en el tablero</button>
         <button class="btn danger" data-act="delete">Eliminar</button></div>`;
     const save = async (patch: Partial<ImageMeta>) => {
       try {
-        Object.assign(m, await api.updateImage(m.id, patch));
+        const r = await api.updateImage(m.id, patch);
+        if (!r.sheet) delete m.sheet;   // (taken away: not in the answer)
+        Object.assign(m, r);
         this.render();
         this.ev.changed(this.list);
       } catch (e) { this.ev.toast('No se pudo guardar: ' + (e as Error).message, true); }
@@ -193,6 +202,10 @@ export class Library {
     box.querySelectorAll<HTMLElement>('[data-rm-tag]').forEach(b =>
       b.addEventListener('click', () => save({ tags: m.tags.filter((_, i) => i !== +b.dataset.rmTag!) })));
     box.querySelector('[data-act="close"]')!.addEventListener('click', () => this.edit(null));
+    box.querySelector('[data-act="sheet"]')!.addEventListener('click', e => {
+      const r = (e.target as HTMLElement).getBoundingClientRect();
+      this.ev.pickSheet({ x: r.left - 270, y: r.top - 120 }, m.sheet, sid => save({ sheet: sid || '' }));
+    });
     box.querySelector('[data-act="place"]')!.addEventListener('click', () => this.ev.place(m));
     box.querySelector('[data-act="delete"]')!.addEventListener('click', async () => {
       const { boards } = await api.imageUsage(m.id);

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha</title>
+  <!-- The website's own stat blocks: the Creador's (characters) and the Bestiario's (creatures) -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/statblock.css">
+  <link rel="stylesheet" href="/assets/css/creature_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ficha/ficha.css">
+  <!-- Showing a sheet here must never overwrite the Creador character -->
+  <script>window.STATBLOCK_NO_PERSIST = true;</script>
+</head>
+<body>
+  <p class="fi-wait" id="wait">Cargando la ficha…</p>
+  <div id="sheet"></div>
+  <script src="/ficha/ficha.js"></script>
+</body>
+</html>

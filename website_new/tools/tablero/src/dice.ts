@@ -1,6 +1,7 @@
 // Dados tab: the Mesa de Pruebas dice roller (assets/js/mesa.js), same rules —
 // dice buttons build a pool, a modifier, a free expression ("+5" = 1d20+5, "2d6+4"),
-// and a history of rolls with every die shown (kept in this browser).
+// and a history of rolls with every die shown (kept in this browser). A value clicked
+// in a token's sheet is loaded into the pool (load), to adjust before rolling.
 
 const DICE = [
   { sides: 4, img: '/dice/e/4.png' },
@@ -54,6 +55,7 @@ function evaluate(terms: Term[]) {
 export class DiceRoller {
   private pool = new Map<number, number>();   // sides → count (negative sides: a subtracted die)
   private mod = 0;
+  private label = '';      // what the pool holds ("Lobo: Mordisco"), from a sheet
   private history: Roll[] = [];
 
   constructor(private el: HTMLElement, private toast: (msg: string, bad?: boolean) => void) {
@@ -82,6 +84,7 @@ export class DiceRoller {
       const b = (e.target as HTMLElement).closest<HTMLElement>('.die-btn');
       if (!b) return;
       const s = +b.dataset.sides!;
+      if (!this.pool.size && !this.mod) this.label = '';
       this.pool.set(s, (this.pool.get(s) || 0) + 1);
       this.renderPool();
     });
@@ -98,8 +101,8 @@ export class DiceRoller {
       this.mod += (e as WheelEvent).deltaY < 0 ? 1 : -1;
       this.renderPool();
     }, { passive: false });
-    $('roll-pool').addEventListener('click', () => { const x = this.poolExpr(); if (x) this.roll(x, 'Reserva'); });
-    $('clear-pool').addEventListener('click', () => { this.pool.clear(); this.mod = 0; this.renderPool(); });
+    $('roll-pool').addEventListener('click', () => { const x = this.poolExpr(); if (x) this.roll(x, this.label || 'Reserva'); });
+    $('clear-pool').addEventListener('click', () => { this.pool.clear(); this.mod = 0; this.label = ''; this.renderPool(); });
     $('expr-form').addEventListener('submit', e => {
       e.preventDefault();
       const inp = $('expr-input') as HTMLInputElement;
@@ -115,6 +118,32 @@ export class DiceRoller {
     this.renderLog();
   }
 
+  /** A value from a sheet ("+7+2d6", "2d6+4"): into the pool, ready to adjust and roll.
+   *  A modifier is a tiro (1d20 + modifier); dice without a button go to the expression line. */
+  load(expr: string, label: string) {
+    const terms = parseRoll(expr);
+    if (!terms) { this.toast(`No se puede tirar «${expr}»`, true); return; }
+    if (/^\s*[+\-−]/.test(expr) && 'value' in terms[0]) terms.unshift({ sign: 1, count: 1, sides: 20 });
+    const known = new Set(DICE.map(d => d.sides));
+    if (!terms.every(t => 'value' in t || known.has(t.sign < 0 ? -t.sides : t.sides))) {
+      const inp = this.el.querySelector('#expr-input') as HTMLInputElement;
+      inp.value = expr;
+      inp.focus();
+      this.toast(`${label}: ajusta la expresión y pulsa 🎲`);
+      return;
+    }
+    this.pool.clear();
+    this.mod = 0;
+    for (const t of terms) {
+      if ('value' in t) this.mod += t.sign * t.value;
+      else { const k = t.sign < 0 ? -t.sides : t.sides; this.pool.set(k, (this.pool.get(k) || 0) + t.count); }
+    }
+    this.label = label;
+    this.renderPool();
+    const el = this.el.querySelector('#dice-pool') as HTMLElement;
+    el.classList.remove('pulse'); void el.offsetWidth; el.classList.add('pulse');
+  }
+
   /** The pool as an expression: d20 first ("1d20+1d6+4"), then the other dice in button order */
   private poolExpr() {
     const order = [...DICE].sort((x, y) => Number(y.sides === 20) - Number(x.sides === 20));
@@ -128,7 +157,8 @@ export class DiceRoller {
     const expr = this.poolExpr();
     const el = this.el.querySelector('#dice-pool')!;
     el.innerHTML = expr
-      ? DICE.filter(d => this.pool.get(d.sides)).map(d =>
+      ? (this.label ? `<span class="pool-label">${esc(this.label)}</span>` : '')
+        + DICE.filter(d => this.pool.get(d.sides)).map(d =>
           `<button class="pool-chip" data-sides="${d.sides}" title="Quitar uno">${d.sides < 0 ? '−' : ''}${this.pool.get(d.sides)}d${Math.abs(d.sides)} ×</button>`).join('')
         + (this.mod ? `<span class="pool-mod">${this.mod > 0 ? '+' : ''}${this.mod}</span>` : '')
         + `<span class="pool-expr">${esc(expr)}</span>`

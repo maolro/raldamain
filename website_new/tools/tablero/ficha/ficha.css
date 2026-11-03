@@ -1,0 +1,9 @@
+/* The sheet window: the website's stat block alone, filling the window */
+html, body { background: #151515; margin: 0; }
+html { color-scheme: dark; }   /* dark scrollbars */
+body { padding: 10px 12px 16px; min-height: auto; display: block; }
+.fi-wait { color: #aaa; font: 14px Lato, sans-serif; text-align: center; margin-top: 2rem; }
+#sheet .statblock, #sheet .statblock-char { margin: 0 auto; max-width: none; width: auto; box-sizing: border-box; }
+#sheet .statblock { padding: 1rem 1.1rem; }
+.rollable { cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; }
+.rollable:hover { color: #fff200; }

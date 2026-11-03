@@ -1,6 +1,6 @@
 // The Tablero server (tools/tablero.py). Every request carries this browser's key
 // (the GM's, or a player's from joining a room): the server decides what it may do.
-import type { Board, BoardSummary, Changes, ImageMeta, JoinInfo, RoomInfo } from './types';
+import type { Board, BoardSummary, Changes, ImageMeta, JoinInfo, RoomInfo, SheetMeta } from './types';
 
 let KEY = '';
 export const setKey = (k: string) => { KEY = k; };
@@ -37,10 +37,14 @@ export const api = {
     fd.append('height', String(meta.height));
     return call<ImageMeta>('POST', '/api/images', fd);
   },
-  updateImage: (id: string, patch: Partial<Pick<ImageMeta, 'name' | 'category' | 'tags'>>) =>
+  updateImage: (id: string, patch: Partial<Pick<ImageMeta, 'name' | 'category' | 'tags' | 'sheet'>>) =>
     call<ImageMeta>('PATCH', `/api/images/${id}`, patch),
   imageUsage: (id: string) => call<{ boards: string[] }>('GET', `/api/images/${id}/usage`),
   deleteImage: (id: string) => call<{ ok: boolean }>('DELETE', `/api/images/${id}`),
+  sheets: () => call<SheetMeta[]>('GET', '/api/sheets'),
+  sheet: (id: string) => call<SheetMeta & { data: unknown }>('GET', `/api/sheets/${encodeURIComponent(id)}`),
+  uploadSheet: (data: unknown, name: string) => call<SheetMeta>('POST', '/api/sheets', { data, name }),
+  deleteSheet: (id: string) => call<{ ok: boolean }>('DELETE', `/api/sheets/${encodeURIComponent(id)}`),
   boards: () => call<BoardSummary[]>('GET', '/api/boards'),
   createBoard: (name: string) => call<Board>('POST', '/api/boards', { name }),
   deleteBoard: (id: string) => call<{ ok: boolean }>('DELETE', `/api/boards/${id}`),

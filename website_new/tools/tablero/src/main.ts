@@ -1,5 +1,7 @@
 // Tablero de Raldamain: boards, layers, grid, image library, drag & drop / paste of
 // images, pencil and text, dice, undo — shared live with the players of a room.
+// Tokens can carry a stat block (ficha), opened in a window over the board, and bars
+// for Impactos and Chi, filled from it and changed during play.
 //
 //   /        the GM (only from this computer): every board, layer and setting
 //   /jugar   a player: joins a room with its invite code; sees the Tokens layer, adds
@@ -10,7 +12,8 @@ import { BoardView, type Pt, type Tool } from './board';
 import { DiceRoller } from './dice';
 import { DRAG_TYPE, Library } from './library';
 import { Live } from './live';
-import { kindOf, LAYERS, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Presence } from './types';
+import { SheetWindows, Sheets } from './sheets';
+import { BARS, kindOf, LAYERS, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Presence, type SheetStats } from './types';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -75,10 +78,11 @@ const view = new BoardView({
     else if (!liveTimer) liveTimer = window.setTimeout(() => { liveTimer = 0; live?.push(true); }, 60);  // others see it move
   },
   selection() { /* the overlay draws itself */ },
-  view(zoom) { $('zoom-label').textContent = `${Math.round(zoom * 100)}%`; },
+  view(zoom) { $('zoom-label').textContent = `${Math.round(zoom * 100)}%`; updateHud(); },
   contextMenu(item, at) { openMenu(item, at); },
   drawn(points) { addStroke(points); },
   textAt(at, item) { if (!item || canEdit(item)) openTextEditor(at, item); },
+  overlay() { updateHud(); },
 });
 view.canEdit = canEdit;
 view.badgeColor = it => {
@@ -86,13 +90,29 @@ view.badgeColor = it => {
   return pid && presence?.players[pid] ? presence.players[pid].color : null;
 };
 
+const sheets = new Sheets(toast, () => me?.pid ?? null);
+
 const library = new Library($('library'), {
   place: meta => placeImages([meta], view.viewCenter()),
   changed: list => view.setImages(list),
   toast,
+  pickSheet: (at, current, done) => sheets.pick(at, { current, done }),
+  sheetName: id => sheets.name(id),
 });
 
 const dice = new DiceRoller($('dice'), toast);
+
+const windows = new SheetWindows(sheets, {
+  roll(item, roll, label) {
+    showSide('dice');
+    dice.load(roll, item.name ? `${item.name}: ${label}` : label);
+  },
+  stats(id, sid, st) {   // the open sheet computed its values: bars that follow it update
+    const it = view.item(id);
+    if (it && it.sheet === sid && canEdit(it) && applyStats(it, st)) { view.render(); commit(); }
+  },
+  toast,
+});
 
 // right panel tabs: Biblioteca / Dados
 function showSide(tab: string) {
@@ -173,10 +193,15 @@ function applyRemote(ch: Changes) {
   // an image nobody here knows yet (another player's token): fetch its details
   if (ch.upserts.some(i => i.image && !library.get(i.image)) && !libReload)
     libReload = window.setTimeout(() => { libReload = 0; library.load(); }, 200);
+  // a sheet this browser doesn't know (the GM gave a player a token with its sheet)
+  if (ch.upserts.some(i => i.sheet && !sheets.get(i.sheet)) && !sheetReload)
+    sheetReload = window.setTimeout(() => { sheetReload = 0; sheets.load().then(() => windows.sync(B().items)); }, 200);
   view.render();
   view.select([...view.selected].filter(id => view.item(id) && canEdit(view.item(id)!)));
+  windows.sync(board.items);
   if (ch.settings) fillGridPanel();
 }
+let sheetReload = 0;
 
 // ── live connection ─────────────────────────────────────────────────────────
 let fitted = '';
@@ -189,6 +214,7 @@ function connect(boardId: string) {
       const first = fitted !== b.id;
       fitted = b.id;
       view.setBoard(b, first);
+      windows.sync(b.items);
       undo = [snapshot()];
       redo = [];
       fillGridPanel();
@@ -236,6 +262,7 @@ async function refreshBoardList(selectId?: string) {
 }
 
 function openBoard(id: string) {
+  windows.closeAll();
   localStorage.setItem(LAST_BOARD, id);
   $<HTMLSelectElement>('board-pick').value = id;
   $('room-panel').hidden = true;
@@ -331,6 +358,7 @@ function forgetRoom(code: string) {
 }
 
 function showJoin(error = '') {
+  windows.closeAll();
   live?.close();
   live = null;
   board = null;
@@ -349,7 +377,7 @@ async function enterRoom(info: JoinInfo) {
   history.replaceState(null, '', `/jugar?sala=${encodeURIComponent(info.code)}`);
   $('join').hidden = true;
   library.ownerFilter = m => m.owner === info.pid;
-  await library.load();
+  await Promise.all([library.load(), sheets.load()]);
   connect(info.board);
 }
 
@@ -379,12 +407,14 @@ function placeImages(metas: ImageMeta[], at: { x: number; y: number }) {
     let x = at.x - w / 2 + n * (own ? g : w), y = at.y - h / 2;
     if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, h); }
     const it = stamp({ id: uid(), kind: 'image', image: m.id, fit: !own, x, y, w, h, rotation: 0, layer, z: nextZ(layer), name: m.name });
+    if (m.sheet && layer !== 'map') it.sheet = m.sheet;   // its sheet: the bars fill in from it
     B().items.push(it);
     ids.push(it.id);
   });
   view.render();
   view.select(ids);
   commit();
+  fillFromSheet(ids);
 }
 
 const defaultCategory = () => (view.activeLayer === 'map' ? 'Mapas' : 'Tokens');
@@ -615,6 +645,7 @@ function bindDoubleClick() {
     if (view.tool !== 'select' || !board) return;
     const it = view.itemAt(view.clientToWorld(e.clientX, e.clientY));
     if (it && kindOf(it) === 'text') openTextEditor({ x: it.x, y: it.y }, it);
+    else if (it && it.sheet && isToken(it)) openSheet(it);
   });
 }
 
@@ -625,6 +656,168 @@ function nudge(dx: number, dy: number) {
   view.render();
   commit();
 }
+
+// ── sheets and bars ─────────────────────────────────────────────────────────
+const isToken = (it: BoardItem) => kindOf(it) === 'image' && it.layer !== 'map';
+
+/** The sheet's Impactos / Chi into a token's bars. A bar whose max is still the sheet's
+ *  last value follows it (a full bar stays full); one changed by hand is left alone. */
+function applyStats(it: BoardItem, st: SheetStats): boolean {
+  const vals: Record<BarId, number> = { hp: st.hits, chi: st.chi };
+  const before = JSON.stringify([it.bars, it.sheetMax]);
+  const bars = it.bars ||= {}, seen = it.sheetMax ||= {};
+  for (const { id } of BARS) {
+    const v = Math.max(0, Math.round(vals[id] || 0)), old = seen[id], bar = bars[id];
+    if (!bar) { if (v > 0 && old === undefined) bars[id] = { value: v, max: v }; }
+    else if (old === undefined || bar.max === old) {
+      if (v <= 0) delete bars[id];
+      else { bar.value = bar.value >= bar.max ? v : Math.min(bar.value, v); bar.max = v; }
+    }
+    seen[id] = v;
+  }
+  if (!Object.keys(bars).length) delete it.bars;
+  return JSON.stringify([it.bars, it.sheetMax]) !== before;
+}
+
+/** Fill these tokens' bars from their sheets (read in the background) */
+function fillFromSheet(ids: string[], fresh = false) {
+  const bySheet = new Map<string, string[]>();
+  for (const id of ids) {
+    const it = view.item(id);
+    if (it?.sheet && isToken(it)) bySheet.set(it.sheet, [...(bySheet.get(it.sheet) || []), id]);
+  }
+  for (const [sid, list] of bySheet) {
+    sheets.statsOf(sid, fresh).then(st => {
+      let changed = false;
+      for (const id of list) {
+        const it = board && view.item(id);
+        if (it && it.sheet === sid && canEdit(it)) changed = applyStats(it, st) || changed;
+      }
+      if (changed) { view.render(); commit(); }
+    }).catch(e => toast(`No se pudieron leer los valores de «${sheets.name(sid)}»: ${(e as Error).message}`, true));
+  }
+}
+
+/** Give the selected tokens a sheet (null: take it away; their bars stay, as they are) */
+function setSheet(items: BoardItem[], sid: string | null) {
+  const list = items.filter(i => canEdit(i) && isToken(i));
+  if (!list.length) return;
+  for (const it of list) {
+    delete it.sheetMax;
+    if (sid) { it.sheet = sid; delete it.bars; }   // a new sheet: its bars, full
+    else delete it.sheet;
+  }
+  view.render();
+  commit();
+  if (sid) fillFromSheet(list.map(i => i.id));
+}
+
+/** Bars back to the sheet's values (full) */
+function resetBars(items: BoardItem[]) {
+  const list = items.filter(i => canEdit(i) && i.sheet);
+  for (const it of list) { delete it.bars; delete it.sheetMax; }
+  view.render();
+  commit();
+  fillFromSheet(list.map(i => i.id), true);
+}
+
+function chooseSheet(items: BoardItem[], at: Pt) {
+  const cur = items.length === 1 ? items[0].sheet : undefined;
+  sheets.pick(at, { current: cur, done: sid => setSheet(items, sid) });
+}
+
+function openSheet(it: BoardItem) {
+  if (!it.sheet) return;
+  const r = view.app.canvas.getBoundingClientRect(), p = view.toScreen({ x: it.x + it.w, y: it.y });
+  windows.open(it, { x: r.left + p.x, y: r.top + p.y });
+}
+
+// The token HUD (Roll20's bubbles): over the selected token, its sheet button and its
+// bars. Type a number to set a value, or -3 / +2 to take away / add.
+const hud = $('hud');
+let hudFor = '';
+function hudToken(): BoardItem | null {
+  if (!board || view.busyIds().size) return null;
+  const sel = view.selectedItems();
+  return sel.length === 1 && isToken(sel[0]) && canEdit(sel[0]) ? sel[0] : null;
+}
+
+function updateHud() {
+  const it = hudToken();
+  if (!it) { hud.hidden = true; hudFor = ''; return; }
+  const typingHere = hud.contains(document.activeElement);
+  if (hudFor !== it.id || !typingHere) renderHud(it);
+  hudFor = it.id;
+  hud.hidden = false;
+  const r = view.app.canvas.getBoundingClientRect(), p = view.topOf(it);
+  const x = r.left + p.x - hud.offsetWidth / 2, y = r.top + p.y - hud.offsetHeight - 8;
+  if (y < r.top - 40 || y > r.bottom || x + hud.offsetWidth < r.left || x > r.right) { hud.style.visibility = 'hidden'; return; }
+  hud.style.visibility = '';
+  hud.style.left = `${Math.max(r.left + 4, Math.min(r.right - hud.offsetWidth - 4, x))}px`;
+  hud.style.top = `${Math.max(r.top + 4, y)}px`;
+}
+
+function renderHud(it: BoardItem) {
+  const sheet = it.sheet ? sheets.name(it.sheet) : '';
+  hud.innerHTML = `
+    <button class="hud-btn" data-hud="sheet" data-pick-sheet title="${it.sheet ? `Abrir la ficha: ${esc(sheet)} (doble clic en el token)` : 'Elegir una ficha para este token'}">📜${it.sheet ? '' : '<small>＋</small>'}</button>
+    ${it.sheet ? '<button class="hud-btn small" data-hud="change" data-pick-sheet title="Cambiar o quitar la ficha">▾</button>' : ''}
+    ${BARS.map(b => {
+      const v = it.bars?.[b.id];
+      return `<span class="hud-bar" style="--c:${b.color}" title="${b.name}${it.sheetMax?.[b.id] !== undefined ? ` (ficha: ${it.sheetMax[b.id]})` : ''} · escribe un número, o -3 / +2 para restar o sumar · máx. vacío: sin barra">
+        <span class="hud-icon">${b.icon}</span><input data-bar="${b.id}" data-f="value" value="${v ? v.value : ''}" placeholder="–" inputmode="numeric"><span class="hud-sep">/</span><input data-bar="${b.id}" data-f="max" value="${v ? v.max : ''}" placeholder="máx" inputmode="numeric"></span>`;
+    }).join('')}`;
+}
+
+/** A bar input finished: apply what was typed */
+function applyBarInput(inp: HTMLInputElement) {
+  const it = view.item(hudFor);
+  if (!it || !canEdit(it)) return;
+  const id = inp.dataset.bar as BarId, f = inp.dataset.f as 'value' | 'max';
+  const bar = it.bars?.[id];
+  const txt = inp.value.trim().replace(/[−–]/g, '-');
+  const cur = bar ? bar[f] : 0;
+  let n: number | null = null;
+  if (/^[+-]\s*\d+$/.test(txt)) n = cur + Number(txt.replace(/\s/g, ''));
+  else if (/^=?\s*\d+$/.test(txt)) n = Number(txt.replace(/[=\s]/g, ''));
+  else if (txt === '' && f === 'max') n = 0;
+  if (n === null) { renderHud(it); return; }
+  const before = JSON.stringify(it.bars);
+  const bars = it.bars ||= {};
+  if (f === 'max') {
+    if (n <= 0) delete bars[id];
+    else if (!bar) bars[id] = { value: n, max: n };
+    else bar.max = n;
+  } else if (!bar) { if (n > 0) bars[id] = { value: n, max: n }; }
+  else bar.value = Math.max(0, n);
+  if (!Object.keys(bars).length) delete it.bars;
+  if (JSON.stringify(it.bars) !== before) { view.render(); commit(); }
+  renderHud(it);
+}
+
+hud.addEventListener('keydown', e => {
+  e.stopPropagation();
+  const inp = e.target as HTMLInputElement;
+  if (!inp.dataset?.bar) return;
+  if (e.key === 'Enter') { e.preventDefault(); applyBarInput(inp); hud.querySelector<HTMLInputElement>(`[data-bar="${inp.dataset.bar}"][data-f="${inp.dataset.f}"]`)?.select(); }
+  else if (e.key === 'Escape') { e.preventDefault(); inp.blur(); }
+});
+hud.addEventListener('focusin', e => { const inp = e.target as HTMLInputElement; if (inp.dataset?.bar) setTimeout(() => inp.select(), 0); });
+hud.addEventListener('focusout', e => {
+  const inp = e.target as HTMLInputElement;
+  if (!inp.dataset?.bar) return;
+  const it = view.item(hudFor);
+  const v = it?.bars?.[inp.dataset.bar as BarId];
+  if (inp.value.trim() !== String(v ? v[inp.dataset.f as 'value' | 'max'] : '')) applyBarInput(inp);
+});
+hud.addEventListener('click', e => {
+  const b = (e.target as HTMLElement).closest<HTMLElement>('[data-hud]');
+  const it = view.item(hudFor);
+  if (!b || !it) return;
+  const r = b.getBoundingClientRect();
+  if (b.dataset.hud === 'sheet' && it.sheet) openSheet(it);
+  else chooseSheet([it], { x: r.left, y: r.bottom + 6 });
+});
 
 // ── context menu ────────────────────────────────────────────────────────────
 type Entry = [string, string, () => void, string?];
@@ -638,6 +831,21 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
     entries.push(['Al frente', '', () => toFront(true)], ['Al fondo', '', () => toFront(false)], ['-', '', () => {}]);
     if (isGM()) entries.push(...LAYERS.filter(l => l.id !== item.layer).map(l => [`Mover a capa ${l.name}`, '', () => moveToLayer(l.id)] as Entry), ['-', '', () => {}]);
     if (kindOf(item) === 'text') entries.push(['Editar texto', 'doble clic', () => openTextEditor({ x: item.x, y: item.y }, item)]);
+    const tokens = sel.filter(i => isToken(i) && canEdit(i));
+    if (tokens.length) {
+      entries.push(['§Ficha y barras', '', () => {}]);
+      if (tokens.length === 1 && tokens[0].sheet) entries.push([`📜 Abrir ficha`, 'doble clic', () => openSheet(tokens[0])]);
+      entries.push([tokens.some(i => i.sheet) ? 'Cambiar ficha…' : 'Elegir ficha…', tokens.length > 1 ? `${tokens.length} tokens` : '', () => chooseSheet(tokens, at)]);
+      if (tokens.some(i => i.sheet)) entries.push(['Barras desde la ficha', 'llenas', () => resetBars(tokens)]);
+      if (isGM()) {
+        const hidden = tokens.every(i => i.barsHidden);
+        entries.push([`${hidden ? '☑' : '☐'} Ocultar barras a los jugadores`, 'salvo a quien lo controla', () => {
+          tokens.forEach(i => { if (hidden) delete i.barsHidden; else i.barsHidden = true; });
+          view.render(); commit();
+        }]);
+      }
+      entries.push(['-', '', () => {}]);
+    }
     if (kindOf(item) === 'image') {
       if (item.layer === 'map' && isGM()) entries.push(['Ajustar la página a este mapa', '', () => fitPageToMap(item, false)],
         ['Ajustar cuadrícula y página al mapa…', 'casillas', () => fitPageToMap(item, true)]);
@@ -794,7 +1002,7 @@ document.addEventListener('keyup', e => {
 
 // ── start ───────────────────────────────────────────────────────────────────
 // for the browser console (and tests): window.tablero.view / .board() / .me()
-(window as unknown as { tablero: unknown }).tablero = { view, library, dice, board: () => board, me: () => me, presence: () => presence, live: () => live };
+(window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, board: () => board, me: () => me, presence: () => presence, live: () => live };
 (async () => {
   await view.init(stage);
   bindDoubleClick();
@@ -819,6 +1027,6 @@ document.addEventListener('keyup', e => {
     return;
   }
   library.ownerFilter = m => !m.owner;
-  await library.load();
+  await Promise.all([library.load(), sheets.load()]);
   openBoard(await refreshBoardList());
 })().catch(e => { console.error(e); toast('No se pudo iniciar el tablero: ' + (e as Error).message, true); });

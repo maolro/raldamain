@@ -8,13 +8,20 @@ Tablero de Raldamain — a local token board for running games.
              and tags for filtering. Each player has their own.
   Salas      the GM opens a room for a board and shares its invite code; players join
              at /jugar with the code and a name, and everyone sees the board change live.
+  Fichas     stat blocks tied to tokens: the Taller's characters (data/statblocks), the
+             Bestiario's creatures (data/creatures) or uploaded .json files. A token's
+             sheet opens in a window over the board (/ficha, drawn by the website's own
+             stat block code) and its values roll in the Dados tab. Tokens carry bars
+             for Impactos and Chi, filled from the sheet and changed during play.
 
 Who may do what is checked here, not in the browser:
   GM       everything (the page at / gets the GM key, but only from this computer).
   Players  the Tokens layer only (they never receive the GM layer); they add their own
            tokens, drawings and texts and can change, delete and share only the items
            they control. The GM, and whoever controls a token, can give its control to
-           other players.
+           other players. Players open only the sheets of the tokens they control (and
+           the ones they uploaded); other tokens reach them without sheet, and without
+           bars if the GM hid them.
 
 Live sync: every open board is a session kept in memory. Browsers get its changes as
 Server-Sent Events (/api/live/<board>/events) and send theirs as small batches
@@ -28,6 +35,7 @@ stores everything under tools/tablero/storage/:
     library.json         their metadata: name, category, tags, size, owner (player id)
     boards/<id>.json     each board
     rooms.json           invite codes: board and players (name, colour, private key)
+    sheets/<id>.json     uploaded stat blocks · sheets.json: their name, kind and owner
     gm_key               the GM's key
 
 Usage:  python tools/tablero.py   → http://localhost:5179   (players: /jugar)
@@ -66,6 +74,13 @@ LIBRARY = STORAGE / "library.json"
 BOARDS = STORAGE / "boards"
 ROOMS = STORAGE / "rooms.json"
 GM_KEY = STORAGE / "gm_key"
+SHEETS = STORAGE / "sheets"
+SHEET_INDEX = STORAGE / "sheets.json"
+SITE = TOOLS.parent                      # the website: its stat block code and data
+FICHA = CLIENT / "ficha"                 # the sheet window's page
+REPO_SHEETS = {"pj": SITE / "data" / "statblocks", "cr": SITE / "data" / "creatures"}
+SHEET_ID_RE = re.compile(r"^(pj|cr|up):[A-Za-z0-9_-]{1,80}$")
+MAX_SHEET = 2 * 1024 * 1024  # bytes
 PORT = 5179
 LAN = os.environ.get("TABLERO_LAN") == "1"
 
@@ -197,9 +212,47 @@ def player_page():
     return _page()
 
 
-@app.route("/assets/<path:name>")
+@app.route("/app/<path:name>")
 def client_assets(name):
-    resp = send_from_directory(DIST / "assets", name)
+    resp = send_from_directory(DIST / "app", name)
+    resp.headers["Cache-Control"] = "no-cache"
+    return resp
+
+
+@app.route("/ficha")
+def sheet_page():
+    """The sheet window (an iframe): the website's stat block, filled in by the board page."""
+    resp = send_from_directory(FICHA, "index.html")
+    resp.headers["Cache-Control"] = "no-cache"
+    return resp
+
+
+@app.route("/ficha/<path:name>")
+def sheet_page_files(name):
+    resp = send_from_directory(FICHA, name)
+    resp.headers["Cache-Control"] = "no-cache"
+    return resp
+
+
+@app.route("/assets/<path:name>")
+def site_assets(name):
+    """The website's scripts, styles and pictures (the stat block code), read-only.
+    (A client built before its files moved to /app still finds them here.)"""
+    old_build = DIST / "assets"
+    if (old_build / name).is_file():
+        resp = send_from_directory(old_build, name)
+    else:
+        resp = send_from_directory(SITE / "assets", name)
+    resp.headers["Cache-Control"] = "no-cache"
+    return resp
+
+
+@app.route("/data/<path:name>")
+def site_data(name):
+    """The website's public data (ranks, equipment…) that the character stat block reads."""
+    if not name.endswith(".json"):
+        abort(404)
+    resp = send_from_directory(SITE / "data", name)
     resp.headers["Cache-Control"] = "no-cache"
     return resp
 
@@ -323,6 +376,14 @@ def api_image_update(iid):
             meta["category"] = str(body["category"]).strip()[:40] or "Otros"
         if "tags" in body:
             meta["tags"] = _clean_tags(body["tags"])
+        if "sheet" in body:  # the stat block its tokens get
+            sid = str(body["sheet"] or "")
+            if sid and not _sheet_choosable(sid, w):
+                return jsonify({"error": "esa ficha no es tuya"}), 403
+            if sid:
+                meta["sheet"] = sid
+            else:
+                meta.pop("sheet", None)
         _write(LIBRARY, lib)
     return jsonify(meta)
 
@@ -358,7 +419,182 @@ def api_image_delete(iid):
     return jsonify({"ok": True})
 
 
+# ─────────────────────────────────────────────────────────────── stat blocks (fichas)
+
+_repo_cache: dict[str, tuple] = {}
+
+
+def sheet_kind(d) -> str | None:
+    """'criatura' (Bestiario format: hits, actions), 'pj' (Creador format: stats, ranks) or None."""
+    if not isinstance(d, dict):
+        return None
+    if "hits" in d or ("actions" in d and "stats" not in d):
+        return "criatura"
+    if "stats" in d or "ranks" in d:
+        return "pj"
+    return None
+
+
+def repo_sheets() -> list[dict]:
+    """The Taller's characters and the Bestiario's creatures (cached by file date)."""
+    out = []
+    for prefix, folder in REPO_SHEETS.items():
+        for p in sorted(folder.glob("*.json")):
+            st = p.stat()
+            stamp = (st.st_mtime_ns, st.st_size)
+            hit = _repo_cache.get(str(p))
+            if not hit or hit[0] != stamp:
+                d = _read(p, None)
+                meta = None
+                if sheet_kind(d):
+                    meta = {"id": f"{prefix}:{p.stem}", "name": str(d.get("name") or p.stem),
+                            "kind": "criatura" if prefix == "cr" else "pj", "source": "repo"}
+                    if isinstance(d.get("level"), (int, float)):
+                        meta["level"] = d["level"]
+                hit = _repo_cache[str(p)] = (stamp, meta)
+            if hit[1]:
+                out.append(hit[1])
+    return out
+
+
+def uploaded_sheets() -> list[dict]:
+    return _read(SHEET_INDEX, [])
+
+
+def sheet_meta(sid: str) -> dict | None:
+    if not SHEET_ID_RE.match(sid or ""):
+        return None
+    if sid.startswith("up:"):
+        return next((m for m in uploaded_sheets() if m.get("id") == sid), None)
+    return next((m for m in repo_sheets() if m["id"] == sid), None)
+
+
+def sheet_data(sid: str):
+    prefix, name = sid.split(":", 1)
+    path = SHEETS / f"{name}.json" if prefix == "up" else REPO_SHEETS[prefix] / f"{name}.json"
+    return _read(path, None)
+
+
+def _controlled_sheets(w) -> set:
+    """Sheets of the tokens this player controls on their room's board."""
+    bid = (rooms().get(w[2]) or {}).get("board")
+    s = session(bid) if bid else None
+    if not s or s.board is None:
+        return set()
+    with s.lock:
+        return {it.get("sheet") for it in s.board.get("items") or []
+                if it.get("sheet") and it.get("layer") == "tokens" and w[1] in (it.get("controllers") or [])}
+
+
+def _sheet_choosable(sid: str, w) -> bool:
+    """May put this sheet on a token or a library image: the GM any; a player their own uploads."""
+    meta = sheet_meta(sid)
+    if not meta:
+        return False
+    return w[0] == "gm" or (meta.get("source") == "upload" and meta.get("owner") == w[1])
+
+
+def _sheet_readable(sid: str, w) -> bool:
+    return _sheet_choosable(sid, w) or (w[0] == "player" and sid in _controlled_sheets(w))
+
+
+@app.route("/api/sheets")
+def api_sheets():
+    """GM: every sheet. A player: their uploads and the sheets of the tokens they control."""
+    w = who()
+    if not w:
+        abort(403)
+    ups = uploaded_sheets()
+    if w[0] == "gm":
+        return jsonify(repo_sheets() + ups)
+    mine = _controlled_sheets(w)
+    out = [m for m in ups if m.get("owner") == w[1]]
+    out += [m for m in repo_sheets() + ups if m["id"] in mine and m not in out]
+    return jsonify(out)
+
+
+@app.route("/api/sheets/<sid>")
+def api_sheet_get(sid):
+    w = who()
+    if not w:
+        abort(403)
+    meta = sheet_meta(sid)
+    if not meta:
+        return jsonify({"error": "no existe esa ficha"}), 404
+    if not _sheet_readable(sid, w):
+        abort(403)
+    data = sheet_data(sid)
+    if data is None:
+        return jsonify({"error": "no se pudo leer la ficha"}), 404
+    return jsonify({**meta, "data": data})
+
+
+@app.route("/api/sheets", methods=["POST"])
+def api_sheet_upload():
+    """{data: the stat block (a .json of the Creador or the Bestiario), name?} → its entry.
+    The same file twice (by the same person) is stored once."""
+    w = who()
+    if not w:
+        abort(403)
+    if (request.content_length or 0) > MAX_SHEET:
+        return jsonify({"error": "la ficha pasa de 2 MB"}), 400
+    body = request.get_json(force=True, silent=True) or {}
+    d = body.get("data")
+    kind = sheet_kind(d)
+    if not kind:
+        return jsonify({"error": "no parece una ficha (ni del Creador ni del Bestiario)"}), 400
+    owner = w[1] if w[0] == "player" else None
+    sha = hashlib.sha1(json.dumps(d, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
+    with _lock:
+        index = uploaded_sheets()
+        same = next((m for m in index if m.get("sha1") == sha and m.get("owner") == owner), None)
+        if same:
+            return jsonify({**same, "duplicate": True})
+        name = sha[:12] + (f"-{owner}" if owner else "")
+        _write(SHEETS / f"{name}.json", d)
+        meta = {"id": f"up:{name}", "name": str(body.get("name") or d.get("name") or "Ficha").strip()[:80],
+                "kind": kind, "source": "upload", "sha1": sha, "created": time.time()}
+        if isinstance(d.get("level"), (int, float)):
+            meta["level"] = d["level"]
+        if owner:
+            meta["owner"] = owner
+        index.append(meta)
+        _write(SHEET_INDEX, index)
+    return jsonify(meta)
+
+
+@app.route("/api/sheets/<sid>", methods=["DELETE"])
+def api_sheet_delete(sid):
+    w = who()
+    if not w:
+        abort(403)
+    meta = sheet_meta(sid)
+    if not meta or meta.get("source") != "upload":
+        return jsonify({"error": "solo se pueden borrar las fichas subidas"}), 400
+    if w[0] == "player" and meta.get("owner") != w[1]:
+        abort(403)
+    with _lock:
+        _write(SHEET_INDEX, [m for m in uploaded_sheets() if m.get("id") != sid])
+        (SHEETS / f"{sid[3:]}.json").unlink(missing_ok=True)
+    return jsonify({"ok": True})
+
+
 # ─────────────────────────────────────────────────────────────── live board sessions
+
+PRIVATE_FIELDS = ("sheet", "sheetMax")  # a token's sheet: only for whoever controls it
+
+
+def player_item(it: dict, pid: str | None) -> dict:
+    """An item as a player sees it: tokens they don't control come without their sheet
+    (and without bars, if the GM hid them)."""
+    if pid and pid in (it.get("controllers") or []):
+        return it
+    if not any(k in it for k in PRIVATE_FIELDS) and not (it.get("barsHidden") and "bars" in it):
+        return it
+    out = {k: v for k, v in it.items() if k not in PRIVATE_FIELDS}
+    if it.get("barsHidden"):
+        out.pop("bars", None)
+    return out
 
 def _event(name: str, data) -> str:
     return f"event: {name}\ndata: {json.dumps(data, ensure_ascii=False)}\n\n"
@@ -374,12 +610,13 @@ class Session:
         self.subs: dict[str, tuple[queue.Queue, str, str | None]] = {}  # connection id → (queue, role, player id)
         self._save_timer: threading.Timer | None = None
 
-    def visible(self, role: str) -> dict:
-        """The board as this role sees it: players never get the GM layer."""
+    def visible(self, role: str, pid: str | None = None) -> dict:
+        """The board as this role sees it: players never get the GM layer, nor the sheets
+        of the tokens they don't control."""
         with self.lock:
             b = json.loads(json.dumps(self.board))
         if role == "player":
-            b["items"] = [it for it in b.get("items") or [] if it.get("layer") != "gm"]
+            b["items"] = [player_item(it, pid) for it in b.get("items") or [] if it.get("layer") != "gm"]
         return b
 
     def schedule_save(self):
@@ -451,7 +688,7 @@ def live_events(bid):
     def stream():
         try:
             yield "retry: 1500\n\n"
-            yield _event("snapshot", {"board": s.visible(role), "me": me})
+            yield _event("snapshot", {"board": s.visible(role, pid), "me": me})
             s.presence()
             while True:
                 try:
@@ -487,17 +724,29 @@ def live_changes(bid):
             it["controllers"] = [c for c in dict.fromkeys(it.get("controllers") or []) if c in known]
             if role == "player":
                 if old is not None and (old.get("layer") != "tokens" or pid not in (old.get("controllers") or [])):
-                    refused.append(old if old.get("layer") != "gm" else {"id": old["id"], "removed": True})
+                    refused.append(player_item(old, pid) if old.get("layer") != "gm" else {"id": old["id"], "removed": True})
                     continue
                 if it.get("layer") != "tokens":
-                    refused.append(old if old is not None else {"id": it["id"], "removed": True})
+                    refused.append(player_item(old, pid) if old is not None else {"id": it["id"], "removed": True})
                     continue
                 if old is None:  # a new token: theirs
                     it["owner"] = pid
                     if pid not in it["controllers"]:
                         it["controllers"].insert(0, pid)
+                    it.pop("barsHidden", None)
                 else:
                     it["owner"] = old.get("owner")
+                    if "barsHidden" in old:  # the GM's choice
+                        it["barsHidden"] = old["barsHidden"]
+                    else:
+                        it.pop("barsHidden", None)
+                # a sheet only from their own uploads (or the one the token already had)
+                if it.get("sheet") and it.get("sheet") != (old or {}).get("sheet") and not _sheet_choosable(it["sheet"], (role, pid, code)):
+                    if (old or {}).get("sheet"):
+                        it["sheet"] = old["sheet"]
+                    else:
+                        it.pop("sheet", None)
+                    refused.append(it)  # (theirs: they get it back as it now is)
             if old is None:
                 order.append(it["id"])
             items[it["id"]] = it
@@ -507,7 +756,7 @@ def live_changes(bid):
             if old is None:
                 continue
             if role == "player" and (old.get("layer") != "tokens" or pid not in (old.get("controllers") or [])):
-                refused.append(old)
+                refused.append(player_item(old, pid))
                 continue
             del items[rid]
             rm_ok.append(rid)
@@ -521,7 +770,7 @@ def live_changes(bid):
 
         def make(r, p):
             if r == "player":  # GM-layer items never reach players: for them they disappear
-                ups = [it for it in up_ok if it.get("layer") != "gm"]
+                ups = [player_item(it, p) for it in up_ok if it.get("layer") != "gm"]
                 rms = rm_ok + [it["id"] for it in up_ok if it.get("layer") == "gm"]
             else:
                 ups, rms = up_ok, rm_ok
@@ -673,7 +922,7 @@ def api_board_get(bid):
     role, pid, code = need_board(bid)
     if not ID_RE.match(bid) or not (BOARDS / f"{bid}.json").exists():
         abort(404)
-    return jsonify(session(bid).visible(role))
+    return jsonify(session(bid).visible(role, pid))
 
 
 @app.route("/api/boards/<bid>", methods=["DELETE"])
@@ -731,7 +980,8 @@ if __name__ == "__main__":
         watcher = prepare_client(watch=os.environ.get("LIVE_RELOAD", "1") != "0")
     try:
         # the page reloads after every rebuild of the client (unless a change is still being sent)
-        live_reload.run(app, PORT, url, watch=["tools/tablero/dist/index.html", "tools/tablero/dist/assets/*"],
+        live_reload.run(app, PORT, url, watch=["tools/tablero/dist/index.html", "tools/tablero/dist/app/*",
+                                               "tools/tablero/ficha/*"],
                         host="0.0.0.0" if LAN else "127.0.0.1")
     finally:
         if watcher:

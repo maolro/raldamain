@@ -38,7 +38,19 @@ export interface BoardItem {
   // text
   text?: string;
   fontSize?: number;
+  // token: its stat block and its bars (Impactos, Chi), like Roll20's
+  sheet?: string;       // SheetMeta.id
+  bars?: Partial<Record<BarId, Bar>>;
+  sheetMax?: Partial<Record<BarId, number>>;  // the sheet's values when last read (a bar whose max is still that follows the sheet)
+  barsHidden?: boolean; // the GM hides the bars from the players who don't control it
 }
+
+export type BarId = 'hp' | 'chi';
+export interface Bar { value: number; max: number }
+export const BARS: { id: BarId; name: string; icon: string; color: string }[] = [
+  { id: 'hp', name: 'Impactos', icon: '❤', color: '#d94141' },
+  { id: 'chi', name: 'Chi', icon: '✦', color: '#3a8ee6' },
+];
 
 export const kindOf = (it: BoardItem): ItemKind => it.kind || 'image';
 
@@ -73,7 +85,20 @@ export interface ImageMeta {
   created: number;
   duplicate?: boolean;  // upload answer: this image was already in the library
   owner?: string;       // the player who uploaded it (missing: the GM)
+  sheet?: string;       // the stat block its tokens get (SheetMeta.id)
 }
+
+/** A stat block: a Creador character, a Bestiario creature, or an uploaded .json of either */
+export interface SheetMeta {
+  id: string;           // pj:<file> (data/statblocks) · cr:<file> (data/creatures) · up:<id> (uploaded)
+  name: string;
+  kind: 'pj' | 'criatura';
+  source: 'repo' | 'upload';
+  level?: number;
+  owner?: string;       // uploads: the player who uploaded it (missing: the GM)
+  duplicate?: boolean;
+}
+export interface SheetStats { hits: number; chi: number }
 
 export const DEFAULT_CATEGORIES = ['Personajes', 'Criaturas', 'Tokens', 'Mapas', 'Objetos', 'Efectos', 'Otros'];
 
