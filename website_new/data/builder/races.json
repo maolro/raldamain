@@ -123,16 +123,17 @@
         "boost": 1
       },
       {
-        "stat": "itl",
-        "boost": -1
+        "stat": "con",
+        "boost": 1
       }
     ],
+    "chi": 2,
     "abilities": [
       {
         "name": "Fuerza de León",
         "type": "Pasiva",
-        "tags": "Innata",
-        "description": "Recibe Velocidad de Escalada 1. El daño de sus ataques naturales aumenta por un paso y puede provocar daño Cortante y Perforante con ellos."
+        "tags": "Innata, Pasiva",
+        "description": "Recibe Velocidad de Escalada y Salto 1, y Olfato a distancia media. Recibe los ataques naturales Garra y Mordisco. "
       }
     ]
   },
