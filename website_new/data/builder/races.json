@@ -51,7 +51,8 @@
             "spell_rank": 1,
             "sources": [
               "cat:Arcano"
-            ]
+            ],
+            "from_rank": 1
           }
         ],
         "chi": 2,
