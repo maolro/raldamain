@@ -234,12 +234,53 @@
     {
       "id": "enfermado",
       "name": "Enfermado",
-      "description": "Sin definir todavía: edita sus niveles en el Rank Editor → Efectos de estado.",
+      "description": "Mareos y Náuseas.",
       "levels": [
         {
           "name": "I",
-          "penalties": [],
-          "notes": "Sin definir."
+          "penalties": [
+            {
+              "rolls": [
+                "Ataque",
+                "Defensa"
+              ],
+              "stats": [],
+              "dice": 1
+            },
+            {
+              "rolls": [
+                "Salvación",
+                "Talento",
+                "Habilidad"
+              ],
+              "stats": [
+                "CON"
+              ],
+              "dice": 1
+            }
+          ]
+        },
+        {
+          "name": "II",
+          "penalties": [
+            {
+              "rolls": [
+                "Ataque",
+                "Defensa"
+              ],
+              "stats": [],
+              "dice": 2
+            },
+            {
+              "rolls": [
+                "Salvación",
+                "Talento",
+                "Habilidad"
+              ],
+              "stats": [],
+              "dice": 1
+            }
+          ]
         }
       ]
     },
