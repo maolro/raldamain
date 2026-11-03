@@ -9,10 +9,15 @@ export const LAYERS: { id: LayerId; name: string; hint: string }[] = [
   { id: 'gm', name: 'GM', hint: 'Solo para el GM (los jugadores no lo verán)' },
 ];
 
-/** An image placed on the board. x, y = top-left corner before rotation (world pixels). */
+/** image (from the library), path (pencil stroke) or text */
+export type ItemKind = 'image' | 'path' | 'text';
+
+/** Something placed on the board. x, y = top-left corner before rotation (world pixels). */
 export interface BoardItem {
   id: string;
-  image: string;        // ImageMeta.id
+  kind?: ItemKind;      // missing = 'image' (boards made before drawings existed)
+  image?: string;       // image: ImageMeta.id
+  fit?: boolean;        // image: drawn inside its box keeping its proportions (tokens)
   x: number;
   y: number;
   w: number;
@@ -22,7 +27,18 @@ export interface BoardItem {
   z: number;            // order inside its layer
   name?: string;
   locked?: boolean;
+  // path: points (x, y, x, y…) inside a pw × ph box, scaled to w × h when resized
+  points?: number[];
+  pw?: number;
+  ph?: number;
+  color?: string;       // path and text
+  stroke?: number;      // path: line thickness
+  // text
+  text?: string;
+  fontSize?: number;
 }
+
+export const kindOf = (it: BoardItem): ItemKind => it.kind || 'image';
 
 export interface GridSettings {
   size: number;         // pixels per cell

@@ -95,3 +95,14 @@ body { display: grid; grid-template: 48px 1fr / 56px 1fr 320px; grid-template-ar
 .toast { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 40; background: var(--panel); border: 1px solid var(--gold-dim);
   color: var(--text); padding: 8px 16px; border-radius: 6px; box-shadow: 0 6px 20px rgba(0,0,0,.5); }
 .toast.bad { border-color: var(--red); color: var(--red); }
+
+/* pencil / text options, new token size, in-place text editor */
+.tool-opts { top: 60px; }
+.swatches { display: flex; flex-wrap: wrap; gap: 5px; }
+.swatches button { width: 22px; height: 22px; border-radius: 50%; border: 2px solid #444; cursor: pointer; padding: 0; }
+.swatches button.on { border-color: var(--gold); box-shadow: 0 0 0 2px #000 inset; }
+.newsize { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); margin-left: 6px; }
+.newsize select { padding: 3px 6px; }
+.text-edit { position: fixed; z-index: 25; min-width: 160px; min-height: 1.4em; background: rgba(10,10,10,.85); border: 1px dashed var(--gold);
+  border-radius: 4px; padding: 2px 6px; font-family: Lato, system-ui, sans-serif; font-weight: 700; resize: none; outline: none; overflow: hidden;
+  white-space: pre; transform-origin: 0 0; }

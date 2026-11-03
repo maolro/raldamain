@@ -18,6 +18,11 @@
     <button class="btn small" id="undo" title="Deshacer (Ctrl+Z)">↶</button>
     <button class="btn small" id="redo" title="Rehacer (Ctrl+Y)">↷</button>
     <span class="status" id="status"></span>
+    <label class="newsize" title="Tamaño de los tokens que añades (arrastrando, pegando o desde la biblioteca)">Tokens nuevos
+      <select id="new-size" class="inp">
+        <option value="1">1×1</option><option value="2">2×2</option><option value="3">3×3</option><option value="4">4×4</option>
+        <option value="orig">Tamaño original</option>
+      </select></label>
     <span class="grow"></span>
     <span class="role" title="Por ahora solo existe la vista del GM">👑 GM</span>
   </header>
@@ -26,6 +31,8 @@
     <div class="group">
       <button class="tool on" data-tool="select" title="Seleccionar y mover (V)">⬚</button>
       <button class="tool" data-tool="pan" title="Mover la vista (H · o mantén Espacio · o arrastra con el botón derecho/central)">✋</button>
+      <button class="tool" data-tool="draw" title="Lápiz: dibujar en la capa activa (B · Mayús: línea recta)">✎</button>
+      <button class="tool" data-tool="text" title="Texto: clic para escribir en la capa activa (T · doble clic en un texto para editarlo)"><b>T</b></button>
     </div>
     <div class="group" id="layers"></div>
     <div class="group">
@@ -62,6 +69,22 @@
     </div>
     <label>Fondo<input type="color" id="p-bg"></label>
   </div>
+
+  <div class="panel tool-opts" id="draw-opts" hidden>
+    <h3>Lápiz</h3>
+    <div class="swatches" data-for="pen"></div>
+    <label>Color<input type="color" id="pen-color"></label>
+    <label>Grosor <span id="pen-width-val"></span><input type="range" id="pen-width" min="1" max="60" step="1"></label>
+    <small class="muted">Mayús: línea recta · se dibuja en la capa activa</small>
+  </div>
+  <div class="panel tool-opts" id="text-opts" hidden>
+    <h3>Texto</h3>
+    <div class="swatches" data-for="text"></div>
+    <label>Color<input type="color" id="text-color"></label>
+    <label>Tamaño <span id="text-size-val"></span><input type="range" id="text-size" min="10" max="160" step="2"></label>
+    <small class="muted">Clic en el tablero para escribir · Enter termina (Mayús+Enter: nueva línea) · doble clic en un texto para editarlo</small>
+  </div>
+  <textarea id="text-edit" class="text-edit" hidden spellcheck="false"></textarea>
 
   <div class="menu" id="menu" hidden></div>
   <div class="toast" id="toast" hidden></div>

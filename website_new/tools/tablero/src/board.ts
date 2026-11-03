@@ -3,13 +3,21 @@
 //
 // World coordinates are pixels of the page (0,0 = its top-left corner); the camera is
 // the `world` container's position and scale. Each item is a Container centred on the
-// item (so it rotates around its middle) holding its Sprite.
-import { Application, Assets, Container, FederatedPointerEvent, Graphics, Rectangle, Sprite, Texture } from 'pixi.js';
+// item (so it rotates around its middle) holding its Sprite, its pencil stroke or its Text.
+import { Application, Assets, Container, FederatedPointerEvent, Graphics, Rectangle, Sprite, Text, Texture } from 'pixi.js';
 import { imageUrl } from './api';
-import type { Board, BoardItem, ImageMeta, LayerId } from './types';
+import { kindOf, type Board, type BoardItem, type ImageMeta, type LayerId } from './types';
 
-export type Tool = 'select' | 'pan';
-type Pt = { x: number; y: number };
+export type Tool = 'select' | 'pan' | 'draw' | 'text';
+export type Pt = { x: number; y: number };
+
+export const TEXT_FONT = 'Lato, system-ui, sans-serif';
+/** Style of a text item's Text (also used to measure it) */
+export const textStyle = (it: Pick<BoardItem, 'color' | 'fontSize'>) => ({
+  fill: it.color || '#ffffff', fontSize: it.fontSize || 32, fontFamily: TEXT_FONT, fontWeight: '700' as const,
+  stroke: { color: '#000000', width: Math.max(2, (it.fontSize || 32) / 9), join: 'round' as const },
+  lineHeight: (it.fontSize || 32) * 1.15,
+});
 
 export interface BoardEvents {
   /** "commit": a finished change (undo step + save); "live": mid-drag */
@@ -17,6 +25,10 @@ export interface BoardEvents {
   selection(ids: string[]): void;
   view(zoom: number): void;
   contextMenu(item: BoardItem | null, client: Pt): void;
+  /** pencil stroke finished: its points (x, y, x, y… in world pixels) */
+  drawn(points: number[]): void;
+  /** text tool click (item: an existing text to edit) */
+  textAt(world: Pt, item?: BoardItem): void;
 }
 
 type Drag =
@@ -24,7 +36,8 @@ type Drag =
   | { kind: 'resize'; id: string; sx: number; sy: number; orig: BoardItem; fixed: Pt }
   | { kind: 'rotate'; id: string; orig: BoardItem }
   | { kind: 'pan'; start: Pt; orig: Pt; moved: boolean; button: number; target: string }
-  | { kind: 'marquee'; start: Pt; additive: boolean };
+  | { kind: 'marquee'; start: Pt; additive: boolean }
+  | { kind: 'draw'; pts: number[] };
 
 const MIN_ZOOM = 0.08, MAX_ZOOM = 6;
 const HANDLE = 10;          // screen pixels
@@ -39,6 +52,8 @@ export class BoardView {
   /** last pointer position over the board, in world coordinates (paste target) */
   pointer: Pt | null = null;
   readonly selected = new Set<string>();
+  /** pencil colour and thickness (world pixels) */
+  pen = { color: '#e03030', width: 6 };
 
   private world = new Container();
   private pageG = new Graphics();
@@ -46,6 +61,7 @@ export class BoardView {
   private layers: Record<LayerId, Container> = { map: new Container(), tokens: new Container(), gm: new Container() };
   private overlay = new Container();
   private marqueeG = new Graphics();
+  private drawG = new Graphics();      // the stroke being drawn
   private views = new Map<string, Container>();
   private textures = new Map<string, Texture>();
   private loading = new Set<string>();
@@ -60,7 +76,7 @@ export class BoardView {
     host.appendChild(this.app.canvas);
     for (const l of Object.values(this.layers)) l.sortableChildren = true;
     this.layers.gm.alpha = 0.6;   // the GM sees the GM layer see-through
-    this.world.addChild(this.pageG, this.layers.map, this.gridG, this.layers.tokens, this.layers.gm, this.overlay, this.marqueeG);
+    this.world.addChild(this.pageG, this.layers.map, this.gridG, this.layers.tokens, this.layers.gm, this.drawG, this.overlay, this.marqueeG);
     this.app.stage.addChild(this.world);
     const stage = this.app.stage;
     stage.eventMode = 'static';
@@ -114,7 +130,26 @@ export class BoardView {
 
   setTool(t: Tool) {
     this.tool = t;
-    this.app.canvas.style.cursor = t === 'pan' ? 'grab' : '';
+    this.app.canvas.style.cursor = { select: '', pan: 'grab', draw: 'crosshair', text: 'text' }[t];
+  }
+
+  /** The topmost item of the active layer under a world point */
+  itemAt(p: Pt): BoardItem | undefined {
+    return [...this.board.items].filter(i => i.layer === this.activeLayer)
+      .sort((a, b) => b.z - a.z)
+      .find(i => {
+        const a = -(i.rotation || 0) * Math.PI / 180, cx = i.x + i.w / 2, cy = i.y + i.h / 2;
+        const lx = (p.x - cx) * Math.cos(a) - (p.y - cy) * Math.sin(a), ly = (p.x - cx) * Math.sin(a) + (p.y - cy) * Math.cos(a);
+        return Math.abs(lx) <= i.w / 2 && Math.abs(ly) <= i.h / 2;
+      });
+  }
+
+  /** Size of a text at its font size (before any resizing) */
+  measureText(it: Pick<BoardItem, 'text' | 'color' | 'fontSize'>) {
+    const t = new Text({ text: it.text || ' ', style: textStyle(it) });
+    const size = { w: Math.max(8, t.width), h: Math.max(8, t.height) };
+    t.destroy();
+    return size;
   }
 
   // ── drawing ───────────────────────────────────────────────────────────────
@@ -132,23 +167,26 @@ export class BoardView {
   }
 
   private renderItem(it: BoardItem) {
-    const meta = this.images.get(it.image);
-    const tex = this.textures.get(it.image);
+    const kind = kindOf(it);
+    const meta = it.image ? this.images.get(it.image) : undefined;
+    const tex = it.image ? this.textures.get(it.image) : undefined;
+    // what the item's view holds: a Sprite, a Text, or a Graphics (pencil stroke / image placeholder)
+    const want = kind === 'text' ? `text:${it.text}|${it.color}|${it.fontSize}` : kind === 'path' ? 'path' : tex ? 'sprite' : 'placeholder';
     let v = this.views.get(it.id);
-    const wantSprite = !!tex;
-    if (v && (v.children[0] instanceof Sprite) !== wantSprite) { v.destroy({ children: true }); this.views.delete(it.id); v = undefined; }
+    if (v && (v as Container & { want?: string }).want !== want) { v.destroy({ children: true }); this.views.delete(it.id); v = undefined; }
     if (!v) {
       v = new Container();
+      (v as Container & { want?: string }).want = want;
       v.label = `item:${it.id}`;
-      if (tex) {
-        const s = new Sprite(tex);
-        s.anchor.set(0.5);
-        s.eventMode = 'none';
-        v.addChild(s);
-      } else {
-        v.addChild(new Graphics());  // placeholder while the image loads (or if it is gone)
-        if (meta) this.loadTexture(meta);
+      let child: Container;
+      if (kind === 'text') { const t = new Text({ text: it.text || '', style: textStyle(it), resolution: 2 }); t.anchor.set(0.5); child = t; }
+      else if (tex) { const s = new Sprite(tex); s.anchor.set(0.5); child = s; }
+      else {
+        child = new Graphics();   // pencil stroke, or a placeholder while the image loads (or if it is gone)
+        if (kind === 'image' && meta) this.loadTexture(meta);
       }
+      child.eventMode = 'none';
+      v.addChild(child);
       this.views.set(it.id, v);
     }
     if (v.parent !== this.layers[it.layer]) this.layers[it.layer].addChild(v);
@@ -160,8 +198,25 @@ export class BoardView {
     v.eventMode = active ? 'static' : 'none';
     v.cursor = active && !it.locked ? 'move' : 'default';
     const child = v.children[0];
-    if (child instanceof Sprite) { child.width = it.w; child.height = it.h; }
-    else if (child instanceof Graphics) {
+    if (child instanceof Text) {
+      child.scale.set(1);
+      child.scale.set(it.w / Math.max(1, child.width), it.h / Math.max(1, child.height));
+    } else if (child instanceof Sprite) {
+      if (it.fit) {   // a token: the whole image inside its box, proportions kept
+        const k = Math.min(it.w / child.texture.width, it.h / child.texture.height);
+        child.scale.set(k);
+      } else { child.width = it.w; child.height = it.h; }
+    } else if (child instanceof Graphics && kind === 'path') {
+      const pts = it.points || [], sx = it.w / (it.pw || it.w || 1), sy = it.h / (it.ph || it.h || 1);
+      const X = (i: number) => pts[i] * sx - it.w / 2, Y = (i: number) => pts[i + 1] * sy - it.h / 2;
+      child.clear();
+      if (pts.length === 2) child.circle(X(0), Y(0), (it.stroke || 4) / 2).fill({ color: it.color || '#ffffff' });
+      else if (pts.length > 2) {
+        child.moveTo(X(0), Y(0));
+        for (let i = 2; i < pts.length; i += 2) child.lineTo(X(i), Y(i));
+        child.stroke({ width: it.stroke || 4, color: it.color || '#ffffff', cap: 'round', join: 'round' });
+      }
+    } else if (child instanceof Graphics) {
       child.clear().rect(-it.w / 2, -it.h / 2, it.w, it.h).fill({ color: 0x2a2a2a, alpha: 0.8 })
         .stroke({ width: 2, color: meta ? 0x777777 : 0xc04040 });
       if (!meta) child.moveTo(-it.w / 2, -it.h / 2).lineTo(it.w / 2, it.h / 2).moveTo(it.w / 2, -it.h / 2).lineTo(-it.w / 2, it.h / 2)
@@ -236,6 +291,16 @@ export class BoardView {
     return { x: (screen.x - this.world.x) / this.zoom, y: (screen.y - this.world.y) / this.zoom };
   }
 
+  toScreen(world: Pt): Pt {
+    return { x: this.world.x + world.x * this.zoom, y: this.world.y + world.y * this.zoom };
+  }
+
+  /** Hide an item while it is being edited in place (texts) */
+  setHidden(id: string, hidden: boolean) {
+    const v = this.views.get(id);
+    if (v) v.visible = !hidden;
+  }
+
   /** client (page) coordinates → world, for drops from outside the canvas */
   clientToWorld(cx: number, cy: number): Pt {
     const r = this.app.canvas.getBoundingClientRect();
@@ -284,6 +349,16 @@ export class BoardView {
       return;
     }
     if (e.button !== 0) return;
+    if (this.tool === 'draw') {
+      this.select([]);
+      this.drag = { kind: 'draw', pts: [p.x, p.y] };
+      return;
+    }
+    if (this.tool === 'text') {
+      const hit = label.startsWith('item:') ? this.item(label.slice(5)) : undefined;
+      this.ev.textAt(p, hit && kindOf(hit) === 'text' ? hit : undefined);
+      return;
+    }
     const one = [...this.selected][0];
     if (label.startsWith('handle:') && one) {
       const [sx, sy] = label.slice(7).split(',').map(Number);
@@ -336,6 +411,13 @@ export class BoardView {
       it.rotation = ((a % 360) + 360) % 360;
       this.renderItem(it); this.drawOverlay();
       this.ev.change('live');
+    } else if (d.kind === 'draw') {
+      const n = d.pts.length;
+      if (e.shiftKey) d.pts = [d.pts[0], d.pts[1], p.x, p.y];   // Shift: a straight line
+      else if (Math.hypot(p.x - d.pts[n - 2], p.y - d.pts[n - 1]) >= 1.5 / this.zoom) d.pts.push(p.x, p.y);
+      const g = this.drawG.clear().moveTo(d.pts[0], d.pts[1]);
+      for (let i = 2; i < d.pts.length; i += 2) g.lineTo(d.pts[i], d.pts[i + 1]);
+      g.stroke({ width: this.pen.width, color: this.pen.color, cap: 'round', join: 'round' });
     } else if (d.kind === 'marquee') {
       const x = Math.min(d.start.x, p.x), y = Math.min(d.start.y, p.y);
       this.marqueeG.clear().rect(x, y, Math.abs(p.x - d.start.x), Math.abs(p.y - d.start.y))
@@ -348,6 +430,11 @@ export class BoardView {
     this.drag = null;
     if (!d) return;
     const snap = this.board.grid.snap && !e.altKey;   // Alt: place freely, like Roll20
+    if (d.kind === 'draw') {
+      this.drawG.clear();
+      this.ev.drawn(d.pts);
+      return;
+    }
     if (d.kind === 'pan') {
       this.setTool(this.tool);
       if (!d.moved && d.button === 2) {
@@ -361,8 +448,8 @@ export class BoardView {
     }
     if (d.kind === 'move') {
       if (!d.moved) return;
-      if (snap) {
-        const lead = this.item([...d.orig.keys()][0])!;
+      const lead = this.item([...d.orig.keys()][0])!;
+      if (snap && kindOf(lead) === 'image') {   // drawings and texts move freely
         const sx = this.snapPos(lead.x, lead.w) - lead.x, sy = this.snapPos(lead.y, lead.h) - lead.y;
         for (const id of d.orig.keys()) { const it = this.item(id)!; it.x += sx; it.y += sy; }
       }
@@ -370,7 +457,7 @@ export class BoardView {
       this.ev.change('commit');
     } else if (d.kind === 'resize') {
       const it = this.item(d.id)!;
-      if (snap && (it.rotation || 0) % 90 === 0) {
+      if (snap && kindOf(it) === 'image' && (it.rotation || 0) % 90 === 0) {
         // the longer side to half cells; the other follows the proportions unless Shift made them free
         const g = this.board.grid.size, half = (v: number) => Math.max(g / 2, Math.round(v / (g / 2)) * (g / 2));
         const ratio = d.orig.w / d.orig.h, free = e.shiftKey;
