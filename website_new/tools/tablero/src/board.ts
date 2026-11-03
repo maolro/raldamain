@@ -60,6 +60,8 @@ export class BoardView {
   canEdit: (it: BoardItem) => boolean = () => true;
   /** colour of the player controlling an item (a dot on it), or null */
   badgeColor: (it: BoardItem) => string | null = () => null;
+  /** a token's status markers (under it) */
+  markers: (it: BoardItem) => { text: string; color: string; title?: string }[] = () => [];
 
   private world = new Container();
   private pageG = new Graphics();
@@ -70,6 +72,7 @@ export class BoardView {
   private drawG = new Graphics();      // the stroke being drawn
   private views = new Map<string, Container>();
   private barViews = new Map<string, Graphics>();   // a token's bars, above it (never rotated)
+  private markViews = new Map<string, Container & { key?: string }>();   // its status markers, under it
   private textures = new Map<string, Texture>();
   private loading = new Set<string>();
   private images = new Map<string, ImageMeta>();
@@ -111,6 +114,8 @@ export class BoardView {
     this.views.clear();
     for (const g of this.barViews.values()) g.destroy();
     this.barViews.clear();
+    for (const m of this.markViews.values()) m.destroy({ children: true });
+    this.markViews.clear();
     this.render();
     if (fit) this.fit();
     this.ev.selection([]);
@@ -181,6 +186,7 @@ export class BoardView {
     }
     for (const [id, v] of this.views) if (!alive.has(id)) { v.destroy({ children: true }); this.views.delete(id); }
     for (const [id, g] of this.barViews) if (!alive.has(id)) { g.destroy(); this.barViews.delete(id); }
+    for (const [id, m] of this.markViews) if (!alive.has(id)) { m.destroy({ children: true }); this.markViews.delete(id); }
     for (const id of [...this.selected]) if (!alive.has(id)) this.selected.delete(id);
     this.drawOverlay();
   }
@@ -250,6 +256,39 @@ export class BoardView {
         .stroke({ width: 2, color: 0xc04040 });
     }
     this.renderBars(it);
+    this.renderMarkers(it);
+  }
+
+  /** Status markers ("RAL II") in a row under the token, the same size on screen at any zoom */
+  private renderMarkers(it: BoardItem) {
+    const marks = kindOf(it) === 'image' ? this.markers(it) : [];
+    let m = this.markViews.get(it.id);
+    if (!marks.length) {
+      if (m) { m.destroy({ children: true }); this.markViews.delete(it.id); }
+      return;
+    }
+    const z = this.zoom, key = `${z}|${marks.map(x => x.text + x.color).join(',')}`;
+    if (!m) { m = new Container(); m.eventMode = 'none'; this.markViews.set(it.id, m); }
+    if (m.parent !== this.layers[it.layer]) this.layers[it.layer].addChild(m);
+    m.zIndex = it.z + 0.5;
+    if (m.key !== key) {
+      m.key = key;
+      m.removeChildren().forEach(c => c.destroy());
+      const fs = 10 / z, pad = 3 / z, gap = 2 / z;
+      let x = 0;
+      for (const mk of marks) {
+        const t = new Text({ text: mk.text, style: { fill: '#ffffff', fontSize: fs, fontFamily: TEXT_FONT, fontWeight: '700' }, resolution: 2 * Math.max(1, z) });
+        const bg = new Graphics().roundRect(x, 0, t.width + pad * 2, t.height + pad, 3 / z).fill({ color: mk.color, alpha: 0.92 })
+          .stroke({ width: 1 / z, color: 0x000000 });
+        t.position.set(x + pad, pad / 2);
+        m.addChild(bg, t);
+        x += t.width + pad * 2 + gap;
+      }
+    }
+    const a = (it.rotation || 0) * Math.PI / 180;
+    const bh = Math.abs(it.w * Math.sin(a)) + Math.abs(it.h * Math.cos(a));
+    const b = m.getLocalBounds();
+    m.position.set(it.x + it.w / 2 - b.width / 2, it.y + it.h / 2 + bh / 2 + 2 / z);
   }
 
   /** Impactos / Chi bars over the token (Roll20 style): straight above its box, whatever its rotation */
@@ -286,6 +325,13 @@ export class BoardView {
     const n = BARS.filter(b => (it.bars?.[b.id]?.max || 0) > 0).length;
     const { h, gap } = this.barSize(bw);
     return this.toScreen({ x: it.x + it.w / 2, y: it.y + it.h / 2 - bh / 2 - gap - n * (h + gap) });
+  }
+
+  /** Screen position of the middle of an item's right edge (for the status button) */
+  rightOf(it: BoardItem): Pt {
+    const a = (it.rotation || 0) * Math.PI / 180;
+    const bw = Math.abs(it.w * Math.cos(a)) + Math.abs(it.h * Math.sin(a));
+    return this.toScreen({ x: it.x + it.w / 2 + bw / 2, y: it.y + it.h / 2 });
   }
 
   /** Bar thickness and spacing (world pixels): the same on screen at any zoom, never thicker than a fifth of the token */
@@ -405,7 +451,10 @@ export class BoardView {
 
   private viewChanged() {
     this.drawPage();
-    if (this.board) for (const it of this.board.items) if (it.bars) this.renderBars(it);   // (their thickness follows the zoom)
+    if (this.board) for (const it of this.board.items) {   // (their size follows the zoom)
+      if (it.bars) this.renderBars(it);
+      if (it.statuses?.length) this.renderMarkers(it);
+    }
     this.drawOverlay();
     this.ev.view(this.zoom);
   }

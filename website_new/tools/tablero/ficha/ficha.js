@@ -6,7 +6,8 @@
 // creature with the Bestiario's renderer (assets/js/creature_loader.js). It answers:
 //   { type: 'ready' }                    loaded, waiting for a sheet
 //   { type: 'stats', hits, chi }         the sheet's Impactos and Chi (for the token's bars)
-//   { type: 'roll', roll, label }        a value clicked: load it in the Dados tab
+//   { type: 'roll', roll, label, kind, stats }   a value clicked: load it in the Dados tab
+//                                        (kind: Ataque, Defensa, Salvación…; stats: FUE, DES…)
 (function () {
     const post = msg => window.parent.postMessage(msg, location.origin);
     // a script that fails while drawing: said in the window, not only in the console
@@ -126,11 +127,67 @@
         }
         return 'Tirada';
     }
+    // What sort of roll a value is, and the stats it uses: the token's status effects
+    // (Ralentizado: Desventaja on attack, defence and DES rolls…) apply by these.
+    const SAVE_STATS = { FIS: ['FUE', 'DES'], VOL: ['CON', 'CAR'], MEN: ['INT', 'SAB'] };
+    const STAT_CODE = { str: 'FUE', dex: 'DES', con: 'CON', itl: 'INT', wis: 'SAB', cha: 'CAR' };
+    const plainUp = t => String(t || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toUpperCase();
+    function textAfter(el) {
+        let t = '';
+        for (let n = el.nextSibling; n && t.length < 40; n = n.nextSibling) t += n.textContent;
+        return t.toLowerCase();
+    }
+    function textBefore(el) {
+        let t = '';
+        for (let n = el.previousSibling; n && t.length < 60; n = n.previousSibling) t = n.textContent + t;
+        return t;
+    }
+    function saveStats(text) {
+        const t = plainUp(text);
+        return SAVE_STATS[['FIS', 'VOL', 'MEN'].find(k => t.includes(k))] || [];
+    }
+    // tags of the ability: "(Físico, Ataque…)" → physical stats; "(Mental…)" → mental ones
+    function tagStats(el) {
+        const block = el.closest('.action-block, .trait-block, p, li, div');
+        const head = plainUp(block ? block.textContent.slice(0, 140) : '');
+        if (/\bFISIC/.test(head)) return ['FUE', 'DES'];
+        if (/\bMENTAL/.test(head)) return ['INT', 'SAB'];
+        return [];
+    }
+    // "Acrobacias +3" in the Talentos line: that talent's stats (the Creador's talent list)
+    function talentStats(el) {
+        const app = document.getElementById('app'), vm = app && app.__vue__;
+        if (!vm || !vm.talents) return null;
+        const before = textBefore(el).replace(/[\s+]+$/, '');
+        for (const key in vm.talents) {
+            const name = (vm.mytalents && vm.mytalents[key] && vm.mytalents[key].name) || vm.talents[key].name;
+            if (name && before.endsWith(name))
+                return String(vm.talents[key].stat || '').split('/').map(c => STAT_CODE[c.trim()]).filter(Boolean);
+        }
+        return null;
+    }
+    function classify(el) {
+        const roll = el.dataset.roll || '', label = el.dataset.label || '';
+        if (!/^[+\-−]/.test(roll)) return { kind: 'Daño', stats: [] };          // damage and other dice
+        if (el.closest('.save-hl')) return { kind: 'Otro', stats: [] };          // the save the target makes
+        if (/iniciativa/i.test(label)) return { kind: 'Iniciativa', stats: ['DES'] };
+        const save = el.closest('.save-pill, .sb-save');
+        if (save || /^salvaci/i.test(label)) return { kind: 'Salvación', stats: saveStats(save ? save.textContent : label) };
+        const after = textAfter(el);
+        if (/para defender/.test(after) || (el.closest('#statblock-reactions') && el.closest('.attack-bonus')))
+            return { kind: 'Defensa', stats: /esquiva/i.test(labelFor(el)) ? ['DES'] : tagStats(el) };
+        if (/para (atacar|impactar)/.test(after) || el.closest('.attack-bonus')) return { kind: 'Ataque', stats: tagStats(el) };
+        const talent = talentStats(el);
+        if (talent) return { kind: 'Talento', stats: talent };
+        return { kind: 'Habilidad', stats: tagStats(el) };
+    }
+
     document.addEventListener('click', e => {
         const r = e.target.closest('.rollable');
         if (!r) return;
         e.preventDefault();
-        post({ type: 'roll', roll: r.dataset.roll, label: labelFor(r) });
+        const { kind, stats } = classify(r);
+        post({ type: 'roll', roll: r.dataset.roll, label: labelFor(r), kind, stats });
     });
 
     post({ type: 'ready' });

@@ -56,6 +56,7 @@ SOURCES = [
     ("data/equipment_list.json", "item_index"),
     ("data/creatures_abilities.json", "creature_ability"),
     ("data/creature_scaling.json", "document"),
+    ("data/status_effects.json", "document"),
     ("data/builder/*.json", "document"),
 ]
 

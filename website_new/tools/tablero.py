@@ -713,6 +713,13 @@ def live_events(bid):
 
 
 _random = secrets.SystemRandom()
+_CONTROL = re.compile(r"[\x00-\x1f\x7f\u200b-\u200f\u202a-\u202e\u2066-\u2069\ufeff]")
+
+
+def clean_name(text, limit: int = 60) -> str:
+    """A name or label for showing: plain text on one line, without control or text-direction
+    characters, cut to `limit`. (Pages also show it as text, never as HTML.)"""
+    return re.sub(r"\s+", " ", _CONTROL.sub("", str(text or ""))).strip()[:limit]
 
 
 def roll_terms(terms) -> tuple[list[dict], int, bool] | None:
@@ -755,12 +762,21 @@ def live_roll(bid):
     if not rolled:
         return jsonify({"error": "tirada no válida"}), 400
     terms, total, crit = rolled
+    # rolled for a token (from its sheet): its name as it is on the board, never what the
+    # browser says; a player only for a token they control
+    token = None
+    with s.lock:
+        tok = next((it for it in s.board.get("items") or [] if it.get("id") == body.get("token")), None)
+    if tok and (role == "gm" or (tok.get("layer") == "tokens" and pid in (tok.get("controllers") or []))):
+        token = clean_name(tok.get("name")) or "Token"
     players = (rooms().get(code or room_of(bid)) or {}).get("players") or {}
     p = players.get(pid) or {}
     r = {"id": secrets.token_hex(5), "by": pid, "who": p.get("name", "Jugador") if pid else "GM",
          "color": p.get("color", "#fff200") if pid else "#fff200",
-         "label": str(body.get("label") or "Tirada")[:80], "expr": str(body.get("expr") or "")[:80],
+         "label": clean_name(body.get("label"), 80) or "Tirada", "expr": clean_name(body.get("expr"), 80),
          "terms": terms, "total": total, "crit": crit, "time": time.time() * 1000}
+    if token:
+        r["token"], r["tokenId"] = token, tok["id"]
     with s.lock:
         s.rolls.append(r)
         del s.rolls[:-MAX_ROLLS]
@@ -787,6 +803,8 @@ def live_changes(bid):
         for it in body.get("upserts") or []:
             if not _valid_item(it):
                 continue
+            if "name" in it:
+                it["name"] = clean_name(it["name"], 80)
             old = items.get(it["id"])
             it["controllers"] = [c for c in dict.fromkeys(it.get("controllers") or []) if c in known]
             if role == "player":

@@ -24,6 +24,7 @@ app = Flask(__name__)
 BASE       = Path(__file__).parent.parent
 RANKS_DIR  = BASE / "data" / "ranks"
 RANKS_LIST = BASE / "data" / "ranks_list.json"
+STATUS_EFFECTS = BASE / "data" / "status_effects.json"   # Efectos de estado (their own panel)
 
 # Guardar commits the rank (+ ranks_list.json) and pushes it (see git_sync.py for the branch guard)
 sys.path.insert(0, str(Path(__file__).parent))
@@ -151,6 +152,27 @@ def api_delete(rid):
     files = ([str(p)] if tracked else []) + [str(RANKS_LIST)]
     raldamain_db.record([p, RANKS_LIST])
     git = _git_push(files, f"Delete rank: {title}")
+    return jsonify({"ok": True, "git": git})
+
+@app.route("/api/status-effects")
+def api_status_effects():
+    if not STATUS_EFFECTS.exists():
+        return jsonify({"effects": []})
+    return Response(STATUS_EFFECTS.read_text(encoding="utf-8"), mimetype="application/json")
+
+@app.route("/api/status-effects", methods=["POST"])
+def api_status_effects_save():
+    """The whole file: {_doc, rolls, stats, effects: [{id, name, description, levels: [...]}]}"""
+    data = request.get_json(force=True) or {}
+    effects = data.get("effects")
+    if not isinstance(effects, list):
+        return jsonify({"error": "faltan los efectos"}), 400
+    ids = [str(e.get("id") or "").strip() for e in effects]
+    if any(not i for i in ids) or len(set(ids)) != len(ids):
+        return jsonify({"error": "cada efecto necesita un ID distinto"}), 400
+    STATUS_EFFECTS.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    raldamain_db.record([STATUS_EFFECTS])
+    git = _git_push([str(STATUS_EFFECTS)], "Update status effects")
     return jsonify({"ok": True, "git": git})
 
 @app.route("/api/git")
@@ -284,6 +306,29 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);
   border:1px solid var(--border);color:var(--text2);cursor:pointer;user-select:none}
 .chk input{accent-color:var(--gold);cursor:pointer;margin:0}
 .chk.on{border-color:var(--goldd);color:var(--gold);background:rgba(201,162,39,.08)}
+
+/* ── Efectos de estado (their own panel) ── */
+#st-view{display:none;position:fixed;inset:0;z-index:9000;background:var(--bg);flex-direction:column}
+.st-tb{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--border);background:var(--bg2)}
+.st-tb .t{font-weight:700;color:var(--gold);letter-spacing:.5px}
+.st-body{flex:1;display:flex;min-height:0}
+.st-list{width:240px;border-right:1px solid var(--border);overflow:auto;padding:8px;display:flex;flex-direction:column;gap:3px}
+.st-item{padding:6px 9px;border-radius:5px;cursor:pointer;border:1px solid transparent;color:var(--text2)}
+.st-item:hover{background:var(--bg3)} .st-item.on{border-color:var(--goldd);color:var(--gold);background:rgba(201,162,39,.06)}
+.st-item small{display:block;color:var(--text3);font-size:10px}
+.st-edit{flex:1;overflow:auto;padding:16px 20px;display:flex;flex-direction:column;gap:12px;max-width:980px}
+.st-lv{border:1px solid var(--border2);border-radius:7px;padding:10px 12px;background:var(--bg2);display:flex;flex-direction:column;gap:8px}
+.st-lv-hd{display:flex;align-items:center;gap:8px}
+.st-pen{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:6px 8px;border:1px dashed var(--border2);border-radius:5px}
+.st-pen .grp{display:flex;flex-wrap:wrap;gap:3px;align-items:center}
+.st-pen .grp b{font-size:10px;color:var(--text3);font-weight:600;margin-right:2px}
+.st-chip{font-size:11px;padding:1px 7px;border-radius:10px;border:1px solid var(--border);color:var(--text2);cursor:pointer;background:none}
+.st-chip.on{border-color:var(--gold);color:#000;background:var(--gold)}
+.st-edit .inp.st-num{width:58px;flex:none}
+.st-pen .grp,.st-row .grp{flex-wrap:nowrap !important;white-space:nowrap}
+.st-edit .btn.danger{width:auto;align-self:flex-start}
+.st-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.st-sum{font-size:12px;color:var(--teal)}
 
 /* ── Umbrales list ── */
 .umb-box{border-top:1px solid var(--border);padding-top:8px;display:flex;flex-direction:column;gap:5px}
@@ -493,6 +538,7 @@ select.inp{cursor:pointer}
   <div class="sb-ft">
     <button class="btn" id="cmp-btn" onclick="toggleMode()">⚖ Comparar</button>
     <button class="btn" id="meta-btn" onclick="toggleMeta()">Metadatos</button>
+    <button class="btn" id="st-btn" onclick="openStatus()" title="Efectos de estado: Ralentizado, Enfermado, Fatigado… y sus penalizadores">✦ Estados</button>
     <button class="btn" style="color:var(--green);border-color:var(--green)" onclick="newRank()">＋ Nuevo</button>
   </div>
 </aside>
@@ -583,6 +629,22 @@ select.inp{cursor:pointer}
     <div class="ico">📋</div>
     <div>Selecciona un rango de la barra lateral<br>
     <span style="font-size:11px;color:var(--text3)">Ctrl+S para guardar · ⚖ para comparar</span></div>
+  </div>
+</div>
+
+<!-- ── Efectos de estado ── -->
+<div id="st-view">
+  <div class="st-tb">
+    <span class="t">✦ Efectos de estado</span>
+    <span style="font-size:11px;color:var(--text3)">Penalizadores que el Tablero aplica a las tiradas de los tokens afectados</span>
+    <span style="flex:1"></span>
+    <button class="btn" onclick="stNew()">＋ Nuevo efecto</button>
+    <button class="btn pri" onclick="saveStatus()">💾 Guardar</button>
+    <button class="btn" onclick="closeStatus()">✕ Cerrar</button>
+  </div>
+  <div class="st-body">
+    <div class="st-list" id="st-list"></div>
+    <div class="st-edit" id="st-edit"></div>
   </div>
 </div>
 
@@ -770,9 +832,9 @@ async function deleteRank() {
 }
 
 document.addEventListener('keydown', e => {
-  if ((e.ctrlKey||e.metaKey) && e.key==='s') { e.preventDefault(); saveRank(); }
+  if ((e.ctrlKey||e.metaKey) && e.key==='s') { e.preventDefault(); if (stOpen()) saveStatus(); else saveRank(); }
 });
-window.addEventListener('beforeunload', e => { if (dirty()) { e.preventDefault(); e.returnValue=''; } });
+window.addEventListener('beforeunload', e => { if (dirty() || stDirty()) { e.preventDefault(); e.returnValue=''; } });
 
 // ── Mode ──────────────────────────────────────────────────────────────────────
 function toggleMode() { S.mode = S.mode==='edit'?'compare':'edit'; renderAll(); }
@@ -1767,6 +1829,163 @@ async function confirmNewRank() {
     fillCmpSelects();
     await loadRank(id);
     toast(`"${title}" creado ✓`, 'ok');
+  } catch(e) { toast('Error: '+e.message, 'err'); }
+}
+
+// ── Efectos de estado ─────────────────────────────────────────────────────────
+// data/status_effects.json: each effect has levels (I, II… or names); each level has
+// penalizadores (Desventaja dice / mod on some rolls that use some stats) and turn limits.
+// The Tablero applies them to rolls made from an affected token's sheet.
+const ST = { data: null, list: null, saved: '', sel: 0 };
+const ST_ROLLS = ['Ataque','Defensa','Salvación','Talento','Habilidad','Iniciativa'];
+const ST_STATS = ['FUE','DES','CON','INT','SAB','CAR'];
+const stOpen = () => document.getElementById('st-view').style.display === 'flex';
+const stDirty = () => !!ST.list && JSON.stringify(ST.list) !== ST.saved;
+
+async function openStatus() {
+  if (!ST.list) {
+    try { ST.data = await api('GET', '/api/status-effects'); }
+    catch(e) { toast('No se pudieron cargar los efectos: '+e.message, 'err'); return; }
+    ST.list = ST.data.effects || [];
+    ST.saved = JSON.stringify(ST.list);
+  }
+  document.getElementById('st-view').style.display = 'flex';
+  renderStatus();
+}
+function closeStatus() {
+  document.getElementById('st-view').style.display = 'none';
+  if (stDirty()) toast('Los cambios en los efectos siguen sin guardar', 'err');
+}
+
+// "Desventaja en Ataque y Defensa · Desventaja en Talento, Habilidad y Salvación de DES · sin reacciones"
+function stJoin(a) { return a.length < 2 ? (a[0]||'') : a.slice(0,-1).join(', ') + ' y ' + a[a.length-1]; }
+function stSummary(lv) {
+  const out = (lv.penalties||[]).map(p => {
+    const what = [];
+    if ((p.dice||0) > 0) what.push(p.dice > 1 ? `Desventaja ×${p.dice}` : 'Desventaja');
+    if (p.mod) what.push((p.mod > 0 ? '+' : '') + p.mod);
+    if (!what.length) return '';
+    const rolls = (p.rolls||[]).length ? stJoin(p.rolls) : 'todos los tiros';
+    return `${what.join(' y ')} en ${rolls}${(p.stats||[]).length ? ' de ' + stJoin(p.stats) : ''}`;
+  }).filter(Boolean);
+  if (lv.no_actions) out.push('sin acciones'); else if (lv.actions) out.push(`${lv.actions} acción${lv.actions > 1 ? 'es' : ''} menos`);
+  if (lv.no_reactions) out.push('sin reacciones'); else if (lv.reactions) out.push(`${lv.reactions} reacción${lv.reactions > 1 ? 'es' : ''} menos`);
+  if (lv.extra_cost) out.push(`habilidades +${lv.extra_cost} acción`);
+  if (lv.notes) out.push(lv.notes);
+  return out.join(' · ') || 'Sin efectos todavía';
+}
+
+function renderStatus() {
+  const L = ST.list;
+  if (ST.sel >= L.length) ST.sel = Math.max(0, L.length - 1);
+  document.getElementById('st-list').innerHTML = L.map((e, i) => `
+    <div class="st-item ${i===ST.sel?'on':''}" onclick="ST.sel=${i};renderStatus()">${esc(e.name||'(sin nombre)')}
+      <small>${(e.levels||[]).length} nivel${(e.levels||[]).length===1?'':'es'} · ${esc(e.id||'sin id')}</small></div>`).join('')
+    || '<div style="color:var(--text3);padding:8px">Ningún efecto. Crea uno con «Nuevo efecto».</div>';
+  const e = L[ST.sel], box = document.getElementById('st-edit');
+  if (!e) { box.innerHTML = ''; return; }
+  box.innerHTML = `
+    <div class="row3">
+      <div class="field"><div class="lbl">Nombre</div><input class="inp big" value="${esc(e.name||'')}" oninput="stSet('name',this.value)"></div>
+      <div class="field"><div class="lbl">ID</div><input class="inp" value="${esc(e.id||'')}" oninput="stSet('id',this.value.trim())"></div>
+      <div class="field" style="justify-content:flex-end"><button class="btn danger" onclick="stDelete()">🗑 Eliminar efecto</button></div>
+    </div>
+    <div class="field"><div class="lbl">Descripción (reglas)</div>
+      <textarea class="inp" rows="2" oninput="stSet('description',this.value)">${esc(e.description||'')}</textarea></div>
+    ${(e.levels||[]).map((lv, li) => stLevelHtml(lv, li)).join('')}
+    <div><button class="btn" onclick="stAddLevel()">＋ Nivel</button>
+      <span style="font-size:11px;color:var(--text3);margin-left:8px">Niveles: «I», «II»… o un nombre (Espantado, Asustado…). Vacío si el estado no tiene niveles.</span></div>`;
+}
+
+function stLevelHtml(lv, li) {
+  const chips = (pi, key, all) => all.map(v => `<button class="st-chip ${(lv.penalties[pi][key]||[]).includes(v)?'on':''}"
+      onclick="stToggle(${li},${pi},'${key}','${v}')">${v}</button>`).join('');
+  return `<div class="st-lv">
+    <div class="st-lv-hd">
+      <div class="lbl">Nivel</div>
+      <input class="inp" style="width:140px" value="${esc(lv.name||'')}" placeholder="I" oninput="stLv(${li},'name',this.value)">
+      <span class="st-sum" id="st-sum-${li}">${esc(stSummary(lv))}</span>
+      <span style="flex:1"></span>
+      <button class="btn sm danger" onclick="stDelLevel(${li})">× Quitar nivel</button>
+    </div>
+    ${(lv.penalties||[]).map((p, pi) => `<div class="st-pen">
+      <div class="grp"><b>Desventaja</b><input class="inp st-num" type="number" min="0" max="5" value="${p.dice ?? 1}" title="Dados de Desventaja (−1d6 cada uno)" oninput="stPen(${li},${pi},'dice',this.value)"></div>
+      <div class="grp"><b>Mod.</b><input class="inp st-num" type="number" value="${p.mod || ''}" placeholder="0" title="Modificador fijo (p. ej. −2)" oninput="stPen(${li},${pi},'mod',this.value)"></div>
+      <div class="grp"><b>en</b>${chips(pi, 'rolls', ST_ROLLS)}<span style="font-size:10px;color:var(--text3)">${(p.rolls||[]).length ? '' : '(todos los tiros)'}</span></div>
+      <div class="grp"><b>de</b>${chips(pi, 'stats', ST_STATS)}<span style="font-size:10px;color:var(--text3)">${(p.stats||[]).length ? '' : '(cualquier estadística)'}</span></div>
+      <button class="btn sm danger" style="margin-left:auto" onclick="stDelPen(${li},${pi})">×</button>
+    </div>`).join('')}
+    <div class="st-row">
+      <button class="btn sm" onclick="stAddPen(${li})">＋ Penalizador</button>
+      <label class="chk ${lv.no_actions?'on':''}"><input type="checkbox" ${lv.no_actions?'checked':''} onchange="stLv(${li},'no_actions',this.checked,true)"> Sin acciones</label>
+      <label class="chk ${lv.no_reactions?'on':''}"><input type="checkbox" ${lv.no_reactions?'checked':''} onchange="stLv(${li},'no_reactions',this.checked,true)"> Sin reacciones</label>
+      <div class="grp" style="display:flex;gap:4px;align-items:center;font-size:11px;color:var(--text2)">Acciones −<input class="inp st-num" type="number" min="0" value="${lv.actions||''}" placeholder="0" oninput="stLv(${li},'actions',this.value)"></div>
+      <div class="grp" style="display:flex;gap:4px;align-items:center;font-size:11px;color:var(--text2)">Reacciones −<input class="inp st-num" type="number" min="0" value="${lv.reactions||''}" placeholder="0" oninput="stLv(${li},'reactions',this.value)"></div>
+      <div class="grp" style="display:flex;gap:4px;align-items:center;font-size:11px;color:var(--text2)" title="Náuseas: cada habilidad cuesta una acción más">Coste extra +<input class="inp st-num" type="number" min="0" value="${lv.extra_cost||''}" placeholder="0" oninput="stLv(${li},'extra_cost',this.value)"></div>
+    </div>
+    <div class="field"><div class="lbl">Notas (lo que no es un penalizador de tirada)</div>
+      <input class="inp" value="${esc(lv.notes||'')}" oninput="stLv(${li},'notes',this.value)"></div>
+  </div>`;
+}
+
+const stCur = () => ST.list[ST.sel];
+function stSet(k, v) { const e = stCur(); if (v) e[k] = v; else delete e[k]; document.querySelector('#st-list .st-item.on').firstChild.textContent = e.name || '(sin nombre)'; }
+function stSum(li) { const el = document.getElementById('st-sum-'+li); if (el) el.textContent = stSummary(stCur().levels[li]); }
+function stLv(li, k, v, redraw) {
+  const lv = stCur().levels[li];
+  if (['actions','reactions','extra_cost'].includes(k)) { const n = parseInt(v); if (n > 0) lv[k] = n; else delete lv[k]; }
+  else if (v === true || (typeof v === 'string' && v)) lv[k] = v; else delete lv[k];
+  if (redraw) renderStatus(); else stSum(li);
+}
+function stPen(li, pi, k, v) {
+  const p = stCur().levels[li].penalties[pi], n = parseInt(v);
+  if (k === 'dice') p.dice = isNaN(n) ? 0 : Math.max(0, n);
+  else if (!isNaN(n) && n) p.mod = n; else delete p.mod;
+  stSum(li);
+}
+function stToggle(li, pi, k, v) {
+  const p = stCur().levels[li].penalties[pi], a = new Set(p[k]||[]);
+  if (a.has(v)) a.delete(v); else a.add(v);
+  const order = k === 'rolls' ? ST_ROLLS : ST_STATS;
+  p[k] = order.filter(x => a.has(x));
+  renderStatus();
+}
+function stAddPen(li) { const lv = stCur().levels[li]; (lv.penalties ||= []).push({ rolls: [], stats: [], dice: 1 }); renderStatus(); }
+function stDelPen(li, pi) { stCur().levels[li].penalties.splice(pi, 1); renderStatus(); }
+function stAddLevel() {
+  const e = stCur(), lvs = e.levels ||= [];
+  const roman = ['I','II','III','IV','V','VI'];
+  const prev = lvs[lvs.length-1];
+  // a new level starts as a copy of the previous one (they usually build on it)
+  lvs.push(prev ? { ...JSON.parse(JSON.stringify(prev)), name: roman[lvs.length] || '' } : { name: 'I', penalties: [] });
+  renderStatus();
+}
+function stDelLevel(li) { if (confirm('¿Quitar este nivel?')) { stCur().levels.splice(li, 1); renderStatus(); } }
+function stNew() {
+  const name = prompt('Nombre del efecto de estado:', '');
+  if (!name) return;
+  let id = slugify(name), n = 2;
+  while (ST.list.some(e => e.id === id)) id = slugify(name) + '_' + n++;
+  ST.list.push({ id, name, description: '', levels: [{ name: 'I', penalties: [] }] });
+  ST.sel = ST.list.length - 1;
+  renderStatus();
+}
+function stDelete() {
+  const e = stCur();
+  if (e && confirm(`¿Eliminar el efecto «${e.name}»? Los tokens que lo tengan lo perderán en el Tablero.`)) { ST.list.splice(ST.sel, 1); renderStatus(); }
+}
+async function saveStatus() {
+  if (!ST.list) return;
+  try {
+    const res = await api('POST', '/api/status-effects', { ...ST.data, effects: ST.list });
+    ST.saved = JSON.stringify(ST.list);
+    const git = res.git||'';
+    if (git === 'queued')                 toast('Efectos guardados ✓ · subiendo a GitHub…', 'ok');
+    else if (git === 'ok')                toast('Efectos guardados y publicados en GitHub ✓', 'ok');
+    else if (git === 'nothing')           toast('Efectos guardados ✓ (sin cambios en git)', 'ok');
+    else if (git.startsWith('wrong-branch')) toast(`Guardado ✓ — sin push: estás en la rama "${git.split(':')[1]}"`, 'err');
+    else if (git)                         toast('Guardado ✓ — git: ' + git, 'err');
+    loadGit();
   } catch(e) { toast('Error: '+e.message, 'err'); }
 }
 

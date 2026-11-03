@@ -68,11 +68,13 @@ function breakdown(terms: RollTerm[]) {
 export class DiceRoller {
   private pool = new Map<number, number>();   // sides → count (negative sides: a subtracted die)
   private mod = 0;
-  private label = '';      // what the pool holds ("Lobo: Mordisco"), from a sheet
+  private label = '';      // what the pool holds ("Mordisco"), from a sheet
+  private token: { id: string; name: string } | null = null;   // ... and whose sheet
+  private note = '';       // the token's statuses that changed the roll
   private history: RollRecord[] = [];
   private context = '';    // whose history this is (board + who), for "Borrar"
   /** roll on the board's server (set while connected) */
-  send: ((terms: Term[], expr: string, label: string) => Promise<RollRecord>) | null = null;
+  send: ((terms: Term[], expr: string, label: string, token?: string) => Promise<RollRecord>) | null = null;
   /** show who rolled (the GM's history has everyone's) */
   showWho = false;
   /** a roll from someone else arrived */
@@ -103,7 +105,7 @@ export class DiceRoller {
       const b = (e.target as HTMLElement).closest<HTMLElement>('.die-btn');
       if (!b) return;
       const s = +b.dataset.sides!;
-      if (!this.pool.size && !this.mod) this.label = '';
+      if (!this.pool.size && !this.mod) this.forget();
       this.pool.set(s, (this.pool.get(s) || 0) + 1);
       this.renderPool();
     });
@@ -120,12 +122,13 @@ export class DiceRoller {
       this.mod += (e as WheelEvent).deltaY < 0 ? 1 : -1;
       this.renderPool();
     }, { passive: false });
-    $('roll-pool').addEventListener('click', () => { const x = this.poolExpr(); if (x) this.roll(x, this.label || 'Reserva'); });
-    $('clear-pool').addEventListener('click', () => { this.pool.clear(); this.mod = 0; this.label = ''; this.renderPool(); });
+    $('roll-pool').addEventListener('click', () => { const x = this.poolExpr(); if (x) this.roll(x, this.label || 'Reserva', this.token?.id); });
+    $('clear-pool').addEventListener('click', () => { this.pool.clear(); this.mod = 0; this.forget(); this.renderPool(); });
     $('expr-form').addEventListener('submit', e => {
       e.preventDefault();
       const inp = $('expr-input') as HTMLInputElement;
-      if (inp.value.trim()) this.roll(inp.value.trim(), 'Expresión');
+      // a sheet's value moved here to be adjusted keeps its label and token
+      if (inp.value.trim()) this.roll(inp.value.trim(), this.label || 'Expresión', this.token?.id);
     });
     $('clear-log').addEventListener('click', () => {
       this.history = [];
@@ -139,7 +142,7 @@ export class DiceRoller {
     $('dice-log').addEventListener('click', e => {
       const b = (e.target as HTMLElement).closest<HTMLElement>('[data-reroll]');
       const r = b && this.history[+b.dataset.reroll!];
-      if (r) this.roll(r.expr, r.label);
+      if (r) this.roll(r.expr, r.label, r.tokenId);
     });
     this.renderPool();
     this.renderLog();
@@ -147,7 +150,7 @@ export class DiceRoller {
 
   /** A value from a sheet ("+7+2d6", "2d6+4"): into the pool, ready to adjust and roll.
    *  A modifier is a tiro (1d20 + modifier); dice without a button go to the expression line. */
-  load(expr: string, label: string) {
+  load(expr: string, label: string, token: { id: string; name: string } | null = null, note = '') {
     const terms = parseRoll(expr);
     if (!terms) { this.toast(`No se puede tirar «${expr}»`, true); return; }
     if (/^\s*[+\-−]/.test(expr) && 'value' in terms[0]) terms.unshift({ sign: 1, count: 1, sides: 20 });
@@ -157,6 +160,7 @@ export class DiceRoller {
       inp.value = expr;
       inp.focus();
       this.toast(`${label}: ajusta la expresión y pulsa 🎲`);
+      this.label = label; this.token = token; this.note = note;
       return;
     }
     this.pool.clear();
@@ -166,10 +170,14 @@ export class DiceRoller {
       else { const k = t.sign < 0 ? -t.sides : t.sides; this.pool.set(k, (this.pool.get(k) || 0) + t.count); }
     }
     this.label = label;
+    this.token = token;
+    this.note = note;
     this.renderPool();
     const el = this.el.querySelector('#dice-pool') as HTMLElement;
     el.classList.remove('pulse'); void el.offsetWidth; el.classList.add('pulse');
   }
+
+  private forget() { this.label = ''; this.token = null; this.note = ''; }
 
   /** The pool as an expression: d20 first ("1d20+1d6+4"), then the other dice in button order */
   private poolExpr() {
@@ -184,7 +192,7 @@ export class DiceRoller {
     const expr = this.poolExpr();
     const el = this.el.querySelector('#dice-pool')!;
     el.innerHTML = expr
-      ? (this.label ? `<span class="pool-label">${esc(this.label)}</span>` : '')
+      ? (this.label ? `<span class="pool-label">${this.token?.name ? esc(this.token.name) + ': ' : ''}${esc(this.label)}${this.note ? `<small class="pool-note">${esc(this.note)}</small>` : ''}</span>` : '')
         + DICE.filter(d => this.pool.get(d.sides)).map(d =>
           `<button class="pool-chip" data-sides="${d.sides}" title="Quitar uno">${d.sides < 0 ? '−' : ''}${this.pool.get(d.sides)}d${Math.abs(d.sides)} ×</button>`).join('')
         + (this.mod ? `<span class="pool-mod">${this.mod > 0 ? '+' : ''}${this.mod}</span>` : '')
@@ -195,14 +203,14 @@ export class DiceRoller {
   }
 
   /** Roll an expression. A modifier on its own ("+5", "-1", "+5+1d6") is a tiro: 1d20 + modifier. */
-  async roll(expr: string, label = 'Tirada') {
+  async roll(expr: string, label = 'Tirada', token?: string) {
     let terms = parseRoll(expr);
     if (!terms && /^\d+$/.test(expr.trim())) terms = parseRoll('+' + expr);   // "5" = +5
     if (!terms) { this.toast(`No se puede tirar «${expr}»`, true); return; }
     if ((/^\s*[+\-−]/.test(expr) || /^\d+$/.test(expr.trim())) && 'value' in terms[0]) terms.unshift({ sign: 1, count: 1, sides: 20 });
     const clean = expr.replace(/[()]/g, '');
     if (this.send) {
-      try { this.add(await this.send(terms, clean, label)); }
+      try { this.add(await this.send(terms, clean, label, token)); }
       catch (e) { this.toast('No se pudo tirar: ' + (e as Error).message, true); }
       return;
     }
@@ -235,7 +243,7 @@ export class DiceRoller {
     }
     log.innerHTML = this.history.map((r, i) => `
       <div class="log-entry${r.crit ? ' crit' : ''}${fresh && i === 0 ? ' fresh' : ''}">
-        ${this.showWho && r.who ? `<div class="log-who"><span class="dot" style="background:${esc(r.color || '#fff200')}"></span>${esc(r.who)}</div>` : ''}
+        ${(this.showWho && r.who) || r.token ? `<div class="log-who"><span class="dot" style="background:${esc(r.color || '#fff200')}"></span>${r.token ? `<b>${esc(r.token)}</b>` : ''}${r.token && this.showWho && r.who ? ' · ' : ''}${this.showWho && r.who ? esc(r.who) : ''}</div>` : ''}
         <div class="log-head"><span class="log-label">${esc(r.label)}${r.crit ? ' <span class="log-crit">¡Crítico!</span>' : ''}</span>
           <span class="log-time">${new Date(r.time).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}</span></div>
         <div class="log-body"><span class="log-breakdown">${breakdown(r.terms)}</span><span class="log-total">${Number(r.total)}</span></div>

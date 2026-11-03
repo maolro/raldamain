@@ -15,7 +15,8 @@ const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g,
 const plain = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 export const KIND_NAME = { pj: 'Personaje', criatura: 'Criatura' } as const;
 
-type FrameMsg = { type: 'ready' } | { type: 'stats'; hits: number; chi: number } | { type: 'roll'; roll: string; label: string };
+type FrameMsg = { type: 'ready' } | { type: 'stats'; hits: number; chi: number }
+  | { type: 'roll'; roll: string; label: string; kind?: string; stats?: string[] };
 
 /** Messages from the sheet iframes, to whoever opened each one */
 const frames = new Map<Window, (m: FrameMsg) => void>();
@@ -186,8 +187,10 @@ export class Sheets {
 }
 
 export interface WindowEvents {
-  /** a value clicked in the sheet: roll it */
-  roll(item: BoardItem, roll: string, label: string): void;
+  /** a value clicked in the sheet: roll it (kind and stats: what sort of roll, for the token's statuses) */
+  roll(item: BoardItem, roll: string, label: string, kind: string, stats: string[]): void;
+  /** what the token's statuses do (shown on the window; '' for none) */
+  banner(item: BoardItem): string;
   /** the sheet's Impactos and Chi, as its stat block computes them */
   stats(itemId: string, sid: string, st: SheetStats): void;
   toast(msg: string, bad?: boolean): void;
@@ -222,12 +225,13 @@ export class SheetWindows {
         <button class="x" data-act="reload" title="Volver a cargar la ficha">↻</button>
         <button class="x" data-act="close" title="Cerrar">✕</button>
       </div>
+      <div class="sheet-win-banner" hidden></div>
       <div class="sheet-win-body"></div>`;
     const win: Win = { el, sid: item.sheet, item, frame: null! };
     const load = () => {
       if (win.frame) dropFrame(win.frame);
       win.frame = sheetFrame(el.querySelector('.sheet-win-body') as HTMLElement, win.sid, m => {
-        if (m.type === 'roll') this.ev.roll(win.item, m.roll, m.label);
+        if (m.type === 'roll') this.ev.roll(win.item, String(m.roll), String(m.label || 'Tirada'), String(m.kind || 'Habilidad'), Array.isArray(m.stats) ? m.stats.map(String) : []);
         else if (m.type === 'stats') { this.sheets.seen(win.sid, m); this.ev.stats(win.item.id, win.sid, m); }
       }, msg => this.ev.toast('No se pudo abrir la ficha: ' + msg, true));
     };
@@ -268,6 +272,9 @@ export class SheetWindows {
     const sheet = this.sheets.name(w.sid);
     const name = w.item.name && w.item.name !== sheet ? `${w.item.name} · ${sheet}` : sheet;
     (w.el.querySelector('.sheet-win-title') as HTMLElement).textContent = `📜 ${name}`;
+    const banner = w.el.querySelector('.sheet-win-banner') as HTMLElement, text = this.ev.banner(w.item);
+    banner.hidden = !text;
+    banner.textContent = text;
   }
 
   private front(el: HTMLElement) { el.style.zIndex = String(++this.top); }

@@ -1,0 +1,123 @@
+{
+  "_doc": "Efectos de estado (editados en el Rank Editor → Efectos de estado). Cada nivel tiene penalizadores: Desventaja (dice = dados de −1d6) y/o un modificador fijo (mod) en ciertos tiros (rolls: Ataque, Defensa, Salvación, Talento, Habilidad, Iniciativa; vacío = todos) que usen ciertas estadísticas (stats: FUE, DES, CON, INT, SAB, CAR; vacío = cualquiera). Una salvación usa las suyas: FÍS = FUE/DES, VOL = CON/CAR, MEN = INT/SAB. Además: acciones/reacciones de menos, sin acciones/reacciones, coste extra de las habilidades. El Tablero los aplica a las tiradas hechas desde la ficha del token.",
+  "rolls": ["Ataque", "Defensa", "Salvación", "Talento", "Habilidad", "Iniciativa"],
+  "stats": ["FUE", "DES", "CON", "INT", "SAB", "CAR"],
+  "effects": [
+    {
+      "id": "aturdido",
+      "name": "Aturdido",
+      "description": "No puede tomar acciones ni reacciones. No puede defenderse y falla automáticamente los tiros de Fuerza y Destreza.",
+      "levels": [
+        { "name": "", "penalties": [], "no_actions": true, "no_reactions": true, "notes": "No puede defenderse; falla automáticamente los tiros de FUE y DES." }
+      ]
+    },
+    {
+      "id": "tropezado",
+      "name": "Tropezado",
+      "description": "Está en el suelo (Derribado). Levantarse cuesta 1 acción.",
+      "levels": [
+        { "name": "", "penalties": [{ "rolls": ["Defensa"], "stats": [], "dice": 1 }], "notes": "Levantarse cuesta 1 acción." }
+      ]
+    },
+    {
+      "id": "agarrado",
+      "name": "Agarrado",
+      "description": "No puede tomar acciones ni reacciones que requieran mover el cuerpo; solo se defiende con salvaciones Físicas. No puede alejarse y pierde la Concentración. Librarse: 1 acción y una salvación FÍS.",
+      "levels": [
+        { "name": "", "penalties": [], "notes": "Solo se defiende con salvaciones FÍS. Librarse: 1 acción + salvación FÍS." }
+      ]
+    },
+    {
+      "id": "cegado",
+      "name": "Cegado",
+      "description": "Desventaja en todos sus tiros de ataque y defensa; no puede hacer ataques a distancia.",
+      "levels": [
+        { "name": "", "penalties": [{ "rolls": ["Ataque", "Defensa"], "stats": [], "dice": 1 }], "notes": "No puede atacar a distancia." }
+      ]
+    },
+    {
+      "id": "enredado",
+      "name": "Enredado",
+      "description": "No puede moverse y tiene Desventaja en sus tiros de ataque y defensa. Librarse: 1 acción y una salvación FÍS.",
+      "levels": [
+        { "name": "", "penalties": [{ "rolls": ["Ataque", "Defensa"], "stats": [], "dice": 1 }], "notes": "No puede moverse. Librarse: 1 acción + salvación FÍS." }
+      ]
+    },
+    {
+      "id": "confundido",
+      "name": "Confundido",
+      "description": "Al inicio de su turno tira 1d6: 1-2 actúa normalmente, 3-4 no actúa, 5-6 ataca al aliado más cercano.",
+      "levels": [
+        { "name": "I", "penalties": [], "notes": "1d6 al inicio del turno: 1-2 normal, 3-4 no actúa, 5-6 ataca al aliado más cercano." }
+      ]
+    },
+    {
+      "id": "fatigado",
+      "name": "Fatigado",
+      "description": "Desventaja en todos los tiros relacionados con estadísticas físicas.",
+      "levels": [
+        { "name": "I", "penalties": [{ "rolls": [], "stats": ["FUE", "DES", "CON"], "dice": 1 }] }
+      ]
+    },
+    {
+      "id": "exhausto",
+      "name": "Exhausto",
+      "description": "Desventaja en todos sus tiros; no puede mantener la concentración.",
+      "levels": [
+        { "name": "", "penalties": [{ "rolls": [], "stats": [], "dice": 1 }], "notes": "No puede mantener la concentración." }
+      ]
+    },
+    {
+      "id": "nauseas",
+      "name": "Náuseas",
+      "description": "Desventaja en todos sus tiros y sus habilidades cuestan una acción más.",
+      "levels": [
+        { "name": "", "penalties": [{ "rolls": [], "stats": [], "dice": 1 }], "extra_cost": 1 }
+      ]
+    },
+    {
+      "id": "ralentizado",
+      "name": "Ralentizado",
+      "description": "Movimientos torpes y lentos.",
+      "levels": [
+        { "name": "I", "penalties": [{ "rolls": ["Ataque", "Defensa"], "stats": [], "dice": 1 }, { "rolls": ["Talento", "Habilidad", "Salvación"], "stats": ["DES"], "dice": 1 }] },
+        { "name": "II", "penalties": [{ "rolls": ["Ataque", "Defensa"], "stats": [], "dice": 1 }, { "rolls": ["Talento", "Habilidad", "Salvación"], "stats": ["DES"], "dice": 1 }], "no_reactions": true }
+      ]
+    },
+    {
+      "id": "enfermado",
+      "name": "Enfermado",
+      "description": "Sin definir todavía: edita sus niveles en el Rank Editor → Efectos de estado.",
+      "levels": [
+        { "name": "I", "penalties": [], "notes": "Sin definir." }
+      ]
+    },
+    {
+      "id": "veneno",
+      "name": "Veneno",
+      "description": "Al inicio de cada turno sufre X de daño de Veneno; al final repite la salvación y, si la supera, termina. Dura 3 rondas si no se indica.",
+      "levels": [
+        { "name": "", "penalties": [], "notes": "X de daño de Veneno al inicio de cada turno; repite la salvación al final." }
+      ]
+    },
+    {
+      "id": "miedo",
+      "name": "Miedo",
+      "description": "Progresivo: recibir miedo estando afectado sube un nivel.",
+      "levels": [
+        { "name": "Espantado", "penalties": [{ "rolls": ["Ataque"], "stats": [], "dice": 1 }] },
+        { "name": "Asustado", "penalties": [{ "rolls": ["Ataque"], "stats": [], "dice": 1 }], "notes": "No puede acercarse voluntariamente a la fuente del miedo." },
+        { "name": "Parálisis", "penalties": [], "no_actions": true, "no_reactions": true },
+        { "name": "Shock", "penalties": [], "no_actions": true, "no_reactions": true, "notes": "Inconsciente." }
+      ]
+    },
+    {
+      "id": "invisible",
+      "name": "Invisible",
+      "description": "No puede ser visto: los ataques contra él tienen Desventaja; él tiene Ventaja en ataques.",
+      "levels": [
+        { "name": "", "penalties": [], "notes": "Ataques contra él: Desventaja. Sus ataques: Ventaja." }
+      ]
+    }
+  ]
+}

@@ -43,7 +43,11 @@ export interface BoardItem {
   bars?: Partial<Record<BarId, Bar>>;
   sheetMax?: Partial<Record<BarId, number>>;  // the sheet's values when last read (a bar whose max is still that follows the sheet)
   barsShown?: boolean;  // the GM shows the bars to every player (else only to who controls it)
+  statuses?: TokenStatus[];   // efectos de estado (status.ts)
 }
+
+/** A status effect on a token: data/status_effects.json's id and the level's index */
+export interface TokenStatus { id: string; level: number }
 
 export type BarId = 'hp' | 'chi';
 export interface Bar { value: number; max: number }
@@ -133,6 +137,8 @@ export interface RollRecord {
   by?: string | null;   // player id (null: the GM)
   who?: string;         // their name
   color?: string;
+  token?: string;       // the token it was rolled for (its name on the board, set by the server)
+  tokenId?: string;
   label: string;
   expr: string;
   terms: RollTerm[];

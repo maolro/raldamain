@@ -222,3 +222,21 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .hud-name:focus { outline: 1px solid var(--gold); border-radius: 3px; background: #1d1d1d; }
 .log-who { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--muted); margin-bottom: 2px; }
 .side-tab[data-count]::after { content: attr(data-count); margin-left: 6px; background: var(--gold); color: var(--black); border-radius: 9px; padding: 0 6px; font-size: 11px; }
+.log-who b { color: var(--text); margin-right: 2px; }
+.pool-note { display: block; color: #e0a040; font-weight: 400; }
+
+/* ── status effects ── */
+.status-btn { position: fixed; z-index: 15; background: rgba(16,16,16,.92); color: var(--text); border: 1px solid var(--gold-dim); border-radius: 12px;
+  padding: 2px 8px; cursor: pointer; font: 700 12px var(--body); box-shadow: 0 4px 12px rgba(0,0,0,.5); }
+.status-btn:hover, .status-btn.on { border-color: var(--gold); color: var(--gold); }
+.panel.status-panel { width: 320px; z-index: 25; max-height: 70vh; overflow: auto; }
+.status-list { display: grid; gap: 3px; }
+.status-row { display: grid; grid-template-columns: 10px 1fr auto; gap: 6px; align-items: center; padding: 3px 5px; border-radius: 4px; }
+.status-row.on { background: var(--panel2); }
+.status-dot { width: 9px; height: 9px; border-radius: 50%; }
+.status-name { font-size: 13px; }
+.status-levels { display: flex; gap: 3px; flex-wrap: wrap; justify-content: flex-end; }
+.status-levels .chip { padding: 1px 7px; }
+.status-active { font-size: 12px; color: var(--muted); display: grid; gap: 4px; border-top: 1px solid var(--line); padding-top: 6px; }
+.status-active b { color: var(--text); }
+.sheet-win-banner { padding: 5px 10px; font-size: 12px; color: #f0c060; background: #241d0c; border-bottom: 1px solid #5a4510; white-space: pre-line; }

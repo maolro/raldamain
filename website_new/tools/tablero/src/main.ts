@@ -1,7 +1,8 @@
 // Tablero de Raldamain: boards, layers, grid, image library, drag & drop / paste of
 // images, pencil and text, dice, undo — shared live with the players of a room.
-// Tokens can carry a stat block (ficha), opened in a window over the board, and bars
-// for Impactos and Chi, filled from it and changed during play.
+// Tokens can carry a stat block (ficha), opened in a window over the board, bars for
+// Impactos and Chi, filled from it and changed during play, and status effects
+// (Ralentizado II…) whose penalties apply to the rolls made from its sheet.
 //
 //   /        the GM (only from this computer): every board, layer and setting
 //   /jugar   a player: joins a room with its invite code; sees the Tokens layer, adds
@@ -13,6 +14,7 @@ import { DiceRoller } from './dice';
 import { DRAG_TYPE, Library } from './library';
 import { Live } from './live';
 import { SheetWindows, Sheets } from './sheets';
+import { Statuses } from './status';
 import { BARS, kindOf, LAYERS, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Presence, type SheetStats } from './types';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -91,6 +93,8 @@ view.badgeColor = it => {
 };
 
 const sheets = new Sheets(toast, () => me?.pid ?? null);
+const statuses = new Statuses();
+view.markers = it => (it.statuses || []).map(s => ({ text: statuses.short(s), color: statuses.color(s.id) }));
 
 const library = new Library($('library'), {
   place: meta => placeImages([meta], view.viewCenter()),
@@ -102,9 +106,9 @@ const library = new Library($('library'), {
 
 const dice = new DiceRoller($('dice'), toast);
 // on a board the server rolls (the GM sees every roll of the game, a player their own)
-dice.send = (terms, expr, label) => {
+dice.send = (terms, expr, label, token) => {
   if (!live?.me) return Promise.reject(new Error('sin conexión con el tablero'));
-  return api.roll(live.boardId, { cid: live.me.cid, terms, expr, label });
+  return api.roll(live.boardId, { cid: live.me.cid, terms, expr, label, ...(token ? { token } : {}) });
 };
 // someone else's roll while the Dados tab is closed: a count on the tab
 let unseenRolls = 0;
@@ -116,10 +120,14 @@ dice.onIncoming = () => {
 };
 
 const windows = new SheetWindows(sheets, {
-  roll(item, roll, label) {
+  roll(item, roll, label, kind, stats) {
     showSide('dice');
-    dice.load(roll, item.name ? `${item.name}: ${label}` : label);
+    dice.load(rollWithStatuses(item, roll, kind, stats), label, { id: item.id, name: item.name || '' }, statusNote(item, roll, kind, stats));
   },
+  banner: it => (it.statuses || []).map(s => {
+    const r = statuses.resolve(s);
+    return r ? `✦ ${statuses.label(s)}: ${statuses.summary(r.level)}` : '';
+  }).filter(Boolean).join('\n'),
   stats(id, sid, st) {   // the open sheet computed its values: bars that follow it update
     const it = view.item(id);
     if (it && it.sheet === sid && canEdit(it) && applyStats(it, st)) { view.render(); commit(); }
@@ -213,6 +221,7 @@ function applyRemote(ch: Changes) {
   view.render();
   view.select([...view.selected].filter(id => view.item(id) && canEdit(view.item(id)!)));
   windows.sync(board.items);
+  if (!statusPanel.hidden) renderStatusPanel();
   if (ch.settings) fillGridPanel();
 }
 let sheetReload = 0;
@@ -394,7 +403,7 @@ async function enterRoom(info: JoinInfo) {
   history.replaceState(null, '', `/jugar?sala=${encodeURIComponent(info.code)}`);
   $('join').hidden = true;
   library.ownerFilter = m => m.owner === info.pid;
-  await Promise.all([library.load(), sheets.load()]);
+  await Promise.all([library.load(), sheets.load(), statuses.load()]);
   connect(info.board);
 }
 
@@ -696,6 +705,18 @@ function applyStats(it: BoardItem, st: SheetStats): boolean {
   return JSON.stringify([it.bars, it.sheetMax]) !== before;
 }
 
+/** A tiro from a token's sheet (1d20 + modifier) with its statuses' penalties: −1d6 per
+ *  Desventaja and their modifiers. Damage and other dice are left as they are. */
+const isTiro = (roll: string) => /^\s*[+\-−]/.test(roll);
+function rollWithStatuses(it: BoardItem, roll: string, kind: string, stats: string[]) {
+  const p = statuses.penaltiesFor(it, kind, stats);
+  if (!isTiro(roll) || (!p.dice && !p.mod)) return roll;
+  return roll.replace(/\s+/g, '') + (p.dice ? `-${p.dice}d6` : '') + (p.mod ? (p.mod > 0 ? `+${p.mod}` : `${p.mod}`) : '');
+}
+function statusNote(it: BoardItem, roll: string, kind: string, stats: string[]) {
+  return isTiro(roll) ? statuses.penaltiesFor(it, kind, stats).from.join(' · ') : '';
+}
+
 /** Fill these tokens' bars from their sheets (read in the background) */
 function fillFromSheet(ids: string[], fresh = false) {
   const bySheet = new Map<string, string[]>();
@@ -764,6 +785,7 @@ function hudToken(): BoardItem | null {
 
 function updateHud() {
   const it = hudToken();
+  placeStatusButton(it);
   if (!it) { hud.hidden = true; hudFor = ''; return; }
   const typingHere = hud.contains(document.activeElement);
   if (hudFor !== it.id || !typingHere) renderHud(it);
@@ -790,10 +812,94 @@ function renderHud(it: BoardItem) {
     }).join('')}`;
 }
 
+// ── status effects: a button beside the selected token opens the list ──
+const statusBtn = $<HTMLButtonElement>('status-btn');
+const statusPanel = $('status-panel');
+let statusFor = '';
+
+function placeStatusButton(it: BoardItem | null) {
+  if (!it || !statuses.list.length) {
+    statusBtn.hidden = true;
+    if (!statusPanel.hidden && (!it || it.id !== statusFor)) statusPanel.hidden = true;
+    return;
+  }
+  if (!statusPanel.hidden && it.id !== statusFor) statusPanel.hidden = true;
+  const r = view.app.canvas.getBoundingClientRect(), p = view.rightOf(it);
+  const list = it.statuses || [];
+  statusBtn.hidden = false;
+  statusBtn.textContent = list.length ? `✦ ${list.length}` : '✦';
+  statusBtn.classList.toggle('on', list.length > 0);
+  statusBtn.title = list.length ? `Efectos de estado:\n${list.map(s => statuses.label(s)).join('\n')}` : 'Añadir efectos de estado';
+  const x = r.left + p.x + 8, y = r.top + p.y - statusBtn.offsetHeight / 2;
+  const inside = x > r.left && x < r.right - 10 && y > r.top - 10 && y < r.bottom;
+  statusBtn.style.visibility = inside ? '' : 'hidden';
+  statusBtn.style.left = `${Math.min(r.right - statusBtn.offsetWidth - 4, x)}px`;
+  statusBtn.style.top = `${y}px`;
+  if (!statusPanel.hidden) placeStatusPanel();
+}
+
+function placeStatusPanel() {
+  const b = statusBtn.getBoundingClientRect(), w = statusPanel.offsetWidth, h = statusPanel.offsetHeight;
+  statusPanel.style.left = `${b.right + 8 + w > innerWidth ? Math.max(8, b.left - w - 8) : b.right + 8}px`;
+  statusPanel.style.top = `${Math.max(56, Math.min(innerHeight - h - 8, b.top - 40))}px`;
+}
+
+function renderStatusPanel() {
+  const it = view.item(statusFor);
+  if (!it) { statusPanel.hidden = true; return; }
+  const active = new Map((it.statuses || []).map(s => [s.id, s.level]));
+  statusPanel.innerHTML = `<h3>Estados de ${esc(it.name || 'este token')}</h3>
+    <div class="status-list">${statuses.list.map(e => `
+      <div class="status-row ${active.has(e.id) ? 'on' : ''}" title="${esc(e.description || '')}">
+        <span class="status-dot" style="background:${statuses.color(e.id)}"></span><span class="status-name">${esc(e.name)}</span>
+        <span class="status-levels">${e.levels.map((lv, i) => `<button class="chip ${active.get(e.id) === i ? 'on' : ''}" data-st="${esc(e.id)}" data-lv="${i}"
+          title="${esc(statuses.summary(lv))}">${esc(lv.name || 'Sí')}</button>`).join('')}</span>
+      </div>`).join('')}</div>
+    ${(it.statuses || []).length ? `<div class="status-active">${(it.statuses || []).map(s => {
+      const r = statuses.resolve(s);
+      return `<div><b>${esc(statuses.label(s))}</b> ${esc(r ? statuses.summary(r.level) : '')}</div>`;
+    }).join('')}</div><button class="btn small danger" data-st-clear>Quitar todos</button>` : '<small class="muted">Se aplican solos a las tiradas hechas desde su ficha.</small>'}`;
+}
+
+/** Put a status on the token at that level (the same level again: take it off) */
+function setTokenStatus(id: string, level: number | null) {
+  const it = view.item(statusFor);
+  if (!it || !canEdit(it)) return;
+  const had = (it.statuses || []).find(s => s.id === id);
+  const rest = (it.statuses || []).filter(s => s.id !== id);
+  if (level !== null && !(had && had.level === level)) rest.push({ id, level });
+  if (rest.length) it.statuses = rest; else delete it.statuses;
+  view.render();
+  commit();
+  windows.sync(B().items);
+  renderStatusPanel();
+}
+
+statusBtn.addEventListener('click', () => {
+  const it = hudToken();
+  if (!it) return;
+  if (!statusPanel.hidden && statusFor === it.id) { statusPanel.hidden = true; return; }
+  statusFor = it.id;
+  renderStatusPanel();
+  statusPanel.hidden = false;
+  placeStatusPanel();
+});
+statusPanel.addEventListener('click', e => {
+  const b = (e.target as HTMLElement).closest<HTMLElement>('[data-st]');
+  if (b) setTokenStatus(b.dataset.st!, +b.dataset.lv!);
+  else if ((e.target as HTMLElement).closest('[data-st-clear]')) {
+    const it = view.item(statusFor);
+    if (it && canEdit(it)) { delete it.statuses; view.render(); commit(); windows.sync(B().items); renderStatusPanel(); }
+  }
+});
+
 /** A bar input finished: apply what was typed */
 function applyBarInput(inp: HTMLInputElement) {
   const it = view.item(hudFor);
-  if (!it || !canEdit(it)) return;
+  // once per typed change: redrawing the HUD drops this box, and the focus it loses
+  // then must not apply its "-1" a second time
+  if (!it || !canEdit(it) || inp.dataset.done) return;
+  inp.dataset.done = '1';
   const id = inp.dataset.bar as BarId, f = inp.dataset.f as 'value' | 'max';
   const bar = it.bars?.[id];
   const txt = inp.value.trim().replace(/[−–]/g, '-');
@@ -819,6 +925,7 @@ function applyBarInput(inp: HTMLInputElement) {
 /** The name typed in the HUD */
 function applyName(inp: HTMLInputElement) {
   const it = view.item(hudFor);
+  if (!inp.isConnected) return;
   const name = inp.value.trim().slice(0, 60);
   if (!it || !canEdit(it) || name === (it.name || '')) return;
   if (name) it.name = name; else delete it.name;
@@ -843,7 +950,7 @@ hud.addEventListener('focusin', e => { const inp = e.target as HTMLInputElement;
 hud.addEventListener('focusout', e => {
   const inp = e.target as HTMLInputElement;
   if (inp.dataset?.name !== undefined) { applyName(inp); return; }
-  if (!inp.dataset?.bar) return;
+  if (!inp.dataset?.bar || !inp.isConnected || inp.dataset.done) return;
   const it = view.item(hudFor);
   const v = it?.bars?.[inp.dataset.bar as BarId];
   if (inp.value.trim() !== String(v ? v[inp.dataset.f as 'value' | 'max'] : '')) applyBarInput(inp);
@@ -920,6 +1027,7 @@ document.addEventListener('pointerdown', e => {
   const t = e.target as HTMLElement | null;
   if (!t?.closest?.('#menu')) $('menu').hidden = true;
   if (!t?.closest?.('#room-panel, #invite-btn')) $('room-panel').hidden = true;
+  if (!t?.closest?.('#status-panel, #status-btn')) statusPanel.hidden = true;
 });
 
 // ── toolbar: tools, layers, zoom ────────────────────────────────────────────
@@ -1040,7 +1148,7 @@ document.addEventListener('keyup', e => {
 
 // ── start ───────────────────────────────────────────────────────────────────
 // for the browser console (and tests): window.tablero.view / .board() / .me()
-(window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, board: () => board, me: () => me, presence: () => presence, live: () => live };
+(window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, statuses, board: () => board, me: () => me, presence: () => presence, live: () => live };
 (async () => {
   await view.init(stage);
   bindDoubleClick();
@@ -1065,6 +1173,6 @@ document.addEventListener('keyup', e => {
     return;
   }
   library.ownerFilter = m => !m.owner;
-  await Promise.all([library.load(), sheets.load()]);
+  await Promise.all([library.load(), sheets.load(), statuses.load()]);
   openBoard(await refreshBoardList());
 })().catch(e => { console.error(e); toast('No se pudo iniciar el tablero: ' + (e as Error).message, true); });
