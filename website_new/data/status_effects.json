@@ -175,57 +175,51 @@
     {
       "id": "fatigado",
       "name": "Fatigado",
-      "description": "Desventaja en todos los tiros relacionados con estadísticas físicas.",
+      "description": "Cansancio y dificultades luchando",
       "levels": [
         {
           "name": "I",
           "penalties": [
             {
+              "rolls": [
+                "Ataque",
+                "Defensa"
+              ],
+              "stats": [],
+              "dice": 1
+            },
+            {
               "rolls": [],
               "stats": [
-                "FUE",
-                "DES",
-                "CON"
+                "FUE"
               ],
               "dice": 1
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "exhausto",
-      "name": "Exhausto",
-      "description": "Desventaja en todos sus tiros; no puede mantener la concentración.",
-      "levels": [
+        },
         {
-          "name": "",
+          "name": "II",
           "penalties": [
             {
-              "rolls": [],
+              "rolls": [
+                "Ataque",
+                "Defensa"
+              ],
               "stats": [],
-              "dice": 1
-            }
-          ],
-          "notes": "No puede mantener la concentración."
-        }
-      ]
-    },
-    {
-      "id": "nauseas",
-      "name": "Náuseas",
-      "description": "Desventaja en todos sus tiros y sus habilidades cuestan una acción más.",
-      "levels": [
-        {
-          "name": "",
-          "penalties": [
+              "dice": 2
+            },
             {
-              "rolls": [],
-              "stats": [],
-              "dice": 1
+              "rolls": [
+                "Salvación",
+                "Talento",
+                "Habilidad"
+              ],
+              "stats": [
+                "FUE"
+              ],
+              "dice": 2
             }
-          ],
-          "extra_cost": 1
+          ]
         }
       ]
     },
@@ -344,42 +338,87 @@
       "description": "Progresivo: recibir miedo estando afectado sube un nivel.",
       "levels": [
         {
-          "name": "Espantado",
+          "name": "I",
           "penalties": [
             {
               "rolls": [
-                "Ataque"
+                "Ataque",
+                "Defensa"
               ],
               "stats": [],
+              "dice": 1
+            },
+            {
+              "rolls": [
+                "Salvación",
+                "Talento",
+                "Habilidad"
+              ],
+              "stats": [
+                "CAR"
+              ],
               "dice": 1
             }
           ]
         },
         {
-          "name": "Asustado",
+          "name": "II",
           "penalties": [
             {
               "rolls": [
-                "Ataque"
+                "Ataque",
+                "Defensa"
               ],
               "stats": [],
               "dice": 1
+            },
+            {
+              "rolls": [
+                "Salvación",
+                "Talento",
+                "Habilidad"
+              ],
+              "stats": [
+                "CAR"
+              ],
+              "dice": 2
             }
           ],
           "notes": "No puede acercarse voluntariamente a la fuente del miedo."
         },
         {
-          "name": "Parálisis",
-          "penalties": [],
-          "no_actions": true,
-          "no_reactions": true
+          "name": "III",
+          "penalties": [
+            {
+              "rolls": [
+                "Ataque",
+                "Defensa"
+              ],
+              "stats": [],
+              "dice": 2
+            },
+            {
+              "rolls": [
+                "Salvación",
+                "Talento",
+                "Habilidad"
+              ],
+              "stats": [
+                "INT",
+                "SAB",
+                "CAR"
+              ],
+              "dice": 2
+            }
+          ],
+          "notes": "Debe huir como pueda de la fuente del miedo."
         },
         {
-          "name": "Shock",
+          "name": "IV",
           "penalties": [],
           "no_actions": true,
           "no_reactions": true,
-          "notes": "Inconsciente."
+          "notes": "Cae completamente Inconsciente"
         }
       ]
     },
