@@ -388,6 +388,18 @@ def _weapon_roll(tags: str, stats: dict[str, int], ranks: dict[str, int],
     return max(fue, des), max(fue, des)
 
 
+def race_now(race: dict[str, Any]) -> dict[str, Any]:
+    """A character's race as data/builder/races.json has it now (the character keeps an older
+    copy). No race: Humano, the default."""
+    try:
+        races = json.loads((WEBSITE_DIR / "data" / "builder" / "races.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return race
+    if not race.get("name"):
+        return races.get("humano") or race
+    return next((r for r in races.values() if isinstance(r, dict) and r.get("name") == race.get("name")), race)
+
+
 def character_spec(path: Path, d: dict[str, Any] | None = None) -> dict[str, Any]:
     """``d``: the file's data when already loaded (from the store); else read from ``path``."""
     if d is None:
@@ -423,7 +435,8 @@ def character_spec(path: Path, d: dict[str, Any] | None = None) -> dict[str, Any
                 umbrales[key] = umbrales.get(key, umbrales["general"]) + int(u.get("value", 0))
 
     eq_abilities = equipment_abilities()
-    chi = 2 * sum(ranks.values())
+    race_chi = race_now(d.get("race") or {}).get("chi")
+    chi = 2 * sum(ranks.values()) + (race_chi if isinstance(race_chi, int) else 0)
     abilities: list[dict[str, Any]] = []
     defenses: list[tuple[int, str]] = []
     unmodelled: list[str] = []

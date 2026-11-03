@@ -638,6 +638,16 @@ ${reactions}
                 return Number.parseInt(this.replaceTag(String(value), owner.rank, owner.skill));
             return Number.parseInt(value);
         },
+        // A number the race gives (Razas tab of the rank editor): extra "ranks" or "chi".
+        // From the race as it is now (a saved character keeps an older copy of its race);
+        // no race chosen is Humano, the default (the race picker already shows it).
+        raceBonus(key) {
+            const race = this.race && this.race.name ? this.race : null;
+            const now = race ? (Object.values(this.races || {}).find(r => r && r.name === race.name) || race)
+                : ((this.races || {}).humano || {});
+            const v = Number(now[key]);
+            return Number.isFinite(v) ? v : 0;
+        },
         setRace(id) {
             if (id in this.races) {
                 this.race = this.races[id];
@@ -1203,7 +1213,8 @@ ${reactions}
             for (let key in this.myarch) {
                 rkSum += this.myarch[key].rank * 2;
             }
-            return (1 + parseInt(this.level) - rkSum);
+            // one Rango per level, plus the race's (Humano: +1)
+            return (parseInt(this.level) + this.raceBonus('ranks') - rkSum);
         },
         arcString: function () {
             let res = [];
@@ -1449,6 +1460,7 @@ ${reactions}
                 chiRes += rk.rank * 2;
             }
             chiRes += this.sumAllKeys('chi', this.activeAbilities);
+            chiRes += this.raceBonus('chi');   // a race's extra Chi
             return { chi: chiRes };
         },
         savingThrows: function() {

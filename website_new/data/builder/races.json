@@ -61,7 +61,8 @@
         ]
     },
     "humano":{
-        "name": "Humano"
+        "name": "Humano",
+        "ranks": 1
     },
     "leonin":{
         "name": "Leonino",

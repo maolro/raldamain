@@ -2099,8 +2099,9 @@ function renderRaceSidebar() {
 function loadRace(id) {
   const r = S.races[id];
   if (!r) return;
-  const { name, stats, abilities, ...extra } = r;
+  const { name, stats, abilities, ranks, chi, ...extra } = r;
   S.rank = { _race: true, id, _orig: id, title: name || id, stats: deepCopy(stats || []), extra: deepCopy(extra),
+             ranks: ranks || 0, chi: chi || 0,
              draft: false, levels: [{ rank: '', abilities: (abilities || []).map(raceAbToRank) }] };
   S.saved = JSON.stringify(S.rank);
   S.lv = 0; S.openBoost = {};
@@ -2117,8 +2118,17 @@ function renderRaceMeta() {
     <div class="field"><div class="lbl">Estadísticas (+/−)</div>
       <div class="race-stats">${RACE_STATS.map(([k, n]) => `<div class="field"><div class="lbl">${n}</div>
         <input class="inp" type="number" value="${boost(k)}" placeholder="0" oninput="setRaceStat('${k}', this.value)"></div>`).join('')}</div></div>
+    <div class="field"><div class="lbl">Bonificadores de la raza</div>
+      <div class="race-stats">
+        <div class="field" style="width:120px"><div class="lbl" title="Puntos de Rango además de los de su nivel (1 por nivel)">Rangos extra</div>
+          <input class="inp" type="number" min="0" value="${R.ranks || ''}" placeholder="0" oninput="setRaceNum('ranks', this.value)"></div>
+        <div class="field" style="width:120px"><div class="lbl" title="Chi que la raza suma a la reserva">Chi extra</div>
+          <input class="inp" type="number" min="0" value="${R.chi || ''}" placeholder="0" oninput="setRaceNum('chi', this.value)"></div>
+      </div>
+      <div class="race-note">Cada personaje tiene tantos Rangos como su nivel; aquí, los que la raza añade (Humano: +1). El resto de razas suele dar habilidades y estadísticas.</div></div>
     ${Object.keys(R.extra||{}).length ? `<div class="race-note">También guarda: ${esc(Object.keys(R.extra).join(', '))} (se conserva tal cual).</div>` : ''}`;
 }
+function setRaceNum(k, v) { const n = parseInt(v); S.rank[k] = n > 0 ? n : 0; renderToolbar(); }
 function setRaceStat(k, v) {
   const n = parseInt(v), list = (S.rank.stats || []).filter(x => x.stat !== k);
   if (n) list.push({ stat: k, boost: n });
@@ -2133,6 +2143,8 @@ async function saveRace() {
   if (R.id !== R._orig && S.races[R.id]) { toast(`Ya existe una raza con el ID «${R.id}»`, 'err'); return; }
   const races = deepCopy(S.races), race = { name: R.title };
   if ((R.stats||[]).length) race.stats = R.stats;
+  if (R.ranks) race.ranks = R.ranks;
+  if (R.chi) race.chi = R.chi;
   race.abilities = (R.levels[0].abilities || []).filter(a => a.name).map(rankAbToRace);
   Object.assign(race, R.extra || {});
   // the same position in the file (renamed: replaced in place)
@@ -2174,7 +2186,7 @@ function newRace() {
   if (!name) return;
   let id = slugify(name), n = 2;
   while (S.races[id]) id = slugify(name) + '-' + n++;
-  S.rank = { _race: true, id, _orig: null, title: name, stats: [], extra: {}, draft: false, levels: [{ rank: '', abilities: [] }] };
+  S.rank = { _race: true, id, _orig: null, title: name, stats: [], extra: {}, ranks: 0, chi: 0, draft: false, levels: [{ rank: '', abilities: [] }] };
   S.saved = '';   // new: unsaved until Guardar
   S.lv = 0; S.openBoost = {};
   renderAll(); renderSidebar();

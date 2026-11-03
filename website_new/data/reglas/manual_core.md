@@ -149,15 +149,16 @@ Los Rangos representan los poderes de combate de tu personaje. Cada personaje ti
 
 | Nivel del Personaje | Rangos disponibles | Rango máximo desbloqueado |
 | :--- | :--- | :--- |
-| **1** | 2 | I |
-| **2-3** | 3-4 | I |
-| **4-6** | 5-7 | II |
-| **7-9** | 8-10 | III |
-| **10-12** | 11-13 | IV |
-| **13-15** | 14-16 | V |
-| **16+** | 17+ | VI |
+| **1** | 1 | I |
+| **2-3** | 2-3 | I |
+| **4-6** | 4-6 | II |
+| **7-9** | 7-9 | III |
+| **10-12** | 10-12 | IV |
+| **13-15** | 13-15 | V |
+| **16+** | 16+ | VI |
 
-* Empiezas con **2 Rangos** a Nivel 1 y ganas **+1 Rango** cada vez que subes de nivel.
+* Tienes tantos **Rangos** como tu **nivel**: 1 a Nivel 1 y **+1 Rango** cada vez que subes de nivel.
+* Tu raza puede darte más: los **Humanos** tienen **+1 Rango**; las demás razas dan habilidades raciales y bonificadores de estadísticas (y algunas, Chi extra).
 * Los Rangos se distribuyen entre tus diferentes disciplinas (normalmente 4, máximo 5).
 * Subir un Rango a II, III, etc. requiere alcanzar el nivel mínimo indicado.
 * Los Rangos de **tres niveles** (Iniciado · Profesional · Maestro) se desbloquean como si fueran Rangos I, III y V: su nivel II requiere **nivel 7** y su nivel III, **nivel 13**.
