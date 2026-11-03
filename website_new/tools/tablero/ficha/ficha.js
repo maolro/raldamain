@@ -109,6 +109,12 @@
     // The label: data-label, else the ability's name (creature actions, bold names in a character's text)
     function labelFor(el) {
         if (el.dataset.label) return el.dataset.label;
+        // a talent ("Talentos: Arcanismo +5, Percepción +6"): the name just before the value
+        const line = el.parentElement && el.parentElement.previousElementSibling;
+        if (line && /^Talentos/.test(line.textContent.trim())) {
+            const name = textBefore(el).split(',').pop().replace(/[\s+]+$/, '').trim();
+            if (name) return name;
+        }
         const save = el.closest('.save-pill');
         if (save) return 'Salvación ' + save.querySelector('.save-label').textContent.trim();
         const block = el.closest('.action-block, .trait-block');

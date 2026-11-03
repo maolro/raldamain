@@ -308,7 +308,8 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);
 .chk.on{border-color:var(--goldd);color:var(--gold);background:rgba(201,162,39,.08)}
 
 /* ── Efectos de estado (their own panel) ── */
-#st-view{display:none;position:fixed;inset:0;z-index:9000;background:var(--bg);flex-direction:column}
+.tab-btn.on{background:var(--bg4);color:var(--gold);border-color:var(--goldd)}
+#st-view{display:none;position:fixed;inset:0;left:var(--sw);z-index:9000;background:var(--bg);flex-direction:column}
 .st-tb{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--border);background:var(--bg2)}
 .st-tb .t{font-weight:700;color:var(--gold);letter-spacing:.5px}
 .st-body{flex:1;display:flex;min-height:0}
@@ -538,13 +539,14 @@ select.inp{cursor:pointer}
   <div class="sb-ft">
     <button class="btn" id="cmp-btn" onclick="toggleMode()">⚖ Comparar</button>
     <button class="btn" id="meta-btn" onclick="toggleMeta()">Metadatos</button>
-    <button class="btn" id="st-btn" onclick="openStatus()" title="Efectos de estado: Ralentizado, Enfermado, Fatigado… y sus penalizadores">✦ Estados</button>
     <button class="btn" style="color:var(--green);border-color:var(--green)" onclick="newRank()">＋ Nuevo</button>
   </div>
 </aside>
 
 <div class="main">
   <div class="tb">
+    <button class="tab-btn btn on" onclick="closeStatus()">⚔ Rangos</button>
+    <button class="tab-btn btn" onclick="openStatus()" title="Efectos de estado: Ralentizado, Enfermado, Fatigado… y sus penalizadores" style="margin-right:4px">✦ Estados</button>
     <span class="tb-title" id="tb-title">Selecciona un rango</span>
     <span id="clip-badge" title="Clic para limpiar portapapeles" onclick="clearClip()"></span>
     <span id="git-badge" title="Rama de git: Guardar hace commit y push a esta rama"></span>
@@ -635,12 +637,13 @@ select.inp{cursor:pointer}
 <!-- ── Efectos de estado ── -->
 <div id="st-view">
   <div class="st-tb">
-    <span class="t">✦ Efectos de estado</span>
+    <button class="tab-btn btn" onclick="closeStatus()">⚔ Rangos</button>
+    <button class="tab-btn btn on" onclick="openStatus()" style="margin-right:4px">✦ Estados</button>
+    <span class="t">Efectos de estado</span>
     <span style="font-size:11px;color:var(--text3)">Penalizadores que el Tablero aplica a las tiradas de los tokens afectados</span>
     <span style="flex:1"></span>
     <button class="btn" onclick="stNew()">＋ Nuevo efecto</button>
     <button class="btn pri" onclick="saveStatus()">💾 Guardar</button>
-    <button class="btn" onclick="closeStatus()">✕ Cerrar</button>
   </div>
   <div class="st-body">
     <div class="st-list" id="st-list"></div>

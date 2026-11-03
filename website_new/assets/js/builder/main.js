@@ -1187,7 +1187,10 @@ ${reactions}
                 if (this.mytalents[key].level > 0) {
                     const statKey = this.talents[key] ? this.getMainStat(this.talents[key].stat) : null;
                     const adv = statKey ? this.abilityAdvantageCount({ tags: 'Habilidad' }, [statKey]) : 0;
-                    ts.push(this.mytalents[key].name + " + " + this.getMod(key) + (adv > 0 ? '+' + adv + 'd6' : ''));
+                    // "Acrobacias +3" (sign attached: clickable to roll in the Mesa and the Tablero)
+                    const m = this.getMod(key);
+                    const mod = m === '-' ? '–' : (m >= 0 ? '+' + m : String(m));
+                    ts.push(this.mytalents[key].name + " " + mod + (adv > 0 && m !== '-' ? '+' + adv + 'd6' : ''));
                 }
             }
             return ts.join(", ");
