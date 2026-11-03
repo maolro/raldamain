@@ -38,9 +38,14 @@ stores everything under tools/tablero/storage/:
     boards/<id>.json     each board
     rooms.json           invite codes: board and players (name, colour, private key)
     rolls/<board>.json   the board's dice rolls (the last 300)
+    music/<id>.<ext>     the GM's audio files · music.json: their names, lengths and the playlists
     sheets/<id>.json     uploaded stat blocks · sheets.json: their name, kind and owner
     gm_key               the GM's key
 
+Música     the GM's audio files and playlists (🎵 tab). The server keeps each board's
+           playback (track, second, playing, shuffle, repeat), moves on to the next
+           track by itself, and tells every page in the room: they all play the same
+           file from here, in step; each person sets their own volume.
 Compartir  "🌐 Compartir" opens the board to the internet at https://tablero.raldamain.com
            through a Cloudflare Tunnel from this computer (tools/tablero_share.py).
 
@@ -84,6 +89,12 @@ BOARDS = STORAGE / "boards"
 ROOMS = STORAGE / "rooms.json"
 GM_KEY = STORAGE / "gm_key"
 ROLLS = STORAGE / "rolls"
+MUSIC = STORAGE / "music"
+MUSIC_INDEX = STORAGE / "music.json"
+AUDIO_TYPES = {"audio/mpeg": "mp3", "audio/mp3": "mp3", "audio/ogg": "ogg", "audio/wav": "wav", "audio/x-wav": "wav",
+               "audio/wave": "wav", "audio/mp4": "m4a", "audio/x-m4a": "m4a", "audio/aac": "aac", "audio/flac": "flac",
+               "audio/x-flac": "flac", "audio/webm": "webm", "audio/opus": "opus"}
+MAX_AUDIO = 80 * 1024 * 1024  # bytes
 MAX_ROLLS = 300
 SHEETS = STORAGE / "sheets"
 SHEET_INDEX = STORAGE / "sheets.json"
@@ -599,6 +610,290 @@ def api_sheet_delete(sid):
     return jsonify({"ok": True})
 
 
+# ─────────────────────────────────────────────────────────────── music (GM)
+
+def music_lib() -> dict:
+    lib = _read(MUSIC_INDEX, {})
+    return {"tracks": lib.get("tracks") or [], "playlists": lib.get("playlists") or []}
+
+
+def track_of(tid: str) -> dict | None:
+    return next((t for t in music_lib()["tracks"] if t.get("id") == tid), None)
+
+
+@app.route("/api/music")
+def api_music():
+    need_gm()
+    return jsonify(music_lib())
+
+
+@app.route("/api/music", methods=["POST"])
+def api_music_upload():
+    """multipart: file (+ name, duration in seconds, measured by the page). The same file twice is stored once."""
+    need_gm()
+    f = request.files.get("file")
+    if not f:
+        return jsonify({"error": "falta el archivo"}), 400
+    data = f.read(MAX_AUDIO + 1)
+    if len(data) > MAX_AUDIO:
+        return jsonify({"error": "el archivo pasa de 80 MB"}), 400
+    ext = AUDIO_TYPES.get((f.mimetype or "").lower()) or Path(f.filename or "").suffix.lower().lstrip(".")
+    if ext not in set(AUDIO_TYPES.values()):
+        return jsonify({"error": f"no es un audio admitido ({f.mimetype or ext})"}), 400
+    sha = hashlib.sha1(data).hexdigest()
+    with _lock:
+        lib = music_lib()
+        same = next((t for t in lib["tracks"] if t.get("sha1") == sha), None)
+        if same:
+            return jsonify({**same, "duplicate": True})
+        MUSIC.mkdir(parents=True, exist_ok=True)
+        file = f"{sha[:16]}.{ext}"
+        (MUSIC / file).write_bytes(data)
+        try:
+            duration = max(0.0, float(request.form.get("duration") or 0))
+        except ValueError:
+            duration = 0.0
+        track = {"id": sha[:12], "file": file, "sha1": sha, "size": len(data), "duration": round(duration, 2),
+                 "name": clean_name(request.form.get("name") or Path(f.filename or "pista").stem, 100) or "Pista",
+                 "created": time.time()}
+        lib["tracks"].append(track)
+        _write(MUSIC_INDEX, lib)
+    return jsonify(track)
+
+
+@app.route("/api/music/tracks/<tid>", methods=["PATCH"])
+def api_music_track_update(tid):
+    need_gm()
+    body = request.get_json(force=True) or {}
+    with _lock:
+        lib = music_lib()
+        t = next((x for x in lib["tracks"] if x.get("id") == tid), None)
+        if not t:
+            abort(404)
+        if "name" in body:
+            t["name"] = clean_name(body["name"], 100) or t["name"]
+        if "duration" in body and not t.get("duration"):
+            try:
+                t["duration"] = round(max(0.0, float(body["duration"])), 2)
+            except (TypeError, ValueError):
+                pass
+        _write(MUSIC_INDEX, lib)
+    return jsonify(t)
+
+
+@app.route("/api/music/tracks/<tid>", methods=["DELETE"])
+def api_music_track_delete(tid):
+    need_gm()
+    with _lock:
+        lib = music_lib()
+        t = next((x for x in lib["tracks"] if x.get("id") == tid), None)
+        if not t:
+            abort(404)
+        lib["tracks"] = [x for x in lib["tracks"] if x.get("id") != tid]
+        for pl in lib["playlists"]:
+            pl["tracks"] = [x for x in pl.get("tracks") or [] if x != tid]
+        _write(MUSIC_INDEX, lib)
+        (MUSIC / t["file"]).unlink(missing_ok=True)
+    return jsonify({"ok": True})
+
+
+@app.route("/api/music/playlists", methods=["POST"])
+def api_music_playlist_new():
+    need_gm()
+    body = request.get_json(force=True) or {}
+    with _lock:
+        lib = music_lib()
+        pl = {"id": secrets.token_hex(4), "name": clean_name(body.get("name"), 60) or "Lista", "tracks": []}
+        lib["playlists"].append(pl)
+        _write(MUSIC_INDEX, lib)
+    return jsonify(pl)
+
+
+@app.route("/api/music/playlists/<lid>", methods=["PATCH"])
+def api_music_playlist_update(lid):
+    """{name?, tracks?: [track ids in order]}"""
+    need_gm()
+    body = request.get_json(force=True) or {}
+    with _lock:
+        lib = music_lib()
+        pl = next((x for x in lib["playlists"] if x.get("id") == lid), None)
+        if not pl:
+            abort(404)
+        if "name" in body:
+            pl["name"] = clean_name(body["name"], 60) or pl["name"]
+        if isinstance(body.get("tracks"), list):
+            known = {t["id"] for t in lib["tracks"]}
+            pl["tracks"] = [str(x) for x in body["tracks"] if str(x) in known]
+        _write(MUSIC_INDEX, lib)
+    return jsonify(pl)
+
+
+@app.route("/api/music/playlists/<lid>", methods=["DELETE"])
+def api_music_playlist_delete(lid):
+    need_gm()
+    with _lock:
+        lib = music_lib()
+        lib["playlists"] = [x for x in lib["playlists"] if x.get("id") != lid]
+        _write(MUSIC_INDEX, lib)
+    return jsonify({"ok": True})
+
+
+@app.route("/music/<name>")
+def music_file(name):
+    """An audio file, for the GM and the players of a room (key in the address: an <audio> can't send headers).
+    Byte ranges are served, so pages can start anywhere in it."""
+    if not who():
+        abort(403)
+    resp = send_from_directory(MUSIC, name, conditional=True)
+    resp.headers["Cache-Control"] = "private, max-age=86400"
+    return resp
+
+
+# ── playback: one per board, kept here and sent to everyone in it ──
+
+def new_playback() -> dict:
+    # queue: track ids; order: the order to play them in (shuffled or not); pos: where in `order`;
+    # position: second of the track at `at` (ms, server time) — while playing it moves on from there
+    return {"queue": [], "order": [], "pos": 0, "playing": False, "position": 0.0, "at": time.time() * 1000,
+            "shuffle": False, "repeat": "all", "list": None}
+
+
+def _now_pos(m: dict) -> float:
+    return m["position"] + ((time.time() * 1000 - m["at"]) / 1000 if m["playing"] else 0)
+
+
+def _current(m: dict) -> str | None:
+    return m["queue"][m["order"][m["pos"]]] if m["queue"] and 0 <= m["pos"] < len(m["order"]) else None
+
+
+def playback_view(s: "Session") -> dict:
+    """What pages need: the state, this track's and the next one's details, and the server's time"""
+    m = s.music
+    cur = _current(m)
+    nxt = None
+    if m["queue"] and len(m["order"]) > 1:
+        k = m["pos"] + 1
+        if k < len(m["order"]) or m["repeat"] == "all":
+            nxt = m["queue"][m["order"][k % len(m["order"])]]
+    pub = lambda t: t and {k: t[k] for k in ("id", "name", "file", "duration")}
+    return {"playing": m["playing"], "position": m["position"], "at": m["at"], "now": time.time() * 1000,
+            "shuffle": m["shuffle"], "repeat": m["repeat"], "list": m["list"], "index": m["pos"], "count": len(m["order"]),
+            "track": pub(track_of(cur)) if cur else None, "next": pub(track_of(nxt)) if nxt else None}
+
+
+def _music_changed(s: "Session"):
+    """Tell everyone, and set the timer for the end of the track (then the next one plays by itself)"""
+    m = s.music
+    if s._music_timer:
+        s._music_timer.cancel()
+        s._music_timer = None
+    cur = track_of(_current(m) or "")
+    if m["playing"] and cur and cur.get("duration"):
+        left = max(0.2, cur["duration"] - _now_pos(m))
+        token = (m["pos"], m["at"])
+        s._music_timer = threading.Timer(left + 0.15, lambda: _music_ended(s, token))
+        s._music_timer.daemon = True
+        s._music_timer.start()
+    view = playback_view(s)
+    s.send(lambda r, q: _event("music", view))
+
+
+def _music_ended(s: "Session", token):
+    with s.lock:
+        if (s.music["pos"], s.music["at"]) != token:
+            return  # something else happened meanwhile
+        _advance(s.music, auto=True)
+    _music_changed(s)
+
+
+def _advance(m: dict, auto: bool, step: int = 1):
+    """Next (or previous) track; at the end of the list: again from the start (repeat all) or stop"""
+    if not m["order"]:
+        m["playing"] = False
+        return
+    if auto and m["repeat"] == "one":
+        pass
+    else:
+        k = m["pos"] + step
+        if k >= len(m["order"]):
+            if m["repeat"] == "all" or not auto:
+                k = 0
+            else:
+                m["pos"], m["playing"], m["position"], m["at"] = 0, False, 0.0, time.time() * 1000
+                return
+        m["pos"] = k % len(m["order"])
+    m["position"], m["at"] = 0.0, time.time() * 1000
+
+
+def _order(n: int, shuffle: bool, first: int | None) -> list[int]:
+    order = list(range(n))
+    if shuffle:
+        _random.shuffle(order)
+        if first is not None and first in order:
+            order.remove(first)
+            order.insert(0, first)
+    return order
+
+
+@app.route("/api/live/<bid>/music", methods=["POST"])
+def live_music(bid):
+    """The GM's controls: {action: play | toggle | next | prev | seek | shuffle | repeat | stop, ...}
+      play     {tracks: [ids], start?: id, list?: playlist id}: this list, from that track
+      seek     {position: seconds} · shuffle {on} · repeat {mode: off | all | one}"""
+    role, pid, code = need_board(bid)
+    if role != "gm":
+        abort(403)
+    body = request.get_json(force=True) or {}
+    s = session(bid)
+    a = body.get("action")
+    with s.lock:
+        m = s.music
+        now = time.time() * 1000
+        if a == "play":
+            known = {t["id"] for t in music_lib()["tracks"]}
+            q = [str(t) for t in body.get("tracks") or [] if str(t) in known]
+            if not q:
+                return jsonify({"error": "lista vacía"}), 400
+            start = q.index(body["start"]) if body.get("start") in q else (None if m["shuffle"] else 0)
+            m.update(queue=q, order=_order(len(q), m["shuffle"], start), pos=0, playing=True, position=0.0, at=now,
+                     list=body.get("list"))
+            if not m["shuffle"] and start:
+                m["pos"] = start
+        elif a == "toggle" and m["queue"]:
+            m["position"], m["at"], m["playing"] = _now_pos(m), now, not m["playing"]
+        elif a == "stop":
+            m["position"], m["at"], m["playing"] = 0.0, now, False
+        elif a == "next":
+            _advance(m, auto=False)
+            m["playing"] = bool(m["queue"])
+        elif a == "prev":
+            if _now_pos(m) > 3 or len(m["order"]) < 2:
+                m["position"], m["at"] = 0.0, now   # back to the start of this one
+            else:
+                _advance(m, auto=False, step=-1)
+        elif a == "seek":
+            try:
+                m["position"], m["at"] = max(0.0, float(body.get("position") or 0)), now
+            except (TypeError, ValueError):
+                pass
+        elif a == "shuffle":
+            on = bool(body.get("on"))
+            if on != m["shuffle"] and m["queue"]:
+                cur = m["order"][m["pos"]] if m["order"] else 0
+                m["order"] = _order(len(m["queue"]), on, cur)
+                m["pos"] = 0 if on else cur
+            m["shuffle"] = on
+        elif a == "repeat" and body.get("mode") in ("off", "all", "one"):
+            m["repeat"] = body["mode"]
+        elif a == "ended":   # the GM's page heard the end of a track whose length the server didn't know
+            if body.get("track") == _current(m) and not (track_of(_current(m) or "") or {}).get("duration"):
+                _advance(m, auto=True)
+        else:
+            return jsonify({"error": "acción desconocida"}), 400
+    _music_changed(s)
+    return jsonify(playback_view(s))
+
+
 # ─────────────────────────────────────────────────────────────── live board sessions
 
 PRIVATE_FIELDS = ("sheet", "sheetMax")  # a token's sheet: only for whoever controls it
@@ -628,6 +923,8 @@ class Session:
         self.subs: dict[str, tuple[queue.Queue, str, str | None]] = {}  # connection id → (queue, role, player id)
         self._save_timer: threading.Timer | None = None
         self.rolls: list[dict] = _read(ROLLS / f"{bid}.json", [])
+        self.music = new_playback()   # what plays in this board's room (not saved)
+        self._music_timer: threading.Timer | None = None
 
     def visible(self, role: str, pid: str | None = None) -> dict:
         """The board as this role sees it: players never get the GM layer, nor the sheets
@@ -712,7 +1009,8 @@ def live_events(bid):
     def stream():
         try:
             yield "retry: 1500\n\n"
-            yield _event("snapshot", {"board": s.visible(role, pid), "me": me, "rolls": s.rolls_for(role, pid)})
+            yield _event("snapshot", {"board": s.visible(role, pid), "me": me, "rolls": s.rolls_for(role, pid),
+                                      "music": playback_view(s)})
             s.presence()
             while True:
                 try:

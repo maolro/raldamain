@@ -1,6 +1,7 @@
 // The Tablero server (tools/tablero.py). Every request carries this browser's key
 // (the GM's, or a player's from joining a room): the server decides what it may do.
 import type { Board, BoardSummary, Changes, ImageMeta, JoinInfo, RollRecord, RollTerm, RoomInfo, ShareStatus, SheetMeta } from './types';
+import type { Playback, Playlist, Track } from './music';
 
 let KEY = '';
 export const setKey = (k: string) => { KEY = k; };
@@ -59,5 +60,19 @@ export const api = {
   roll: (bid: string, body: { cid: string; terms: RollTerm[]; expr: string; label: string; token?: string }) =>
     call<RollRecord>('POST', `/api/live/${bid}/roll`, body),
   ruler: (bid: string, body: { cid: string; shape: unknown }) => call<{ ok: boolean }>('POST', `/api/live/${bid}/ruler`, body),
+  musicLibrary: () => call<{ tracks: Track[]; playlists: Playlist[] }>('GET', '/api/music'),
+  musicUpload: (file: Blob, name: string, duration: number) => {
+    const fd = new FormData();
+    fd.append('file', file, (file as File).name || `${name}.mp3`);
+    fd.append('name', name);
+    fd.append('duration', String(duration || 0));
+    return call<Track>('POST', '/api/music', fd);
+  },
+  musicTrack: (id: string, patch: { name?: string; duration?: number }) => call<Track>('PATCH', `/api/music/tracks/${id}`, patch),
+  musicTrackDelete: (id: string) => call<{ ok: boolean }>('DELETE', `/api/music/tracks/${id}`),
+  musicPlaylistNew: (name: string) => call<Playlist>('POST', '/api/music/playlists', { name }),
+  musicPlaylist: (id: string, patch: { name?: string; tracks?: string[] }) => call<Playlist>('PATCH', `/api/music/playlists/${id}`, patch),
+  musicPlaylistDelete: (id: string) => call<{ ok: boolean }>('DELETE', `/api/music/playlists/${id}`),
+  music: (bid: string, body: Record<string, unknown>) => call<Playback>('POST', `/api/live/${bid}/music`, body),
   eventsUrl: (bid: string) => `/api/live/${bid}/events?key=${encodeURIComponent(KEY)}`,
 };

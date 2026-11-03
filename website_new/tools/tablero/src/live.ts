@@ -9,6 +9,7 @@
 // answers with what it refused (not allowed for this player), as it really is.
 import { api } from './api';
 import type { Board, BoardItem, Changes, Me, Presence, RollRecord, RulerEvent } from './types';
+import type { Playback } from './music';
 
 export interface LiveHandlers {
   /** the whole board (on connecting and reconnecting) */
@@ -19,6 +20,8 @@ export interface LiveHandlers {
   roll(r: RollRecord): void;
   /** someone's shared ruler */
   ruler(r: RulerEvent): void;
+  /** the room's music (on connecting, and whenever the GM changes it) */
+  music(p: Playback | null): void;
   status(text: string, cls?: string): void;
   /** the room was closed, this player removed, or the board deleted */
   closed(info: { code?: string; kicked?: boolean; deleted?: boolean }): void;
@@ -50,6 +53,7 @@ export class Live {
     es.addEventListener('presence', e => this.h.presence(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('roll', e => this.h.roll(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('ruler', e => this.h.ruler(JSON.parse((e as MessageEvent).data)));
+    es.addEventListener('music', e => this.h.music(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('closed', e => { this.close(); this.h.closed(JSON.parse((e as MessageEvent).data)); });
     es.onerror = () => { if (this.es === es) this.h.status('Reconectando…', 'error'); };
   }
@@ -65,7 +69,8 @@ export class Live {
     return this.sending || !!this.retry || (!!b && !!this.me && this.hasDiff(b));
   }
 
-  private onSnapshot({ board, me, rolls }: { board: Board; me: Me; rolls?: RollRecord[] }) {
+  private onSnapshot({ board, me, rolls, music }: { board: Board; me: Me; rolls?: RollRecord[]; music?: Playback }) {
+    this.h.music(music || null);
     // reconnecting with changes the server never got: keep them on top of its board
     const cur = this.board();
     const local = this.me && cur ? this.diff(cur) : null;

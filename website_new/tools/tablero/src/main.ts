@@ -17,6 +17,7 @@ import { SheetWindows, Sheets } from './sheets';
 import { Statuses } from './status';
 import { RULER_MODES, type RulerMode, type RulerShape } from './ruler';
 import { DEFAULT_FOG, fogOf, lightsOf, viewersOf } from './lighting';
+import { Music } from './music';
 import { BARS, kindOf, LAYERS, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Presence, type ShareStatus, type SheetStats } from './types';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -137,6 +138,7 @@ const library = new Library($('library'), {
 });
 
 const dice = new DiceRoller($('dice'), toast);
+const music = new Music($('music'), { gm: !PLAYER, toast, boardId: () => live?.boardId ?? null });
 // on a board the server rolls (the GM sees every roll of the game, a player their own)
 dice.send = (terms, expr, label, token) => {
   if (!live?.me) return Promise.reject(new Error('sin conexión con el tablero'));
@@ -169,10 +171,11 @@ const windows = new SheetWindows(sheets, {
 
 // right panel tabs: Biblioteca / Dados
 function showSide(tab: string) {
-  prefs.side = tab === 'dice' ? 'dice' : 'library';
+  prefs.side = tab === 'dice' || tab === 'music' ? tab : 'library';
   document.querySelectorAll<HTMLElement>('[data-side]').forEach(b => b.classList.toggle('on', b.dataset.side === prefs.side));
   $('library').hidden = prefs.side !== 'library';
   $('dice').hidden = prefs.side !== 'dice';
+  $('music').hidden = prefs.side !== 'music';
   if (prefs.side === 'dice') { unseenRolls = 0; delete document.querySelector<HTMLElement>('[data-side="dice"]')?.dataset.count; }
   savePrefs();
 }
@@ -289,6 +292,7 @@ function connect(boardId: string) {
     presence(p) { presence = p; renderPresence(); view.render(); },
     roll(r) { dice.add(r, r.by === me?.pid || (!r.by && isGM())); },
     ruler(r) { view.setRuler('cid:' + r.by, r.shape, r.color, r.who); },
+    music(p) { music.setState(p); },
     status: setStatus,
     closed(info) {
       if (!PLAYER) { if (info.deleted) toast('Este tablero se ha eliminado', true); return; }
@@ -1741,7 +1745,7 @@ document.addEventListener('keyup', e => {
 
 // ── start ───────────────────────────────────────────────────────────────────
 // for the browser console (and tests): window.tablero.view / .board() / .me()
-(window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, statuses, board: () => board, me: () => me, presence: () => presence, live: () => live };
+(window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, statuses, music, board: () => board, me: () => me, presence: () => presence, live: () => live };
 (async () => {
   await view.init(stage);
   bindDoubleClick();
@@ -1766,7 +1770,7 @@ document.addEventListener('keyup', e => {
     return;
   }
   library.ownerFilter = m => !m.owner;
-  await Promise.all([library.load(), sheets.load(), statuses.load()]);
+  await Promise.all([library.load(), sheets.load(), statuses.load(), music.loadLibrary()]);
   refreshShare();
   openBoard(await refreshBoardList());
 })().catch(e => { console.error(e); toast('No se pudo iniciar el tablero: ' + (e as Error).message, true); });
