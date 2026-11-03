@@ -107,14 +107,61 @@
       ]
     },
     {
-      "id": "confundido",
-      "name": "Confundido",
-      "description": "Al inicio de su turno tira 1d6: 1-2 actúa normalmente, 3-4 no actúa, 5-6 ataca al aliado más cercano.",
+      "id": "desconcertado",
+      "name": "Desconcertado",
       "levels": [
         {
           "name": "I",
-          "penalties": [],
-          "notes": "1d6 al inicio del turno: 1-2 normal, 3-4 no actúa, 5-6 ataca al aliado más cercano."
+          "penalties": [
+            {
+              "rolls": [
+                "Ataque",
+                "Defensa"
+              ],
+              "stats": [],
+              "dice": 1
+            },
+            {
+              "rolls": [
+                "Salvación",
+                "Talento",
+                "Habilidad"
+              ],
+              "stats": [
+                "INT",
+                "SAB",
+                "CAR"
+              ],
+              "dice": 1
+            }
+          ]
+        },
+        {
+          "name": "II",
+          "penalties": [
+            {
+              "rolls": [
+                "Ataque",
+                "Defensa"
+              ],
+              "stats": [],
+              "dice": 1
+            },
+            {
+              "rolls": [
+                "Salvación",
+                "Talento",
+                "Habilidad"
+              ],
+              "stats": [
+                "INT",
+                "SAB",
+                "CAR"
+              ],
+              "dice": 1
+            }
+          ],
+          "notes": "Pierde una Acción y una Reacción"
         }
       ]
     },
@@ -281,18 +328,6 @@
               "dice": 1
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "veneno",
-      "name": "Veneno",
-      "description": "Al inicio de cada turno sufre X de daño de Veneno; al final repite la salvación y, si la supera, termina. Dura 3 rondas si no se indica.",
-      "levels": [
-        {
-          "name": "",
-          "penalties": [],
-          "notes": "X de daño de Veneno al inicio de cada turno; repite la salvación al final."
         }
       ]
     },
