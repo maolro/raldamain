@@ -53,15 +53,7 @@
           "desc": "Recibes Ventaja en todos tus tiros de ataque, defensa, salvación y habilidad. Este efecto dura hasta 6 rondas y cuando acabe reduces tu chi o tus impactos máximos por 1 por cada 2 rondas que hayas pasado en él.",
           "toggle": {
             "label": "Canalización Celestial",
-            "adv": [
-              "Ataque",
-              "Defensa"
-            ],
-            "saves": [
-              "Físico",
-              "Voluntad",
-              "Mental"
-            ]
+            "adv_all": true
           }
         }
       ]
