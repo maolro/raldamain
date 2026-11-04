@@ -29,8 +29,9 @@ export const api = {
   gmKey: () => call<{ key: string; lan: string }>('GET', '/api/gm-key'),
   join: (code: string, name: string, key?: string) => call<JoinInfo>('POST', '/api/join', { code, name, key }),
   images: () => call<ImageMeta[]>('GET', '/api/images'),
-  upload: (file: Blob, meta: { name: string; category: string; width: number; height: number }) => {
+  upload: (file: Blob, meta: { name: string; category: string; width: number; height: number; tags?: string[] }) => {
     const fd = new FormData();
+    if (meta.tags?.length) fd.append('tags', meta.tags.join(','));
     fd.append('file', file, (file as File).name || `${meta.name}.png`);
     fd.append('name', meta.name);
     fd.append('category', meta.category);

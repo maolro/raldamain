@@ -2,9 +2,12 @@
 // name, a category and tags to filter by, and the stat block (ficha) its tokens get.
 // Thumbnails can be dragged onto the board.
 import { api, imageUrl } from './api';
+import { reviewUploads } from './tokenize';
 import { DEFAULT_CATEGORIES, type ImageMeta } from './types';
 
 export const DRAG_TYPE = 'application/x-tablero-image';
+/** Categories shown as round thumbnails, all the same size (a framed token or a square picture alike) */
+const ROUND = ['Tokens', 'Personajes', 'Criaturas'];
 
 export interface LibraryEvents {
   place(meta: ImageMeta): void;          // "Colocar en el tablero" / double click
@@ -17,17 +20,6 @@ export interface LibraryEvents {
 
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 const plain = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
-
-/** Width and height of an image file (works for SVG too) */
-function imageSize(file: Blob): Promise<{ width: number; height: number }> {
-  return new Promise(resolve => {
-    const url = URL.createObjectURL(file);
-    const img = new Image();
-    img.onload = () => { resolve({ width: img.naturalWidth || 256, height: img.naturalHeight || 256 }); URL.revokeObjectURL(url); };
-    img.onerror = () => { resolve({ width: 256, height: 256 }); URL.revokeObjectURL(url); };
-    img.src = url;
-  });
-}
 
 export class Library {
   /** every image this browser may see (its own, and the ones on the board) */
@@ -103,17 +95,20 @@ export class Library {
     this.ev.changed(this.list);
   }
 
-  /** Upload image files (dropped, pasted or chosen). Returns their library entries. */
+  /** Upload image files (dropped, pasted or chosen): first the dialog (name, category, tags,
+   *  Tokenizar), then the upload. Returns their library entries ([] if cancelled). */
   async upload(files: Blob[], category: string): Promise<ImageMeta[]> {
     const out: ImageMeta[] = [];
-    for (const f of files) {
-      if (!f.type.startsWith('image/')) { this.ev.toast(`${(f as File).name || 'archivo'}: no es una imagen`, true); continue; }
-      const size = await imageSize(f);
-      const fileName = (f as File).name || '';
-      const name = fileName && !/^image\.\w+$/i.test(fileName) ? fileName.replace(/\.[^.]+$/, '')
-        : `Imagen pegada ${new Date().toLocaleTimeString('es', { hour: '2-digit', minute: '2-digit' })}`;
+    const images = files.filter(f => {
+      if (f.type.startsWith('image/')) return true;
+      this.ev.toast(`${(f as File).name || 'archivo'}: no es una imagen`, true);
+      return false;
+    });
+    const ready = images.length ? await reviewUploads(images, category, this.categories()) : [];
+    for (const p of ready || []) {
+      const { name } = p;
       try {
-        const meta = await api.upload(f, { name, category, ...size });
+        const meta = await api.upload(p.file, { name, category: p.category, width: p.width, height: p.height, tags: p.tags });
         if (!this.get(meta.id)) this.list.push(meta);
         else this.ev.toast(`«${meta.name}» ya estaba en la biblioteca`);
         out.push(this.get(meta.id)!);
@@ -157,7 +152,7 @@ export class Library {
     const total = this.mine().length;
     this.$('lib-count').textContent = shown.length === total ? `${total}` : `${shown.length} / ${total}`;
     this.$('lib-grid').innerHTML = shown.map(m => `
-      <figure class="thumb ${m.id === this.editing ? 'on' : ''}" data-id="${esc(m.id)}" draggable="true" title="${esc(m.name)} · ${esc(m.category)}${m.tags.length ? ' · #' + esc(m.tags.join(' #')) : ''}">
+      <figure class="thumb ${m.id === this.editing ? 'on' : ''} ${ROUND.includes(m.category) ? 'round' : ''}" data-id="${esc(m.id)}" draggable="true" title="${esc(m.name)} · ${esc(m.category)}${m.tags.length ? ' · #' + esc(m.tags.join(' #')) : ''}">
         <img src="${imageUrl(m)}" alt="" loading="lazy" draggable="false"><figcaption>${m.sheet ? '<span class="thumb-sheet" title="Con ficha">📜</span>' : ''}${esc(m.name)}</figcaption>
       </figure>`).join('') || `<p class="muted">${total ? 'Ninguna imagen con estos filtros.' : 'Arrastra o pega imágenes en el tablero, o usa «Subir».'}</p>`;
   }
