@@ -9,8 +9,10 @@ import { imageUrl } from './api';
 import { BARS, kindOf, type Board, type BoardItem, type ImageMeta, type LayerId } from './types';
 import { cellCenter, drawRuler, type RulerMode, type RulerShape } from './ruler';
 import { FogLayer, type FogView } from './lighting';
+import { FIRST_LEVEL, levelFog, levelOf } from './levels';
+import { CHUNK, decode, gridOf, parseKey, tileWalls, unpack, type TileLayer } from './tiles';
 
-export type Tool = 'select' | 'pan' | 'draw' | 'text' | 'ruler' | 'fog';
+export type Tool = 'select' | 'pan' | 'draw' | 'text' | 'ruler' | 'fog' | 'tiles';
 export type Pt = { x: number; y: number };
 
 export const TEXT_FONT = 'Lato, system-ui, sans-serif';
@@ -39,6 +41,10 @@ export interface BoardEvents {
   economyClick(id: string, kind: 'a' | 'r', i: number): void;
   /** the Niebla y luz tool (GM): pointer on the board, in world coordinates */
   fogPointer(kind: 'down' | 'move' | 'up' | 'hover', p: Pt, e: FederatedPointerEvent): void;
+  /** the tile painter (GM): the same */
+  tilePointer(kind: 'down' | 'move' | 'up' | 'hover', p: Pt, e: FederatedPointerEvent): void;
+  /** items dragged to a new place (before the commit): portals take them elsewhere */
+  moved(ids: string[]): void;
 }
 
 type Drag =
@@ -49,7 +55,8 @@ type Drag =
   | { kind: 'marquee'; start: Pt; additive: boolean }
   | { kind: 'draw'; pts: number[] }
   | { kind: 'ruler'; a: { x: number; y: number } }
-  | { kind: 'fog' };
+  | { kind: 'fog' }
+  | { kind: 'tiles' };
 
 const MIN_ZOOM = 0.08, MAX_ZOOM = 6;
 const HANDLE = 10;          // screen pixels
@@ -92,6 +99,27 @@ export class BoardView {
   fogMarks: (g: Graphics, zoom: number) => void = () => {};
   private fog!: FogLayer;
   private fogMarksG = new Graphics();
+  /** the level shown (players: where their token is) */
+  level = FIRST_LEVEL;
+  /** is this roof (an image marked as roof) open for this screen: one of its tokens is under it */
+  roofOpen: (it: BoardItem) => boolean = () => false;
+  /** roof tile squares open for this screen ("x,y") */
+  roofCells: () => Set<string> = () => new Set();
+  /** how opaque closed roofs are on this screen (the GM sees through them a little) */
+  roofAlpha = 1;
+  /** marks of the level under the tokens: portals, the arrival point, doors (drawn by the page) */
+  levelMarks: (g: Graphics, zoom: number) => void = () => {};
+  /** the tile painter's preview (the brush under the pointer), drawn by the page */
+  tileMarks: (g: Graphics, zoom: number) => void = () => {};
+  private levelMarksG = new Graphics();
+  private tileMarksG = new Graphics();
+  private tilesBelow: Record<Exclude<TileLayer, 'roof'>, Container> = { floor: new Container(), walls: new Container(), deco: new Container() };
+  private roofLayer = new Container();
+  private roofTiles = new Container();
+  private tileViews = new Map<string, Container & { src?: string; full?: boolean; cell?: number }>();
+  private tileFrames = new Map<string, Texture>();
+  private tileRev = 0;
+  private wallCache: { rev: number; level: string; segs: [number, number, number, number][] } | null = null;
   private fogPending = 0;
   private views = new Map<string, Container>();
   private barViews = new Map<string, Graphics>();   // a token's bars, above it (never rotated)
@@ -111,7 +139,15 @@ export class BoardView {
     this.fog = new FogLayer(this.app.renderer);
     this.fogMarksG.eventMode = 'none';
     this.layers.gm.alpha = 0.6;   // the GM sees the GM layer see-through
-    this.world.addChild(this.pageG, this.layers.map, this.gridG, this.layers.tokens, this.layers.gm, this.fog.container, this.fogMarksG, this.drawG, this.overlay, this.marqueeG, this.rulerLayer);
+    this.levelMarksG.eventMode = this.tileMarksG.eventMode = 'none';
+    for (const c of [...Object.values(this.tilesBelow), this.roofTiles]) c.eventMode = 'none';
+    this.roofLayer.sortableChildren = true;
+    this.roofTiles.zIndex = -1e9;   // roof tiles under roof pictures
+    this.roofLayer.addChild(this.roofTiles);
+    // page, maps, tiles, grid, portals, tokens, roofs, GM notes, fog… and what is being edited on top
+    this.world.addChild(this.pageG, this.layers.map, this.tilesBelow.floor, this.tilesBelow.walls, this.tilesBelow.deco, this.gridG,
+      this.levelMarksG, this.layers.tokens, this.roofLayer, this.layers.gm, this.fog.container, this.fogMarksG, this.tileMarksG,
+      this.drawG, this.overlay, this.marqueeG, this.rulerLayer);
     this.app.stage.addChild(this.world);
     const stage = this.app.stage;
     stage.eventMode = 'static';
@@ -141,14 +177,45 @@ export class BoardView {
     this.barViews.clear();
     for (const m of this.markViews.values()) m.destroy({ children: true });
     this.markViews.clear();
+    for (const v of this.tileViews.values()) v.destroy({ children: true });
+    this.tileViews.clear();
+    this.tileRev++;
     this.render();
     if (fit) this.fit();
     this.ev.selection([]);
   }
 
+  /** An image got a new picture: load it again (its tokens and painted tiles too) */
+  forgetImage(id: string) {
+    this.textures.delete(id);
+    for (const k of [...this.tileFrames.keys()]) if (k.startsWith(id + ':')) this.tileFrames.delete(k);
+    for (const it of this.board?.items || []) if (it.image === id) this.views.get(it.id)?.destroy({ children: true }), this.views.delete(it.id);
+  }
+
   setImages(list: ImageMeta[]) {
     this.images = new Map(list.map(m => [m.id, m]));
+    this.tileRev++;   // (a tileset's size or its walls may have changed)
+    for (const v of this.tileViews.values()) v.src = undefined;
     if (this.board) this.render();
+  }
+
+  /** Show another level (the selection is left behind) */
+  setLevel(id: string) {
+    if (id === this.level) return;
+    this.level = id;
+    this.tileRev++;
+    if (this.board) { this.select([]); this.render(); }
+  }
+
+  /** On the level shown */
+  here(it: { level?: string }) { return levelOf(this.board, it) === this.level; }
+
+  /** The board with only this level's fog: its walls (and the tiles' walls), lights and areas */
+  levelBoard(): Board {
+    const b = this.board;
+    if (!this.wallCache || this.wallCache.rev !== this.tileRev || this.wallCache.level !== this.level)
+      this.wallCache = { rev: this.tileRev, level: this.level, segs: tileWalls(b, this.level, this.images) };
+    return { ...b, fog: levelFog(b, this.level, this.wallCache.segs) };
   }
 
   item(id: string) { return this.board.items.find(i => i.id === id); }
@@ -178,12 +245,12 @@ export class BoardView {
 
   setTool(t: Tool) {
     this.tool = t;
-    this.app.canvas.style.cursor = { select: '', pan: 'grab', draw: 'crosshair', text: 'text', ruler: 'crosshair', fog: 'crosshair' }[t];
+    this.app.canvas.style.cursor = { select: '', pan: 'grab', draw: 'crosshair', text: 'text', ruler: 'crosshair', fog: 'crosshair', tiles: 'crosshair' }[t];
   }
 
   /** The topmost item of the active layer under a world point */
   itemAt(p: Pt): BoardItem | undefined {
-    return [...this.board.items].filter(i => i.layer === this.activeLayer && this.canEdit(i))
+    return [...this.board.items].filter(i => i.layer === this.activeLayer && this.canEdit(i) && this.here(i))
       .sort((a, b) => b.z - a.z)
       .find(i => {
         const a = -(i.rotation || 0) * Math.PI / 180, cx = i.x + i.w / 2, cy = i.y + i.h / 2;
@@ -212,7 +279,8 @@ export class BoardView {
     for (const [id, v] of this.views) if (!alive.has(id)) { v.destroy({ children: true }); this.views.delete(id); }
     for (const [id, g] of this.barViews) if (!alive.has(id)) { g.destroy(); this.barViews.delete(id); }
     for (const [id, m] of this.markViews) if (!alive.has(id)) { m.destroy({ children: true }); this.markViews.delete(id); }
-    for (const id of [...this.selected]) if (!alive.has(id)) this.selected.delete(id);
+    for (const id of [...this.selected]) if (!alive.has(id) || !this.here(this.item(id)!)) this.selected.delete(id);
+    this.renderTiles();
     this.drawOverlay();
     this.refreshFog();
   }
@@ -223,14 +291,99 @@ export class BoardView {
     this.fogPending = requestAnimationFrame(() => {
       this.fogPending = 0;
       if (!this.board) return;
-      this.fog.update(this.board, this.fogView());
+      this.fog.update(this.levelBoard(), this.fogView());
       this.drawFogMarks();
+      this.applyRoofs();
     });
   }
 
   drawFogMarks() {
     this.fogMarksG.clear();
     this.fogMarks(this.fogMarksG, this.zoom);
+    this.levelMarksG.clear();
+    this.levelMarks(this.levelMarksG, this.zoom);
+    this.drawTileMarks();
+  }
+
+  drawTileMarks() {
+    this.tileMarksG.clear();
+    this.tileMarks(this.tileMarksG, this.zoom);
+  }
+
+  // ── tiles ─────────────────────────────────────────────────────────────────
+  /** The tiles changed (painting): redraw them, and the shadows their walls cast */
+  refreshTiles() {
+    if (!this.board) return;
+    this.renderTiles();
+    this.refreshFog();
+  }
+
+  /** Draw the level's tile chunks: only the ones that changed (or whose tilesets just loaded) */
+  private renderTiles() {
+    const b = this.board, g = b.grid.size, alive = new Set<string>();
+    for (const [k, src] of Object.entries(b.tiles || {})) {
+      const p = parseKey(k);
+      if (p.level !== this.level) continue;
+      alive.add(k);
+      let v = this.tileViews.get(k);
+      if (v && v.src === src && v.full && v.cell === g) continue;
+      if (!v) {
+        v = new Container();
+        v.eventMode = 'none';
+        this.tileViews.set(k, v);
+        (p.layer === 'roof' ? this.roofTiles : this.tilesBelow[p.layer]).addChild(v);
+      }
+      v.removeChildren().forEach(c => c.destroy());
+      v.src = src;
+      v.cell = g;
+      v.full = true;
+      const cells = decode(src);
+      for (let i = 0; i < cells.length; i++) {
+        if (!cells[i]) continue;
+        const t = unpack(cells[i]), tex = this.tileTexture(t.set, t.tile);
+        if (!tex) { v.full = false; continue; }
+        const sp = new Sprite(tex);
+        sp.anchor.set(0.5);
+        const x = p.cx * CHUNK + (i % CHUNK), y = p.cy * CHUNK + Math.floor(i / CHUNK);
+        sp.position.set(x * g + g / 2, y * g + g / 2);
+        sp.angle = (t.xf & 3) * 90;
+        sp.scale.set((t.xf & 4 ? -1 : 1) * g / tex.width, g / tex.height);
+        sp.label = `${x},${y}`;
+        v.addChild(sp);
+      }
+      this.tileRev++;
+    }
+    for (const [k, v] of this.tileViews) if (!alive.has(k)) { v.destroy({ children: true }); this.tileViews.delete(k); this.tileRev++; }
+    this.applyRoofs();
+  }
+
+  /** A tile's picture (null while its tileset loads) */
+  private tileTexture(set: number, tile: number): Texture | null {
+    const id = this.board.tilesets?.[set], meta = id ? this.images.get(id) : undefined;
+    if (!id || !meta) return null;
+    const base = this.textures.get(id);
+    if (!base) { this.loadTexture(meta); return null; }
+    const { size, cols } = gridOf(meta), key = `${id}:${size}:${tile}`;
+    let t = this.tileFrames.get(key);
+    if (!t) {
+      const fx = (tile % cols) * size, fy = Math.floor(tile / cols) * size;
+      if (fx + size > base.width + 0.5 || fy + size > base.height + 0.5) return null;
+      t = new Texture({ source: base.source, frame: new Rectangle(fx, fy, size, size) });
+      this.tileFrames.set(key, t);
+    }
+    return t;
+  }
+
+  /** Roofs: closed ones cover what is under them; an open one (a token of yours under it) is gone */
+  applyRoofs() {
+    if (!this.board) return;
+    const open = this.roofCells(), shut = this.roofAlpha;
+    for (const v of this.roofTiles.children) for (const sp of v.children) sp.alpha = open.has(sp.label) ? 0 : shut;
+    for (const it of this.board.items) {
+      if (!it.roof) continue;
+      const v = this.views.get(it.id);
+      if (v) v.alpha = this.roofOpen(it) ? 0.08 : shut;
+    }
   }
 
   private renderItem(it: BoardItem) {
@@ -256,12 +409,14 @@ export class BoardView {
       v.addChild(child);
       this.views.set(it.id, v);
     }
-    if (v.parent !== this.layers[it.layer]) this.layers[it.layer].addChild(v);
+    const home = it.roof && kind === 'image' ? this.roofLayer : this.layers[it.layer];
+    if (v.parent !== home) home.addChild(v);
+    v.visible = this.here(it);
     v.position.set(it.x + it.w / 2, it.y + it.h / 2);
     v.angle = it.rotation || 0;
     v.zIndex = it.z;
     v.hitArea = new Rectangle(-it.w / 2, -it.h / 2, it.w, it.h);
-    const active = it.layer === this.activeLayer && this.canEdit(it);
+    const active = it.layer === this.activeLayer && this.canEdit(it) && v.visible;
     v.eventMode = active ? 'static' : 'none';
     // whose token it is: a dot in the controlling player's colour
     const color = this.badgeColor(it);
@@ -331,7 +486,7 @@ export class BoardView {
 
   /** Status markers ("RAL II") in a row under the token, the same size on screen at any zoom */
   private renderMarkers(it: BoardItem) {
-    const marks = kindOf(it) === 'image' ? this.markers(it) : [];
+    const marks = kindOf(it) === 'image' && this.here(it) ? this.markers(it) : [];
     let m = this.markViews.get(it.id);
     if (!marks.length) {
       if (m) { m.destroy({ children: true }); this.markViews.delete(it.id); }
@@ -365,7 +520,7 @@ export class BoardView {
   private renderBars(it: BoardItem) {
     const bars = BARS.map(b => ({ b, v: it.bars?.[b.id] })).filter(x => x.v && x.v.max > 0);
     let g = this.barViews.get(it.id);
-    if (!bars.length || kindOf(it) !== 'image') {
+    if (!bars.length || kindOf(it) !== 'image' || !this.here(it)) {
       if (g) { g.destroy(); this.barViews.delete(it.id); }
       return;
     }
@@ -576,6 +731,11 @@ export class BoardView {
       this.ev.fogPointer('down', p, e);
       return;
     }
+    if (this.tool === 'tiles') {
+      this.drag = { kind: 'tiles' };
+      this.ev.tilePointer('down', p, e);
+      return;
+    }
     if (this.tool === 'ruler') {
       const a = cellCenter(p.x, p.y, this.board.grid.size, e.altKey);
       this.drag = { kind: 'ruler', a };
@@ -616,8 +776,13 @@ export class BoardView {
     const p = this.toWorld(e.global);
     if (e.global.x >= 0 && e.global.y >= 0 && e.global.x <= this.app.screen.width && e.global.y <= this.app.screen.height) this.pointer = p;
     const d = this.drag;
-    if (!d) { if (this.tool === 'fog') this.ev.fogPointer('hover', p, e); return; }
+    if (!d) {
+      if (this.tool === 'fog') this.ev.fogPointer('hover', p, e);
+      else if (this.tool === 'tiles') this.ev.tilePointer('hover', p, e);
+      return;
+    }
     if (d.kind === 'fog') { this.ev.fogPointer('move', p, e); return; }
+    if (d.kind === 'tiles') { this.ev.tilePointer('move', p, e); return; }
     if (d.kind === 'pan') {
       const dx = e.global.x - d.start.x, dy = e.global.y - d.start.y;
       if (Math.abs(dx) + Math.abs(dy) > 3) d.moved = true;
@@ -674,6 +839,7 @@ export class BoardView {
       return;
     }
     if (d.kind === 'fog') { this.ev.fogPointer('up', this.toWorld(e.global), e); return; }
+    if (d.kind === 'tiles') { this.ev.tilePointer('up', this.toWorld(e.global), e); return; }
     if (d.kind === 'pan') {
       this.setTool(this.tool);
       if (!d.moved && d.button === 2) {
@@ -692,6 +858,7 @@ export class BoardView {
         const sx = this.snapPos(lead.x, lead.w) - lead.x, sy = this.snapPos(lead.y, lead.h) - lead.y;
         for (const id of d.orig.keys()) { const it = this.item(id)!; it.x += sx; it.y += sy; }
       }
+      this.ev.moved([...d.orig.keys()]);
       this.render();
       this.ev.change('commit');
     } else if (d.kind === 'resize') {
@@ -718,7 +885,7 @@ export class BoardView {
       const r = { x1: Math.min(d.start.x, p.x), y1: Math.min(d.start.y, p.y), x2: Math.max(d.start.x, p.x), y2: Math.max(d.start.y, p.y) };
       this.marqueeG.clear();
       if (r.x2 - r.x1 < 3 / this.zoom && r.y2 - r.y1 < 3 / this.zoom) return;
-      const hit = this.board.items.filter(i => i.layer === this.activeLayer && this.canEdit(i) && i.x < r.x2 && i.x + i.w > r.x1 && i.y < r.y2 && i.y + i.h > r.y1);
+      const hit = this.board.items.filter(i => i.layer === this.activeLayer && this.canEdit(i) && this.here(i) && i.x < r.x2 && i.x + i.w > r.x1 && i.y < r.y2 && i.y + i.h > r.y1);
       this.select([...(d.additive ? this.selected : []), ...hit.map(i => i.id)]);
     }
   }

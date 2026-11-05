@@ -49,6 +49,8 @@ export interface BoardItem {
   uses?: { id: string; name: string; value: number; max: number }[];   // ability uses left (Instinto de Supervivencia 2/3)
   economy?: { actions: number; reactions: number };   // actions and reactions per round (from its sheet)
   used?: { a: number; r: number };                     // spent this round (Nueva ronda empties them)
+  level?: string;       // the level (floor) it is on (missing: the first one)
+  roof?: boolean;       // image: a roof, drawn over the tokens, that opens when one of yours goes under it
 }
 
 /** A status effect on a token: data/status_effects.json's id and the level's index */
@@ -81,10 +83,28 @@ export interface Board {
   items: BoardItem[];
   fog?: FogSettings;    // hidden areas and lighting (lighting.ts)
   round?: RoundState;   // the combat round and its turn-based effects (GM)
+  levels?: Level[];     // floors, cellars, interiors (missing: one, «Planta baja»)
+  portals?: Portal[];   // stairs and doors: to another level, or another scene
+  arrival?: { x: number; y: number; level?: string };   // where tokens coming from another scene appear
+  tilesets?: string[];  // the tile palette: image ids (a tile's value says which)
+  tiles?: Record<string, string>;   // painted tiles: "<level>|<layer>|<cx>|<cy>" → a 16×16 chunk (tiles.ts)
+}
+
+/** A floor of a scene */
+export interface Level { id: string; name: string }
+
+/** A portal: tokens dropped on it go to another level of this scene, or to another scene
+ *  (there: to the portal of the same name, else where it says, else to the arrival point) */
+export interface Portal {
+  id: string; name: string; level?: string;
+  x: number; y: number; w: number; h: number;
+  to: { scene?: string; level?: string; x?: number; y?: number };
 }
 
 /** ⏱ Ronda: the round number and the effects that last some rounds (Ira 6…), tied to a token or not */
-export interface RoundState { n: number; effects: { id: string; name: string; left: number; token?: string }[] }
+export interface RoundState { n: number; effects: RoundEffect[] }
+/** Counting down (the GM's: `left` rounds to go), or up (a player's: `up` rounds since it was added, from 1) */
+export interface RoundEffect { id: string; name: string; left: number; token?: string; up?: number; by?: string }
 
 /** Niebla y luz (GM): hidden areas, and the lighting with its lights and walls */
 export interface FogSettings {
@@ -92,12 +112,16 @@ export interface FogSettings {
   base: 'visible' | 'hidden';       // the page starts visible or hidden (then areas reveal / hide)
   density: number;                  // how dark hidden areas are for players (0-1)
   darkness: number;                 // ambient darkness when lighting is on (0 day … 1 pitch black)
-  areas: { id: string; op: 'hide' | 'reveal'; x: number; y: number; w: number; h: number }[];
-  lights: { id: string; x: number; y: number; bright: number; dim: number }[];   // squares
-  walls: { id: string; pts: number[] }[];   // polylines: block light and sight
+  areas: { id: string; op: 'hide' | 'reveal'; x: number; y: number; w: number; h: number; level?: string }[];
+  lights: { id: string; x: number; y: number; bright: number; dim: number; level?: string }[];   // squares
+  walls: { id: string; pts: number[]; door?: boolean; open?: boolean; level?: string }[];   // polylines: block light and sight (an open door doesn't)
 }
 
-export interface BoardSummary { id: string; name: string; items: number; modified: number; code?: string }
+export interface BoardSummary { id: string; name: string; items: number; modified: number; code?: string;
+  players: string[]; levels: number; thumb: string; campaign: string; tags: string[] }
+
+/** A campaign: a set of scenes, to keep them sorted (a scene is in one or in none) */
+export interface Campaign { id: string; name: string }
 
 export interface ImageMeta {
   id: string;
@@ -111,6 +135,8 @@ export interface ImageMeta {
   duplicate?: boolean;  // upload answer: this image was already in the library
   owner?: string;       // the player who uploaded it (missing: the GM)
   sheet?: string;       // the stat block its tokens get (SheetMeta.id)
+  tileset?: { size: number; solid: number[] };   // a tileset: its tiles' size (px) and the ones that block sight
+  rule?: import('./tiles').TileRule;   // a single tile (🧩 Casillas): what it is (its layer, if it blocks sight)
 }
 
 /** A stat block: a Creador character, a Bestiario creature, or an uploaded .json of either */
@@ -125,7 +151,10 @@ export interface SheetMeta {
 }
 export interface SheetStats { hits: number; chi: number; actions?: number; reactions?: number }
 
-export const DEFAULT_CATEGORIES = ['Personajes', 'Criaturas', 'Tokens', 'Mapas', 'Objetos', 'Efectos', 'Otros'];
+/** A category of the single tiles' tags (Bioma: naturaleza, mazmorra…) */
+export interface TileTagCategory { name: string; tags: string[] }
+
+export const DEFAULT_CATEGORIES = ['Personajes', 'Criaturas', 'Tokens', 'Mapas', 'Tilesets', 'Casillas', 'Objetos', 'Efectos', 'Otros'];
 
 /** Who this browser is in the live board (from the server) */
 export interface Me { role: 'gm' | 'player'; pid: string | null; cid: string; name: string; color: string }
@@ -135,19 +164,21 @@ export interface Presence {
   code: string;
   online: string[];     // player ids connected now
   gm: boolean;          // is the GM connected
-  players: Record<string, { name: string; color: string }>;
+  scene?: string;       // the party's scene
+  players: Record<string, { name: string; color: string; scene?: string }>;
 }
 
 /** A batch of board changes (sent and received) */
 export interface Changes {
   upserts: BoardItem[];
   removes: string[];
-  settings?: Partial<Pick<Board, 'name' | 'width' | 'height' | 'background' | 'grid' | 'fog' | 'round'>>;
+  settings?: Partial<Pick<Board, 'name' | 'width' | 'height' | 'background' | 'grid' | 'fog' | 'round' | 'levels' | 'portals' | 'arrival' | 'tilesets'>>;
+  tiles?: Record<string, string | null>;   // tile chunks changed (null: emptied)
   live?: boolean;       // mid-drag: shown, not an undo step
   by?: string;
 }
 
-export interface RoomInfo { code: string; players: Record<string, { name: string; color: string }>; lan: string; public?: string }
+export interface RoomInfo { code: string; players: Record<string, { name: string; color: string }>; scene?: string; lan: string; public?: string }
 
 /** The board on the internet (tools/tablero_share.py): a Cloudflare Tunnel to tablero.raldamain.com */
 export interface ShareStatus {

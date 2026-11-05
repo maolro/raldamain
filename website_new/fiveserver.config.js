@@ -31,6 +31,10 @@ module.exports = {
       else if (req.url === '/mundo') {
         req.url = '/mundo.html';
       }
+      // 5b. Handle "/mundo/utils/elecciones" -> serve "mundo/utils/elecciones.html" (electoral simulator)
+      else if (req.url === '/mundo/utils/elecciones' || req.url.startsWith('/mundo/utils/elecciones?')) {
+        req.url = '/mundo/utils/elecciones.html' + req.url.slice('/mundo/utils/elecciones'.length);
+      }
       // 6. Handle "/mundo/categoria/naciones" -> serve "view-mundo-categoria.html"
       else if (req.url.startsWith('/mundo/categoria/') && !req.url.includes('.')) {
         req.url = '/templates/view-mundo-categoria.html';

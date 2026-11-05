@@ -35,14 +35,20 @@ it built (`vite build --watch`, so edits to tools/tablero/src show up on their o
 stores everything under tools/tablero/storage/:
     images/<id>.<ext>    the uploaded images (the same image uploaded twice is stored once)
     library.json         their metadata: name, category, tags, size, owner (player id)
-    boards/<id>.json     each board
-    rooms.json           invite codes: board and players (name, colour, private key)
-    rolls/<board>.json   the board's dice rolls (the last 300)
+    boards/<id>.json     each board (a scene: its levels, portals, arrival point, tile palette)
+    tiles/<id>.json      its painted tiles (apart: only written when they change)
+    rooms.json           invite codes: the party's scene, and the players (name, colour, private
+                         key, and their own scene if the GM split the party)
+    rolls/sala-<code>.json  the room's dice rolls (the last 300; rolls/<board>.json without a room)
     music/<id>.<ext>     the GM's audio files · music.json: their names, lengths and the playlists
     sheets/<id>.json     uploaded stat blocks · sheets.json: their name, kind and owner
     gm_key               the GM's key
 
-Música     the GM's audio files and playlists (🎵 tab). The server keeps each board's
+Escenas    each board is a scene. One room plays them all: the GM moves the party (or some
+           players) to another scene and their tokens go with them; portals (stairs, doors)
+           take tokens to another level of the scene, or to another scene. A scene has
+           levels (floors, interiors), roofs that open when a token goes in, and tiles.
+Música     the GM's audio files and playlists (🎵 tab). The server keeps each room's
            playback (track, second, playing, shuffle, repeat), moves on to the next
            track by itself, and tells every page in the room: they all play the same
            file from here, in step; each person sets their own volume.
@@ -89,6 +95,9 @@ BOARDS = STORAGE / "boards"
 ROOMS = STORAGE / "rooms.json"
 GM_KEY = STORAGE / "gm_key"
 ROLLS = STORAGE / "rolls"
+TILES = STORAGE / "tiles"
+TILE_TAGS = STORAGE / "tiletags.json"   # [{name, tags}]: the categories of the tiles' tags (Bioma, Material…)
+CAMPAIGNS = STORAGE / "campaigns.json"   # [{id, name}]: sets of scenes (a board's "campaign")
 MUSIC = STORAGE / "music"
 MUSIC_INDEX = STORAGE / "music.json"
 AUDIO_TYPES = {"audio/mpeg": "mp3", "audio/mp3": "mp3", "audio/ogg": "ogg", "audio/wav": "wav", "audio/x-wav": "wav",
@@ -110,7 +119,11 @@ ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]{0,63}$")
 IMAGE_TYPES = {"image/png": "png", "image/jpeg": "jpg", "image/webp": "webp", "image/gif": "gif", "image/svg+xml": "svg"}
 MAX_IMAGE = 40 * 1024 * 1024  # bytes
 PLAYER_COLORS = ["#e6194b", "#3cb44b", "#4363d8", "#f58231", "#911eb4", "#42d4f4", "#f032e6", "#bfef45", "#fabed4", "#dcbeff"]
-BOARD_SETTINGS = ("name", "width", "height", "background", "grid", "fog", "round")  # (fog: hidden areas, lighting, walls; round: ⏱)
+BOARD_SETTINGS = ("name", "width", "height", "background", "grid", "fog", "round",  # (fog: hidden areas, lighting, walls; round: ⏱)
+                  "levels", "portals", "arrival", "tilesets")  # floors · stairs and doors to other levels or scenes · where arrivals appear · the tile palette
+# tiles: chunks of 16×16 cells, "<level>|<layer>|<cx>|<cy>" → 256 cells of 4 characters each (tiles.ts encodes them)
+TILE_KEY_RE = re.compile(r"^[a-z0-9_-]{1,24}\|(floor|walls|deco|roof)\|-?\d{1,4}\|-?\d{1,4}$")
+TILE_CHUNK_RE = re.compile(r"^[A-Za-z0-9_-]{1024}$")
 
 app = Flask(__name__)
 _lock = threading.Lock()  # library.json and rooms.json writes
@@ -182,12 +195,32 @@ def need_gm():
     return w
 
 
+def player_scene(room: dict, pid: str | None) -> str:
+    """The scene (board) a player of the room is in: their own, if the GM split the party, else the room's."""
+    p = (room.get("players") or {}).get(pid) or {}
+    return p.get("board") or room.get("board") or ""
+
+
+def room_of(bid: str, all_rooms: dict | None = None) -> str:
+    """The room playing this scene: the party is there, or some of its players."""
+    for code, r in (rooms() if all_rooms is None else all_rooms).items():
+        if r.get("board") == bid or any(p.get("board") == bid for p in (r.get("players") or {}).values()):
+            return code
+    return ""
+
+
+def room_for(bid: str, all_rooms: dict | None = None) -> str:
+    """room_of, or else the GM's room (usually the only one): the scenes the GM prepares belong to it too."""
+    all_rooms = rooms() if all_rooms is None else all_rooms
+    return room_of(bid, all_rooms) or next(iter(all_rooms), "")
+
+
 def need_board(bid: str):
-    """The GM, or a player of the room playing this board."""
+    """The GM, or a player of a room who is in this scene."""
     w = who()
     if not w:
         abort(403)
-    if w[0] == "player" and (rooms().get(w[2]) or {}).get("board") != bid:
+    if w[0] == "player" and player_scene(rooms().get(w[2]) or {}, w[1]) != bid:
         abort(403)
     return w
 
@@ -311,11 +344,12 @@ def api_gm_key():
 
 # ─────────────────────────────────────────────────────────────── image library
 
-def _visible_image_ids(code: str) -> set:
-    bid = (rooms().get(code) or {}).get("board")
-    if not bid:
+def _visible_image_ids(code: str, pid: str) -> set:
+    bid = player_scene(rooms().get(code) or {}, pid)
+    if not bid or not (BOARDS / f"{bid}.json").exists():
         return set()
-    return {it.get("image") for it in session(bid).visible("player")["items"] if it.get("image")}
+    b = session(bid).visible("player")
+    return {it.get("image") for it in b["items"] if it.get("image")} | set(b.get("tilesets") or [])
 
 
 @app.route("/api/images")
@@ -325,7 +359,7 @@ def api_images():
         abort(403)
     lib = _read(LIBRARY, [])
     if w[0] == "player":  # their own images, and the ones on the board they can see
-        shown = _visible_image_ids(w[2])
+        shown = _visible_image_ids(w[2], w[1])
         lib = [m for m in lib if m.get("owner") == w[1] or m.get("id") in shown]
     return jsonify(lib)
 
@@ -415,7 +449,96 @@ def api_image_update(iid):
                 meta["sheet"] = sid
             else:
                 meta.pop("sheet", None)
+        if "tileset" in body:  # a tileset: its tile size, and the tiles that block sight (walls)
+            ts = body["tileset"]
+            if isinstance(ts, dict) and isinstance(ts.get("size"), (int, float)) and 4 <= ts["size"] <= 1024:
+                solid = {int(i) for i in ts.get("solid") or [] if isinstance(i, int) and 0 <= i < 65536}
+                meta["tileset"] = {"size": int(ts["size"]), "solid": sorted(solid)}
+            else:
+                meta.pop("tileset", None)
+        if "rule" in body:  # a single tile: what it is (the layer it goes on, if it blocks sight)
+            rule = str(body["rule"] or "")
+            if rule in TILE_RULES:
+                meta["rule"] = rule
+            else:
+                meta.pop("rule", None)
         _write(LIBRARY, lib)
+    return jsonify(meta)
+
+
+# ─────────────────────────────────────────────────────────────── single tiles' tags (GM)
+
+TILE_RULES = ("ground", "barrier", "prop", "obstacle", "roof")   # tiles.ts TILE_RULES
+DEFAULT_TILE_TAGS = [
+    {"name": "Bioma", "tags": ["naturaleza", "bosque", "mazmorra", "cueva", "ciudad", "interior", "nieve", "desierto", "pantano"]},
+    {"name": "Material", "tags": ["piedra", "madera", "hierba", "tierra", "agua", "arena", "ladrillo", "metal"]},
+]
+
+
+@app.route("/api/tiletags")
+def api_tile_tags():
+    need_gm()
+    return jsonify(_read(TILE_TAGS, DEFAULT_TILE_TAGS))
+
+
+@app.route("/api/tiletags", methods=["PUT"])
+def api_tile_tags_save():
+    """[{name, tags}]: the tag categories, in order"""
+    need_gm()
+    body = request.get_json(force=True)
+    if not isinstance(body, list):
+        return jsonify({"error": "se esperaba una lista"}), 400
+    out, names = [], set()
+    for c in body[:40]:
+        if not isinstance(c, dict):
+            continue
+        name = clean_name(c.get("name"), 40)
+        if not name or name.lower() in names:
+            continue
+        names.add(name.lower())
+        out.append({"name": name, "tags": [t.lower() for t in _clean_tags(c.get("tags") or [])][:80]})
+    with _lock:
+        _write(TILE_TAGS, out)
+    return jsonify(out)
+
+
+@app.route("/api/images/<iid>/file", methods=["POST"])
+def api_image_replace(iid):
+    """multipart: file, width, height (+ tile: a single tile's new side). The image keeps its id,
+    so whatever uses it (tokens, painted tiles) shows the new picture, for everyone."""
+    w = who()
+    if not w:
+        abort(403)
+    f = request.files.get("file")
+    if not f:
+        return jsonify({"error": "falta la imagen"}), 400
+    data = f.read(MAX_IMAGE + 1)
+    if len(data) > MAX_IMAGE:
+        return jsonify({"error": "la imagen pasa de 40 MB"}), 400
+    ext = IMAGE_TYPES.get((f.mimetype or "").lower())
+    if not ext:
+        return jsonify({"error": f"tipo de archivo no admitido ({f.mimetype})"}), 400
+    sha = hashlib.sha1(data).hexdigest()
+    with _lock:
+        lib, meta = _own_image(iid, w)
+        old = meta.get("file")
+        stored = next((m for m in lib if m.get("sha1") == sha), None)
+        file = stored["file"] if stored else f"{sha[:16]}.{ext}"
+        if not stored:
+            IMAGES.mkdir(parents=True, exist_ok=True)
+            (IMAGES / file).write_bytes(data)
+        meta.update(file=file, sha1=sha, width=int(float(request.form.get("width") or 0)),
+                    height=int(float(request.form.get("height") or 0)))
+        tile = int(float(request.form.get("tile") or 0))
+        if meta.get("tileset") and 4 <= tile <= 1024:
+            meta["tileset"]["size"] = tile
+        _write(LIBRARY, lib)
+        if old and old != file and not any(m.get("file") == old for m in lib):
+            (IMAGES / old).unlink(missing_ok=True)
+    for s in list(SESSIONS.values()):   # who has it on their board: the new picture
+        b = s.board or {}
+        on = iid in (b.get("tilesets") or []) or any(it.get("image") == iid for it in b.get("items") or [])
+        s.send(lambda role, pid, on=on: _event("image", meta) if role == "gm" or on else None)
     return jsonify(meta)
 
 
@@ -749,7 +872,7 @@ def music_file(name):
     return resp
 
 
-# ── playback: one per board, kept here and sent to everyone in it ──
+# ── playback: one per room (Hub), kept here and sent to everyone in any of its scenes ──
 
 def new_playback() -> dict:
     # queue: track ids; order: the order to play them in (shuffled or not); pos: where in `order`;
@@ -766,9 +889,9 @@ def _current(m: dict) -> str | None:
     return m["queue"][m["order"][m["pos"]]] if m["queue"] and 0 <= m["pos"] < len(m["order"]) else None
 
 
-def playback_view(s: "Session") -> dict:
+def playback_view(h: "Hub") -> dict:
     """What pages need: the state, this track's and the next one's details, and the server's time"""
-    m = s.music
+    m = h.music
     cur = _current(m)
     nxt = None
     if m["queue"] and len(m["order"]) > 1:
@@ -781,29 +904,29 @@ def playback_view(s: "Session") -> dict:
             "track": pub(track_of(cur)) if cur else None, "next": pub(track_of(nxt)) if nxt else None}
 
 
-def _music_changed(s: "Session"):
+def _music_changed(h: "Hub"):
     """Tell everyone, and set the timer for the end of the track (then the next one plays by itself)"""
-    m = s.music
-    if s._music_timer:
-        s._music_timer.cancel()
-        s._music_timer = None
+    m = h.music
+    if h._music_timer:
+        h._music_timer.cancel()
+        h._music_timer = None
     cur = track_of(_current(m) or "")
     if m["playing"] and cur and cur.get("duration"):
         left = max(0.2, cur["duration"] - _now_pos(m))
         token = (m["pos"], m["at"])
-        s._music_timer = threading.Timer(left + 0.15, lambda: _music_ended(s, token))
-        s._music_timer.daemon = True
-        s._music_timer.start()
-    view = playback_view(s)
-    s.send(lambda r, q: _event("music", view))
+        h._music_timer = threading.Timer(left + 0.15, lambda: _music_ended(h, token))
+        h._music_timer.daemon = True
+        h._music_timer.start()
+    view = playback_view(h)
+    h.send(lambda r, q: _event("music", view))
 
 
-def _music_ended(s: "Session", token):
-    with s.lock:
-        if (s.music["pos"], s.music["at"]) != token:
+def _music_ended(h: "Hub", token):
+    with h.lock:
+        if (h.music["pos"], h.music["at"]) != token:
             return  # something else happened meanwhile
-        _advance(s.music, auto=True)
-    _music_changed(s)
+        _advance(h.music, auto=True)
+    _music_changed(h)
 
 
 def _advance(m: dict, auto: bool, step: int = 1):
@@ -844,10 +967,10 @@ def live_music(bid):
     if role != "gm":
         abort(403)
     body = request.get_json(force=True) or {}
-    s = session(bid)
+    h = hub_for(bid)
     a = body.get("action")
-    with s.lock:
-        m = s.music
+    with h.lock:
+        m = h.music
         now = time.time() * 1000
         if a == "play":
             known = {t["id"] for t in music_lib()["tracks"]}
@@ -890,8 +1013,8 @@ def live_music(bid):
                 _advance(m, auto=True)
         else:
             return jsonify({"error": "acción desconocida"}), 400
-    _music_changed(s)
-    return jsonify(playback_view(s))
+    _music_changed(h)
+    return jsonify(playback_view(h))
 
 
 # ─────────────────────────────────────────────────────────────── live board sessions
@@ -914,17 +1037,18 @@ def _event(name: str, data) -> str:
 
 
 class Session:
-    """An open board: kept in memory, shared with everyone in it, saved shortly after each change."""
+    """An open board (a scene): kept in memory, shared with everyone in it, saved shortly after each change.
+    Its tiles live in their own file (tiles/<id>.json), written only when they change."""
 
     def __init__(self, bid: str):
         self.bid = bid
         self.board = _read(BOARDS / f"{bid}.json", None)
+        if self.board is not None:
+            self.board["tiles"] = _read(TILES / f"{bid}.json", {})
         self.lock = threading.RLock()
         self.subs: dict[str, tuple[queue.Queue, str, str | None]] = {}  # connection id → (queue, role, player id)
         self._save_timer: threading.Timer | None = None
-        self.rolls: list[dict] = _read(ROLLS / f"{bid}.json", [])
-        self.music = new_playback()   # what plays in this board's room (not saved)
-        self._music_timer: threading.Timer | None = None
+        self._tiles_dirty = False
 
     def visible(self, role: str, pid: str | None = None) -> dict:
         """The board as this role sees it: players never get the GM layer, nor the sheets
@@ -934,11 +1058,6 @@ class Session:
         if role == "player":
             b["items"] = [player_item(it, pid) for it in b.get("items") or [] if it.get("layer") != "gm"]
         return b
-
-    def rolls_for(self, role: str, pid: str | None) -> list[dict]:
-        """The GM: every roll. A player: their own."""
-        with self.lock:
-            return [r for r in self.rolls if role == "gm" or r.get("by") == pid]
 
     def schedule_save(self):
         with self.lock:
@@ -952,7 +1071,10 @@ class Session:
         with self.lock:
             self._save_timer = None
             if self.board is not None and (BOARDS / f"{self.bid}.json").exists():
-                _write(BOARDS / f"{self.bid}.json", self.board)
+                _write(BOARDS / f"{self.bid}.json", {k: v for k, v in self.board.items() if k != "tiles"})
+                if self._tiles_dirty:
+                    _write(TILES / f"{self.bid}.json", self.board.get("tiles") or {})
+                    self._tiles_dirty = False
 
     def send(self, make, exclude: str | None = None):
         """make(role, pid) -> event text or None, for every connection but `exclude`."""
@@ -961,15 +1083,6 @@ class Session:
                 ev = make(role, pid)
                 if ev:
                     q.put(ev)
-
-    def presence(self):
-        code = room_of(self.bid)
-        players = (rooms().get(code) or {}).get("players") or {}
-        online = sorted({pid for _, (q, role, pid) in self.subs.items() if role == "player"})
-        gm = any(role == "gm" for _, (q, role, pid) in self.subs.items())
-        data = {"code": code, "online": online, "gm": gm,
-                "players": {pid: {"name": p.get("name"), "color": p.get("color")} for pid, p in players.items()}}
-        self.send(lambda role, pid: _event("presence", data))
 
 
 SESSIONS: dict[str, Session] = {}
@@ -984,8 +1097,74 @@ def session(bid: str) -> Session:
         return s
 
 
-def room_of(bid: str) -> str:
-    return next((code for code, r in rooms().items() if r.get("board") == bid), "")
+class Hub:
+    """What a room shares across its scenes: the music and the dice rolls. (A board played
+    without a room has its own.)"""
+
+    def __init__(self, key: str):
+        self.key = key   # "sala:<code>" or "b:<board>"
+        self.lock = threading.RLock()
+        self.music = new_playback()   # (not saved)
+        self._music_timer: threading.Timer | None = None
+        self.rolls: list[dict] = _read(self.rolls_path(), None)
+        if self.rolls is None:   # a room opened on a board: that board's rolls so far
+            first = (rooms().get(key[5:]) or {}).get("board") if key.startswith("sala:") else None
+            self.rolls = _read(ROLLS / f"{first}.json", []) if first else []
+
+    def rolls_path(self) -> Path:
+        return ROLLS / (f"sala-{self.key[5:]}.json" if self.key.startswith("sala:") else f"{self.key[2:]}.json")
+
+    def rolls_for(self, role: str, pid: str | None) -> list[dict]:
+        """The GM: every roll. A player: their own."""
+        with self.lock:
+            return [r for r in self.rolls if role == "gm" or r.get("by") == pid]
+
+    def send(self, make, exclude: str | None = None):
+        """To every connection in the room's scenes (and the GM's, wherever they are)."""
+        all_rooms = rooms()
+        for s in list(SESSIONS.values()):
+            if hub_key(s.bid, all_rooms) == self.key:
+                s.send(make, exclude)
+
+
+HUBS: dict[str, Hub] = {}
+
+
+def hub_key(bid: str, all_rooms: dict | None = None) -> str:
+    code = room_for(bid, all_rooms)
+    return f"sala:{code}" if code else f"b:{bid}"
+
+
+def hub_for(bid: str) -> Hub:
+    key = hub_key(bid)
+    with _sessions_lock:
+        h = HUBS.get(key)
+        if h is None:
+            h = HUBS[key] = Hub(key)
+        return h
+
+
+def broadcast_presence():
+    """Who is in each room and in which scene, to every page (the GM's wherever they are)."""
+    all_rooms = rooms()
+    sessions = list(SESSIONS.values())
+    subs = [(s, q, role, pid) for s in sessions for (q, role, pid) in list(s.subs.values())]
+    online = {pid for _, _, role, pid in subs if role == "player"}
+    gm = any(role == "gm" for _, _, role, _ in subs)
+    pid_room = {pid: code for code, r in all_rooms.items() for pid in (r.get("players") or {})}
+    cache: dict[str, str] = {}
+
+    def ev(code: str) -> str:
+        if code not in cache:
+            room = all_rooms.get(code) or {}
+            players = room.get("players") or {}
+            cache[code] = _event("presence", {
+                "code": code, "online": sorted(p for p in players if p in online), "gm": gm, "scene": room.get("board") or "",
+                "players": {p: {"name": x.get("name"), "color": x.get("color"), "scene": player_scene(room, p)} for p, x in players.items()}})
+        return cache[code]
+
+    for s, q, role, pid in subs:
+        q.put(ev(room_for(s.bid, all_rooms) if role == "gm" else pid_room.get(pid, "")))
 
 
 def _valid_item(it) -> bool:
@@ -1002,16 +1181,17 @@ def live_events(bid):
     q: queue.Queue = queue.Queue()
     cid = secrets.token_hex(6)
     s.subs[cid] = (q, role, pid)
-    players = (rooms().get(code or room_of(bid)) or {}).get("players") or {}
+    players = (rooms().get(code or room_for(bid)) or {}).get("players") or {}
     me = {"role": role, "pid": pid, "cid": cid, "name": (players.get(pid) or {}).get("name", "GM") if pid else "GM",
           "color": (players.get(pid) or {}).get("color", "#fff200") if pid else "#fff200"}
+    h = hub_for(bid)
 
     def stream():
         try:
             yield "retry: 1500\n\n"
-            yield _event("snapshot", {"board": s.visible(role, pid), "me": me, "rolls": s.rolls_for(role, pid),
-                                      "music": playback_view(s)})
-            s.presence()
+            yield _event("snapshot", {"board": s.visible(role, pid), "me": me, "rolls": h.rolls_for(role, pid),
+                                      "music": playback_view(h)})
+            broadcast_presence()
             while True:
                 try:
                     yield q.get(timeout=5)
@@ -1020,7 +1200,7 @@ def live_events(bid):
         finally:
             s.subs.pop(cid, None)
             s.send(lambda r, q: _event("ruler", {"by": cid, "who": "", "color": "", "shape": None}))
-            s.presence()
+            broadcast_presence()
 
     return Response(stream(), mimetype="text/event-stream",
                     headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
@@ -1083,7 +1263,7 @@ def live_roll(bid):
         tok = next((it for it in s.board.get("items") or [] if it.get("id") == body.get("token")), None)
     if tok and (role == "gm" or (tok.get("layer") == "tokens" and pid in (tok.get("controllers") or []))):
         token = clean_name(tok.get("name")) or "Token"
-    players = (rooms().get(code or room_of(bid)) or {}).get("players") or {}
+    players = (rooms().get(code or room_for(bid)) or {}).get("players") or {}
     p = players.get(pid) or {}
     r = {"id": secrets.token_hex(5), "by": pid, "who": p.get("name", "Jugador") if pid else "GM",
          "color": p.get("color", "#fff200") if pid else "#fff200",
@@ -1091,12 +1271,54 @@ def live_roll(bid):
          "terms": terms, "total": total, "crit": crit, "time": time.time() * 1000}
     if token:
         r["token"], r["tokenId"] = token, tok["id"]
-    with s.lock:
-        s.rolls.append(r)
-        del s.rolls[:-MAX_ROLLS]
-        _write(ROLLS / f"{bid}.json", s.rolls)
-    s.send(lambda role_, pid_: _event("roll", r) if role_ == "gm" or (pid and pid_ == pid) else None,
+    h = hub_for(bid)   # (the room's log, whichever scene it was rolled in)
+    with h.lock:
+        h.rolls.append(r)
+        del h.rolls[:-MAX_ROLLS]
+        _write(h.rolls_path(), h.rolls)
+    h.send(lambda role_, pid_: _event("roll", r) if role_ == "gm" or (pid and pid_ == pid) else None,
            exclude=body.get("cid"))
+    return jsonify(r)
+
+
+@app.route("/api/live/<bid>/effect", methods=["POST"])
+def live_effect(bid):
+    """A turn-based effect of the combat round, added by a player (or the GM) without touching the round:
+    {action: add, name, token?}: it counts the rounds since it was added (1, 2, 3…, one more each Nueva ronda)
+    {action: del, id}: a player only theirs"""
+    role, pid, code = need_board(bid)
+    body = request.get_json(force=True) or {}
+    s = session(bid)
+    if s.board is None:
+        abort(404)
+    with s.lock:
+        r = s.board.get("round")
+        if not isinstance(r, dict):
+            return jsonify({"error": "El combate no ha empezado"}), 400
+        effects = [f for f in r.get("effects") or [] if isinstance(f, dict)]
+        if body.get("action") == "add":
+            name = clean_name(body.get("name"), 40)
+            if not name:
+                return jsonify({"error": "Falta el nombre"}), 400
+            f = {"id": secrets.token_hex(4), "name": name, "left": 0, "up": 1, "by": pid or "gm"}
+            tok = next((it for it in s.board.get("items") or [] if it.get("id") == body.get("token")), None)
+            if tok and (role == "gm" or (tok.get("layer") == "tokens" and pid in (tok.get("controllers") or []))):
+                f["token"] = tok["id"]
+            effects.append(f)
+            del effects[:-200]
+        elif body.get("action") == "del":
+            f = next((x for x in effects if x.get("id") == body.get("id")), None)
+            if not f:
+                abort(404)
+            if role == "player" and f.get("by") != pid:
+                abort(403)
+            effects.remove(f)
+        else:
+            return jsonify({"error": "acción desconocida"}), 400
+        r = {**r, "effects": effects}
+        s.board["round"] = r
+    s.schedule_save()
+    s.send(lambda role_, pid_: _event("changes", {"upserts": [], "removes": [], "settings": {"round": r}, "live": False, "by": pid or "gm"}))
     return jsonify(r)
 
 
@@ -1113,7 +1335,7 @@ def live_ruler(bid):
                 or not all(isinstance(shape.get(k), (int, float)) and abs(shape[k]) < 1e7 for k in ("x1", "y1", "x2", "y2")):
             return jsonify({"error": "regla no válida"}), 400
         shape = {k: shape[k] for k in ("mode", "x1", "y1", "x2", "y2")}
-    players = (rooms().get(code or room_of(bid)) or {}).get("players") or {}
+    players = (rooms().get(code or room_for(bid)) or {}).get("players") or {}
     p = players.get(pid) or {}
     cid = str(body.get("cid") or "")[:20]
     ev = {"by": cid, "who": clean_name(p.get("name")) if pid else "GM", "color": p.get("color", "#fff200") if pid else "#fff200",
@@ -1124,14 +1346,15 @@ def live_ruler(bid):
 
 @app.route("/api/live/<bid>/changes", methods=["POST"])
 def live_changes(bid):
-    """{cid, upserts: [items], removes: [ids], settings?: {...}, live?: bool} → applied as far as allowed.
-    The answer lists what was refused, as it really is, so the sender can put it back."""
+    """{cid, upserts: [items], removes: [ids], settings?: {...}, tiles?: {chunk key: chunk | null}, live?: bool}
+    → applied as far as allowed (settings and tiles: the GM's). The answer lists what was refused,
+    as it really is, so the sender can put it back."""
     role, pid, code = need_board(bid)
     body = request.get_json(force=True) or {}
     s = session(bid)
     if s.board is None:
         abort(404)
-    known = set((rooms().get(room_of(bid)) or {}).get("players") or {})
+    known = set((rooms().get(room_for(bid)) or {}).get("players") or {})
     up_ok, rm_ok, refused = [], [], []
     with s.lock:
         items = {it["id"]: it for it in s.board.get("items") or []}
@@ -1187,8 +1410,21 @@ def live_changes(bid):
         if role == "gm" and isinstance(body.get("settings"), dict):
             settings = {k: v for k, v in body["settings"].items() if k in BOARD_SETTINGS}
             s.board.update(settings)
+        tiles = {}
+        if role == "gm" and isinstance(body.get("tiles"), dict):
+            cur = s.board.setdefault("tiles", {})
+            for k, v in list(body["tiles"].items())[:20000]:
+                if not isinstance(k, str) or not TILE_KEY_RE.match(k):
+                    continue
+                if v is None:
+                    cur.pop(k, None)
+                    tiles[k] = None
+                elif isinstance(v, str) and TILE_CHUNK_RE.match(v):
+                    cur[k] = tiles[k] = v
+            if tiles:
+                s._tiles_dirty = True
         s.board["items"] = [items[i] for i in order if i in items]
-    if up_ok or rm_ok or settings:
+    if up_ok or rm_ok or settings or tiles:
         s.schedule_save()
 
         def make(r, p):
@@ -1197,10 +1433,10 @@ def live_changes(bid):
                 rms = rm_ok + [it["id"] for it in up_ok if it.get("layer") == "gm"]
             else:
                 ups, rms = up_ok, rm_ok
-            if not (ups or rms or settings):
+            if not (ups or rms or settings or tiles):
                 return None
             return _event("changes", {"upserts": ups, "removes": rms, "settings": settings,
-                                      "live": bool(body.get("live")), "by": pid or "gm"})
+                                      **({"tiles": tiles} if tiles else {}), "live": bool(body.get("live")), "by": pid or "gm"})
         s.send(make, exclude=body.get("cid"))
     return jsonify({"ok": True, "refused": refused})
 
@@ -1217,13 +1453,21 @@ def _new_code(existing) -> str:
             return code
 
 
+def _to_players(pids, make):
+    """An event for these players, in whatever scene they are"""
+    for s in list(SESSIONS.values()):
+        s.send(lambda role, p: make(p) if role == "player" and p in pids else None)
+
+
 @app.route("/api/boards/<bid>/room")
 def api_room(bid):
+    """The GM's room (one room plays every scene: the one of this scene, or the room open)"""
     need_gm()
-    code = room_of(bid)
+    code = room_for(bid)
     room = rooms().get(code) or {}
     return jsonify({"code": code, "players": {pid: {"name": p.get("name"), "color": p.get("color")}
                                               for pid, p in (room.get("players") or {}).items()},
+                    "scene": room.get("board") or "",
                     "lan": f"http://{lan_ip()}:{PORT}" if LAN else "",
                     "public": tablero_share.url() if tablero_share.status()["state"] == "on" else ""})
 
@@ -1235,12 +1479,21 @@ def api_room_open(bid):
         abort(404)
     with _lock:
         all_rooms = rooms()
-        code = room_of(bid)
+        code = room_for(bid, all_rooms)
         if not code:
             code = _new_code(all_rooms)
             all_rooms[code] = {"board": bid, "players": {}, "created": time.time()}
             _write(ROOMS, all_rooms)
-    session(bid).presence()
+    # what was playing on this board goes on playing in the room
+    old = HUBS.pop(f"b:{bid}", None)
+    if old:
+        h = hub_for(bid)
+        if old._music_timer:
+            old._music_timer.cancel()
+        with h.lock:
+            h.music = old.music
+        _music_changed(h)
+    broadcast_presence()
     return api_room(bid)
 
 
@@ -1249,12 +1502,14 @@ def api_room_close(bid):
     need_gm()
     with _lock:
         all_rooms = rooms()
-        code = room_of(bid)
-        all_rooms.pop(code, None)
+        code = room_for(bid, all_rooms)
+        room = all_rooms.pop(code, None) or {}
         _write(ROOMS, all_rooms)
-    s = session(bid)
-    s.send(lambda role, pid: _event("closed", {"code": code}) if role == "player" else None)
-    s.presence()
+    _to_players(set(room.get("players") or {}), lambda p: _event("closed", {"code": code}))
+    h = HUBS.pop(f"sala:{code}", None)
+    if h and h._music_timer:
+        h._music_timer.cancel()
+    broadcast_presence()
     return jsonify({"ok": True})
 
 
@@ -1264,18 +1519,18 @@ def api_room_kick(bid, pid):
     need_gm()
     with _lock:
         all_rooms = rooms()
-        room = all_rooms.get(room_of(bid)) or {}
+        room = all_rooms.get(room_for(bid, all_rooms)) or {}
         (room.get("players") or {}).pop(pid, None)
         _write(ROOMS, all_rooms)
-    s = session(bid)
-    s.send(lambda role, p: _event("closed", {"kicked": True}) if p == pid else None)
-    s.presence()
+    _to_players({pid}, lambda p: _event("closed", {"kicked": True}))
+    broadcast_presence()
     return jsonify({"ok": True})
 
 
 @app.route("/api/join", methods=["POST"])
 def api_join():
-    """{code, name, key?} → this player's identity in the room (the same one again with their key)."""
+    """{code, name, key?} → this player's identity in the room (the same one again with their key),
+    and the scene they are in."""
     body = request.get_json(force=True) or {}
     code = str(body.get("code") or "").strip().upper().replace(" ", "")
     if len(code) == 8 and "-" not in code:
@@ -1300,8 +1555,173 @@ def api_join():
             players[pid]["name"] = name
         _write(ROOMS, all_rooms)
         p = players[pid]
-    session(room["board"]).presence()
-    return jsonify({"code": code, "board": room["board"], "pid": pid, "key": p["key"], "name": p["name"], "color": p["color"]})
+    broadcast_presence()
+    return jsonify({"code": code, "board": player_scene(room, pid), "pid": pid, "key": p["key"], "name": p["name"], "color": p["color"]})
+
+
+# ─────────────────────────────────────────────────────────────── scenes: moving people
+# Each board is a scene. The room's party is in one of them ("board"); the GM can move
+# everyone, or some players, to another (their tokens go with them), and tokens can go
+# through a portal (stairs, a door, the city gate…) to another scene.
+
+def _spiral(n: int) -> tuple[int, int]:
+    """The n-th cell around a centre: 0 the centre, then ring after ring, the nearest first"""
+    if n == 0:
+        return 0, 0
+    r = 1
+    while (2 * r + 1) ** 2 <= n:
+        r += 1
+    ring = [(x, y) for x in range(-r, r + 1) for y in range(-r, r + 1) if max(abs(x), abs(y)) == r]
+    ring.sort(key=lambda c: (abs(c[0]) + abs(c[1]), c[1], c[0]))
+    return ring[n - (2 * r - 1) ** 2]
+
+
+def _travel(src: str, dst: str, ids: list[str], at: dict | None = None) -> list[dict]:
+    """These items leave scene src and appear in dst, around `at` ({x, y, level}) or its arrival
+    point (else its middle). Everyone in both scenes sees it. Returns the items moved."""
+    if src == dst or not ids:
+        return []
+    a, b = session(src), session(dst)
+    if a.board is None or b.board is None:
+        return []
+    want = set(ids)
+    with a.lock:
+        moving = [it for it in a.board.get("items") or [] if it.get("id") in want]
+        a.board["items"] = [it for it in a.board.get("items") or [] if it.get("id") not in want]
+    if not moving:
+        return []
+    a.schedule_save()
+    gone = [it["id"] for it in moving]
+    a.send(lambda r, p: _event("changes", {"upserts": [], "removes": gone, "settings": {}, "live": False, "by": "gm"}))
+    with b.lock:
+        g = float((b.board.get("grid") or {}).get("size") or 70)
+        spot = at or b.board.get("arrival") or {}
+        levels = b.board.get("levels") or []
+        level = spot.get("level") or (levels[0]["id"] if levels else None)
+        cx = spot.get("x") if isinstance(spot.get("x"), (int, float)) else b.board.get("width", 30) * g / 2
+        cy = spot.get("y") if isinstance(spot.get("y"), (int, float)) else b.board.get("height", 20) * g / 2
+        here = b.board.setdefault("items", [])
+        taken = {it["id"] for it in here}
+        z = max((it.get("z", 0) for it in here if it.get("layer") == "tokens"), default=0) + 1
+        col, row = int(cx // g), int(cy // g)
+        for i, it in enumerate(moving):
+            dx, dy = _spiral(i)
+            it["x"] = (col + dx) * g + g / 2 - it["w"] / 2
+            it["y"] = (row + dy) * g + g / 2 - it["h"] / 2
+            if level and levels and level != levels[0]["id"]:
+                it["level"] = level
+            else:
+                it.pop("level", None)
+            if it["id"] in taken:
+                it["id"] = secrets.token_hex(4)
+            it["z"] = z + i
+            here.append(it)
+    b.schedule_save()
+    b.send(lambda r, p: _event("changes", {"upserts": [player_item(it, p) if r == "player" else it for it in moving
+                                                       if r != "player" or it.get("layer") != "gm"],
+                                           "removes": [], "settings": {}, "live": False, "by": "gm"}))
+    return moving
+
+
+def _move_players(code: str, pids: list[str], dst: str, everyone: bool, tokens: bool) -> None:
+    """Players (or the whole party) go to scene dst, their tokens with them: the ones only they,
+    or players going with them, control. Their pages open the new scene."""
+    with _lock:
+        all_rooms = rooms()
+        room = all_rooms.get(code)
+        if not room:
+            return
+        players = room.setdefault("players", {})
+        froms: dict[str, set] = {}
+        for pid in pids:
+            if pid in players and player_scene(room, pid) != dst:
+                froms.setdefault(player_scene(room, pid), set()).add(pid)
+        if everyone:
+            room["board"] = dst
+        for pid in pids:
+            if pid in players:
+                players[pid]["board"] = dst
+        # all in one scene again: that is the party's
+        scenes = {player_scene(room, p) for p in players}
+        if len(scenes) == 1:
+            room["board"] = scenes.pop()
+        for p in players.values():
+            if p.get("board") == room["board"]:
+                p.pop("board", None)
+        _write(ROOMS, all_rooms)
+    for src, going in froms.items():
+        if tokens:
+            s = session(src)
+            with s.lock:
+                ids = [it["id"] for it in (s.board or {}).get("items") or [] if it.get("layer") == "tokens"
+                       and it.get("controllers") and set(it["controllers"]) <= going]
+            _travel(src, dst, ids)
+        session(src).send(lambda r, p, going=going: _event("scene", {"board": dst}) if r == "player" and p in going else None)
+    broadcast_presence()
+
+
+@app.route("/api/scenes/move", methods=["POST"])
+def api_scene_move():
+    """The GM: {to: scene, players?: [ids] (missing: the whole party, and the room goes there), tokens?: bool}"""
+    need_gm()
+    body = request.get_json(force=True) or {}
+    dst = str(body.get("to") or "")
+    if not ID_RE.match(dst) or not (BOARDS / f"{dst}.json").exists():
+        abort(404)
+    code = room_for(dst)
+    if not code:
+        return jsonify({"ok": True, "room": False})
+    pids = body.get("players")
+    everyone = not isinstance(pids, list)
+    if everyone:
+        pids = list((rooms().get(code) or {}).get("players") or {})
+    _move_players(code, [str(p) for p in pids], dst, everyone, body.get("tokens", True) is not False)
+    return jsonify({"ok": True, "room": True})
+
+
+@app.route("/api/live/<bid>/portal", methods=["POST"])
+def live_portal(bid):
+    """{portal, tokens: [ids]}: tokens go through a portal to another scene (a player only theirs).
+    They come out at the portal of the same name there, else where the portal says, else at the
+    arrival point. A player with no token left behind goes with them."""
+    role, pid, code = need_board(bid)
+    body = request.get_json(force=True) or {}
+    s = session(bid)
+    if s.board is None:
+        abort(404)
+    want = {str(t) for t in body.get("tokens") or []}
+    with s.lock:
+        portal = next((p for p in s.board.get("portals") or [] if p.get("id") == body.get("portal")), None)
+        items = [it for it in s.board.get("items") or [] if it.get("id") in want and it.get("layer") != "map"
+                 and (role == "gm" or (it.get("layer") == "tokens" and pid in (it.get("controllers") or [])))]
+    to = (portal or {}).get("to") or {}
+    dst = str(to.get("scene") or "")
+    if not portal or not dst or dst == bid or not ID_RE.match(dst) or not (BOARDS / f"{dst}.json").exists():
+        return jsonify({"error": "Ese portal no lleva a ninguna escena"}), 400
+    if not items:
+        return jsonify({"error": "Nada que mover"}), 400
+    there = session(dst)
+    name = clean_name(portal.get("name")).lower()
+    with there.lock:
+        g = float((there.board.get("grid") or {}).get("size") or 70)
+        twin = next((p for p in there.board.get("portals") or [] if name and clean_name(p.get("name")).lower() == name), None)
+    if twin:
+        at = {"x": twin["x"] + twin.get("w", g) / 2, "y": twin["y"] + twin.get("h", g) / 2, "level": twin.get("level")}
+    elif isinstance(to.get("x"), (int, float)) and isinstance(to.get("y"), (int, float)):
+        at = {"x": to["x"], "y": to["y"], "level": to.get("level")}
+    else:
+        at = None
+    owners = {c for it in items for c in it.get("controllers") or []}
+    _travel(bid, dst, [it["id"] for it in items], at)
+    room_code = room_of(bid)
+    if room_code:
+        room = rooms().get(room_code) or {}
+        with s.lock:
+            left = {c for it in s.board.get("items") or [] if it.get("layer") == "tokens" for c in it.get("controllers") or []}
+        going = [p for p in owners if p not in left and player_scene(room, p) == bid]
+        if going:
+            _move_players(room_code, going, dst, everyone=False, tokens=False)
+    return jsonify({"ok": True, "scene": dst})
 
 
 # ─────────────────────────────────────────────────────────────── sharing (GM, this computer)
@@ -1328,7 +1748,7 @@ def api_share_do():
     return jsonify(fn())
 
 
-# ─────────────────────────────────────────────────────────────── boards (GM)
+# ─────────────────────────────────────────────────────────────── boards = scenes (GM)
 
 def _new_board(name: str, bid: str) -> dict:
     return {"id": bid, "name": name, "width": 30, "height": 20, "background": "#1b1b1b",
@@ -1336,16 +1756,40 @@ def _new_board(name: str, bid: str) -> dict:
             "items": [], "created": time.time()}
 
 
+def _free_id(name: str) -> str:
+    bid, n = _slug(name), 2
+    while (BOARDS / f"{bid}.json").exists():
+        bid, n = f"{_slug(name)}-{n}", n + 1
+    return bid
+
+
+def _board_now(bid: str) -> dict:
+    """A board as it is now (open: in memory, tiles too), without loading it"""
+    s = SESSIONS.get(bid)
+    if s and s.board is not None:
+        return s.board
+    return _read(BOARDS / f"{bid}.json", {})
+
+
 @app.route("/api/boards")
 def api_boards():
+    """The scenes: name, size, who is in each one (the party's is marked) and a picture (its biggest map)"""
     need_gm()
     BOARDS.mkdir(parents=True, exist_ok=True)
-    codes = {r.get("board"): c for c, r in rooms().items()}
+    all_rooms = rooms()
+    codes = {r.get("board"): c for c, r in all_rooms.items()}
+    here: dict[str, list] = {}
+    for r in all_rooms.values():
+        for pid in r.get("players") or {}:
+            here.setdefault(player_scene(r, pid), []).append(pid)
     out = []
     for p in BOARDS.glob("*.json"):
-        b = SESSIONS[p.stem].board if p.stem in SESSIONS and SESSIONS[p.stem].board else _read(p, {})
+        b = _board_now(p.stem)
+        maps = [it for it in b.get("items") or [] if it.get("layer") == "map" and it.get("image") and not it.get("roof")]
+        thumb = max(maps, key=lambda it: it.get("w", 0) * it.get("h", 0)).get("image") if maps else ""
         out.append({"id": p.stem, "name": b.get("name") or p.stem, "items": len(b.get("items") or []),
-                    "modified": p.stat().st_mtime, "code": codes.get(p.stem, "")})
+                    "modified": p.stat().st_mtime, "code": codes.get(p.stem, ""), "players": here.get(p.stem, []),
+                    "levels": len(b.get("levels") or []) or 1, "thumb": thumb, "campaign": b.get("campaign") or "", "tags": b.get("tags") or []})
     if not out:  # first start: one board to begin with
         _write(BOARDS / "primer-tablero.json", _new_board("Primer tablero", "primer-tablero"))
         return api_boards()
@@ -1355,14 +1799,59 @@ def api_boards():
 
 @app.route("/api/boards", methods=["POST"])
 def api_board_create():
+    """{name, board?: a whole board to start from (an imported map)}"""
     need_gm()
-    name = str((request.get_json(force=True) or {}).get("name") or "Nuevo tablero").strip()[:60]
-    bid, n = _slug(name), 2
-    while (BOARDS / f"{bid}.json").exists():
-        bid, n = f"{_slug(name)}-{n}", n + 1
+    body = request.get_json(force=True) or {}
+    name = clean_name(body.get("name") or "Nueva escena", 60) or "Nueva escena"
+    bid = _free_id(name)
     board = _new_board(name, bid)
+    src = body.get("board")
+    if isinstance(src, dict):
+        for k in BOARD_SETTINGS:
+            if k in src and k != "name":
+                board[k] = src[k]
+        board["items"] = [it for it in src.get("items") or [] if _valid_item(it)]
+    cid = body.get("campaign")
+    if cid and any(c["id"] == cid for c in campaigns()):
+        board["campaign"] = cid
     _write(BOARDS / f"{bid}.json", board)
     return jsonify(board)
+
+
+@app.route("/api/boards/<bid>/rename", methods=["POST"])
+def api_board_rename(bid):
+    need_gm()
+    if not ID_RE.match(bid) or not (BOARDS / f"{bid}.json").exists():
+        abort(404)
+    name = clean_name((request.get_json(force=True) or {}).get("name"), 60)
+    if not name:
+        return jsonify({"error": "Falta el nombre"}), 400
+    s = session(bid)
+    with s.lock:
+        s.board["name"] = name
+    s.schedule_save()
+    s.send(lambda r, p: _event("changes", {"upserts": [], "removes": [], "settings": {"name": name}, "live": False, "by": "gm"}))
+    return jsonify({"ok": True})
+
+
+@app.route("/api/boards/<bid>/duplicate", methods=["POST"])
+def api_board_duplicate(bid):
+    need_gm()
+    if not ID_RE.match(bid) or not (BOARDS / f"{bid}.json").exists():
+        abort(404)
+    s = SESSIONS.get(bid)
+    with (s.lock if s else _lock):
+        src = json.loads(json.dumps(_board_now(bid)))
+    tiles = src.pop("tiles", None)
+    if tiles is None:
+        tiles = _read(TILES / f"{bid}.json", {})
+    name = clean_name(f"{src.get('name') or bid} (copia)", 60)
+    nid = _free_id(name)
+    src.update(id=nid, name=name, created=time.time())
+    _write(BOARDS / f"{nid}.json", src)
+    if tiles:
+        _write(TILES / f"{nid}.json", tiles)
+    return jsonify({"id": nid, "name": name})
 
 
 @app.route("/api/boards/<bid>")
@@ -1379,19 +1868,143 @@ def api_board_delete(bid):
     p = BOARDS / f"{bid}.json"
     if not ID_RE.match(bid) or not p.exists():
         abort(404)
+    sent_back = []
     with _lock:
         all_rooms = rooms()
-        for code in [c for c, r in all_rooms.items() if r.get("board") == bid]:
-            all_rooms.pop(code)
+        if any(r.get("board") == bid for r in all_rooms.values()):
+            return jsonify({"error": "El grupo está en esta escena: llévalo antes a otra (🗺 Escenas)."}), 409
+        for r in all_rooms.values():   # players alone in it: back with the party
+            for pid, pl in (r.get("players") or {}).items():
+                if pl.get("board") == bid:
+                    pl.pop("board")
+                    sent_back.append((pid, r.get("board")))
         _write(ROOMS, all_rooms)
     s = SESSIONS.pop(bid, None)
     if s:
         if s._save_timer:
             s._save_timer.cancel()
-        s.send(lambda role, pid: _event("closed", {"deleted": True}))
+        s.send(lambda role, pid: _event("scene", {"board": dict(sent_back).get(pid)}) if role == "player" and pid in dict(sent_back)
+               else _event("closed", {"deleted": True}))
     p.unlink()
     (ROLLS / f"{bid}.json").unlink(missing_ok=True)
+    (TILES / f"{bid}.json").unlink(missing_ok=True)
+    broadcast_presence()
     return jsonify({"ok": True})
+
+
+# ─────────────────────────────────────────────────────────────── campaigns (GM)
+# Sets of scenes, to keep them sorted: a scene is in one campaign or in none.
+
+def campaigns() -> list:
+    return [c for c in _read(CAMPAIGNS, []) if isinstance(c, dict) and ID_RE.match(str(c.get("id", "")))]
+
+
+def _set_board_key(bid: str, key: str, value) -> None:
+    """Sets a scene's campaign or tags (empty: removed). An open scene changes in memory (and is saved)."""
+    def put(b):
+        if value:
+            b[key] = value
+        else:
+            b.pop(key, None)
+    s = SESSIONS.get(bid)
+    if s and s.board is not None:
+        with s.lock:
+            put(s.board)
+        s.schedule_save()
+        return
+    p = BOARDS / f"{bid}.json"
+    b = _read(p, None)
+    if isinstance(b, dict):
+        put(b)
+        _write(p, b)
+
+
+def _set_campaign(bid: str, cid: str) -> None:
+    _set_board_key(bid, "campaign", cid)
+
+
+@app.route("/api/campaigns")
+def api_campaigns():
+    need_gm()
+    return jsonify(campaigns())
+
+
+@app.route("/api/campaigns", methods=["POST"])
+def api_campaign_create():
+    need_gm()
+    name = clean_name((request.get_json(force=True) or {}).get("name"), 60)
+    if not name:
+        return jsonify({"error": "Falta el nombre"}), 400
+    with _lock:
+        all_c = campaigns()
+        cid, n = _slug(name), 2
+        while any(c["id"] == cid for c in all_c):
+            cid, n = f"{_slug(name)}-{n}", n + 1
+        c = {"id": cid, "name": name, "created": time.time()}
+        all_c.append(c)
+        _write(CAMPAIGNS, all_c)
+    return jsonify(c)
+
+
+@app.route("/api/campaigns/<cid>", methods=["PATCH"])
+def api_campaign_rename(cid):
+    need_gm()
+    name = clean_name((request.get_json(force=True) or {}).get("name"), 60)
+    if not name:
+        return jsonify({"error": "Falta el nombre"}), 400
+    with _lock:
+        all_c = campaigns()
+        c = next((c for c in all_c if c["id"] == cid), None)
+        if not c:
+            abort(404)
+        c["name"] = name
+        _write(CAMPAIGNS, all_c)
+    return jsonify(c)
+
+
+@app.route("/api/campaigns/<cid>", methods=["DELETE"])
+def api_campaign_delete(cid):
+    """The campaign goes; its scenes stay, in no campaign"""
+    need_gm()
+    with _lock:
+        all_c = campaigns()
+        if not any(c["id"] == cid for c in all_c):
+            abort(404)
+        _write(CAMPAIGNS, [c for c in all_c if c["id"] != cid])
+    for p in BOARDS.glob("*.json"):
+        if _board_now(p.stem).get("campaign") == cid:
+            _set_campaign(p.stem, "")
+    return jsonify({"ok": True})
+
+
+@app.route("/api/boards/<bid>/campaign", methods=["POST"])
+def api_board_campaign(bid):
+    """{campaign: its id, or "" for none}"""
+    need_gm()
+    if not ID_RE.match(bid) or not (BOARDS / f"{bid}.json").exists():
+        abort(404)
+    cid = str((request.get_json(force=True) or {}).get("campaign") or "")
+    if cid and not any(c["id"] == cid for c in campaigns()):
+        return jsonify({"error": "Esa campaña no existe"}), 404
+    _set_campaign(bid, cid)
+    return jsonify({"ok": True})
+
+
+@app.route("/api/boards/<bid>/tags", methods=["POST"])
+def api_board_tags(bid):
+    """{tags: [...]}: a scene's tags, to find it (mazmorra, ciudad, sesión 3…)"""
+    need_gm()
+    if not ID_RE.match(bid) or not (BOARDS / f"{bid}.json").exists():
+        abort(404)
+    raw = (request.get_json(force=True) or {}).get("tags") or []
+    tags, seen = [], set()
+    for t in raw if isinstance(raw, list) else []:
+        t = clean_name(str(t).lstrip("#"), 30)
+        if t and t.lower() not in seen:
+            seen.add(t.lower())
+            tags.append(t)
+    _set_board_key(bid, "tags", tags[:20])
+    return jsonify({"ok": True, "tags": tags[:20]})
 
 
 # ─────────────────────────────────────────────────────────────── client build

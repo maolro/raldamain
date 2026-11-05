@@ -3,22 +3,30 @@
 // Tokens can carry a stat block (ficha), opened in a window over the board, bars for
 // Impactos and Chi, filled from it and changed during play, and status effects
 // (Ralentizado II…) whose penalties apply to the rolls made from its sheet.
+// Every board is a scene (🗺 Escenas): the GM moves the party between them; a scene has
+// levels (floors, interiors), portals between them, roofs, and tiles painted with tilesets.
 //
 //   /        the GM (only from this computer): every board, layer and setting
 //   /jugar   a player: joins a room with its invite code; sees the Tokens layer, adds
 //            their own tokens, drawings and texts, and changes only what they control
 import './style.css';
-import { api, setKey } from './api';
+import { api, imageUrl, setKey } from './api';
 import { BoardView, type Pt, type Tool } from './board';
 import { DiceRoller } from './dice';
 import { DRAG_TYPE, Library } from './library';
-import { Live } from './live';
+import { applyTiles, Live } from './live';
 import { SheetWindows, Sheets } from './sheets';
 import { Statuses } from './status';
 import { RULER_MODES, type RulerMode, type RulerShape } from './ruler';
 import { DEFAULT_FOG, fogOf, lightsOf, viewersOf } from './lighting';
 import { Music } from './music';
-import { BARS, kindOf, LAYERS, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Presence, type ShareStatus, type SheetStats } from './types';
+import { firstLevel, levelName, levelOf, levelsOf } from './levels';
+import { editPortal, LevelBar, newPortal, portalAt, campaignOptions, ScenesPanel } from './scenes';
+import { TilePainter } from './tilepaint';
+import { TileDialog, TileTags } from './tileadd';
+import { openRoofCells } from './tiles';
+import { readUvtt } from './uvtt';
+import { BARS, kindOf, LAYERS, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Portal, type Presence, type RoundEffect, type ShareStatus, type SheetStats } from './types';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -76,6 +84,7 @@ const playerName = (pid: string) => presence?.players[pid]?.name || pid;
 /** A new item: on a player's side it is theirs, on the Tokens layer */
 function stamp(it: BoardItem): BoardItem {
   if (PLAYER && me?.pid) { it.layer = 'tokens'; it.owner = me.pid; it.controllers = [me.pid]; }
+  if (board && view.level !== firstLevel(board)) it.level = view.level; else delete it.level;   // on the level shown
   return it;
 }
 
@@ -97,6 +106,8 @@ const view = new BoardView({
   overlay() { updateHud(); },
   ruler(shape, done) { showMyRuler(shape, done); },
   fogPointer(kind, p, e) { fogPointer(kind, p, e.altKey); },
+  tilePointer(kind, p) { painter.pointer(kind, p); },
+  moved(ids) { setTimeout(() => throughPortals(ids), 0); },   // (after the commit that sends where they are)
   economyClick(id, kind, i) { spendEconomy(id, kind, i); },
 });
 view.canEdit = canEdit;
@@ -112,7 +123,8 @@ const shortName = (n: string) => (n.split(/\s+/)[0] || n).slice(0, 12);
 view.markers = it => [
   ...(it.statuses || []).map(s => ({ text: statuses.short(s), color: statuses.color(s.id) })),
   ...(it.uses || []).map(u => ({ text: `${shortName(u.name)} ${u.value}/${u.max}`, color: u.value > 0 ? '#6b5320' : '#3a3a3a' })),
-  ...((board?.round?.effects) || []).filter(f => f.token === it.id).map(f => ({ text: `${shortName(f.name)} ${f.left}`, color: '#8e2b2b' })),
+  ...((board?.round?.effects) || []).filter(f => f.token === it.id)
+    .map(f => (f.up ? { text: `${shortName(f.name)} ${f.up}`, color: '#2b5e8e' } : { text: `${shortName(f.name)} ${f.left}`, color: '#8e2b2b' })),
 ];
 
 // actions and reactions per round: the sheet's, else 3 and 2; statuses take some away
@@ -238,6 +250,7 @@ function patch(b: Board, ch: Changes, skip: Set<string> = new Set()) {
   const have = new Set(b.items.map(i => i.id));
   for (const it of up.values()) if (!have.has(it.id)) b.items.push(it);
   if (ch.settings) Object.assign(b, ch.settings);
+  if (ch.tiles) b.tiles = applyTiles(b.tiles, ch.tiles);
 }
 
 let libReload = 0;
@@ -250,7 +263,7 @@ function applyRemote(ch: Changes) {
     redo = redo.map(fix);
   }
   // an image nobody here knows yet (another player's token): fetch its details
-  if (ch.upserts.some(i => i.image && !library.get(i.image)) && !libReload)
+  if ((ch.upserts.some(i => i.image && !library.get(i.image)) || (ch.settings?.tilesets || []).some(id => !library.get(id))) && !libReload)
     libReload = window.setTimeout(() => { libReload = 0; library.load(); }, 200);
   // a sheet this browser doesn't know (the GM gave a player a token with its sheet)
   if (ch.upserts.some(i => i.sheet && !sheets.get(i.sheet)) && !sheetReload)
@@ -262,6 +275,7 @@ function applyRemote(ch: Changes) {
   renderRoundChip();
   renderRoundPanel();
   if (ch.settings) { fillGridPanel(); if (ch.settings.fog && view.tool === 'fog') renderFogPanel(); }
+  followLevel();
 }
 let sheetReload = 0;
 
@@ -279,7 +293,10 @@ function connect(boardId: string) {
       board = b;
       const first = fitted !== b.id;
       fitted = b.id;
+      if (first || !levelsOf(b).some(l => l.id === view.level)) view.level = firstLevel(b);
       view.setBoard(b, first);
+      followLevel();
+      arrived(b);
       windows.sync(b.items);
       renderRoundChip();
       undo = [snapshot()];
@@ -289,10 +306,12 @@ function connect(boardId: string) {
       renderRole();
     },
     remote: applyRemote,
-    presence(p) { presence = p; renderPresence(); view.render(); },
+    presence(p) { presence = p; renderPresence(); view.render(); scenesPanel.presenceChanged(); },
     roll(r) { dice.add(r, r.by === me?.pid || (!r.by && isGM())); },
     ruler(r) { view.setRuler('cid:' + r.by, r.shape, r.color, r.who); },
     music(p) { music.setState(p); },
+    scene(bid) { travelTo(bid); },
+    image: imageChanged,
     status: setStatus,
     closed(info) {
       if (!PLAYER) { if (info.deleted) toast('Este tablero se ha eliminado', true); return; }
@@ -347,33 +366,38 @@ function renderPlayersPanel() {
 }
 
 // ── boards (GM) ─────────────────────────────────────────────────────────────
+/** Each scene's campaign (a new scene from the top bar goes into the open one's) and name */
+let boardCampaign: Record<string, string> = {}, boardNames: Record<string, string> = {};
 async function refreshBoardList(selectId?: string) {
-  const list = await api.boards();
-  const pick = $<HTMLSelectElement>('board-pick');
-  pick.innerHTML = list.map(b => `<option value="${esc(b.id)}">${esc(b.name)} (${b.items})${b.code ? ' · sala ' + esc(b.code) : ''}</option>`).join('');
+  const [list, camps] = await Promise.all([api.boards(), api.campaigns().catch(() => [])]);
+  boardCampaign = Object.fromEntries(list.map(b => [b.id, b.campaign]));
+  boardNames = Object.fromEntries(list.map(b => [b.id, b.name]));
+  $('campaign-pick').innerHTML = campaignOptions(list, camps, scenesPanel.view);
   const id = selectId || localStorage.getItem(LAST_BOARD) || list[0]?.id;
-  pick.value = list.some(b => b.id === id) ? id! : list[0].id;
-  return pick.value;
+  const open = list.some(b => b.id === id) ? id! : list[0].id;
+  labelScene(board?.id || open);
+  return open;
+}
+
+/** The top bar's 🗺 button says which scene is open */
+function labelScene(id: string) {
+  $('scene-name').textContent = boardNames[id] || id;
 }
 
 function openBoard(id: string) {
   windows.closeAll();
   localStorage.setItem(LAST_BOARD, id);
-  $<HTMLSelectElement>('board-pick').value = id;
+  labelScene(id);
+  scenesPanel.follow(boardCampaign[id] || '');
+  $<HTMLSelectElement>('campaign-pick').value = scenesPanel.view;
   $('room-panel').hidden = true;
   presence = null;
   renderPresence();
   connect(id);
 }
 
-$('board-pick').addEventListener('change', e => openBoard((e.target as HTMLSelectElement).value));
-$('board-new').addEventListener('click', async () => {
-  const name = prompt('Nombre del nuevo tablero:', 'Nuevo tablero');
-  if (!name) return;
-  const b = await api.createBoard(name);
-  await refreshBoardList(b.id);
-  openBoard(b.id);
-});
+// picking a campaign shows all its scenes (🗺 Escenas)
+$('campaign-pick').addEventListener('change', e => scenesPanel.show((e.target as HTMLSelectElement).value));
 $('board-rename').addEventListener('click', async () => {
   const name = prompt('Nuevo nombre del tablero:', B().name);
   if (!name || name === B().name) return;
@@ -382,9 +406,9 @@ $('board-rename').addEventListener('click', async () => {
   setTimeout(() => refreshBoardList(B().id), 600);
 });
 $('board-delete').addEventListener('click', async () => {
-  if (!confirm(`¿Eliminar el tablero «${B().name}»? Las imágenes siguen en la biblioteca. Si tiene sala, se cierra.`)) return;
+  if (!confirm(`¿Eliminar la escena «${B().name}»? Las imágenes siguen en la biblioteca.`)) return;
+  try { await api.deleteBoard(B().id); } catch (e) { toast((e as Error).message, true); return; }
   live?.close();
-  await api.deleteBoard(B().id);
   localStorage.removeItem(LAST_BOARD);
   openBoard(await refreshBoardList());
 });
@@ -968,14 +992,19 @@ function renderRoundChip() {
 function renderRoundPanel() {
   const p = $('round-panel');
   if (p.hidden || !board) return;
+  if (PLAYER) { renderPlayerRoundPanel(p); return; }
   const r = B().round, tokens = B().items.filter(i => isToken(i) && i.layer !== 'map');
   const sel = view.selectedItems().find(isToken);
   const tokenName = (tid?: string) => !tid ? 'general' : (B().items.find(i => i.id === tid)?.name || '(token borrado)');
+  const byName = (f: RoundEffect) => f.by && f.by !== 'gm' ? ` · <span style="color:${esc(presence?.players[f.by]?.color || '#ccc')}">${esc(playerName(f.by))}</span>` : '';
   p.innerHTML = `<h3>⏱ Ronda ${r ? r.n : '—'}</h3>
     <div class="row2"><button class="btn gold" data-round="next" title="Resta una ronda a cada efecto y vacía las acciones y reacciones gastadas">Nueva ronda ▶</button>
       <button class="btn small" data-round="start" title="Ronda 1 (los efectos se quedan)">${r ? 'Volver a ronda 1' : 'Empezar combate'}</button></div>
     <div class="fog-sec">Efectos por rondas</div>
-    <div class="round-effects">${(r?.effects || []).map(f => `<div class="use-row">
+    <div class="round-effects">${(r?.effects || []).map(f => f.up ? `<div class="use-row">
+        <span class="use-name">${esc(f.name)} <small class="muted">· ${esc(tokenName(f.token))}${byName(f)}</small></span>
+        <b class="round-up" title="Rondas desde que se añadió">${f.up}</b>
+        <button class="x" data-round="del" data-id="${esc(f.id)}" title="Quitar">✕</button></div>` : `<div class="use-row">
         <span class="use-name">${esc(f.name)} <small class="muted">· ${esc(tokenName(f.token))}</small></span>
         <button class="btn small" data-round="dec" data-id="${esc(f.id)}">−</button><b>${f.left}</b>
         <button class="btn small" data-round="inc" data-id="${esc(f.id)}">+</button>
@@ -984,16 +1013,52 @@ function renderRoundPanel() {
       <input class="inp" type="number" min="1" max="99" value="6" data-eff-left title="Rondas">
       <select class="inp" data-eff-token><option value="">General</option>${tokens.map(t => `<option value="${esc(t.id)}" ${t.id === sel?.id ? 'selected' : ''}>${esc(t.name || 'Token')}</option>`).join('')}</select>
       <button class="btn small" data-round="add">Añadir</button></div>
-    <small class="muted">Nueva ronda: −1 a cada efecto (al llegar a 0 termina) y todos recuperan sus acciones y reacciones.</small>`;
+    <small class="muted">Nueva ronda: −1 a cada efecto (al llegar a 0 termina) y +1 a los de los jugadores (cuentan las rondas que llevan); todos recuperan sus acciones y reacciones.</small>`;
 }
+
+/** A player: the round (only to see it) and their own effects, which count the rounds since they added them */
+function renderPlayerRoundPanel(p: HTMLElement) {
+  const r = B().round, pid = me?.pid || '';
+  const mineTokens = B().items.filter(i => isToken(i) && i.layer === 'tokens' && (i.controllers || []).includes(pid));
+  const tokenName = (tid?: string) => !tid ? 'general' : (B().items.find(i => i.id === tid)?.name || '(token)');
+  const shown = (r?.effects || []).filter(f => f.by === pid || (f.token && mineTokens.some(t => t.id === f.token)));
+  const sel = view.selectedItems().find(i => mineTokens.includes(i));
+  p.innerHTML = `<h3>⏱ Ronda ${r ? r.n : '—'}</h3>
+    ${r ? `<div class="fog-sec">Tus efectos</div>
+    <div class="round-effects">${shown.map(f => `<div class="use-row">
+        <span class="use-name">${esc(f.name)} <small class="muted">· ${esc(tokenName(f.token))}</small></span>
+        ${f.up ? `<b class="round-up" title="Rondas desde que lo añadiste">${f.up}</b>` : `<b title="Rondas que le quedan">${f.left}</b>`}
+        ${f.by === pid ? `<button class="x" data-round="del" data-id="${esc(f.id)}" title="Quitar">✕</button>` : ''}</div>`).join('') || '<small class="muted">Ninguno.</small>'}</div>
+    <div class="use-add"><input class="inp" list="effects-dl" data-eff-name placeholder="Ira">
+      <select class="inp" data-eff-token><option value="">General</option>${mineTokens.map(t => `<option value="${esc(t.id)}" ${t.id === sel?.id ? 'selected' : ''}>${esc(t.name || 'Token')}</option>`).join('')}</select>
+      <button class="btn small" data-round="add">Añadir</button></div>
+    <small class="muted">Cuenta las rondas desde que lo añades: 1, 2, 3… El GM pasa las rondas.</small>`
+    : '<small class="muted">El combate no ha empezado.</small>'}`;
+}
+
+/** A player adds or removes one of their effects (the server keeps the round) */
+async function playerEffect(action: string, id?: string) {
+  if (!board || !live) return;
+  const p = $('round-panel');
+  try {
+    if (action === 'add') {
+      const name = p.querySelector<HTMLInputElement>('[data-eff-name]')!.value.trim().slice(0, 40);
+      if (!name) { p.querySelector<HTMLInputElement>('[data-eff-name]')!.focus(); return; }
+      const token = p.querySelector<HTMLSelectElement>('[data-eff-token]')!.value || undefined;
+      await api.effect(live.boardId, { action: 'add', name, token });
+    } else if (action === 'del' && id) await api.effect(live.boardId, { action: 'del', id });
+  } catch (e) { toast('No se pudo: ' + (e as Error).message, true); }
+}
+
 function roundAction(action: string, id?: string) {
-  if (!board || !isGM()) return;
+  if (!board) return;
+  if (!isGM()) { playerEffect(action, id); return; }
   const p = $('round-panel');
   if (action === 'next') {
     const r = roundEdit();
     r.n++;
-    const ended = r.effects.filter(f => f.left <= 1);
-    r.effects = r.effects.filter(f => f.left > 1).map(f => ({ ...f, left: f.left - 1 }));
+    const ended = r.effects.filter(f => !f.up && f.left <= 1);
+    r.effects = r.effects.filter(f => f.up || f.left > 1).map(f => (f.up ? { ...f, up: f.up + 1 } : { ...f, left: f.left - 1 }));
     for (const it of B().items) delete it.used;   // everyone's actions and reactions back
     toast(`Ronda ${r.n}` + (ended.length ? ` · terminan: ${ended.map(f => f.name + (f.token ? ` (${B().items.find(i => i.id === f.token)?.name || 'token'})` : '')).join(', ')}` : ''));
   } else if (action === 'start') {
@@ -1017,12 +1082,14 @@ function roundAction(action: string, id?: string) {
   renderRoundChip();
   renderRoundPanel();
 }
-$('round-btn').addEventListener('click', () => {
+function toggleRoundPanel() {
   const p = $('round-panel');
   p.hidden = !p.hidden;
   $('round-btn').classList.toggle('on', !p.hidden);
   renderRoundPanel();
-});
+}
+$('round-btn').addEventListener('click', toggleRoundPanel);
+$('round-chip').addEventListener('click', toggleRoundPanel);   // (players: their way in)
 $('round-panel').addEventListener('click', e => {
   const b = (e.target as HTMLElement).closest<HTMLElement>('[data-round]');
   if (b) roundAction(b.dataset.round!, b.dataset.id);
@@ -1242,6 +1309,8 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
       entries.push([tokens.some(i => i.sheet) ? 'Cambiar ficha…' : 'Elegir ficha…', tokens.length > 1 ? `${tokens.length} tokens` : '', () => chooseSheet(tokens, at)]);
       if (tokens.some(i => i.sheet)) entries.push(['Barras desde la ficha', 'llenas', () => resetBars(tokens)]);
       if (isGM()) entries.push(['💡 Luz y visión…', 'iluminación', () => openLightVision(tokens, at)]);
+      if (isGM() && levelsOf(B()).length > 1)
+        entries.push(...levelsOf(B()).filter(l => l.id !== view.level).map(l => [`⇅ Llevar a «${l.name}»`, 'nivel', () => toLevel(tokens, l.id)] as Entry));
       if (isGM()) {
         const shown = tokens.every(i => i.barsShown);
         entries.push([`${shown ? '☑' : '☐'} Barras visibles para todos`, 'si no, solo quien lo controla', () => {
@@ -1254,6 +1323,13 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
     if (kindOf(item) === 'image') {
       if (item.layer === 'map' && isGM()) entries.push(['Ajustar la página a este mapa', '', () => fitPageToMap(item, false)],
         ['Ajustar cuadrícula y página al mapa…', 'casillas', () => fitPageToMap(item, true)]);
+      if (isGM()) {
+        const roof = sel.every(i => i.roof);
+        entries.push([`${roof ? '☑' : '☐'} Tejado`, 'se abre al entrar', () => {
+          sel.filter(i => kindOf(i) === 'image').forEach(i => { if (roof) delete i.roof; else i.roof = true; });
+          view.render(); commit();
+        }]);
+      }
       else entries.push(...[1, 2, 3, 4].map(n => [`Tamaño ${n}×${n}`, 'casillas', () => setCells(n)] as Entry));
     }
     // who controls it: the GM, and the players who control it, can share it
@@ -1271,7 +1347,26 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
       ['Copiar', 'Ctrl+C', copySelection],
       ['Eliminar', 'Supr', deleteSelected]);
   } else {
-    entries.push(['Pegar aquí', 'Ctrl+V', () => pasteItems(view.clientToWorld(at.x, at.y))], ['Ver toda la página', '', () => view.fit()]);
+    const w = view.clientToWorld(at.x, at.y);
+    entries.push(['Pegar aquí', 'Ctrl+V', () => pasteItems(w)], ['Ver toda la página', '', () => view.fit()]);
+    if (isGM()) {
+      const door = doorAt(w), portal = portalAt(B(), view.level, w);
+      entries.push(['-', '', () => {}], ['§Escena', '', () => {}]);
+      if (door) entries.push([door.open ? '🚪 Cerrar la puerta' : '🚪 Abrir la puerta', '', () => toggleDoor(door.id)]);
+      if (portal) entries.push(['🚪 Portal: opciones…', portal.name, () => editPortal($('portal-panel'), portal, at, portalHost)],
+        ['🗑 Eliminar el portal', '', () => { B().portals = (B().portals || []).filter(x => x.id !== portal.id); view.render(); commit(); }]);
+      else entries.push(['🚪 Portal aquí…', 'escaleras, puertas', () => {
+        const p = newPortal(B(), view.level, w);
+        B().portals = [...(B().portals || []), p];
+        view.render(); commit();
+        editPortal($('portal-panel'), p, at, portalHost);
+      }]);
+      entries.push(['📍 Punto de llegada aquí', 'quien venga de otra escena', () => {
+        const g = B().grid.size;
+        B().arrival = { x: Math.floor(w.x / g) * g + g / 2, y: Math.floor(w.y / g) * g + g / 2, level: view.level };
+        view.render(); commit(); toast('Punto de llegada: aquí aparecerán los tokens que lleguen de otra escena');
+      }]);
+    }
   }
   const title = item ? (sel.length > 1 ? `${sel.length} seleccionados` : item.name || (kindOf(item) === 'text' ? 'Texto' : kindOf(item) === 'path' ? 'Dibujo' : 'Imagen')) : 'Tablero';
   menu.innerHTML = `<div class="title">${esc(title)}</div>` + entries.map(([label, hint, , color], i) =>
@@ -1291,6 +1386,8 @@ document.addEventListener('pointerdown', e => {
   if (!t?.closest?.('#share-panel, #share-btn')) $('share-panel').hidden = true;
   if (!t?.closest?.('#status-panel, #status-btn')) statusPanel.hidden = true;
   if (!t?.closest?.('#lv-panel, #menu')) $('lv-panel').hidden = true;
+  if (!t?.closest?.('#portal-panel, #menu')) $('portal-panel').hidden = true;
+  if (!t?.closest?.('#scenes-panel, #scenes-btn, #campaign-pick') && scenesPanel.open) $('scenes-panel').hidden = true;
 });
 
 // ── ruler: lines, radii and cones in squares ────────────────────────────────
@@ -1362,6 +1459,7 @@ let wallHover: Pt | null = null;
 let lastWallClick = 0;
 let lightDrag = false;
 let fogDown: Pt | null = null;   // where a click started (a click without moving selects)
+let fogHoverArea = '';           // the hidden / revealed area under the pointer (its outline shows)
 
 /** The board's fog settings, created on first use (changes go to everyone as a board setting) */
 function fogEdit() {
@@ -1379,7 +1477,7 @@ function fogChanged(now = true) {
 
 // what this screen shows: the GM everything (or as the players), a player what their tokens see
 view.fogView = () => {
-  const b = B(), items = b.items.filter(i => i.layer !== 'gm');
+  const b = view.levelBoard(), items = b.items.filter(i => i.layer !== 'gm' && view.here(i));
   const lights = lightsOf(b, items);
   if (!PLAYER && !fogPreview) return { mode: 'gm', viewers: [], lights };
   const mine = PLAYER ? items.filter(i => i.layer === 'tokens' && me?.pid && (i.controllers || []).includes(me.pid)) : items.filter(i => i.layer === 'tokens');
@@ -1389,13 +1487,15 @@ view.fogView = () => {
 // the GM's marks while the tool is open: walls, lights, hidden areas, what is being drawn
 view.fogMarks = (g, z) => {
   if (PLAYER || view.tool !== 'fog' || !board) return;
-  const f = fogOf(B()), cell = B().grid.size;
+  const all = fogOf(B()), cell = B().grid.size, here = (x: { level?: string }) => view.here(x);
+  const f = { ...all, areas: all.areas.filter(here), walls: all.walls.filter(here), lights: all.lights.filter(here) };
   const sel = (kind: string, id: string) => fogSel?.kind === kind && fogSel.id === id;
-  for (const a of f.areas) g.rect(a.x, a.y, a.w, a.h).stroke({ width: (sel('area', a.id) ? 3 : 1.5) / z, color: sel('area', a.id) ? 0xffffff : a.op === 'hide' ? 0xe05050 : 0x50c050, alpha: 0.9 });
+  // areas: no outline once made (the fog shows them), only the one selected or under the pointer
+  for (const a of f.areas.filter(x => sel('area', x.id) || x.id === fogHoverArea)) g.rect(a.x, a.y, a.w, a.h).stroke({ width: (sel('area', a.id) ? 3 : 1.5) / z, color: sel('area', a.id) ? 0xffffff : a.op === 'hide' ? 0xe05050 : 0x50c050, alpha: 0.9 });
   for (const w of f.walls) {
     g.moveTo(w.pts[0], w.pts[1]);
     for (let i = 2; i < w.pts.length; i += 2) g.lineTo(w.pts[i], w.pts[i + 1]);
-    g.stroke({ width: (sel('wall', w.id) ? 6 : 4) / z, color: sel('wall', w.id) ? 0xffffff : 0xff9f1c, cap: 'round', join: 'round' });
+    g.stroke({ width: (sel('wall', w.id) ? 6 : 4) / z, color: sel('wall', w.id) ? 0xffffff : w.door ? (w.open ? 0x50c050 : 0xb07030) : 0xff9f1c, cap: 'round', join: 'round', alpha: w.door && w.open ? 0.6 : 1 });
   }
   for (const l of f.lights) {
     g.circle(l.x, l.y, Math.max(l.bright, l.dim) * cell).stroke({ width: 1 / z, color: 0xfff200, alpha: 0.4 });
@@ -1426,7 +1526,8 @@ function fogSnap(p: Pt, free: boolean, middle = false): Pt {
 
 /** The light, wall or hidden area under a point (in that order); for walls, how close to a corner */
 function fogHit(p: Pt): { kind: 'light' | 'wall' | 'area'; id: string; corner?: boolean } | null {
-  const f = fogOf(B()), cell = B().grid.size, tol = 10 / view.zoom;
+  const all = fogOf(B()), cell = B().grid.size, tol = 10 / view.zoom, here = (x: { level?: string }) => view.here(x);
+  const f = { ...all, areas: all.areas.filter(here), walls: all.walls.filter(here), lights: all.lights.filter(here) };
   const l = [...f.lights].reverse().find(x => Math.hypot(x.x - p.x, x.y - p.y) < cell * 0.6);
   if (l) return { kind: 'light', id: l.id };
   for (const w of [...f.walls].reverse()) {
@@ -1454,13 +1555,17 @@ function fogPointer(kind: 'down' | 'move' | 'up' | 'hover', p: Pt, free: boolean
   if (kind === 'down') fogDown = p;
   const clicked = kind === 'up' && !!fogDown && Math.hypot(p.x - fogDown.x, p.y - fogDown.y) < 6 / view.zoom;
   if (fogMode === 'hide' || fogMode === 'reveal') {
+    if (kind === 'hover' || kind === 'up') {
+      const hit = fogDrag ? null : fogHit(p), id = hit?.kind === 'area' ? hit.id : '';
+      if (id !== fogHoverArea) { fogHoverArea = id; view.drawFogMarks(); }
+    }
     if (kind === 'down') fogDrag = { start: fogSnap(p, free), now: fogSnap(p, free) };
     else if (kind === 'move' && fogDrag) fogDrag.now = fogSnap(p, free);
     else if (kind === 'up' && fogDrag) {
       const r = rectOf(fogDrag.start, fogDrag.now);
       fogDrag = null;
       if (clicked || r.w <= 4 || r.h <= 4) selectFog(fogHit(p));   // a click: what is there, and its options
-      else { fogEdit().areas.push({ id: uid(), op: fogMode, ...r }); fogChanged(); }
+      else { fogEdit().areas.push({ id: uid(), op: fogMode, ...r, level: view.level }); fogChanged(); }
     }
     view.drawFogMarks();
   } else if (fogMode === 'wall') {
@@ -1486,7 +1591,7 @@ function fogPointer(kind: 'down' | 'move' | 'up' | 'hover', p: Pt, free: boolean
     if (kind === 'down') {
       const hit = fogHit(p);
       if (hit) { selectFog(hit); lightDrag = hit.kind === 'light'; return; }
-      const c = fogSnap(p, free, true), l = { id: uid(), x: c.x, y: c.y, bright: 4, dim: 8 };
+      const c = fogSnap(p, free, true), l = { id: uid(), x: c.x, y: c.y, bright: 4, dim: 8, level: view.level };
       fogEdit().lights.push(l);
       selectFog({ kind: 'light', id: l.id });
       fogChanged();
@@ -1511,7 +1616,7 @@ function deleteFogSel() {
 }
 
 function finishWall() {
-  if (wallDraft && wallDraft.length >= 4) { fogEdit().walls.push({ id: uid(), pts: wallDraft }); wallDraft = null; fogChanged(); }
+  if (wallDraft && wallDraft.length >= 4) { fogEdit().walls.push({ id: uid(), pts: wallDraft, level: view.level }); wallDraft = null; fogChanged(); }
   wallDraft = null;
   wallHover = null;
   if (board) view.drawFogMarks();
@@ -1548,7 +1653,9 @@ function renderFogSel() {
   box.innerHTML = l ? `<div class="fog-sec">💡 Fuente de luz</div>
       <div class="row2"><label>Luz brillante (casillas)<input class="inp" type="number" min="0" max="60" data-light="bright" value="${l.bright}"></label>
         <label>Hasta luz tenue<input class="inp" type="number" min="0" max="60" data-light="dim" value="${l.dim}"></label></div>${del}`
-    : w ? `<div class="fog-sec">▮ Pared</div><small class="muted">${w.pts.length / 2 - 1} ${w.pts.length / 2 - 1 === 1 ? 'tramo' : 'tramos'}: bloquea la luz y la vista</small>${del}`
+    : w ? `<div class="fog-sec">▮ ${w.door ? 'Puerta' : 'Pared'}</div><small class="muted">${w.pts.length / 2 - 1} ${w.pts.length / 2 - 1 === 1 ? 'tramo' : 'tramos'}: ${w.door && w.open ? 'abierta, deja pasar la luz y la vista' : 'bloquea la luz y la vista'}</small>
+      <label class="check"><input type="checkbox" data-wall="door" ${w.door ? 'checked' : ''}> Es una puerta</label>
+      ${w.door ? `<button class="btn small" data-wall="toggle">${w.open ? '🚪 Cerrar' : '🚪 Abrir'} la puerta</button>` : ''}${del}`
     : `<div class="fog-sec">▭ Zona</div>
       <div class="fog-modes"><button class="chip ${a!.op === 'hide' ? 'on' : ''}" data-area-op="hide">Oculta</button>
         <button class="chip ${a!.op === 'reveal' ? 'on' : ''}" data-area-op="reveal">Revelada</button></div>${del}`;
@@ -1561,6 +1668,7 @@ $('fog-opts').addEventListener('click', e => {
   const d = t.closest<HTMLElement>('[data-dark]');
   if (d && board) { fogEdit().darkness = +d.dataset.dark!; renderFogPanel(); fogChanged(); }
   if (t.closest('[data-fog-del]')) deleteFogSel();
+  if (t.closest('[data-wall="toggle"]') && fogSel?.kind === 'wall') toggleDoor(fogSel.id);
   const op = t.closest<HTMLElement>('[data-area-op]');
   if (op && fogSel?.kind === 'area') {
     const a = fogEdit().areas.find(x => x.id === fogSel!.id);
@@ -1578,10 +1686,43 @@ $('fog-opts').addEventListener('input', e => {
   }
 });
 $('fog-opts').addEventListener('keydown', e => e.stopPropagation());
+$('fog-opts').addEventListener('change', e => {
+  const t = e.target as HTMLInputElement;
+  if (t.dataset.wall !== 'door' || fogSel?.kind !== 'wall') return;
+  const w = fogEdit().walls.find(x => x.id === fogSel!.id);
+  if (!w) return;
+  const i = fogEdit().walls.indexOf(w);
+  B().fog!.walls[i] = t.checked ? { ...w, door: true, open: false } : (({ door: _d, open: _o, ...rest }) => rest)(w);
+  renderFogSel();
+  fogChanged();
+});
+
+/** Open or close a door (a wall marked as door): open, light and sight go through */
+function toggleDoor(id: string) {
+  const f = fogEdit(), i = f.walls.findIndex(x => x.id === id);
+  if (i < 0) return;
+  f.walls[i] = { ...f.walls[i], open: !f.walls[i].open };
+  renderFogSel();
+  fogChanged();
+}
+
+/** The door near a point on this level */
+function doorAt(p: Pt) {
+  const tol = 14 / view.zoom;
+  return fogOf(B()).walls.find(w => w.door && view.here(w) && w.pts.length >= 4 && (() => {
+    for (let i = 0; i + 3 < w.pts.length; i += 2) {
+      const [x1, y1, x2, y2] = w.pts.slice(i, i + 4), dx = x2 - x1, dy = y2 - y1;
+      const t = Math.max(0, Math.min(1, ((p.x - x1) * dx + (p.y - y1) * dy) / (dx * dx + dy * dy || 1)));
+      if (Math.hypot(x1 + dx * t - p.x, y1 + dy * t - p.y) < tol) return true;
+    }
+    return false;
+  })());
+}
 $('fog-on').addEventListener('change', e => { fogEdit().on = (e.target as HTMLInputElement).checked; renderFogPanel(); fogChanged(); });
 $('fog-preview').addEventListener('change', e => { fogPreview = (e.target as HTMLInputElement).checked; view.refreshFog(); });
-$('fog-hide-all').addEventListener('click', () => { const f = fogEdit(); f.base = 'hidden'; f.areas = []; fogChanged(); });
-$('fog-show-all').addEventListener('click', () => { const f = fogEdit(); f.base = 'visible'; f.areas = []; fogChanged(); });
+// (the areas of this level go; "hidden" is for the whole scene)
+$('fog-hide-all').addEventListener('click', () => { const f = fogEdit(); f.base = 'hidden'; f.areas = f.areas.filter(a => !view.here(a)); fogChanged(); });
+$('fog-show-all').addEventListener('click', () => { const f = fogEdit(); f.base = 'visible'; f.areas = f.areas.filter(a => !view.here(a)); fogChanged(); });
 
 /** A token's light and field of view (GM): right-click → Luz y visión */
 function openLightVision(items: BoardItem[], at: Pt) {
@@ -1617,6 +1758,268 @@ function openLightVision(items: BoardItem[], at: Pt) {
   panel.querySelector('[data-lv-close]')!.addEventListener('click', () => { panel.hidden = true; });
 }
 
+// ── levels: which one this screen shows ─────────────────────────────────────
+/** The GM: the level chosen. A player: the level of their selected token, else of one of theirs */
+function followLevel() {
+  if (!board) return;
+  const b = B(), levels = levelsOf(b);
+  if (!levels.some(l => l.id === view.level)) view.setLevel(levels[0].id);
+  if (PLAYER && me?.pid) {
+    const mine = b.items.filter(i => i.layer === 'tokens' && (i.controllers || []).includes(me!.pid!));
+    const lead = view.selectedItems().find(i => mine.includes(i)) || mine.find(i => view.here(i)) || mine[0];
+    if (lead && !view.here(lead)) view.setLevel(levelOf(b, lead));
+  }
+  levelBar.render();
+}
+
+function setLevel(id: string) {
+  closeTextEditor(true);
+  finishWall();
+  fogSel = null;
+  view.setLevel(id);
+  if (view.tool === 'fog') renderFogPanel();
+  levelBar.render();
+}
+
+let roofsShown = true;
+const levelBar = new LevelBar($('level-bar'), {
+  board: () => board,
+  level: () => view.level,
+  setLevel,
+  gm: !PLAYER,
+  changed() { view.render(); commit(); followLevel(); },
+  roofs: { get shown() { return roofsShown; }, toggle() { roofsShown = !roofsShown; view.roofAlpha = roofsShown ? 0.8 : 0.12; view.applyRoofs(); } },
+  importMap,
+});
+
+/** Tokens to another level of the scene (the GM, from the token's menu) */
+function toLevel(items: BoardItem[], level: string) {
+  const b = B();
+  for (const it of items) { if (level === firstLevel(b)) delete it.level; else it.level = level; }
+  view.select([]);
+  view.render();
+  commit();
+  toast(`${items.length === 1 ? items[0].name || 'Token' : `${items.length} tokens`} → ${levelName(b, level)}`);
+}
+
+// ── roofs: closed over the tokens; open (gone) when a token of yours is under them ──
+let roofViewers: BoardItem[] = [];
+view.roofAlpha = PLAYER ? 1 : 0.8;
+view.roofCells = () => {
+  if (!board) return new Set();
+  const b = B(), g = b.grid.size;
+  // a player: their tokens; the GM: the players' tokens, and the ones selected
+  roofViewers = b.items.filter(i => isToken(i) && i.layer === 'tokens' && view.here(i)
+    && (PLAYER ? !!me?.pid && (i.controllers || []).includes(me.pid) : (i.controllers || []).length > 0 || view.selected.has(i.id)));
+  return openRoofCells(b, view.level, roofViewers.map(t => [Math.floor((t.x + t.w / 2) / g), Math.floor((t.y + t.h / 2) / g)]));
+};
+view.roofOpen = roof => roofViewers.some(t => {
+  const a = -(roof.rotation || 0) * Math.PI / 180, cx = roof.x + roof.w / 2, cy = roof.y + roof.h / 2;
+  const px = t.x + t.w / 2 - cx, py = t.y + t.h / 2 - cy;
+  return Math.abs(px * Math.cos(a) - py * Math.sin(a)) <= roof.w / 2 && Math.abs(px * Math.sin(a) + py * Math.cos(a)) <= roof.h / 2;
+});
+
+// ── portals ─────────────────────────────────────────────────────────────────
+// Drawn under the tokens: violet (to another level) or blue (to another scene). The GM also
+// sees the arrival point (📍) and the doors (brown closed, green open).
+view.levelMarks = (g, z) => {
+  if (!board) return;
+  const b = B(), s = b.grid.size;
+  for (const p of (b.portals || []).filter(x => view.here(x))) {
+    const color = p.to.scene ? 0x4fc3f7 : 0xb388ff, dead = !p.to.scene && !p.to.level;
+    if (dead && PLAYER) continue;
+    g.rect(p.x, p.y, p.w, p.h).fill({ color, alpha: 0.14 }).stroke({ width: 2 / z, color, alpha: dead ? 0.4 : 0.9 });
+    const cx = p.x + p.w / 2, cy = p.y + p.h / 2, r = Math.min(p.w, p.h) * 0.28;
+    if (p.to.scene) g.moveTo(cx - r, cy).lineTo(cx + r, cy).moveTo(cx + r * 0.4, cy - r * 0.6).lineTo(cx + r, cy).lineTo(cx + r * 0.4, cy + r * 0.6);   // → elsewhere
+    else for (let k = 0; k < 3; k++) g.moveTo(cx - r + k * r * 0.66, cy + r - k * r * 0.66).lineTo(cx - r + (k + 1) * r * 0.66, cy + r - k * r * 0.66).lineTo(cx - r + (k + 1) * r * 0.66, cy + r - (k + 1) * r * 0.66);   // stairs
+    g.stroke({ width: Math.max(2 / z, s * 0.04), color, alpha: dead ? 0.4 : 1, cap: 'round', join: 'round' });
+  }
+  if (PLAYER) return;
+  if (b.arrival && view.here(b.arrival)) {
+    const { x, y } = b.arrival, r = s * 0.3;
+    g.circle(x, y - r * 0.6, r * 0.55).fill({ color: 0xff5252 }).stroke({ width: 2 / z, color: 0x000000 });
+    g.moveTo(x - r * 0.35, y - r * 0.4).lineTo(x, y + r * 0.6).lineTo(x + r * 0.35, y - r * 0.4).fill({ color: 0xff5252 });
+  }
+  if (view.tool !== 'fog') for (const w of fogOf(b).walls.filter(x => x.door && view.here(x))) {
+    g.moveTo(w.pts[0], w.pts[1]);
+    for (let i = 2; i < w.pts.length; i += 2) g.lineTo(w.pts[i], w.pts[i + 1]);
+    g.stroke({ width: 4 / z, color: w.open ? 0x50c050 : 0xb07030, alpha: 0.8, cap: 'round' });
+  }
+};
+
+const portalHost = {
+  board: B,
+  gm: !PLAYER,
+  changed() { view.render(); commit(); },
+  pickPoint,
+  close() { $('portal-panel').hidden = true; },
+};
+
+// choosing a point on the board (a portal's way out): the next click
+let pickDone: ((p: Pt) => void) | null = null;
+function pickPoint(level: string, done: (p: Pt) => void) {
+  setLevel(level);
+  pickDone = done;
+  toast('Haz clic donde se sale en este nivel (Esc: cancelar)');
+}
+$('stage').addEventListener('pointerdown', e => {
+  if (!pickDone || e.button !== 0) return;
+  e.stopPropagation();
+  e.preventDefault();
+  const p = view.clientToWorld(e.clientX, e.clientY), g = B().grid.size, done = pickDone;
+  pickDone = null;
+  done({ x: Math.floor(p.x / g) * g + g / 2, y: Math.floor(p.y / g) * g + g / 2 });
+  toast('Salida elegida');
+}, true);
+
+const AROUND = [[0, 0], [1, 0], [0, 1], [-1, 0], [0, -1], [1, 1], [-1, 1], [1, -1], [-1, -1], [2, 0], [0, 2], [-2, 0], [0, -2]];
+
+/** Tokens just dropped on a portal go where it leads: another level here, or another scene */
+async function throughPortals(ids: string[]) {
+  if (!board) return;
+  const b = B(), groups = new Map<Portal, BoardItem[]>();
+  for (const id of ids) {
+    const it = view.item(id);
+    if (!it || !isToken(it) || !canEdit(it)) continue;
+    const p = portalAt(b, levelOf(b, it), { x: it.x + it.w / 2, y: it.y + it.h / 2 });
+    if (p && (p.to.scene || (p.to.level && levelsOf(b).some(l => l.id === p.to.level)))) groups.set(p, [...(groups.get(p) || []), it]);
+  }
+  for (const [p, items] of groups) {
+    const names = items.length === 1 ? items[0].name || 'Token' : `${items.length} tokens`;
+    if (p.to.scene) {
+      await live?.flush();
+      try { await api.portal(b.id, p.id, items.map(i => i.id)); toast(`${names} cruza «${p.name || 'el portal'}»`); }
+      catch (e) { toast('No se pudo: ' + (e as Error).message, true); }
+      continue;
+    }
+    const g = b.grid.size, to = p.to.level!;
+    items.forEach((it, i) => {
+      const [dx, dy] = AROUND[i % AROUND.length];
+      const cx = p.to.x ?? it.x + it.w / 2, cy = p.to.y ?? it.y + it.h / 2;
+      it.x = (Math.floor(cx / g) + dx) * g + g / 2 - it.w / 2;
+      it.y = (Math.floor(cy / g) + dy) * g + g / 2 - it.h / 2;
+      if (to === firstLevel(b)) delete it.level; else it.level = to;
+    });
+    setLevel(to);   // (the view follows the tokens)
+    view.render();
+    commit();
+    toast(`${names} → ${levelName(b, to)}`);
+  }
+}
+
+// ── scenes (GM) ─────────────────────────────────────────────────────────────
+const scenesPanel = new ScenesPanel($('scenes-panel'), {
+  board: () => board,
+  presence: () => presence,
+  open(id) { refreshBoardList(id).then(() => openBoard(id)); },
+  refreshPicker: refreshBoardList,
+  thumb(id) { const m = library.get(id); return m ? imageUrl(m) : null; },
+  importMap,
+  toast,
+});
+$('scenes-btn').addEventListener('click', () => scenesPanel.toggle());
+
+/** A player taken to another scene (by the GM, or through a portal) */
+function travelTo(bid: string) {
+  if (!PLAYER) return;
+  $('travel').hidden = false;
+  windows.closeAll();
+  connect(bid);
+}
+/** The scene is here: the journey's curtain goes */
+function arrived(b: Board) {
+  if ($('travel').hidden) return;
+  setTimeout(() => { $('travel').hidden = true; }, 300);
+  toast(`📍 ${b.name}`);
+}
+
+/** A map from Dungeondraft, Dungeon Alchemist… (Universal VTT): a new scene, or a new level of this one,
+ *  with its picture, walls, doors and lights */
+const count = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
+async function importMap(file: File, asLevel: boolean) {
+  if (PLAYER) return;
+  setStatus('Importando el mapa…', 'saving');
+  try {
+    const map = await readUvtt(file);
+    const bmp = await createImageBitmap(map.image);
+    const meta = await api.upload(map.image, { name: map.name, category: 'Mapas', width: bmp.width, height: bmp.height, tags: ['importado'] });
+    bmp.close();
+    if (!library.get(meta.id)) library.list.push(meta);
+    library.render();
+    view.setImages(library.list);
+    if (asLevel && board) {
+      const b = B(), g = b.grid.size, lv = { id: uid(), name: map.name.slice(0, 40) };
+      b.levels = [...levelsOf(b).map(l => ({ ...l })), lv];
+      b.items.push({ id: uid(), kind: 'image', image: meta.id, x: 0, y: 0, w: map.cols * g, h: map.rows * g, rotation: 0, layer: 'map', z: nextZ('map'), name: map.name, locked: true, level: lv.id });
+      const f = fogEdit(), add = map.fog(g, lv.id);
+      f.walls.push(...add.walls);
+      f.lights.push(...add.lights);
+      if (add.walls.length) f.on = true;
+      b.width = Math.max(b.width, map.cols);
+      b.height = Math.max(b.height, map.rows);
+      view.render();
+      commit();
+      setLevel(lv.id);
+      fillGridPanel();
+      toast(`Nivel «${lv.name}»: ${count(add.walls.length, 'pared', 'paredes')} y puertas, ${count(add.lights.length, 'luz', 'luces')}`);
+    } else {
+      const g = 70, add = map.fog(g);
+      const nb = await api.createBoard(map.name, {
+        width: map.cols, height: map.rows,
+        items: [{ id: uid(), kind: 'image', image: meta.id, x: 0, y: 0, w: map.cols * g, h: map.rows * g, rotation: 0, layer: 'map', z: 1, name: map.name, locked: true }],
+        fog: { ...DEFAULT_FOG, on: add.walls.length > 0, darkness: 0, ...add },
+      }, scenesPanel.open ? scenesPanel.campaign : board ? boardCampaign[board.id] : '');
+      await refreshBoardList(nb.id);
+      openBoard(nb.id);
+      toast(`Escena «${nb.name}»: ${map.cols}×${map.rows} casillas, ${count(add.walls.length, 'pared', 'paredes')} y puertas, ${count(add.lights.length, 'luz', 'luces')}`);
+    }
+  } catch (e) { toast('No se pudo importar el mapa: ' + (e as Error).message, true); }
+  setStatus('Conectado');
+}
+
+// ── 🧱 tiles (GM) ────────────────────────────────────────────────────────────
+const tileTags = new TileTags();
+/** An image with a new picture (from the 🧩 dialog, or the server telling everyone) */
+function imageChanged(m: ImageMeta) {
+  const i = library.list.findIndex(x => x.id === m.id), old = i >= 0 ? library.list[i] : undefined;
+  if (old) library.list[i] = m; else if (!PLAYER) library.list.push(m);
+  if (old && old.file !== m.file) view.forgetImage(m.id);
+  library.render();
+  view.setImages(library.list);
+  if (!$('tile-opts').hidden) painter.render();
+}
+/** 🧩 single tiles: pasted pictures, each with its rule and tags */
+const tileDialog = new TileDialog($('tile-add'), tileTags, {
+  imageUrl: m => imageUrl(m),
+  saved(m) {
+    imageChanged(m);
+    painter.added(m);
+  },
+  toast,
+});
+const painter = new TilePainter($('tile-opts'), {
+  tags: tileTags,
+  addTiles: () => tileDialog.show(),
+  editTile: m => tileDialog.edit(m),
+  board: () => board,
+  view,
+  images: () => library.list.filter(m => !m.owner),
+  imageUrl: m => imageUrl(m),
+  commit,
+  toast,
+  upload: files => library.upload(files, 'Tilesets'),
+  async saveTileset(id, tileset) {
+    try {
+      const r = await api.updateImage(id, { tileset: tileset ?? null } as never);
+      const m = library.get(id);
+      if (m) { if (r.tileset) m.tileset = r.tileset; else delete m.tileset; }
+      library.render();
+      view.setImages(library.list);
+    } catch (e) { toast('No se pudo guardar el tileset: ' + (e as Error).message, true); }
+  },
+});
+view.tileMarks = (g, z) => { if (view.tool === 'tiles' && !PLAYER) painter.marks(g, z); };
+
 // ── toolbar: tools, layers, zoom ────────────────────────────────────────────
 function setTool(t: Tool) {
   closeTextEditor(true);
@@ -1628,9 +2031,11 @@ function setTool(t: Tool) {
   $('text-opts').hidden = t !== 'text';
   $('ruler-opts').hidden = t !== 'ruler';
   $('fog-opts').hidden = t !== 'fog';
+  $('tile-opts').hidden = t !== 'tiles';
   if (t === 'fog') renderFogPanel();
+  if (t === 'tiles') painter.render(); else painter.leave();
   view.drawFogMarks();
-  if (t === 'draw' || t === 'text' || t === 'ruler' || t === 'fog') { $('grid-panel').hidden = true; $('grid-btn').classList.remove('on'); }
+  if (t === 'draw' || t === 'text' || t === 'ruler' || t === 'fog' || t === 'tiles') { $('grid-panel').hidden = true; $('grid-btn').classList.remove('on'); }
 }
 
 // pencil / text options: colour swatches, colour picker, thickness / size
@@ -1725,13 +2130,16 @@ document.addEventListener('keydown', e => {
   else if (ctrl && k === 'a') { e.preventDefault(); view.select(board.items.filter(i => i.layer === view.activeLayer && canEdit(i)).map(i => i.id)); }
   else if ((k === 'delete' || k === 'backspace') && view.tool === 'fog' && fogSel) { e.preventDefault(); deleteFogSel(); }
   else if (k === 'delete' || k === 'backspace') { e.preventDefault(); deleteSelected(); }
-  else if (k === 'escape') { view.select([]); $('menu').hidden = true; showMyRuler(null, true); wallDraft = null; view.drawFogMarks(); }
+  else if (k === 'escape') { view.select([]); $('menu').hidden = true; showMyRuler(null, true); wallDraft = null; pickDone = null; painter.leave(); view.drawFogMarks(); }
+  else if (view.tool === 'tiles' && !ctrl && (k === 'q' || k === 'e')) painter.turn(k === 'e' ? 1 : -1);
+  else if (view.tool === 'tiles' && !ctrl && k === 'f') painter.flip();
   else if (k === 'v' && !ctrl) setTool('select');
   else if (k === 'h' && !ctrl) setTool('pan');
   else if (k === 'b' && !ctrl) setTool('draw');
   else if (k === 't' && !ctrl) setTool('text');
   else if (k === 'r' && !ctrl) setTool('ruler');
   else if (k === 'n' && !ctrl && isGM()) setTool('fog');
+  else if (k === 'm' && !ctrl && isGM()) setTool('tiles');
   else if (k === 'enter' && view.tool === 'fog') finishWall();
   else if (k.startsWith('arrow')) {
     e.preventDefault();
@@ -1745,7 +2153,8 @@ document.addEventListener('keyup', e => {
 
 // ── start ───────────────────────────────────────────────────────────────────
 // for the browser console (and tests): window.tablero.view / .board() / .me()
-(window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, statuses, music, board: () => board, me: () => me, presence: () => presence, live: () => live };
+(window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, statuses, music, painter, scenes: scenesPanel, levelBar,
+  board: () => board, me: () => me, presence: () => presence, live: () => live, importMap };
 (async () => {
   await view.init(stage);
   bindDoubleClick();

@@ -1,6 +1,6 @@
 // The Tablero server (tools/tablero.py). Every request carries this browser's key
 // (the GM's, or a player's from joining a room): the server decides what it may do.
-import type { Board, BoardSummary, Changes, ImageMeta, JoinInfo, RollRecord, RollTerm, RoomInfo, ShareStatus, SheetMeta } from './types';
+import type { Board, BoardSummary, Campaign, Changes, ImageMeta, JoinInfo, RollRecord, RollTerm, RoomInfo, ShareStatus, SheetMeta, TileTagCategory } from './types';
 import type { Playback, Playlist, Track } from './music';
 
 let KEY = '';
@@ -39,8 +39,18 @@ export const api = {
     fd.append('height', String(meta.height));
     return call<ImageMeta>('POST', '/api/images', fd);
   },
-  updateImage: (id: string, patch: Partial<Pick<ImageMeta, 'name' | 'category' | 'tags' | 'sheet'>>) =>
+  updateImage: (id: string, patch: Partial<Pick<ImageMeta, 'name' | 'category' | 'tags' | 'sheet' | 'tileset' | 'rule'>> | { tileset: null }) =>
     call<ImageMeta>('PATCH', `/api/images/${id}`, patch),
+  tileTags: () => call<TileTagCategory[]>('GET', '/api/tiletags'),
+  saveTileTags: (cats: TileTagCategory[]) => call<TileTagCategory[]>('PUT', '/api/tiletags', cats),
+  replaceImage: (id: string, file: Blob, width: number, height: number, tile?: number) => {
+    const fd = new FormData();
+    fd.append('file', file, (file as File).name || 'imagen.png');
+    fd.append('width', String(width));
+    fd.append('height', String(height));
+    if (tile) fd.append('tile', String(tile));
+    return call<ImageMeta>('POST', `/api/images/${id}/file`, fd);
+  },
   imageUsage: (id: string) => call<{ boards: string[] }>('GET', `/api/images/${id}/usage`),
   deleteImage: (id: string) => call<{ ok: boolean }>('DELETE', `/api/images/${id}`),
   sheets: () => call<SheetMeta[]>('GET', '/api/sheets'),
@@ -48,7 +58,18 @@ export const api = {
   uploadSheet: (data: unknown, name: string) => call<SheetMeta>('POST', '/api/sheets', { data, name }),
   deleteSheet: (id: string) => call<{ ok: boolean }>('DELETE', `/api/sheets/${encodeURIComponent(id)}`),
   boards: () => call<BoardSummary[]>('GET', '/api/boards'),
-  createBoard: (name: string) => call<Board>('POST', '/api/boards', { name }),
+  createBoard: (name: string, board?: Partial<Board>, campaign?: string) => call<Board>('POST', '/api/boards', { name, board, campaign }),
+  campaigns: () => call<Campaign[]>('GET', '/api/campaigns'),
+  createCampaign: (name: string) => call<Campaign>('POST', '/api/campaigns', { name }),
+  renameCampaign: (id: string, name: string) => call<Campaign>('PATCH', `/api/campaigns/${id}`, { name }),
+  deleteCampaign: (id: string) => call<{ ok: boolean }>('DELETE', `/api/campaigns/${id}`),
+  setSceneTags: (bid: string, tags: string[]) => call<{ ok: boolean; tags: string[] }>('POST', `/api/boards/${bid}/tags`, { tags }),
+  setCampaign: (bid: string, campaign: string) => call<{ ok: boolean }>('POST', `/api/boards/${bid}/campaign`, { campaign }),
+  renameBoard: (id: string, name: string) => call<{ ok: boolean }>('POST', `/api/boards/${id}/rename`, { name }),
+  duplicateBoard: (id: string) => call<{ id: string; name: string }>('POST', `/api/boards/${id}/duplicate`),
+  board: (id: string) => call<Board>('GET', `/api/boards/${id}`),
+  moveToScene: (to: string, players?: string[], tokens = true) => call<{ ok: boolean; room: boolean }>('POST', '/api/scenes/move', { to, players, tokens }),
+  portal: (bid: string, portal: string, tokens: string[]) => call<{ ok: boolean; scene: string }>('POST', `/api/live/${bid}/portal`, { portal, tokens }),
   deleteBoard: (id: string) => call<{ ok: boolean }>('DELETE', `/api/boards/${id}`),
   share: () => call<ShareStatus>('GET', '/api/share'),
   shareDo: (action: 'login' | 'setup' | 'start' | 'stop') => call<ShareStatus>('POST', '/api/share', { action }),
@@ -60,6 +81,8 @@ export const api = {
     call<{ ok: boolean; refused: (Board['items'][number] | { id: string; removed: true })[] }>('POST', `/api/live/${bid}/changes`, body),
   roll: (bid: string, body: { cid: string; terms: RollTerm[]; expr: string; label: string; token?: string }) =>
     call<RollRecord>('POST', `/api/live/${bid}/roll`, body),
+  effect: (bid: string, body: { action: 'add'; name: string; token?: string } | { action: 'del'; id: string }) =>
+    call<unknown>('POST', `/api/live/${bid}/effect`, body),
   ruler: (bid: string, body: { cid: string; shape: unknown }) => call<{ ok: boolean }>('POST', `/api/live/${bid}/ruler`, body),
   musicLibrary: () => call<{ tracks: Track[]; playlists: Playlist[] }>('GET', '/api/music'),
   musicUpload: (file: Blob, name: string, duration: number) => {

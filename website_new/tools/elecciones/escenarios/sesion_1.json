@@ -1,0 +1,91 @@
+{
+  "cands": {
+    "U": "Flavio Marqueda",
+    "S": "Gregorio Salgado"
+  },
+  "swing": 0,
+  "tie": "I",
+  "lean": 50,
+  "districts": [
+    {
+      "name": "Casco Antiguo",
+      "u": 45,
+      "s": 40,
+      "el": 14,
+      "pop": 120000
+    },
+    {
+      "name": "Ensanche",
+      "u": 60,
+      "s": 20,
+      "el": 20,
+      "pop": 40000
+    },
+    {
+      "name": "Distrito Portuario",
+      "u": 30,
+      "s": 35,
+      "el": 6,
+      "pop": 100000
+    },
+    {
+      "name": "Distrito Industrial",
+      "u": 25,
+      "s": 20,
+      "el": 4,
+      "pop": 200000
+    },
+    {
+      "name": "Ciudad Universitaria",
+      "u": 15,
+      "s": 60,
+      "el": 10,
+      "pop": 30000
+    },
+    {
+      "name": "Monte Kelsar",
+      "u": 70,
+      "s": 10,
+      "el": 6,
+      "pop": 10000
+    }
+  ],
+  "bodies": [
+    {
+      "name": "Grandes Casas",
+      "u": 4,
+      "s": 2,
+      "i": 3
+    },
+    {
+      "name": "Académicos",
+      "u": 0,
+      "s": 3,
+      "i": 3
+    },
+    {
+      "name": "Gremiales",
+      "u": 4,
+      "s": 1,
+      "i": 4
+    },
+    {
+      "name": "Eclesiásticos",
+      "u": 2,
+      "s": 1,
+      "i": 3
+    },
+    {
+      "name": "Militares",
+      "u": 3,
+      "s": 0,
+      "i": 1
+    },
+    {
+      "name": "Funcionarios",
+      "u": 4,
+      "s": 0,
+      "i": 2
+    }
+  ]
+}

@@ -3,12 +3,12 @@
 // The server pushes its changes as Server-Sent Events: "snapshot" (the whole board, and
 // the rolls this browser may see, on connecting), "changes" (what others did), "presence"
 // (who is in the room), "roll" (the GM gets everyone's, a player their own made on another
-// page), "closed".
+// page), "scene" (the GM, or a portal, took this player to another scene), "closed".
 // This browser sends what it changed as a diff against the last state both sides agreed
-// on (`synced`): items added or changed, items removed, board settings. The server
+// on (`synced`): items added or changed, items removed, board settings, tile chunks. The server
 // answers with what it refused (not allowed for this player), as it really is.
 import { api } from './api';
-import type { Board, BoardItem, Changes, Me, Presence, RollRecord, RulerEvent } from './types';
+import type { Board, BoardItem, Changes, ImageMeta, Me, Presence, RollRecord, RulerEvent } from './types';
 import type { Playback } from './music';
 
 export interface LiveHandlers {
@@ -25,15 +25,21 @@ export interface LiveHandlers {
   status(text: string, cls?: string): void;
   /** the room was closed, this player removed, or the board deleted */
   closed(info: { code?: string; kicked?: boolean; deleted?: boolean }): void;
+  /** this player is now in another scene (board) */
+  scene(board: string): void;
+  /** an image got a new picture (same id) */
+  image(meta: ImageMeta): void;
 }
 
-const settingsOf = (b: Board) => JSON.stringify({ name: b.name, width: b.width, height: b.height, background: b.background, grid: b.grid, fog: b.fog, round: b.round });
+const settingsOf = (b: Board) => JSON.stringify({ name: b.name, width: b.width, height: b.height, background: b.background, grid: b.grid,
+  fog: b.fog, round: b.round, levels: b.levels, portals: b.portals, arrival: b.arrival, tilesets: b.tilesets });
 
 export class Live {
   me: Me | null = null;
   private es: EventSource | null = null;
   private synced = new Map<string, string>();   // item id → JSON the server has
   private syncedSettings = '';
+  private syncedTiles = new Map<string, string>();   // tile chunk → what the server has
   private sending = false;
   private again: boolean | null = null;          // another push requested while one was in flight (true = live)
   private retry = 0;
@@ -53,8 +59,10 @@ export class Live {
     es.addEventListener('presence', e => this.h.presence(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('roll', e => this.h.roll(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('ruler', e => this.h.ruler(JSON.parse((e as MessageEvent).data)));
+    es.addEventListener('image', e => this.h.image(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('music', e => this.h.music(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('closed', e => { this.close(); this.h.closed(JSON.parse((e as MessageEvent).data)); });
+    es.addEventListener('scene', e => { this.close(); this.h.scene(JSON.parse((e as MessageEvent).data).board); });
     es.onerror = () => { if (this.es === es) this.h.status('Reconectando…', 'error'); };
   }
 
@@ -77,12 +85,13 @@ export class Live {
     this.me = me;
     board.items ||= [];
     this.adopt(board);
-    if (local && (local.upserts.length || local.removes.length || local.settings)) {
+    if (local && (local.upserts.length || local.removes.length || local.settings || local.tiles)) {
       const items = new Map(board.items.map(i => [i.id, i]));
       for (const it of local.upserts) items.set(it.id, it);
       for (const id of local.removes) items.delete(id);
       board.items = [...items.values()];
       if (local.settings) Object.assign(board, local.settings);
+      if (local.tiles) board.tiles = applyTiles(board.tiles, local.tiles);
     }
     this.h.snapshot(board, me, rolls || []);
     this.h.status('Conectado');
@@ -92,6 +101,7 @@ export class Live {
   private adopt(board: Board) {
     this.synced = new Map(board.items.map(i => [i.id, JSON.stringify(i)]));
     this.syncedSettings = settingsOf(board);
+    this.syncedTiles = new Map(Object.entries(board.tiles || {}));
   }
 
   /** After applying someone's changes locally: that is now the agreed state */
@@ -100,10 +110,20 @@ export class Live {
     for (const id of ch.removes) this.synced.delete(id);
     const b = this.board();
     if (ch.settings && b) this.syncedSettings = settingsOf({ ...b, ...ch.settings } as Board);
+    for (const [k, v] of Object.entries(ch.tiles || {})) { if (v) this.syncedTiles.set(k, v); else this.syncedTiles.delete(k); }
+  }
+
+  private tilesDiff(b: Board): Record<string, string | null> | undefined {
+    const out: Record<string, string | null> = {}, now = b.tiles || {};
+    let any = false;
+    for (const [k, v] of Object.entries(now)) if (this.syncedTiles.get(k) !== v) { out[k] = v; any = true; }
+    for (const k of this.syncedTiles.keys()) if (!(k in now)) { out[k] = null; any = true; }
+    return any ? out : undefined;
   }
 
   private hasDiff(b: Board) {
     if (settingsOf(b) !== this.syncedSettings || b.items.length !== this.synced.size) return true;
+    if (this.me?.role === 'gm' && this.tilesDiff(b)) return true;
     return b.items.some(i => this.synced.get(i.id) !== JSON.stringify(i));
   }
 
@@ -116,6 +136,7 @@ export class Live {
     const removes = [...this.synced.keys()].filter(id => !seen.has(id));
     const ch: Changes = { upserts, removes };
     if (this.me?.role === 'gm' && settingsOf(b) !== this.syncedSettings) ch.settings = JSON.parse(settingsOf(b));
+    if (this.me?.role === 'gm') { const t = this.tilesDiff(b); if (t) ch.tiles = t; }
     return ch;
   }
 
@@ -125,9 +146,9 @@ export class Live {
     if (!b || !this.me) return;
     if (this.sending) { this.again = this.again === false ? false : live; return; }
     const ch = this.diff(b);
-    if (!ch.upserts.length && !ch.removes.length && !ch.settings) return;
+    if (!ch.upserts.length && !ch.removes.length && !ch.settings && !ch.tiles) return;
     // count it as agreed now, so changes made while this is on its way are sent next
-    const prev = { synced: new Map(this.synced), settings: this.syncedSettings };
+    const prev = { synced: new Map(this.synced), settings: this.syncedSettings, tiles: new Map(this.syncedTiles) };
     this.markSynced(ch);
     this.sending = true;
     if (!live) this.h.status('Enviando…', 'saving');
@@ -146,6 +167,7 @@ export class Live {
     } catch (e) {
       this.synced = prev.synced;          // not delivered: send it again
       this.syncedSettings = prev.settings;
+      this.syncedTiles = prev.tiles;
       this.h.status('Sin conexión: reintentando…', 'error');
       clearTimeout(this.retry);
       this.retry = window.setTimeout(() => { this.retry = 0; this.push(); }, 1500);
@@ -154,4 +176,19 @@ export class Live {
     }
     if (this.again !== null) { const l = this.again; this.again = null; this.push(l); }
   }
+
+  /** Everything sent and answered (before asking the server to do something with it) */
+  async flush() {
+    for (let i = 0; i < 100 && (this.sending || this.retry || (this.board() && this.hasDiff(this.board()!))); i++) {
+      if (!this.sending) await this.push();
+      else await new Promise(r => setTimeout(r, 30));
+    }
+  }
+}
+
+/** Tile chunks with these changes (null: emptied) */
+export function applyTiles(tiles: Board['tiles'], ch: Record<string, string | null>) {
+  const out = { ...(tiles || {}) };
+  for (const [k, v] of Object.entries(ch)) { if (v) out[k] = v; else delete out[k]; }
+  return out;
 }

@@ -11,8 +11,8 @@
   <header class="top">
     <span class="brand">Tablero</span>
     <span class="gm-only top-group">
-      <select id="board-pick" class="inp" title="Tablero abierto"></select>
-      <button class="btn small" id="board-new" title="Nuevo tablero">＋ Nuevo</button>
+      <select id="campaign-pick" class="inp" title="Campaña: elige una para ver todas sus escenas"></select>
+      <button class="btn small scene-btn" id="scenes-btn" title="Escenas: abrirlas, crearlas, etiquetarlas y llevar al grupo de una a otra">🗺 <span id="scene-name">Escenas</span> ▾</button>
       <button class="btn small" id="board-rename" title="Cambiar el nombre">✎</button>
       <button class="btn small danger" id="board-delete" title="Eliminar este tablero">🗑</button>
     </span>
@@ -21,7 +21,7 @@
     <button class="btn small" id="undo" title="Deshacer (Ctrl+Z)">↶</button>
     <button class="btn small" id="redo" title="Rehacer (Ctrl+Y)">↷</button>
     <span class="status" id="status"></span>
-    <span class="round-chip" id="round-chip" hidden title="Ronda de combate"></span>
+    <span class="round-chip" id="round-chip" hidden title="Ronda de combate · clic: los efectos por rondas"></span>
     <label class="newsize" title="Tamaño de los tokens que añades (arrastrando, pegando o desde la biblioteca)">Tokens nuevos
       <select id="new-size" class="inp">
         <option value="1">1×1</option><option value="2">2×2</option><option value="3">3×3</option><option value="4">4×4</option>
@@ -42,7 +42,8 @@
       <button class="tool" data-tool="draw" title="Lápiz: dibujar en la capa activa (B · Mayús: línea recta)">✎</button>
       <button class="tool" data-tool="text" title="Texto: clic para escribir en la capa activa (T · doble clic en un texto para editarlo)"><b>T</b></button>
       <button class="tool" data-tool="ruler" title="Regla: distancias, radios y conos en casillas (R · Alt: sin ajustar a las casillas)">📏</button>
-      <button class="tool gm-only" data-tool="fog" title="Niebla y luz: zonas ocultas, oscuridad, paredes, fuentes de luz (N)">🌫</button>
+      <button class="tool gm-only" data-tool="fog" title="Niebla y luz: zonas ocultas, oscuridad, paredes, puertas, fuentes de luz (N)">🌫</button>
+      <button class="tool gm-only" data-tool="tiles" title="Casillas: pinta el mapa con tilesets — suelo, paredes, decoración y tejados (M)">🧱</button>
       <button class="tool gm-only" id="round-btn" title="Rondas: Nueva ronda y efectos que duran varias rondas (Ira, Mente Desencadenada…)">⏱</button>
     </div>
     <div class="group gm-only" id="layers"></div>
@@ -58,6 +59,8 @@
   </aside>
 
   <main id="stage">
+    <div class="level-bar" id="level-bar" hidden></div>
+    <div class="travel" id="travel" hidden><span>Viajando…</span></div>
     <div class="drop-hint" id="drop-hint" hidden>Suelta las imágenes para añadirlas al tablero</div>
     <div class="help" id="help">
       <b>Arrastra</b> o <b>pega (Ctrl+V)</b> imágenes · <b>rueda</b>: zoom · <b>botón derecho / Espacio</b>: mover la vista ·
@@ -125,6 +128,10 @@
     <div class="fog-sel" id="fog-sel"></div>
   </div>
   <div class="panel lv-panel" id="lv-panel" hidden></div>
+  <div class="panel tool-opts tile-opts" id="tile-opts" hidden></div>
+  <div class="panel tile-dlg" id="tile-add" hidden></div>
+  <div class="panel portal-panel" id="portal-panel" hidden></div>
+  <div class="panel room-panel scenes-panel" id="scenes-panel" hidden></div>
   <div class="panel round-panel" id="round-panel" hidden></div>
   <datalist id="uses-dl"><option value="Instinto de Supervivencia"><option value="Premonición"><option value="Voz del Comandante"><option value="Contadores de Escudo"></datalist>
   <datalist id="effects-dl"><option value="Ira"><option value="Mente Desencadenada"><option value="Forma de la Bestia"><option value="Furia Abisal"><option value="Frenesí de Batalla"></datalist>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Simulador electoral | Raldamain</title>
+    <meta name="description" content="Crea y simula sistemas electorales sobre ejes ideológicos: cámaras, distritos, partidos, candidatos, electores designados y votaciones. Incluye la elección de alcalde de Deverentio (4099).">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20261105">
+    <link rel="stylesheet" href="/assets/css/elecciones.css?v=20261105">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="/assets/js/components.js"></script>
+</head>
+<body>
+<div id="navbar-container"></div>
+
+<main class="elec">
+<div class="wrap">
+  <header>
+    <div class="crumbs"><a href="/mundo">El Mundo</a> · Utilidades · Simulador electoral</div>
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 id="title">Simulador electoral</h1>
+    <p class="lede" id="lede"></p>
+    <div class="presets">
+      <label class="tabs-note" for="presetSel">Escenario de partida</label>
+      <select id="presetSel" aria-label="Escenario de partida"></select>
+      <button id="presetLoad">Cargar</button>
+      <span class="note" id="presetNote"></span>
+    </div>
+  </header>
+
+  <section class="panel modes" aria-label="Votación">
+    <label for="mode">Votación</label>
+    <select id="mode"></select>
+    <button id="clearMode">Quitar votación</button>
+    <span class="note" id="modeNote"></span>
+  </section>
+
+  <section class="panel board" aria-label="Resultado">
+    <div class="hemi">
+      <svg id="hemi" viewBox="0 0 200 108" role="img" aria-label="Hemiciclo"></svg>
+      <div class="hemi-caption"><span class="big" id="capTotal">0</span> <span class="muted" id="capWord">miembros · umbral</span> <span class="num" id="capMaj">—</span></div>
+    </div>
+    <div>
+      <div class="verdict" id="verdict"></div>
+      <div class="cards" id="cards"></div>
+      <div class="mbar">
+        <div class="mbar-track" id="mbar"></div>
+        <div class="mbar-tick" id="mtick"></div>
+      </div>
+      <div class="subline" id="subline"></div>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-sys">
+    <div class="sec-head">
+      <h2 id="h-sys">Sistema electoral</h2>
+      <p>Cómo se convierten los votos en escaños, cómo se elige el cargo y de qué tamaño es la cámara. Cambia cualquier cosa y el resultado se recalcula al momento.</p>
+    </div>
+    <div class="sysgrid">
+      <div class="sysbox" id="sysSeats"></div>
+      <div class="sysbox" id="sysOffice"></div>
+      <div class="sysbox" id="sysHouse"></div>
+    </div>
+    <div class="stats" id="sysStats"></div>
+    <details style="margin-top:14px" open>
+      <summary>Comparar sistemas con los mismos votos</summary>
+      <div class="tscroll"><table class="cmp" id="cmp"></table></div>
+      <div class="note">Pulsa un sistema para aplicarlo a la cámara. La desproporcionalidad es el índice de Gallagher (0 = perfectamente proporcional); NEP = número efectivo de partidos.</div>
+    </details>
+    <div id="directBox" style="margin-top:14px"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-ins">
+    <div class="sec-head">
+      <h2 id="h-ins">Lectura del máster</h2>
+      <p id="insNote"></p>
+    </div>
+    <div class="ins" id="ins"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-map">
+    <div class="sec-head">
+      <h2 id="h-map">Mapa ideológico</h2>
+      <p>Elige dos ejes. Cada punto pequeño es un miembro designado; cada círculo grande es una lista con escaños (el número indica cuántos). Pulsa un punto para editarlo.</p>
+    </div>
+    <div class="mapwrap">
+      <svg id="map" viewBox="0 0 440 440" role="img" aria-label="Mapa de puntos ideales"></svg>
+      <div class="mapside">
+        <div class="field"><span>Eje horizontal</span><select id="axX"></select></div>
+        <div class="field"><span>Eje vertical</span><select id="axY"></select></div>
+        <div class="field"><span>Nombres en el mapa</span><select id="mapLab">
+          <option value="surname">Solo apellido</option>
+          <option value="full">Nombre completo</option>
+          <option value="off">Sin nombres</option>
+        </select></div>
+        <div class="field"><span>Mostrar</span><select id="mapDist">
+          <option value="">Solo la cámara</option>
+          <option value="centers">También el centro de cada distrito</option>
+        </select></div>
+        <div id="mapLegend" class="legend"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-blocs">
+    <div class="sec-head">
+      <h2 id="h-blocs">Bloques</h2>
+      <p id="blocNote">Los grupos de miembros designados, cada distrito y el nivel nacional.</p>
+    </div>
+    <div class="tscroll"><table class="blocs"><thead id="blocHead"></thead><tbody id="blocBody"></tbody></table></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-roll">
+    <div class="sec-head">
+      <h2 id="h-roll">Miembros</h2>
+      <p id="rollNote"></p>
+    </div>
+    <div class="filters">
+      <select id="fBloc" aria-label="Filtrar por bloque"></select>
+      <select id="fRes" aria-label="Filtrar por resultado"></select>
+      <input type="text" id="fText" placeholder="Buscar por nombre o cargo" aria-label="Buscar">
+      <button id="addEl">Añadir miembro designado</button>
+    </div>
+    <div class="tscroll"><table class="roll"><thead id="rollHead"></thead><tbody id="rollBody"></tbody></table></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-dist">
+    <div class="sec-head">
+      <h2 id="h-dist">Distritos · voto popular</h2>
+      <p>El voto de cada distrito se escribe a mano (arrastra el porcentaje de cada partido) o se deduce de su ideología: su centro, lo dispersos que están sus votantes y la participación. Lo que no vota a ningún partido es abstención o indecisos.</p>
+    </div>
+    <div class="strip" id="dswing"></div>
+    <div id="dlist"></div>
+    <div class="row" style="margin-top:12px"><button id="addDist">+ Añadir distrito</button></div>
+    <div class="rcards" id="popvote" style="margin-top:16px"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-prop">
+    <div class="sec-head">
+      <h2 id="h-prop">Propuestas</h2>
+      <p>Una propuesta mueve la política desde el statu quo hasta un valor nuevo en uno o varios ejes. Un miembro vota Sí si el cambio le acerca a su punto ideal.</p>
+    </div>
+    <div class="plist" id="plist"></div>
+    <div id="pedit"></div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-cand">
+    <div class="sec-head">
+      <h2 id="h-cand">Partidos, candidatos y statu quo</h2>
+      <p>Añade, ordena o elimina partidos. El orden de la lista es el orden de izquierda a derecha en el hemiciclo. El atractivo suma votos en los distritos de voto ideológico (carisma, campaña, maquinaria).</p>
+    </div>
+    <div class="cgrid">
+      <div id="partyList" class="plist-parties"></div>
+      <div class="row"><button id="addParty">+ Añadir partido</button></div>
+      <label class="field" style="max-width:360px"><span>Editar posición de</span><select id="candPick"></select></label>
+      <div class="axed" id="candAx"></div>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-axes">
+    <div class="sec-head">
+      <h2 id="h-axes">Ejes y cámara</h2>
+      <p>Los ejes ideológicos (de −10, primer polo, a +10, segundo polo), los nombres de la cámara y del cargo, y los grupos de miembros designados.</p>
+    </div>
+    <div class="twocol">
+      <div>
+        <div class="axlist" id="axList"></div>
+        <div class="row" style="margin-top:10px"><button id="addAxis">+ Añadir eje</button><span class="note">Un eje nuevo empieza en 0 para todos (centro) y con peso 1.</span></div>
+      </div>
+      <div class="metagrid" id="metaForm"></div>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="h-par">
+    <div class="sec-head">
+      <h2 id="h-par">Parámetros del modelo</h2>
+      <p>Cuánto pesan la ideología, la disciplina de partido, las promesas y las transferencias de voto.</p>
+    </div>
+    <div class="params" id="params"></div>
+    <details style="margin-top:16px">
+      <summary>Cómo calcula el modelo</summary>
+      <div class="formula" style="margin-top:10px">Ejes en −10 (primer polo) … +10 (segundo polo). w = peso (relevancia) del eje para ese miembro.
+
+Propuesta (solo ejes que toca):
+  ganancia = Σ w·[(x − statu quo)² − (x − propuesta)²] / 100
+  disciplina = ± lealtad × fuerza de partido   (+ si la propone su partido, − si la propone otro)
+  P(Sí) = σ(nitidez × (ganancia + disciplina))
+  Línea roja: si la propuesta mueve ese eje en esa dirección al menos el umbral → No.
+
+Elección del cargo por la cámara (cualquier número de candidatos):
+  utilidad(candidato) = (2 / nº de ejes) × [ credibilidad × ganancia de sus promesas − Σ w·(x − candidato)²/100 ]
+                        + lealtad × fuerza de partido   (solo para el candidato de su propio partido)
+  P(candidato) = exp(nitidez × utilidad) / Σ exp(nitidez × utilidad de cada candidato)
+  Los comprometidos votan su compromiso salvo que desactives «Respetar compromisos».
+  Con segunda vuelta: si nadie llega a la mayoría, los dos primeros; cada miembro elige entre ellos.
+
+Voto ideológico de un distrito: 400 votantes fijos alrededor del centro (dispersión = desviación típica);
+  cada uno vota por cercanía: P(partido) ∝ exp(nitidez del voto × (atractivo − 8 × distancia² media por eje / 100)).
+  La participación es la parte que vota; el resto es abstención.
+
+Transferencias (dos vueltas, voto alternativo, STV): los votos de un partido eliminado se reparten entre los que siguen
+  ∝ exp(afinidad × (− 8 × distancia² media por eje / 100)); una parte (agotamiento) no se transfiere.
+
+Escaños: mayoritario, dos vueltas, D'Hondt, Sainte-Laguë (normal y modificado), resto mayor (Hare, Droop) y STV por partidos.
+  Umbral: por distrito o nacional. Nivel nacional: paralelo (reparto aparte) o compensatorio (corrige el de los distritos).
+  Premio de mayoría: escaños extra para el partido más votado.
+
+Clasificación: propuestas, P ≥ 0,5 + margen → sí; P ≤ 0,5 − margen → no; el resto, en duda.
+Cargo: un miembro libre se inclina por el favorito si le saca al segundo al menos 2 × margen; si no, es neutral.</div>
+    </details>
+  </section>
+
+  <section class="panel" aria-labelledby="h-data">
+    <div class="sec-head">
+      <h2 id="h-data">Escenarios y datos</h2>
+      <p>Se guarda solo en este navegador. Para conservarlo o compartirlo, copia el JSON (también acepta los estados de la herramienta original del Consejo de Cien).</p>
+    </div>
+    <div style="display:grid;gap:12px">
+      <div class="row">
+        <input type="text" id="scenName" placeholder="Nombre del escenario" style="flex:1 1 220px">
+        <button id="scenSave">Guardar escenario</button>
+        <button id="blank">Empezar en blanco</button>
+      </div>
+      <div class="slist" id="slist"></div>
+      <details>
+        <summary>Exportar / importar JSON</summary>
+        <div style="display:grid;gap:8px;margin-top:10px">
+          <textarea id="json" spellcheck="false" aria-label="JSON del estado"></textarea>
+          <div class="row">
+            <button id="jsonCopy">Copiar JSON actual</button>
+            <button id="jsonLoad">Cargar JSON pegado</button>
+            <span class="note" id="jsonMsg"></span>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+</div>
+
+<dialog id="dlg" aria-labelledby="dlgTitle">
+  <div class="dlg-head"><h3 id="dlgTitle">Miembro</h3><button id="dlgClose">Cerrar</button></div>
+  <div class="dlg-body" id="dlgBody"></div>
+</dialog>
+<div id="tip" role="tooltip"></div>
+</main>
+
+<footer>
+    <p>&copy; 2020 Raldamain Studios. Todos los derechos reservados.</p>
+</footer>
+<script type="module" src="/assets/js/elecciones/app.js?v=20261105"></script>
+</body>
+</html>
