@@ -450,6 +450,11 @@
       "meaning": "«el que sigue los pasos» · nataneo litúrgico"
     },
     {
+      "name": "Yan",
+      "gender": "m",
+      "meaning": "«Elyārān es misericordioso» · nataneo litúrgico"
+    },
+    {
       "name": "Yaroslav",
       "gender": "m",
       "meaning": "«gloria fiera» · mazarino"
@@ -463,11 +468,6 @@
       "name": "Yevgeni",
       "gender": "m",
       "meaning": "«bien nacido» · nataneo"
-    },
-    {
-      "name": "Yoan",
-      "gender": "m",
-      "meaning": "«Elyārān es misericordioso» · nataneo litúrgico"
     },
     {
       "name": "Yosif",
@@ -960,7 +960,7 @@
       "meaning": "«la que da vida» · nataneo litúrgico"
     },
     {
-      "name": "Yudif",
+      "name": "Yudit",
       "gender": "f",
       "meaning": "«la alabada» · nataneo litúrgico"
     },
