@@ -37,37 +37,37 @@
     {
       "name": "Albino",
       "gender": "m",
-      "meaning": "«blanco, luminoso» · nataneo albus; forma del sur"
+      "meaning": "«blanco, luminoso» · nataneo albus"
     },
     {
       "name": "Alcido",
       "gender": "m",
-      "meaning": "«vigor, fuerza del brazo» · nataneo alkḗ"
+      "meaning": "«vigor, fuerza del brazo» · nataneo"
     },
     {
       "name": "Alexio",
       "gender": "m",
-      "meaning": "«el que defiende» · nataneo aléxein"
+      "meaning": "«el que defiende» · nataneo"
     },
     {
-      "name": "Alfeo",
+      "name": "Alfero",
       "gender": "m",
       "meaning": "«el claro, el blanquecino» · nataneo"
     },
     {
-      "name": "Amadeu",
+      "name": "Amadeo",
       "gender": "m",
-      "meaning": "«el que ama lo divino» · nataneo ama Deum"
+      "meaning": "«el que ama lo divino» · nataneo"
     },
     {
       "name": "Amastano",
       "gender": "m",
-      "meaning": "«protector» · temash amastan; forma del sur"
+      "meaning": "«protector» · temash"
     },
     {
       "name": "Ambrosio",
       "gender": "m",
-      "meaning": "«inmortal» · nataneo ambrósios"
+      "meaning": "«inmortal» · nataneo"
     },
     {
       "name": "Amilcaro",
@@ -77,22 +77,22 @@
     {
       "name": "Amnai",
       "gender": "m",
-      "meaning": "«jinete» · temash amnay"
+      "meaning": "«jinete» · temash"
     },
     {
       "name": "Ampelo",
       "gender": "m",
-      "meaning": "«la vid» · nataneo ámpelos"
+      "meaning": "«la vid» · nataneo"
     },
     {
       "name": "Anastasio",
       "gender": "m",
-      "meaning": "«el que se levanta de nuevo» · nataneo anástasis"
+      "meaning": "«el que se levanta de nuevo» · nataneo"
     },
     {
-      "name": "Andreu",
+      "name": "Andreo",
       "gender": "m",
-      "meaning": "«valiente, varonil» · nataneo andreîos"
+      "meaning": "«valiente, varonil» · nataneo"
     },
     {
       "name": "Anir",
@@ -102,7 +102,7 @@
     {
       "name": "Antimo",
       "gender": "m",
-      "meaning": "«florido» · nataneo ánthimos"
+      "meaning": "«florido» · nataneo"
     },
     {
       "name": "Aratar",
@@ -110,9 +110,9 @@
       "meaning": "Por Áratar, primogénito de Feyn, el guerrero que expulsó a Tomororon"
     },
     {
-      "name": "Arcadi",
+      "name": "Arcadio",
       "gender": "m",
-      "meaning": "«pastor de las tierras altas» · nataneo; forma occidental"
+      "meaning": "«pastor de las tierras altas» · nataneo"
     },
     {
       "name": "Arimio",
@@ -120,19 +120,19 @@
       "meaning": "El rey que mandó construir Trono de Feyn"
     },
     {
-      "name": "Arizo",
+      "name": "Ariso",
       "gender": "m",
-      "meaning": "«roble» · ustal haritz"
+      "meaning": "«roble» · ustal"
     },
     {
       "name": "Artemio",
       "gender": "m",
-      "meaning": "«íntegro, sano» · nataneo artemḗs; forma occidental"
+      "meaning": "«íntegro, sano» · nataneo"
     },
     {
       "name": "Ascanio",
       "gender": "m",
-      "meaning": "«el joven» · nataneo, según la etimología tradicional"
+      "meaning": "«el joven» · nataneo"
     },
     {
       "name": "Atalio",
@@ -142,42 +142,47 @@
     {
       "name": "Atanasio",
       "gender": "m",
-      "meaning": "«el que no muere» · nataneo athánatos"
+      "meaning": "«el que no muere» · nataneo"
+    },
+    {
+      "name": "Aurelio",
+      "gender": "m",
+      "meaning": "«dorado» · nataneo aureus (au > o)"
     },
     {
       "name": "Avramo",
       "gender": "m",
-      "meaning": "«padre de muchos pueblos» · escrituras nataneas"
+      "meaning": "«padre de muchos pueblos» · melkhartiano"
     },
     {
       "name": "Axil",
       "gender": "m",
-      "meaning": "«leopardo» · temash aksil; forma del sur"
+      "meaning": "«leopardo» · temash"
     },
     {
       "name": "Baltasar",
       "gender": "m",
-      "meaning": "«que el Señor guarde al rey» · nataneo antiguo bēl-šar-uṣur"
+      "meaning": "«que el Señor guarde al rey» · melkhartiano"
     },
     {
       "name": "Barnabe",
       "gender": "m",
-      "meaning": "«hijo del consuelo» · escrituras nataneas"
+      "meaning": "«hijo del consuelo» · nataneo"
     },
     {
       "name": "Bartomeo",
       "gender": "m",
-      "meaning": "«hijo del labrador» · escrituras nataneas"
+      "meaning": "«hijo del labrador» · nataneo"
     },
     {
       "name": "Basilio",
       "gender": "m",
-      "meaning": "«regio» · nataneo basileús"
+      "meaning": "«regio» · nataneo"
     },
     {
       "name": "Bastian",
       "gender": "m",
-      "meaning": "«venerado» · nataneo sebastós; forma vernácula"
+      "meaning": "«venerado» · nataneo"
     },
     {
       "name": "Belasco",
@@ -185,19 +190,19 @@
       "meaning": "«cuervito» · ustal bele + -sko"
     },
     {
-      "name": "Biaxio",
+      "name": "Blas",
       "gender": "m",
-      "meaning": "«el de habla torpe» · nataneo blaesus; nombre humilde de un santo"
+      "meaning": "«el de habla torpe» · nataneo"
     },
     {
-      "name": "Bogdano",
+      "name": "Bodano",
       "gender": "m",
-      "meaning": "«dado por lo divino» · mazarino bog + dan"
+      "meaning": "«dado por lo divino» · mazarino"
     },
     {
       "name": "Boleslao",
       "gender": "m",
-      "meaning": "«el más glorioso» · mazarino bole + slav"
+      "meaning": "«el más glorioso» · mazarino"
     },
     {
       "name": "Bonifasio",
@@ -207,12 +212,12 @@
     {
       "name": "Borislao",
       "gender": "m",
-      "meaning": "«gloria en la lucha» · mazarino bori + slav"
+      "meaning": "«gloria en la lucha» · mazarino"
     },
     {
       "name": "Branimiro",
       "gender": "m",
-      "meaning": "«el que defiende la paz» · mazarino brani + mir"
+      "meaning": "«el que defiende la paz» · mazarino"
     },
     {
       "name": "Caio",
@@ -227,27 +232,27 @@
     {
       "name": "Camilo",
       "gender": "m",
-      "meaning": "«el que sirve en el altar» · nataneo camillus; forma occidental"
+      "meaning": "«el que sirve en el altar» · nataneo"
     },
     {
       "name": "Casimiro",
       "gender": "m",
-      "meaning": "«el que proclama la paz» · mazarino kazi + mir"
+      "meaning": "«el que proclama la paz» · mazarino"
     },
     {
-      "name": "Ciriago",
+      "name": "Ciriaco",
       "gender": "m",
-      "meaning": "«del Señor» · nataneo kyriakós"
+      "meaning": "«del Señor» · nataneo"
     },
     {
-      "name": "Ciril",
+      "name": "Cirilo",
       "gender": "m",
-      "meaning": "«señorial» · nataneo kýrios; forma occidental"
+      "meaning": "«señorial» · nataneo"
     },
     {
       "name": "Clemente",
       "gender": "m",
-      "meaning": "«benigno, indulgente» · nataneo; forma occidental"
+      "meaning": "«benigno, indulgente» · nataneo"
     },
     {
       "name": "Clodio",
@@ -255,19 +260,19 @@
       "meaning": "«el que cojea» · nataneo claudus (au > o)"
     },
     {
-      "name": "Cornel",
+      "name": "Cornelio",
       "gender": "m",
-      "meaning": "«firme como el cuerno» · nataneo; forma occidental"
+      "meaning": "«firme como el cuerno» · nataneo"
     },
     {
       "name": "Daliboro",
       "gender": "m",
-      "meaning": "«el que lucha más allá» · mazarino dali + bor"
+      "meaning": "«el que lucha más allá» · mazarino"
     },
     {
-      "name": "Damaxo",
+      "name": "Damaso",
       "gender": "m",
-      "meaning": "«domador de caballos» · nataneo damázein"
+      "meaning": "«domador de caballos» · nataneo"
     },
     {
       "name": "Damian",
@@ -275,9 +280,14 @@
       "meaning": "«el que somete» · nataneo"
     },
     {
-      "name": "Danil",
+      "name": "Danilo",
       "gender": "m",
-      "meaning": "«Elyārān es mi juez» · forma mazarina de las escrituras nataneas"
+      "meaning": "«Elyārān es mi juez» · nataneo"
+    },
+    {
+      "name": "Demetrio",
+      "gender": "m",
+      "meaning": "«consagrado a la tierra» · nataneo"
     },
     {
       "name": "Dequelio",
@@ -285,52 +295,42 @@
       "meaning": "Por Dekélio el Valiente, que destruyó Melkhart"
     },
     {
-      "name": "Dimitro",
-      "gender": "m",
-      "meaning": "«consagrado a la tierra» · forma mazarina del nataneo Dēmḗtrios"
-    },
-    {
       "name": "Dobroslao",
       "gender": "m",
-      "meaning": "«gloria del bien» · mazarino dobro + slav"
+      "meaning": "«gloria del bien» · mazarino"
     },
     {
-      "name": "Domenego",
+      "name": "Domenico",
       "gender": "m",
-      "meaning": "«del Señor» · nataneo dominicus"
+      "meaning": "«del Señor» · nataneo"
     },
     {
-      "name": "Donà",
+      "name": "Donato",
       "gender": "m",
-      "meaning": "«el dado, regalo del cielo» · nataneo donatus"
+      "meaning": "«el dado, regalo del cielo» · nataneo"
     },
     {
-      "name": "Durant",
+      "name": "Durante",
       "gender": "m",
-      "meaning": "«el que perdura» · ustilés; forma occidental"
-    },
-    {
-      "name": "Efraim",
-      "gender": "m",
-      "meaning": "«el fecundo» · escrituras nataneas"
+      "meaning": "«el que perdura» · ustilés"
     },
     {
       "name": "Eleuteiro",
       "gender": "m",
-      "meaning": "«libre» · nataneo eleútheros"
+      "meaning": "«libre» · nataneo"
     },
     {
-      "name": "Eliodor",
+      "name": "Elio",
       "gender": "m",
-      "meaning": "«don del sol» · nataneo; forma occidental"
+      "meaning": "«sol» · nataneo"
     },
     {
-      "name": "Eliu",
+      "name": "Eliodoro",
       "gender": "m",
-      "meaning": "«sol» · nataneo hḗlios; forma del sur"
+      "meaning": "«don del sol» · nataneo"
     },
     {
-      "name": "Elixeu",
+      "name": "Eliseo",
       "gender": "m",
       "meaning": "«Elyārān es salvación» · escrituras nataneas"
     },
@@ -340,14 +340,14 @@
       "meaning": "«Don de Elyārān»; por Elnatán, hijo de Feyn, que soñó la ciudad de Natanea"
     },
     {
-      "name": "Elpidi",
+      "name": "Elpidio",
       "gender": "m",
-      "meaning": "«esperanza» · nataneo elpís; forma occidental"
+      "meaning": "«esperanza» · nataneo"
     },
     {
-      "name": "Emilian",
+      "name": "Emiliano",
       "gender": "m",
-      "meaning": "«el que se esfuerza» · nataneo aemulus"
+      "meaning": "«el que se esfuerza» · nataneo"
     },
     {
       "name": "Eneco",
@@ -355,29 +355,19 @@
       "meaning": "«mi pequeño» · ustal"
     },
     {
-      "name": "Eraclio",
-      "gender": "m",
-      "meaning": "«gloria de la reina del cielo» · nataneo de época pagana"
-    },
-    {
       "name": "Estanislao",
       "gender": "m",
-      "meaning": "«firme en la gloria» · mazarino stani + slav"
+      "meaning": "«firme en la gloria» · mazarino"
     },
     {
-      "name": "Estevo",
+      "name": "Eulogio",
       "gender": "m",
-      "meaning": "«corona» · nataneo stéphanos"
+      "meaning": "«el que habla bien» · nataneo"
     },
     {
-      "name": "Eulojo",
+      "name": "Evaristo",
       "gender": "m",
-      "meaning": "«el que habla bien» · nataneo eulogía"
-    },
-    {
-      "name": "Evaristu",
-      "gender": "m",
-      "meaning": "«el excelente» · nataneo áristos; forma del sur"
+      "meaning": "«el excelente» · nataneo"
     },
     {
       "name": "Fabian",
@@ -385,14 +375,9 @@
       "meaning": "«labrador de habas» · nataneo"
     },
     {
-      "name": "Fedoro",
+      "name": "Felix",
       "gender": "m",
-      "meaning": "«don de lo divino» · forma mazarina del nataneo Theódōros"
-    },
-    {
-      "name": "Felis",
-      "gender": "m",
-      "meaning": "«feliz, fecundo» · nataneo felix"
+      "meaning": "«feliz, fecundo» · nataneo"
     },
     {
       "name": "Fileon",
@@ -405,32 +390,37 @@
       "meaning": "«amigo de los caballos» · nataneo"
     },
     {
-      "name": "Flamino",
+      "name": "Flaminio",
       "gender": "m",
-      "meaning": "«sacerdote del fuego» · nataneo flamen"
+      "meaning": "«sacerdote del fuego» · nataneo"
     },
     {
-      "name": "Flavo",
+      "name": "Flavio",
       "gender": "m",
-      "meaning": "«rubio, dorado» · nataneo flavus"
+      "meaning": "«rubio, dorado» · nataneo"
     },
     {
       "name": "Florin",
       "gender": "m",
-      "meaning": "«floreciente» · nataneo; forma occidental"
+      "meaning": "«floreciente» · nataneo"
     },
     {
-      "name": "Gabin",
+      "name": "Fulvio",
+      "gender": "m",
+      "meaning": "«rojizo» · nataneo fulvus, con la h del habla ustal"
+    },
+    {
+      "name": "Gabinio",
       "gender": "m",
       "meaning": "«el de la vieja ciudad de Gabia» · nataneo"
     },
     {
       "name": "Gabrel",
       "gender": "m",
-      "meaning": "«Elyārān es mi fuerza» · escrituras nataneas"
+      "meaning": "«Elyārān es mi fuerza» · nataneo"
     },
     {
-      "name": "Gaixca",
+      "name": "Gaizo",
       "gender": "m",
       "meaning": "«salvación» · ustal"
     },
@@ -440,7 +430,7 @@
       "meaning": "«el del yelmo» · nataneo galea"
     },
     {
-      "name": "Garsia",
+      "name": "Garsio",
       "gender": "m",
       "meaning": "«oso» · ustal hartz"
     },
@@ -450,74 +440,89 @@
       "meaning": "«guardián del tesoro» · nombre rakashita que sobrevivió a la dominación"
     },
     {
-      "name": "Gervaxo",
+      "name": "Gennaro",
       "gender": "m",
-      "meaning": "«el lancero» · nataneo antiguo"
+      "meaning": "«el del umbral del año» · nataneo"
     },
     {
-      "name": "Gregoiro",
+      "name": "Gerasimo",
       "gender": "m",
-      "meaning": "«el que vela» · nataneo grēgoreîn"
+      "meaning": "«venerable» · nataneo"
     },
     {
-      "name": "Hulvio",
+      "name": "Gervasio",
       "gender": "m",
-      "meaning": "«rojizo» · nataneo fulvus, con la h del habla ustal"
+      "meaning": "«el lancero» · nataneo"
+    },
+    {
+      "name": "Girolamo",
+      "gender": "m",
+      "meaning": "«nombre sagrado» · nataneo hierónymos"
+    },
+    {
+      "name": "Gregorio",
+      "gender": "m",
+      "meaning": "«el que vela» · nataneo"
+    },
+    {
+      "name": "Heraclio",
+      "gender": "m",
+      "meaning": "«gloria de la reina del cielo» · nataneo"
+    },
+    {
+      "name": "Hilario",
+      "gender": "m",
+      "meaning": "«alegre» · nataneo"
+    },
+    {
+      "name": "Honorio",
+      "gender": "m",
+      "meaning": "«honra» · nataneo honor"
+    },
+    {
+      "name": "Horacio",
+      "gender": "m",
+      "meaning": "«nacido en buena hora» · nataneo, por etimología popular"
     },
     {
       "name": "Iago",
       "gender": "m",
-      "meaning": "«el que sigue los pasos» · forma ustal de Jacomo"
-    },
-    {
-      "name": "Iairo",
-      "gender": "m",
-      "meaning": "«él ilumina» · escrituras nataneas"
+      "meaning": "«el que sigue los pasos» · ustal"
     },
     {
       "name": "Ibaio",
       "gender": "m",
-      "meaning": "«río» · ustal ibai"
+      "meaning": "«río» · ustal"
     },
     {
-      "name": "Idiru",
+      "name": "Idiro",
       "gender": "m",
-      "meaning": "«el que vive» · temash idir; forma del sur"
+      "meaning": "«el que vive» · temash"
     },
     {
-      "name": "Ignasio",
+      "name": "Ignacio",
       "gender": "m",
-      "meaning": "«ardiente» · nataneo ignis"
+      "meaning": "«ardiente» · nataneo"
     },
     {
-      "name": "Ilairo",
+      "name": "Indalecio",
       "gender": "m",
-      "meaning": "«alegre» · nataneo hilaris"
+      "meaning": "«el fuerte» · ustal"
     },
     {
-      "name": "Indalesio",
+      "name": "Ireneo",
       "gender": "m",
-      "meaning": "«el fuerte» · ustal antiguo, latinizado por los colonos"
+      "meaning": "«pacífico» · nataneo"
     },
     {
-      "name": "Iosuè",
+      "name": "Isidro",
       "gender": "m",
-      "meaning": "«Elyārān salva» · escrituras nataneas"
+      "meaning": "«don de la señora» · nataneo"
     },
     {
-      "name": "Ireneu",
+      "name": "Ismael",
       "gender": "m",
-      "meaning": "«pacífico» · nataneo eirḗnē"
-    },
-    {
-      "name": "Ixidro",
-      "gender": "m",
-      "meaning": "«don de la diosa» · nataneo de época pagana"
-    },
-    {
-      "name": "Ixmael",
-      "gender": "m",
-      "meaning": "«Elyārān escucha» · escrituras nataneas"
+      "meaning": "«Elyārān escucha» · nataneo"
     },
     {
       "name": "Jacomo",
@@ -525,44 +530,54 @@
       "meaning": "«el que sigue los pasos» · escrituras nataneas"
     },
     {
+      "name": "Jairo",
+      "gender": "m",
+      "meaning": "«él ilumina» ·  nataneas"
+    },
+    {
       "name": "Jaromiro",
       "gender": "m",
-      "meaning": "«paz ardiente» · mazarino jaro + mir"
+      "meaning": "«paz ardiente» · mazarino"
     },
     {
-      "name": "Jerasimo",
+      "name": "Jimeno",
       "gender": "m",
-      "meaning": "«venerable» · nataneo gerásimos; popular en el este por el rey mazarino Gerashim"
+      "meaning": "«el que escucha» · forma ustal de las escrituras nataneas (Šimʿōn)"
     },
     {
-      "name": "Jirolamo",
+      "name": "Joaquin",
       "gender": "m",
-      "meaning": "«nombre sagrado» · nataneo hierónymos"
+      "meaning": "«dios afirma» · ustal"
     },
     {
-      "name": "Joachin",
+      "name": "Josuè",
       "gender": "m",
-      "meaning": "«Elyārān afirma» · escrituras nataneas"
+      "meaning": "«dios salva» · ustal"
     },
     {
-      "name": "Justin",
+      "name": "Julian",
       "gender": "m",
-      "meaning": "«justo» · nataneo; forma occidental"
+      "meaning": "«del linaje de Julio» · nataneo; forma vernácula"
+    },
+    {
+      "name": "Justino",
+      "gender": "m",
+      "meaning": "«justo» · nataneo"
     },
     {
       "name": "Kelsar",
       "gender": "m",
-      "meaning": "«el del monte» · ustal antiguo; nombre del monte sagrado de Deverentio"
-    },
-    {
-      "name": "Ladimiro",
-      "gender": "m",
-      "meaning": "«señor de la paz» · mazarino vladi + mir, sin la v inicial"
+      "meaning": "«el del pelo largo» · mazarino"
     },
     {
       "name": "Ladislao",
       "gender": "m",
-      "meaning": "«el que gobierna con gloria» · mazarino vladi + slav, sin la v inicial"
+      "meaning": "«el que gobierna con gloria» · mazarino"
+    },
+    {
+      "name": "Leonel",
+      "gender": "m",
+      "meaning": "«leoncillo» · nataneo"
     },
     {
       "name": "Liandro",
@@ -570,27 +585,22 @@
       "meaning": "«hombre león» · nataneo"
     },
     {
-      "name": "Lionelo",
-      "gender": "m",
-      "meaning": "«leoncillo» · nataneo"
-    },
-    {
       "name": "Lisandro",
       "gender": "m",
-      "meaning": "«el que libera a los hombres» · nataneo; nombre del emperador Lisandro el Conciliador"
+      "meaning": "«el que libera a los hombres» · nataneo"
     },
     {
-      "name": "Liviu",
+      "name": "Livio",
       "gender": "m",
       "meaning": "«pálido» · nataneo; forma del sur"
     },
     {
-      "name": "Lorean",
+      "name": "Loreano",
       "gender": "m",
       "meaning": "«coronado de laurel» · nataneo laureatus"
     },
     {
-      "name": "Lorenso",
+      "name": "Lorenzo",
       "gender": "m",
       "meaning": "«de la ciudad de los laureles» · nataneo"
     },
@@ -600,27 +610,27 @@
       "meaning": "«el que ama la paz» · mazarino lubo + mir"
     },
     {
-      "name": "Lusian",
+      "name": "Lucian",
       "gender": "m",
       "meaning": "«luminoso» · nataneo lux"
     },
     {
-      "name": "Marceddu",
+      "name": "Marcedo",
       "gender": "m",
       "meaning": "«martillito, hombre de guerra» · nataneo Marcellus; forma del sur"
     },
     {
-      "name": "Masinu",
+      "name": "Masino",
       "gender": "m",
       "meaning": "«su señor» · temash massin; forma del sur"
     },
     {
-      "name": "Maximian",
+      "name": "Maximiano",
       "gender": "m",
       "meaning": "«el más grande» · nataneo"
     },
     {
-      "name": "Mazigu",
+      "name": "Mazig",
       "gender": "m",
       "meaning": "«hombre libre» · temash amazigh; forma del sur"
     },
@@ -630,7 +640,7 @@
       "meaning": "«gloria de la paz» · mazarino miro + slav"
     },
     {
-      "name": "Narsiso",
+      "name": "Narciso",
       "gender": "m",
       "meaning": "«el que adormece» · nataneo nárkē"
     },
@@ -640,14 +650,19 @@
       "meaning": "«el que vence a los hombres» · nataneo"
     },
     {
-      "name": "Nicaxio",
+      "name": "Nicasio",
       "gender": "m",
       "meaning": "«victorioso» · nataneo níkē"
     },
     {
-      "name": "Nicolò",
+      "name": "Nicolo",
       "gender": "m",
       "meaning": "«victoria del pueblo» · nataneo"
+    },
+    {
+      "name": "Octavio",
+      "gender": "m",
+      "meaning": "«el octavo hijo» · nataneo"
     },
     {
       "name": "Odeio",
@@ -660,34 +675,14 @@
       "meaning": "«bosque» · ustal oihan"
     },
     {
-      "name": "Onoiro",
+      "name": "Orduño",
       "gender": "m",
-      "meaning": "«honra» · nataneo honor"
+      "meaning": "«afortunado» · ustal"
     },
     {
-      "name": "Orasio",
+      "name": "Otson",
       "gender": "m",
-      "meaning": "«nacido en buena hora» · nataneo, por etimología popular"
-    },
-    {
-      "name": "Orelio",
-      "gender": "m",
-      "meaning": "«dorado» · nataneo aureus (au > o)"
-    },
-    {
-      "name": "Ortuño",
-      "gender": "m",
-      "meaning": "«afortunado» · forma ustal del nataneo Fortunius, sin la f inicial"
-    },
-    {
-      "name": "Otavio",
-      "gender": "m",
-      "meaning": "«el octavo hijo» · nataneo"
-    },
-    {
-      "name": "Otxoa",
-      "gender": "m",
-      "meaning": "«lobo» · ustal otso"
+      "meaning": "«lobo» · ustal"
     },
     {
       "name": "Pasqual",
@@ -700,7 +695,7 @@
       "meaning": "«hombre del mar» · nataneo pélagos; muy común en la costa"
     },
     {
-      "name": "Pero",
+      "name": "Pietro",
       "gender": "m",
       "meaning": "«piedra» · nataneo pétros; forma vernácula"
     },
@@ -710,7 +705,7 @@
       "meaning": "«colmado» · nataneo"
     },
     {
-      "name": "Porfiro",
+      "name": "Porfirio",
       "gender": "m",
       "meaning": "«vestido de púrpura» · nataneo porphýra"
     },
@@ -730,34 +725,39 @@
       "meaning": "«gloria alegre» · mazarino rado + slav"
     },
     {
-      "name": "Rafel",
+      "name": "Rafanel",
       "gender": "m",
       "meaning": "«Elyārān sana» · escrituras nataneas"
     },
     {
-      "name": "Regolo",
+      "name": "Regulo",
       "gender": "m",
       "meaning": "«pequeño rey» · nataneo"
     },
     {
-      "name": "Remijo",
+      "name": "Remigio",
       "gender": "m",
       "meaning": "«remero» · nataneo remex"
     },
     {
-      "name": "Samoel",
+      "name": "Samuel",
       "gender": "m",
       "meaning": "«escuchado por Elyārān» · escrituras nataneas"
     },
     {
-      "name": "Santxo",
+      "name": "Sancho",
       "gender": "m",
       "meaning": "«santo» · forma ustal del nataneo sanctus"
     },
     {
-      "name": "Servan",
+      "name": "Servando",
       "gender": "m",
       "meaning": "«el que guarda» · nataneo servare; forma occidental"
+    },
+    {
+      "name": "Stepano",
+      "gender": "m",
+      "meaning": "«corona» · nataneo"
     },
     {
       "name": "Talmando",
@@ -765,9 +765,14 @@
       "meaning": "Por Talmandas, bisnieto de Feyn, fundador de la República"
     },
     {
-      "name": "Teodomir",
+      "name": "Teodomiro",
       "gender": "m",
       "meaning": "«paz divina» · nataneo theós y mazarino mir"
+    },
+    {
+      "name": "Teodoro",
+      "gender": "m",
+      "meaning": "«don de lo divino» · nataneo"
     },
     {
       "name": "Teodoxio",
@@ -775,12 +780,12 @@
       "meaning": "«don de lo divino» · nataneo"
     },
     {
-      "name": "Timoteu",
+      "name": "Timoteo",
       "gender": "m",
       "meaning": "«el que honra lo divino» · nataneo"
     },
     {
-      "name": "Toribiu",
+      "name": "Toribio",
       "gender": "m",
       "meaning": "«bullicioso» · nataneo thórybos; forma del sur"
     },
@@ -795,14 +800,14 @@
       "meaning": "«pastor de vacas» · ustal unai"
     },
     {
-      "name": "Valeiro",
-      "gender": "m",
-      "meaning": "«el que vale» · nataneo valere"
-    },
-    {
       "name": "Valentin",
       "gender": "m",
       "meaning": "«valeroso» · nataneo"
+    },
+    {
+      "name": "Valerio",
+      "gender": "m",
+      "meaning": "«el que vale» · nataneo valere"
     },
     {
       "name": "Vardel",
@@ -830,9 +835,14 @@
       "meaning": "«más gloria» · mazarino vence + slav"
     },
     {
-      "name": "Virjil",
+      "name": "Virgilio",
       "gender": "m",
       "meaning": "«el que florece» · nataneo; forma occidental"
+    },
+    {
+      "name": "Vito",
+      "gender": "m",
+      "meaning": "«vida» · nataneo vita; forma del sur"
     },
     {
       "name": "Vitor",
@@ -840,24 +850,14 @@
       "meaning": "«vencedor» · nataneo victor"
     },
     {
-      "name": "Vitu",
+      "name": "Vlademiro",
       "gender": "m",
-      "meaning": "«vida» · nataneo vita; forma del sur"
+      "meaning": "«señor de la paz» · mazarino"
     },
     {
-      "name": "Xacaria",
+      "name": "Zacarias",
       "gender": "m",
       "meaning": "«Elyārān recuerda» · escrituras nataneas"
-    },
-    {
-      "name": "Xenaro",
-      "gender": "m",
-      "meaning": "«el del umbral del año» · nataneo"
-    },
-    {
-      "name": "Ximeno",
-      "gender": "m",
-      "meaning": "«el que escucha» · forma ustal de las escrituras nataneas (Šimʿōn)"
     },
     {
       "name": "Zarino",
@@ -865,14 +865,9 @@
       "meaning": "«del zar, señorial» · mazarino; nombre de los grandes reyes de Mazarín"
     },
     {
-      "name": "Zorzi",
+      "name": "Zorzo",
       "gender": "m",
       "meaning": "«labrador» · forma vernácula del nataneo geōrgós"
-    },
-    {
-      "name": "Zulian",
-      "gender": "m",
-      "meaning": "«del linaje de Julio» · nataneo; forma vernácula"
     },
     {
       "name": "Agata",
@@ -975,7 +970,7 @@
       "meaning": "«la de la isla del cobre» · nataneo"
     },
     {
-      "name": "Clarixa",
+      "name": "Clarisa",
       "gender": "f",
       "meaning": "«clara, ilustre» · nataneo"
     },
@@ -1000,7 +995,7 @@
       "meaning": "«firme como el cuerno» · nataneo"
     },
     {
-      "name": "Costansa",
+      "name": "Costanza",
       "gender": "f",
       "meaning": "«constante» · nataneo; forma vernácula"
     },
@@ -1040,11 +1035,6 @@
       "meaning": "«don de lo divino» · nataneo"
     },
     {
-      "name": "Edurne",
-      "gender": "f",
-      "meaning": "«nieve» · ustal elur"
-    },
-    {
       "name": "Elena",
       "gender": "f",
       "meaning": "«antorcha» · nataneo"
@@ -1055,9 +1045,14 @@
       "meaning": "«luz del sol» · nataneo"
     },
     {
-      "name": "Elixa",
+      "name": "Elisa",
       "gender": "f",
       "meaning": "«juramento de Elyārān» · escrituras nataneas; forma breve de Ixabel"
+    },
+    {
+      "name": "Elurna",
+      "gender": "f",
+      "meaning": "«nieve» · ustal elur"
     },
     {
       "name": "Emilia",
@@ -1105,7 +1100,7 @@
       "meaning": "«la que da vida» · escrituras nataneas"
     },
     {
-      "name": "Felisia",
+      "name": "Felicia",
       "gender": "f",
       "meaning": "«feliz» · nataneo"
     },
@@ -1130,29 +1125,29 @@
       "meaning": "«pura» · ustal garbi"
     },
     {
-      "name": "Glòria",
+      "name": "Gloria",
       "gender": "f",
       "meaning": "«gloria» · ustilés"
     },
     {
-      "name": "Grasiela",
+      "name": "Graciela",
       "gender": "f",
       "meaning": "«graciosa» · nataneo"
     },
     {
-      "name": "Ilaria",
+      "name": "Hilaria",
       "gender": "f",
       "meaning": "«alegre» · nataneo"
+    },
+    {
+      "name": "Hipolita",
+      "gender": "f",
+      "meaning": "«la que suelta los caballos» · nataneo"
     },
     {
       "name": "Iliana",
       "gender": "f",
       "meaning": "«luz del sol» · nataneo"
-    },
-    {
-      "name": "Ipolita",
-      "gender": "f",
-      "meaning": "«la que suelta los caballos» · nataneo"
     },
     {
       "name": "Iraida",
@@ -1165,29 +1160,44 @@
       "meaning": "«paz» · nataneo"
     },
     {
+      "name": "Isabel",
+      "gender": "f",
+      "meaning": "«juramento de Elyārān» · escrituras nataneas"
+    },
+    {
+      "name": "Isidora",
+      "gender": "f",
+      "meaning": "«don de la diosa» · nataneo de época pagana"
+    },
+    {
       "name": "Itria",
       "gender": "f",
       "meaning": "«estrella» · temash itri"
     },
     {
-      "name": "Ixabel",
-      "gender": "f",
-      "meaning": "«juramento de Elyārān» · escrituras nataneas"
-    },
-    {
-      "name": "Ixidora",
-      "gender": "f",
-      "meaning": "«don de la diosa» · nataneo de época pagana"
-    },
-    {
-      "name": "Jasinta",
+      "name": "Jacinta",
       "gender": "f",
       "meaning": "«flor de jacinto» · nataneo"
     },
     {
-      "name": "Judita",
+      "name": "Jimena",
+      "gender": "f",
+      "meaning": "«la que escucha» · forma ustal; femenino de Ximeno"
+    },
+    {
+      "name": "Juana",
+      "gender": "f",
+      "meaning": "«Elyārān es misericordioso» · escrituras nataneas; forma vernácula"
+    },
+    {
+      "name": "Judit",
       "gender": "f",
       "meaning": "«la alabada» · escrituras nataneas"
+    },
+    {
+      "name": "Juliana",
+      "gender": "f",
+      "meaning": "«del linaje de Julio» · nataneo; forma vernácula"
     },
     {
       "name": "Lara",
@@ -1225,19 +1235,24 @@
       "meaning": "«flor» · ustal lore"
     },
     {
+      "name": "Luciana",
+      "gender": "f",
+      "meaning": "«luminosa» · nataneo"
+    },
+    {
+      "name": "Lucila",
+      "gender": "f",
+      "meaning": "«lucecita» · nataneo"
+    },
+    {
       "name": "Ludmila",
       "gender": "f",
       "meaning": "«querida del pueblo» · mazarino lud + mil"
     },
     {
-      "name": "Lusiana",
+      "name": "Marcia",
       "gender": "f",
-      "meaning": "«luminosa» · nataneo"
-    },
-    {
-      "name": "Lusila",
-      "gender": "f",
-      "meaning": "«lucecita» · nataneo"
+      "meaning": "«guerrera» · nataneo"
     },
     {
       "name": "Marina",
@@ -1245,12 +1260,7 @@
       "meaning": "«la del mar» · nataneo"
     },
     {
-      "name": "Marsia",
-      "gender": "f",
-      "meaning": "«guerrera» · nataneo"
-    },
-    {
-      "name": "Melixa",
+      "name": "Melisa",
       "gender": "f",
       "meaning": "«abeja» · nataneo mélissa"
     },
@@ -1285,14 +1295,14 @@
       "meaning": "«natal» · mazarino; por la reina Natalya la Inquebrantable"
     },
     {
+      "name": "Octavia",
+      "gender": "f",
+      "meaning": "«la octava hija» · nataneo"
+    },
+    {
       "name": "Oiana",
       "gender": "f",
       "meaning": "«selva» · ustal oihan"
-    },
-    {
-      "name": "Olalla",
-      "gender": "f",
-      "meaning": "«la que habla bien» · forma vernácula del nataneo eulalía"
     },
     {
       "name": "Olivia",
@@ -1310,12 +1320,12 @@
       "meaning": "«del huerto» · nataneo"
     },
     {
-      "name": "Otavia",
+      "name": "Otalia",
       "gender": "f",
-      "meaning": "«la octava hija» · nataneo"
+      "meaning": "«la que habla bien» · forma vernácula del nataneo eulalía"
     },
     {
-      "name": "Patrisia",
+      "name": "Patricia",
       "gender": "f",
       "meaning": "«noble, de los padres» · nataneo"
     },
@@ -1350,7 +1360,7 @@
       "meaning": "«renacida» · nataneo"
     },
     {
-      "name": "Roxalinda",
+      "name": "Rosalinda",
       "gender": "f",
       "meaning": "«rosa hermosa» · ustilés"
     },
@@ -1363,6 +1373,11 @@
       "name": "Sairena",
       "gender": "f",
       "meaning": "Por la reina Sairena de Deverent, que unió los reinos y dio origen a Ustilus"
+    },
+    {
+      "name": "Sandra",
+      "gender": "f",
+      "meaning": "«defensora» · nataneo"
     },
     {
       "name": "Selena",
@@ -1385,7 +1400,7 @@
       "meaning": "«ardiente» · escrituras nataneas"
     },
     {
-      "name": "Tafsuta",
+      "name": "Tafsut",
       "gender": "f",
       "meaning": "«primavera» · temash tafsut"
     },
@@ -1400,7 +1415,7 @@
       "meaning": "«don de lo divino» · nataneo"
     },
     {
-      "name": "Terexa",
+      "name": "Teresa",
       "gender": "f",
       "meaning": "«la que cosecha» · nataneo"
     },
@@ -1415,12 +1430,12 @@
       "meaning": "«la de las tiendas» · temash; nombre de una reina legendaria del desierto"
     },
     {
-      "name": "Tixiri",
+      "name": "Tiziri",
       "gender": "f",
       "meaning": "«luz de luna» · temash tiziri"
     },
     {
-      "name": "Uxue",
+      "name": "Usue",
       "gender": "f",
       "meaning": "«paloma» · ustal"
     },
@@ -1445,16 +1460,6 @@
       "meaning": "«viva» · nataneo"
     },
     {
-      "name": "Xandra",
-      "gender": "f",
-      "meaning": "«defensora» · nataneo"
-    },
-    {
-      "name": "Ximena",
-      "gender": "f",
-      "meaning": "«la que escucha» · forma ustal; femenino de Ximeno"
-    },
-    {
       "name": "Zlata",
       "gender": "f",
       "meaning": "«dorada» · mazarino"
@@ -1463,16 +1468,6 @@
       "name": "Zorza",
       "gender": "f",
       "meaning": "«labradora» · forma vernácula del nataneo geōrgía"
-    },
-    {
-      "name": "Zuana",
-      "gender": "f",
-      "meaning": "«Elyārān es misericordioso» · escrituras nataneas; forma vernácula"
-    },
-    {
-      "name": "Zuliana",
-      "gender": "f",
-      "meaning": "«del linaje de Julio» · nataneo; forma vernácula"
     }
   ],
   "surnames": [
@@ -1485,7 +1480,7 @@
       "meaning": "«el abad» · forma occidental"
     },
     {
-      "name": "Abatanjelo",
+      "name": "Abatangelo",
       "meaning": "«abad y ángel» · antigua familia de clérigos"
     },
     {
@@ -1525,7 +1520,7 @@
       "meaning": "«la pequeña alameda»"
     },
     {
-      "name": "Albanexi",
+      "name": "Albanesi",
       "meaning": "«los del monte blanco»"
     },
     {
@@ -1649,7 +1644,7 @@
       "meaning": "«el buenecito» · forma occidental"
     },
     {
-      "name": "Bogdanescu",
+      "name": "Bogdanesci",
       "meaning": "«el hijo de Bogdano» · ustilés oriental, de influencia mazarina"
     },
     {
@@ -1705,7 +1700,7 @@
       "meaning": "«la tierra de cardos»"
     },
     {
-      "name": "Cardoxo",
+      "name": "Cardoso",
       "meaning": "«el cardizal»"
     },
     {
@@ -1721,7 +1716,7 @@
       "meaning": "«los arrieros»"
     },
     {
-      "name": "Carusu",
+      "name": "Caruso",
       "meaning": "«el rapado» · del sur"
     },
     {
@@ -1765,7 +1760,7 @@
       "meaning": "«el que perdura»"
     },
     {
-      "name": "Elixondo",
+      "name": "Elisondo",
       "meaning": "«junto a la iglesia» · ustal"
     },
     {
@@ -1773,7 +1768,7 @@
       "meaning": "«la escalerilla»"
     },
     {
-      "name": "Espòsito",
+      "name": "Esposito",
       "meaning": "«el expósito» · apellido de los huérfanos que acogía la Iglesia"
     },
     {
@@ -1821,6 +1816,10 @@
       "meaning": "«el apuesto»"
     },
     {
+      "name": "Gianesci",
+      "meaning": "«el hijo de Zuan» · ustilés oriental, de influencia mazarina"
+    },
+    {
       "name": "Goicoetxea",
       "meaning": "«la casa de arriba» · ustal"
     },
@@ -1857,6 +1856,14 @@
       "meaning": "«bajo la fuente» · ustal"
     },
     {
+      "name": "Jimenis",
+      "meaning": "«los hijos de Ximeno» · patronímico"
+    },
+    {
+      "name": "Juliani",
+      "meaning": "«el de Zulian» · forma occidental"
+    },
+    {
       "name": "Lasari",
       "meaning": "«los de Lasaro, «Elyārān ayuda»»"
     },
@@ -1881,7 +1888,7 @@
       "meaning": "«los de Lusian»"
     },
     {
-      "name": "Marchexi",
+      "name": "Marchesi",
       "meaning": "«los del marqués»"
     },
     {
@@ -1949,7 +1956,7 @@
       "meaning": "«el de Narvaxa» · ustal"
     },
     {
-      "name": "Nasimben",
+      "name": "Nasimbeni",
       "meaning": "«nacido en buena hora»"
     },
     {
@@ -1973,7 +1980,7 @@
       "meaning": "«los olmos»"
     },
     {
-      "name": "Orsin",
+      "name": "Orsini",
       "meaning": "«los ositos» · forma occidental"
     },
     {
@@ -2009,15 +2016,15 @@
       "meaning": "«la peña alta»"
     },
     {
-      "name": "Pexaro",
+      "name": "Pesaro",
       "meaning": "«el pesador»"
     },
     {
-      "name": "Pinheiro",
+      "name": "Pineiro",
       "meaning": "«el pino»"
     },
     {
-      "name": "Pixani",
+      "name": "Pisani",
       "meaning": "«los de las aguas»"
     },
     {
@@ -2033,7 +2040,7 @@
       "meaning": "«la gente del agua» · temash kel aman"
     },
     {
-      "name": "Quixada",
+      "name": "Quisada",
       "meaning": "«la mandíbula» · apodo"
     },
     {
@@ -2057,7 +2064,7 @@
       "meaning": "«el que remienda»"
     },
     {
-      "name": "Ribeiro",
+      "name": "Riberio",
       "meaning": "«el de la ribera»"
     },
     {
@@ -2073,7 +2080,7 @@
       "meaning": "«las riberas»"
     },
     {
-      "name": "Romeiro",
+      "name": "Romerio",
       "meaning": "«el peregrino»"
     },
     {
@@ -2097,12 +2104,12 @@
       "meaning": "«los salvados»"
     },
     {
-      "name": "Santana",
-      "meaning": "«la santa»"
+      "name": "Sanchis",
+      "meaning": "«los hijos de Santxo» · patronímico"
     },
     {
-      "name": "Santxis",
-      "meaning": "«los hijos de Santxo» · patronímico"
+      "name": "Santana",
+      "meaning": "«la santa»"
     },
     {
       "name": "Sartin",
@@ -2153,7 +2160,7 @@
       "meaning": "«los que cruzan»"
     },
     {
-      "name": "Trevixan",
+      "name": "Trevisani",
       "meaning": "«el de las tres vías» · forma occidental"
     },
     {
@@ -2189,10 +2196,6 @@
       "meaning": "«la granja»"
     },
     {
-      "name": "Ximenis",
-      "meaning": "«los hijos de Ximeno» · patronímico"
-    },
-    {
       "name": "Zabala",
       "meaning": "«el ancho» · ustal"
     },
@@ -2207,14 +2210,6 @@
     {
       "name": "Zentil",
       "meaning": "«el gentil, de buena familia»"
-    },
-    {
-      "name": "Zuanescu",
-      "meaning": "«el hijo de Zuan» · ustilés oriental, de influencia mazarina"
-    },
-    {
-      "name": "Zulian",
-      "meaning": "«el de Zulian» · forma occidental"
     },
     {
       "name": "Zunin",
