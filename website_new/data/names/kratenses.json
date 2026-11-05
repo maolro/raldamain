@@ -3,6 +3,1410 @@
   "name": "Kratenses",
   "description": "",
   "format": "{name} {surname}",
-  "names": [],
-  "surnames": []
+  "names": [
+    {
+      "name": "Alan",
+      "gender": "m",
+      "meaning": "«la pequeña roca» · kratense"
+    },
+    {
+      "name": "Ambrôs",
+      "gender": "m",
+      "meaning": "«inmortal» · ustilés"
+    },
+    {
+      "name": "Aodren",
+      "gender": "m",
+      "meaning": "«el de noble linaje» · kratense"
+    },
+    {
+      "name": "Arcadi",
+      "gender": "m",
+      "meaning": "«pastor de las tierras altas» · ustilés"
+    },
+    {
+      "name": "Arvor",
+      "gender": "m",
+      "meaning": "«el de la costa» · kratense"
+    },
+    {
+      "name": "Arzel",
+      "gender": "m",
+      "meaning": "«el oso noble» · kratense"
+    },
+    {
+      "name": "Arzhur",
+      "gender": "m",
+      "meaning": "«el oso» · kratense"
+    },
+    {
+      "name": "Aurel",
+      "gender": "m",
+      "meaning": "«dorado» · ustilés"
+    },
+    {
+      "name": "Avenan",
+      "gender": "m",
+      "meaning": "«el del río» · kratense"
+    },
+    {
+      "name": "Bastyin",
+      "gender": "m",
+      "meaning": "«venerado» · ustilés"
+    },
+    {
+      "name": "Bleiz",
+      "gender": "m",
+      "meaning": "«el lobo» · kratense"
+    },
+    {
+      "name": "Bodan",
+      "gender": "m",
+      "meaning": "«dado por lo divino» · mazarino"
+    },
+    {
+      "name": "Borek",
+      "gender": "m",
+      "meaning": "«el luchador» · mazarino"
+    },
+    {
+      "name": "Bran",
+      "gender": "m",
+      "meaning": "«el cuervo» · kratense"
+    },
+    {
+      "name": "Clemen",
+      "gender": "m",
+      "meaning": "«clemente» · ustilés"
+    },
+    {
+      "name": "Colas",
+      "gender": "m",
+      "meaning": "«victoria del pueblo» · ustilés"
+    },
+    {
+      "name": "Damyan",
+      "gender": "m",
+      "meaning": "«el que doma» · mazarino"
+    },
+    {
+      "name": "Danyel",
+      "gender": "m",
+      "meaning": "«Elyārān es mi juez» · nataneo litúrgico"
+    },
+    {
+      "name": "Derrien",
+      "gender": "m",
+      "meaning": "«el del roble» · kratense"
+    },
+    {
+      "name": "Dhrion",
+      "gender": "m",
+      "meaning": "«¡que dure!, el aclamado» · kratense"
+    },
+    {
+      "name": "Djan",
+      "gender": "m",
+      "meaning": "«Elyārān es misericordioso» · ustilés"
+    },
+    {
+      "name": "Djôzef",
+      "gender": "m",
+      "meaning": "«Elyārān añadirá» · ustilés"
+    },
+    {
+      "name": "Donan",
+      "gender": "m",
+      "meaning": "«el de las profundidades» · kratense"
+    },
+    {
+      "name": "Dreth",
+      "gender": "m",
+      "meaning": "«justicia» · kratense"
+    },
+    {
+      "name": "Duan",
+      "gender": "m",
+      "meaning": "«el morenito» · kratense"
+    },
+    {
+      "name": "Durant",
+      "gender": "m",
+      "meaning": "«el que perdura» · ustilés"
+    },
+    {
+      "name": "Eirin",
+      "gender": "m",
+      "meaning": "«el de corazón luminoso» · élfico"
+    },
+    {
+      "name": "Erwan",
+      "gender": "m",
+      "meaning": "«el del tejo» · kratense"
+    },
+    {
+      "name": "Ewen",
+      "gender": "m",
+      "meaning": "«bien nacido» · kratense"
+    },
+    {
+      "name": "Farrant",
+      "gender": "m",
+      "meaning": "«el del caballo tordo» · ustilés"
+    },
+    {
+      "name": "Félis",
+      "gender": "m",
+      "meaning": "«afortunado» · ustilés"
+    },
+    {
+      "name": "Fulup",
+      "gender": "m",
+      "meaning": "«amigo de los caballos» · nataneo"
+    },
+    {
+      "name": "Gabryel",
+      "gender": "m",
+      "meaning": "«la fuerza de Elyārān» · nataneo litúrgico"
+    },
+    {
+      "name": "Glazig",
+      "gender": "m",
+      "meaning": "«el de ojos claros» · kratense"
+    },
+    {
+      "name": "Goulven",
+      "gender": "m",
+      "meaning": "«luz bendita» · kratense"
+    },
+    {
+      "name": "Gritan",
+      "gender": "m",
+      "meaning": "«el de la libertad» · kratense"
+    },
+    {
+      "name": "Gurvan",
+      "gender": "m",
+      "meaning": "«el hombre valiente» · kratense"
+    },
+    {
+      "name": "Gweltaz",
+      "gender": "m",
+      "meaning": "«el de la cabellera» · kratense"
+    },
+    {
+      "name": "Gwenc'hlan",
+      "gender": "m",
+      "meaning": "«el de linaje puro» · kratense"
+    },
+    {
+      "name": "Gwënel",
+      "gender": "m",
+      "meaning": "«el bendito y generoso» · kratense"
+    },
+    {
+      "name": "Hervë",
+      "gender": "m",
+      "meaning": "«el digno en la batalla» · kratense"
+    },
+    {
+      "name": "Houarn",
+      "gender": "m",
+      "meaning": "«el de hierro» · kratense"
+    },
+    {
+      "name": "Iltud",
+      "gender": "m",
+      "meaning": "«el de muchos» · kratense"
+    },
+    {
+      "name": "Isembert",
+      "gender": "m",
+      "meaning": "«brillante como el hierro» · ustilés"
+    },
+    {
+      "name": "Jakez",
+      "gender": "m",
+      "meaning": "«el que sigue los pasos» · nataneo litúrgico"
+    },
+    {
+      "name": "Judikêl",
+      "gender": "m",
+      "meaning": "«señor generoso» · kratense"
+    },
+    {
+      "name": "Justin",
+      "gender": "m",
+      "meaning": "«el justo» · ustilés"
+    },
+    {
+      "name": "Kadeg",
+      "gender": "m",
+      "meaning": "«el guerrero» · kratense"
+    },
+    {
+      "name": "Kaled",
+      "gender": "m",
+      "meaning": "«el tenaz» · kratense"
+    },
+    {
+      "name": "Kalon",
+      "gender": "m",
+      "meaning": "«el corazón» · kratense"
+    },
+    {
+      "name": "Karadeg",
+      "gender": "m",
+      "meaning": "«el amado» · kratense"
+    },
+    {
+      "name": "Kazimer",
+      "gender": "m",
+      "meaning": "«el que impone la paz» · mazarino"
+    },
+    {
+      "name": "Konan",
+      "gender": "m",
+      "meaning": "«el sabueso» · kratense"
+    },
+    {
+      "name": "Larnen",
+      "gender": "m",
+      "meaning": "«el del gran árbol» · élfico"
+    },
+    {
+      "name": "Lubosh",
+      "gender": "m",
+      "meaning": "«amado» · mazarino"
+    },
+    {
+      "name": "Lucyin",
+      "gender": "m",
+      "meaning": "«luminoso» · ustilés"
+    },
+    {
+      "name": "Ludek",
+      "gender": "m",
+      "meaning": "«el del pueblo» · mazarino"
+    },
+    {
+      "name": "Luenir",
+      "gender": "m",
+      "meaning": "«el del arroyo» · élfico"
+    },
+    {
+      "name": "Lugan",
+      "gender": "m",
+      "meaning": "«el brillante» · kratense"
+    },
+    {
+      "name": "Mabon",
+      "gender": "m",
+      "meaning": "«el hijo» · kratense"
+    },
+    {
+      "name": "Maël",
+      "gender": "m",
+      "meaning": "«el príncipe, el jefe» · kratense"
+    },
+    {
+      "name": "Marsel",
+      "gender": "m",
+      "meaning": "«martillito» · ustilés"
+    },
+    {
+      "name": "Matî",
+      "gender": "m",
+      "meaning": "«don de Elyārān» · ustilés"
+    },
+    {
+      "name": "Meldir",
+      "gender": "m",
+      "meaning": "«hijo de las estrellas» · élfico"
+    },
+    {
+      "name": "Menez",
+      "gender": "m",
+      "meaning": "«el de la montaña» · kratense"
+    },
+    {
+      "name": "Mikael",
+      "gender": "m",
+      "meaning": "«¿quién como Elyārān?» · nataneo litúrgico"
+    },
+    {
+      "name": "Milan",
+      "gender": "m",
+      "meaning": "«querido» · mazarino"
+    },
+    {
+      "name": "Mirek",
+      "gender": "m",
+      "meaning": "«el de la paz» · mazarino"
+    },
+    {
+      "name": "Morgan",
+      "gender": "m",
+      "meaning": "«nacido del mar» · kratense"
+    },
+    {
+      "name": "Nënan",
+      "gender": "m",
+      "meaning": "«el de la tierra» · kratense"
+    },
+    {
+      "name": "Neven",
+      "gender": "m",
+      "meaning": "«el nuevo» · kratense"
+    },
+    {
+      "name": "Nuithen",
+      "gender": "m",
+      "meaning": "«el de la noche» · élfico"
+    },
+    {
+      "name": "Paol",
+      "gender": "m",
+      "meaning": "«pequeño, humilde» · nataneo"
+    },
+    {
+      "name": "Pêrig",
+      "gender": "m",
+      "meaning": "«piedrecita» · nataneo"
+    },
+    {
+      "name": "Radek",
+      "gender": "m",
+      "meaning": "«el alegre» · mazarino"
+    },
+    {
+      "name": "Radomer",
+      "gender": "m",
+      "meaning": "«alegría de la paz» · mazarino"
+    },
+    {
+      "name": "Rëgan",
+      "gender": "m",
+      "meaning": "«el que gobierna» · kratense"
+    },
+    {
+      "name": "Rënan",
+      "gender": "m",
+      "meaning": "«el que se mantiene en pie» · kratense"
+    },
+    {
+      "name": "Riok",
+      "gender": "m",
+      "meaning": "«el pequeño rey» · kratense"
+    },
+    {
+      "name": "Riwal",
+      "gender": "m",
+      "meaning": "«rey valiente» · kratense"
+    },
+    {
+      "name": "Rolan",
+      "gender": "m",
+      "meaning": "«fama de la tierra» · ustilés"
+    },
+    {
+      "name": "Ronan",
+      "gender": "m",
+      "meaning": "«la pequeña foca» · kratense"
+    },
+    {
+      "name": "Ruzig",
+      "gender": "m",
+      "meaning": "«el pelirrojo» · kratense"
+    },
+    {
+      "name": "Silrin",
+      "gender": "m",
+      "meaning": "«luz tenue» · élfico"
+    },
+    {
+      "name": "Stanek",
+      "gender": "m",
+      "meaning": "«el firme» · mazarino"
+    },
+    {
+      "name": "Stêven",
+      "gender": "m",
+      "meaning": "«coronado» · nataneo"
+    },
+    {
+      "name": "Talan",
+      "gender": "m",
+      "meaning": "«el de la frente alta» · kratense"
+    },
+    {
+      "name": "Tanguy",
+      "gender": "m",
+      "meaning": "«guerrero de fuego» · kratense"
+    },
+    {
+      "name": "Thalven",
+      "gender": "m",
+      "meaning": "«viento» · élfico"
+    },
+    {
+      "name": "Tomaz",
+      "gender": "m",
+      "meaning": "«el gemelo» · nataneo litúrgico"
+    },
+    {
+      "name": "Tristan",
+      "gender": "m",
+      "meaning": "«el tumultuoso» · kratense"
+    },
+    {
+      "name": "Tudwal",
+      "gender": "m",
+      "meaning": "«el que defiende al pueblo» · kratense"
+    },
+    {
+      "name": "Uhel",
+      "gender": "m",
+      "meaning": "«el alto, el noble» · kratense"
+    },
+    {
+      "name": "Valéri",
+      "gender": "m",
+      "meaning": "«el que vale» · ustilés"
+    },
+    {
+      "name": "Vatslav",
+      "gender": "m",
+      "meaning": "«más gloria» · mazarino"
+    },
+    {
+      "name": "Véarin",
+      "gender": "m",
+      "meaning": "«el elevado» · élfico"
+    },
+    {
+      "name": "Vitôr",
+      "gender": "m",
+      "meaning": "«vencedor» · ustilés"
+    },
+    {
+      "name": "Vojtek",
+      "gender": "m",
+      "meaning": "«el gozo de la tropa» · mazarino"
+    },
+    {
+      "name": "Yann",
+      "gender": "m",
+      "meaning": "«Elyārān es misericordioso» · nataneo litúrgico"
+    },
+    {
+      "name": "Yaromer",
+      "gender": "m",
+      "meaning": "«paz fiera» · mazarino"
+    },
+    {
+      "name": "Aela",
+      "gender": "f",
+      "meaning": "«el ángel» · kratense"
+    },
+    {
+      "name": "Aethira",
+      "gender": "f",
+      "meaning": "«amor, vínculo del alma» · élfico"
+    },
+    {
+      "name": "Alanna",
+      "gender": "f",
+      "meaning": "«la pequeña roca» · kratense"
+    },
+    {
+      "name": "Anaig",
+      "gender": "f",
+      "meaning": "«gracia» · nataneo litúrgico"
+    },
+    {
+      "name": "Aourenn",
+      "gender": "f",
+      "meaning": "«la dorada» · kratense"
+    },
+    {
+      "name": "Arzhela",
+      "gender": "f",
+      "meaning": "«la osa noble» · kratense"
+    },
+    {
+      "name": "Aurèle",
+      "gender": "f",
+      "meaning": "«dorada» · ustilés"
+    },
+    {
+      "name": "Avena",
+      "gender": "f",
+      "meaning": "«la del río» · kratense"
+    },
+    {
+      "name": "Awen",
+      "gender": "f",
+      "meaning": "«la inspiración» · kratense"
+    },
+    {
+      "name": "Berc'hed",
+      "gender": "f",
+      "meaning": "«la elevada» · kratense"
+    },
+    {
+      "name": "Bleuenn",
+      "gender": "f",
+      "meaning": "«flor» · kratense"
+    },
+    {
+      "name": "Bozhena",
+      "gender": "f",
+      "meaning": "«la divina» · mazarino"
+    },
+    {
+      "name": "Brana",
+      "gender": "f",
+      "meaning": "«la cuerva» · kratense"
+    },
+    {
+      "name": "Candèle",
+      "gender": "f",
+      "meaning": "«luz pequeña» · ustilés"
+    },
+    {
+      "name": "Clèmence",
+      "gender": "f",
+      "meaning": "«clemencia» · ustilés"
+    },
+    {
+      "name": "Colète",
+      "gender": "f",
+      "meaning": "«victoria del pueblo» · ustilés"
+    },
+    {
+      "name": "Costanse",
+      "gender": "f",
+      "meaning": "«constante» · ustilés"
+    },
+    {
+      "name": "Dhriona",
+      "gender": "f",
+      "meaning": "«¡que dure!, la aclamada» · kratense"
+    },
+    {
+      "name": "Djane",
+      "gender": "f",
+      "meaning": "«Elyārān es misericordioso» · ustilés"
+    },
+    {
+      "name": "Djulyène",
+      "gender": "f",
+      "meaning": "«del linaje de Julio» · ustilés"
+    },
+    {
+      "name": "Dourena",
+      "gender": "f",
+      "meaning": "«la del agua» · kratense"
+    },
+    {
+      "name": "Dretha",
+      "gender": "f",
+      "meaning": "«la justicia» · kratense"
+    },
+    {
+      "name": "Eirena",
+      "gender": "f",
+      "meaning": "«corazón, luz interior» · élfico"
+    },
+    {
+      "name": "Elain",
+      "gender": "f",
+      "meaning": "«cada respiración» · élfico"
+    },
+    {
+      "name": "Elen",
+      "gender": "f",
+      "meaning": "«la resplandeciente» · nataneo"
+    },
+    {
+      "name": "Enez",
+      "gender": "f",
+      "meaning": "«la isla» · kratense"
+    },
+    {
+      "name": "Enora",
+      "gender": "f",
+      "meaning": "«la honrada» · ustilés"
+    },
+    {
+      "name": "Eva",
+      "gender": "f",
+      "meaning": "«la que da vida» · nataneo litúrgico"
+    },
+    {
+      "name": "Félise",
+      "gender": "f",
+      "meaning": "«afortunada» · ustilés"
+    },
+    {
+      "name": "Florine",
+      "gender": "f",
+      "meaning": "«la florecida» · ustilés"
+    },
+    {
+      "name": "Gëzenn",
+      "gender": "f",
+      "meaning": "«la ciudadana» · kratense"
+    },
+    {
+      "name": "Glaza",
+      "gender": "f",
+      "meaning": "«la de ojos claros» · kratense"
+    },
+    {
+      "name": "Glorîye",
+      "gender": "f",
+      "meaning": "«gloria» · ustilés"
+    },
+    {
+      "name": "Grita",
+      "gender": "f",
+      "meaning": "«la libertad» · kratense"
+    },
+    {
+      "name": "Gwënela",
+      "gender": "f",
+      "meaning": "«la bendita y generosa» · kratense"
+    },
+    {
+      "name": "Gwenn",
+      "gender": "f",
+      "meaning": "«la blanca, la bendita» · kratense"
+    },
+    {
+      "name": "Gwennig",
+      "gender": "f",
+      "meaning": "«la blanquita» · kratense"
+    },
+    {
+      "name": "Gwënola",
+      "gender": "f",
+      "meaning": "«la bendita y feliz» · kratense"
+    },
+    {
+      "name": "Heolenn",
+      "gender": "f",
+      "meaning": "«la del sol» · kratense"
+    },
+    {
+      "name": "Izabel",
+      "gender": "f",
+      "meaning": "«juramento de Elyārān» · ustilés"
+    },
+    {
+      "name": "Judith",
+      "gender": "f",
+      "meaning": "«la alabada» · nataneo litúrgico"
+    },
+    {
+      "name": "Justine",
+      "gender": "f",
+      "meaning": "«la justa» · ustilés"
+    },
+    {
+      "name": "Kaledenn",
+      "gender": "f",
+      "meaning": "«la tenaz» · kratense"
+    },
+    {
+      "name": "Kalonna",
+      "gender": "f",
+      "meaning": "«la del corazón» · kratense"
+    },
+    {
+      "name": "Kanenn",
+      "gender": "f",
+      "meaning": "«la canción» · kratense"
+    },
+    {
+      "name": "Katell",
+      "gender": "f",
+      "meaning": "«pura» · nataneo"
+    },
+    {
+      "name": "Kesenia",
+      "gender": "f",
+      "meaning": "«hospitalaria» · mazarino"
+    },
+    {
+      "name": "Klervi",
+      "gender": "f",
+      "meaning": "«la luminosa» · kratense"
+    },
+    {
+      "name": "Koadenn",
+      "gender": "f",
+      "meaning": "«la del bosque» · kratense"
+    },
+    {
+      "name": "Koulmig",
+      "gender": "f",
+      "meaning": "«la palomita» · kratense"
+    },
+    {
+      "name": "Laornith",
+      "gender": "f",
+      "meaning": "«corazón del bosque» · élfico"
+    },
+    {
+      "name": "Lara",
+      "gender": "f",
+      "meaning": "«la gaviota» · mazarino"
+    },
+    {
+      "name": "Larnetha",
+      "gender": "f",
+      "meaning": "«la del gran árbol» · élfico"
+    },
+    {
+      "name": "Levenez",
+      "gender": "f",
+      "meaning": "«alegría» · kratense"
+    },
+    {
+      "name": "Libusha",
+      "gender": "f",
+      "meaning": "«la amada» · mazarino"
+    },
+    {
+      "name": "Loarenn",
+      "gender": "f",
+      "meaning": "«la de la luna» · kratense"
+    },
+    {
+      "name": "Lucîye",
+      "gender": "f",
+      "meaning": "«luminosa» · ustilés"
+    },
+    {
+      "name": "Ludmila",
+      "gender": "f",
+      "meaning": "«querida del pueblo» · mazarino"
+    },
+    {
+      "name": "Luena",
+      "gender": "f",
+      "meaning": "«arroyo» · élfico"
+    },
+    {
+      "name": "Maïwenn",
+      "gender": "f",
+      "meaning": "«la doncella bendita» · kratense"
+    },
+    {
+      "name": "Mårîye",
+      "gender": "f",
+      "meaning": "«amada de Elyārān» · ustilés"
+    },
+    {
+      "name": "Marta",
+      "gender": "f",
+      "meaning": "«señora de la casa» · nataneo litúrgico"
+    },
+    {
+      "name": "Melda",
+      "gender": "f",
+      "meaning": "«estrella» · élfico"
+    },
+    {
+      "name": "Menna",
+      "gender": "f",
+      "meaning": "«la de la montaña» · kratense"
+    },
+    {
+      "name": "Milena",
+      "gender": "f",
+      "meaning": "«querida» · mazarino"
+    },
+    {
+      "name": "Mireye",
+      "gender": "f",
+      "meaning": "«admirable» · ustilés"
+    },
+    {
+      "name": "Mirka",
+      "gender": "f",
+      "meaning": "«la de la paz» · mazarino"
+    },
+    {
+      "name": "Morwenna",
+      "gender": "f",
+      "meaning": "«doncella del mar» · kratense"
+    },
+    {
+      "name": "Mouezenn",
+      "gender": "f",
+      "meaning": "«la de la voz» · kratense"
+    },
+    {
+      "name": "Natalya",
+      "gender": "f",
+      "meaning": "«natal» · mazarino"
+    },
+    {
+      "name": "Nëna",
+      "gender": "f",
+      "meaning": "«la de la tierra» · kratense"
+    },
+    {
+      "name": "Nevenn",
+      "gender": "f",
+      "meaning": "«la nueva» · kratense"
+    },
+    {
+      "name": "Nolwenn",
+      "gender": "f",
+      "meaning": "«la bendita» · kratense"
+    },
+    {
+      "name": "Nuithel",
+      "gender": "f",
+      "meaning": "«la de la noche» · élfico"
+    },
+    {
+      "name": "Radka",
+      "gender": "f",
+      "meaning": "«la alegre» · mazarino"
+    },
+    {
+      "name": "Rëna",
+      "gender": "f",
+      "meaning": "«la que se mantiene en pie» · kratense"
+    },
+    {
+      "name": "Rezeda",
+      "gender": "f",
+      "meaning": "«la reseda, flor de olor» · mazarino"
+    },
+    {
+      "name": "Riwanon",
+      "gender": "f",
+      "meaning": "«la reina» · kratense"
+    },
+    {
+      "name": "Rolande",
+      "gender": "f",
+      "meaning": "«fama de la tierra» · ustilés"
+    },
+    {
+      "name": "Ronana",
+      "gender": "f",
+      "meaning": "«la foquita» · kratense"
+    },
+    {
+      "name": "Rozenn",
+      "gender": "f",
+      "meaning": "«rosa» · kratense"
+    },
+    {
+      "name": "Ruzenn",
+      "gender": "f",
+      "meaning": "«la pelirroja» · kratense"
+    },
+    {
+      "name": "Sara",
+      "gender": "f",
+      "meaning": "«princesa» · nataneo litúrgico"
+    },
+    {
+      "name": "Silira",
+      "gender": "f",
+      "meaning": "«luz plena» · élfico"
+    },
+    {
+      "name": "Soazig",
+      "gender": "f",
+      "meaning": "«la libre» · ustilés"
+    },
+    {
+      "name": "Sofi",
+      "gender": "f",
+      "meaning": "«sabiduría» · nataneo"
+    },
+    {
+      "name": "Stanislava",
+      "gender": "f",
+      "meaning": "«gloria firme» · mazarino"
+    },
+    {
+      "name": "Steren",
+      "gender": "f",
+      "meaning": "«estrella» · kratense"
+    },
+    {
+      "name": "Tanna",
+      "gender": "f",
+      "meaning": "«la ardiente» · kratense"
+    },
+    {
+      "name": "Tevenn",
+      "gender": "f",
+      "meaning": "«la duna» · kratense"
+    },
+    {
+      "name": "Thalvela",
+      "gender": "f",
+      "meaning": "«la del viento» · élfico"
+    },
+    {
+      "name": "Tifenn",
+      "gender": "f",
+      "meaning": "«la manifestación divina» · nataneo"
+    },
+    {
+      "name": "Tudwenn",
+      "gender": "f",
+      "meaning": "«bendita del pueblo» · kratense"
+    },
+    {
+      "name": "Uhela",
+      "gender": "f",
+      "meaning": "«la noble» · kratense"
+    },
+    {
+      "name": "Valérîye",
+      "gender": "f",
+      "meaning": "«la que vale» · ustilés"
+    },
+    {
+      "name": "Véarna",
+      "gender": "f",
+      "meaning": "«la elevada, la sagrada» · élfico"
+    },
+    {
+      "name": "Vesna",
+      "gender": "f",
+      "meaning": "«primavera» · mazarino"
+    },
+    {
+      "name": "Vlasta",
+      "gender": "f",
+      "meaning": "«poder» · mazarino"
+    },
+    {
+      "name": "Yarmila",
+      "gender": "f",
+      "meaning": "«querida de la primavera» · mazarino"
+    },
+    {
+      "name": "Zlatka",
+      "gender": "f",
+      "meaning": "«la dorada» · mazarino"
+    }
+  ],
+  "surnames": [
+    {
+      "name": "Barazer",
+      "meaning": "«el tonelero» · kratense"
+    },
+    {
+      "name": "Beleg",
+      "meaning": "«el sacerdote» · kratense"
+    },
+    {
+      "name": "Bezo",
+      "meaning": "«el abedul» · kratense"
+    },
+    {
+      "name": "Bihan",
+      "meaning": "«el pequeño» · kratense"
+    },
+    {
+      "name": "Bleiz",
+      "meaning": "«el lobo» · kratense"
+    },
+    {
+      "name": "Branig",
+      "meaning": "«el cuervecillo» · kratense"
+    },
+    {
+      "name": "Braz",
+      "meaning": "«el grande» · kratense"
+    },
+    {
+      "name": "Cherny",
+      "meaning": "«el negro» · mazarino"
+    },
+    {
+      "name": "Colard",
+      "meaning": "«hijo de Colas» · ustilés"
+    },
+    {
+      "name": "Dargoat",
+      "meaning": "«el del bosque» · kratense"
+    },
+    {
+      "name": "Darmor",
+      "meaning": "«el de la costa» · kratense"
+    },
+    {
+      "name": "Daven",
+      "meaning": "«el del río» · kratense"
+    },
+    {
+      "name": "Delcourt",
+      "meaning": "«el de la corte» · ustilés"
+    },
+    {
+      "name": "Delvaux",
+      "meaning": "«el de los valles» · ustilés"
+    },
+    {
+      "name": "Derv",
+      "meaning": "«el roble» · kratense"
+    },
+    {
+      "name": "Deverdin",
+      "meaning": "«el del verde» · ustilés"
+    },
+    {
+      "name": "Diagon",
+      "meaning": "«el diácono» · nataneo"
+    },
+    {
+      "name": "Dobrovski",
+      "meaning": "«el del buen bosque» · mazarino"
+    },
+    {
+      "name": "Dubois",
+      "meaning": "«el del bosque» · ustilés"
+    },
+    {
+      "name": "Dumont",
+      "meaning": "«el del monte» · ustilés"
+    },
+    {
+      "name": "Dupuis",
+      "meaning": "«el del pozo» · ustilés"
+    },
+    {
+      "name": "Durant",
+      "meaning": "«el que perdura» · ustilés"
+    },
+    {
+      "name": "Dvorak",
+      "meaning": "«el del cortijo» · mazarino"
+    },
+    {
+      "name": "Eskob",
+      "meaning": "«el obispo» · nataneo"
+    },
+    {
+      "name": "Fabri",
+      "meaning": "«el herrero» · ustilés"
+    },
+    {
+      "name": "Floc'h",
+      "meaning": "«el escudero» · kratense"
+    },
+    {
+      "name": "Florin",
+      "meaning": "«el florecido» · ustilés"
+    },
+    {
+      "name": "Gall",
+      "meaning": "«el extranjero» · kratense"
+    },
+    {
+      "name": "Goff",
+      "meaning": "«el herrero» · kratense"
+    },
+    {
+      "name": "Greverei",
+      "meaning": "«el de la playa de grava» · ustilés"
+    },
+    {
+      "name": "Guen",
+      "meaning": "«el blanco» · kratense"
+    },
+    {
+      "name": "Gwern",
+      "meaning": "«el aliso» · kratense"
+    },
+    {
+      "name": "Haleg",
+      "meaning": "«el sauce» · kratense"
+    },
+    {
+      "name": "Hir",
+      "meaning": "«el largo» · kratense"
+    },
+    {
+      "name": "Horak",
+      "meaning": "«el montañés» · mazarino"
+    },
+    {
+      "name": "Ivin",
+      "meaning": "«el tejo» · kratense"
+    },
+    {
+      "name": "Kalvez",
+      "meaning": "«el carpintero» · kratense"
+    },
+    {
+      "name": "Karreg",
+      "meaning": "«la roca» · kratense"
+    },
+    {
+      "name": "Kelenn",
+      "meaning": "«el acebo» · kratense"
+    },
+    {
+      "name": "Kemener",
+      "meaning": "«el sastre» · kratense"
+    },
+    {
+      "name": "Kerer",
+      "meaning": "«el zapatero» · kratense"
+    },
+    {
+      "name": "Kergoat",
+      "meaning": "«la aldea del bosque» · kratense"
+    },
+    {
+      "name": "Kerhuel",
+      "meaning": "«la aldea alta» · kratense"
+    },
+    {
+      "name": "Kerlann",
+      "meaning": "«la aldea del páramo» · kratense"
+    },
+    {
+      "name": "Kermor",
+      "meaning": "«la aldea del mar» · kratense"
+    },
+    {
+      "name": "Kerven",
+      "meaning": "«la aldea de piedra» · kratense"
+    },
+    {
+      "name": "Kervran",
+      "meaning": "«la aldea del cuervo» · kratense"
+    },
+    {
+      "name": "Kloareg",
+      "meaning": "«el clérigo» · nataneo"
+    },
+    {
+      "name": "Kog",
+      "meaning": "«el gallo» · kratense"
+    },
+    {
+      "name": "Kovar",
+      "meaning": "«el herrero» · mazarino"
+    },
+    {
+      "name": "Kozh",
+      "meaning": "«el viejo» · kratense"
+    },
+    {
+      "name": "Kral",
+      "meaning": "«el rey» · mazarino"
+    },
+    {
+      "name": "Labourer",
+      "meaning": "«el labrador» · kratense"
+    },
+    {
+      "name": "Lainares",
+      "meaning": "«los laneros» · ustilés"
+    },
+    {
+      "name": "Lamarre",
+      "meaning": "«la charca» · ustilés"
+    },
+    {
+      "name": "Lanmikael",
+      "meaning": "«el santuario de Mikael» · kratense"
+    },
+    {
+      "name": "Lanyann",
+      "meaning": "«el santuario de Yann» · kratense"
+    },
+    {
+      "name": "Laornen",
+      "meaning": "«el del corazón del bosque» · élfico"
+    },
+    {
+      "name": "Larneth",
+      "meaning": "«el gran árbol» · élfico"
+    },
+    {
+      "name": "Leclerc",
+      "meaning": "«el clérigo» · ustilés"
+    },
+    {
+      "name": "Lokmaria",
+      "meaning": "«la ermita de María» · kratense"
+    },
+    {
+      "name": "Luenith",
+      "meaning": "«los arroyos» · élfico"
+    },
+    {
+      "name": "Maen",
+      "meaning": "«la piedra» · kratense"
+    },
+    {
+      "name": "Manac'h",
+      "meaning": "«el monje» · nataneo"
+    },
+    {
+      "name": "Marchal",
+      "meaning": "«el herrador» · ustilés"
+    },
+    {
+      "name": "Masson",
+      "meaning": "«el albañil» · ustilés"
+    },
+    {
+      "name": "Meldas",
+      "meaning": "«las estrellas» · élfico"
+    },
+    {
+      "name": "Meur",
+      "meaning": "«el mayor» · kratense"
+    },
+    {
+      "name": "Miliner",
+      "meaning": "«el molinero» · kratense"
+    },
+    {
+      "name": "Mlynar",
+      "meaning": "«el molinero» · mazarino"
+    },
+    {
+      "name": "Moal",
+      "meaning": "«el calvo» · kratense"
+    },
+    {
+      "name": "Morvan",
+      "meaning": "«el del mar» · kratense"
+    },
+    {
+      "name": "Novak",
+      "meaning": "«el recién llegado» · mazarino"
+    },
+    {
+      "name": "Pekar",
+      "meaning": "«el panadero» · mazarino"
+    },
+    {
+      "name": "Penhoat",
+      "meaning": "«el extremo del bosque» · kratense"
+    },
+    {
+      "name": "Penmarc'h",
+      "meaning": "«la cabeza del caballo» · kratense"
+    },
+    {
+      "name": "Penmenez",
+      "meaning": "«la cima del monte» · kratense"
+    },
+    {
+      "name": "Pennek",
+      "meaning": "«el testarudo» · kratense"
+    },
+    {
+      "name": "Pesketer",
+      "meaning": "«el pescador» · kratense"
+    },
+    {
+      "name": "Ploumelin",
+      "meaning": "«la parroquia del molino» · kratense"
+    },
+    {
+      "name": "Prigent",
+      "meaning": "«el valioso» · kratense"
+    },
+    {
+      "name": "Quarzhur",
+      "meaning": "«hijo de Arzhur» · kratense"
+    },
+    {
+      "name": "Quayla",
+      "meaning": "«hijo de Paol» · kratense"
+    },
+    {
+      "name": "Quidreth",
+      "meaning": "«hijo de Dreth» · kratense"
+    },
+    {
+      "name": "Quillan",
+      "meaning": "«hijo de Alan» · kratense"
+    },
+    {
+      "name": "Quiyann",
+      "meaning": "«hijo de Yann» · kratense"
+    },
+    {
+      "name": "Revilo",
+      "meaning": "«el del arroyo» · ustilés"
+    },
+    {
+      "name": "Riou",
+      "meaning": "«el rey» · kratense"
+    },
+    {
+      "name": "Rivîre",
+      "meaning": "«el del río» · ustilés"
+    },
+    {
+      "name": "Ruz",
+      "meaning": "«el rojo» · kratense"
+    },
+    {
+      "name": "Ruzhichka",
+      "meaning": "«la rosita» · mazarino"
+    },
+    {
+      "name": "Sedlak",
+      "meaning": "«el labrador» · mazarino"
+    },
+    {
+      "name": "Silrith",
+      "meaning": "«las luces» · élfico"
+    },
+    {
+      "name": "Svoboda",
+      "meaning": "«libertad» · mazarino"
+    },
+    {
+      "name": "Tanguy",
+      "meaning": "«guerrero de fuego» · kratense"
+    },
+    {
+      "name": "Thalvelith",
+      "meaning": "«los vientos» · élfico"
+    },
+    {
+      "name": "Tredern",
+      "meaning": "«el poblado del roble» · kratense"
+    },
+    {
+      "name": "Tremor",
+      "meaning": "«el poblado del mar» · kratense"
+    },
+    {
+      "name": "Valdei",
+      "meaning": "«el del valle» · ustilés"
+    },
+    {
+      "name": "Zeman",
+      "meaning": "«el terrateniente» · mazarino"
+    }
+  ],
+  "surname_rules": [],
+  "patronymic_rules": []
 }
