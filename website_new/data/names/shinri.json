@@ -5,143 +5,1408 @@
   "format": "{surname} {name}",
   "names": [
     {
+      "name": "Airen",
+      "gender": "m",
+      "meaning": "«corazón, luz interior» · élfico"
+    },
+    {
+      "name": "Akihiro",
+      "gender": "m",
+      "meaning": "«luz generosa» · shinri"
+    },
+    {
+      "name": "Akio",
+      "gender": "m",
+      "meaning": "«el hombre brillante» · shinri"
+    },
+    {
+      "name": "Akiro",
+      "gender": "m",
+      "meaning": "«el brillante» · shinri"
+    },
+    {
+      "name": "Atsushi",
+      "gender": "m",
+      "meaning": "«el diligente» · shinri"
+    },
+    {
+      "name": "Buran",
+      "gender": "m",
+      "meaning": "«el cuervo» · élfico"
+    },
+    {
+      "name": "Daichi",
+      "gender": "m",
+      "meaning": "«la gran tierra» · shinri"
+    },
+    {
+      "name": "Daisuke",
+      "gender": "m",
+      "meaning": "«el gran ayudante» · shinri"
+    },
+    {
+      "name": "Derrin",
+      "gender": "m",
+      "meaning": "«el del roble» · élfico"
+    },
+    {
       "name": "Eiji",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«el segundo, excelente» · shinri"
+    },
+    {
+      "name": "Fumio",
+      "gender": "m",
+      "meaning": "«el hombre de letras» · shinri"
+    },
+    {
+      "name": "Gin",
+      "gender": "m",
+      "meaning": "«plata» · shinri"
+    },
+    {
+      "name": "Goro",
+      "gender": "m",
+      "meaning": "«el quinto hijo» · shinri"
+    },
+    {
+      "name": "Hachiro",
+      "gender": "m",
+      "meaning": "«el octavo hijo» · shinri"
     },
     {
       "name": "Hajime",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«el comienzo» · shinri"
+    },
+    {
+      "name": "Haruki",
+      "gender": "m",
+      "meaning": "«árbol de primavera» · shinri"
+    },
+    {
+      "name": "Haruto",
+      "gender": "m",
+      "meaning": "«el que vuela en primavera» · shinri"
+    },
+    {
+      "name": "Hayato",
+      "gender": "m",
+      "meaning": "«el halcón» · shinri"
+    },
+    {
+      "name": "Hideo",
+      "gender": "m",
+      "meaning": "«el hombre excelente» · shinri"
+    },
+    {
+      "name": "Hidetsu",
+      "gender": "m",
+      "meaning": "«el que transmite la excelencia» · shinri"
+    },
+    {
+      "name": "Hikaru",
+      "gender": "m",
+      "meaning": "«la luz» · shinri"
+    },
+    {
+      "name": "Hiroshi",
+      "gender": "m",
+      "meaning": "«el generoso» · shinri"
+    },
+    {
+      "name": "Hokuto",
+      "gender": "m",
+      "meaning": "«las siete estrellas del norte» · shinri"
+    },
+    {
+      "name": "Hotaka",
+      "gender": "m",
+      "meaning": "«el de los picos altos» · shinri"
+    },
+    {
+      "name": "Ichiro",
+      "gender": "m",
+      "meaning": "«el primer hijo» · shinri"
+    },
+    {
+      "name": "Isamu",
+      "gender": "m",
+      "meaning": "«el valor» · shinri"
+    },
+    {
+      "name": "Itsuki",
+      "gender": "m",
+      "meaning": "«el árbol» · shinri"
     },
     {
       "name": "Jiro",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«el segundo hijo» · shinri"
+    },
+    {
+      "name": "Jun",
+      "gender": "m",
+      "meaning": "«el puro» · shinri"
+    },
+    {
+      "name": "Kaito",
+      "gender": "m",
+      "meaning": "«el que surca el mar» · shinri"
+    },
+    {
+      "name": "Kajin",
+      "gender": "m",
+      "meaning": "«el hombre de fuego» · shinri"
+    },
+    {
+      "name": "Kalon",
+      "gender": "m",
+      "meaning": "«el corazón» · élfico"
+    },
+    {
+      "name": "Katsuro",
+      "gender": "m",
+      "meaning": "«el hijo victorioso» · shinri"
+    },
+    {
+      "name": "Kazuki",
+      "gender": "m",
+      "meaning": "«esperanza de armonía» · shinri"
+    },
+    {
+      "name": "Kazuo",
+      "gender": "m",
+      "meaning": "«el hombre de paz» · shinri"
+    },
+    {
+      "name": "Keiji",
+      "gender": "m",
+      "meaning": "«el segundo, respetuoso» · shinri"
     },
     {
       "name": "Kenji",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«el segundo, vigoroso» · shinri"
+    },
+    {
+      "name": "Kenshin",
+      "gender": "m",
+      "meaning": "«humilde verdad» · shinri"
+    },
+    {
+      "name": "Kenta",
+      "gender": "m",
+      "meaning": "«el gran sano» · shinri"
+    },
+    {
+      "name": "Kiran",
+      "gender": "m",
+      "meaning": "«el moreno» · élfico"
+    },
+    {
+      "name": "Kiyoshi",
+      "gender": "m",
+      "meaning": "«el puro» · shinri"
     },
     {
       "name": "Kosuke",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«el que ayuda en paz» · shinri"
+    },
+    {
+      "name": "Kotaro",
+      "gender": "m",
+      "meaning": "«el pequeño gran hijo» · shinri"
+    },
+    {
+      "name": "Kuniaki",
+      "gender": "m",
+      "meaning": "«luz de la nación» · shinri"
+    },
+    {
+      "name": "Makoto",
+      "gender": "m",
+      "meaning": "«la sinceridad» · shinri"
+    },
+    {
+      "name": "Mamoru",
+      "gender": "m",
+      "meaning": "«el protector» · shinri"
+    },
+    {
+      "name": "Masaru",
+      "gender": "m",
+      "meaning": "«el que vence» · shinri"
+    },
+    {
+      "name": "Merudan",
+      "gender": "m",
+      "meaning": "«el de las estrellas» · élfico"
+    },
+    {
+      "name": "Minoru",
+      "gender": "m",
+      "meaning": "«la cosecha» · shinri"
+    },
+    {
+      "name": "Miren",
+      "gender": "m",
+      "meaning": "«el que restaura» · shinri"
+    },
+    {
+      "name": "Morin",
+      "gender": "m",
+      "meaning": "«el del mar» · élfico"
+    },
+    {
+      "name": "Naoki",
+      "gender": "m",
+      "meaning": "«el árbol recto» · shinri"
+    },
+    {
+      "name": "Nherwa",
+      "gender": "m",
+      "meaning": "«el entero» · shinri"
+    },
+    {
+      "name": "Noboru",
+      "gender": "m",
+      "meaning": "«el que asciende» · shinri"
+    },
+    {
+      "name": "Nobuo",
+      "gender": "m",
+      "meaning": "«el hombre fiel» · shinri"
+    },
+    {
+      "name": "Nuiren",
+      "gender": "m",
+      "meaning": "«el de la noche» · élfico"
+    },
+    {
+      "name": "Osamu",
+      "gender": "m",
+      "meaning": "«el que gobierna en paz» · shinri"
+    },
+    {
+      "name": "Raiden",
+      "gender": "m",
+      "meaning": "«trueno y relámpago» · shinri"
+    },
+    {
+      "name": "Raiko",
+      "gender": "m",
+      "meaning": "«victoria, el comienzo de un camino más largo» · shinri"
+    },
+    {
+      "name": "Ranesh",
+      "gender": "m",
+      "meaning": "«el gran árbol» · élfico"
+    },
+    {
+      "name": "Ren",
+      "gender": "m",
+      "meaning": "«el loto» · shinri"
+    },
+    {
+      "name": "Renji",
+      "gender": "m",
+      "meaning": "«el segundo loto» · shinri"
+    },
+    {
+      "name": "Rokuro",
+      "gender": "m",
+      "meaning": "«el sexto hijo» · shinri"
+    },
+    {
+      "name": "Ruen",
+      "gender": "m",
+      "meaning": "«el arroyo» · élfico"
+    },
+    {
+      "name": "Ryota",
+      "gender": "m",
+      "meaning": "«el gran refrescante» · shinri"
+    },
+    {
+      "name": "Ryuji",
+      "gender": "m",
+      "meaning": "«el segundo dragón» · shinri"
+    },
+    {
+      "name": "Ryusei",
+      "gender": "m",
+      "meaning": "«estrella del dragón» · shinri"
+    },
+    {
+      "name": "Saburo",
+      "gender": "m",
+      "meaning": "«el tercer hijo» · shinri"
+    },
+    {
+      "name": "Satoru",
+      "gender": "m",
+      "meaning": "«el que comprende» · shinri"
+    },
+    {
+      "name": "Seigo",
+      "gender": "m",
+      "meaning": "«el sincero» · shinri"
+    },
+    {
+      "name": "Seiichi",
+      "gender": "m",
+      "meaning": "«el primer hijo, sincero» · shinri"
+    },
+    {
+      "name": "Senjuro",
+      "gender": "m",
+      "meaning": "«el hijo de larga vida» · shinri"
     },
     {
       "name": "Shichiro",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«el séptimo hijo» · shinri"
+    },
+    {
+      "name": "Shin",
+      "gender": "m",
+      "meaning": "«la verdad» · shinri"
+    },
+    {
+      "name": "Shinji",
+      "gender": "m",
+      "meaning": "«el verdadero segundo» · shinri"
+    },
+    {
+      "name": "Shiren",
+      "gender": "m",
+      "meaning": "«luz tenue» · élfico"
+    },
+    {
+      "name": "Shiro",
+      "gender": "m",
+      "meaning": "«el cuarto hijo» · shinri"
+    },
+    {
+      "name": "Shizen",
+      "gender": "m",
+      "meaning": "«la naturaleza» · shinri"
+    },
+    {
+      "name": "Shota",
+      "gender": "m",
+      "meaning": "«el gran vuelo» · shinri"
+    },
+    {
+      "name": "Sora",
+      "gender": "m",
+      "meaning": "«el cielo» · shinri"
+    },
+    {
+      "name": "Susumu",
+      "gender": "m",
+      "meaning": "«el que avanza» · shinri"
+    },
+    {
+      "name": "Tadashi",
+      "gender": "m",
+      "meaning": "«el justo» · shinri"
     },
     {
       "name": "Takahiro",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«noble y generoso» · shinri"
+    },
+    {
+      "name": "Takeshi",
+      "gender": "m",
+      "meaning": "«el guerrero» · shinri"
+    },
+    {
+      "name": "Takumi",
+      "gender": "m",
+      "meaning": "«el artesano» · shinri"
+    },
+    {
+      "name": "Taro",
+      "gender": "m",
+      "meaning": "«el gran hijo» · shinri"
+    },
+    {
+      "name": "Taruvel",
+      "gender": "m",
+      "meaning": "«el viento» · élfico"
+    },
+    {
+      "name": "Tatsuya",
+      "gender": "m",
+      "meaning": "«el dragón» · shinri"
+    },
+    {
+      "name": "Tetsuo",
+      "gender": "m",
+      "meaning": "«el hombre de hierro» · shinri"
+    },
+    {
+      "name": "Tomoya",
+      "gender": "m",
+      "meaning": "«el amigo verdadero» · shinri"
     },
     {
       "name": "Toshiro",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«el hijo talentoso» · shinri"
+    },
+    {
+      "name": "Tsenrin",
+      "gender": "m",
+      "meaning": "«el de los cien años» · élfico"
+    },
+    {
+      "name": "Tsubasa",
+      "gender": "m",
+      "meaning": "«las alas» · shinri"
+    },
+    {
+      "name": "Yamato",
+      "gender": "m",
+      "meaning": "«la gran armonía» · shinri"
+    },
+    {
+      "name": "Yasuo",
+      "gender": "m",
+      "meaning": "«el hombre tranquilo» · shinri"
+    },
+    {
+      "name": "Yoshio",
+      "gender": "m",
+      "meaning": "«el hombre bueno» · shinri"
+    },
+    {
+      "name": "Yoshiro",
+      "gender": "m",
+      "meaning": "«el buen hijo» · shinri"
+    },
+    {
+      "name": "Yusuke",
+      "gender": "m",
+      "meaning": "«el que ayuda con valor» · shinri"
     },
     {
       "name": "Yuta",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«el gran valiente» · shinri"
+    },
+    {
+      "name": "Zen",
+      "gender": "m",
+      "meaning": "«nosotros, entre iguales» · shinri"
+    },
+    {
+      "name": "Aelin",
+      "gender": "f",
+      "meaning": "«la del aliento» · élfico"
+    },
+    {
+      "name": "Aeshira",
+      "gender": "f",
+      "meaning": "«amor, vínculo del alma» · élfico"
+    },
+    {
+      "name": "Aiko",
+      "gender": "f",
+      "meaning": "«niña del amor» · shinri"
+    },
+    {
+      "name": "Airena",
+      "gender": "f",
+      "meaning": "«luz interior» · élfico"
+    },
+    {
+      "name": "Akane",
+      "gender": "f",
+      "meaning": "«rojo intenso» · shinri"
+    },
+    {
+      "name": "Akemi",
+      "gender": "f",
+      "meaning": "«belleza brillante» · shinri"
+    },
+    {
+      "name": "Asami",
+      "gender": "f",
+      "meaning": "«belleza de la mañana» · shinri"
+    },
+    {
+      "name": "Asuka",
+      "gender": "f",
+      "meaning": "«fragancia del mañana» · shinri"
+    },
+    {
+      "name": "Aya",
+      "gender": "f",
+      "meaning": "«la seda bordada» · shinri"
+    },
+    {
+      "name": "Ayaka",
+      "gender": "f",
+      "meaning": "«flor de colores» · shinri"
+    },
+    {
+      "name": "Ayame",
+      "gender": "f",
+      "meaning": "«el iris» · shinri"
+    },
+    {
+      "name": "Brenna",
+      "gender": "f",
+      "meaning": "«la cuerva» · élfico"
     },
     {
       "name": "Chiharu",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«mil primaveras» · shinri"
+    },
+    {
+      "name": "Chiyo",
+      "gender": "f",
+      "meaning": "«mil generaciones» · shinri"
     },
     {
       "name": "Chizuru",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«mil grullas» · shinri"
+    },
+    {
+      "name": "Eira",
+      "gender": "f",
+      "meaning": "«la nieve» · élfico"
+    },
+    {
+      "name": "Emi",
+      "gender": "f",
+      "meaning": "«sonrisa bendita» · shinri"
+    },
+    {
+      "name": "Erain",
+      "gender": "f",
+      "meaning": "«cada respiración» · élfico"
+    },
+    {
+      "name": "Fumiko",
+      "gender": "f",
+      "meaning": "«niña de las letras» · shinri"
+    },
+    {
+      "name": "Guen",
+      "gender": "f",
+      "meaning": "«la bendita» · élfico"
+    },
+    {
+      "name": "Halai",
+      "gender": "f",
+      "meaning": "«la de la tierra» · élfico"
+    },
+    {
+      "name": "Hana",
+      "gender": "f",
+      "meaning": "«flor» · shinri"
+    },
+    {
+      "name": "Hanae",
+      "gender": "f",
+      "meaning": "«la rama florida» · shinri"
     },
     {
       "name": "Haruka",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«la lejana» · shinri"
+    },
+    {
+      "name": "Hikari",
+      "gender": "f",
+      "meaning": "«luz» · shinri"
+    },
+    {
+      "name": "Hina",
+      "gender": "f",
+      "meaning": "«la soleada» · shinri"
+    },
+    {
+      "name": "Hitomi",
+      "gender": "f",
+      "meaning": "«la mirada» · shinri"
+    },
+    {
+      "name": "Hotaru",
+      "gender": "f",
+      "meaning": "«luciérnaga» · shinri"
+    },
+    {
+      "name": "Ishiel",
+      "gender": "f",
+      "meaning": "«la de los astros» · élfico"
     },
     {
       "name": "Izumi",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«la fuente» · shinri"
+    },
+    {
+      "name": "Kaede",
+      "gender": "f",
+      "meaning": "«arce» · shinri"
+    },
+    {
+      "name": "Kalonne",
+      "gender": "f",
+      "meaning": "«la del corazón» · élfico"
+    },
+    {
+      "name": "Kanon",
+      "gender": "f",
+      "meaning": "«sonido de flor» · shinri"
+    },
+    {
+      "name": "Kaori",
+      "gender": "f",
+      "meaning": "«fragancia» · shinri"
+    },
+    {
+      "name": "Kasumi",
+      "gender": "f",
+      "meaning": "«la neblina» · shinri"
+    },
+    {
+      "name": "Kazue",
+      "gender": "f",
+      "meaning": "«rama de armonía» · shinri"
+    },
+    {
+      "name": "Keiko",
+      "gender": "f",
+      "meaning": "«niña bendita» · shinri"
+    },
+    {
+      "name": "Kiku",
+      "gender": "f",
+      "meaning": "«crisantemo» · shinri"
+    },
+    {
+      "name": "Kiyomi",
+      "gender": "f",
+      "meaning": "«belleza pura» · shinri"
+    },
+    {
+      "name": "Kotone",
+      "gender": "f",
+      "meaning": "«el sonido del arpa» · shinri"
+    },
+    {
+      "name": "Kumiko",
+      "gender": "f",
+      "meaning": "«niña de la belleza eterna» · shinri"
+    },
+    {
+      "name": "Lunei",
+      "gender": "f",
+      "meaning": "«la de la corriente» · élfico"
     },
     {
       "name": "Mai",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«la danza» · shinri"
+    },
+    {
+      "name": "Mayu",
+      "gender": "f",
+      "meaning": "«el capullo de seda» · shinri"
+    },
+    {
+      "name": "Megumi",
+      "gender": "f",
+      "meaning": "«la bendición» · shinri"
+    },
+    {
+      "name": "Meruda",
+      "gender": "f",
+      "meaning": "«estrella» · élfico"
+    },
+    {
+      "name": "Midori",
+      "gender": "f",
+      "meaning": "«verde» · shinri"
+    },
+    {
+      "name": "Miho",
+      "gender": "f",
+      "meaning": "«el puerto hermoso» · shinri"
+    },
+    {
+      "name": "Mika",
+      "gender": "f",
+      "meaning": "«hermosa fragancia» · shinri"
+    },
+    {
+      "name": "Miki",
+      "gender": "f",
+      "meaning": "«el árbol hermoso» · shinri"
+    },
+    {
+      "name": "Minako",
+      "gender": "f",
+      "meaning": "«niña del mar hermoso» · shinri"
+    },
+    {
+      "name": "Misaki",
+      "gender": "f",
+      "meaning": "«flor hermosa» · shinri"
+    },
+    {
+      "name": "Mitsuki",
+      "gender": "f",
+      "meaning": "«la hermosa luna» · shinri"
+    },
+    {
+      "name": "Miyu",
+      "gender": "f",
+      "meaning": "«belleza tierna» · shinri"
+    },
+    {
+      "name": "Momoko",
+      "gender": "f",
+      "meaning": "«niña del melocotón» · shinri"
+    },
+    {
+      "name": "Moruen",
+      "gender": "f",
+      "meaning": "«doncella del mar» · élfico"
+    },
+    {
+      "name": "Nanami",
+      "gender": "f",
+      "meaning": "«siete mares» · shinri"
+    },
+    {
+      "name": "Nao",
+      "gender": "f",
+      "meaning": "«la honesta» · shinri"
+    },
+    {
+      "name": "Naomi",
+      "gender": "f",
+      "meaning": "«belleza honesta» · shinri"
+    },
+    {
+      "name": "Natsuki",
+      "gender": "f",
+      "meaning": "«la luna de verano» · shinri"
+    },
+    {
+      "name": "Niamu",
+      "gender": "f",
+      "meaning": "«la radiante» · élfico"
+    },
+    {
+      "name": "Noriko",
+      "gender": "f",
+      "meaning": "«niña de la ley» · shinri"
+    },
+    {
+      "name": "Nozomi",
+      "gender": "f",
+      "meaning": "«esperanza» · shinri"
+    },
+    {
+      "name": "Nuira",
+      "gender": "f",
+      "meaning": "«la de la noche» · élfico"
+    },
+    {
+      "name": "Ona",
+      "gender": "f",
+      "meaning": "«la que asciende» · shinri"
+    },
+    {
+      "name": "Orrin",
+      "gender": "f",
+      "meaning": "«la del bosque» · élfico"
+    },
+    {
+      "name": "Ranesha",
+      "gender": "f",
+      "meaning": "«la del gran árbol» · élfico"
+    },
+    {
+      "name": "Rei",
+      "gender": "f",
+      "meaning": "«la gracia» · shinri"
     },
     {
       "name": "Riko",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«niña del jazmín» · shinri"
+    },
+    {
+      "name": "Rin",
+      "gender": "f",
+      "meaning": "«la digna» · shinri"
+    },
+    {
+      "name": "Ruena",
+      "gender": "f",
+      "meaning": "«el arroyo» · élfico"
+    },
+    {
+      "name": "Ruri",
+      "gender": "f",
+      "meaning": "«lapislázuli» · shinri"
+    },
+    {
+      "name": "Sachiko",
+      "gender": "f",
+      "meaning": "«niña dichosa» · shinri"
+    },
+    {
+      "name": "Sakura",
+      "gender": "f",
+      "meaning": "«el cerezo» · shinri"
+    },
+    {
+      "name": "Sanae",
+      "gender": "f",
+      "meaning": "«el brote de arroz» · shinri"
     },
     {
       "name": "Saori",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«la que teje la arena» · shinri"
+    },
+    {
+      "name": "Sayuri",
+      "gender": "f",
+      "meaning": "«el pequeño lirio» · shinri"
+    },
+    {
+      "name": "Setsuko",
+      "gender": "f",
+      "meaning": "«niña de la nieve» · shinri"
+    },
+    {
+      "name": "Shelin",
+      "gender": "f",
+      "meaning": "«la prueba necesaria» · shinri"
+    },
+    {
+      "name": "Shinobu",
+      "gender": "f",
+      "meaning": "«la paciente» · shinri"
+    },
+    {
+      "name": "Shiori",
+      "gender": "f",
+      "meaning": "«la guía» · shinri"
+    },
+    {
+      "name": "Shirin",
+      "gender": "f",
+      "meaning": "«luz tenue» · élfico"
+    },
+    {
+      "name": "Shizuka",
+      "gender": "f",
+      "meaning": "«la serena» · shinri"
+    },
+    {
+      "name": "Siani",
+      "gender": "f",
+      "meaning": "«la de la luz plena» · élfico"
+    },
+    {
+      "name": "Sumire",
+      "gender": "f",
+      "meaning": "«la violeta» · shinri"
+    },
+    {
+      "name": "Suzu",
+      "gender": "f",
+      "meaning": "«la campanilla» · shinri"
+    },
+    {
+      "name": "Takara",
+      "gender": "f",
+      "meaning": "«el tesoro» · shinri"
+    },
+    {
+      "name": "Tamaki",
+      "gender": "f",
+      "meaning": "«la joya» · shinri"
+    },
+    {
+      "name": "Taruvela",
+      "gender": "f",
+      "meaning": "«la del viento» · élfico"
+    },
+    {
+      "name": "Tomoe",
+      "gender": "f",
+      "meaning": "«el remolino» · shinri"
+    },
+    {
+      "name": "Tsubaki",
+      "gender": "f",
+      "meaning": "«la camelia» · shinri"
+    },
+    {
+      "name": "Tsukiko",
+      "gender": "f",
+      "meaning": "«niña de la luna» · shinri"
+    },
+    {
+      "name": "Ume",
+      "gender": "f",
+      "meaning": "«el ciruelo» · shinri"
+    },
+    {
+      "name": "Washani",
+      "gender": "f",
+      "meaning": "«tiempo de paz y prosperidad» · shinri"
+    },
+    {
+      "name": "Yoko",
+      "gender": "f",
+      "meaning": "«niña del sol» · shinri"
     },
     {
       "name": "Yoshiko",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«niña buena» · shinri"
+    },
+    {
+      "name": "Yui",
+      "gender": "f",
+      "meaning": "«el lazo» · shinri"
+    },
+    {
+      "name": "Yumi",
+      "gender": "f",
+      "meaning": "«el arco» · shinri"
+    },
+    {
+      "name": "Yuna",
+      "gender": "f",
+      "meaning": "«la gentil» · shinri"
+    },
+    {
+      "name": "Yuriko",
+      "gender": "f",
+      "meaning": "«niña del lirio» · shinri"
     }
   ],
   "surnames": [
     {
+      "name": "Aberu",
+      "meaning": "«la desembocadura» · élfico"
+    },
+    {
+      "name": "Akiyama",
+      "meaning": "«la montaña de otoño» · shinri"
+    },
+    {
+      "name": "Amano",
+      "meaning": "«el campo del cielo» · shinri"
+    },
+    {
+      "name": "Aoki",
+      "meaning": "«el árbol verde» · shinri"
+    },
+    {
+      "name": "Arai",
+      "meaning": "«el pozo nuevo» · shinri"
+    },
+    {
+      "name": "Asano",
+      "meaning": "«el campo poco profundo» · shinri"
+    },
+    {
+      "name": "Brannoki",
+      "meaning": "«el árbol del cuervo» · élfico"
+    },
+    {
+      "name": "Chiba",
+      "meaning": "«las mil hojas» · shinri"
+    },
+    {
+      "name": "Dunmor",
+      "meaning": "«la gran fortaleza» · élfico"
+    },
+    {
       "name": "Fujisawa",
-      "meaning": ""
+      "meaning": "«el pantano de las glicinias» · shinri"
+    },
+    {
+      "name": "Fukuda",
+      "meaning": "«el campo de la fortuna» · shinri"
+    },
+    {
+      "name": "Furukawa",
+      "meaning": "«el río viejo» · shinri"
+    },
+    {
+      "name": "Glasren",
+      "meaning": "«el verde azulado» · élfico"
+    },
+    {
+      "name": "Halaimori",
+      "meaning": "«el bosque de Halai» · élfico"
+    },
+    {
+      "name": "Hamada",
+      "meaning": "«el campo de la playa» · shinri"
+    },
+    {
+      "name": "Hanazono",
+      "meaning": "«el jardín de flores» · shinri"
+    },
+    {
+      "name": "Harada",
+      "meaning": "«el campo de la llanura» · shinri"
+    },
+    {
+      "name": "Hasegawa",
+      "meaning": "«el río del valle largo» · shinri"
     },
     {
       "name": "Hayashi",
-      "meaning": ""
+      "meaning": "«el bosque» · shinri"
+    },
+    {
+      "name": "Hibotoru",
+      "meaning": "«la llama que se eleva» · shinri"
+    },
+    {
+      "name": "Hirano",
+      "meaning": "«el campo llano» · shinri"
+    },
+    {
+      "name": "Honda",
+      "meaning": "«el arrozal original» · shinri"
+    },
+    {
+      "name": "Hoshino",
+      "meaning": "«el campo de las estrellas» · shinri"
+    },
+    {
+      "name": "Hoshizaki",
+      "meaning": "«el cabo de las estrellas» · shinri"
     },
     {
       "name": "Igarashi",
-      "meaning": ""
+      "meaning": "«las cincuenta tormentas» · shinri"
     },
     {
       "name": "Inada",
-      "meaning": ""
+      "meaning": "«el arrozal» · shinri"
+    },
+    {
+      "name": "Inomoto",
+      "meaning": "«el pie del pozo» · shinri"
+    },
+    {
+      "name": "Ishikawa",
+      "meaning": "«el río de piedra» · shinri"
+    },
+    {
+      "name": "Iwasaki",
+      "meaning": "«el cabo rocoso» · shinri"
+    },
+    {
+      "name": "Kagami",
+      "meaning": "«el espejo» · shinri"
+    },
+    {
+      "name": "Kamiya",
+      "meaning": "«el valle sagrado» · shinri"
+    },
+    {
+      "name": "Kanda",
+      "meaning": "«el campo sagrado» · shinri"
+    },
+    {
+      "name": "Kaneko",
+      "meaning": "«la pepita de oro» · shinri"
+    },
+    {
+      "name": "Kawaguchi",
+      "meaning": "«la boca del río» · shinri"
+    },
+    {
+      "name": "Kazama",
+      "meaning": "«el paso del viento» · shinri"
+    },
+    {
+      "name": "Kikuchi",
+      "meaning": "«el estanque de los crisantemos» · shinri"
     },
     {
       "name": "Kimura",
-      "meaning": ""
+      "meaning": "«la aldea del árbol» · shinri"
+    },
+    {
+      "name": "Kirishima",
+      "meaning": "«la isla de la niebla» · shinri"
+    },
+    {
+      "name": "Kitamura",
+      "meaning": "«la aldea del norte» · shinri"
+    },
+    {
+      "name": "Kobayashi",
+      "meaning": "«el bosquecillo» · shinri"
+    },
+    {
+      "name": "Koedan",
+      "meaning": "«el del bosque» · élfico"
+    },
+    {
+      "name": "Kojima",
+      "meaning": "«la isla pequeña» · shinri"
+    },
+    {
+      "name": "Kubo",
+      "meaning": "«la hondonada» · shinri"
+    },
+    {
+      "name": "Kurokawa",
+      "meaning": "«el río negro» · shinri"
+    },
+    {
+      "name": "Kurosawa",
+      "meaning": "«el pantano negro» · shinri"
+    },
+    {
+      "name": "Lirin",
+      "meaning": "«el del lago» · élfico"
+    },
+    {
+      "name": "Maeda",
+      "meaning": "«el campo de delante» · shinri"
+    },
+    {
+      "name": "Masuda",
+      "meaning": "«el campo creciente» · shinri"
+    },
+    {
+      "name": "Matsuda",
+      "meaning": "«el campo de los pinos» · shinri"
+    },
+    {
+      "name": "Matsumoto",
+      "meaning": "«el pie del pino» · shinri"
+    },
+    {
+      "name": "Menhira",
+      "meaning": "«la piedra alta» · élfico"
+    },
+    {
+      "name": "Merudani",
+      "meaning": "«el valle de las estrellas» · élfico"
+    },
+    {
+      "name": "Mikami",
+      "meaning": "«los tres espíritus» · shinri"
+    },
+    {
+      "name": "Miura",
+      "meaning": "«las tres bahías» · shinri"
+    },
+    {
+      "name": "Miyazaki",
+      "meaning": "«el cabo del santuario» · shinri"
     },
     {
       "name": "Mizutani",
-      "meaning": ""
+      "meaning": "«el valle del agua» · shinri"
     },
     {
       "name": "Morimoto",
-      "meaning": ""
+      "meaning": "«el pie del bosque» · shinri"
+    },
+    {
+      "name": "Murakami",
+      "meaning": "«la aldea de arriba» · shinri"
+    },
+    {
+      "name": "Nagai",
+      "meaning": "«el pozo largo» · shinri"
     },
     {
       "name": "Nakajima",
-      "meaning": ""
+      "meaning": "«la isla del medio» · shinri"
+    },
+    {
+      "name": "Nakamura",
+      "meaning": "«la aldea del medio» · shinri"
+    },
+    {
+      "name": "Nishida",
+      "meaning": "«el campo del oeste» · shinri"
+    },
+    {
+      "name": "Noguchi",
+      "meaning": "«la boca del campo» · shinri"
+    },
+    {
+      "name": "Nuirenji",
+      "meaning": "«el templo de la noche» · élfico"
+    },
+    {
+      "name": "Ogawa",
+      "meaning": "«el arroyo» · shinri"
+    },
+    {
+      "name": "Okada",
+      "meaning": "«el campo de la colina» · shinri"
+    },
+    {
+      "name": "Omori",
+      "meaning": "«el gran bosque» · shinri"
+    },
+    {
+      "name": "Ono",
+      "meaning": "«el campo pequeño» · shinri"
+    },
+    {
+      "name": "Penrin",
+      "meaning": "«el cabo» · élfico"
+    },
+    {
+      "name": "Rengaku",
+      "meaning": "«el estudio del loto» · shinri"
+    },
+    {
+      "name": "Ruenzaki",
+      "meaning": "«el cabo del arroyo» · élfico"
+    },
+    {
+      "name": "Sakai",
+      "meaning": "«la frontera» · shinri"
+    },
+    {
+      "name": "Sakamoto",
+      "meaning": "«el pie de la cuesta» · shinri"
+    },
+    {
+      "name": "Shi",
+      "meaning": "«la certeza» · shinri"
+    },
+    {
+      "name": "Shimizu",
+      "meaning": "«el agua pura» · shinri"
     },
     {
       "name": "Shinozaki",
-      "meaning": ""
+      "meaning": "«el cabo de los bambúes» · shinri"
+    },
+    {
+      "name": "Shirakawa",
+      "meaning": "«el río blanco» · shinri"
+    },
+    {
+      "name": "Shiratori",
+      "meaning": "«el cisne» · shinri"
     },
     {
       "name": "Sugiyama",
-      "meaning": ""
+      "meaning": "«la montaña de los cedros» · shinri"
     },
     {
       "name": "Tachibana",
-      "meaning": ""
+      "meaning": "«el naranjo silvestre» · shinri"
+    },
+    {
+      "name": "Takagi",
+      "meaning": "«el árbol alto» · shinri"
+    },
+    {
+      "name": "Takahashi",
+      "meaning": "«el puente alto» · shinri"
+    },
+    {
+      "name": "Takeda",
+      "meaning": "«el campo de bambú» · shinri"
+    },
+    {
+      "name": "Takenaga",
+      "meaning": "«el bambú largo» · shinri"
+    },
+    {
+      "name": "Tamaekachi",
+      "meaning": "«la victoria de la joya» · shinri"
+    },
+    {
+      "name": "Tamura",
+      "meaning": "«la aldea de los arrozales» · shinri"
+    },
+    {
+      "name": "Taniguchi",
+      "meaning": "«la boca del valle» · shinri"
+    },
+    {
+      "name": "Tokiwa",
+      "meaning": "«el siempreverde» · shinri"
+    },
+    {
+      "name": "Tsukimura",
+      "meaning": "«la aldea de la luna» · shinri"
     },
     {
       "name": "Tsunoda",
-      "meaning": ""
+      "meaning": "«el campo del cuerno» · shinri"
+    },
+    {
+      "name": "Uchida",
+      "meaning": "«el campo de dentro» · shinri"
+    },
+    {
+      "name": "Ueda",
+      "meaning": "«el campo de arriba» · shinri"
+    },
+    {
+      "name": "Wada",
+      "meaning": "«el campo de la armonía» · shinri"
+    },
+    {
+      "name": "Yamada",
+      "meaning": "«el campo de la montaña» · shinri"
+    },
+    {
+      "name": "Yamaguchi",
+      "meaning": "«la boca de la montaña» · shinri"
+    },
+    {
+      "name": "Yamamoto",
+      "meaning": "«el pie de la montaña» · shinri"
     },
     {
       "name": "Yamazaki",
-      "meaning": ""
+      "meaning": "«el cabo de la montaña» · shinri"
+    },
+    {
+      "name": "Yasuda",
+      "meaning": "«el campo tranquilo» · shinri"
+    },
+    {
+      "name": "Yokoyama",
+      "meaning": "«la montaña de al lado» · shinri"
+    },
+    {
+      "name": "Yoshida",
+      "meaning": "«el campo de la buena fortuna» · shinri"
     }
-  ]
+  ],
+  "surname_rules": [],
+  "patronymic_rules": []
 }

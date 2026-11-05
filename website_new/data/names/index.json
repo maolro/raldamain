@@ -58,11 +58,11 @@
     "id": "shinri",
     "name": "Shinri",
     "count": {
-      "names": 17,
-      "m": 9,
-      "f": 8,
+      "names": 200,
+      "m": 100,
+      "f": 100,
       "u": 0,
-      "surnames": 13
+      "surnames": 100
     }
   },
   {
