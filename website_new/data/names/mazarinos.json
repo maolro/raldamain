@@ -5,127 +5,1429 @@
   "format": "{name} {surname}",
   "names": [
     {
+      "name": "Afanasi",
+      "gender": "m",
+      "meaning": "«el que no muere» · nataneo"
+    },
+    {
+      "name": "Agafon",
+      "gender": "m",
+      "meaning": "«bueno» · nataneo"
+    },
+    {
       "name": "Aleksandr",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«defensor de los hombres» · nataneo"
     },
     {
       "name": "Anton",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«inestimable» · nataneo"
+    },
+    {
+      "name": "Arkadi",
+      "gender": "m",
+      "meaning": "«pastor de las tierras altas» · nataneo"
+    },
+    {
+      "name": "Askold",
+      "gender": "m",
+      "meaning": "«la lanza de los dioses» · ayutano"
+    },
+    {
+      "name": "Avdei",
+      "gender": "m",
+      "meaning": "«siervo de Elyārān» · nataneo litúrgico"
+    },
+    {
+      "name": "Bertold",
+      "gender": "m",
+      "meaning": "«el que gobierna con esplendor» · geismariano"
+    },
+    {
+      "name": "Bodan",
+      "gender": "m",
+      "meaning": "«dado por lo divino» · mazarino"
+    },
+    {
+      "name": "Bogomil",
+      "gender": "m",
+      "meaning": "«querido de lo divino» · mazarino"
+    },
+    {
+      "name": "Boleslav",
+      "gender": "m",
+      "meaning": "«el más glorioso» · mazarino"
+    },
+    {
+      "name": "Borislav",
+      "gender": "m",
+      "meaning": "«gloria en la lucha» · mazarino"
+    },
+    {
+      "name": "Branimir",
+      "gender": "m",
+      "meaning": "«el que defiende la paz» · mazarino"
+    },
+    {
+      "name": "Bratislav",
+      "gender": "m",
+      "meaning": "«gloria del hermano» · mazarino"
+    },
+    {
+      "name": "Danil",
+      "gender": "m",
+      "meaning": "«Elyārān es mi juez» · nataneo litúrgico"
     },
     {
       "name": "Dmitri",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«consagrado a la madre tierra» · nataneo"
+    },
+    {
+      "name": "Dobromir",
+      "gender": "m",
+      "meaning": "«paz buena» · mazarino"
+    },
+    {
+      "name": "Dragan",
+      "gender": "m",
+      "meaning": "«querido» · mazarino"
+    },
+    {
+      "name": "Dragomir",
+      "gender": "m",
+      "meaning": "«paz querida» · mazarino"
+    },
+    {
+      "name": "Erast",
+      "gender": "m",
+      "meaning": "«amado» · nataneo"
+    },
+    {
+      "name": "Feliks",
+      "gender": "m",
+      "meaning": "«afortunado» · nataneo"
+    },
+    {
+      "name": "Filip",
+      "gender": "m",
+      "meaning": "«amigo de los caballos» · nataneo"
+    },
+    {
+      "name": "Fridrikh",
+      "gender": "m",
+      "meaning": "«el que gobierna en paz» · geismariano"
     },
     {
       "name": "Gennady",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«noble, de buena cuna» · nataneo"
+    },
+    {
+      "name": "Gerashim",
+      "gender": "m",
+      "meaning": "«el venerable» · nataneo"
     },
     {
       "name": "Gleb",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«heredero, el favorito» · ayutano"
+    },
+    {
+      "name": "Gotfrid",
+      "gender": "m",
+      "meaning": "«la paz de lo divino» · geismariano"
+    },
+    {
+      "name": "Grigor",
+      "gender": "m",
+      "meaning": "«el que vela» · nataneo"
+    },
+    {
+      "name": "Idin",
+      "gender": "m",
+      "meaning": "«él ha dado» · nataneo litúrgico"
+    },
+    {
+      "name": "Ignat",
+      "gender": "m",
+      "meaning": "«ardiente» · nataneo"
+    },
+    {
+      "name": "Igor",
+      "gender": "m",
+      "meaning": "«guerrero del dios del norte» · ayutano"
     },
     {
       "name": "Ilya",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«mi señor es Elyārān» · nataneo litúrgico"
+    },
+    {
+      "name": "Kaleyan",
+      "gender": "m",
+      "meaning": "«bello y agraciado» · nataneo"
+    },
+    {
+      "name": "Kalinik",
+      "gender": "m",
+      "meaning": "«el de la bella victoria» · nataneo"
     },
     {
       "name": "Karl",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«hombre libre» · geismariano"
     },
     {
       "name": "Kasimir",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«el que impone la paz» · mazarino"
+    },
+    {
+      "name": "Konrad",
+      "gender": "m",
+      "meaning": "«consejo audaz» · geismariano"
+    },
+    {
+      "name": "Konstantin",
+      "gender": "m",
+      "meaning": "«constante» · nataneo"
+    },
+    {
+      "name": "Krasimir",
+      "gender": "m",
+      "meaning": "«paz hermosa» · mazarino"
+    },
+    {
+      "name": "Kuril",
+      "gender": "m",
+      "meaning": "«señorial» · nataneo"
+    },
+    {
+      "name": "Latshezar",
+      "gender": "m",
+      "meaning": "«Elyārān ha ayudado» · nataneo litúrgico"
+    },
+    {
+      "name": "Lavrenti",
+      "gender": "m",
+      "meaning": "«coronado de laurel» · nataneo"
     },
     {
       "name": "Leonid",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«hijo del león» · nataneo"
     },
     {
       "name": "Ludomir",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«paz del pueblo» · mazarino"
+    },
+    {
+      "name": "Ludvik",
+      "gender": "m",
+      "meaning": "«guerrero famoso» · geismariano"
+    },
+    {
+      "name": "Lyuben",
+      "gender": "m",
+      "meaning": "«amado» · mazarino"
+    },
+    {
+      "name": "Lyubomir",
+      "gender": "m",
+      "meaning": "«el que ama la paz» · mazarino"
     },
     {
       "name": "Maksim",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«el más grande» · nataneo"
+    },
+    {
+      "name": "Matvei",
+      "gender": "m",
+      "meaning": "«don de Elyārān» · nataneo litúrgico"
     },
     {
       "name": "Mikhail",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«¿quién como Elyārān?» · nataneo litúrgico"
+    },
+    {
+      "name": "Miroslav",
+      "gender": "m",
+      "meaning": "«gloria de la paz» · mazarino"
+    },
+    {
+      "name": "Momchil",
+      "gender": "m",
+      "meaning": "«muchacho» · mazarino"
+    },
+    {
+      "name": "Mstislav",
+      "gender": "m",
+      "meaning": "«gloria de la venganza» · mazarino"
+    },
+    {
+      "name": "Netyalko",
+      "gender": "m",
+      "meaning": "«nacido en el día de descanso» · mazarino"
     },
     {
       "name": "Nikolai",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«victoria del pueblo» · nataneo"
+    },
+    {
+      "name": "Ognyan",
+      "gender": "m",
+      "meaning": "«el del fuego» · mazarino"
+    },
+    {
+      "name": "Oleg",
+      "gender": "m",
+      "meaning": "«sagrado, bendito» · ayutano"
+    },
+    {
+      "name": "Panteley",
+      "gender": "m",
+      "meaning": "«todo misericordia» · nataneo"
     },
     {
       "name": "Pavel",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«pequeño, humilde» · nataneo"
+    },
+    {
+      "name": "Prokopi",
+      "gender": "m",
+      "meaning": "«el que avanza» · nataneo"
+    },
+    {
+      "name": "Radomir",
+      "gender": "m",
+      "meaning": "«alegría de la paz» · mazarino"
+    },
+    {
+      "name": "Ratibor",
+      "gender": "m",
+      "meaning": "«el que combate en la guerra» · mazarino"
+    },
+    {
+      "name": "Rodislav",
+      "gender": "m",
+      "meaning": "«gloria de la patria» · mazarino"
+    },
+    {
+      "name": "Rogvolod",
+      "gender": "m",
+      "meaning": "«el que gobierna con consejo» · ayutano"
+    },
+    {
+      "name": "Ryurik",
+      "gender": "m",
+      "meaning": "«rey famoso» · ayutano"
+    },
+    {
+      "name": "Samuil",
+      "gender": "m",
+      "meaning": "«escuchado por Elyārān» · nataneo litúrgico"
     },
     {
       "name": "Sergey",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«el que sirve» · nataneo"
+    },
+    {
+      "name": "Sharukin",
+      "gender": "m",
+      "meaning": "«el rey legítimo» · nataneo litúrgico"
+    },
+    {
+      "name": "Stanimir",
+      "gender": "m",
+      "meaning": "«el que asienta la paz» · mazarino"
+    },
+    {
+      "name": "Stefan",
+      "gender": "m",
+      "meaning": "«coronado» · nataneo"
+    },
+    {
+      "name": "Stoyan",
+      "gender": "m",
+      "meaning": "«el que se mantiene en pie» · mazarino"
+    },
+    {
+      "name": "Svyatoslav",
+      "gender": "m",
+      "meaning": "«gloria santa» · mazarino"
+    },
+    {
+      "name": "Teodor",
+      "gender": "m",
+      "meaning": "«don divino» · nataneo"
+    },
+    {
+      "name": "Teofan",
+      "gender": "m",
+      "meaning": "«el que muestra lo divino» · nataneo"
+    },
+    {
+      "name": "Tikhomir",
+      "gender": "m",
+      "meaning": "«paz callada» · mazarino"
+    },
+    {
+      "name": "Timofei",
+      "gender": "m",
+      "meaning": "«el que honra lo divino» · nataneo"
+    },
+    {
+      "name": "Torvald",
+      "gender": "m",
+      "meaning": "«el que gobierna con el trueno» · ayutano"
+    },
+    {
+      "name": "Valentin",
+      "gender": "m",
+      "meaning": "«vigoroso» · nataneo"
     },
     {
       "name": "Vasil",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«regio» · nataneo"
+    },
+    {
+      "name": "Velimir",
+      "gender": "m",
+      "meaning": "«gran paz» · mazarino"
+    },
+    {
+      "name": "Velislav",
+      "gender": "m",
+      "meaning": "«gran gloria» · mazarino"
+    },
+    {
+      "name": "Ventseslav",
+      "gender": "m",
+      "meaning": "«más gloria» · mazarino"
+    },
+    {
+      "name": "Vikenti",
+      "gender": "m",
+      "meaning": "«el que vence» · nataneo"
+    },
+    {
+      "name": "Vladislav",
+      "gender": "m",
+      "meaning": "«gloria del que gobierna» · mazarino"
+    },
+    {
+      "name": "Vlastimir",
+      "gender": "m",
+      "meaning": "«el que rige la paz» · mazarino"
+    },
+    {
+      "name": "Volodar",
+      "gender": "m",
+      "meaning": "«el que domina» · mazarino"
+    },
+    {
+      "name": "Vostan",
+      "gender": "m",
+      "meaning": "«el que se levanta» · mazarino"
+    },
+    {
+      "name": "Vsevolod",
+      "gender": "m",
+      "meaning": "«el que lo gobierna todo» · mazarino"
+    },
+    {
+      "name": "Yakov",
+      "gender": "m",
+      "meaning": "«el que sigue los pasos» · nataneo litúrgico"
+    },
+    {
+      "name": "Yaroslav",
+      "gender": "m",
+      "meaning": "«gloria fiera» · mazarino"
+    },
+    {
+      "name": "Yeremei",
+      "gender": "m",
+      "meaning": "«Elyārān exalta» · nataneo litúrgico"
+    },
+    {
+      "name": "Yevgeni",
+      "gender": "m",
+      "meaning": "«bien nacido» · nataneo"
+    },
+    {
+      "name": "Yoan",
+      "gender": "m",
+      "meaning": "«Elyārān es misericordioso» · nataneo litúrgico"
+    },
+    {
+      "name": "Yosif",
+      "gender": "m",
+      "meaning": "«Elyārān añadirá» · nataneo litúrgico"
     },
     {
       "name": "Zakhar",
       "gender": "m",
-      "meaning": ""
+      "meaning": "«Elyārān recuerda» · nataneo litúrgico"
+    },
+    {
+      "name": "Zarin",
+      "gender": "m",
+      "meaning": "«el soberano» · mazarino"
+    },
+    {
+      "name": "Zdravko",
+      "gender": "m",
+      "meaning": "«sano» · mazarino"
+    },
+    {
+      "name": "Zharko",
+      "gender": "m",
+      "meaning": "«el ardiente, el de la ira justa» · mazarino"
+    },
+    {
+      "name": "Zhelimir",
+      "gender": "m",
+      "meaning": "«el que anhela la paz» · mazarino"
+    },
+    {
+      "name": "Zvonimir",
+      "gender": "m",
+      "meaning": "«la paz que resuena» · mazarino"
+    },
+    {
+      "name": "Agafya",
+      "gender": "f",
+      "meaning": "«buena» · nataneo"
+    },
+    {
+      "name": "Aleksandra",
+      "gender": "f",
+      "meaning": "«defensora de los hombres» · nataneo"
+    },
+    {
+      "name": "Anastasiya",
+      "gender": "f",
+      "meaning": "«la que se levanta de nuevo» · nataneo"
+    },
+    {
+      "name": "Anna",
+      "gender": "f",
+      "meaning": "«gracia» · nataneo litúrgico"
+    },
+    {
+      "name": "Antonina",
+      "gender": "f",
+      "meaning": "«inestimable» · nataneo"
+    },
+    {
+      "name": "Asta",
+      "gender": "f",
+      "meaning": "«amor» · ayutano"
+    },
+    {
+      "name": "Belit",
+      "gender": "f",
+      "meaning": "«señora» · nataneo litúrgico"
+    },
+    {
+      "name": "Bisera",
+      "gender": "f",
+      "meaning": "«perla» · mazarino"
+    },
+    {
+      "name": "Bodana",
+      "gender": "f",
+      "meaning": "«dada por lo divino» · mazarino"
+    },
+    {
+      "name": "Boyana",
+      "gender": "f",
+      "meaning": "«la combativa» · mazarino"
+    },
+    {
+      "name": "Breza",
+      "gender": "f",
+      "meaning": "«abedul» · mazarino"
+    },
+    {
+      "name": "Desislava",
+      "gender": "f",
+      "meaning": "«gloria hallada» · mazarino"
+    },
+    {
+      "name": "Dobrava",
+      "gender": "f",
+      "meaning": "«la buena» · mazarino"
+    },
+    {
+      "name": "Dobrinka",
+      "gender": "f",
+      "meaning": "«bondadosa» · mazarino"
+    },
+    {
+      "name": "Dobromila",
+      "gender": "f",
+      "meaning": "«buena y querida» · mazarino"
+    },
+    {
+      "name": "Dragana",
+      "gender": "f",
+      "meaning": "«querida» · mazarino"
+    },
+    {
+      "name": "Dubravka",
+      "gender": "f",
+      "meaning": "«la del robledal» · mazarino"
+    },
+    {
+      "name": "Dushana",
+      "gender": "f",
+      "meaning": "«alma» · mazarino"
+    },
+    {
+      "name": "Elisaveta",
+      "gender": "f",
+      "meaning": "«juramento de Elyārān» · nataneo litúrgico"
+    },
+    {
+      "name": "Estira",
+      "gender": "f",
+      "meaning": "«estrella» · nataneo litúrgico"
+    },
+    {
+      "name": "Evdokiya",
+      "gender": "f",
+      "meaning": "«la de buena fama» · nataneo"
+    },
+    {
+      "name": "Evgeniya",
+      "gender": "f",
+      "meaning": "«bien nacida» · nataneo"
+    },
+    {
+      "name": "Galina",
+      "gender": "f",
+      "meaning": "«calma» · nataneo"
+    },
+    {
+      "name": "Gerda",
+      "gender": "f",
+      "meaning": "«la protegida» · geismariano"
+    },
+    {
+      "name": "Gorislava",
+      "gender": "f",
+      "meaning": "«gloria ardiente» · mazarino"
+    },
+    {
+      "name": "Ingrid",
+      "gender": "f",
+      "meaning": "«la bella del dios del norte» · ayutano"
+    },
+    {
+      "name": "Irina",
+      "gender": "f",
+      "meaning": "«paz» · nataneo"
+    },
+    {
+      "name": "Iskra",
+      "gender": "f",
+      "meaning": "«chispa» · mazarino"
+    },
+    {
+      "name": "Kalina",
+      "gender": "f",
+      "meaning": "«flor del bosque» · mazarino"
+    },
+    {
+      "name": "Kira",
+      "gender": "f",
+      "meaning": "«señora» · nataneo"
+    },
+    {
+      "name": "Klavdiya",
+      "gender": "f",
+      "meaning": "«la que cojea» · nataneo"
+    },
+    {
+      "name": "Krasimira",
+      "gender": "f",
+      "meaning": "«paz hermosa» · mazarino"
     },
     {
       "name": "Kseniya",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«hospitalaria» · nataneo"
+    },
+    {
+      "name": "Lada",
+      "gender": "f",
+      "meaning": "«armonía, la amada» · mazarino"
+    },
+    {
+      "name": "Larisa",
+      "gender": "f",
+      "meaning": "«la gaviota» · nataneo"
     },
     {
       "name": "Lilya",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«lirio» · nataneo"
     },
     {
       "name": "Ludmila",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«querida del pueblo» · mazarino"
+    },
+    {
+      "name": "Lyubava",
+      "gender": "f",
+      "meaning": "«amada» · mazarino"
+    },
+    {
+      "name": "Lyubov",
+      "gender": "f",
+      "meaning": "«amor» · mazarino"
+    },
+    {
+      "name": "Malina",
+      "gender": "f",
+      "meaning": "«frambuesa» · mazarino"
+    },
+    {
+      "name": "Marfa",
+      "gender": "f",
+      "meaning": "«señora de la casa» · nataneo litúrgico"
+    },
+    {
+      "name": "Margarita",
+      "gender": "f",
+      "meaning": "«perla» · nataneo"
+    },
+    {
+      "name": "Mariya",
+      "gender": "f",
+      "meaning": "«amada de Elyārān» · nataneo litúrgico"
+    },
+    {
+      "name": "Matilda",
+      "gender": "f",
+      "meaning": "«fuerte en la batalla» · geismariano"
+    },
+    {
+      "name": "Melaniya",
+      "gender": "f",
+      "meaning": "«la de piel oscura» · nataneo"
+    },
+    {
+      "name": "Milena",
+      "gender": "f",
+      "meaning": "«querida» · mazarino"
+    },
+    {
+      "name": "Mira",
+      "gender": "f",
+      "meaning": "«paz» · mazarino"
+    },
+    {
+      "name": "Miroslava",
+      "gender": "f",
+      "meaning": "«gloria de la paz» · mazarino"
+    },
+    {
+      "name": "Nadezhda",
+      "gender": "f",
+      "meaning": "«esperanza» · mazarino"
+    },
+    {
+      "name": "Natalya",
+      "gender": "f",
+      "meaning": "«natal» · mazarino"
+    },
+    {
+      "name": "Netyalka",
+      "gender": "f",
+      "meaning": "«nacida en el día de descanso» · mazarino"
+    },
+    {
+      "name": "Ognyana",
+      "gender": "f",
+      "meaning": "«la del fuego» · mazarino"
     },
     {
       "name": "Olga",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«sagrada» · ayutano"
+    },
+    {
+      "name": "Paraskeva",
+      "gender": "f",
+      "meaning": "«nacida en la víspera del día santo» · nataneo"
+    },
+    {
+      "name": "Polina",
+      "gender": "f",
+      "meaning": "«pequeña» · nataneo"
+    },
+    {
+      "name": "Rada",
+      "gender": "f",
+      "meaning": "«alegre» · mazarino"
+    },
+    {
+      "name": "Radmila",
+      "gender": "f",
+      "meaning": "«alegre y querida» · mazarino"
+    },
+    {
+      "name": "Ragneda",
+      "gender": "f",
+      "meaning": "«la que aconseja» · ayutano"
+    },
+    {
+      "name": "Raisa",
+      "gender": "f",
+      "meaning": "«la despreocupada» · nataneo"
+    },
+    {
+      "name": "Rakhil",
+      "gender": "f",
+      "meaning": "«oveja» · nataneo litúrgico"
+    },
+    {
+      "name": "Rodmila",
+      "gender": "f",
+      "meaning": "«querida de la patria» · mazarino"
+    },
+    {
+      "name": "Rumena",
+      "gender": "f",
+      "meaning": "«sonrosada» · mazarino"
+    },
+    {
+      "name": "Sara",
+      "gender": "f",
+      "meaning": "«princesa» · nataneo litúrgico"
+    },
+    {
+      "name": "Sigrid",
+      "gender": "f",
+      "meaning": "«la bella victoria» · ayutano"
+    },
+    {
+      "name": "Slavena",
+      "gender": "f",
+      "meaning": "«gloriosa» · mazarino"
+    },
+    {
+      "name": "Snezhana",
+      "gender": "f",
+      "meaning": "«la de la nieve» · mazarino"
+    },
+    {
+      "name": "Sofiya",
+      "gender": "f",
+      "meaning": "«sabiduría» · nataneo"
+    },
+    {
+      "name": "Stanislava",
+      "gender": "f",
+      "meaning": "«gloria firme» · mazarino"
+    },
+    {
+      "name": "Stoyanka",
+      "gender": "f",
+      "meaning": "«la que se mantiene firme» · mazarino"
+    },
+    {
+      "name": "Susanna",
+      "gender": "f",
+      "meaning": "«lirio» · nataneo litúrgico"
     },
     {
       "name": "Svetlana",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«la luminosa» · mazarino"
+    },
+    {
+      "name": "Svyatoslava",
+      "gender": "f",
+      "meaning": "«gloria santa» · mazarino"
+    },
+    {
+      "name": "Tatyana",
+      "gender": "f",
+      "meaning": "«del linaje de Tacio» · nataneo"
+    },
+    {
+      "name": "Teodora",
+      "gender": "f",
+      "meaning": "«don divino» · nataneo"
+    },
+    {
+      "name": "Tsvetana",
+      "gender": "f",
+      "meaning": "«flor» · mazarino"
+    },
+    {
+      "name": "Valentina",
+      "gender": "f",
+      "meaning": "«vigorosa» · nataneo"
+    },
+    {
+      "name": "Varvara",
+      "gender": "f",
+      "meaning": "«la extranjera» · nataneo"
+    },
+    {
+      "name": "Vasilisa",
+      "gender": "f",
+      "meaning": "«regia» · nataneo"
+    },
+    {
+      "name": "Velislava",
+      "gender": "f",
+      "meaning": "«gran gloria» · mazarino"
+    },
+    {
+      "name": "Vera",
+      "gender": "f",
+      "meaning": "«fe» · mazarino"
     },
     {
       "name": "Veronika",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«la que trae la victoria» · nataneo"
+    },
+    {
+      "name": "Vesna",
+      "gender": "f",
+      "meaning": "«primavera» · mazarino"
+    },
+    {
+      "name": "Vladislava",
+      "gender": "f",
+      "meaning": "«gloria de la que gobierna» · mazarino"
+    },
+    {
+      "name": "Vlasta",
+      "gender": "f",
+      "meaning": "«poder» · mazarino"
+    },
+    {
+      "name": "Volya",
+      "gender": "f",
+      "meaning": "«libertad» · mazarino"
+    },
+    {
+      "name": "Yagoda",
+      "gender": "f",
+      "meaning": "«baya» · mazarino"
+    },
+    {
+      "name": "Yaroslava",
+      "gender": "f",
+      "meaning": "«gloria fiera» · mazarino"
+    },
+    {
+      "name": "Yasna",
+      "gender": "f",
+      "meaning": "«clara, luminosa» · mazarino"
+    },
+    {
+      "name": "Yekaterina",
+      "gender": "f",
+      "meaning": "«pura» · nataneo"
+    },
+    {
+      "name": "Yelena",
+      "gender": "f",
+      "meaning": "«la resplandeciente» · nataneo"
+    },
+    {
+      "name": "Yeva",
+      "gender": "f",
+      "meaning": "«la que da vida» · nataneo litúrgico"
+    },
+    {
+      "name": "Yudif",
+      "gender": "f",
+      "meaning": "«la alabada» · nataneo litúrgico"
     },
     {
       "name": "Yuliya",
       "gender": "f",
-      "meaning": ""
+      "meaning": "«del linaje de Julio» · nataneo"
+    },
+    {
+      "name": "Zdravka",
+      "gender": "f",
+      "meaning": "«sana» · mazarino"
+    },
+    {
+      "name": "Zhara",
+      "gender": "f",
+      "meaning": "«la ardiente» · mazarino"
+    },
+    {
+      "name": "Zhivka",
+      "gender": "f",
+      "meaning": "«la viva» · mazarino"
+    },
+    {
+      "name": "Zinaida",
+      "gender": "f",
+      "meaning": "«consagrada al padre de los dioses» · nataneo"
+    },
+    {
+      "name": "Zlata",
+      "gender": "f",
+      "meaning": "«dorada» · mazarino"
+    },
+    {
+      "name": "Zorya",
+      "gender": "f",
+      "meaning": "«aurora» · mazarino"
+    },
+    {
+      "name": "Zvezdana",
+      "gender": "f",
+      "meaning": "«estrella» · mazarino"
     }
   ],
-  "surnames": [],
-  "surname_rules": [],
+  "surnames": [
+    {
+      "name": "Afanasiev",
+      "meaning": "«hijo de Afanasi» · nataneo"
+    },
+    {
+      "name": "Antonov",
+      "meaning": "«hijo de Anton» · nataneo"
+    },
+    {
+      "name": "Argirov",
+      "meaning": "«hijo del platero» · nataneo"
+    },
+    {
+      "name": "Askoldov",
+      "meaning": "«hijo de Askold» · ayutano"
+    },
+    {
+      "name": "Avdeev",
+      "meaning": "«hijo de Avdei» · nataneo litúrgico"
+    },
+    {
+      "name": "Avramov",
+      "meaning": "«hijo de Avram» · nataneo litúrgico"
+    },
+    {
+      "name": "Belov",
+      "meaning": "«hijo del Blanco» · mazarino"
+    },
+    {
+      "name": "Belozerskoy",
+      "meaning": "«el del lago blanco» · mazarino"
+    },
+    {
+      "name": "Berezovski",
+      "meaning": "«el del abedular» · mazarino"
+    },
+    {
+      "name": "Bodnar",
+      "meaning": "«el tonelero» · mazarino"
+    },
+    {
+      "name": "Bystritski",
+      "meaning": "«el del río veloz» · mazarino"
+    },
+    {
+      "name": "Chernov",
+      "meaning": "«hijo del Negro» · mazarino"
+    },
+    {
+      "name": "Danilov",
+      "meaning": "«hijo de Danil» · nataneo litúrgico"
+    },
+    {
+      "name": "Didaskalov",
+      "meaning": "«hijo del maestro» · nataneo"
+    },
+    {
+      "name": "Dimitrov",
+      "meaning": "«hijo de Dmitri» · nataneo"
+    },
+    {
+      "name": "Dragomirov",
+      "meaning": "«hijo de Dragomir» · mazarino"
+    },
+    {
+      "name": "Dubrovski",
+      "meaning": "«el del robledal» · mazarino"
+    },
+    {
+      "name": "Dudash",
+      "meaning": "«el gaitero» · mazarino"
+    },
+    {
+      "name": "Dyakov",
+      "meaning": "«hijo del diácono» · mazarino"
+    },
+    {
+      "name": "Filaretov",
+      "meaning": "«el que ama la virtud» · nataneo"
+    },
+    {
+      "name": "Fogel",
+      "meaning": "«el pájaro» · geismariano"
+    },
+    {
+      "name": "Gerashimov",
+      "meaning": "«hijo de Gerashim» · nataneo"
+    },
+    {
+      "name": "Goncharov",
+      "meaning": "«hijo del alfarero» · mazarino"
+    },
+    {
+      "name": "Gorodetski",
+      "meaning": "«el de la ciudad pequeña» · mazarino"
+    },
+    {
+      "name": "Grigorov",
+      "meaning": "«hijo de Grigor» · nataneo"
+    },
+    {
+      "name": "Grinberg",
+      "meaning": "«la montaña verde» · geismariano"
+    },
+    {
+      "name": "Gromov",
+      "meaning": "«hijo del trueno» · mazarino"
+    },
+    {
+      "name": "Holub",
+      "meaning": "«la paloma» · mazarino"
+    },
+    {
+      "name": "Hrabak",
+      "meaning": "«el del carpe» · mazarino"
+    },
+    {
+      "name": "Ignatov",
+      "meaning": "«hijo de Ignat» · nataneo"
+    },
+    {
+      "name": "Ilyin",
+      "meaning": "«hijo de Ilya» · nataneo litúrgico"
+    },
+    {
+      "name": "Ingvarov",
+      "meaning": "«hijo de Ingvar» · ayutano"
+    },
+    {
+      "name": "Isakov",
+      "meaning": "«hijo de Isak» · nataneo litúrgico"
+    },
+    {
+      "name": "Kalogerov",
+      "meaning": "«hijo del monje» · nataneo"
+    },
+    {
+      "name": "Karlov",
+      "meaning": "«hijo de Karl» · geismariano"
+    },
+    {
+      "name": "Kholodov",
+      "meaning": "«el del frío» · mazarino"
+    },
+    {
+      "name": "Konstantinov",
+      "meaning": "«hijo de Konstantin» · nataneo"
+    },
+    {
+      "name": "Konyukhov",
+      "meaning": "«hijo del caballerizo» · mazarino"
+    },
+    {
+      "name": "Kozhemyakin",
+      "meaning": "«hijo del curtidor» · mazarino"
+    },
+    {
+      "name": "Kraft",
+      "meaning": "«la fuerza» · geismariano"
+    },
+    {
+      "name": "Krasnopolski",
+      "meaning": "«el del campo hermoso» · mazarino"
+    },
+    {
+      "name": "Kravchik",
+      "meaning": "«el sastrecillo» · mazarino"
+    },
+    {
+      "name": "Kurilov",
+      "meaning": "«hijo de Kuril» · nataneo"
+    },
+    {
+      "name": "Kuznetsov",
+      "meaning": "«hijo del herrero» · mazarino"
+    },
+    {
+      "name": "Lebedev",
+      "meaning": "«hijo del cisne» · mazarino"
+    },
+    {
+      "name": "Lisitsyn",
+      "meaning": "«hijo de la zorra» · mazarino"
+    },
+    {
+      "name": "Lyubenov",
+      "meaning": "«hijo de Lyuben» · mazarino"
+    },
+    {
+      "name": "Matveev",
+      "meaning": "«hijo de Matvei» · nataneo litúrgico"
+    },
+    {
+      "name": "Medvedev",
+      "meaning": "«hijo del oso» · mazarino"
+    },
+    {
+      "name": "Melnikov",
+      "meaning": "«hijo del molinero» · mazarino"
+    },
+    {
+      "name": "Mikhailov",
+      "meaning": "«hijo de Mikhail» · nataneo litúrgico"
+    },
+    {
+      "name": "Morozov",
+      "meaning": "«hijo de la helada» · mazarino"
+    },
+    {
+      "name": "Nikolov",
+      "meaning": "«hijo de Nikolai» · nataneo"
+    },
+    {
+      "name": "Novak",
+      "meaning": "«el recién llegado» · mazarino"
+    },
+    {
+      "name": "Novostarski",
+      "meaning": "«el de Novostar» · mazarino"
+    },
+    {
+      "name": "Olegov",
+      "meaning": "«hijo de Oleg» · ayutano"
+    },
+    {
+      "name": "Orlov",
+      "meaning": "«hijo del águila» · mazarino"
+    },
+    {
+      "name": "Ozerskoy",
+      "meaning": "«el de los lagos» · mazarino"
+    },
+    {
+      "name": "Pastukhov",
+      "meaning": "«hijo del pastor» · mazarino"
+    },
+    {
+      "name": "Pavlov",
+      "meaning": "«hijo de Pavel» · nataneo"
+    },
+    {
+      "name": "Pechenyak",
+      "meaning": "«el de la Estepa Blanca» · mazarino"
+    },
+    {
+      "name": "Pisarev",
+      "meaning": "«hijo del escribano» · mazarino"
+    },
+    {
+      "name": "Plotnikov",
+      "meaning": "«hijo del carpintero» · mazarino"
+    },
+    {
+      "name": "Podgorski",
+      "meaning": "«el del pie de la montaña» · mazarino"
+    },
+    {
+      "name": "Popov",
+      "meaning": "«hijo del sacerdote» · mazarino"
+    },
+    {
+      "name": "Radev",
+      "meaning": "«hijo de Rado» · mazarino"
+    },
+    {
+      "name": "Rudenko",
+      "meaning": "«hijo del Pelirrojo» · mazarino"
+    },
+    {
+      "name": "Rurikov",
+      "meaning": "«del linaje de Ryurik» · ayutano"
+    },
+    {
+      "name": "Rybakov",
+      "meaning": "«hijo del pescador» · mazarino"
+    },
+    {
+      "name": "Sedov",
+      "meaning": "«hijo del Canoso» · mazarino"
+    },
+    {
+      "name": "Shevchik",
+      "meaning": "«el zapaterillo» · mazarino"
+    },
+    {
+      "name": "Shmidt",
+      "meaning": "«el herrero» · geismariano"
+    },
+    {
+      "name": "Shtern",
+      "meaning": "«la estrella» · geismariano"
+    },
+    {
+      "name": "Sirko",
+      "meaning": "«el gris» · mazarino"
+    },
+    {
+      "name": "Smirnov",
+      "meaning": "«hijo del manso» · mazarino"
+    },
+    {
+      "name": "Snezhinski",
+      "meaning": "«el de las nieves» · mazarino"
+    },
+    {
+      "name": "Sokolov",
+      "meaning": "«hijo del halcón» · mazarino"
+    },
+    {
+      "name": "Stefanov",
+      "meaning": "«hijo de Stefan» · nataneo"
+    },
+    {
+      "name": "Stoyanov",
+      "meaning": "«hijo de Stoyan» · mazarino"
+    },
+    {
+      "name": "Strelnikov",
+      "meaning": "«hijo del arquero» · mazarino"
+    },
+    {
+      "name": "Svaikalski",
+      "meaning": "«el de Svaikal» · mazarino"
+    },
+    {
+      "name": "Svyatogorskoy",
+      "meaning": "«el del monte santo» · mazarino"
+    },
+    {
+      "name": "Teodorov",
+      "meaning": "«hijo de Teodor» · nataneo"
+    },
+    {
+      "name": "Tkachev",
+      "meaning": "«hijo del tejedor» · mazarino"
+    },
+    {
+      "name": "Toskin",
+      "meaning": "«el melancólico» · mazarino"
+    },
+    {
+      "name": "Varyagin",
+      "meaning": "«hijo del hombre del norte» · ayutano"
+    },
+    {
+      "name": "Vasilev",
+      "meaning": "«hijo de Vasil» · nataneo"
+    },
+    {
+      "name": "Velotski",
+      "meaning": "«el de Velotsk» · mazarino"
+    },
+    {
+      "name": "Vinogradov",
+      "meaning": "«el del viñedo» · mazarino"
+    },
+    {
+      "name": "Vinter",
+      "meaning": "«el invierno» · geismariano"
+    },
+    {
+      "name": "Volkov",
+      "meaning": "«hijo del lobo» · mazarino"
+    },
+    {
+      "name": "Voronov",
+      "meaning": "«hijo del cuervo» · mazarino"
+    },
+    {
+      "name": "Vysotskoy",
+      "meaning": "«el de las alturas» · mazarino"
+    },
+    {
+      "name": "Yakovlev",
+      "meaning": "«hijo de Yakov» · nataneo litúrgico"
+    },
+    {
+      "name": "Zakharov",
+      "meaning": "«hijo de Zakhar» · nataneo litúrgico"
+    },
+    {
+      "name": "Zalesski",
+      "meaning": "«el de más allá del bosque» · mazarino"
+    },
+    {
+      "name": "Zarinov",
+      "meaning": "«del linaje del Zarin» · mazarino"
+    },
+    {
+      "name": "Zaytsev",
+      "meaning": "«hijo de la liebre» · mazarino"
+    },
+    {
+      "name": "Zharov",
+      "meaning": "«hijo del Ardiente» · mazarino"
+    },
+    {
+      "name": "Zubrayski",
+      "meaning": "«el de Zubrayli» · mazarino"
+    }
+  ],
+  "surname_rules": [
+    {
+      "ending": "ov",
+      "female": "ova"
+    },
+    {
+      "ending": "ev",
+      "female": "eva"
+    },
+    {
+      "ending": "in",
+      "female": "ina"
+    },
+    {
+      "ending": "ski",
+      "female": "ska"
+    },
+    {
+      "ending": "oy",
+      "female": "aya"
+    }
+  ],
   "patronymic_rules": []
 }
