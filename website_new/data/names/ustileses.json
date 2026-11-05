@@ -1,7 +1,7 @@
 {
   "id": "ustileses",
   "name": "Ustileses",
-  "description": "Los nombres ustileses son romances, pero con capas: el nataneo de los colonos de Elyon (nombres cultos griegos y latinos y los de las escrituras, donde Elyārān ocupa el lugar de lo divino), sobre el sustrato de los antiguos pueblos del Ustal (Belasco, Otxoa, Etxeberri) y con préstamos mazarinos en el oeste de Deverent y en la frontera del este (Ladislao, Radomiro, los apellidos en -escu) y temash en el sur (Axilu, Tixiri). Rasgos propios: -erio y -ario pasan a -eiro y -airo (Gregoiro, Eleuteiro, como en «Impeiro»); la s entre vocales se escribe x (Ixabel, Baxilio); ci se vuelve si (Ignasio, Patrisia); la h latina se pierde (Ilairo), pero el habla ustal cambia la f inicial por h (Hulvio, Herreiro); el oeste pierde la vocal final (Durant, Justin, Arcadi) y el sur cierra la -o en -u (Vitu, Marceddu). Los apellidos patronímicos llevan el viejo genitivo -is: Santxis, Ximenis, Pelagis.",
+  "description": "",
   "format": "{name} {surname}",
   "names": [
     {
@@ -690,14 +690,14 @@
       "meaning": "«nacido en la fiesta del Paso» · escrituras nataneas"
     },
     {
-      "name": "Pelaio",
+      "name": "Pelagio",
       "gender": "m",
       "meaning": "«hombre del mar» · nataneo pélagos; muy común en la costa"
     },
     {
       "name": "Pietro",
       "gender": "m",
-      "meaning": "«piedra» · nataneo pétros; forma vernácula"
+      "meaning": "«piedra» · nataneo"
     },
     {
       "name": "Plinio",
@@ -707,7 +707,7 @@
     {
       "name": "Porfirio",
       "gender": "m",
-      "meaning": "«vestido de púrpura» · nataneo porphýra"
+      "meaning": "«vestido de púrpura» · nataneo"
     },
     {
       "name": "Quintin",
@@ -717,17 +717,17 @@
     {
       "name": "Radomiro",
       "gender": "m",
-      "meaning": "«alegría de la paz» · mazarino rado + mir"
+      "meaning": "«alegría de la paz» · mazarino"
     },
     {
       "name": "Radoslao",
       "gender": "m",
-      "meaning": "«gloria alegre» · mazarino rado + slav"
+      "meaning": "«gloria alegre» · mazarino"
     },
     {
       "name": "Rafanel",
       "gender": "m",
-      "meaning": "«Elyārān sana» · escrituras nataneas"
+      "meaning": "«Elyārān sana» · nataneo litúrgico"
     },
     {
       "name": "Regulo",
@@ -737,12 +737,12 @@
     {
       "name": "Remigio",
       "gender": "m",
-      "meaning": "«remero» · nataneo remex"
+      "meaning": "«remero» · nataneo"
     },
     {
       "name": "Samuel",
       "gender": "m",
-      "meaning": "«escuchado por Elyārān» · escrituras nataneas"
+      "meaning": "«escuchado por Elyārān» · nataneo litúrgico"
     },
     {
       "name": "Sancho",
@@ -1477,15 +1477,15 @@
     },
     {
       "name": "Abat",
-      "meaning": "«el abad» · forma occidental"
+      "meaning": "«el abad»"
     },
     {
       "name": "Abatangelo",
-      "meaning": "«abad y ángel» · antigua familia de clérigos"
+      "meaning": "«abad y ángel»"
     },
     {
       "name": "Acardi",
-      "meaning": "«los tercos» · con el sufijo ustilés -ardo"
+      "meaning": "«los tercos»"
     },
     {
       "name": "Acorso",
@@ -1497,7 +1497,7 @@
     },
     {
       "name": "Agatini",
-      "meaning": "«los de Agatinu» · del sur"
+      "meaning": "«los de Agatino» ·"
     },
     {
       "name": "Agidir",
@@ -1505,11 +1505,11 @@
     },
     {
       "name": "Agneli",
-      "meaning": "«los corderos» · familia de pastores"
+      "meaning": "«los corderos»"
     },
     {
-      "name": "Agostin",
-      "meaning": "«el de Agostin» · forma occidental"
+      "name": "Agostinis",
+      "meaning": "«hijo de Agostin»"
     },
     {
       "name": "Aguiar",
@@ -1529,7 +1529,7 @@
     },
     {
       "name": "Albori",
-      "meaning": "«los de Albor, la primera luz»"
+      "meaning": "«los de  la primera luz»"
     },
     {
       "name": "Aldesi",
@@ -1556,12 +1556,12 @@
       "meaning": "«la amada»"
     },
     {
-      "name": "Ambroxi",
-      "meaning": "«los de Ambroxo»"
+      "name": "Ambrosis",
+      "meaning": "«hijo de Ambrosio»"
     },
     {
       "name": "Andrade",
-      "meaning": "«el bosque viejo»"
+      "meaning": "«el bosque viejo»  · ustal"
     },
     {
       "name": "Anzoli",
@@ -1577,7 +1577,7 @@
     },
     {
       "name": "Ardelan",
-      "meaning": "«el de más allá del bosque» · ustilés oriental, de influencia mazarina"
+      "meaning": "«el de más allá del bosque» · ustal"
     },
     {
       "name": "Ardovin",
@@ -1589,27 +1589,27 @@
     },
     {
       "name": "Arriola",
-      "meaning": "«el pedregal» · ustal harri + -ola"
+      "meaning": "«el pedregal» · ustal"
     },
     {
       "name": "Arze",
       "meaning": "«el arce»"
     },
     {
-      "name": "Ascaneli",
-      "meaning": "«los de Ascanio»"
+      "name": "Ascanis",
+      "meaning": "«hijo de Ascanio»"
     },
     {
-      "name": "Aveli",
-      "meaning": "«los hijos de Avel»"
+      "name": "Avelis",
+      "meaning": "«hijo de Avel»"
     },
     {
       "name": "Barbeiri",
       "meaning": "«los barberos»"
     },
     {
-      "name": "Barnabei",
-      "meaning": "«los de Barnabeu»"
+      "name": "Barnabeis",
+      "meaning": "«hijo de Barnabe»"
     },
     {
       "name": "Barseti",
@@ -1621,7 +1621,7 @@
     },
     {
       "name": "Belascis",
-      "meaning": "«los hijos de Belasco» · patronímico"
+      "meaning": "«hijo de Belasco»"
     },
     {
       "name": "Belasco",
@@ -1640,28 +1640,28 @@
       "meaning": "«los bendecidos»"
     },
     {
-      "name": "Benin",
-      "meaning": "«el buenecito» · forma occidental"
+      "name": "Benigni",
+      "meaning": "«el buenecito»"
     },
     {
-      "name": "Bogdanesci",
-      "meaning": "«el hijo de Bogdano» · ustilés oriental, de influencia mazarina"
+      "name": "Bodanescis",
+      "meaning": "«el hijo de Bodano»"
     },
     {
-      "name": "Boleslai",
-      "meaning": "«los de Boleslao» · mazarino"
+      "name": "Boleslais",
+      "meaning": "«hijo de Boleslao»"
     },
     {
       "name": "Borghi",
       "meaning": "«los del arrabal»"
     },
     {
-      "name": "Borgin",
-      "meaning": "«el del arrabal pequeño» · forma occidental"
+      "name": "Borgino",
+      "meaning": "«el del arrabal pequeño»"
     },
     {
-      "name": "Branimiri",
-      "meaning": "«los de Branimiro» · mazarino"
+      "name": "Branimiris",
+      "meaning": "«hijo de Branimiro»"
     },
     {
       "name": "Breda",
@@ -1672,8 +1672,8 @@
       "meaning": "«el lugar de las cabras»"
     },
     {
-      "name": "Caivan",
-      "meaning": "«el del campo hondo» · forma occidental"
+      "name": "Caivani",
+      "meaning": "«el del campo hondo»"
     },
     {
       "name": "Calandri",
@@ -1692,8 +1692,8 @@
       "meaning": "«el cojo» · ustal"
     },
     {
-      "name": "Caputu",
-      "meaning": "«el cabezón» · del sur"
+      "name": "Caputo",
+      "meaning": "«el cabezón»"
     },
     {
       "name": "Cardenas",
@@ -1705,7 +1705,7 @@
     },
     {
       "name": "Carlevaro",
-      "meaning": "«el del carnaval» · apodo de Deverentio"
+      "meaning": "«el del carnaval»"
     },
     {
       "name": "Carmona",
@@ -1717,7 +1717,7 @@
     },
     {
       "name": "Caruso",
-      "meaning": "«el rapado» · del sur"
+      "meaning": "«el rapado»"
     },
     {
       "name": "Carvallo",
@@ -1728,8 +1728,8 @@
       "meaning": "«los caseríos»"
     },
     {
-      "name": "Ciprian",
-      "meaning": "«el de Cipriano» · forma occidental"
+      "name": "Ciprianis",
+      "meaning": "«hijo de Cipriano»"
     },
     {
       "name": "Clemente",
@@ -1748,8 +1748,8 @@
       "meaning": "«el collado»"
     },
     {
-      "name": "Damian",
-      "meaning": "«los hijos de Damian» · forma occidental"
+      "name": "Damianis",
+      "meaning": "«los hijos de Damian»"
     },
     {
       "name": "Delgado",
@@ -1769,7 +1769,7 @@
     },
     {
       "name": "Esposito",
-      "meaning": "«el expósito» · apellido de los huérfanos que acogía la Iglesia"
+      "meaning": "«el expósito»"
     },
     {
       "name": "Estrada",
@@ -1788,6 +1788,14 @@
       "meaning": "«el hierro»"
     },
     {
+      "name": "Ferreira",
+      "meaning": "«las herrerías»"
+    },
+    {
+      "name": "Ferreiro",
+      "meaning": "«el herrero»"
+    },
+    {
       "name": "Figueira",
       "meaning": "«la higuera»"
     },
@@ -1797,15 +1805,15 @@
     },
     {
       "name": "Galardo",
-      "meaning": "«el gallardo» · con el sufijo ustilés -ardo"
+      "meaning": "«el gallardo»"
     },
     {
-      "name": "Galeasi",
-      "meaning": "«los de Galeaso»"
+      "name": "Galeasis",
+      "meaning": "«hijo de Galeaso»"
     },
     {
       "name": "Galvis",
-      "meaning": "«los hijos de Galvo» · patronímico"
+      "meaning": "«hijo de Galvo»"
     },
     {
       "name": "Garfanin",
@@ -1816,8 +1824,8 @@
       "meaning": "«el apuesto»"
     },
     {
-      "name": "Gianesci",
-      "meaning": "«el hijo de Zuan» · ustilés oriental, de influencia mazarina"
+      "name": "Gianescis",
+      "meaning": "«hijo de Gianni»"
     },
     {
       "name": "Goicoetxea",
@@ -1825,7 +1833,7 @@
     },
     {
       "name": "Gontzalis",
-      "meaning": "«los hijos de Gontzal» · patronímico; viejo nombre ustal"
+      "meaning": "«hijo de Gontzalo»"
     },
     {
       "name": "Gouveia",
@@ -1840,14 +1848,6 @@
       "meaning": "«el guerrero»"
     },
     {
-      "name": "Herreira",
-      "meaning": "«las herrerías» · con la h del habla ustal"
-    },
-    {
-      "name": "Herreiro",
-      "meaning": "«el herrero» · con la h del habla ustal"
-    },
-    {
       "name": "Ibarra",
       "meaning": "«la vega» · ustal"
     },
@@ -1857,15 +1857,15 @@
     },
     {
       "name": "Jimenis",
-      "meaning": "«los hijos de Ximeno» · patronímico"
+      "meaning": "«hijo de Jimeno» · patronímico"
     },
     {
-      "name": "Juliani",
-      "meaning": "«el de Zulian» · forma occidental"
+      "name": "Julianis",
+      "meaning": "«hijo de Julian»"
     },
     {
-      "name": "Lasari",
-      "meaning": "«los de Lasaro, «Elyārān ayuda»»"
+      "name": "Lasaris",
+      "meaning": "«hijo de Lasaro»"
     },
     {
       "name": "Laterza",
@@ -1880,12 +1880,12 @@
       "meaning": "«el lozano»"
     },
     {
-      "name": "Lusato",
-      "meaning": "«el de la tierra lejana» · frecuente entre familias jadditas"
+      "name": "Lucianis",
+      "meaning": "«hijo de Lucian»"
     },
     {
-      "name": "Lusiani",
-      "meaning": "«los de Lusian»"
+      "name": "Lusato",
+      "meaning": "«el de la tierra lejana»"
     },
     {
       "name": "Marchesi",
@@ -1897,7 +1897,7 @@
     },
     {
       "name": "Marteli",
-      "meaning": "«los martillos» · familia de herreros"
+      "meaning": "«los martillos»"
     },
     {
       "name": "Mateos",
@@ -1920,8 +1920,8 @@
       "meaning": "«la del estrecho»"
     },
     {
-      "name": "Mirosli",
-      "meaning": "«los de Miroslao» · mazarino"
+      "name": "Miroslais",
+      "meaning": "«hijo de Miroslao»"
     },
     {
       "name": "Molina",
@@ -1945,7 +1945,7 @@
     },
     {
       "name": "Muntean",
-      "meaning": "«el montañés» · ustilés oriental, de influencia mazarina"
+      "meaning": "«el montañés»"
     },
     {
       "name": "Nardovin",
@@ -1953,7 +1953,7 @@
     },
     {
       "name": "Narvais",
-      "meaning": "«el de Narvaxa» · ustal"
+      "meaning": "«el de Narvaja» · ustal"
     },
     {
       "name": "Nasimbeni",
@@ -1981,7 +1981,7 @@
     },
     {
       "name": "Orsini",
-      "meaning": "«los ositos» · forma occidental"
+      "meaning": "«los ositos»"
     },
     {
       "name": "Oteiro",
@@ -2005,11 +2005,11 @@
     },
     {
       "name": "Paserin",
-      "meaning": "«el pajarillo» · forma occidental"
+      "meaning": "«el pajarillo»"
     },
     {
       "name": "Pelagis",
-      "meaning": "«los hijos de Pelaio» · patronímico"
+      "meaning": "«hijo de Pelagio»"
     },
     {
       "name": "Peralta",
