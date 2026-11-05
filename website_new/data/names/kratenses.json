@@ -10,7 +10,7 @@
       "meaning": "«la pequeña roca» · kratense"
     },
     {
-      "name": "Ambrôs",
+      "name": "Ambrose",
       "gender": "m",
       "meaning": "«inmortal» · ustilés"
     },
@@ -50,12 +50,12 @@
       "meaning": "«el del río» · kratense"
     },
     {
-      "name": "Bastyin",
+      "name": "Bastien",
       "gender": "m",
       "meaning": "«venerado» · ustilés"
     },
     {
-      "name": "Bleiz",
+      "name": "Blaise",
       "gender": "m",
       "meaning": "«el lobo» · kratense"
     },
@@ -75,14 +75,9 @@
       "meaning": "«el cuervo» · kratense"
     },
     {
-      "name": "Clemen",
+      "name": "Clement",
       "gender": "m",
       "meaning": "«clemente» · ustilés"
-    },
-    {
-      "name": "Colas",
-      "gender": "m",
-      "meaning": "«victoria del pueblo» · ustilés"
     },
     {
       "name": "Damyan",
@@ -103,16 +98,6 @@
       "name": "Dhrion",
       "gender": "m",
       "meaning": "«¡que dure!, el aclamado» · kratense"
-    },
-    {
-      "name": "Djan",
-      "gender": "m",
-      "meaning": "«Elyārān es misericordioso» · ustilés"
-    },
-    {
-      "name": "Djôzef",
-      "gender": "m",
-      "meaning": "«Elyārān añadirá» · ustilés"
     },
     {
       "name": "Donan",
@@ -155,17 +140,12 @@
       "meaning": "«el del caballo tordo» · ustilés"
     },
     {
-      "name": "Félis",
+      "name": "Felix",
       "gender": "m",
       "meaning": "«afortunado» · ustilés"
     },
     {
-      "name": "Fulup",
-      "gender": "m",
-      "meaning": "«amigo de los caballos» · nataneo"
-    },
-    {
-      "name": "Gabryel",
+      "name": "Gabriel",
       "gender": "m",
       "meaning": "«la fuerza de Elyārān» · nataneo litúrgico"
     },
@@ -180,7 +160,7 @@
       "meaning": "«luz bendita» · kratense"
     },
     {
-      "name": "Gritan",
+      "name": "Grit",
       "gender": "m",
       "meaning": "«el de la libertad» · kratense"
     },
@@ -195,17 +175,17 @@
       "meaning": "«el de la cabellera» · kratense"
     },
     {
-      "name": "Gwenc'hlan",
+      "name": "Gwenchlan",
       "gender": "m",
       "meaning": "«el de linaje puro» · kratense"
     },
     {
-      "name": "Gwënel",
+      "name": "Gwenel",
       "gender": "m",
       "meaning": "«el bendito y generoso» · kratense"
     },
     {
-      "name": "Hervë",
+      "name": "Herve",
       "gender": "m",
       "meaning": "«el digno en la batalla» · kratense"
     },
@@ -230,7 +210,12 @@
       "meaning": "«el que sigue los pasos» · nataneo litúrgico"
     },
     {
-      "name": "Judikêl",
+      "name": "Josef",
+      "gender": "m",
+      "meaning": "«Elyārān añadirá» · ustilés"
+    },
+    {
+      "name": "Judikael",
       "gender": "m",
       "meaning": "«señor generoso» · kratense"
     },
@@ -265,6 +250,11 @@
       "meaning": "«el que impone la paz» · mazarino"
     },
     {
+      "name": "Klas",
+      "gender": "m",
+      "meaning": "«victoria del pueblo» · ustilés"
+    },
+    {
       "name": "Konan",
       "gender": "m",
       "meaning": "«el sabueso» · kratense"
@@ -280,7 +270,7 @@
       "meaning": "«amado» · mazarino"
     },
     {
-      "name": "Lucyin",
+      "name": "Lucien",
       "gender": "m",
       "meaning": "«luminoso» · ustilés"
     },
@@ -305,17 +295,17 @@
       "meaning": "«el hijo» · kratense"
     },
     {
-      "name": "Maël",
+      "name": "Mael",
       "gender": "m",
       "meaning": "«el príncipe, el jefe» · kratense"
     },
     {
-      "name": "Marsel",
+      "name": "Marcel",
       "gender": "m",
       "meaning": "«martillito» · ustilés"
     },
     {
-      "name": "Matî",
+      "name": "Mathieu",
       "gender": "m",
       "meaning": "«don de Elyārān» · ustilés"
     },
@@ -350,7 +340,7 @@
       "meaning": "«nacido del mar» · kratense"
     },
     {
-      "name": "Nënan",
+      "name": "Nenan",
       "gender": "m",
       "meaning": "«el de la tierra» · kratense"
     },
@@ -370,9 +360,14 @@
       "meaning": "«pequeño, humilde» · nataneo"
     },
     {
-      "name": "Pêrig",
+      "name": "Perrick",
       "gender": "m",
       "meaning": "«piedrecita» · nataneo"
+    },
+    {
+      "name": "Philippe",
+      "gender": "m",
+      "meaning": "«amigo de los caballos» · nataneo"
     },
     {
       "name": "Radek",
@@ -385,12 +380,12 @@
       "meaning": "«alegría de la paz» · mazarino"
     },
     {
-      "name": "Rëgan",
+      "name": "Raegan",
       "gender": "m",
       "meaning": "«el que gobierna» · kratense"
     },
     {
-      "name": "Rënan",
+      "name": "Renan",
       "gender": "m",
       "meaning": "«el que se mantiene en pie» · kratense"
     },
@@ -425,14 +420,14 @@
       "meaning": "«luz tenue» · élfico"
     },
     {
+      "name": "Staeven",
+      "gender": "m",
+      "meaning": "«coronado» · nataneo"
+    },
+    {
       "name": "Stanek",
       "gender": "m",
       "meaning": "«el firme» · mazarino"
-    },
-    {
-      "name": "Stêven",
-      "gender": "m",
-      "meaning": "«coronado» · nataneo"
     },
     {
       "name": "Talan",
@@ -440,7 +435,7 @@
       "meaning": "«el de la frente alta» · kratense"
     },
     {
-      "name": "Tanguy",
+      "name": "Tenguy",
       "gender": "m",
       "meaning": "«guerrero de fuego» · kratense"
     },
@@ -460,7 +455,7 @@
       "meaning": "«el tumultuoso» · kratense"
     },
     {
-      "name": "Tudwal",
+      "name": "Tudval",
       "gender": "m",
       "meaning": "«el que defiende al pueblo» · kratense"
     },
@@ -470,7 +465,7 @@
       "meaning": "«el alto, el noble» · kratense"
     },
     {
-      "name": "Valéri",
+      "name": "Valerian",
       "gender": "m",
       "meaning": "«el que vale» · ustilés"
     },
@@ -480,12 +475,12 @@
       "meaning": "«más gloria» · mazarino"
     },
     {
-      "name": "Véarin",
+      "name": "Vearin",
       "gender": "m",
       "meaning": "«el elevado» · élfico"
     },
     {
-      "name": "Vitôr",
+      "name": "Vitor",
       "gender": "m",
       "meaning": "«vencedor» · ustilés"
     },
@@ -525,17 +520,17 @@
       "meaning": "«gracia» · nataneo litúrgico"
     },
     {
-      "name": "Aourenn",
-      "gender": "f",
-      "meaning": "«la dorada» · kratense"
-    },
-    {
       "name": "Arzhela",
       "gender": "f",
       "meaning": "«la osa noble» · kratense"
     },
     {
-      "name": "Aurèle",
+      "name": "Aurenn",
+      "gender": "f",
+      "meaning": "«la dorada» · kratense"
+    },
+    {
+      "name": "Auriele",
       "gender": "f",
       "meaning": "«dorada» · ustilés"
     },
@@ -570,17 +565,17 @@
       "meaning": "«la cuerva» · kratense"
     },
     {
-      "name": "Candèle",
+      "name": "Candele",
       "gender": "f",
       "meaning": "«luz pequeña» · ustilés"
     },
     {
-      "name": "Clèmence",
+      "name": "Clemence",
       "gender": "f",
       "meaning": "«clemencia» · ustilés"
     },
     {
-      "name": "Colète",
+      "name": "Colette",
       "gender": "f",
       "meaning": "«victoria del pueblo» · ustilés"
     },
@@ -598,11 +593,6 @@
       "name": "Djane",
       "gender": "f",
       "meaning": "«Elyārān es misericordioso» · ustilés"
-    },
-    {
-      "name": "Djulyène",
-      "gender": "f",
-      "meaning": "«del linaje de Julio» · ustilés"
     },
     {
       "name": "Dourena",
@@ -625,7 +615,7 @@
       "meaning": "«cada respiración» · élfico"
     },
     {
-      "name": "Elen",
+      "name": "Elenne",
       "gender": "f",
       "meaning": "«la resplandeciente» · nataneo"
     },
@@ -645,7 +635,7 @@
       "meaning": "«la que da vida» · nataneo litúrgico"
     },
     {
-      "name": "Félise",
+      "name": "Felise",
       "gender": "f",
       "meaning": "«afortunada» · ustilés"
     },
@@ -665,19 +655,19 @@
       "meaning": "«la de ojos claros» · kratense"
     },
     {
-      "name": "Glorîye",
+      "name": "Glerya",
       "gender": "f",
       "meaning": "«gloria» · ustilés"
     },
     {
-      "name": "Grita",
+      "name": "Grinta",
       "gender": "f",
       "meaning": "«la libertad» · kratense"
     },
     {
-      "name": "Gwënela",
+      "name": "Gwenela",
       "gender": "f",
-      "meaning": "«la bendita y generosa» · kratense"
+      "meaning": "«la bendita y feliz» · kratense"
     },
     {
       "name": "Gwenn",
@@ -688,11 +678,6 @@
       "name": "Gwennig",
       "gender": "f",
       "meaning": "«la blanquita» · kratense"
-    },
-    {
-      "name": "Gwënola",
-      "gender": "f",
-      "meaning": "«la bendita y feliz» · kratense"
     },
     {
       "name": "Heolenn",
@@ -708,6 +693,11 @@
       "name": "Judith",
       "gender": "f",
       "meaning": "«la alabada» · nataneo litúrgico"
+    },
+    {
+      "name": "Julienne",
+      "gender": "f",
+      "meaning": "«del linaje de Julio» · ustilés"
     },
     {
       "name": "Justine",
@@ -750,7 +740,7 @@
       "meaning": "«la del bosque» · kratense"
     },
     {
-      "name": "Koulmig",
+      "name": "Koulmi",
       "gender": "f",
       "meaning": "«la palomita» · kratense"
     },
@@ -785,7 +775,7 @@
       "meaning": "«la de la luna» · kratense"
     },
     {
-      "name": "Lucîye",
+      "name": "Luciye",
       "gender": "f",
       "meaning": "«luminosa» · ustilés"
     },
@@ -800,12 +790,12 @@
       "meaning": "«arroyo» · élfico"
     },
     {
-      "name": "Maïwenn",
+      "name": "Maiwenn",
       "gender": "f",
       "meaning": "«la doncella bendita» · kratense"
     },
     {
-      "name": "Mårîye",
+      "name": "Mariye",
       "gender": "f",
       "meaning": "«amada de Elyārān» · ustilés"
     },
@@ -855,12 +845,12 @@
       "meaning": "«natal» · mazarino"
     },
     {
-      "name": "Nëna",
+      "name": "Nenna",
       "gender": "f",
       "meaning": "«la de la tierra» · kratense"
     },
     {
-      "name": "Nevenn",
+      "name": "Nevenne",
       "gender": "f",
       "meaning": "«la nueva» · kratense"
     },
@@ -880,7 +870,7 @@
       "meaning": "«la alegre» · mazarino"
     },
     {
-      "name": "Rëna",
+      "name": "Rena",
       "gender": "f",
       "meaning": "«la que se mantiene en pie» · kratense"
     },
@@ -890,7 +880,7 @@
       "meaning": "«la reseda, flor de olor» · mazarino"
     },
     {
-      "name": "Riwanon",
+      "name": "Rhianne",
       "gender": "f",
       "meaning": "«la reina» · kratense"
     },
@@ -905,12 +895,12 @@
       "meaning": "«la foquita» · kratense"
     },
     {
-      "name": "Rozenn",
+      "name": "Rose",
       "gender": "f",
       "meaning": "«rosa» · kratense"
     },
     {
-      "name": "Ruzenn",
+      "name": "Ruzanne",
       "gender": "f",
       "meaning": "«la pelirroja» · kratense"
     },
@@ -920,17 +910,17 @@
       "meaning": "«princesa» · nataneo litúrgico"
     },
     {
+      "name": "Sensi",
+      "gender": "f",
+      "meaning": "«la libre» · ustilés"
+    },
+    {
       "name": "Silira",
       "gender": "f",
       "meaning": "«luz plena» · élfico"
     },
     {
-      "name": "Soazig",
-      "gender": "f",
-      "meaning": "«la libre» · ustilés"
-    },
-    {
-      "name": "Sofi",
+      "name": "Sofie",
       "gender": "f",
       "meaning": "«sabiduría» · nataneo"
     },
@@ -975,12 +965,12 @@
       "meaning": "«la noble» · kratense"
     },
     {
-      "name": "Valérîye",
+      "name": "Valerie",
       "gender": "f",
       "meaning": "«la que vale» · ustilés"
     },
     {
-      "name": "Véarna",
+      "name": "Vearna",
       "gender": "f",
       "meaning": "«la elevada, la sagrada» · élfico"
     },
@@ -1307,7 +1297,7 @@
       "meaning": "«el extremo del bosque» · kratense"
     },
     {
-      "name": "Penmarc'h",
+      "name": "Penmarch",
       "meaning": "«la cabeza del caballo» · kratense"
     },
     {
