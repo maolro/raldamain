@@ -20,6 +20,12 @@
     "file": "kratoi/4090-presidenciales.json",
     "desc": "Después de la crisis del 86, los rescates y la austeridad, Kesenia Revilo funda el Movimiento del Pueblo Soberano y rompe el bipartidismo frente a su antiguo aliado Isembert Florin. Plantilla base (provincias y programas de election-info.md): ajústala a tu gusto.",
     "published": true
+   },
+   {
+    "name": "4093 · Legislativas",
+    "file": "kratoi/4093-legislativas.json",
+    "desc": "Legislativas de mitad de mandato: el MPS de Tudval Labourer es el primer partido, pero nacionalistas y federalistas conservan la mayoría.",
+    "published": true
    }
   ]
  }
