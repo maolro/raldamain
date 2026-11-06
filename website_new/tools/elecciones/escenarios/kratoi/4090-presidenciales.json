@@ -3197,7 +3197,7 @@
    "appeal": -0.7,
    "cand": "Candidato federalista",
    "charisma": 0,
-   "color": "#d18f1f",
+   "color": "#0e6710",
    "id": "FED",
    "name": "Partido Federalista",
    "pos": [
@@ -3218,7 +3218,7 @@
    "appeal": 0.28,
    "cand": "Kesenia Revilo",
    "charisma": 0.7,
-   "color": "#7b3fa8",
+   "color": "#c96508",
    "id": "SPM",
    "name": "Movimiento del Pueblo Soberano",
    "pos": [
