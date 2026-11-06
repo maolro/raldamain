@@ -138,6 +138,7 @@ def run(app, port: int, url: str | None = None, open_browser: bool = True,
 # This one watches only the repo files the tool actually imported.
 
 CHILD_ENV = "RALDAMAIN_LIVE_CHILD"
+START_ENV = "RALDAMAIN_LIVE_START"
 RESTART_CODE = 3
 REPO = Path(__file__).resolve().parent.parent
 
@@ -170,7 +171,8 @@ def _watch_imports(extra: list[Path]) -> None:
     # A file that changed after this process started was loaded in its old state: git's
     # pull --autostash briefly puts back the committed version, the restart loads that, and the
     # stash comes back within the same second — so restart once more to load what's on disk now.
-    if any(m > int(BOOT) for m in seen.values()):
+    started = int(os.environ.get(START_ENV) or BOOT)   # when the supervisor launched us (before reading any file)
+    if any(m > started for m in seen.values()):
         print(" * A file changed while starting, reloading", flush=True)
         os._exit(RESTART_CODE)
     while True:
@@ -196,6 +198,7 @@ def _supervise(extra: list[Path]) -> None:
     env = dict(os.environ, **{CHILD_ENV: "1"})
     while True:
         try:
+            env[START_ENV] = str(time.time_ns())
             code = subprocess.call([sys.executable, *sys.argv], env=env)
         except KeyboardInterrupt:
             return

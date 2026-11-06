@@ -123,7 +123,7 @@
     lastGender = gender;
     const list = $('ng-list');
     if (!culture) return;
-    const given = (culture.names || []).filter(n => n.gender === gender || n.gender === 'u');
+    const given = (culture.names || []).filter(n => n.gender === gender);
     if (!given.length) {
       list.innerHTML = `<li class="ng-empty">Esta cultura aún no tiene nombres ${gender === 'f' ? 'femeninos' : 'masculinos'}.</li>`;
       return;
@@ -131,7 +131,7 @@
     const surnames = culture.surnames || [];
     const fmt = culture.format || '{name} {surname}';
     const sur = surnames.length && fmt.includes('{surname}') ? pick(surnames, COUNT) : [];
-    const fathers = (culture.names || []).filter(n => n.gender === 'm' || n.gender === 'u');
+    const fathers = (culture.names || []).filter(n => n.gender === 'm');
     const dads = fathers.length && fmt.includes('{patronymic}') && (culture.patronymic_rules || []).length ? pick(fathers, COUNT) : [];
     list.innerHTML = pick(given, COUNT).map((g, i) => {
       const html = fmt.replace('{name}', part(g))
@@ -157,7 +157,7 @@
     try { localStorage.setItem('raldamain.nombres.modo', mode); } catch (e) {}
     if (mode === 'places') generatePlaces();
     else {
-      const has = g => (culture.names || []).some(n => n.gender === g || n.gender === 'u');
+      const has = g => (culture.names || []).some(n => n.gender === g);
       generate(has(lastGender) ? lastGender : (has('m') ? 'm' : 'f'));
     }
   }
@@ -165,7 +165,7 @@
   async function choose(id) {
     try { culture = await load(id); } catch (e) { $('ng-list').innerHTML = '<li class="ng-empty">No se pudo cargar esta cultura.</li>'; return; }
     $('ng-desc').textContent = culture.description || '';
-    const has = g => (culture.names || []).some(n => n.gender === g || n.gender === 'u');
+    const has = g => (culture.names || []).some(n => n.gender === g);
     document.querySelectorAll('#ng-people .ng-btn').forEach(b => b.disabled = !has(b.dataset.gender));
     try { localStorage.setItem('raldamain.nombres.cultura', id); } catch (e) {}
     setMode(mode);

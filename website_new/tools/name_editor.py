@@ -8,7 +8,7 @@ Needs:  pip install flask
 
 Culture file:
   {"id": "chothgar", "name": "Chothgar", "description": "…", "format": "{name} {surname}",
-   "names":    [{"name": "Dahrum", "gender": "m", "meaning": ""}, …],   # gender: m, f or u (unisex)
+   "names":    [{"name": "Dahrum", "gender": "m", "meaning": ""}, …],   # gender: m or f
    "surnames": [{"name": "Ivanov", "female": "Ivanova", "meaning": ""}, …],   # female: optional
    "surname_rules":    [{"ending": "ov", "female": "ova"}, …],                   # feminine form of the rest
    "patronymic_rules": [{"ending": "", "male": "sson", "female": "sdóttir"}, …], # from the father's name
@@ -42,7 +42,7 @@ GENERATOR = BASE / "assets" / "html" / "name_generator.html"
 ID_RE = re.compile(r"^[a-z0-9_-]{1,60}$")
 FORMATS = ("{name} {surname}", "{surname} {name}", "{name}", "{name} {patronymic}",
            "{name} {patronymic} {surname}", "{surname} {name} {patronymic}")
-GENDERS = ("m", "f", "u")
+GENDERS = ("m", "f")
 
 
 def _read(p: Path):
@@ -69,7 +69,7 @@ def clean_culture(cid: str, c: dict) -> dict:
             places[k] = {"name": name, "meaning": str(p.get("meaning") or "").strip() or places.get(k, {}).get("meaning", "")}
     for n in c.get("names") or []:
         name = str(n.get("name") or "").strip()
-        g = n.get("gender") if n.get("gender") in GENDERS else "u"
+        g = n.get("gender") if n.get("gender") in GENDERS else "m"
         if name:
             k = (_key(name), g)
             names[k] = {"name": name, "gender": g, "meaning": str(n.get("meaning") or "").strip() or names.get(k, {}).get("meaning", "")}
@@ -84,7 +84,7 @@ def clean_culture(cid: str, c: dict) -> dict:
             surnames[k] = entry
     return {"id": cid, "name": str(c.get("name") or cid).strip(), "description": str(c.get("description") or "").strip(),
             "format": c.get("format") if c.get("format") in FORMATS else FORMATS[0],
-            "names": sorted(names.values(), key=lambda n: ("mfu".index(n["gender"]), _key(n["name"]), n["name"])),
+            "names": sorted(names.values(), key=lambda n: ("mf".index(n["gender"]), _key(n["name"]), n["name"])),
             "surnames": sorted(surnames.values(), key=lambda s: (_key(s["name"]), s["name"])),
             # ending rules: the ending of the surname / the father's name is replaced by the rule's text
             "surname_rules": _rules(c.get("surname_rules"), ("female",)),
@@ -115,7 +115,7 @@ def rebuild_index() -> list:
         ns = c.get("names") or []
         out.append({"id": p.stem, "name": c.get("name") or p.stem,
                     "count": {"names": len(ns), "m": sum(n.get("gender") == "m" for n in ns),
-                              "f": sum(n.get("gender") == "f" for n in ns), "u": sum(n.get("gender") == "u" for n in ns),
+                              "f": sum(n.get("gender") == "f" for n in ns),
                               "surnames": len(c.get("surnames") or []), "places": len(c.get("places") or [])}})
     out.sort(key=lambda c: _key(c["name"]))
     if not INDEX.exists() or _read(INDEX) != out:
@@ -158,9 +158,7 @@ def api_put(cid):
     c = clean_culture(cid, culture)
     _write(p, c)
     rebuild_index()
-    what = data.get("label") or ("nueva cultura" if new else "")
-    git = _push(f"Update names: {c['name']}" + (f" ({what})" if what else ""), [p, INDEX])
-    return jsonify({"ok": True, "culture": c, "git": git})
+    return jsonify({"ok": True, "culture": c, "changes": changes()})
 
 
 @app.route("/api/names/<cid>", methods=["DELETE"])
@@ -168,15 +166,13 @@ def api_delete(cid):
     p = NAMES / f"{cid}.json"
     if not ID_RE.match(cid) or not p.exists():
         abort(404)
-    name = _read(p).get("name") or cid
     p.unlink()
     rebuild_index()
-    git = _push(f"Delete names: {name}", [p, INDEX])
-    return jsonify({"ok": True, "git": git})
+    return jsonify({"ok": True, "changes": changes()})
 
 
-# ── GitHub: every save writes the file and commits + pushes it (in the background; bursts go out
-# together). Anything else left unpushed in data/names (an earlier save that failed) goes up with it.
+# ── GitHub: «Guardar» only writes the files; «Subir a GitHub» commits and pushes everything changed in
+# data/names (in the background, like the other editors).
 def changed_files() -> list:
     try:
         out = subprocess.run(["git", "-C", str(BASE), "status", "--porcelain", "-uall", "--", str(NAMES)],
@@ -188,8 +184,34 @@ def changed_files() -> list:
     return [str(root / line[3:].strip().strip('"').split(" -> ")[-1]) for line in out.splitlines()]
 
 
-def _push(message: str, files) -> str:
-    return git_push(sorted({str(f) for f in files} | set(changed_files())), message[:300])
+def changes() -> list:
+    """What «Subir a GitHub» would upload: the changed files in data/names, by culture name."""
+    out = []
+    for f in changed_files():
+        p = Path(f)
+        if p.name == "index.json":
+            continue
+        try:
+            name = _read(p).get("name") or p.stem
+        except Exception:
+            name = p.stem   # deleted
+        out.append({"file": p.name, "name": name, "deleted": not p.exists()})
+    return out
+
+
+@app.route("/api/changes")
+def api_changes():
+    return jsonify(changes())
+
+
+@app.route("/api/publish", methods=["POST"])
+def api_publish():
+    files, what = changed_files(), changes()
+    if not files:
+        return jsonify({"ok": True, "git": "", "changes": []})
+    names = ", ".join(("−" if c["deleted"] else "") + c["name"] for c in what) or "índice"
+    git = git_push(sorted(files), f"Update names: {names}"[:300])
+    return jsonify({"ok": True, "git": git, "changes": changes()})
 
 
 @app.route("/api/git")
@@ -304,7 +326,8 @@ body { min-height: 100vh; }
     <button type="button" data-tab="gen" class="on">🎲 Generador</button>
     <button type="button" data-tab="lib">📚 Biblioteca</button>
   </nav>
-  <button type="button" id="ne-save" class="ne-save" disabled title="Escribe el archivo y lo sube a GitHub (Ctrl+S)">💾 Guardar</button>
+  <button type="button" id="ne-save" class="ne-save" disabled title="Escribe la cultura en su archivo de data/names (Ctrl+S). No sube nada a GitHub.">💾 Guardar</button>
+  <button type="button" id="ne-publish" class="ne-save" disabled title="Sube a GitHub todo lo guardado (commit + push)">⬆ Subir a GitHub</button>
   <span id="git-badge"></span>
 </header>
 
@@ -330,7 +353,6 @@ body { min-height: 100vh; }
 const $ = id => document.getElementById(id);
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 const slug = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '').slice(0, 60);
-const GLABEL = { m: 'Masculinos', f: 'Femeninos', u: 'Unisex' };
 let INDEX = [], CUR = null, ADD_KIND = 'm';
 
 async function api(method, url, body) {
@@ -343,7 +365,6 @@ function toast(msg, err) {
   const t = $('toast'); t.textContent = msg; t.className = err ? 'err' : ''; t.hidden = false;
   clearTimeout(toast.t); toast.t = setTimeout(() => t.hidden = true, 2600);
 }
-function gitNote(git) { return git && !['ok', 'nothing', 'queued'].includes(git) ? ' — git: ' + git : ''; }
 
 // ── tabs ──
 document.querySelectorAll('.ne-tabs button').forEach(b => b.addEventListener('click', () => {
@@ -372,9 +393,9 @@ async function openCulture(id) {
   CUR = await api('GET', '/api/names/' + encodeURIComponent(id)); setDirty(false); renderCults(); renderLib();
 }
 
-// Edits stay in the page until «Guardar» (or Ctrl+S): that writes the JSON and the commit + push to GitHub
-// go out in the background. If the editor can't be reached (closed, restarting), the culture is kept in
-// this browser and sent again every few seconds; dirty() keeps live reload from reloading over any of it.
+// Edits stay in the page until «Guardar» (or Ctrl+S), which writes the JSON file; «Subir a GitHub» then
+// commits and pushes everything saved. If the editor can't be reached (closed, restarting), the culture is
+// kept in this browser and sent again every few seconds; dirty() keeps live reload from reloading over it.
 const BACKUP_KEY = 'raldamain.nombres.pendientes';
 const readBackups = () => { try { return JSON.parse(localStorage.getItem(BACKUP_KEY) || '{}'); } catch (e) { return {}; } };
 const writeBackups = b => { try { localStorage.setItem(BACKUP_KEY, JSON.stringify(b)); } catch (e) {} };
@@ -403,7 +424,7 @@ async function saveNow() {
     const left = readBackups(); delete left[CUR.id]; writeBackups(left);
     CUR = d.culture;
     await loadIndex(); loadGit(); renderLib();
-    toast(gitNote(d.git) ? '⚠ Guardado en el archivo, pero no se pudo subir' + gitNote(d.git) : 'Guardado · subiendo a GitHub…', !!gitNote(d.git));
+    toast('Guardado en el archivo · «Subir a GitHub» cuando quieras publicarlo');
   } catch (e) {
     toast('⚠ No se pudo guardar (' + e.message + '). Los cambios quedan en este navegador y se enviarán solos.', true);
     if (!retryTimer) retryTimer = setInterval(sendBackups, 3000);
@@ -557,8 +578,8 @@ $('lb-main').addEventListener('click', async e => {
       if (ADD_KIND === 'l') listOf('l').push({ name: p.name, meaning: p.meaning });
       else (ADD_KIND === 's' ? CUR.surnames : CUR.names).push(ADD_KIND === 's' ? p : { ...p, gender: ADD_KIND });
     }
-    const kindName = { m: 'masculino', f: 'femenino', u: 'unisex', s: 'apellido', l: 'lugar' }[ADD_KIND];
-    await save(`+${parsed.length} ${kindName}${parsed.length > 1 ? (ADD_KIND === 'u' ? '' : ADD_KIND === 'l' ? 'es' : 's') : ''}`);
+    const kindName = { m: 'masculino', f: 'femenino', s: 'apellido', l: 'lugar' }[ADD_KIND];
+    await save(`+${parsed.length} ${kindName}${parsed.length > 1 ? (ADD_KIND === 'l' ? 'es' : 's') : ''}`);
     renderLib();
     return;
   }
@@ -593,8 +614,8 @@ $('lb-main').addEventListener('click', async e => {
   if (e.target.id === 'lb-delete') {
     if (!confirm(`¿Eliminar la cultura «${CUR.name}» con todos sus nombres?`)) return;
     try {
-      const d = await api('DELETE', '/api/names/' + encodeURIComponent(CUR.id));
-      toast('Cultura eliminada' + gitNote(d.git), !!gitNote(d.git));
+      await api('DELETE', '/api/names/' + encodeURIComponent(CUR.id));
+      toast('Cultura eliminada · «Subir a GitHub» para quitarla también de la web');
       CUR = null; await loadIndex(); renderLib(); loadGit();
     } catch (err) { toast('Error: ' + err.message, true); }
   }
@@ -627,18 +648,32 @@ $('lb-main').addEventListener('change', async e => {
 });
 
 // ── git badge, y lo que falta por subir ──
+let PUBLISHING = false;
 async function loadGit() {
-  const el = $('git-badge');
+  const el = $('git-badge'), pb = $('ne-publish');
   try {
-    const g = await api('GET', '/api/git');
-    el.className = (!g.ok || g.error) ? 'bad' : g.pending ? 'busy' : 'ok';
-    el.textContent = !g.ok ? `⎇ ${g.branch || '?'}: sin push` : g.pending ? `⏳ subiendo ${g.pending}` : g.error ? '⚠ git' : '✓ GitHub';
-    el.title = g.error || 'Guardar es instantáneo: el commit y el push a GitHub se hacen en segundo plano';
+    const [g, ch] = await Promise.all([api('GET', '/api/git'), api('GET', '/api/changes')]);
+    el.className = (!g.ok || g.error) ? 'bad' : g.pending ? 'busy' : ch.length ? 'busy' : 'ok';
+    el.textContent = !g.ok ? `⎇ ${g.branch || '?'}: sin push` : g.pending ? `⏳ subiendo ${g.pending}` : g.error ? '⚠ git'
+      : ch.length ? `${ch.length} sin subir` : '✓ GitHub al día';
+    el.title = g.error || (ch.length ? 'Guardado pero sin subir: ' + ch.map(c => (c.deleted ? '−' : '') + c.name).join(', ') : 'Todo lo guardado está en GitHub');
+    pb.disabled = PUBLISHING || !ch.length || !g.ok;
+    pb.textContent = ch.length ? `⬆ Subir a GitHub (${ch.length})` : '⬆ Subir a GitHub';
+    pb.title = ch.length ? 'Sube a GitHub: ' + ch.map(c => (c.deleted ? '−' : '') + c.name).join(', ') : 'No hay nada guardado sin subir';
   } catch (e) {
-    el.className = 'bad'; el.textContent = '⚠ sin conexión';
+    el.className = 'bad'; el.textContent = '⚠ sin conexión'; pb.disabled = true;
     el.title = 'El editor de nombres no responde (¿está cerrado?). Lo que guardes se queda en este navegador hasta que vuelva.';
   }
 }
+$('ne-publish').addEventListener('click', async () => {
+  if (DIRTY && !confirm('Hay cambios sin guardar en «' + CUR.name + '»: no se subirán. ¿Subir lo guardado de todos modos?')) return;
+  PUBLISHING = true; $('ne-publish').disabled = true;
+  try {
+    const d = await api('POST', '/api/publish');
+    toast(d.git && /error|fail|no se pudo/i.test(d.git) ? '⚠ No se pudo subir: ' + d.git : 'Subiendo a GitHub…', !!(d.git && /error|fail|no se pudo/i.test(d.git)));
+  } catch (e) { toast('⚠ No se pudo subir (' + e.message + ')', true); }
+  PUBLISHING = false; loadGit();
+});
 loadGit(); setInterval(loadGit, 4000);
 loadIndex();
 </script>
