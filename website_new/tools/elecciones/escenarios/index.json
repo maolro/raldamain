@@ -12,6 +12,18 @@
   ]
  },
  {
+  "name": "Kratoi",
+  "slug": "kratoi",
+  "elections": [
+   {
+    "name": "4090 · Presidenciales",
+    "file": "kratoi/4090-presidenciales.json",
+    "desc": "Después de la crisis del 86, los rescates y la austeridad, Kesenia Revilo funda el Movimiento Popular Soberano y rompe el bipartidismo frente a su antiguo aliado Isembert Florin.. Plantilla de election-info.md.",
+    "published": true
+   }
+  ]
+ },
+ {
   "name": "República de Ejemplo",
   "slug": "republica-de-ejemplo",
   "elections": [
