@@ -220,7 +220,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "La provincia más rica: casas comerciales y bancos; burguesía cosmopolita y librecambista, gran sostén de los federalistas."
   },
   {
    "name": "Vireuil",
@@ -320,7 +321,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Puertos, flotas pesqueras y saladeros; marineros que han sufrido los aranceles ustileses, nacionalistas en la cuestión ustilesa y pragmáticos en lo demás."
   },
   {
    "name": "Saumance",
@@ -420,7 +422,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Huertas y trigales que alimentan la costa; moderada, próspera y tranquila, la provincia que más a menudo vota al ganador."
   },
   {
    "name": "Clairval",
@@ -520,7 +523,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Pueblos dormitorio y pequeños molinos en los caminos de Argostana, cada vez más absorbidos por la costa; liberal y algo nacionalista."
   },
   {
    "name": "Belmoux",
@@ -620,7 +624,8 @@
     1.5,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "El interior pobre de la costa: granjas de colina y mercados en declive; más tradicional y receptiva al discurso contra las élites."
   },
   {
    "name": "Rimas",
@@ -720,7 +725,8 @@
     1.5,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "La capital: universidad, cafés, prensa libre y el Palacio del Congreso; el electorado más progresista, laico e institucionalista."
   },
   {
    "name": "Dorvanne",
@@ -820,7 +826,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Campos ricos y villas de mercado en torno a la capital, hogar de veteranos de la revolución; patriota, reformista y fiel a los nacionalistas."
   },
   {
    "name": "Ferrolles",
@@ -920,7 +927,8 @@
     1,
     1.5
    ],
-   "local": {}
+   "local": {},
+   "desc": "La provincia de las fundiciones (y luego de las fundiciones de chi del ejército); obrera, industrial, partidaria de un Estado y un ejército fuertes."
   },
   {
    "name": "Austaine",
@@ -1020,7 +1028,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Colinas en el borde del departamento, donde la capital pierde influencia; nacionalista en la cuestión nacional, más conservadora en sus costumbres."
   },
   {
    "name": "Montrivel",
@@ -1120,7 +1129,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Tierras altas tranquilas de huertos, pueblos y funcionarios jubilados; moderada, ordenada y algo protectora de su paisaje."
   },
   {
    "name": "Vosgard",
@@ -1220,7 +1230,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Capital administrativa del norte y única de mayoría kratense; belicista, amiga de las obras públicas y partidaria de asimilar a la minoría mazarina."
   },
   {
    "name": "Kessling",
@@ -1320,7 +1331,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Granjas de colina e iglesias de madera de habla mazarina; quiere reconocimiento cultural, autogobierno, subsidios agrarios y poco de Rimas."
   },
   {
    "name": "Drommel",
@@ -1420,7 +1432,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Provincia de montaña con el Paso de Alascur, por donde llegó la invasión de 4001; la más obsesionada con la seguridad y la menos hostil a Ustilus."
   },
   {
    "name": "Nordhaven",
@@ -1520,7 +1533,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "La provincia mazarina más pequeña y remota: aislada, tradicional y recelosa de todos los gobiernos que ha tenido."
   },
   {
    "name": "Sarvaux",
@@ -1620,7 +1634,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Granjas y viñedos kratenses en la frontera; conservadora y pragmática, con una vena independiente que la mantiene disputada."
   },
   {
    "name": "Denvire",
@@ -1720,7 +1735,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Bosque de mayoría ustilesa con hondas raíces feynistas y de la Iglesia del Heredero; el electorado más proustilés de la república."
   },
   {
    "name": "Aubrit",
@@ -1820,7 +1836,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Tierra de terratenientes, viejas familias provinciales convertidas en hidalgos rurales; la columna vertebral social de los federalistas."
   },
   {
    "name": "Castelnoir",
@@ -1920,7 +1937,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "La más rica de las provincias ustilesas: comerciantes y exportadores de vino que viven del comercio con el Imperio; proustilesa, librecambista e institucional."
   },
   {
    "name": "Miravel",
@@ -2020,7 +2038,8 @@
     1.5,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Llanuras de cereal con muchos arrendatarios; tradicional, contraria a las élites y siempre dispuesta a votar contra quien gobierne en Rimas."
   },
   {
    "name": "Sylvenne",
@@ -2120,7 +2139,8 @@
     1,
     1.5
    ],
-   "local": {}
+   "local": {},
+   "desc": "Pueblos del bosque en la frontera élfica, acostumbrados a convivir con las comunas; la más proélfica y ecologista del país."
   },
   {
    "name": "Haudric",
@@ -2220,7 +2240,8 @@
     1,
     1.5
    ],
-   "local": {}
+   "local": {},
+   "desc": "Tierra maderera, cuna del Gremio y luego del Consorcio de la Madera; quiere empleo y contratas, y recela de los elfos y los conservacionistas."
   },
   {
    "name": "Verchamps",
@@ -2320,7 +2341,8 @@
     1,
     1
    ],
-   "local": {}
+   "local": {},
+   "desc": "Claros, aldeas y santuarios de la Fe de los Espíritus en lo hondo del bosque; libertaria, devota y antigubernamental a partes iguales."
   },
   {
    "name": "Lisieroy",
@@ -2420,7 +2442,8 @@
     1,
     1.5
    ],
-   "local": {}
+   "local": {},
+   "desc": "La provincia más pequeña y salvaje, donde los druidas aún mandan; el electorado más federalista y más ecologista de Kratoi."
   }
  ],
  "system": {
