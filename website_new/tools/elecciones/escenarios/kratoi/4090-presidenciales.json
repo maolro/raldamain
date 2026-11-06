@@ -1129,7 +1129,7 @@
    "group": "Kratoi Central",
    "local": {},
    "mode": "ideo",
-   "name": "Austaine",
+   "name": "Sarvaux",
    "pop": 360000,
    "slates": {
     "FED": {
@@ -1261,7 +1261,7 @@
    "group": "Kratoi Central",
    "local": {},
    "mode": "ideo",
-   "name": "Montrivel",
+   "name": "Lanvenez",
    "pop": 330000,
    "slates": {
     "FED": {
@@ -1525,7 +1525,7 @@
    "group": "Kratoi Norte",
    "local": {},
    "mode": "ideo",
-   "name": "Pogorska",
+   "name": "Rybniky",
    "pop": 330000,
    "slates": {
     "FED": {
@@ -1789,7 +1789,7 @@
    "group": "Kratoi Norte",
    "local": {},
    "mode": "ideo",
-   "name": "Nordhaven",
+   "name": "Kamenek",
    "pop": 270000,
    "slates": {
     "FED": {
@@ -1909,19 +1909,19 @@
     -4,
     2,
     4,
-    -1,
-    -3,
-    3,
-    5,
-    3,
-    3,
+    -2,
+    -4,
+    4,
+    6,
+    4,
+    4,
     2
    ],
    "el": 11,
-   "group": "Bas-Kratoi",
+   "group": "Kratoi Sur",
    "local": {},
    "mode": "ideo",
-   "name": "Sarvaux",
+   "name": "Lisieroy",
    "pop": 380000,
    "slates": {
     "FED": {
@@ -2015,7 +2015,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 84,
+   "turnout": 71,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2033,26 +2033,27 @@
     1,
     1
    ],
-   "seed": "Sarvaux"
+   "seed": "Sarvaux",
+   "desc": "Granjas y viñedos kratenses en la frontera. Conservadora y con una vena independiente."
   },
   {
    "center": [
     -6,
     4,
     8,
-    -7,
+    -8,
     -4,
     -6,
     7,
-    7,
+    8,
     4,
     1
    ],
    "el": 10,
-   "group": "Bas-Kratoi",
+   "group": "Kratoi Sur",
    "local": {},
    "mode": "ideo",
-   "name": "Denvire",
+   "name": "Soucart",
    "pop": 360000,
    "slates": {
     "FED": {
@@ -2146,7 +2147,7 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 86,
+   "turnout": 80,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2156,34 +2157,35 @@
     1,
     1,
     1,
-    1.5,
     1,
     1,
     1,
-    1.5,
+    1,
+    1,
     1,
     1
    ],
-   "seed": "Denvire"
+   "seed": "Denvire",
+   "desc": "De mayoría ustilesa con hondas raíces feynistas y de la Iglesia del Heredero. El electorado más proustilés de Kratoi."
   },
   {
    "center": [
     -4,
     2,
-    5,
-    -2,
+    6,
+    -4,
     -4,
     2,
-    6,
+    8,
     4,
     3,
     1
    ],
    "el": 10,
-   "group": "Bas-Kratoi",
+   "group": "Kratoi Sur",
    "local": {},
    "mode": "ideo",
-   "name": "Aubrit",
+   "name": "Maghmor",
    "pop": 340000,
    "slates": {
     "FED": {
@@ -2290,12 +2292,13 @@
     1,
     1,
     1,
-    1.5,
+    1,
     1,
     1,
     1
    ],
-   "seed": "Aubrit"
+   "seed": "Aubrit",
+   "desc": "Región de terratenientes y viejas familias provinciales convertidas en hidalgos rurales."
   },
   {
    "center": [
@@ -2303,18 +2306,18 @@
     4,
     7,
     -8,
+    -8,
     -6,
-    -5,
     6,
-    7,
+    8,
     2,
     4
    ],
    "el": 10,
-   "group": "Bas-Kratoi",
+   "group": "Kratoi Sur",
    "local": {},
    "mode": "ideo",
-   "name": "Castelnoir",
+   "name": "Neuvillete",
    "pop": 360000,
    "slates": {
     "FED": {
@@ -2418,15 +2421,16 @@
     1,
     1,
     1,
-    1.5,
-    1.5,
+    1,
+    1,
     1,
     1,
     1,
     1,
     1
    ],
-   "seed": "Castelnoir"
+   "seed": "Castelnoir",
+   "desc": "La más rica de las provincias ustilesas, conocida por sus comerciantes y exportadores de vino."
   },
   {
    "center": [
@@ -2442,7 +2446,7 @@
     0
    ],
    "el": 9,
-   "group": "Bas-Kratoi",
+   "group": "Kratoi Sur",
    "local": {},
    "mode": "ideo",
    "name": "Miravel",
@@ -2557,26 +2561,27 @@
     1.5,
     1
    ],
-   "seed": "Miravel"
+   "seed": "Miravel",
+   "desc": "Llanuras de cereal con muchos arrendatarios. Tradicional y siempre dispuesta a votar contra quien gobierne."
   },
   {
    "center": [
     -6,
     -6,
     4,
-    7,
-    -1,
-    -7,
-    1,
+    8,
+    0,
+    -8,
+    2,
     6,
-    -3,
-    -7
+    2,
+    -8
    ],
    "el": 9,
-   "group": "Forêt Orientale",
+   "group": "Bosque Oriental",
    "local": {},
    "mode": "ideo",
-   "name": "Sylvenne",
+   "name": "Tregwern",
    "pop": 320000,
    "slates": {
     "FED": {
@@ -2670,7 +2675,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 78,
+   "turnout": 70,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2686,28 +2691,29 @@
     1,
     1,
     1,
-    1.5
+    1
    ],
-   "seed": "Sylvenne"
+   "seed": "Sylvenne",
+   "desc": "Pueblos del bosque en la frontera élfica, acostumbrados a convivir con las comunas."
   },
   {
    "center": [
-    -7,
+    -8,
     -4,
     0,
     6,
-    -4,
+    -6,
     2,
-    3,
+    4,
     5,
     8,
-    4
+    6
    ],
    "el": 9,
-   "group": "Forêt Orientale",
+   "group": "Bosque Oriental",
    "local": {},
    "mode": "ideo",
-   "name": "Haudric",
+   "name": "Kerivin",
    "pop": 300000,
    "slates": {
     "FED": {
@@ -2801,7 +2807,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 76,
+   "turnout": 70,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2812,14 +2818,15 @@
     1,
     1,
     1,
-    1.5,
     1,
     1,
     1,
     1,
-    1.5
+    1,
+    1
    ],
-   "seed": "Haudric"
+   "seed": "Haudric",
+   "desc": "Tierra maderera, cuna del Gremio y luego del Consorcio de la Madera."
   },
   {
    "center": [
@@ -2827,18 +2834,18 @@
     -7,
     2,
     6,
-    -1,
     -2,
-    3,
-    7,
-    7,
-    -5
+    -2,
+    4,
+    8,
+    8,
+    -6
    ],
    "el": 8,
-   "group": "Forêt Orientale",
+   "group": "Bosque Oriental",
    "local": {},
    "mode": "ideo",
-   "name": "Verchamps",
+   "name": "Tallaghri",
    "pop": 280000,
    "slates": {
     "FED": {
@@ -2932,14 +2939,14 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 74,
+   "turnout": 70,
    "v": {
     "FED": 0,
     "NAT": 0,
     "SPM": 0
    },
    "w": [
-    1.5,
+    1,
     1,
     1,
     1,
@@ -2950,11 +2957,12 @@
     1,
     1
    ],
-   "seed": "Verchamps"
+   "seed": "Verchamps",
+   "desc": "Claros, aldeas y santuarios de la Fe de los Espíritus en lo hondo del bosque."
   },
   {
    "center": [
-    -9,
+    -10,
     -8,
     4,
     5,
@@ -2963,14 +2971,14 @@
     4,
     8,
     6,
-    -9
+    -10
    ],
    "el": 7,
-   "group": "Forêt Orientale",
+   "group": "Bosque Oriental",
    "local": {},
    "mode": "ideo",
-   "name": "Lisieroy",
-   "pop": 260000,
+   "name": "Luenith",
+   "pop": 150000,
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -3063,14 +3071,13 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 72,
+   "turnout": 59,
    "v": {
     "FED": 0,
     "NAT": 0,
     "SPM": 0
    },
    "w": [
-    1.5,
     1,
     1,
     1,
@@ -3079,9 +3086,11 @@
     1,
     1,
     1,
-    1.5
+    1,
+    1
    ],
-   "seed": "Lisieroy"
+   "seed": "Lisieroy",
+   "desc": "La provincia más misteriosa y salvaje, donde los druidas aún mandan."
   }
  ],
  "election": {
