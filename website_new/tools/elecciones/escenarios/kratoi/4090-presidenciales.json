@@ -61,20 +61,22 @@
     -6,
     -4,
     6,
-    0,
+    1,
     -8,
-    -4,
+    -3,
     -2,
+    -3,
     -4,
-    -4,
-    8
+    7
    ],
-   "el": 20,
+   "desc": "La capital económica de Kratoi y rival histórica de Rimas. Es cosmopolita, mercantil y un fuerte bastión Federalista.",
+   "el": 21,
    "group": "Costa Hespérea",
    "local": {},
    "mode": "ideo",
    "name": "Argostana",
-   "pop": 700000,
+   "pop": 1400000,
+   "seed": "Argostana",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -184,29 +186,29 @@
     1,
     1,
     1
-   ],
-   "desc": "La capital económica de Kratoi y rival histórica de Rimas. Es cosmopolita, mercantil y un fuerte bastión Federalista.",
-   "seed": "Argostana"
+   ]
   },
   {
    "center": [
+    3,
+    -5,
+    -1,
+    9,
     2,
-    -4,
     -2,
-    8,
-    2,
-    -2,
-    -2,
-    -2,
+    -3,
+    -1,
     1,
     4
    ],
+   "desc": "Región pesquera. Hostil hacia Ustilus por sus aranceles y actividades de su flota, pero pragmática en lo demás.",
    "el": 12,
    "group": "Costa Hespérea",
    "local": {},
    "mode": "ideo",
    "name": "Laurendon",
-   "pop": 420000,
+   "pop": 754000,
+   "seed": "Laurendon",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -316,29 +318,29 @@
     1,
     1,
     1
-   ],
-   "desc": "Región pesquera. Hostil hacia Ustilus por sus aranceles y actividades de su flota, pero pragmática en lo demás.",
-   "seed": "Laurendon"
+   ]
   },
   {
    "center": [
-    0,
+    1,
     -2,
-    2,
-    2,
-    0,
+    1,
+    3,
+    -1,
     -2,
+    1,
+    1,
     2,
-    0,
-    2,
-    2
+    1
    ],
-   "el": 11,
+   "desc": "Región rural moderada, próspera y tranquila, conocida solo por provincia que más a menudo vota al ganador.",
+   "el": 10,
    "group": "Costa Hespérea",
    "local": {},
    "mode": "ideo",
    "name": "Saumance",
-   "pop": 380000,
+   "pop": 642000,
+   "seed": "Saumance",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -448,29 +450,29 @@
     1,
     1,
     1
-   ],
-   "desc": "Región rural moderada, próspera y tranquila, conocida solo por provincia que más a menudo vota al ganador.",
-   "seed": "Saumance"
+   ]
   },
   {
    "center": [
-    2,
+    3,
     -2,
     2,
-    2,
-    2,
-    -2,
-    2,
-    0,
-    0,
-    0
+    1,
+    1,
+    -3,
+    1,
+    -1,
+    -1,
+    1
    ],
-   "el": 10,
+   "desc": "Pueblos dormitorio y pequeños molinos en los caminos de Argostana.",
+   "el": 13,
    "group": "Costa Hespérea",
    "local": {},
    "mode": "ideo",
    "name": "Clarival",
-   "pop": 340000,
+   "pop": 789000,
+   "seed": "Clarival",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -580,29 +582,29 @@
     1,
     1,
     1
-   ],
-   "desc": "Pueblos dormitorio y pequeños molinos en los caminos de Argostana.",
-   "seed": "Clarival"
+   ]
   },
   {
    "center": [
     -2,
-    2,
-    2,
-    2,
-    4,
+    3,
+    3,
     1,
-    4,
+    5,
+    1,
+    5,
     2,
-    6,
-    -4
+    7,
+    -3
    ],
-   "el": 9,
+   "desc": "Región costera fronteriza con Dairov. Tradicional, pobre y receptiva al discurso contra las élites.",
+   "el": 7,
    "group": "Costa Hespérea",
    "local": {},
    "mode": "ideo",
    "name": "Roumnet",
-   "pop": 300000,
+   "pop": 412000,
+   "seed": "Roumnet",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -712,30 +714,29 @@
     1,
     1,
     1
-   ],
-   "desc": "Región costera fronteriza con Dairov. Tradicional, pobre y receptiva al discurso contra las élites.",
-   "seed": "Roumnet"
+   ]
   },
   {
    "center": [
-    8,
-    -4,
+    7,
+    -5,
     -4,
     8,
     4,
-    -6,
+    -7,
     -8,
     -8,
     -6,
-    2
+    1
    ],
    "desc": "La capital de Kratoi. Es el electorado más progresista, laico y defensor de la República.",
-   "el": 17,
+   "el": 23,
    "group": "Kratoi Central",
    "local": {},
    "mode": "ideo",
    "name": "Rimas",
-   "pop": 600000,
+   "pop": 1520000,
+   "seed": "Rimas",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -845,28 +846,29 @@
     1,
     1,
     1
-   ],
-   "seed": "Rimas"
+   ]
   },
   {
    "center": [
-    8,
-    4,
+    7,
+    5,
     -6,
-    8,
-    2,
-    -2,
+    7,
+    1,
+    -3,
     -4,
     -6,
-    -2,
-    4
+    -3,
+    5
    ],
-   "el": 12,
+   "desc": "Campos ricos y villas de mercado en torno a la capital, conocida por su famosa batalla y por ser hogar de veteranos.",
+   "el": 13,
    "group": "Kratoi Central",
    "local": {},
    "mode": "ideo",
    "name": "Grevara",
-   "pop": 420000,
+   "pop": 798000,
+   "seed": "Grevara",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -976,29 +978,29 @@
     1,
     1,
     1
-   ],
-   "desc": "Campos ricos y villas de mercado en torno a la capital, conocida por su famosa batalla y por ser hogar de veteranos.",
-   "seed": "Grevara"
+   ]
   },
   {
    "center": [
-    6,
+    5,
     -2,
-    -6,
+    -5,
     8,
     8,
-    2,
-    -4,
-    -6,
+    3,
+    -3,
+    -7,
     4,
-    8
+    7
    ],
-   "el": 11,
+   "desc": "La provincia de las fundiciones. Obrera, industrial, partidaria de un Estado y un ejército fuertes.",
+   "el": 17,
    "group": "Kratoi Central",
    "local": {},
    "mode": "ideo",
    "name": "Oreigon",
-   "pop": 390000,
+   "pop": 1070000,
+   "seed": "Oreigon",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -1108,29 +1110,29 @@
     1,
     1,
     1
-   ],
-   "desc": "La provincia de las fundiciones. Obrera, industrial, partidaria de un Estado y un ejército fuertes.",
-   "seed": "Oreigon"
+   ]
   },
   {
    "center": [
     6,
     0,
     -4,
-    6,
+    5,
+    1,
+    5,
+    1,
+    -3,
     2,
-    4,
-    2,
-    -2,
-    2,
-    2
+    1
    ],
-   "el": 10,
+   "desc": "Colinas en el borde del departamento. Nacionalista en la cuestión nacional, más conservadora en sus costumbres.",
+   "el": 9,
    "group": "Kratoi Central",
    "local": {},
    "mode": "ideo",
    "name": "Sarvaux",
-   "pop": 360000,
+   "pop": 570000,
+   "seed": "Austaine",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -1240,29 +1242,29 @@
     1,
     1,
     1
-   ],
-   "desc": "Colinas en el borde del departamento. Nacionalista en la cuestión nacional, más conservadora en sus costumbres.",
-   "seed": "Austaine"
+   ]
   },
   {
    "center": [
-    4,
+    3,
     -4,
-    0,
-    6,
-    2,
-    0,
-    0,
+    -1,
+    5,
+    3,
+    1,
+    1,
+    -3,
     -4,
-    -4,
-    -4
+    -5
    ],
+   "desc": "Tierras altas tranquilas con muchos funcionarios jubilados. Moderada, ordenada y algo protectora de su paisaje.",
    "el": 9,
    "group": "Kratoi Central",
    "local": {},
    "mode": "ideo",
    "name": "Lanvenez",
-   "pop": 330000,
+   "pop": 557000,
+   "seed": "Montrivel",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -1372,29 +1374,29 @@
     1,
     1,
     1
-   ],
-   "desc": "Tierras altas tranquilas con muchos funcionarios jubilados. Moderada, ordenada y algo protectora de su paisaje.",
-   "seed": "Montrivel"
+   ]
   },
   {
    "center": [
     2,
-    4,
-    -6,
+    3,
+    -7,
     4,
     6,
-    4,
-    4,
+    5,
+    3,
     2,
     6,
-    2
+    1
    ],
+   "desc": "Capital del norte y sede de la flota Kratense. Militarista y asimilacionista hacia los mazarinos.",
    "el": 10,
    "group": "Kratoi Norte",
    "local": {},
    "mode": "ideo",
    "name": "Carpentia",
-   "pop": 360000,
+   "pop": 646000,
+   "seed": "Carpentia",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -1504,29 +1506,29 @@
     1,
     1,
     1
-   ],
-   "desc": "Capital del norte y sede de la flota Kratense. Militarista y asimilacionista hacia los mazarinos.",
-   "seed": "Carpentia"
+   ]
   },
   {
    "center": [
     -8,
     4,
     -3,
-    0,
+    1,
     7,
     -6,
     7,
     5,
-    8,
+    9,
     1
    ],
-   "el": 9,
+   "desc": "Región rural habla mazarina. Quiere reconocimiento cultural y autogobierno, subsidios agrarios.",
+   "el": 8,
    "group": "Kratoi Norte",
    "local": {},
    "mode": "ideo",
    "name": "Rybniky",
-   "pop": 330000,
+   "pop": 488000,
+   "seed": "Pogorska",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -1636,29 +1638,29 @@
     1,
     1,
     1
-   ],
-   "desc": "Región rural habla mazarina. Quiere reconocimiento cultural y autogobierno, subsidios agrarios.",
-   "seed": "Pogorska"
+   ]
   },
   {
    "center": [
     -2,
-    6,
-    -6,
-    -4,
+    7,
+    -7,
+    -5,
+    7,
     8,
-    8,
-    6,
+    5,
     4,
-    8,
-    0
+    9,
+    1
    ],
-   "el": 9,
+   "desc": "Provincia de montaña con el paso de Alascur, por donde llegó la invasión de 4001. La más hostil hacia Mazarín.",
+   "el": 8,
    "group": "Kratoi Norte",
    "local": {},
    "mode": "ideo",
    "name": "Drommel",
-   "pop": 308000,
+   "pop": 488000,
+   "seed": "Drommel",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -1768,9 +1770,7 @@
     1,
     1,
     1
-   ],
-   "seed": "Drommel",
-   "desc": "Provincia de montaña con el paso de Alascur, por donde llegó la invasión de 4001. La más hostil hacia Mazarín."
+   ]
   },
   {
    "center": [
@@ -1779,18 +1779,20 @@
     -2,
     0,
     8,
-    -6,
-    6,
-    6,
-    8,
-    -2
+    -7,
+    5,
+    5,
+    9,
+    -3
    ],
-   "el": 8,
+   "desc": "La provincia mazarina más pequeña y remota. Aislada, tradicional y recelosa de todos los gobiernos que ha tenido.",
+   "el": 6,
    "group": "Kratoi Norte",
    "local": {},
    "mode": "ideo",
    "name": "Kamenek",
-   "pop": 270000,
+   "pop": 342000,
+   "seed": "Nordhaven",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -1900,29 +1902,29 @@
     1,
     1,
     1
-   ],
-   "seed": "Nordhaven",
-   "desc": "La provincia mazarina más pequeña y remota. Aislada, tradicional y recelosa de todos los gobiernos que ha tenido."
+   ]
   },
   {
    "center": [
     -4,
-    2,
+    1,
     4,
-    -2,
-    -4,
+    -3,
+    -3,
+    5,
+    7,
     4,
-    6,
-    4,
-    4,
-    2
+    5,
+    1
    ],
-   "el": 11,
+   "desc": "Granjas y viñedos kratenses en la frontera. Conservadora y con una vena independiente.",
+   "el": 10,
    "group": "Kratoi Sur",
    "local": {},
    "mode": "ideo",
    "name": "Lisieroy",
-   "pop": 380000,
+   "pop": 602000,
+   "seed": "Sarvaux",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -2032,29 +2034,29 @@
     1,
     1,
     1
-   ],
-   "seed": "Sarvaux",
-   "desc": "Granjas y viñedos kratenses en la frontera. Conservadora y con una vena independiente."
+   ]
   },
   {
    "center": [
-    -6,
-    4,
-    8,
-    -8,
-    -4,
-    -6,
+    -5,
+    5,
     7,
-    8,
-    4,
+    -7,
+    -3,
+    -5,
+    7,
+    7,
+    3,
     1
    ],
-   "el": 10,
+   "desc": "De mayoría ustilesa con hondas raíces feynistas y de la Iglesia del Heredero. El electorado más proustilés de Kratoi.",
+   "el": 9,
    "group": "Kratoi Sur",
    "local": {},
    "mode": "ideo",
    "name": "Soucart",
-   "pop": 360000,
+   "pop": 570000,
+   "seed": "Denvire",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -2164,29 +2166,29 @@
     1,
     1,
     1
-   ],
-   "seed": "Denvire",
-   "desc": "De mayoría ustilesa con hondas raíces feynistas y de la Iglesia del Heredero. El electorado más proustilés de Kratoi."
+   ]
   },
   {
    "center": [
     -4,
-    2,
-    6,
-    -4,
-    -4,
+    1,
+    5,
+    -3,
+    -5,
     2,
     8,
-    4,
+    5,
     3,
     1
    ],
-   "el": 10,
+   "desc": "Región de terratenientes y viejas familias provinciales convertidas en hidalgos rurales.",
+   "el": 8,
    "group": "Kratoi Sur",
    "local": {},
    "mode": "ideo",
    "name": "Maghmor",
-   "pop": 340000,
+   "pop": 502000,
+   "seed": "Aubrit",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -2296,29 +2298,29 @@
     1,
     1,
     1
-   ],
-   "seed": "Aubrit",
-   "desc": "Región de terratenientes y viejas familias provinciales convertidas en hidalgos rurales."
+   ]
   },
   {
    "center": [
     -6,
-    4,
+    3,
     7,
-    -8,
-    -8,
-    -6,
+    -9,
+    -7,
+    -7,
     6,
-    8,
-    2,
-    4
+    9,
+    1,
+    3
    ],
+   "desc": "La más rica de las provincias ustilesas, conocida por sus comerciantes y exportadores de vino.",
    "el": 10,
    "group": "Kratoi Sur",
    "local": {},
    "mode": "ideo",
    "name": "Neuvillete",
-   "pop": 360000,
+   "pop": 646000,
+   "seed": "Castelnoir",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -2428,9 +2430,7 @@
     1,
     1,
     1
-   ],
-   "seed": "Castelnoir",
-   "desc": "La más rica de las provincias ustilesas, conocida por sus comerciantes y exportadores de vino."
+   ]
   },
   {
    "center": [
@@ -2440,17 +2440,19 @@
     -3,
     -3,
     4,
-    6,
+    7,
     3,
     5,
-    0
+    -1
    ],
-   "el": 9,
+   "desc": "Llanuras de cereal con muchos arrendatarios. Tradicional y siempre dispuesta a votar contra quien gobierne.",
+   "el": 8,
    "group": "Kratoi Sur",
    "local": {},
    "mode": "ideo",
    "name": "Miravel",
-   "pop": 300000,
+   "pop": 475000,
+   "seed": "Miravel",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -2560,293 +2562,29 @@
     1,
     1.5,
     1
-   ],
-   "seed": "Miravel",
-   "desc": "Llanuras de cereal con muchos arrendatarios. Tradicional y siempre dispuesta a votar contra quien gobierne."
+   ]
   },
   {
    "center": [
     -6,
     -6,
-    4,
-    8,
-    0,
-    -8,
-    2,
+    5,
+    7,
+    -1,
+    -9,
+    1,
     6,
     2,
     -8
    ],
-   "el": 9,
-   "group": "Bosque Oriental",
-   "local": {},
-   "mode": "ideo",
-   "name": "Tregwern",
-   "pop": 320000,
-   "slates": {
-    "FED": {
-     "loyalty": 0.9,
-     "names": [],
-     "pos": [
-      -6,
-      -1,
-      5,
-      -4,
-      -6,
-      2,
-      4,
-      3,
-      -3,
-      5
-     ],
-     "red": [],
-     "w": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
-     ]
-    },
-    "NAT": {
-     "loyalty": 0.9,
-     "names": [],
-     "pos": [
-      4,
-      2,
-      2,
-      5,
-      0,
-      -3,
-      -2,
-      -4,
-      -8,
-      4
-     ],
-     "red": [],
-     "w": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
-     ]
-    },
-    "SPM": {
-     "loyalty": 0.9,
-     "names": [],
-     "pos": [
-      6,
-      -2,
-      0,
-      7,
-      8,
-      -5,
-      -6,
-      -6,
-      9,
-      -1
-     ],
-     "red": [],
-     "w": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
-     ]
-    }
-   },
-   "split": true,
-   "spread": 3.5,
-   "subSpread": 1.5,
-   "turnout": 70,
-   "v": {
-    "FED": 0,
-    "NAT": 0,
-    "SPM": 0
-   },
-   "w": [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   "seed": "Sylvenne",
-   "desc": "Pueblos del bosque en la frontera élfica, acostumbrados a convivir con las comunas."
-  },
-  {
-   "center": [
-    -8,
-    -4,
-    0,
-    6,
-    -6,
-    2,
-    4,
-    5,
-    8,
-    6
-   ],
-   "el": 9,
-   "group": "Bosque Oriental",
-   "local": {},
-   "mode": "ideo",
-   "name": "Kerivin",
-   "pop": 300000,
-   "slates": {
-    "FED": {
-     "loyalty": 0.9,
-     "names": [],
-     "pos": [
-      -6,
-      -1,
-      5,
-      -4,
-      -6,
-      2,
-      4,
-      3,
-      -3,
-      5
-     ],
-     "red": [],
-     "w": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
-     ]
-    },
-    "NAT": {
-     "loyalty": 0.9,
-     "names": [],
-     "pos": [
-      4,
-      2,
-      2,
-      5,
-      0,
-      -3,
-      -2,
-      -4,
-      -8,
-      4
-     ],
-     "red": [],
-     "w": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
-     ]
-    },
-    "SPM": {
-     "loyalty": 0.9,
-     "names": [],
-     "pos": [
-      6,
-      -2,
-      0,
-      7,
-      8,
-      -5,
-      -6,
-      -6,
-      9,
-      -1
-     ],
-     "red": [],
-     "w": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
-     ]
-    }
-   },
-   "split": true,
-   "spread": 3.5,
-   "subSpread": 1.5,
-   "turnout": 70,
-   "v": {
-    "FED": 0,
-    "NAT": 0,
-    "SPM": 0
-   },
-   "w": [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-   ],
-   "seed": "Haudric",
-   "desc": "Tierra maderera, cuna del Gremio y luego del Consorcio de la Madera."
-  },
-  {
-   "center": [
-    -8,
-    -7,
-    2,
-    6,
-    -2,
-    -2,
-    4,
-    8,
-    8,
-    -6
-   ],
+   "desc": "Pueblos del bosque en la frontera élfica, acostumbrados a convivir con las comunas.",
    "el": 8,
    "group": "Bosque Oriental",
    "local": {},
    "mode": "ideo",
-   "name": "Tallaghri",
-   "pop": 280000,
+   "name": "Tregwern",
+   "pop": 507000,
+   "seed": "Sylvenne",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -2956,29 +2694,293 @@
     1,
     1,
     1
-   ],
-   "seed": "Verchamps",
-   "desc": "Claros, aldeas y santuarios de la Fe de los Espíritus en lo hondo del bosque."
+   ]
   },
   {
    "center": [
-    -10,
-    -8,
-    4,
-    5,
-    2,
-    -4,
-    4,
-    8,
+    -9,
+    -5,
+    1,
     6,
-    -10
+    -5,
+    3,
+    3,
+    5,
+    7,
+    7
    ],
+   "desc": "Tierra maderera, cuna del Gremio y luego del Consorcio de la Madera.",
+   "el": 10,
+   "group": "Bosque Oriental",
+   "local": {},
+   "mode": "ideo",
+   "name": "Kerivin",
+   "pop": 602000,
+   "seed": "Haudric",
+   "slates": {
+    "FED": {
+     "loyalty": 0.9,
+     "names": [],
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -3,
+      5
+     ],
+     "red": [],
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "NAT": {
+     "loyalty": 0.9,
+     "names": [],
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "red": [],
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "SPM": {
+     "loyalty": 0.9,
+     "names": [],
+     "pos": [
+      6,
+      -2,
+      0,
+      7,
+      8,
+      -5,
+      -6,
+      -6,
+      9,
+      -1
+     ],
+     "red": [],
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    }
+   },
+   "split": true,
+   "spread": 3.5,
+   "subSpread": 1.5,
+   "turnout": 70,
+   "v": {
+    "FED": 0,
+    "NAT": 0,
+    "SPM": 0
+   },
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "center": [
+    -9,
+    -7,
+    1,
+    6,
+    -3,
+    -1,
+    5,
+    7,
+    9,
+    -7
+   ],
+   "desc": "Claros, aldeas y santuarios de la Fe de los Espíritus en lo hondo del bosque.",
    "el": 7,
    "group": "Bosque Oriental",
    "local": {},
    "mode": "ideo",
+   "name": "Tallaghri",
+   "pop": 414000,
+   "seed": "Verchamps",
+   "slates": {
+    "FED": {
+     "loyalty": 0.9,
+     "names": [],
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -3,
+      5
+     ],
+     "red": [],
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "NAT": {
+     "loyalty": 0.9,
+     "names": [],
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "red": [],
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    },
+    "SPM": {
+     "loyalty": 0.9,
+     "names": [],
+     "pos": [
+      6,
+      -2,
+      0,
+      7,
+      8,
+      -5,
+      -6,
+      -6,
+      9,
+      -1
+     ],
+     "red": [],
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    }
+   },
+   "split": true,
+   "spread": 3.5,
+   "subSpread": 1.5,
+   "turnout": 70,
+   "v": {
+    "FED": 0,
+    "NAT": 0,
+    "SPM": 0
+   },
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "center": [
+    -10,
+    -9,
+    3,
+    5,
+    3,
+    -3,
+    5,
+    9,
+    6,
+    -10
+   ],
+   "desc": "La provincia más misteriosa y salvaje, donde los druidas aún mandan.",
+   "el": 4,
+   "group": "Bosque Oriental",
+   "local": {},
+   "mode": "ideo",
    "name": "Luenith",
-   "pop": 150000,
+   "pop": 206000,
+   "seed": "Lisieroy",
    "slates": {
     "FED": {
      "loyalty": 0.9,
@@ -3088,9 +3090,7 @@
     1,
     1,
     1
-   ],
-   "seed": "Lisieroy",
-   "desc": "La provincia más misteriosa y salvaje, donde los druidas aún mandan."
+   ]
   }
  ],
  "election": {
@@ -3226,16 +3226,16 @@
    "id": "NAT",
    "name": "Partido Nacionalista",
    "pos": [
-    6,
+    7,
     2,
-    2,
+    3,
     4,
-    0,
-    -2,
-    -2,
+    1,
+    -3,
+    -3,
     -4,
-    -8,
-    4
+    -9,
+    5
    ],
    "reputation": -0.6
   },
@@ -3247,12 +3247,12 @@
    "id": "FED",
    "name": "Partido Federalista",
    "pos": [
-    -6,
+    -7,
     -1,
     5,
-    -4,
-    -6,
-    2,
+    -3,
+    -7,
+    1,
     4,
     3,
     -3,
@@ -3263,18 +3263,18 @@
   {
    "appeal": 0.2,
    "cand": "Kesenia Revilo",
-   "charisma": 0.7,
+   "charisma": 0.6,
    "color": "#c96508",
    "id": "SPM",
    "name": "Movimiento del Pueblo Soberano",
    "pos": [
-    6,
-    -2,
-    0,
+    7,
+    -3,
+    1,
     7,
     8,
     -5,
-    -6,
+    -7,
     -6,
     9,
     -1
