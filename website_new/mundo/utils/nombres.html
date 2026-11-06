@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Generador de nombres | Raldamain</title>
+    <meta name="description" content="Nombres de persona y de lugar para cada cultura de Raldamain, con su significado y su etimología.">
+    <link rel="stylesheet" href="/assets/css/style.css?v=20261105">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/assets/js/components.js"></script>
+    <style>
+        .ng-page { max-width: 900px; margin: 0 auto; padding: 32px 16px 48px; }
+        .ng-page .crumbs { font-size: 0.85rem; color: var(--text-muted, #a0a0a0); margin-bottom: 10px; }
+        .ng-page .crumbs a { color: inherit; }
+        .ng-page h1 { font-family: var(--font-heading, 'Cinzel', serif); color: var(--accent-gold, #fff200); text-align: center; margin: 0 0 6px; }
+        .ng-page .ng-intro { text-align: center; color: var(--text-muted, #a0a0a0); margin: 0 0 20px; }
+        .ng-page .ng-loading { text-align: center; color: var(--text-muted, #a0a0a0); padding: 40px 0; }
+    </style>
+</head>
+<body>
+<div id="navbar-container"></div>
+
+<main class="ng-page">
+    <div class="crumbs"><a href="/mundo">El Mundo</a> · Utilidades · Generador de nombres</div>
+    <h1>Generador de nombres</h1>
+    <p class="ng-intro">Elige una cultura y genera diez nombres de persona o de lugar. Pasa el ratón (o toca) cada uno para ver su significado.</p>
+    <div id="ng-host"><p class="ng-loading">Cargando el generador…</p></div>
+</main>
+
+<footer>
+    <p>&copy; 2020 Raldamain Studios. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+/* El generador es el mismo archivo que usa el editor de nombres (assets/html/name_generator.html) y lee
+   los mismos datos (data/names/): lo que se guarda y se sube desde el editor aparece aquí. */
+(async () => {
+    const host = document.getElementById('ng-host');
+    try {
+        const r = await fetch('/assets/html/name_generator.html', { cache: 'no-cache' });
+        if (!r.ok) throw new Error(r.status);
+        host.innerHTML = await r.text();
+        // los <script> insertados con innerHTML no se ejecutan: se vuelven a crear
+        host.querySelectorAll('script').forEach(old => {
+            const s = document.createElement('script');
+            s.textContent = old.textContent;
+            old.replaceWith(s);
+        });
+    } catch (e) {
+        host.innerHTML = '<p class="ng-loading">No se pudo cargar el generador. Vuelve a intentarlo en un momento.</p>';
+    }
+})();
+</script>
+</body>
+</html>

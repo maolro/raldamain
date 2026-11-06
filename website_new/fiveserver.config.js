@@ -35,6 +35,10 @@ module.exports = {
       else if (req.url === '/mundo/utils/elecciones' || req.url.startsWith('/mundo/utils/elecciones?')) {
         req.url = '/mundo/utils/elecciones.html' + req.url.slice('/mundo/utils/elecciones'.length);
       }
+      // 5c. Handle "/mundo/utils/nombres" -> serve "mundo/utils/nombres.html" (name generator)
+      else if (req.url === '/mundo/utils/nombres' || req.url.startsWith('/mundo/utils/nombres?')) {
+        req.url = '/mundo/utils/nombres.html' + req.url.slice('/mundo/utils/nombres'.length);
+      }
       // 6. Handle "/mundo/categoria/naciones" -> serve "view-mundo-categoria.html"
       else if (req.url.startsWith('/mundo/categoria/') && !req.url.includes('.')) {
         req.url = '/templates/view-mundo-categoria.html';
