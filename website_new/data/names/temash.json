@@ -1200,6 +1200,11 @@
       "meaning": "«la amable» · temash"
     },
     {
+      "name": "Layla",
+      "gender": "f",
+      "meaning": "«la noche» · temash"
+    },
+    {
       "name": "Lina",
       "gender": "f",
       "meaning": "«la palmera tierna» · temash"
@@ -1295,7 +1300,7 @@
       "meaning": "«la rosita» · temash"
     },
     {
-      "name": "Parisa",
+      "name": "Perisa",
       "gender": "f",
       "meaning": "«como un hada» · shirají"
     },
@@ -1315,6 +1320,11 @@
       "meaning": "«la compasión» · temash"
     },
     {
+      "name": "Rashana",
+      "gender": "f",
+      "meaning": "«la luminosa» · shirají"
+    },
+    {
       "name": "Rasita",
       "gender": "f",
       "meaning": "«la justa» — del arshalaní rast «recta, verdadera» · arshalaní"
@@ -1325,14 +1335,9 @@
       "meaning": "«la luz» — del arshalaní ronahî «luz» · arshalaní"
     },
     {
-      "name": "Rim",
+      "name": "Rima",
       "gender": "f",
       "meaning": "«la gacela blanca» · temash"
-    },
-    {
-      "name": "Roxana",
-      "gender": "f",
-      "meaning": "«la luminosa» · shirají"
     },
     {
       "name": "Ruza",
@@ -1345,7 +1350,7 @@
       "meaning": "«la dichosa» · temash"
     },
     {
-      "name": "Sabah",
+      "name": "Saba",
       "gender": "f",
       "meaning": "«la mañana» · temash"
     },
@@ -1375,9 +1380,9 @@
       "meaning": "«la hija de la señora» · nekthysio"
     },
     {
-      "name": "Setareh",
+      "name": "Sefiya",
       "gender": "f",
-      "meaning": "«la estrella» · shirají"
+      "meaning": "«la blanca» · arshalaní"
     },
     {
       "name": "Shabnam",
@@ -1387,17 +1392,17 @@
     {
       "name": "Shawana",
       "gender": "f",
-      "meaning": "«la que vela de noche» — del arshalaní şev «noche» + -ana · arshalaní"
+      "meaning": "«la que vela de noche»  · arshalaní"
     },
     {
       "name": "Shina",
       "gender": "f",
-      "meaning": "«la azul» — del arshalaní şîn «azul» · arshalaní"
+      "meaning": "«la azul» · arshalaní"
     },
     {
       "name": "Shira",
       "gender": "f",
-      "meaning": "«la leona» — del arshalaní şêr «león» · arshalaní"
+      "meaning": "«la leona» · arshalaní"
     },
     {
       "name": "Shirin",
@@ -1410,17 +1415,12 @@
       "meaning": "«las flechas» · temash"
     },
     {
-      "name": "Sipiya",
-      "gender": "f",
-      "meaning": "«la blanca» — del arshalaní spî «blanco» · arshalaní"
-    },
-    {
       "name": "Sitara",
       "gender": "f",
-      "meaning": "«la estrella» — del arshalaní stêr «estrella» · arshalaní"
+      "meaning": "«la estrella» · shirají"
     },
     {
-      "name": "Sitre",
+      "name": "Sitra",
       "gender": "f",
       "meaning": "«la hija del sol» · nekthysio"
     },
