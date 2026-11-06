@@ -185,7 +185,8 @@
     1,
     1
    ],
-   "desc": "La capital económica de Kratoi y rival histórica de Rimas. Es cosmopolita, mercantil y un fuerte bastión Federalista."
+   "desc": "La capital económica de Kratoi y rival histórica de Rimas. Es cosmopolita, mercantil y un fuerte bastión Federalista.",
+   "seed": "Argostana"
   },
   {
    "center": [
@@ -316,7 +317,8 @@
     1,
     1
    ],
-   "desc": "Región pesquera. Hostil hacia Ustilus por sus aranceles y actividades de su flota, pero pragmática en lo demás."
+   "desc": "Región pesquera. Hostil hacia Ustilus por sus aranceles y actividades de su flota, pero pragmática en lo demás.",
+   "seed": "Laurendon"
   },
   {
    "center": [
@@ -447,7 +449,8 @@
     1,
     1
    ],
-   "desc": "Región rural moderada, próspera y tranquila, conocida solo por provincia que más a menudo vota al ganador."
+   "desc": "Región rural moderada, próspera y tranquila, conocida solo por provincia que más a menudo vota al ganador.",
+   "seed": "Saumance"
   },
   {
    "center": [
@@ -578,7 +581,8 @@
     1,
     1
    ],
-   "desc": "Pueblos dormitorio y pequeños molinos en los caminos de Argostana."
+   "desc": "Pueblos dormitorio y pequeños molinos en los caminos de Argostana.",
+   "seed": "Clarival"
   },
   {
    "center": [
@@ -709,7 +713,8 @@
     1,
     1
    ],
-   "desc": "Región costera fronteriza con Dairov. Tradicional, pobre y receptiva al discurso contra las élites."
+   "desc": "Región costera fronteriza con Dairov. Tradicional, pobre y receptiva al discurso contra las élites.",
+   "seed": "Roumnet"
   },
   {
    "center": [
@@ -840,7 +845,8 @@
     1,
     1,
     1
-   ]
+   ],
+   "seed": "Rimas"
   },
   {
    "center": [
@@ -971,7 +977,8 @@
     1,
     1
    ],
-   "desc": "Campos ricos y villas de mercado en torno a la capital, conocida por su famosa batalla y por ser hogar de veteranos."
+   "desc": "Campos ricos y villas de mercado en torno a la capital, conocida por su famosa batalla y por ser hogar de veteranos.",
+   "seed": "Grevara"
   },
   {
    "center": [
@@ -1102,7 +1109,8 @@
     1,
     1
    ],
-   "desc": "La provincia de las fundiciones. Obrera, industrial, partidaria de un Estado y un ejército fuertes."
+   "desc": "La provincia de las fundiciones. Obrera, industrial, partidaria de un Estado y un ejército fuertes.",
+   "seed": "Oreigon"
   },
   {
    "center": [
@@ -1233,7 +1241,8 @@
     1,
     1
    ],
-   "desc": "Colinas en el borde del departamento. Nacionalista en la cuestión nacional, más conservadora en sus costumbres."
+   "desc": "Colinas en el borde del departamento. Nacionalista en la cuestión nacional, más conservadora en sus costumbres.",
+   "seed": "Austaine"
   },
   {
    "center": [
@@ -1364,7 +1373,8 @@
     1,
     1
    ],
-   "desc": "Tierras altas tranquilas con muchos funcionarios jubilados. Moderada, ordenada y algo protectora de su paisaje."
+   "desc": "Tierras altas tranquilas con muchos funcionarios jubilados. Moderada, ordenada y algo protectora de su paisaje.",
+   "seed": "Montrivel"
   },
   {
    "center": [
@@ -1495,7 +1505,8 @@
     1,
     1
    ],
-   "desc": "Capital del norte y sede de la flota Kratense. Militarista y asimilacionista hacia los mazarinos."
+   "desc": "Capital del norte y sede de la flota Kratense. Militarista y asimilacionista hacia los mazarinos.",
+   "seed": "Carpentia"
   },
   {
    "center": [
@@ -1626,20 +1637,21 @@
     1,
     1
    ],
-   "desc": "Región rural habla mazarina. Quiere reconocimiento cultural y autogobierno, subsidios agrarios."
+   "desc": "Región rural habla mazarina. Quiere reconocimiento cultural y autogobierno, subsidios agrarios.",
+   "seed": "Pogorska"
   },
   {
    "center": [
-    -7,
-    7,
-    -7,
     -2,
-    7,
-    -5,
-    7,
-    5,
-    7,
-    1
+    6,
+    -6,
+    -4,
+    8,
+    8,
+    6,
+    4,
+    8,
+    0
    ],
    "el": 9,
    "group": "Kratoi Norte",
@@ -1739,7 +1751,7 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 78,
+   "turnout": 70,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -1747,7 +1759,7 @@
    },
    "w": [
     1,
-    2,
+    1,
     1,
     1,
     1,
@@ -1756,16 +1768,18 @@
     1,
     1,
     1
-   ]
+   ],
+   "seed": "Drommel",
+   "desc": "Provincia de montaña con el paso de Alascur, por donde llegó la invasión de 4001. La más hostil hacia Mazarín."
   },
   {
    "center": [
-    -8,
-    5,
+    -6,
+    6,
     -2,
     0,
-    7,
-    -7,
+    8,
+    -6,
     6,
     6,
     8,
@@ -1869,24 +1883,26 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 72,
+   "turnout": 70,
    "v": {
     "FED": 0,
     "NAT": 0,
     "SPM": 0
    },
    "w": [
-    1.5,
     1,
     1,
     1,
     1,
-    1.5,
+    1,
+    1,
     1,
     1,
     1,
     1
-   ]
+   ],
+   "seed": "Nordhaven",
+   "desc": "La provincia mazarina más pequeña y remota. Aislada, tradicional y recelosa de todos los gobiernos que ha tenido."
   },
   {
    "center": [
@@ -2016,7 +2032,8 @@
     1,
     1,
     1
-   ]
+   ],
+   "seed": "Sarvaux"
   },
   {
    "center": [
@@ -2146,7 +2163,8 @@
     1.5,
     1,
     1
-   ]
+   ],
+   "seed": "Denvire"
   },
   {
    "center": [
@@ -2276,7 +2294,8 @@
     1,
     1,
     1
-   ]
+   ],
+   "seed": "Aubrit"
   },
   {
    "center": [
@@ -2406,7 +2425,8 @@
     1,
     1,
     1
-   ]
+   ],
+   "seed": "Castelnoir"
   },
   {
    "center": [
@@ -2536,7 +2556,8 @@
     1,
     1.5,
     1
-   ]
+   ],
+   "seed": "Miravel"
   },
   {
    "center": [
@@ -2666,7 +2687,8 @@
     1,
     1,
     1.5
-   ]
+   ],
+   "seed": "Sylvenne"
   },
   {
    "center": [
@@ -2796,7 +2818,8 @@
     1,
     1,
     1.5
-   ]
+   ],
+   "seed": "Haudric"
   },
   {
    "center": [
@@ -2926,7 +2949,8 @@
     1,
     1,
     1
-   ]
+   ],
+   "seed": "Verchamps"
   },
   {
    "center": [
@@ -3056,7 +3080,8 @@
     1,
     1,
     1.5
-   ]
+   ],
+   "seed": "Lisieroy"
   }
  ],
  "election": {
