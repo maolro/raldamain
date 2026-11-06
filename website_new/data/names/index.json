@@ -66,6 +66,17 @@
     }
   },
   {
+    "id": "temash",
+    "name": "Temash",
+    "count": {
+      "names": 200,
+      "m": 100,
+      "f": 100,
+      "u": 0,
+      "surnames": 100
+    }
+  },
+  {
     "id": "ustileses",
     "name": "Ustileses",
     "count": {

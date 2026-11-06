@@ -1,0 +1,1412 @@
+{
+  "id": "temash",
+  "name": "Temash",
+  "description": "Pueblo del desierto del Tamashkhan. Su lengua, el tamazight, mezcla raíces bereberes y árabes; la mayoría sigue la Fe Ancestral de los Eternos, y en el Menadar veneran a la Hueste Celestial. El nombre se da a los siete días, y la tribu (Ait, Kel o Banu) va detrás: «los hijos de», «la gente de». Hay huellas de la dominación ustilesa y del trato con nekthysios, arshalaníes y shirajíes.",
+  "format": "{name} {surname}",
+  "names": [
+    {
+      "name": "Abdalnur",
+      "gender": "m",
+      "meaning": "«el siervo de la luz» · menadarí"
+    },
+    {
+      "name": "Abdalsham",
+      "gender": "m",
+      "meaning": "«el siervo del cielo» · menadarí"
+    },
+    {
+      "name": "Aderfi",
+      "gender": "m",
+      "meaning": "«el libre» · temash"
+    },
+    {
+      "name": "Afalku",
+      "gender": "m",
+      "meaning": "«el halcón» · temash"
+    },
+    {
+      "name": "Afra",
+      "gender": "m",
+      "meaning": "«la paz» · temash"
+    },
+    {
+      "name": "Afulay",
+      "gender": "m",
+      "meaning": "«el alto» · temash"
+    },
+    {
+      "name": "Agellid",
+      "gender": "m",
+      "meaning": "«el rey» · temash"
+    },
+    {
+      "name": "Agerzam",
+      "gender": "m",
+      "meaning": "«el lobo» · temash"
+    },
+    {
+      "name": "Aghilas",
+      "gender": "m",
+      "meaning": "«el guepardo» · temash"
+    },
+    {
+      "name": "Akal",
+      "gender": "m",
+      "meaning": "«la tierra» · temash"
+    },
+    {
+      "name": "Akhtar",
+      "gender": "m",
+      "meaning": "«la estrella» · shirají"
+    },
+    {
+      "name": "Aksil",
+      "gender": "m",
+      "meaning": "«el leopardo» · temash"
+    },
+    {
+      "name": "Aksilio",
+      "gender": "m",
+      "meaning": "«el leopardo» — forma ustilesa de Aksil · ustilés"
+    },
+    {
+      "name": "Amastan",
+      "gender": "m",
+      "meaning": "«el protector» · temash"
+    },
+    {
+      "name": "Amayas",
+      "gender": "m",
+      "meaning": "«el cazador» · temash"
+    },
+    {
+      "name": "Amazzal",
+      "gender": "m",
+      "meaning": "«el que corre» · temash"
+    },
+    {
+      "name": "Amedyaz",
+      "gender": "m",
+      "meaning": "«el poeta» · temash"
+    },
+    {
+      "name": "Ameksa",
+      "gender": "m",
+      "meaning": "«el pastor» · temash"
+    },
+    {
+      "name": "Amellal",
+      "gender": "m",
+      "meaning": "«el blanco» · temash"
+    },
+    {
+      "name": "Amenukal",
+      "gender": "m",
+      "meaning": "«el soberano» · temash"
+    },
+    {
+      "name": "Amezwaru",
+      "gender": "m",
+      "meaning": "«el primero» · temash"
+    },
+    {
+      "name": "Amezyan",
+      "gender": "m",
+      "meaning": "«el pequeño» · temash"
+    },
+    {
+      "name": "Amghar",
+      "gender": "m",
+      "meaning": "«el anciano, el jefe» · temash"
+    },
+    {
+      "name": "Amin",
+      "gender": "m",
+      "meaning": "«el fiel» · menadarí"
+    },
+    {
+      "name": "Amnir",
+      "gender": "m",
+      "meaning": "«el guía» · temash"
+    },
+    {
+      "name": "Anaruz",
+      "gender": "m",
+      "meaning": "«el anhelo» · temash"
+    },
+    {
+      "name": "Anir",
+      "gender": "m",
+      "meaning": "«el mensajero de los Eternos» · temash"
+    },
+    {
+      "name": "Ankhef",
+      "gender": "m",
+      "meaning": "«su vida» · nekthysio"
+    },
+    {
+      "name": "Anzar",
+      "gender": "m",
+      "meaning": "«la lluvia» · temash"
+    },
+    {
+      "name": "Arslan",
+      "gender": "m",
+      "meaning": "«el león» · arshalaní"
+    },
+    {
+      "name": "Asafu",
+      "gender": "m",
+      "meaning": "«la antorcha» · temash"
+    },
+    {
+      "name": "Asif",
+      "gender": "m",
+      "meaning": "«el río» · temash"
+    },
+    {
+      "name": "Asirem",
+      "gender": "m",
+      "meaning": "«la esperanza» · temash"
+    },
+    {
+      "name": "Ayis",
+      "gender": "m",
+      "meaning": "«el caballo» · temash"
+    },
+    {
+      "name": "Ayur",
+      "gender": "m",
+      "meaning": "«la luna» · temash"
+    },
+    {
+      "name": "Ayyaw",
+      "gender": "m",
+      "meaning": "«el hijo de la hermana» · temash"
+    },
+    {
+      "name": "Azegzaw",
+      "gender": "m",
+      "meaning": "«el del color del cielo» · temash"
+    },
+    {
+      "name": "Azru",
+      "gender": "m",
+      "meaning": "«la roca» · temash"
+    },
+    {
+      "name": "Badis",
+      "gender": "m",
+      "meaning": "«el de corazón firme» · temash"
+    },
+    {
+      "name": "Badr",
+      "gender": "m",
+      "meaning": "«la luna llena» · menadarí"
+    },
+    {
+      "name": "Bahram",
+      "gender": "m",
+      "meaning": "«el vencedor, el planeta rojo» · shirají"
+    },
+    {
+      "name": "Bayezid",
+      "gender": "m",
+      "meaning": "«el señor» · arshalaní"
+    },
+    {
+      "name": "Clemente",
+      "gender": "m",
+      "meaning": "«el indulgente» · ustilés"
+    },
+    {
+      "name": "Djedhor",
+      "gender": "m",
+      "meaning": "«el que perdura» · nekthysio"
+    },
+    {
+      "name": "Falak",
+      "gender": "m",
+      "meaning": "«la órbita de los cielos» · menadarí"
+    },
+    {
+      "name": "Faris",
+      "gender": "m",
+      "meaning": "«el jinete» · menadarí"
+    },
+    {
+      "name": "Fortunato",
+      "gender": "m",
+      "meaning": "«el afortunado» · ustilés"
+    },
+    {
+      "name": "Gaya",
+      "gender": "m",
+      "meaning": "«el guardián» · temash"
+    },
+    {
+      "name": "Hakim",
+      "gender": "m",
+      "meaning": "«el sabio» · menadarí"
+    },
+    {
+      "name": "Hamid",
+      "gender": "m",
+      "meaning": "«el que alaba» · menadarí"
+    },
+    {
+      "name": "Hilal",
+      "gender": "m",
+      "meaning": "«la luna creciente» · menadarí"
+    },
+    {
+      "name": "Hormoz",
+      "gender": "m",
+      "meaning": "«el sabio señor» · shirají"
+    },
+    {
+      "name": "Idir",
+      "gender": "m",
+      "meaning": "«el que vive» · temash"
+    },
+    {
+      "name": "Ifran",
+      "gender": "m",
+      "meaning": "«el de las cuevas» · temash"
+    },
+    {
+      "name": "Igider",
+      "gender": "m",
+      "meaning": "«el águila» · temash"
+    },
+    {
+      "name": "Ilef",
+      "gender": "m",
+      "meaning": "«el jabalí» · temash"
+    },
+    {
+      "name": "Itri",
+      "gender": "m",
+      "meaning": "«la estrella» · temash"
+    },
+    {
+      "name": "Izem",
+      "gender": "m",
+      "meaning": "«el león» · temash"
+    },
+    {
+      "name": "Jamal",
+      "gender": "m",
+      "meaning": "«la belleza» · menadarí"
+    },
+    {
+      "name": "Karim",
+      "gender": "m",
+      "meaning": "«el generoso» · menadarí"
+    },
+    {
+      "name": "Kawkab",
+      "gender": "m",
+      "meaning": "«el astro» · menadarí"
+    },
+    {
+      "name": "Kaywan",
+      "gender": "m",
+      "meaning": "«Saturno» · shirají"
+    },
+    {
+      "name": "Kemal",
+      "gender": "m",
+      "meaning": "«la perfección» · arshalaní"
+    },
+    {
+      "name": "Madghis",
+      "gender": "m",
+      "meaning": "«el antepasado fundador» · temash"
+    },
+    {
+      "name": "Masnasen",
+      "gender": "m",
+      "meaning": "«el señor de los suyos» · temash"
+    },
+    {
+      "name": "Masnasio",
+      "gender": "m",
+      "meaning": "«el señor de los suyos» — forma ustilesa de Masnasen · ustilés"
+    },
+    {
+      "name": "Mehran",
+      "gender": "m",
+      "meaning": "«el del sol» · shirají"
+    },
+    {
+      "name": "Mennad",
+      "gender": "m",
+      "meaning": "«el deseado» · temash"
+    },
+    {
+      "name": "Merenra",
+      "gender": "m",
+      "meaning": "«el amado del sol» · nekthysio"
+    },
+    {
+      "name": "Mukhtar",
+      "gender": "m",
+      "meaning": "«el elegido» · menadarí"
+    },
+    {
+      "name": "Munir",
+      "gender": "m",
+      "meaning": "«el que ilumina» · menadarí"
+    },
+    {
+      "name": "Murad",
+      "gender": "m",
+      "meaning": "«la voluntad cumplida» · menadarí"
+    },
+    {
+      "name": "Najm",
+      "gender": "m",
+      "meaning": "«la estrella» · menadarí"
+    },
+    {
+      "name": "Nasir",
+      "gender": "m",
+      "meaning": "«el que socorre» · menadarí"
+    },
+    {
+      "name": "Nebtawi",
+      "gender": "m",
+      "meaning": "«el señor de las dos tierras» · nekthysio"
+    },
+    {
+      "name": "Pamun",
+      "gender": "m",
+      "meaning": "«el del Oculto» · nekthysio"
+    },
+    {
+      "name": "Parviz",
+      "gender": "m",
+      "meaning": "«el afortunado» · shirají"
+    },
+    {
+      "name": "Qamar",
+      "gender": "m",
+      "meaning": "«la luna» · menadarí"
+    },
+    {
+      "name": "Rashid",
+      "gender": "m",
+      "meaning": "«el bien guiado» · menadarí"
+    },
+    {
+      "name": "Sahir",
+      "gender": "m",
+      "meaning": "«el que vela de noche» · menadarí"
+    },
+    {
+      "name": "Salim",
+      "gender": "m",
+      "meaning": "«el íntegro» · menadarí"
+    },
+    {
+      "name": "Samawi",
+      "gender": "m",
+      "meaning": "«el celestial» · menadarí"
+    },
+    {
+      "name": "Sanekht",
+      "gender": "m",
+      "meaning": "«el hijo fuerte» · nekthysio"
+    },
+    {
+      "name": "Saqr",
+      "gender": "m",
+      "meaning": "«el halcón» · menadarí"
+    },
+    {
+      "name": "Sereno",
+      "gender": "m",
+      "meaning": "«el sereno» · ustilés"
+    },
+    {
+      "name": "Sifaw",
+      "gender": "m",
+      "meaning": "«el que ilumina» · temash"
+    },
+    {
+      "name": "Tariq",
+      "gender": "m",
+      "meaning": "«el lucero del alba» · menadarí"
+    },
+    {
+      "name": "Toghrul",
+      "gender": "m",
+      "meaning": "«el halcón» · arshalaní"
+    },
+    {
+      "name": "Uccen",
+      "gender": "m",
+      "meaning": "«el chacal» · temash"
+    },
+    {
+      "name": "Ugwas",
+      "gender": "m",
+      "meaning": "«el día» · temash"
+    },
+    {
+      "name": "Uzzal",
+      "gender": "m",
+      "meaning": "«el hierro» · temash"
+    },
+    {
+      "name": "Victorio",
+      "gender": "m",
+      "meaning": "«el vencedor» · ustilés"
+    },
+    {
+      "name": "Wazin",
+      "gender": "m",
+      "meaning": "«el equilibrado» · temash"
+    },
+    {
+      "name": "Yavuz",
+      "gender": "m",
+      "meaning": "«el feroz» · arshalaní"
+    },
+    {
+      "name": "Yuba",
+      "gender": "m",
+      "meaning": "«el valiente» · temash"
+    },
+    {
+      "name": "Yugurtano",
+      "gender": "m",
+      "meaning": "«el mayor de ellos» — forma ustilesa de Yugurten · ustilés"
+    },
+    {
+      "name": "Yugurten",
+      "gender": "m",
+      "meaning": "«el mayor de ellos» · temash"
+    },
+    {
+      "name": "Zahir",
+      "gender": "m",
+      "meaning": "«el resplandeciente» · menadarí"
+    },
+    {
+      "name": "Ziri",
+      "gender": "m",
+      "meaning": "«la claridad de la luna» · temash"
+    },
+    {
+      "name": "Ziriano",
+      "gender": "m",
+      "meaning": "«la claridad de la luna» — forma ustilesa de Ziri · ustilés"
+    },
+    {
+      "name": "Amina",
+      "gender": "f",
+      "meaning": "«la fiel» · menadarí"
+    },
+    {
+      "name": "Ankhesen",
+      "gender": "f",
+      "meaning": "«su vida» · nekthysio"
+    },
+    {
+      "name": "Aylin",
+      "gender": "f",
+      "meaning": "«el halo de la luna» · arshalaní"
+    },
+    {
+      "name": "Badra",
+      "gender": "f",
+      "meaning": "«la luna llena» · menadarí"
+    },
+    {
+      "name": "Clemencia",
+      "gender": "f",
+      "meaning": "«la indulgente» · ustilés"
+    },
+    {
+      "name": "Dihia",
+      "gender": "f",
+      "meaning": "«la reina hermosa» — forma ustilesa de Dihya · ustilés"
+    },
+    {
+      "name": "Dihya",
+      "gender": "f",
+      "meaning": "«la reina hermosa» · temash"
+    },
+    {
+      "name": "Duha",
+      "gender": "f",
+      "meaning": "«la mañana» · menadarí"
+    },
+    {
+      "name": "Farida",
+      "gender": "f",
+      "meaning": "«la única» · menadarí"
+    },
+    {
+      "name": "Fortunata",
+      "gender": "f",
+      "meaning": "«la afortunada» · ustilés"
+    },
+    {
+      "name": "Gulbahar",
+      "gender": "f",
+      "meaning": "«la rosa de primavera» · arshalaní"
+    },
+    {
+      "name": "Hakima",
+      "gender": "f",
+      "meaning": "«la sabia» · menadarí"
+    },
+    {
+      "name": "Henutsen",
+      "gender": "f",
+      "meaning": "«su señora» · nekthysio"
+    },
+    {
+      "name": "Hilala",
+      "gender": "f",
+      "meaning": "«la luna creciente» · menadarí"
+    },
+    {
+      "name": "Huda",
+      "gender": "f",
+      "meaning": "«la guía» · menadarí"
+    },
+    {
+      "name": "Hurrem",
+      "gender": "f",
+      "meaning": "«la alegre» · arshalaní"
+    },
+    {
+      "name": "Jamila",
+      "gender": "f",
+      "meaning": "«la hermosa» · menadarí"
+    },
+    {
+      "name": "Kahina",
+      "gender": "f",
+      "meaning": "«la adivina de la arena» · temash"
+    },
+    {
+      "name": "Karima",
+      "gender": "f",
+      "meaning": "«la generosa» · menadarí"
+    },
+    {
+      "name": "Kawkaba",
+      "gender": "f",
+      "meaning": "«el astro» · menadarí"
+    },
+    {
+      "name": "Layla",
+      "gender": "f",
+      "meaning": "«la noche» · menadarí"
+    },
+    {
+      "name": "Lungia",
+      "gender": "f",
+      "meaning": "«la de los cuentos» — forma ustilesa de Lunja · ustilés"
+    },
+    {
+      "name": "Lunja",
+      "gender": "f",
+      "meaning": "«la de los cuentos» · temash"
+    },
+    {
+      "name": "Mahtab",
+      "gender": "f",
+      "meaning": "«la luz de la luna» · shirají"
+    },
+    {
+      "name": "Malak",
+      "gender": "f",
+      "meaning": "«el ángel» · menadarí"
+    },
+    {
+      "name": "Meretamun",
+      "gender": "f",
+      "meaning": "«la amada del Oculto» · nekthysio"
+    },
+    {
+      "name": "Mihrimah",
+      "gender": "f",
+      "meaning": "«el sol y la luna» · arshalaní"
+    },
+    {
+      "name": "Munira",
+      "gender": "f",
+      "meaning": "«la que ilumina» · menadarí"
+    },
+    {
+      "name": "Nahid",
+      "gender": "f",
+      "meaning": "«el lucero de la tarde» · shirají"
+    },
+    {
+      "name": "Najma",
+      "gender": "f",
+      "meaning": "«la estrella» · menadarí"
+    },
+    {
+      "name": "Nawal",
+      "gender": "f",
+      "meaning": "«el don» · menadarí"
+    },
+    {
+      "name": "Nebetah",
+      "gender": "f",
+      "meaning": "«la señora del palacio» · nekthysio"
+    },
+    {
+      "name": "Neferet",
+      "gender": "f",
+      "meaning": "«la bella» · nekthysio"
+    },
+    {
+      "name": "Nilufer",
+      "gender": "f",
+      "meaning": "«el nenúfar» · arshalaní"
+    },
+    {
+      "name": "Nur",
+      "gender": "f",
+      "meaning": "«la luz» · menadarí"
+    },
+    {
+      "name": "Parisa",
+      "gender": "f",
+      "meaning": "«como un hada» · shirají"
+    },
+    {
+      "name": "Qamra",
+      "gender": "f",
+      "meaning": "«la luna» · menadarí"
+    },
+    {
+      "name": "Rashida",
+      "gender": "f",
+      "meaning": "«la bien guiada» · menadarí"
+    },
+    {
+      "name": "Roxana",
+      "gender": "f",
+      "meaning": "«la luminosa» · shirají"
+    },
+    {
+      "name": "Safa",
+      "gender": "f",
+      "meaning": "«la pureza» · menadarí"
+    },
+    {
+      "name": "Sahar",
+      "gender": "f",
+      "meaning": "«el alba» · menadarí"
+    },
+    {
+      "name": "Salima",
+      "gender": "f",
+      "meaning": "«la íntegra» · menadarí"
+    },
+    {
+      "name": "Samawiya",
+      "gender": "f",
+      "meaning": "«la celestial» · menadarí"
+    },
+    {
+      "name": "Serena",
+      "gender": "f",
+      "meaning": "«la serena» · ustilés"
+    },
+    {
+      "name": "Setareh",
+      "gender": "f",
+      "meaning": "«la estrella» · shirají"
+    },
+    {
+      "name": "Shams",
+      "gender": "f",
+      "meaning": "«el sol» · menadarí"
+    },
+    {
+      "name": "Shirin",
+      "gender": "f",
+      "meaning": "«la dulce» · shirají"
+    },
+    {
+      "name": "Sitre",
+      "gender": "f",
+      "meaning": "«la hija del sol» · nekthysio"
+    },
+    {
+      "name": "Taberkant",
+      "gender": "f",
+      "meaning": "«la negra» · temash"
+    },
+    {
+      "name": "Tadfelt",
+      "gender": "f",
+      "meaning": "«la nieve» · temash"
+    },
+    {
+      "name": "Tadla",
+      "gender": "f",
+      "meaning": "«la gavilla» · temash"
+    },
+    {
+      "name": "Tadrart",
+      "gender": "f",
+      "meaning": "«la montañita» · temash"
+    },
+    {
+      "name": "Tafat",
+      "gender": "f",
+      "meaning": "«la luz» · temash"
+    },
+    {
+      "name": "Tafrara",
+      "gender": "f",
+      "meaning": "«el amanecer» · temash"
+    },
+    {
+      "name": "Tafsut",
+      "gender": "f",
+      "meaning": "«la primavera» · temash"
+    },
+    {
+      "name": "Tafukt",
+      "gender": "f",
+      "meaning": "«el sol» · temash"
+    },
+    {
+      "name": "Tagant",
+      "gender": "f",
+      "meaning": "«el bosque» · temash"
+    },
+    {
+      "name": "Tagellit",
+      "gender": "f",
+      "meaning": "«la reina» · temash"
+    },
+    {
+      "name": "Talla",
+      "gender": "f",
+      "meaning": "«la fuente» · temash"
+    },
+    {
+      "name": "Tamaynut",
+      "gender": "f",
+      "meaning": "«la nueva» · temash"
+    },
+    {
+      "name": "Tamazigt",
+      "gender": "f",
+      "meaning": "«la mujer libre» · temash"
+    },
+    {
+      "name": "Tamazzalt",
+      "gender": "f",
+      "meaning": "«la que corre» · temash"
+    },
+    {
+      "name": "Tamdakelt",
+      "gender": "f",
+      "meaning": "«la amiga» · temash"
+    },
+    {
+      "name": "Tamedyazt",
+      "gender": "f",
+      "meaning": "«la poetisa» · temash"
+    },
+    {
+      "name": "Tameksawt",
+      "gender": "f",
+      "meaning": "«la pastora» · temash"
+    },
+    {
+      "name": "Tamellalt",
+      "gender": "f",
+      "meaning": "«la blanca» · temash"
+    },
+    {
+      "name": "Tamenzut",
+      "gender": "f",
+      "meaning": "«la primera» · temash"
+    },
+    {
+      "name": "Tamghart",
+      "gender": "f",
+      "meaning": "«la anciana, la jefa» · temash"
+    },
+    {
+      "name": "Tamlalt",
+      "gender": "f",
+      "meaning": "«la gacela» · temash"
+    },
+    {
+      "name": "Tamnayt",
+      "gender": "f",
+      "meaning": "«la amazona» · temash"
+    },
+    {
+      "name": "Tamurt",
+      "gender": "f",
+      "meaning": "«la tierra natal» · temash"
+    },
+    {
+      "name": "Tanirt",
+      "gender": "f",
+      "meaning": "«la mensajera de los Eternos» · temash"
+    },
+    {
+      "name": "Tanzart",
+      "gender": "f",
+      "meaning": "«la lluvia» · temash"
+    },
+    {
+      "name": "Tasa",
+      "gender": "f",
+      "meaning": "«el corazón» · temash"
+    },
+    {
+      "name": "Tasaft",
+      "gender": "f",
+      "meaning": "«el roble» · temash"
+    },
+    {
+      "name": "Tasift",
+      "gender": "f",
+      "meaning": "«el arroyo» · temash"
+    },
+    {
+      "name": "Tasirem",
+      "gender": "f",
+      "meaning": "«la esperanza» · temash"
+    },
+    {
+      "name": "Taskurt",
+      "gender": "f",
+      "meaning": "«la perdiz» · temash"
+    },
+    {
+      "name": "Tayemmat",
+      "gender": "f",
+      "meaning": "«la pequeña madre» · temash"
+    },
+    {
+      "name": "Tayri",
+      "gender": "f",
+      "meaning": "«el amor» · temash"
+    },
+    {
+      "name": "Tazdayt",
+      "gender": "f",
+      "meaning": "«la palmera» · temash"
+    },
+    {
+      "name": "Tazegzawt",
+      "gender": "f",
+      "meaning": "«la del color del cielo» · temash"
+    },
+    {
+      "name": "Taziri",
+      "gender": "f",
+      "meaning": "«la luna» · temash"
+    },
+    {
+      "name": "Tazitunt",
+      "gender": "f",
+      "meaning": "«el olivo» · temash"
+    },
+    {
+      "name": "Tazrut",
+      "gender": "f",
+      "meaning": "«la piedrecita» · temash"
+    },
+    {
+      "name": "Thurayya",
+      "gender": "f",
+      "meaning": "«las Pléyades» · menadarí"
+    },
+    {
+      "name": "Tidet",
+      "gender": "f",
+      "meaning": "«la verdad» · temash"
+    },
+    {
+      "name": "Tifawt",
+      "gender": "f",
+      "meaning": "«el alba» · temash"
+    },
+    {
+      "name": "Tighri",
+      "gender": "f",
+      "meaning": "«la llamada» · temash"
+    },
+    {
+      "name": "Tilelli",
+      "gender": "f",
+      "meaning": "«la libertad» · temash"
+    },
+    {
+      "name": "Tilla",
+      "gender": "f",
+      "meaning": "«la que existe» · temash"
+    },
+    {
+      "name": "Tinhinan",
+      "gender": "f",
+      "meaning": "«la de las tiendas, la antepasada» · temash"
+    },
+    {
+      "name": "Tinhinana",
+      "gender": "f",
+      "meaning": "«la antepasada» — forma ustilesa de Tinhinan · ustilés"
+    },
+    {
+      "name": "Titri",
+      "gender": "f",
+      "meaning": "«la estrellita» · temash"
+    },
+    {
+      "name": "Tiwiza",
+      "gender": "f",
+      "meaning": "«la ayuda mutua» · temash"
+    },
+    {
+      "name": "Tiziri",
+      "gender": "f",
+      "meaning": "«la luz de la luna» · temash"
+    },
+    {
+      "name": "Tiziria",
+      "gender": "f",
+      "meaning": "«la luz de la luna» — forma ustilesa de Tiziri · ustilés"
+    },
+    {
+      "name": "Tudert",
+      "gender": "f",
+      "meaning": "«la vida» · temash"
+    },
+    {
+      "name": "Victoria",
+      "gender": "f",
+      "meaning": "«la vencedora» · ustilés"
+    },
+    {
+      "name": "Zahra",
+      "gender": "f",
+      "meaning": "«la resplandeciente» · menadarí"
+    }
+  ],
+  "surnames": [
+    {
+      "name": "Adrarenses",
+      "meaning": "«los montañeses» — forma ustilesa de los Ait Adrar · ustilés"
+    },
+    {
+      "name": "Ait Aberkan",
+      "meaning": "«los negros» — ait «hijos de» + aberkan «negro» · temash"
+    },
+    {
+      "name": "Ait Adrar",
+      "meaning": "«los de la montaña» — ait «hijos de» + adrar «montaña» · temash"
+    },
+    {
+      "name": "Ait Afalku",
+      "meaning": "«los del halcón» — ait «hijos de» + afalku «halcón» · temash"
+    },
+    {
+      "name": "Ait Akal",
+      "meaning": "«los del barro» — ait «hijos de» + akal «tierra, barro» · temash"
+    },
+    {
+      "name": "Ait Aksil",
+      "meaning": "«los del leopardo» — ait «hijos de» + aksil «leopardo» · temash"
+    },
+    {
+      "name": "Ait Aman",
+      "meaning": "«los del agua» — ait «hijos de» + aman «agua» · temash"
+    },
+    {
+      "name": "Ait Amedyaz",
+      "meaning": "«los de los poetas» — ait «hijos de» + amedyaz «poeta» · temash"
+    },
+    {
+      "name": "Ait Ameksa",
+      "meaning": "«los de los pastores» — ait «hijos de» + ameksa «pastor» · temash"
+    },
+    {
+      "name": "Ait Amellal",
+      "meaning": "«los blancos» — ait «hijos de» + amellal «blanco» · temash"
+    },
+    {
+      "name": "Ait Amghar",
+      "meaning": "«los del anciano» — ait «hijos de» + amghar «anciano, jefe» · temash"
+    },
+    {
+      "name": "Ait Amnai",
+      "meaning": "«los hijos del jinete» — ait «hijos de» + amnay «jinete» · temash"
+    },
+    {
+      "name": "Ait Amzil",
+      "meaning": "«los del herrero» — ait «hijos de» + amzil «herrero» · temash"
+    },
+    {
+      "name": "Ait Anaruz",
+      "meaning": "«los del anhelo» — ait «hijos de» + anaruz «anhelo» · temash"
+    },
+    {
+      "name": "Ait Anzar",
+      "meaning": "«los de la lluvia» — ait «hijos de» + anzar «lluvia» · temash"
+    },
+    {
+      "name": "Ait Asemmid",
+      "meaning": "«los del viento frío» — ait «hijos de» + asemmid «viento frío» · temash"
+    },
+    {
+      "name": "Ait Asif",
+      "meaning": "«los del río» — ait «hijos de» + asif «río» · temash"
+    },
+    {
+      "name": "Ait Asuf",
+      "meaning": "«los del código» — ait «hijos de» + Asuf, el código de honor del desierto · temash"
+    },
+    {
+      "name": "Ait Ayis",
+      "meaning": "«los de los caballos» — ait «hijos de» + ayis «caballo» · temash"
+    },
+    {
+      "name": "Ait Ayur",
+      "meaning": "«los de la luna» — ait «hijos de» + ayur «luna» · temash"
+    },
+    {
+      "name": "Ait Azaghar",
+      "meaning": "«los del llano» — ait «hijos de» + azaghar «llanura» · temash"
+    },
+    {
+      "name": "Ait Azeggagh",
+      "meaning": "«los rojos» — ait «hijos de» + azeggagh «rojo» · temash"
+    },
+    {
+      "name": "Ait Azru",
+      "meaning": "«los de la roca» — ait «hijos de» + azru «roca» · temash"
+    },
+    {
+      "name": "Ait Id",
+      "meaning": "«los de la noche» — ait «hijos de» + iḍ «noche» · temash"
+    },
+    {
+      "name": "Ait Ifri",
+      "meaning": "«los de la cueva» — ait «hijos de» + ifri «cueva» · temash"
+    },
+    {
+      "name": "Ait Ighil",
+      "meaning": "«los de la loma» — ait «hijos de» + ighil «loma» · temash"
+    },
+    {
+      "name": "Ait Igider",
+      "meaning": "«los del águila» — ait «hijos de» + igider «águila» · temash"
+    },
+    {
+      "name": "Ait Ilef",
+      "meaning": "«los del jabalí» — ait «hijos de» + ilef «jabalí» · temash"
+    },
+    {
+      "name": "Ait Ilmawen",
+      "meaning": "«los de los velos» — ait «hijos de» + ilmawen «velos»: los del tagelmust · temash"
+    },
+    {
+      "name": "Ait Imezwura",
+      "meaning": "«los de los primeros» — ait «hijos de» + imezwura «los primeros, los antepasados» · temash"
+    },
+    {
+      "name": "Ait Imnayen",
+      "meaning": "«los de los jinetes» — ait «hijos de» + imnayen «jinetes» · temash"
+    },
+    {
+      "name": "Ait Ineslem",
+      "meaning": "«los de los guardianes» — ait «hijos de» + Ineslemen, los Guardianes del Saber · temash"
+    },
+    {
+      "name": "Ait Itri",
+      "meaning": "«los de la estrella» — ait «hijos de» + itri «estrella» · temash"
+    },
+    {
+      "name": "Ait Izem",
+      "meaning": "«los del león» — ait «hijos de» + izem «león» · temash"
+    },
+    {
+      "name": "Ait Madghis",
+      "meaning": "«los hijos del antepasado» — ait «hijos de» + Madghis, el antepasado fundador · temash"
+    },
+    {
+      "name": "Ait Mazig",
+      "meaning": "«los hijos del hombre libre» — ait «hijos de» + amazigh «hombre libre» · temash"
+    },
+    {
+      "name": "Ait Nili",
+      "meaning": "«los del índigo» — ait «hijos de» + nnili «índigo»: los hombres azules · temash"
+    },
+    {
+      "name": "Ait Nuqert",
+      "meaning": "«los de la plata» — ait «hijos de» + nnuqert «plata», el metal sagrado · temash"
+    },
+    {
+      "name": "Ait Sifaw",
+      "meaning": "«los que iluminan» — ait «hijos de» + sifaw «iluminar» · temash"
+    },
+    {
+      "name": "Ait Tafat",
+      "meaning": "«los de la luz» — ait «hijos de» + tafat «luz» · temash"
+    },
+    {
+      "name": "Ait Tagant",
+      "meaning": "«los del bosque» — ait «hijos de» + tagant «bosque» · temash"
+    },
+    {
+      "name": "Ait Tala",
+      "meaning": "«los de la fuente» — ait «hijos de» + tala «fuente» · temash"
+    },
+    {
+      "name": "Ait Tamlalt",
+      "meaning": "«los de la gacela» — ait «hijos de» + tamlalt «gacela» · temash"
+    },
+    {
+      "name": "Ait Tamurt",
+      "meaning": "«los de la tierra» — ait «hijos de» + tamurt «tierra natal» · temash"
+    },
+    {
+      "name": "Ait Tasa",
+      "meaning": "«los del corazón» — ait «hijos de» + tasa «corazón» · temash"
+    },
+    {
+      "name": "Ait Tazdayt",
+      "meaning": "«los de la palmera» — ait «hijos de» + tazdayt «palmera» · temash"
+    },
+    {
+      "name": "Ait Tilelli",
+      "meaning": "«los de la libertad» — ait «hijos de» + tilelli «libertad» · temash"
+    },
+    {
+      "name": "Ait Tinhinan",
+      "meaning": "«los hijos de Tinhinan» — ait «hijos de» + Tinhinan, la antepasada (linaje por vía materna) · temash"
+    },
+    {
+      "name": "Ait Tiwiza",
+      "meaning": "«los de la ayuda mutua» — ait «hijos de» + tiwizi «ayuda mutua» · temash"
+    },
+    {
+      "name": "Ait Tizi",
+      "meaning": "«los del paso» — ait «hijos de» + tizi «paso, collado» · temash"
+    },
+    {
+      "name": "Ait Uccen",
+      "meaning": "«los del chacal» — ait «hijos de» + uccen «chacal» · temash"
+    },
+    {
+      "name": "Ait Ugwas",
+      "meaning": "«los del día» — ait «hijos de» + ugwas «día» · temash"
+    },
+    {
+      "name": "Ait Uzzal",
+      "meaning": "«los del hierro» — ait «hijos de» + uzzal «hierro» · temash"
+    },
+    {
+      "name": "Ait Wazin",
+      "meaning": "«los del equilibrado» — ait «hijos de» + Wazin · temash"
+    },
+    {
+      "name": "Ait Yidir",
+      "meaning": "«los del que vive» — ait «hijos de» + idir «vive» · temash"
+    },
+    {
+      "name": "Ait Ziri",
+      "meaning": "«los de la claridad de la luna» — ait «hijos de» + ziri «claridad de luna» · temash"
+    },
+    {
+      "name": "Amenukales",
+      "meaning": "«los del soberano» — forma ustilesa de Kel Amenukal · ustilés"
+    },
+    {
+      "name": "Amnaitas",
+      "meaning": "«los hijos del jinete» — forma ustilesa de Ait Amnai · ustilés"
+    },
+    {
+      "name": "Banu Amin",
+      "meaning": "«los hijos del fiel» — banu «hijos de» + amin «fiel» · menadarí"
+    },
+    {
+      "name": "Banu Badr",
+      "meaning": "«los hijos de la luna llena» — banu «hijos de» + badr «luna llena» · menadarí"
+    },
+    {
+      "name": "Banu Falak",
+      "meaning": "«los hijos de la órbita» — banu «hijos de» + falak «órbita celeste» · menadarí"
+    },
+    {
+      "name": "Banu Faris",
+      "meaning": "«los hijos del jinete» — banu «hijos de» + faris «jinete» · menadarí"
+    },
+    {
+      "name": "Banu Hamid",
+      "meaning": "«los hijos del que alaba» — banu «hijos de» + hamid «el que alaba» · menadarí"
+    },
+    {
+      "name": "Banu Kawkab",
+      "meaning": "«los hijos del astro» — banu «hijos de» + kawkab «astro» · menadarí"
+    },
+    {
+      "name": "Banu Malak",
+      "meaning": "«los hijos del ángel» — banu «hijos de» + malak «ángel»: los que sirven a la Hueste Celestial · menadarí"
+    },
+    {
+      "name": "Banu Manara",
+      "meaning": "«los hijos del faro» — banu «hijos de» + manara «faro» · menadarí"
+    },
+    {
+      "name": "Banu Munir",
+      "meaning": "«los hijos del que ilumina» — banu «hijos de» + munir «que ilumina» · menadarí"
+    },
+    {
+      "name": "Banu Najm",
+      "meaning": "«los hijos de la estrella» — banu «hijos de» + najm «estrella» · menadarí"
+    },
+    {
+      "name": "Banu Nur",
+      "meaning": "«los hijos de la luz» — banu «hijos de» + nur «luz» · menadarí"
+    },
+    {
+      "name": "Banu Qamar",
+      "meaning": "«los hijos de la luna» — banu «hijos de» + qamar «luna» · menadarí"
+    },
+    {
+      "name": "Banu Rashid",
+      "meaning": "«los hijos del bien guiado» — banu «hijos de» + rashid «bien guiado» · menadarí"
+    },
+    {
+      "name": "Banu Sahir",
+      "meaning": "«los hijos del que vela» — banu «hijos de» + sahir «el que vela de noche» · menadarí"
+    },
+    {
+      "name": "Banu Salim",
+      "meaning": "«los hijos del íntegro» — banu «hijos de» + salim «íntegro» · menadarí"
+    },
+    {
+      "name": "Banu Samawi",
+      "meaning": "«los hijos del celestial» — banu «hijos de» + samawi «celestial» · menadarí"
+    },
+    {
+      "name": "Banu Shams",
+      "meaning": "«los hijos del sol» — banu «hijos de» + shams «sol» · menadarí"
+    },
+    {
+      "name": "Banu Tariq",
+      "meaning": "«los hijos del lucero» — banu «hijos de» + tariq «lucero del alba» · menadarí"
+    },
+    {
+      "name": "Banu Thurayya",
+      "meaning": "«los hijos de las Pléyades» — banu «hijos de» + thurayya «Pléyades» · menadarí"
+    },
+    {
+      "name": "Banu Zahir",
+      "meaning": "«los hijos del resplandeciente» — banu «hijos de» + zahir «resplandeciente» · menadarí"
+    },
+    {
+      "name": "Ifrenses",
+      "meaning": "«los de las cuevas» — forma ustilesa de Ait Ifri · ustilés"
+    },
+    {
+      "name": "Izemitas",
+      "meaning": "«los del león» — forma ustilesa de Ait Izem · ustilés"
+    },
+    {
+      "name": "Kel Adrar",
+      "meaning": "«la gente de la montaña» — kel «gente de» + adrar «montaña» · temash"
+    },
+    {
+      "name": "Kel Amenukal",
+      "meaning": "«la gente del soberano» — kel «gente de» + amenukal «soberano» · temash"
+    },
+    {
+      "name": "Kel Asif",
+      "meaning": "«la gente del río» — kel «gente de» + asif «río» · temash"
+    },
+    {
+      "name": "Kel Ayur",
+      "meaning": "«la gente de la luna» — kel «gente de» + ayur «luna» · temash"
+    },
+    {
+      "name": "Kel Essuf",
+      "meaning": "«la gente de la soledad» — kel «gente de» + essuf «soledad»: los que viven entre los Eternos · temash"
+    },
+    {
+      "name": "Kel Idurar",
+      "meaning": "«la gente de los montes» — kel «gente de» + idurar «montes» · temash"
+    },
+    {
+      "name": "Kel Igenni",
+      "meaning": "«la gente del cielo» — kel «gente de» + igenni «cielo» · temash"
+    },
+    {
+      "name": "Kel Tafukt",
+      "meaning": "«la gente del sol» — kel «gente de» + tafukt «sol» · temash"
+    },
+    {
+      "name": "Kel Tagant",
+      "meaning": "«la gente del bosque» — kel «gente de» + tagant «bosque» · temash"
+    },
+    {
+      "name": "Kel Tamazirt",
+      "meaning": "«la gente del país» — kel «gente de» + tamazirt «país» · temash"
+    },
+    {
+      "name": "Madghisanos",
+      "meaning": "«los hijos del antepasado» — forma ustilesa de Ait Madghis · ustilés"
+    },
+    {
+      "name": "Mazigos",
+      "meaning": "«los hombres libres» — forma ustilesa de Ait Mazig · ustilés"
+    },
+    {
+      "name": "Nilitas",
+      "meaning": "«los azules» — forma ustilesa de Ait Nili: «los hombres azules» · ustilés"
+    },
+    {
+      "name": "Queladrar",
+      "meaning": "«la gente de la montaña» — forma ustilesa de Kel Adrar · ustilés"
+    },
+    {
+      "name": "Quelaiur",
+      "meaning": "«la gente de la luna» — forma ustilesa de Kel Ayur · ustilés"
+    },
+    {
+      "name": "Quelasif",
+      "meaning": "«la gente del río» — forma ustilesa de Kel Asif · ustilés"
+    },
+    {
+      "name": "Queltizi",
+      "meaning": "«la gente del paso» — forma ustilesa de «Kel Tizi» · ustilés"
+    },
+    {
+      "name": "Tafatenses",
+      "meaning": "«los de la luz» — forma ustilesa de Ait Tafat · ustilés"
+    },
+    {
+      "name": "Tinhinanos",
+      "meaning": "«los hijos de Tinhinan» — forma ustilesa de Ait Tinhinan · ustilés"
+    },
+    {
+      "name": "Uzzalitas",
+      "meaning": "«los del hierro» — forma ustilesa de Ait Uzzal · ustilés"
+    }
+  ],
+  "surname_rules": [],
+  "patronymic_rules": []
+}
