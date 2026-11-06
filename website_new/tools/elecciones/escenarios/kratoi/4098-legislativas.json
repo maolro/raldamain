@@ -3922,7 +3922,7 @@
   "national": "Lista nacional",
   "chairTitle": "Presidente del Congreso"
  },
- "mode": "cand",
+ "mode": "none",
  "natSlates": {
   "FED": {
    "loyalty": 0.9,
@@ -4095,8 +4095,8 @@
  "scenario": {
   "country": "Kratoi",
   "election": "4098 · Legislativas",
-  "published": true,
-  "desc": "El MPS gana la mayoría absoluta del Congreso frente a dos oposiciones sin líder."
+  "desc": "El MPS gana la mayoría absoluta del Congreso frente a dos oposiciones sin líder.",
+  "published": true
  },
  "sq": [
   -2,
