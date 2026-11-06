@@ -941,8 +941,8 @@
    "el": 23,
    "group": "Kratoi Central",
    "local": {
-    "SPM": -0.2,
-    "NAT": 0.2
+    "NAT": 0.2,
+    "SPM": -0.2
    },
    "mode": "ideo",
    "name": "Rimas",
@@ -3908,9 +3908,9 @@
   }
  ],
  "election": {
-  "kind": "direct",
+  "kind": "indirect",
   "rule": "abs",
-  "rounds": "runoff",
+  "rounds": "single",
   "direct": "tworound"
  },
  "electors": [],
@@ -3919,7 +3919,7 @@
  "meta": {
   "eyebrow": "República de Kratoi · 4093",
   "title": "Legislativas de 4093",
-  "lede": "A mitad del primer mandato de Kesenia Revilo. El subsidio de paro y la campaña de alfabetización convierten al MPS en el primer partido, con las pensiones del norte y los obreros de las fundiciones; pero sin Kesenia en la papeleta, con la guerra de aranceles de Ustilus golpeando el vino y el comercio del sur, nacionalistas y federalistas conservan juntos la mayoría del Congreso.",
+  "lede": "A mitad del primer mandato de Kesenia Revilo. El subsidio de paro y la campaña de alfabetización convierten al MPS en el primer partido, con las pensiones del norte y los obreros de las fundiciones. Pero, sin Kesenia en la papeleta, con la guerra de aranceles de Ustilus golpeando el vino y el comercio del sur, nacionalistas y federalistas conservan juntos la mayoría del Congreso.",
   "chamber": "Congreso de Diputados",
   "office": "Presidente",
   "member": "diputado",
@@ -3927,7 +3927,7 @@
   "national": "Lista nacional",
   "chairTitle": "Presidente del Congreso"
  },
- "mode": "none",
+ "mode": "cand",
  "natSlates": {
   "FED": {
    "loyalty": 0.9,
@@ -4027,7 +4027,7 @@
   "vk": 0.6,
   "tk": 1,
   "exhaust": 0.15,
-  "tm": 1,
+  "tm": 0.5,
   "cv": 0.5,
   "ta": 0.5
  },
@@ -4100,8 +4100,8 @@
  "scenario": {
   "country": "Kratoi",
   "election": "4093 · Legislativas",
-  "published": true,
-  "desc": "Legislativas de mitad de mandato: el MPS de Tudval Labourer es el primer partido, pero nacionalistas y federalistas conservan la mayoría."
+  "desc": "Legislativas de mitad de mandato: el MPS de Tudval Labourer es el primer partido, pero nacionalistas y federalistas conservan la mayoría.",
+  "published": true
  },
  "sq": [
   -2,
