@@ -46,6 +46,30 @@
 
 /* ---------- Mode strip ---------- */
 .elec .modes { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+/* ---------- Arriba: parlamentaria / presidencial ---------- */
+.elec .sysbar { display: grid; gap: 12px; }
+.elec .kindseg { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+.elec .kindseg button { border: 0; border-radius: 0; background: var(--bg); color: var(--muted); padding: 10px 14px; display: grid; gap: 1px; text-align: center; cursor: pointer; }
+.elec .kindseg button + button { border-left: 1px solid var(--rule); }
+.elec .kindseg button b { font-family: var(--font-display); font-weight: 400; font-size: 18px; letter-spacing: .04em; color: var(--ink); }
+.elec .kindseg button small { font-size: 12px; }
+.elec .kindseg button.on { background: color-mix(in srgb, var(--brass) 14%, var(--bg)); box-shadow: inset 0 -3px 0 var(--brass); color: var(--ink); }
+.elec .kindseg button.on b { color: var(--brass); }
+.elec .variants { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+.elec .variants .chip { border: 1px solid var(--rule); border-radius: 999px; background: none; color: var(--muted); padding: 4px 12px; font-size: 13.5px; cursor: pointer; }
+.elec .variants .chip.on { border-color: var(--brass); color: var(--brass); background: color-mix(in srgb, var(--brass) 10%, transparent); }
+.elec .sysbar-sel { display: flex; flex-wrap: wrap; gap: 10px 16px; justify-content: center; }
+.elec .sysbar-sel .field { flex: 0 1 260px; min-width: 0; }
+.elec .sysbar-sel select { width: 100%; }
+.elec .lede.clamp { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+.elec .lede.clamp.open { display: block; }
+.elec .lede.long, .elec .lede.open { cursor: pointer; }
+.elec .lede.long:not(.open)::after { content: ""; }
+.elec .lede.long:not(.open) { mask-image: linear-gradient(180deg, #000 55%, transparent); -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent); }
+.elec .cards-h { grid-column: 1 / -1; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: -4px; }
+.elec .subline details summary { cursor: pointer; color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+.elec .subline details > div { margin-top: 2px; }
+@media (max-width: 560px) { .elec .kindseg button b { font-size: 15px; } }
 .elec .modes label { font-size: 12.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
 .elec .modes select { font-size: 15px; padding: 7px 10px; max-width: 100%; }
 
@@ -55,6 +79,22 @@
 .elec .hemi svg { width: 100%; height: auto; display: block; }
 .elec .hemi circle { cursor: pointer; }
 .elec .hemi-caption { text-align: center; margin-top: -4px; }
+.elec .hemi [hidden] { display: none !important; }
+/* elección directa: las vueltas en lugar del hemiciclo */
+.elec .rviz { display: grid; gap: 14px; }
+.elec .rv-title { font: 700 13px var(--font-body); color: var(--brass); text-transform: uppercase; letter-spacing: .08em; }
+.elec .rv-round { display: grid; gap: 5px; }
+.elec .rv-head { font-family: var(--font-display, var(--font-body)); font-size: 15px; border-bottom: 1px solid var(--rule); padding-bottom: 3px; margin-bottom: 2px; }
+.elec .rv-row { display: grid; grid-template-columns: minmax(0, 9.5em) minmax(0, 1fr) 5.8em; gap: 8px; align-items: center; font-size: 13.5px; }
+.elec .rv-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.elec .rv-name .sw { margin-right: 6px; vertical-align: -1px; }
+.elec .rv-bar { position: relative; height: 14px; background: color-mix(in srgb, var(--rule) 45%, transparent); border-radius: 3px; }
+.elec .rv-bar > span { position: absolute; inset: 0 auto 0 0; border-radius: 3px; }
+.elec .rv-bar > i { position: absolute; top: -3px; bottom: -3px; width: 0; border-left: 1px dashed var(--ink); opacity: .55; }
+.elec .rv-val { text-align: right; white-space: nowrap; }
+.elec .rv-row.win { font-weight: 700; }
+.elec .rv-row.win .rv-val { color: var(--brass); }
+.elec .rv-note, .elec .rv-legend { font-size: 12.5px; }
 .elec .hemi-caption .big { font-family: var(--font-data); font-size: 30px; font-weight: 500; }
 .elec .verdict { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: 8px; border: 1px solid var(--rule); background: var(--bg); }
 .elec .verdict .dot { width: 12px; height: 12px; border-radius: 50%; margin-top: 5px; flex: none; }
@@ -233,7 +273,7 @@
 .elec button:disabled { opacity: .45; cursor: default; }
 
 /* ---------- Sistema electoral ---------- */
-.elec .sysgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.elec .sysgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
 @media (max-width: 900px) { .elec .sysgrid { grid-template-columns: 1fr; } }
 .elec .sysbox { border: 1px solid var(--rule); border-radius: 8px; padding: 14px; display: grid; gap: 10px; align-content: start; min-width: 0; }
 .elec .sysbox h3 { color: var(--ink); }
@@ -270,3 +310,119 @@
 .elec .metagrid input, .elec .metagrid textarea { width: 100%; }
 .elec .twocol { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; }
 @media (max-width: 900px) { .elec .twocol { grid-template-columns: 1fr; } }
+
+/* ---------- Biblioteca de escenarios (país → elección) ---------- */
+.elec .folder { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font-size: 13.5px; }
+.elec .folder .ok { color: var(--yes); }
+.elec .folder .ok b { color: var(--ink); }
+.elec .savebox { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 16px; padding: 14px; border: 1px solid var(--rule); border-radius: 8px; }
+.elec .savebox .wide { grid-column: 1 / -1; }
+.elec .savebox input { width: 100%; }
+@media (max-width: 640px) { .elec .savebox { grid-template-columns: 1fr; } }
+.elec .libtree { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.elec .lcountry { border: 1px solid var(--rule); border-radius: 8px; padding: 12px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.elec .lcountry h3 { color: var(--brass); }
+.elec .lels { display: grid; gap: 2px; }
+.elec .lel { display: flex; gap: 8px; align-items: center; font-size: 13px; padding: 3px 6px; border-radius: 5px; min-width: 0; }
+.elec .lel .link { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.elec .lel.on { background: color-mix(in srgb, var(--brass) 14%, transparent); }
+.elec .lel .x, .elec .sc .x { border: 0; background: none; color: var(--muted); padding: 0 4px; font-size: 15px; line-height: 1; }
+.elec .lel .x:hover { color: var(--no); }
+.elec .lel .x.armed { color: var(--no); font-size: 12px; font-weight: 600; }
+.elec .badge { font-size: 10.5px; text-transform: uppercase; letter-spacing: .06em; padding: 1px 6px; border-radius: 999px; border: 1px solid var(--rule); color: var(--muted); white-space: nowrap; }
+.elec .badge.folder { color: var(--yes); border-color: color-mix(in srgb, var(--yes) 50%, transparent); }
+.elec .badge.browser { color: var(--brass); border-color: color-mix(in srgb, var(--brass) 50%, transparent); }
+
+/* ---------- Circunscripciones en el mapa ---------- */
+.elec #map .dpt { cursor: pointer; }
+.elec #map .dpt:hover circle:last-of-type { stroke: var(--gold); }
+.elec .dleg { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12.5px; }
+.elec .dleg span { display: inline-flex; gap: 5px; align-items: center; }
+.elec .swl { display: grid; gap: 3px; font-size: 12.5px; }
+.elec .swl b { font-size: 11.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; }
+.elec .swl .link { display: flex; gap: 6px; align-items: center; text-decoration: none; }
+.elec .swl .link .num { margin-left: auto; color: var(--muted); }
+.elec .drow.flash { animation: elecflash 1.6s ease; }
+@keyframes elecflash { 0%, 40% { background: color-mix(in srgb, var(--gold) 14%, transparent); } 100% { background: transparent; } }
+.elec .legend > div.swl { display: grid; align-items: stretch; }
+.elec .legend > div.dleg { display: flex; flex-wrap: wrap; }
+.elec .legend > div.note { display: block; }
+.elec .mapside { min-width: 0; overflow: hidden; }
+
+/* ---------- Factores del voto ---------- */
+.elec .prow.pval { grid-template-columns: 44px minmax(0, 1fr) minmax(0, 1fr) 76px 76px 76px auto; }
+@media (max-width: 900px) { .elec .prow.pval { grid-template-columns: 44px minmax(0, 1fr) minmax(0, 1fr); } .elec .prow.pval .prow-btns { grid-column: 1 / -1; } }
+.elec .prow.pval input[type=number] { width: 100%; }
+.elec .ideo .axrow.axw { grid-template-columns: minmax(0, 6em) minmax(80px, 1fr) minmax(0, 6em) 3ch 52px; }
+.elec .ideo .axrow > input[type=number] { width: 52px; padding: 2px 4px; }
+.elec .dlocal { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; font-size: 12px; color: var(--muted); margin-top: 4px; }
+.elec .dlocal label { display: inline-flex; gap: 4px; align-items: center; }
+.elec .dlocal input { width: 54px; padding: 2px 4px; font-family: var(--font-data); }
+.elec .rcard.wide { grid-column: 1 / -1; }
+.elec .factors { font-size: 13px; min-width: 420px; }
+.elec .factors td.plus { color: var(--yes); } .elec .factors td.minus { color: var(--no); }
+.elec .factors .flip { color: var(--gold); font-weight: 600; }
+.elec .dmeta .alien { color: var(--no); } .elec .dmeta .mobil { color: var(--yes); }
+.elec .roll .eldel { border: 0; background: none; color: var(--muted); font-size: 16px; padding: 0 6px; line-height: 1; }
+.elec .roll .eldel:hover { color: var(--no); }
+.elec .roll .eldel.armed { color: var(--no); font-size: 12px; font-weight: 600; white-space: nowrap; }
+.elec .lpacts { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 12px; }
+.elec .lpacts .lab { font-size: 11.5px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; margin-right: 4px; }
+.elec .lpacts .lp { display: inline-flex; gap: 5px; align-items: center; min-width: 0; }
+
+/* ---------- Secciones plegables ---------- */
+.elec h2.fold { cursor: pointer; user-select: none; }
+.elec h2.fold::before { content: "▾"; display: inline-block; width: 1.1em; color: var(--muted); font-size: .8em; transition: transform .15s; }
+.elec section.folded h2.fold::before { transform: rotate(-90deg); }
+.elec section.panel.folded > :not(.sec-head) { display: none !important; }
+.elec section.panel.folded .sec-head { margin-bottom: 0; }
+.elec section.panel.folded .sec-head p { display: none; }
+
+/* ---------- Distritos en tarjetas ---------- */
+.elec #dlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; margin-top: 12px; }
+.elec .dcard { border: 1px solid var(--rule); border-radius: 8px; background: var(--bg); min-width: 0; }
+.elec .dcard.open { grid-column: 1 / -1; border-color: var(--brass); }
+.elec .dsum { display: grid; gap: 6px; padding: 10px 12px; cursor: pointer; }
+.elec .dsum:hover { background: color-mix(in srgb, var(--brass) 6%, transparent); }
+.elec .dtop { display: flex; gap: 8px; align-items: baseline; min-width: 0; }
+.elec .dtop b { font-size: 14.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.elec .dtop .dsub { font-size: 12px; white-space: nowrap; }
+.elec .dtop .chev { margin-left: auto; color: var(--muted); }
+.elec .dchips { display: flex; flex-wrap: wrap; gap: 4px; min-height: 22px; }
+.elec .ddet { border-top: 1px solid var(--rule); padding: 4px 12px 10px; }
+.elec .ddet .drow { border-top: 0; grid-template-columns: minmax(190px, 1fr) minmax(0, 2.6fr); align-items: start; gap: 10px 26px; padding: 12px 0 6px; }
+@media (max-width: 780px) { .elec .ddet .drow { grid-template-columns: 1fr; } }
+
+/* ---------- Publicada ---------- */
+.elec .lel .pub { display: inline-flex; gap: 4px; align-items: center; font-size: 11.5px; color: var(--muted); white-space: nowrap; cursor: pointer; }
+.elec .lel.unpub .link { color: var(--muted); font-style: italic; }
+
+/* ---------- Clasificación de distritos ---------- */
+.elec .dgroup { grid-column: 1 / -1; font: 700 13px var(--font-body); color: var(--brass); text-transform: uppercase; letter-spacing: .08em; border-bottom: 1px solid var(--rule); padding: 10px 2px 4px; }
+.elec .dgroup .muted { text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 12px; margin-left: 6px; }
+.elec .ddelx { font-size: 15px; padding: 0 4px; color: var(--muted); border: 0; background: none; line-height: 1; }
+.elec .ddelx:hover { color: var(--no); }
+.elec .dname .el input[data-dg] { width: 100%; font-family: var(--font-body); }
+
+/* ---------- Editor local: GitHub ---------- */
+.elec .folder .note { flex-basis: 100%; }
+.elec .git { font-size: 12px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--rule); }
+.elec .git.ok { color: var(--yes); border-color: color-mix(in srgb, var(--yes) 50%, transparent); }
+.elec .git.busy { color: var(--brass); border-color: var(--brass); }
+.elec .git.bad { color: var(--no); border-color: color-mix(in srgb, var(--no) 50%, transparent); }
+/* ---------- Gerrymandering (distrito) ---------- */
+.elec .dgerry { display: grid; gap: 4px; flex-basis: 100%; grid-column: 1 / -1; }
+.elec .dgerry select { width: 100%; }
+.elec .sysbox[hidden], .elec #sysStats[hidden], .elec #cmpBox[hidden], .elec .sysbar-sel [hidden] { display: none !important; }
+
+/* ---------- Descripción del distrito ---------- */
+.elec .ddesc { font-size: 12.5px; color: var(--muted); font-style: italic; line-height: 1.35; margin: 2px 0 4px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+.elec .dcard.open .ddesc { display: none; }
+.elec .dnote { display: grid; gap: 3px; font-size: 13px; color: var(--muted); }
+.elec .dnote { grid-column: 1 / -1; margin: 4px 0 0; }
+.elec .dnote textarea { width: 100%; min-height: 90px; resize: vertical; font: 13.5px/1.45 var(--font-body); padding: 7px 9px; box-sizing: border-box; }
+
+/* ---------- Renombrar una clasificación ---------- */
+.elec .dgroup .gren { border: 0; background: none; color: var(--muted); padding: 0 4px; margin-left: 4px; cursor: pointer; font-size: 13px; opacity: .6; }
+.elec .dgroup:hover .gren, .elec .dgroup .gren:focus-visible { opacity: 1; color: var(--brass); }
+.elec .dgroup .gedit { font: 700 13px var(--font-body); text-transform: uppercase; letter-spacing: .08em; color: var(--brass); padding: 2px 6px; width: min(320px, 70%); }

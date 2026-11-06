@@ -1,5 +1,6 @@
 /* Simulador electoral · INTERFAZ (/mundo/utils/elecciones). El modelo está en model.js. */
-import * as M from "./model.js";
+import * as M from "./model.js?v=20261106";
+import { slug, Library } from "./library.js?v=20261106";
 
 const { clone, hash } = M;
 const $ = id => document.getElementById(id);
@@ -13,10 +14,9 @@ const fmt = x => (x > 0 ? "+" : "") + (Math.round(x * 10) / 10).toLocaleString("
 const fmtN = n => Math.round(n).toLocaleString("es-ES");
 const fmtP = (x, d = 1) => (x || 0).toLocaleString("es-ES", { maximumFractionDigits: d });
 const cap = s => s ? s[0].toUpperCase() + s.slice(1) : "";
-const KEY_CUR = "raldamain-elecciones-actual", KEY_SC = "raldamain-elecciones-escenarios";
-const PRESET_DIR = "/data/elecciones/";
+const KEY_CUR = "raldamain-elecciones-actual";
 
-let st = null, presets = [];
+let st = null;
 const AX = () => st.axes;
 const IDS = () => M.IDS(st);
 const party = id => M.party(st, id);
@@ -86,6 +86,34 @@ function hemicycle(R, isProp, partyMode) {
   }).join("");
 }
 
+/* Elección directa: en lugar del hemiciclo, el resultado de cada vuelta (o ronda) en barras */
+function roundsViz(D) {
+  const t = T(), ids = IDS();
+  const cols = D.method === "college"
+    ? [{ h: "Voto popular", r: D.votes, unit: "%" }, { h: "Votos electorales", r: D.ev, unit: "ev", need: D.need }]
+    : D.rounds.map((r, i) => ({ h: D.method === "irv" ? `Ronda ${i + 1}` : D.method === "tworound" ? `${i + 1}.ª vuelta` : "Votación", r, unit: "%" }));
+  const block = ({ h, r, unit, need }, i) => {
+    const alive = ids.filter(id => r[id] != null), V = alive.reduce((a, id) => a + r[id], 0) || 1;
+    const rows = alive.sort((a, b) => r[b] - r[a]);
+    const max = Math.max(...rows.map(id => r[id] / V), 0.5);
+    const last = i === cols.length - 1;
+    return `<div class="rv-round"><div class="rv-head">${esc(h)}${need ? ` <span class="muted">· mayoría ${need}</span>` : ""}</div>${rows.map(id => {
+      const share = r[id] / V * 100, win = last && D.win === id;
+      const val = unit === "ev" ? `${fmtP(r[id])}` : `${fmtP(share)} %`;
+      const tip = `${candName(id)} · ${pName(id)} · ${unit === "ev" ? `${fmtP(r[id])} votos electorales` : `${fmtN(r[id])} votos (${fmtP(share)} %)`}`;
+      return `<div class="rv-row${win ? " win" : ""}" data-tip="${esc(tip)}"><span class="rv-name">${sw(col(id))}${esc(candName(id))}</span>
+        <span class="rv-bar"><span style="width:${(share / max).toFixed(1)}%;background:${col(id)}"></span>${unit === "%" ? `<i style="left:${(50 / max).toFixed(1)}%"></i>` : ""}</span>
+        <span class="rv-val num">${val}${win ? " ✓" : ""}</span></div>`;
+    }).join("")}</div>`;
+  };
+  let note = "";
+  if (D.method === "tworound" && D.rounds.length === 1 && D.win) note = `${candName(D.win)} supera el 50 % en la primera vuelta: no hace falta segunda.`;
+  if (D.method === "tworound" && D.rounds.length > 1) note = `Pasan a la segunda vuelta los dos más votados: ${Object.keys(D.rounds[1]).map(candName).join(" y ")}.`;
+  if (D.method === "irv" && D.rounds.length > 1) note = "En cada ronda se elimina al último y sus votantes pasan a su siguiente preferencia.";
+  $("rviz").innerHTML = `<div class="rv-title">Elección directa de ${esc(t.office.toLowerCase())}</div>${cols.map(block).join("")}${note ? `<div class="rv-note muted">${esc(note)}</div>` : ""}
+    <div class="rv-legend muted">${D.method !== "college" ? "La raya marca el 50 %. " : ""}${fmtN(D.V)} votos válidos.</div>`;
+}
+
 /* La segunda vuelta en la cámara: cada miembro elige entre los dos finalistas */
 function runoff(E, a, b) {
   const out = { [a]: 0, [b]: 0, I: 0 };
@@ -97,6 +125,13 @@ function runoff(E, a, b) {
   return out;
 }
 
+const W0 = D => !!(D && D.win);
+const isDirect = () => st.election.kind === "direct";
+/* mirando la elección presidencial (no la cámara de un país presidencialista): los escaños no deciden nada */
+const presView = () => isDirect() && st.mode === "cand";
+const isCollege = () => presView() && st.election.direct === "college";
+/* el más votado de cada región en la elección directa (1.ª vuelta) */
+const regionLeader = res => IDS().reduce((a, id) => (res.e[id] || 0) > (res.e[a] || 0) ? id : a, IDS()[0]);
 function board(E) {
   const { R, prop } = E, N = R.length, ids = IDS(), t = T();
   const cnt = k => R.filter(x => x.r.cls === k).length;
@@ -124,31 +159,32 @@ function board(E) {
   } else if (E.direct) {
     const D = E.direct, last = D.rounds[D.rounds.length - 1] || D.votes;
     if (D.method === "college") {
-      $("cards").innerHTML = ids.map(id => card(candName(id), col(id), fmtP(D.ev[id], 1), `${esc(pName(id))} · ${fmtP(D.V ? D.votes[id] / D.V * 100 : 0)} % del voto popular`)).join("");
-      segs = ids.map(id => [id, D.ev[id]]);
-      maj = D.need;
-      verdict = D.win ? [col(D.win), `${candName(D.win)} es elegido ${t.office.toLowerCase()}`, `${fmtP(D.ev[D.win])} votos electorales de ${D.T} (mayoría ${D.need}).`]
+      verdict = D.win ? [col(D.win), `${candName(D.win)} gana la elección a ${t.office.toLowerCase()}`, `${fmtP(D.ev[D.win])} votos electorales de ${D.T} (mayoría ${D.need}).`]
         : [col("I"), "Nadie llega a la mayoría del colegio", `Hacen falta ${D.need} votos electorales. Tendría que decidir la cámara.`];
-      $("capTotal").textContent = D.T; $("capMaj").textContent = D.need;
     } else {
       const V2 = Object.values(last).reduce((a, b) => a + b, 0);
-      $("cards").innerHTML = ids.map(id => card(candName(id), col(id), `${fmtP(D.V ? D.votes[id] / D.V * 100 : 0)}<small style="font-size:14px"> %</small>`,
-        `${esc(pName(id))} · ${fmtN(D.votes[id])} votos${D.rounds.length > 1 ? last[id] != null ? ` · última vuelta ${fmtP(V2 ? last[id] / V2 * 100 : 0)} %` : " · eliminado" : ""}`)).join("");
-      segs = ids.map(id => [id, last[id] || 0]);
       const W = D.win;
       const how = D.method === "tworound" ? (D.rounds.length > 1 ? "en segunda vuelta" : "en primera vuelta") : D.method === "irv" ? `tras ${D.rounds.length - 1} eliminaciones` : "por mayoría simple";
-      verdict = W ? [col(W), `${candName(W)} es elegido ${t.office.toLowerCase()}`, `${cap(how)}: ${fmtP(V2 ? last[W] / V2 * 100 : 0)} % de los votos válidos.`] : [col("I"), "Sin votos", "Ningún distrito tiene votos."];
-      $("capTotal").textContent = N;
+      verdict = W ? [col(W), `${candName(W)} gana la elección a ${t.office.toLowerCase()}`, `${cap(how)}: ${fmtP(V2 ? last[W] / V2 * 100 : 0)} % de los votos válidos.`] : [col("I"), "Sin votos", "Ningún distrito tiene votos."];
     }
-    sub.push(`Elección directa · ${esc(M.DIRECT_METHODS.find(m => m.id === D.method)?.name || D.method)}. El hemiciclo muestra la cámara por partidos.`);
-    sub.push(composition());
+    /* las vueltas ya están a la izquierda: aquí, el mapa del voto (regiones que gana cada uno) */
+    const dres = E.ch.dres.filter((r, i) => (st.districts[i].pop || 0) > 0);
+    const won = id => E.ch.dres.filter((r, i) => (st.districts[i].pop || 0) > 0 && regionLeader(r) === id);
+    const popOf = rs => rs.reduce((a, r) => a + (st.districts[E.ch.dres.indexOf(r)].pop || 0), 0), P = popOf(dres) || 1;
+    if (D.method === "college") {
+      $("cards").innerHTML = `<div class="cards-h">Votos electorales · ${D.T}</div>` + ids.map(id => card(candName(id), col(id), fmtP(D.ev[id]), `${won(id).length} regiones`)).join("");
+      segs = ids.map(id => [id, D.ev[id]]); maj = D.need;
+    } else {
+      $("cards").innerHTML = `<div class="cards-h">Regiones ganadas · 1.ª vuelta</div>` + ids.map(id => card(candName(id), col(id), won(id).length, `${fmtP(popOf(won(id)) / P * 100, 0)} % de la población`)).join("");
+      segs = ids.map(id => [id, won(id).length]);
+    }
   } else if (!prop) {
     maj = M.threshold(st.election.rule, N);
     const simple = st.election.rule === "simple";
     const pl = id => cnt(id), ln = id => cnt("L:" + id), i = cnt("I");
     const neu = ids.reduce((a, id) => a + ln(id), 0) + i;
-    $("cards").innerHTML = ids.map(id => card(candName(id), col(id), pl(id), `${esc(pName(id))} · comprometidos · ${ln(id)} neutrales más se le inclinan`)).join("")
-      + card("Neutrales", col("I"), neu, ids.map(id => `${ln(id)} → ${esc(pName(id))}`).join(" · ") + ` · ${i} sin inclinación`);
+    $("cards").innerHTML = ids.map(id => card(candName(id), col(id), pl(id), ln(id) ? `+${ln(id)} inclinados` : esc(pName(id)))).join("")
+      + card("Neutrales", col("I"), neu, `${i} sin inclinación`);
     segs = ordC().map(k => [k, cnt(k)]);
     const byPl = [...ids].sort((a, b) => pl(b) + ln(b) - pl(a) - ln(a) || pl(b) - pl(a));
     const W = simple ? null : ids.find(id => pl(id) >= maj);
@@ -156,10 +192,10 @@ function board(E) {
       const tops = [...ids].sort((a, b) => pl(b) + ln(b) - pl(a) - ln(a));
       const a = tops[0], b = tops[1];
       const va = pl(a) + ln(a), vb = b ? pl(b) + ln(b) : 0;
-      verdict = va > vb ? [col(a), `${candName(a)} es elegido ${t.office.toLowerCase()}`, `Mayoría simple: ${va} votos (contando inclinaciones) frente a ${vb}.`]
+      verdict = va > vb ? [col(a), `${candName(a)} gana la elección a ${t.office.toLowerCase()}`, `Mayoría simple: ${va} votos (contando inclinaciones) frente a ${vb}.`]
         : [col("I"), `Empate: desempata ${chairName || t.chairTitle}`, `${candName(a)} y ${candName(b)} con ${va} votos cada uno.`];
       maj = null;
-    } else if (W) verdict = [col(W), `${candName(W)} es elegido ${t.office.toLowerCase()}`, `${pl(W)} comprometidos de ${N} (mayoría ${maj}).`];
+    } else if (W) verdict = [col(W), `${candName(W)} gana la elección a ${t.office.toLowerCase()}`, `${pl(W)} comprometidos de ${N} (mayoría ${maj}).`];
     else if (neu === 0 && ids.length === 2 && pl(byPl[0]) === pl(byPl[1])) verdict = [col("I"), `Empate: desempata ${chairName || t.chairTitle}`, chairName ? `${chairName} decide.` : "Decide quien presida."];
     else {
       const L = ids.find(id => pl(id) + ln(id) >= maj);
@@ -202,70 +238,27 @@ function board(E) {
     sub.push(`Sí esperados sumando probabilidades: <span class="num">${exp.toFixed(1)}</span>`);
     sub.push(`Promotor: ${prop.sponsor ? esc(pName(prop.sponsor)) + "; su partido tiende a votar en bloque" : "ninguno (sin disciplina de partido)"}.`);
   }
-  if (!E.direct || E.direct.method !== "college") { $("capTotal").textContent = N; $("capMaj").textContent = maj ?? "—"; }
-  $("capWord").textContent = `${E.direct?.method === "college" ? "votos electorales" : t.members} · umbral`;
+  $("capTotal").textContent = N; $("capMaj").textContent = maj ?? "—";
+  $("capWord").textContent = `${t.members} · umbral`;
   $("verdict").innerHTML = `<span class="dot" style="background:${verdict[0]}"></span><div><strong>${esc(verdict[1])}</strong><span>${esc(verdict[2])}</span></div>`;
   const total = segs.reduce((a, [, c]) => a + c, 0) || 1;
-  $("mbar").innerHTML = segs.filter(([, c]) => c).map(([k, c]) => `<div style="width:${c / total * 100}%;background:${col(k)}" data-tip="${esc((byParty(E) ? (E.direct ? candName(k) : labN(k)) : prop ? LAB_P[k] : labC(k)) + ": " + fmtP(c, 0))}"></div>`).join("");
+  $("mbar").innerHTML = segs.filter(([, c]) => c).map(([k, c]) => `<div style="width:${c / total * 100}%;background:${col(k)}" data-tip="${esc((E.direct ? candName(k) : byParty(E) ? labN(k) : prop ? LAB_P[k] : labC(k)) + ": " + fmtP(c, 0))}"></div>`).join("");
   const tick = $("mtick");
-  if (maj && !(E.direct && E.direct.method !== "college")) { tick.style.display = ""; tick.style.left = `calc(${maj / total * 100}% - 1px)`; tick.dataset.label = `${maj}`; }
+  if (maj) { tick.style.display = ""; tick.style.left = `calc(${maj / total * 100}% - 1px)`; tick.dataset.label = `${maj}`; }
   else tick.style.display = "none";
-  $("subline").innerHTML = sub.map(s => `<div>${s}</div>`).join("");
-  hemicycle(R, !!prop, byParty(E));
+  /* lo primero a la vista; el resto, plegado en «Detalles» (se recuerda si estaba abierto) */
+  const was = !!$("subline").querySelector("details[open]");
+  $("subline").innerHTML = (sub[0] ? `<div>${sub[0]}</div>` : "")
+    + (sub.length > 1 ? `<details${was ? " open" : ""}><summary>Detalles</summary>${sub.slice(1).map(s => `<div>${s}</div>`).join("")}</details>` : "");
+  /* elección directa: las vueltas ocupan el sitio del hemiciclo */
+  const showRounds = !!E.direct;
+  $("hemi").toggleAttribute("hidden", showRounds); document.querySelector(".hemi-caption").hidden = showRounds; $("rviz").hidden = !showRounds;
+  if (showRounds) roundsViz(E.direct); else hemicycle(R, !!prop, byParty(E));
 }
 
-/* ---------- Lectura del máster ---------- */
-function topAxes(c) {
-  const idx = c.map((x, d) => [x, d]).filter(([x]) => Math.abs(x) > 0.01).sort((a, b) => Math.abs(b[0]) - Math.abs(a[0]));
-  return idx.slice(0, 2).map(([x, d]) => `${x > 0 ? "+" : "−"} ${AX()[d].k}`).join(" · ");
-}
-function whyCand(v, r) {
-  if (!r.second) return "";
-  const A = party(r.top).pos, B = party(r.second).pos;
-  const c = v.pos.map((x, d) => (v.w?.[d] ?? 1) * ((x - B[d]) ** 2 - (x - A[d]) ** 2) / 100);
-  return c.map((x, d) => [x, d]).sort((a, b) => Math.abs(b[0]) - Math.abs(a[0])).slice(0, 2)
-    .map(([x, d]) => `${AX()[d].k} → ${pName(x > 0 ? r.top : r.second)}`).join(" · ");
-}
 const slateLabel = v => v.kind === "n" ? `${T().national} · ${pName(v.pid)}` : `Lista ${pName(v.pid)} · ${v.bloc}`;
 const editBtn = v => `<button class="link" data-edit="${esc(v.key)}">${esc(v.kind === "e" ? v.name : slateLabel(v))}</button>`;
 function uniqBlocs(list) { const seen = new Set(); return list.filter(x => !seen.has(x.v.key) && seen.add(x.v.key)); }
-function insights(E) {
-  const { R, prop } = E;
-  $("ins").closest("section").hidden = !!E.none;
-  if (E.none) return;
-  const box = (title, items, empty) => `<div class="ibox"><h3>${esc(title)}</h3>${items.length ? `<ul>${items.join("")}</ul>` : `<div class="note">${esc(empty)}</div>`}</div>`;
-  if (E.direct) {
-    $("insNote").textContent = "Dónde se decide la elección directa: los distritos más reñidos y adónde van los votos de los eliminados.";
-    const ids = IDS();
-    const close = st.districts.map((d, di) => ({ d, di, e: M.shares(st, d) })).map(x => {
-      const r = [...ids].sort((a, b) => x.e[b] - x.e[a]);
-      return { ...x, a: r[0], b: r[1], m: x.e[r[0]] - (r[1] ? x.e[r[1]] : 0) };
-    }).sort((p, q) => p.m - q.m).slice(0, 8);
-    const cl = close.map(x => `<li><span>${esc(x.d.name)}<div class="why">${esc(candName(x.a))} sobre ${esc(x.b ? candName(x.b) : "nadie")} · ${x.d.el} escaños · ${fmtN(x.d.pop)} hab.</div></span><span class="num">${fmtP(x.m)} pts</span></li>`);
-    const D = E.direct, alive = D.rounds.length > 1 ? Object.keys(D.rounds[D.rounds.length - 1]) : [];
-    const tr = D.rounds.length > 1 ? ids.filter(id => !alive.includes(id) && D.votes[id] > 0).map(id => {
-      const t = M.transfer(st, id, alive);
-      return `<li><span>${esc(candName(id))}<div class="why">${alive.map(a => `${esc(pName(a))} ${pct(t[a])}`).join(" · ")}</div></span><span class="num">${fmtN(D.votes[id])}</span></li>`;
-    }) : [];
-    $("ins").innerHTML = box("Distritos más reñidos", cl, "No hay distritos.") + box("Transferencias de los eliminados", tr, "No hizo falta transferir votos.");
-    return;
-  }
-  if (!prop) {
-    $("insNote").textContent = "Quién está en juego y dónde hay grietas entre el compromiso de cada miembro y lo que su ideología le pide.";
-    const free = uniqBlocs(R.filter(x => !x.r.locked)).sort((a, b) => IDS().indexOf(a.r.top) - IDS().indexOf(b.r.top) || b.r.prob - a.r.prob);
-    const freeL = free.map(({ v, r }) => `<li><span>${editBtn(v)}<div class="why">${esc(whyCand(v, r))}</div></span><span class="chip">${sw(col(M.leanCls(r.model)))}${r.model === "I" ? "Sin inclinación" : `Se inclina ${esc(pName(r.model))}`} · ${pct(r.prob)}</span></li>`);
-    const cracks = uniqBlocs(R.filter(x => x.r.locked && x.r.model !== x.r.locked)).sort((a, b) => a.r.probs[a.r.locked] - b.r.probs[b.r.locked]);
-    const crL = cracks.map(({ v, r }) => `<li><span>${editBtn(v)}<div class="why">Comprometido con ${esc(candName(r.locked))}; su ideología dice ${esc(r.model === "I" ? "duda" : candName(r.model))}</div></span><span class="num">${pct(r.probs[r.locked])} ${esc(pName(r.locked))}</span></li>`);
-    $("ins").innerHTML = box(`${cap(T().members)} libres y su inclinación`, freeL, `Todos los ${T().members} están comprometidos.`)
-      + box("Grietas: compromisos frente a ideología", crL, "Ningún comprometido tiene una ideología que le lleve a otro lado.");
-  } else {
-    $("insNote").textContent = "Los votos bisagra (los más cerca del 50 %) y qué ejes los empujan; y las líneas rojas que la propuesta pisa.";
-    const hinge = uniqBlocs(R.filter(x => !x.r.ov && !x.r.red)).sort((a, b) => Math.abs(a.r.prob - .5) - Math.abs(b.r.prob - .5)).slice(0, 10);
-    const hL = hinge.map(({ v, r }) => `<li><span>${editBtn(v)}<div class="why">${esc(topAxes(r.c) || "no le afecta")}${r.cue ? ` · partido ${fmt(r.cue)}` : ""}</div></span><span class="num">${pct(r.prob)} Sí</span></li>`);
-    const reds = uniqBlocs(R.filter(x => x.r.red && !x.r.ov)).map(({ v, r }) => `<li><span>${editBtn(v)}<div class="why">Línea roja: ${esc(AX()[r.red.ax].k)} hacia ${esc(r.red.dir > 0 ? AX()[r.red.ax].b : AX()[r.red.ax].a)}</div></span><span class="flag">No</span></li>`);
-    $("ins").innerHTML = box("Votos bisagra", hL, "No hay votos en juego.") + box("Líneas rojas activadas", reds, "La propuesta no pisa ninguna línea roja.");
-  }
-}
 
 /* ---------- Mapa ---------- */
 function mapView(E) {
@@ -276,10 +269,8 @@ function mapView(E) {
   s += `<text x="50" y="420" font-size="12" fill="var(--muted)">← ${esc(A[X].a)}</text><text x="410" y="420" font-size="12" fill="var(--muted)" text-anchor="end">${esc(A[X].b)} →</text>`;
   s += `<text x="16" y="400" font-size="12" fill="var(--muted)" transform="rotate(-90 16 400)">← ${esc(A[Y].a)}</text><text x="16" y="40" font-size="12" fill="var(--muted)" transform="rotate(-90 16 40)" text-anchor="end">${esc(A[Y].b)} →</text>`;
   const marks = [], under = [];
-  if (st.mapDist === "centers") st.districts.forEach(d => {
-    const x = sx(d.center[X]), y = sy(d.center[Y]), r = (d.spread ?? 4) / 20 * 360;
-    under.push(`<ellipse cx="${x}" cy="${y}" rx="${r}" ry="${r}" fill="var(--brass)" fill-opacity=".05" stroke="var(--brass)" stroke-opacity=".35" stroke-dasharray="3 3"/><text x="${x}" y="${y - 4}" font-size="9" text-anchor="middle" fill="var(--brass)" pointer-events="none">${esc(d.name)}</text>`);
-  });
+  const dm = mapMode();
+  const showMembers = dm !== "dist", showDist = dm !== "members";
   if (prop) {
     const t = prop.t.map((v, d) => v == null ? st.sq[d] : v);
     marks.push(`<line x1="${sx(st.sq[X])}" y1="${sy(st.sq[Y])}" x2="${sx(t[X])}" y2="${sy(t[Y])}" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="4 3"/>`);
@@ -300,7 +291,40 @@ function mapView(E) {
   const short = v => mode === "full" ? v.name : surCount[sur(v.name)] > 1 ? `${v.name.trim()[0]}. ${sur(v.name)}` : sur(v.name);
   const label = (x, y, t, anchor = "start") => labs.push(`<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="${anchor}" font-size="9.5" fill="var(--ink)" stroke="var(--surface)" stroke-width="3" paint-order="stroke" stroke-linejoin="round" pointer-events="none">${esc(t)}</text>`);
   const seatsOf = key => R.filter(x => x.v.key === key).length;
-  uniqBlocs(R).forEach(({ v, r }) => {
+  /* las circunscripciones: dónde están, qué dan y cuánto falta para que cambie un escaño */
+  const swings = [], dlabs = [];
+  const maxPop = Math.max(1, ...st.districts.map(d => d.pop || 0));
+  if (showDist && E.direct) E.ch.dres.forEach((res, di) => {
+    /* elección presidencial: cada región es un pastel de sus votantes (voto válido), del tamaño de su población */
+    const d = st.districts[di], p = districtPos(d, res), ids = IDS(), valid = ids.reduce((a, id) => a + res.e[id], 0) || 1;
+    const x = sx(p[X]) + jit("d" + di, 6), y = sy(p[Y]) + jit("e" + di, 6), rad = 5 + Math.sqrt((d.pop || 0) / maxPop) * 13;
+    const votes = [...ids].sort((a, b) => res.e[b] - res.e[a]).map(id => `${candName(id)} ${fmtP(res.e[id] / valid * 100)} %`).join(", ");
+    const tip = `${d.name}${d.desc ? ` — ${d.desc}` : ""} · ${fmtN(d.pop || 0)} hab. · participación ${fmtP(100 - res.e.I)} % · ${votes}${isCollege() ? ` · ${d.el} votos electorales` : ""}`;
+    pts.push(`<g class="pt dpt" data-dist="${di}" data-tip="${esc(tip)}">` + pie(x, y, rad, ids.map(id => [col(id), res.e[id]]))
+      + `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rad.toFixed(1)}" fill="none" stroke="var(--surface)" stroke-width="1.5"/></g>`);
+    if (mode !== "off") dlabs.push(`<text x="${x.toFixed(1)}" y="${(y + rad + 9).toFixed(1)}" text-anchor="middle" font-size="8.5" fill="var(--muted)" stroke="var(--surface)" stroke-width="2.5" paint-order="stroke" pointer-events="none">${esc(mode === "full" ? d.name : d.name.split(" — ").pop())}</text>`);
+  });
+  else if (showDist) E.ch.dres.forEach((res, di) => {
+    const d = st.districts[di], p = districtPos(d, res), n = d.el | 0;
+    const x = sx(p[X]) + jit("d" + di, 6), y = sy(p[Y]) + jit("e" + di, 6), rad = 5 + Math.sqrt(Math.max(1, n)) * 2.4;
+    const sw = districtSwing(d, res, E.ch.natShare);
+    if (sw) swings.push({ di, d, sw });
+    const hot = sw && sw.pts < SWING_PTS;
+    const ids = IDS(), valid = ids.reduce((a, id) => a + res.e[id], 0) || 1;
+    const split = ids.filter(id => res.seatsBy[id]).map(id => `${pName(id)} ${res.seatsBy[id]}`).join(", ") || "sin escaños";
+    const votes = [...ids].sort((a, b) => res.e[b] - res.e[a]).slice(0, 3).map(id => `${pName(id)} ${fmtP(res.e[id] / valid * 100)} %`).join(", ");
+    const tip = `${d.name}${d.desc ? ` — ${d.desc}` : ""} · ${n} escaño${n === 1 ? "" : "s"} (${methodName(res.method)}) · ${split} · votos: ${votes}`
+      + (sw ? ` · ${sw.kind === "pr" ? "el último escaño" : n > 1 ? "los escaños" : "el escaño"} cambia${sw.kind !== "pr" && n > 1 ? "n" : ""} si ${pName(sw.challenger)} gana ${fmtP(sw.pts)} pts` : "");
+    pts.push(`<g class="pt dpt" data-dist="${di}" data-tip="${esc(tip)}">`
+      + (hot ? `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(rad + 4).toFixed(1)}" fill="none" stroke="${col(sw.challenger)}" stroke-width="${(1.2 + (SWING_PTS - sw.pts) * 0.8).toFixed(2)}" stroke-dasharray="3 2"/>` : "")
+      + pie(x, y, rad, ids.map(id => [col(id), res.seatsBy[id]]))
+      + `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${rad.toFixed(1)}" fill="none" stroke="var(--surface)" stroke-width="1.5"/>`
+      + (n > 1 ? `<text x="${x.toFixed(1)}" y="${(y + 3.5).toFixed(1)}" font-size="10" text-anchor="middle" fill="#fff" stroke="#000" stroke-width="2" paint-order="stroke" font-family="var(--font-data)">${n}</text>` : "")
+      + `</g>`);
+    if (mode !== "off") dlabs.push(`<text x="${x.toFixed(1)}" y="${(y + rad + 9).toFixed(1)}" text-anchor="middle" font-size="8.5" fill="var(--muted)" stroke="var(--surface)" stroke-width="2.5" paint-order="stroke" pointer-events="none">${esc(mode === "full" ? d.name : d.name.split(" — ").pop())}</text>`);
+  });
+  /* (las listas elegidas no se dibujan: sus distritos ya están en el mapa como circunscripciones) */
+  if (showMembers) R.filter(x => x.v.kind === "e").forEach(({ v, r }) => {
     const x = sx(v.pos[X]), y = sy(v.pos[Y]);
     const lab = byParty(E) ? labN(r.cls) : prop ? LAB_P[r.cls] : labC(r.cls);
     if (v.kind !== "e") {
@@ -313,71 +337,148 @@ function mapView(E) {
       pts.push(`<circle class="pt" cx="${jx.toFixed(1)}" cy="${jy.toFixed(1)}" r="4.6" fill="${col(r.cls)}" stroke="var(--surface)" stroke-width="1" data-edit="${esc(v.key)}" data-tip="${esc(`${v.name} · ${v.bloc} · ${lab} (${A[X].k} ${v.pos[X]}, ${A[Y].k} ${v.pos[Y]})`)}"/>`);
     }
   });
-  $("map").innerHTML = s + under.join("") + pts.join("") + marks.join("") + labs.join("");
+  $("mapIntro").textContent = E.direct ? "Elige dos ejes. Cada pastel es una región en su centro ideológico: cómo vota y, por su tamaño, cuánta gente vive allí. Pulsa una para ir a su distrito."
+    : "Elige dos ejes. Cada punto pequeño es un miembro designado; cada pastel es una circunscripción en su centro ideológico, con los escaños que reparte (el número) y un anillo si está disputada. Pulsa un punto para editarlo o ir a su distrito.";
+  $("map").innerHTML = s + under.join("") + pts.join("") + marks.join("") + dlabs.join("") + labs.join("");
   const items = prop ? [["Y", "Sí"], ["N", "No"], ["A", "En duda"]]
     : byParty(E) ? ordC().map(k => [k, labN(k)])
     : ordC().map(k => [k, k === "I" ? "Neutral" : k.startsWith("L:") ? `Neutral → ${candName(k.slice(2))}` : `${candName(k)} (comprometido)`]);
-  $("mapLegend").innerHTML = items.map(([k, l]) => `<div>${sw(col(k))}${esc(l)}</div>`).join("")
+  const dLegend = showDist && E.direct ? `<div class="dleg">${IDS().map(id => `<span>${sw(col(id))}${esc(candName(id))}</span>`).join("")}</div>
+      <div class="note">◔ Cada región, en su centro ideológico: el pastel es su voto y el tamaño, su población.</div>`
+    : showDist ? `<div class="dleg">${IDS().map(id => `<span>${sw(col(id))}${esc(pName(id))}</span>`).join("")}</div>
+      <div class="note">◔ Cada circunscripción, en su centro ideológico: el pastel son sus escaños y el tamaño, cuántos reparte. Anillo discontinuo: un escaño cambia de manos con menos de ${SWING_PTS} puntos (en el color del aspirante).</div>`
+    + (swings.length ? `<div class="swl"><b>Más disputadas</b>${[...swings].sort((a, b) => a.sw.pts - b.sw.pts).slice(0, 8).map(({ di, d, sw: s }) =>
+        `<button class="link" data-dist="${di}" data-tip="${esc(`${pName(s.holder)} → ${pName(s.challenger)}`)}">${sw(col(s.challenger))}${esc(d.name)} <span class="num">${fmtP(s.pts)} pts</span></button>`).join("")}</div>` : "") : "";
+  $("mapLegend").innerHTML = (showMembers ? items.map(([k, l]) => `<div>${sw(col(k))}${esc(l)}</div>`).join("") : "") + dLegend
     + (prop ? `<div><span style="color:var(--brass)">★</span> Propuesta · □ statu quo</div>` : `<div>◆ Candidatos · □ statu quo</div>`);
 }
 
+/* ---------- Circunscripciones en el mapa ---------- */
+const SWING_PTS = 3;
+/* Su punto en los ejes: el centro si su voto es ideológico; si se escribe a mano, la media de las listas pesada por el voto */
+function districtPos(d, res) {
+  if (d.mode === "ideo") return d.center;
+  const ids = IDS(), tot = ids.reduce((a, id) => a + res.e[id], 0);
+  return AX().map((_, k) => tot ? ids.reduce((a, id) => a + res.e[id] * (d.slates[id]?.pos[k] ?? party(id).pos[k]), 0) / tot : 0);
+}
+/* Lo cerca que está de cambiar un escaño: puntos de voto (sobre los válidos) que necesita el aspirante.
+   Mayoritario: la mitad de la ventaja del primero. Dos vueltas: la de la segunda vuelta.
+   Proporcional: lo que le falta al siguiente partido para quitar el último escaño. */
+function districtSwing(d, res, natShare) {
+  const ids = IDS(), votes = M.districtVotes(st, d, res.e, natShare), V = ids.reduce((a, id) => a + votes[id], 0);
+  if (!V || !(d.el > 0)) return null;
+  const pc = x => Math.max(0, x) / V * 100, m = res.method;
+  if (M.DIVISORS[m] && m !== "wta") {
+    const div = M.DIVISORS[m];
+    let holder = null, last = Infinity;
+    ids.forEach(id => { const s = res.seatsBy[id]; if (s > 0 && votes[id] / div(s - 1) < last) { last = votes[id] / div(s - 1); holder = id; } });
+    let ch = null, need = Infinity;
+    ids.forEach(id => { if (id === holder) return; const n = last * div(res.seatsBy[id]) - votes[id]; if (n < need) { need = n; ch = id; } });
+    return holder && ch ? { holder, challenger: ch, pts: pc(need), kind: "pr" } : null;
+  }
+  if (m === "hare" || m === "droop") {
+    const q = m === "droop" ? Math.floor(V / (d.el + 1)) + 1 : V / d.el;
+    const full = id => Math.floor(votes[id] / q), rem = id => votes[id] - full(id) * q;
+    const won = ids.filter(id => res.seatsBy[id] > full(id)), lost = ids.filter(id => res.seatsBy[id] <= full(id) && votes[id] > 0);
+    if (!won.length || !lost.length) return null;
+    const h = won.reduce((a, id) => rem(id) < rem(a) ? id : a), c = lost.reduce((a, id) => rem(id) > rem(a) ? id : a);
+    return { holder: h, challenger: c, pts: pc(rem(h) - rem(c)), kind: "pr" };
+  }
+  if (res.rounds?.length > 1) {
+    const r2 = res.rounds[1], [a, b] = Object.keys(r2), T2 = r2[a] + r2[b], w = r2[a] >= r2[b] ? a : b;
+    return { holder: w, challenger: w === a ? b : a, pts: Math.abs(r2[a] - r2[b]) / 2 / T2 * 100, kind: "maj" };
+  }
+  const [a, b] = [...ids].sort((x, y) => votes[y] - votes[x]);
+  if (!b || !votes[b]) return null;
+  return { holder: a, challenger: b, pts: pc((votes[a] - votes[b]) / 2), kind: "maj" };
+}
+function pie(cx, cy, r, parts) {
+  const on = parts.filter(([, n]) => n > 0), T_ = on.reduce((a, [, n]) => a + n, 0);
+  if (!T_) return `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${r.toFixed(1)}" fill="var(--surface)" stroke="var(--muted)" stroke-dasharray="2 2"/>`;
+  if (on.length === 1) return `<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${r.toFixed(1)}" fill="${on[0][0]}"/>`;
+  let a0 = -Math.PI / 2;
+  return on.map(([c, n]) => {
+    const a1 = a0 + n / T_ * 2 * Math.PI, big = a1 - a0 > Math.PI ? 1 : 0;
+    const path = `M${cx.toFixed(1)},${cy.toFixed(1)} L${(cx + r * Math.cos(a0)).toFixed(2)},${(cy + r * Math.sin(a0)).toFixed(2)} A${r.toFixed(1)},${r.toFixed(1)} 0 ${big} 1 ${(cx + r * Math.cos(a1)).toFixed(2)},${(cy + r * Math.sin(a1)).toFixed(2)}Z`;
+    a0 = a1;
+    return `<path d="${path}" fill="${c}"/>`;
+  }).join("");
+}
+/* Pulsar una circunscripción (en el mapa o en la lista): su fila de distritos */
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-dist]"); if (!b) return;
+  openDistrict(+b.dataset.dist);
+  const row = $("drow-" + b.dataset.dist); if (!row) return;
+  row.scrollIntoView({ behavior: "smooth", block: "center" });
+  row.classList.remove("flash"); void row.offsetWidth; row.classList.add("flash");
+});
+
 /* ---------- Bloques ---------- */
 function blocNames(R) {
-  const names = [...st.bodies, ...st.districts.map(d => d.name), T().national];
-  const extra = [...new Set(R.map(x => x.v.bloc))].filter(b => !names.includes(b));
-  return [...names, ...extra];
+  const used = new Set(R.filter(x => x.v.kind === "e").map(x => x.v.bloc));
+  return [...st.bodies.filter(b => used.has(b)), ...[...used].filter(b => !st.bodies.includes(b))];
 }
-function blocs(E) {
-  const { R, prop, ch } = E;
-  const distLab = b => {
-    const di = st.districts.findIndex(x => x.name === b); if (di < 0) return esc(b);
-    const res = ch.dres[di];
-    return `${esc(b)} <span class="muted">· ${res.winners.length ? res.winners.map(id => `${esc(pName(id))} ${res.seatsBy[id]}`).join(", ") : "sin escaños"}</span>`;
-  };
-  if (byParty(E)) {
-    const tint = m => `background:color-mix(in srgb, var(--brass) ${Math.round(Math.abs(m) * 3.5)}%, transparent)`;
-    const row = (lab, rows) => {
-      const mean = AX().map((_, d) => rows.reduce((a, x) => a + x.v.pos[d], 0) / rows.length);
-      return `<tr><td>${lab}</td><td class="c num">${rows.length}</td>${mean.map(m => `<td class="c num" style="${tint(m)}">${fmt(m)}</td>`).join("")}</tr>`;
-    };
-    $("blocHead").innerHTML = `<tr><th>Bloque</th><th class="c">Escaños</th>${AX().map(a => `<th class="c" data-tip="${esc(`− ${a.a} · + ${a.b}`)}">${esc(a.k)}</th>`).join("")}</tr>`;
-    $("blocBody").innerHTML = blocNames(R).map(b => { const rows = R.filter(x => x.v.bloc === b); return rows.length ? row(distLab(b), rows) : ""; }).join("")
-      + [...st.parties.map(p => [p.id, p.name]), ["N", "sin partido"]].map(([k, l]) => { const rows = R.filter(x => k === "N" ? !party(x.v.party) : x.v.party === k); return rows.length ? row(`<strong>Todos: ${esc(l)}</strong>`, rows) : ""; }).join("")
-      + (R.length ? row(`<strong>${esc(T().chamber)} entero</strong>`, R) : "");
-    return;
-  }
-  const keys = prop ? ["Y", "A", "N"] : ordC();
-  $("blocHead").innerHTML = `<tr><th>Bloque</th><th class="c">Escaños</th>${keys.map(k => `<th class="c">${sw(col(k), false)} ${esc(prop ? LAB_P[k] : shortC(k))}</th>`).join("")}<th>Reparto</th>${prop ? `<th class="c">P(Sí) media</th>` : ""}</tr>`;
-  $("blocBody").innerHTML = blocNames(R).map(b => {
-    const rows = R.filter(x => x.v.bloc === b); if (!rows.length) return "";
-    const c = k => rows.filter(x => x.r.cls === k).length;
-    const mean = rows.reduce((a, x) => a + x.r.prob, 0) / rows.length;
-    return `<tr><td>${distLab(b)}</td><td class="c num">${rows.length}</td>${keys.map(k => `<td class="c num">${c(k) || `<span class="muted">·</span>`}</td>`).join("")}<td><div class="sbar">${keys.map(k => `<div style="width:${c(k) / rows.length * 100}%;background:${col(k)}"></div>`).join("")}</div></td>${prop ? `<td class="c num">${pct(mean)}</td>` : ""}</tr>`;
+/* Con una propuesta: los pactos de las listas elegidas (todos sus escaños votan igual) */
+function listPacts(E) {
+  const box = $("listPacts"), p = E.prop;
+  if (!p) { box.hidden = true; box.innerHTML = ""; return; }
+  const lists = uniqBlocs(E.R.filter(x => x.v.kind !== "e"));
+  box.hidden = !lists.length;
+  const n = key => E.R.filter(x => x.v.key === key).length;
+  box.innerHTML = `<span class="lab">Pactos con listas</span>` + lists.map(({ v, r }) => {
+    const ov = p.ov[v.key];
+    return `<button class="ovb lp${ov ? " on" : ""}" data-ov="${esc(v.key)}" data-tip="${esc(`${slateLabel(v)} · ${n(v.key)} escaños · ${pct(r.prob)} Sí${ov ? " · pacto" : ""}`)}">${sw(col(v.pid), false)}${esc(v.kind === "n" ? T().national : v.bloc)} <span class="num">${n(v.key)}</span> · ${ov ? (ov === "A" ? "Abst." : LAB_P[ov]) : `<span class="muted">${LAB_P[r.cls]}</span>`}</button>`;
   }).join("");
 }
 
 /* ---------- Miembros ---------- */
+const emptyRoll = () => st.electors.length ? "Nadie coincide con el filtro."
+  : `Esta cámara no tiene ${T().members} designados: todos sus escaños son elegidos (están en «Distritos»).`;
+/* Solo los designados se quitan aquí: los escaños elegidos salen de los distritos */
+const delCell = v => v.kind === "e"
+  ? `<td class="c"><button class="x eldel" data-eldel="${v.id}" title="Quitar a ${esc(v.name)} de la cámara" aria-label="Quitar a ${esc(v.name)}">×</button></td>`
+  : `<td></td>`;
+function removeElector(id) {
+  st.electors = st.electors.filter(x => x.id !== id);
+  st.proposals.forEach(p => delete p.ov["e" + id]);
+  if (st.chair === "e" + id) st.chair = "";
+  lastProp = null; buildSystem(); update();
+}
+let rowDelArmed = null;
+$("rollBody").addEventListener("click", e => {
+  const b = e.target.closest("[data-eldel]"); if (!b) return;
+  e.stopPropagation();
+  const id = +b.dataset.eldel;
+  if (rowDelArmed !== id) {
+    rowDelArmed = id; b.textContent = "¿Quitar?"; b.classList.add("armed");
+    setTimeout(() => { if (rowDelArmed === id) { rowDelArmed = null; update(); } }, 3000);
+    return;
+  }
+  rowDelArmed = null;
+  removeElector(id);
+});
 function roll(E) {
   const { R, prop } = E;
   const fb = $("fBloc").value, fr = $("fRes").value, ft = $("fText").value.trim().toLowerCase();
-  const rows = uniqBlocs(R).filter(({ v, r }) => (!fb || v.bloc === fb) && (!fr || r.cls === fr) && (!ft || (v.name + " " + v.role).toLowerCase().includes(ft)));
+  const rows = R.filter(({ v, r }) => v.kind === "e" && (!fb || v.bloc === fb) && (!fr || r.cls === fr) && (!ft || (v.name + " " + v.role).toLowerCase().includes(ft)));
+  listPacts(E);
   const seatsOf = key => R.filter(x => x.v.key === key).length;
   const who = v => v.kind !== "e"
     ? `<button class="link" data-edit="${esc(v.key)}">${esc(slateLabel(v))}</button><small>${seatsOf(v.key)} escaños · votan en bloque</small>`
     : `<button class="link" data-edit="${esc(v.key)}">${esc(v.name)}</button><small>${esc(v.role)}</small>`;
   const partyDot = v => party(v.party) ? `<span class="sw" style="background:${col(v.party)};border-radius:50%" data-tip="${esc(pName(v.party))} · lealtad ${pct(v.loyalty)}"></span>` : `<span class="muted">—</span>`;
   if (byParty(E)) {
-    $("rollNote").textContent = `Posición de cada ${T().member} en los ejes (− primer polo, + segundo polo). Pulsa un nombre para editarlo.`;
-    $("rollHead").innerHTML = `<tr><th>${esc(cap(T().member))}</th><th>Bloque</th><th class="c">Partido</th>${AX().map(a => `<th class="c" data-tip="${esc(`− ${a.a} · + ${a.b}`)}">${esc(a.k)}</th>`).join("")}</tr>`;
+    $("rollNote").textContent = `Los ${T().members} designados y su posición en los ejes (− primer polo, + segundo polo). Pulsa un nombre para editarlo; los escaños elegidos están en «Distritos».`;
+    $("rollHead").innerHTML = `<tr><th>${esc(cap(T().member))}</th><th>Bloque</th><th class="c">Partido</th>${AX().map(a => `<th class="c" data-tip="${esc(`− ${a.a} · + ${a.b}`)}">${esc(a.k)}</th>`).join("")}<th></th></tr>`;
     const tint = m => `background:color-mix(in srgb, var(--brass) ${Math.round(Math.abs(m) * 3.5)}%, transparent)`;
-    $("rollBody").innerHTML = rows.map(({ v, r }) => `<tr><td class="who">${who(v)}</td><td>${esc(v.bloc)}</td><td class="c"><span class="sw" style="background:${col(r.cls)};border-radius:50%" data-tip="${esc(labN(r.cls))}"></span></td>${v.pos.map((x, d) => `<td class="c num" style="${tint(x)}" data-tip="${esc(`${AX()[d].k}: ${x > 0 ? AX()[d].b : x < 0 ? AX()[d].a : "centro"} · peso ${v.w?.[d] ?? 1}`)}">${x > 0 ? "+" + x : x}</td>`).join("")}</tr>`).join("")
-      || `<tr><td colspan="${3 + AX().length}" class="muted">Nadie coincide con el filtro.</td></tr>`;
+    $("rollBody").innerHTML = rows.map(({ v, r }) => `<tr><td class="who">${who(v)}</td><td>${esc(v.bloc)}</td><td class="c"><span class="sw" style="background:${col(r.cls)};border-radius:50%" data-tip="${esc(labN(r.cls))}"></span></td>${v.pos.map((x, d) => `<td class="c num" style="${tint(x)}" data-tip="${esc(`${AX()[d].k}: ${x > 0 ? AX()[d].b : x < 0 ? AX()[d].a : "centro"} · peso ${v.w?.[d] ?? 1}`)}">${x > 0 ? "+" + x : x}</td>`).join("")}${delCell(v)}</tr>`).join("")
+      || `<tr><td colspan="${4 + AX().length}" class="muted">${emptyRoll()}</td></tr>`;
     return;
   }
   $("rollNote").textContent = prop
-    ? "Pulsa «Pacto» para forzar el voto de un miembro o de una lista entera en esta propuesta (sobornos, favores, órdenes)."
-    : "Las listas aparecen como una sola fila. Pulsa un nombre para editar su ideología.";
-  $("rollHead").innerHTML = `<tr><th>${esc(cap(T().member))}</th><th>Bloque</th><th class="c">Partido</th>${prop ? "" : `<th class="c">Compromiso</th>`}<th>${prop ? "P(Sí)" : "Inclinación"}</th><th>Resultado</th>${prop ? `<th class="c">Pacto</th>` : ""}</tr>`;
+    ? "Pulsa «Pacto» para forzar el voto de un miembro, o el de una lista entera arriba (sobornos, favores, órdenes)."
+    : `Los ${T().members} designados. Pulsa un nombre para editar su ideología; los escaños elegidos están en «Distritos».`;
+  $("rollHead").innerHTML = `<tr><th>${esc(cap(T().member))}</th><th>Bloque</th><th class="c">Partido</th>${prop ? "" : `<th class="c">Compromiso</th>`}<th>${prop ? "P(Sí)" : "Inclinación"}</th><th>Resultado</th>${prop ? `<th class="c">Pacto</th>` : ""}<th></th></tr>`;
   $("rollBody").innerHTML = rows.map(({ v, r }) => {
     const n = v.kind !== "e" ? seatsOf(v.key) : 1;
     const pledge = prop ? "" : `<td class="c">${v.pledge && party(v.pledge) ? `<span class="chip">${sw(col(v.pledge))}${esc(pName(v.pledge))}</span>` : `<span class="muted">libre</span>`}</td>`;
@@ -387,8 +488,8 @@ function roll(E) {
       : `<div class="row" style="flex-wrap:nowrap"><div class="pbar nomid"><div style="left:0;width:${p * 100}%;background:${col(r.top)}"></div></div><span class="num">${pct(p)} ${esc(pName(r.top))}</span></div>`;
     const res = `<span class="chip">${sw(col(r.cls))}${esc(prop ? LAB_P[r.cls] : labC(r.cls))}${n > 1 ? ` ×${n}` : ""}</span>${r.red ? ` <span class="flag" data-tip="Línea roja: ${esc(AX()[r.red.ax].k)}">⚑ línea roja</span>` : ""}${!prop && r.locked && r.model !== r.locked ? ` <span class="flag" data-tip="Su ideología le lleva a otro lado">grieta</span>` : ""}`;
     const ov = prop ? `<td class="c"><button class="ovb${r.ov ? " on" : ""}" data-ov="${esc(v.key)}">${r.ov ? (r.ov === "A" ? "Abst." : LAB_P[r.ov]) : "—"}</button></td>` : "";
-    return `<tr><td class="who">${who(v)}</td><td>${esc(v.bloc)}</td><td class="c">${partyDot(v)}</td>${pledge}<td>${bar}</td><td>${res}</td>${ov}</tr>`;
-  }).join("") || `<tr><td colspan="7" class="muted">Nadie coincide con el filtro.</td></tr>`;
+    return `<tr><td class="who">${who(v)}</td><td>${esc(v.bloc)}</td><td class="c">${partyDot(v)}</td>${pledge}<td>${bar}</td><td>${res}</td>${ov}${delCell(v)}</tr>`;
+  }).join("") || `<tr><td colspan="8" class="muted">${emptyRoll()}</td></tr>`;
 }
 function fillFilters(E) {
   const prop = curProp(), pm = st.mode === "none" || (!prop && st.election.kind === "direct");
@@ -405,20 +506,63 @@ function fillFilters(E) {
 
 /* ---------- Votación ---------- */
 function fillMode() {
-  const t = T(), direct = st.election.kind === "direct";
-  $("mode").innerHTML = `<option value="none">Sin votación: solo bloques y posiciones</option>`
-    + `<option value="cand">Elección de ${esc(t.office.toLowerCase())}${direct ? " (directa)" : ""}: ${esc(st.parties.map(p => p.cand).join(" · "))}</option>`
+  const t = T();
+  $("mode").innerHTML = `<option value="cand">Elección de ${esc(t.office.toLowerCase())}</option>`
+    + `<option value="none">Solo la cámara (sin votación)</option>`
     + (st.proposals.length ? `<optgroup label="Propuestas">${st.proposals.map(p => `<option value="${esc(p.id)}">${esc(p.name)}</option>`).join("")}</optgroup>` : "");
   $("mode").value = st.mode;
-  const p = curProp();
-  $("modeNote").textContent = p ? p.desc : st.mode === "none" ? `${cap(t.members)} y bloques situados en los ejes, sin ninguna votación.`
-    : direct ? `Elección directa por voto popular (${M.DIRECT_METHODS.find(m => m.id === st.election.direct)?.name.toLowerCase()}).`
-    : "Los comprometidos votan a su candidato; el resto, por ideología y promesas.";
-  $("clearMode").hidden = st.mode === "none";
+  $("mode").title = curProp()?.desc || "";
+  renderSysbar();
 }
+/* Arriba: parlamentaria o presidencial, y su variante */
+const PARL_VARIANTS = [
+  { id: "abs", rule: "abs", rounds: "single", label: "Mayoría absoluta", tip: "Hace falta la mitad más uno de la cámara; si nadie llega, hay que pactar." },
+  { id: "absrun", rule: "abs", rounds: "runoff", label: "Absoluta + 2.ª vuelta", tip: "Si nadie llega a la mitad más uno, segunda votación entre los dos primeros." },
+  { id: "simple", rule: "simple", rounds: "single", label: "Mayoría simple", tip: "Gana quien tenga más votos de la cámara." },
+  { id: "three5", rule: "three5", rounds: "single", label: "Tres quintos", tip: "Hacen falta 3/5 de la cámara." },
+  { id: "two3", rule: "two3", rounds: "single", label: "Dos tercios", tip: "Hacen falta 2/3 de la cámara." }
+];
+const PRES_VARIANTS = [
+  { id: "tworound", label: "Dos vueltas", tip: "Si nadie pasa del 50 %, segunda vuelta entre los dos más votados." },
+  { id: "plurality", label: "Mayoría simple", tip: "Gana el más votado, en una sola vuelta." },
+  { id: "irv", label: "Voto alternativo", tip: "Se elimina al último una y otra vez; sus votantes pasan a su siguiente preferencia." },
+  { id: "college", label: "Colegio electoral", tip: "Cada distrito da todos sus escaños de votos electorales al más votado allí." }
+];
+function renderSysbar() {
+  const el = st.election, t = T(), direct = el.kind === "direct", office = t.office.toLowerCase();
+  $("kindSubI").textContent = `la cámara elige ${office}`;
+  $("kindSubD").textContent = `el pueblo elige ${office}`;
+  $("kindSeg").querySelectorAll("[data-kind]").forEach(b => { const on = (b.dataset.kind === "direct") === direct; b.classList.toggle("on", on); b.setAttribute("aria-checked", String(on)); });
+  const cur = direct ? el.direct : (PARL_VARIANTS.find(v => v.rule === el.rule && (v.rule !== "abs" || v.rounds === (el.rounds || "single"))) || {}).id;
+  $("variantSeg").innerHTML = (direct ? PRES_VARIANTS : PARL_VARIANTS).map(v =>
+    `<button type="button" role="radio" class="chip${v.id === cur ? " on" : ""}" aria-checked="${v.id === cur}" data-variant="${v.id}" data-tip="${esc(v.tip)}">${esc(v.label)}</button>`).join("");
+  $("topSeatsF").hidden = presView();
+  $("topSeats").innerHTML = M.METHODS.map(m => opt(m.id, m.short, st.system.method)).join("");
+  $("topSeats").title = M.METHODS.find(m => m.id === st.system.method)?.hint || "";
+}
+function setElection(patch) {
+  Object.assign(st.election, patch);
+  if (!curProp()) st.mode = "cand";
+  lastProp = null; buildSystem(); buildDistricts(); fillMode(); update();
+}
+$("kindSeg").addEventListener("click", e => {
+  const b = e.target.closest("[data-kind]"); if (!b) return;
+  const direct = b.dataset.kind === "direct";
+  setElection(direct ? { kind: "direct", direct: st.election.direct || "tworound" } : { kind: "indirect", rule: st.election.rule || "abs" });
+});
+$("variantSeg").addEventListener("click", e => {
+  const b = e.target.closest("[data-variant]"); if (!b) return;
+  if (st.election.kind === "direct") setElection({ direct: b.dataset.variant });
+  else { const v = PARL_VARIANTS.find(x => x.id === b.dataset.variant); setElection({ rule: v.rule, rounds: v.rounds }); }
+});
+$("lede").addEventListener("click", () => { const L = $("lede"); if (L.classList.contains("long") || L.classList.contains("open")) L.classList.toggle("open"); });
+$("topSeats").addEventListener("change", e => { st.system.method = e.target.value; lastProp = null; buildSystem(); buildDistricts(); update(); });
 function header() {
   const t = T();
   $("eyebrow").textContent = t.eyebrow; $("title").textContent = t.title; $("lede").textContent = t.lede;
+  /* la introducción, plegada a dos líneas: clic para leerla entera */
+  const L = $("lede"); L.classList.add("clamp"); L.classList.remove("open");
+  requestAnimationFrame(() => { L.classList.toggle("long", L.scrollHeight > L.clientHeight + 2); });
   document.title = `${t.title} · Simulador electoral | Raldamain`;
 }
 
@@ -428,7 +572,7 @@ function update() {
   const E = lastE = evaluate();
   const mk = (E.none ? "none" : E.prop ? E.prop.id : "cand") + st.election.kind;
   if (lastProp !== mk) { fillFilters(E); lastProp = mk; }
-  board(E); insights(E); mapView(E); blocs(E); roll(E); updateDistricts(E); systemStats(E);
+  board(E); mapView(E); roll(E); updateDistricts(E); systemStats(E);
   store.set(KEY_CUR, st);
 }
 
@@ -518,10 +662,8 @@ $("dlgBody").addEventListener("click", e => {
   if (e.target.id === "elDel") {
     if (!delArmed) { e.target.textContent = "¿Seguro? Pulsa otra vez"; delArmed = setTimeout(() => { delArmed = null; if ($("elDel")) $("elDel").textContent = `Eliminar ${T().member}`; }, 3000); return; }
     clearTimeout(delArmed); delArmed = null;
-    st.electors = st.electors.filter(x => x !== obj);
-    st.proposals.forEach(p => delete p.ov["e" + obj.id]);
-    if (st.chair === "e" + obj.id) st.chair = "";
-    $("dlg").close(); dlgTarget = null; lastProp = null; buildSystem(); update();
+    $("dlg").close(); dlgTarget = null;
+    removeElector(obj.id);
   }
 });
 $("dlgClose").addEventListener("click", () => $("dlg").close());
@@ -566,14 +708,16 @@ function buildSystem() {
       <label class="field"><span>Método</span><select data-nat="method">${PR_METHODS.map(m => opt(m.id, m.short, n.method)).join("")}</select></label>
       <label class="field"><span>Tipo</span><select data-nat="mode">${opt("parallel", "Paralelo (aparte)", n.mode)}${opt("compensatory", "Compensatorio (corrige)", n.mode)}</select></label>
     </div>
-    <div class="note">Paralelo: los escaños nacionales se reparten aparte, según el voto total. Compensatorio: van a quien los distritos dejaron por debajo de su proporción (como el sistema alemán).</div>`;
+    <div class="note">Paralelo: los escaños nacionales se reparten aparte, según el voto total. Compensatorio: van a quien los distritos dejaron por debajo de su proporción (como el sistema alemán).</div>
+    <h3 style="margin-top:6px">Gerrymandering</h3>
+    <div class="inl">
+      <label class="field"><span>Quién traza los mapas</span><select data-sys="gerryBy"><option value="">Nadie (mapa neutral)</option>${st.parties.map(p => opt(p.id, p.name, s.gerryBy)).join("")}</select></label>
+      <label class="field"><span>Intensidad <b class="num" id="gerryVal">${s.gerryBy ? `${Math.round((s.gerry || 0) * 100)} %` : "—"}</b></span><input type="range" min="0" max="1" step="0.05" value="${s.gerry || 0}" data-sys="gerry" ${s.gerryBy ? "" : "disabled"}></label>
+    </div>
+    <div class="note">Solo en los distritos uninominales: quien traza las fronteras concentra a los votantes del rival en pocas circunscripciones y reparte los suyos para ganar muchas por poco. El voto no cambia; los escaños sí. Cada distrito puede tener su propio trazado.</div>`;
   const chairOpts = `<option value="">— nadie —</option>` + st.electors.map(e => opt("e" + e.id, `${e.name} (${e.role})`, st.chair)).join("");
   $("sysOffice").innerHTML = `<h3>Elección de ${esc(t.office.toLowerCase())}</h3>
-    <label class="field"><span>Quién elige</span><select data-el="kind">${opt("indirect", `La cámara (${t.chamber})`, el.kind)}${opt("direct", "El pueblo (elección directa)", el.kind)}</select></label>
-    ${el.kind === "direct" ? `<label class="field"><span>Sistema</span><select data-el="direct">${M.DIRECT_METHODS.map(m => opt(m.id, m.name, el.direct)).join("")}</select></label>
-      <div class="note">${el.direct === "college" ? "Cada distrito da todos sus escaños de votos electorales al candidato más votado allí. Hace falta la mitad más uno." : "Se suman los votos de todos los distritos (habitantes × porcentaje)."}</div>`
-    : `<label class="field"><span>Mayoría necesaria</span><select data-el="rule">${Object.entries(M.RULES).map(([k, l]) => opt(k, l, el.rule)).join("")}</select></label>
-      <label class="field"><span>Si nadie la alcanza</span><select data-el="rounds">${opt("single", "Sin segunda vuelta (hace falta pactar)", el.rounds)}${opt("runoff", "Segunda vuelta entre los dos primeros", el.rounds)}</select></label>`}
+    <div class="note">${el.kind === "direct" ? `Presidencial · ${esc(PRES_VARIANTS.find(v => v.id === el.direct)?.label || "")}` : `Parlamentaria · ${esc(M.RULES[el.rule] || "")}${el.rounds === "runoff" ? " + 2.ª vuelta" : ""}`} (se elige arriba).</div>
     <label class="field"><span>Desempata (${esc(t.chairTitle)})</span><select data-chair="1">${chairOpts}</select></label>
     <div class="note">El desempate también decide las propuestas por mayoría simple con empate.</div>`;
   const dSum = st.districts.reduce((a, d) => a + (d.el | 0), 0);
@@ -594,6 +738,24 @@ function buildSystem() {
     <div class="row"><button id="apportion" class="primary">Repartir por población</button></div>
     <div class="note">Reparte los escaños de distrito en proporción a los habitantes (resto mayor). ${per.length > 1 ? `Ahora el voto en el distrito más favorecido vale <b>${fmtP(ratio)}</b> veces el del menos favorecido.` : ""}</div>
     <div class="note">Los designados se añaden o quitan en «Miembros».</div>`;
+  /* presidencial: el reparto de escaños no decide nada (salvo los votos electorales del colegio) */
+  const direct = presView();
+  $("sysSeats").hidden = direct; $("sysHouse").hidden = direct && !isCollege();
+  $("cmpBox").hidden = direct; $("sysStats").hidden = direct;
+  renderSysbar();
+}
+/* Brecha de eficiencia de las circunscripciones uninominales, entre los dos partidos con más escaños en ellas */
+function egOf(results) {
+  const sp = results.filter(r => r && r.split); if (!sp.length) return null;
+  const seats = id => sp.reduce((a, r) => a + (r.seatsBy[id] || 0), 0);
+  const [a, b] = [...IDS()].sort((x, y) => seats(y) - seats(x));
+  if (!b) return null;
+  const g = M.efficiencyGap(sp, a, b);
+  return { fav: g >= 0 ? a : b, pts: Math.abs(g) };
+}
+function egStat(ch) {
+  const g = egOf(ch.dres); if (!g) return "";
+  return `<span data-tip="Votos desperdiciados (los del que pierde y los que le sobran al que gana) de un partido menos los del otro, entre todos los votos de las circunscripciones uninominales. Más de 7 puntos suele considerarse gerrymandering.">Brecha de eficiencia <b>${fmtP(g.pts, 1)} pts</b> a favor de ${esc(pName(g.fav))}</span>`;
 }
 function systemStats(E) {
   const { ch } = E, ids = IDS(), N = E.R.length;
@@ -602,7 +764,8 @@ function systemStats(E) {
   const maj = Math.floor(N / 2) + 1, big = [...ids].sort((a, b) => whole(b) - whole(a))[0];
   $("sysStats").innerHTML = `<span>Desproporcionalidad <b>${fmtP(ix.gallagher, 2)}</b></span><span>NEP votos <b>${fmtP(ix.enpV, 2)}</b></span><span>NEP escaños <b>${fmtP(ix.enpS, 2)}</b></span>`
     + (big ? `<span>Mayor partido: ${esc(pName(big))} <b>${whole(big)}</b> de ${N} (mayoría ${maj})</span>` : "")
-    + (ch.bonusTo ? `<span>Premio de mayoría: ${esc(pName(ch.bonusTo))} <b>+${ch.bSeats[ch.bonusTo]}</b></span>` : "");
+    + (ch.bonusTo ? `<span>Premio de mayoría: ${esc(pName(ch.bonusTo))} <b>+${ch.bSeats[ch.bonusTo]}</b></span>` : "")
+    + egStat(ch);
   /* comparación de sistemas */
   const appointed = id => st.electors.filter(e => e.party === id).length;
   const rows = M.METHODS.map(m => {
@@ -619,9 +782,10 @@ function systemStats(E) {
   const cell = (r, id) => { const V = Object.values(r).reduce((a, b) => a + b, 0); return r[id] == null ? `<td class="c out">—</td>` : `<td class="c num">${fmtN(r[id])} <span class="muted">${fmtP(V ? r[id] / V * 100 : 0)} %</span></td>`; };
   $("directBox").innerHTML = `<h3>Elección directa de ${esc(T().office.toLowerCase())}</h3><div class="tscroll"><table class="rounds"><thead><tr><th>Candidato</th>${head.map(h => `<th class="c">${esc(h)}</th>`).join("")}</tr></thead><tbody>${ids.map(id => `<tr><td>${sw(col(id))} ${esc(candName(id))} <span class="muted">· ${esc(pName(id))}</span>${D.win === id ? " <b>✓</b>" : ""}</td>${D.method === "college" ? `${cell(D.votes, id)}<td class="c num">${fmtP(D.ev[id])}</td>` : D.rounds.map(r => cell(r, id)).join("")}</tr>`).join("")}</tbody></table></div>`;
 }
+$("sysSeats").addEventListener("input", e => { if (e.target.dataset.sys === "gerry") $("gerryVal").textContent = `${Math.round(+e.target.value * 100)} %`; });
 $("sysSeats").addEventListener("change", e => {
   const t = e.target;
-  if (t.dataset.sys) { const k = t.dataset.sys; st.system[k] = ["threshold", "bonus"].includes(k) ? Math.max(0, +t.value || 0) : t.value; }
+  if (t.dataset.sys) { const k = t.dataset.sys; st.system[k] = ["threshold", "bonus"].includes(k) ? Math.max(0, +t.value || 0) : k === "gerry" ? +t.value : t.value; if (k === "gerryBy" && t.value && !st.system.gerry) st.system.gerry = 0.5; }
   else if (t.dataset.nat) { const k = t.dataset.nat; st.system.national[k] = ["seats", "threshold"].includes(k) ? Math.max(0, +t.value || 0) : t.value; }
   else return;
   lastProp = null; buildSystem(); buildDistricts(); update();
@@ -653,38 +817,73 @@ function buildSwing() {
         <input type="range" id="swPts" min="0" max="30" step="1" value="${st.swing.pts}" aria-label="Puntos de swing">
       </div>
     </div>
-    <div class="note">Mueve votos de un partido a otro en todos los distritos a la vez (también en los de voto ideológico).</div>`;
+    <div class="note">Mueve votos de un partido a otro en todos los distritos a la vez (también en los de voto ideológico).</div>
+    ${st.districts.some(d => d.group) ? `<div class="ctl"><label>Clasificación</label><select id="dGroupSel" class="ro-ok">${[["", "Todas"], ...[...new Set(st.districts.map(d => d.group || ""))].map(g => [g, g || "Sin clasificar"])].map(([v, l]) => opt(v, l, dGroupFilter)).join("")}</select></div>` : ""}`;
+}
+/* Los distritos abiertos (los demás muestran solo su resultado) y la clasificación que se ve */
+const openD = new Set();
+let dGroupFilter = "";
+function openDistrict(k, toggle = false) {
+  if (toggle && openD.has(k)) openD.delete(k); else openD.add(k);
+  buildDistricts(); update();
 }
 function buildDistricts() {
   buildSwing();
-  $("dlist").innerHTML = st.districts.map((d, k) => {
+  const groups = [...new Set(st.districts.map(d => d.group || ""))];
+  const useGroups = groups.some(g => g);
+  if (dGroupFilter && !groups.includes(dGroupFilter)) dGroupFilter = "";
+  const order = st.districts.map((d, k) => k).filter(k => !dGroupFilter || (st.districts[k].group || "") === dGroupFilter)
+    .sort((a, b) => useGroups ? groups.indexOf(st.districts[a].group || "") - groups.indexOf(st.districts[b].group || "") || a - b : a - b);
+  let lastGroup = null;
+  const direct = presView(), college = isCollege();
+  $("dlist").innerHTML = order.map(k => {
+    const d = st.districts[k];
+    let head = "";
+    if (useGroups && (d.group || "") !== lastGroup) {
+      lastGroup = d.group || "";
+      const inG = st.districts.filter(x => (x.group || "") === lastGroup);
+      head = `<div class="dgroup"><span class="gname">${esc(lastGroup || "Sin clasificar")}</span>${lastGroup ? `<button class="gren" data-gren="${esc(lastGroup)}" title="Cambiar el nombre de la clasificación (en todos sus distritos)" aria-label="Renombrar ${esc(lastGroup)}">✎</button>` : ""} <span class="muted">${inG.length} distritos${direct && !college ? "" : ` · ${inG.reduce((a, x) => a + (x.el | 0), 0)} ${college ? "votos electorales" : "escaños"}`} · ${fmtN(inG.reduce((a, x) => a + (x.pop || 0), 0))} hab.</span></div>`;
+    }
     const ideo = d.mode === "ideo";
+    const descBox = `<label class="dnote"><span>Descripción</span><textarea data-ddesc="${k}" rows="5" maxlength="1500" placeholder="Quién vive aquí, qué le importa, su historia electoral…">${esc(d.desc || "")}</textarea></label>`;
     const inputs = ideo
       ? `<div class="ideo">
-          <div class="sl"><span class="lbl"><span>Participación</span></span><input type="range" min="0" max="100" value="${d.turnout}" data-dturn="${k}"><span class="num" id="dturn-${k}">${d.turnout}%</span></div>
-          <div class="sl"><span class="lbl"><span>Dispersión</span></span><input type="range" min="0.5" max="10" step="0.5" value="${d.spread}" data-dspread="${k}"><span class="num" id="dspread-${k}">${d.spread}</span></div>
-          ${AX().map((a, x) => `<div class="axrow"><span class="a">${esc(a.a)}</span><input type="range" min="-10" max="10" step="1" value="${d.center[x]}" data-dc="${k}" data-x="${x}" aria-label="Centro de ${esc(d.name)}: ${esc(a.k)}"><span class="b">${esc(a.b)}</span><span class="num" id="dc-${k}-${x}">${d.center[x]}</span></div>`).join("")}
+          <div class="sl"><span class="lbl" title="Cuánto tiende a votar este distrito, de 0 (nadie) a 10 (todos), si tuviera un partido cerca y sin escándalos: alfabetización, confianza en las instituciones, acceso a las urnas. La participación real sale de aquí y aparece en el resultado."><span>Participación base</span></span><input type="range" min="0" max="10" step="0.1" value="${(d.turnout / 10).toFixed(1)}" data-dturn="${k}"><span class="num" id="dturn-${k}">${(d.turnout / 10).toFixed(1)}</span></div>
+          <div class="sl"><span class="lbl" title="Lo repartidos que están sus votantes alrededor del centro (puntos en cada eje): 2–3 un distrito homogéneo, 4 uno mixto, 5–6 una gran ciudad diversa."><span>Dispersión</span></span><input type="range" min="0.5" max="10" step="0.5" value="${d.spread}" data-dspread="${k}"><span class="num" id="dspread-${k}">${d.spread}</span></div>
+          ${AX().map((a, x) => `<div class="axrow axw"><span class="a">${esc(a.a)}</span><input type="range" min="-10" max="10" step="1" value="${d.center[x]}" data-dc="${k}" data-x="${x}" aria-label="Centro de ${esc(d.name)}: ${esc(a.k)}"><span class="b">${esc(a.b)}</span><span class="num" id="dc-${k}-${x}">${d.center[x]}</span><input type="number" min="0" max="5" step="0.25" value="${d.w?.[x] ?? 1}" data-dw="${k}" data-x="${x}" title="Cuánto le importa este eje a este distrito (0 = nada, 3 = lo decide todo)" aria-label="Peso de ${esc(a.k)} en ${esc(d.name)}"></div>`).join("")}
+          <div class="dlocal" title="Lo que un partido gana o pierde solo aquí: un candidato local, una campaña regional, un escándalo local"><span class="lbl">Ajuste local</span>${st.parties.map(p => `<label>${sw(p.color, false)}<input type="number" min="-3" max="3" step="0.1" value="${d.local?.[p.id] || 0}" data-dl="${k}" data-p="${esc(p.id)}" aria-label="Ajuste local de ${esc(p.name)} en ${esc(d.name)}"></label>`).join("")}</div>
         </div>`
       : `<div class="sliders">${st.parties.map(p => `<div class="sl"><span class="lbl">${sw(p.color, false)}<span>${esc(p.name)}</span></span><input type="range" min="0" max="100" value="${d.v[p.id] || 0}" data-dv="${k}" data-p="${esc(p.id)}" style="accent-color:${p.color}" aria-label="Voto ${esc(p.name)} en ${esc(d.name)}"><span class="num" id="dv-${k}-${esc(p.id)}">${d.v[p.id] || 0}</span></div>`).join("")}</div>`;
-    return `<div class="drow">
-    <div class="dname">
-      <input type="text" value="${esc(d.name)}" data-dn="${k}" aria-label="Nombre del distrito" class="dtitle">
-      <span class="el"><label>Escaños</label><input type="number" min="0" max="1000" value="${d.el}" data-de="${k}"></span>
-      <span class="el"><label>Habitantes</label><input class="pop" type="number" min="0" step="1000" value="${d.pop}" data-dp="${k}"></span>
-      <span class="per" id="dper-${k}"></span>
-      <div class="dctl"><span class="seg"><button data-dmode="${k}" data-m="manual" class="${ideo ? "" : "on"}">A mano</button><button data-dmode="${k}" data-m="ideo" class="${ideo ? "on" : ""}">Ideológico</button></span></div>
-      <div class="dctl"><select data-dsys="${k}" aria-label="Sistema de ${esc(d.name)}"><option value="">Sistema de la cámara (${esc(methodName(st.system.method))})</option>${M.METHODS.map(m => opt(m.id, m.short, d.system || "")).join("")}</select></div>
-      <span id="dchip-${k}"></span>
-    </div>
-    ${inputs}
-    <div class="dout">
+    const open = openD.has(k);
+    return head + `<div class="dcard${open ? " open" : ""}" id="drow-${k}">
+    <div class="dsum" data-dopen="${k}" role="button" tabindex="0" aria-expanded="${open}" title="${open ? "Cerrar" : "Ver y cambiar su ideología, participación y sistema"}">
+      <div class="dtop"><b>${esc(d.name)}</b><span class="muted dsub">${college ? `${d.el} votos electorales · ` : direct ? "" : M.isSplit(d) ? `${d.el} uninominales · ` : `${d.el} escaño${d.el === 1 ? "" : "s"} · `}${fmtN(d.pop)} hab.</span><span class="chev">${open ? "▾" : "▸"}</span><button class="x ddelx" data-ddel="${k}" title="Eliminar el distrito" aria-label="Eliminar ${esc(d.name)}">×</button></div>
+      ${d.desc ? `<div class="ddesc">${esc(d.desc)}</div>` : ""}
+      <div class="dchips" id="dchip-${k}"></div>
       <div class="dbar" id="dbar-${k}"></div>
       <div class="dmeta" id="dmeta-${k}"></div>
-      <div class="row"><span class="note">Editar lista:</span>${st.parties.map(p => `<button class="mini" data-ds="${k}" data-p="${esc(p.id)}">${sw(p.color)}${esc(p.name)}</button>`).join("")}</div>
-      <div class="row"><button class="mini" data-ddel="${k}">Eliminar distrito</button></div>
     </div>
+    ${open ? `<div class="ddet"><div class="drow">
+      <div class="dname">
+        <input type="text" value="${esc(d.name)}" data-dn="${k}" aria-label="Nombre del distrito" class="dtitle">
+        ${direct && !college ? "" : `<span class="el"><label>${college ? "Votos electorales" : "Escaños"}</label><input type="number" min="0" max="1000" value="${d.el}" data-de="${k}"></span>`}
+        <span class="el"><label>Habitantes</label><input class="pop" type="number" min="0" step="1000" value="${d.pop}" data-dp="${k}"></span>
+        <span class="per" id="dper-${k}"></span>
+        <div class="dctl"><span class="seg"><button data-dmode="${k}" data-m="manual" class="${ideo ? "" : "on"}">A mano</button><button data-dmode="${k}" data-m="ideo" class="${ideo ? "on" : ""}">Ideológico</button></span></div>
+        ${direct ? "" : `<div class="dctl"><select data-dsys="${k}" aria-label="Sistema de ${esc(d.name)}"><option value="">Sistema de la cámara (${esc(methodName(st.system.method))})</option>${M.METHODS.map(m => opt(m.id, m.short, d.system || "")).join("")}</select></div>`}
+        <label class="el"><span>Clasificación</span><input type="text" value="${esc(d.group || "")}" data-dg="${k}" list="dgroupDL" placeholder="Departamento, región…"></label>
+        ${ideo && !direct ? `<label class="check" title="Cada escaño se elige en su propia circunscripción uninominal (como en Francia o EE. UU.), en vez de en bloque"><input type="checkbox" data-dsplit="${k}" ${d.split ? "checked" : ""}> Uninominales: una circunscripción por escaño</label>
+          ${d.split ? `<div class="sl" title="Lo distintas que son entre sí las circunscripciones de este distrito (puntos en cada eje): 0 = todas iguales; 3 = un barrio obrero junto a uno rico"><span class="lbl"><span>Diferencias internas</span></span><input type="range" min="0" max="5" step="0.1" value="${d.subSpread ?? 1.5}" data-dsub="${k}"><span class="num" id="dsub-${k}">${d.subSpread ?? 1.5}</span></div>
+          <div class="dgerry" title="Quién traza las fronteras de las circunscripciones de este distrito"><label class="el"><span>Traza el mapa</span><select data-dgby="${k}">
+            <option value="">Como el país (${esc(st.system.gerryBy ? pName(st.system.gerryBy) : "neutral")})</option><option value="none" ${d.gerryBy === "none" ? "selected" : ""}>Nadie (neutral)</option>${st.parties.map(p => opt(p.id, p.name, d.gerryBy || "")).join("")}</select></label>
+            ${d.gerryBy && d.gerryBy !== "none" ? `<div class="sl"><span class="lbl"><span>Intensidad</span></span><input type="range" min="0" max="1" step="0.05" value="${d.gerry ?? 0.5}" data-dgg="${k}"><span class="num" id="dgg-${k}">${Math.round((d.gerry ?? 0.5) * 100)} %</span></div>` : ""}</div>` : ""}` : ""}
+      </div>
+      ${inputs}
+      ${descBox}
+    </div></div>` : ""}
   </div>`;
-  }).join("") || `<div class="note">No hay distritos: la cámara es solo de ${esc(T().members)} designados.</div>`;
+  }).join("") || `<div class="note">${st.districts.length ? "Ningún distrito en esa clasificación." : `No hay distritos: la cámara es solo de ${esc(T().members)} designados.`}</div>`;
+  $("dgroupDL").innerHTML = groups.filter(g => g).map(g => `<option value="${esc(g)}">`).join("");
 }
 function updateDistricts(E) {
   const ids = IDS(), { ch } = E;
@@ -693,6 +892,13 @@ function updateDistricts(E) {
     if (d.mode !== "ideo") ids.forEach(id => { const el = $(`dv-${k}-${id}`); if (el) el.textContent = d.v[id] || 0; });
     const bar = $(`dbar-${k}`); if (!bar) return;
     bar.innerHTML = [...ids, "I"].map(id => `<div style="width:${e[id]}%;background:${col(id)}" data-tip="${esc(`${id === "I" ? "Abstención / indecisos" : pName(id)} ${fmtP(e[id])}%`)}"></div>`).join("");
+    const valid = ids.reduce((a, id) => a + e[id], 0) || 1;
+    if (presView()) {
+      const L = regionLeader(res), turn = 100 - e.I;
+      $(`dchip-${k}`).innerHTML = `<span class="chip">${sw(col(L))}${esc(candName(L))} ${fmtP(e[L] / valid * 100)} %</span>`;
+      $(`dmeta-${k}`).innerHTML = `${[...ids].sort((a, b) => e[b] - e[a]).map(id => `${esc(candName(id))} ${fmtP(e[id] / valid * 100)} %`).join(" · ")} · participación ${fmtP(turn)} %`;
+      return;
+    }
     $(`dchip-${k}`).innerHTML = res.winners.length ? res.winners.map(id => `<span class="chip">${sw(col(id))}${esc(pName(id))} ${res.seatsBy[id]}</span>`).join(" ")
       : `<span class="chip">${sw(col("I"))}Sin escaños</span>`;
     const second = res.ranked[1];
@@ -700,9 +906,15 @@ function updateDistricts(E) {
     if (res.method === "wta" && res.tied?.length > 1) how = ` · empate: reparto por turnos`;
     else if (res.method === "wta" && second) how = ` · a ${esc(pName(second))} le faltan ${fmtP(res.margin / 2 + .05)} pts`;
     if (res.rounds?.length > 1) { const r2 = res.rounds[1], [a, b] = Object.keys(r2), V = r2[a] + r2[b]; how = ` · 2.ª vuelta ${esc(pName(a))} ${fmtP(r2[a] / V * 100)} % – ${esc(pName(b))} ${fmtP(r2[b] / V * 100)} %`; }
-    $(`dmeta-${k}`).innerHTML = `${esc(methodName(res.method))} · ${ids.map(id => `${esc(pName(id))} ${fmtP(e[id])}`).join(" / ")} · abst. ${fmtP(e.I)}%${how}`
+    const turn = 100 - e.I, alien = ` · participación ${fmtP(turn)} %`;
+    if (res.split) {
+      const g = egOf([res]);
+      if (res.gerry) how += ` · mapa de ${esc(pName(res.gerry.by))} (${Math.round(res.gerry.g * 100)} %)`;
+      if (g && g.pts >= 1) how += ` · brecha de eficiencia ${fmtP(g.pts, 1)} pts → ${esc(pName(g.fav))}`;
+    }
+    $(`dmeta-${k}`).innerHTML = `${esc(methodName(res.method))} · ${ids.map(id => `${esc(pName(id))} ${fmtP(e[id])}`).join(" / ")}${alien}${how}`
       + `<br>${ids.map(id => `<span class="num">${fmtN(p * e[id] / 100)}</span> ${esc(pName(id).toLowerCase())}`).join(" · ")}`;
-    $(`dper-${k}`).textContent = d.el ? `1 escaño cada ${fmtN(p / d.el)} hab.` : "sin escaños";
+    const per = $(`dper-${k}`); if (per) per.textContent = d.el ? `1 escaño cada ${fmtN(p / d.el)} hab.` : "sin escaños";
   });
   const pv = ch.pv, P = [...ids, "I"].reduce((a, id) => a + pv[id], 0), dec = P - pv.I;
   const elected = Object.fromEntries(ids.map(id => [id, ch.total[id]])), S = ids.reduce((a, id) => a + elected[id], 0);
@@ -712,23 +924,65 @@ function updateDistricts(E) {
   $("popvote").innerHTML = `
     <div class="rcard"><div class="lab">Voto popular · ${fmtN(P)} habitantes</div>${bar(pv, P, true)}${line(pv, P, true)}
       <div class="note">Entre votos válidos: ${ids.map(id => `${esc(pName(id))} ${fmtP(dec ? pv[id] / dec * 100 : 0)}%`).join(" · ")}.</div></div>
-    <div class="rcard"><div class="lab">Escaños elegidos · ${S}</div>${bar(elected, S, false)}${line(elected, S, false)}
-      <div class="note">Distritos: ${ids.map(id => `${esc(pName(id))} ${ch.dSeats[id]}`).join(" · ")}${nat ? ` · nacional (${st.system.national.mode === "compensatory" ? "compensatorio" : "paralelo"}): ${ids.map(id => `${esc(pName(id))} ${ch.nSeats[id]}`).join(" · ")}` : ""}${ch.bonusTo ? ` · premio: ${esc(pName(ch.bonusTo))} +${ch.bSeats[ch.bonusTo]}` : ""}.</div></div>`;
+    ${presView() ? "" : `<div class="rcard"><div class="lab">Escaños elegidos · ${S}</div>${bar(elected, S, false)}${line(elected, S, false)}
+      <div class="note">Distritos: ${ids.map(id => `${esc(pName(id))} ${ch.dSeats[id]}`).join(" · ")}${nat ? ` · nacional (${st.system.national.mode === "compensatory" ? "compensatorio" : "paralelo"}): ${ids.map(id => `${esc(pName(id))} ${ch.nSeats[id]}`).join(" · ")}` : ""}${ch.bonusTo ? ` · premio: ${esc(pName(ch.bonusTo))} +${ch.bSeats[ch.bonusTo]}` : ""}.</div></div>`}
+    <div class="rcard wide" id="factors"></div>`;
+  clearTimeout(factorTimer);
+  factorTimer = setTimeout(() => renderFactors(E), 120);
+}
+/* Qué decide el voto: la misma elección quitando cada factor (carisma, reputación, campaña, ajustes locales,
+   movilización). Lo que cambia el voto de cada partido y si cambiaría quién gana. */
+let factorTimer = 0;
+function renderFactors(E) {
+  const box = $("factors"); if (!box) return;
+  const ids = IDS(), fs = M.activeFactors(st);
+  if (!fs.length) { box.innerHTML = `<div class="lab">Qué decide el voto</div><div class="note">Solo la ideología: ningún partido tiene carisma, reputación ni campaña distintos de 0. Dales valores en «Partidos, candidatos y statu quo» (y ajustes locales en los distritos de voto ideológico).</div>`; return; }
+  const now = E.ch.natShare, office = M.officeResult(st, E.ch), t = T();
+  const rows = fs.map(f => {
+    const w = M.whatIf(st, f.id), flip = w.office.win !== office.win;
+    const seats = ids.map(id => E.ch.total[id] - w.total[id]);
+    return `<tr><td>${esc(f.name)}</td>${ids.map((id, j) => { const d = now[id] - w.share[id]; return `<td class="c num ${d > 0.05 ? "plus" : d < -0.05 ? "minus" : ""}" data-tip="${esc(`${pName(id)}: ${fmtP(w.share[id])} % sin este factor; ${fmtP(now[id])} % con él · escaños ${seats[j] > 0 ? "+" : ""}${seats[j]}`)}">${fmt(d)}</td>`; }).join("")}
+      <td>${flip ? `<b class="flip">Sin él: ${esc(candName(w.office.win))}</b>` : `<span class="muted">${esc(candName(office.win))} igual</span>`}</td></tr>`;
+  });
+  box.innerHTML = `<div class="lab">Qué decide el voto · puntos que da cada factor (voto válido nacional)</div>
+    <div class="tscroll"><table class="factors"><thead><tr><th>Factor</th>${ids.map(id => `<th class="c">${sw(col(id), false)} ${esc(pName(id))}</th>`).join("")}<th>${esc(cap(t.office))}</th></tr></thead><tbody>${rows.join("")}</tbody></table></div>
+    <div class="note">Cada fila repite la elección entera sin ese factor, con todo lo demás igual: en verde, lo que ese factor le da a un partido; en rojo, lo que le quita. Lo que no explican los factores es la ideología: dónde están los votantes de cada distrito frente a los partidos.</div>`;
 }
 $("dswing").addEventListener("input", e => {
   if (e.target.id === "swPts") { st.swing.pts = +e.target.value; $("swVal").textContent = `${st.swing.pts} pts`; update(); }
 });
 $("dswing").addEventListener("change", e => {
+  if (e.target.id === "dGroupSel") { dGroupFilter = e.target.value; buildDistricts(); update(); return; }
   if (e.target.id === "swFrom") { st.swing.from = e.target.value; update(); }
   if (e.target.id === "swTo") { st.swing.to = e.target.value; update(); }
 });
 $("dlist").addEventListener("input", e => {
   const t = e.target;
-  if (t.dataset.dn != null) { st.districts[+t.dataset.dn].name = t.value; lastProp = null; update(); return; }
+  if (t.dataset.dn != null) {
+    /* solo cosmético: el título de la tarjeta al momento; el resto (mapa, listas) al salir del cuadro */
+    const d = st.districts[+t.dataset.dn]; if (d.seed == null) d.seed = d.name; d.name = t.value;
+    const b = document.querySelector(`#drow-${t.dataset.dn} .dtop b`); if (b) b.textContent = t.value;
+    return;
+  }
+  if (t.dataset.ddesc != null) {
+    const k = +t.dataset.ddesc, d = st.districts[k], v = t.value.trim();
+    if (v) d.desc = v; else delete d.desc;
+    /* el resumen de la tarjeta, sin reconstruirla (no se pierde el cursor) */
+    const sum = document.querySelector(`#drow-${k} .dsum`); let el = sum?.querySelector(".ddesc");
+    if (v && !el && sum) { el = document.createElement("div"); el.className = "ddesc"; sum.insertBefore(el, $(`dchip-${k}`)); }
+    if (el) { if (v) el.textContent = v; else el.remove(); }
+    /* no cambia ningún resultado: sin recalcular la elección en cada tecla; el mapa (su tooltip) se pone al día
+       al salir del cuadro */
+    return;
+  }
   if (t.dataset.de != null) { st.districts[+t.dataset.de].el = Math.max(0, Math.min(1000, Math.round(+t.value || 0))); buildSystem(); update(); return; }
   if (t.dataset.dp != null) { st.districts[+t.dataset.dp].pop = Math.max(0, Math.round(+t.value || 0)); update(); return; }
-  if (t.dataset.dturn != null) { const d = st.districts[+t.dataset.dturn]; d.turnout = +t.value; $(`dturn-${t.dataset.dturn}`).textContent = d.turnout + "%"; update(); return; }
+  if (t.dataset.dturn != null) { const d = st.districts[+t.dataset.dturn]; d.turnout = Math.round(+t.value * 100) / 10; $(`dturn-${t.dataset.dturn}`).textContent = (+t.value).toFixed(1); update(); return; }
   if (t.dataset.dspread != null) { const d = st.districts[+t.dataset.dspread]; d.spread = +t.value; $(`dspread-${t.dataset.dspread}`).textContent = d.spread; update(); return; }
+  if (t.dataset.dgg != null) { const d = st.districts[+t.dataset.dgg]; d.gerry = +t.value; $(`dgg-${t.dataset.dgg}`).textContent = `${Math.round(d.gerry * 100)} %`; update(); return; }
+  if (t.dataset.dsub != null) { const d = st.districts[+t.dataset.dsub]; d.subSpread = +t.value; $(`dsub-${t.dataset.dsub}`).textContent = d.subSpread; update(); return; }
+  if (t.dataset.dw != null) { const d = st.districts[+t.dataset.dw]; d.w = d.w || AX().map(() => 1); d.w[+t.dataset.x] = Math.max(0, +t.value || 0); update(); return; }
+  if (t.dataset.dl != null) { const d = st.districts[+t.dataset.dl]; d.local = d.local || {}; const v = +t.value || 0; if (v) d.local[t.dataset.p] = v; else delete d.local[t.dataset.p]; update(); return; }
   if (t.dataset.dc != null) { const k = +t.dataset.dc, x = +t.dataset.x; st.districts[k].center[x] = +t.value; $(`dc-${k}-${x}`).textContent = t.value; update(); return; }
   if (t.dataset.dv != null) {
     const k = +t.dataset.dv, d = st.districts[k], id = t.dataset.p;
@@ -744,15 +998,44 @@ $("dlist").addEventListener("input", e => {
     update();
   }
 });
+$("dlist").addEventListener("keydown", e => {
+  const o = e.target.closest("[data-dopen]");
+  if (o && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openDistrict(+o.dataset.dopen, true); }
+});
 $("dlist").addEventListener("change", e => {
   const t = e.target;
   if (t.dataset.dsys != null) { const d = st.districts[+t.dataset.dsys]; if (t.value) d.system = t.value; else delete d.system; update(); }
-  if (t.dataset.dn != null) buildSystem();
+  if (t.dataset.dn != null) { lastProp = null; buildSystem(); update(); }
+  if (t.dataset.ddesc != null && lastE) { mapView(lastE); store.set(KEY_CUR, st); }
+  if (t.dataset.dg != null) { st.districts[+t.dataset.dg].group = t.value.trim(); buildDistricts(); update(); }
+  if (t.dataset.dgby != null) { const d = st.districts[+t.dataset.dgby]; if (t.value) d.gerryBy = t.value; else delete d.gerryBy; if (d.gerryBy && d.gerryBy !== "none" && d.gerry == null) d.gerry = 0.5; buildDistricts(); update(); return; }
+  if (t.dataset.dsplit != null) { st.districts[+t.dataset.dsplit].split = t.checked; buildDistricts(); update(); }
 });
 let ddelArmed = null;
+/* Renombrar una clasificación: cambia el nombre en todos sus distritos a la vez (si ya existe otra con ese
+   nombre, se juntan) */
+function renameGroup(from, to) {
+  to = to.trim();
+  if (!to || to === from) { buildDistricts(); update(); return; }
+  st.districts.forEach(d => { if ((d.group || "") === from) d.group = to; });
+  if (dGroupFilter === from) dGroupFilter = to;
+  buildDistricts(); update();
+}
 $("dlist").addEventListener("click", e => {
-  const s = e.target.closest("[data-ds]");
-  if (s) { openEditor(`d${s.dataset.ds}:${s.dataset.p}`); return; }
+  const gr = e.target.closest("[data-gren]");
+  if (gr) {
+    const from = gr.dataset.gren, head = gr.closest(".dgroup"), name = head.querySelector(".gname");
+    const inp = document.createElement("input");
+    inp.type = "text"; inp.value = from; inp.className = "gedit"; inp.setAttribute("aria-label", "Nuevo nombre de la clasificación");
+    name.replaceWith(inp); gr.hidden = true; inp.focus(); inp.select();
+    let done = false;
+    const commit = ok => { if (done) return; done = true; if (ok) renameGroup(from, inp.value); else { buildDistricts(); update(); } };
+    inp.addEventListener("keydown", ev => { if (ev.key === "Enter") { ev.preventDefault(); commit(true); } if (ev.key === "Escape") commit(false); });
+    inp.addEventListener("blur", () => commit(true));
+    return;
+  }
+  const o = e.target.closest("[data-dopen]");
+  if (o && !e.target.closest("[data-ddel]")) { openDistrict(+o.dataset.dopen, true); return; }
   const m = e.target.closest("[data-dmode]");
   if (m) {
     const d = st.districts[+m.dataset.dmode];
@@ -786,7 +1069,7 @@ $("dlist").addEventListener("click", e => {
 $("addDist").addEventListener("click", () => {
   const n = AX().length, slates = {}, v = {};
   st.parties.forEach(p => { slates[p.id] = M.newSlate(st, p.pos); v[p.id] = 0; });
-  st.districts.push({ name: `Distrito ${st.districts.length + 1}`, el: 1, pop: 10000, v, slates, mode: "manual", center: Array(n).fill(0), spread: 4, turnout: 70 });
+  st.districts.push({ seed: `d${Date.now().toString(36)}`, name: `Distrito ${st.districts.length + 1}`, el: 1, pop: 10000, v, slates, mode: "manual", center: Array(n).fill(0), spread: 4, turnout: 78 });
   lastProp = null; buildDistricts(); buildSystem(); update();
 });
 
@@ -853,17 +1136,18 @@ $("plist").addEventListener("click", e => {
 $("mode").addEventListener("change", e => {
   st.mode = e.target.value;
   if (st.mode !== "cand" && st.mode !== "none") { st.editP = st.mode; buildProps(); }
-  fillMode(); update();
+  lastProp = null; buildSystem(); buildDistricts(); fillMode(); update();
 });
-$("clearMode").addEventListener("click", () => { st.mode = "none"; fillMode(); update(); });
 
 /* ---------- Partidos y candidatos ---------- */
 function buildParties() {
-  $("partyList").innerHTML = st.parties.map((p, i) => `<div class="prow" style="grid-template-columns:44px minmax(0,1fr) minmax(0,1fr) 90px auto">
+  $("partyList").innerHTML = st.parties.map((p, i) => `<div class="prow pval">
     <input type="color" value="${esc(p.color)}" data-pc="${i}" aria-label="Color de ${esc(p.name)}">
     <label class="field"><span>Partido</span><input type="text" value="${esc(p.name)}" data-pn="${i}"></label>
     <label class="field"><span>Candidato</span><input type="text" value="${esc(p.cand)}" data-pk="${i}"></label>
-    <label class="field"><span>Atractivo</span><input type="number" min="-5" max="5" step="0.1" value="${p.appeal || 0}" data-pa="${i}" title="Votos extra en los distritos de voto ideológico"></label>
+    <label class="field" title="El candidato como persona: carisma, popularidad, oratoria. Atrae votos en todo el país y, con menos fuerza, a los miembros de la cámara."><span>Carisma</span><input type="number" min="-3" max="3" step="0.1" value="${p.charisma || 0}" data-pv="${i}" data-k="charisma"></label>
+    <label class="field" title="La imagen del partido: escándalos y mala gestión (negativo), buena gestión o prestigio (positivo)."><span>Reputación</span><input type="number" min="-3" max="3" step="0.1" value="${p.reputation || 0}" data-pv="${i}" data-k="reputation"></label>
+    <label class="field" title="Maquinaria, dinero, prensa afín, militantes: lo que la campaña añade."><span>Campaña</span><input type="number" min="-3" max="3" step="0.1" value="${p.appeal || 0}" data-pv="${i}" data-k="appeal"></label>
     <div class="row prow-btns">
       <button data-pmove="${i}" data-d="-1" ${i === 0 ? "disabled" : ""} aria-label="Subir">↑</button>
       <button data-pmove="${i}" data-d="1" ${i === st.parties.length - 1 ? "disabled" : ""} aria-label="Bajar">↓</button>
@@ -894,7 +1178,7 @@ $("partyList").addEventListener("input", e => {
   if (t.dataset.pn != null) st.parties[+t.dataset.pn].name = t.value;
   else if (t.dataset.pk != null) st.parties[+t.dataset.pk].cand = t.value;
   else if (t.dataset.pc != null) st.parties[+t.dataset.pc].color = t.value;
-  else if (t.dataset.pa != null) st.parties[+t.dataset.pa].appeal = +t.value || 0;
+  else if (t.dataset.pv != null) st.parties[+t.dataset.pv][t.dataset.k] = +t.value || 0;
   else return;
   lastProp = null; fillMode(); update();
 });
@@ -984,7 +1268,10 @@ const PARAMS = [
   ["band", "Margen de duda", 0, 0.4, 0.01, "Si el favorito no saca esta ventaja (×2) al segundo, el miembro cuenta como neutral sin inclinación."],
   ["vk", "Nitidez del voto popular", 0.2, 5, 0.1, "Distritos de voto ideológico: cuánto vota la gente al partido más cercano (alto) o se reparte (bajo)."],
   ["tk", "Afinidad de las transferencias", 0, 5, 0.1, "Segunda vuelta, voto alternativo y STV: alto = los votos van casi todos al partido más cercano."],
-  ["exhaust", "Votos que no se transfieren", 0, 1, 0.05, "La parte de los votos de un eliminado que se pierde (abstención en segunda vuelta)."]
+  ["exhaust", "Votos que no se transfieren", 0, 1, 0.05, "Distritos escritos a mano: la parte de los votos de un eliminado que se pierde en la segunda vuelta."],
+  ["tm", "Movilización", 0, 4, 0.1, "Cuánto responde la participación: alto = quien tiene un candidato que le gusta vota más, y quien se queda sin opción (o ve a los suyos en un escándalo) se queda en casa."],
+  ["ta", "Desafección", 0, 3, 0.1, "Cuánto se abstiene quien no tiene ningún partido cerca de sus ideas (0 = vota igual; alto = sin un partido que le represente, se queda en casa)."],
+  ["cv", "Peso del carisma en la cámara", 0, 2, 0.05, "Cuánto mueven el carisma y la reputación a los miembros de la cámara (1 = tanto como a los votantes)."]
 ];
 function buildParams() {
   $("params").innerHTML = PARAMS.map(([k, l, mn, mx, s, h]) => `<label class="field"><span>${esc(l)} · <b class="num" id="parv-${k}">${st.params[k]}</b></span><input type="range" min="${mn}" max="${mx}" step="${s}" value="${st.params[k]}" data-par="${k}"><span class="note" style="text-transform:none;letter-spacing:0">${esc(h)}</span></label>`).join("")
@@ -997,7 +1284,9 @@ $("params").addEventListener("input", e => {
 });
 
 /* ---------- Mapa, filtros ---------- */
-function buildAxSel() { $("axX").innerHTML = axOpts(st.axX); $("axY").innerHTML = axOpts(st.axY); $("mapLab").value = st.mapLab || "surname"; $("mapDist").value = st.mapDist || ""; }
+function buildAxSel() { $("axX").innerHTML = axOpts(st.axX); $("axY").innerHTML = axOpts(st.axY); $("mapLab").value = st.mapLab || "surname"; $("mapDist").value = mapMode(); }
+/* Qué muestra el mapa: los designados, las circunscripciones o ambos (lo de antes de esta versión, ambos) */
+function mapMode() { return ["members", "dist", "both"].includes(st.mapDist) ? st.mapDist : "both"; }
 $("axX").addEventListener("change", e => { st.axX = +e.target.value; update(); });
 $("axY").addEventListener("change", e => { st.axY = +e.target.value; update(); });
 $("mapLab").addEventListener("change", e => { st.mapLab = e.target.value; update(); });
@@ -1005,19 +1294,133 @@ $("mapDist").addEventListener("change", e => { st.mapDist = e.target.value; upda
 for (const id of ["fBloc", "fRes"]) $(id).addEventListener("change", update);
 $("fText").addEventListener("input", update);
 
-/* ---------- Escenarios y datos ---------- */
+/* ---------- Escenarios: biblioteca país → elección ---------- */
 function rebuild() { lastProp = null; header(); fillMode(); buildParties(); buildDistricts(); buildProps(); buildParams(); buildAxSel(); buildAxes(); buildSystem(); update(); }
-function load(o) { st = M.normalize(o); rebuild(); }
-async function loadPreset(id) {
-  const p = presets.find(x => x.id === id); if (!p) return false;
+function load(o) { st = M.normalize(o); rebuild(); fillSaveForm(); renderLibrary(); markClean(); }
+/* cambios sin guardar (el editor local no recarga la página mientras haya) */
+let cleanSnap = "";
+const snap = () => { try { return JSON.stringify({ ...st, scenario: undefined }); } catch { return ""; } };
+function markClean() { cleanSnap = snap(); }
+window.dirty = () => !!cleanSnap && snap() !== cleanSnap;
+const lib = new Library();
+const SRC = { web: "web", folder: "carpeta", browser: "navegador" };
+let cur = null;   // la elección de la biblioteca que está abierta
+
+async function openEntry(e) {
   try {
-    const r = await fetch(PRESET_DIR + p.file, { cache: "no-cache" });
-    if (!r.ok) throw new Error(r.status);
-    load(await r.json());
-    $("presetNote").textContent = p.desc;
+    load(await lib.read(e));
+    cur = { country: e.country, election: e.election };
+    st.scenario = { country: e.country, election: e.election, desc: e.desc || st.scenario?.desc || "" };
+    fillSaveForm(); renderLibrary();
+    $("libNote").textContent = "";
     return true;
-  } catch (err) { $("presetNote").textContent = `No se pudo cargar «${p.name}» (${err.message}).`; return false; }
+  } catch (err) { $("libNote").textContent = `No se pudo cargar «${e.election}» (${err.message}).`; return false; }
 }
+function fillSaveForm() {
+  const sc = st.scenario || {};
+  $("saveCountry").value = sc.country || ""; $("saveElection").value = sc.election || ""; $("saveDesc").value = sc.desc || "";
+}
+function renderLibrary() {
+  const cs = lib.countries();
+  /* los dos selectores de la cabecera */
+  const selC = $("libCountry"), keepC = cur?.country || selC.value || cs[0]?.name;
+  selC.innerHTML = cs.map(c => `<option value="${esc(c.name)}">${esc(c.name)} (${c.elections.length})</option>`).join("") || `<option value="">— vacía —</option>`;
+  selC.value = cs.some(c => c.name === keepC) ? keepC : cs[0]?.name || "";
+  fillElections();
+  $("countryDL").innerHTML = cs.map(c => `<option value="${esc(c.name)}">`).join("");
+  /* dónde se guarda */
+  const f = $("folder");
+  if (lib.dir) {
+    const pub = lib.folder.filter(e => e.published).length;
+    f.innerHTML = `<span class="ok">🖥 <b>Editor local</b> · <code>tools/elecciones/escenarios</code> · ${lib.folder.length} elecciones, ${pub} publicadas.</span> <span class="git" id="gitBadge"></span>
+      <div class="note">Guardar, publicar y eliminar escriben en la carpeta y se suben a GitHub solos. raldamain.com solo muestra las marcadas «publicada», y allí cualquiera puede cambiarlas y guardarlas en su navegador sin tocar las tuyas.</div>`;
+    gitBadge();
+  } else f.innerHTML = `<span class="note">Puedes cambiar cualquier elección a tu gusto. «Guardar» la guarda en este navegador (aparece con la etiqueta «navegador»); «⬇ Descargar» te da un archivo que puedes volver a abrir aquí cuando quieras.</span>`;
+  /* el árbol */
+  $("libTree").innerHTML = cs.map(c => `<div class="lcountry"><h3>${esc(c.name)} <small class="muted">${c.elections.length}</small></h3>
+      <div class="lels">${c.elections.map(e => {
+        const on = cur && cur.country === e.country && cur.election === e.election;
+        const canDel = e.src !== "web";
+        return `<div class="lel${on ? " on" : ""}${e.src === "folder" && !e.published ? " unpub" : ""}"><button class="link" data-open="${esc(key(e))}" title="${esc(e.desc)}">${esc(e.election)}</button>
+          ${e.src === "folder" ? `<label class="pub" title="Publicada: aparece en raldamain.com. Sin marcar, solo la ves tú (sin spoilers)."><input type="checkbox" data-pub="${esc(key(e))}" ${e.published ? "checked" : ""}> publicada</label>` : `<span class="badge ${e.src}">${SRC[e.src]}</span>`}
+          ${canDel ? `<button class="x" data-del="${esc(key(e))}" title="Eliminar">×</button>` : ""}</div>`;
+      }).join("")}</div></div>`).join("") || `<div class="note">La biblioteca está vacía.</div>`;
+}
+const key = e => `${e.src}\u0001${e.country}\u0001${e.election}`;
+const byKey = k => lib.entries().find(e => key(e) === k);
+function fillElections() {
+  const c = lib.countries().find(x => x.name === $("libCountry").value), sel = $("libElection");
+  sel.innerHTML = (c?.elections || []).map(e => `<option value="${esc(key(e))}">${esc(e.election)}${e.src === "browser" ? " (navegador)" : e.src === "folder" && !e.published ? " (sin publicar)" : ""}</option>`).join("");
+  const mine = c?.elections.find(e => cur && e.country === cur.country && e.election === cur.election);
+  if (mine) sel.value = key(mine);
+  sel.title = byKey(sel.value)?.desc || ""; $("libNote").textContent = "";
+}
+$("libCountry").addEventListener("change", fillElections);
+$("libElection").addEventListener("change", () => { $("libElection").title = byKey($("libElection").value)?.desc || ""; });
+$("libLoad").addEventListener("click", () => { const e = byKey($("libElection").value); if (e) openEntry(e); });
+/* GitHub (editor local): lo que queda por subir */
+async function gitBadge() {
+  const el = $("gitBadge"); if (!el) return;
+  try {
+    const g = await lib.gitStatus();
+    el.className = "git " + ((!g.ok || g.error) ? "bad" : g.pending ? "busy" : "ok");
+    el.textContent = !g.ok ? `⎇ ${g.branch || "?"}: sin push` : g.pending ? `⏳ subiendo ${g.pending}` : g.error ? "⚠ git" : "✓ GitHub";
+    el.title = g.error || "El commit y el push a GitHub se hacen en segundo plano";
+  } catch { el.className = "git bad"; el.textContent = "⚠ sin conexión"; el.title = "El editor de elecciones no responde (¿está cerrado?)"; }
+}
+if (window.ELECCIONES_LOCAL) setInterval(gitBadge, 4000);
+const gitNote = () => lib.git && /error|fail|no se pudo/i.test(lib.git) ? ` ⚠ GitHub: ${lib.git}` : "";
+let saveArmed = null, delArmed2 = null;
+$("scenSave").addEventListener("click", async () => {
+  const country = $("saveCountry").value.trim(), election = $("saveElection").value.trim(), desc = $("saveDesc").value.trim();
+  const msg = $("saveMsg"), btn = $("scenSave");
+  if (!country || !election) { msg.textContent = "Escribe el país y la elección."; return; }
+  const same = cur && cur.country === country && cur.election === election;
+  const there = lib.dir ? lib.folder.find(e => e.country === country && e.election === election) : lib.find(country, election);
+  if (there && !same && saveArmed !== `${country}\u0001${election}`) {
+    saveArmed = `${country}\u0001${election}`; btn.textContent = "Ya existe: pulsa otra vez para sobrescribir";
+    setTimeout(() => { saveArmed = null; btn.textContent = "Guardar"; }, 4000);
+    return;
+  }
+  saveArmed = null; btn.textContent = "Guardar";
+  try {
+    st.scenario = { country, election, desc };
+    const where = await lib.save(country, election, desc, st);
+    cur = { country, election };
+    msg.textContent = where === "folder" ? `Guardado en la carpeta: ${country} › ${election} · subiendo a GitHub…${gitNote()}` : `Guardado en este navegador: ${country} › ${election}.`;
+    store.set(KEY_CUR, st); markClean();
+  } catch (err) { msg.textContent = `No se pudo guardar: ${err.message}`; }
+  renderLibrary();
+});
+$("libTree").addEventListener("change", async ev => {
+  const c = ev.target.closest("[data-pub]"); if (!c) return;
+  const e = byKey(c.dataset.pub); if (!e) return;
+  try {
+    await lib.setPublished(e, c.checked);
+    if (cur && cur.country === e.country && cur.election === e.election) st.scenario = { ...(st.scenario || {}), published: c.checked };
+    $("saveMsg").textContent = (c.checked ? `Publicada: ${e.country} › ${e.election} (aparecerá en raldamain.com en cuanto se suba).` : `Sin publicar: ${e.country} › ${e.election} (desaparece de la web).`) + gitNote();
+  } catch (err) { $("saveMsg").textContent = `No se pudo cambiar: ${err.message}`; c.checked = !c.checked; }
+  renderLibrary();
+});
+$("libTree").addEventListener("click", async ev => {
+  const o = ev.target.closest("[data-open]"), d = ev.target.closest("[data-del]");
+  if (o) { const e = byKey(o.dataset.open); if (e) { await openEntry(e); $("libCountry").value = e.country; fillElections(); } }
+  if (d) {
+    const e = byKey(d.dataset.del); if (!e) return;
+    if (delArmed2 !== d.dataset.del) {
+      delArmed2 = d.dataset.del; d.textContent = "¿Eliminar?"; d.classList.add("armed");
+      setTimeout(() => { if (delArmed2 === d.dataset.del) { delArmed2 = null; renderLibrary(); } }, 3000);
+      return;
+    }
+    delArmed2 = null;
+    try {
+      await lib.remove(e);
+      if (cur && cur.country === e.country && cur.election === e.election) cur = null;
+      $("saveMsg").textContent = `Eliminado: ${e.country} › ${e.election}.`;
+    } catch (err) { $("saveMsg").textContent = err.message; }
+    renderLibrary();
+  }
+});
 function blank() {
   return {
     meta: { ...M.DEFAULT_META, title: "Cámara nueva", eyebrow: "Simulador electoral", lede: "Una cámara en blanco: añade ejes, partidos, distritos y miembros designados." },
@@ -1032,45 +1435,31 @@ $("blank").addEventListener("click", () => {
   const b = $("blank");
   if (!blankArmed) { b.textContent = "¿Seguro? Pulsa otra vez"; blankArmed = setTimeout(() => { blankArmed = null; b.textContent = "Empezar en blanco"; }, 3000); return; }
   clearTimeout(blankArmed); blankArmed = null; b.textContent = "Empezar en blanco";
-  load(blank());
-});
-$("presetLoad").addEventListener("click", () => loadPreset($("presetSel").value));
-$("presetSel").addEventListener("change", () => { $("presetNote").textContent = presets.find(x => x.id === $("presetSel").value)?.desc || ""; });
-function scenarios() { return store.get(KEY_SC) || {}; }
-function renderScenarios() {
-  const sc = scenarios(), names = Object.keys(sc);
-  $("slist").innerHTML = names.length ? names.map(n => `<span class="item"><button data-load="${esc(n)}">${esc(n)}</button><button data-del="${esc(n)}" aria-label="Borrar ${esc(n)}">×</button></span>`).join("")
-    : `<span class="note">Aún no hay escenarios guardados.</span>`;
-}
-$("scenSave").addEventListener("click", () => {
-  const n = $("scenName").value.trim() || `Escenario ${Object.keys(scenarios()).length + 1}`;
-  const sc = scenarios(); sc[n] = clone(st); store.set(KEY_SC, sc); $("scenName").value = ""; renderScenarios();
-});
-$("slist").addEventListener("click", e => {
-  const l = e.target.closest("[data-load]"), d = e.target.closest("[data-del]"), sc = scenarios();
-  if (l && sc[l.dataset.load]) load(clone(sc[l.dataset.load]));
-  if (d) { delete sc[d.dataset.del]; store.set(KEY_SC, sc); renderScenarios(); }
+  cur = null; load(blank());
 });
 $("jsonCopy").addEventListener("click", () => {
   const txt = JSON.stringify(st, null, 2), ta = $("json"); ta.value = txt;
   const manual = () => { ta.select(); $("jsonMsg").textContent = "Selecciónalo y cópialo a mano."; };
   if (navigator.clipboard) navigator.clipboard.writeText(txt).then(() => { $("jsonMsg").textContent = "Copiado."; }, manual); else manual();
 });
-/* Acepta un estado suelto o un paquete {"scenarios": {"nombre": estado, …}}, que se añade a la lista de escenarios. */
-$("jsonLoad").addEventListener("click", () => {
+/* Acepta un estado suelto, o un paquete {"scenarios": {"nombre": estado, …}} que se guarda en la biblioteca
+   (en el país escrito arriba, o en «Importados») */
+$("jsonLoad").addEventListener("click", async () => {
   try {
     const o = JSON.parse($("json").value);
     if (o && o.scenarios && typeof o.scenarios === "object") {
-      const sc = scenarios(), names = Object.keys(o.scenarios).filter(n => M.valid(o.scenarios[n]));
+      const names = Object.keys(o.scenarios).filter(n => M.valid(o.scenarios[n]));
       if (!names.length) throw new Error();
-      names.forEach(n => { sc[n] = M.normalize(clone(o.scenarios[n])); });
-      store.set(KEY_SC, sc); renderScenarios();
-      load(clone(sc[names[0]]));
-      $("jsonMsg").textContent = `${names.length} escenarios importados; cargado «${names[0]}».`;
+      const country = $("saveCountry").value.trim() || "Importados";
+      for (const n of names) await lib.save(country, n, "", M.normalize(clone(o.scenarios[n])));
+      const first = lib.find(country, names[0]);
+      if (first) await openEntry(first);
+      $("jsonMsg").textContent = `${names.length} escenarios guardados en «${country}»; cargado «${names[0]}».`;
+      renderLibrary();
       return;
     }
     if (!M.valid(o)) throw new Error();
-    load(o); $("jsonMsg").textContent = "Estado cargado.";
+    cur = null; load(o); $("jsonMsg").textContent = "Estado cargado. Ponle país y elección y pulsa Guardar para conservarlo.";
   } catch { $("jsonMsg").textContent = "El texto no es un estado válido. Pega un JSON copiado desde aquí o un paquete de escenarios."; }
 });
 
@@ -1088,16 +1477,74 @@ document.addEventListener("pointermove", e => {
 });
 document.addEventListener("pointerleave", () => tip.classList.remove("on"));
 
+/* ---------- Variantes y archivos ---------- */
+/* «⧉ Variante»: guarda una copia de lo que tienes delante como otra elección del mismo país
+   («… · variante 2»), para probar valores sin tocar la original */
+$("scenVariant").addEventListener("click", async () => {
+  const sc = st.scenario || {}, country = $("saveCountry").value.trim() || sc.country || cur?.country || "Sin país";
+  const base = ($("saveElection").value.trim() || sc.election || cur?.election || "Elección").replace(/ · variante \d+$/, "");
+  let n = 2; while (lib.find(country, `${base} · variante ${n}`)) n++;
+  const election = `${base} · variante ${n}`, desc = $("saveDesc").value.trim();
+  try {
+    st.scenario = { country, election, desc };
+    const where = await lib.save(country, election, desc, st);
+    cur = { country, election };
+    fillSaveForm(); renderLibrary(); store.set(KEY_CUR, st); markClean();
+    $("saveMsg").textContent = `Variante guardada${where === "folder" ? " en la carpeta (sin publicar)" : " en este navegador"}: ${country} › ${election}. La original sigue igual.${gitNote()}`;
+  } catch (err) { $("saveMsg").textContent = `No se pudo guardar la variante: ${err.message}`; }
+});
+$("fileSave").addEventListener("click", () => {
+  const sc = st.scenario || {}, name = `${slug(sc.country || "eleccion")}-${slug(sc.election || "escenario")}.json`;
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(st, null, 1)], { type: "application/json" }));
+  a.download = name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  $("saveMsg").textContent = `Descargado: ${name}.`;
+});
+$("fileOpen").addEventListener("click", () => $("fileIn").click());
+$("fileIn").addEventListener("change", async ev => {
+  const f = ev.target.files?.[0]; ev.target.value = ""; if (!f) return;
+  try {
+    const o = JSON.parse(await f.text());
+    if (!M.valid(o)) throw new Error("no es una elección del simulador");
+    cur = null; load(o);
+    $("saveMsg").textContent = `Abierto: ${f.name}. Pulsa «Guardar» para tenerlo en la biblioteca.`;
+  } catch (err) { $("saveMsg").textContent = `No se pudo abrir ${f.name}: ${err.message}.`; }
+});
+
+/* ---------- Secciones plegables (se recuerda cuáles están plegadas) ---------- */
+const KEY_FOLD = "raldamain-elecciones-plegadas";
+(() => {
+  let folded = [];
+  try { folded = JSON.parse(localStorage.getItem(KEY_FOLD)) || []; } catch { /* nada */ }
+  document.querySelectorAll("main.elec section.panel").forEach(sec => {
+    const h = sec.querySelector(".sec-head h2"); if (!h) return;
+    h.classList.add("fold"); h.tabIndex = 0; h.setAttribute("role", "button");
+    const set = on => { sec.classList.toggle("folded", on); h.setAttribute("aria-expanded", String(!on)); };
+    set(folded.includes(h.id));
+    const toggle = () => {
+      const on = !sec.classList.contains("folded"); set(on);
+      folded = on ? [...new Set([...folded, h.id])] : folded.filter(x => x !== h.id);
+      try { localStorage.setItem(KEY_FOLD, JSON.stringify(folded)); } catch { /* nada */ }
+    };
+    h.addEventListener("click", toggle);
+    h.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
+  });
+})();
+
 /* ---------- Arranque ---------- */
 (async () => {
-  try { presets = await (await fetch(PRESET_DIR + "presets.json", { cache: "no-cache" })).json(); } catch { presets = []; }
-  $("presetSel").innerHTML = presets.map(p => `<option value="${esc(p.id)}">${esc(p.name)}</option>`).join("");
-  $("presetNote").textContent = presets[0]?.desc || "";
-  const want = new URLSearchParams(location.search).get("escenario");
+  await lib.init();
+  const want = new URLSearchParams(location.search).get("escenario"), wantE = want && lib.findSlug(want);
   const saved = store.get(KEY_CUR);
-  if (want && presets.some(p => p.id === want)) { $("presetSel").value = want; await loadPreset(want); }
-  else if (M.valid(saved)) { try { load(saved); } catch { await loadPreset(presets[0]?.id) || load(blank()); } }
-  else if (!presets.length || !await loadPreset(presets[0].id)) load(blank());
-  renderScenarios();
-  window.elecciones = { get st() { return st; }, M, update, rebuild, loadPreset, get last() { return lastE; } };
+  const first = async () => { const e = lib.countries()[0]?.elections[0]; if (!e || !await openEntry(e)) load(blank()); };
+  if (wantE) await openEntry(wantE);
+  else if (M.valid(saved)) {
+    try {
+      load(saved);
+      const sc = saved.scenario;
+      if (sc && lib.find(sc.country, sc.election)) { cur = { country: sc.country, election: sc.election }; renderLibrary(); }
+    } catch { await first(); }
+  } else await first();
+  window.elecciones = { get st() { return st; }, M, lib, update, rebuild, openEntry, renderLibrary, get last() { return lastE; } };
 })();

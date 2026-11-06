@@ -6,7 +6,7 @@
     <title>Simulador electoral | Raldamain</title>
     <meta name="description" content="Crea y simula sistemas electorales sobre ejes ideológicos: cámaras, distritos, partidos, candidatos, electores designados y votaciones. Incluye la elección de alcalde de Deverentio (4099).">
     <link rel="stylesheet" href="/assets/css/style.css?v=20261105">
-    <link rel="stylesheet" href="/assets/css/elecciones.css?v=20261105">
+    <link rel="stylesheet" href="/assets/css/elecciones.css?v=20261106">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -23,24 +23,32 @@
     <h1 id="title">Simulador electoral</h1>
     <p class="lede" id="lede"></p>
     <div class="presets">
-      <label class="tabs-note" for="presetSel">Escenario de partida</label>
-      <select id="presetSel" aria-label="Escenario de partida"></select>
-      <button id="presetLoad">Cargar</button>
-      <span class="note" id="presetNote"></span>
+      <label class="tabs-note" for="libCountry">País</label>
+      <select id="libCountry" aria-label="País"></select>
+      <label class="tabs-note" for="libElection">Elección</label>
+      <select id="libElection" aria-label="Elección"></select>
+      <button id="libLoad">Cargar</button>
+      <span class="note" id="libNote" role="status"></span>
     </div>
   </header>
 
-  <section class="panel modes" aria-label="Votación">
-    <label for="mode">Votación</label>
-    <select id="mode"></select>
-    <button id="clearMode">Quitar votación</button>
-    <span class="note" id="modeNote"></span>
+  <section class="panel sysbar" aria-label="Sistema">
+    <div class="kindseg" id="kindSeg" role="radiogroup" aria-label="Sistema de gobierno">
+      <button type="button" role="radio" data-kind="indirect"><b>🏛 Parlamentaria</b><small id="kindSubI"></small></button>
+      <button type="button" role="radio" data-kind="direct"><b>🎖 Presidencial</b><small id="kindSubD"></small></button>
+    </div>
+    <div class="variants" id="variantSeg" role="radiogroup" aria-label="Variante"></div>
+    <div class="sysbar-sel">
+      <label class="field" id="topSeatsF"><span>Reparto de escaños de la cámara</span><select id="topSeats"></select></label>
+      <label class="field"><span>Ver</span><select id="mode"></select></label>
+    </div>
   </section>
 
   <section class="panel board" aria-label="Resultado">
     <div class="hemi">
       <svg id="hemi" viewBox="0 0 200 108" role="img" aria-label="Hemiciclo"></svg>
       <div class="hemi-caption"><span class="big" id="capTotal">0</span> <span class="muted" id="capWord">miembros · umbral</span> <span class="num" id="capMaj">—</span></div>
+      <div class="rviz" id="rviz" hidden></div>
     </div>
     <div>
       <div class="verdict" id="verdict"></div>
@@ -64,7 +72,7 @@
       <div class="sysbox" id="sysHouse"></div>
     </div>
     <div class="stats" id="sysStats"></div>
-    <details style="margin-top:14px" open>
+    <details style="margin-top:14px" open id="cmpBox">
       <summary>Comparar sistemas con los mismos votos</summary>
       <div class="tscroll"><table class="cmp" id="cmp"></table></div>
       <div class="note">Pulsa un sistema para aplicarlo a la cámara. La desproporcionalidad es el índice de Gallagher (0 = perfectamente proporcional); NEP = número efectivo de partidos.</div>
@@ -72,18 +80,10 @@
     <div id="directBox" style="margin-top:14px"></div>
   </section>
 
-  <section class="panel" aria-labelledby="h-ins">
-    <div class="sec-head">
-      <h2 id="h-ins">Lectura del máster</h2>
-      <p id="insNote"></p>
-    </div>
-    <div class="ins" id="ins"></div>
-  </section>
-
   <section class="panel" aria-labelledby="h-map">
     <div class="sec-head">
       <h2 id="h-map">Mapa ideológico</h2>
-      <p>Elige dos ejes. Cada punto pequeño es un miembro designado; cada círculo grande es una lista con escaños (el número indica cuántos). Pulsa un punto para editarlo.</p>
+      <p id="mapIntro">Elige dos ejes. Cada punto pequeño es un miembro designado; cada pastel es una circunscripción en su centro ideológico, con los escaños que reparte (el número) y un anillo si está disputada. Pulsa un punto para editarlo o ir a su distrito.</p>
     </div>
     <div class="mapwrap">
       <svg id="map" viewBox="0 0 440 440" role="img" aria-label="Mapa de puntos ideales"></svg>
@@ -96,27 +96,21 @@
           <option value="off">Sin nombres</option>
         </select></div>
         <div class="field"><span>Mostrar</span><select id="mapDist">
-          <option value="">Solo la cámara</option>
-          <option value="centers">También el centro de cada distrito</option>
+          <option value="both">Designados y circunscripciones</option>
+          <option value="members">Los miembros designados</option>
+          <option value="dist">Las circunscripciones</option>
         </select></div>
         <div id="mapLegend" class="legend"></div>
       </div>
     </div>
   </section>
 
-  <section class="panel" aria-labelledby="h-blocs">
-    <div class="sec-head">
-      <h2 id="h-blocs">Bloques</h2>
-      <p id="blocNote">Los grupos de miembros designados, cada distrito y el nivel nacional.</p>
-    </div>
-    <div class="tscroll"><table class="blocs"><thead id="blocHead"></thead><tbody id="blocBody"></tbody></table></div>
-  </section>
-
   <section class="panel" aria-labelledby="h-roll">
     <div class="sec-head">
-      <h2 id="h-roll">Miembros</h2>
+      <h2 id="h-roll">Miembros designados</h2>
       <p id="rollNote"></p>
     </div>
+    <div class="lpacts" id="listPacts" hidden></div>
     <div class="filters">
       <select id="fBloc" aria-label="Filtrar por bloque"></select>
       <select id="fRes" aria-label="Filtrar por resultado"></select>
@@ -133,6 +127,7 @@
     </div>
     <div class="strip" id="dswing"></div>
     <div id="dlist"></div>
+    <datalist id="dgroupDL"></datalist>
     <div class="row" style="margin-top:12px"><button id="addDist">+ Añadir distrito</button></div>
     <div class="rcards" id="popvote" style="margin-top:16px"></div>
   </section>
@@ -196,9 +191,20 @@ Elección del cargo por la cámara (cualquier número de candidatos):
   Los comprometidos votan su compromiso salvo que desactives «Respetar compromisos».
   Con segunda vuelta: si nadie llega a la mayoría, los dos primeros; cada miembro elige entre ellos.
 
-Voto ideológico de un distrito: 400 votantes fijos alrededor del centro (dispersión = desviación típica);
-  cada uno vota por cercanía: P(partido) ∝ exp(nitidez del voto × (atractivo − 8 × distancia² media por eje / 100)).
-  La participación es la parte que vota; el resto es abstención.
+Voto ideológico de un distrito: 400 votantes fijos alrededor del centro (dispersión = desviación típica).
+  Cada uno puntúa a cada partido:  u = valencia − 8 × Σ peso·(x − partido)² / (100 × nº de ejes)
+    valencia = carisma del candidato + reputación del partido + campaña + ajuste local del distrito
+    peso = cuánto le importa cada eje a ese distrito
+  Elige partido con P ∝ exp(nitidez del voto × u).
+  Vota con P = σ(logit(participación) + movilización × (s − s₀) + desafección × (s₀ − r)):
+    s = lo bien que le parecen las opciones (log-suma de u); s₀ = lo mismo sin valencias;
+    r = la utilidad de tener un partido a 3 puntos en cada eje.
+  Quien tiene un candidato que le gusta vota más, quien ve a los suyos en un escándalo se queda en casa,
+  y quien no tiene ningún partido cerca (un barrio obrero sin izquierda) se abstiene: si llega un partido
+  que le representa, y más con carisma, crece desde la abstención.
+  Segunda vuelta y voto alternativo: los mismos votantes vuelven a votar solo con los que quedan (y quien se
+  queda sin opción vota menos: el «mal menor»). En distritos escritos a mano, los votos pasan por afinidad.
+  En la cámara, carisma y reputación suman también (× «peso del carisma en la cámara»).
 
 Transferencias (dos vueltas, voto alternativo, STV): los votos de un partido eliminado se reparten entre los que siguen
   ∝ exp(afinidad × (− 8 × distancia² media por eje / 100)); una parte (agotamiento) no se transfiere.
@@ -215,15 +221,25 @@ Cargo: un miembro libre se inclina por el favorito si le saca al segundo al meno
   <section class="panel" aria-labelledby="h-data">
     <div class="sec-head">
       <h2 id="h-data">Escenarios y datos</h2>
-      <p>Se guarda solo en este navegador. Para conservarlo o compartirlo, copia el JSON (también acepta los estados de la herramienta original del Consejo de Cien).</p>
+      <p>Cada escenario es una elección dentro de un país. Carga una, cámbiala a tu gusto y guárdala (en este navegador o como archivo); «⧉ Variante» guarda una copia para comparar.</p>
     </div>
-    <div style="display:grid;gap:12px">
-      <div class="row">
-        <input type="text" id="scenName" placeholder="Nombre del escenario" style="flex:1 1 220px">
-        <button id="scenSave">Guardar escenario</button>
-        <button id="blank">Empezar en blanco</button>
+    <div style="display:grid;gap:14px" data-lib-zone>
+      <div class="folder" id="folder"></div>
+      <div class="savebox">
+        <label class="field"><span>País</span><input type="text" id="saveCountry" list="countryDL" placeholder="Kratoi, Deverentio…"><datalist id="countryDL"></datalist></label>
+        <label class="field"><span>Elección</span><input type="text" id="saveElection" placeholder="4105 · Presidenciales"></label>
+        <label class="field wide"><span>Descripción (opcional)</span><input type="text" id="saveDesc" placeholder="Qué tiene de especial este escenario"></label>
+        <div class="row wide">
+          <button id="scenSave" class="primary">Guardar</button>
+          <button id="scenVariant" title="Guarda una copia como otra elección del mismo país («… · variante 2»): para probar valores sin tocar la original">⧉ Variante</button>
+          <button id="fileSave" title="Descarga esta elección como archivo .json">⬇ Descargar</button>
+          <button id="fileOpen" title="Abre un archivo .json descargado de aquí">⬆ Abrir archivo</button>
+          <input type="file" id="fileIn" accept=".json,application/json" hidden>
+          <button id="blank">Empezar en blanco</button>
+          <span class="note" id="saveMsg"></span>
+        </div>
       </div>
-      <div class="slist" id="slist"></div>
+      <div class="libtree" id="libTree"></div>
       <details>
         <summary>Exportar / importar JSON</summary>
         <div style="display:grid;gap:8px;margin-top:10px">
@@ -249,6 +265,6 @@ Cargo: un miembro libre se inclina por el favorito si le saca al segundo al meno
 <footer>
     <p>&copy; 2020 Raldamain Studios. Todos los derechos reservados.</p>
 </footer>
-<script type="module" src="/assets/js/elecciones/app.js?v=20261105"></script>
+<script type="module" src="/assets/js/elecciones/app.js?v=20261106"></script>
 </body>
 </html>

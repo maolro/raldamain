@@ -67,7 +67,7 @@ export const IDS = st => st.parties.map(p => p.id);
 /* Voto de cada partido en un distrito (% del censo); el resto (I) es indeciso o abstención. */
 export function shares(st, d) {
   const v = {}, ids = IDS(st);
-  if (d.mode === "ideo") Object.assign(v, ideoShares(st, d));
+  if (d.mode === "ideo") Object.assign(v, ideoAvg(st, d));
   else ids.forEach(id => { v[id] = Math.max(0, +(d.v?.[id]) || 0); });
   ids.forEach(id => { if (v[id] == null) v[id] = 0; });
   const sw = st.swing;
@@ -79,29 +79,158 @@ export function shares(st, d) {
   v.I = Math.max(0, 100 - ids.reduce((a, id) => a + v[id], 0));
   return v;
 }
-/* Voto deducido de la ideología: una muestra fija de votantes alrededor del centro del distrito,
-   cada uno elige partido por cercanía (y el atractivo de cada partido). */
-const SAMPLE = 400;
+/* Lo que un partido atrae al margen de la ideología: el carisma de su candidato, la reputación del partido
+   (escándalos, gestión), su campaña (maquinaria, dinero; el antiguo «atractivo») y lo que tenga en ese distrito. */
+export const valence = (st, p, d) => (p.appeal || 0) + (p.charisma || 0) + (p.reputation || 0) + (d?.local?.[p.id] || 0);
+const lse = (u, k) => { const m = Math.max(...u); return m + Math.log(u.reduce((a, z) => a + Math.exp(k * (z - m)), 0)) / k; };
+
+/* Voto deducido de la ideología: una muestra fija de votantes alrededor del centro del distrito.
+   Cada votante puntúa a cada partido:  u = −8 · distancia² (con los pesos del distrito) / nº de ejes + valencia
+   y lo elige con P ∝ exp(nitidez · u). Si vota o se queda en casa depende de lo bien que le parezcan las opciones:
+   P(vota) = σ(logit(participación) + movilización · (s − s₀) + desafección · (s₀ − r)), con s la mejor opción «esperada»
+   (log-suma), s₀ la misma sin valencias y con todos los partidos, y r la de tener un partido a 3 puntos en cada eje:
+   quien no tiene ningún partido cerca se abstiene, y uno nuevo que le represente lo moviliza.
+   only: solo esos partidos (segunda vuelta, voto alternativo): quien se queda sin su opción vota menos. */
+const SAMPLE = 400, SUB_SAMPLE = 120;   // votantes simulados por distrito, y por circunscripción uninominal
+const ALIEN_REF = -8 * 9 / 100;   // la utilidad de tener un partido a 3 puntos en cada eje: ahí, la participación es la de base
+/* La semilla de la muestra de votantes de un distrito: fija, no su nombre (renombrar no cambia el voto).
+   Los distritos de antes no la tienen y usan su nombre, que es lo que ya hacían. */
+export const seedOf = d => d.seed ?? d.name ?? "d";
 const ideoCache = new Map();
-export function ideoShares(st, d) {
+export function ideoShares(st, d, only = null) {
   const ids = IDS(st), P = st.params;
-  const key = JSON.stringify([d.name, d.center, d.spread, d.turnout, st.parties.map(p => [p.id, p.pos, p.appeal || 0]), P.vk]);
+  if (only && only.length === ids.length) only = null;
+  const key = JSON.stringify([seedOf(d), d.center, d.spread, d.turnout, d.w, d.local,
+    st.parties.map(p => [p.id, p.pos, p.appeal || 0, p.charisma || 0, p.reputation || 0]), P.vk, P.tm, P.ta, only]);
   if (ideoCache.has(key)) return ideoCache.get(key);
-  if (ideoCache.size > 500) ideoCache.clear();
-  const rnd = mulberry(+hash(d.name || "d") ^ 0x9e3779b9), n = nAx(st);
+  if (ideoCache.size > 2000) ideoCache.clear();
+  const rnd = mulberry(+hash(seedOf(d)) ^ 0x9e3779b9), n = nAx(st);
   const gauss = () => { const u = Math.max(1e-9, rnd()), v = rnd(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
-  const acc = Object.fromEntries(ids.map(id => [id, 0]));
-  const c = d.center || zeros(n), sp = d.spread ?? 4;
-  for (let i = 0; i < SAMPLE; i++) {
-    const x = Array.from({ length: n }, (_, k) => Math.max(-10, Math.min(10, (c[k] || 0) + gauss() * sp)));
-    const u = st.parties.map(p => -dist2(x, p.pos) / Math.max(1, n) * 8 + (p.appeal || 0));
-    const m = Math.max(...u), ex = u.map(z => Math.exp((P.vk ?? 1.5) * (z - m))), Z = ex.reduce((a, b) => a + b, 0);
-    st.parties.forEach((p, j) => { acc[p.id] += ex[j] / Z; });
+  const ps = only ? st.parties.filter(p => only.includes(p.id)) : st.parties;
+  const acc = Object.fromEntries(ps.map(p => [p.id, 0]));
+  const c = d.center || zeros(n), sp = d.spread ?? 4, k = P.vk ?? 1.5, tm = P.tm ?? 1, ta = P.ta ?? 0.5;
+  const T = Math.max(0, Math.min(100, d.turnout ?? 70)) / 100, base = Math.log(Math.max(1e-6, T) / Math.max(1e-6, 1 - T));
+  const val = ps.map(p => valence(st, p, d)), idx = ps.map(p => st.parties.indexOf(p));
+  /* (bucle sin reservar memoria por votante: con 240 circunscripciones uninominales se hace decenas de miles de veces) */
+  const N = d._n || SAMPLE, np = st.parties.length, nq = ps.length, scale = 8 / Math.max(1, n) / 100;
+  const pos = st.parties.map(p => p.pos), w = d.w, cc = Array.from({ length: n }, (_, j) => c[j] || 0);
+  const x = new Float64Array(n), dist = new Float64Array(np), u = new Float64Array(nq), ex = new Float64Array(nq), sum = new Float64Array(nq);
+  for (let i = 0; i < N; i++) {
+    for (let j = 0; j < n; j++) { const v = cc[j] + gauss() * sp; x[j] = v < -10 ? -10 : v > 10 ? 10 : v; }
+    let m0 = -Infinity;
+    for (let q = 0; q < np; q++) {
+      const pp = pos[q]; let s2 = 0;
+      for (let j = 0; j < n; j++) { const df = x[j] - (pp[j] ?? 0); s2 += (w ? w[j] : 1) * df * df; }
+      dist[q] = -s2 * scale; if (dist[q] > m0) m0 = dist[q];
+    }
+    let z0 = 0; for (let q = 0; q < np; q++) z0 += Math.exp(k * (dist[q] - m0));
+    const s0 = m0 + Math.log(z0) / k;
+    let m = -Infinity;
+    for (let j = 0; j < nq; j++) { u[j] = dist[idx[j]] + val[j]; if (u[j] > m) m = u[j]; }
+    let Z = 0; for (let j = 0; j < nq; j++) { ex[j] = Math.exp(k * (u[j] - m)); Z += ex[j]; }
+    const sNow = m + Math.log(Z) / k;
+    const q = T <= 0 ? 0 : T >= 1 ? 1 : sig(base + tm * (sNow - s0) + ta * (s0 - ALIEN_REF));
+    for (let j = 0; j < nq; j++) sum[j] += q * ex[j] / Z;
   }
-  const turn = Math.max(0, Math.min(100, d.turnout ?? 70));
+  ps.forEach((p, j) => { acc[p.id] = sum[j]; });
   const out = {};
-  ids.forEach(id => { out[id] = Math.round(acc[id] / SAMPLE * turn * 10) / 10; });
+  ps.forEach(p => { out[p.id] = Math.round(acc[p.id] / N * 1000) / 10; });
   ideoCache.set(key, out);
+  return out;
+}
+/* Circunscripciones uninominales: un distrito «dividido» elige cada escaño en su propia circunscripción
+   (como los distritos uninominales de Francia o EE. UU.). Cada una tiene su centro un poco desplazado del de la
+   provincia (las diferencias internas: un barrio obrero, un pueblo rico…), siempre el mismo. */
+export const isSplit = d => d.mode === "ideo" && d.split && (d.el | 0) > 1;
+const subCache = new Map();
+/* st: con él se aplica el gerrymandering (los escaños); sin él, el mapa neutral (el voto de la provincia,
+   que no depende de por dónde pasen las fronteras) */
+export function subDistricts(d, st = null) {
+  const gm = st ? gerryOf(st, d) : null;
+  const gp = gm ? [gm.by, gm.g, st.parties, st.params] : null;
+  const key = JSON.stringify([seedOf(d), d.el, d.center, d.subSpread, d.spread, d.turnout, d.w, d.local, gp]);
+  if (subCache.has(key)) return subCache.get(key);
+  if (subCache.size > 3000) subCache.clear();
+  const n = d.el | 0, rnd = mulberry(+hash(seedOf(d) + "#sub") ^ 0x5bd1e995), sp = d.subSpread ?? 1.5;
+  const gauss = () => { const u = Math.max(1e-9, rnd()), v = rnd(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v); };
+  let out = Array.from({ length: n }, (_, i) => ({
+    ...d, name: `${d.name} ${i + 1}`, seed: `${seedOf(d)} ${i + 1}`, el: 1, split: false, pop: (d.pop || 0) / n, _n: SUB_SAMPLE,
+    center: (d.center || []).map(c => Math.max(-10, Math.min(10, Math.round((c + gauss() * sp) * 10) / 10)))
+  }));
+  if (gm) out = gerrymander(st, d, out, gm);
+  subCache.set(key, out);
+  return out;
+}
+
+/* ---------- Gerrymandering ----------
+   Quien traza el mapa no cambia a los votantes, solo por dónde pasan las fronteras. Con intensidad 1 hace el
+   mejor mapa para su partido frente al rival principal de la provincia:
+   · si ya va por delante, reparte a los votantes por igual (cracking): gana todas las circunscripciones;
+   · si no, concentra (packing) a los del rival en las menos circunscripciones posibles, que el rival gana por
+     goleada, y reparte el resto para ganarlas por poco (con un 53 % de margen de seguridad).
+   Con intensidad 0–1 se queda a medio camino entre el mapa neutral y ese mapa. El reparto se consigue moviendo
+   el centro de cada circunscripción por la línea que separa a los dos partidos; el voto total de la provincia
+   no cambia (el voto que se muestra es siempre el del mapa neutral). */
+const PACKED_SHARE = 0.15, SAFE_SHARE = 0.53;
+export function gerryOf(st, d) {
+  const own = d.gerryBy && d.gerryBy !== "none";
+  const by = d.gerryBy === "none" ? "" : own ? d.gerryBy : st.system?.gerryBy || "";
+  const g = own ? (d.gerry ?? 0.5) : (st.system?.gerry ?? 0);
+  return by && g > 0 && st.parties.some(p => p.id === by) ? { by, g: Math.min(1, g) } : null;
+}
+function gerrymander(st, d, subs, { by, g }) {
+  const n = subs.length, c0 = d.center || [], w = d.w || [];
+  if (n < 2) return subs;
+  /* el rival: el partido que más vota la provincia, aparte del que traza */
+  const tot = ideoShares(st, d);
+  const rv = st.parties.map(p => p.id).filter(id => id !== by).sort((x, y) => (tot[y] || 0) - (tot[x] || 0))[0];
+  const P = st.parties.find(p => p.id === by), R = st.parties.find(p => p.id === rv);
+  if (!R) return subs;
+  let u = c0.map((_, j) => (w[j] ?? 1) * ((P.pos[j] ?? 0) - (R.pos[j] ?? 0)));
+  const len = Math.hypot(...u); if (!len) return subs;
+  u = u.map(x => x / len);
+  const two = sd => { const sh = ideoShares(st, sd); const a = sh[by] || 0, b = sh[rv] || 0; return a + b ? a / (a + b) : 0.5; };
+  const move = (sd, x) => ({ ...sd, center: sd.center.map((c, j) => Math.max(-10, Math.min(10, Math.round((c + x * u[j]) * 10) / 10))) });
+  /* cuánto cambia la cuota del que traza por cada punto que se mueve el centro (en la propia provincia) */
+  const probe = { ...d, split: false, el: 1, _n: SUB_SAMPLE };
+  const beta = Math.max(0.01, (two(move(probe, 1)) - two(move(probe, -1))) / 2);
+  /* el mapa ideal: k circunscripciones empaquetadas y el resto igualadas */
+  const s0 = subs.map(two), D = s0.reduce((x, y) => x + y, 0);
+  let k = 0;
+  while (k < n && (D - k * PACKED_SHARE) / (n - k) < SAFE_SHARE) k++;
+  if (k >= n) return subs;   /* ni empaquetando gana nada: lo deja como está */
+  const q = (D - k * PACKED_SHARE) / (n - k);
+  const order = subs.map((_, i) => i).sort((x, y) => s0[x] - s0[y]);
+  const target = new Array(n);
+  order.forEach((i, r) => { const t = r < k ? PACKED_SHARE : q; target[i] = s0[i] + g * (t - s0[i]); });
+  /* dos pasos: mover según la sensibilidad, medir y corregir */
+  let out = subs.map((sd, i) => move(sd, Math.max(-8, Math.min(8, (target[i] - s0[i]) / beta))));
+  out = out.map((sd, i) => { const now = two(sd); return Math.abs(target[i] - now) > 0.01 ? move(sd, Math.max(-6, Math.min(6, (target[i] - now) / beta))) : sd; });
+  return out;
+}
+
+export function ideoAvg(st, d, only = null) {
+  if (!isSplit(d)) return ideoShares(st, d, only);
+  const subs = subDistricts(d), acc = {};
+  subs.forEach(sd => { const sh = ideoShares(st, sd, only); for (const k in sh) acc[k] = (acc[k] || 0) + sh[k] / subs.length; });
+  for (const k in acc) acc[k] = Math.round(acc[k] * 10) / 10;
+  return acc;
+}
+
+/* La segunda vuelta en un distrito (personas): en un distrito ideológico vuelven a votar sus votantes, solo con los
+   finalistas; en uno escrito a mano, los votos de los eliminados pasan por afinidad entre partidos. */
+export function runoffVotes(st, d, finalists, e = shares(st, d)) {
+  const pop = d.pop || 100, out = Object.fromEntries(finalists.map(id => [id, 0]));
+  if (d.mode === "ideo") {
+    const sh = ideoAvg(st, d, finalists);
+    finalists.forEach(id => { out[id] = pop * sh[id] / 100; });
+    return out;
+  }
+  finalists.forEach(id => { out[id] = pop * (e[id] || 0) / 100; });
+  IDS(st).filter(id => !finalists.includes(id)).forEach(id => {
+    const tr = transfer(st, id, finalists);
+    finalists.forEach(f => { out[f] += pop * (e[id] || 0) / 100 * tr[f]; });
+  });
   return out;
 }
 /* Transferencias: los votos de «from» se reparten entre «to» según la cercanía ideológica de los partidos. */
@@ -165,14 +294,19 @@ export function stv(st, votes, M) {
   return { seats, log };
 }
 /* Dos vueltas por partido: primera vuelta; si nadie pasa del 50 % de los votos válidos, los dos primeros. */
-export function twoRound(st, votes) {
+export function twoRound(st, votes, second = null) {
   const ids = Object.keys(votes).filter(id => votes[id] > 0).sort((a, b) => votes[b] - votes[a]);
   const V = ids.reduce((a, id) => a + votes[id], 0);
   if (!ids.length) return { win: null, rounds: [] };
   const r1 = { ...votes };
   if (votes[ids[0]] > V / 2 || ids.length === 1) return { win: ids[0], rounds: [r1] };
-  const [a, b] = ids, r2 = { [a]: votes[a], [b]: votes[b] };
-  ids.slice(2).forEach(id => { const tr = transfer(st, id, [a, b]); r2[a] += votes[id] * tr[a]; r2[b] += votes[id] * tr[b]; });
+  const [a, b] = ids;
+  let r2;
+  if (second) r2 = second(a, b);
+  else {
+    r2 = { [a]: votes[a], [b]: votes[b] };
+    ids.slice(2).forEach(id => { const tr = transfer(st, id, [a, b]); r2[a] += votes[id] * tr[a]; r2[b] += votes[id] * tr[b]; });
+  }
   return { win: r2[a] >= r2[b] ? a : b, rounds: [r1, r2] };
 }
 /* Voto alternativo con un solo ganador (rondas). */
@@ -197,7 +331,7 @@ export function irv(st, votes) {
 export const systemOf = (st, d) => d.system || st.system.method;
 
 /* Votos de un distrito (personas) con el umbral aplicado */
-function districtVotes(st, d, e, natShare) {
+export function districtVotes(st, d, e, natShare) {
   const ids = IDS(st), pop = d.pop || 0, out = {};
   const valid = ids.reduce((a, id) => a + e[id], 0);
   const thr = st.system.threshold || 0;
@@ -210,6 +344,27 @@ function districtVotes(st, d, e, natShare) {
 
 /* Resultado de un distrito: escaños por partido, en orden de escaño */
 export function districtResult(st, d, natShare = nationalShare(st), method = systemOf(st, d)) {
+  if (isSplit(d)) {   /* cada escaño en su circunscripción */
+    const ids = IDS(st), e = shares(st, d), subs = subDistricts(d, st).map(sd => districtResult(st, sd, natShare, method));
+    const seatsBy = Object.fromEntries(ids.map(id => [id, 0]));
+    subs.forEach(r => ids.forEach(id => { seatsBy[id] += r.seatsBy[id]; }));
+    /* votos desperdiciados (para la brecha de eficiencia): todos los del que pierde, y los del ganador por
+       encima de lo que necesitaba (el segundo, en la vuelta que decide) */
+    const cast = Object.fromEntries(ids.map(id => [id, 0])), waste = { ...cast };
+    subs.forEach(r => {
+      const fin = r.rounds?.length ? r.rounds[r.rounds.length - 1] : r.votes || {};
+      const runner = Math.max(0, ...Object.keys(fin).filter(id => id !== r.win).map(id => fin[id] || 0));
+      ids.forEach(id => {
+        const v = r.votes?.[id] || 0; cast[id] += v;
+        waste[id] += id === r.win ? Math.max(0, (fin[id] || 0) - runner) : v;
+      });
+    });
+    const ranked = [...ids].sort((a, b) => e[b] - e[a]), seats = [];
+    [...ids].sort((a, b) => seatsBy[b] - seatsBy[a] || e[b] - e[a]).forEach(id => { for (let k = 0; k < seatsBy[id]; k++) seats.push(id); });
+    const winners = ids.filter(id => seatsBy[id] > 0);
+    return { e, ranked, seatsBy, seats, win: winners.length === 1 ? winners[0] : null, winners,
+      margin: e[ranked[0]] - (ranked[1] != null ? e[ranked[1]] : 0), method, split: true, subs, cast, waste, gerry: gerryOf(st, d) };
+  }
   const e = shares(st, d), ids = IDS(st), M = Math.max(0, d.el | 0);
   const ranked = [...ids].sort((a, b) => e[b] - e[a]);
   const margin = e[ranked[0]] - (ranked[1] != null ? e[ranked[1]] : 0);
@@ -223,7 +378,7 @@ export function districtResult(st, d, natShare = nationalShare(st), method = sys
     for (let j = 0; j < M; j++) seatsBy[tied[j % tied.length]]++;
     extra.tied = tied;
   } else if (method === "tworound") {
-    const r = twoRound(st, votes); extra.rounds = r.rounds;
+    const r = twoRound(st, votes, (a, b) => runoffVotes(st, d, [a, b], e)); extra.rounds = r.rounds;
     if (r.win) seatsBy[r.win] = M;
   } else if (method === "stv") {
     const r = stv(st, votes, M); seatsBy = r.seats; extra.log = r.log;
@@ -234,10 +389,21 @@ export function districtResult(st, d, natShare = nationalShare(st), method = sys
   const order = [...ids].sort((a, b) => seatsBy[b] - seatsBy[a] || e[b] - e[a]);
   order.forEach(id => { for (let k = 0; k < seatsBy[id]; k++) seats.push(id); });
   const winners = ids.filter(id => seatsBy[id] > 0);
-  return { e, ranked, seatsBy, seats, win: winners.length === 1 ? winners[0] : null, winners, margin, method, ...extra };
+  return { e, ranked, seatsBy, seats, win: winners.length === 1 ? winners[0] : null, winners, margin, method, votes, ...extra };
 }
 
 /* Voto popular agregado (personas) y % de voto válido por partido */
+/* Brecha de eficiencia entre dos partidos en las circunscripciones uninominales (en puntos):
+   (desperdiciados de b − desperdiciados de a) / votos. Positiva: el mapa favorece a a. */
+export function efficiencyGap(results, a, b) {
+  let wa = 0, wb = 0, V = 0;
+  results.filter(r => r && r.split).forEach(r => {
+    wa += r.waste[a] || 0; wb += r.waste[b] || 0;
+    V += Object.values(r.cast).reduce((x, y) => x + y, 0);
+  });
+  return V ? (wb - wa) / V * 100 : 0;
+}
+
 export function nationalVotes(st) {
   const ids = IDS(st), pv = Object.fromEntries([...ids, "I"].map(id => [id, 0]));
   st.districts.forEach(d => { const e = shares(st, d), p = d.pop || 0; [...ids, "I"].forEach(id => { pv[id] += p * e[id] / 100; }); });
@@ -338,7 +504,9 @@ export const leanCls = m => m === "I" ? "I" : "L:" + m;
 /* only: limita la elección a estos candidatos (segunda vuelta) */
 export function evalCand(st, v, only) {
   const P = st.params, ps = only ? st.parties.filter(p => only.includes(p.id)) : st.parties, K = candScale(st);
-  const u = ps.map(p => K * (promiseTerm(st, v, p.id) - cdist(v, p.pos)) + (v.party === p.id ? v.loyalty * P.cue : 0));
+  /* (la valencia pesa, frente a la distancia, lo mismo que en el voto popular × «peso del carisma en la cámara») */
+  const u = ps.map(p => K * (promiseTerm(st, v, p.id) - cdist(v, p.pos)) + (v.party === p.id ? v.loyalty * P.cue : 0)
+    + (P.cv ?? 0.5) * (valence(st, p) / 4) * (K * nAx(st) / 2));
   const m = Math.max(...u), ex = u.map(x => Math.exp(P.k * (x - m))), Z = ex.reduce((a, b) => a + b, 0);
   const probs = {}; ps.forEach((p, i) => { probs[p.id] = ex[i] / Z; });
   const order = ps.map(p => p.id).sort((a, b) => probs[b] - probs[a]);
@@ -346,6 +514,29 @@ export function evalCand(st, v, only) {
   const model = probs[top] - (second ? probs[second] : 0) >= 2 * P.band ? top : "I";
   const locked = P.honor && v.pledge && probs[v.pledge] != null ? v.pledge : null;
   return { probs, top, second, prob: probs[top], model, cls: locked || leanCls(model), locked };
+}
+
+/* Voto alternativo nacional: en cada ronda vuelven a votar los distritos ideológicos con los que quedan;
+   en los escritos a mano, los votos del eliminado pasan por afinidad. */
+function irvNational(st) {
+  const ids = IDS(st);
+  let alive = ids.filter(id => nationalVotes(st)[id] > 0);
+  const man = st.districts.map(d => d.mode === "ideo" ? null : { ...shares(st, d) });
+  const rounds = [];
+  for (let guard = 0; guard < 50 && alive.length; guard++) {
+    const v = Object.fromEntries(alive.map(id => [id, 0]));
+    st.districts.forEach((d, i) => {
+      const pop = d.pop || 0, sh = man[i] || ideoAvg(st, d, alive);
+      alive.forEach(id => { v[id] += pop * (sh[id] || 0) / 100; });
+    });
+    rounds.push(v);
+    const V = alive.reduce((a, id) => a + v[id], 0), top = alive.reduce((a, id) => v[id] > v[a] ? id : a, alive[0]);
+    if (v[top] > V / 2 || alive.length === 1) return { win: top, rounds };
+    const low = alive.reduce((a, id) => v[id] < v[a] ? id : a, alive[0]);
+    alive = alive.filter(id => id !== low);
+    man.forEach(m => { if (!m) return; const tr = transfer(st, low, alive); alive.forEach(id => { m[id] += m[low] * tr[id]; }); m[low] = 0; });
+  }
+  return { win: alive[0] ?? null, rounds };
 }
 
 /* Elección directa del cargo (por voto popular) */
@@ -364,8 +555,15 @@ export function directElection(st, ch = chamber(st)) {
     const win = ids.find(id => ev[id] >= need) || null;
     return { method, votes, V, ev, T, need, win, rounds: [votes] };
   }
-  if (method === "tworound") { const r = twoRound(st, votes); return { method, votes, V, win: r.win, rounds: r.rounds }; }
-  if (method === "irv") { const r = irv(st, votes); return { method, votes, V, win: r.win, rounds: r.rounds }; }
+  if (method === "tworound") {
+    const r = twoRound(st, votes, (a, b) => {
+      const out = { [a]: 0, [b]: 0 };
+      st.districts.forEach(d => { const v = runoffVotes(st, d, [a, b]); out[a] += v[a]; out[b] += v[b]; });
+      return out;
+    });
+    return { method, votes, V, win: r.win, rounds: r.rounds };
+  }
+  if (method === "irv") { const r = irvNational(st); return { method, votes, V, win: r.win, rounds: r.rounds }; }
   const win = V ? ids.reduce((a, id) => votes[id] > votes[a] ? id : a, ids[0]) : null;
   return { method, votes, V, win, rounds: [votes] };
 }
@@ -378,6 +576,7 @@ function eachPos(st, f) {
   st.districts.forEach(d => {
     Object.values(d.slates || {}).forEach(s => { f(s.pos, 0, "pos"); f(s.w, 1, "w"); });
     if (d.center) f(d.center, 0, "pos");
+    if (d.w) f(d.w, 1, "w");
   });
   Object.values(st.natSlates || {}).forEach(s => { f(s.pos, 0, "pos"); f(s.w, 1, "w"); });
   st.proposals.forEach(p => f(p.t, null, "t"));
@@ -419,7 +618,7 @@ export function apportion(st, total, min = 1) {
 
 /* ---------- Estado: valores por defecto y conversión de formatos antiguos ---------- */
 export function newSlate(st, pos) { const n = nAx(st); return { pos: pos ? [...pos] : zeros(n), loyalty: .9, w: ones(n), red: [], names: [] }; }
-export const DEFAULT_PARAMS = { k: 2.5, cue: 0.8, cred: 0.5, rl: 3, band: 0.12, honor: true, vk: 1.5, tk: 1, exhaust: 0.15 };
+export const DEFAULT_PARAMS = { k: 2.5, cue: 0.8, cred: 0.5, rl: 3, band: 0.12, honor: true, vk: 1.5, tk: 1, exhaust: 0.15, tm: 1, cv: 0.5, ta: 0.5 };
 export const DEFAULT_META = {
   eyebrow: "Simulador electoral", title: "Nueva cámara", lede: "",
   chamber: "Cámara", office: "Presidente", member: "miembro", members: "miembros", national: "Lista nacional", chairTitle: "Presidente de la cámara"
@@ -443,11 +642,14 @@ export function normalize(o) {
   o.params = { ...DEFAULT_PARAMS, ...(o.params || {}) };
   o.system = { method: "wta", threshold: 0, thresholdScope: "district", bonus: 0, ...(o.system || {}) };
   o.system.national = { seats: 0, method: "dhondt", mode: "parallel", threshold: 0, ...(o.system.national || {}) };
+  if (o.system.gerry == null) o.system.gerry = 0;
+  if (o.system.gerryBy == null) o.system.gerryBy = "";
   o.election = { kind: "indirect", rule: "abs", rounds: "single", direct: "plurality", ...(o.election || {}) };
   if (o.chair === undefined) o.chair = o.electors.some(e => e.id === 35 && /Orsini/.test(e.name)) ? "e35" : "";
-  o.parties.forEach(p => { p.pos = fitLen(p.pos, n, 0); p.appeal = p.appeal || 0; p.cand = p.cand ?? p.name; });
+  o.parties.forEach(p => { p.pos = fitLen(p.pos, n, 0); p.appeal = p.appeal || 0; p.charisma = p.charisma || 0; p.reputation = p.reputation || 0; p.cand = p.cand ?? p.name; });
   if (!o.swing || !ids.includes(o.swing.from) || !ids.includes(o.swing.to)) o.swing = { from: ids[0], to: ids[1] || ids[0], pts: 0 };
   o.districts.forEach((d, di) => {
+    if (d.seed == null && d.name) d.seed = d.name;   /* desde ahora, renombrar no cambia su muestra */
     d.pop = typeof d.pop === "number" ? d.pop : 0;
     d.slates = d.slates || {};
     d.v = d.v || {};
@@ -469,6 +671,11 @@ export function normalize(o) {
     }
     d.center = fitLen(d.center, n, 0);
     d.spread = d.spread ?? 4;
+    d.w = fitLen(d.w || [], n, 1);
+    d.local = d.local && typeof d.local === "object" ? d.local : {};
+    d.group = d.group || "";          // su clasificación (departamento, región…)
+    d.split = !!d.split;              // un escaño por circunscripción uninominal
+    d.subSpread = d.subSpread ?? 1.5; // lo distintas que son esas circunscripciones entre sí
     d.turnout = d.turnout ?? Math.min(100, Math.round(ids.reduce((a, id) => a + (d.v[id] || 0), 0)) || 70);
     if (d.system && !METHODS.some(m => m.id === d.system)) delete d.system;
   });
@@ -503,3 +710,35 @@ export const DEVERENTIO_META = {
   lede: "El Consejo de Cien elige al alcalde: cuarenta electores institucionales de los seis estamentos y sesenta escaños de distrito. Cada elector (o cada lista de distrito) tiene una posición en ocho ejes ideológicos; el modelo la compara con la de los candidatos o con lo que cambia cada propuesta, y estima cómo votará.",
   chamber: "Consejo de Cien", office: "Alcalde", member: "elector", members: "electores", national: "Lista de la ciudad", chairTitle: "Presidente del Consejo"
 };
+
+/* ---------- Qué decide el voto: la misma elección sin cada factor ---------- */
+export const FACTORS = [
+  { id: "charisma", name: "Carisma de los candidatos", off: s => s.parties.forEach(p => { p.charisma = 0; }) },
+  { id: "reputation", name: "Reputación de los partidos (escándalos, gestión)", off: s => s.parties.forEach(p => { p.reputation = 0; }) },
+  { id: "appeal", name: "Campaña (maquinaria, dinero)", off: s => s.parties.forEach(p => { p.appeal = 0; }) },
+  { id: "local", name: "Ajustes locales de cada distrito", off: s => s.districts.forEach(d => { d.local = {}; }) },
+  { id: "tm", name: "Movilización (participación que responde)", off: s => { s.params.tm = 0; } },
+  { id: "ta", name: "Desafección (sin un partido cerca, se abstiene)", off: s => { s.params.ta = 0; } }
+];
+/* ¿Quién se lleva el cargo? Directo: la elección popular. Por la cámara: los votos esperados de sus miembros. */
+export function officeResult(st, ch = chamber(st)) {
+  if (st.election.kind === "direct") { const D = directElection(st, ch); return { win: D.win, score: D.rounds[D.rounds.length - 1] }; }
+  const score = Object.fromEntries(IDS(st).map(id => [id, 0]));
+  voters(st, ch).forEach(v => { const r = evalCand(st, v); if (r.locked) score[r.locked]++; else for (const id in r.probs) score[id] += r.probs[id]; });
+  const win = IDS(st).reduce((a, id) => score[id] > score[a] ? id : a, IDS(st)[0]);
+  return { win, score };
+}
+/* Solo cuentan los factores que se usan (alguna valencia distinta de 0, o la movilización con valencias) */
+export function activeFactors(st) {
+  const any = k => st.parties.some(p => p[k]);
+  return FACTORS.filter(f => f.id === "local" ? st.districts.some(d => Object.values(d.local || {}).some(x => x))
+    : f.id === "tm" ? (st.params.tm ?? 1) && (any("charisma") || any("reputation") || any("appeal")) && st.districts.some(d => d.mode === "ideo")
+    : f.id === "ta" ? (st.params.ta ?? 0.5) && st.districts.some(d => d.mode === "ideo")
+    : any(f.id));
+}
+export function whatIf(st, factorId) {
+  const s = clone(st);
+  FACTORS.find(f => f.id === factorId).off(s);
+  const ch = chamber(s);
+  return { share: nationalShare(s), total: ch.total, office: officeResult(s, ch) };
+}
