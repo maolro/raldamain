@@ -75,12 +75,34 @@
    "local": {},
    "mode": "ideo",
    "name": "Argostana",
-   "pop": 1400000,
+   "pop": 1451000,
    "seed": "Argostana",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Izabel Ruzhichka",
+      "Aubin Meldas",
+      "Gilles Nuithal",
+      "Nuithel Zeman",
+      "Klas Durant",
+      "Urien Ruz",
+      "Naig Delcourt",
+      "Nevenne Moal",
+      "Madena Kervran",
+      "Eirena Kermor",
+      "Tanvez Mansoner",
+      "Gwenola Tanguy",
+      "Nedelegenn Rivîre",
+      "Aethira Riou",
+      "Arzhela Saoz",
+      "Luena Perrin",
+      "Riwal Moal",
+      "Blanche Beleg",
+      "Luboch Colard",
+      "Fragan Vesely",
+      "Arzhur Dargoat"
+     ],
      "pos": [
       -6,
       -1,
@@ -109,7 +131,29 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Morgan Martolod",
+      "Ruzanne Dobrovski",
+      "Svetlana Quiriwal",
+      "Thalven Skala",
+      "Kostanza Zeman",
+      "Larnen Beg",
+      "Yestin Luenvar",
+      "Avalenn Barazer",
+      "Thalnira Dargoat",
+      "Judikael Moal",
+      "Perrine Traonmelin",
+      "Yannig Kelenn",
+      "Benoit Kamm",
+      "Natalya Kermarc'heg",
+      "Kadou Mesaer",
+      "Radek Mason",
+      "Zbynek Kerhuel",
+      "Kandela Kovar",
+      "Kerne Rousseau",
+      "Ewen Rousseau",
+      "Felix Holub"
+     ],
      "pos": [
       4,
       2,
@@ -138,7 +182,29 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Libusha Traonmelin",
+      "Milan Tremor",
+      "Larnetha Gall",
+      "Radka Querwan",
+      "Dewi Durant",
+      "Tadeg Barz",
+      "Levenez Kigier",
+      "Farrant Mercier",
+      "Kenana Quiriwal",
+      "Eirena Berr",
+      "Konan Barz",
+      "Staven Meldoran",
+      "Koulmi Bourc'hiz",
+      "Elain Gwiader",
+      "Vearna Zelenka",
+      "Rolanda Morel",
+      "Riok Lagadeg",
+      "Judith Kordenner",
+      "Nominoe Meur",
+      "Libucha Mlinar",
+      "Judikael Darmor"
+     ],
      "pos": [
       6,
       -2,
@@ -169,7 +235,7 @@
    "split": true,
    "spread": 5,
    "subSpread": 1.5,
-   "turnout": 80,
+   "turnout": 77,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -204,15 +270,30 @@
    "desc": "Región pesquera. Hostil hacia Ustilus por sus aranceles y actividades de su flota, pero pragmática en lo demás.",
    "el": 12,
    "group": "Costa Hespérea",
-   "local": {},
+   "local": {
+    "SPM": 0.2
+   },
    "mode": "ideo",
    "name": "Laurendon",
-   "pop": 754000,
+   "pop": 781000,
    "seed": "Laurendon",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Mathilde Tieg",
+      "Kaour Holub",
+      "Costanse Floc'h",
+      "Morvael Merc'her",
+      "Enora Meldas",
+      "Avenan Prigent",
+      "Yannig Laornel",
+      "Blaise Kemener",
+      "Aziliz Lostanlenn",
+      "Gwenel Thalvaren",
+      "Aubin Ivin",
+      "Luenar Mansoner"
+     ],
      "pos": [
       -6,
       -1,
@@ -241,7 +322,20 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Radomer Bonnard",
+      "Gwion Delvaux",
+      "Borek Valdei",
+      "Menna Kermarc'heg",
+      "Aorel Liska",
+      "Gwenela Rivîre",
+      "Lan Goaz",
+      "Envela Svoboda",
+      "Larnetha Hir",
+      "Mael Prohaska",
+      "Brana Gak",
+      "Fraganna Mercier"
+     ],
      "pos": [
       4,
       2,
@@ -270,7 +364,20 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Elenne Masson",
+      "Radek Penhoat",
+      "Ronan Pospichil",
+      "Felise Skolaer",
+      "Morgana Skala",
+      "Goulc'hen Colard",
+      "Gwendolen Kermor",
+      "Glenn Guen",
+      "Konwal Kelenn",
+      "Penvern Delvo",
+      "Perrick Perrin",
+      "Vincent Ruzhichka"
+     ],
      "pos": [
       6,
       -2,
@@ -301,7 +408,7 @@
    "split": true,
    "spread": 4,
    "subSpread": 1.5,
-   "turnout": 70,
+   "turnout": 67,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -339,12 +446,23 @@
    "local": {},
    "mode": "ideo",
    "name": "Saumance",
-   "pop": 642000,
+   "pop": 666000,
    "seed": "Saumance",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Gwion Lanyann",
+      "Vearil Penmenez",
+      "Konwal Kerguen",
+      "Mona Kordenner",
+      "Fragan Leclerc",
+      "Nuithar Quillan",
+      "Silvear Bleiz",
+      "Dhriona Miliner",
+      "Eirin Kalvez",
+      "Gwenela Marchal"
+     ],
      "pos": [
       -6,
       -1,
@@ -373,7 +491,18 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Florina Renard",
+      "Laornith Penmarch",
+      "Gweltaz Mason",
+      "Aurenn Ruz",
+      "Uhela Greverei",
+      "Bastian Ozac'h",
+      "Kesenia Furig",
+      "Halegenn Skala",
+      "Bohumil Yelinek",
+      "Luenar Fontaine"
+     ],
      "pos": [
       4,
       2,
@@ -402,7 +531,18 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Bodan Mesaer",
+      "Silrin Luenvar",
+      "Djane Kopetski",
+      "Perrine Skala",
+      "Eirlana Valdei",
+      "Aourken Bihanig",
+      "Bastian Quiriwal",
+      "Hortense Tcherni",
+      "Arzhur Lanyann",
+      "Kerne Quiltud"
+     ],
      "pos": [
       6,
       -2,
@@ -433,7 +573,7 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 80,
+   "turnout": 77,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -471,12 +611,26 @@
    "local": {},
    "mode": "ideo",
    "name": "Clarival",
-   "pop": 789000,
+   "pop": 818000,
    "seed": "Clarival",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Elain Du",
+      "Costanse Novak",
+      "Eirlan Renard",
+      "Derwenn Ivin",
+      "Glaza Cherny",
+      "Meldir Quaodren",
+      "Tristan Diagon",
+      "Konwala Fur",
+      "Arkadi Ivin",
+      "Riwanon Berr",
+      "Konwala Meur",
+      "Milan Lefevre",
+      "Gurvan Sillareth"
+     ],
      "pos": [
       -6,
       -1,
@@ -505,7 +659,21 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Elain Lagadeg",
+      "Kaour Lanmikael",
+      "Nuithen Kersaudi",
+      "Tudwenn Kolard",
+      "Lubosh Du",
+      "Mazhev Duboaz",
+      "Glenna Florin",
+      "Hortense Kalvez",
+      "Mariye Sillareth",
+      "Premysl Penhoat",
+      "Tudwenn Quarzhur",
+      "Urien Dvorak",
+      "Kaourantin Ruzhichka"
+     ],
      "pos": [
       4,
       2,
@@ -534,7 +702,21 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Gwenela Branig",
+      "Vojtek Kervran",
+      "Hoel Quiyann",
+      "Gwenchlan Delorme",
+      "Lucien Pennek",
+      "Remi Luenvar",
+      "Sara Quidreth",
+      "Vearil Slavik",
+      "Meriadega Berr",
+      "Maodez Meldoran",
+      "Gurwal Kerhuel",
+      "Koulm Thalvelith",
+      "Briaga Nuithal"
+     ],
      "pos": [
       6,
       -2,
@@ -565,7 +747,7 @@
    "split": true,
    "spread": 4,
    "subSpread": 1.5,
-   "turnout": 71,
+   "turnout": 68,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -603,12 +785,20 @@
    "local": {},
    "mode": "ideo",
    "name": "Roumnet",
-   "pop": 412000,
+   "pop": 428000,
    "seed": "Roumnet",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Madena Skolaer",
+      "Meldara Haleg",
+      "Lugan Barz",
+      "Damyan Lanmikael",
+      "Laurine Thalvelith",
+      "Eirlana Bihanig",
+      "Gwenela Kergoat"
+     ],
      "pos": [
       -6,
       -1,
@@ -637,7 +827,15 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Avalenn Vearath",
+      "Borek Guen",
+      "Vesna Kral",
+      "Gwelan Lanmikael",
+      "Nevez Fur",
+      "Aubin Larneth",
+      "Blaise Delorme"
+     ],
      "pos": [
       4,
       2,
@@ -666,7 +864,15 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Bohumil Meldoran",
+      "Slavomir Novak",
+      "Rose Holub",
+      "Kadeg Slavik",
+      "Arcadi Blazhek",
+      "Mabon Lamar",
+      "Primel Derv"
+     ],
      "pos": [
       6,
       -2,
@@ -697,7 +903,7 @@
    "split": true,
    "spread": 4,
    "subSpread": 1.5,
-   "turnout": 60,
+   "turnout": 57,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -732,15 +938,41 @@
    "desc": "La capital de Kratoi. Es el electorado más progresista, laico y defensor de la República.",
    "el": 23,
    "group": "Kratoi Central",
-   "local": {},
+   "local": {
+    "NAT": 0.2
+   },
    "mode": "ideo",
    "name": "Rimas",
-   "pop": 1520000,
+   "pop": 1576000,
    "seed": "Rimas",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Ruana Meur",
+      "Valerie Ruz",
+      "Madena Bonnard",
+      "Marta Kerlann",
+      "Clemence Ploumelin",
+      "Aela Svoboda",
+      "Gilles Quemenez",
+      "Zorana Kordenner",
+      "Julienne Svoboda",
+      "Miroslava Delorme",
+      "Mikael Liska",
+      "Derwel Perrin",
+      "Auriele Svoboda",
+      "Fulup Horak",
+      "Odile Delvaux",
+      "Sofie Slavik",
+      "Mael Dargoat",
+      "Bleizig Mason",
+      "Jozef Vearath",
+      "Eleonore Gourvenneg",
+      "Kenver Mercier",
+      "Ruzanne Riou",
+      "Faustine Vlchek"
+     ],
      "pos": [
       -6,
       -1,
@@ -769,7 +1001,31 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Hoel Kordenner",
+      "Nevenoe Quidrien",
+      "Nolwenn Merc'her",
+      "Aorel Quaodren",
+      "Auriele Saoz",
+      "Miroslava Larneth",
+      "Florine Kopetski",
+      "Costanse Saoz",
+      "Silira Guivarc'h",
+      "Aurenn Labourer",
+      "Aorela Lanmikael",
+      "Glerya Mevel",
+      "Menna Luenith",
+      "Colette Kral",
+      "Mireye Lagadeg",
+      "Gwelan Kerhuel",
+      "Vlastimila Garnier",
+      "Julienne Greverei",
+      "Florina Masson",
+      "Dobromir Bourc'hiz",
+      "Vlastimila Furig",
+      "Julienne Kerlann",
+      "Benoit Masson"
+     ],
      "pos": [
       4,
       2,
@@ -798,7 +1054,31 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Konwal Fontaine",
+      "Klemant Korr",
+      "Briag Laornel",
+      "Adeline Kerguen",
+      "Vlastimila Branig",
+      "Gwenael Ozac'h",
+      "Josef Barz",
+      "Tanvezenn Quillan",
+      "Fraganna Bot",
+      "Ninnog Kalvez",
+      "Maurin Bot",
+      "Libucha Bot",
+      "Luboch Delvo",
+      "Dretha Masson",
+      "Gwendolen Kog",
+      "Bertrand Luenvar",
+      "Bleuenn Kelenn",
+      "Felix Cherny",
+      "Arzhela Kerer",
+      "Larnael Darmor",
+      "Elenne Haleg",
+      "Aurenn Morvan",
+      "Sulia Tavarnour"
+     ],
      "pos": [
       6,
       -2,
@@ -829,7 +1109,7 @@
    "split": true,
    "spread": 5,
    "subSpread": 1.5,
-   "turnout": 90,
+   "turnout": 87,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -864,15 +1144,31 @@
    "desc": "Campos ricos y villas de mercado en torno a la capital, conocida por su famosa batalla y por ser hogar de veteranos.",
    "el": 13,
    "group": "Kratoi Central",
-   "local": {},
+   "local": {
+    "SPM": 0.2
+   },
    "mode": "ideo",
    "name": "Grevara",
-   "pop": 798000,
+   "pop": 827000,
    "seed": "Grevara",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Bozhena Laornel",
+      "Mordenn Nuithal",
+      "Ivinenn Beg",
+      "Nevez Skolaer",
+      "Mariye Kopetski",
+      "Tenguy Fabri",
+      "Larnen Larnathil",
+      "Costanse Kopetski",
+      "Dragan Delorme",
+      "Nolwenn Kigier",
+      "Kaour Penmenez",
+      "Violaine Kervran",
+      "Elen Quenan"
+     ],
      "pos": [
       -6,
       -1,
@@ -901,7 +1197,21 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Anaig Yelinek",
+      "Bleizig Vlchek",
+      "Dhrion Guen",
+      "Quentin Luenvar",
+      "Goulc'hen Gwern",
+      "Aurel Perrin",
+      "Vearin Kog",
+      "Larnetha Delkour",
+      "Feliks Kemener",
+      "Clemence Delvo",
+      "Yestina Masson",
+      "Lusian Zeman",
+      "Laorena Vlchek"
+     ],
      "pos": [
       4,
       2,
@@ -930,7 +1240,21 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Hoela Toulleg",
+      "Armand Kelenn",
+      "Donan Koadanlem",
+      "Yuna Kalvez",
+      "Konan Labourer",
+      "Klemant Quaodren",
+      "Remi Tieg",
+      "Glaza Bot",
+      "Seiz Haleg",
+      "Clement Bonnard",
+      "Bohumil Mercier",
+      "Dourena Lamarre",
+      "Gireg Lainares"
+     ],
      "pos": [
       6,
       -2,
@@ -961,7 +1285,7 @@
    "split": true,
    "spread": 4,
    "subSpread": 1.5,
-   "turnout": 80,
+   "turnout": 77,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -996,15 +1320,35 @@
    "desc": "La provincia de las fundiciones. Obrera, industrial, partidaria de un Estado y un ejército fuertes.",
    "el": 17,
    "group": "Kratoi Central",
-   "local": {},
+   "local": {
+    "SPM": 0.3
+   },
    "mode": "ideo",
    "name": "Oreigon",
-   "pop": 1070000,
+   "pop": 1110000,
    "seed": "Oreigon",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Bastian Pennek",
+      "Ruana Tredern",
+      "Perig Moal",
+      "Rezeda Quiriwal",
+      "Anaig Luenvar",
+      "Nenan Mao",
+      "Radka Baraer",
+      "Staeven Vlchek",
+      "Felix Kopetski",
+      "Grinta Renard",
+      "Thalnira Eirthil",
+      "Gwenaela Tavarnour",
+      "Edern Kelenn",
+      "Stanislava Skala",
+      "Vitor Koadanlem",
+      "Luciye Du",
+      "Eozenn Delorme"
+     ],
      "pos": [
       -6,
       -1,
@@ -1033,7 +1377,25 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Glenna Dobrovski",
+      "Naig Dubois",
+      "Hoel Mercier",
+      "Sofie Kalvez",
+      "Rose Daven",
+      "Hugon Floc'h",
+      "Fragan Delkour",
+      "Daniel Merc'her",
+      "Benoit Mevel",
+      "Arzel Blazhek",
+      "Gwernenn Morel",
+      "Florina Duboaz",
+      "Awenig Lamarre",
+      "Ronig Kergoat",
+      "Ruan Gall",
+      "Gilles Duboaz",
+      "Vearila Delkour"
+     ],
      "pos": [
       4,
       2,
@@ -1062,7 +1424,25 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Tudval Labourer",
+      "Silvea Moal",
+      "Isembert Guivarc'h",
+      "Faustine Fontaine",
+      "Libusha Florin",
+      "Berc'hed Ivin",
+      "Maurin Labourer",
+      "Gilles Leclerc",
+      "Tenguy Mesaer",
+      "Gabriel Gwiader",
+      "Gwenela Penmarch",
+      "Eflamm Gak",
+      "Ostoya Marchal",
+      "Avalenn Tcherni",
+      "Kostanza Beleg",
+      "Bleuzenn Larnathil",
+      "Talan Blazhek"
+     ],
      "pos": [
       6,
       -2,
@@ -1093,7 +1473,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 70,
+   "turnout": 67,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -1128,15 +1508,27 @@
    "desc": "Colinas en el borde del departamento. Nacionalista en la cuestión nacional, más conservadora en sus costumbres.",
    "el": 9,
    "group": "Kratoi Central",
-   "local": {},
+   "local": {
+    "SPM": 0.2
+   },
    "mode": "ideo",
    "name": "Sarvaux",
-   "pop": 570000,
+   "pop": 591000,
    "seed": "Austaine",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Kazimer Pekar",
+      "Jaouen Mansoner",
+      "Yuna Tredern",
+      "Tifenn Chevalier",
+      "Tanvez Gwiader",
+      "Heol Yelinek",
+      "Mevena Slavik",
+      "Hoela Sillareth",
+      "Isembert Kopetski"
+     ],
      "pos": [
       -6,
       -1,
@@ -1165,7 +1557,17 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Konwala Lanyann",
+      "Judikael Lemoine",
+      "Heolig Pospichil",
+      "Silvea Mlynar",
+      "Lucien Larneth",
+      "Dushana Kerven",
+      "Alar Penanros",
+      "Libucha Vearath",
+      "Sofie Goaz"
+     ],
      "pos": [
       4,
       2,
@@ -1194,7 +1596,17 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Kalon Duboaz",
+      "Heolig Mao",
+      "Melda Kerven",
+      "Rena Holub",
+      "Judith Saoz",
+      "Quentin Morvan",
+      "Kvetoslava Garnier",
+      "Farrant Novak",
+      "Dretha Luenith"
+     ],
      "pos": [
       6,
       -2,
@@ -1225,7 +1637,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 70,
+   "turnout": 67,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -1260,15 +1672,27 @@
    "desc": "Tierras altas tranquilas con muchos funcionarios jubilados. Moderada, ordenada y algo protectora de su paisaje.",
    "el": 9,
    "group": "Kratoi Central",
-   "local": {},
+   "local": {
+    "SPM": 0.2
+   },
    "mode": "ideo",
    "name": "Lanvenez",
-   "pop": 557000,
+   "pop": 578000,
    "seed": "Montrivel",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Ostoya Barz",
+      "Sulia Lagadeg",
+      "Ruzanne Quenan",
+      "Staeven Baraer",
+      "Envel Bleiz",
+      "Mouezenn Quiriwal",
+      "Ostoya Mansoner",
+      "Gwenaela Leclerc",
+      "Silvear Lagadeg"
+     ],
      "pos": [
       -6,
       -1,
@@ -1297,7 +1721,17 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Lusian Delvo",
+      "Rolan Dumont",
+      "Bran Kergoat",
+      "Vatslav Chevalier",
+      "Arzhela Gak",
+      "Radka Stangwenneg",
+      "Dobromir Florin",
+      "Perrine Fontaine",
+      "Riwanon Desmarais"
+     ],
      "pos": [
       4,
       2,
@@ -1326,7 +1760,17 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Uhela Bihan",
+      "Lucien Slavik",
+      "Youenn Tieg",
+      "Kesenia Vasseur",
+      "Marta Guivarc'h",
+      "Levenez Mesaer",
+      "Gwenel Leclerc",
+      "Milan Revilo",
+      "Rolan Lostanlenn"
+     ],
      "pos": [
       6,
       -2,
@@ -1357,7 +1801,7 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 80,
+   "turnout": 77,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -1392,15 +1836,28 @@
    "desc": "Capital del norte y sede de la flota Kratense. Militarista y asimilacionista hacia los mazarinos.",
    "el": 10,
    "group": "Kratoi Norte",
-   "local": {},
+   "local": {
+    "SPM": 0.5
+   },
    "mode": "ideo",
    "name": "Carpentia",
-   "pop": 646000,
+   "pop": 670000,
    "seed": "Carpentia",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Elen Kloareg",
+      "Fraganna Quemenez",
+      "Severine Eirthil",
+      "Aurel Kamm",
+      "Gwion Stangwenneg",
+      "Elain Novak",
+      "Naig Revilo",
+      "Eflamma Meur",
+      "Radmila Traonmelin",
+      "Lan Tieg"
+     ],
      "pos": [
       -6,
       -1,
@@ -1429,7 +1886,18 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Lubomir Meur",
+      "Glerya Furig",
+      "Lugan Quidreth",
+      "Rolanda Menki",
+      "Auriele Kervella",
+      "Halegenn Rivier",
+      "Farrant Quenan",
+      "Vesna Ruzhitchka",
+      "Nevenne Lenner",
+      "Perig Branig"
+     ],
      "pos": [
       4,
       2,
@@ -1458,7 +1926,18 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Elenne Derv",
+      "Silvea Blazhek",
+      "Gwenola Sedlak",
+      "Eleonore Kemener",
+      "Thalven Bleiz",
+      "Grit Korr",
+      "Hervig Labourer",
+      "Ruan Desmarais",
+      "Adeline Haleg",
+      "Klemant Mason"
+     ],
      "pos": [
       6,
       -2,
@@ -1489,7 +1968,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 80,
+   "turnout": 77,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -1524,15 +2003,26 @@
    "desc": "Región rural habla mazarina. Quiere reconocimiento cultural y autogobierno, subsidios agrarios.",
    "el": 8,
    "group": "Kratoi Norte",
-   "local": {},
+   "local": {
+    "SPM": 0.5
+   },
    "mode": "ideo",
    "name": "Rybniky",
-   "pop": 488000,
+   "pop": 507000,
    "seed": "Pogorska",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Melaniya Ignatova",
+      "Ratibor Ingvarov",
+      "Desislava Ingvarova",
+      "Karl Radev",
+      "Evgeniya Berezovska",
+      "Ratibor Avramov",
+      "Kalina Svyatogorskaya",
+      "Askold Zharov"
+     ],
      "pos": [
       -6,
       -1,
@@ -1561,7 +2051,16 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Susanna Ozerskaya",
+      "Rodmila Zakharova",
+      "Lyubava Strelnikova",
+      "Zakhar Bystritski",
+      "Rumena Hrabak",
+      "Zvonimir Vasilev",
+      "Yekaterina Afanasieva",
+      "Teofan Belozerskoy"
+     ],
      "pos": [
       4,
       2,
@@ -1590,7 +2089,16 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Estira Ignatova",
+      "Zhara Medvedeva",
+      "Kuril Novak",
+      "Ludomir Varyagin",
+      "Teofan Konstantinov",
+      "Aleksandra Ilyina",
+      "Volodar Sedov",
+      "Kasimir Radev"
+     ],
      "pos": [
       6,
       -2,
@@ -1621,7 +2129,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 70,
+   "turnout": 67,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -1656,15 +2164,26 @@
    "desc": "Provincia de montaña con el paso de Alascur, por donde llegó la invasión de 4001. La más hostil hacia Mazarín.",
    "el": 8,
    "group": "Kratoi Norte",
-   "local": {},
+   "local": {
+    "SPM": 0.5
+   },
    "mode": "ideo",
    "name": "Drommel",
-   "pop": 488000,
+   "pop": 507000,
    "seed": "Drommel",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Teodora Kurilova",
+      "Samuil Tkachev",
+      "Iskra Krasnopolska",
+      "Galina Filaretova",
+      "Erast Zakharov",
+      "Asta Velotska",
+      "Zdravka Askoldova",
+      "Gorislava Voronova"
+     ],
      "pos": [
       -6,
       -1,
@@ -1693,7 +2212,16 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Boleslav Belozerskoy",
+      "Tsvetana Belozerskaya",
+      "Ludomir Fogel",
+      "Yaroslav Vysotskoy",
+      "Gorislava Snezhinska",
+      "Raisa Zalesska",
+      "Melaniya Pastukhova",
+      "Anton Svaikalski"
+     ],
      "pos": [
       4,
       2,
@@ -1722,7 +2250,16 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Yagoda Holub",
+      "Volodar Vysotskoy",
+      "Zhelimir Novak",
+      "Zhivka Avramova",
+      "Idin Lisitsyn",
+      "Elisaveta Morozova",
+      "Bertold Vinter",
+      "Stanimir Shtern"
+     ],
      "pos": [
       6,
       -2,
@@ -1753,7 +2290,7 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 70,
+   "turnout": 67,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -1788,15 +2325,24 @@
    "desc": "La provincia mazarina más pequeña y remota. Aislada, tradicional y recelosa de todos los gobiernos que ha tenido.",
    "el": 6,
    "group": "Kratoi Norte",
-   "local": {},
+   "local": {
+    "SPM": 0.5
+   },
    "mode": "ideo",
    "name": "Kamenek",
-   "pop": 342000,
+   "pop": 355000,
    "seed": "Nordhaven",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Vostan Nikolov",
+      "Anna Shmidt",
+      "Slavena Konyukhova",
+      "Vikenti Novostarski",
+      "Feliks Isakov",
+      "Gleb Kalogerov"
+     ],
      "pos": [
       -6,
       -1,
@@ -1825,7 +2371,14 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Anton Ozerskoy",
+      "Zhivka Isakova",
+      "Netyalko Tkachev",
+      "Netyalko Sedov",
+      "Dragomir Gorodetski",
+      "Bodana Nikolova"
+     ],
      "pos": [
       4,
       2,
@@ -1854,7 +2407,14 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Samuil Sokolov",
+      "Volodar Hrabak",
+      "Valentina Dimitrova",
+      "Stanislava Medvedeva",
+      "Dubravka Svaikalska",
+      "Zdravko Sirko"
+     ],
      "pos": [
       6,
       -2,
@@ -1885,7 +2445,7 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 70,
+   "turnout": 67,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -1923,12 +2483,23 @@
    "local": {},
    "mode": "ideo",
    "name": "Lisieroy",
-   "pop": 602000,
+   "pop": 624000,
    "seed": "Sarvaux",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Luboch Morel",
+      "Thaleira Pennek",
+      "Paol Quemenez",
+      "Marcel Tieg",
+      "Perig Mansoner",
+      "Tomaz Dupuiz",
+      "Heolig Delvaux",
+      "Nedelegenn Desmarais",
+      "Ostoya Pesketer",
+      "Felix Tredern"
+     ],
      "pos": [
       -6,
       -1,
@@ -1957,7 +2528,18 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Enez Rivîre",
+      "Dahud Beaulieu",
+      "Konan Kog",
+      "Silvea Zeman",
+      "Judikael Gall",
+      "Maurin Fur",
+      "Kalon Ruz",
+      "Costanse Nuithal",
+      "Vearin Daven",
+      "Riwan Fontaine"
+     ],
      "pos": [
       4,
       2,
@@ -1986,7 +2568,18 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Nevenne Bihan",
+      "Maodez Menki",
+      "Avena Duboaz",
+      "Bertrand Thalvelith",
+      "Mael Fur",
+      "Tanvez Kovar",
+      "Rozenn Diagon",
+      "Mordenn Tanguy",
+      "Loarenn Mesaer",
+      "Lubomira Saoz"
+     ],
      "pos": [
       6,
       -2,
@@ -2017,7 +2610,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 71,
+   "turnout": 68,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2055,12 +2648,22 @@
    "local": {},
    "mode": "ideo",
    "name": "Soucart",
-   "pop": 570000,
+   "pop": 591000,
    "seed": "Denvire",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Selina Gianescis",
+      "Teresa Pontecorvo",
+      "Radmila Elisondo",
+      "Josue Pelagis",
+      "Cipriana Lasaris",
+      "Amara Cardoso",
+      "Unaio Figueira",
+      "Apolina Vilar",
+      "Selena Marchesi"
+     ],
      "pos": [
       -6,
       -1,
@@ -2089,7 +2692,17 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Baltasar Montanari",
+      "Amastano Mateos",
+      "Estanislao Trevisani",
+      "Liandro Zunin",
+      "Zarino Elisondo",
+      "Variago Gianescis",
+      "Cornelio Barnabeis",
+      "Gloria Varela",
+      "Evarista Remiji"
+     ],
      "pos": [
       4,
       2,
@@ -2118,7 +2731,17 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Sera Quisada",
+      "Dafne Abadeli",
+      "Arimio Sabadin",
+      "Olivia Guarneiri",
+      "Lisandra Pineiro",
+      "Bogdana Cabreira",
+      "Avramo Laterza",
+      "Lara Valenti",
+      "Radoslao Avelis"
+     ],
      "pos": [
       6,
       -2,
@@ -2149,7 +2772,7 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 80,
+   "turnout": 77,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2187,12 +2810,21 @@
    "local": {},
    "mode": "ideo",
    "name": "Maghmor",
-   "pop": 502000,
+   "pop": 521000,
    "seed": "Aubrit",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Isembert Duboaz",
+      "Slavena Deverdin",
+      "Valerian Barazer",
+      "Avena Novak",
+      "Corinne Guivarc'h",
+      "Lugan Kalvez",
+      "Kesenia Fabri",
+      "Dragan Dobrovski"
+     ],
      "pos": [
       -6,
       -1,
@@ -2221,7 +2853,16 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Naig Leclerc",
+      "Lubosh Guivarc'h",
+      "Derwenn Karreg",
+      "Clement Morel",
+      "Yannig Novak",
+      "Damyan Goff",
+      "Ronig Daven",
+      "Larnen Koadanlem"
+     ],
      "pos": [
       4,
       2,
@@ -2250,7 +2891,16 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Danyel Bleiz",
+      "Paol Skolaer",
+      "Philippe Branig",
+      "Eirlan Kermarc'heg",
+      "Gwenchlan Lenner",
+      "Berc'hed Goff",
+      "Karadeg Florin",
+      "Libusha Eskob"
+     ],
      "pos": [
       6,
       -2,
@@ -2281,7 +2931,7 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 86,
+   "turnout": 83,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2319,12 +2969,23 @@
    "local": {},
    "mode": "ideo",
    "name": "Neuvillete",
-   "pop": 646000,
+   "pop": 670000,
    "seed": "Castelnoir",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Gaspard Delorme",
+      "Ercilia Galardo",
+      "Aminta Zunin",
+      "Alexio Fonseca",
+      "Florentina Salvi",
+      "Tiziri Favero",
+      "Horacio Ozeda",
+      "Danilo Marchesi",
+      "Betania Zangari",
+      "Radmila Pineiro"
+     ],
      "pos": [
       -6,
       -1,
@@ -2353,7 +3014,18 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Ladislao Breda",
+      "Donato Vaqueiro",
+      "Cornelia Zaneti",
+      "Cresensa Serpico",
+      "Agatin Salusi",
+      "Agil Crespo",
+      "Livio Arze",
+      "Victoria Casales",
+      "Isidora Etxeberri",
+      "Masino Cabreira"
+     ],
      "pos": [
       4,
       2,
@@ -2382,7 +3054,18 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Iliana Andrade",
+      "Carmina Morelo",
+      "Natalia Guerreiro",
+      "Teodoro Ferreiro",
+      "Elnatan Ardovin",
+      "Enara Belascis",
+      "Avramo Miroslais",
+      "Marcedo Guarneiri",
+      "Luciana Araúxo",
+      "Marina Lasaris"
+     ],
      "pos": [
       6,
       -2,
@@ -2413,7 +3096,7 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 88,
+   "turnout": 85,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2451,12 +3134,21 @@
    "local": {},
    "mode": "ideo",
    "name": "Miravel",
-   "pop": 475000,
+   "pop": 492000,
    "seed": "Miravel",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Thaleir Larneth",
+      "Heol Fontaine",
+      "Jaouena Ruzhichka",
+      "Josef Blazhek",
+      "Staeven Quidreth",
+      "Isembert Bezo",
+      "Fraganna Luenvar",
+      "Gwenel Karreg"
+     ],
      "pos": [
       -6,
       -1,
@@ -2485,7 +3177,16 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Bodan Mlynar",
+      "Riwal Derv",
+      "Morgana Quaodren",
+      "Iwen Delvo",
+      "Kerne Pekar",
+      "Dragana Du",
+      "Tadeg Kalvez",
+      "Primel Penhoat"
+     ],
      "pos": [
       4,
       2,
@@ -2514,7 +3215,16 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Sauvin Diagon",
+      "Bleuenn Rivier",
+      "Laornith Darmor",
+      "Daniel Derv",
+      "Riwanon Cherny",
+      "Voitek Koadanlem",
+      "Bozhidara Dubois",
+      "Clement Ruz"
+     ],
      "pos": [
       6,
       -2,
@@ -2545,7 +3255,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 80,
+   "turnout": 77,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2583,12 +3293,21 @@
    "local": {},
    "mode": "ideo",
    "name": "Tregwern",
-   "pop": 507000,
+   "pop": 526000,
    "seed": "Sylvenne",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Riwanon Thalvaren",
+      "Talan Meldoran",
+      "Awen Barz",
+      "Avena Mansoner",
+      "Aethira Yelinek",
+      "Huelenn Darmor",
+      "Nuithara Lenner",
+      "Rose Yelinek"
+     ],
      "pos": [
       -6,
       -1,
@@ -2617,7 +3336,16 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Grit Quidrien",
+      "Lubomira Zelenka",
+      "Larnael Kolard",
+      "Mael Quiriwal",
+      "Solange Durant",
+      "Renan Vearath",
+      "Izabel Mao",
+      "Renan Maen"
+     ],
      "pos": [
       4,
       2,
@@ -2646,7 +3374,16 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Natalia Toulleg",
+      "Larnen Lainares",
+      "Dhrion Hruby",
+      "Gwennig Chevalier",
+      "Isembert Quidrien",
+      "Penvern Kordenner",
+      "Bezoenn Vesely",
+      "Glenna Skala"
+     ],
      "pos": [
       6,
       -2,
@@ -2677,7 +3414,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 70,
+   "turnout": 67,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2715,12 +3452,23 @@
    "local": {},
    "mode": "ideo",
    "name": "Kerivin",
-   "pop": 602000,
+   "pop": 624000,
    "seed": "Haudric",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Borek Tanguy",
+      "Erwan Gall",
+      "Avenan Perrin",
+      "Bodan Quavenan",
+      "Talan Eirthil",
+      "Kerwan Guen",
+      "Mikael Goff",
+      "Rozenn Lostanlenn",
+      "Aorela Kerven",
+      "Aourken Derv"
+     ],
      "pos": [
       -6,
       -1,
@@ -2749,7 +3497,18 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Kaour Delorme",
+      "Enez Gwern",
+      "Konwala Delkour",
+      "Halegenn Kerguen",
+      "Rozenn Pekar",
+      "Larnetha Skala",
+      "Durant Kerlann",
+      "Gaspard Goaz",
+      "Gwennig Mansoner",
+      "Felise Delvo"
+     ],
      "pos": [
       4,
       2,
@@ -2778,7 +3537,18 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Milena Quelouan",
+      "Silira Chevalier",
+      "Dreth Kergoat",
+      "Gwernenn Luenvar",
+      "Klemant Dumont",
+      "Natalia Delkour",
+      "Larnael Colard",
+      "Armand Skolaer",
+      "Primel Kermarc'heg",
+      "Rozenn Desmarais"
+     ],
      "pos": [
       6,
       -2,
@@ -2809,7 +3579,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 70,
+   "turnout": 67,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2847,12 +3617,20 @@
    "local": {},
    "mode": "ideo",
    "name": "Tallaghrin",
-   "pop": 414000,
+   "pop": 430000,
    "seed": "Verchamps",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Libusha Diagon",
+      "Larnael Kelenn",
+      "Arkadi Kelenn",
+      "Milan Quenan",
+      "Koleta Deverdin",
+      "Vatslav Morel",
+      "Maela Ruz"
+     ],
      "pos": [
       -6,
       -1,
@@ -2881,7 +3659,15 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Kaour Quaodren",
+      "Elenne Moal",
+      "Eleonore Quayl",
+      "Philippe Sillareth",
+      "Dhriona Dupuis",
+      "Larnaela Hir",
+      "Thalnir Thalvelith"
+     ],
      "pos": [
       4,
       2,
@@ -2910,7 +3696,15 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Huelig Braz",
+      "Milan Toulleg",
+      "Eflamm Zeman",
+      "Amelie Bourc'hiz",
+      "Maurin Quidrien",
+      "Slavomir Vlchek",
+      "Tanvezenn Danteg"
+     ],
      "pos": [
       6,
       -2,
@@ -2941,7 +3735,7 @@
    "split": true,
    "spread": 3.5,
    "subSpread": 1.5,
-   "turnout": 70,
+   "turnout": 67,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -2979,12 +3773,17 @@
    "local": {},
    "mode": "ideo",
    "name": "Luenith",
-   "pop": 206000,
+   "pop": 214000,
    "seed": "Lisieroy",
    "slates": {
     "FED": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Arkadi Yelinek",
+      "Ruana Yelinek",
+      "Rose Liska",
+      "Vratislav Darmor"
+     ],
      "pos": [
       -6,
       -1,
@@ -3013,7 +3812,12 @@
     },
     "NAT": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Kadou Marchal",
+      "Sensi Masson",
+      "Ludek Diagon",
+      "Vincent Merc'her"
+     ],
      "pos": [
       4,
       2,
@@ -3042,7 +3846,12 @@
     },
     "SPM": {
      "loyalty": 0.9,
-     "names": [],
+     "names": [
+      "Kadou Dobrovski",
+      "Arkadi Deverdin",
+      "Nedelegenn Quayl",
+      "Kadia Beg"
+     ],
      "pos": [
       6,
       -2,
@@ -3073,7 +3882,7 @@
    "split": true,
    "spread": 3,
    "subSpread": 1.5,
-   "turnout": 59,
+   "turnout": 56,
    "v": {
     "FED": 0,
     "NAT": 0,
@@ -3094,18 +3903,18 @@
   }
  ],
  "election": {
-  "kind": "direct",
+  "kind": "indirect",
   "rule": "abs",
-  "rounds": "runoff",
+  "rounds": "single",
   "direct": "tworound"
  },
  "electors": [],
  "mapDist": "dist",
  "mapLab": "full",
  "meta": {
-  "eyebrow": "República de Kratoi · 4090",
-  "title": "Presidenciales de 4090",
-  "lede": "Después de la crisis del 86, los rescates y la austeridad, Kesenia Revilo funda el Movimiento Popular Soberano y rompe el bipartidismo frente a su antiguo aliado Isembert Florin. Plantilla base (provincias y programas de election-info.md): ajústala a tu gusto.",
+  "eyebrow": "República de Kratoi · 4098",
+  "title": "Legislativas de 4098",
+  "lede": "Con la economía recuperada y Kesenia en campaña por todo el país, el MPS de Tudval Labourer pide la mayoría para aprobar las pensiones, la educación pública y la ampliación del Tribunal Supremo. Los nacionalistas, sin Isembert, presentan a Hoel Kordenner; los federalistas repiten con el derrotado Gaspard Delorme. El MPS gana por fin el Congreso por mayoría absoluta.",
   "chamber": "Congreso de Diputados",
   "office": "Presidente",
   "member": "diputado",
@@ -3213,15 +4022,15 @@
   "vk": 0.6,
   "tk": 1,
   "exhaust": 0.15,
-  "tm": 1,
+  "tm": 0.5,
   "cv": 0.5,
   "ta": 0.5
  },
  "parties": [
   {
    "appeal": 0.3,
-   "cand": "Isembert Florin",
-   "charisma": 0,
+   "cand": "Hoel Kordenner",
+   "charisma": -0.3,
    "color": "#1f5fae",
    "id": "NAT",
    "name": "Partido Nacionalista",
@@ -3237,12 +4046,12 @@
     -9,
     5
    ],
-   "reputation": -0.6
+   "reputation": -0.4
   },
   {
    "appeal": 0.2,
-   "cand": "Staven Dumont",
-   "charisma": 0,
+   "cand": "Gaspard Delorme",
+   "charisma": -0.3,
    "color": "#0e6710",
    "id": "FED",
    "name": "Partido Federalista",
@@ -3258,36 +4067,36 @@
     -3,
     5
    ],
-   "reputation": -0.4
+   "reputation": -0.2
   },
   {
-   "appeal": 0.2,
-   "cand": "Kesenia Revilo",
-   "charisma": 0.6,
+   "appeal": 0.4,
+   "cand": "Tudval Labourer",
+   "charisma": 0.5,
    "color": "#c96508",
    "id": "SPM",
    "name": "Movimiento del Pueblo Soberano",
    "pos": [
-    7,
-    -3,
-    1,
-    7,
     8,
-    -5,
+    0,
+    0,
+    8,
+    9,
+    -4,
     -7,
     -6,
     9,
-    -1
+    1
    ],
-   "reputation": 0
+   "reputation": 0.6
   }
  ],
  "proposals": [],
  "scenario": {
   "country": "Kratoi",
-  "election": "4093 · Parlamentarias",
-  "desc": "",
-  "published": false
+  "election": "4098 · Legislativas",
+  "published": false,
+  "desc": "El MPS gana la mayoría absoluta del Congreso frente a dos oposiciones sin líder."
  },
  "sq": [
   -2,
