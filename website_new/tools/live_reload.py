@@ -167,6 +167,12 @@ def _mtimes(paths: Iterable[Path]) -> dict[Path, int]:
 def _watch_imports(extra: list[Path]) -> None:
     """Child: exit with RESTART_CODE as soon as an imported repo file changes."""
     seen = _mtimes(_imported_repo_files() + extra)
+    # A file that changed after this process started was loaded in its old state: git's
+    # pull --autostash briefly puts back the committed version, the restart loads that, and the
+    # stash comes back within the same second — so restart once more to load what's on disk now.
+    if any(m > int(BOOT) for m in seen.values()):
+        print(" * A file changed while starting, reloading", flush=True)
+        os._exit(RESTART_CODE)
     while True:
         time.sleep(1)
         files = _imported_repo_files() + extra  # modules imported later count too
