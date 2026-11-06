@@ -11,13 +11,16 @@ Culture file:
    "names":    [{"name": "Dahrum", "gender": "m", "meaning": ""}, …],   # gender: m, f or u (unisex)
    "surnames": [{"name": "Ivanov", "female": "Ivanova", "meaning": ""}, …],   # female: optional
    "surname_rules":    [{"ending": "ov", "female": "ova"}, …],                   # feminine form of the rest
-   "patronymic_rules": [{"ending": "", "male": "sson", "female": "sdóttir"}, …]} # from the father's name
+   "patronymic_rules": [{"ending": "", "male": "sson", "female": "sdóttir"}, …], # from the father's name
+   "places": [{"name": "Kerhuel", "meaning": "«la aldea alta» — ker «aldea» + uhel «alto» · kratense"}, …]}
+  # places: names for anything (a village, a river, a province…); the meaning is their etymology
   The format places {name}, {surname} and {patronymic}; an ending rule replaces the matching ending
   (the longest one wins, "" = any name): Harald + {"ending": "", "male": "sson"} -> Haraldsson.
 """
 
 import json
 import re
+import subprocess
 import sys
 import unicodedata
 from pathlib import Path
@@ -58,7 +61,12 @@ def _key(s: str) -> str:
 
 def clean_culture(cid: str, c: dict) -> dict:
     """Keeps only valid fields; merges duplicate names (same name and gender) and sorts the lists."""
-    names, surnames = {}, {}
+    names, surnames, places = {}, {}, {}
+    for p in c.get("places") or []:
+        name = str(p.get("name") or "").strip()
+        if name:
+            k = _key(name)
+            places[k] = {"name": name, "meaning": str(p.get("meaning") or "").strip() or places.get(k, {}).get("meaning", "")}
     for n in c.get("names") or []:
         name = str(n.get("name") or "").strip()
         g = n.get("gender") if n.get("gender") in GENDERS else "u"
@@ -80,7 +88,8 @@ def clean_culture(cid: str, c: dict) -> dict:
             "surnames": sorted(surnames.values(), key=lambda s: (_key(s["name"]), s["name"])),
             # ending rules: the ending of the surname / the father's name is replaced by the rule's text
             "surname_rules": _rules(c.get("surname_rules"), ("female",)),
-            "patronymic_rules": _rules(c.get("patronymic_rules"), ("male", "female"))}
+            "patronymic_rules": _rules(c.get("patronymic_rules"), ("male", "female")),
+            "places": sorted(places.values(), key=lambda p: (_key(p["name"]), p["name"]))}
 
 
 def _rules(rules, texts) -> list:
@@ -107,7 +116,7 @@ def rebuild_index() -> list:
         out.append({"id": p.stem, "name": c.get("name") or p.stem,
                     "count": {"names": len(ns), "m": sum(n.get("gender") == "m" for n in ns),
                               "f": sum(n.get("gender") == "f" for n in ns), "u": sum(n.get("gender") == "u" for n in ns),
-                              "surnames": len(c.get("surnames") or [])}})
+                              "surnames": len(c.get("surnames") or []), "places": len(c.get("places") or [])}})
     out.sort(key=lambda c: _key(c["name"]))
     if not INDEX.exists() or _read(INDEX) != out:
         _write(INDEX, out)
@@ -140,7 +149,7 @@ def api_put(cid):
     new = not p.exists()
     if not new:  # a page from before a field existed doesn't send it: keep what the file has
         old = _read(p)
-        for k in ("surname_rules", "patronymic_rules"):
+        for k in ("surname_rules", "patronymic_rules", "places"):
             if k not in culture and k in old:
                 culture[k] = old[k]
         old_female = {_key(s.get("name")): s["female"] for s in old.get("surnames") or [] if s.get("female")}
@@ -150,7 +159,7 @@ def api_put(cid):
     _write(p, c)
     rebuild_index()
     what = data.get("label") or ("nueva cultura" if new else "")
-    git = git_push([str(p), str(INDEX)], f"Update names: {c['name']}" + (f" ({what})" if what else ""))
+    git = _push(f"Update names: {c['name']}" + (f" ({what})" if what else ""), [p, INDEX])
     return jsonify({"ok": True, "culture": c, "git": git})
 
 
@@ -162,8 +171,25 @@ def api_delete(cid):
     name = _read(p).get("name") or cid
     p.unlink()
     rebuild_index()
-    git = git_push([str(p), str(INDEX)], f"Delete names: {name}")
+    git = _push(f"Delete names: {name}", [p, INDEX])
     return jsonify({"ok": True, "git": git})
+
+
+# ── GitHub: every save writes the file and commits + pushes it (in the background; bursts go out
+# together). Anything else left unpushed in data/names (an earlier save that failed) goes up with it.
+def changed_files() -> list:
+    try:
+        out = subprocess.run(["git", "-C", str(BASE), "status", "--porcelain", "-uall", "--", str(NAMES)],
+                             capture_output=True, text=True, encoding="utf-8", timeout=20).stdout
+        root = Path(subprocess.run(["git", "-C", str(BASE), "rev-parse", "--show-toplevel"],
+                                   capture_output=True, text=True, timeout=20).stdout.strip() or BASE)
+    except (OSError, subprocess.SubprocessError):
+        return []
+    return [str(root / line[3:].strip().strip('"').split(" -> ")[-1]) for line in out.splitlines()]
+
+
+def _push(message: str, files) -> str:
+    return git_push(sorted({str(f) for f in files} | set(changed_files())), message[:300])
 
 
 @app.route("/api/git")
@@ -207,10 +233,13 @@ body { min-height: 100vh; }
 .ne-tabs button { background: none; color: var(--text-main); padding: 6px 14px; border: 1px solid #444; border-radius: 4px; cursor: pointer;
   font-family: var(--font-body); font-size: 0.9rem; }
 .ne-tabs button:hover, .ne-tabs button.on { border-color: var(--accent-gold); color: var(--accent-gold); }
+.ne-save { font: 700 0.85rem var(--font-body); padding: 5px 14px; border: 1px solid var(--accent-gold); background: transparent; color: var(--accent-gold); border-radius: 4px; cursor: pointer; white-space: nowrap; }
+.ne-save:disabled { border-color: #444; color: #777; cursor: default; }
+.ne-save.dirty { background: var(--accent-gold); color: #000; }
 #git-badge { font-size: 0.75rem; padding: 2px 8px; border: 1px solid #444; border-radius: 4px; color: var(--text-muted); white-space: nowrap; }
 #git-badge.ok { border-color: #2d5a3a; color: #5fae6e; } #git-badge.busy { border-color: #6a5a20; color: #d8b34a; }
 #git-badge.bad { border-color: #6a2020; color: #e76a6a; }
-.ne-wrap { max-width: 1250px; margin: 0 auto; padding: 24px 16px 60px; }
+.ne-wrap { max-width: 1500px; margin: 0 auto; padding: 24px 16px 60px; }
 .ne-h1 { font-family: var(--font-heading); color: var(--accent-gold); text-align: center; margin-bottom: 6px; }
 .ne-sub { color: var(--text-muted); text-align: center; margin-bottom: 18px; }
 .inp { background: #151515; border: 1px solid #555; color: var(--text-main); border-radius: 4px; padding: 7px 10px;
@@ -240,14 +269,17 @@ body { min-height: 100vh; }
 .lb-g button { background: none; border: 1px solid #555; color: var(--text-main); border-radius: 4px; padding: 6px 12px; cursor: pointer; font-family: var(--font-body); }
 .lb-g button.on { background: var(--accent-gold); border-color: var(--accent-gold); color: #000; font-weight: bold; }
 #lb-bulk { width: 100%; min-height: 110px; resize: vertical; font-family: var(--font-body); }
-.lb-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
+.lb-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
 .lb-col h4 { font-family: var(--font-heading); color: var(--accent-gold); font-size: 0.95rem; margin-bottom: 8px; display: flex; justify-content: space-between; }
 .lb-col h4 small { color: var(--text-muted); font-family: var(--font-body); font-weight: 400; }
-.lb-item { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr) auto; gap: 4px; margin-bottom: 4px; }
-.lb-item .inp { padding: 4px 7px; font-size: 0.85rem; min-width: 0; }
+.lb-item { display: grid; grid-template-columns: minmax(110px, 0.6fr) minmax(0, 2fr) auto; gap: 6px; margin-bottom: 5px; }
+.lb-item .inp { padding: 6px 9px; font-size: 0.92rem; min-width: 0; }
 .lb-col.sur { grid-column: span 2; }
-@media (max-width: 900px) { .lb-col.sur { grid-column: auto; } }
-.lb-item.sur { grid-template-columns: minmax(0, 0.9fr) minmax(0, 0.9fr) minmax(0, 1.2fr) auto; }
+@media (max-width: 900px) { .lb-cols { grid-template-columns: 1fr; } .lb-col.sur { grid-column: auto; } }
+.lb-col.plc { grid-column: span 2; }
+.lb-item.plc { grid-template-columns: minmax(110px, 0.6fr) minmax(0, 2.6fr) auto; }
+@media (max-width: 900px) { .lb-col.plc { grid-column: auto; } }
+.lb-item.sur { grid-template-columns: minmax(110px, 0.6fr) minmax(110px, 0.6fr) minmax(0, 2.6fr) auto; }
 .lb-rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 18px; }
 .lb-rule { display: grid; gap: 4px; margin-bottom: 4px; }
 .lb-rule.sur { grid-template-columns: 1fr 1fr auto; } .lb-rule.pat { grid-template-columns: 1fr 1fr 1fr auto; }
@@ -272,6 +304,7 @@ body { min-height: 100vh; }
     <button type="button" data-tab="gen" class="on">🎲 Generador</button>
     <button type="button" data-tab="lib">📚 Biblioteca</button>
   </nav>
+  <button type="button" id="ne-save" class="ne-save" disabled title="Escribe el archivo y lo sube a GitHub (Ctrl+S)">💾 Guardar</button>
   <span id="git-badge"></span>
 </header>
 
@@ -323,7 +356,7 @@ document.querySelectorAll('.ne-tabs button').forEach(b => b.addEventListener('cl
 async function loadIndex() { INDEX = await api('GET', '/api/names'); renderCults(); }
 function renderCults() {
   $('lb-cults').innerHTML = INDEX.map(c => `<button type="button" class="lb-cult${CUR && CUR.id === c.id ? ' on' : ''}" data-id="${esc(c.id)}">
-    <span>${esc(c.name)}</span><small>${c.count.names} · ${c.count.surnames}</small></button>`).join('') || '<p class="lb-empty">Sin culturas.</p>';
+    <span>${esc(c.name)}</span><small>${c.count.names} · ${c.count.surnames}${c.count.places ? ' · ' + c.count.places + ' lugares' : ''}</small></button>`).join('') || '<p class="lb-empty">Sin culturas.</p>';
 }
 $('lb-cults').addEventListener('click', e => { const b = e.target.closest('[data-id]'); if (b) openCulture(b.dataset.id); });
 $('lb-new').addEventListener('click', async () => {
@@ -331,27 +364,46 @@ $('lb-new').addEventListener('click', async () => {
   const id = slug(name);
   if (!id) return toast('Nombre no válido', true);
   if (INDEX.some(c => c.id === id)) return openCulture(id);
-  CUR = { id, name, description: '', format: '{name} {surname}', names: [], surnames: [] };
-  await save('nueva cultura'); renderLib();
+  CUR = { id, name, description: '', format: '{name} {surname}', names: [], surnames: [], places: [] };
+  save('nueva cultura'); await saveNow(); renderLib();
 });
-async function openCulture(id) { CUR = await api('GET', '/api/names/' + encodeURIComponent(id)); renderCults(); renderLib(); }
+async function openCulture(id) {
+  if (DIRTY && !confirm('Hay cambios sin guardar en «' + CUR.name + '». ¿Descartarlos?')) return;
+  CUR = await api('GET', '/api/names/' + encodeURIComponent(id)); setDirty(false); renderCults(); renderLib();
+}
 
-// Every change saves at once (git goes in the background). If the editor can't be reached
-// (closed, restarting), the culture is kept in this browser and sent again every few seconds,
-// and when the page opens again; dirty() keeps live reload from reloading over it.
+// Edits stay in the page until «Guardar» (or Ctrl+S): that writes the JSON and the commit + push to GitHub
+// go out in the background. If the editor can't be reached (closed, restarting), the culture is kept in
+// this browser and sent again every few seconds; dirty() keeps live reload from reloading over any of it.
 const BACKUP_KEY = 'raldamain.nombres.pendientes';
 const readBackups = () => { try { return JSON.parse(localStorage.getItem(BACKUP_KEY) || '{}'); } catch (e) { return {}; } };
 const writeBackups = b => { try { localStorage.setItem(BACKUP_KEY, JSON.stringify(b)); } catch (e) {} };
-window.dirty = () => Object.keys(readBackups()).length > 0;
+let DIRTY = false, LABELS = [];
+window.dirty = () => DIRTY || Object.keys(readBackups()).length > 0;
+function setDirty(on) {
+  DIRTY = on; if (!on) LABELS = [];
+  const b = $('ne-save'); b.disabled = !on; b.classList.toggle('dirty', on);
+  b.textContent = on ? '💾 Guardar *' : '💾 Guardar';
+}
+// every edit calls this: only marks the culture as changed (the label goes in the commit message)
+function save(label) { if (label && !LABELS.includes(label)) LABELS.push(label); setDirty(true); }
+$('ne-save').addEventListener('click', () => saveNow());
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') { e.preventDefault(); saveNow(); }
+});
 let retryTimer = null;
-async function save(label) {
+async function saveNow() {
+  if (document.activeElement && document.activeElement.blur) document.activeElement.blur();  // applies the field being typed in
+  if (!CUR || !DIRTY) return;
+  const label = LABELS.slice(0, 6).join(', ') + (LABELS.length > 6 ? '…' : '');
   const b = readBackups(); b[CUR.id] = { culture: CUR, label }; writeBackups(b);
+  setDirty(false);
   try {
     const d = await api('PUT', '/api/names/' + encodeURIComponent(CUR.id), { culture: CUR, label });
     const left = readBackups(); delete left[CUR.id]; writeBackups(left);
     CUR = d.culture;
-    await loadIndex(); loadGit();
-    toast('Guardado ✓' + (d.git === 'queued' ? ' · subiendo a GitHub…' : '') + gitNote(d.git), !!gitNote(d.git));
+    await loadIndex(); loadGit(); renderLib();
+    toast(gitNote(d.git) ? '⚠ Guardado en el archivo, pero no se pudo subir' + gitNote(d.git) : 'Guardado · subiendo a GitHub…', !!gitNote(d.git));
   } catch (e) {
     toast('⚠ No se pudo guardar (' + e.message + '). Los cambios quedan en este navegador y se enviarán solos.', true);
     if (!retryTimer) retryTimer = setInterval(sendBackups, 3000);
@@ -368,7 +420,7 @@ async function sendBackups() {
       if (CUR && CUR.id === id) CUR = d.culture;
     } catch (e) { break; }  // still unreachable: try again later
   }
-  if (sent) { toast(`Guardados ${sent} cambio(s) pendientes ✓`); await loadIndex().catch(() => {}); loadGit(); }
+  if (sent) { await loadIndex().catch(() => {}); loadGit(); }
   const done = !Object.keys(readBackups()).length;
   if (done && retryTimer) { clearInterval(retryTimer); retryTimer = null; }
   return done;
@@ -377,6 +429,10 @@ window.addEventListener('beforeunload', e => { if (window.dirty()) { e.preventDe
 if (window.dirty()) sendBackups().then(done => { if (!done && !retryTimer) retryTimer = setInterval(sendBackups, 3000); });
 
 function itemRow(kind, i, e) {
+  if (kind === 'l') return `<div class="lb-item plc">
+    <input class="inp" value="${esc(e.name)}" data-kind="l" data-i="${i}" data-k="name" aria-label="Nombre del lugar">
+    <input class="inp" value="${esc(e.meaning || '')}" data-kind="l" data-i="${i}" data-k="meaning" placeholder="Etimología (opcional)" aria-label="Etimología">
+    <button type="button" class="x" data-del="l:${i}" title="Quitar">✕</button></div>`;
   return `<div class="lb-item${kind === 's' ? ' sur' : ''}">
     <input class="inp" value="${esc(e.name)}" data-kind="${kind}" data-i="${i}" data-k="name" aria-label="Nombre">
     ${kind === 's' ? `<input class="inp" value="${esc(e.female || '')}" data-kind="s" data-i="${i}" data-k="female"
@@ -388,7 +444,7 @@ function itemRow(kind, i, e) {
 const ALPHA = new Intl.Collator('es', { sensitivity: 'base' });
 function column(title, kind, list) {
   list = [...list].sort((a, b) => ALPHA.compare(a.e.name, b.e.name));
-  return `<div class="lb-col${kind === 's' ? ' sur' : ''}"><h4>${title} <small>${list.length}</small></h4>
+  return `<div class="lb-col${kind === 's' ? ' sur' : kind === 'l' ? ' plc' : ''}"><h4>${title} <small>${list.length}</small></h4>
     ${list.map(({ e, i }) => itemRow(kind, i, e)).join('') || '<p class="lb-empty">Ninguno todavía.</p>'}</div>`;
 }
 // Same rules as the generator: the longest matching ending is replaced by the rule's text
@@ -455,7 +511,7 @@ function renderLib() {
     <div class="lb-card">
       <h3>Añadir nombres</h3>
       <div class="lb-row">
-        <span class="lb-g" id="lb-kind">${[['m', 'Masculino'], ['f', 'Femenino'], ['u', 'Unisex'], ['s', 'Apellido']]
+        <span class="lb-g" id="lb-kind">${[['m', 'Masculino'], ['f', 'Femenino'], ['s', 'Apellido'], ['l', 'Lugar']]
           .map(([k, l]) => `<button type="button" data-k="${k}" class="${ADD_KIND === k ? 'on' : ''}">${l}</button>`).join('')}</span>
       </div>
       <textarea id="lb-bulk" class="inp" placeholder="Uno por línea. El significado es opcional, tras un guion, dos puntos o barra:
@@ -479,11 +535,12 @@ Apellidos con forma femenina: Ivanov/Ivanova - hijo de Iván"></textarea>
       <div class="lb-preview" id="lb-preview">${rulePreview()}</div>
     </div>
     <div class="lb-card"><div class="lb-cols">
-      ${column('Masculinos', 'm', by('m'))}${column('Femeninos', 'f', by('f'))}${column('Unisex', 'u', by('u'))}
+      ${column('Masculinos', 'm', by('m'))}${column('Femeninos', 'f', by('f'))}
       ${column('Apellidos', 's', CUR.surnames.map((e, i) => ({ e, i })))}
+      ${column('Lugares', 'l', (CUR.places || []).map((e, i) => ({ e, i })))}
     </div></div>`;
 }
-const listOf = kind => kind === 's' ? CUR.surnames : CUR.names;
+const listOf = kind => kind === 's' ? CUR.surnames : kind === 'l' ? (CUR.places = CUR.places || []) : CUR.names;
 $('lb-main').addEventListener('click', async e => {
   const k = e.target.closest('#lb-kind button');
   if (k) { ADD_KIND = k.dataset.k; document.querySelectorAll('#lb-kind button').forEach(b => b.classList.toggle('on', b === k)); return; }
@@ -496,9 +553,12 @@ $('lb-main').addEventListener('click', async e => {
       const f = ADD_KIND === 's' && p.name.match(/^(.+?)\s*\/\s*(.+)$/);  // Ivanov/Ivanova
       return f ? { ...p, name: f[1].trim(), female: f[2].trim() } : p;
     });
-    for (const p of parsed) (ADD_KIND === 's' ? CUR.surnames : CUR.names).push(ADD_KIND === 's' ? p : { ...p, gender: ADD_KIND });
-    const kindName = { m: 'masculino', f: 'femenino', u: 'unisex', s: 'apellido' }[ADD_KIND];
-    await save(`+${parsed.length} ${kindName}${parsed.length > 1 ? (ADD_KIND === 'u' ? '' : 's') : ''}`);
+    for (const p of parsed) {
+      if (ADD_KIND === 'l') listOf('l').push({ name: p.name, meaning: p.meaning });
+      else (ADD_KIND === 's' ? CUR.surnames : CUR.names).push(ADD_KIND === 's' ? p : { ...p, gender: ADD_KIND });
+    }
+    const kindName = { m: 'masculino', f: 'femenino', u: 'unisex', s: 'apellido', l: 'lugar' }[ADD_KIND];
+    await save(`+${parsed.length} ${kindName}${parsed.length > 1 ? (ADD_KIND === 'u' ? '' : ADD_KIND === 'l' ? 'es' : 's') : ''}`);
     renderLib();
     return;
   }
@@ -539,7 +599,9 @@ $('lb-main').addEventListener('click', async e => {
     } catch (err) { toast('Error: ' + err.message, true); }
   }
 });
-// fields save when you leave them
+// typing lights up Guardar at once; the value is applied when you leave the field (or on Guardar)
+$('lb-main').addEventListener('input', e => { if (CUR && e.target.matches('input, select') ) setDirty(true); });
+// fields count as changed when you leave them (Guardar sends them)
 $('lb-main').addEventListener('change', async e => {
   const t = e.target;
   if (t.id === 'lb-name') { CUR.name = t.value.trim() || CUR.name; await save('nombre'); renderLib(); return; }
@@ -564,7 +626,7 @@ $('lb-main').addEventListener('change', async e => {
   }
 });
 
-// ── git badge ──
+// ── git badge, y lo que falta por subir ──
 async function loadGit() {
   const el = $('git-badge');
   try {

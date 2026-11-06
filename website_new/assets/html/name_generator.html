@@ -6,15 +6,20 @@
     <select id="ng-culture" class="ng-select"></select>
   </div>
   <p class="ng-desc" id="ng-desc"></p>
+  <div class="ng-modes" id="ng-modes" hidden role="tablist" aria-label="Qué generar">
+    <button type="button" data-mode="people" class="on" role="tab">Personas</button>
+    <button type="button" data-mode="places" role="tab">Lugares</button>
+  </div>
 
   <div class="ng-window">
     <ol class="ng-list" id="ng-list" aria-live="polite"></ol>
-    <div class="ng-buttons">
+    <div class="ng-buttons" id="ng-people">
       <button type="button" class="ng-btn" data-gender="m">Nombres masculinos</button>
       <button type="button" class="ng-btn" data-gender="f">Nombres femeninos</button>
     </div>
+    <div class="ng-buttons" id="ng-places" hidden><button type="button" class="ng-btn" id="ng-place-btn">Generar lugares</button></div>
   </div>
-  <p class="ng-hint">Pasa el ratón (o toca) un nombre para ver su significado.</p>
+  <p class="ng-hint" id="ng-hint">Pasa el ratón (o toca) un nombre para ver su significado.</p>
 </section>
 
 <style>
@@ -45,8 +50,13 @@
 .ng-buttons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
 .ng-btn { background: var(--secondary-black, #1f1f1f); color: var(--accent-gold, #fff200); border: 1px solid var(--accent-gold, #fff200);
   border-radius: 4px; padding: 8px 20px; font-size: 0.95rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: all 0.3s; }
-.ng-btn:hover, .ng-btn:focus-visible { background: var(--accent-gold, #fff200); color: var(--primary-black, #0a0a0a); }
+.ng-btn:hover, .ng-btn:focus-visible, .ng-btn.on { background: var(--accent-gold, #fff200); color: var(--primary-black, #0a0a0a); }
 .ng-btn[disabled] { opacity: 0.35; cursor: not-allowed; background: var(--secondary-black, #1f1f1f); color: var(--accent-gold, #fff200); }
+.ng-modes { display: flex; justify-content: center; gap: 0; margin: 0 auto 14px; width: max-content; border: 1px solid var(--accent-gold, #fff200); border-radius: 6px; overflow: hidden; }
+.ng-modes button { background: none; border: 0; color: var(--text-main, #f0f0f0); padding: 7px 22px; font: 700 0.95rem var(--font-heading, 'Cinzel', serif); cursor: pointer; }
+.ng-modes button + button { border-left: 1px solid var(--accent-gold, #fff200); }
+.ng-modes button.on { background: var(--accent-gold, #fff200); color: var(--primary-black, #0a0a0a); }
+.ng-buttons[hidden], .ng-modes[hidden] { display: none; }
 .ng-hint { text-align: center; color: var(--text-muted, #a0a0a0); font-size: 0.8rem; margin-top: 10px; }
 </style>
 
@@ -57,7 +67,7 @@
   const $ = id => document.getElementById(id);
   const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
   const cache = {};
-  let culture = null, lastGender = 'm';
+  let culture = null, lastGender = 'm', mode = 'people';
 
   async function getJSON(url) {
     const r = await fetch(url, { cache: 'no-cache' });
@@ -132,16 +142,39 @@
     }).join('');
   }
 
+  // places: names for anything (a village, a river, a province…), with their etymology on hover
+  function generatePlaces() {
+    const pool = culture.places || [];
+    $('ng-list').innerHTML = pool.length ? pick(pool, COUNT).map(p => `<li>${part(p)}</li>`).join('') : '<li class="ng-empty">Esta cultura aún no tiene lugares.</li>';
+  }
+  function setMode(m) {
+    const hasPlaces = !!(culture && (culture.places || []).length);
+    mode = m === 'places' && hasPlaces ? 'places' : 'people';
+    $('ng-modes').hidden = !hasPlaces;
+    document.querySelectorAll('#ng-modes button').forEach(b => b.classList.toggle('on', b.dataset.mode === mode));
+    $('ng-people').hidden = mode !== 'people'; $('ng-places').hidden = mode !== 'places';
+    $('ng-hint').textContent = mode === 'places' ? 'Pasa el ratón (o toca) un lugar para ver de dónde viene su nombre.' : 'Pasa el ratón (o toca) un nombre para ver su significado.';
+    try { localStorage.setItem('raldamain.nombres.modo', mode); } catch (e) {}
+    if (mode === 'places') generatePlaces();
+    else {
+      const has = g => (culture.names || []).some(n => n.gender === g || n.gender === 'u');
+      generate(has(lastGender) ? lastGender : (has('m') ? 'm' : 'f'));
+    }
+  }
+
   async function choose(id) {
     try { culture = await load(id); } catch (e) { $('ng-list').innerHTML = '<li class="ng-empty">No se pudo cargar esta cultura.</li>'; return; }
     $('ng-desc').textContent = culture.description || '';
     const has = g => (culture.names || []).some(n => n.gender === g || n.gender === 'u');
-    document.querySelectorAll('.ng-btn').forEach(b => b.disabled = !has(b.dataset.gender));
+    document.querySelectorAll('#ng-people .ng-btn').forEach(b => b.disabled = !has(b.dataset.gender));
     try { localStorage.setItem('raldamain.nombres.cultura', id); } catch (e) {}
-    generate(has(lastGender) ? lastGender : (has('m') ? 'm' : 'f'));
+    setMode(mode);
   }
 
-  document.querySelectorAll('.ng-btn').forEach(b => b.addEventListener('click', () => generate(b.dataset.gender)));
+  document.querySelectorAll('#ng-people .ng-btn').forEach(b => b.addEventListener('click', () => generate(b.dataset.gender)));
+  $('ng-place-btn').addEventListener('click', generatePlaces);
+  $('ng-modes').addEventListener('click', e => { const b = e.target.closest('[data-mode]'); if (b) setMode(b.dataset.mode); });
+  try { mode = localStorage.getItem('raldamain.nombres.modo') || 'people'; } catch (e) {}
   $('ng-culture').addEventListener('change', e => choose(e.target.value));
 
   (async () => {

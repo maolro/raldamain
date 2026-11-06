@@ -1398,5 +1398,607 @@
     }
   ],
   "surname_rules": [],
-  "patronymic_rules": []
+  "patronymic_rules": [],
+  "places": [
+    {
+      "name": "Achadhbeg",
+      "meaning": "«el campito» — achadh «campo» + beag «pequeño» · kratense antiguo"
+    },
+    {
+      "name": "Adlerhorst",
+      "meaning": "«el nido del águila» — Adler «águila» + Horst «nido» · geismariano"
+    },
+    {
+      "name": "Alascur",
+      "meaning": "«la roca oscura» — ail «roca» + ascur, de obscur «oscuro» · kratense antiguo y ustilés"
+    },
+    {
+      "name": "Ardaphiel",
+      "meaning": "«la hija del laurel noble» — ar «noble» + daph «laurel» + -iel «hija de» · élfico"
+    },
+    {
+      "name": "Ardcarrig",
+      "meaning": "«la roca alta» — ard «alto» + carraig «roca» · kratense antiguo"
+    },
+    {
+      "name": "Argoat",
+      "meaning": "«la tierra junto al bosque» — ar «junto a» + koad «bosque» · kratense"
+    },
+    {
+      "name": "Argostana",
+      "meaning": "«la plateada» — del nataneo argos «brillante, plateado» + -ana · nataneo"
+    },
+    {
+      "name": "Arvor",
+      "meaning": "«la tierra junto al mar» — ar «junto a» + mor «mar» · kratense"
+    },
+    {
+      "name": "Athbuí",
+      "meaning": "«el vado amarillo» — áth «vado» + buí «amarillo» · kratense antiguo"
+    },
+    {
+      "name": "Aubrit",
+      "meaning": "«la tierra de Aubri» — de Aubri, nombre que viene de Alberic, «rey de los elfos» · geismariano por vía ustilesa"
+    },
+    {
+      "name": "Austaine",
+      "meaning": "«la oriental» — aust «este» + -aine · geismariano con sufijo ustilés"
+    },
+    {
+      "name": "Aven",
+      "meaning": "«el río» — aven «río» · kratense"
+    },
+    {
+      "name": "Avonbán",
+      "meaning": "«el río blanco» — abhainn «río» + bán «blanco» · kratense antiguo"
+    },
+    {
+      "name": "Baileglas",
+      "meaning": "«el poblado verde» — baile «poblado» + glas «verde» · kratense antiguo"
+    },
+    {
+      "name": "Bailemór",
+      "meaning": "«el gran poblado» — baile «poblado» + mór «grande» · kratense antiguo"
+    },
+    {
+      "name": "Beauchêne",
+      "meaning": "«el roble hermoso» — beau «hermoso» + chêne «roble» · ustilés"
+    },
+    {
+      "name": "Beaumarché",
+      "meaning": "«el buen mercado» — beau «bueno, bello» + marché «mercado» · ustilés"
+    },
+    {
+      "name": "Bellerive",
+      "meaning": "«la orilla bella» — belle «bella» + rive «orilla» · ustilés"
+    },
+    {
+      "name": "Belmoux",
+      "meaning": "«los bellos musgos» — bel «bello» + moux «musgos, tierras húmedas» · ustilés"
+    },
+    {
+      "name": "Białopole",
+      "meaning": "«el campo blanco» — biały «blanco» + pole «campo» · mazarino"
+    },
+    {
+      "name": "Bonnefoi",
+      "meaning": "«la buena fe» — bonne «buena» + foi «fe» · ustilés"
+    },
+    {
+      "name": "Bruchart",
+      "meaning": "«el bosque del pantano» — Bruch «pantano» + Hart «bosque» · geismariano"
+    },
+    {
+      "name": "Brzozowa",
+      "meaning": "«la de los abedules» — brzoza «abedul» + -owa «la de» · mazarino"
+    },
+    {
+      "name": "Buchholz",
+      "meaning": "«el hayedo» — Buche «haya» + Holz «bosque, madera» · geismariano"
+    },
+    {
+      "name": "Bystra",
+      "meaning": "«la rápida» — bystrá «rápida» · mazarino"
+    },
+    {
+      "name": "Bystrzec",
+      "meaning": "«el del río rápido» — bystry «rápido» + -ec · mazarino"
+    },
+    {
+      "name": "Carpentia",
+      "meaning": "«la de los carros» — carpentum «carro» · nataneo"
+    },
+    {
+      "name": "Carraigín",
+      "meaning": "«la roquita» — carraig «roca» + -ín «pequeña» · kratense antiguo"
+    },
+    {
+      "name": "Castelnoir",
+      "meaning": "«el castillo negro» — castel «castillo» + noir «negro» · ustilés"
+    },
+    {
+      "name": "Champfleury",
+      "meaning": "«el campo florido» — champ «campo» + fleuri «florido» · ustilés"
+    },
+    {
+      "name": "Châtelvert",
+      "meaning": "«el castillo verde» — châtel «castillo» + vert «verde» · ustilés"
+    },
+    {
+      "name": "Clairval",
+      "meaning": "«el valle claro» — clair «claro» + val «valle» · ustilés"
+    },
+    {
+      "name": "Clonmeela",
+      "meaning": "«la pradera de la miel» — cluain «pradera» + mil «miel» · kratense antiguo"
+    },
+    {
+      "name": "Czarnomost",
+      "meaning": "«el puente negro» — czarny «negro» + most «puente» · mazarino"
+    },
+    {
+      "name": "Denvire",
+      "meaning": "«la fortaleza verde» — dún «fortaleza» + vire «verde» (de viride) · kratense antiguo y ustilés"
+    },
+    {
+      "name": "Dolany",
+      "meaning": "«los del valle» — dol «valle» + -any «gente de» · mazarino"
+    },
+    {
+      "name": "Dorvanne",
+      "meaning": "«las aguas blancas» — dour «agua» + gwenn «blanca», escrito a la ustilesa · kratense con grafía ustilesa"
+    },
+    {
+      "name": "Douarnevez",
+      "meaning": "«la tierra nueva» — douar «tierra» + nevez «nueva» · kratense"
+    },
+    {
+      "name": "Dourdu",
+      "meaning": "«el agua negra» — dour «agua» + du «negra» · kratense"
+    },
+    {
+      "name": "Drommel",
+      "meaning": "«la que retumba» — drommeln «retumbar» · geismariano"
+    },
+    {
+      "name": "Drumcarra",
+      "meaning": "«la loma de la roca» — droim «loma» + carraig «roca» · kratense antiguo"
+    },
+    {
+      "name": "Dubnica",
+      "meaning": "«la del robledal» — dub «roble» + -nica «lugar de» · mazarino"
+    },
+    {
+      "name": "Dunrí",
+      "meaning": "«la fortaleza del rey» — dún «fortaleza» + rí «rey» · kratense antiguo"
+    },
+    {
+      "name": "Eanachdubh",
+      "meaning": "«el pantano negro» — eanach «pantano» + dubh «negro» · kratense antiguo"
+    },
+    {
+      "name": "Eichenbach",
+      "meaning": "«el arroyo de los robles» — Eichen «robles» + Bach «arroyo» · geismariano"
+    },
+    {
+      "name": "Eisbach",
+      "meaning": "«el arroyo helado» — Eis «hielo» + Bach «arroyo» · geismariano"
+    },
+    {
+      "name": "Eisenfurt",
+      "meaning": "«el vado del hierro» — Eisen «hierro» + Furt «vado» · geismariano"
+    },
+    {
+      "name": "Eldrenwood",
+      "meaning": "«el bosque de los antiguos» — eldren «los antiguos» (los elfos) + wood, de Wald «bosque» · élfico y geismariano"
+    },
+    {
+      "name": "Ferrolles",
+      "meaning": "«las ferrerías» — ferrolles, de ferrière «mina de hierro, herrería» · ustilés"
+    },
+    {
+      "name": "Fontclaire",
+      "meaning": "«la fuente clara» — font «fuente» + claire «clara» · ustilés"
+    },
+    {
+      "name": "Glenmullagh",
+      "meaning": "«el valle de la cumbre» — gleann «valle» + mullach «cumbre» · kratense antiguo"
+    },
+    {
+      "name": "Grevara",
+      "meaning": "«el arenal» — grève «playa de grava» + -ara · ustilés"
+    },
+    {
+      "name": "Hagenstadt",
+      "meaning": "«la ciudad del seto» — Hagen «seto, cerca» + Stadt «ciudad» · geismariano"
+    },
+    {
+      "name": "Hasenfeld",
+      "meaning": "«el campo de las liebres» — Hasen «liebres» + Feld «campo» · geismariano"
+    },
+    {
+      "name": "Haudric",
+      "meaning": "«el señorío de la tala» — haud, de houer «talar, desbrozar» + ric «señorío» · ustilés y geismariano"
+    },
+    {
+      "name": "Hautefontaine",
+      "meaning": "«la fuente alta» — haute «alta» + fontaine «fuente» · ustilés"
+    },
+    {
+      "name": "Hochkirch",
+      "meaning": "«la iglesia alta» — hoch «alta» + Kirch «iglesia» · geismariano"
+    },
+    {
+      "name": "Hochmark",
+      "meaning": "«la marca alta» — hoch «alta» + Mark «marca fronteriza» · geismariano"
+    },
+    {
+      "name": "Hohenstein",
+      "meaning": "«la piedra alta» — hohen «alta» + Stein «piedra» · geismariano"
+    },
+    {
+      "name": "Hradová",
+      "meaning": "«la del castillo» — hrad «castillo» + -ová «la de» · mazarino"
+    },
+    {
+      "name": "Inisglas",
+      "meaning": "«la isla verde» — inis «isla» + glas «verde» · kratense antiguo"
+    },
+    {
+      "name": "Jedlina",
+      "meaning": "«el abetal» — jedla «abeto» + -ina «bosque de» · mazarino"
+    },
+    {
+      "name": "Kamenec",
+      "meaning": "«el pedregal» — kámen «piedra» + -ec «lugar de» · mazarino"
+    },
+    {
+      "name": "Kamenibrod",
+      "meaning": "«el vado de piedra» — kamen «piedra» + brod «vado» · mazarino"
+    },
+    {
+      "name": "Kerbihan",
+      "meaning": "«la aldea pequeña» — ker «aldea» + bihan «pequeña» · kratense"
+    },
+    {
+      "name": "Kerbleiz",
+      "meaning": "«la aldea del lobo» — ker «aldea» + bleiz «lobo» · kratense"
+    },
+    {
+      "name": "Kerdero",
+      "meaning": "«la aldea de los robles» — ker «aldea» + dero «robles» · kratense"
+    },
+    {
+      "name": "Kerdorvan",
+      "meaning": "«la aldea de las aguas blancas» — ker «aldea» + dour «agua» + gwenn «blanca» · kratense"
+    },
+    {
+      "name": "Kerfeunteun",
+      "meaning": "«la aldea de la fuente» — ker «aldea» + feunteun «fuente» · kratense"
+    },
+    {
+      "name": "Kergoat",
+      "meaning": "«la aldea del bosque» — ker «aldea» + koad «bosque» (k → g) · kratense"
+    },
+    {
+      "name": "Kergozh",
+      "meaning": "«la aldea vieja» — ker «aldea» + kozh «vieja» (k → g) · kratense"
+    },
+    {
+      "name": "Kergroaz",
+      "meaning": "«la aldea de la cruz» — ker «aldea» + kroaz «cruz» (k → g) · kratense"
+    },
+    {
+      "name": "Kerhuel",
+      "meaning": "«la aldea alta» — ker «aldea» + uhel «alta» · kratense"
+    },
+    {
+      "name": "Kerivin",
+      "meaning": "«la aldea de los tejos» — ker «aldea» + ivin «tejos» · kratense"
+    },
+    {
+      "name": "Kerlann",
+      "meaning": "«la aldea del páramo» — ker «aldea» + lann «páramo» · kratense"
+    },
+    {
+      "name": "Kerlouarn",
+      "meaning": "«la aldea del zorro» — ker «aldea» + louarn «zorro» · kratense"
+    },
+    {
+      "name": "Kermelin",
+      "meaning": "«la aldea del molino» — ker «aldea» + milin «molino» · kratense"
+    },
+    {
+      "name": "Kermor",
+      "meaning": "«la aldea del mar» — ker «aldea» + mor «mar» · kratense"
+    },
+    {
+      "name": "Kerven",
+      "meaning": "«la aldea de piedra» — ker «aldea» + men «piedra» (m → v) · kratense"
+    },
+    {
+      "name": "Kervran",
+      "meaning": "«la aldea del cuervo» — ker «aldea» + bran «cuervo» (b → v) · kratense"
+    },
+    {
+      "name": "Kessling",
+      "meaning": "«los de la hondonada» — Kessel «caldero, hondonada» + -ling «gente de» · geismariano"
+    },
+    {
+      "name": "Kilbran",
+      "meaning": "«la iglesia del cuervo» — cill «iglesia» + bran «cuervo» · kratense antiguo"
+    },
+    {
+      "name": "Knockdarra",
+      "meaning": "«el cerro del robledal» — cnoc «cerro» + doire «robledal» · kratense antiguo"
+    },
+    {
+      "name": "Knocknagee",
+      "meaning": "«el cerro del viento» — cnoc «cerro» + na gaoithe «del viento» · kratense antiguo"
+    },
+    {
+      "name": "Lanndero",
+      "meaning": "«el santuario de los robles» — lann «recinto sagrado» + dero «robles» · kratense"
+    },
+    {
+      "name": "Lanvenez",
+      "meaning": "«el santuario del monte» — lann «recinto sagrado» + menez «monte» (m → v) · kratense"
+    },
+    {
+      "name": "Laornith",
+      "meaning": "«el corazón del bosque» — laor «corazón» + nith «bosque» · élfico"
+    },
+    {
+      "name": "Larnwald",
+      "meaning": "«el bosque del gran árbol» — larn «gran árbol» (élfico) + Wald «bosque» (geismariano) · élfico y geismariano"
+    },
+    {
+      "name": "Lhota",
+      "meaning": "«la exenta» — lhota «aldea libre de tributo durante sus primeros años» · mazarino"
+    },
+    {
+      "name": "Lhotka",
+      "meaning": "«la pequeña exenta» — lhota «aldea libre de tributo» + -ka «pequeña» · mazarino"
+    },
+    {
+      "name": "Lindenhof",
+      "meaning": "«la granja de los tilos» — Linden «tilos» + Hof «granja» · geismariano"
+    },
+    {
+      "name": "Liosbán",
+      "meaning": "«el fuerte blanco» — lios «fuerte de tierra» + bán «blanco» · kratense antiguo"
+    },
+    {
+      "name": "Lipovany",
+      "meaning": "«los de los tilos» — lípa «tilo» + -ovany «gente de» · mazarino"
+    },
+    {
+      "name": "Lisieroy",
+      "meaning": "«el lindero del rey» — lisière «lindero del bosque» + roy «rey» · ustilés"
+    },
+    {
+      "name": "Lochrí",
+      "meaning": "«el lago del rey» — loch «lago» + rí «rey» · kratense antiguo"
+    },
+    {
+      "name": "Lokbleiz",
+      "meaning": "«la ermita del lobo» — lok «ermita» + bleiz «lobo» · kratense"
+    },
+    {
+      "name": "Luenith",
+      "meaning": "«los arroyos» — luen «arroyo» + -ith (plural) · élfico"
+    },
+    {
+      "name": "Maghmor",
+      "meaning": "«la gran llanura» — magh «llanura» + mór «grande» · kratense antiguo"
+    },
+    {
+      "name": "Medvedov",
+      "meaning": "«la del oso» — medvěd «oso» + -ov «de» · mazarino"
+    },
+    {
+      "name": "Miravel",
+      "meaning": "«el bello mirador» — mira «mirador» + vel, forma antigua de bel «bello» · ustilés"
+    },
+    {
+      "name": "Mirefleur",
+      "meaning": "«el mirador de las flores» — mire «mira» + fleur «flor» · ustilés"
+    },
+    {
+      "name": "Montrivel",
+      "meaning": "«el monte del arroyuelo» — mont «monte» + rivel «arroyuelo» · ustilés"
+    },
+    {
+      "name": "Moosbach",
+      "meaning": "«el arroyo del musgo» — Moos «musgo» + Bach «arroyo» · geismariano"
+    },
+    {
+      "name": "Morlez",
+      "meaning": "«la corte del mar» — mor «mar» + lez «corte, palacio» · kratense"
+    },
+    {
+      "name": "Mullaghbán",
+      "meaning": "«la cumbre blanca» — mullach «cumbre» + bán «blanca» · kratense antiguo"
+    },
+    {
+      "name": "Mühlhagen",
+      "meaning": "«el cercado del molino» — Mühl «molino» + Hagen «cercado» · geismariano"
+    },
+    {
+      "name": "Naeril",
+      "meaning": "«el brillo lejano» — nae «lejos» + ril «brillo» · élfico"
+    },
+    {
+      "name": "Neuvillette",
+      "meaning": "«la villita nueva» — neuve «nueva» + villette «villita» · ustilés"
+    },
+    {
+      "name": "Nordhaven",
+      "meaning": "«el refugio del norte» — nord «norte» + haven «abrigo, refugio» · geismariano"
+    },
+    {
+      "name": "Nuithlinn",
+      "meaning": "«el lago de la noche» — nuith «noche» (élfico) + linn «lago, poza» (kratense antiguo) · élfico y kratense antiguo"
+    },
+    {
+      "name": "Penhaleg",
+      "meaning": "«el extremo de los sauces» — pen «cabeza, extremo» + haleg «sauces» · kratense"
+    },
+    {
+      "name": "Plouaven",
+      "meaning": "«la parroquia del río» — plou «parroquia» + aven «río» · kratense"
+    },
+    {
+      "name": "Plougwenn",
+      "meaning": "«la parroquia blanca» — plou «parroquia» + gwenn «blanca» · kratense"
+    },
+    {
+      "name": "Ploumorvan",
+      "meaning": "«la parroquia de Morvan» — plou «parroquia» + Morvan, su fundador («el del mar») · kratense"
+    },
+    {
+      "name": "Polanka",
+      "meaning": "«el clarito» — polana «claro del bosque» + -ka «pequeño» · mazarino"
+    },
+    {
+      "name": "Pontivran",
+      "meaning": "«el puente del cuervo» — pont «puente» + bran «cuervo» (bran → vran tras vocal) · kratense"
+    },
+    {
+      "name": "Rathloch",
+      "meaning": "«el fuerte del lago» — ráth «fuerte de tierra» + loch «lago» · kratense antiguo"
+    },
+    {
+      "name": "Rimas",
+      "meaning": "«el campo del rey» — ri «rey» + maez «campo» · kratense"
+    },
+    {
+      "name": "Rochenoire",
+      "meaning": "«la roca negra» — roche «roca» + noire «negra» · ustilés"
+    },
+    {
+      "name": "Rodfeld",
+      "meaning": "«el campo desbrozado» — Rod «roza, desmonte» + Feld «campo» · geismariano"
+    },
+    {
+      "name": "Roskoat",
+      "meaning": "«el cerro del bosque» — ros «cerro, loma» + koad «bosque» · kratense"
+    },
+    {
+      "name": "Roumnet",
+      "meaning": "«el zarzal» — roumi, forma antigua de ronce «zarza» + -net «lugar de» · ustilés"
+    },
+    {
+      "name": "Rybníky",
+      "meaning": "«los estanques» — rybník «estanque de peces» · mazarino"
+    },
+    {
+      "name": "Salzbrunn",
+      "meaning": "«la fuente salada» — Salz «sal» + Brunn «fuente» · geismariano"
+    },
+    {
+      "name": "Sarvaux",
+      "meaning": "«la sierra de los valles» — serre «sierra, cresta» + vaux «valles» · ustilés"
+    },
+    {
+      "name": "Saulmont",
+      "meaning": "«el monte de los sauces» — saule «sauce» + mont «monte» · ustilés"
+    },
+    {
+      "name": "Saumance",
+      "meaning": "«la tierra de los sauces» — saume, forma antigua de saule «sauce» + -ance «tierra de» · ustilés"
+    },
+    {
+      "name": "Schwarzau",
+      "meaning": "«la vega negra» — schwarz «negro» + Au «vega» · geismariano"
+    },
+    {
+      "name": "Schwarzsee",
+      "meaning": "«el lago negro» — schwarz «negro» + See «lago» · geismariano"
+    },
+    {
+      "name": "Slievrí",
+      "meaning": "«el monte del rey» — sliabh «monte» + rí «rey» · kratense antiguo"
+    },
+    {
+      "name": "Soucart",
+      "meaning": "«la de los tocones» — souche «tocón» + -art · ustilés"
+    },
+    {
+      "name": "Steinbrück",
+      "meaning": "«el puente de piedra» — Stein «piedra» + Brück «puente» · geismariano"
+    },
+    {
+      "name": "Studenec",
+      "meaning": "«el del pozo frío» — studený «frío» + -ec · mazarino"
+    },
+    {
+      "name": "Sylmar",
+      "meaning": "«el hogar de la luz» — sil «luz» + mar «hogar» · élfico"
+    },
+    {
+      "name": "Sylvenne",
+      "meaning": "«la selvática» — sylve «selva» + -enne · ustilés"
+    },
+    {
+      "name": "Sylvoie",
+      "meaning": "«el camino del bosque» — sylve «selva» + voie «camino» · ustilés"
+    },
+    {
+      "name": "Tannenhof",
+      "meaning": "«la granja de los abetos» — Tannen «abetos» + Hof «granja» · geismariano"
+    },
+    {
+      "name": "Trebezo",
+      "meaning": "«el poblado de los abedules» — tre «poblado» + bezo «abedules» · kratense"
+    },
+    {
+      "name": "Tregwern",
+      "meaning": "«el poblado de los alisos» — tre «poblado» + gwern «alisos» · kratense"
+    },
+    {
+      "name": "Tremeur",
+      "meaning": "«el poblado mayor» — tre «poblado» + meur «mayor» · kratense"
+    },
+    {
+      "name": "Tullaghrí",
+      "meaning": "«el túmulo del rey» — tulach «túmulo, otero» + rí «rey» · kratense antiguo"
+    },
+    {
+      "name": "Valcourt",
+      "meaning": "«la granja del valle» — val «valle» + court «granja, corte señorial» · ustilés"
+    },
+    {
+      "name": "Verchamps",
+      "meaning": "«los campos verdes» — vert «verde» + champs «campos» · ustilés"
+    },
+    {
+      "name": "Vignebelle",
+      "meaning": "«la viña bella» — vigne «viña» + belle «bella» · ustilés"
+    },
+    {
+      "name": "Vireuil",
+      "meaning": "«el claro del recodo» — vire «vuelta, recodo» (el de la costa) + -euil «claro del bosque» · ustilés"
+    },
+    {
+      "name": "Vosgard",
+      "meaning": "«el cercado del zorro» — vos «zorro» + gard «cercado, fuerte» · geismariano"
+    },
+    {
+      "name": "Wierzbno",
+      "meaning": "«el sauzal» — wierzba «sauce» + -no «lugar de» · mazarino"
+    },
+    {
+      "name": "Wolfsgrund",
+      "meaning": "«la hondonada del lobo» — Wolf «lobo» + Grund «hondonada» · geismariano"
+    },
+    {
+      "name": "Zahrádky",
+      "meaning": "«los huertecillos» — zahrádka «huertecillo» · mazarino"
+    },
+    {
+      "name": "Zlatohora",
+      "meaning": "«la montaña de oro» — zlato «oro» + hora «montaña» · mazarino"
+    }
+  ]
 }
