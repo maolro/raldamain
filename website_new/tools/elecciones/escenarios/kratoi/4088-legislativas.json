@@ -1,0 +1,2535 @@
+{
+ "meta": {
+  "eyebrow": "República de Kratoi · 4088",
+  "title": "Legislativas de 4088",
+  "lede": "En plena crisis del 86: la burbuja de la Compañía de los Mares Occidentales, los rescates a las grandes empresas y la austeridad de Isembert. Castigo a los nacionalistas; los federalistas, culpados de las malas inversiones de sus gobiernos, apenas sacan partido. Plantilla base (provincias y programas de election-info.md): ajústala a tu gusto.",
+  "chamber": "Congreso de Diputados",
+  "office": "Presidente",
+  "member": "diputado",
+  "members": "diputados",
+  "national": "Lista nacional",
+  "chairTitle": "Presidente del Congreso"
+ },
+ "axes": [
+  {
+   "k": "FED",
+   "a": "Federalismo",
+   "b": "Unionismo"
+  },
+  {
+   "k": "SEG",
+   "a": "Libertad",
+   "b": "Seguridad"
+  },
+  {
+   "k": "DIP",
+   "a": "Militarismo",
+   "b": "Diplomacia"
+  },
+  {
+   "k": "UST",
+   "a": "Proustilés",
+   "b": "Antiustilés"
+  },
+  {
+   "k": "ECO",
+   "a": "Liberalismo económico",
+   "b": "Intervencionismo"
+  },
+  {
+   "k": "MUL",
+   "a": "Multiculturalismo",
+   "b": "Asimilacionismo"
+  },
+  {
+   "k": "TRA",
+   "a": "Progresismo",
+   "b": "Tradicionalismo"
+  },
+  {
+   "k": "REL",
+   "a": "Laicismo",
+   "b": "Religión"
+  },
+  {
+   "k": "POP",
+   "a": "Institucionalismo",
+   "b": "Populismo"
+  },
+  {
+   "k": "IND",
+   "a": "Ecologismo",
+   "b": "Industria"
+  }
+ ],
+ "sq": [
+  -2,
+  -1,
+  1,
+  3,
+  0,
+  -2,
+  1,
+  0,
+  0,
+  2
+ ],
+ "parties": [
+  {
+   "id": "NAT",
+   "name": "Partido Nacionalista",
+   "cand": "Isembert Florin",
+   "color": "#1f5fae",
+   "pos": [
+    4,
+    2,
+    2,
+    5,
+    0,
+    -3,
+    -2,
+    -4,
+    -8,
+    4
+   ],
+   "appeal": -0.04,
+   "charisma": 0,
+   "reputation": -0.5
+  },
+  {
+   "id": "FED",
+   "name": "Partido Federalista",
+   "cand": "Candidato federalista",
+   "color": "#d18f1f",
+   "pos": [
+    -6,
+    -1,
+    5,
+    -4,
+    -6,
+    2,
+    4,
+    3,
+    -2,
+    6
+   ],
+   "appeal": 0.04,
+   "charisma": 0,
+   "reputation": -0.2
+  }
+ ],
+ "electors": [],
+ "proposals": [],
+ "bodies": [],
+ "districts": [
+  {
+   "name": "Argostana",
+   "group": "Costa Argéntea",
+   "pop": 700000,
+   "el": 20,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 4.5,
+   "turnout": 88,
+   "center": [
+    -3,
+    -5,
+    5,
+    1,
+    -7,
+    -5,
+    -2,
+    -3,
+    -4,
+    7
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Vireuil",
+   "group": "Costa Argéntea",
+   "pop": 420000,
+   "el": 12,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 84,
+   "center": [
+    3,
+    -4,
+    -1,
+    5,
+    2,
+    -3,
+    -2,
+    -4,
+    1,
+    5
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Saumance",
+   "group": "Costa Argéntea",
+   "pop": 380000,
+   "el": 11,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 86,
+   "center": [
+    -1,
+    -2,
+    3,
+    3,
+    -1,
+    -1,
+    2,
+    0,
+    2,
+    2
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Clairval",
+   "group": "Costa Argéntea",
+   "pop": 340000,
+   "el": 10,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 85,
+   "center": [
+    1,
+    -3,
+    2,
+    4,
+    2,
+    -2,
+    -1,
+    -2,
+    0,
+    1
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Belmoux",
+   "group": "Costa Argéntea",
+   "pop": 300000,
+   "el": 9,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 80,
+   "center": [
+    -2,
+    1,
+    2,
+    2,
+    3,
+    1,
+    4,
+    2,
+    5,
+    -1
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1.5,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Rimas",
+   "group": "Kratoi Centrale",
+   "pop": 600000,
+   "el": 17,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 4.5,
+   "turnout": 92,
+   "center": [
+    8,
+    -7,
+    -1,
+    8,
+    4,
+    -6,
+    -8,
+    -9,
+    -6,
+    1
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1.5,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Dorvanne",
+   "group": "Kratoi Centrale",
+   "pop": 420000,
+   "el": 12,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 90,
+   "center": [
+    7,
+    -5,
+    -3,
+    7,
+    3,
+    -2,
+    -5,
+    -6,
+    -4,
+    4
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Ferrolles",
+   "group": "Kratoi Centrale",
+   "pop": 390000,
+   "el": 11,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 84,
+   "center": [
+    6,
+    -3,
+    -5,
+    7,
+    5,
+    1,
+    -4,
+    -6,
+    -1,
+    8
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1,
+    1,
+    1,
+    1.5
+   ],
+   "local": {}
+  },
+  {
+   "name": "Austaine",
+   "group": "Kratoi Centrale",
+   "pop": 360000,
+   "el": 10,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 84,
+   "center": [
+    5,
+    -2,
+    -3,
+    6,
+    3,
+    2,
+    -1,
+    -3,
+    0,
+    3
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Montrivel",
+   "group": "Kratoi Centrale",
+   "pop": 330000,
+   "el": 9,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3,
+   "turnout": 86,
+   "center": [
+    4,
+    -4,
+    1,
+    5,
+    2,
+    -1,
+    -2,
+    -4,
+    -2,
+    -1
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Vosgard",
+   "group": "Haut-Kratoi",
+   "pop": 360000,
+   "el": 10,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 80,
+   "center": [
+    -3,
+    4,
+    -5,
+    3,
+    4,
+    4,
+    4,
+    2,
+    4,
+    2
+   ],
+   "w": [
+    1,
+    1.5,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Kessling",
+   "group": "Haut-Kratoi",
+   "pop": 330000,
+   "el": 9,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 76,
+   "center": [
+    -8,
+    4,
+    -3,
+    0,
+    5,
+    -6,
+    7,
+    5,
+    7,
+    1
+   ],
+   "w": [
+    1.5,
+    1,
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Drommel",
+   "group": "Haut-Kratoi",
+   "pop": 308000,
+   "el": 9,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3,
+   "turnout": 78,
+   "center": [
+    -7,
+    7,
+    -7,
+    -2,
+    5,
+    -5,
+    7,
+    5,
+    6,
+    1
+   ],
+   "w": [
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Nordhaven",
+   "group": "Haut-Kratoi",
+   "pop": 270000,
+   "el": 8,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3,
+   "turnout": 72,
+   "center": [
+    -8,
+    5,
+    -2,
+    0,
+    5,
+    -7,
+    6,
+    6,
+    7,
+    -2
+   ],
+   "w": [
+    1.5,
+    1,
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Sarvaux",
+   "group": "Bas-Kratoi",
+   "pop": 380000,
+   "el": 11,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 84,
+   "center": [
+    -4,
+    2,
+    4,
+    -1,
+    -3,
+    3,
+    5,
+    3,
+    3,
+    2
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Denvire",
+   "group": "Bas-Kratoi",
+   "pop": 360000,
+   "el": 10,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3,
+   "turnout": 86,
+   "center": [
+    -6,
+    4,
+    8,
+    -7,
+    -4,
+    -6,
+    7,
+    7,
+    4,
+    1
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Aubrit",
+   "group": "Bas-Kratoi",
+   "pop": 340000,
+   "el": 10,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3,
+   "turnout": 86,
+   "center": [
+    -4,
+    2,
+    5,
+    -2,
+    -4,
+    2,
+    6,
+    4,
+    3,
+    1
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Castelnoir",
+   "group": "Bas-Kratoi",
+   "pop": 360000,
+   "el": 10,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3,
+   "turnout": 88,
+   "center": [
+    -6,
+    4,
+    7,
+    -8,
+    -6,
+    -5,
+    6,
+    7,
+    2,
+    4
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1.5,
+    1.5,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Miravel",
+   "group": "Bas-Kratoi",
+   "pop": 300000,
+   "el": 9,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 80,
+   "center": [
+    -5,
+    3,
+    5,
+    -3,
+    -3,
+    4,
+    6,
+    3,
+    5,
+    0
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1.5,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Sylvenne",
+   "group": "Forêt Orientale",
+   "pop": 320000,
+   "el": 9,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 78,
+   "center": [
+    -6,
+    -6,
+    4,
+    7,
+    -1,
+    -7,
+    1,
+    6,
+    -3,
+    -7
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1.5
+   ],
+   "local": {}
+  },
+  {
+   "name": "Haudric",
+   "group": "Forêt Orientale",
+   "pop": 300000,
+   "el": 9,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 76,
+   "center": [
+    -7,
+    -4,
+    0,
+    6,
+    -4,
+    2,
+    3,
+    5,
+    8,
+    4
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1,
+    1,
+    1,
+    1.5
+   ],
+   "local": {}
+  },
+  {
+   "name": "Verchamps",
+   "group": "Forêt Orientale",
+   "pop": 280000,
+   "el": 8,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3.5,
+   "turnout": 74,
+   "center": [
+    -8,
+    -7,
+    2,
+    6,
+    -1,
+    -2,
+    3,
+    7,
+    7,
+    -5
+   ],
+   "w": [
+    1.5,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "local": {}
+  },
+  {
+   "name": "Lisieroy",
+   "group": "Forêt Orientale",
+   "pop": 260000,
+   "el": 7,
+   "v": {
+    "NAT": 0,
+    "FED": 0
+   },
+   "slates": {
+    "NAT": {
+     "pos": [
+      4,
+      2,
+      2,
+      5,
+      0,
+      -3,
+      -2,
+      -4,
+      -8,
+      4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    },
+    "FED": {
+     "pos": [
+      -6,
+      -1,
+      5,
+      -4,
+      -6,
+      2,
+      4,
+      3,
+      -2,
+      6
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "ideo",
+   "split": true,
+   "subSpread": 1.5,
+   "spread": 3,
+   "turnout": 72,
+   "center": [
+    -9,
+    -8,
+    4,
+    5,
+    2,
+    -4,
+    4,
+    8,
+    6,
+    -9
+   ],
+   "w": [
+    1.5,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1.5
+   ],
+   "local": {}
+  }
+ ],
+ "system": {
+  "method": "tworound",
+  "threshold": 0,
+  "thresholdScope": "district",
+  "bonus": 0,
+  "national": {
+   "seats": 0,
+   "method": "dhondt",
+   "mode": "parallel",
+   "threshold": 0
+  }
+ },
+ "election": {
+  "kind": "direct",
+  "rule": "abs",
+  "rounds": "runoff",
+  "direct": "tworound"
+ },
+ "params": {
+  "k": 2.5,
+  "cue": 0.8,
+  "cred": 0.5,
+  "rl": 3,
+  "band": 0.12,
+  "honor": true,
+  "vk": 0.6,
+  "tk": 1,
+  "exhaust": 0.15,
+  "tm": 1,
+  "cv": 0.5,
+  "ta": 0.5
+ },
+ "chair": "",
+ "mode": "none",
+ "axX": 4,
+ "axY": 3,
+ "mapDist": "dist",
+ "scenario": {
+  "country": "Kratoi",
+  "election": "4088 · Legislativas",
+  "desc": "En plena crisis del 86: la burbuja de la Compañía de los Mares Occidentales, los rescates a las grandes empresas y la austeridad de Isembert. Plantilla de election-info.md.",
+  "published": false
+ },
+ "swing": {
+  "from": "NAT",
+  "to": "FED",
+  "pts": 0
+ },
+ "natSlates": {
+  "NAT": {
+   "pos": [
+    4,
+    2,
+    2,
+    5,
+    0,
+    -3,
+    -2,
+    -4,
+    -8,
+    4
+   ],
+   "loyalty": 0.9,
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "names": []
+  },
+  "FED": {
+   "pos": [
+    -6,
+    -1,
+    5,
+    -4,
+    -6,
+    2,
+    4,
+    3,
+    -2,
+    6
+   ],
+   "loyalty": 0.9,
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "names": []
+  }
+ },
+ "version": 2
+}

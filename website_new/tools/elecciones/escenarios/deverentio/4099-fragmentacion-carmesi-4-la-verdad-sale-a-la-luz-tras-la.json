@@ -1,0 +1,2625 @@
+{
+ "axes": [
+  {
+   "k": "COM",
+   "a": "Libre comercio",
+   "b": "Proteccionismo"
+  },
+  {
+   "k": "SOB",
+   "a": "Soberanismo",
+   "b": "Unionismo"
+  },
+  {
+   "k": "ECO",
+   "a": "Liberalismo",
+   "b": "Socialismo"
+  },
+  {
+   "k": "SEG",
+   "a": "Libertad",
+   "b": "Seguridad"
+  },
+  {
+   "k": "DEM",
+   "a": "Democracia",
+   "b": "Autoritarismo"
+  },
+  {
+   "k": "TRA",
+   "a": "Progresismo",
+   "b": "Tradicionalismo"
+  },
+  {
+   "k": "MUL",
+   "a": "Multiculturalismo",
+   "b": "Asimilacionismo"
+  },
+  {
+   "k": "DIP",
+   "a": "Diplomacia",
+   "b": "Aislacionismo"
+  }
+ ],
+ "sq": [
+  -2,
+  5,
+  -5,
+  3,
+  2,
+  3,
+  3,
+  1
+ ],
+ "parties": [
+  {
+   "id": "U",
+   "name": "Unionistas",
+   "cand": "Flavio Marqueda",
+   "color": "#2a78d6",
+   "pos": [
+    -5,
+    9,
+    -8,
+    6,
+    5,
+    2,
+    6,
+    2
+   ],
+   "appeal": 0
+  },
+  {
+   "id": "S",
+   "name": "Soberanistas",
+   "cand": "Clara Montiel",
+   "color": "#eb6834",
+   "pos": [
+    3,
+    -9,
+    1,
+    -4,
+    -7,
+    -2,
+    -4,
+    -4
+   ],
+   "appeal": 0
+  },
+  {
+   "id": "C",
+   "name": "Movimiento Carmesí",
+   "cand": "Rosa Ibarzábal",
+   "color": "#b3242f",
+   "pos": [
+    5,
+    -5,
+    10,
+    -2,
+    0,
+    -8,
+    -4,
+    -3
+   ],
+   "appeal": 0
+  }
+ ],
+ "swing": {
+  "from": "S",
+  "to": "C",
+  "pts": 0
+ },
+ "params": {
+  "k": 2.5,
+  "cue": 0.8,
+  "cred": 0.5,
+  "rl": 3,
+  "band": 0.12,
+  "honor": true,
+  "vk": 1.5,
+  "tk": 1,
+  "exhaust": 0.15
+ },
+ "electors": [
+  {
+   "id": 1,
+   "name": "Flavio Marqueda",
+   "role": "Casa Marqueda (armamento) · candidato",
+   "bloc": "Grandes Casas",
+   "dist": "Ensanche",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 1,
+   "pos": [
+    -5,
+    9,
+    -8,
+    6,
+    5,
+    2,
+    6,
+    2
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 1,
+     "dir": -1,
+     "t": 2
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 2,
+   "name": "Evaristo Botticceli",
+   "role": "Casa Botticceli (banca)",
+   "bloc": "Grandes Casas",
+   "dist": "Ensanche",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 0.9,
+   "pos": [
+    -6,
+    6,
+    -8,
+    5,
+    4,
+    3,
+    3,
+    0
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 4,
+     "dir": -1,
+     "t": 4
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 3,
+   "name": "Umberto Tintorello",
+   "role": "Casa Tintorello (minería)",
+   "bloc": "Grandes Casas",
+   "dist": "Ensanche",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 1,
+   "pos": [
+    -4,
+    8,
+    -10,
+    8,
+    6,
+    5,
+    5,
+    3
+   ],
+   "w": [
+    1,
+    1,
+    3,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 2,
+     "dir": 1,
+     "t": 2
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 4,
+   "name": "Efraín Hachuel",
+   "role": "Casa Hachuel (entretenimiento)",
+   "bloc": "Grandes Casas",
+   "dist": "Ensanche",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 0.9,
+   "pos": [
+    -5,
+    6,
+    -7,
+    0,
+    3,
+    -2,
+    2,
+    0
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 3,
+     "dir": 1,
+     "t": 4
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 5,
+   "name": "Carmina Fideli",
+   "role": "Casa Fideli (artes)",
+   "bloc": "Grandes Casas",
+   "dist": "Ensanche",
+   "party": "S",
+   "pledge": "S",
+   "loyalty": 0.9,
+   "pos": [
+    2,
+    -7,
+    -1,
+    -2,
+    -4,
+    5,
+    -3,
+    -2
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 6,
+   "name": "Gianni Archesi",
+   "role": "Casa Archesi (naval)",
+   "bloc": "Grandes Casas",
+   "dist": "Ensanche",
+   "party": "S",
+   "pledge": "S",
+   "loyalty": 0.9,
+   "pos": [
+    -3,
+    -9,
+    -4,
+    -5,
+    -3,
+    0,
+    -3,
+    -5
+   ],
+   "w": [
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 1,
+     "dir": 1,
+     "t": 2
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 7,
+   "name": "Federico Gundolfo",
+   "role": "Casa Gundolfo (construcción)",
+   "bloc": "Grandes Casas",
+   "dist": "Ensanche",
+   "party": "N",
+   "pledge": "",
+   "loyalty": 0,
+   "pos": [
+    0,
+    2,
+    -2,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "w": [
+    1,
+    0.3,
+    3,
+    1,
+    0.3,
+    0.3,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 2,
+     "dir": 1,
+     "t": 6
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 8,
+   "name": "Oriana Elisondo",
+   "role": "Casa Elisondo (medios)",
+   "bloc": "Grandes Casas",
+   "dist": "Ensanche",
+   "party": "N",
+   "pledge": "",
+   "loyalty": 0,
+   "pos": [
+    -2,
+    1,
+    -4,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 9,
+   "name": "Adolfo Rossino",
+   "role": "Casa Rossino (agroalimentaria)",
+   "bloc": "Grandes Casas",
+   "dist": "Ensanche + Portuario",
+   "party": "N",
+   "pledge": "",
+   "loyalty": 0,
+   "pos": [
+    7,
+    1,
+    0,
+    2,
+    0,
+    3,
+    1,
+    2
+   ],
+   "w": [
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 0,
+     "dir": -1,
+     "t": 3
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 10,
+   "name": "Saturnino Galván",
+   "role": "Rector de la Universidad",
+   "bloc": "Académicos",
+   "dist": "Ciudad Universitaria",
+   "party": "S",
+   "pledge": "S",
+   "loyalty": 0.9,
+   "pos": [
+    0,
+    -6,
+    1,
+    -6,
+    -6,
+    -4,
+    -3,
+    -4
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 5,
+     "dir": 1,
+     "t": 4
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 11,
+   "name": "Manrique Altamira",
+   "role": "Catedrático de Derecho",
+   "bloc": "Académicos",
+   "dist": "Ciudad Universitaria",
+   "party": "S",
+   "pledge": "S",
+   "loyalty": 0.9,
+   "pos": [
+    1,
+    -8,
+    0,
+    -4,
+    -8,
+    -1,
+    -2,
+    -3
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 4,
+     "dir": 1,
+     "t": 2
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 12,
+   "name": "Práxedes Robledo",
+   "role": "Catedrático de Literatura",
+   "bloc": "Académicos",
+   "dist": "Ciudad Universitaria",
+   "party": "S",
+   "pledge": "S",
+   "loyalty": 0.9,
+   "pos": [
+    1,
+    -8,
+    1,
+    -3,
+    -6,
+    -2,
+    -2,
+    -3
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 13,
+   "name": "Hermenegildo Bru",
+   "role": "Catedrático de Arcanología",
+   "bloc": "Académicos",
+   "dist": "Ciudad Universitaria",
+   "party": "N",
+   "pledge": "",
+   "loyalty": 0.3,
+   "pos": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0
+   ],
+   "w": [
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 14,
+   "name": "Vanesa Montseny",
+   "role": "Catedrática de Historia",
+   "bloc": "Académicos",
+   "dist": "Ciudad Universitaria",
+   "party": "C",
+   "pledge": "C",
+   "loyalty": 0,
+   "pos": [
+    6,
+    -6,
+    9,
+    -7,
+    -9,
+    -9,
+    -6,
+    -2
+   ],
+   "w": [
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 15,
+   "name": "Debra Vidal",
+   "role": "Catedrática de Medicina",
+   "bloc": "Académicos",
+   "dist": "Ciudad Universitaria",
+   "party": "N",
+   "pledge": "S",
+   "loyalty": 0,
+   "pos": [
+    1,
+    -2,
+    5,
+    -1,
+    -3,
+    -3,
+    -2,
+    -2
+   ],
+   "w": [
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 16,
+   "name": "Bernabé Artigas",
+   "role": "Gremio de Sastres",
+   "bloc": "Gremiales",
+   "dist": "Casco Antiguo",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 0.9,
+   "pos": [
+    3,
+    2,
+    -2,
+    1,
+    1,
+    2,
+    1,
+    1
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 17,
+   "name": "Onofre Tintorello",
+   "role": "Gremio de Mineros",
+   "bloc": "Gremiales",
+   "dist": "Distrito Industrial",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 1,
+   "pos": [
+    -2,
+    7,
+    -9,
+    8,
+    5,
+    5,
+    4,
+    2
+   ],
+   "w": [
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 2,
+     "dir": 1,
+     "t": 2
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 18,
+   "name": "Enrico Manucci",
+   "role": "Gremio de Marineros",
+   "bloc": "Gremiales",
+   "dist": "Distrito Portuario",
+   "party": "U",
+   "pledge": "",
+   "loyalty": 0.3,
+   "pos": [
+    -3,
+    1,
+    -3,
+    1,
+    0,
+    1,
+    0,
+    -2
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 19,
+   "name": "Aurelio Belmonte",
+   "role": "Gremio de Orfebres",
+   "bloc": "Gremiales",
+   "dist": "Ensanche",
+   "party": "U",
+   "pledge": "",
+   "loyalty": 0.3,
+   "pos": [
+    -4,
+    4,
+    -7,
+    3,
+    2,
+    3,
+    2,
+    0
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 2,
+     "dir": 1,
+     "t": 3
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 20,
+   "name": "Leandro Bazán",
+   "role": "Gremio de Impresores",
+   "bloc": "Gremiales",
+   "dist": "Ciudad Universitaria",
+   "party": "S",
+   "pledge": "S",
+   "loyalty": 0.9,
+   "pos": [
+    1,
+    -8,
+    2,
+    -8,
+    -8,
+    -4,
+    -4,
+    -3
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 3,
+     "dir": 1,
+     "t": 2
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 21,
+   "name": "Silvestre Pascual",
+   "role": "Gremio de Plateros",
+   "bloc": "Gremiales",
+   "dist": "Casco Antiguo",
+   "party": "N",
+   "pledge": "S",
+   "loyalty": 0.3,
+   "pos": [
+    10,
+    -2,
+    0,
+    1,
+    0,
+    3,
+    3,
+    4
+   ],
+   "w": [
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 0,
+     "dir": -1,
+     "t": 2
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 22,
+   "name": "Orestes Cendón",
+   "role": "Gremio de Herreros",
+   "bloc": "Gremiales",
+   "dist": "Distrito Industrial",
+   "party": "N",
+   "pledge": "S",
+   "loyalty": 0.3,
+   "pos": [
+    6,
+    -1,
+    5,
+    2,
+    -1,
+    1,
+    0,
+    0
+   ],
+   "w": [
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 2,
+     "dir": 1,
+     "t": 9
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 23,
+   "name": "Rabricio Vega",
+   "role": "Gremio de Artesanos",
+   "bloc": "Gremiales",
+   "dist": "Ciudad Universitaria",
+   "party": "N",
+   "pledge": "S",
+   "loyalty": 0.3,
+   "pos": [
+    7,
+    -2,
+    3,
+    0,
+    -2,
+    1,
+    0,
+    0
+   ],
+   "w": [
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 24,
+   "name": "Rogelio Sahagún",
+   "role": "Gremio de Comerciantes",
+   "bloc": "Gremiales",
+   "dist": "Distrito Portuario",
+   "party": "N",
+   "pledge": "",
+   "loyalty": 0,
+   "pos": [
+    -9,
+    0,
+    -4,
+    0,
+    0,
+    0,
+    -1,
+    -5
+   ],
+   "w": [
+    3,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2
+   ],
+   "red": [
+    {
+     "ax": 0,
+     "dir": 1,
+     "t": 2
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 25,
+   "name": "Norberto Pesaro",
+   "role": "Capellán Mayor de Monte Kelsar",
+   "bloc": "Eclesiásticos",
+   "dist": "Monte Kelsar",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 0.7,
+   "pos": [
+    0,
+    6,
+    -2,
+    5,
+    6,
+    8,
+    5,
+    2
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 26,
+   "name": "Ireneo Baldovini",
+   "role": "Abad de San Basileos",
+   "bloc": "Eclesiásticos",
+   "dist": "Ensanche",
+   "party": "U",
+   "pledge": "",
+   "loyalty": 0.3,
+   "pos": [
+    0,
+    3,
+    -2,
+    2,
+    2,
+    6,
+    2,
+    0
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1.5,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 2,
+     "dir": 1,
+     "t": 6
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 27,
+   "name": "Tancredo Varela",
+   "role": "Rector del Seminario",
+   "bloc": "Eclesiásticos",
+   "dist": "Casco Antiguo",
+   "party": "C",
+   "pledge": "C",
+   "loyalty": 0.9,
+   "pos": [
+    2,
+    -6,
+    7,
+    -3,
+    -6,
+    3,
+    -3,
+    -2
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 5,
+     "dir": -1,
+     "t": 6
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 28,
+   "name": "Gervasio Marín",
+   "role": "Canónigo de la Catedral",
+   "bloc": "Eclesiásticos",
+   "dist": "Casco Antiguo",
+   "party": "N",
+   "pledge": "S",
+   "loyalty": 0,
+   "pos": [
+    0,
+    0,
+    1,
+    0,
+    -1,
+    4,
+    -1,
+    -2
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 5,
+     "dir": -1,
+     "t": 5
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 29,
+   "name": "Raphanel Cobo",
+   "role": "Obispo de Deverentio",
+   "bloc": "Eclesiásticos",
+   "dist": "Distrito Portuario",
+   "party": "N",
+   "pledge": "S",
+   "loyalty": 0,
+   "pos": [
+    0,
+    -2,
+    4,
+    -2,
+    -3,
+    1,
+    -9,
+    -2
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    3,
+    1
+   ],
+   "red": [
+    {
+     "ax": 6,
+     "dir": 1,
+     "t": 2
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 30,
+   "name": "Servando Arriola",
+   "role": "Capellán universitario",
+   "bloc": "Eclesiásticos",
+   "dist": "Ciudad Universitaria",
+   "party": "N",
+   "pledge": "S",
+   "loyalty": 0.3,
+   "pos": [
+    0,
+    -3,
+    2,
+    -6,
+    -4,
+    1,
+    -3,
+    -2
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 3,
+     "dir": 1,
+     "t": 4
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 31,
+   "name": "Roldán Calvino",
+   "role": "Comandante de la guarnición",
+   "bloc": "Militares",
+   "dist": "Monte Kelsar",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 1,
+   "pos": [
+    -1,
+    10,
+    -3,
+    9,
+    8,
+    6,
+    7,
+    3
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 1,
+     "dir": -1,
+     "t": 2
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 32,
+   "name": "Savastal Merodio",
+   "role": "Comandante de los Caballeros de Puro Fuego",
+   "bloc": "Militares",
+   "dist": "Monte Kelsar",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 0.8,
+   "pos": [
+    2,
+    6,
+    0,
+    9,
+    5,
+    4,
+    4,
+    4
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 3,
+     "dir": -1,
+     "t": 3
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 33,
+   "name": "Leonel Cardona",
+   "role": "Comandante de artillería",
+   "bloc": "Militares",
+   "dist": "Monte Kelsar",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 0.8,
+   "pos": [
+    0,
+    5,
+    -2,
+    7,
+    4,
+    2,
+    2,
+    2
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 3,
+     "dir": -1,
+     "t": 3
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 34,
+   "name": "Horacio Guzmán",
+   "role": "Comandante de la guarnición",
+   "bloc": "Militares",
+   "dist": "Monte Kelsar",
+   "party": "N",
+   "pledge": "",
+   "loyalty": 0,
+   "pos": [
+    2,
+    0,
+    0,
+    7,
+    1,
+    2,
+    1,
+    0
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    3,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 1,
+     "dir": -1,
+     "t": 9
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 35,
+   "name": "Heraclio Orsini",
+   "role": "Presidente del Tribunal y del Consejo",
+   "bloc": "Funcionarios",
+   "dist": "Ensanche",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 1,
+   "pos": [
+    -1,
+    9,
+    -4,
+    9,
+    8,
+    9,
+    6,
+    3
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 4,
+     "dir": -1,
+     "t": 3
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 36,
+   "name": "Teodomiro Lazzari",
+   "role": "Juez del Tribunal Supremo",
+   "bloc": "Funcionarios",
+   "dist": "Ensanche",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 0.9,
+   "pos": [
+    -2,
+    7,
+    -4,
+    6,
+    5,
+    5,
+    4,
+    0
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 37,
+   "name": "Florián Estrada",
+   "role": "Director de la Compañía de las Indias",
+   "bloc": "Funcionarios",
+   "dist": "Ensanche",
+   "party": "U",
+   "pledge": "U",
+   "loyalty": 0.9,
+   "pos": [
+    -2,
+    6,
+    -7,
+    3,
+    3,
+    2,
+    2,
+    5
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2
+   ],
+   "red": [
+    {
+     "ax": 7,
+     "dir": -1,
+     "t": 3
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 38,
+   "name": "Gaspar Nervetti",
+   "role": "Síndico de la Lonja",
+   "bloc": "Funcionarios",
+   "dist": "Casco Antiguo",
+   "party": "U",
+   "pledge": "",
+   "loyalty": 0.3,
+   "pos": [
+    -6,
+    2,
+    -4,
+    2,
+    1,
+    1,
+    0,
+    -3
+   ],
+   "w": [
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [
+    {
+     "ax": 0,
+     "dir": 1,
+     "t": 3
+    }
+   ],
+   "note": ""
+  },
+  {
+   "id": 39,
+   "name": "Jenaro Cardoso",
+   "role": "Juez del Tribunal Supremo",
+   "bloc": "Funcionarios",
+   "dist": "Ensanche",
+   "party": "N",
+   "pledge": "S",
+   "loyalty": 0.3,
+   "pos": [
+    0,
+    1,
+    -1,
+    5,
+    -4,
+    4,
+    1,
+    0
+   ],
+   "w": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  },
+  {
+   "id": 40,
+   "name": "Aloisio Requena",
+   "role": "Director de la Casa de la Moneda",
+   "bloc": "Funcionarios",
+   "dist": "Ensanche",
+   "party": "N",
+   "pledge": "",
+   "loyalty": 0,
+   "pos": [
+    -2,
+    1,
+    -6,
+    2,
+    0,
+    1,
+    0,
+    0
+   ],
+   "w": [
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "note": ""
+  }
+ ],
+ "districts": [
+  {
+   "name": "Casco Antiguo",
+   "el": 14,
+   "pop": 120000,
+   "v": {
+    "U": 33,
+    "S": 50,
+    "C": 8
+   },
+   "slates": {
+    "U": {
+     "pos": [
+      0,
+      5,
+      -4,
+      4,
+      3,
+      5,
+      4,
+      1
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": [
+      "Fabiola Morera",
+      "Manuela Albareda",
+      "Mercedes Casadevall",
+      "Matilde Bergua",
+      "Marcelino Capdevila",
+      "Emiliano Xifré",
+      "Ulpiano Pujades",
+      "Isidoro Vidaletti",
+      "Sofía Balaguer",
+      "Pascual Gasull",
+      "Pascual Pellicer",
+      "Macario Marchetti",
+      "Jacinto Cavalli",
+      "Narciso Parera"
+     ]
+    },
+    "S": {
+     "pos": [
+      3,
+      -7,
+      1,
+      -2,
+      -5,
+      2,
+      -3,
+      -2
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": [
+      "Gilda Torrent",
+      "Olegario Urgell",
+      "Liberata Pujades",
+      "Simón Lafuente",
+      "Graciano Cabanes",
+      "Encarna Llobet",
+      "Agustín Borrell",
+      "Candela Calvet",
+      "Isidoro Roca",
+      "Inés Trias",
+      "Sofía Palomar",
+      "Simón Pinazo",
+      "Modesto Salvatella",
+      "Simón Ginés"
+     ]
+    },
+    "C": {
+     "pos": [
+      5,
+      -5,
+      8,
+      -2,
+      -2,
+      -5,
+      -3,
+      -2
+     ],
+     "loyalty": 0.95,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "manual",
+   "center": [
+    2,
+    -2,
+    0,
+    0,
+    -2,
+    2,
+    0,
+    -1
+   ],
+   "spread": 4,
+   "turnout": 91
+  },
+  {
+   "name": "Ensanche",
+   "el": 20,
+   "pop": 40000,
+   "v": {
+    "U": 52,
+    "S": 30,
+    "C": 2
+   },
+   "slates": {
+    "U": {
+     "pos": [
+      -6,
+      8,
+      -8,
+      5,
+      4,
+      3,
+      5,
+      1
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [
+      {
+       "ax": 2,
+       "dir": 1,
+       "t": 5
+      }
+     ],
+     "names": [
+      "Jacinto Barbieri",
+      "Florencio Cabanes",
+      "Agustín Jordà",
+      "Isidoro Massana",
+      "Lucrecia Vidaletti",
+      "Rafaela Xifré",
+      "Clemente Piqué",
+      "Concepción Gasull",
+      "Dámaso Falcó",
+      "Gilda Ibars",
+      "Zacarías Vallès",
+      "Leocadia Salvatella",
+      "Pascual Quer",
+      "Zacarías Pinazo",
+      "Gaudencio Roca",
+      "Aurora Cavalli",
+      "Prudencio Montaner",
+      "Eusebio Morera",
+      "Eulalia Galimberti",
+      "Alma Borrell"
+     ]
+    },
+    "S": {
+     "pos": [
+      -3,
+      -6,
+      -4,
+      -3,
+      -5,
+      -1,
+      -2,
+      -4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": [
+      "Demetrio Arbeloa",
+      "Verónica Canals",
+      "Gilda Albareda",
+      "Ulpiano Pinazo",
+      "Baltasar Lafuente",
+      "Plácido Galimberti",
+      "Berta Bonfanti",
+      "Demetrio Alcocer",
+      "Delfina Xifré",
+      "Marcelino Gasull",
+      "Manuela Massana",
+      "Fidel Pellicer",
+      "Emiliano Serrallonga",
+      "Candela Rovira",
+      "Saturnino Pagès",
+      "Gervasio Amorós",
+      "Macario Mestre",
+      "Leocadia Andreoli",
+      "Saturnino Zamora",
+      "Baltasar Garriga"
+     ]
+    },
+    "C": {
+     "pos": [
+      3,
+      -5,
+      7,
+      -3,
+      -3,
+      -7,
+      -4,
+      -3
+     ],
+     "loyalty": 0.95,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "manual",
+   "center": [
+    -5,
+    3,
+    -6,
+    2,
+    1,
+    1,
+    2,
+    -1
+   ],
+   "spread": 4,
+   "turnout": 84
+  },
+  {
+   "name": "Distrito Portuario",
+   "el": 6,
+   "pop": 100000,
+   "v": {
+    "U": 26,
+    "S": 44,
+    "C": 12
+   },
+   "slates": {
+    "U": {
+     "pos": [
+      -6,
+      4,
+      -4,
+      2,
+      2,
+      1,
+      1,
+      -1
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": [
+      "Inés Salvatella",
+      "Rosendo Barbieri",
+      "Pascual Castellví",
+      "Zacarías Gasull",
+      "Clemente Borrell",
+      "Gervasio Esquerra"
+     ]
+    },
+    "S": {
+     "pos": [
+      -2,
+      -7,
+      2,
+      -3,
+      -5,
+      -1,
+      -6,
+      -4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": [
+      "Apolonia Mestre",
+      "Leocadia Obiols",
+      "Ambrosio Trias",
+      "Berta Galimberti",
+      "Elvira Llobet",
+      "Encarna Ferrandis"
+     ]
+    },
+    "C": {
+     "pos": [
+      4,
+      -6,
+      9,
+      -2,
+      -2,
+      -6,
+      -6,
+      -3
+     ],
+     "loyalty": 0.95,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "manual",
+   "center": [
+    -2,
+    -3,
+    1,
+    -1,
+    -2,
+    -1,
+    -4,
+    -3
+   ],
+   "spread": 4,
+   "turnout": 82
+  },
+  {
+   "name": "Distrito Industrial",
+   "el": 4,
+   "pop": 200000,
+   "v": {
+    "U": 20,
+    "S": 22,
+    "C": 34
+   },
+   "slates": {
+    "U": {
+     "pos": [
+      0,
+      6,
+      -5,
+      6,
+      5,
+      4,
+      5,
+      2
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": [
+      "Baltasar Llobet",
+      "Antonella Zamora",
+      "Antonella Cavalli",
+      "Camila Amorós"
+     ]
+    },
+    "S": {
+     "pos": [
+      5,
+      -5,
+      6,
+      -2,
+      -5,
+      -1,
+      -2,
+      -1
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": [
+      "Plácido Obiols",
+      "Domitila Garriga",
+      "Pascual Folch",
+      "Baltasar Marchetti"
+     ]
+    },
+    "C": {
+     "pos": [
+      7,
+      -4,
+      10,
+      -1,
+      1,
+      -7,
+      -3,
+      -2
+     ],
+     "loyalty": 0.95,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "manual",
+   "center": [
+    5,
+    -2,
+    5,
+    1,
+    0,
+    -2,
+    -1,
+    -1
+   ],
+   "spread": 4,
+   "turnout": 76
+  },
+  {
+   "name": "Ciudad Universitaria",
+   "el": 10,
+   "pop": 30000,
+   "v": {
+    "U": 10,
+    "S": 66,
+    "C": 16
+   },
+   "slates": {
+    "U": {
+     "pos": [
+      -3,
+      5,
+      -4,
+      3,
+      2,
+      0,
+      2,
+      -1
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": [
+      "Sofía Orlandi",
+      "Ernesto Beltrami",
+      "Felisa Dellafiore",
+      "Nemesio Porcel",
+      "Olimpia Barbieri",
+      "Graciano Nogués",
+      "Verónica Gelabert",
+      "Plácido Pellicer",
+      "Anacleto Domènech",
+      "Concepción Llobet"
+     ]
+    },
+    "S": {
+     "pos": [
+      1,
+      -8,
+      3,
+      -6,
+      -8,
+      -6,
+      -4,
+      -4
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": [
+      "Genoveva Capdevila",
+      "Julián Sabater",
+      "Concepción Borrell",
+      "Herminia Olivella",
+      "Inés Zamora",
+      "Marcelino Esquerra",
+      "Olimpia Fontana",
+      "Lorenzo Roca",
+      "Florencio Lafuente",
+      "Inés Canals"
+     ]
+    },
+    "C": {
+     "pos": [
+      4,
+      -7,
+      9,
+      -5,
+      -4,
+      -9,
+      -5,
+      -4
+     ],
+     "loyalty": 0.95,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "manual",
+   "center": [
+    1,
+    -6,
+    3,
+    -5,
+    -6,
+    -6,
+    -4,
+    -4
+   ],
+   "spread": 4,
+   "turnout": 92
+  },
+  {
+   "name": "Monte Kelsar",
+   "el": 6,
+   "pop": 10000,
+   "v": {
+    "U": 66,
+    "S": 14,
+    "C": 1
+   },
+   "slates": {
+    "U": {
+     "pos": [
+      0,
+      9,
+      -2,
+      9,
+      7,
+      6,
+      6,
+      3
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [
+      {
+       "ax": 1,
+       "dir": -1,
+       "t": 3
+      }
+     ],
+     "names": [
+      "Clemente Quer",
+      "Ulpiano Andreoli",
+      "Albano Calvet",
+      "Eleuterio Orlandi",
+      "Leocadia Arnau",
+      "Rufina Roca"
+     ]
+    },
+    "S": {
+     "pos": [
+      2,
+      -4,
+      0,
+      4,
+      -2,
+      3,
+      0,
+      0
+     ],
+     "loyalty": 0.9,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": [
+      "Arcadio Borrell",
+      "Jacinto Orlandi",
+      "Concepción Miravet",
+      "Calixto Zamora",
+      "Adelina Negri",
+      "Benigno Nogués"
+     ]
+    },
+    "C": {
+     "pos": [
+      3,
+      -2,
+      7,
+      2,
+      1,
+      -3,
+      -1,
+      -1
+     ],
+     "loyalty": 0.95,
+     "w": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ],
+     "red": [],
+     "names": []
+    }
+   },
+   "mode": "manual",
+   "center": [
+    0,
+    7,
+    -2,
+    8,
+    5,
+    5,
+    5,
+    2
+   ],
+   "spread": 4,
+   "turnout": 81
+  }
+ ],
+ "proposals": [
+  {
+   "id": "p1",
+   "name": "Jornada de ocho horas y seguridad laboral",
+   "desc": "La reforma laboral del debate. Gana a los obreros, enfada a los nobles.",
+   "sponsor": "S",
+   "rule": "abs",
+   "t": [
+    null,
+    null,
+    2,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "promise": {
+    "S": false,
+    "U": false,
+    "C": true
+   },
+   "ov": {}
+  },
+  {
+   "id": "p3",
+   "name": "Puerto franco",
+   "desc": "Aranceles mínimos y comercio abierto.",
+   "sponsor": "",
+   "rule": "abs",
+   "t": [
+    -8,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -3
+   ],
+   "promise": {
+    "S": false,
+    "U": false,
+    "C": false
+   },
+   "ov": {}
+  },
+  {
+   "id": "p4",
+   "name": "Aranceles a la plata y al grano importados",
+   "desc": "Lo que piden los gremios artesanos y Rossino.",
+   "sponsor": "",
+   "rule": "abs",
+   "t": [
+    5,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "promise": {
+    "S": false,
+    "U": false,
+    "C": false
+   },
+   "ov": {}
+  },
+  {
+   "id": "p6",
+   "name": "Comisión de auditoría de las finanzas municipales",
+   "desc": "La bandera anticorrupción de Salgado tras el debate. Botticceli la teme.",
+   "sponsor": "S",
+   "rule": "abs",
+   "t": [
+    null,
+    null,
+    null,
+    null,
+    -3,
+    null,
+    null,
+    null
+   ],
+   "promise": {
+    "S": true,
+    "U": false,
+    "C": false
+   },
+   "ov": {}
+  },
+  {
+   "id": "p7",
+   "name": "Milicia ciudadana y guardia reformada",
+   "desc": "El plan de defensa que complementa (no sustituye) a la guarnición.",
+   "sponsor": "S",
+   "rule": "abs",
+   "t": [
+    null,
+    1,
+    null,
+    null,
+    0,
+    null,
+    null,
+    null
+   ],
+   "promise": {
+    "S": false,
+    "U": false,
+    "C": false
+   },
+   "ov": {}
+  },
+  {
+   "id": "p10",
+   "name": "Tratado comercial con Kratoi",
+   "desc": "El acuerdo a través de Eroan. Alternativa al monopolio de la Compañía de Haruya.",
+   "sponsor": "S",
+   "rule": "abs",
+   "t": [
+    -4,
+    3,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -6
+   ],
+   "promise": {
+    "S": false,
+    "U": false,
+    "C": false
+   },
+   "ov": {}
+  },
+  {
+   "id": "p11",
+   "name": "Pabellones imperiales de la Expo",
+   "desc": "Financiación imperial y contratos para la Expo: la gran promesa de Marqueda.",
+   "sponsor": "U",
+   "rule": "abs",
+   "t": [
+    null,
+    7,
+    -7,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "promise": {
+    "S": false,
+    "U": true,
+    "C": false
+   },
+   "ov": {}
+  },
+  {
+   "id": "p12",
+   "name": "Ley de Orden Público (Guardia Ciudadana)",
+   "desc": "Mano dura contra carmesíes y «agitadores».",
+   "sponsor": "U",
+   "rule": "abs",
+   "t": [
+    null,
+    null,
+    null,
+    8,
+    6,
+    null,
+    null,
+    null
+   ],
+   "promise": {
+    "S": false,
+    "U": true,
+    "C": false
+   },
+   "ov": {}
+  }
+ ],
+ "mode": "cand",
+ "editP": "p1",
+ "axX": 1,
+ "axY": 2,
+ "meta": {
+  "eyebrow": "Ciudad Libre de Deverentio · 4099",
+  "title": "Elección de alcalde de Deverentio",
+  "lede": "El Consejo de Cien elige al alcalde: cuarenta electores institucionales de los seis estamentos y sesenta escaños de distrito. Cada elector (o cada lista de distrito) tiene una posición en ocho ejes ideológicos; el modelo la compara con la de los candidatos o con lo que cambia cada propuesta, y estima cómo votará.",
+  "chamber": "Consejo de Cien",
+  "office": "Alcalde",
+  "member": "elector",
+  "members": "electores",
+  "national": "Lista de la ciudad",
+  "chairTitle": "Presidente del Consejo"
+ },
+ "system": {
+  "method": "wta",
+  "threshold": 0,
+  "thresholdScope": "district",
+  "bonus": 0,
+  "national": {
+   "seats": 0,
+   "method": "dhondt",
+   "mode": "parallel",
+   "threshold": 0
+  }
+ },
+ "election": {
+  "kind": "indirect",
+  "rule": "abs",
+  "rounds": "single",
+  "direct": "plurality"
+ },
+ "chair": "e35",
+ "natSlates": {
+  "U": {
+   "pos": [
+    -5,
+    9,
+    -8,
+    6,
+    5,
+    2,
+    6,
+    2
+   ],
+   "loyalty": 0.9,
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "names": []
+  },
+  "S": {
+   "pos": [
+    3,
+    -9,
+    1,
+    -4,
+    -7,
+    -2,
+    -4,
+    -4
+   ],
+   "loyalty": 0.9,
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "names": []
+  },
+  "C": {
+   "pos": [
+    5,
+    -5,
+    10,
+    -2,
+    0,
+    -8,
+    -4,
+    -3
+   ],
+   "loyalty": 0.9,
+   "w": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "red": [],
+   "names": []
+  }
+ },
+ "bodies": [
+  "Grandes Casas",
+  "Académicos",
+  "Gremiales",
+  "Eclesiásticos",
+  "Militares",
+  "Funcionarios"
+ ],
+ "version": 2,
+ "scenario": {
+  "country": "Deverentio",
+  "election": "4099 · Fragmentación carmesí 4 · La verdad sale a la luz (tras la Torre Radiofónica)",
+  "desc": "Escenario guardado de la campaña: la fragmentación del voto tras la irrupción carmesí.",
+  "published": false
+ }
+}
