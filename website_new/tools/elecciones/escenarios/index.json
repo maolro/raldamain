@@ -22,17 +22,5 @@
     "published": true
    }
   ]
- },
- {
-  "name": "República de Ejemplo",
-  "slug": "republica-de-ejemplo",
-  "elections": [
-   {
-    "name": "Asamblea Nacional",
-    "file": "republica-de-ejemplo/asamblea-nacional.json",
-    "desc": "Genérico: 3 ejes, 5 partidos, regiones con voto ideológico, nivel nacional compensatorio y presidente por dos vueltas.",
-    "published": true
-   }
-  ]
  }
 ]
