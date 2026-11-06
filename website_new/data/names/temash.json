@@ -1,7 +1,7 @@
 {
   "id": "temash",
   "name": "Temash",
-  "description": "Pueblo del desierto del Tamashkhan. Su lengua, el tamazight, mezcla raíces bereberes y árabes; la mayoría sigue la Fe Ancestral de los Eternos, y en el Menadar veneran a la Hueste Celestial, con nombres que llegaron de los arshalaníes. El nombre se da a los siete días, y la tribu (Al, Kel o Ban) va detrás: «los hijos de», «la gente de». Hay huellas del trato con nekthysios, arshalaníes y shirajíes.",
+  "description": "",
   "format": "{name} {surname}",
   "names": [
     {
@@ -815,14 +815,14 @@
       "meaning": "«el de las montañas» · arshalaní"
     },
     {
+      "name": "Sifak",
+      "gender": "m",
+      "meaning": "«el jinete del oeste» · temash"
+    },
+    {
       "name": "Sifaw",
       "gender": "m",
       "meaning": "«el que ilumina» · temash"
-    },
-    {
-      "name": "Sifax",
-      "gender": "m",
-      "meaning": "«el jinete del oeste» · temash"
     },
     {
       "name": "Siyavash",
@@ -2137,12 +2137,12 @@
       "meaning": "«los del honor» — al «los de» + sharaf «honor» · temash"
     },
     {
-      "name": "Al Sifaw",
-      "meaning": "«los que iluminan» — al «los de, la familia de» + sifaw «iluminar» · temash"
+      "name": "Al Sifak",
+      "meaning": "«los de Sifak» — al «los de» + Sifak, el jinete del oeste · temash"
     },
     {
-      "name": "Al Sifax",
-      "meaning": "«los de Sifax» — al «los de» + Sifax, el jinete del oeste · temash"
+      "name": "Al Sifaw",
+      "meaning": "«los que iluminan» — al «los de, la familia de» + sifaw «iluminar» · temash"
     },
     {
       "name": "Al Tafat",
