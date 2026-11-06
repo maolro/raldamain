@@ -21,6 +21,8 @@ export interface Playback {
 const PREFS = 'raldamain.tablero.music';
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 const plain = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+/* total length of a list: «23 min», «1 h 05 min» (tracks whose length isn't known yet count 0) */
+const fmtTotal = (sec: number) => { const m = Math.round(sec / 60); return m >= 60 ? `${Math.floor(m / 60)} h ${String(m % 60).padStart(2, '0')} min` : `${m} min`; };
 const fmt = (t: number) => { t = Math.max(0, Math.floor(t || 0)); return `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`; };
 
 /** Length of an audio file, read by the browser (0 if it can't tell) */
@@ -245,12 +247,15 @@ export class Music {
   private renderLists() {
     if (!this.o.gm) return;
     const box = this.$('[data-lists]');
-    box.innerHTML = [`<button class="chip ${this.view === 'all' ? 'on' : ''}" data-view="all">Todas las pistas <small>${this.lib.tracks.length}</small></button>`,
-      ...this.lib.playlists.map(p => `<button class="chip ${this.view === p.id ? 'on' : ''}" data-view="${esc(p.id)}">${this.state?.list === p.id && this.state.playing ? '♪ ' : ''}${esc(p.name)} <small>${p.tracks.length}</small></button>`),
+    const len = new Map(this.lib.tracks.map(t => [t.id, t.duration || 0]));
+    const total = (ids: string[]) => ids.reduce((a, id) => a + (len.get(id) || 0), 0);
+    const all = total(this.lib.tracks.map(t => t.id));
+    box.innerHTML = [`<button class="chip ${this.view === 'all' ? 'on' : ''}" data-view="all" title="${this.lib.tracks.length} pistas · ${fmtTotal(all)}">Todas las pistas <small>${this.lib.tracks.length} · ${fmtTotal(all)}</small></button>`,
+      ...this.lib.playlists.map(p => `<button class="chip ${this.view === p.id ? 'on' : ''}" data-view="${esc(p.id)}" title="${p.tracks.length} pistas · ${fmtTotal(total(p.tracks))}">${this.state?.list === p.id && this.state.playing ? '♪ ' : ''}${esc(p.name)} <small>${p.tracks.length} · ${fmtTotal(total(p.tracks))}</small></button>`),
       `<button class="chip mu-new" data-act="new-list" title="Nueva lista">＋ Lista</button>`].join('');
     const pl = this.lib.playlists.find(p => p.id === this.view);
     this.$('[data-head]').innerHTML = `
-      <b class="mu-listname">${pl ? esc(pl.name) : 'Todas las pistas'}</b>
+      <b class="mu-listname">${pl ? esc(pl.name) : 'Todas las pistas'} <small class="muted">${fmtTotal(pl ? total(pl.tracks) : all)}</small></b>
       <button class="btn small" data-act="play-list" title="Reproducir desde el principio (o en aleatorio si ⇄)">▶ Reproducir</button>
       <label class="btn small" title="Subir archivos de audio">⬆ Subir<input type="file" accept="audio/*" multiple hidden data-upload></label>
       ${pl ? `<button class="mu-btn small" data-act="rename-list" title="Cambiar el nombre">✎</button><button class="mu-btn small" data-act="del-list" title="Borrar la lista (las pistas se quedan)">🗑</button>` : ''}`;
@@ -263,7 +268,7 @@ export class Music {
     box.innerHTML = list.map((t, i) => `
       <div class="mu-track ${t.id === cur ? 'on' : ''}" data-track="${esc(t.id)}" title="Clic: reproducir desde aquí">
         <span class="mu-n">${t.id === cur ? (this.state?.playing ? '♪' : '⏸') : i + 1}</span>
-        <span class="mu-name">${esc(t.name)}</span>
+        <span class="mu-name" title="${esc(t.name)}">${esc(t.name)}</span>
         <span class="mu-len muted">${t.duration ? fmt(t.duration) : ''}</span>
         <select class="mu-add" data-add="${esc(t.id)}" title="Añadir a una lista"><option value="">＋</option>
           ${this.lib.playlists.filter(p => p.id !== this.view).map(p => `<option value="${esc(p.id)}">${esc(p.name)}</option>`).join('')}

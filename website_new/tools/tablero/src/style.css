@@ -292,7 +292,8 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .round-chip { font: 700 12px var(--body); color: var(--gold); border: 1px solid var(--gold-dim); border-radius: 12px; padding: 2px 9px; white-space: nowrap; flex: none; }
 
 /* ── música ── */
-.music { display: flex; flex-direction: column; gap: 8px; min-height: 0; overflow: auto; padding: 10px; }
+.music { display: flex; flex-direction: column; gap: 8px; min-height: 0; overflow: auto; overflow-x: hidden; padding: 10px; }
+.music > * { min-width: 0; }
 .music.mu-drop { outline: 2px dashed var(--gold); outline-offset: -4px; }
 .mu-now { background: #151515; border: 1px solid #333; border-radius: 8px; padding: 10px; display: grid; gap: 6px; }
 .mu-title { font: 700 14px var(--heading); color: var(--gold); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -311,8 +312,8 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .mu-lists { display: flex; flex-wrap: wrap; gap: 4px; }
 .mu-head { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .mu-listname { flex: 1; min-width: 0; font: 700 13px var(--heading); color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.mu-tracks { display: grid; gap: 2px; }
-.mu-track { display: flex; align-items: center; gap: 6px; padding: 4px 6px; border-radius: 4px; cursor: pointer; font-size: 13px; border: 1px solid transparent; }
+.mu-tracks { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px; min-width: 0; }
+.mu-track { display: flex; align-items: center; gap: 6px; min-width: 0; padding: 4px 6px; border-radius: 4px; cursor: pointer; font-size: 13px; border: 1px solid transparent; }
 .mu-track:hover { background: var(--panel2); }
 .mu-track.on { border-color: var(--gold-dim); color: var(--gold); }
 .mu-n { width: 18px; text-align: right; color: var(--muted); font-size: 11px; flex: none; }
@@ -320,6 +321,7 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .mu-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .mu-len { font-size: 11px; flex: none; }
 .mu-add { width: 34px; flex: none; background: var(--panel2); color: var(--text); border: 1px solid #444; border-radius: 4px; font-size: 11px; padding: 1px; }
+.mu-track .mu-btn { flex: none; }
 .music-unlock { position: fixed; z-index: 60; left: 50%; bottom: 46px; transform: translateX(-50%); box-shadow: 0 6px 20px rgba(0,0,0,.6); }
 
 /* ── round thumbnails, upload dialog ── */
