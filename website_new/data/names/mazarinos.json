@@ -1429,5 +1429,607 @@
       "female": "aya"
     }
   ],
-  "patronymic_rules": []
+  "patronymic_rules": [],
+  "places": [
+    {
+      "name": "Anastasievka",
+      "meaning": "«la de la resurrección» — anastasis «resurrección» + -evka · nataneo"
+    },
+    {
+      "name": "Baranovo",
+      "meaning": "«la de los carneros» — baran «carnero» + -ovo · mazarino"
+    },
+    {
+      "name": "Belogorye",
+      "meaning": "«las colinas blancas» — bely «blanco» + gorye «colinas» · mazarino"
+    },
+    {
+      "name": "Belovodye",
+      "meaning": "«las aguas blancas» — bely «blanco» + vodye «aguas» · mazarino"
+    },
+    {
+      "name": "Beloye",
+      "meaning": "«la blanca» — bely «blanco» · mazarino"
+    },
+    {
+      "name": "Berezniki",
+      "meaning": "«los abedulares» — bereza «abedul» + -niki · mazarino"
+    },
+    {
+      "name": "Blagoveshchensk",
+      "meaning": "«el de la buena nueva» — blago «bueno» + vest «noticia» + -sk · nataneo litúrgico"
+    },
+    {
+      "name": "Borovsk",
+      "meaning": "«el del pinar» — bor «pinar» + -ovsk · mazarino"
+    },
+    {
+      "name": "Boyarka",
+      "meaning": "«la de los boyardos» — boyar «noble» + -ka · mazarino"
+    },
+    {
+      "name": "Brennhof",
+      "meaning": "«la granja del alambique» — Brenn «destilar» + Hof «granja» · geismariano"
+    },
+    {
+      "name": "Brodok",
+      "meaning": "«el vadito» — brod «vado» + -ok «pequeño» · mazarino"
+    },
+    {
+      "name": "Chernavka",
+      "meaning": "«el río negro» — cherny «negro» + -avka · mazarino"
+    },
+    {
+      "name": "Chernogorsk",
+      "meaning": "«el de la montaña negra» — cherny «negro» + gora «montaña» + -sk · mazarino"
+    },
+    {
+      "name": "Dolina",
+      "meaning": "«el valle» — dolina «valle» · mazarino"
+    },
+    {
+      "name": "Dubrovo",
+      "meaning": "«el robledal» — dub «roble» + -rovo · mazarino"
+    },
+    {
+      "name": "Evdokimovo",
+      "meaning": "«la de buena fama» — eudokimos «estimado» + -ovo · nataneo"
+    },
+    {
+      "name": "Eyford",
+      "meaning": "«el vado de la isla» — ey «isla» + ford «vado» · ayutano"
+    },
+    {
+      "name": "Feodosiya",
+      "meaning": "«el don divino» — theos «dios» + dosis «don» · nataneo"
+    },
+    {
+      "name": "Feynopol",
+      "meaning": "«la ciudad de Feyn» — Feyn + polis «ciudad» · nataneo"
+    },
+    {
+      "name": "Glashutte",
+      "meaning": "«la vidriería» — Glas «vidrio» + Hütte «taller» · geismariano"
+    },
+    {
+      "name": "Glubokoye",
+      "meaning": "«la honda» — gluboky «hondo» · mazarino"
+    },
+    {
+      "name": "Gonchary",
+      "meaning": "«los alfareros» — gonchar «alfarero» · mazarino"
+    },
+    {
+      "name": "Gorkovodye",
+      "meaning": "«las aguas amargas» — gorky «amargo» + vodye «aguas» · mazarino"
+    },
+    {
+      "name": "Gorodets",
+      "meaning": "«la fortalecita» — gorod «recinto, ciudad» + -ets «pequeño» · mazarino"
+    },
+    {
+      "name": "Gorodishche",
+      "meaning": "«el viejo recinto» — gorod «recinto» + -ishche «antiguo, grande» · mazarino"
+    },
+    {
+      "name": "Gullstad",
+      "meaning": "«el lugar del oro» — gull «oro» + stad «lugar» · ayutano"
+    },
+    {
+      "name": "Gusevo",
+      "meaning": "«la de los gansos» — gus «ganso» + -evo · mazarino"
+    },
+    {
+      "name": "Hafgard",
+      "meaning": "«la cerca del mar» — haf «mar» + gard «cercado» · ayutano"
+    },
+    {
+      "name": "Hagiopol",
+      "meaning": "«la ciudad santa» — hagios «santo» + polis «ciudad» · nataneo"
+    },
+    {
+      "name": "Handelsheim",
+      "meaning": "«el hogar del comercio» — Handel «comercio» + Heim «hogar» · geismariano"
+    },
+    {
+      "name": "Haugaby",
+      "meaning": "«la aldea del túmulo» — haug «túmulo» + by «aldea» · ayutano"
+    },
+    {
+      "name": "Heidby",
+      "meaning": "«la aldea del páramo» — heid «páramo» + by «aldea» · ayutano"
+    },
+    {
+      "name": "Holmgard",
+      "meaning": "«la ciudad del islote» — holm «islote» + gard «cercado, ciudad» · ayutano"
+    },
+    {
+      "name": "Hvitby",
+      "meaning": "«la aldea blanca» — hvit «blanco» + by «aldea» · ayutano"
+    },
+    {
+      "name": "Ikonovo",
+      "meaning": "«la de los iconos» — ikona «icono» + -ovo · mazarino"
+    },
+    {
+      "name": "Jarnheim",
+      "meaning": "«el hogar del hierro» — jarn «hierro» + heim «hogar» · ayutano"
+    },
+    {
+      "name": "Kaldvatn",
+      "meaning": "«el lago frío» — kald «frío» + vatn «lago» · ayutano"
+    },
+    {
+      "name": "Kamenka",
+      "meaning": "«la pedregosa» — kamen «piedra» + -ka · mazarino"
+    },
+    {
+      "name": "Kharitonovo",
+      "meaning": "«la de la gracia» — charis «gracia» + -onovo · nataneo"
+    },
+    {
+      "name": "Kholmogory",
+      "meaning": "«las colinas» — kholm «colina» + gory «montes» · mazarino"
+    },
+    {
+      "name": "Kirkjuby",
+      "meaning": "«la aldea de la iglesia» — kirkja «iglesia» + by «aldea» · ayutano"
+    },
+    {
+      "name": "Knyazhevo",
+      "meaning": "«la del príncipe» — knyaz «príncipe» + -evo · mazarino"
+    },
+    {
+      "name": "Kohlgrund",
+      "meaning": "«la hondonada del carbón» — Kohle «carbón» + Grund «hondonada» · geismariano"
+    },
+    {
+      "name": "Konevo",
+      "meaning": "«la de los caballos» — kon «caballo» + -evo · mazarino"
+    },
+    {
+      "name": "Kozlovka",
+      "meaning": "«la de las cabras» — kozel «macho cabrío» + -ovka · mazarino"
+    },
+    {
+      "name": "Krasnogor",
+      "meaning": "«la montaña roja» — krasny «rojo, hermoso» + gor «montaña» · mazarino"
+    },
+    {
+      "name": "Krasnoselye",
+      "meaning": "«la aldea hermosa» — krasny «hermoso» + selye «aldea» · mazarino"
+    },
+    {
+      "name": "Krasnoye",
+      "meaning": "«la hermosa» — krasny «hermoso» · mazarino"
+    },
+    {
+      "name": "Krauterfeld",
+      "meaning": "«el campo de hierbas» — Kräuter «hierbas» + Feld «campo» · geismariano"
+    },
+    {
+      "name": "Kremenets",
+      "meaning": "«el del pedernal» — kremen «pedernal» + -ets · mazarino"
+    },
+    {
+      "name": "Krestovo",
+      "meaning": "«la de la cruz» — krest «cruz» + -ovo · mazarino"
+    },
+    {
+      "name": "Krutoyar",
+      "meaning": "«el barranco escarpado» — kruty «escarpado» + yar «barranco» · mazarino"
+    },
+    {
+      "name": "Kupferberg",
+      "meaning": "«el monte del cobre» — Kupfer «cobre» + Berg «monte» · geismariano"
+    },
+    {
+      "name": "Kuznetsk",
+      "meaning": "«el de los herreros» — kuznets «herrero» + -sk · mazarino"
+    },
+    {
+      "name": "Lebedyan",
+      "meaning": "«la de los cisnes» — lebed «cisne» + -yan · mazarino"
+    },
+    {
+      "name": "Lesnoye",
+      "meaning": "«la del bosque» — les «bosque» + -noye · mazarino"
+    },
+    {
+      "name": "Lipovets",
+      "meaning": "«el de los tilos» — lipa «tilo» + -ovets · mazarino"
+    },
+    {
+      "name": "Lugovoye",
+      "meaning": "«la de los prados» — lug «prado» + -ovoye · mazarino"
+    },
+    {
+      "name": "Malinovka",
+      "meaning": "«la del frambuesal» — malina «frambuesa» + -ovka · mazarino"
+    },
+    {
+      "name": "Medovo",
+      "meaning": "«la de la miel» — med «miel» + -ovo · mazarino"
+    },
+    {
+      "name": "Medvezhye",
+      "meaning": "«la del oso» — medved «oso» + -zhye · mazarino"
+    },
+    {
+      "name": "Melnitsa",
+      "meaning": "«el molino» — melnitsa «molino» · mazarino"
+    },
+    {
+      "name": "Monastyrka",
+      "meaning": "«el monasterio pequeño» — monastyr «monasterio» + -ka · mazarino"
+    },
+    {
+      "name": "Moroznoye",
+      "meaning": "«la helada» — moroz «helada» + -noye · mazarino"
+    },
+    {
+      "name": "Mostovoye",
+      "meaning": "«la del puente» — most «puente» + -ovoye · mazarino"
+    },
+    {
+      "name": "Nesby",
+      "meaning": "«la aldea del cabo» — nes «cabo» + by «aldea» · ayutano"
+    },
+    {
+      "name": "Nikopol",
+      "meaning": "«la ciudad de la victoria» — nike «victoria» + polis «ciudad» · nataneo"
+    },
+    {
+      "name": "Nordvatn",
+      "meaning": "«el lago del norte» — nord «norte» + vatn «lago» · ayutano"
+    },
+    {
+      "name": "Novoselki",
+      "meaning": "«las aldeas nuevas» — novy «nuevo» + selo «aldea» · mazarino"
+    },
+    {
+      "name": "Novostar",
+      "meaning": "«la nueva vieja» — novo «nueva» + star «vieja» · mazarino"
+    },
+    {
+      "name": "Orlovo",
+      "meaning": "«la del águila» — orel «águila» + -ovo · mazarino"
+    },
+    {
+      "name": "Ormsund",
+      "meaning": "«el estrecho de la serpiente» — orm «serpiente» + sund «estrecho» · ayutano"
+    },
+    {
+      "name": "Ostgard",
+      "meaning": "«la cerca del este» — ost «este» + gard «cercado» · ayutano"
+    },
+    {
+      "name": "Ovsyanka",
+      "meaning": "«la de la avena» — oves «avena» + -yanka · mazarino"
+    },
+    {
+      "name": "Ovtsevo",
+      "meaning": "«la de las ovejas» — ovtsa «oveja» + -evo · mazarino"
+    },
+    {
+      "name": "Ozersk",
+      "meaning": "«el de los lagos» — ozero «lago» + -sk · mazarino"
+    },
+    {
+      "name": "Patriarshy",
+      "meaning": "«el del patriarca» — patriarkh «patriarca» · nataneo litúrgico"
+    },
+    {
+      "name": "Peschanka",
+      "meaning": "«la arenosa» — pesok «arena» + -anka · mazarino"
+    },
+    {
+      "name": "Pivovar",
+      "meaning": "«la cervecería» — pivo «cerveza» + var «cocer» · mazarino"
+    },
+    {
+      "name": "Podgorye",
+      "meaning": "«al pie del monte» — pod «bajo» + gora «monte» · mazarino"
+    },
+    {
+      "name": "Pogranichny",
+      "meaning": "«el fronterizo» — po «junto a» + granitsa «frontera» · mazarino"
+    },
+    {
+      "name": "Pokrov",
+      "meaning": "«la protección» — pokrov «manto, protección» · nataneo litúrgico"
+    },
+    {
+      "name": "Polnochny",
+      "meaning": "«el del norte» — polnoch «medianoche, norte» · mazarino"
+    },
+    {
+      "name": "Polyana",
+      "meaning": "«el claro» — polyana «claro del bosque» · mazarino"
+    },
+    {
+      "name": "Popovka",
+      "meaning": "«la del cura» — pop «sacerdote» + -ovka · mazarino"
+    },
+    {
+      "name": "Pshenichnoye",
+      "meaning": "«la del trigo» — pshenitsa «trigo» + -noye · mazarino"
+    },
+    {
+      "name": "Rafnsnes",
+      "meaning": "«el cabo del cuervo» — rafn «cuervo» + nes «cabo» · ayutano"
+    },
+    {
+      "name": "Raudberg",
+      "meaning": "«el monte rojo» — raud «rojo» + berg «monte» · ayutano"
+    },
+    {
+      "name": "Rechitsa",
+      "meaning": "«el riachuelo» — reka «río» + -itsa «pequeño» · mazarino"
+    },
+    {
+      "name": "Rybaki",
+      "meaning": "«los pescadores» — rybak «pescador» · mazarino"
+    },
+    {
+      "name": "Rybnoye",
+      "meaning": "«la de los peces» — ryba «pez» + -noye · mazarino"
+    },
+    {
+      "name": "Ryzhkovo",
+      "meaning": "«la rojiza» — ryzhy «pelirrojo» + -kovo · mazarino"
+    },
+    {
+      "name": "Salzwerk",
+      "meaning": "«la salina» — Salz «sal» + Werk «obra» · geismariano"
+    },
+    {
+      "name": "Sandvik",
+      "meaning": "«la bahía de arena» — sand «arena» + vik «bahía» · ayutano"
+    },
+    {
+      "name": "Schmelzdorf",
+      "meaning": "«la aldea de la fundición» — Schmelz «fundición» + Dorf «aldea» · geismariano"
+    },
+    {
+      "name": "Serebryany",
+      "meaning": "«el plateado» — serebro «plata» · mazarino"
+    },
+    {
+      "name": "Sevastia",
+      "meaning": "«la venerable» — sebastos «venerable» · nataneo"
+    },
+    {
+      "name": "Silberbach",
+      "meaning": "«el arroyo de plata» — Silber «plata» + Bach «arroyo» · geismariano"
+    },
+    {
+      "name": "Sinegorye",
+      "meaning": "«las colinas azules» — siny «azul» + gorye «colinas» · mazarino"
+    },
+    {
+      "name": "Skogar",
+      "meaning": "«los bosques» — skog «bosque», en plural · ayutano"
+    },
+    {
+      "name": "Snezhnoye",
+      "meaning": "«la nevada» — sneg «nieve» + -noye · mazarino"
+    },
+    {
+      "name": "Sofiysk",
+      "meaning": "«el de la sabiduría» — sophia «sabiduría» + -sk · nataneo"
+    },
+    {
+      "name": "Sokolniki",
+      "meaning": "«los halconeros» — sokol «halcón» + -niki «los que» · mazarino"
+    },
+    {
+      "name": "Solevar",
+      "meaning": "«la salina» — sol «sal» + var «cocer» · mazarino"
+    },
+    {
+      "name": "Solheim",
+      "meaning": "«el hogar del sol» — sol «sol» + heim «hogar» · ayutano"
+    },
+    {
+      "name": "Sosnovka",
+      "meaning": "«la del pinar» — sosna «pino» + -ovka · mazarino"
+    },
+    {
+      "name": "Spassk",
+      "meaning": "«el del salvador» — spas «salvador» + -sk · nataneo litúrgico"
+    },
+    {
+      "name": "Staritsa",
+      "meaning": "«el cauce viejo» — stary «viejo» + -itsa · mazarino"
+    },
+    {
+      "name": "Starograd",
+      "meaning": "«la ciudad vieja» — stary «viejo» + grad «ciudad» · mazarino"
+    },
+    {
+      "name": "Storaa",
+      "meaning": "«el gran río» — stor «grande» + aa «río» · ayutano"
+    },
+    {
+      "name": "Strelets",
+      "meaning": "«el arquero» — strela «flecha» + -ets · mazarino"
+    },
+    {
+      "name": "Studenets",
+      "meaning": "«el manantial frío» — studeny «frío» + -ets · mazarino"
+    },
+    {
+      "name": "Svaikal",
+      "meaning": "«la colina santa» — svai, forma antigua de svyat «santo» + kal «colina» · mazarino"
+    },
+    {
+      "name": "Svartdal",
+      "meaning": "«el valle negro» — svart «negro» + dal «valle» · ayutano"
+    },
+    {
+      "name": "Svechino",
+      "meaning": "«la de las velas» — svecha «vela» + -ino · mazarino"
+    },
+    {
+      "name": "Svyatogorsk",
+      "meaning": "«el de la montaña santa» — svyaty «santo» + gora «montaña» + -sk · mazarino"
+    },
+    {
+      "name": "Svyatoozero",
+      "meaning": "«el lago santo» — svyaty «santo» + ozero «lago» · mazarino"
+    },
+    {
+      "name": "Teplovo",
+      "meaning": "«la cálida» — teply «templado» + -ovo · mazarino"
+    },
+    {
+      "name": "Theodorovka",
+      "meaning": "«la de Teodoro» — Theodoros «don de dios» + -ovka · nataneo"
+    },
+    {
+      "name": "Thingvik",
+      "meaning": "«la bahía de la asamblea» — thing «asamblea» + vik «bahía» · ayutano"
+    },
+    {
+      "name": "Tikhovodsk",
+      "meaning": "«el de las aguas tranquilas» — tikhy «tranquilo» + voda «agua» + -sk · mazarino"
+    },
+    {
+      "name": "Troitsk",
+      "meaning": "«el de la trinidad» — troitsa «trinidad» + -sk · nataneo litúrgico"
+    },
+    {
+      "name": "Tserkovets",
+      "meaning": "«la iglesita» — tserkov «iglesia» + -ets · mazarino"
+    },
+    {
+      "name": "Tumannoye",
+      "meaning": "«la brumosa» — tuman «niebla» + -noye · mazarino"
+    },
+    {
+      "name": "Ulfvik",
+      "meaning": "«la bahía del lobo» — ulf «lobo» + vik «bahía» · ayutano"
+    },
+    {
+      "name": "Uspenka",
+      "meaning": "«la de la dormición» — uspeniye «dormición» + -ka · nataneo litúrgico"
+    },
+    {
+      "name": "Varangard",
+      "meaning": "«la ciudad de los juramentados» — varang «el que ha jurado» + gard «ciudad» · ayutano"
+    },
+    {
+      "name": "Vatnsdal",
+      "meaning": "«el valle del lago» — vatn «lago» + dal «valle» · ayutano"
+    },
+    {
+      "name": "Velikopolye",
+      "meaning": "«el gran campo» — veliky «grande» + polye «campo» · mazarino"
+    },
+    {
+      "name": "Velotsk",
+      "meaning": "«la grande» — veliky «grande» + -otsk «lugar de» · mazarino"
+    },
+    {
+      "name": "Vetrovo",
+      "meaning": "«la ventosa» — veter «viento» + -ovo · mazarino"
+    },
+    {
+      "name": "Volkogorsk",
+      "meaning": "«el monte de los lobos» — volk «lobo» + gora «monte» + -sk · mazarino"
+    },
+    {
+      "name": "Voskresensk",
+      "meaning": "«el de la resurrección» — voskreseniye «resurrección» + -sk · nataneo litúrgico"
+    },
+    {
+      "name": "Vostochny",
+      "meaning": "«el oriental» — vostok «oriente» · mazarino"
+    },
+    {
+      "name": "Vranov",
+      "meaning": "«la del cuervo» — vran «cuervo» + -ov · mazarino"
+    },
+    {
+      "name": "Vysokoye",
+      "meaning": "«la alta» — vysoky «alto» · mazarino"
+    },
+    {
+      "name": "Yarovoye",
+      "meaning": "«la primaveral» — yar «primavera, ardor» + -ovoye · mazarino"
+    },
+    {
+      "name": "Yasnopolye",
+      "meaning": "«el campo claro» — yasny «claro» + polye «campo» · mazarino"
+    },
+    {
+      "name": "Yelovo",
+      "meaning": "«el abetal» — yel «abeto» + -ovo · mazarino"
+    },
+    {
+      "name": "Zalesye",
+      "meaning": "«tras el bosque» — za «tras» + les «bosque» · mazarino"
+    },
+    {
+      "name": "Zapadny",
+      "meaning": "«el occidental» — zapad «occidente» · mazarino"
+    },
+    {
+      "name": "Zarechye",
+      "meaning": "«al otro lado del río» — za «tras» + reka «río» · mazarino"
+    },
+    {
+      "name": "Zarinsk",
+      "meaning": "«el del Zarin» — zarin «rey» + -sk · mazarino"
+    },
+    {
+      "name": "Zelenodol",
+      "meaning": "«el valle verde» — zeleny «verde» + dol «valle» · mazarino"
+    },
+    {
+      "name": "Zhitnovo",
+      "meaning": "«la del centeno» — zhito «centeno» + -ovo · mazarino"
+    },
+    {
+      "name": "Zimogorye",
+      "meaning": "«las colinas del invierno» — zima «invierno» + gorye «colinas» · mazarino"
+    },
+    {
+      "name": "Zlatobor",
+      "meaning": "«el pinar dorado» — zlato «oro» + bor «pinar» · mazarino"
+    },
+    {
+      "name": "Zolotoy",
+      "meaning": "«el dorado» — zoloto «oro» · mazarino"
+    },
+    {
+      "name": "Zubrayli",
+      "meaning": "«los bisontes» — zubr «bisonte» + -ayli · mazarino"
+    },
+    {
+      "name": "Zvonets",
+      "meaning": "«el de las campanas» — zvon «campana» + -ets · mazarino"
+    }
+  ]
 }

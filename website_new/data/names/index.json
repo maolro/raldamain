@@ -6,8 +6,8 @@
       "names": 76,
       "m": 76,
       "f": 0,
-      "u": 0,
-      "surnames": 0
+      "surnames": 0,
+      "places": 0
     }
   },
   {
@@ -17,8 +17,8 @@
       "names": 34,
       "m": 24,
       "f": 10,
-      "u": 0,
-      "surnames": 10
+      "surnames": 10,
+      "places": 0
     }
   },
   {
@@ -28,8 +28,8 @@
       "names": 23,
       "m": 14,
       "f": 9,
-      "u": 0,
-      "surnames": 9
+      "surnames": 9,
+      "places": 0
     }
   },
   {
@@ -39,8 +39,8 @@
       "names": 429,
       "m": 215,
       "f": 214,
-      "u": 0,
-      "surnames": 212
+      "surnames": 212,
+      "places": 173
     }
   },
   {
@@ -50,8 +50,8 @@
       "names": 200,
       "m": 100,
       "f": 100,
-      "u": 0,
-      "surnames": 100
+      "surnames": 100,
+      "places": 150
     }
   },
   {
@@ -61,8 +61,8 @@
       "names": 200,
       "m": 100,
       "f": 100,
-      "u": 0,
-      "surnames": 100
+      "surnames": 100,
+      "places": 0
     }
   },
   {
@@ -72,8 +72,8 @@
       "names": 200,
       "m": 100,
       "f": 100,
-      "u": 0,
-      "surnames": 100
+      "surnames": 100,
+      "places": 100
     }
   },
   {
@@ -83,8 +83,8 @@
       "names": 294,
       "m": 174,
       "f": 120,
-      "u": 0,
-      "surnames": 186
+      "surnames": 186,
+      "places": 150
     }
   }
 ]

@@ -2222,5 +2222,607 @@
     }
   ],
   "surname_rules": [],
-  "patronymic_rules": []
+  "patronymic_rules": [],
+  "places": [
+    {
+      "name": "Acquaviva",
+      "meaning": "«el agua viva» — acqua «agua» + viva «viva» · ustilés"
+    },
+    {
+      "name": "Adrarberkan",
+      "meaning": "«la montaña negra» — adrar «montaña» + aberkan «negra» · temash"
+    },
+    {
+      "name": "Agadirt",
+      "meaning": "«el granerito» — agadir «granero fortificado» + -t «pequeño» · temash"
+    },
+    {
+      "name": "Akropolis",
+      "meaning": "«la ciudad alta» — akros «alto» + polis «ciudad» · nataneo"
+    },
+    {
+      "name": "Alamnai",
+      "meaning": "«los hijos del jinete» — al «los de, la familia de» + amnai «jinete» · temash"
+    },
+    {
+      "name": "Altavilla",
+      "meaning": "«la villa alta» — alta «alta» + villa «villa» · ustilés"
+    },
+    {
+      "name": "Ardiola",
+      "meaning": "«el redil de las ovejas» — ardi «oveja» + ola «cabaña» · ustal"
+    },
+    {
+      "name": "Asifouzzal",
+      "meaning": "«el río del hierro» — asif «río» + ouzzal «hierro» · temash"
+    },
+    {
+      "name": "Augustia",
+      "meaning": "«la augusta» — augustus «venerable, consagrado» · nataneo"
+    },
+    {
+      "name": "Aurelia",
+      "meaning": "«la dorada» — aureus «de oro» · nataneo"
+    },
+    {
+      "name": "Azaghar",
+      "meaning": "«la llanura» — azaghar «llano» · temash"
+    },
+    {
+      "name": "Azrougan",
+      "meaning": "«las rocas» — azrou «roca», en plural · temash"
+    },
+    {
+      "name": "Basozabal",
+      "meaning": "«el bosque ancho» — baso «bosque» + zabal «ancho» · ustal"
+    },
+    {
+      "name": "Bellavista",
+      "meaning": "«la bella vista» — bella «bella» + vista «vista» · ustilés"
+    },
+    {
+      "name": "Belmonte",
+      "meaning": "«el monte hermoso» — bel «hermoso» + monte «monte» · ustilés"
+    },
+    {
+      "name": "Bielopolia",
+      "meaning": "«el campo blanco» — bielo «blanco» + polia «campo», a la ustilesa · mazarino"
+    },
+    {
+      "name": "Borgoreale",
+      "meaning": "«el burgo real» — borgo «burgo» + reale «real» · ustilés"
+    },
+    {
+      "name": "Brezanica",
+      "meaning": "«la del abedular» — breza «abedul» + -nica «lugar de» · mazarino"
+    },
+    {
+      "name": "Buenaguardia",
+      "meaning": "«la buena guardia» — buena «buena» + guardia «guardia, atalaya» · ustilés"
+    },
+    {
+      "name": "Campofrio",
+      "meaning": "«el campo frío» — campo «campo» + frio «frío» · ustilés"
+    },
+    {
+      "name": "Campolargo",
+      "meaning": "«el campo largo» — campo «campo» + largo «largo» · ustilés"
+    },
+    {
+      "name": "Cardosa",
+      "meaning": "«la tierra de cardos» — cardo «cardo» + -osa «abundante en» · ustilés"
+    },
+    {
+      "name": "Casalbuono",
+      "meaning": "«el buen caserío» — casale «caserío» + buono «bueno» · ustilés"
+    },
+    {
+      "name": "Castelfiore",
+      "meaning": "«el castillo de las flores» — castel «castillo» + fiore «flor» · ustilés"
+    },
+    {
+      "name": "Castelmare",
+      "meaning": "«el castillo del mar» — castel «castillo» + mare «mar» · ustilés"
+    },
+    {
+      "name": "Castelvello",
+      "meaning": "«el castillo viejo» — castel «castillo» + vello «viejo» · ustilés"
+    },
+    {
+      "name": "Castra",
+      "meaning": "«los campamentos» — castra «campamentos fortificados» · nataneo"
+    },
+    {
+      "name": "Castromayor",
+      "meaning": "«el castillo mayor» — castro «castillo» + mayor «mayor» · ustilés"
+    },
+    {
+      "name": "Chrysopolis",
+      "meaning": "«la ciudad de oro» — chrysos «oro» + polis «ciudad» · nataneo"
+    },
+    {
+      "name": "Collerosso",
+      "meaning": "«la colina roja» — colle «colina» + rosso «rojo» · ustilés"
+    },
+    {
+      "name": "Concordia",
+      "meaning": "«la concordia» — concordia «acuerdo de los corazones» · nataneo"
+    },
+    {
+      "name": "Costanova",
+      "meaning": "«la costa nueva» — costa «costa» + nova «nueva» · ustilés"
+    },
+    {
+      "name": "Deumasia",
+      "meaning": "«la tierra consagrada» — deum «dios» + -asia «tierra de» · nataneo"
+    },
+    {
+      "name": "Deverentio",
+      "meaning": "«la reverente» — de verentia «respeto, reverencia» · nataneo"
+    },
+    {
+      "name": "Dubrava",
+      "meaning": "«el robledal» — dub «roble» + -rava «bosque de» · mazarino"
+    },
+    {
+      "name": "Elorrio",
+      "meaning": "«el espinar» — elorri «espino» + -o · ustal"
+    },
+    {
+      "name": "Elyon",
+      "meaning": "«la de Elyārān» — del nombre del dios, Elyārān · nataneo"
+    },
+    {
+      "name": "Ermidella",
+      "meaning": "«la ermita pequeña» — ermida «ermita» + -ella «pequeña» · ustilés"
+    },
+    {
+      "name": "Etxegorri",
+      "meaning": "«la casa roja» — etxe «casa» + gorri «roja» · ustal"
+    },
+    {
+      "name": "Etxezahar",
+      "meaning": "«la casa vieja» — etxe «casa» + zahar «vieja» · ustal"
+    },
+    {
+      "name": "Eudoxia",
+      "meaning": "«la de buena fama» — eu «bien» + doxa «fama» · nataneo"
+    },
+    {
+      "name": "Faggeto",
+      "meaning": "«el hayedo» — faggio «haya» + -eto «arboleda de» · ustilés"
+    },
+    {
+      "name": "Felicia",
+      "meaning": "«la feliz» — felix «feliz, fértil» · nataneo"
+    },
+    {
+      "name": "Ferraria",
+      "meaning": "«las minas de hierro» — ferro «hierro» + -aria «lugar de» · ustilés"
+    },
+    {
+      "name": "Fiumefreddo",
+      "meaning": "«el río frío» — fiume «río» + freddo «frío» · ustilés"
+    },
+    {
+      "name": "Fontanella",
+      "meaning": "«la fontanita» — fontana «fuente» + -ella «pequeña» · ustilés"
+    },
+    {
+      "name": "Fontealba",
+      "meaning": "«la fuente del alba» — fonte «fuente» + alba «alba» · ustilés"
+    },
+    {
+      "name": "Fuentesanta",
+      "meaning": "«la fuente santa» — fuente «fuente» + santa «santa» · ustilés"
+    },
+    {
+      "name": "Gorizza",
+      "meaning": "«la de la colina» — gora «colina» + -izza, a la ustilesa · mazarino"
+    },
+    {
+      "name": "Granaria",
+      "meaning": "«los graneros» — grano «grano» + -aria «lugar de» · ustilés"
+    },
+    {
+      "name": "Guardiola",
+      "meaning": "«la atalayita» — guardia «atalaya» + -ola «pequeña» · ustilés"
+    },
+    {
+      "name": "Haitzgain",
+      "meaning": "«la cima de la peña» — haitz «peña» + gain «cima» · ustal"
+    },
+    {
+      "name": "Haritzeta",
+      "meaning": "«el robledal» — haritz «roble» + -eta «lugar de» · ustal"
+    },
+    {
+      "name": "Harrigorri",
+      "meaning": "«la piedra roja» — harri «piedra» + gorri «roja» · ustal"
+    },
+    {
+      "name": "Heliopolis",
+      "meaning": "«la ciudad del sol» — helios «sol» + polis «ciudad» · nataneo"
+    },
+    {
+      "name": "Hieron",
+      "meaning": "«el santuario» — hieron «lugar sagrado» · nataneo"
+    },
+    {
+      "name": "Ibaieta",
+      "meaning": "«el lugar del río» — ibai «río» + -eta «lugar de» · ustal"
+    },
+    {
+      "name": "Ibarluze",
+      "meaning": "«la vega larga» — ibar «vega» + luze «larga» · ustal"
+    },
+    {
+      "name": "Ifriwen",
+      "meaning": "«las cuevas» — ifri «cueva», en plural · temash"
+    },
+    {
+      "name": "Ighilaberkan",
+      "meaning": "«la loma negra» — ighil «loma» + aberkan «negro» · temash"
+    },
+    {
+      "name": "Imiasif",
+      "meaning": "«la boca del río» — imi «boca» + asif «río» · temash"
+    },
+    {
+      "name": "Iturrialde",
+      "meaning": "«junto a la fuente» — iturri «fuente» + alde «lado» · ustal"
+    },
+    {
+      "name": "Iturrizuri",
+      "meaning": "«la fuente blanca» — iturri «fuente» + zuri «blanca» · ustal"
+    },
+    {
+      "name": "Kalliroe",
+      "meaning": "«la de buena corriente» — kallos «belleza» + rhoe «corriente» · nataneo"
+    },
+    {
+      "name": "Kamenizza",
+      "meaning": "«el pedregal» — kamen «piedra» + -izza «lugar de», a la ustilesa · mazarino"
+    },
+    {
+      "name": "Lagonero",
+      "meaning": "«el lago negro» — lago «lago» + nero «negro» · ustilés"
+    },
+    {
+      "name": "Larreta",
+      "meaning": "«los pastos» — larre «pasto» + -eta «lugar de» · ustal"
+    },
+    {
+      "name": "Lipana",
+      "meaning": "«la de los tilos» — lipa «tilo» + -ana · mazarino"
+    },
+    {
+      "name": "Lizarraga",
+      "meaning": "«el fresnedal» — lizar «fresno» + -aga «lugar de» · ustal"
+    },
+    {
+      "name": "Lucentia",
+      "meaning": "«la luminosa» — lucens «que brilla» · nataneo"
+    },
+    {
+      "name": "Lumiera",
+      "meaning": "«la luminosa» — lume «luz» + -iera · ustilés"
+    },
+    {
+      "name": "Lurberri",
+      "meaning": "«la tierra nueva» — lur «tierra» + berri «nueva» · ustal"
+    },
+    {
+      "name": "Magnathalassa",
+      "meaning": "«el gran mar» — magna «grande» + thalassa «mar» · nataneo"
+    },
+    {
+      "name": "Marsalina",
+      "meaning": "«la marisma salina» — mar «mar» + salina «salina» · ustilés"
+    },
+    {
+      "name": "Medvegna",
+      "meaning": "«la del oso» — medved «oso» + -egna, a la ustilesa · mazarino"
+    },
+    {
+      "name": "Mendibeltz",
+      "meaning": "«el monte negro» — mendi «monte» + beltz «negro» · ustal"
+    },
+    {
+      "name": "Mendizabal",
+      "meaning": "«el monte ancho» — mendi «monte» + zabal «ancho» · ustal"
+    },
+    {
+      "name": "Miraflores",
+      "meaning": "«el mirador de las flores» — mira «mirador» + flores «flores» · ustilés"
+    },
+    {
+      "name": "Molinella",
+      "meaning": "«el molinito» — molino «molino» + -ella «pequeño» · ustilés"
+    },
+    {
+      "name": "Montecuervo",
+      "meaning": "«el monte del cuervo» — monte «monte» + cuervo «cuervo» · ustilés"
+    },
+    {
+      "name": "Montefalco",
+      "meaning": "«el monte del halcón» — monte «monte» + falco «halcón» · ustilés"
+    },
+    {
+      "name": "Monteferro",
+      "meaning": "«el monte de hierro» — monte «monte» + ferro «hierro» · ustilés"
+    },
+    {
+      "name": "Montoliva",
+      "meaning": "«el monte de los olivos» — monte «monte» + oliva «olivo» · ustilés"
+    },
+    {
+      "name": "Neapolis",
+      "meaning": "«la ciudad nueva» — nea «nueva» + polis «ciudad» · nataneo"
+    },
+    {
+      "name": "Nikaia",
+      "meaning": "«la victoriosa» — nike «victoria» · nataneo"
+    },
+    {
+      "name": "Nogareda",
+      "meaning": "«el nogueral» — nogar «nogal» + -eda «arboleda de» · ustilés"
+    },
+    {
+      "name": "Novigrada",
+      "meaning": "«la ciudad nueva» — novi «nueva» + grada «ciudad», a la ustilesa · mazarino"
+    },
+    {
+      "name": "Olaberri",
+      "meaning": "«la ferrería nueva» — ola «ferrería» + berri «nueva» · ustal"
+    },
+    {
+      "name": "Olivares",
+      "meaning": "«los olivares» — olivar «olivar», en plural · ustilés"
+    },
+    {
+      "name": "Oliveto",
+      "meaning": "«el olivar» — oliva «olivo» + -eto «arboleda de» · ustilés"
+    },
+    {
+      "name": "Otsandi",
+      "meaning": "«el gran lobo» — otso «lobo» + handi «grande» · ustal"
+    },
+    {
+      "name": "Pacensia",
+      "meaning": "«la de la paz» — pax «paz» + -ensia · nataneo"
+    },
+    {
+      "name": "Pagoeta",
+      "meaning": "«el hayedo» — pago «haya» + -eta «lugar de» · ustal"
+    },
+    {
+      "name": "Paludella",
+      "meaning": "«la cienaguita» — palude «ciénaga» + -ella «pequeña» · ustilés"
+    },
+    {
+      "name": "Pescaria",
+      "meaning": "«la pesquería» — pesca «pesca» + -aria «lugar de» · ustilés"
+    },
+    {
+      "name": "Pietrarossa",
+      "meaning": "«la piedra roja» — pietra «piedra» + rossa «roja» · ustilés"
+    },
+    {
+      "name": "Pievealta",
+      "meaning": "«la parroquia alta» — pieve «parroquia rural» + alta «alta» · ustilés"
+    },
+    {
+      "name": "Pinedo",
+      "meaning": "«el pinar» — pino «pino» + -edo «arboleda de» · ustilés"
+    },
+    {
+      "name": "Pontesecco",
+      "meaning": "«el puente seco» — ponte «puente» + secco «seco» · ustilés"
+    },
+    {
+      "name": "Pontevella",
+      "meaning": "«el puente viejo» — ponte «puente» + vella «vieja» · ustilés"
+    },
+    {
+      "name": "Portosalvo",
+      "meaning": "«el puerto seguro» — porto «puerto» + salvo «a salvo» · ustilés"
+    },
+    {
+      "name": "Portoverde",
+      "meaning": "«el puerto verde» — porto «puerto» + verde «verde» · ustilés"
+    },
+    {
+      "name": "Portunia",
+      "meaning": "«la del puerto» — portus «puerto» + -ia · nataneo"
+    },
+    {
+      "name": "Prataverde",
+      "meaning": "«la pradera verde» — prata «pradera» + verde «verde» · ustilés"
+    },
+    {
+      "name": "Pratolungo",
+      "meaning": "«el prado largo» — prato «prado» + lungo «largo» · ustilés"
+    },
+    {
+      "name": "Querciola",
+      "meaning": "«el roblecito» — quercia «roble» + -ola «pequeño» · ustilés"
+    },
+    {
+      "name": "Quintana",
+      "meaning": "«la casa de campo» — quintana «granja que pagaba la quinta parte» · ustilés"
+    },
+    {
+      "name": "Radovia",
+      "meaning": "«la alegre» — rad «alegre» + -ovia · mazarino"
+    },
+    {
+      "name": "Riberalta",
+      "meaning": "«la ribera alta» — ribera «orilla» + alta «alta» · ustilés"
+    },
+    {
+      "name": "Ripalta",
+      "meaning": "«la orilla alta» — ripa «orilla» + alta «alta» · ustilés"
+    },
+    {
+      "name": "Rivabella",
+      "meaning": "«la orilla bella» — riva «orilla» + bella «bella» · ustilés"
+    },
+    {
+      "name": "Rizad",
+      "meaning": "«el cruce» — riz «cruzar» + -ad: la ciudad del canal entre los dos continentes · temash"
+    },
+    {
+      "name": "Rocabruna",
+      "meaning": "«la roca parda» — roca «roca» + bruna «parda» · ustilés"
+    },
+    {
+      "name": "Roccanera",
+      "meaning": "«la fortaleza negra» — rocca «roca, fortaleza» + nera «negra» · ustilés"
+    },
+    {
+      "name": "Sabbioneta",
+      "meaning": "«el arenal» — sabbione «arena gruesa» + -eta «pequeño» · ustilés"
+    },
+    {
+      "name": "Sagardui",
+      "meaning": "«el manzanal» — sagar «manzana» + -dui «lugar de» · ustal"
+    },
+    {
+      "name": "Salceda",
+      "meaning": "«la sauceda» — salce «sauce» + -eda «arboleda de» · ustilés"
+    },
+    {
+      "name": "Salinella",
+      "meaning": "«las salinitas» — salina «salina» + -ella «pequeña» · ustilés"
+    },
+    {
+      "name": "Salutia",
+      "meaning": "«la saludable» — salus «salud» + -ia · nataneo"
+    },
+    {
+      "name": "Selvanova",
+      "meaning": "«la selva nueva» — selva «bosque» + nova «nueva» · ustilés"
+    },
+    {
+      "name": "Serralonga",
+      "meaning": "«la sierra larga» — serra «sierra» + longa «larga» · ustilés"
+    },
+    {
+      "name": "Soprarrocca",
+      "meaning": "«sobre la roca» — sopra «sobre» + rocca «roca» · ustilés"
+    },
+    {
+      "name": "Tafsut",
+      "meaning": "«la primavera» — tafsut «primavera» · temash"
+    },
+    {
+      "name": "Talamellal",
+      "meaning": "«la fuente blanca» — tala «fuente» + amellal «blanca» · temash"
+    },
+    {
+      "name": "Tamdawt",
+      "meaning": "«la lagunita» — tamda «laguna» + -wt «pequeña» · temash"
+    },
+    {
+      "name": "Taourirt",
+      "meaning": "«el cerro» — taourirt «colina, otero» · temash"
+    },
+    {
+      "name": "Termia",
+      "meaning": "«las termas» — thermai «aguas calientes» · nataneo"
+    },
+    {
+      "name": "Terranova",
+      "meaning": "«la tierra nueva» — terra «tierra» + nova «nueva» · ustilés"
+    },
+    {
+      "name": "Thalos",
+      "meaning": "«la floreciente» — thallos «brote, retoño» · nataneo"
+    },
+    {
+      "name": "Theopolis",
+      "meaning": "«la ciudad de los dioses» — theos «dios» + polis «ciudad» · nataneo"
+    },
+    {
+      "name": "Tiziamellal",
+      "meaning": "«el paso blanco» — tizi «paso, collado» + amellal «blanco» · temash"
+    },
+    {
+      "name": "Torralba",
+      "meaning": "«la torre del alba» — torre «torre» + alba «alba» · ustilés"
+    },
+    {
+      "name": "Torrebianca",
+      "meaning": "«la torre blanca» — torre «torre» + bianca «blanca» · ustilés"
+    },
+    {
+      "name": "Torrequemada",
+      "meaning": "«la torre quemada» — torre «torre» + quemada «quemada» · ustilés"
+    },
+    {
+      "name": "Urgain",
+      "meaning": "«sobre el agua» — ur «agua» + gain «sobre, cima» · ustal"
+    },
+    {
+      "name": "Urkieta",
+      "meaning": "«el abedular» — urki «abedul» + -eta «lugar de» · ustal"
+    },
+    {
+      "name": "Valdeoro",
+      "meaning": "«el valle del oro» — val «valle» + de oro «del oro» · ustilés"
+    },
+    {
+      "name": "Valderrobles",
+      "meaning": "«el valle de los robles» — val «valle» + de robles «de los robles» · ustilés"
+    },
+    {
+      "name": "Valentia",
+      "meaning": "«la vigorosa» — valens «fuerte, sano» · nataneo"
+    },
+    {
+      "name": "Valfonda",
+      "meaning": "«el valle hondo» — val «valle» + fonda «honda» · ustilés"
+    },
+    {
+      "name": "Vallombrosa",
+      "meaning": "«el valle umbrío» — valle «valle» + ombrosa «umbría» · ustilés"
+    },
+    {
+      "name": "Verdelago",
+      "meaning": "«el lago verde» — verde «verde» + lago «lago» · ustilés"
+    },
+    {
+      "name": "Vignale",
+      "meaning": "«el viñedo» — vigna «viña» + -ale «lugar de» · ustilés"
+    },
+    {
+      "name": "Vignalta",
+      "meaning": "«la viña alta» — vigna «viña» + alta «alta» · ustilés"
+    },
+    {
+      "name": "Villalibre",
+      "meaning": "«la villa libre» — villa «villa» + libre «libre de tributos» · ustilés"
+    },
+    {
+      "name": "Villanera",
+      "meaning": "«la villa negra» — villa «granja, villa» + nera «negra» · ustilés"
+    },
+    {
+      "name": "Villaroja",
+      "meaning": "«la villa roja» — villa «villa» + roja «roja» · ustilés"
+    },
+    {
+      "name": "Zlatina",
+      "meaning": "«la dorada» — zlato «oro» + -ina · mazarino"
+    },
+    {
+      "name": "Zubiondo",
+      "meaning": "«junto al puente» — zubi «puente» + ondo «junto a» · ustal"
+    },
+    {
+      "name": "Zubizuri",
+      "meaning": "«el puente blanco» — zubi «puente» + zuri «blanco» · ustal"
+    }
+  ]
 }
