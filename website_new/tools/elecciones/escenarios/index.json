@@ -26,6 +26,12 @@
     "file": "kratoi/4093-legislativas.json",
     "desc": "Legislativas de mitad de mandato: el MPS de Tudval Labourer es el primer partido, pero nacionalistas y federalistas conservan la mayoría.",
     "published": true
+   },
+   {
+    "name": "4095 · Presidenciales",
+    "file": "kratoi/4095-presidenciales.json",
+    "desc": "La reelección de Kesenia Revilo frente a un Isembert Florin cansado y el gris Gaspard Delorme.",
+    "published": true
    }
   ]
  }
