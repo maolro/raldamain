@@ -32,6 +32,12 @@
     "file": "kratoi/4095-presidenciales.json",
     "desc": "La reelección de Kesenia Revilo frente a un Isembert Florin cansado y el gris Gaspard Delorme.",
     "published": true
+   },
+   {
+    "name": "4098 · Legislativas",
+    "file": "kratoi/4098-legislativas.json",
+    "desc": "El MPS gana la mayoría absoluta del Congreso frente a dos oposiciones sin líder.",
+    "published": true
    }
   ]
  }

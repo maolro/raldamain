@@ -4095,7 +4095,7 @@
  "scenario": {
   "country": "Kratoi",
   "election": "4098 · Legislativas",
-  "published": false,
+  "published": true,
   "desc": "El MPS gana la mayoría absoluta del Congreso frente a dos oposiciones sin líder."
  },
  "sq": [
