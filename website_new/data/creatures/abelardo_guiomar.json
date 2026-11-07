@@ -1,0 +1,219 @@
+{
+  "id": "abelardo_guiomar",
+  "name": "Abelardo Guiomar",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 8,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+9+1d6",
+    "VOL": "+9+1d6",
+    "MEN": "+9+2d6"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 15,
+      "categories": "Físico",
+      "tier_tpl": "T+1"
+    },
+    {
+      "value": 15,
+      "categories": "Magia",
+      "tier_tpl": "T+1"
+    }
+  ],
+  "immune": [],
+  "senses": "Sentido Divino, Sentido Arcano, Leer Pensamientos",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Sus ataques de armas provocan 3d8 daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +9 + 2d6 o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación.",
+      "effects": {
+        "extra_damage": [
+          {
+            "choose": true,
+            "dice": "DD",
+            "on": "fisicos",
+            "type": "Fuego",
+            "dice_value": "3d8"
+          }
+        ]
+      },
+      "name": "Azote Castigador",
+      "tags": [],
+      "ability_id": "ab_1794088121470",
+      "mod_tpl": {
+        "desc": "Sus ataques de armas provocan DD daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +MOD o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Cortante",
+      "damage_tier": "MID",
+      "name": "Espada",
+      "tags": [
+        "Arma",
+        "Fisico",
+        "Ataque"
+      ],
+      "ability_id": "ab_1793105102759",
+      "damage": "3d8 + 6 Cortante",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Fuego",
+      "damage_tier": "MID",
+      "desc": "Quema los objetos inflamables en el área afectada.",
+      "name": "Bola de Fuego",
+      "range": "Medio",
+      "tags": [
+        "Fuego",
+        "Ataque",
+        "Area"
+      ],
+      "ability_id": "ab_1793280610420",
+      "damage": "2d8 + 6 Fuego",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque afectará a cada objetivo en un radio corto y aumenta su daño por un dado adicional. Además, puede moverse antes o después de atacar sin provocar aperturas.",
+      "name": "Ataque Torbellino",
+      "tags": [
+        "Duelo",
+        "Marcial",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793232469761"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "El objetivo está Enredado (FÍS +9 + 2d6 para escapar), o Agarrado si ya se encuentra Enredado. Mientras se encuentre Enredado o Agarrado por este efecto, no podrá lanzar hechizos. ",
+      "name": "Retener Persona",
+      "tags": [
+        "Protectora",
+        "Agarre"
+      ],
+      "ability_id": "ab_1793638445258",
+      "mod_tpl": {
+        "desc": "El objetivo está Enredado (FÍS +MOD para escapar), o Agarrado si ya se encuentra Enredado. Mientras se encuentre Enredado o Agarrado por este efecto, no podrá lanzar hechizos. "
+      },
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Irradia una presencia sobrecogedora. Sus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y sus enemigos tiran VOL +9 + 2d6 o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados por ella.",
+      "name": "Presencia Divina",
+      "tags": [
+        "Divina",
+        "Miedo"
+      ],
+      "ability_id": "ab_1794088036458",
+      "mod_tpl": {
+        "desc": "Irradia una presencia sobrecogedora. Sus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y sus enemigos tiran VOL +MOD o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados por ella."
+      }
+    },
+    {
+      "cost": 1,
+      "desc": "El objetivo recupera 1 Impacto o se recupera de un efecto de estado. Si afecta a un no-muerto, tira VOL +9 + 2d6 o sufre 2d8 + 6 daño Radiante.",
+      "name": "Toque Sanador",
+      "range": "Adyacente",
+      "tags": [
+        "Vida",
+        "Sanacion"
+      ],
+      "ability_id": "toque-sanador_1778751359599",
+      "mod_tpl": {
+        "desc": "El objetivo recupera 1 Impacto o se recupera de un efecto de estado. Si afecta a un no-muerto, tira VOL +MOD o sufre MID daño Radiante."
+      }
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
+      "tags": [
+        "Presencia",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793014528491"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Recibe +10 en un tiro de salvación contra un hechizo de cualquier tipo.",
+      "name": "Aura Protectora",
+      "tags": [
+        "Divina"
+      ],
+      "ability_id": "ab_1794087997914"
+    },
+    {
+      "cost": 1,
+      "desc": "Un objetivo a distancia media repite un tiro y se queda con el resultado que más te convenga. Puede ser anulada con otras habilidades de repetición.",
+      "name": "Milagro Menor",
+      "tags": [
+        "Divina"
+      ],
+      "ability_id": "milagro-menor_1778753435883"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "En respuesta a que un enemigo se aleje, puede moverse un paso para perseguirlo y hacerle un ataque inmediato contra el cual tendrá Desventaja defendiéndose",
+      "name": "Persecución",
+      "tags": [
+        "Marcial"
+      ],
+      "ability_id": "ab_1793014811103"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Miniboss",
+  "save_scale": {
+    "FÍS": "mid",
+    "VOL": "mid",
+    "MEN": "bonus"
+  }
+}
