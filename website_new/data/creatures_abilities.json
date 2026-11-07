@@ -3784,6 +3784,6 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Haz dos ataques de coste una Acción contra el mismo objetivo, quien solo podrá tirar una vez para defenderse y se quedará con ese resultado. El segundo ataque recibirá además un modificador +2 al tiro. "
+    "desc": "Haz dos ataques con una habilidad de coste 1 Acción contra el mismo objetivo, quien solo podrá tirar una vez para defenderse y se quedará con ese resultado. El segundo ataque recibirá además un modificador +2 al tiro. "
   }
 ]
