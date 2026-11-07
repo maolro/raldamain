@@ -71,7 +71,7 @@
     {
       "attacks": 2,
       "bonus_scaled": true,
-      "cost": 1,
+      "cost": "1",
       "damage_base_type": "Cortante",
       "damage_tier": "MID",
       "name": "Zarpazo Doble",
@@ -83,12 +83,16 @@
         "Fisico"
       ],
       "ability_id": "ab_1793202840322",
-      "damage": "3d8 + 6 Cortante",
-      "bonus": "+9 + 2d6",
-      "desc": "Provoca 3d8 daño Ácido adicional al impactar.",
+      "damage": "",
+      "bonus": "",
+      "desc": "",
       "mod_tpl": {
         "desc": "Provoca DD daño Ácido adicional al impactar."
-      }
+      },
+      "type": "action",
+      "area": "",
+      "save": "",
+      "move": ""
     },
     {
       "attacks": 1,
