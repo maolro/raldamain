@@ -41,6 +41,24 @@
       "attacks": 1,
       "bonus_scaled": true,
       "cost": 1,
+      "damage_base_type": "Contundente",
+      "damage_tier": "LOW",
+      "desc": "El objetivo está Enredado (FÍS +5 + 1d6 para que escape). Si ya está Enredado, pasará a estar Agarrado.",
+      "name": "Cadena",
+      "tags": [
+        "Arma"
+      ],
+      "ability_id": "ab_1794067610430",
+      "mod_tpl": {
+        "desc": "El objetivo está Enredado (FÍS +MOD para que escape). Si ya está Enredado, pasará a estar Agarrado."
+      },
+      "damage": "1d6 + 4 Contundente",
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
       "damage_base_type": "Fuego",
       "damage_tier": "MID",
       "desc": "Quema objetos inflamables que impacte.",
@@ -87,6 +105,18 @@
         "desc": "El afectado sufre LOW daño Psíquico y queda Desconcertado una ronda. Si tiene éxito, no puede volver a ser afectado por este hechizo.",
         "save": "MEN +MOD"
       }
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
+      "tags": [
+        "Presencia",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793014528491"
     }
   ],
   "reactions": [
