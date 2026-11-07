@@ -143,11 +143,11 @@
   ],
   "lore": "",
   "tags": [],
-  "tier": "2",
   "save_scale": {
     "FÍS": "bonus",
     "VOL": "mid",
     "MEN": "mid"
   },
-  "published": false
+  "published": false,
+  "tier": "Esbirro Élite"
 }
