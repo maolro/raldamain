@@ -402,5 +402,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "druida",
+    "name": "Druida",
+    "type": "Humanoide",
+    "level": 5,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
