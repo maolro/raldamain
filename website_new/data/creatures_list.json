@@ -393,5 +393,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "bandido",
+    "name": "Bandido",
+    "type": "Humanoide",
+    "level": 2,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
