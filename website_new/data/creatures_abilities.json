@@ -1903,7 +1903,7 @@
     "id": "ab_1793212304311",
     "name": "Escudo Humano",
     "type": "reaction",
-    "tier": "II",
+    "tier": "I",
     "tags": [
       "Agarre",
       "Defensivo"
@@ -1919,7 +1919,7 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Un ataque que le haya fallado impacta en su lugar a un objetivo que tenga Enredado o Agarrado."
+    "desc": "Un ataque dirigido a él afectará en su lugar a un objetivo que tenga Enredado o Agarrado."
   },
   {
     "id": "ab_1793230527481",

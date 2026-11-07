@@ -119,14 +119,23 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "cost": 1,
-      "desc": "Un ataque que le haya fallado impacta en su lugar a un objetivo que tenga Enredado o Agarrado.",
+      "cost": "1",
+      "desc": "Un ataque dirigido a él afectará en su lugar a un objetivo que tenga Enredado o Agarrado.",
       "name": "Escudo Humano",
       "tags": [
         "Agarre",
         "Defensivo"
       ],
-      "ability_id": "ab_1793212304311"
+      "ability_id": "ab_1793212304311",
+      "type": "reaction",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
     }
   ],
   "lore": "",
