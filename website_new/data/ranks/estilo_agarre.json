@@ -1,0 +1,15 @@
+{
+  "id": "estilo_agarre",
+  "title": "Estilo Agarre",
+  "category": "Marcial",
+  "draft": true,
+  "image": "estilo_agarre.jpg",
+  "stats": [],
+  "description": "",
+  "fundamentals": [
+    "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
+    "<strong>Estadística principal:</strong> Carisma + Rango.",
+    "<strong>Parada mágica:</strong> Usas esta magia para tiros de parada y salvaciones."
+  ],
+  "levels": []
+}

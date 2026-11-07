@@ -394,5 +394,14 @@
     "description": "",
     "draft": true,
     "partial": true
+  },
+  {
+    "id": "estilo_agarre",
+    "name": "Estilo Agarre",
+    "category": "Marcial",
+    "image": "estilo_agarre.jpg",
+    "description": "",
+    "draft": true,
+    "partial": false
   }
 ]
