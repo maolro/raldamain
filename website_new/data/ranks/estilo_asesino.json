@@ -61,23 +61,23 @@
       "draft": false,
       "abilities": [
         {
-          "name": "Presionar Defensas",
+          "name": "Finta Engañosa",
           "tags": [
             "Asesino",
-            "Mejora",
-            "Visual"
+            "Visual",
+            "Reacción"
           ],
           "cost": "1 Chi",
-          "desc": "Antes de atacar, el objetivo debe tener éxito en un tiro de salvación Mental o recibe Desventaja en su tiro defensivo. No funciona contra enemigos con Visión Futura y puede anularse con una Premonición."
+          "desc": "Al fallar un ataque, puedes recuperar todo tu chi y acciones empleadas en él como si este nunca hubiera ocurrido. Esta habilidad también puede usarse en habilidades que hayan sido detenidas exitosamente con reacciones defensivas. Esta habilidad no puede usarse más de una vez por ataque. "
         },
         {
-          "name": "Secuencia de Puñaladas",
+          "name": "Presionar Defensas",
           "tags": [
             "Asesino",
             "Mejora"
           ],
           "cost": "1 Chi",
-          "desc": "Haz un segundo ataque contra el mismo objetivo como acción bonus. Este no conservará ninguno de los bonificadores del anterior y no puedes aplicar esta mejora más de una vez por ataque."
+          "desc": "Haz un segundo ataque contra el mismo objetivo como acción bonus, quien deberá emplear el mismo tiro defensivo. Este no conservará ninguno de los bonificadores del anterior y no puedes aplicar esta mejora más de una vez por ataque, además que debe declararse antes de atacar."
         },
         {
           "name": "Ataque Triple",
