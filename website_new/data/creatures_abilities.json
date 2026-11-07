@@ -4001,5 +4001,27 @@
     "move": "",
     "attacks": 1,
     "desc": "Recibe +10 en un tiro de salvación contra un hechizo de cualquier tipo."
+  },
+  {
+    "id": "ab_1794088036458",
+    "name": "Presencia Divina",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Divina",
+      "Miedo"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Irradias una presencia sobrecogedora. Tus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y tus enemigos tiran VOL +MOD o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados."
   }
 ]
