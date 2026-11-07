@@ -3959,5 +3959,26 @@
     "move": "",
     "attacks": 1,
     "desc": "El objetivo está Enredado (FÍS +MOD para que escape). Si ya está Enredado, pasará a estar Agarrado."
+  },
+  {
+    "id": "ab_1794087367032",
+    "name": "Espada de Fuego",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Arma"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Provoca DD daño Fuego adicional al impactar."
   }
 ]
