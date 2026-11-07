@@ -48,7 +48,7 @@
     {
       "attacks": 2,
       "bonus_scaled": true,
-      "cost": 1,
+      "cost": "1",
       "damage_base_type": "Perforante",
       "damage_tier": "LOW",
       "name": "Puñalada Doble",
@@ -59,8 +59,13 @@
         "Fisico"
       ],
       "ability_id": "ab_1793202871031",
-      "damage": "2d8 + 6 Perforante",
-      "bonus": "+9 + 2d6"
+      "damage": "",
+      "bonus": "",
+      "type": "action",
+      "area": "",
+      "save": "",
+      "move": "",
+      "desc": ""
     },
     {
       "attacks": 1,
