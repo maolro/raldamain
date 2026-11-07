@@ -189,7 +189,8 @@
     ],
     "id": "milagro-menor_1778753435883",
     "type": "reaction",
-    "tier": "I"
+    "tier": "I",
+    "cost": "1"
   },
   {
     "name": "Planta",

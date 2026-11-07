@@ -70,7 +70,9 @@
       "tags": [
         "Divina"
       ],
-      "ability_id": "milagro-menor_1778753435883"
+      "ability_id": "milagro-menor_1778753435883",
+      "type": "reaction",
+      "cost": "1"
     }
   ],
   "lore": "",

@@ -152,7 +152,8 @@
         "Divina"
       ],
       "ability_id": "milagro-menor_1778753435883",
-      "type": "reaction"
+      "type": "reaction",
+      "cost": "1"
     },
     {
       "attacks": 1,
