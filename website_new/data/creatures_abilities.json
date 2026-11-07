@@ -3850,5 +3850,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Provoca DD daño Eléctrico adicional al impactar."
+  },
+  {
+    "id": "ab_1794055098497",
+    "name": "Fusil",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Arma"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Lejano",
+    "area": "",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Debe emplear una Acción para recargar. "
   }
 ]
