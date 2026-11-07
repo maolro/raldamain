@@ -96,6 +96,18 @@
       "mod_tpl": {
         "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +MOD o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior."
       }
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
+      "tags": [
+        "Presencia",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793014528491"
     }
   ],
   "reactions": [
@@ -108,14 +120,6 @@
       "name": "Parada",
       "desc": "",
       "bonus": "+5+1d6"
-    },
-    {
-      "name": "Proteger Aliado",
-      "desc": "Se mueve hasta un paso para interceptar un ataque hecho contra un aliado, pudiendo así emplear su tiro defensivo para protegerlo y recibiendo el daño del ataque si falla.",
-      "tags": [
-        "Coloso"
-      ],
-      "cost": 1
     },
     {
       "name": "Segundo Aliento",
