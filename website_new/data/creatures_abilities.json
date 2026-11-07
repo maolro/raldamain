@@ -4023,5 +4023,34 @@
     "move": "",
     "attacks": 1,
     "desc": "Irradias una presencia sobrecogedora. Tus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y tus enemigos tiran VOL +MOD o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados."
+  },
+  {
+    "id": "ab_1794088121470",
+    "name": "Azote Castigador",
+    "type": "passive",
+    "tier": "II",
+    "tags": [],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Sus ataques de armas provocan DD daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +MOD o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación.",
+    "effects": {
+      "extra_damage": [
+        {
+          "dice": "DD",
+          "type": "",
+          "on": "fisicos",
+          "choose": true
+        }
+      ]
+    }
   }
 ]
