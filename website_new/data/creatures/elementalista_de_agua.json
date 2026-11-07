@@ -1,0 +1,168 @@
+{
+  "id": "elementalista_de_agua",
+  "name": "Elementalista de Agua",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5",
+    "VOL": "+5",
+    "MEN": "+5"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 12,
+      "categories": "Físico",
+      "tier_tpl": "T+1"
+    },
+    {
+      "value": 12,
+      "categories": "Magia",
+      "tier_tpl": "T+1"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Sus ataques Físicos cuentan como Mágicos y aumentan su alcance a Cercano. Recibe también velocidad de Natación 1, es capaz de respirar bajo el agua sin dificultades y aumenta su Umbral al daño Frío y Ácido por un paso. ",
+      "effects": {
+        "speed": [
+          "Natación 1"
+        ],
+        "umbrales": [
+          {
+            "categories": "Frío, Ácido",
+            "steps": 1,
+            "amount": 4
+          }
+        ]
+      },
+      "name": "Infusión de Agua",
+      "tags": [
+        "Agua"
+      ],
+      "ability_id": "ab_1793292744266"
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "name": "Lanza",
+      "range": "Cercano",
+      "tags": [
+        "Arma",
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793104226616",
+      "damage": "3d6 + 5 Perforante",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Contundente",
+      "damage_tier": "LOW",
+      "desc": "Empuja un paso al impactar. Apaga los fuegos a su paso y puede herir a Incorpóreos como si fuera un ataque Mágico.",
+      "name": "Torrente",
+      "range": "Medio",
+      "tags": [
+        "Agua",
+        "Ataque"
+      ],
+      "ability_id": "ab_1793292525580",
+      "damage": "2d6 + 5 Contundente",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Cura un impacto o se recupera de un efecto de estado. Si afecta a un no-muerto, tira VOL +7 + 2d6 o sufre 2d6 + 5 daño Radiante.",
+      "name": "Aguas de la Vida",
+      "range": "Adyacente",
+      "tags": [
+        "Agua",
+        "Sanacion"
+      ],
+      "ability_id": "ab_1794058119967",
+      "mod_tpl": {
+        "desc": "Cura un impacto o se recupera de un efecto de estado. Si afecta a un no-muerto, tira VOL +MOD o sufre MID daño Radiante."
+      }
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "damage_base_type": "Contundente",
+      "damage_tier": "HIGH",
+      "desc": "Crea una Ola que ataca a todos los objetivos en el área afectada, quienes además deben tener éxito en un tiro de salvación Físico o son empujados un paso y tropezados. Si mantienes la concentración, cada ronda puedes emplear una Acción para mover la ola un paso y atacar a cada objetivo en su camino. ",
+      "name": "Ola Chocante",
+      "range": "Medio",
+      "tags": [
+        "Agua"
+      ],
+      "ability_id": "ab_1793292674641",
+      "damage": "4d6 + 5 Contundente"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Crea un muro que protege a todos en su área, absorbiendo 6 puntos de daño. Todos los enemigos que le hagan ataques cuerpo a cuerpo tiran FÍS +7 + 2d6 o sufren 2d6 + 5 daño Contundente y son Enredados.",
+      "name": "Muro de Agua",
+      "tags": [
+        "Agua"
+      ],
+      "ability_id": "ab_1793292597929",
+      "mod_tpl": {
+        "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que le hagan ataques cuerpo a cuerpo tiran FÍS +MOD o sufren LOW daño Contundente y son Enredados."
+      }
+    },
+    {
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Esbirro Élite II"
+}
