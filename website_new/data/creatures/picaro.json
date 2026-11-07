@@ -16,6 +16,11 @@
       "value": 8,
       "categories": "General",
       "tier_tpl": "T"
+    },
+    {
+      "value": 12,
+      "categories": "Físico",
+      "tier_tpl": "T+1"
     }
   ],
   "immune": [],
@@ -59,7 +64,20 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "cost": "1",
+      "cost": 2,
+      "desc": "Hace dos ataques con una habilidad de coste 1 Acción contra el mismo objetivo, quien solo podrá tirar una vez para defenderse y se quedará con ese resultado. El segundo ataque recibirá además un modificador +2 al tiro. ",
+      "name": "Presionar Defensas",
+      "tags": [
+        "Asesino",
+        "Mejora",
+        "Marcial"
+      ],
+      "ability_id": "ab_1794054071710"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
       "desc": "Su siguiente ataque puede afectar a hasta tres objetivos que pueda alcanzar y aumenta su daño base por un dado. Los efectos adicionales que añada se aplican a todos los ataques.",
       "name": "Ataque Triple",
       "tags": [
@@ -67,29 +85,7 @@
         "Mejora",
         "Marcial"
       ],
-      "ability_id": "ab_1793184569612",
-      "type": "action",
-      "bonus": "",
-      "range": "",
-      "area": "",
-      "damage": "",
-      "damage_tier": "",
-      "damage_base_type": "",
-      "save": "",
-      "move": ""
-    },
-    {
-      "attacks": 0,
-      "bonus_scaled": false,
-      "cost": 2,
-      "desc": "Hace tres ataques de cualquier tipo con coste de una Acción.",
-      "name": "Secuencia de Ataques",
-      "tags": [
-        "Mejora",
-        "Marcial",
-        "Duelo"
-      ],
-      "ability_id": "ab_1791817340811"
+      "ability_id": "ab_1793184569612"
     }
   ],
   "reactions": [
@@ -97,9 +93,9 @@
       "name": "Parada / Esquiva",
       "desc": "",
       "mod_tpl": {
-        "bonus": "+MOD"
+        "bonus": "+MOD+1"
       },
-      "bonus": "+7 + 2d6"
+      "bonus": "+7 + 3d6"
     },
     {
       "cost": 1,
@@ -121,6 +117,17 @@
         "Rastrear"
       ],
       "ability_id": "ab_1793014889431"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "En respuesta a fallar un ataque o que dicho ataque sea detenido con una habilidad defensiva, recupera las acciones gastadas como si este nunca se hubiera hecho.",
+      "name": "Finta Engañosa",
+      "tags": [
+        "Asesino"
+      ],
+      "ability_id": "ab_1794054180167"
     }
   ],
   "lore": "",
