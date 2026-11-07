@@ -59,15 +59,24 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "cost": 1,
-      "desc": "Su siguiente ataque puede afectar a hasta tres objetivos que pueda alcanzar. Los efectos adicionales que añada se aplican a todos los ataques.",
+      "cost": "1",
+      "desc": "Su siguiente ataque puede afectar a hasta tres objetivos que pueda alcanzar y aumenta su daño base por un dado. Los efectos adicionales que añada se aplican a todos los ataques.",
       "name": "Ataque Triple",
       "tags": [
         "Asesino",
         "Mejora",
         "Marcial"
       ],
-      "ability_id": "ab_1793184569612"
+      "ability_id": "ab_1793184569612",
+      "type": "action",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
     },
     {
       "attacks": 0,
