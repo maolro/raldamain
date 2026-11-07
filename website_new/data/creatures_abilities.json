@@ -3892,5 +3892,27 @@
     "move": "",
     "attacks": 1,
     "desc": ""
+  },
+  {
+    "id": "ab_1794058119967",
+    "name": "Aguas de la Vida",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Agua",
+      "Sanacion"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Cura un impacto o se recupera de un efecto de estado. Si afecta a un no-muerto, tira VOL +MOD o sufre MID daño Radiante."
   }
 ]
