@@ -34,7 +34,7 @@
   "actions": [
     {
       "attacks": 1,
-      "cost": 1,
+      "cost": "1",
       "damage_base_type": "Perforante",
       "damage_tier": "LOW",
       "name": "Daga",
@@ -45,11 +45,17 @@
         "Fisico"
       ],
       "ability_id": "ab_1793184653681",
-      "damage": "1d6 + 4 Perforante",
-      "bonus": "+5 + 1d6",
+      "damage": "",
+      "bonus": "",
       "mod_tpl": {
         "bonus": "+MOD"
-      }
+      },
+      "type": "action",
+      "bonus_scaled": true,
+      "area": "",
+      "save": "",
+      "move": "",
+      "desc": ""
     },
     {
       "attacks": 1,

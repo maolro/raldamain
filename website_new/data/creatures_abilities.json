@@ -1493,7 +1493,7 @@
     ],
     "cost": "1",
     "bonus": "",
-    "bonus_scaled": false,
+    "bonus_scaled": true,
     "range": "Medio",
     "area": "",
     "damage": "",
