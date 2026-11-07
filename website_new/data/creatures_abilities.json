@@ -3871,5 +3871,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Debe emplear una Acción para recargar. "
+  },
+  {
+    "id": "ab_1794055180343",
+    "name": "Revólver",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Arma"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Lejano",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Perforante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
   }
 ]
