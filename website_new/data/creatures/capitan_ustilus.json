@@ -1,0 +1,199 @@
+{
+  "id": "capitan_ustilus",
+  "name": "Capitán Ustilus",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 2,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+5+1d6",
+    "VOL": "+5+1d6",
+    "MEN": "+2"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 12,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Contundente",
+      "damage_tier": "MID",
+      "name": "Golpe",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1791818112393",
+      "damage": "2d6 + 4 Contundente",
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "El objetivo queda Enredado (+5 + 1d6 FÍS para escapar). En el caso que ya esté Enredado, este ataque impacta automáticamente y el afectado tira FÍS +5 + 1d6 o queda Agarrado. ",
+      "name": "Agarre",
+      "range": "Adyacente",
+      "tags": [
+        "Marcial",
+        "Ataque",
+        "Fisico",
+        "Agarre"
+      ],
+      "ability_id": "agarre_1791818660372",
+      "mod_tpl": {
+        "desc": "El objetivo queda Enredado (+MOD FÍS para escapar). En el caso que ya esté Enredado, este ataque impacta automáticamente y el afectado tira FÍS +MOD o queda Agarrado. "
+      },
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "damage_base_type": "Fuerza",
+      "damage_tier": "MID",
+      "desc": "Provoca Herido, Fatigado o Desconcertado al impactar. Solo puede afectar a objetivos Enredados o Agarrados por él.",
+      "name": "Romper Huesos",
+      "save": "FÍS +5 + 1d6",
+      "tags": [
+        "Agarre",
+        "Fisico"
+      ],
+      "ability_id": "ab_1794047522895",
+      "mod_tpl": {
+        "save": "FÍS +MOD"
+      },
+      "damage": "1d6 + 4 Fuerza"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +5 + 1d6 o es empujado un paso y cae Tropezado.",
+      "name": "Ataque Poderoso",
+      "tags": [
+        "Mejora",
+        "Maniobra",
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "ab_1791812854218",
+      "mod_tpl": {
+        "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +MOD o es empujado un paso y cae Tropezado."
+      },
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "area": "Radio Medio",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +5 + 1d6 o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior.",
+      "name": "Demostración Terrorífica",
+      "tags": [
+        "Miedo"
+      ],
+      "ability_id": "ab_1793014679586",
+      "mod_tpl": {
+        "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +MOD o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior."
+      }
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
+      "tags": [
+        "Presencia",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793014528491"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +5 + 1d6, o recibe Desventaja en su siguiente tiro defensivo. ",
+      "name": "Truco de Combate",
+      "tags": [
+        "Marcial",
+        "Maniobra",
+        "Duelo"
+      ],
+      "ability_id": "ab_1791817464324",
+      "mod_tpl": {
+        "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +MOD, o recibe Desventaja en su siguiente tiro defensivo. "
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "cost": 1,
+      "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba o reduce un efecto de estado por un paso.",
+      "name": "Segundo Aliento",
+      "tags": [
+        "Fortitud",
+        "Defensiva"
+      ],
+      "ability_id": "segundo-aliento_1791462133271"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Un ataque dirigido a él afectará en su lugar a un objetivo que tenga Enredado o Agarrado.",
+      "name": "Escudo Humano",
+      "tags": [
+        "Agarre",
+        "Defensivo"
+      ],
+      "ability_id": "ab_1793212304311"
+    },
+    {
+      "cost": 1,
+      "desc": "Repite un tiro de Salvación o anula un efecto de Repetir sobre él.",
+      "name": "Golpe de Fortuna",
+      "ability_id": "golpe-de-fortuna_1791476584028"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Miniboss",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}
