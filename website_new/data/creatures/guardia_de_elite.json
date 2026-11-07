@@ -104,21 +104,16 @@
       "bonus": "+7 + 2d6"
     },
     {
-      "attacks": 1,
+      "attacks": 0,
       "bonus_scaled": false,
       "cost": 1,
-      "desc": "Aumenta el daño de un ataque por un dado y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro FÍS +7 + 2d6 o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo.",
-      "name": "Gran Barrido",
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
       "tags": [
-        "Mejora",
-        "Maniobra",
-        "Marcial",
-        "Coloso"
+        "Presencia",
+        "Mejora"
       ],
-      "ability_id": "ab_1791813129637",
-      "mod_tpl": {
-        "desc": "Aumenta el daño de un ataque por un dado y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro FÍS +MOD o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo."
-      }
+      "ability_id": "ab_1793014528491"
     }
   ],
   "reactions": [
@@ -169,5 +164,6 @@
     "FÍS": "bonus",
     "VOL": "bonus",
     "MEN": "low"
-  }
+  },
+  "tier": "Esbirro Élite"
 }
