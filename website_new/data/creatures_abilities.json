@@ -3741,5 +3741,27 @@
     "move": "",
     "attacks": 1,
     "desc": "El daño de este ataque dependerá del tipo de dragón que sea. Además, el área afectada aumenta por un paso por cada nivel de tamaño adicional que tenga hasta llegar a un cono grande. "
+  },
+  {
+    "id": "ab_1794047522895",
+    "name": "Romper Huesos",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Agarre",
+      "Fisico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Fuerza",
+    "save": "FÍS +MOD",
+    "move": "",
+    "attacks": 1,
+    "desc": "Provoca Herido, Fatigado o Desconcertado al impactar. Solo puede afectar a objetivos Enredados o Agarrados por él."
   }
 ]
