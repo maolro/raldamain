@@ -150,7 +150,7 @@
   },
   {
     "name": "Toque Sanador",
-    "desc": "El objetivo recupera 1 Impacto o se recupera de un efecto de estado.",
+    "desc": "El objetivo recupera 1 Impacto o se recupera de un efecto de estado. Si afecta a un no-muerto, tira VOL +MOD o sufre MID daño Radiante.",
     "range": "Adyacente",
     "tags": [
       "Vida",

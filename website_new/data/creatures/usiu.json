@@ -97,15 +97,16 @@
       "damage": "2d6 + 5 Radiante"
     },
     {
-      "cost": 1,
-      "desc": "El objetivo recupera 1 Impacto o se recupera de un efecto de estado.",
+      "cost": "1",
+      "desc": "El objetivo recupera 1 Impacto o se recupera de un efecto de estado. Si afecta a un no-muerto, tira VOL +MOD o sufre MID daño Radiante.",
       "name": "Toque Sanador",
       "range": "Adyacente",
       "tags": [
         "Vida",
         "Sanacion"
       ],
-      "ability_id": "toque-sanador_1778751359599"
+      "ability_id": "toque-sanador_1778751359599",
+      "type": "action"
     }
   ],
   "reactions": [
