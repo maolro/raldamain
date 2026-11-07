@@ -3938,5 +3938,26 @@
     "move": "",
     "attacks": 1,
     "desc": ""
+  },
+  {
+    "id": "ab_1794067610430",
+    "name": "Cadena",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Arma"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "LOW",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo está Enredado (FÍS +MOD para que escape). Si ya está Enredado, pasará a estar Agarrado."
   }
 ]
