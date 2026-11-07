@@ -8,8 +8,46 @@
   "description": "",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
-    "<strong>Estadística principal:</strong> Carisma + Rango.",
-    "<strong>Parada mágica:</strong> Usas esta magia para tiros de parada y salvaciones."
+    "<strong>Estadística principal:</strong> Fuerza + Rango."
   ],
-  "levels": []
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "draft": true,
+      "abilities": [
+        {
+          "tags": [
+            "Ataque",
+            "Fisico",
+            "Agarre"
+          ],
+          "name": "Agarre",
+          "cost": "1 Acción",
+          "range": "Adyacente",
+          "show_mod": true,
+          "desc": "Al impactar con este ataque, el objetivo queda Enredado. Si el objetivo ya está Enredado, en su lugar debe tener éxito en un tiro de salvación Físico o queda Agarrado."
+        },
+        {
+          "name": "Romper Huesos",
+          "tags": [
+            "Fisico",
+            "Agarre"
+          ],
+          "desc": "Un objetivo Enredado o Agarrado debe tener éxito en un tiro de salvación Físico o sufre 1d6 + FUE daño Fuerza y queda Herido. De manera alternativa, puede darle el efecto Fatigado o Descocertado dependiendo de la parte del cuerpo que afecte.",
+          "cost": "1 Acción, 1 Chi"
+        },
+        {
+          "name": "Escudo Humano",
+          "tags": [
+            "Agarre",
+            "Reacción"
+          ],
+          "desc": "Un ataque dirigido a ti afecta en su lugar a un objetivo Agarrado, provocándole sus efectos en el caso que impacte. ",
+          "cost": "1 Reacción",
+          "empower": "Redirige un ataque hacia un objetivo Enredado por ti. "
+        }
+      ]
+    }
+  ]
 }
