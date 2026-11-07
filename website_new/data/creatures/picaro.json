@@ -34,7 +34,6 @@
   "actions": [
     {
       "attacks": 1,
-      "bonus_scaled": true,
       "cost": "1",
       "damage_base_type": "Perforante",
       "damage_tier": "LOW",
@@ -48,11 +47,14 @@
       "ability_id": "ab_1793184653681",
       "damage": "",
       "type": "action",
-      "bonus": "",
+      "bonus": "+7 + 2d6",
       "area": "",
       "save": "",
       "move": "",
-      "desc": ""
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      }
     },
     {
       "attacks": 0,
