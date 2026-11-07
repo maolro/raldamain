@@ -3914,5 +3914,28 @@
     "move": "",
     "attacks": 1,
     "desc": "Cura un impacto o se recupera de un efecto de estado. Si afecta a un no-muerto, tira VOL +MOD o sufre MID daño Radiante."
+  },
+  {
+    "id": "ab_1794058188119",
+    "name": "Rayo Luminoso",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Vida",
+      "Radiante",
+      "Ataque"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Radiante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
   }
 ]
