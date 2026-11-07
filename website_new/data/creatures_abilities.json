@@ -515,7 +515,7 @@
   },
   {
     "name": "Agarre",
-    "desc": "El objetivo queda Agarrado (+MOD FÍS para escapar).",
+    "desc": "El objetivo queda Enredado (+MOD FÍS para escapar). En el caso que ya esté Enredado, este ataque impacta automáticamente y el afectado tira FÍS +MOD o queda Agarrado. ",
     "tags": [
       "Marcial",
       "Ataque",

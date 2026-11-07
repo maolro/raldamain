@@ -133,7 +133,7 @@
     {
       "bonus_scaled": true,
       "cost": 1,
-      "desc": "El objetivo queda Agarrado (+5 + 1d6 FÍS para escapar).",
+      "desc": "El objetivo queda Enredado (+MOD FÍS para escapar). En el caso que ya esté Enredado, este ataque impacta automáticamente y el afectado tira FÍS +MOD o queda Agarrado. ",
       "name": "Agarre",
       "range": "Adyacente",
       "tags": [
@@ -146,7 +146,8 @@
       "mod_tpl": {
         "desc": "El objetivo queda Agarrado (+MOD FÍS para escapar)."
       },
-      "bonus": "+5 + 1d6"
+      "bonus": "+5 + 1d6",
+      "type": "action"
     }
   ],
   "reactions": [
