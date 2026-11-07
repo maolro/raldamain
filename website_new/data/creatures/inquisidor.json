@@ -1,7 +1,7 @@
 {
   "id": "inquisidor",
   "name": "Inquisidor",
-  "type": "",
+  "type": "Humanoide",
   "size": "Mediano",
   "level": 8,
   "description": "",
@@ -23,12 +23,13 @@
       "tier_tpl": "T+1"
     },
     {
-      "value": 0,
-      "categories": "Magia"
+      "value": 15,
+      "categories": "Magia",
+      "tier_tpl": "T+1"
     }
   ],
   "immune": [],
-  "senses": "",
+  "senses": "Sentido Divino, Sentido Arcano, Leer Pensamientos",
   "speed": "Paso 1",
   "combat": {
     "acciones": 2,
@@ -45,7 +46,7 @@
             "choose": true,
             "dice": "DD",
             "on": "fisicos",
-            "type": "",
+            "type": "Fuego",
             "dice_value": "3d8"
           }
         ]
@@ -79,9 +80,25 @@
     },
     {
       "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "El objetivo está Enredado (FÍS +9 + 2d6 para escapar), o Agarrado si ya se encuentra Enredado. Mientras se encuentre Enredado o Agarrado por este efecto, no podrá lanzar hechizos. ",
+      "name": "Retener Persona",
+      "tags": [
+        "Protectora",
+        "Agarre"
+      ],
+      "ability_id": "ab_1793638445258",
+      "mod_tpl": {
+        "desc": "El objetivo está Enredado (FÍS +MOD para escapar), o Agarrado si ya se encuentra Enredado. Mientras se encuentre Enredado o Agarrado por este efecto, no podrá lanzar hechizos. "
+      },
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
       "bonus_scaled": false,
-      "cost": "1",
-      "desc": "Irradia una presencia sobrecogedora. Sus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y sus enemigos tiran VOL +MOD o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados por ella.",
+      "cost": 1,
+      "desc": "Irradia una presencia sobrecogedora. Sus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y sus enemigos tiran VOL +9 + 2d6 o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados por ella.",
       "name": "Presencia Divina",
       "tags": [
         "Divina",
@@ -89,17 +106,21 @@
       ],
       "ability_id": "ab_1794088036458",
       "mod_tpl": {
-        "desc": "Irradias una presencia sobrecogedora. Tus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y tus enemigos tiran VOL +MOD o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados."
-      },
-      "type": "action",
-      "bonus": "",
-      "range": "",
-      "area": "",
-      "damage": "",
-      "damage_tier": "",
-      "damage_base_type": "",
-      "save": "",
-      "move": ""
+        "desc": "Irradia una presencia sobrecogedora. Sus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y sus enemigos tiran VOL +MOD o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados por ella."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque afectará a cada objetivo en un radio corto y aumenta su daño por un dado adicional. Además, puede moverse antes o después de atacar sin provocar aperturas.",
+      "name": "Ataque Torbellino",
+      "tags": [
+        "Duelo",
+        "Marcial",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793232469761"
     }
   ],
   "reactions": [
@@ -110,6 +131,28 @@
         "bonus": "+MOD"
       },
       "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Recibe +10 en un tiro de salvación contra un hechizo de cualquier tipo.",
+      "name": "Aura Protectora",
+      "tags": [
+        "Divina"
+      ],
+      "ability_id": "ab_1794087997914"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "En respuesta a que un enemigo se aleje, puede moverse un paso para perseguirlo y hacerle un ataque inmediato contra el cual tendrá Desventaja defendiéndose",
+      "name": "Persecución",
+      "tags": [
+        "Marcial"
+      ],
+      "ability_id": "ab_1793014811103"
     }
   ],
   "lore": "",
