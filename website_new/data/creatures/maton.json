@@ -14,11 +14,13 @@
   "umbrales": [
     {
       "value": 4,
-      "categories": "General"
+      "categories": "General",
+      "tier_tpl": "T"
     },
     {
-      "value": 8,
-      "categories": "Físico"
+      "value": 12,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
     }
   ],
   "immune": [],
@@ -132,5 +134,10 @@
   ],
   "lore": "",
   "tags": [],
-  "published": false
+  "published": true,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
 }

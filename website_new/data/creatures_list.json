@@ -384,5 +384,14 @@
     "image": "enjambre_de_ratas.jpg",
     "description": "",
     "image_v": "8a64a7160b"
+  },
+  {
+    "id": "maton",
+    "name": "Matón",
+    "type": "Humanoide",
+    "level": 2,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
