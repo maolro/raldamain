@@ -3807,5 +3807,27 @@
     "move": "",
     "attacks": 1,
     "desc": "En respuesta a fallar un ataque o que dicho ataque sea detenido con una habilidad defensiva, recupera las acciones gastadas como si este nunca se hubiera hecho."
+  },
+  {
+    "id": "ab_1794054811526",
+    "name": "Bomba",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Arma",
+      "Area"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Fuego",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": ""
   }
 ]
