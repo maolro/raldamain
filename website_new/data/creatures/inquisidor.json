@@ -80,8 +80,8 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "cost": 1,
-      "desc": "Irradias una presencia sobrecogedora. Tus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y tus enemigos tiran VOL +9 + 2d6 o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados.",
+      "cost": "1",
+      "desc": "Irradia una presencia sobrecogedora. Sus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y sus enemigos tiran VOL +MOD o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados por ella.",
       "name": "Presencia Divina",
       "tags": [
         "Divina",
@@ -90,7 +90,16 @@
       "ability_id": "ab_1794088036458",
       "mod_tpl": {
         "desc": "Irradias una presencia sobrecogedora. Tus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y tus enemigos tiran VOL +MOD o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados."
-      }
+      },
+      "type": "action",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
     }
   ],
   "reactions": [
