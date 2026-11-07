@@ -70,10 +70,10 @@
   "actions": [
     {
       "attacks": 1,
-      "cost": 1,
+      "cost": "1",
       "damage_base_type": "Contundente",
       "damage_tier": "LOW",
-      "desc": "Afecta hasta a tres objetivos. Al impactar, los afectados están Enredados (FÍS +9 + 2d6 para escapar) y puede arrastrarlos hasta un paso. Sufren también los efectos de Toque Transmutador.",
+      "desc": "Afecta hasta a tres objetivos. Al impactar, los afectados están Enredados (FÍS +MOD para escapar) y puede arrastrarlos hasta un paso. ",
       "name": "Tentáculo Múltiple",
       "range": "Cercano",
       "tags": [
@@ -87,8 +87,13 @@
         "desc": "Afecta hasta a tres objetivos. Al impactar, los afectados están Enredados (FÍS +MOD para escapar) y puede arrastrarlos hasta un paso. Sufren también los efectos de Toque Transmutador.",
         "bonus": "+MOD"
       },
-      "damage": "2d8 + 6 Contundente",
-      "bonus": "+9 + 2d6"
+      "damage": "",
+      "bonus": "",
+      "type": "action",
+      "bonus_scaled": true,
+      "area": "",
+      "save": "",
+      "move": ""
     },
     {
       "attacks": 1,
