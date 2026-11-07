@@ -3763,5 +3763,27 @@
     "move": "",
     "attacks": 1,
     "desc": "Provoca Herido, Fatigado o Desconcertado al impactar. Solo puede afectar a objetivos Enredados o Agarrados por él."
+  },
+  {
+    "id": "ab_1794054071710",
+    "name": "Presionar Defensas",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Asesino",
+      "Mejora"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Haz dos ataques de coste una Acción contra el mismo objetivo, quien solo podrá tirar una vez para defenderse y se quedará con ese resultado. El segundo ataque recibirá además un modificador +2 al tiro. "
   }
 ]
