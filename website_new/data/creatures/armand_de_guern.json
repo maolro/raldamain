@@ -78,14 +78,20 @@
         "Fisico",
         "Ataque"
       ],
-      "cost": 1,
+      "cost": "1",
       "bonus_scaled": true,
       "damage_tier": "MID",
       "damage_base_type": "Cortante",
       "attacks": 1,
       "ability_id": "ab_1793105102759",
-      "damage": "3d6 + 5 Cortante",
-      "bonus": "+7 + 2d6"
+      "damage": "",
+      "bonus": "",
+      "type": "action",
+      "range": "Adyacente",
+      "area": "",
+      "save": "",
+      "move": "",
+      "desc": ""
     },
     {
       "name": "Derribo",

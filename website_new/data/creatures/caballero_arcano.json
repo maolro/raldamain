@@ -50,9 +50,9 @@
   ],
   "actions": [
     {
-      "attacks": 2,
+      "attacks": 1,
       "bonus_scaled": true,
-      "cost": 1,
+      "cost": "1",
       "damage_base_type": "Cortante",
       "damage_tier": "MID",
       "name": "Espada",
@@ -62,9 +62,14 @@
         "Ataque"
       ],
       "ability_id": "ab_1793105102759",
-      "damage": "3d8 + 6 Cortante",
-      "bonus": "+9 + 2d6",
-      "desc": "Provoca 3d8 daño Fuego, Frío, Eléctrico o Ácido al impactar."
+      "damage": "",
+      "bonus": "",
+      "desc": "",
+      "type": "action",
+      "range": "Adyacente",
+      "area": "",
+      "save": "",
+      "move": ""
     },
     {
       "attacks": 2,

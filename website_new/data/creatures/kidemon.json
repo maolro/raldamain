@@ -72,21 +72,27 @@
     {
       "attacks": 1,
       "bonus_scaled": true,
-      "cost": 1,
+      "cost": "1",
       "damage_base_type": "Cortante",
-      "name": "Mandoble",
+      "name": "Espada",
       "tags": [
         "Arma",
         "Fisico",
         "Ataque"
       ],
       "ability_id": "ab_1793105102759",
-      "damage": "3d8 + 6 Perforante",
-      "bonus": "+9 + 2d6",
-      "desc": "Provoca 3d8 daño Fuego adicional al impactar.",
+      "damage": "",
+      "bonus": "",
+      "desc": "",
       "mod_tpl": {
         "desc": "Provoca DD daño Fuego adicional al impactar."
-      }
+      },
+      "type": "action",
+      "range": "Adyacente",
+      "area": "",
+      "damage_tier": "MID",
+      "save": "",
+      "move": ""
     },
     {
       "attacks": 1,

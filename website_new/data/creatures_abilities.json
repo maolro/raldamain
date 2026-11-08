@@ -1021,7 +1021,7 @@
     "cost": "1",
     "bonus": "",
     "bonus_scaled": true,
-    "range": "",
+    "range": "Adyacente",
     "area": "",
     "damage": "",
     "damage_tier": "MID",
