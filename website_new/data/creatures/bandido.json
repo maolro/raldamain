@@ -3,32 +3,32 @@
   "name": "Bandido",
   "type": "Humanoide",
   "size": "Mediano",
-  "level": 2,
+  "level": 0,
   "description": "",
-  "hits": 2,
+  "hits": 1,
   "saves": {
-    "FÍS": "+5+2d6",
-    "VOL": "+5",
-    "MEN": "+2"
+    "FÍS": "+4+1d6",
+    "VOL": "+3",
+    "MEN": "+1"
   },
   "umbrales": [
     {
-      "value": 4,
+      "value": 2,
       "categories": "General",
       "tier_tpl": "T"
     },
     {
-      "value": 8,
+      "value": 6,
       "categories": "Físico",
-      "tier_tpl": "T+1"
+      "tier_tpl": "T+2"
     }
   ],
   "immune": [],
   "senses": "",
   "speed": "Paso 1",
   "combat": {
-    "acciones": 2,
-    "reacciones": 1
+    "acciones": 1,
+    "reacciones": 0
   },
   "traits": [],
   "actions": [
@@ -45,8 +45,8 @@
         "Fisico"
       ],
       "ability_id": "ab_1793184653681",
-      "damage": "",
-      "bonus": "",
+      "damage": "1d4 + 2 Perforante",
+      "bonus": "+4",
       "mod_tpl": {
         "bonus": "+MOD"
       },
@@ -61,32 +61,35 @@
       "attacks": 1,
       "bonus_scaled": true,
       "cost": 1,
-      "damage_base_type": "Perforante",
+      "damage_base_type": "Contundente",
       "damage_tier": "MID",
-      "desc": "La criatura no puede emplear Parada para defenderse.",
-      "name": "Arco",
-      "range": "Lejano",
+      "name": "Garrote",
+      "range": "Adyacente",
       "tags": [
         "Ataque",
+        "Fisico",
         "Arma",
-        "Fisico"
+        "Natural"
       ],
-      "ability_id": "ab_1793105124177",
-      "damage": "2d6 + 4 Perforante",
-      "bonus": "+5 + 1d6"
+      "ability_id": "ab_1791818112393",
+      "damage": "2d4 + 2 Contundente",
+      "bonus": "+4"
     },
     {
-      "attacks": 0,
+      "attacks": 1,
       "bonus_scaled": false,
       "cost": 1,
-      "desc": "Su siguiente ataque recibe un modificador +2, aumenta su daño base por un dado y provoca Herido I al impactar.",
-      "name": "Ataque Furtivo",
+      "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +4, o recibe Desventaja en su siguiente tiro defensivo. ",
+      "name": "Truco de Combate",
       "tags": [
         "Marcial",
-        "Mejora",
-        "Asesino"
+        "Maniobra",
+        "Duelo"
       ],
-      "ability_id": "ab_1791817547641"
+      "ability_id": "ab_1791817464324",
+      "mod_tpl": {
+        "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +MOD, o recibe Desventaja en su siguiente tiro defensivo. "
+      }
     },
     {
       "attacks": 0,
@@ -99,22 +102,6 @@
         "Mejora"
       ],
       "ability_id": "ab_1793014528491"
-    },
-    {
-      "attacks": 1,
-      "bonus_scaled": false,
-      "cost": 1,
-      "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +5 + 1d6, o recibe Desventaja en su siguiente tiro defensivo. ",
-      "name": "Truco de Combate",
-      "tags": [
-        "Marcial",
-        "Maniobra",
-        "Duelo"
-      ],
-      "ability_id": "ab_1791817464324",
-      "mod_tpl": {
-        "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +MOD, o recibe Desventaja en su siguiente tiro defensivo. "
-      }
     }
   ],
   "reactions": [
@@ -122,22 +109,10 @@
       "name": "Esquiva",
       "cost": 1,
       "desc": "",
-      "bonus": "+5 + 2d6",
+      "bonus": "+4",
       "mod_tpl": {
-        "bonus": "+MOD+1"
+        "bonus": "+MOD"
       }
-    },
-    {
-      "attacks": 1,
-      "bonus_scaled": false,
-      "cost": 1,
-      "desc": "Repite un tiro de Ataque, Defensa o Salvación que involucre la Destreza y se queda con el resultado que más le convenga.",
-      "name": "Instinto de Supervivencia",
-      "tags": [
-        "Reflejos",
-        "Defensiva"
-      ],
-      "ability_id": "ab_1791818387137"
     }
   ],
   "lore": "",
@@ -148,5 +123,5 @@
     "VOL": "mid",
     "MEN": "low"
   },
-  "tier": "Esbirro Élite"
+  "tier": "Esbirro"
 }
