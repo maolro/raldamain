@@ -324,15 +324,6 @@
     "partial": true
   },
   {
-    "id": "cadenas",
-    "name": "Cadenas",
-    "category": "Marcial",
-    "image": "cadenas.jpg",
-    "description": "",
-    "draft": true,
-    "partial": false
-  },
-  {
     "id": "artes_marciales",
     "name": "Artes Marciales",
     "category": "Marcial",
