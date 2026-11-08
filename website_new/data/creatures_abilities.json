@@ -4075,5 +4075,27 @@
     "move": "",
     "attacks": 1,
     "desc": "Cambia su aspecto para asemejarse a otra criatura de su elección. Esto no le dará ninguna ventaja en el combate ni habilidades adicionales, siendo así un cambio meramente cosmético."
+  },
+  {
+    "id": "ab_1794137310303",
+    "name": "Drenar Sangre",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Sangre",
+      "Necrotico"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Adyacente",
+    "area": "",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Necrótico",
+    "save": "VOL +MOD",
+    "move": "",
+    "attacks": 1,
+    "desc": "Si este ataque provoca por lo menos un impacto, se recupera un impacto. Aquellos objetivos que hayan sufrido por lo menos un Impacto tendrán Desventaja en este tiro."
   }
 ]
