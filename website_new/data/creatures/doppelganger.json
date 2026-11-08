@@ -90,6 +90,24 @@
       "bonus": "+7 + 2d6"
     },
     {
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "El objetivo queda Enredado (+7 + 2d6 FÍS para escapar). En el caso que ya esté Enredado, este ataque impacta automáticamente y el afectado tira FÍS +7 + 2d6 o queda Agarrado. ",
+      "name": "Agarre",
+      "range": "Adyacente",
+      "tags": [
+        "Marcial",
+        "Ataque",
+        "Fisico",
+        "Agarre"
+      ],
+      "ability_id": "agarre_1791818660372",
+      "mod_tpl": {
+        "desc": "El objetivo queda Enredado (+MOD FÍS para escapar). En el caso que ya esté Enredado, este ataque impacta automáticamente y el afectado tira FÍS +MOD o queda Agarrado. "
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
       "attacks": 1,
       "bonus_scaled": false,
       "cost": 1,
@@ -112,6 +130,26 @@
         "Asesino"
       ],
       "ability_id": "ab_1791817547641"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "damage_base_type": "Necrótico",
+      "damage_tier": "MID",
+      "desc": "Si este ataque provoca por lo menos un impacto, se recupera un impacto. Aquellos objetivos que hayan sufrido por lo menos un Impacto tendrán Desventaja en este tiro.",
+      "name": "Drenar Sangre",
+      "range": "Adyacente",
+      "save": "VOL +7 + 2d6",
+      "tags": [
+        "Sangre",
+        "Necrotico"
+      ],
+      "ability_id": "ab_1794137310303",
+      "mod_tpl": {
+        "save": "VOL +MOD"
+      },
+      "damage": "2d6 + 5 Necrótico"
     }
   ],
   "reactions": [
