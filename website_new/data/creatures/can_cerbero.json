@@ -1,0 +1,99 @@
+{
+  "id": "can_cerbero",
+  "name": "Can Cerbero",
+  "type": "Infernal",
+  "size": "Mediano",
+  "level": 8,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+9+2d6",
+    "VOL": "+9+2d6",
+    "MEN": "+9"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 20,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [],
+  "senses": "Olfato",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca 3d8 daño adicional de un elemento de su elección en ataques naturales.",
+      "effects": {
+        "extra_damage": [
+          {
+            "choose": true,
+            "dice": "DD",
+            "on": "naturales",
+            "type": "",
+            "dice_value": "3d8"
+          }
+        ],
+        "immune": [
+          "Aflicciones",
+          "Mentales",
+          "Miedo"
+        ],
+        "senses": [
+          "Vista a Oscuras"
+        ],
+        "umbrales": [
+          {
+            "categories": "Magia",
+            "steps": 1,
+            "amount": 5
+          },
+          {
+            "categories": "Fuego, Frío",
+            "steps": 1,
+            "amount": 5
+          }
+        ]
+      },
+      "name": "Infernal",
+      "tags": [
+        "Infernal",
+        "Innata"
+      ],
+      "ability_id": "ab_1793366059338",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca DD daño adicional de un elemento de su elección en ataques naturales."
+      }
+    }
+  ],
+  "actions": [],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+9 + 2d6"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}
