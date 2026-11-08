@@ -39,24 +39,35 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "desc": "Sus ataques de armas provocan 3d8 daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +9 + 2d6 o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación.",
+      "desc": "Sus ataques de armas provocan DD daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +MOD o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación. ",
       "effects": {
         "extra_damage": [
           {
-            "choose": true,
             "dice": "DD",
-            "on": "fisicos",
             "type": "Fuego",
-            "dice_value": "3d8"
+            "on": "fisicos",
+            "choose": true
           }
         ]
       },
       "name": "Azote Castigador",
-      "tags": [],
+      "tags": [
+        "Divina"
+      ],
       "ability_id": "ab_1794088121470",
       "mod_tpl": {
         "desc": "Sus ataques de armas provocan DD daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +MOD o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación."
-      }
+      },
+      "type": "passive",
+      "cost": "",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
     }
   ],
   "actions": [

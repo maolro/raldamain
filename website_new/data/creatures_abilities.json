@@ -4029,7 +4029,9 @@
     "name": "Azote Castigador",
     "type": "passive",
     "tier": "II",
-    "tags": [],
+    "tags": [
+      "Divina"
+    ],
     "cost": "",
     "bonus": "",
     "bonus_scaled": false,
@@ -4041,7 +4043,7 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Sus ataques de armas provocan DD daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +MOD o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación.",
+    "desc": "Sus ataques de armas provocan DD daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +MOD o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación. ",
     "effects": {
       "extra_damage": [
         {
