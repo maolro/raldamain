@@ -4054,5 +4054,26 @@
         }
       ]
     }
+  },
+  {
+    "id": "ab_1794137087889",
+    "name": "Cambiar Cara",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Transmutacion"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Cambia su aspecto para asemejarse a otra criatura de su elección. Esto no le dará ninguna ventaja en el combate ni habilidades adicionales, siendo así un cambio meramente cosmético."
   }
 ]
