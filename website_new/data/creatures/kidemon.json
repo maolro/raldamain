@@ -81,9 +81,9 @@
         "Ataque"
       ],
       "ability_id": "ab_1793105102759",
-      "damage": "",
-      "bonus": "",
-      "desc": "",
+      "damage": "3d8 + 6 Cortante",
+      "bonus": "+9 + 2d6",
+      "desc": "Provoca 3d8 daño Fuego adicional al impactar.",
       "mod_tpl": {
         "desc": "Provoca DD daño Fuego adicional al impactar."
       },
@@ -122,6 +122,19 @@
         "Marcial"
       ],
       "ability_id": "ab_1793208339829"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Se mueve tanto como tu velocidad y ataca a cada enemigo en tu camino, aumentando el daño base de su ataque por un dado y empujando al impactar. Este ataque romperá también todas las barreras a su paso.",
+      "name": "Carga Poderosa",
+      "tags": [
+        "Coloso",
+        "Mejora",
+        "Marcial"
+      ],
+      "ability_id": "ab_1793208280826"
     }
   ],
   "reactions": [
