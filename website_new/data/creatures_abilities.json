@@ -4097,5 +4097,27 @@
     "move": "",
     "attacks": 1,
     "desc": "Si este ataque provoca por lo menos un impacto, se recupera un impacto. Aquellos objetivos que hayan sufrido por lo menos un Impacto tendrán Desventaja en este tiro."
+  },
+  {
+    "id": "ab_1794162190766",
+    "name": "Robo Rápido",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Asesino",
+      "Marcial"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Obtiene +2 en su siguiente ataque. Si impacta, roba un objeto pequeño que lleve su objetivo y no se encuentre enganchado. Esta habilidad solo funciona si su objetivo está adyacente."
   }
 ]
