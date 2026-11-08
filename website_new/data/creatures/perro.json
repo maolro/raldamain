@@ -1,0 +1,105 @@
+{
+  "id": "perro",
+  "name": "Perro",
+  "type": "Animal",
+  "size": "Mediano",
+  "level": 0,
+  "description": "",
+  "hits": 1,
+  "saves": {
+    "FÍS": "+4",
+    "VOL": "+3",
+    "MEN": "+3"
+  },
+  "umbrales": [
+    {
+      "value": 2,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 6,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [],
+  "senses": "Olfato",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 1,
+    "reacciones": 0
+  },
+  "traits": [],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage": "2d4 + 2 Perforante",
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "desc": "El objetivo está Enredado (+4 FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada.",
+      "name": "Mordisco",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1793008689989",
+      "mod_tpl": {
+        "desc": "El objetivo está Enredado (+MOD FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada."
+      },
+      "bonus": "+4"
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
+      "tags": [
+        "Presencia",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793014528491"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +4, o recibe Desventaja en su siguiente tiro defensivo. ",
+      "name": "Truco de Combate",
+      "tags": [
+        "Marcial",
+        "Maniobra",
+        "Duelo"
+      ],
+      "ability_id": "ab_1791817464324",
+      "mod_tpl": {
+        "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +MOD, o recibe Desventaja en su siguiente tiro defensivo. "
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+4"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Esbirro",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "mid",
+    "MEN": "mid"
+  }
+}
