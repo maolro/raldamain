@@ -9,7 +9,7 @@
   "saves": {
     "FÍS": "+9+2d6",
     "VOL": "+9+2d6",
-    "MEN": "+9"
+    "MEN": "+9+1d6"
   },
   "umbrales": [
     {
@@ -24,7 +24,6 @@
     }
   ],
   "immune": [],
-  "senses": "",
   "speed": "Paso 1, Salto 1",
   "combat": {
     "acciones": 2,
@@ -35,24 +34,90 @@
     {
       "attacks": 1,
       "bonus_scaled": true,
-      "cost": "1",
+      "cost": 1,
       "damage_base_type": "Cortante",
       "damage_tier": "MID",
       "name": "Espada",
+      "range": "Adyacente",
       "tags": [
         "Arma",
         "Fisico",
         "Ataque"
       ],
       "ability_id": "ab_1793105102759",
-      "damage": "",
-      "bonus": "",
-      "type": "action",
-      "range": "Adyacente",
-      "area": "",
-      "save": "",
-      "move": "",
-      "desc": ""
+      "damage": "3d8 + 6 Cortante",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "name": "Revólver",
+      "range": "Lejano",
+      "tags": [
+        "Arma"
+      ],
+      "ability_id": "ab_1794055180343",
+      "damage": "3d8 + 6 Perforante",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Hace tres ataques de coste máximo una Acción. Cada ataque consecutivo recibirá un modificador +2 al tiro de ataque y daño. ",
+      "name": "Combo Mortal",
+      "tags": [
+        "Duelo",
+        "Marcial",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793232584202"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Salta dos pasos hacia el cielo y ataca a cada objetivo en una columna media, aumentando el daño base por dos dados. Si impacta a un objetivo volador, deberá tener éxito en un tiro FÍS +9 + 2d6 o caerá al suelo.",
+      "name": "Tajo Aéreo",
+      "tags": [
+        "Duelo",
+        "Marcial",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793232509904",
+      "mod_tpl": {
+        "desc": "Salta dos pasos hacia el cielo y ataca a cada objetivo en una columna media, aumentando el daño base por dos dados. Si impacta a un objetivo volador, deberá tener éxito en un tiro FÍS +MOD o caerá al suelo."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Un aliado que alcance recibe un impacto temporal y se recupera del efecto Miedo, Confusión o Desconcertado.",
+      "name": "Revigorar",
+      "range": "Medio",
+      "tags": [
+        "Presencia"
+      ],
+      "ability_id": "ab_1793231310975"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Todos los afectados deben tener éxito en un tiro MEN +9 + 2d6 o deberán emplear su siguiente acción en atacarle y recibirán Desventaja en su siguiente tiro defensivo.",
+      "name": "Provocación",
+      "tags": [
+        "Presencia",
+        "Mental"
+      ],
+      "ability_id": "ab_1793231346837",
+      "mod_tpl": {
+        "desc": "Todos los afectados deben tener éxito en un tiro MEN +MOD o deberán emplear su siguiente acción en atacarle y recibirán Desventaja en su siguiente tiro defensivo."
+      }
     }
   ],
   "reactions": [
@@ -60,9 +125,30 @@
       "name": "Parada / Esquiva",
       "desc": "",
       "mod_tpl": {
-        "bonus": "+MOD"
+        "bonus": "+MOD+1"
       },
-      "bonus": "+9 + 2d6"
+      "bonus": "+9 + 3d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Suma +10 a un tiro de Salvación de cualquier tipo.",
+      "name": "Indómito",
+      "tags": [
+        "Presencia"
+      ],
+      "ability_id": "ab_1793231378591"
+    },
+    {
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
     }
   ],
   "lore": "",
@@ -71,6 +157,6 @@
   "save_scale": {
     "FÍS": "bonus",
     "VOL": "bonus",
-    "MEN": "low"
+    "MEN": "mid"
   }
 }
