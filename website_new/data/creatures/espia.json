@@ -88,6 +88,34 @@
         "Mejora"
       ],
       "ability_id": "ab_1793014528491"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Obtiene +2 en su siguiente ataque. Si impacta, roba un objeto pequeño que lleve su objetivo y no se encuentre enganchado. Esta habilidad solo funciona si su objetivo está adyacente.",
+      "name": "Robo Rápido",
+      "tags": [
+        "Asesino",
+        "Marcial"
+      ],
+      "ability_id": "ab_1794162190766",
+      "cost": 1
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +5 + 1d6, o recibe Desventaja en su siguiente tiro defensivo. ",
+      "name": "Truco de Combate",
+      "tags": [
+        "Marcial",
+        "Maniobra",
+        "Duelo"
+      ],
+      "ability_id": "ab_1791817464324",
+      "mod_tpl": {
+        "desc": "Un objetivo que alcance con su arma tener éxito en un tiro FÍS/VOL/MEN +MOD, o recibe Desventaja en su siguiente tiro defensivo. "
+      }
     }
   ],
   "reactions": [
@@ -95,9 +123,9 @@
       "name": "Parada / Esquiva",
       "desc": "",
       "mod_tpl": {
-        "bonus": "+MOD"
+        "bonus": "+MOD+1"
       },
-      "bonus": "+5 + 1d6"
+      "bonus": "+5 + 2d6"
     },
     {
       "attacks": 1,
