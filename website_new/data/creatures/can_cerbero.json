@@ -79,15 +79,14 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "desc": "Sus ataques de armas provocan 3d8 daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +9 + 2d6 o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación. ",
-      "effects": {},
-      "name": "Azote Castigador",
+      "desc": "El daño de sus ataques no se puede curar. Además, al impactar con un ataque de arma o natural el afectado deberá tener éxito en un tiro VOL +9 + 2d6 o sufre una Maldición, la cual le provoca 3d8 daño Necrótico cada ronda y Enfermado I. Ambos efectos se pueden eliminar como si fueran un efecto de estado de categoría I. ",
+      "name": "Heridas Infernales",
       "tags": [
-        "Divina"
+        "Infernal"
       ],
-      "ability_id": "ab_1794088121470",
+      "ability_id": "ab_1793631318284",
       "mod_tpl": {
-        "desc": "Sus ataques de armas provocan DD daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +MOD o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación. "
+        "desc": "El daño de sus ataques no se puede curar. Además, al impactar con un ataque de arma o natural el afectado deberá tener éxito en un tiro VOL +MOD o sufre una Maldición, la cual le provoca DD daño Necrótico cada ronda y Enfermado I. Ambos efectos se pueden eliminar como si fueran un efecto de estado de categoría I. "
       }
     }
   ],
