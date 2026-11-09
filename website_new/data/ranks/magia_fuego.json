@@ -147,7 +147,7 @@
           ],
           "cost": "1 Acción, 2 chi",
           "area": "Esfera pequeña",
-          "desc": "Crea una explosión centrada en ti que inflige 3d8 + CAR daño Fuego al impactar y una quemadura leve. Si el objetivo ya está en llamas, solo puede defenderse con un tiro de salvación de Voluntad.",
+          "desc": "Crea una explosión centrada en ti que inflige 3d8 + CAR daño Fuego al impactar. Si el objetivo ya está en llamas, solo puede defenderse con un tiro de salvación de Voluntad y sufrirá la mitad de daño en caso de éxito.",
           "empower": "Aumenta el daño de este hechizo por un dado adicional, o ataca de nuevo a todas las criaturas en el área afectada. Si empoderas dos veces, el radio del efecto aumenta a medio."
         },
         {
