@@ -240,8 +240,9 @@
     "type": "No-muerto",
     "level": 5,
     "size": "Mediano",
-    "image": "",
-    "description": ""
+    "image": "sombra.jpg",
+    "description": "",
+    "image_v": "b1610fa977"
   },
   {
     "id": "esqueleto",
