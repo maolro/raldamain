@@ -175,7 +175,7 @@
     {
       "rank": "IV",
       "title": "Rango IV",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Aguas Protectoras",
@@ -184,10 +184,14 @@
             "Duradera",
             "Mejora"
           ],
-          "cost": "1 Acción, 2 chi",
-          "desc": "Te rodeas de aguas protectoras que te otorgan contadores de escudo iguales a tu Rango. Mientras este efecto permanezca activo, todo el espacio a distancia cercana cuenta como si estuviera rodeado por agua. Puedes emplear tus contadores de escudo para lanzar el hechizo Aguas de la Vida sin la necesidad de pagar chi o para empoderarlo.",
+          "cost": "2 Acciones, 2 chi",
+          "desc": "Te rodeas de aguas protectoras que te otorgan RANGO contadores de escudo. Mientras este efecto permanezca activo, todo el espacio a distancia cercana cuenta como si estuviera rodeado por agua y puedes emplear tus contadores para proteger a otros aliados en esa zona. ",
           "empower": "Recupera la mitad de tus contadores de escudo.",
-          "duration": "Concentración"
+          "duration": "Concentración",
+          "toggle": {
+            "label": "Aguas Protectoras",
+            "ce": "rango"
+          }
         },
         {
           "name": "Taladro Hidráulico",
@@ -196,12 +200,12 @@
             "Ataque",
             "Área"
           ],
-          "cost": "1 acción, 2 chi",
-          "area": "Línea mediana",
-          "crit": "Herido-2, con Ralentizado-1 y pierde un contador de escudo adicional.",
-          "duration": "Instantáneo",
-          "desc": "Dispara un chorro de agua a presión que inflige 4d8 + SAB daño Contundente, empuja y Herido-1 al impactar. Este ataque ignora los muros a su paso además que romperá la armadura y eliminará un contador de escudo que tenga.",
-          "empower": "Haz un segundo ataque contra objetivos diferentes o los mismos, quienes deberán defenderse con el mismo resultado."
+          "cost": "1 Acción, 2 chi",
+          "area": "Línea media",
+          "desc": "Provoca el efecto Roto I a todos los objetivos en el área afectada y los empuja dos pasos. Rompe además todos los muros y barreras en su camino.",
+          "damage": "4d8 + SAB",
+          "damage_type": "Contundente",
+          "empower": "Lanza este hechizo de nuevo, pudiendo atacar a objetivos diferentes o a los mismos. "
         },
         {
           "name": "Sanación Elemental",
