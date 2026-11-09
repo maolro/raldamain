@@ -2,7 +2,7 @@
   "id": "elemental_de_planta",
   "name": "Elemental de Planta",
   "type": "Espíritu",
-  "size": "Mediano",
+  "size": "Grande",
   "level": 5,
   "description": "",
   "hits": 2,
@@ -146,5 +146,6 @@
     "FÍS": "bonus",
     "VOL": "bonus",
     "MEN": "low"
-  }
+  },
+  "tier": "Esbirro Élite"
 }
