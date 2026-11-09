@@ -4161,5 +4161,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Los objetivos que estén en llamas solo podrán defenderse con un tiro de VOL +MOD, y sufrirán la mitad de daño en caso de éxito."
+  },
+  {
+    "id": "ab_1794227535238",
+    "name": "Tropa",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Pasiva"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Es una tropa de criaturas de más bajo nivel. Es Inmune a efectos de un único objetivo y los ataques de un único objetivo no podrán provocarle más de un impacto. No obstante, todo el daño de área que sufra contará como si fuera daño Fuerza. "
   }
 ]
