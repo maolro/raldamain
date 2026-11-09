@@ -1,0 +1,168 @@
+{
+  "id": "profundo",
+  "name": "Profundo",
+  "type": "Abisal",
+  "size": "Mediano",
+  "level": 2,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5+1d6",
+    "VOL": "+5+1d6",
+    "MEN": "+2"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 12,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [],
+  "senses": "Ecolocación",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Sus ataques Físicos cuentan como Mágicos y aumentan su alcance a Cercano. Recibe también velocidad de Natación 1, es capaz de respirar bajo el agua sin dificultades y aumenta su Umbral al daño Frío y Ácido por un paso. ",
+      "effects": {
+        "speed": [
+          "Natación 1"
+        ],
+        "umbrales": [
+          {
+            "categories": "Frío, Ácido",
+            "steps": 1,
+            "amount": 4
+          }
+        ]
+      },
+      "name": "Infusión de Agua",
+      "tags": [
+        "Agua"
+      ],
+      "ability_id": "ab_1793292744266"
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Cortante",
+      "damage_tier": "MID",
+      "name": "Garra",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1791818049839",
+      "damage": "2d6 + 4 Cortante",
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage": "2d6 + 4 Perforante",
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "desc": "El objetivo está Enredado (+5 + 1d6 FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada.",
+      "name": "Mordisco",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1793008689989",
+      "mod_tpl": {
+        "desc": "El objetivo está Enredado (+MOD FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada."
+      },
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
+      "tags": [
+        "Presencia",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793014528491"
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Hace tres ataques de cualquier tipo con coste de una Acción.",
+      "name": "Secuencia de Ataques",
+      "tags": [
+        "Mejora",
+        "Marcial",
+        "Duelo"
+      ],
+      "ability_id": "ab_1791817340811"
+    },
+    {
+      "area": "Radio Medio",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +5 + 1d6 o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior.",
+      "name": "Demostración Terrorífica",
+      "tags": [
+        "Miedo"
+      ],
+      "ability_id": "ab_1793014679586",
+      "mod_tpl": {
+        "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +MOD o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior."
+      }
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "cost": 1,
+      "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba o reduce un efecto de estado por un paso.",
+      "name": "Segundo Aliento",
+      "tags": [
+        "Fortitud",
+        "Defensiva"
+      ],
+      "ability_id": "segundo-aliento_1791462133271"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Esbirro Élite",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}
