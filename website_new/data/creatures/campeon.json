@@ -1,0 +1,132 @@
+{
+  "id": "campeon",
+  "name": "Campeón",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 11,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+11+3d6",
+    "VOL": "+11+3d6",
+    "MEN": "+11"
+  },
+  "umbrales": [
+    {
+      "value": 15,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 25,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Empieza el combate con 4 contadores de escudo.",
+      "name": "Muro Viviente",
+      "tags": [
+        "Pasiva",
+        "Fortitud"
+      ],
+      "ability_id": "ab_1793209049506",
+      "mod_tpl": {
+        "desc": "Empieza el combate con TIER contadores de escudo."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "area": "Radio Corto",
+      "attacks": 2,
+      "bonus_scaled": false,
+      "cost": 1,
+      "damage_base_type": "Cortante/Contundente",
+      "damage_tier": "HIGH",
+      "desc": "Si mejora su primer ataque con una habilidad de cualquier tipo, esta se aplicará a ambos ataques.",
+      "name": "Doble Barrido",
+      "range": "Adyacente",
+      "tags": [
+        "Arma",
+        "Coloso"
+      ],
+      "ability_id": "ab_1794233069793",
+      "damage": "5d8 + 7 Cortante/Contundente"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque aumenta su daño base por dos dados, y al impactar provoca Roto II al objetivo. Si el objetivo logra detener su ataque con su arma, puede romperle esa misma si es de dureza menor.",
+      "name": "Golpe Demoledor",
+      "tags": [
+        "Coloso",
+        "Mejora",
+        "Marcial"
+      ],
+      "ability_id": "ab_1793208339829"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+11 + 3d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Suma +10 a un tiro de Salvación de cualquier tipo.",
+      "name": "Indómito",
+      "tags": [
+        "Presencia"
+      ],
+      "ability_id": "ab_1793231378591"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Divide la cantidad de impactos recibidos por un ataque a la mitad, redondeando hacia abajo.",
+      "name": "Resiliencia",
+      "tags": [
+        "Fortitud"
+      ],
+      "ability_id": "ab_1793208815332"
+    },
+    {
+      "cost": 1,
+      "desc": "Falla automáticamente un tiro defensivo para golpear al atacante sin que pueda defenderse. El atacante puede escoger fallar para no recibir el impacto.",
+      "name": "Golpe por Golpe",
+      "tags": [
+        "Coloso",
+        "Marcial"
+      ],
+      "ability_id": "golpe-por-golpe_1788189327012"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Esbirro Élite",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}
