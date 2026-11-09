@@ -208,8 +208,8 @@
           "area": "Columna grande",
           "duration": "Concentración",
           "crit": "Afectados sufren quemadura media.",
-          "desc": "Este ataque prende objetos inflamables en su área afectada. Mientras mantengas la concentración, puedes emplear una Acción para mover este efecto un paso y atacar a cada objetivo en su camino.",
-          "empower": "Crea un torbellino adicional en otra posición.",
+          "desc": "Este ataque prende objetos inflamables en su área afectada. Mientras mantengas la concentración, puedes emplear una Acción para mover este efecto un paso y atacar a cada objetivo en su camino. ",
+          "empower": "Crea un torbellino adicional en otra posición. Cuando gastes una acción para controlar un torbellino, puedes mover ambos y atacar a cada objetivo a su paso.",
           "damage": "3d8 + CAR",
           "damage_type": "Fuego"
         },
