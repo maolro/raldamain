@@ -30,7 +30,7 @@
   ],
   "immune": [],
   "senses": "Vista a Oscuras",
-  "speed": "Paso 1",
+  "speed": "Paso 1, Vuelo 1",
   "combat": {
     "acciones": 2,
     "reacciones": 1
@@ -75,21 +75,6 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "cost": 1,
-      "desc": "Elimina un efecto de estado que tenga un objetivo, o provoca una maldición menor a un objetivo de la cual se defenderá con un tiro de VOL +9 + 2d6. Si fracasa, podrás provocarle Desventaja en todos sus tiros relacionados con una estadística durante el resto del combate o un efecto equivalente, y puede repetir el tiro cada ronda para recuperarse. Si tiene éxito en el tiro, no podrá volver a ser afectado por esta habilidad en el resto del combate. Puede provocar otras maldiciones a discreción del DJ.",
-      "name": "Manifestación Divina",
-      "range": "Medio",
-      "tags": [
-        "Divina"
-      ],
-      "ability_id": "ab_1794222001221",
-      "mod_tpl": {
-        "desc": "Elimina un efecto de estado que tenga un objetivo, o provoca una maldición menor a un objetivo de la cual se defenderá con un tiro de VOL +MOD. Si fracasa, podrás provocarle Desventaja en todos sus tiros relacionados con una estadística durante el resto del combate o un efecto equivalente, y puede repetir el tiro cada ronda para recuperarse. Si tiene éxito en el tiro, no podrá volver a ser afectado por esta habilidad en el resto del combate. Puede provocar otras maldiciones a discreción del DJ."
-      }
-    },
-    {
-      "attacks": 1,
-      "bonus_scaled": false,
       "cost": 2,
       "desc": "El objetivo tira VOL +9 + 2d6 o sufre un Vínculo Parasítico. Mientras permanezca activo, esta criatura puede transferirle hasta la mitad del daño que sufra. Esto hará que el daño sea Interno para ambos, ajustando así los impactos recibidos. El afectado puede repetir el tiro para intentar liberarse cada vez que sufra el daño.",
       "name": "Vínculo Parasítico",
@@ -101,6 +86,21 @@
       "ability_id": "ab_1793281481718",
       "mod_tpl": {
         "desc": "El objetivo tira VOL +MOD o sufre un Vínculo Parasítico. Mientras permanezca activo, esta criatura puede transferirle hasta la mitad del daño que sufra. Esto hará que el daño sea Interno para ambos, ajustando así los impactos recibidos. El afectado puede repetir el tiro para intentar liberarse cada vez que sufra el daño."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El objetivo tira MEN +9 + 2d6 o debe seguir una orden sin negarse, siempre y cuando no atente contra su vida o seres queridos. Si tiene éxito en el tiro, no podrá volverle a afectar con este hechizo. Puede hacer que la orden se cumpla tan tarde como desee. Si tu objetivo tiene 0 Cordura, deberá obedecer sus órdenes durante el resto del combate.",
+      "name": "Geas",
+      "range": "Medio",
+      "tags": [
+        "Mental"
+      ],
+      "ability_id": "ab_1793359948064",
+      "mod_tpl": {
+        "desc": "El objetivo tira MEN +MOD o debe seguir una orden sin negarse, siempre y cuando no atente contra su vida o seres queridos. Si tiene éxito en el tiro, no podrá volverle a afectar con este hechizo. Puede hacer que la orden se cumpla tan tarde como desee. Si tu objetivo tiene 0 Cordura, deberá obedecer sus órdenes durante el resto del combate."
       }
     }
   ],
@@ -114,18 +114,6 @@
       "bonus": "+9 + 2d6"
     },
     {
-      "attacks": 1,
-      "bonus_scaled": false,
-      "cost": 1,
-      "desc": "Se vuelve Invisible hasta que ataque o lance un hechizo.",
-      "name": "Invisibilidad",
-      "tags": [
-        "Ilusorio",
-        "Visual"
-      ],
-      "ability_id": "ab_1793016212873"
-    },
-    {
       "ability_id": "salto-espacial_1778751219905",
       "cost": 1,
       "desc": "Añade +10 a su tiro de Esquiva y se teletransporta un paso al moverse.",
@@ -134,6 +122,17 @@
         "Espacial",
         "Arcano"
       ]
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Un ataque impacta a un doble ilusorio suyo, fallando automáticamente. Esta habilidad no funicona con ataques de área suficientemente grandes ni con criaturas inmunes a ilusiones.",
+      "name": "Doble Ilusorio",
+      "tags": [
+        "Ilusorio"
+      ],
+      "ability_id": "ab_1793360223001"
     }
   ],
   "lore": "",
