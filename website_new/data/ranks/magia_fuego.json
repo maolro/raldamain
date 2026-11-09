@@ -147,9 +147,8 @@
           ],
           "cost": "1 Acción, 2 chi",
           "area": "Esfera pequeña",
-          "crit": "Afectados sufren quemadura media.",
-          "desc": "Crea una explosión centrada en ti que inflige 3d8 + CAR daño Fuego al impactar y una quemadura leve. Si el objetivo ya tiene una quemadura, solo puede defenderse con un tiro de salvación de Voluntad.",
-          "empower": "Aumenta el área de efecto de este hechizo por un paso y el daño por un dado adicional, o ataca de nuevo a todas las criaturas en el área afectada."
+          "desc": "Crea una explosión centrada en ti que inflige 3d8 + CAR daño Fuego al impactar y una quemadura leve. Si el objetivo ya está en llamas, solo puede defenderse con un tiro de salvación de Voluntad.",
+          "empower": "Aumenta el daño de este hechizo por un dado adicional, o ataca de nuevo a todas las criaturas en el área afectada. Si empoderas dos veces, el radio del efecto aumenta a medio."
         },
         {
           "name": "Propulsión",
@@ -159,8 +158,8 @@
           ],
           "cost": "1 Acción, 2 chi",
           "duration": "Concentración",
-          "desc": "Obtienes velocidad de vuelo 2 y Ventaja en tus tiros de Esquiva. No puedes acabar tu turno en el aire.",
-          "empower": "Te mueves un paso y reduces el daño de un ataque enemigo a la mitad. Cuesta 1 reacción.",
+          "desc": "Obtienes velocidad de vuelo 2 hasta que termine este efecto. Además, podrás emplear Esquiva y Parada para defenderte de ataques y quedarte con el resultado que más te convenga. Esto no se acumula con otras habilidades similares.",
+          "empower": "Obtienes +10 en un tiro de Esquiva. ",
           "toggle": {
             "label": "Propulsión",
             "adv": [
@@ -174,10 +173,10 @@
             "Innata",
             "Pasiva"
           ],
-          "desc": "Reduce tu Vitalidad o PV máximos por 2 para reducir el coste de un hechizo en 1 chi (mínimo 1)."
+          "desc": "Puedes reducir tus Impactos máximos por 1 para recuperar 3 chi de tu reserva. Esta habilidad solo puede emplearse una vez por ronda."
         }
       ],
-      "passive": "Los dados de daño base aumentan a d10."
+      "passive": "Los dados de daño base aumentan a d8."
     },
     {
       "rank": "IV",
