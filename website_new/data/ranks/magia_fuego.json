@@ -183,8 +183,7 @@
     {
       "rank": "IV",
       "title": "Experto",
-      "draft": true,
-      "passive": "Aumenta estadística de Carisma por 1",
+      "draft": false,
       "abilities": [
         {
           "name": "Renacer del Fénix",
