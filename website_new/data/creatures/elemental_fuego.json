@@ -128,13 +128,7 @@
     }
   ],
   "lore": "Los elementales de fuego son espíritus convocados al mundo material mediante rituales de invocación de gran potencia. Su forma fluctúa sin cesar, adoptando vagamente la silueta de un humanoide envuelto en llamas vivas. Son criaturas de instinto puro con tendencias a destruir todo cuanto alcanzan y resultan extraordinariamente peligrosas para los invocadores sin experiencia.",
-  "tags": [
-    "Elemental",
-    "Fuego",
-    "Invocación",
-    "Vuelo",
-    "Élite"
-  ],
+  "tags": [],
   "level": 5,
   "umbrales": [
     {
