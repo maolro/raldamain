@@ -230,8 +230,9 @@
     "type": "No-muerto",
     "level": 5,
     "size": "Mediano",
-    "image": "",
-    "description": ""
+    "image": "espectro.jpg",
+    "description": "",
+    "image_v": "e3776351fb"
   },
   {
     "id": "sombra",
