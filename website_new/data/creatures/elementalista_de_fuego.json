@@ -135,13 +135,14 @@
     },
     {
       "cost": 1,
-      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y se mueve hasta un paso sin provocar aperturas.",
       "name": "Evasión",
       "tags": [
         "Reflejos",
         "Defensiva"
       ],
-      "ability_id": "evasion_1778692238910"
+      "ability_id": "evasion_1778692238910",
+      "type": "reaction"
     }
   ],
   "lore": "",
