@@ -4275,5 +4275,28 @@
     "move": "",
     "attacks": 1,
     "desc": "Este ataque prende objetos inflamables en su área afectada. Mientras mantengas la concentración, puedes emplear una Acción para mover este efecto un paso y atacar a cada objetivo en su camino. "
+  },
+  {
+    "id": "ab_1794263600430",
+    "name": "Bolas de Fuego",
+    "type": "action",
+    "tier": "IV",
+    "tags": [
+      "Fuego",
+      "Ataque",
+      "Area"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Fuego",
+    "save": "",
+    "move": "",
+    "attacks": 2,
+    "desc": "Prende objetos inflamables en el área afectada."
   }
 ]
