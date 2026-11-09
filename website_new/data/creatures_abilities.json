@@ -4188,5 +4188,27 @@
         "Efectos Individuales"
       ]
     }
+  },
+  {
+    "id": "ab_1794233069793",
+    "name": "Doble Barrido",
+    "type": "action",
+    "tier": "IV",
+    "tags": [
+      "Arma",
+      "Coloso"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Adyacente",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Cortante/Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 2,
+    "desc": "Si mejora su primer ataque con una habilidad de cualquier tipo, esta se aplicará a ambos ataques."
   }
 ]
