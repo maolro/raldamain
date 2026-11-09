@@ -1,0 +1,43 @@
+{
+  "id": "humatiel",
+  "name": "Humatiel",
+  "type": "Celestial",
+  "size": "Mediano",
+  "level": 8,
+  "description": "LEGION ARCHON",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5",
+    "VOL": "+5",
+    "MEN": "+5"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General",
+      "tier_tpl": "T"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+9 + 2d6"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false
+}
