@@ -33,7 +33,7 @@
     "image": "ira.jpg",
     "description": "Canalizas tu furia para superar los límites físicos. Entras en un trance de combate que incrementa tu fuerza y resistencia a costa de tu defensa y racionalidad.",
     "draft": true,
-    "partial": true
+    "partial": false
   },
   {
     "id": "reflejos",

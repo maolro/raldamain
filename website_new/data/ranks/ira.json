@@ -162,7 +162,7 @@
     {
       "rank": "V",
       "title": "Maestro",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Superar los Límites",
@@ -170,9 +170,9 @@
             "Ira",
             "Mejora"
           ],
-          "cost": "3 chi",
-          "duration": "5 Rondas",
-          "desc": "Obtienes 20 de Vitalidad Temporal. Tus puntuaciones de FUE, DES y CON aumentan a 12. Tu DEF aumenta en +5. Cada ronda, reduces el coste de chi de una técnica en 1. El efecto termina si pierdes toda la Vitalidad Temporal.",
+          "cost": "1 Acción, 3 chi",
+          "duration": "6 Rondas",
+          "desc": "Entras en un estado que te otorga 6 Impactos temporales, aumenta tus tres estadísticas físicas a 12 y aumenta tu umbral físico por un valor igual a tu Rango. Esta habilidad durará hasta que salgas de Ira y no puede volver a activarse hasta que pasen seis rondas.",
           "toggle": {
             "label": "Superar los Límites",
             "stat_min": 12,
@@ -183,10 +183,11 @@
             ],
             "umbrales": [
               {
-                "value": 5,
+                "value": "RANGO",
                 "categories": "General"
               }
-            ]
+            ],
+            "hits": 6
           }
         },
         {
