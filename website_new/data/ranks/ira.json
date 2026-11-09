@@ -196,7 +196,7 @@
             "Ira",
             "Pasiva"
           ],
-          "desc": "Mientras dure la Ira, puedes luchar a 0 PV o menos sin penalizadores ni tiros de muerte. Ignoras Herido-1, Herido-2 y Herido-3 (permanentes). Al terminar la Ira, si tus PV son inferiores a -CON, mueres instantáneamente."
+          "desc": "Mientras permanezcas en Ira, puede seguir luchando incluso a impactos negativos. No obstante, morirás instsantáneamente si sales de Ira con menos de 0 impactos o llegas a RANGO impactos negativos."
         }
       ]
     }
