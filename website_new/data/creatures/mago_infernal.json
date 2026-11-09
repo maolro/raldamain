@@ -1,0 +1,59 @@
+{
+  "id": "mago_infernal",
+  "name": "Mago Infernal",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 8,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+9+1d6",
+    "VOL": "+9+1d6",
+    "MEN": "+9+2d6"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 15,
+      "categories": "Físico",
+      "tier_tpl": "T+1"
+    },
+    {
+      "value": 15,
+      "categories": "Magia",
+      "tier_tpl": "T+1"
+    }
+  ],
+  "immune": [],
+  "senses": "Vista a Oscuras",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+9 + 2d6"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Esbirro Élite",
+  "save_scale": {
+    "FÍS": "mid",
+    "VOL": "mid",
+    "MEN": "bonus"
+  }
+}
