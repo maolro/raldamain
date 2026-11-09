@@ -2525,7 +2525,7 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Crea una Ola que ataca a todos los objetivos en el área afectada, quienes además deben tener éxito en un tiro de salvación Físico o son empujados un paso y tropezados. Si mantienes la concentración, cada ronda puedes emplear una Acción para mover la ola un paso y atacar a cada objetivo en su camino. "
+    "desc": "Crea una Ola que ataca a todos los objetivos en el área afectada, quienes además deben tener éxito en un tiro FÍS +MOD o son empujados un paso y tropezados. Si mantienes la concentración, cada ronda puedes emplear una Acción para mover la ola un paso y atacar a cada objetivo en su camino. "
   },
   {
     "id": "ab_1793292744266",

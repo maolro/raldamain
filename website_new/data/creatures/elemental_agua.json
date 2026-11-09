@@ -58,17 +58,21 @@
       "area": "Radio Corto",
       "attacks": 1,
       "bonus_scaled": false,
-      "cost": 2,
+      "cost": "2",
       "damage_base_type": "Contundente",
       "damage_tier": "HIGH",
-      "desc": "Crea una Ola que ataca a todos los objetivos en el área afectada, quienes además deben tener éxito en un tiro de salvación Físico o son empujados un paso y tropezados. Si mantienes la concentración, cada ronda puedes emplear una Acción para mover la ola un paso y atacar a cada objetivo en su camino. ",
+      "desc": "Crea una Ola que ataca a todos los objetivos en el área afectada, quienes además deben tener éxito en un tiro FÍS +MOD o son empujados un paso y tropezados. Si mantienes la concentración, cada ronda puedes emplear una Acción para mover la ola un paso y atacar a cada objetivo en su camino. ",
       "name": "Ola Chocante",
       "range": "Medio",
       "tags": [
         "Agua"
       ],
       "ability_id": "ab_1793292674641",
-      "damage": "4d6 + 5 Contundente"
+      "damage": "",
+      "type": "action",
+      "bonus": "",
+      "save": "",
+      "move": ""
     },
     {
       "attacks": 0,
