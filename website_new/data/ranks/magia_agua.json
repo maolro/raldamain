@@ -151,7 +151,7 @@
           "cost": "2 Acciones, 2 Chi",
           "area": "Radio grande",
           "duration": "Concentración",
-          "desc": "Amplificas tu control elemental sobre el agua en el área afectada, pudiendo subir o bajar su nivel como desees y moverte por ella sin dificultades. Recibes Ventaja en todos tus tiros relacionados con Magia de Agua y tus hechizos de Agua reciben un dado de daño adiciona. Además, el alcance de todos tus efectos aumenta al área afectada y el agua es terreno difícil para criaturas que puedan nadar salvo que tú lo decidas.",
+          "desc": "Amplificas tu control elemental sobre el agua en el área afectada, pudiendo subir o bajar su nivel como desees y moverte por ella sin dificultades. Recibes Ventaja en todos tus tiros relacionados con Magia de Agua y tus hechizos de Agua reciben un dado de daño adicional. Además, el alcance de todos tus efectos aumenta al área afectada y el agua es terreno difícil para criaturas que puedan nadar salvo que tú lo decidas.",
           "toggle": {
             "label": "Maestro del Agua",
             "damage": "+1 dado",
