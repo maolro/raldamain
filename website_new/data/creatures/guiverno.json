@@ -1,0 +1,179 @@
+{
+  "id": "guiverno",
+  "name": "Guiverno",
+  "type": "Monstruo",
+  "size": "Grande",
+  "level": 8,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+9+2d6",
+    "VOL": "+9+2d6",
+    "MEN": "+9"
+  },
+  "umbrales": [
+    {
+      "value": 10,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 20,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [],
+  "senses": "Olfato",
+  "speed": "Paso 1, Vuelo 2",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +9 + 2d6 o sufre un Veneno Mortal. Mientras permanezca envenenado, sufre 3d8 daño Necrótico y Enfermado I, y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo.",
+      "name": "Veneno Mortal",
+      "tags": [
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793203194188",
+      "mod_tpl": {
+        "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Mortal. Mientras permanezca envenenado, sufre DD daño Necrótico y Enfermado I, y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Hace dos ataques de arma o con hechizos de Rango I que cuesten una Acción. Esta habilidad no consume una ranura.",
+      "name": "Multiataque",
+      "tags": [],
+      "ability_id": "ab_1794234218339"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage": "3d8 + 6 Perforante",
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "desc": "El objetivo está Enredado (+9 + 2d6 FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada.",
+      "name": "Mordisco",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1793008689989",
+      "mod_tpl": {
+        "desc": "El objetivo está Enredado (+MOD FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada."
+      },
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "name": "Aguijón",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1791818158790",
+      "damage": "3d8 + 6 Perforante",
+      "bonus": "+9 + 2d6",
+      "desc": "Provoca Veneno al impactar."
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Salta dos pasos hacia el cielo y ataca a cada objetivo en una columna media, aumentando el daño base por dos dados. Si impacta a un objetivo volador, deberá tener éxito en un tiro FÍS +9 + 2d6 o caerá al suelo.",
+      "name": "Tajo Aéreo",
+      "tags": [
+        "Duelo",
+        "Marcial",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793232509904",
+      "mod_tpl": {
+        "desc": "Salta dos pasos hacia el cielo y ataca a cada objetivo en una columna media, aumentando el daño base por dos dados. Si impacta a un objetivo volador, deberá tener éxito en un tiro FÍS +MOD o caerá al suelo."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Hace tres ataques de coste máximo una Acción. Cada ataque consecutivo recibirá un modificador +2 al tiro de ataque y daño. ",
+      "name": "Combo Mortal",
+      "tags": [
+        "Duelo",
+        "Marcial",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793232584202"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Divide la cantidad de impactos recibidos por un ataque a la mitad, redondeando hacia abajo.",
+      "name": "Resiliencia",
+      "tags": [
+        "Fortitud"
+      ],
+      "ability_id": "ab_1793208815332"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "En respuesta a que un enemigo se aleje, puede moverse un paso para perseguirlo y hacerle un ataque inmediato contra el cual tendrá Desventaja defendiéndose",
+      "name": "Persecución",
+      "tags": [
+        "Marcial"
+      ],
+      "ability_id": "ab_1793014811103"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Esbirro Élite",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}
