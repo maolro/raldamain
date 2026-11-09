@@ -422,5 +422,15 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "elemental_agua_anciano",
+    "name": "Elemental de Agua Primigenio",
+    "type": "Espíritu",
+    "level": 11,
+    "size": "Gigante",
+    "image": "creatures/elemental_agua.jpg",
+    "description": "",
+    "image_v": "4a0b8229b0"
   }
 ]
