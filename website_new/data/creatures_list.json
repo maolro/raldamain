@@ -411,5 +411,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "sectario",
+    "name": "Sectario",
+    "type": "Humanoide",
+    "level": 2,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
