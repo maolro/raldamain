@@ -33,9 +33,10 @@
     {
       "attacks": 1,
       "bonus_scaled": true,
-      "cost": "1",
+      "cost": 1,
       "damage_base_type": "Contundente",
-      "desc": "Afecta hasta a tres objetivos. Al impactar, los afectados están Enredados (FÍS +MOD para escapar) y puede arrastrarlos hasta un paso. ",
+      "damage_tier": "LOW",
+      "desc": "Afecta hasta a tres objetivos. Al impactar, los afectados están Enredados (FÍS +9 + 2d6 para escapar) y puede arrastrarlos hasta un paso. ",
       "name": "Tentáculo Múltiple",
       "range": "Cercano",
       "tags": [
@@ -46,16 +47,10 @@
       ],
       "ability_id": "ab_1793212118942",
       "mod_tpl": {
-        "damage": "LOW Contundente",
         "desc": "Afecta hasta a tres objetivos. Al impactar, los afectados están Enredados (FÍS +MOD para escapar) y puede arrastrarlos hasta un paso. "
       },
-      "damage": "",
-      "type": "action",
-      "bonus": "",
-      "area": "",
-      "save": "",
-      "move": "",
-      "damage_tier": "LOW"
+      "damage": "2d8 + 6 Contundente",
+      "bonus": "+9 + 2d6"
     },
     {
       "attacks": 1,
