@@ -1,0 +1,44 @@
+{
+  "id": "gigante_sombrio",
+  "name": "Gigante Sombrío",
+  "type": "Monstruo",
+  "size": "Enorme",
+  "level": 14,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5",
+    "VOL": "+5",
+    "MEN": "+5"
+  },
+  "umbrales": [
+    {
+      "value": 18,
+      "categories": "General",
+      "tier_tpl": "T"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+13 + 3d6"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Esbirro Élite"
+}
