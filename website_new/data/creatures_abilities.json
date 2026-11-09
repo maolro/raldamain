@@ -4217,7 +4217,7 @@
     "type": "action",
     "tier": "III",
     "tags": [],
-    "cost": "",
+    "cost": "1",
     "bonus": "",
     "bonus_scaled": false,
     "range": "",

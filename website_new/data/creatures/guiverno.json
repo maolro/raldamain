@@ -52,7 +52,17 @@
       "desc": "Hace dos ataques de arma o con hechizos de Rango I que cuesten una Acción. Esta habilidad no consume una ranura.",
       "name": "Multiataque",
       "tags": [],
-      "ability_id": "ab_1794234218339"
+      "ability_id": "ab_1794234218339",
+      "type": "action",
+      "cost": "1",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
     },
     {
       "attacks": 1,

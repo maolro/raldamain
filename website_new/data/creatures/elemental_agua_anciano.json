@@ -48,7 +48,16 @@
       "name": "Multiataque",
       "tags": [],
       "ability_id": "ab_1794234218339",
-      "cost": 1
+      "cost": "1",
+      "type": "action",
+      "bonus": "",
+      "range": "",
+      "area": "",
+      "damage": "",
+      "damage_tier": "",
+      "damage_base_type": "",
+      "save": "",
+      "move": ""
     },
     {
       "attacks": 1,
