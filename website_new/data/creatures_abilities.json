@@ -4165,10 +4165,11 @@
   {
     "id": "ab_1794227535238",
     "name": "Tropa",
-    "type": "action",
+    "type": "passive",
     "tier": "I",
     "tags": [
-      "Pasiva"
+      "Pasiva",
+      "Innata"
     ],
     "cost": "",
     "bonus": "",
