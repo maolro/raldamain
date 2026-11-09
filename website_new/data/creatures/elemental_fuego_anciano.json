@@ -7,96 +7,91 @@
   "image": "creatures/elemental_fuego.jpg",
   "hits": 2,
   "saves": {
-    "FÍS": "+11+2d6",
-    "VOL": "+11+2d6",
+    "FÍS": "+11+3d6",
+    "VOL": "+11+3d6",
     "MEN": "+11"
   },
   "damageThreshold": {
     "magic": 28,
     "other": 24
   },
-  "immune": [
-    "Efectos físicos no mágicos",
-    "Veneno",
-    "Necrótico",
-    "Efectos mentales",
-    "Miedo",
-    "Fuego",
-    "Terreno difícil"
-  ],
+  "immune": [],
   "senses": "Sentido Vital",
-  "speed": "Paso 10, Vuelo 10",
+  "speed": "Paso 1, Vuelo 2",
   "combat": {
     "reacciones": 1,
     "acciones": 0
   },
   "traits": [
     {
+      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Fuego, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 2d8 + 7  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo. Puede también obtener la habilidad Absorber Fuego sin importar su nivel, pero perderá todos sus Umbrales.",
+      "effects": {
+        "immune": [
+          "Físicos",
+          "Fuego",
+          "Aflicciones",
+          "Mentales",
+          "Miedo"
+        ]
+      },
       "name": "Cuerpo de Fuego",
-      "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos físicos (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán 4d8 daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo.",
-      "id": "cuerpo-de-fuego_1778692691656",
-      "type": "passive",
       "tags": [
         "Fuego"
-      ]
+      ],
+      "ability_id": "cuerpo-de-fuego_1778692691656",
+      "mod_tpl": {
+        "desc": "Puede colarse por cualquier abertura, por pequeña que sea. Es inmune a todos los efectos Físicos, Fuego, Aflicciones, Mentales y Miedo (ya incluido en sus inmunidades) e incendia todos los espacios que ocupa. Todas las criaturas que entren en un espacio que ocupa o le toquen sufrirán LOW  daño Fuego de manera automática. Los ataques de agua lo dañan con normalidad, y si queda completamente sumergido, sufre 1 impacto automáticamente. No obstante, al estar hecho de Fuego un elementalista puede manipularlo forzosamente, lo cual le afecta de igual manera que un Exorcismo. Puede también obtener la habilidad Absorber Fuego sin importar su nivel, pero perderá todos sus Umbrales."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al principio de su turno, recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra rodeado de llamas o es impactado por un efecto de Fuego que atraviese su umbral.",
+      "name": "Absorber Fuego",
+      "tags": [
+        "Fuego"
+      ],
+      "ability_id": "ab_1793623604756"
     }
   ],
   "actions": [
     {
-      "id": "ab_1778690641452",
-      "type": "action",
-      "tags": [
-        "Fuego",
-        "Ataque",
-        "Area"
-      ],
-      "cost": "1",
-      "bonus": "+11+3d6",
-      "area": "Radio 2",
-      "damage": "3d8 + 7 Fuego",
-      "save": "",
-      "move": 5,
+      "area": "Radio Corto",
       "attacks": 2,
-      "desc": "Quema objetos inflamables que impacte.",
-      "range": "8",
-      "name": "Bolas de Fuego"
-    },
-    {
-      "name": "Aliento de Fuego",
-      "bonus": "+11+3d6",
-      "area": "Cono 12",
-      "damage": "4d8 + 7 Fuego",
-      "move": "5",
+      "bonus_scaled": true,
       "cost": 1,
-      "desc": "Quemará los objetos inflamables en el área afectada. Al herir provocará una quemadura a los objetivos que lleven objetos metálicos o inflamables.",
-      "range": "1",
-      "id": "aliento-de-fuego_1778692098257",
-      "type": "action",
-      "tags": [
-        "Fuego",
-        "Ataque",
-        "Area"
-      ]
-    },
-    {
-      "name": "Torbellino de Fuego",
-      "cost": 1,
-      "bonus": "+11+3d6",
-      "damage": "4d8 + 7 Fuego",
-      "desc": "Todos los objetivos impactados sufren una quemadura. Este ataque llena los espacios por los que pase con fuego y solo podrá atacar a objetivos en su trayectoria.",
+      "damage_base_type": "Fuego",
+      "damage_tier": "MID",
+      "desc": "Prende objetos inflamables en el área afectada.",
+      "name": "Bolas de Fuego",
+      "range": "Medio",
       "tags": [
         "Fuego",
         "Ataque",
         "Area"
       ],
-      "ability_id": "ola-de-tierra_1778747893560",
-      "id": "ola-de-tierra_1778747893560",
-      "type": "action",
-      "move": 10,
-      "area": "Linea 10x4",
-      "range": "1",
+      "ability_id": "ab_1794263600430",
+      "damage": "3d8 + 7 Fuego",
+      "bonus": "+11 + 3d6"
+    },
+    {
+      "area": "Cilindro Grande",
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 2,
+      "damage_base_type": "Fuego",
       "damage_tier": "HIGH",
-      "damage_base_type": "Fuego"
+      "desc": "Este ataque prende objetos inflamables en su área afectada. Mientras mantengas la concentración, puedes emplear una Acción para mover este efecto un paso y atacar a cada objetivo en su camino. ",
+      "name": "Torbellino de Fuego",
+      "range": "Medio",
+      "tags": [
+        "Fuego",
+        "Ataque",
+        "Area"
+      ],
+      "ability_id": "ab_1794263445958",
+      "damage": "4d8 + 7 Fuego",
+      "bonus": "+11 + 3d6"
     }
   ],
   "reactions": [
@@ -150,9 +145,15 @@
   "umbrales": [
     {
       "value": 20,
-      "categories": "General"
+      "categories": "General",
+      "tier_tpl": "T+1"
     }
   ],
   "published": false,
-  "image_v": "db8a2bf7a8"
+  "image_v": "db8a2bf7a8",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
 }
