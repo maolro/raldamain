@@ -1,7 +1,6 @@
 {
   "id": "profundo",
   "name": "Profundo",
-  "type": "Abisal",
   "size": "Mediano",
   "level": 2,
   "description": "",
@@ -164,5 +163,6 @@
     "FÍS": "bonus",
     "VOL": "bonus",
     "MEN": "low"
-  }
+  },
+  "type": "Abisal"
 }
