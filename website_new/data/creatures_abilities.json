@@ -4252,5 +4252,28 @@
     "move": "",
     "attacks": 1,
     "desc": "Provoca el efecto Roto I a todos los objetivos en el área afectada y los empuja dos pasos. Rompe además todos los muros y barreras en su camino."
+  },
+  {
+    "id": "ab_1794263445958",
+    "name": "Torbellino de Fuego",
+    "type": "action",
+    "tier": "IV",
+    "tags": [
+      "Fuego",
+      "Ataque",
+      "Area"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "Cilindro Grande",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Fuego",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Este ataque prende objetos inflamables en su área afectada. Mientras mantengas la concentración, puedes emplear una Acción para mover este efecto un paso y atacar a cada objetivo en su camino. "
   }
 ]
