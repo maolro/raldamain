@@ -137,7 +137,7 @@
     {
       "rank": "IV",
       "title": "Experto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Golpe de Adrenalina",
@@ -145,16 +145,17 @@
             "Ira",
             "Pasiva"
           ],
-          "desc": "Mientras dure la Ira, obtienes 1 acción adicional por turno y 1 Reacción adicional por ronda. Además, no puedes ser sorprendido."
+          "desc": "Al entrar en Ira, recibes una Acción adicional y aumentas todas tus velocidades por un paso.",
+          "condition": "Ira"
         },
         {
-          "name": "Furia Imparable",
+          "name": "Voluntad Indomable",
           "tags": [
             "Ira",
             "Reacción"
           ],
           "cost": "2 chi",
-          "desc": "Cuando un enemigo detiene o reduce tu ataque (mediante magia, escudos o esquiva), cancelas su defensa y aplicas el daño normalmente. El defensor puede evitarlo pagando 2 recursos adicionales o sacrificando escudos. [AVISO AUTOR: No está claro qué cuenta como 'recursos extra' ni cuántos escudos hay que sacrificar.]"
+          "desc": "Obtienes +10 en un tiro de Salvación de cualquier tipo. Esta habilidad solo puede usarse si te encuentras en Ira."
         }
       ]
     },
