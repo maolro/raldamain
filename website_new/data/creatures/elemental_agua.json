@@ -121,12 +121,7 @@
     }
   ],
   "lore": "Los elementales de agua son masas vivas de líquido en perpetuo movimiento. Pacientes y deliberados, fluyen alrededor de los obstáculos antes de golpear con la fuerza de las mareas. Absorben el calor del entorno, sofocan el fuego y asfixian a sus enemigos con una eficiencia silenciosa y letal.",
-  "tags": [
-    "Elemental",
-    "Agua",
-    "Invocación",
-    "Élite"
-  ],
+  "tags": [],
   "level": 5,
   "umbrales": [
     {
