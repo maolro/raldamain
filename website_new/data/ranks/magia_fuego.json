@@ -136,7 +136,7 @@
     {
       "rank": "III",
       "title": "Profesional",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Maestro de las Llamas",
@@ -193,8 +193,8 @@
             "Reacción",
             "Sanación"
           ],
-          "cost": "1 Acción/Reacción, 1 chi",
-          "desc": "Recuperas Vitalidad igual a tu Rango x 2 y reduces el nivel de Herido (permanente) por un paso. Requiere estar en un lugar en llamas o sufrir un ataque de daño Fuego, cuyo daño se anula de inmediato."
+          "cost": "1 Chi",
+          "desc": "Te recuperas un Impacto o te curas de un efecto de estado. Para emplear esta habilidad debes estar en un lugar en llamas o sufrir un ataque de daño Fuego, cuyo daño se anula de inmediato."
         },
         {
           "name": "Torbellino de Fuego",
@@ -203,35 +203,23 @@
             "Ataque",
             "Área"
           ],
-          "cost": "2 acciones, 2 chi",
+          "cost": "1 Acción, 2 chi",
           "range": "Medio",
-          "area": "Cilindro pequeño",
+          "area": "Columna grande",
           "duration": "Concentración",
           "crit": "Afectados sufren quemadura media.",
-          "desc": "Crea un torbellino móvil que inflige 3d8 + CAR daño Fuego y una quemadura. Deja un rastro de Muro de Llamas y puede moverse como acción.",
-          "empower": "Crea un torbellino extra o aumenta el daño de un torbellino en 1d8 y su alcance un paso durante una ronda."
+          "desc": "Este ataque prende objetos inflamables en su área afectada. Mientras mantengas la concentración, puedes emplear una Acción para mover este efecto un paso y atacar a cada objetivo en su camino.",
+          "empower": "Crea un torbellino adicional en otra posición.",
+          "damage": "3d8 + CAR",
+          "damage_type": "Fuego"
         },
         {
-          "name": "Maestro de las Llamas",
+          "name": "Elemento del Poder",
           "tags": [
-            "Fuego",
-            "Duradera"
+            "Pasiva",
+            "Fuego"
           ],
-          "cost": "2 acciones, 2 chi",
-          "duration": "Concentración",
-          "desc": "Obtienes Ventaja en todos tus tiros relacionados con Magia de Fuego, recibes un dado de daño en tus tiros relacionados con ellos (esto se aplica también a Magia de Tormenta y Aire) y el espacio a distancia media de ti cuenta como calor extremo. Recibes una cantidad de contadores de escudo igual a tu Rango.",
-          "empower": "El siguiente hechizo de fuego cuesta -1 acción.",
-          "toggle": {
-            "label": "Maestro de las Llamas",
-            "adv": [
-              "Magia"
-            ],
-            "adv_tags": [
-              "Fuego"
-            ],
-            "damage": "+1 dado",
-            "ce": "rango"
-          }
+          "desc": "Una vez por ronda, puedes reducir tus Impactos máximos por 1 para recuperar 3 chi de tu reserva."
         }
       ]
     },
