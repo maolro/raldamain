@@ -178,7 +178,7 @@
           }
         }
       ],
-      "passive": "Los dados de daño base aumentan a d8."
+      "passive": "Todos tus hechizos de Fuego sustituyen sus dados de daño por d8."
     },
     {
       "rank": "IV",
