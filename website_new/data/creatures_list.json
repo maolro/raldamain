@@ -432,5 +432,15 @@
     "image": "creatures/elemental_agua.jpg",
     "description": "",
     "image_v": "4a0b8229b0"
+  },
+  {
+    "id": "elemental_fuego_anciano",
+    "name": "Elemental de Fuego Primigenio",
+    "type": "Espíritu",
+    "level": 11,
+    "size": "Gigante",
+    "image": "creatures/elemental_fuego.jpg",
+    "description": "",
+    "image_v": "db8a2bf7a8"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "id": "elemental_fuego_anciano",
   "name": "Elemental de Fuego Primigenio",
-  "tier": "Esbirro Élite V",
+  "tier": "Esbirro Élite",
   "type": "Espíritu",
   "size": "Gigante",
   "image": "creatures/elemental_fuego.jpg",
@@ -137,7 +137,7 @@
       "tier_tpl": "T+1"
     }
   ],
-  "published": false,
+  "published": true,
   "image_v": "db8a2bf7a8",
   "save_scale": {
     "FÍS": "bonus",
