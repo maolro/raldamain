@@ -2516,7 +2516,7 @@
     ],
     "cost": "2",
     "bonus": "",
-    "bonus_scaled": false,
+    "bonus_scaled": true,
     "range": "Medio",
     "area": "Radio Corto",
     "damage": "",

@@ -57,7 +57,7 @@
     {
       "area": "Radio Corto",
       "attacks": 1,
-      "bonus_scaled": false,
+      "bonus_scaled": true,
       "cost": "2",
       "damage_base_type": "Contundente",
       "damage_tier": "HIGH",
