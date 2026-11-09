@@ -1,0 +1,44 @@
+{
+  "id": "puragaus",
+  "name": "Puragaus",
+  "type": "Infernal",
+  "size": "Mediano",
+  "level": 17,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5",
+    "VOL": "+5",
+    "MEN": "+5"
+  },
+  "umbrales": [
+    {
+      "value": 24,
+      "categories": "General",
+      "tier_tpl": "T"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+15 + 4d6"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Esbirro Élite"
+}
