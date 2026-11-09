@@ -4229,5 +4229,28 @@
     "move": "",
     "attacks": 1,
     "desc": "Hace dos ataques de arma o con hechizos de Rango I que cuesten una Acción. Esta habilidad no consume una ranura."
+  },
+  {
+    "id": "ab_1794255423650",
+    "name": "Taladro Hidráulico",
+    "type": "action",
+    "tier": "IV",
+    "tags": [
+      "Agua",
+      "Ataque",
+      "Area"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "",
+    "area": "Línea media",
+    "damage": "",
+    "damage_tier": "HIGH",
+    "damage_base_type": "Contundente",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Provoca el efecto Roto I a todos los objetivos en el área afectada y los empuja dos pasos. Rompe además todos los muros y barreras en su camino."
   }
 ]
