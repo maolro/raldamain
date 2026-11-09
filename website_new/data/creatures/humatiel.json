@@ -4,7 +4,6 @@
   "type": "Celestial",
   "size": "Mediano",
   "level": 8,
-  "description": "LEGION ARCHON",
   "hits": 2,
   "saves": {
     "FÍS": "+5",
@@ -37,7 +36,7 @@
       "bonus": "+9 + 2d6"
     }
   ],
-  "lore": "",
+  "lore": "Legionario Celestial",
   "tags": [],
   "published": false
 }
