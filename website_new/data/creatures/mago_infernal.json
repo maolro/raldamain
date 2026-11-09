@@ -36,7 +36,58 @@
     "reacciones": 1
   },
   "traits": [],
-  "actions": [],
+  "actions": [
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Fuego",
+      "damage_tier": "MID",
+      "desc": "Quema los objetos inflamables en el área afectada.",
+      "name": "Bola de Fuego",
+      "range": "Medio",
+      "tags": [
+        "Fuego",
+        "Ataque",
+        "Area"
+      ],
+      "ability_id": "ab_1793280610420",
+      "damage": "2d8 + 6 Fuego",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Los afectados deben tener éxito en un tiro MEN +9 + 2d6 o sufren 2d8 + 6 daño Psíquico y Confundido II hasta que se recuperen. Cada ronda pueden tirar para recuperarse del efecto.",
+      "name": "Sobrecarga Mental",
+      "range": "Medio",
+      "tags": [
+        "Mental"
+      ],
+      "ability_id": "ab_1793360035749",
+      "mod_tpl": {
+        "desc": "Los afectados deben tener éxito en un tiro MEN +MOD o sufren MID daño Psíquico y Confundido II hasta que se recuperen. Cada ronda pueden tirar para recuperarse del efecto."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Elimina un efecto de estado que tenga un objetivo, o provoca una maldición menor a un objetivo de la cual se defenderá con un tiro de VOL +9 + 2d6. Si fracasa, podrás provocarle Desventaja en todos sus tiros relacionados con una estadística durante el resto del combate o un efecto equivalente, y puede repetir el tiro cada ronda para recuperarse. Si tiene éxito en el tiro, no podrá volver a ser afectado por esta habilidad en el resto del combate. Puede provocar otras maldiciones a discreción del DJ.",
+      "name": "Manifestación Divina",
+      "range": "Medio",
+      "tags": [
+        "Divina"
+      ],
+      "ability_id": "ab_1794222001221",
+      "mod_tpl": {
+        "desc": "Elimina un efecto de estado que tenga un objetivo, o provoca una maldición menor a un objetivo de la cual se defenderá con un tiro de VOL +MOD. Si fracasa, podrás provocarle Desventaja en todos sus tiros relacionados con una estadística durante el resto del combate o un efecto equivalente, y puede repetir el tiro cada ronda para recuperarse. Si tiene éxito en el tiro, no podrá volver a ser afectado por esta habilidad en el resto del combate. Puede provocar otras maldiciones a discreción del DJ."
+      }
+    }
+  ],
   "reactions": [
     {
       "name": "Parada / Esquiva",
@@ -45,6 +96,28 @@
         "bonus": "+MOD"
       },
       "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Se vuelve Invisible hasta que ataque o lance un hechizo.",
+      "name": "Invisibilidad",
+      "tags": [
+        "Ilusorio",
+        "Visual"
+      ],
+      "ability_id": "ab_1793016212873"
+    },
+    {
+      "ability_id": "salto-espacial_1778751219905",
+      "cost": 1,
+      "desc": "Añade +10 a su tiro de Esquiva y se teletransporta un paso al moverse.",
+      "name": "Salto Espacial",
+      "tags": [
+        "Espacial",
+        "Arcano"
+      ]
     }
   ],
   "lore": "",
