@@ -39,14 +39,15 @@
     {
       "attacks": 1,
       "bonus_scaled": false,
-      "desc": "Sus ataques de armas provocan DD daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +MOD o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación. Este daño adicional no se acumula con otras habilidades. ",
+      "desc": "Sus ataques de armas provocan 3d8 daño adicional de un elemento de su eleccion. Además, al impactar a un enemigo este tira VOL +9 + 2d6 o quedará maldito, teniendo así Desventaja en todos los tiros relacionados con una estadística de su elección hasta que se recupere (podrá repetir el tiro cada ronda). Si tiene éxito en el tiro, no podrá volver a ser maldito. Puede provocar otras maldiciones a discreción del DJ, las cuales pueden tener otras condiciones de activación y eliminación.",
       "effects": {
         "extra_damage": [
           {
             "dice": "DD",
             "type": "Fuego",
             "on": "fisicos",
-            "choose": true
+            "choose": true,
+            "dice_value": "3d8"
           }
         ]
       },
@@ -84,8 +85,8 @@
         "Ataque"
       ],
       "ability_id": "ab_1793105102759",
-      "damage": "",
-      "bonus": "",
+      "damage": "3d8 + 6 Cortante",
+      "bonus": "+9 + 2d6",
       "type": "action",
       "range": "Adyacente",
       "area": "",
@@ -232,5 +233,7 @@
     "FÍS": "mid",
     "VOL": "mid",
     "MEN": "bonus"
-  }
+  },
+  "image": "abelardo_guiomar.jpg",
+  "image_v": "84baa8aff8"
 }
