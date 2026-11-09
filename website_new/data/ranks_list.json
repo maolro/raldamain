@@ -324,15 +324,6 @@
     "partial": true
   },
   {
-    "id": "artes_marciales",
-    "name": "Artes Marciales",
-    "category": "Marcial",
-    "image": "artes_marciales.jpg",
-    "description": "",
-    "draft": true,
-    "partial": false
-  },
-  {
     "id": "quimica",
     "name": "Química",
     "category": "Ciencia",
