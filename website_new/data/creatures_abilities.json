@@ -4119,5 +4119,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Obtiene +2 en su siguiente ataque. Si impacta, roba un objeto pequeño que lleve su objetivo y no se encuentre enganchado. Esta habilidad solo funciona si su objetivo está adyacente."
+  },
+  {
+    "id": "ab_1794222001221",
+    "name": "Manifestación Divina",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Divina"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Elimina un efecto de estado que tenga un objetivo, o provoca una maldición menor a un objetivo de la cual se defenderá con un tiro de VOL +MOD. Si fracasa, podrás provocarle Desventaja en todos sus tiros relacionados con una estadística durante el resto del combate o un efecto equivalente, y puede repetir el tiro cada ronda para recuperarse. Si tiene éxito en el tiro, no podrá volver a ser afectado por esta habilidad en el resto del combate. Puede provocar otras maldiciones a discreción del DJ."
   }
 ]
