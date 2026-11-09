@@ -7,8 +7,8 @@
   "description": "",
   "hits": 2,
   "saves": {
-    "FÍS": "+5",
-    "VOL": "+5",
+    "FÍS": "+7+2d6",
+    "VOL": "+7+1d6",
     "MEN": "+7"
   },
   "umbrales": [
@@ -16,6 +16,11 @@
       "value": 8,
       "categories": "General",
       "tier_tpl": "T"
+    },
+    {
+      "value": 16,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
     }
   ],
   "immune": [],
@@ -25,8 +30,101 @@
     "acciones": 2,
     "reacciones": 1
   },
-  "traits": [],
-  "actions": [],
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es una tropa de criaturas de más bajo nivel. Es Inmune a efectos de un único objetivo y los ataques individuales no podrán provocarle más de un impacto. No obstante, todo el daño de área que sufra contará como si fuera daño Fuerza. ",
+      "effects": {
+        "immune": [
+          "Efectos Individuales"
+        ]
+      },
+      "name": "Tropa",
+      "tags": [
+        "Pasiva",
+        "Innata"
+      ],
+      "ability_id": "ab_1794227535238"
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Cortante",
+      "damage_tier": "MID",
+      "name": "Espada",
+      "range": "Adyacente",
+      "tags": [
+        "Arma",
+        "Fisico",
+        "Ataque"
+      ],
+      "ability_id": "ab_1793105102759",
+      "damage": "3d6 + 5 Cortante",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "HIGH",
+      "desc": "Debe emplear una Acción para recargar. ",
+      "name": "Fusil",
+      "range": "Lejano",
+      "tags": [
+        "Arma"
+      ],
+      "ability_id": "ab_1794055098497",
+      "damage": "4d6 + 5 Perforante",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
+      "tags": [
+        "Presencia",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793014528491"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Aumenta el daño de un ataque por un dado y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro FÍS +7 + 2d6 o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo.",
+      "name": "Gran Barrido",
+      "tags": [
+        "Mejora",
+        "Maniobra",
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "ab_1791813129637",
+      "mod_tpl": {
+        "desc": "Aumenta el daño de un ataque por un dado y afecta a todos los objetivos en un radio corto. Además, aquellos que lo Esquiven exitosamente deben tener éxito en un tiro FÍS +MOD o son movidos un paso y sufren Desventaja en su siguiente tiro defensivo."
+      }
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque recibe un modificador +2, aumenta su daño base por un dado y provoca Herido I al impactar.",
+      "name": "Ataque Furtivo",
+      "tags": [
+        "Marcial",
+        "Mejora",
+        "Asesino"
+      ],
+      "ability_id": "ab_1791817547641"
+    }
+  ],
   "reactions": [
     {
       "name": "Parada / Esquiva",
@@ -35,6 +133,26 @@
         "bonus": "+MOD"
       },
       "bonus": "+7 + 2d6"
+    },
+    {
+      "cost": 1,
+      "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba o reduce un efecto de estado por un paso.",
+      "name": "Segundo Aliento",
+      "tags": [
+        "Fortitud",
+        "Defensiva"
+      ],
+      "ability_id": "segundo-aliento_1791462133271"
+    },
+    {
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
     }
   ],
   "lore": "",
@@ -42,6 +160,8 @@
   "published": false,
   "tier": "Esbirro Élite",
   "save_scale": {
-    "MEN": "low"
+    "MEN": "low",
+    "VOL": "mid",
+    "FÍS": "bonus"
   }
 }
