@@ -178,23 +178,6 @@
       "draft": true,
       "abilities": [
         {
-          "name": "Vórtice",
-          "tags": [
-            "Agua",
-            "Ataque",
-            "Área",
-            "Duradera",
-            "Agarre"
-          ],
-          "cost": "2 acciones, 2 chi",
-          "range": "Medio",
-          "area": "Radio medio",
-          "crit": "Fallo automático para evitar agarre.",
-          "duration": "Concentración",
-          "desc": "Crea un remolino que inflige 3d8 + SAB daño Contundente en su área afectada que arrastra y enreda. Aquellos que fallen el tiro deberán tener éxito en un tiro de salvación Físico o quedarán agarrados y ahogados. Este efecto permanecerá hasta que pierdas la concentración y puedes reactivarlo gastando una acción.",
-          "empower": "Aumenta el radio por un paso y el daño por un dado adicional."
-        },
-        {
           "name": "Aguas Protectoras",
           "tags": [
             "Agua",
@@ -219,9 +202,18 @@
           "duration": "Instantáneo",
           "desc": "Dispara un chorro de agua a presión que inflige 4d8 + SAB daño Contundente, empuja y Herido-1 al impactar. Este ataque ignora los muros a su paso además que romperá la armadura y eliminará un contador de escudo que tenga.",
           "empower": "Haz un segundo ataque contra objetivos diferentes o los mismos, quienes deberán defenderse con el mismo resultado."
+        },
+        {
+          "name": "Sanación Elemental",
+          "tags": [
+            "Agua",
+            "Sanación",
+            "Pasiva"
+          ],
+          "desc": "Recuperas un Impacto o te curas un efecto de estado. Esta habilidad solo puede usarse si te encuentras en contacto con el agua. ",
+          "cost": "1 Chi"
         }
-      ],
-      "passive": "Aumenta tu estadística de Sabiduría por 1."
+      ]
     },
     {
       "rank": "V",
