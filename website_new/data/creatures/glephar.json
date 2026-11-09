@@ -82,18 +82,17 @@
       "attacks": 2,
       "bonus_scaled": true,
       "cost": 1,
-      "damage_base_type": "Cortante",
-      "damage_tier": "MID",
-      "name": "Zarpazo Doble",
-      "range": "Adyacente",
+      "damage_base_type": "Contundente",
+      "damage_tier": "LOW",
+      "desc": "Empuja un paso al impactar. Apaga los fuegos a su paso y puede herir a Incorpóreos como si fuera un ataque Mágico.",
+      "name": "Golpes Fluidos",
+      "range": "Medio",
       "tags": [
-        "Ataque",
-        "Arma",
-        "Natural",
-        "Fisico"
+        "Agua",
+        "Ataque"
       ],
-      "ability_id": "ab_1793202840322",
-      "damage": "3d8 + 6 Cortante",
+      "ability_id": "ab_1793368306469",
+      "damage": "2d8 + 6 Contundente",
       "bonus": "+9 + 2d6"
     },
     {
@@ -121,21 +120,21 @@
       "area": "Radio Corto",
       "attacks": 1,
       "bonus_scaled": true,
-      "cost": "2",
+      "cost": 2,
       "damage_base_type": "Contundente",
       "damage_tier": "HIGH",
-      "desc": "Crea una Ola que ataca a todos los objetivos en el área afectada, quienes además deben tener éxito en un tiro FÍS +MOD o son empujados un paso y tropezados. Si mantienes la concentración, cada ronda puedes emplear una Acción para mover la ola un paso y atacar a cada objetivo en su camino. ",
+      "desc": "Crea una Ola que ataca a todos los objetivos en el área afectada, quienes además deben tener éxito en un tiro FÍS +9 + 2d6 o son empujados un paso y tropezados. Si mantienes la concentración, cada ronda puedes emplear una Acción para mover la ola un paso y atacar a cada objetivo en su camino. ",
       "name": "Ola Chocante",
       "range": "Medio",
       "tags": [
         "Agua"
       ],
       "ability_id": "ab_1793292674641",
-      "damage": "",
-      "type": "action",
-      "bonus": "",
-      "save": "",
-      "move": ""
+      "mod_tpl": {
+        "desc": "Crea una Ola que ataca a todos los objetivos en el área afectada, quienes además deben tener éxito en un tiro FÍS +MOD o son empujados un paso y tropezados. Si mantienes la concentración, cada ronda puedes emplear una Acción para mover la ola un paso y atacar a cada objetivo en su camino. "
+      },
+      "damage": "4d8 + 6 Contundente",
+      "bonus": "+9 + 2d6"
     },
     {
       "attacks": 1,
@@ -175,16 +174,6 @@
       "mod_tpl": {
         "desc": "Crea un muro que protege a todos en su área, absorbiendo TIERx3 puntos de daño. Todos los enemigos que le hagan ataques cuerpo a cuerpo tiran FÍS +MOD o sufren LOW daño Contundente y son Enredados."
       }
-    },
-    {
-      "cost": 1,
-      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y hace se mueve hasta un paso sin provocar aperturas.",
-      "name": "Evasión",
-      "tags": [
-        "Reflejos",
-        "Defensiva"
-      ],
-      "ability_id": "evasion_1778692238910"
     }
   ],
   "lore": "",
