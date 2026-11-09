@@ -123,32 +123,35 @@
     {
       "rank": "IV",
       "title": "Experto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
-          "name": "Muro Viviente",
+          "name": "Regeneración Rápida",
           "tags": [
             "Innata",
-            "Defensiva",
-            "Duradera"
+            "Reacción"
           ],
-          "cost": "2 acciones, 2 chi",
-          "range": "Propio",
-          "duration": "Concentración",
-          "desc": "Obtienes una cantidad de Escudos igual a tu Rango.",
-          "empower": "Recuperas Escudos iguales a (Rango / 2).",
+          "cost": "1 Reacción, 1 Chi",
+          "desc": "Recuperas inmediatamente un impacto o te curas de un efecto de estado entre Herido, Fatigado, Ralentizado o Enfermado.",
+          "empower": "Recupera un impacto adicional o te curas de otro efecto.",
           "toggle": {
             "label": "Muro Viviente",
             "ce": "rango"
           }
         },
         {
-          "name": "Aguantar los Elementos",
+          "name": "Resistir los Elementos",
           "tags": [
             "Innata",
             "Pasiva"
           ],
-          "desc": "Obtienes Resistencia a daño de Frío, Fuego, Ácido y Eléctrico. Inmune a efectos críticos de Quemadura y Aturdido."
+          "desc": "Aumenta tus Umbrales al daño Fuego, Frío, Eléctrico, Sónico y Ácido por RANGO + 2. ",
+          "umbrales": [
+            {
+              "value": "RANGO+2",
+              "categories": "Fuego, Frío, Eléctrico, Sónico, Ácido"
+            }
+          ]
         }
       ]
     },
