@@ -4210,5 +4210,24 @@
     "move": "",
     "attacks": 2,
     "desc": "Si mejora su primer ataque con una habilidad de cualquier tipo, esta se aplicará a ambos ataques."
+  },
+  {
+    "id": "ab_1794234218339",
+    "name": "Multiataque",
+    "type": "action",
+    "tier": "III",
+    "tags": [],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Hace dos ataques de arma o con hechizos de Rango I que cuesten una Acción. Esta habilidad no consume una ranura."
   }
 ]
