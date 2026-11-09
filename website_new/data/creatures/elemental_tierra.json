@@ -132,12 +132,7 @@
     }
   ],
   "lore": "Los elementales de tierra son colosos de piedra y arcilla convocados desde el Plano Elemental de la Tierra. Lentos pero absolutamente implacables, absorben castigos que destrozarían a cualquier otra criatura y devuelven cada golpe con fuerza aplastante. Su conexión con el suelo les otorga una resistencia casi indestructible mientras permanecen en contacto con la tierra firme.",
-  "tags": [
-    "Elemental",
-    "Tierra",
-    "Invocación",
-    "Élite"
-  ],
+  "tags": [],
   "level": 5,
   "umbrales": [
     {
@@ -162,5 +157,6 @@
     "VOL": "bonus",
     "MEN": "low"
   },
-  "image_v": "90d15bdc10"
+  "image_v": "90d15bdc10",
+  "tier": "Esbirro Élite"
 }
