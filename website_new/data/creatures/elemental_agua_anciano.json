@@ -38,6 +38,15 @@
         "Agua"
       ],
       "ability_id": "cuerpo-liquido_1778692889955"
+    },
+    {
+      "desc": "Al principio de su turno, recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra sumergido en el agua o es impactado por un efecto de Agua que atraviese su umbral.",
+      "name": "Absorber Agua",
+      "tags": [
+        "Agua",
+        "Sanacion"
+      ],
+      "ability_id": "absorber-agua_1778693562144"
     }
   ],
   "actions": [
@@ -95,6 +104,24 @@
         "desc": "Los afectados deben tener éxito en un tiro FÍS +MOD o quedan Enredados. Si ya están Enredados, pasarán a estar Agarrados."
       },
       "damage": "4d8 + 7 Contundente",
+      "bonus": "+11 + 3d6"
+    },
+    {
+      "area": "Línea media",
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Contundente",
+      "damage_tier": "HIGH",
+      "desc": "Provoca el efecto Roto I a todos los objetivos en el área afectada y los empuja dos pasos. Rompe además todos los muros y barreras en su camino.",
+      "name": "Taladro Hidráulico",
+      "tags": [
+        "Agua",
+        "Ataque",
+        "Area"
+      ],
+      "ability_id": "ab_1794255423650",
+      "damage": "5d8 + 7 Contundente",
       "bonus": "+11 + 3d6"
     }
   ],
