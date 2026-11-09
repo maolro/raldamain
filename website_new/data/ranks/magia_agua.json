@@ -162,7 +162,7 @@
           ],
           "cost": "1 Acción, 2 chi",
           "duration": "Concentración",
-          "desc": "Creas una columna de agua a tus pies que te otorga velocidad de vuelo igual a tu movimiento base y Ventaja en tus tiros de Esquiva. No puedes volar excesivamente alto y debes estar rodeado de agua para poder volar.",
+          "desc": "Creas una columna de agua a tus pies que te otorga velocidad de vuelo igual a tu movimiento base. Puedes también tirar Parada y Esquiva y quedarte con el resultado que más te convenga (esto no se acumula con otras habilidades similares).",
           "empower": "Suma +10 a un tiro de Esquiva o salvación Físico, y vuela un paso en cualquier dirección."
         },
         {
