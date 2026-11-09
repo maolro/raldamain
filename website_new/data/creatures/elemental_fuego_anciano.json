@@ -101,17 +101,6 @@
       "move": 5
     },
     {
-      "name": "Evasión",
-      "cost": 1,
-      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico.",
-      "move": 10,
-      "id": "evasion_1778692238910",
-      "type": "reaction",
-      "tags": [
-        "Reflejos"
-      ]
-    },
-    {
       "name": "Muro de Fuego",
       "cost": 1,
       "desc": "Aumenta todos sus umbrales de daño en 5 esta ronda. Los atacantes cuerpo a cuerpo sufren 2d8 + 7 daño Fuego.",
@@ -122,15 +111,14 @@
       ]
     },
     {
-      "name": "Absorber Fuego",
-      "desc": "Recupera 1 Impacto y se sana de un efecto de estado negativo si se encuentra un lugar en llamas o es impactado por un efecto de Fuego que atraviese su umbral.",
       "cost": 1,
-      "id": "absorber-elemento_1778692436921",
-      "type": "reaction",
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
       "tags": [
-        "Fuego",
-        "Sanacion"
-      ]
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
     }
   ],
   "lore": "Los elementales de fuego son espíritus convocados al mundo material mediante rituales de invocación de gran potencia. Su forma fluctúa sin cesar, adoptando vagamente la silueta de un humanoide envuelto en llamas vivas. Son criaturas de instinto puro con tendencias a destruir todo cuanto alcanzan y resultan extraordinariamente peligrosas para los invocadores sin experiencia.",
