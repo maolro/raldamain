@@ -4182,6 +4182,11 @@
     "save": "",
     "move": "",
     "attacks": 1,
-    "desc": "Es una tropa de criaturas de más bajo nivel. Es Inmune a efectos de un único objetivo y los ataques de un único objetivo no podrán provocarle más de un impacto. No obstante, todo el daño de área que sufra contará como si fuera daño Fuerza. "
+    "desc": "Es una tropa de criaturas de más bajo nivel. Es Inmune a efectos de un único objetivo y los ataques individuales no podrán provocarle más de un impacto. No obstante, todo el daño de área que sufra contará como si fuera daño Fuerza. ",
+    "effects": {
+      "immune": [
+        "Efectos Individuales"
+      ]
+    }
   }
 ]
