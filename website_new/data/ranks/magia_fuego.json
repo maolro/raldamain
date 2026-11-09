@@ -139,6 +139,16 @@
       "draft": true,
       "abilities": [
         {
+          "name": "Maestro de las Llamas",
+          "tags": [
+            "Fuego",
+            "Duradera"
+          ],
+          "desc": "Recibes Ventaja en todos tus tiros relacionados con Magia de Fuego y aumentas su daño base por un dado. El área a distancia media de ti cuenta como calor extremo, prendiendo objetos inflamables y contrarrestando efectos de Frío.",
+          "duration": "6 rondas",
+          "cost": "2 Acciones, 2 Chi"
+        },
+        {
           "name": "Erupción Abrasadora",
           "tags": [
             "Fuego",
@@ -147,7 +157,7 @@
           ],
           "cost": "1 Acción, 2 chi",
           "area": "Esfera pequeña",
-          "desc": "Crea una explosión centrada en ti que inflige 3d8 + CAR daño Fuego al impactar. Si el objetivo ya está en llamas, solo puede defenderse con un tiro de salvación de Voluntad y sufrirá la mitad de daño en caso de éxito.",
+          "desc": "Creas una explosión centrada en ti que inflige 3d8 + CAR daño Fuego al impactar. Si el objetivo ya está en llamas, solo puede defenderse con un tiro de salvación de Voluntad y sufrirá la mitad de daño en caso de éxito.",
           "empower": "Aumenta el daño de este hechizo por un dado adicional, o ataca de nuevo a todas las criaturas en el área afectada. Si empoderas dos veces, el radio del efecto aumenta a medio."
         },
         {
@@ -166,14 +176,6 @@
               "Esquiva"
             ]
           }
-        },
-        {
-          "name": "Elemento del Poder",
-          "tags": [
-            "Innata",
-            "Pasiva"
-          ],
-          "desc": "Puedes reducir tus Impactos máximos por 1 para recuperar 3 chi de tu reserva. Esta habilidad solo puede emplearse una vez por ronda."
         }
       ],
       "passive": "Los dados de daño base aumentan a d8."
