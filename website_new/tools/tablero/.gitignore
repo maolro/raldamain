@@ -2,3 +2,4 @@ node_modules/
 dist/
 # images and boards made in the Tablero (local content, not website data)
 storage/
+scripts/

@@ -88,6 +88,7 @@ export interface Board {
   arrival?: { x: number; y: number; level?: string };   // where tokens coming from another scene appear
   tilesets?: string[];  // the tile palette: image ids (a tile's value says which)
   tiles?: Record<string, string>;   // painted tiles: "<level>|<layer>|<cx>|<cy>" → a 16×16 chunk (tiles.ts)
+  tileSpans?: Record<string, [number, number]>;   // big tiles: "<level>|<layer>|<x>|<y>" → squares it covers [w, h]
 }
 
 /** A floor of a scene */
@@ -137,6 +138,7 @@ export interface ImageMeta {
   sheet?: string;       // the stat block its tokens get (SheetMeta.id)
   tileset?: { size: number; solid: number[] };   // a tileset: its tiles' size (px) and the ones that block sight
   rule?: import('./tiles').TileRule;   // a single tile (🧩 Casillas): what it is (its layer, if it blocks sight)
+  span?: [number, number];   // a single tile's default size when painted: squares across and down (none: 1×1)
 }
 
 /** A stat block: a Creador character, a Bestiario creature, or an uploaded .json of either */
@@ -172,7 +174,7 @@ export interface Presence {
 export interface Changes {
   upserts: BoardItem[];
   removes: string[];
-  settings?: Partial<Pick<Board, 'name' | 'width' | 'height' | 'background' | 'grid' | 'fog' | 'round' | 'levels' | 'portals' | 'arrival' | 'tilesets'>>;
+  settings?: Partial<Pick<Board, 'name' | 'width' | 'height' | 'background' | 'grid' | 'fog' | 'round' | 'levels' | 'portals' | 'arrival' | 'tilesets' | 'tileSpans'>>;
   tiles?: Record<string, string | null>;   // tile chunks changed (null: emptied)
   live?: boolean;       // mid-drag: shown, not an undo step
   by?: string;

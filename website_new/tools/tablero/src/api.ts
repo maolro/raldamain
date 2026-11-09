@@ -84,6 +84,7 @@ export const api = {
   effect: (bid: string, body: { action: 'add'; name: string; token?: string } | { action: 'del'; id: string }) =>
     call<unknown>('POST', `/api/live/${bid}/effect`, body),
   ruler: (bid: string, body: { cid: string; shape: unknown }) => call<{ ok: boolean }>('POST', `/api/live/${bid}/ruler`, body),
+  ping: (bid: string, body: { cid: string; x: number; y: number; level: string }) => call<{ ok: boolean }>('POST', `/api/live/${bid}/ping`, body),
   musicLibrary: () => call<{ tracks: Track[]; playlists: Playlist[] }>('GET', '/api/music'),
   musicUpload: (file: Blob, name: string, duration: number) => {
     const fd = new FormData();

@@ -120,7 +120,7 @@ IMAGE_TYPES = {"image/png": "png", "image/jpeg": "jpg", "image/webp": "webp", "i
 MAX_IMAGE = 40 * 1024 * 1024  # bytes
 PLAYER_COLORS = ["#e6194b", "#3cb44b", "#4363d8", "#f58231", "#911eb4", "#42d4f4", "#f032e6", "#bfef45", "#fabed4", "#dcbeff"]
 BOARD_SETTINGS = ("name", "width", "height", "background", "grid", "fog", "round",  # (fog: hidden areas, lighting, walls; round: ⏱)
-                  "levels", "portals", "arrival", "tilesets")  # floors · stairs and doors to other levels or scenes · where arrivals appear · the tile palette
+                  "levels", "portals", "arrival", "tilesets", "tileSpans")  # floors · stairs and doors to other levels or scenes · where arrivals appear · the tile palette · big tiles' sizes
 # tiles: chunks of 16×16 cells, "<level>|<layer>|<cx>|<cy>" → 256 cells of 4 characters each (tiles.ts encodes them)
 TILE_KEY_RE = re.compile(r"^[a-z0-9_-]{1,24}\|(floor|walls|deco|roof)\|-?\d{1,4}\|-?\d{1,4}$")
 TILE_CHUNK_RE = re.compile(r"^[A-Za-z0-9_-]{1024}$")
@@ -456,6 +456,12 @@ def api_image_update(iid):
                 meta["tileset"] = {"size": int(ts["size"]), "solid": sorted(solid)}
             else:
                 meta.pop("tileset", None)
+        if "span" in body:  # a single tile's default size on the board: [w, h] squares
+            sp = body["span"]
+            if isinstance(sp, list) and len(sp) == 2 and all(isinstance(n, int) and 1 <= n <= 8 for n in sp) and sp != [1, 1]:
+                meta["span"] = sp
+            else:
+                meta.pop("span", None)
         if "rule" in body:  # a single tile: what it is (the layer it goes on, if it blocks sight)
             rule = str(body["rule"] or "")
             if rule in TILE_RULES:
@@ -1341,6 +1347,22 @@ def live_ruler(bid):
     ev = {"by": cid, "who": clean_name(p.get("name")) if pid else "GM", "color": p.get("color", "#fff200") if pid else "#fff200",
           "shape": shape}
     s.send(lambda r, q: _event("ruler", ev), exclude=cid)
+    return jsonify({"ok": True})
+
+
+@app.route("/api/live/<bid>/ping", methods=["POST"])
+def live_ping(bid):
+    """{cid, x, y, level}: a radar ping (double click), shown to everyone else in the board; nothing is stored."""
+    role, pid, code = need_board(bid)
+    body = request.get_json(force=True) or {}
+    if not all(isinstance(body.get(k), (int, float)) and abs(body[k]) < 1e7 for k in ("x", "y")):
+        return jsonify({"error": "aviso no válido"}), 400
+    players = (rooms().get(code or room_for(bid)) or {}).get("players") or {}
+    p = players.get(pid) or {}
+    cid = str(body.get("cid") or "")[:20]
+    ev = {"by": cid, "who": clean_name(p.get("name")) if pid else "GM", "color": p.get("color", "#fff200") if pid else "#fff200",
+          "x": body["x"], "y": body["y"], "level": str(body.get("level") or "")[:40]}
+    session(bid).send(lambda r, q: _event("ping", ev), exclude=cid)
     return jsonify({"ok": True})
 
 

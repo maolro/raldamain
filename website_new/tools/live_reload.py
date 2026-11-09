@@ -18,6 +18,7 @@ restart.  ``LIVE_RELOAD=0`` turns it all off.
 """
 from __future__ import annotations
 
+import hashlib
 import os
 import subprocess
 import sys
@@ -59,15 +60,31 @@ SNIPPET = """<script>
 </script>"""
 
 
+_hash_cache: dict[Path, tuple[int, int, str]] = {}   # file → (mtime, size, sha1): hashed again only when it changes
+
+
+def _digest(p: Path) -> str:
+    try:
+        st = p.stat()
+        hit = _hash_cache.get(p)
+        if hit and hit[0] == st.st_mtime_ns and hit[1] == st.st_size:
+            return hit[2]
+        h = hashlib.sha1(p.read_bytes()).hexdigest()
+        _hash_cache[p] = (st.st_mtime_ns, st.st_size, h)
+        return h
+    except OSError:
+        return ""
+
+
 def _fingerprint(root: Path, patterns: Iterable[str]) -> str:
-    latest = 0
+    """What the watched files contain: a file rewritten with the same content (a git sync's autostash,
+    a rebuild that produced the same output) does not reload the pages (and the players in them)."""
+    h = hashlib.sha1()
     for pat in patterns:
-        for p in root.glob(pat):
-            try:
-                latest = max(latest, p.stat().st_mtime_ns)
-            except OSError:
-                pass
-    return str(latest)
+        for p in sorted(root.glob(pat)):
+            if p.is_file():
+                h.update(f"{p.relative_to(root)}:{_digest(p)};".encode())
+    return h.hexdigest()[:16]
 
 
 def install(app, watch: Iterable[str] = (), root: Path | None = None) -> None:
@@ -77,9 +94,27 @@ def install(app, watch: Iterable[str] = (), root: Path | None = None) -> None:
     watch = tuple(watch)
     root = root or Path(__file__).resolve().parent.parent
 
+    # The fingerprint the pages see changes only once the files have settled: a git sync that has to
+    # pull puts the committed sources back for a while, a builder (vite --watch) rebuilds the page from
+    # them and then again from the restored ones; when that ends where it started nobody reloads.
+    st = {"shown": None, "cand": None, "since": 0.0, "busy": 0.0}
+
+    def _settled() -> str:
+        now = time.time()
+        if _git_busy():
+            st["busy"] = now
+        fp = _fingerprint(root, watch)
+        if st["shown"] is None:
+            st["shown"] = st["cand"] = fp
+        if fp != st["cand"]:
+            st["cand"], st["since"] = fp, now
+        if fp != st["shown"] and now - st["since"] >= PAGE_SETTLE and now - st["busy"] >= PAGE_SETTLE:
+            st["shown"] = fp
+        return st["shown"]
+
     @app.route("/__live")
     def _live():  # noqa: ANN202
-        tag = BOOT + ":" + (_fingerprint(root, watch) if watch else "")
+        tag = BOOT + ":" + (_settled() if watch else "")
         return Response(tag, mimetype="text/plain", headers={"Cache-Control": "no-store"})
 
     @app.after_request
@@ -165,9 +200,32 @@ def _mtimes(paths: Iterable[Path]) -> dict[Path, int]:
     return out
 
 
+def _git_busy() -> bool:
+    """A git operation is under way (an editor saving: pull --rebase --autostash puts the committed
+    version of every changed file back for a while, then the stash). Files then are not what they will be."""
+    gd = next((d / ".git" for d in [REPO, *REPO.parents] if (d / ".git").exists()), None)
+    if not gd or not gd.is_dir():
+        return False
+    if any((gd / n).exists() for n in ("rebase-merge", "rebase-apply", "index.lock", "MERGE_HEAD")):
+        return True
+    lock = gd / "raldamain-sync.lock"   # git_sync: one of the editors is saving
+    try:
+        return lock.exists() and time.time() - lock.stat().st_mtime < 600
+    except OSError:
+        return False
+
+
+SETTLE = 3   # seconds a changed file must stay as it is before it counts
+PAGE_SETTLE = 6   # the same for the built pages (a rebuild takes a few seconds)
+
+
 def _watch_imports(extra: list[Path]) -> None:
-    """Child: exit with RESTART_CODE as soon as an imported repo file changes."""
+    """Child: exit with RESTART_CODE when an imported repo file's content changes (and has settled:
+    no git operation going on, untouched for a few seconds). A file rewritten with the same content
+    (git's autostash, an editor saving without changes) restarts nothing."""
     seen = _mtimes(_imported_repo_files() + extra)
+    hashes = {p: _digest(p) for p in seen}
+    pending: dict[Path, float] = {}   # changed files: when they last moved
     # A file that changed after this process started was loaded in its old state: git's
     # pull --autostash briefly puts back the committed version, the restart loads that, and the
     # stash comes back within the same second — so restart once more to load what's on disk now.
@@ -180,8 +238,16 @@ def _watch_imports(extra: list[Path]) -> None:
         files = _imported_repo_files() + extra  # modules imported later count too
         for p, m in _mtimes(files).items():
             if p not in seen:
-                seen[p] = m
+                seen[p], hashes[p] = m, _digest(p)
             elif m != seen[p]:
+                seen[p] = m
+                pending[p] = time.time()
+        if not pending or _git_busy():
+            continue
+        now = time.time()
+        for p in [p for p, t in pending.items() if now - t >= SETTLE]:
+            del pending[p]
+            if _digest(p) != hashes.get(p):
                 print(f" * Detected change in '{p}', reloading", flush=True)
                 os._exit(RESTART_CODE)
 

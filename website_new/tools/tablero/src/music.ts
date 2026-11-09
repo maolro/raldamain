@@ -53,7 +53,7 @@ export class Music {
   private blocked = false;       // the browser wants a click before playing sound
   private seeking = false;       // the GM is dragging the progress bar
   private lib: { tracks: Track[]; playlists: Playlist[] } = { tracks: [], playlists: [] };
-  private view = 'all';          // 'all' or a playlist id
+  private view = 'all';          // 'all', 'unsorted' (the tracks in no list yet) or a playlist id
   private q = '';
   private prefs = { volume: 0.7, muted: false };
   /** "Activar sonido", over the whole page: the browser held the music back (no click yet) */
@@ -141,7 +141,9 @@ export class Music {
 
   private listTracks(): Track[] {
     const byId = new Map(this.lib.tracks.map(t => [t.id, t]));
-    const all = this.view === 'all' ? [...this.lib.tracks].sort((a, b) => a.name.localeCompare(b.name, 'es'))
+    const listed = new Set(this.lib.playlists.flatMap(p => p.tracks));
+    const all = this.view === 'all' || this.view === 'unsorted'
+      ? this.lib.tracks.filter(t => this.view === 'all' || !listed.has(t.id)).sort((a, b) => a.name.localeCompare(b.name, 'es'))
       : (this.lib.playlists.find(p => p.id === this.view)?.tracks || []).map(id => byId.get(id)).filter((t): t is Track => !!t);
     return this.q ? all.filter(t => plain(t.name).includes(this.q)) : all;
   }
@@ -250,12 +252,14 @@ export class Music {
     const len = new Map(this.lib.tracks.map(t => [t.id, t.duration || 0]));
     const total = (ids: string[]) => ids.reduce((a, id) => a + (len.get(id) || 0), 0);
     const all = total(this.lib.tracks.map(t => t.id));
+    const listed = new Set(this.lib.playlists.flatMap(p => p.tracks)), loose = this.lib.tracks.filter(t => !listed.has(t.id)).map(t => t.id);
     box.innerHTML = [`<button class="chip ${this.view === 'all' ? 'on' : ''}" data-view="all" title="${this.lib.tracks.length} pistas · ${fmtTotal(all)}">Todas las pistas <small>${this.lib.tracks.length} · ${fmtTotal(all)}</small></button>`,
+      ...(loose.length || this.view === 'unsorted' ? [`<button class="chip mu-loose ${this.view === 'unsorted' ? 'on' : ''}" data-view="unsorted" title="Las pistas que aún no están en ninguna lista: para irlas clasificando">📥 Sin lista <small>${loose.length} · ${fmtTotal(total(loose))}</small></button>`] : []),
       ...this.lib.playlists.map(p => `<button class="chip ${this.view === p.id ? 'on' : ''}" data-view="${esc(p.id)}" title="${p.tracks.length} pistas · ${fmtTotal(total(p.tracks))}">${this.state?.list === p.id && this.state.playing ? '♪ ' : ''}${esc(p.name)} <small>${p.tracks.length} · ${fmtTotal(total(p.tracks))}</small></button>`),
       `<button class="chip mu-new" data-act="new-list" title="Nueva lista">＋ Lista</button>`].join('');
     const pl = this.lib.playlists.find(p => p.id === this.view);
     this.$('[data-head]').innerHTML = `
-      <b class="mu-listname">${pl ? esc(pl.name) : 'Todas las pistas'} <small class="muted">${fmtTotal(pl ? total(pl.tracks) : all)}</small></b>
+      <b class="mu-listname">${pl ? esc(pl.name) : this.view === 'unsorted' ? '📥 Sin lista' : 'Todas las pistas'} <small class="muted">${fmtTotal(pl ? total(pl.tracks) : this.view === 'unsorted' ? total(loose) : all)}</small></b>
       <button class="btn small" data-act="play-list" title="Reproducir desde el principio (o en aleatorio si ⇄)">▶ Reproducir</button>
       <label class="btn small" title="Subir archivos de audio">⬆ Subir<input type="file" accept="audio/*" multiple hidden data-upload></label>
       ${pl ? `<button class="mu-btn small" data-act="rename-list" title="Cambiar el nombre">✎</button><button class="mu-btn small" data-act="del-list" title="Borrar la lista (las pistas se quedan)">🗑</button>` : ''}`;
@@ -264,7 +268,7 @@ export class Music {
   private renderTracks() {
     if (!this.o.gm) return;
     const box = this.$('[data-tracks]'), list = this.listTracks(), cur = this.state?.track?.id;
-    const inList = this.view !== 'all';
+    const inList = this.view !== 'all' && this.view !== 'unsorted';
     box.innerHTML = list.map((t, i) => `
       <div class="mu-track ${t.id === cur ? 'on' : ''}" data-track="${esc(t.id)}" title="Clic: reproducir desde aquí">
         <span class="mu-n">${t.id === cur ? (this.state?.playing ? '♪' : '⏸') : i + 1}</span>
@@ -275,7 +279,7 @@ export class Music {
           <option value="__new">Nueva lista…</option></select>
         ${inList ? `<button class="mu-btn small" data-up="${i}" title="Subir">↑</button><button class="mu-btn small" data-out="${esc(t.id)}" title="Quitar de la lista">✕</button>`
           : `<button class="mu-btn small" data-rename="${esc(t.id)}" title="Cambiar el nombre">✎</button><button class="mu-btn small" data-del="${esc(t.id)}" title="Borrar el archivo">🗑</button>`}
-      </div>`).join('') || `<p class="muted">${this.lib.tracks.length ? (inList ? 'Lista vacía: añade pistas con ＋ desde «Todas las pistas».' : 'Nada con ese nombre.') : 'Sin pistas todavía: sube archivos de audio.'}</p>`;
+      </div>`).join('') || `<p class="muted">${this.lib.tracks.length ? (inList ? 'Lista vacía: añade pistas con ＋ desde «Todas las pistas».' : this.view === 'unsorted' && !this.q ? '✓ Todas las pistas están ya en alguna lista.' : 'Nada con ese nombre.') : 'Sin pistas todavía: sube archivos de audio.'}</p>`;
   }
 
   // ── events (GM) ───────────────────────────────────────────────────────────
@@ -364,7 +368,7 @@ export class Music {
       t.value = '';
       let pl = this.lib.playlists.find(x => x.id === lid);
       if (lid === '__new') pl = await this.newList();
-      if (pl && !pl.tracks.includes(tid)) { await this.savePlaylist(pl, [...pl.tracks, tid]); this.o.toast(`Añadida a «${pl.name}»`); this.renderLists(); }
+      if (pl && !pl.tracks.includes(tid)) { await this.savePlaylist(pl, [...pl.tracks, tid]); this.o.toast(`Añadida a «${pl.name}»`); this.renderLists(); if (this.view === 'unsorted') this.renderTracks(); }   // filed: it leaves «Sin lista»
     }
   }
 
@@ -383,6 +387,6 @@ export class Music {
     const tracks = this.listTracks().map(t => t.id);
     if (!tracks.length) { this.o.toast('No hay pistas en esta lista', true); return; }
     if (!this.o.boardId()) return;
-    this.send('play', { tracks, ...(start ? { start } : {}), list: this.view === 'all' ? null : this.view });
+    this.send('play', { tracks, ...(start ? { start } : {}), list: this.view === 'all' || this.view === 'unsorted' ? null : this.view });
   }
 }

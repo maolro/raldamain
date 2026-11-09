@@ -25,6 +25,7 @@ import { editPortal, LevelBar, newPortal, portalAt, campaignOptions, ScenesPanel
 import { TilePainter } from './tilepaint';
 import { TileDialog, TileTags } from './tileadd';
 import { openRoofCells } from './tiles';
+import { cropDialog, cropImage } from './crop';
 import { readUvtt } from './uvtt';
 import { BARS, kindOf, LAYERS, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Portal, type Presence, type RoundEffect, type ShareStatus, type SheetStats } from './types';
 
@@ -225,6 +226,7 @@ function restore(state: string) {
 
 function doUndo() {
   if (undo.length < 2) return;
+  painter.leave();   // a ✥ area chosen no longer matches the tiles
   redo.push(undo.pop()!);
   restore(undo[undo.length - 1]);
 }
@@ -232,6 +234,7 @@ function doUndo() {
 function doRedo() {
   const s = redo.pop();
   if (!s) return;
+  painter.leave();
   undo.push(s);
   restore(s);
 }
@@ -309,6 +312,7 @@ function connect(boardId: string) {
     presence(p) { presence = p; renderPresence(); view.render(); scenesPanel.presenceChanged(); },
     roll(r) { dice.add(r, r.by === me?.pid || (!r.by && isGM())); },
     ruler(r) { view.setRuler('cid:' + r.by, r.shape, r.color, r.who); },
+    ping(p) { if ((p.level || firstLevel(B())) === view.level) view.ping(p, p.color, p.who); },
     music(p) { music.setState(p); },
     scene(bid) { travelTo(bid); },
     image: imageChanged,
@@ -625,11 +629,35 @@ stage.addEventListener('drop', e => {
 });
 
 // paste: an image from the clipboard (screenshot, copied image) or tokens copied with Ctrl+C
+// Ctrl+C on the board puts what was copied in the computer's clipboard too (as a text mark), so an image
+// copied before it is no longer there: Ctrl+V then pastes the tokens, not that image (and works in another tab).
+const CLIP_ITEMS = 'tablero-items:', CLIP_TILES = 'tablero-tiles';
+document.addEventListener('copy', e => {
+  if (typing(e) || !board || !e.clipboardData) return;
+  const sel = getSelection();
+  if (sel && !sel.isCollapsed && sel.toString().trim()) return;   // text chosen in a panel: copy that
+  if (view.tool === 'tiles' && painter.hasSelection()) e.clipboardData.setData('text/plain', CLIP_TILES);
+  else if (view.selectedItems().length) e.clipboardData.setData('text/plain', CLIP_ITEMS + JSON.stringify(view.selectedItems()));
+  else return;
+  e.preventDefault();
+});
+
 document.addEventListener('paste', e => {
   if (typing(e) || !board) return;
   const files = [...(e.clipboardData?.files || [])].filter(f => f.type.startsWith('image/'));
+  const text = e.clipboardData?.getData('text/plain') || '';
   e.preventDefault();
   const at = view.pointer || view.viewCenter();
+  if (view.tool === 'tiles' && painter.canPaste() && (!files.length || text === CLIP_TILES)) { painter.paste(at); return; }   // tiles copied with ✥ Mover
+  if (text.startsWith(CLIP_ITEMS)) {
+    try {
+      const items = (JSON.parse(text.slice(CLIP_ITEMS.length)) as BoardItem[])
+        .filter(i => i && typeof i === 'object' && typeof i.x === 'number' && typeof i.y === 'number' && LAYERS.some(l => l.id === i.layer));
+      if (items.length) { clipboard = items; pasteItems(at); }
+    } catch { /* not ours after all */ }
+    return;
+  }
+  if (text === CLIP_TILES) return;
   if (files.length) addFiles(files, at);
   else if (clipboard.length) pasteItems(at);
 });
@@ -827,7 +855,14 @@ function bindDoubleClick() {
     const it = view.itemAt(view.clientToWorld(e.clientX, e.clientY));
     if (it && kindOf(it) === 'text') openTextEditor({ x: it.x, y: it.y }, it);
     else if (it && it.sheet && isToken(it)) openSheet(it);
+    else sendPing(view.clientToWorld(e.clientX, e.clientY));
   });
+}
+
+/** Double click on the board: a radar ping here, on every screen showing this level */
+function sendPing(at: { x: number; y: number }) {
+  view.ping(at, myColor());
+  if (live?.me && board) api.ping(live.boardId, { cid: live.me.cid, x: Math.round(at.x), y: Math.round(at.y), level: view.level }).catch(() => {});
 }
 
 function nudge(dx: number, dy: number) {
@@ -1290,6 +1325,43 @@ hud.addEventListener('click', e => {
   else chooseSheet([it], { x: r.left, y: r.bottom + 6 });
 });
 
+// ── ✂ cropping a picture (a map: a piece of it, to build levels and layers) ──
+async function cropItem(item: BoardItem) {
+  const meta = item.image ? library.get(item.image) : undefined;
+  if (!meta) { toast('Esta imagen no está en la biblioteca', true); return; }
+  if ((item.rotation || 0) % 360) { toast('Recorta la imagen sin girar (ponla a 0°) y gírala después', true); return; }
+  const url = imageUrl(meta), probe = new Image();
+  probe.src = url;
+  try { await probe.decode(); } catch { toast('No se pudo cargar la imagen', true); return; }
+  const natW = probe.naturalWidth, natH = probe.naturalHeight;
+  const ans = await cropDialog({ url, natW, natH, item: { x: item.x, y: item.y, w: item.w, h: item.h }, grid: B().grid.size, name: item.name || meta.name });
+  if (!ans) return;
+  setStatus('Recortando…', 'saving');
+  try {
+    const type = /\.(jpe?g)$/i.test(meta.file || '') ? 'image/jpeg' : /\.webp$/i.test(meta.file || '') ? 'image/webp' : 'image/png';
+    const blob = await cropImage(url, ans, type);
+    const name = `${(meta.name || 'Imagen').replace(/ \(recorte( \d+)?\)$/, '')} (recorte)`.slice(0, 80);
+    const up = await api.upload(blob, { name, category: meta.category || 'Mapas', width: ans.w, height: ans.h, tags: meta.tags || [] });
+    if (!library.get(up.id)) library.list.push(up);
+    library.render();
+    view.setImages(library.list);
+    // the piece stays exactly where it was on the board
+    const sx = item.w / natW, sy = item.h / natH;
+    const place = { x: item.x + ans.x * sx, y: item.y + ans.y * sy, w: ans.w * sx, h: ans.h * sy };
+    if (ans.keep) {
+      const piece: BoardItem = { ...structuredClone(item), id: uid(), image: up.id, ...place, z: nextZ(item.layer), name: `${item.name || meta.name} (recorte)`.slice(0, 80), locked: false };
+      B().items.push(piece);
+      view.render(); view.select([piece.id]);
+    } else {
+      Object.assign(item, { image: up.id }, place);
+      view.render();
+    }
+    commit();
+    setStatus('');
+    toast(ans.keep ? '✂ Recorte añadido encima del mapa (puedes moverlo a otra capa o nivel)' : '✂ Recortado');
+  } catch (e) { setStatus(''); toast('No se pudo recortar: ' + (e as Error).message, true); }
+}
+
 // ── context menu ────────────────────────────────────────────────────────────
 type Entry = [string, string, () => void, string?];
 function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
@@ -1321,6 +1393,7 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
       entries.push(['-', '', () => {}]);
     }
     if (kindOf(item) === 'image') {
+      if (sel.length === 1 && canEdit(item)) entries.push(['✂ Recortar…', item.layer === 'map' ? 'un trozo del mapa' : 'la imagen', () => cropItem(item)]);
       if (item.layer === 'map' && isGM()) entries.push(['Ajustar la página a este mapa', '', () => fitPageToMap(item, false)],
         ['Ajustar cuadrícula y página al mapa…', 'casillas', () => fitPageToMap(item, true)]);
       if (isGM()) {
@@ -2008,6 +2081,22 @@ const painter = new TilePainter($('tile-opts'), {
   commit,
   toast,
   upload: files => library.upload(files, 'Tilesets'),
+  async saveTileSpan(id, span) {
+    try {
+      const r = await api.updateImage(id, { span } as never);
+      const m = library.get(id);
+      if (m) { if (r.span) m.span = r.span; else delete m.span; }
+    } catch (e) { toast('No se pudo guardar el tamaño: ' + (e as Error).message, true); }
+  },
+  async saveMap(png, name, width, height) {
+    try {
+      const meta = await api.upload(png, { name, category: 'Mapas', width, height, tags: ['casillas'] });
+      if (!library.get(meta.id)) library.list.push(meta);
+      library.render();
+      view.setImages(library.list);
+      toast(meta.duplicate ? `«${meta.name}» ya estaba en la biblioteca (Mapas)` : `🖼 «${name}» guardada en la biblioteca, en Mapas`);
+    } catch (e) { toast('No se pudo guardar la imagen: ' + (e as Error).message, true); }
+  },
   async saveTileset(id, tileset) {
     try {
       const r = await api.updateImage(id, { tileset: tileset ?? null } as never);
@@ -2125,16 +2214,17 @@ document.addEventListener('keydown', e => {
   if (k === ' ' && !view.spaceDown) { view.spaceDown = true; view.app.canvas.style.cursor = 'grab'; e.preventDefault(); return; }
   if (ctrl && k === 'z' && !e.shiftKey) { e.preventDefault(); doUndo(); }
   else if (ctrl && (k === 'y' || (k === 'z' && e.shiftKey))) { e.preventDefault(); doRedo(); }
+  else if (ctrl && k === 'c' && view.tool === 'tiles' && painter.hasSelection()) painter.copy();
   else if (ctrl && k === 'c') copySelection();
   else if (ctrl && k === 'd') { e.preventDefault(); pasteItems(undefined, view.selectedItems()); }
   else if (ctrl && k === 'a') { e.preventDefault(); view.select(board.items.filter(i => i.layer === view.activeLayer && canEdit(i)).map(i => i.id)); }
   else if ((k === 'delete' || k === 'backspace') && view.tool === 'fog' && fogSel) { e.preventDefault(); deleteFogSel(); }
+  else if ((k === 'delete' || k === 'backspace') && view.tool === 'tiles' && painter.hasSelection()) { e.preventDefault(); painter.deleteSelection(); }
   else if (k === 'delete' || k === 'backspace') { e.preventDefault(); deleteSelected(); }
   else if (k === 'escape') { view.select([]); $('menu').hidden = true; showMyRuler(null, true); wallDraft = null; pickDone = null; painter.leave(); view.drawFogMarks(); }
   else if (view.tool === 'tiles' && !ctrl && (k === 'q' || k === 'e')) painter.turn(k === 'e' ? 1 : -1);
   else if (view.tool === 'tiles' && !ctrl && k === 'f') painter.flip();
   else if (k === 'v' && !ctrl) setTool('select');
-  else if (k === 'h' && !ctrl) setTool('pan');
   else if (k === 'b' && !ctrl) setTool('draw');
   else if (k === 't' && !ctrl) setTool('text');
   else if (k === 'r' && !ctrl) setTool('ruler');

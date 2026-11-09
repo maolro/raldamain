@@ -58,6 +58,7 @@ export interface PickOptions {
 export class Sheets {
   list: SheetMeta[] = [];
   private stats = new Map<string, Promise<SheetStats>>();
+  private statsAt = new Map<string, number>();   // when each was read: older than a minute, read again (the editors may have changed it)
   private picker = document.createElement('div');
 
   constructor(private toast: (msg: string, bad?: boolean) => void, private myPid: () => string | null) {
@@ -90,7 +91,7 @@ export class Sheets {
 
   /** The sheet's Impactos and Chi, read by its own stat block (in a hidden iframe) */
   statsOf(sid: string, fresh = false): Promise<SheetStats> {
-    if (!fresh && this.stats.has(sid)) return this.stats.get(sid)!;
+    if (!fresh && this.stats.has(sid) && Date.now() - (this.statsAt.get(sid) || 0) < 60_000) return this.stats.get(sid)!;
     const p = new Promise<SheetStats>((resolve, reject) => {
       let f: HTMLIFrameElement;
       const timer = window.setTimeout(() => { dropFrame(f); reject(new Error('la ficha tarda demasiado')); }, 30000);
@@ -103,10 +104,11 @@ export class Sheets {
     });
     p.catch(() => this.stats.delete(sid));
     this.stats.set(sid, p);
+    this.statsAt.set(sid, Date.now());
     return p;
   }
   /** A sheet window read newer values: remember them */
-  seen(sid: string, st: SheetStats) { this.stats.set(sid, Promise.resolve(st)); }
+  seen(sid: string, st: SheetStats) { this.stats.set(sid, Promise.resolve(st)); this.statsAt.set(sid, Date.now()); }
 
   // ── the picker ──────────────────────────────────────────────────────────
   private q = '';
@@ -140,6 +142,8 @@ export class Sheets {
         </div>`).join('') || `<p class="muted">${this.list.length ? 'Ninguna ficha con estos filtros.' : 'Sube el .json de una ficha (del Creador o del Bestiario).'}</p>`;
     };
     render();
+    // the list as it is now in the stat block files (a creature or character just made in the editors shows up)
+    this.load().then(() => { if (!box.hidden) render(); });
     const qi = box.querySelector<HTMLInputElement>('[data-q]')!;
     qi.addEventListener('input', () => { this.q = qi.value; render(); });
     qi.addEventListener('keydown', e => {

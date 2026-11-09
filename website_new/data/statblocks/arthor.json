@@ -1,6 +1,6 @@
 {
   "name": "Arthor",
-  "level": 1,
+  "level": 2,
   "race": {
     "name": "Humano"
   },
@@ -19,7 +19,7 @@
     },
     "itl": {
       "name": "INT",
-      "value": 3
+      "value": 4
     },
     "wis": {
       "name": "SAB",
@@ -187,6 +187,29 @@
       "freeranks": 0,
       "max": 5,
       "attributes": "mente_desencadenada--1--mente-desencadenada,mente_desencadenada--1--agilidad-mental,mente_desencadenada--2--poder-del-dolor,mente_desencadenada--2--conocimiento-arcano,mente_desencadenada--3--concentracion-superior,mente_desencadenada--3--expoliar-la-mente,mente_desencadenada--4--sentido-arcano,mente_desencadenada--4--psique-retorcida,mente_desencadenada--5--division-mental,mente_desencadenada--5--mente-sobre-cuerpo"
+    },
+    {
+      "id": "magia_protectora",
+      "name": "Magia Protectora",
+      "unlock": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16
+      ],
+      "three_tier": false,
+      "category": "Arcana",
+      "stat": "itl",
+      "reserve": "chi",
+      "rank": 1,
+      "freeranks": 0,
+      "max": 6,
+      "attributes": "magia_protectora--1--armadura-del-mago,magia_protectora--1--contrahechizo,magia_protectora--1--disrupcion-magica,magia_protectora--2--eliminar-magia,magia_protectora--2--glifo-de-proteccion,magia_protectora--2--barrera-de-fuerza,magia_protectora--3--retener-persona,magia_protectora--3--absorber-chi,magia_protectora--3--glifo-de-anulacion,magia_protectora--4--campo-antimagico,magia_protectora--4--exilio,magia_protectora--4--esfera-de-fuerza,magia_protectora--5--disyuncion,magia_protectora--5--ligacion-planar,magia_protectora--5--invertir-chi,magia_protectora--6--sello-extraplanario",
+      "parry_tag": "Protectora",
+      "parry_name": "Parada mágica",
+      "parry_against": "habilidades Arcanas"
     }
   ],
   "spells": {

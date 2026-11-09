@@ -823,8 +823,10 @@ BESTIARIO = r"""
       <option value="">Publicadas y en pruebas</option><option value="1">Solo publicadas</option><option value="0">Solo en pruebas</option>
     </select>
     <select id="f-sort" class="inp" onchange="render()">
-      <option value="level">Orden: nivel</option><option value="name">Orden: nombre</option>
-      <option value="hits">Orden: Impactos</option><option value="umbral">Orden: umbral General</option>
+      <option value="name">Orden: nombre</option>
+      <option value="level">Orden: nivel</option>
+      <option value="hits">Orden: Impactos</option>
+      <option value="umbral">Orden: umbral General</option>
     </select>
     <span class="muted" id="count" style="margin-left:auto;font-size:0.85rem"></span>
     <label class="btn-ghost" title="Añade criaturas desde archivos .json (por ejemplo, descargadas del Creador de Criaturas de la web). También puedes arrastrarlos aquí.">⬆ Subir .json

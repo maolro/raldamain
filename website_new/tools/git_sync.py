@@ -400,7 +400,12 @@ def _pull_push_once(branch, http1=False):
         r = _git("ls-remote", "--exit-code", "--heads", "origin", branch, timeout=LS_TIMEOUT, net=True, http1=http1)
         if r.returncode not in (0, 2):  # 2 = reachable, but the branch isn't there yet
             return "ls-remote: " + (r.stderr.strip() or "error")
-        if r.returncode == 0:
+        remote = (r.stdout.split() or [""])[0] if r.returncode == 0 else ""
+        # Nothing new on GitHub (its branch is already in ours): no pull. pull --autostash would take
+        # every uncommitted file back to its committed version and then restore it, which rebuilds
+        # and restarts the running tools (the Tablero kicked its players out on every save).
+        up_to_date = bool(remote) and _git("merge-base", "--is-ancestor", remote, "HEAD", timeout=30).returncode == 0
+        if r.returncode == 0 and not up_to_date:
             marker = _git_dir() / "raldamain-sync.pulling"
             marker.write_text(str(os.getpid()))  # this rebase is ours: _heal_rebase may finish it
             r = _git("pull", "--rebase", "--autostash", "origin", branch, timeout=PULL_TIMEOUT, net=True, http1=http1)

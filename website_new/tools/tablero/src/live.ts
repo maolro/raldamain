@@ -20,6 +20,8 @@ export interface LiveHandlers {
   roll(r: RollRecord): void;
   /** someone's shared ruler */
   ruler(r: RulerEvent): void;
+  /** someone's radar ping (a double click on the board) */
+  ping(p: { by: string; who: string; color: string; x: number; y: number; level: string }): void;
   /** the room's music (on connecting, and whenever the GM changes it) */
   music(p: Playback | null): void;
   status(text: string, cls?: string): void;
@@ -32,7 +34,7 @@ export interface LiveHandlers {
 }
 
 const settingsOf = (b: Board) => JSON.stringify({ name: b.name, width: b.width, height: b.height, background: b.background, grid: b.grid,
-  fog: b.fog, round: b.round, levels: b.levels, portals: b.portals, arrival: b.arrival, tilesets: b.tilesets });
+  fog: b.fog, round: b.round, levels: b.levels, portals: b.portals, arrival: b.arrival, tilesets: b.tilesets, tileSpans: b.tileSpans });
 
 export class Live {
   me: Me | null = null;
@@ -59,6 +61,7 @@ export class Live {
     es.addEventListener('presence', e => this.h.presence(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('roll', e => this.h.roll(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('ruler', e => this.h.ruler(JSON.parse((e as MessageEvent).data)));
+    es.addEventListener('ping', e => this.h.ping(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('image', e => this.h.image(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('music', e => this.h.music(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('closed', e => { this.close(); this.h.closed(JSON.parse((e as MessageEvent).data)); });

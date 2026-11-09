@@ -5,7 +5,7 @@
 //
 // In the library they are images of the «Casillas» category, each one a tileset of one tile.
 import { api } from './api';
-import { ruleOf, TILE_RULES, type TileRule } from './tiles';
+import { ruleOf, TILE_RULES, TILE_SIZES, type Span, type TileRule } from './tiles';
 import type { ImageMeta, TileTagCategory } from './types';
 
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -55,6 +55,7 @@ export class TileDialog {
   private replacement: Pending | null = null;   // editing: its new picture
   private name = '';
   private rule: TileRule = 'ground';
+  private span: Span = [1, 1];   // its default size on the board
   private tags = new Set<string>();
   private made = 0;
 
@@ -104,6 +105,7 @@ export class TileDialog {
     this.editing = m;
     this.name = m.name;
     this.rule = m.rule || 'ground';
+    this.span = m.span || [1, 1];
     this.tags = new Set((m.tags || []).map(t => t.toLowerCase()));
     await this.tagStore.load();
     this.el.hidden = false;
@@ -164,6 +166,7 @@ export class TileDialog {
       <div class="fog-sec">Regla</div>
       <div class="fog-modes ta-rules">${TILE_RULES.map(x => `<button class="chip ${x.id === this.rule ? 'on' : ''}" data-ta-rule="${x.id}" title="${esc(x.hint)}">${x.icon} ${x.name}</button>`).join('')}</div>
       <small class="muted">${esc(r.hint)}</small>
+      <label title="Cuántas casillas ocupa al pintarla (un árbol grande: 2×2)">Tamaño<select class="inp" data-ta="span">${TILE_SIZES.map(([w, h]) => `<option value="${w}x${h}" ${w === this.span[0] && h === this.span[1] ? 'selected' : ''}>${w}×${h}</option>`).join('')}</select></label>
       <div class="fog-sec ta-head">Etiquetas <button class="x" data-ta="newcat" title="Nueva categoría de etiquetas">＋ Categoría</button></div>
       ${cats.map((c, i) => `<div class="ta-cat"><span class="ta-catname">${esc(c.name)}</span>
         <div class="ta-tags">${c.tags.map(chip).join('')}<button class="x" data-ta="newtag" data-ci="${i}" title="Nueva etiqueta en «${esc(c.name)}»">＋</button></div></div>`).join('')}
@@ -212,6 +215,7 @@ export class TileDialog {
   private change(e: Event) {
     const t = e.target as HTMLInputElement;
     if (t.dataset.ta === 'file') { const f = [...(t.files || [])]; t.value = ''; this.add(f); }
+    if (t.dataset.ta === 'span') { const [w, h] = t.value.split('x').map(Number); this.span = [w || 1, h || 1]; }
   }
 
   private async saveTags() {
@@ -238,8 +242,8 @@ export class TileDialog {
           await api.replaceImage(m.id, new File([sq.blob], `${name || m.name}.png`, { type: 'image/png' }), sq.size, sq.size, sq.size);
           size = sq.size;
         }
-        const out = await api.updateImage(m.id, { name: name || m.name, rule: this.rule, tags,
-          tileset: { size, solid: r.solid ? [0] : [] } });
+        const out = await api.updateImage(m.id, { name: name || m.name, rule: this.rule, tags, span: this.span,
+          tileset: { size, solid: r.solid ? [0] : [] } } as never);
         this.host.saved(out, false);
         this.host.toast(`«${out.name}» guardada`);
         this.close();
@@ -250,8 +254,8 @@ export class TileDialog {
       const sq = await square(cur.blob, covers(this.rule));
       const file = new File([sq.blob], `${name || cur.name}.png`, { type: 'image/png' });
       const up = await api.upload(file, { name: name || cur.name, category: 'Casillas', width: sq.size, height: sq.size, tags });
-      const out = await api.updateImage(up.id, { name: name || cur.name, category: 'Casillas', rule: this.rule, tags,
-        tileset: { size: sq.size, solid: r.solid ? [0] : [] } });
+      const out = await api.updateImage(up.id, { name: name || cur.name, category: 'Casillas', rule: this.rule, tags, span: this.span,
+        tileset: { size: sq.size, solid: r.solid ? [0] : [] } } as never);
       this.host.saved(out, true);
       this.host.toast(`🧩 «${out.name}» añadida${up.duplicate ? ' (ya estaba: actualizada)' : ''}`);
       this.next();

@@ -59,6 +59,49 @@ export function encode(cells: Uint32Array): string | null {
 }
 
 export const chunkKey = (level: string, layer: TileLayer, cx: number, cy: number) => `${level}|${layer}|${cx}|${cy}`;
+
+/* Big tiles: a tile can cover several squares. Its value stays in its top-left square (the anchor);
+   board.tileSpans["<level>|<layer>|<x>|<y>"] = [w, h] says how many squares it covers (1×1 tiles: none). */
+export type Span = [number, number];
+/** The sizes a tile can be given by default */
+export const TILE_SIZES: Span[] = [[1, 1], [2, 2], [3, 3], [4, 4], [2, 1], [1, 2], [3, 2], [2, 3]];
+export const spanKey = (level: string, layer: TileLayer, x: number, y: number) => `${level}|${layer}|${x}|${y}`;
+export const spanOf = (b: Board, level: string, layer: TileLayer, x: number, y: number): Span => b.tileSpans?.[spanKey(level, layer, x, y)] || [1, 1];
+export function setSpan(b: Board, level: string, layer: TileLayer, x: number, y: number, w: number, h: number) {
+  const k = spanKey(level, layer, x, y), has = !!b.tileSpans?.[k];
+  if (w <= 1 && h <= 1 && !has) return;
+  const s = { ...(b.tileSpans || {}) };
+  if (w > 1 || h > 1) s[k] = [w, h]; else delete s[k];
+  b.tileSpans = s;
+}
+/** The big tile whose squares include (x, y): its anchor and size */
+export function coverOf(b: Board, level: string, layer: TileLayer, x: number, y: number) {
+  for (const [k, [w, h]] of Object.entries(b.tileSpans || {})) {
+    const [lv, ly, ax, ay] = k.split('|');
+    if (lv !== level || ly !== layer) continue;
+    const X = +ax, Y = +ay;
+    if (x >= X && x < X + w && y >= Y && y < Y + h) return { x: X, y: Y, w, h };
+  }
+  return null;
+}
+/** Big tiles of a level and layer: [x, y, w, h] */
+export function* spansOf(b: Board, level: string, layer: TileLayer): Generator<[number, number, number, number]> {
+  for (const [k, [w, h]] of Object.entries(b.tileSpans || {})) {
+    const [lv, ly, ax, ay] = k.split('|');
+    if (lv === level && ly === layer) yield [+ax, +ay, w, h];
+  }
+}
+/** Sizes left behind by squares now empty are dropped */
+export function pruneSpans(b: Board) {
+  if (!b.tileSpans) return;
+  const s = { ...b.tileSpans };
+  let changed = false;
+  for (const k of Object.keys(s)) {
+    const [lv, ly, x, y] = k.split('|');
+    if (!new TileEdit(b, lv, ly as TileLayer).get(+x, +y)) { delete s[k]; changed = true; }
+  }
+  if (changed) b.tileSpans = s;
+}
 export function parseKey(k: string) {
   const [level, layer, cx, cy] = k.split('|');
   return { level, layer: layer as TileLayer, cx: +cx, cy: +cy };
@@ -133,7 +176,9 @@ export function tileWalls(b: Board, level: string, images: Map<string, ImageMeta
   for (const layer of ['floor', 'walls', 'deco'] as TileLayer[]) {
     for (const [x, y, v] of cellsOf(b, level, layer)) {
       const t = unpack(v);
-      if (sets[t.set]?.has(t.tile)) solid.add(`${x},${y}`);
+      if (!sets[t.set]?.has(t.tile)) continue;
+      const [w, h] = spanOf(b, level, layer, x, y);
+      for (let dy = 0; dy < h; dy++) for (let dx = 0; dx < w; dx++) solid.add(`${x + dx},${y + dy}`);
     }
   }
   if (!solid.size) return [];
@@ -168,14 +213,16 @@ export function tileWalls(b: Board, level: string, images: Map<string, ImageMeta
 export function openRoofCells(b: Board, level: string, inside: [number, number][]): Set<string> {
   const open = new Set<string>();
   if (!inside.length || !Object.keys(b.tiles || {}).some(k => k.startsWith(`${level}|roof|`))) return open;
-  const ed = new TileEdit(b, level, 'roof');
+  const ed = new TileEdit(b, level, 'roof'), covered = new Set<string>();
+  for (const [x, y, w, h] of spansOf(b, level, 'roof')) for (let dy = 0; dy < h; dy++) for (let dx = 0; dx < w; dx++) covered.add(`${x + dx},${y + dy}`);
+  const roofAt = (x: number, y: number) => !!ed.get(x, y) || covered.has(`${x},${y}`);
   for (const [x0, y0] of inside) {
-    if (open.has(`${x0},${y0}`) || !ed.get(x0, y0)) continue;
+    if (open.has(`${x0},${y0}`) || !roofAt(x0, y0)) continue;
     const stack = [[x0, y0]];
     while (stack.length && open.size < 40000) {
       const [x, y] = stack.pop()!;
       const k = `${x},${y}`;
-      if (open.has(k) || x < 0 || y < 0 || !ed.get(x, y)) continue;
+      if (open.has(k) || x < 0 || y < 0 || !roofAt(x, y)) continue;
       open.add(k);
       stack.push([x + 1, y], [x - 1, y], [x, y + 1], [x, y - 1]);
     }

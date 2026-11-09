@@ -10,9 +10,9 @@ import { BARS, kindOf, type Board, type BoardItem, type ImageMeta, type LayerId 
 import { cellCenter, drawRuler, type RulerMode, type RulerShape } from './ruler';
 import { FogLayer, type FogView } from './lighting';
 import { FIRST_LEVEL, levelFog, levelOf } from './levels';
-import { CHUNK, decode, gridOf, parseKey, tileWalls, unpack, type TileLayer } from './tiles';
+import { CHUNK, chunkKey, decode, gridOf, parseKey, tileWalls, unpack, type TileLayer } from './tiles';
 
-export type Tool = 'select' | 'pan' | 'draw' | 'text' | 'ruler' | 'fog' | 'tiles';
+export type Tool = 'select' | 'draw' | 'text' | 'ruler' | 'fog' | 'tiles';
 export type Pt = { x: number; y: number };
 
 export const TEXT_FONT = 'Lato, system-ui, sans-serif';
@@ -245,7 +245,7 @@ export class BoardView {
 
   setTool(t: Tool) {
     this.tool = t;
-    this.app.canvas.style.cursor = { select: '', pan: 'grab', draw: 'crosshair', text: 'text', ruler: 'crosshair', fog: 'crosshair', tiles: 'crosshair' }[t];
+    this.app.canvas.style.cursor = { select: '', draw: 'crosshair', text: 'text', ruler: 'crosshair', fog: 'crosshair', tiles: 'crosshair' }[t];
   }
 
   /** The topmost item of the active layer under a world point */
@@ -320,11 +320,20 @@ export class BoardView {
 
   /** Draw the level's tile chunks: only the ones that changed (or whose tilesets just loaded) */
   private renderTiles() {
-    const b = this.board, g = b.grid.size, alive = new Set<string>();
-    for (const [k, src] of Object.entries(b.tiles || {})) {
+    const b = this.board, g = b.grid.size, alive = new Set<string>(), spans = b.tileSpans || {};
+    // big tiles by chunk: a chunk is drawn again when one of its tiles changes size
+    const spanSig = new Map<string, string>();
+    for (const [k, s] of Object.entries(spans)) {
+      const [lv, layer, x, y] = k.split('|');
+      if (lv !== this.level) continue;
+      const ck = chunkKey(lv, layer as TileLayer, Math.floor(+x / CHUNK), Math.floor(+y / CHUNK));
+      spanSig.set(ck, (spanSig.get(ck) || '') + `${x},${y}:${s[0]}x${s[1]};`);
+    }
+    for (const [k, chunk] of Object.entries(b.tiles || {})) {
       const p = parseKey(k);
       if (p.level !== this.level) continue;
       alive.add(k);
+      const src = chunk + '#' + (spanSig.get(k) || '');
       let v = this.tileViews.get(k);
       if (v && v.src === src && v.full && v.cell === g) continue;
       if (!v) {
@@ -337,7 +346,7 @@ export class BoardView {
       v.src = src;
       v.cell = g;
       v.full = true;
-      const cells = decode(src);
+      const cells = decode(chunk);
       for (let i = 0; i < cells.length; i++) {
         if (!cells[i]) continue;
         const t = unpack(cells[i]), tex = this.tileTexture(t.set, t.tile);
@@ -345,9 +354,10 @@ export class BoardView {
         const sp = new Sprite(tex);
         sp.anchor.set(0.5);
         const x = p.cx * CHUNK + (i % CHUNK), y = p.cy * CHUNK + Math.floor(i / CHUNK);
-        sp.position.set(x * g + g / 2, y * g + g / 2);
+        const [w, h] = spans[`${p.level}|${p.layer}|${x}|${y}`] || [1, 1], odd = (t.xf & 1) === 1;   // a quarter turn swaps its sides
+        sp.position.set((x + w / 2) * g, (y + h / 2) * g);
         sp.angle = (t.xf & 3) * 90;
-        sp.scale.set((t.xf & 4 ? -1 : 1) * g / tex.width, g / tex.height);
+        sp.scale.set((t.xf & 4 ? -1 : 1) * (odd ? h : w) * g / tex.width, (odd ? w : h) * g / tex.height);
         sp.label = `${x},${y}`;
         v.addChild(sp);
       }
@@ -690,6 +700,37 @@ export class BoardView {
     drawRuler(box, shape, this.board.grid.size, this.zoom, color, who);
   }
 
+  /** A radar ping at p: rings that grow and fade out, three times (the same size on screen at any zoom) */
+  ping(p: Pt, color: string, who = '') {
+    const c = parseInt(color.replace('#', ''), 16) || GOLD;
+    const box = new Container(), g = new Graphics();
+    box.eventMode = 'none';
+    box.position.set(p.x, p.y);
+    box.addChild(g);
+    let label: Text | null = null;
+    if (who) {
+      label = new Text({ text: who, style: { fill: color, fontSize: 13, fontFamily: TEXT_FONT, fontWeight: '700', stroke: { color: '#000000', width: 3 } } });
+      label.anchor.set(0.5, 0);
+      box.addChild(label);
+    }
+    this.rulerLayer.addChild(box);
+    const LIFE = 2600, R = 70, t0 = performance.now();
+    const step = () => {
+      const t = performance.now() - t0;
+      if (t >= LIFE || box.destroyed) { this.app.ticker.remove(step); if (!box.destroyed) box.destroy({ children: true }); return; }
+      const s = 1 / this.zoom, fade = Math.min(1, (LIFE - t) / 500);
+      g.clear();
+      g.circle(0, 0, 5 * s).fill({ color: c, alpha: 0.9 * fade });
+      for (let i = 0; i < 3; i++) {
+        const f = (t - i * 380) / 1300;   // each ring: 0 → 1 over 1.3 s, a little after the one before
+        if (f <= 0 || f >= 1) continue;
+        g.circle(0, 0, (6 + R * f) * s).stroke({ color: c, width: 3 * s, alpha: (1 - f) * fade });
+      }
+      if (label) { label.scale.set(s); label.position.set(0, (R * 0.5 + 10) * s); label.alpha = fade; }
+    };
+    this.app.ticker.add(step);
+  }
+
   /** Every ruler but this browser's (another board opened) */
   clearRulers() { for (const k of [...this.rulers.keys()]) this.setRuler(k, null, ''); }
 
@@ -709,7 +750,7 @@ export class BoardView {
   private down(e: FederatedPointerEvent) {
     const p = this.toWorld(e.global);
     const label = (e.target as Container | null)?.label || '';
-    if (e.button === 1 || e.button === 2 || this.tool === 'pan' || this.spaceDown) {
+    if (e.button === 1 || e.button === 2 || this.spaceDown) {
       this.drag = { kind: 'pan', start: { x: e.global.x, y: e.global.y }, orig: { x: this.world.x, y: this.world.y },
         moved: false, button: e.button, target: label };
       this.app.canvas.style.cursor = 'grabbing';
