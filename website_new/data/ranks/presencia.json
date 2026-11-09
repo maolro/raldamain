@@ -105,7 +105,29 @@
       "rank": "IV",
       "title": "Experto",
       "draft": true,
-      "abilities": []
+      "abilities": [
+        {
+          "name": "Ataque Combinado",
+          "tags": [
+            "Presencia",
+            "Reacción"
+          ],
+          "desc": "En respuesta a que tú o un aliado hagáis un ataque, puedes hacer que otro aliado utilice una habilidad de cualquier tipo sin gastar acciones. Deberá seguir pagando los costes de chi correspondientes y no podrás emplear esta habilidad en un ataque ya combinado.",
+          "cost": "2 Chi",
+          "range": "Medio"
+        },
+        {
+          "name": "Presencia Terrorífica",
+          "tags": [
+            "Presencia",
+            "Miedo"
+          ],
+          "desc": "Todos los enemigos de menor nivel deben tener éxito en un tiro de salvación de Voluntad o sufren un nivel de miedo según su diferencia. Miedo I si son NIV-3 o más, Miedo II si son NIV-6 o más, Miedo III si son NIV-9 o más o Miedo IV si son NIV-12 o más.",
+          "show_mod": true,
+          "cost": "1 Acción, 2 Chi",
+          "area": "Radio Medio"
+        }
+      ]
     },
     {
       "rank": "V",
