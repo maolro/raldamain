@@ -99,8 +99,8 @@
             "Reacción"
           ],
           "cost": "1 Reacción, 1 Chi",
-          "desc": "En respuesta a sufrir un ataque de cualquier tipo, haces un pequeño salto temporal para que tenga un 50% de probabilidad de fallar automáticamente. No funciona contra efectos Mentales, Miedo ni Maldiciones.",
-          "empower": "Aumenta la probabilidad que el efecto enemigo fracase a 100%."
+          "desc": "En respuesta a sufrir un ataque de cualquier tipo, haces un pequeño salto temporal para que tengas un 50% de ignorar todos sus efectos. No funciona contra efectos Mentales, Miedo ni Maldiciones.",
+          "empower": "Aumenta la probabilidad de ignorar los efectos del ataque a 100%."
         }
       ]
     },
