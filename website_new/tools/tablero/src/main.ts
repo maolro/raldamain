@@ -2322,7 +2322,7 @@ $('mode-3d').addEventListener('click', () => set3D(true));
 // ── start ───────────────────────────────────────────────────────────────────
 // for the browser console (and tests): window.tablero.view / .board() / .me()
 (window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, statuses, music, painter, scenes: scenesPanel, levelBar,
-  board: () => board, me: () => me, v3: () => v3, models: () => models, build: __BUILD__, m3d: () => import('./models3d'), presence: () => presence, live: () => live, importMap };
+  board: () => board, me: () => me, v3: () => v3, models: () => models, build: typeof __BUILD__ === 'string' ? __BUILD__ : '',   /* (a builder started before the setting) */ m3d: () => import('./models3d'), presence: () => presence, live: () => live, importMap };
 (async () => {
   await view.init(stage);
   bindDoubleClick();
