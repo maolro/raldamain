@@ -1,6 +1,6 @@
 // The Tablero server (tools/tablero.py). Every request carries this browser's key
 // (the GM's, or a player's from joining a room): the server decides what it may do.
-import type { Board, BoardSummary, Campaign, Changes, ImageMeta, JoinInfo, RollRecord, RollTerm, RoomInfo, ShareStatus, SheetMeta, TileTagCategory } from './types';
+import type { ModelMeta, Board, BoardSummary, Campaign, Changes, ImageMeta, JoinInfo, RollRecord, RollTerm, RoomInfo, ShareStatus, SheetMeta, TileTagCategory } from './types';
 import type { Playback, Playlist, Track } from './music';
 
 let KEY = '';
@@ -24,11 +24,25 @@ async function call<T>(method: string, url: string, body?: unknown): Promise<T> 
 }
 
 export const imageUrl = (m: ImageMeta) => `/img/${m.file}`;
+export const modelFileUrl = (id: string, file: string) => `/models/${id}/${encodeURIComponent(file)}`;
+export const modelThumbUrl = (id: string) => `/models/${id}/thumb.png`;
 
 export const api = {
   gmKey: () => call<{ key: string; lan: string }>('GET', '/api/gm-key'),
   join: (code: string, name: string, key?: string) => call<JoinInfo>('POST', '/api/join', { code, name, key }),
   images: () => call<ImageMeta[]>('GET', '/api/images'),
+  models: () => call<ModelMeta[]>('GET', '/api/models'),
+  uploadModel: (files: File[], main: string, thumb: Blob | null, meta: { name: string; category: string }) => {
+    const fd = new FormData();
+    for (const f of files) fd.append('files', f, f.name);
+    fd.append('main', main);
+    if (thumb) fd.append('thumb', thumb, 'thumb.png');
+    fd.append('name', meta.name);
+    fd.append('category', meta.category);
+    return call<ModelMeta>('POST', '/api/models', fd);
+  },
+  updateModel: (id: string, patch: Partial<Pick<ModelMeta, 'name' | 'category' | 'tags' | 'scale'>>) => call<ModelMeta>('PATCH', `/api/models/${id}`, patch),
+  deleteModel: (id: string) => call<{ ok: boolean }>('DELETE', `/api/models/${id}`),
   upload: (file: Blob, meta: { name: string; category: string; width: number; height: number; tags?: string[] }) => {
     const fd = new FormData();
     if (meta.tags?.length) fd.append('tags', meta.tags.join(','));
@@ -79,7 +93,7 @@ export const api = {
   kick: (bid: string, pid: string) => call<{ ok: boolean }>('DELETE', `/api/boards/${bid}/players/${pid}`),
   changes: (bid: string, body: Changes & { cid: string }) =>
     call<{ ok: boolean; refused: (Board['items'][number] | { id: string; removed: true })[] }>('POST', `/api/live/${bid}/changes`, body),
-  roll: (bid: string, body: { cid: string; terms: RollTerm[]; expr: string; label: string; token?: string }) =>
+  roll: (bid: string, body: { cid: string; terms: RollTerm[]; expr: string; label: string; token?: string; public?: boolean }) =>
     call<RollRecord>('POST', `/api/live/${bid}/roll`, body),
   effect: (bid: string, body: { action: 'add'; name: string; token?: string } | { action: 'del'; id: string }) =>
     call<unknown>('POST', `/api/live/${bid}/effect`, body),

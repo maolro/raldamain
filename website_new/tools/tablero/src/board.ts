@@ -5,7 +5,7 @@
 // the `world` container's position and scale. Each item is a Container centred on the
 // item (so it rotates around its middle) holding its Sprite, its pencil stroke or its Text.
 import { Application, Assets, Container, FederatedPointerEvent, Graphics, Rectangle, Sprite, Text, Texture } from 'pixi.js';
-import { imageUrl } from './api';
+import { imageUrl, modelThumbUrl } from './api';
 import { BARS, kindOf, type Board, type BoardItem, type ImageMeta, type LayerId } from './types';
 import { cellCenter, drawRuler, type RulerMode, type RulerShape } from './ruler';
 import { FogLayer, type FogView } from './lighting';
@@ -128,6 +128,8 @@ export class BoardView {
   private loading = new Set<string>();
   private images = new Map<string, ImageMeta>();
   private drag: Drag | null = null;
+  /** something on the board was drawn again (the 3D view follows) */
+  onRendered: () => void = () => {};
 
   constructor(private ev: BoardEvents) {}
 
@@ -283,6 +285,7 @@ export class BoardView {
     this.renderTiles();
     this.drawOverlay();
     this.refreshFog();
+    this.onRendered();
   }
 
   /** Redraw the fog (at most once a frame) and the GM's marks */
@@ -294,6 +297,7 @@ export class BoardView {
       this.fog.update(this.levelBoard(), this.fogView());
       this.drawFogMarks();
       this.applyRoofs();
+      this.onRendered();
     });
   }
 
@@ -384,6 +388,65 @@ export class BoardView {
     return t;
   }
 
+  // ── for the 3D view ───────────────────────────────────────────────────────
+  /** What the floor shows (the map pictures, the painted tiles, the page): the 3D floor is drawn
+   *  again only when this changes (or a picture finished loading) */
+  floorSig(): string {
+    const b = this.board;
+    if (!b) return '';
+    const maps = b.items.filter(i => i.layer === 'map' && !i.roof && this.here(i))
+      .map(i => [i.id, i.x, i.y, i.w, i.h, i.rotation, i.z, i.image, i.text, i.color, i.points?.length, i.fontSize]);
+    const tiles = Object.entries(b.tiles || {}).filter(([k]) => k.startsWith(this.level + '|') && !k.includes('|roof|'));
+    return JSON.stringify([this.level, b.width, b.height, b.background, b.grid.size, maps, tiles, b.tileSpans, b.tilesets,
+      this.textures.size, this.tileFrames.size, this.tileRev]);
+  }
+
+  /** Does this level have roofs (pictures marked as roof, or roof tiles) */
+  hasRoofs(): boolean {
+    const b = this.board;
+    return !!b && (b.items.some(i => i.roof && this.here(i)) || Object.keys(b.tiles || {}).some(k => k.startsWith(this.level + '|roof|')));
+  }
+
+  /** The level's floor, fog or roofs as a picture of the whole page (at most `max` px a side), for the
+   *  3D view: drawn by this same renderer, with the camera and everything else put aside for a moment */
+  snapshot(part: 'floor' | 'fog' | 'roof', max: number): { canvas: HTMLCanvasElement; k: number } | null {
+    const b = this.board;
+    if (!b || !this.fog) return null;
+    const W = b.width * b.grid.size, H = b.height * b.grid.size;
+    const k = Math.min(1, max / Math.max(W, H));
+    const keep: Container[] = part === 'floor' ? [this.pageG, this.layers.map, ...Object.values(this.tilesBelow)]
+      : part === 'fog' ? [this.fog.container] : [this.roofLayer];
+    const shown = this.world.children.map(c => c.visible);
+    const pos = { x: this.world.x, y: this.world.y }, sc = this.world.scale.x, fogAlpha = this.fog.container.alpha;
+    const pageStroke = part === 'floor';
+    try {
+      this.world.children.forEach(c => { c.visible = keep.includes(c); });
+      this.world.position.set(0, 0);
+      this.world.scale.set(1);
+      this.fog.container.alpha = 1;
+      if (pageStroke) this.pageG.clear().rect(0, 0, W, H).fill({ color: b.background || '#1b1b1b' });
+      const canvas = this.app.renderer.extract.canvas({ target: this.world, frame: new Rectangle(0, 0, W, H), resolution: k,
+        clearColor: [0, 0, 0, 0] }) as HTMLCanvasElement;
+      return { canvas, k };
+    } finally {
+      this.world.children.forEach((c, i) => { c.visible = shown[i]; });
+      this.world.position.set(pos.x, pos.y);
+      this.world.scale.set(sc);
+      this.fog.container.alpha = fogAlpha;
+      if (pageStroke) this.drawPage();
+    }
+  }
+
+  /** The level's walls for the 3D view: lines drawn with Niebla y luz (closed doors too, marked) and the
+   *  tiles that block sight. Open doors are left out (one walks through them). */
+  wallSegments(): { seg: [number, number, number, number]; door: boolean }[] {
+    const b = this.levelBoard(), out: { seg: [number, number, number, number]; door: boolean }[] = [];
+    const doors = new Set((this.board.fog?.walls || []).filter(w => w.door).map(w => w.id));
+    for (const w of b.fog?.walls || []) for (let i = 0; i + 3 < w.pts.length; i += 2)
+      out.push({ seg: [w.pts[i], w.pts[i + 1], w.pts[i + 2], w.pts[i + 3]], door: doors.has(w.id) });
+    return out;
+  }
+
   /** Roofs: closed ones cover what is under them; an open one (a token of yours under it) is gone */
   applyRoofs() {
     if (!this.board) return;
@@ -399,7 +462,8 @@ export class BoardView {
   private renderItem(it: BoardItem) {
     const kind = kindOf(it);
     const meta = it.image ? this.images.get(it.image) : undefined;
-    const tex = it.image ? this.textures.get(it.image) : undefined;
+    // a 3D model's token: in 2D, its picture from above
+    const tex = it.image ? this.textures.get(it.image) : it.model ? this.textures.get('m:' + it.model) : undefined;
     // what the item's view holds: a Sprite, a Text, or a Graphics (pencil stroke / image placeholder)
     const want = kind === 'text' ? `text:${it.text}|${it.color}|${it.fontSize}` : kind === 'path' ? 'path' : tex ? 'sprite' : 'placeholder';
     let v = this.views.get(it.id);
@@ -414,6 +478,7 @@ export class BoardView {
       else {
         child = new Graphics();   // pencil stroke, or a placeholder while the image loads (or if it is gone)
         if (kind === 'image' && meta) this.loadTexture(meta);
+        else if (kind === 'image' && it.model) this.loadUrl('m:' + it.model, modelThumbUrl(it.model), false);
       }
       child.eventMode = 'none';
       v.addChild(child);
@@ -458,8 +523,8 @@ export class BoardView {
       }
     } else if (child instanceof Graphics) {
       child.clear().rect(-it.w / 2, -it.h / 2, it.w, it.h).fill({ color: 0x2a2a2a, alpha: 0.8 })
-        .stroke({ width: 2, color: meta ? 0x777777 : 0xc04040 });
-      if (!meta) child.moveTo(-it.w / 2, -it.h / 2).lineTo(it.w / 2, it.h / 2).moveTo(it.w / 2, -it.h / 2).lineTo(-it.w / 2, it.h / 2)
+        .stroke({ width: 2, color: meta || it.model ? 0x777777 : 0xc04040 });
+      if (!meta && !it.model) child.moveTo(-it.w / 2, -it.h / 2).lineTo(it.w / 2, it.h / 2).moveTo(it.w / 2, -it.h / 2).lineTo(-it.w / 2, it.h / 2)
         .stroke({ width: 2, color: 0xc04040 });
     }
     this.renderBars(it);
@@ -575,13 +640,15 @@ export class BoardView {
     return { h, gap: h * 0.35 };
   }
 
-  private loadTexture(meta: ImageMeta) {
-    if (this.loading.has(meta.id)) return;
-    this.loading.add(meta.id);
-    Assets.load<Texture>({ src: imageUrl(meta), loadParser: meta.file.endsWith('.svg') ? 'loadSVG' : 'loadTextures' })
-      .then(tex => { this.textures.set(meta.id, tex); this.render(); })
-      .catch(err => console.warn('No se pudo cargar la imagen', meta.file, err))
-      .finally(() => this.loading.delete(meta.id));
+  private loadTexture(meta: ImageMeta) { this.loadUrl(meta.id, imageUrl(meta), meta.file.endsWith('.svg')); }
+
+  private loadUrl(key: string, src: string, svg: boolean) {
+    if (this.loading.has(key)) return;
+    this.loading.add(key);
+    Assets.load<Texture>({ src, loadParser: svg ? 'loadSVG' : 'loadTextures' })
+      .then(tex => { this.textures.set(key, tex); this.render(); })
+      .catch(err => console.warn('No se pudo cargar la imagen', src, err))
+      .finally(() => this.loading.delete(key));
   }
 
   private drawPage() {

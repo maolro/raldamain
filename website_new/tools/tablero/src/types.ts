@@ -17,6 +17,7 @@ export interface BoardItem {
   id: string;
   kind?: ItemKind;      // missing = 'image' (boards made before drawings existed)
   image?: string;       // image: ImageMeta.id
+  model?: string;       // a 3D model (ModelMeta.id): in 3D the model, in 2D its picture from above
   fit?: boolean;        // image: drawn inside its box keeping its proportions (tokens)
   x: number;
   y: number;
@@ -51,6 +52,21 @@ export interface BoardItem {
   used?: { a: number; r: number };                     // spent this round (Nueva ronda empties them)
   level?: string;       // the level (floor) it is on (missing: the first one)
   roof?: boolean;       // image: a roof, drawn over the tokens, that opens when one of yours goes under it
+}
+
+/** A 3D model in the Vista 3D's library (tablero.py: models/<id>/<files>) */
+export interface ModelMeta {
+  id: string;
+  name: string;
+  category: string;
+  tags: string[];
+  main: string;        // the model's file (.obj, .fbx, .glb, .gltf); the rest are its materials and textures
+  files: string[];
+  size: number;
+  thumb: boolean;      // thumb.png: how it looks from above (the 2D board shows it)
+  scale: number;       // 1 = fills its squares
+  created: number;
+  duplicate?: boolean;
 }
 
 /** A status effect on a token: data/status_effects.json's id and the level's index */
@@ -202,6 +218,7 @@ export interface RollRecord {
   color?: string;
   token?: string;       // the token it was rolled for (its name on the board, set by the server)
   tokenId?: string;
+  public?: boolean;     // a player rolled it for everyone to see
   label: string;
   expr: string;
   terms: RollTerm[];

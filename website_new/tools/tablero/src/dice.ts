@@ -77,6 +77,10 @@ export class DiceRoller {
   send: ((terms: Term[], expr: string, label: string, token?: string) => Promise<RollRecord>) | null = null;
   /** show who rolled (the GM's history has everyone's) */
   showWho = false;
+  /** players: roll for everyone to see (the tick, on unless they took it off) */
+  get publicRolls() { return !(this.el.querySelector('#dice-public-row') as HTMLElement).hidden && (this.el.querySelector('#dice-public') as HTMLInputElement).checked; }
+  /** players get the «Tirada pública» tick (the GM's rolls are the GM's) */
+  setPublicOption(on: boolean) { (this.el.querySelector('#dice-public-row') as HTMLElement).hidden = !on; }
   /** a roll from someone else arrived */
   onIncoming: (r: RollRecord) => void = () => {};
 
@@ -94,6 +98,8 @@ export class DiceRoller {
         <button class="roll-btn" id="roll-pool">Tirar</button>
         <button class="btn small" id="clear-pool">Limpiar</button>
       </div>
+      <label class="check dice-public" id="dice-public-row" hidden title="Marcada: todos los jugadores ven tus tiradas (el GM las ve siempre). Sin marcar: solo tú y el GM">
+        <input type="checkbox" id="dice-public"> Tirada pública <small class="muted">(la ven todos los jugadores)</small></label>
       <form class="expr-form" id="expr-form">
         <input class="inp" id="expr-input" placeholder="+5 (1d20+5), +5+1d6, 2d6+4…" autocomplete="off">
         <button class="btn small" type="submit" title="Tirar la expresión">🎲</button>
@@ -101,6 +107,9 @@ export class DiceRoller {
       <div class="log-head-row"><span>Historial</span><button class="log-clear" id="clear-log">Borrar</button></div>
       <div class="dice-log" id="dice-log"></div>`;
     const $ = (id: string) => el.querySelector('#' + id) as HTMLElement;
+    const pub = $('dice-public') as HTMLInputElement, PUB = 'raldamain.tablero.dicePublic';
+    try { pub.checked = localStorage.getItem(PUB) !== '0'; } catch { pub.checked = true; }
+    pub.addEventListener('change', () => { try { localStorage.setItem(PUB, pub.checked ? '1' : '0'); } catch { /* private window */ } });
     el.querySelector('.dice-grid')!.addEventListener('click', e => {
       const b = (e.target as HTMLElement).closest<HTMLElement>('.die-btn');
       if (!b) return;
@@ -243,7 +252,7 @@ export class DiceRoller {
     }
     log.innerHTML = this.history.map((r, i) => `
       <div class="log-entry${r.crit ? ' crit' : ''}${fresh && i === 0 ? ' fresh' : ''}">
-        ${(this.showWho && r.who) || r.token ? `<div class="log-who"><span class="dot" style="background:${esc(r.color || '#fff200')}"></span>${r.token ? `<b>${esc(r.token)}</b>` : ''}${r.token && this.showWho && r.who ? ' · ' : ''}${this.showWho && r.who ? esc(r.who) : ''}</div>` : ''}
+        ${((this.showWho || r.public) && r.who) || r.token ? `<div class="log-who"><span class="dot" style="background:${esc(r.color || '#fff200')}"></span>${r.token ? `<b>${esc(r.token)}</b>` : ''}${r.token && (this.showWho || r.public) && r.who ? ' · ' : ''}${(this.showWho || r.public) && r.who ? esc(r.who) : ''}${r.public ? ' <span class="log-pub" title="Tirada pública: la ven todos">👁</span>' : ''}</div>` : ''}
         <div class="log-head"><span class="log-label">${esc(r.label)}${r.crit ? ' <span class="log-crit">¡Crítico!</span>' : ''}</span>
           <span class="log-time">${new Date(r.time).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}</span></div>
         <div class="log-body"><span class="log-breakdown">${breakdown(r.terms)}</span><span class="log-total">${Number(r.total)}</span></div>

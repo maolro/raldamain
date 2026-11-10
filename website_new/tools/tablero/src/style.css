@@ -462,3 +462,30 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .crop-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
 .crop-bar .check { display: inline-flex; align-items: center; gap: 6px; }
 .crop-btns { margin-left: auto; display: flex; gap: 8px; }
+
+/* ── 2D / 3D ── */
+.mode-toggle { display: inline-flex; border: 1px solid var(--gold-dim); border-radius: 6px; overflow: hidden; }
+.mode-toggle button { background: transparent; color: var(--muted); border: 0; padding: 4px 10px; font: 700 12px var(--body); cursor: pointer; }
+.mode-toggle button + button { border-left: 1px solid var(--gold-dim); }
+.mode-toggle button.on { background: var(--gold); color: #111; }
+.mode-toggle button:not(.on):hover { color: var(--gold); }
+.v3d { position: absolute; inset: 0; z-index: 3; background: #050505; }
+.v3d canvas { display: block; width: 100%; height: 100%; outline: none; }
+.v3d-bar { position: absolute; top: 10px; left: 0; right: 0; margin: 0 auto; width: max-content; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: center;
+  background: rgba(20,20,20,.88); border: 1px solid var(--gold-dim); border-radius: 8px; padding: 6px 8px; max-width: calc(100% - 24px); }
+.v3d-sep { width: 1px; align-self: stretch; background: var(--gold-dim); margin: 0 2px; }
+.v3d-wall { display: flex; gap: 6px; align-items: center; font-size: 12px; color: var(--muted); }
+.v3d-wall input { width: 90px; }
+.v3d-wall span { min-width: 2.2em; color: var(--gold); }
+.v3d-help { position: absolute; bottom: 8px; left: 0; right: 0; margin: 0 auto; width: max-content; font-size: 12px; color: var(--muted); background: rgba(10,10,10,.7);
+  padding: 3px 10px; border-radius: 6px; pointer-events: none; white-space: nowrap; max-width: calc(100% - 16px); overflow: hidden; text-overflow: ellipsis; }
+body.mode-3d .level-bar { z-index: 4; top: 60px; }
+body.mode-3d .tools .group:not(.zoom), body.mode-3d .tools .zoom, body.mode-3d .tool-opts, body.mode-3d #help, body.mode-3d .newsize { display: none !important; }
+body.mode-3d #hud, body.mode-3d #status-panel { display: none !important; }
+.thumb-none { aspect-ratio: 1; display: grid; place-items: center; font-size: 32px; background: #1a1a1a; border-radius: 3px; }
+body.mode-3d #status-btn { display: none !important; }
+.top .btn, .top .presence, .top .role, .top .newsize, .top .status, .mode-toggle button { white-space: nowrap; }
+.top > .btn, .top > .presence, .top > .role, .top > .mode-toggle, .top > .newsize { flex-shrink: 0; }
+.dice-public { display: flex; gap: 6px; align-items: center; font-size: 12px; margin: 2px 0 6px; cursor: pointer; }
+.dice-public[hidden] { display: none; }
+.log-pub { font-size: 11px; opacity: .8; }

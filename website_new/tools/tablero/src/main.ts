@@ -27,7 +27,7 @@ import { TileDialog, TileTags } from './tileadd';
 import { openRoofCells } from './tiles';
 import { cropDialog, cropImage } from './crop';
 import { readUvtt } from './uvtt';
-import { BARS, kindOf, LAYERS, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Portal, type Presence, type RoundEffect, type ShareStatus, type SheetStats } from './types';
+import { BARS, kindOf, LAYERS, type ModelMeta, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Portal, type Presence, type RoundEffect, type ShareStatus, type SheetStats } from './types';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -43,8 +43,8 @@ document.body.classList.toggle('player', PLAYER);
 
 // tool settings, kept in this browser
 const prefs = { pen: { color: '#e03030', width: 6 }, text: { color: '#ffffff', size: 36 }, newSize: '1', side: 'library',
-  ruler: 'line' as RulerMode };
-try { const p = JSON.parse(localStorage.getItem(PREFS) || '{}'); Object.assign(prefs.pen, p.pen); Object.assign(prefs.text, p.text); if (p.newSize) prefs.newSize = p.newSize; if (p.side) prefs.side = p.side; if (p.ruler) prefs.ruler = p.ruler; } catch { /* defaults */ }
+  ruler: 'line' as RulerMode, mode3d: false };
+try { const p = JSON.parse(localStorage.getItem(PREFS) || '{}'); Object.assign(prefs.pen, p.pen); Object.assign(prefs.text, p.text); if (p.newSize) prefs.newSize = p.newSize; if (p.side) prefs.side = p.side; if (p.ruler) prefs.ruler = p.ruler; if (p.mode3d) prefs.mode3d = true; } catch { /* defaults */ }
 const savePrefs = () => { try { localStorage.setItem(PREFS, JSON.stringify(prefs)); } catch { /* private window */ } };
 
 // right click is the board's (its menu, finishing a wall…): never the browser's, but in text fields
@@ -96,7 +96,7 @@ const view = new BoardView({
     if (kind === 'commit') commit();
     else if (!liveTimer) liveTimer = window.setTimeout(() => { liveTimer = 0; live?.push(true); }, 60);  // others see it move
   },
-  selection() { /* the overlay draws itself */ },
+  selection() { v3?.selectionChanged(); },   // (the 2D overlay draws itself)
   view(zoom) { $('zoom-label').textContent = `${Math.round(zoom * 100)}%`; updateHud(); },
   contextMenu(item, at) {
     if (view.tool === 'fog' && wallDraft) { finishWall(); return; }   // right click ends the wall being drawn
@@ -151,11 +151,12 @@ const library = new Library($('library'), {
 });
 
 const dice = new DiceRoller($('dice'), toast);
+dice.setPublicOption(PLAYER);
 const music = new Music($('music'), { gm: !PLAYER, toast, boardId: () => live?.boardId ?? null });
 // on a board the server rolls (the GM sees every roll of the game, a player their own)
 dice.send = (terms, expr, label, token) => {
   if (!live?.me) return Promise.reject(new Error('sin conexión con el tablero'));
-  return api.roll(live.boardId, { cid: live.me.cid, terms, expr, label, ...(token ? { token } : {}) });
+  return api.roll(live.boardId, { cid: live.me.cid, terms, expr, label, ...(token ? { token } : {}), ...(dice.publicRolls ? { public: true } : {}) });
 };
 // someone else's roll while the Dados tab is closed: a count on the tab
 let unseenRolls = 0;
@@ -186,7 +187,8 @@ const windows = new SheetWindows(sheets, {
 function showSide(tab: string) {
   prefs.side = tab === 'dice' || tab === 'music' ? tab : 'library';
   document.querySelectorAll<HTMLElement>('[data-side]').forEach(b => b.classList.toggle('on', b.dataset.side === prefs.side));
-  $('library').hidden = prefs.side !== 'library';
+  $('library').hidden = prefs.side !== 'library' || prefs.mode3d;
+  $('models').hidden = prefs.side !== 'library' || !prefs.mode3d;
   $('dice').hidden = prefs.side !== 'dice';
   $('music').hidden = prefs.side !== 'music';
   if (prefs.side === 'dice') { unseenRolls = 0; delete document.querySelector<HTMLElement>('[data-side="dice"]')?.dataset.count; }
@@ -298,6 +300,7 @@ function connect(boardId: string) {
       fitted = b.id;
       if (first || !levelsOf(b).some(l => l.id === view.level)) view.level = firstLevel(b);
       view.setBoard(b, first);
+      if (first) v3?.boardChanged();
       followLevel();
       arrived(b);
       windows.sync(b.items);
@@ -312,7 +315,7 @@ function connect(boardId: string) {
     presence(p) { presence = p; renderPresence(); view.render(); scenesPanel.presenceChanged(); },
     roll(r) { dice.add(r, r.by === me?.pid || (!r.by && isGM())); },
     ruler(r) { view.setRuler('cid:' + r.by, r.shape, r.color, r.who); },
-    ping(p) { if ((p.level || firstLevel(B())) === view.level) view.ping(p, p.color, p.who); },
+    ping(p) { if ((p.level || firstLevel(B())) === view.level) { view.ping(p, p.color, p.who); v3?.ping(p, p.color); } },
     music(p) { music.setState(p); },
     scene(bid) { travelTo(bid); },
     image: imageChanged,
@@ -862,6 +865,7 @@ function bindDoubleClick() {
 /** Double click on the board: a radar ping here, on every screen showing this level */
 function sendPing(at: { x: number; y: number }) {
   view.ping(at, myColor());
+  v3?.ping(at, myColor());
   if (live?.me && board) api.ping(live.boardId, { cid: live.me.cid, x: Math.round(at.x), y: Math.round(at.y), level: view.level }).catch(() => {});
 }
 
@@ -2211,6 +2215,8 @@ $('p-bg').addEventListener('input', e => gridChanged(() => (B().background = (e.
 document.addEventListener('keydown', e => {
   if (typing(e) || !board) return;
   const ctrl = e.ctrlKey || e.metaKey, k = e.key.toLowerCase();
+  // 3D: the keys move the camera; undo, copy / paste / duplicate, delete and Esc still work
+  if (v3?.active && !(ctrl && ['z', 'y', 'c', 'v', 'd'].includes(k)) && !['delete', 'backspace', 'escape'].includes(k)) return;
   if (k === ' ' && !view.spaceDown) { view.spaceDown = true; view.app.canvas.style.cursor = 'grab'; e.preventDefault(); return; }
   if (ctrl && k === 'z' && !e.shiftKey) { e.preventDefault(); doUndo(); }
   else if (ctrl && (k === 'y' || (k === 'z' && e.shiftKey))) { e.preventDefault(); doRedo(); }
@@ -2241,13 +2247,85 @@ document.addEventListener('keyup', e => {
   if (e.key === ' ') { view.spaceDown = false; view.setTool(view.tool); }
 });
 
+// ── 🧊 Vista 3D ─────────────────────────────────────────────────────────────
+// The same scene in 3D (view3d.ts, loaded the first time it is asked for). The 2D board keeps
+// running underneath: the 3D view is drawn from it and follows every change.
+// Its library is the 3D models' (the image library is the 2D board's): each is loaded only in its mode.
+let v3: import('./view3d').View3D | null = null;
+let models: import('./modellib').ModelLibrary | null = null;
+let modelsAsked = 0;
+
+/** Put a library model on the board as a token (Tokens nuevos: its size in squares) */
+function placeModel(m: ModelMeta, at: { x: number; y: number }) {
+  if (!board) return;
+  const g = board.grid.size, n = Number(prefs.newSize) || 1, w = g * n;
+  const layer: LayerId = view.activeLayer === 'map' ? 'tokens' : view.activeLayer;
+  let x = at.x - w / 2, y = at.y - w / 2;
+  if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, w); }
+  const it = stamp({ id: uid(), kind: 'image', model: m.id, fit: true, x, y, w, h: w, rotation: 0, layer, z: nextZ(layer), name: m.name });
+  B().items.push(it);
+  view.render();
+  view.select([it.id]);
+  commit();
+}
+
+async function set3D(on: boolean) {
+  $('mode-2d').classList.toggle('on', !on);
+  $('mode-3d').classList.toggle('on', on);
+  document.body.classList.toggle('mode-3d', on);
+  prefs.mode3d = on;
+  savePrefs();
+  showSide(prefs.side);   // (Biblioteca: the images in 2D, the models in 3D)
+  if (on && !v3) {
+    setStatus('Cargando la vista 3D…', 'saving');
+    try {
+      const [{ View3D }, { ModelLibrary }] = await Promise.all([import('./view3d'), import('./modellib')]);
+      models = new ModelLibrary($('models'), {
+        place: m => placeModel(m, view.viewCenter()),
+        changed: () => { view.render(); v3?.changed(); },
+        toast,
+      }, isGM());
+      v3 = new View3D(stage, {
+        view, image: id => library.get(id), isGM, badgeColor: it => view.badgeColor(it), ping: at => sendPing(at),
+        model: id => models?.get(id),
+        missingModel() {   // (a token of a model this browser doesn't know yet: at most every few seconds)
+          if (!models || Date.now() - modelsAsked < 4000) return;
+          modelsAsked = Date.now();
+          models.load(true);
+        },
+        canEdit,
+        change(kind, ids) {
+          view.render();
+          if (kind === 'commit') { commit(); setTimeout(() => throughPortals(ids), 0); }
+          else if (!liveTimer) liveTimer = window.setTimeout(() => { liveTimer = 0; live?.push(true); }, 60);
+        },
+        menu: (it, at) => openMenu(it, at),
+        open: it => openSheet(it),
+        dropModel: (id, at) => { const m = models?.get(id); if (m) placeModel(m, at); },
+      });
+      view.onRendered = () => v3?.changed();
+    } catch (err) {
+      toast(`No se pudo abrir la vista 3D: ${(err as Error).message}`, true);
+      set3D(false);
+      return;
+    } finally { setStatus('Conectado'); }
+  }
+  if (!document.body.classList.contains('mode-3d') !== !on) return;   // (switched back while it loaded)
+  if (on) { $('menu').hidden = true; showMyRuler(null, true); view.app.ticker.stop(); models?.load(); }
+  else view.app.ticker.start();
+  v3?.show(on);
+}
+$('mode-2d').addEventListener('click', () => set3D(false));
+$('mode-3d').addEventListener('click', () => set3D(true));
+
 // ── start ───────────────────────────────────────────────────────────────────
 // for the browser console (and tests): window.tablero.view / .board() / .me()
 (window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, statuses, music, painter, scenes: scenesPanel, levelBar,
-  board: () => board, me: () => me, presence: () => presence, live: () => live, importMap };
+  board: () => board, me: () => me, v3: () => v3, models: () => models, m3d: () => import('./models3d'), presence: () => presence, live: () => live, importMap };
 (async () => {
   await view.init(stage);
   bindDoubleClick();
+  if (prefs.mode3d) set3D(true);
   fillToolOptions();
   renderPresence();
   if (PLAYER) {

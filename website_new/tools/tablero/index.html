@@ -27,6 +27,9 @@
         <option value="1">1×1</option><option value="2">2×2</option><option value="3">3×3</option><option value="4">4×4</option>
         <option value="orig">Tamaño original</option>
       </select></label>
+    <span class="mode-toggle" role="group" aria-label="Vista">
+      <button class="on" id="mode-2d" title="Tablero 2D: editar, mover tokens, dibujar…">2D</button><button id="mode-3d" title="Vista 3D de la escena: suelo, muros y figuras (solo para mirar, por ahora)">🧊 3D</button>
+    </span>
     <span class="grow"></span>
     <button class="presence" id="presence" title="Jugadores de la sala">👥 0</button>
     <button class="btn small gm-only" id="share-btn" title="Abrir el tablero a internet (tablero.raldamain.com) para jugar a distancia">🌐 Compartir</button>
@@ -74,6 +77,7 @@
       <button class="side-tab" data-side="music" title="Música para toda la sala">🎵 Música</button>
     </nav>
     <section class="library" id="library"></section>
+    <section class="library" id="models" hidden></section>
     <section class="dice" id="dice" hidden></section>
     <section class="music" id="music" hidden></section>
   </aside>

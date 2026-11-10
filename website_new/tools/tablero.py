@@ -99,6 +99,11 @@ TILES = STORAGE / "tiles"
 TILE_TAGS = STORAGE / "tiletags.json"   # [{name, tags}]: the categories of the tiles' tags (Bioma, Material…)
 CAMPAIGNS = STORAGE / "campaigns.json"   # [{id, name}]: sets of scenes (a board's "campaign")
 MUSIC = STORAGE / "music"
+MODELS = STORAGE / "models"              # 3D models: models/<id>/ holds the model, its materials and textures
+MODEL_INDEX = STORAGE / "models.json"
+MODEL_MAIN = {"obj", "fbx", "glb", "gltf"}                       # what a model is
+MODEL_PARTS = {"mtl", "bin", "png", "jpg", "jpeg", "webp", "tga", "bmp", "gif"}   # what comes with it
+MAX_MODEL = 120 * 1024 * 1024  # bytes, all its files together
 MUSIC_INDEX = STORAGE / "music.json"
 AUDIO_TYPES = {"audio/mpeg": "mp3", "audio/mp3": "mp3", "audio/ogg": "ogg", "audio/wav": "wav", "audio/x-wav": "wav",
                "audio/wave": "wav", "audio/mp4": "m4a", "audio/x-m4a": "m4a", "audio/aac": "aac", "audio/flac": "flac",
@@ -577,6 +582,138 @@ def api_image_delete(iid):
         if not any(m.get("file") == meta["file"] for m in lib):  # nobody else uses the picture
             (IMAGES / meta["file"]).unlink(missing_ok=True)
     return jsonify({"ok": True})
+
+
+# ─────────────────────────────────────────────────────────────── 3D models (Vista 3D)
+# A model is one .obj / .fbx / .glb / .gltf with the files it needs (.mtl, .bin, textures), kept
+# together in models/<id>/ under their own names (that is how the model asks for them), plus
+# thumb.png: how it looks from above, drawn by the browser on upload (the 2D board shows that).
+
+MODEL_ID_RE = re.compile(r"^[a-f0-9]{16}$")
+MODEL_FILE_RE = re.compile(r"^[A-Za-z0-9 _.()+-]{1,120}$")
+
+
+def _model_file_name(name: str) -> str | None:
+    """Only the file's own name (no folders), and nothing odd in it"""
+    base = Path((name or "").replace("\\", "/")).name.strip()
+    return base if MODEL_FILE_RE.match(base) and base not in (".", "..") else None
+
+
+def _models_seen_by(code: str, pid: str) -> set:
+    bid = player_scene(rooms().get(code) or {}, pid)
+    if not bid or not (BOARDS / f"{bid}.json").exists():
+        return set()
+    return {it.get("model") for it in session(bid).visible("player")["items"] if it.get("model")}
+
+
+@app.route("/api/models")
+def api_models():
+    w = who()
+    if not w:
+        abort(403)
+    lib = _read(MODEL_INDEX, [])
+    if w[0] == "player":   # the ones on the board they can see
+        shown = _models_seen_by(w[2], w[1])
+        lib = [m for m in lib if m.get("id") in shown]
+    return jsonify(lib)
+
+
+@app.route("/api/models", methods=["POST"])
+def api_model_upload():
+    """multipart (GM): files (the model and what it needs), main (which one is the model), thumb (PNG),
+    name, category, tags. The same set of files twice is stored once."""
+    need_gm()
+    files = request.files.getlist("files")
+    main = _model_file_name(request.form.get("main") or "")
+    if not files or not main or Path(main).suffix.lower().lstrip(".") not in MODEL_MAIN:
+        return jsonify({"error": "falta el modelo (.obj, .fbx, .glb o .gltf)"}), 400
+    got: dict[str, bytes] = {}
+    total = 0
+    for f in files:
+        name = _model_file_name(f.filename or "")
+        ext = Path(name or "").suffix.lower().lstrip(".")
+        if not name or ext not in MODEL_MAIN | MODEL_PARTS:
+            return jsonify({"error": f"archivo no admitido: {f.filename}"}), 400
+        data = f.read(MAX_MODEL + 1)
+        total += len(data)
+        if total > MAX_MODEL:
+            return jsonify({"error": "el modelo y sus texturas pasan de 120 MB"}), 400
+        got[name] = data
+    if main not in got:
+        return jsonify({"error": "el modelo no está entre los archivos"}), 400
+    h = hashlib.sha1()
+    for name in sorted(got):
+        h.update(name.encode() + b"\0" + hashlib.sha1(got[name]).digest())
+    mid = h.hexdigest()[:16]
+    thumb = request.files.get("thumb")
+    thumb_data = thumb.read(4 * 1024 * 1024 + 1) if thumb else b""
+    with _lock:
+        lib = _read(MODEL_INDEX, [])
+        same = next((m for m in lib if m.get("id") == mid), None)
+        if same:
+            return jsonify({**same, "duplicate": True})
+        folder = MODELS / mid
+        folder.mkdir(parents=True, exist_ok=True)
+        for name, data in got.items():
+            (folder / name).write_bytes(data)
+        if thumb_data and len(thumb_data) <= 4 * 1024 * 1024 and thumb_data[:8] == b"\x89PNG\r\n\x1a\n":
+            (folder / "thumb.png").write_bytes(thumb_data)
+        meta = {"id": mid, "name": (request.form.get("name") or Path(main).stem).strip()[:80] or "Modelo",
+                "category": (request.form.get("category") or "Figuras").strip()[:40],
+                "tags": _clean_tags(request.form.get("tags") or ""), "main": main, "files": sorted(got),
+                "size": total, "thumb": (folder / "thumb.png").exists(), "scale": 1, "created": time.time()}
+        lib.append(meta)
+        _write(MODEL_INDEX, lib)
+    return jsonify(meta)
+
+
+@app.route("/api/models/<mid>", methods=["PATCH"])
+def api_model_update(mid):
+    """(GM) name, category, tags, scale (how big it looks: 1 = fills its squares)"""
+    need_gm()
+    body = request.get_json(force=True) or {}
+    with _lock:
+        lib = _read(MODEL_INDEX, [])
+        meta = next((m for m in lib if m.get("id") == mid), None)
+        if not meta:
+            return jsonify({"error": "no existe"}), 404
+        if "name" in body:
+            meta["name"] = str(body["name"]).strip()[:80] or meta["name"]
+        if "category" in body:
+            meta["category"] = str(body["category"]).strip()[:40] or "Figuras"
+        if "tags" in body:
+            meta["tags"] = _clean_tags(body["tags"])
+        if "scale" in body:
+            try:
+                meta["scale"] = max(0.05, min(20.0, float(body["scale"])))
+            except (TypeError, ValueError):
+                pass
+        _write(MODEL_INDEX, lib)
+    return jsonify(meta)
+
+
+@app.route("/api/models/<mid>", methods=["DELETE"])
+def api_model_delete(mid):
+    need_gm()
+    if not MODEL_ID_RE.match(mid):
+        abort(404)
+    with _lock:
+        lib = _read(MODEL_INDEX, [])
+        _write(MODEL_INDEX, [m for m in lib if m.get("id") != mid])
+        shutil.rmtree(MODELS / mid, ignore_errors=True)
+    return jsonify({"ok": True})
+
+
+@app.route("/models/<mid>/<name>")
+def model_file(mid, name):
+    """A model's files (named by their content: they never change)"""
+    if not MODEL_ID_RE.match(mid) or not _model_file_name(name):
+        abort(404)
+    resp = send_from_directory(MODELS / mid, name)
+    resp.headers["Cache-Control"] = "public, max-age=31536000, immutable"
+    resp.headers["X-Content-Type-Options"] = "nosniff"
+    resp.headers["Content-Security-Policy"] = "default-src 'none'; sandbox"
+    return resp
 
 
 # ─────────────────────────────────────────────────────────────── stat blocks (fichas)
@@ -1121,9 +1258,9 @@ class Hub:
         return ROLLS / (f"sala-{self.key[5:]}.json" if self.key.startswith("sala:") else f"{self.key[2:]}.json")
 
     def rolls_for(self, role: str, pid: str | None) -> list[dict]:
-        """The GM: every roll. A player: their own."""
+        """The GM: every roll. A player: their own, and the other players' public ones."""
         with self.lock:
-            return [r for r in self.rolls if role == "gm" or r.get("by") == pid]
+            return [r for r in self.rolls if role == "gm" or r.get("by") == pid or r.get("public")]
 
     def send(self, make, exclude: str | None = None):
         """To every connection in the room's scenes (and the GM's, wherever they are)."""
@@ -1251,8 +1388,8 @@ def roll_terms(terms) -> tuple[list[dict], int, bool] | None:
 
 @app.route("/api/live/<bid>/roll", methods=["POST"])
 def live_roll(bid):
-    """{cid, terms, expr, label} → the roll, made here. It reaches the GM's pages and the
-    roller's other pages; other players never see it."""
+    """{cid, terms, expr, label, public} → the roll, made here. It reaches the GM's pages and the
+    roller's other pages; other players only see it when a player rolls it public (their default)."""
     role, pid, code = need_board(bid)
     body = request.get_json(force=True) or {}
     s = session(bid)
@@ -1277,12 +1414,15 @@ def live_roll(bid):
          "terms": terms, "total": total, "crit": crit, "time": time.time() * 1000}
     if token:
         r["token"], r["tokenId"] = token, tok["id"]
+    public = bool(pid) and body.get("public") is True   # (a player's: the GM's rolls stay the GM's)
+    if public:
+        r["public"] = True
     h = hub_for(bid)   # (the room's log, whichever scene it was rolled in)
     with h.lock:
         h.rolls.append(r)
         del h.rolls[:-MAX_ROLLS]
         _write(h.rolls_path(), h.rolls)
-    h.send(lambda role_, pid_: _event("roll", r) if role_ == "gm" or (pid and pid_ == pid) else None,
+    h.send(lambda role_, pid_: _event("roll", r) if role_ == "gm" or public or (pid and pid_ == pid) else None,
            exclude=body.get("cid"))
     return jsonify(r)
 
