@@ -39,6 +39,7 @@ const PREFS = 'raldamain.tablero.prefs';
 const PLAYER_KEYS = 'raldamain.tablero.player';   // { code: { key, name } }: this browser's place in each room
 const SWATCHES = ['#ffffff', '#111111', '#e03030', '#f08a24', '#fff200', '#3cb44b', '#3a8ee6', '#9b59d0', '#8b5a2b'];
 const PLAYER = location.pathname.startsWith('/jugar');
+declare const __BUILD__: string;   // (vite.config.ts: when this was built)
 document.body.classList.toggle('player', PLAYER);
 
 // tool settings, kept in this browser
@@ -2321,7 +2322,7 @@ $('mode-3d').addEventListener('click', () => set3D(true));
 // ── start ───────────────────────────────────────────────────────────────────
 // for the browser console (and tests): window.tablero.view / .board() / .me()
 (window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, statuses, music, painter, scenes: scenesPanel, levelBar,
-  board: () => board, me: () => me, v3: () => v3, models: () => models, m3d: () => import('./models3d'), presence: () => presence, live: () => live, importMap };
+  board: () => board, me: () => me, v3: () => v3, models: () => models, build: __BUILD__, m3d: () => import('./models3d'), presence: () => presence, live: () => live, importMap };
 (async () => {
   await view.init(stage);
   bindDoubleClick();

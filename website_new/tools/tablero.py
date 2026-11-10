@@ -280,6 +280,14 @@ def player_page():
 
 @app.route("/app/<path:name>")
 def client_assets(name):
+    # being rebuilt (vite empties the folder first): wait for it rather than answer "not found"
+    f = DIST / "app" / name
+    for _ in range(60):
+        if f.is_file():
+            break
+        time.sleep(0.25)
+    if not f.is_file():   # (and that answer is never kept by a cache)
+        return Response("no existe", status=404, mimetype="text/plain", headers={"Cache-Control": "no-store"})
     resp = send_from_directory(DIST / "app", name)
     resp.headers["Cache-Control"] = "no-cache"
     return resp
