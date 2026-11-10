@@ -151,15 +151,16 @@
           "desc": "Recuperas 1 Chi cada vez que anulas un hechizo de manera exitosa con Contrahechizo, o afectas exitosamente a un objetivo con un hechizo de Magia Protectora."
         },
         {
-          "name": "Glifo de Anulación",
+          "name": "Esfera de Fuerza",
           "tags": [
-            "Protectora"
+            "Protectora",
+            "Duradera"
           ],
-          "desc": "Al impactar, colocas un Glifo de Anulación sobre el objetivo. Mientras el glifo permanezca sobre él, no podrá lanzar hechizos pertenecientes a una rama Arcana, Elemntalismo o Ocultismo de tu elección. Eliminarlo requiere un tiro de salvación de Voluntad exitoso (lo cual cuesta una Acción), pero dos fracasos hacen que no pueda repetirse hasta que pase su efecto. Cuenta como un efecto de estado de nivel 2 para los propósitos de eliminación.",
-          "cost": "1 Acción, 2 Chi",
-          "range": "Adyacente",
-          "show_mod": true,
-          "duration": "Una hora o hasta que sea eliminado"
+          "desc": "Crea una esfera a tu alrededor que te otorga RANGO contadores de escudo. Puedes también emplear un contador para evitar automáticamente un hechizo que requiera contacto físico.",
+          "cost": "2 Acciones, 2 Chi",
+          "show_mod": false,
+          "duration": "Concentración",
+          "empower": "Recuperas la mitad de tus contadores de escudo, redondeando hacia abajo."
         }
       ]
     },
