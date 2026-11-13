@@ -1,0 +1,3966 @@
+{
+ "503": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "507": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "516": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "108": {
+  "buildings": [
+   "Granja",
+   "Molino",
+   "Iglesia de madera"
+  ],
+  "climate": "Templado",
+  "culture": "Mazarinos",
+  "demographics": [
+   {
+    "culture": "Mazarinos",
+    "group": "Mazarinos",
+    "pct": 64,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses",
+    "pct": 30,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 6,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 4,
+   "prod": 3,
+   "tax": 3
+  },
+  "economy": "Granjas de colina de habla mazarina que dependen de los subsidios agrarios y las pensiones del norte del MPS.",
+  "estates": "Campesinos mazarinos, clero feynista",
+  "fort": 2,
+  "governor": {
+   "name": "Raisa Rudenko",
+   "title": "Prefecta (MPS)"
+  },
+  "language": "Mazarino",
+  "name": "Rybniky",
+  "notes": "Región rural habla mazarina. Quiere reconocimiento cultural y autogobierno, subsidios agrarios.\n\nCongreso de Diputados: 8 diputados. Participación en 4098: 67%.\nLegislativas de 4098: MPS 8 (voto: MPS 59%, Federalista 33%, Nacionalista 8%; abstención 57%).",
+  "owner": "pais2",
+  "population": 507000,
+  "region": "Kratoi Norte",
+  "religion": "Viejo Feynismo",
+  "resources": [
+   "Grano",
+   "Ganado",
+   "Pescado"
+  ],
+  "settlement": "Rybniky",
+  "terrain": "Colinas",
+  "tradeGood": "Grano",
+  "tradeNode": "Carpentia",
+  "unrest": "Recelosa de Rimas; pide reconocimiento cultural"
+ },
+ "521": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "524": {
+  "name": "Imbratur",
+  "owner": "pais3"
+ },
+ "530": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "515": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "497": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "395": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "55": {
+  "name": "Kaymakhisar",
+  "owner": "pais3"
+ },
+ "532": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "200": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "127": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "81": {
+  "name": "Dominio de Eudoxia",
+  "owner": "pais3"
+ },
+ "139": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "533": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "528": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "347": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "147": {
+  "buildings": [
+   "Mercado",
+   "Molino",
+   "Granja",
+   "Muelle"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 44,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 30,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 22,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses",
+    "pct": 4,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 4,
+   "prod": 4,
+   "tax": 4
+  },
+  "economy": "Huertas y campos de cereal que abastecen a las ciudades de la costa. Próspera, moderada y tranquila.",
+  "estates": "Agricultores acomodados, cooperativas",
+  "fort": 1,
+  "governor": {
+   "name": "Yaromer Beaulieu",
+   "title": "Prefecto (MPS)"
+  },
+  "language": "Kratense",
+  "name": "Saumance",
+  "notes": "Región rural moderada, próspera y tranquila, conocida solo por provincia que más a menudo vota al ganador. Es la provincia que más a menudo vota al ganador de las elecciones.\n\nCongreso de Diputados: 10 diputados. Participación en 4098: 77%.\nLegislativas de 4098: MPS 8, Federalista 2 (voto: MPS 48%, Federalista 30%, Nacionalista 22%; abstención 23%).",
+  "owner": "pais2",
+  "population": 666000,
+  "region": "Costa Hespérea",
+  "religion": "Fe Espiritual",
+  "resources": [
+   "Grano",
+   "Ganado",
+   "Pescado"
+  ],
+  "settlement": "Saumance",
+  "terrain": "Llanura",
+  "tradeGood": "Grano",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "4": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "344": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "493": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "245": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "362": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "338": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "83": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "32": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "107": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "112": {
+  "region": "Protectorados Élficos",
+  "terrain": "Bosque",
+  "climate": "Templado",
+  "population": 160000,
+  "culture": "Elfos",
+  "religion": "Fe Espiritual",
+  "language": "Élfico",
+  "demographics": [
+   {
+    "group": "Elfos",
+    "culture": "Elfos",
+    "religion": "Fe Espiritual",
+    "pct": 94
+   },
+   {
+    "group": "Kratenses",
+    "culture": "Kratenses",
+    "religion": "Fe Espiritual",
+    "pct": 6
+   }
+  ],
+  "governor": {
+   "title": "Portavoz del Consejo de Comunas",
+   "name": "Ithiriel Vaenar"
+  },
+  "settlement": "Ardaphiel",
+  "fort": 2,
+  "dev": {
+   "tax": 2,
+   "prod": 2,
+   "man": 2
+  },
+  "tradeGood": "Hierbas",
+  "resources": [
+   "Hierbas",
+   "Madera",
+   "Cristales arcanos"
+  ],
+  "buildings": [
+   "Santuario",
+   "Guarnición kratense"
+  ],
+  "estates": "Consejos de ancianos, druidas élficos",
+  "unrest": "Leal a la alianza con Kratoi",
+  "economy": "Bosques antiguos apenas explotados: herbolaria, artesanía élfica y conocimiento arcano que se comparte con la Universidad de Rimas a cambio de protección.",
+  "notes": "Comuna élfica bajo protección militar kratense, fuera del electorado de la república. Los elfos conservan sus leyes y costumbres y valoran el laicismo kratense y su política de no injerencia cultural. Ardaphiel, la mayor de las comunas, acoge el Consejo de Comunas que habla por todos los protectorados.",
+  "history": [
+   {
+    "year": "4040",
+    "text": "Se incorpora como protectorado de Kratoi bajo la presidencia de Rezeda Valdei."
+   },
+   {
+    "year": "4079",
+    "text": "Se descubre la matanza de elfos encubierta por el Consorcio de la Madera."
+   }
+  ],
+  "name": "Ardaphiel",
+  "owner": "pais2"
+ },
+ "506": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "57": {
+  "name": "Isperya",
+  "owner": "pais3"
+ },
+ "48": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "134": {
+  "name": "Tavramun",
+  "owner": "pais3"
+ },
+ "389": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "176": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "337": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "115": {
+  "name": "Sultashi",
+  "owner": "pais3"
+ },
+ "335": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "62": {
+  "name": "Raudin",
+  "owner": "pais3"
+ },
+ "109": {
+  "name": "",
+  "owner": "pais9"
+ },
+ "508": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "350": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "496": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "522": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "285": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "103": {
+  "name": "Yensehar",
+  "owner": "pais3"
+ },
+ "233": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "123": {
+  "buildings": [
+   "Santuario druídico",
+   "Mercado"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 74,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 10,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Elfos",
+    "group": "Elfos",
+    "pct": 16,
+    "religion": "Fe Espiritual"
+   }
+  ],
+  "dev": {
+   "man": 4,
+   "prod": 3,
+   "tax": 3
+  },
+  "economy": "Pueblos del bosque en la frontera élfica, acostumbrados a convivir con las comunas. La provincia más pro-élfica y ecologista del país.",
+  "estates": "Druidas, aldeanos",
+  "fort": 1,
+  "governor": {
+   "name": "Vesna Skala",
+   "title": "Prefecta (Federalista)"
+  },
+  "language": "Kratense",
+  "name": "Tregwern",
+  "notes": "Pueblos del bosque en la frontera élfica, acostumbrados a convivir con las comunas.\n\nCongreso de Diputados: 8 diputados. Participación en 4098: 67%.\nLegislativas de 4098: Federalista 5, MPS 3 (voto: Federalista 43%, MPS 41%, Nacionalista 15%; abstención 60%).",
+  "owner": "pais2",
+  "population": 526000,
+  "region": "Bosque Oriental",
+  "religion": "Fe Espiritual",
+  "resources": [
+   "Miel",
+   "Madera",
+   "Hierbas"
+  ],
+  "settlement": "Tregwern",
+  "terrain": "Bosque",
+  "tradeGood": "Miel",
+  "tradeNode": "Rimas",
+  "unrest": "Estable"
+ },
+ "511": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "122": {
+  "name": "",
+  "owner": "pais9"
+ },
+ "358": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "329": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "35": {
+  "name": "",
+  "owner": "pais11"
+ },
+ "384": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "310": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "146": {
+  "name": "",
+  "owner": "pais12"
+ },
+ "88": {
+  "name": "Melezgir",
+  "owner": "pais3"
+ },
+ "194": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "168": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "276": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "336": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "117": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "361": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "69": {
+  "name": "Aksutun",
+  "owner": "pais3"
+ },
+ "423": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "518": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "111": {
+  "name": "",
+  "owner": "pais9"
+ },
+ "421": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "136": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "106": {
+  "name": "",
+  "owner": "pais9"
+ },
+ "91": {
+  "name": "Karkale",
+  "owner": "pais3"
+ },
+ "143": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "437": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "76": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "84": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "414": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "45": {
+  "name": "",
+  "owner": "pais12"
+ },
+ "318": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "86": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "96": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "130": {
+  "name": "Batakgecit",
+  "owner": "pais3"
+ },
+ "252": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "308": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "302": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "346": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "60": {
+  "name": "",
+  "owner": "pais13"
+ },
+ "1": {
+  "owner": "pais3"
+ },
+ "74": {
+  "name": "Enregekon",
+  "owner": "pais3"
+ },
+ "98": {
+  "name": "Kiryol",
+  "owner": "pais3"
+ },
+ "307": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "173": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "120": {
+  "name": "Yolsehir",
+  "owner": "pais3"
+ },
+ "129": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "178": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "66": {
+  "name": "Aglasya",
+  "owner": "pais3"
+ },
+ "141": {
+  "name": "",
+  "owner": "pais9"
+ },
+ "138": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "94": {
+  "name": "",
+  "owner": "pais9"
+ },
+ "334": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "269": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "116": {
+  "name": "Hayatsular",
+  "owner": "pais3"
+ },
+ "290": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "370": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "400": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "242": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "93": {
+  "name": "Kyazghan",
+  "owner": "pais3"
+ },
+ "260": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "520": {
+  "name": "Dukhar",
+  "owner": "pais3"
+ },
+ "183": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "132": {
+  "name": "",
+  "owner": "pais9"
+ },
+ "124": {
+  "name": "Kavazhi",
+  "owner": "pais3"
+ },
+ "89": {
+  "name": "Doduvar",
+  "owner": "pais3"
+ },
+ "154": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "227": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "419": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "417": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "61": {
+  "name": "Kuzeygar",
+  "owner": "pais3"
+ },
+ "187": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "231": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "220": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "2": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "374": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "303": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "535": {
+  "name": "Khaldahak",
+  "owner": "pais3"
+ },
+ "301": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "44": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "49": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "291": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "403": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "500": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "142": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "537": {
+  "name": "Namagar",
+  "owner": "pais4"
+ },
+ "365": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "295": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "248": {
+  "name": "",
+  "owner": "pais15"
+ },
+ "512": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "258": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "494": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "71": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "392": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "324": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "331": {
+  "name": "Noira",
+  "owner": "pais1"
+ },
+ "527": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "54": {
+  "governor": {
+   "name": "Aksutun"
+  },
+  "owner": "pais3",
+  "name": "Valshtene"
+ },
+ "373": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "159": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "454": {
+  "name": "",
+  "owner": "pais16"
+ },
+ "378": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "261": {
+  "name": "Pramanai",
+  "owner": "pais15"
+ },
+ "157": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "282": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "247": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "239": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "50": {
+  "name": "Shigrun",
+  "owner": "pais3"
+ },
+ "411": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "345": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "410": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "128": {
+  "owner": "pais3",
+  "name": "Karahoyuk"
+ },
+ "289": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "223": {
+  "name": "",
+  "owner": "pais15"
+ },
+ "182": {
+  "name": "Kemedya",
+  "owner": "pais3"
+ },
+ "319": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "278": {
+  "name": "",
+  "owner": "pais15"
+ },
+ "491": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "203": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "37": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "246": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "300": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "65": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "20": {
+  "name": "",
+  "owner": "pais17"
+ },
+ "315": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "298": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "155": {
+  "name": "Yazeshme",
+  "owner": "pais3"
+ },
+ "256": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "77": {
+  "name": "",
+  "owner": "pais18"
+ },
+ "213": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "363": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "29": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "225": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "72": {
+  "name": "Selvirk",
+  "owner": "pais3"
+ },
+ "177": {
+  "owner": "pais3",
+  "name": "Ereghla"
+ },
+ "218": {
+  "name": "Neredin",
+  "owner": "pais3"
+ },
+ "169": {
+  "name": "Vothchak",
+  "owner": "pais19"
+ },
+ "296": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "357": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "198": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "283": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "490": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "266": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "510": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "201": {
+  "name": "Sanzarkhul",
+  "owner": "pais3"
+ },
+ "52": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "343": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "163": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "342": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "126": {
+  "name": "Tophane",
+  "owner": "pais3"
+ },
+ "292": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "304": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "534": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "333": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "519": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "5": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "13": {
+  "name": "",
+  "owner": "pais20"
+ },
+ "368": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "352": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "409": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "105": {
+  "name": "Olur",
+  "owner": "pais3"
+ },
+ "418": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "340": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "144": {
+  "name": "Sylmar",
+  "region": "Protectorados Élficos",
+  "terrain": "Bosque",
+  "climate": "Templado",
+  "population": 70000,
+  "culture": "Elfos",
+  "religion": "Fe Espiritual",
+  "language": "Élfico",
+  "demographics": [
+   {
+    "group": "Elfos",
+    "culture": "Elfos",
+    "religion": "Fe Espiritual",
+    "pct": 94
+   },
+   {
+    "group": "Kratenses",
+    "culture": "Kratenses",
+    "religion": "Fe Espiritual",
+    "pct": 6
+   }
+  ],
+  "governor": {
+   "title": "Portavoz de la comuna",
+   "name": "Caelith Orvanne"
+  },
+  "settlement": "Sylmar",
+  "fort": 2,
+  "dev": {
+   "tax": 1,
+   "prod": 1,
+   "man": 2
+  },
+  "tradeGood": "Hierbas",
+  "resources": [
+   "Hierbas",
+   "Madera",
+   "Cristales arcanos"
+  ],
+  "buildings": [
+   "Santuario",
+   "Guarnición kratense"
+  ],
+  "estates": "Consejos de ancianos, druidas élficos",
+  "unrest": "Leal a la alianza con Kratoi",
+  "economy": "Bosques antiguos apenas explotados: herbolaria, artesanía élfica y conocimiento arcano que se comparte con la Universidad de Rimas a cambio de protección.",
+  "notes": "Comuna élfica bajo protección militar kratense, fuera del electorado de la república. Los elfos conservan sus leyes y costumbres y valoran el laicismo kratense y su política de no injerencia cultural.",
+  "history": [
+   {
+    "year": "4040",
+    "text": "Se incorpora como protectorado de Kratoi bajo la presidencia de Rezeda Valdei."
+   },
+   {
+    "year": "4079",
+    "text": "Se descubre la matanza de elfos encubierta por el Consorcio de la Madera."
+   }
+  ],
+  "owner": "pais2"
+ },
+ "305": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "135": {
+  "owner": "pais3",
+  "name": "Montes Tagun"
+ },
+ "353": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "161": {
+  "buildings": [
+   "Aserraderos",
+   "Taller",
+   "Mercado"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 56,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 26,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 16,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Elfos",
+    "group": "Elfos",
+    "pct": 2,
+    "religion": "Fe Espiritual"
+   }
+  ],
+  "dev": {
+   "man": 4,
+   "prod": 4,
+   "tax": 3
+  },
+  "economy": "Tierra maderera, cuna del antiguo Gremio de la Madera y luego del Consorcio de la Madera. Vive de los contratos de tala y teme cada caída del precio de la madera.",
+  "estates": "Consorcio de la Madera, leñadores",
+  "fort": 1,
+  "governor": {
+   "name": "Larnetha Lefevre",
+   "title": "Prefecta (Federalista)"
+  },
+  "history": [
+   {
+    "text": "Sale a la luz la matanza de elfos encubierta por el Consorcio de la Madera.",
+    "year": "4079"
+   },
+   {
+    "text": "Ley de Conservación Natural de Judith Lainares.",
+    "year": "4080"
+   }
+  ],
+  "language": "Kratense",
+  "name": "Kerivin",
+  "notes": "Tierra maderera, cuna del Gremio y luego del Consorcio de la Madera.\n\nCongreso de Diputados: 10 diputados. Participación en 4098: 67%.\nLegislativas de 4098: Federalista 10 (voto: Federalista 74%, MPS 18%, Nacionalista 8%; abstención 53%).",
+  "owner": "pais2",
+  "population": 624000,
+  "region": "Bosque Oriental",
+  "religion": "Fe Espiritual",
+  "resources": [
+   "Madera",
+   "Pieles"
+  ],
+  "settlement": "Kerivin",
+  "terrain": "Bosque",
+  "tradeGood": "Madera",
+  "tradeNode": "Rimas",
+  "unrest": "Resiente a los elfos y a los conservacionistas"
+ },
+ "188": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "208": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "406": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "190": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "217": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "386": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "75": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "100": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "312": {
+  "name": "Iwakashi",
+  "owner": "pais4"
+ },
+ "325": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "316": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "114": {
+  "name": "Perisaray",
+  "owner": "pais3"
+ },
+ "158": {
+  "name": "Amplonu",
+  "owner": "pais3"
+ },
+ "388": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "322": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "284": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "67": {
+  "name": "",
+  "owner": "pais21"
+ },
+ "424": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "495": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "131": {
+  "name": "",
+  "owner": "pais9"
+ },
+ "150": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "281": {
+  "name": "",
+  "owner": "pais15"
+ },
+ "113": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "328": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "529": {
+  "name": "Manarat",
+  "owner": "pais3"
+ },
+ "16": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "104": {
+  "name": "Erkantepe",
+  "owner": "pais3"
+ },
+ "382": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "366": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "244": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "193": {
+  "owner": "pais3"
+ },
+ "288": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "339": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "180": {
+  "buildings": [
+   "Santuario",
+   "Guarnición kratense"
+  ],
+  "climate": "Templado",
+  "culture": "Elfos",
+  "demographics": [
+   {
+    "culture": "Elfos",
+    "group": "Elfos",
+    "pct": 94,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses",
+    "pct": 6,
+    "religion": "Fe Espiritual"
+   }
+  ],
+  "dev": {
+   "man": 2,
+   "prod": 1,
+   "tax": 1
+  },
+  "economy": "Bosques antiguos apenas explotados: herbolaria, artesanía élfica y conocimiento arcano que se comparte con la Universidad de Rimas a cambio de protección.",
+  "estates": "Consejos de ancianos, druidas élficos",
+  "fort": 2,
+  "governor": {
+   "name": "Lirael Sythenne",
+   "title": "Portavoz de la comuna"
+  },
+  "history": [
+   {
+    "text": "Se incorpora como protectorado de Kratoi bajo la presidencia de Rezeda Valdei.",
+    "year": "4040"
+   },
+   {
+    "text": "Se descubre la matanza de elfos encubierta por el Consorcio de la Madera.",
+    "year": "4079"
+   }
+  ],
+  "language": "Élfico",
+  "name": "Eldrelun",
+  "notes": "Comuna élfica bajo protección militar kratense, fuera del electorado de la república. Los elfos conservan sus leyes y costumbres y valoran el laicismo kratense y su política de no injerencia cultural.",
+  "owner": "pais2",
+  "population": 55000,
+  "region": "Protectorados Élficos",
+  "religion": "Fe Espiritual",
+  "resources": [
+   "Hierbas",
+   "Madera",
+   "Cristales arcanos"
+  ],
+  "settlement": "Laornith",
+  "terrain": "Bosque",
+  "tradeGood": "Hierbas",
+  "unrest": "Leal a la alianza con Kratoi"
+ },
+ "149": {
+  "buildings": [
+   "Santuario druídico",
+   "Círculo de piedra"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 82,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 10,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Elfos",
+    "group": "Elfos",
+    "pct": 8,
+    "religion": "Fe Espiritual"
+   }
+  ],
+  "dev": {
+   "man": 3,
+   "prod": 2,
+   "tax": 4
+  },
+  "economy": "Claros y aldeas en lo hondo del bosque, en torno a santuarios de la Fe Espiritual. Economía de subsistencia y herbolaria.",
+  "estates": "Druidas, aldeas",
+  "fort": 0,
+  "governor": {
+   "name": "Vearin Hayek",
+   "title": "Prefecto (Federalista)"
+  },
+  "language": "Kratense",
+  "name": "Tallaghrin",
+  "notes": "Claros, aldeas y santuarios de la Fe de los Espíritus en lo hondo del bosque.\n\nCongreso de Diputados: 7 diputados. Participación en 4098: 67%.\nLegislativas de 4098: Federalista 7 (voto: Federalista 63%, MPS 32%, Nacionalista 6%; abstención 70%).",
+  "owner": "pais2",
+  "population": 430000,
+  "region": "Bosque Oriental",
+  "religion": "Fe Espiritual",
+  "resources": [
+   "Hierbas",
+   "Madera",
+   "Miel"
+  ],
+  "settlement": "Tallaghrin",
+  "terrain": "Bosque",
+  "tradeGood": "Hierbas",
+  "tradeNode": "Rimas",
+  "unrest": "Estable"
+ },
+ "501": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "95": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "299": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "367": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "243": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "232": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "162": {
+  "name": "Naeril",
+  "region": "Protectorados Élficos",
+  "terrain": "Bosque",
+  "climate": "Templado",
+  "population": 60000,
+  "culture": "Elfos",
+  "religion": "Fe Espiritual",
+  "language": "Élfico",
+  "demographics": [
+   {
+    "group": "Elfos",
+    "culture": "Elfos",
+    "religion": "Fe Espiritual",
+    "pct": 94
+   },
+   {
+    "group": "Kratenses",
+    "culture": "Kratenses",
+    "religion": "Fe Espiritual",
+    "pct": 6
+   }
+  ],
+  "governor": {
+   "title": "Portavoz de la comuna",
+   "name": "Aerendis Thalor"
+  },
+  "settlement": "Nuithlinn",
+  "fort": 2,
+  "dev": {
+   "tax": 1,
+   "prod": 1,
+   "man": 2
+  },
+  "tradeGood": "Hierbas",
+  "resources": [
+   "Hierbas",
+   "Madera",
+   "Cristales arcanos"
+  ],
+  "buildings": [
+   "Santuario",
+   "Guarnición kratense"
+  ],
+  "estates": "Consejos de ancianos, druidas élficos",
+  "unrest": "Leal a la alianza con Kratoi",
+  "economy": "Bosques antiguos apenas explotados: herbolaria, artesanía élfica y conocimiento arcano que se comparte con la Universidad de Rimas a cambio de protección.",
+  "notes": "Comuna élfica bajo protección militar kratense, fuera del electorado de la república. Los elfos conservan sus leyes y costumbres y valoran el laicismo kratense y su política de no injerencia cultural.",
+  "history": [
+   {
+    "year": "4040",
+    "text": "Se incorpora como protectorado de Kratoi bajo la presidencia de Rezeda Valdei."
+   },
+   {
+    "year": "4079",
+    "text": "Se descubre la matanza de elfos encubierta por el Consorcio de la Madera."
+   }
+  ],
+  "owner": "pais2"
+ },
+ "481": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "230": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "407": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "359": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "470": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "502": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "259": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "199": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "348": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "452": {
+  "name": "",
+  "owner": "pais16"
+ },
+ "221": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "119": {
+  "name": "Fenerli Koy",
+  "owner": "pais3"
+ },
+ "156": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "263": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "531": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "219": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "317": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "391": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "369": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "42": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "7": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "372": {
+  "name": "Homay",
+  "owner": "pais4"
+ },
+ "387": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "240": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "341": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "402": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "78": {
+  "name": "",
+  "owner": "pais23"
+ },
+ "504": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "99": {
+  "name": "",
+  "owner": "pais18"
+ },
+ "102": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "275": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "152": {
+  "name": "SRALNOM",
+  "owner": "pais19"
+ },
+ "485": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "394": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "3": {
+  "name": "",
+  "owner": "pais24"
+ },
+ "267": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "393": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "439": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "90": {
+  "name": "",
+  "owner": "pais23"
+ },
+ "428": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "26": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "133": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "462": {
+  "name": "",
+  "owner": "pais16"
+ },
+ "39": {
+  "name": "",
+  "owner": "pais25"
+ },
+ "399": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "210": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "145": {
+  "name": "",
+  "owner": "pais9"
+ },
+ "226": {
+  "name": "",
+  "owner": "pais15"
+ },
+ "360": {
+  "name": "Trono de Feyn",
+  "owner": "pais1"
+ },
+ "238": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "165": {
+  "buildings": [
+   "Fundición",
+   "Armería",
+   "Taller",
+   "Fundiciones de chi",
+   "Mercado"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 48,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 30,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 16,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Mazarinos",
+    "group": "Mazarinos",
+    "pct": 6,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 5,
+   "prod": 8,
+   "tax": 5
+  },
+  "economy": "La provincia de las fundiciones: ferrerías y, desde hace unas décadas, las fundiciones de chi que arman al ejército. Obrera e industrial, fue la gran base del MPS entre los trabajadores.",
+  "estates": "Sindicatos obreros, dueños de fundiciones",
+  "fort": 2,
+  "governor": {
+   "name": "Justina Lostanlenn",
+   "title": "Prefecta (MPS)"
+  },
+  "history": [
+   {
+    "text": "Los obreros de las fundiciones dan al MPS su primera gran victoria en el Congreso.",
+    "year": "4093"
+   }
+  ],
+  "language": "Kratense",
+  "name": "Oreigon",
+  "notes": "La provincia de las fundiciones. Obrera, industrial, partidaria de un Estado y un ejército fuertes.\n\nCongreso de Diputados: 17 diputados. Participación en 4098: 67%.\nLegislativas de 4098: MPS 17 (voto: MPS 87%, Nacionalista 11%, Federalista 2%; abstención 27%).",
+  "owner": "pais2",
+  "population": 1110000,
+  "region": "Kratoi Central",
+  "religion": "Ninguna",
+  "resources": [
+   "Hierro",
+   "Carbón",
+   "Armas de fuego",
+   "Cristales arcanos"
+  ],
+  "settlement": "Oreigon",
+  "terrain": "Llanura",
+  "tradeGood": "Armas de fuego",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "33": {
+  "name": "",
+  "owner": "pais25"
+ },
+ "311": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "21": {
+  "name": "",
+  "owner": "pais20"
+ },
+ "58": {
+  "name": "Kuzyort",
+  "owner": "pais3"
+ },
+ "181": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "241": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "441": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "314": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "170": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "192": {
+  "buildings": [
+   "Bosque sagrado",
+   "Círculo de piedra"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 86,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Elfos",
+    "group": "Elfos",
+    "pct": 12,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 2,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 2,
+   "prod": 2,
+   "tax": 2
+  },
+  "economy": "Caza, pieles y herbolaria. Apenas hay tala: los druidas la prohíben.",
+  "estates": "Druidas",
+  "fort": 1,
+  "governor": {
+   "name": "Tomaz Slavik",
+   "title": "Prefecto (Federalista)"
+  },
+  "language": "Kratense",
+  "name": "Luenith",
+  "notes": "La provincia más misteriosa y salvaje, donde los druidas aún mandan. La provincia más misteriosa y salvaje, donde los druidas aún mandan de verdad. La más federalista y ecologista de Kratoi.\n\nCongreso de Diputados: 4 diputados. Participación en 4098: 56%.\nLegislativas de 4098: Federalista 3, MPS 1 (voto: Federalista 52%, MPS 42%, Nacionalista 7%; abstención 78%).",
+  "owner": "pais2",
+  "population": 214000,
+  "region": "Bosque Oriental",
+  "religion": "Fe Espiritual",
+  "resources": [
+   "Pieles",
+   "Hierbas",
+   "Cristales arcanos"
+  ],
+  "settlement": "Luenith",
+  "terrain": "Bosque",
+  "tradeGood": "Pieles",
+  "tradeNode": "Rimas",
+  "unrest": "Leal a sus druidas antes que a Rimas"
+ },
+ "31": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "140": {
+  "name": "Montes Manjak",
+  "owner": "pais3"
+ },
+ "216": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "279": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "222": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "137": {
+  "name": "Karahoyuk",
+  "owner": "pais3"
+ },
+ "309": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "195": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "56": {
+  "name": "",
+  "owner": "pais12"
+ },
+ "70": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "87": {
+  "name": "",
+  "owner": "pais12"
+ },
+ "148": {
+  "name": "Veshleni",
+  "owner": "pais3"
+ },
+ "151": {
+  "name": "Kerazalan",
+  "owner": "pais3"
+ },
+ "327": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "270": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "228": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "397": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "101": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "224": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "11": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "206": {
+  "buildings": [
+   "Fortaleza",
+   "Viñedos",
+   "Mercado",
+   "Cuartel"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 40,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 40,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 12,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses",
+    "pct": 8,
+    "religion": "Culto del Heredero"
+   }
+  ],
+  "dev": {
+   "man": 3,
+   "prod": 4,
+   "tax": 4
+  },
+  "economy": "Granjas y viñedos kratenses en la frontera ustilesa, golpeados por la guerra de aranceles.",
+  "estates": "Viticultores, terratenientes",
+  "fort": 4,
+  "governor": {
+   "name": "Sauvin Mercier",
+   "title": "Prefecto (Federalista)"
+  },
+  "language": "Kratense",
+  "name": "Lisieroy",
+  "notes": "Granjas y viñedos kratenses en la frontera. Conservadora y con una vena independiente. La Línea Tardivel, la red de fortificaciones a lo largo de la frontera ustilesa, cruza la provincia. Conservadora, con una vena independiente.\n\nCongreso de Diputados: 10 diputados. Participación en 4098: 68%. Tendencia: Federalista.",
+  "owner": "pais2",
+  "population": 624000,
+  "region": "Kratoi Sur",
+  "religion": "Viejo Feynismo",
+  "resources": [
+   "Vino",
+   "Grano"
+  ],
+  "settlement": "Lisieroy",
+  "terrain": "Colinas",
+  "tradeGood": "Vino",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "164": {
+  "name": "Kestefon",
+  "owner": "pais3"
+ },
+ "498": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "433": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "212": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "448": {
+  "name": "",
+  "owner": "pais16"
+ },
+ "398": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "257": {
+  "name": "",
+  "owner": "pais15"
+ },
+ "326": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "10": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "73": {
+  "name": "",
+  "owner": "pais26"
+ },
+ "186": {
+  "name": "Deryevi",
+  "owner": "pais3"
+ },
+ "237": {
+  "name": "",
+  "owner": "pais15"
+ },
+ "321": {
+  "name": "Erevasai",
+  "owner": "pais10"
+ },
+ "330": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "166": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "487": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "110": {
+  "buildings": [
+   "Granja",
+   "Iglesia de madera"
+  ],
+  "climate": "Templado",
+  "culture": "Mazarinos",
+  "demographics": [
+   {
+    "culture": "Mazarinos",
+    "group": "Mazarinos",
+    "pct": 72,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses",
+    "pct": 22,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Elfos",
+    "group": "Elfos",
+    "pct": 6,
+    "religion": "Fe Espiritual"
+   }
+  ],
+  "dev": {
+   "man": 3,
+   "prod": 2,
+   "tax": 3
+  },
+  "economy": "La provincia mazarina más pequeña y remota: pastoreo, pieles y madera.",
+  "estates": "Clanes campesinos, clero feynista",
+  "fort": 1,
+  "governor": {
+   "name": "Boleslav Belozerskoy",
+   "title": "Prefecto (MPS)"
+  },
+  "language": "Mazarino",
+  "name": "Kamenek",
+  "notes": "La provincia mazarina más pequeña y remota. Aislada, tradicional y recelosa de todos los gobiernos que ha tenido.\n\nCongreso de Diputados: 6 diputados. Participación en 4098: 67%.\nLegislativas de 4098: MPS 6 (voto: MPS 72%, Federalista 20%, Nacionalista 7%; abstención 57%).",
+  "owner": "pais2",
+  "population": 355000,
+  "region": "Kratoi Norte",
+  "religion": "Viejo Feynismo",
+  "resources": [
+   "Lana",
+   "Pieles",
+   "Madera"
+  ],
+  "settlement": "Kamenek",
+  "terrain": "Colinas",
+  "tradeGood": "Lana",
+  "tradeNode": "Carpentia",
+  "unrest": "Aislada y recelosa de todo gobierno"
+ },
+ "297": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "215": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "383": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "85": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "349": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "36": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "401": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "167": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "23": {
+  "name": "",
+  "owner": "pais27"
+ },
+ "51": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "211": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "41": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "214": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "364": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "118": {
+  "buildings": [
+   "Fortaleza",
+   "Mina",
+   "Cuartel"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses",
+    "pct": 46,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 24,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Mazarinos",
+    "group": "Mazarinos",
+    "pct": 30,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 6,
+   "prod": 2,
+   "tax": 2
+  },
+  "economy": "Minas de hierro de montaña que alimentan las fundiciones de Oreigon.",
+  "estates": "Mineros, guarnición",
+  "fort": 3,
+  "governor": {
+   "name": "Valerie Ozac'h",
+   "title": "Prefecta (MPS)"
+  },
+  "history": [
+   {
+    "text": "Invasión mazarina por el Paso de Alascur; la columna de socorro de Fileon salva a la guarnición.",
+    "year": "4001"
+   },
+   {
+    "text": "Batalla de Bruchart: los milicianos emboscan en las montañas una columna imperial de 15.000 hombres.",
+    "year": "4026"
+   }
+  ],
+  "language": "Kratense",
+  "name": "Drommel",
+  "notes": "Provincia de montaña con el paso de Alascur, por donde llegó la invasión de 4001. La más hostil hacia Mazarín. Contiene el Paso de Alascur, por donde llegó la invasión mazarina de 4001; el valle es hoy zona desmilitarizada, pero las fortificaciones aguardan detrás. El electorado más hostil hacia Mazarín y más partidario de la asimilación.\n\nCongreso de Diputados: 8 diputados. Participación en 4098: 67%.\nLegislativas de 4098: MPS 8 (voto: MPS 59%, Federalista 32%, Nacionalista 9%; abstención 65%).",
+  "owner": "pais2",
+  "population": 507000,
+  "region": "Kratoi Norte",
+  "religion": "Viejo Feynismo",
+  "resources": [
+   "Hierro",
+   "Madera"
+  ],
+  "settlement": "Drommel",
+  "terrain": "Montañas",
+  "tradeGood": "Hierro",
+  "tradeNode": "Carpentia",
+  "unrest": "Obsesionada con la seguridad"
+ },
+ "460": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "479": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "323": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "381": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "434": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "38": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "97": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "376": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "8": {
+  "name": "",
+  "owner": "pais24"
+ },
+ "254": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "415": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "28": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "25": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "22": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "412": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "513": {
+  "name": "Kahfnus",
+  "owner": "pais3"
+ },
+ "43": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "274": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "262": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "416": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "431": {
+  "name": "Murat",
+  "owner": "pais1"
+ },
+ "189": {
+  "name": "Absheia",
+  "owner": "pais3"
+ },
+ "488": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "320": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "476": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "435": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "27": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "492": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "526": {
+  "name": "Haadar",
+  "owner": "pais1"
+ },
+ "79": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "489": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "356": {
+  "region": "Provincias Occidentales",
+  "terrain": "Costa",
+  "climate": "Mediterráneo",
+  "population": 500000,
+  "language": "Ustilés",
+  "demographics": [
+   {
+    "group": "Ustileses (Heredero)",
+    "culture": "Ustileses",
+    "religion": "Culto del Heredero",
+    "pct": 46
+   },
+   {
+    "group": "Ustileses feynistas",
+    "culture": "Ustileses",
+    "religion": "Viejo Feynismo",
+    "pct": 30
+   },
+   {
+    "group": "Ustileses no creyentes",
+    "culture": "Ustileses",
+    "religion": "Ninguna",
+    "pct": 10
+   },
+   {
+    "group": "Kratenses exiliados y comerciantes",
+    "culture": "Kratenses",
+    "religion": "Fe Espiritual",
+    "pct": 6
+   },
+   {
+    "group": "Tapetíes y extranjeros",
+    "culture": "Tapetíes",
+    "religion": "Prisdevelianismo",
+    "pct": 5
+   },
+   {
+    "group": "Otros",
+    "culture": "Varios",
+    "religion": "Varias",
+    "pct": 3
+   }
+  ],
+  "dev": {
+   "tax": 10,
+   "prod": 9,
+   "man": 5
+  },
+  "tradeGood": "Vidrio",
+  "resources": [
+   "Vidrio",
+   "Armas de fuego",
+   "Pescado",
+   "Paño"
+  ],
+  "buildings": [
+   "Universidad de las Artes",
+   "Catedral",
+   "Abadía de San Basileos",
+   "Seminario",
+   "Lonja",
+   "Casa de la Moneda",
+   "Compañía de las Indias",
+   "Puerto",
+   "Astillero",
+   "Fundición",
+   "Ciudadela de Monte Kelsar",
+   "Tribunal Supremo de la ciudad"
+  ],
+  "estates": "Grandes Casas (Marqueda, Botticceli, Tintorello, Hachuel, Fideli, Archesi, Gundolfo, Elisondo, Rossino), gremios, clero, guarnición",
+  "unrest": "Polarizada: elección de alcalde en curso",
+  "tradeNode": "Deverentio",
+  "economy": "Ciudad rica y cosmopolita, famosa por su vidrio soplado y su cristalería, que se exporta hasta Klonum. Las Grandes Casas controlan la banca (Botticceli), el armamento (Marqueda), la minería (Tintorello), el sector naval (Archesi), la construcción (Gundolfo), los medios (Elisondo), la agroalimentación (Rossino), el entretenimiento (Hachuel) y las artes (Fideli). La Compañía de las Indias y la Casa de la Moneda tienen aquí su sede.",
+  "demoNotes": "Distritos (500.000 hab.):\n• Casco Antiguo: 120.000 hab.. 14 escaños; el corazón histórico: la Catedral. la Lonja. los gremios artesanos y el Seminario.\n• Ensanche: 40.000 hab.. 20 escaños; los palacios de las Grandes Casas. el Tribunal y la Casa de la Moneda; la sede del poder unionista.\n• Distrito Portuario: 100.000 hab.. 6 escaños; muelles. almacenes y marineros. la puerta de la ciudad al Océano Hespéreo.\n• Distrito Industrial: 200.000 hab.. 4 escaños; fundiciones. minas y talleres; el distrito más poblado y el peor representado del Consejo.\n• Ciudad Universitaria: 30.000 hab.. 10 escaños; la Universidad de las Artes. imprentas y cafés; el bastión soberanista.\n• Monte Kelsar: 10.000 hab.. 6 escaños; la ciudadela y la guarnición. sede de los Caballeros de Puro Fuego.",
+  "notes": "Capital de las provincias occidentales de Ustilus y una de las ciudades más importantes del Imperio. Sus habitantes son conocidos por su mentalidad abierta y liberal y su amor por las artes, y la ciudad es refugio habitual de quienes se oponen a las autoridades. Históricamente gobernada por la casa Fideli, mecenas de artistas y pensadores y defensora de las causas reformistas en las Cortes. Su Carnaval, de dos semanas, es legendario.\n\nCiudad Libre de Deverentio en 4099: el Consejo de Cien (40 electores institucionales de seis estamentos y 60 escaños de distrito) elige al alcalde. Se enfrentan los Unionistas del alcalde Flavio Marqueda (Casa Marqueda, armamento) y los Soberanistas de Gregorio Salgado. Tras el asesinato de Salgado, Clara Montiel toma la candidatura soberanista, y la represión empuja a la irrupción del Movimiento Carmesí de Rosa Ibarzábal.",
+  "history": [
+   {
+    "year": "4099",
+    "text": "Elección de alcalde: Flavio Marqueda (Unionistas) contra Gregorio Salgado (Soberanistas)."
+   },
+   {
+    "year": "4099",
+    "text": "Asesinato de Gregorio Salgado; Clara Montiel lo sustituye."
+   },
+   {
+    "year": "4099",
+    "text": "Represión y candidatura carmesí de Rosa Ibarzábal."
+   }
+  ],
+  "name": "Deverentio",
+  "owner": "pais1",
+  "culture": "Ustileses",
+  "religion": "Culto del Heredero",
+  "governor": {
+   "title": "Alcalde",
+   "name": "Flavio Marqueda"
+  },
+  "settlement": "Deverentio",
+  "fort": 4
+ },
+ "505": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "40": {
+  "name": "",
+  "owner": "pais28"
+ },
+ "47": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "408": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "351": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "294": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "477": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "272": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "413": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "482": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "160": {
+  "owner": "pais19",
+  "name": "Pakhal SUON"
+ },
+ "268": {
+  "name": "Lok Zigar",
+  "owner": "pais15"
+ },
+ "15": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "153": {
+  "name": "Na'Xhibal",
+  "owner": "pais19"
+ },
+ "396": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "30": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "271": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "427": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "461": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "125": {
+  "name": "Sershalán",
+  "owner": "pais3"
+ },
+ "478": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "251": {
+  "name": "Rajak-Tai",
+  "owner": "pais14"
+ },
+ "121": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "277": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "196": {
+  "buildings": [
+   "Muelle comercial",
+   "Puerto",
+   "Mercado",
+   "Biblioteca",
+   "Casas de banca",
+   "Lonja de Argostana",
+   "Taller"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 34,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 30,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 18,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses",
+    "pct": 8,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Tapetíes",
+    "group": "Tapetíes y extranjeros",
+    "pct": 6,
+    "religion": "Prisdevelianismo"
+   },
+   {
+    "culture": "Elfos",
+    "group": "Elfos",
+    "pct": 4,
+    "religion": "Fe Espiritual"
+   }
+  ],
+  "dev": {
+   "man": 4,
+   "prod": 8,
+   "tax": 10
+  },
+  "economy": "Centro comercial y financiero de Kratoi: sede de los consorcios comerciales y las casas de banca, cuya burguesía es la más rica del país y financia al Partido Federalista. Sus muelles canalizan el comercio con Thas-Tapet que esquiva los aranceles ustileses. La Crisis del 86 arruinó a muchos de sus inversores; el puerto vuelve a crecer desde 4095.",
+  "estates": "Burguesía comercial, casas de banca, armadores",
+  "fort": 3,
+  "governor": {
+   "name": "Vlasta Tredern",
+   "title": "Prefecta (Federalista)"
+  },
+  "history": [
+   {
+    "text": "El 14 de marzo las milicias asaltan la guarnición imperial de Argostana, una de las tres de la revolución.",
+    "year": "4025"
+   },
+   {
+    "text": "Comienza el auge de Schkreld: la costa se vuelca en la industria y el comercio con Ustilus.",
+    "year": "4065"
+   },
+   {
+    "text": "La Crisis del 86 hunde a sus casas de banca e inversores.",
+    "year": "4086"
+   }
+  ],
+  "language": "Kratense",
+  "name": "Argostana",
+  "notes": "La capital económica de Kratoi y rival histórica de Rimas. Es cosmopolita, mercantil y un fuerte bastión Federalista.\n\nCongreso de Diputados: 21 diputados. Participación en 4098: 77%.\nLegislativas de 4098: Federalista 21 (voto: Federalista 64%, Nacionalista 24%, MPS 12%; abstención 34%).",
+  "owner": "pais2",
+  "population": 1451000,
+  "region": "Costa Hespérea",
+  "religion": "Ninguna",
+  "resources": [
+   "Paño",
+   "Pescado",
+   "Vidrio"
+  ],
+  "settlement": "Argostana",
+  "terrain": "Costa",
+  "tradeGood": "Paño",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "229": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "171": {
+  "owner": "pais3",
+  "name": "Karanshik"
+ },
+ "235": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "63": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "53": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "425": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "405": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "255": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "355": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "250": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "514": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "459": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "306": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "9": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "468": {
+  "name": "Rizad",
+  "owner": "pais1"
+ },
+ "286": {
+  "name": "",
+  "owner": "pais15"
+ },
+ "471": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "420": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "432": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "464": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "172": {
+  "name": "",
+  "owner": "pais8"
+ },
+ "422": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "185": {
+  "buildings": [
+   "Molino",
+   "Taller",
+   "Mercado"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 38,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 36,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 22,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses",
+    "pct": 4,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 4,
+   "prod": 5,
+   "tax": 5
+  },
+  "economy": "Pueblos dormitorio y pequeños molinos textiles a lo largo de los caminos de Argostana, cada vez más absorbidos por la economía de la costa.",
+  "estates": "Pequeños fabricantes, empleados de Argostana",
+  "fort": 1,
+  "governor": {
+   "name": "Severine Lanmikael",
+   "title": "Prefecta (MPS)"
+  },
+  "language": "Kratense",
+  "name": "Clarival",
+  "notes": "Pueblos dormitorio y pequeños molinos en los caminos de Argostana.\n\nCongreso de Diputados: 13 diputados. Participación en 4098: 68%.\nLegislativas de 4098: MPS 9, Nacionalista 4 (voto: MPS 41%, Nacionalista 34%, Federalista 26%; abstención 36%).",
+  "owner": "pais2",
+  "population": 818000,
+  "region": "Costa Hespérea",
+  "religion": "Ninguna",
+  "resources": [
+   "Paño",
+   "Grano"
+  ],
+  "settlement": "Clarival",
+  "terrain": "Llanura",
+  "tradeGood": "Paño",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "202": {
+  "name": "Beisyan",
+  "owner": "pais3"
+ },
+ "249": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "209": {
+  "buildings": [
+   "Fortaleza",
+   "Viñedos",
+   "Mercado",
+   "Muelle comercial",
+   "Templo del Heredero"
+  ],
+  "climate": "Templado",
+  "culture": "Ustileses",
+  "demographics": [
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses del Heredero",
+    "pct": 26,
+    "religion": "Culto del Heredero"
+   },
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses feynistas",
+    "pct": 32,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 24,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 18,
+    "religion": "Fe Espiritual"
+   }
+  ],
+  "dev": {
+   "man": 3,
+   "prod": 4,
+   "tax": 5
+  },
+  "economy": "La más rica de las provincias ustilesas: sus comerciantes y exportadores de vino viven del comercio con el Imperio.",
+  "estates": "Comerciantes y exportadores de vino transfronterizos",
+  "fort": 3,
+  "governor": {
+   "name": "Masino Albori",
+   "title": "Prefecto (Federalista)"
+  },
+  "language": "Ustilés",
+  "name": "Neuvillette",
+  "notes": "La más rica de las provincias ustilesas, conocida por sus comerciantes y exportadores de vino. Frontera con Ustilus, guardada por la Línea Tardivel. La provincia más proustilesa y librecambista de la república.\n\nCongreso de Diputados: 10 diputados. Participación en 4098: 85%. Tendencia: Federalista.",
+  "owner": "pais2",
+  "population": 670000,
+  "region": "Kratoi Sur",
+  "religion": "Viejo Feynismo",
+  "resources": [
+   "Vino",
+   "Vidrio"
+  ],
+  "settlement": "Neuvillette",
+  "terrain": "Colinas",
+  "tradeGood": "Vino",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "442": {
+  "name": "Pedang",
+  "owner": "pais4"
+ },
+ "80": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "404": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "17": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "426": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "430": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "453": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "191": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "446": {
+  "name": "",
+  "owner": "pais16"
+ },
+ "486": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "236": {
+  "name": "",
+  "owner": "pais14"
+ },
+ "457": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "474": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "463": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "34": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "46": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "197": {
+  "buildings": [
+   "Molino",
+   "Granja",
+   "Mercado"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 42,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 42,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 10,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses",
+    "pct": 6,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 4,
+   "prod": 2,
+   "tax": 4
+  },
+  "economy": "Llanuras de cereal trabajadas por una numerosa clase de arrendatarios.",
+  "estates": "Arrendatarios, terratenientes",
+  "fort": 1,
+  "governor": {
+   "name": "Alcide Rivier",
+   "title": "Prefecto (Federalista)"
+  },
+  "language": "Kratense",
+  "name": "Miravel",
+  "notes": "Llanuras de cereal con muchos arrendatarios. Tradicional y siempre dispuesta a votar contra quien gobierne.\n\nCongreso de Diputados: 8 diputados. Participación en 4098: 77%. Tendencia: Federalista.",
+  "owner": "pais2",
+  "population": 492000,
+  "region": "Kratoi Sur",
+  "religion": "Viejo Feynismo",
+  "resources": [
+   "Grano"
+  ],
+  "settlement": "Miravel",
+  "terrain": "Llanura",
+  "tradeGood": "Grano",
+  "tradeNode": "Argostana",
+  "unrest": "Siempre dispuesta a votar contra quien gobierne"
+ },
+ "18": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "458": {
+  "name": "",
+  "owner": "pais16"
+ },
+ "287": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "385": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "465": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "68": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "440": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "517": {
+  "name": "Sinalbahr",
+  "owner": "pais3"
+ },
+ "205": {
+  "buildings": [
+   "Muelle",
+   "Santuario druídico"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 58,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 30,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Dairovios",
+    "group": "Dairovios",
+    "pct": 8,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses",
+    "pct": 4,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 3,
+   "prod": 3,
+   "tax": 3
+  },
+  "economy": "La provincia más pobre de la costa: pesca, pastoreo y poco más. El comercio fronterizo con Dairov es escaso.",
+  "estates": "Druidas, pescadores",
+  "fort": 2,
+  "governor": {
+   "name": "Felise Merer",
+   "title": "Prefecta (MPS)"
+  },
+  "language": "Kratense",
+  "name": "Roumnet",
+  "notes": "Región costera fronteriza con Dairov. Tradicional, pobre y receptiva al discurso contra las élites. Región influida por la magia onírica, donde el dominio del Espíritu de los Sueños se manifiesta en el mundo material: nieblas perpetuas, sueños colectivos y bosques donde el tiempo fluye diferente. Los druidas locales tratan con las entidades oníricas, y el gobierno republicano no sabe muy bien qué hacer con una provincia que desafía la racionalidad que predica. Bergemur, su principal poblado pesquero, es célebre por estas influencias sobrenaturales.\n\nCongreso de Diputados: 7 diputados. Participación en 4098: 57%.\nLegislativas de 4098: MPS 7 (voto: MPS 59%, Federalista 29%, Nacionalista 12%; abstención 60%).",
+  "owner": "pais2",
+  "population": 428000,
+  "region": "Costa Hespérea",
+  "religion": "Fe Espiritual",
+  "resources": [
+   "Pescado",
+   "Lana",
+   "Hierbas oníricas"
+  ],
+  "settlement": "Bergemur",
+  "terrain": "Costa",
+  "tradeGood": "Pescado",
+  "tradeNode": "Argostana",
+  "unrest": "Inquieta y recelosa de las élites"
+ },
+ "472": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "466": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "445": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "6": {
+  "name": "",
+  "owner": "pais20"
+ },
+ "467": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "523": {
+  "name": "Lara Quayla",
+  "owner": "pais30"
+ },
+ "379": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "375": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "293": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "59": {
+  "name": "Svaikal",
+  "owner": "pais6"
+ },
+ "447": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "483": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "14": {
+  "name": "",
+  "owner": "pais29"
+ },
+ "24": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "436": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "443": {
+  "name": "Klonum",
+  "owner": "pais4"
+ },
+ "438": {
+  "name": "Jaminikai",
+  "owner": "pais4"
+ },
+ "390": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "456": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "354": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "444": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "509": {
+  "name": "Menadar",
+  "owner": "pais10"
+ },
+ "469": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "64": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "184": {
+  "name": "Naur Kabol",
+  "owner": "pais19"
+ },
+ "377": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "484": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "332": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "12": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "475": {
+  "name": "Medacre",
+  "owner": "pais1"
+ },
+ "19": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "175": {
+  "name": "Culthai",
+  "owner": "pais19"
+ },
+ "499": {
+  "owner": "pais1",
+  "name": "Kasheba"
+ },
+ "92": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "265": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "429": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "174": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "480": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "82": {
+  "name": "",
+  "owner": "pais5"
+ },
+ "313": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "179": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "253": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "449": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "234": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "473": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "455": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "451": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "264": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "204": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "273": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "536": {
+  "name": "",
+  "owner": "pais11"
+ },
+ "450": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "541": {
+  "name": "Kavshak",
+  "owner": "pais3"
+ },
+ "554": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "538": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "540": {
+  "name": "",
+  "owner": "pais3"
+ },
+ "542": {
+  "buildings": [
+   "Mercado",
+   "Granja"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 42,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 30,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 22,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Mazarinos",
+    "group": "Mazarinos",
+    "pct": 6,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 4,
+   "prod": 3,
+   "tax": 4
+  },
+  "economy": "Colinas de pastoreo y granjas en el borde del departamento, donde la influencia de la capital se diluye.",
+  "estates": "Pequeños propietarios",
+  "fort": 2,
+  "governor": {
+   "name": "Tudwenn Durant",
+   "title": "Prefecta (MPS)"
+  },
+  "language": "Kratense",
+  "name": "Sarvaux",
+  "notes": "Colinas en el borde del departamento. Nacionalista en la cuestión nacional, más conservadora en sus costumbres.\n\nCongreso de Diputados: 9 diputados. Participación en 4098: 67%.\nLegislativas de 4098: MPS 9 (voto: MPS 66%, Nacionalista 24%, Federalista 10%; abstención 36%).",
+  "owner": "pais2",
+  "population": 591000,
+  "region": "Kratoi Central",
+  "religion": "Fe Espiritual",
+  "resources": [
+   "Lana",
+   "Ganado"
+  ],
+  "settlement": "Sarvaux",
+  "terrain": "Colinas",
+  "tradeGood": "Lana",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "552": {
+  "name": "",
+  "owner": "pais4"
+ },
+ "543": {
+  "buildings": [
+   "Mercado",
+   "Granja",
+   "Sidrería"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 40,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 38,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 22,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 3,
+   "prod": 3,
+   "tax": 5
+  },
+  "economy": "Tierras altas tranquilas de huertos de manzanos y pueblos pequeños. Protectora de su paisaje.",
+  "estates": "Funcionarios jubilados, fruticultores",
+  "fort": 1,
+  "governor": {
+   "name": "Blaise Bihanig",
+   "title": "Prefecto (MPS)"
+  },
+  "language": "Kratense",
+  "name": "Lanvenez",
+  "notes": "Tierras altas tranquilas con muchos funcionarios jubilados. Moderada, ordenada y algo protectora de su paisaje.\n\nCongreso de Diputados: 9 diputados. Participación en 4098: 77%.\nLegislativas de 4098: MPS 9 (voto: MPS 55%, Nacionalista 31%, Federalista 14%; abstención 27%).",
+  "owner": "pais2",
+  "population": 578000,
+  "region": "Kratoi Central",
+  "religion": "Ninguna",
+  "resources": [
+   "Sidra",
+   "Frutas",
+   "Lana"
+  ],
+  "settlement": "Lanvenez",
+  "terrain": "Colinas",
+  "tradeGood": "Sidra",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "548": {
+  "buildings": [
+   "Granja",
+   "Mercado"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 44,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 40,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 10,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses",
+    "pct": 6,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 4,
+   "prod": 2,
+   "tax": 4
+  },
+  "economy": "Grandes fincas ganaderas y de cereal en manos de las viejas familias provinciales.",
+  "estates": "Antiguas familias provinciales convertidas en terratenientes",
+  "fort": 1,
+  "governor": {
+   "name": "Tegwenn Kloareg",
+   "title": "Prefecta (Federalista)"
+  },
+  "language": "Kratense",
+  "name": "Maghmor",
+  "notes": "Región de terratenientes y viejas familias provinciales convertidas en hidalgos rurales. Columna vertebral social del Partido Federalista.\n\nCongreso de Diputados: 8 diputados. Participación en 4098: 83%.\nLegislativas de 4098: Federalista 8 (voto: Federalista 82%, Nacionalista 10%, MPS 8%; abstención 22%).",
+  "owner": "pais2",
+  "population": 521000,
+  "region": "Kratoi Sur",
+  "religion": "Viejo Feynismo",
+  "resources": [
+   "Ganado",
+   "Grano",
+   "Lana"
+  ],
+  "settlement": "Maghmor",
+  "terrain": "Colinas",
+  "tradeGood": "Ganado",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "555": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "546": {
+  "buildings": [
+   "Palacio del Congreso",
+   "Tribunal Supremo",
+   "Universidad",
+   "Biblioteca",
+   "Mercado",
+   "Teatro Nacional",
+   "Taller"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 46,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 32,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 10,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Mazarinos",
+    "group": "Mazarinos",
+    "pct": 4,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Elfos",
+    "group": "Elfos",
+    "pct": 3,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Varios",
+    "group": "Extranjeros (estudiantes y exiliados)",
+    "pct": 5,
+    "religion": "Ninguna"
+   }
+  ],
+  "dev": {
+   "man": 4,
+   "prod": 8,
+   "tax": 12
+  },
+  "economy": "Administración pública, universidad, imprentas y prensa. Nudo de distribución del interior hacia la costa. Sus huertos de manzanos dan la mejor sidra de Kratoi.",
+  "estates": "Funcionarios, universitarios, prensa",
+  "fort": 0,
+  "governor": {
+   "name": "Hugon Kalvez",
+   "title": "Prefecto (Nacionalista)"
+  },
+  "history": [
+   {
+    "text": "El 14 de marzo estudiantes y ciudadanos toman el Palacio del Gobernador y se lee la Declaración de Independencia.",
+    "year": "4025"
+   },
+   {
+    "text": "Se redacta la Constitución en la sala principal de la Universidad. Rimas, capital de la república.",
+    "year": "4027"
+   },
+   {
+    "text": "Kesenia Revilo gana la presidencia y funda el Movimiento del Pueblo Soberano.",
+    "year": "4090"
+   }
+  ],
+  "language": "Kratense",
+  "name": "Rimas",
+  "notes": "La capital de Kratoi. Es el electorado más progresista, laico y defensor de la República. La Ciudad de la Razón carece de murallas por decisión consciente: la república se defiende con ciudadanos armados, no con piedras. Sede del Palacio del Congreso, el Tribunal Supremo, la Universidad de Rimas y la Compañía Nacional de Teatro. El Bureau de Sûreté, brazo operativo del Pacto, tiene aquí su sede.\n\nCongreso de Diputados: 23 diputados. Participación en 4098: 87%. Tendencia: Nacionalista.",
+  "owner": "pais2",
+  "population": 1576000,
+  "region": "Kratoi Central",
+  "religion": "Ninguna",
+  "resources": [
+   "Papel",
+   "Sidra"
+  ],
+  "settlement": "Rimas",
+  "terrain": "Valle fluvial",
+  "tradeGood": "Papel",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "553": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "544": {
+  "buildings": [
+   "Mercado",
+   "Granja",
+   "Museo de la Revolución",
+   "Monumento a los caídos",
+   "Cuartel"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 40,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 38,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 18,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Mazarinos",
+    "group": "Mazarinos",
+    "pct": 4,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 5,
+   "prod": 4,
+   "tax": 5
+  },
+  "economy": "Campos ricos y villas de mercado en torno a la capital.",
+  "estates": "Veteranos, agricultores",
+  "fort": 2,
+  "governor": {
+   "name": "Gireg Martolod",
+   "title": "Prefecto (MPS)"
+  },
+  "history": [
+   {
+    "text": "Batalla de Grevara: el ejército revolucionario derrota la reconquista imperial.",
+    "year": "4026"
+   }
+  ],
+  "language": "Kratense",
+  "name": "Grevara",
+  "notes": "Campos ricos y villas de mercado en torno a la capital, conocida por su famosa batalla y por ser hogar de veteranos. Ciudad-símbolo de la revolución, donde se libró la batalla decisiva contra la reconquista imperial. Lugar de peregrinación patriótica: monumento a los caídos, museo de la revolución y desfiles anuales. Hogar de muchos veteranos y sus familias.\n\nCongreso de Diputados: 13 diputados. Participación en 4098: 77%.\nLegislativas de 4098: MPS 13 (voto: MPS 60%, Nacionalista 35%, Federalista 5%; abstención 24%).",
+  "owner": "pais2",
+  "population": 827000,
+  "region": "Kratoi Central",
+  "religion": "Ninguna",
+  "resources": [
+   "Grano",
+   "Ganado"
+  ],
+  "settlement": "Grevara",
+  "terrain": "Llanura",
+  "tradeGood": "Grano",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "539": {
+  "name": "",
+  "owner": "pais6"
+ },
+ "551": {
+  "name": "",
+  "owner": "pais10"
+ },
+ "549": {
+  "buildings": [
+   "Viñedos",
+   "Mercado",
+   "Templo del Heredero",
+   "Iglesia feynista"
+  ],
+  "climate": "Templado",
+  "culture": "Ustileses",
+  "demographics": [
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses del Heredero",
+    "pct": 30,
+    "religion": "Culto del Heredero"
+   },
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses feynistas",
+    "pct": 26,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 24,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 20,
+    "religion": "Fe Espiritual"
+   }
+  ],
+  "dev": {
+   "man": 3,
+   "prod": 4,
+   "tax": 4
+  },
+  "economy": "Ciudad vinícola: los viñedos de Soucart producen los vinos más apreciados de la región.",
+  "estates": "Viticultores ustileses, clero",
+  "fort": 2,
+  "governor": {
+   "name": "Naiara Agneli",
+   "title": "Prefecta (Federalista)"
+  },
+  "language": "Ustilés",
+  "name": "Soucart",
+  "notes": "De mayoría ustilesa con hondas raíces feynistas y de la Iglesia del Heredero. El electorado más proustilés de Kratoi. De mayoría ustilesa, con hondas raíces feynistas y de la Iglesia del Heredero, que se expande en silencio. El electorado más proustilés de Kratoi; Rimas lo ve como posible quinta columna del Imperio.\n\nCongreso de Diputados: 9 diputados. Participación en 4098: 77%.\nLegislativas de 4098: Federalista 9 (voto: Federalista 83%, Nacionalista 9%, MPS 7%; abstención 39%).",
+  "owner": "pais2",
+  "population": 591000,
+  "region": "Kratoi Sur",
+  "religion": "Viejo Feynismo",
+  "resources": [
+   "Vino",
+   "Madera"
+  ],
+  "settlement": "Soucart",
+  "terrain": "Bosque",
+  "tradeGood": "Vino",
+  "tradeNode": "Argostana",
+  "unrest": "Tensiones étnicas y religiosas"
+ },
+ "547": {
+  "buildings": [
+   "Puerto",
+   "Muelle comercial",
+   "Mercado",
+   "Saladeros y ahumaderos"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 52,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 24,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 20,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Ustileses",
+    "group": "Ustileses",
+    "pct": 4,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 5,
+   "prod": 4,
+   "tax": 4
+  },
+  "economy": "Flotas pesqueras, saladeros y ahumaderos: la conserva de pescado es una de las grandes exportaciones de Kratoi. Sus marineros sufren de primera mano los aranceles ustileses y el acoso de la flota imperial.",
+  "estates": "Cofradías de pescadores, armadores",
+  "fort": 2,
+  "governor": {
+   "name": "Arzhur Silrith",
+   "title": "Prefecto (MPS)"
+  },
+  "history": [
+   {
+    "text": "La guerra de aranceles de Ustilus golpea las exportaciones de pescado salado.",
+    "year": "4093"
+   }
+  ],
+  "language": "Kratense",
+  "name": "Laurendon",
+  "notes": "Región pesquera. Hostil hacia Ustilus por sus aranceles y actividades de su flota, pero pragmática en lo demás.\n\nCongreso de Diputados: 12 diputados. Participación en 4098: 67%.\nLegislativas de 4098: MPS 12 (voto: MPS 70%, Nacionalista 21%, Federalista 9%; abstención 30%).",
+  "owner": "pais2",
+  "population": 781000,
+  "region": "Costa Hespérea",
+  "religion": "Fe Espiritual",
+  "resources": [
+   "Pescado",
+   "Sal"
+  ],
+  "settlement": "Laurendon",
+  "terrain": "Costa",
+  "tradeGood": "Pescado",
+  "tradeNode": "Argostana",
+  "unrest": "Estable"
+ },
+ "545": {
+  "buildings": [
+   "Astillero",
+   "Puerto",
+   "Base naval",
+   "Cuartel",
+   "Biblioteca",
+   "Academia militar",
+   "Mercado"
+  ],
+  "climate": "Templado",
+  "culture": "Kratenses",
+  "demographics": [
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses laicos",
+    "pct": 30,
+    "religion": "Ninguna"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses de la Fe Espiritual",
+    "pct": 34,
+    "religion": "Fe Espiritual"
+   },
+   {
+    "culture": "Kratenses",
+    "group": "Kratenses feynistas",
+    "pct": 20,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Mazarinos",
+    "group": "Mazarinos",
+    "pct": 16,
+    "religion": "Viejo Feynismo"
+   }
+  ],
+  "dev": {
+   "man": 5,
+   "prod": 4,
+   "tax": 3
+  },
+  "economy": "Principal puerto de Kratoi y base de la marina. Sus astilleros, los terceros más productivos del continente, construyen mercantes y buques de guerra para Kratoi y para clientes extranjeros.",
+  "estates": "Armadores, oficiales de marina, obreros de los astilleros",
+  "fort": 4,
+  "governor": {
+   "name": "Ruzig Mercier",
+   "title": "Prefecto (MPS)"
+  },
+  "history": [
+   {
+    "text": "Las milicias toman la guarnición imperial de Carpentia el 14 de marzo.",
+    "year": "4025"
+   }
+  ],
+  "language": "Kratense",
+  "name": "Carpentia",
+  "notes": "Capital del norte y sede de la flota Kratense. Militarista y asimilacionista hacia los mazarinos. Capital del norte y sede de la flota kratense. Ciudad de marineros, armadores y soldados; militarista y partidaria de asimilar a la minoría mazarina.\n\nCongreso de Diputados: 10 diputados. Participación en 4098: 77%.\nLegislativas de 4098: MPS 10 (voto: MPS 76%, Nacionalista 12%, Federalista 12%; abstención 32%).",
+  "owner": "pais2",
+  "population": 670000,
+  "region": "Kratoi Norte",
+  "religion": "Viejo Feynismo",
+  "resources": [
+   "Pertrechos navales",
+   "Madera",
+   "Pescado"
+  ],
+  "settlement": "Carpentia",
+  "terrain": "Costa",
+  "tradeGood": "Pertrechos navales",
+  "tradeNode": "Carpentia",
+  "unrest": "Estable"
+ },
+ "556": {
+  "name": "",
+  "owner": "pais1"
+ },
+ "557": {
+  "name": "Zafertepe",
+  "owner": "pais3"
+ }
+}

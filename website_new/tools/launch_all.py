@@ -7,7 +7,8 @@
 * Rank editor (5174), creature editor (5175), equipment editor (5176), election
   editor (5178: the election simulator on its scenario folder), name
   editor (5177: name generator + names by culture), the Tablero (5179: token
-  board) and the Taller (5180: stat block gallery + combat simulator).
+  board), the Taller (5180: stat block gallery + combat simulator) and the
+  Mapa (5181: the world map's provinces and countries).
 * A tool whose port is already in use is left alone (it is already running).
 * Every log line is prefixed with the tool's name.
 * Code edits are picked up by the tools themselves (tools/live_reload.py); if
@@ -36,9 +37,10 @@ TOOLS = [("rangos",   "Editor de Rangos",    "rank_editor.py",      5174, "/"),
          ("nombres",  "Nombres",             "name_editor.py",      5177, "/"),
          ("elecciones", "Elecciones",        "election_editor.py",  5178, "/mundo/utils/elecciones"),
          ("tablero",  "Tablero",             "tablero.py",          5179, "/"),
-         ("taller",   "Taller",              "taller.py",           5180, "/taller")]
+         ("taller",   "Taller",              "taller.py",           5180, "/taller"),
+         ("mapa",     "Mapa",                "map_editor.py",       5181, "/")]
 
-COLORS = {"rangos": "\033[33m", "criaturas": "\033[32m", "equipo": "\033[36m", "nombres": "\033[34m", "elecciones": "\033[94m", "tablero": "\033[91m", "taller": "\033[35m"}
+COLORS = {"rangos": "\033[33m", "criaturas": "\033[32m", "equipo": "\033[36m", "nombres": "\033[34m", "elecciones": "\033[94m", "tablero": "\033[91m", "taller": "\033[35m", "mapa": "\033[92m"}
 RESET = "\033[0m"
 RETRY_SECONDS = 4
 OFFSET = 0  # --offset=N: ports + N, to try a second copy next to the running one
@@ -46,7 +48,7 @@ OFFSET = 0  # --offset=N: ports + N, to try a second copy next to the running on
 # Startup chatter already summed up by the launcher's own "✓ … → url" line
 NOISE = re.compile(
     r"^(\* (Serving Flask app|Debug mode|Running on|Restarting with)|WARNING: This is a development server"
-    r"|Press CTRL\+C|(Equipment|Rank|Creature|Election) Editor|Escenarios|Taller de Raldamain|Archivos|Fichas)")
+    r"|Press CTRL\+C|(Equipment|Rank|Creature|Election) Editor|Escenarios|Taller de Raldamain|Mapa de Raldamain|Archivos|Fichas)")
 CHANGE = re.compile(r"\* Detected change in '(.+?)'")
 
 stopping = threading.Event()

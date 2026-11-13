@@ -1,0 +1,232 @@
+{
+ "pais1": {
+  "color": "#871e22",
+  "detected": "#871e22",
+  "name": "Ustilus",
+  "rank": "Imperio",
+  "religion": "Culto del Heredero",
+  "culture": "Ustileses",
+  "adjective": "Ustileses",
+  "government": "Monarquía absoluta"
+ },
+ "pais2": {
+  "adjective": "Kratense",
+  "allies": "Mazarín, Alianza Shinri, Protectorados Élficos",
+  "capital": "546",
+  "color": "#1eb3fc",
+  "court": "Tudval Labourer: líder del MPS en el Congreso de Diputados (mayoría absoluta desde 4098).\nHoel Kordenner: líder del Partido Nacionalista, la fachada política del Pacto, ahora en la oposición.\nGaspard Delorme: líder del Partido Federalista (Strollad Kevredel), derrotado en 4095 y 4098.\nDamyan Revilo: esposo de la presidenta, político mazarino exiliado.\nKuvira Revilo: hija adoptiva de la presidenta, oficial del Ejército de la República.\nIsembert Florin: expresidente (4083–4090), retirado tras perder en 4095.\n\nGobernadores de departamento:\n• Costa Hespérea: Bleuenn Lemoine\n• Kratoi Central: Renan Mesaer\n• Kratoi Norte: Ronana Laornel\n• Kratoi Sur: Quentin Leclerc\n• Bosque Oriental: Milena Kersaudi",
+  "culture": "Kratenses",
+  "detected": "#1eb3fc",
+  "economy": "Agricultura autosuficiente (cereal, fruta, ganado, sidra), vinos de Soucart, Neuvillette y Lisieroy, pesca y conservas en la costa, madera y construcción naval (los astilleros de Carpentia), banca y comercio en Argostana y una industria creciente de fundiciones en Oreigon. Sigue dependiendo de las manufacturas avanzadas ustilesas y sufre los aranceles del Imperio, que esquiva gracias a las redes comerciales de Thas-Tapet. Desigualdad entre la costa próspera y el interior rural. Recuperada de la Crisis del 86 desde mediados de la década de 4090.",
+  "government": "Democracia Liberal",
+  "military": "Ejército de la República: unos 80.000 regulares y 40.000 milicianos de reserva (todos los varones adultos entrenan 2 semanas al año). Infantería de línea con fusiles importados de Iskaria y Thas-Tapet, artillería de fabricación propia y armas de las fundiciones de chi de Oreigon. Doctrina defensiva apoyada en la Línea Tardivel, a lo largo de la frontera ustilesa.\nMarina: unos 60 buques de guerra con base en Carpentia y una marina mercante de más de 200 barcos; guerra de corso y defensa costera.\nInteligencia: el Bureau de Sûreté (Directorado de Seguridad Interna), extensión operativa del Pacto.",
+  "motto": "Ni rey, ni patriarca, ni amo",
+  "name": "Kratoi",
+  "notes": "Primera democracia del continente, nacida de la revolución de 4025 contra Ustilus, que nunca ha reconocido su independencia; solo una tregua separa a ambos. Bajo la fachada republicana, la república es la «Gran Obra» del Pacto. Presidencialista: el presidente se elige por sufragio universal cada 5 años; el Congreso de Diputados legisla; el Tribunal Supremo de nueve magistrados vitalicios es la institución más respetada. Se divide en cinco departamentos (Costa Hespérea, Kratoi Central, Kratoi Norte, Kratoi Sur y Bosque Oriental) con gobernadores, asambleas y tribunales propios, y protege a las comunas élficas del este.\n\nEn 4099 Kesenia Revilo agota su segundo mandato con mayoría absoluta del MPS; para las presidenciales de 4100 piensa romper el precedente de los dos mandatos frente a una candidatura conjunta nacionalista-federalista.\n\nCongreso de Diputados (240 escaños, legislativas de 4098): MPS 141, Partido Federalista 93, Partido Nacionalista 6.",
+  "rank": "República",
+  "religion": "Ninguna",
+  "rivals": "Imperio de Ustilus",
+  "ruler": {
+   "dynasty": "Movimiento del Pueblo Soberano",
+   "name": "Kesenia Révilo",
+   "notes": "Fundó el Movimiento del Pueblo Soberano tras la Crisis del 86 y rompió el bipartidismo en 4090 frente a su antiguo aliado Isembert Florin. Reelegida en 4095 con el subsidio de paro, la campaña de alfabetización, las pensiones del norte y la victoria en la guerra de aranceles con Ustilus. En 4098 su partido logró la mayoría absoluta del Congreso. En secreto, dirige el Pacto. Casada con Damyan Revilo, político mazarino exiliado; madre adoptiva de Kuvira Revilo, oficial del ejército.",
+   "since": "4090",
+   "title": "Presidenta",
+   "traits": "Carismática, populista, implacable"
+  },
+  "flag": "pais2-3afa1784.png"
+ },
+ "pais3": {
+  "color": "#d8c838",
+  "detected": "#d8c838",
+  "name": "Arshalán",
+  "rank": "Imperio",
+  "government": "Monarquía absoluta",
+  "religion": "Mekhatimismo",
+  "adjective": "Arshalaní"
+ },
+ "pais4": {
+  "color": "#d56627",
+  "detected": "#d56627",
+  "name": "Shinri",
+  "rank": "Alianza",
+  "government": "Monarquía constitucional",
+  "culture": "Shinri",
+  "religion": "Fe Espiritual"
+ },
+ "pais5": {
+  "color": "#7c5724",
+  "detected": "#7c5724",
+  "name": "Chothgar Mori",
+  "rank": "Sapranato",
+  "adjective": "Chothgar",
+  "culture": "Chothgar",
+  "religion": "Culto del Heredero"
+ },
+ "pais6": {
+  "color": "#45824a",
+  "detected": "#45824a",
+  "name": "Mazarín",
+  "rank": "Reino",
+  "government": "Monarquía feudal",
+  "religion": "Viejo Feynismo",
+  "culture": "Mazarinos",
+  "adjective": "Mazarino"
+ },
+ "pais7": {
+  "color": "#097b7b",
+  "detected": "#097b7b",
+  "name": "Protectorados Élficos",
+  "overlord": "pais2",
+  "religion": "Fe Espiritual",
+  "rank": "Protectorado",
+  "government": "Consejo tribal",
+  "culture": "Elfos",
+  "adjective": "Élfico",
+  "capital": "112",
+  "allies": "Kratoi",
+  "ruler": {
+   "name": "Ithiriel Vaenar",
+   "title": "Portavoz del Consejo de Comunas"
+  },
+  "notes": "Comunas élficas de los bosques orientales que aceptaron la protección militar de Kratoi a cambio de una alianza defensiva y de compartir su conocimiento. Conservan sus leyes y costumbres; sus habitantes no votan en las elecciones de la república. Ardaphiel, Sylmar, Naeril y Eldrenwood."
+ },
+ "pais8": {
+  "color": "#12ce7a",
+  "detected": "#4dfeae",
+  "name": "Neronvain",
+  "rank": "Federación",
+  "religion": "Fe Espiritual",
+  "culture": "Elfos"
+ },
+ "pais9": {
+  "color": "#7f016e",
+  "detected": "#7f016e",
+  "name": "Thiamashte"
+ },
+ "pais10": {
+  "color": "#6e01a2",
+  "detected": "#6e01a2",
+  "name": "Thas-Tapet",
+  "rank": "República",
+  "religion": "Prisdevelianismo",
+  "culture": "Tapetí",
+  "adjective": "Tapetíes",
+  "government": "República mercantil"
+ },
+ "pais11": {
+  "name": "País 11",
+  "color": "#592316",
+  "detected": "#592316"
+ },
+ "pais12": {
+  "name": "País 12",
+  "color": "#fefefe",
+  "detected": "#fefefe"
+ },
+ "pais13": {
+  "name": "País 13",
+  "color": "#374b42",
+  "detected": "#374b42"
+ },
+ "pais14": {
+  "color": "#7f7f7f",
+  "detected": "#7f7f7f",
+  "name": "Iskaria",
+  "government": "Dictadura militar",
+  "culture": "Iskarianos",
+  "religion": "Ninguna",
+  "capital": "251"
+ },
+ "pais15": {
+  "color": "#5b5253",
+  "detected": "#5b5253",
+  "name": "Dairov",
+  "rank": "Gran Ducado",
+  "overlord": "pais1",
+  "religion": "Fe Espiritual"
+ },
+ "pais16": {
+  "color": "#c99683",
+  "detected": "#c99683",
+  "name": "La Ciudadela",
+  "religion": "Ninguna",
+  "government": "Dictadura militar",
+  "culture": "Ninguna"
+ },
+ "pais17": {
+  "name": "País 17",
+  "color": "#a7b3fc",
+  "detected": "#a7b3fc"
+ },
+ "pais18": {
+  "name": "País 18",
+  "color": "#fc7a61",
+  "detected": "#fc7a61"
+ },
+ "pais19": {
+  "color": "#023e02",
+  "detected": "#023e02",
+  "name": "Hakrapeu",
+  "rank": "Reino",
+  "government": "Monarquía absoluta",
+  "religion": "Madre del Abismo",
+  "culture": "Hakrapense"
+ },
+ "pais20": {
+  "name": "País 20",
+  "color": "#fdb8b8",
+  "detected": "#fdb8b8"
+ },
+ "pais21": {
+  "name": "País 21",
+  "color": "#465188",
+  "detected": "#465188"
+ },
+ "pais22": {
+  "name": "País 22",
+  "color": "#cac9f7",
+  "detected": "#cac9f7"
+ },
+ "pais23": {
+  "name": "País 23",
+  "color": "#99ac7d",
+  "detected": "#99ac7d"
+ },
+ "pais24": {
+  "name": "País 24",
+  "color": "#9a3e03",
+  "detected": "#9a3e03"
+ },
+ "pais25": {
+  "name": "País 25",
+  "color": "#9e6946",
+  "detected": "#9e6946"
+ },
+ "pais26": {
+  "name": "País 26",
+  "color": "#ce02fc",
+  "detected": "#ce02fc"
+ },
+ "pais27": {
+  "name": "País 27",
+  "color": "#fc9cda",
+  "detected": "#fc9cda"
+ },
+ "pais28": {
+  "name": "País 28",
+  "color": "#fde5d6",
+  "detected": "#fde5d6"
+ },
+ "pais29": {
+  "name": "País 29",
+  "color": "#032661",
+  "detected": "#032661"
+ },
+ "pais30": {
+  "color": "#2d0241",
+  "name": "Lara Quayla",
+  "rank": "Ciudad-estado",
+  "detected": "#2d0241"
+ }
+}

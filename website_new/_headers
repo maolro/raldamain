@@ -24,3 +24,12 @@
 # Simulador en el navegador (/simulador): el código Python del simulador
 /combat-simulator/*
   Cache-Control: no-cache
+
+# Mapa del mundo (/mundo/utils/mapa): sus imágenes viven en /data, cuyo Content-Type JSON no les sirve
+/data/world/mapa/labels.png
+  ! Content-Type
+  Cache-Control: no-cache
+/data/world/mapa/base.jpg
+  ! Content-Type
+/data/world/mapa/flags/*
+  ! Content-Type
