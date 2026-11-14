@@ -48,11 +48,25 @@ export interface BoardItem {
   light?: { bright: number; dim: number };      // a light it carries (squares; lighting.ts)
   vision?: { range: number; dark: number };     // its players' field of view (squares; range 0 = no limit)
   uses?: { id: string; name: string; value: number; max: number }[];   // ability uses left (Instinto de Supervivencia 2/3)
-  economy?: { actions: number; reactions: number };   // actions and reactions per round (from its sheet)
+  economy?: { actions: number; reactions: number };   // actions and reactions per round (from its sheet, or set by hand)
+  economyHand?: boolean;   // set by hand in the token's bubble: its sheet no longer changes them
   used?: { a: number; r: number };                     // spent this round (Nueva ronda empties them)
   level?: string;       // the level (floor) it is on (missing: the first one)
+  elev?: number;        // how high it is (squares above the floor; below it if negative; 3D)
+  facing?: number;      // 3D: where a token's figure looks (degrees); its 2D picture is never turned by it
+  portrait?: string;    // 📖 Escena: its portrait (an image id; missing: its own picture)
+  mainOf?: string[];    // the players whose main character it is (the one shown in the scenes)
+  modelScale?: number;  // 3D: this token's figure bigger or smaller (× the library's size; 1 = as the others)
+  sheetRev?: number;    // its stat block edited (✎ Editar): open windows of it read it again
+  prone?: boolean;      // lying on the ground (knocked down, dead…; 3D)
   roof?: boolean;       // image: a roof, drawn over the tokens, that opens when one of yours goes under it
 }
+
+/** figure: a token on a base · structure: a building, a ruin, a tree… on the map layer · prop: furniture
+ *  and decor (a table, a barrel, a wall piece…): like a structure, but placed at a square or so */
+export type ModelKind = 'figure' | 'structure' | 'prop';
+/** scenery (a structure or a prop): on the map layer at its footprint, no base, seen from above in 2D */
+export const isScenery = (m?: { kind?: ModelKind }) => m?.kind === 'structure' || m?.kind === 'prop';
 
 /** A 3D model in the Vista 3D's library (tablero.py: models/<id>/<files>) */
 export interface ModelMeta {
@@ -66,7 +80,13 @@ export interface ModelMeta {
   thumb: boolean;      // thumb.png: how it looks from above (the 2D board shows it)
   scale: number;       // 1 = fills its squares
   created: number;
+  kind?: ModelKind;    // missing: figure
+  dims?: number[];     // its size [x, y, z] (its own units): a structure's proportions on the board
+  top?: number;        // structures: top.png (straight from above, for the 2D board) exists; its version
+  image?: string;      // figures: their 2D picture (ImageMeta.id): tokens of it show that in 2D
+  sheet?: string;      // figures: the stat block their tokens get
   duplicate?: boolean;
+  owner?: string;      // a player's upload: theirs (missing: the GM's)
 }
 
 /** A status effect on a token: data/status_effects.json's id and the level's index */
@@ -104,11 +124,17 @@ export interface Board {
   arrival?: { x: number; y: number; level?: string };   // where tokens coming from another scene appear
   tilesets?: string[];  // the tile palette: image ids (a tile's value says which)
   tiles?: Record<string, string>;   // painted tiles: "<level>|<layer>|<cx>|<cy>" → a 16×16 chunk (tiles.ts)
+  sky?: { hour: number };   // 3D: the time of day (0-24: the sun, the sky, night)
+  vn?: VNScene;         // 📖 Escena: the GM's light-novel moment (vn.ts)
   tileSpans?: Record<string, [number, number]>;   // big tiles: "<level>|<layer>|<x>|<y>" → squares it covers [w, h]
 }
 
 /** A floor of a scene */
-export interface Level { id: string; name: string }
+/** 📖 Escena: a background, the people standing in it (the GM's portraits), what is being said */
+export interface VNScene { on: boolean; bg?: string; actors?: VNActor[]; line?: { who: string; text: string } }
+export interface VNActor { id: string; image: string; x: number; flip?: boolean }   // x: 0-1 across the stage
+
+export interface Level { id: string; name: string; width?: number; height?: number }   // its own page (squares; missing: the board's)
 
 /** A portal: tokens dropped on it go to another level of this scene, or to another scene
  *  (there: to the portal of the same name, else where it says, else to the arrival point) */
@@ -172,7 +198,8 @@ export interface SheetStats { hits: number; chi: number; actions?: number; react
 /** A category of the single tiles' tags (Bioma: naturaleza, mazmorra…) */
 export interface TileTagCategory { name: string; tags: string[] }
 
-export const DEFAULT_CATEGORIES = ['Personajes', 'Criaturas', 'Tokens', 'Mapas', 'Tilesets', 'Casillas', 'Objetos', 'Efectos', 'Otros'];
+export const BACKGROUNDS = 'Fondos';   // 📖 Escena's backgrounds: their own section of the library
+export const DEFAULT_CATEGORIES = ['Personajes', 'Criaturas', 'Tokens', 'Mapas', BACKGROUNDS, 'Tilesets', 'Casillas', 'Objetos', 'Efectos', 'Otros'];
 
 /** Who this browser is in the live board (from the server) */
 export interface Me { role: 'gm' | 'player'; pid: string | null; cid: string; name: string; color: string }
@@ -190,7 +217,7 @@ export interface Presence {
 export interface Changes {
   upserts: BoardItem[];
   removes: string[];
-  settings?: Partial<Pick<Board, 'name' | 'width' | 'height' | 'background' | 'grid' | 'fog' | 'round' | 'levels' | 'portals' | 'arrival' | 'tilesets' | 'tileSpans'>>;
+  settings?: Partial<Pick<Board, 'name' | 'width' | 'height' | 'background' | 'grid' | 'fog' | 'round' | 'levels' | 'portals' | 'arrival' | 'tilesets' | 'tileSpans' | 'sky' | 'vn'>>;
   tiles?: Record<string, string | null>;   // tile chunks changed (null: emptied)
   live?: boolean;       // mid-drag: shown, not an undo step
   by?: string;

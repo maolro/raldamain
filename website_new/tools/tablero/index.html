@@ -28,7 +28,7 @@
         <option value="orig">Tamaño original</option>
       </select></label>
     <span class="mode-toggle" role="group" aria-label="Vista">
-      <button class="on" id="mode-2d" title="Tablero 2D: editar, mover tokens, dibujar…">2D</button><button id="mode-3d" title="Vista 3D de la escena: suelo, muros y figuras (solo para mirar, por ahora)">🧊 3D</button>
+      <button class="on" id="mode-2d" title="Tablero 2D: editar, mover tokens, dibujar…">2D</button><button id="mode-3d" title="Vista 3D de la escena: suelo, muros y figuras (solo para mirar, por ahora)">🧊 3D</button><button id="mode-vn" title="📖 Escena: un momento de novela visual (diálogos, llegadas…): un fondo, los personajes y el grupo abajo. El GM la abre para todos" hidden>📖 Escena</button>
     </span>
     <span class="grow"></span>
     <button class="presence" id="presence" title="Jugadores de la sala">👥 0</button>
@@ -89,6 +89,7 @@
     <label>Tamaño de casilla (px)<input class="inp" type="number" id="g-size" min="10" max="400" step="1"></label>
     <label>Color<input type="color" id="g-color"></label>
     <label>Opacidad<input type="range" id="g-opacity" min="0" max="1" step="0.05"></label>
+    <small class="muted" title="Cada nivel puede tener su propio tamaño de página">Página <span id="p-which"></span></small>
     <div class="row2">
       <label>Ancho (casillas)<input class="inp" type="number" id="p-width" min="1" max="300"></label>
       <label>Alto (casillas)<input class="inp" type="number" id="p-height" min="1" max="300"></label>

@@ -8,7 +8,7 @@
 // on (`synced`): items added or changed, items removed, board settings, tile chunks. The server
 // answers with what it refused (not allowed for this player), as it really is.
 import { api } from './api';
-import type { Board, BoardItem, Changes, ImageMeta, Me, Presence, RollRecord, RulerEvent } from './types';
+import type { Board, BoardItem, Changes, ImageMeta, Me, Presence, RollRecord, RulerEvent, VNScene } from './types';
 import type { Playback } from './music';
 
 export interface LiveHandlers {
@@ -24,6 +24,8 @@ export interface LiveHandlers {
   ping(p: { by: string; who: string; color: string; x: number; y: number; level: string }): void;
   /** the room's music (on connecting, and whenever the GM changes it) */
   music(p: Playback | null): void;
+  /** 📖 the room's scene (on connecting, and whenever the GM changes it) */
+  vn(v: VNScene): void;
   status(text: string, cls?: string): void;
   /** the room was closed, this player removed, or the board deleted */
   closed(info: { code?: string; kicked?: boolean; deleted?: boolean }): void;
@@ -34,7 +36,7 @@ export interface LiveHandlers {
 }
 
 const settingsOf = (b: Board) => JSON.stringify({ name: b.name, width: b.width, height: b.height, background: b.background, grid: b.grid,
-  fog: b.fog, round: b.round, levels: b.levels, portals: b.portals, arrival: b.arrival, tilesets: b.tilesets, tileSpans: b.tileSpans });
+  fog: b.fog, round: b.round, levels: b.levels, portals: b.portals, arrival: b.arrival, tilesets: b.tilesets, tileSpans: b.tileSpans, sky: b.sky, vn: b.vn });
 
 export class Live {
   me: Me | null = null;
@@ -64,6 +66,7 @@ export class Live {
     es.addEventListener('ping', e => this.h.ping(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('image', e => this.h.image(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('music', e => this.h.music(JSON.parse((e as MessageEvent).data)));
+    es.addEventListener('vn', e => this.h.vn(JSON.parse((e as MessageEvent).data)));
     es.addEventListener('closed', e => { this.close(); this.h.closed(JSON.parse((e as MessageEvent).data)); });
     es.addEventListener('scene', e => { this.close(); this.h.scene(JSON.parse((e as MessageEvent).data).board); });
     es.onerror = () => { if (this.es === es) this.h.status('Reconectando…', 'error'); };
@@ -80,8 +83,9 @@ export class Live {
     return this.sending || !!this.retry || (!!b && !!this.me && this.hasDiff(b));
   }
 
-  private onSnapshot({ board, me, rolls, music }: { board: Board; me: Me; rolls?: RollRecord[]; music?: Playback }) {
+  private onSnapshot({ board, me, rolls, music, vn }: { board: Board; me: Me; rolls?: RollRecord[]; music?: Playback; vn?: VNScene }) {
     this.h.music(music || null);
+    this.h.vn(vn || { on: false });
     // reconnecting with changes the server never got: keep them on top of its board
     const cur = this.board();
     const local = this.me && cur ? this.diff(cur) : null;

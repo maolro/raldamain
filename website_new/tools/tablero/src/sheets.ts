@@ -108,6 +108,8 @@ export class Sheets {
     return p;
   }
   /** A sheet window read newer values: remember them */
+  /** Its stat block changed: its values are read again */
+  forget(sid: string) { this.stats.delete(sid); this.statsAt.delete(sid); }
   seen(sid: string, st: SheetStats) { this.stats.set(sid, Promise.resolve(st)); this.statsAt.set(sid, Date.now()); }
 
   // ── the picker ──────────────────────────────────────────────────────────
@@ -198,9 +200,12 @@ export interface WindowEvents {
   /** the sheet's Impactos and Chi, as its stat block computes them */
   stats(itemId: string, sid: string, st: SheetStats): void;
   toast(msg: string, bad?: boolean): void;
+  /** ✎ Editar: the token's character stat block, in the Creador */
+  edit(item: BoardItem): void;
+  canEdit(item: BoardItem): boolean;
 }
 
-interface Win { el: HTMLElement; frame: HTMLIFrameElement; sid: string; item: BoardItem; shown?: string }
+interface Win { el: HTMLElement; frame: HTMLIFrameElement; sid: string; item: BoardItem; shown?: string; rev?: number; load(): void }
 
 export class SheetWindows {
   private wins = new Map<string, Win>();   // token id → its window
@@ -226,12 +231,13 @@ export class SheetWindows {
     el.innerHTML = `
       <div class="sheet-win-bar" title="Arrastra para moverla">
         <span class="sheet-win-title"></span>
+        ${this.sheets.get(item.sheet)?.kind === 'pj' && this.ev.canEdit(item) ? '<button class="x sheet-edit" data-act="edit" title="Editar la ficha en el Creador de personajes (se guarda en la del token)">✎ Editar</button>' : ''}
         <button class="x" data-act="reload" title="Volver a cargar la ficha">↻</button>
         <button class="x" data-act="close" title="Cerrar">✕</button>
       </div>
       <div class="sheet-win-banner" hidden></div>
       <div class="sheet-win-body"></div>`;
-    const win: Win = { el, sid: item.sheet, item, frame: null! };
+    const win: Win = { el, sid: item.sheet, item, frame: null!, rev: item.sheetRev, load: () => load() };
     const load = () => {
       if (win.frame) dropFrame(win.frame);
       win.frame = sheetFrame(el.querySelector('.sheet-win-body') as HTMLElement, win.sid, m => {
@@ -248,6 +254,7 @@ export class SheetWindows {
     el.addEventListener('pointerdown', () => this.front(el));
     el.querySelector('[data-act="close"]')!.addEventListener('click', () => this.close(item.id));
     el.querySelector('[data-act="reload"]')!.addEventListener('click', load);
+    el.querySelector('[data-act="edit"]')?.addEventListener('click', () => this.ev.edit(win.item));
     this.dragBy(el, el.querySelector('.sheet-win-bar') as HTMLElement);
   }
 
@@ -267,7 +274,10 @@ export class SheetWindows {
       if (!it || !it.sheet) { this.close(id); continue; }
       w.item = it;
       if (it.sheet !== w.sid) { this.close(id); this.open(it, { x: parseFloat(w.el.style.left) - 24, y: parseFloat(w.el.style.top) + 60 }); }
-      else this.title(w);
+      else {
+        this.title(w);
+        if (it.sheetRev !== w.rev) { w.rev = it.sheetRev; w.load(); }   // (its stat block was edited: read it again)
+      }
     }
   }
 

@@ -351,7 +351,7 @@ export class TilePainter {
 
   // ── painting ──
   private cellOf(p: Pt) { const g = this.host.board()!.grid.size; return { x: Math.floor(p.x / g), y: Math.floor(p.y / g) }; }
-  private inside(x: number, y: number) { const b = this.host.board()!; return x >= 0 && y >= 0 && x < b.width && y < b.height; }
+  private inside(x: number, y: number) { const p = this.host.view.page(); return x >= 0 && y >= 0 && x < p.width && y < p.height; }
 
   /** The palette index of this tileset in the board (added if new) */
   private setIndex(b: Board, id: string) {

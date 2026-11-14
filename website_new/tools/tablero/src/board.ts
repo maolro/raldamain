@@ -5,11 +5,11 @@
 // the `world` container's position and scale. Each item is a Container centred on the
 // item (so it rotates around its middle) holding its Sprite, its pencil stroke or its Text.
 import { Application, Assets, Container, FederatedPointerEvent, Graphics, Rectangle, Sprite, Text, Texture } from 'pixi.js';
-import { imageUrl, modelThumbUrl } from './api';
+import { imageSmallUrl, imageUrl, needsPreview } from './api';
 import { BARS, kindOf, type Board, type BoardItem, type ImageMeta, type LayerId } from './types';
 import { cellCenter, drawRuler, type RulerMode, type RulerShape } from './ruler';
 import { FogLayer, type FogView } from './lighting';
-import { FIRST_LEVEL, levelFog, levelOf } from './levels';
+import { FIRST_LEVEL, levelFog, levelOf, pageOf } from './levels';
 import { CHUNK, chunkKey, decode, gridOf, parseKey, tileWalls, unpack, type TileLayer } from './tiles';
 
 export type Tool = 'select' | 'draw' | 'text' | 'ruler' | 'fog' | 'tiles';
@@ -128,6 +128,9 @@ export class BoardView {
   private loading = new Set<string>();
   private images = new Map<string, ImageMeta>();
   private drag: Drag | null = null;
+  /** a 3D model's token without a 2D picture of its own: what to show (a figure's thumbnail, a structure's
+   *  view from straight above), set by the page */
+  modelPic: (it: BoardItem) => { key: string; url: string; contain?: boolean } | null = () => null;
   /** something on the board was drawn again (the 3D view follows) */
   onRendered: () => void = () => {};
 
@@ -190,6 +193,7 @@ export class BoardView {
   /** An image got a new picture: load it again (its tokens and painted tiles too) */
   forgetImage(id: string) {
     this.textures.delete(id);
+    this.failed.delete(id);
     for (const k of [...this.tileFrames.keys()]) if (k.startsWith(id + ':')) this.tileFrames.delete(k);
     for (const it of this.board?.items || []) if (it.image === id) this.views.get(it.id)?.destroy({ children: true }), this.views.delete(it.id);
   }
@@ -204,9 +208,13 @@ export class BoardView {
   /** Show another level (the selection is left behind) */
   setLevel(id: string) {
     if (id === this.level) return;
+    const was = this.board ? JSON.stringify(this.page()) : '';
     this.level = id;
     this.tileRev++;
-    if (this.board) { this.select([]); this.render(); }
+    if (this.board) {
+      this.select([]); this.render();
+      if (JSON.stringify(this.page()) !== was) this.fit();   // another size: the whole new floor in view
+    }
   }
 
   /** On the level shown */
@@ -217,8 +225,11 @@ export class BoardView {
     const b = this.board;
     if (!this.wallCache || this.wallCache.rev !== this.tileRev || this.wallCache.level !== this.level)
       this.wallCache = { rev: this.tileRev, level: this.level, segs: tileWalls(b, this.level, this.images) };
-    return { ...b, fog: levelFog(b, this.level, this.wallCache.segs) };
+    return { ...b, ...this.page(), fog: levelFog(b, this.level, this.wallCache.segs) };
   }
+
+  /** The page of the level shown, in squares (each level may have its own size) */
+  page() { return pageOf(this.board, this.level); }
 
   item(id: string) { return this.board.items.find(i => i.id === id); }
 
@@ -394,11 +405,12 @@ export class BoardView {
   floorSig(): string {
     const b = this.board;
     if (!b) return '';
-    const maps = b.items.filter(i => i.layer === 'map' && !i.roof && this.here(i))
+    const maps = b.items.filter(i => i.layer === 'map' && !i.roof && !i.model && this.here(i))
       .map(i => [i.id, i.x, i.y, i.w, i.h, i.rotation, i.z, i.image, i.text, i.color, i.points?.length, i.fontSize]);
     const tiles = Object.entries(b.tiles || {}).filter(([k]) => k.startsWith(this.level + '|') && !k.includes('|roof|'));
-    return JSON.stringify([this.level, b.width, b.height, b.background, b.grid.size, maps, tiles, b.tileSpans, b.tilesets,
-      this.textures.size, this.tileFrames.size, this.tileRev]);
+    const pg = this.page();
+    return JSON.stringify([this.level, pg.width, pg.height, b.background, b.grid.size, maps, tiles, b.tileSpans, b.tilesets,
+      this.textures.size, this.tileFrames.size, this.tileRev, this.texRev]);
   }
 
   /** Does this level have roofs (pictures marked as roof, or roof tiles) */
@@ -412,8 +424,10 @@ export class BoardView {
   snapshot(part: 'floor' | 'fog' | 'roof', max: number): { canvas: HTMLCanvasElement; k: number } | null {
     const b = this.board;
     if (!b || !this.fog) return null;
-    const W = b.width * b.grid.size, H = b.height * b.grid.size;
+    const pg = this.page(), W = pg.width * b.grid.size, H = pg.height * b.grid.size;
     const k = Math.min(1, max / Math.max(W, H));
+    // (structures stand there in 3D: not their picture from above under them)
+    const hidden = part === 'floor' ? b.items.filter(i => i.model && i.layer === 'map').map(i => this.views.get(i.id)).filter((v): v is Container => !!v && v.visible) : [];
     const keep: Container[] = part === 'floor' ? [this.pageG, this.layers.map, ...Object.values(this.tilesBelow)]
       : part === 'fog' ? [this.fog.container] : [this.roofLayer];
     const shown = this.world.children.map(c => c.visible);
@@ -421,6 +435,7 @@ export class BoardView {
     const pageStroke = part === 'floor';
     try {
       this.world.children.forEach(c => { c.visible = keep.includes(c); });
+      hidden.forEach(v => { v.visible = false; });
       this.world.position.set(0, 0);
       this.world.scale.set(1);
       this.fog.container.alpha = 1;
@@ -430,6 +445,7 @@ export class BoardView {
       return { canvas, k };
     } finally {
       this.world.children.forEach((c, i) => { c.visible = shown[i]; });
+      hidden.forEach(v => { v.visible = true; });
       this.world.position.set(pos.x, pos.y);
       this.world.scale.set(sc);
       this.fog.container.alpha = fogAlpha;
@@ -463,9 +479,10 @@ export class BoardView {
     const kind = kindOf(it);
     const meta = it.image ? this.images.get(it.image) : undefined;
     // a 3D model's token: in 2D, its picture from above
-    const tex = it.image ? this.textures.get(it.image) : it.model ? this.textures.get('m:' + it.model) : undefined;
+    const pic = !it.image && it.model ? this.modelPic(it) : null;
+    const tex = it.image ? this.textures.get(it.image) : pic ? this.textures.get(pic.key) : undefined;
     // what the item's view holds: a Sprite, a Text, or a Graphics (pencil stroke / image placeholder)
-    const want = kind === 'text' ? `text:${it.text}|${it.color}|${it.fontSize}` : kind === 'path' ? 'path' : tex ? 'sprite' : 'placeholder';
+    const want = kind === 'text' ? `text:${it.text}|${it.color}|${it.fontSize}` : kind === 'path' ? 'path' : tex ? `sprite:${pic?.key || ''}` : 'placeholder';
     let v = this.views.get(it.id);
     if (v && (v as Container & { want?: string }).want !== want) { v.destroy({ children: true }); this.views.delete(it.id); v = undefined; }
     if (!v) {
@@ -477,12 +494,15 @@ export class BoardView {
       else if (tex) { const s = new Sprite(tex); s.anchor.set(0.5); child = s; }
       else {
         child = new Graphics();   // pencil stroke, or a placeholder while the image loads (or if it is gone)
-        if (kind === 'image' && meta) this.loadTexture(meta);
-        else if (kind === 'image' && it.model) this.loadUrl('m:' + it.model, modelThumbUrl(it.model), false);
       }
       child.eventMode = 'none';
       v.addChild(child);
       this.views.set(it.id, v);
+    }
+    // its picture, as soon as it is known (the library may arrive after the board)
+    if (!tex && kind === 'image') {
+      if (meta && !this.failed.has(meta.id)) this.loadTexture(meta);
+      else if (!meta && pic && !this.failed.has(pic.key)) this.loadUrl(pic.key, pic.url, false);
     }
     const home = it.roof && kind === 'image' ? this.roofLayer : this.layers[it.layer];
     if (v.parent !== home) home.addChild(v);
@@ -507,7 +527,8 @@ export class BoardView {
       child.scale.set(1);
       child.scale.set(it.w / Math.max(1, child.width), it.h / Math.max(1, child.height));
     } else if (child instanceof Sprite) {
-      if (it.fit) {   // a token: the whole image inside its box, proportions kept
+      if (tex && child.texture !== tex) child.texture = tex;   // (the whole picture after its quick copy)
+      if (it.fit || pic?.contain) {   // a token (or a structure's view from above): the whole image inside its box, proportions kept
         const k = Math.min(it.w / child.texture.width, it.h / child.texture.height);
         child.scale.set(k);
       } else { child.width = it.w; child.height = it.h; }
@@ -640,26 +661,41 @@ export class BoardView {
     return { h, gap: h * 0.35 };
   }
 
-  private loadTexture(meta: ImageMeta) { this.loadUrl(meta.id, imageUrl(meta), meta.file.endsWith('.svg')); }
+  /** A picture: big ones first as a light copy (shown at once), then the whole picture in its place */
+  private loadTexture(meta: ImageMeta) {
+    if (needsPreview(meta)) this.loadUrl(meta.id, imageSmallUrl(meta, 1024), false, imageSmallUrl(meta, 'full'));
+    else this.loadUrl(meta.id, imageUrl(meta), meta.file.endsWith('.svg'));
+  }
 
-  private loadUrl(key: string, src: string, svg: boolean) {
+  private loadUrl(key: string, src: string, svg: boolean, then?: string) {
     if (this.loading.has(key)) return;
     this.loading.add(key);
     Assets.load<Texture>({ src, loadParser: svg ? 'loadSVG' : 'loadTextures' })
-      .then(tex => { this.textures.set(key, tex); this.render(); })
-      .catch(err => console.warn('No se pudo cargar la imagen', src, err))
+      .then(tex => {
+        this.textures.set(key, tex); this.texRev++; this.render();
+        if (!then) return;
+        // the whole picture, in the background: it takes the place of the quick one
+        return Assets.load<Texture>({ src: then, loadParser: 'loadTextures' }).then(full => {
+          if (this.textures.get(key) !== tex) return;
+          this.textures.set(key, full); this.texRev++; this.render();
+          setTimeout(() => Assets.unload(src).catch(() => {}), 2000);   // (the quick copy: no longer drawn)
+        });
+      })
+      .catch(err => { if (!this.textures.has(key)) this.failed.add(key); console.warn('No se pudo cargar la imagen', src, err); })
       .finally(() => this.loading.delete(key));
   }
+  private failed = new Set<string>();   // pictures that didn't load: not asked again at every redraw
+  private texRev = 0;   // pictures swapped (quick → whole): the 3D floor is drawn again
 
   private drawPage() {
-    const b = this.board, s = this.world.scale.x, g = b.grid;
-    const W = b.width * g.size, H = b.height * g.size;
+    const b = this.board, s = this.world.scale.x, g = b.grid, pg = this.page();
+    const W = pg.width * g.size, H = pg.height * g.size;
     this.pageG.clear().rect(0, 0, W, H).fill({ color: b.background || '#1b1b1b' })
       .stroke({ width: 2 / s, color: 0x555555 });
     this.gridG.clear();
     if (!g.show || g.size < 4) return;
-    for (let x = 0; x <= b.width; x++) this.gridG.moveTo(x * g.size, 0).lineTo(x * g.size, H);
-    for (let y = 0; y <= b.height; y++) this.gridG.moveTo(0, y * g.size).lineTo(W, y * g.size);
+    for (let x = 0; x <= pg.width; x++) this.gridG.moveTo(x * g.size, 0).lineTo(x * g.size, H);
+    for (let y = 0; y <= pg.height; y++) this.gridG.moveTo(0, y * g.size).lineTo(W, y * g.size);
     this.gridG.stroke({ width: 1 / s, color: g.color || '#c9a227', alpha: g.opacity ?? 0.35 });
   }
 
@@ -745,7 +781,7 @@ export class BoardView {
   }
 
   fit() {
-    const b = this.board, W = b.width * b.grid.size, H = b.height * b.grid.size;
+    const b = this.board, pg = this.page(), W = pg.width * b.grid.size, H = pg.height * b.grid.size;
     const sw = this.app.screen.width, sh = this.app.screen.height;
     const z = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, Math.min((sw - 60) / W, (sh - 60) / H)));
     this.world.scale.set(z);

@@ -1,13 +1,15 @@
 {
  "pais1": {
+  "adjective": "Ustileses",
   "color": "#871e22",
+  "culture": "Ustileses",
   "detected": "#871e22",
+  "government": "Monarquía absoluta",
   "name": "Ustilus",
   "rank": "Imperio",
   "religion": "Culto del Heredero",
-  "culture": "Ustileses",
-  "adjective": "Ustileses",
-  "government": "Monarquía absoluta"
+  "capital": "360",
+  "notes": "Regiones (4099):\n• El Ustal: el corazón de la Corona en torno a Trono de Feyn, el Ustal original. El más «puramente» ustilés y devoto; las Cortes y los Caballeros, vecinos de puerta.\n• Deverenzia: las provincias occidentales, el antiguo Reino de Deverent de los exiliados mazarinos. Artes, vidrio, carnaval, liberalismo; las Grandes Casas y la elección de Deverentio.\n• Sairenia: la riviera del suroeste, dote de la reina Sairena. Viñedos, olivares y villas de los grandes; cabeza de playa rakashita y de las primeras en alzarse con Acrodio.\n• Elyonia: la costa sur del antiguo Reino de Elyon, aristocracia colona empobrecida, familias criminales y Polvo de Ángel.\n• Las Marcas: la frontera norte frente a Kratoi, Dairov e Iskaria; castillos, encomiendas de los Caballeros y el trauma de la pérdida de Kratoi (4025).\n• La Campiña: los latifundios del este; el granero del imperio y su miseria, bandolerismo y servidumbre por deudas tras la abolición.\n• Islas Hespéreas: las islas del Océano Hespéreo, anexionadas en 4055; bases navales y una minoría kratense.\n• Thalos: mayoría hobgoblin; antiguas plantaciones esclavistas, la Guerra de la Legión, independencia bajo los Oni, reconquista en 4030 y abolición en 4040.\n• Pradjati: el istmo del Canal Continental, mezcla de ustileses, temash y jaddi, con Rizad; tensiones religiosas y culturales.\n• Tamashkhan: el desierto del sur, tierra temash bajo dominio colonial ustilés."
  },
  "pais2": {
   "adjective": "Kratense",
@@ -37,13 +39,33 @@
   "flag": "pais2-3afa1784.png"
  },
  "pais3": {
+  "adjective": "Arshalaní",
+  "allies": "Hakrapeu, Arkedania (vasallo), Thas-Tapet (Concordato de Beisyan), clanes chothgar del Camino de Yathanra contrarios al Sapranato",
+  "capital": "125",
   "color": "#d8c838",
+  "court": "Seyma: consorte, madre del príncipe Ahmet; su casa cultiva el orden garantizado por Ustilus y el dinero de Letemi.\nGulbahar (clan Dulkadir): cabeza, junto al príncipe Ayhan, de la facción soberanista de Kuduzu y el campo.\nPríncipe Ayhan y príncipe Ahmet: los candidatos a la sucesión.\nAbeni: señora del Arsenal de Tophane; neutral, leal a los contratos.\nAltan \"Puño Celestial\": campeón de la Hueste.\nDursun Pasha: gobernador de Ümid Hisar (Batu) desde la década de 4080.\nHaukur, Jarl de Ayutan",
+  "culture": "Tangarinos",
   "detected": "#d8c838",
-  "name": "Arshalán",
-  "rank": "Imperio",
+  "economy": "Ganado, caballos y lana de la estepa de Kuduzu; trigo, vino, aceite y pesca de Letemi; mármol y cobre; hierro de Gazili y Yalshin; cristales de chi en las marcas orientales; madera, pieles, carbón y pescado de Ayutan; plata de Geismaria. El Gran Bazar de Sershalán y el puerto de Beisyan son los motores del comercio, y las colonias de Batu, la nueva fuente de riqueza.",
   "government": "Monarquía absoluta",
+  "heir": {
+   "claim": "Disputada (sucesión leonina: todos los hijos varones)",
+   "name": "Disputada: el príncipe Ayhan o el príncipe Ahmet",
+   "relation": "Hijos"
+  },
+  "military": "Ejército del Centro y Guardia Imperial (Sershalán): ~65.000, con oficiales letemitas, tangarinos y leoninos mezclados.\nEjército del Este (Yalshin), Ejército del Oeste (Gazili) y Ejército del Sur y Armada del Mar Interior.\nCaballería sipahi de los timares; el séquito del clan Sanjar es el mayor.\nArsenal de Tophane: cañones de chi, armas cortas y armaduras; la Compañía Kara Su (~2.500) lo custodia. Mehrem corre para cerrar la brecha de fusiles y artillería con Ustilus.\nAcademia de Oficiales de Fenerli Köy.",
+  "name": "Arshalán",
+  "notes": "El imperio de la Hueste, fundado por Mekhatim y Canrim. Se divide en vilayatos gobernados por valis nombrados por el Mhayid, con su propio divan provincial, ejército y fisco; el Divan de Sershalán ha sobrevivido a todas las sucesiones haciéndose indispensable. El sistema de millet tolera a feynistas, al Culto de los Ancestros ayutano y a los hakrapenses a cambio de un impuesto especial; el de timar paga a la caballería sipahi con tierras que vuelven al Mhayid.\n\nRegiones: Kuduzu (el centro y la capital), Letemi (el reino vasallo de Arkedania), Kajmasar (las Montañas Sagradas), Gazili (el oeste), Yalshin (el este y el Ejército del Este), Ayutan (el norte nórdico del Jarl) y Geismaria (la frontera noroeste).\n\nHistoria reciente: el desastre de Chandrial en Ustilus (4010), la paz y las reformas de Mussafir, la guerra civil (4030–38) con la República de Devrim, el triunfo de Ayhan, el Reino neutral de Arkedania (4040–57) y su reabsorción bajo Hakan.\n\nUltramar (Batu): Ümid Hisar (colonia, antigua «Mamushia»), Pusakantara (reino vasallo autónomo), Altinkum (protectorado) y las disputadas Islas de las Perlas de Kamutyaan. El Concordato de Beisyan reparte Batu: el norte para Arshalán, el sur para Thas-Tapet.\n\n4099: la sucesión divide al imperio. El campo, la gentry y los oficiales quieren un heredero «Arshalán primero» (Gulbahar y Arslan); el dinero de Letemi y la casa de Seyma, prolongar el orden garantizado por Ustilus (Seyma y Ahmet).\n\nEl este (Yalshin): la tierra de Ayhan. Allí empezó su expansión, allí se libró la Guerra Natanea, y su peso en la corte es enorme. Aksutun es la sede tradicional del General del Este y la patria de Ayhan; Kavazhi, la primera provincia que gobernó. En la frontera con Chothgar Mori viven muchos shetyen y, en las montañas, chothgar neutrales fieles a los espíritus; más al este, clanes del Camino de Yathanra, algunos aliados de Arshalán contra el nuevo Sapranato chothgar.",
+  "rank": "Imperio",
   "religion": "Mekhatimismo",
-  "adjective": "Arshalaní"
+  "rivals": "Imperio de Ustilus",
+  "ruler": {
+   "dynasty": "Ayhánida",
+   "name": "Hakan",
+   "notes": "Heredero de Ayhan, que ganó la guerra civil en Kiryol (4036) y fue coronado en 4038. Hakan ha completado la modernización del imperio: un Divan más competente y centralizado que en generaciones, un cuerpo de oficiales de la Academia mezclado de verdad y la reabsorción paciente de Arkedania, cuyos oficiales y gremios ha vuelto a comprar sin disparar un tiro. Respaldó la revuelta de Altinkum y llevó el imperio a ser la mayor potencia colonial de Kimon en Batu. En los últimos años de su reinado, la única falla es la sucesión.",
+   "title": "Mhayid",
+   "traits": "Anciano, reformista, paciente, calculador"
+  }
  },
  "pais4": {
   "color": "#d56627",
@@ -228,5 +250,38 @@
   "name": "Lara Quayla",
   "rank": "Ciudad-estado",
   "detected": "#2d0241"
+ },
+ "arkedania": {
+  "name": "Arkedania",
+  "color": "#b8862b",
+  "rank": "Reino",
+  "government": "Monarquía (vasallo autónomo)",
+  "adjective": "Arkedanio",
+  "culture": "Letemitas",
+  "religion": "Mekhatimismo",
+  "overlord": "pais3",
+  "capital": "202",
+  "allies": "Arshalán (señor), Thas-Tapet",
+  "ruler": {
+   "name": "Demetrios I",
+   "title": "Rey",
+   "since": "4057",
+   "traits": "Anciano, resignado, digno",
+   "notes": "Rey desde el asesinato de Stergios I por el Pacto (4057). En el 42.º año de su reinado pierde la soberanía «con elegancia»: más compadecido que odiado. En la corte se bromea con que él y Hakan son dos ancianos que corren hacia finales opuestos, y que el que muera primero decidirá cómo se resuelven los asuntos pendientes del otro."
+  },
+  "heir": {
+   "name": "Phillipos",
+   "relation": "Príncipe heredero",
+   "claim": "Fuerte"
+  },
+  "court": "Lord Ozan Kutlu: la gente de Mussafir, el viejo establishment (respetado e irrelevante).\nLos Dündarzade: puerto, aduanas, banca y crimen organizado; la bisagra que nadie ha movido aún.\nGeneral Ferhat Kolan: oficiales republicanos reintegrados; Arshalán primero.\nClérigo Kaya Ilhan: los mekhatimistas del campo; Arshalán primero.\nMaestre Petro Halkidis: los gremios mercantiles; leales al puerto, inclinados a Ustilus.\nIasonas Petrakis: banquero proustilés, en correspondencia con la casa de Seyma y Ahmet.\nAnthimos Drakidis: panfletista nacionalista («vasallo autónomo es conquistado con mejores modales»).\nKostan Vardaris: la Vieja Fe, guardianes del nombre Arkedania.\nCónsul-factor Radheya Senn: intereses tapetíes; la misión funciona sobre todo como banco.\nKadir Bayrak: contrabandistas de los Montes Manjak, autónomos de hecho.\n«Cernícalo»: el agente del Pacto, expulsado en 4040 y rencoroso.",
+  "notes": "El último fragmento del Reino de Arkedania anterior a Arshalán, conquistado por Canrim y sus hijos (3694–3746). Su campesinado letemita conservó su lengua, su vino y, entre unas pocas familias de la gentry, la memoria de su dios. Dio al imperio su única república (4036–40) y fue su última provincia; luego, el reino neutral de Stergios I (4040–57), garantizado por Ustilus, Arshalán y Thas-Tapet, la mejor década de la región desde Canrim.\n\n4099: vasallo autónomo en la práctica. El príncipe heredero Phillipos negocia con Sershalán un aterrizaje suave para la casa real. Es el premio más rico de la sucesión de Hakan: el campo, la gentry y los oficiales quieren a Arslan; el dinero, a Ahmet; y los Dündarzade decidirán hacia dónde va el puerto.",
+  "military": "Guardia Real de ~1.200 (ceremonial) en Beisyan; guarnición restaurada de ~2.500 en Yolsehir; escuadra de enlace arshalaní de 6 barcos. Los descendientes del Ejército Republicano se han integrado en el cuerpo de oficiales arshalaní.",
+  "economy": "Grano y vino en el interior, pesca y derechos portuarios en la costa, mármol de Yazeshme, madera y hierro de los Montes Manjak. El puerto de Beisyan es el verdadero motor."
+ },
+ "ayutan": {
+  "name": "Ayután",
+  "color": "#82b7c4",
+  "overlord": "pais3"
  }
 }

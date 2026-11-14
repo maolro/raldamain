@@ -64,6 +64,10 @@ new Vue({
         tallerMode: false,
         fichaId: '',
         fichaLabel: '💾 Guardar ficha',
+        // Opened by the Tablero (✎ Editar on a token's stat block): it gets the sheet by a message and
+        // «Guardar en el token» gives it back. The browser's own Creador character is left as it was.
+        tableroMode: new URLSearchParams(location.search).has('tablero') && window.parent !== window,
+        tableroLabel: '💾 Guardar en el token',
         // The Mesa de Pruebas sets this so loading a file there never overwrites the Creador character
         noPersist: !!window.STATBLOCK_NO_PERSIST,
     },
@@ -800,6 +804,22 @@ ${reactions}
             history.replaceState(null, '', location.pathname + '?ficha=' + encodeURIComponent(id));
             this.fichaLabel = '✓ Guardada';
             setTimeout(() => { this.fichaLabel = '💾 Guardar ficha'; }, 2000);
+        },
+        saveToTablero() {
+            this.tableroLabel = 'Guardando…';
+            window.parent.postMessage({ type: 'creador-save', data: this.characterData() }, location.origin);
+        },
+        initTableroMode() {
+            window.addEventListener('message', e => {
+                if (e.origin !== location.origin || e.source !== window.parent || !e.data) return;
+                if (e.data.type === 'creador-load' && e.data.data) this.loadCharacter(e.data.data);
+                else if (e.data.type === 'creador-saved') {
+                    this.tableroLabel = e.data.ok ? '✓ Guardada en el token' : '✗ No se pudo guardar';
+                    if (e.data.error) alert('No se pudo guardar: ' + e.data.error);
+                    setTimeout(() => { this.tableroLabel = '💾 Guardar en el token'; }, 2500);
+                }
+            });
+            window.parent.postMessage({ type: 'creador-ready' }, location.origin);
         },
         blankCharacter() {
             return {
@@ -1815,6 +1835,12 @@ ${reactions}
         this.getData("races", '/data/builder/races.json');
         this.getData("divinepatrons", '/data/builder/divine-patrons.json');
         this.getData("arcanespecs", '/data/builder/arcane-specs.json');
+        if (this.tableroMode) {   // the token's sheet comes from the board (this browser's own character untouched)
+            this.noPersist = true;
+            this.getData("mytalents", '/data/builder/talents.json');
+            this.initTableroMode();
+            return;
+        }
         let saved = null;
         try { saved = JSON.parse(localStorage.getItem("currentCharacter")); } catch (e) { }
         if (saved)

@@ -1,9 +1,9 @@
 // The image library (right panel): every image dropped, pasted or uploaded, with a
 // name, a category and tags to filter by, and the stat block (ficha) its tokens get.
 // Thumbnails can be dragged onto the board.
-import { api, imageUrl } from './api';
+import { api, imageSmallUrl } from './api';
 import { reviewUploads } from './tokenize';
-import { DEFAULT_CATEGORIES, type ImageMeta } from './types';
+import { BACKGROUNDS, DEFAULT_CATEGORIES, type ImageMeta } from './types';
 
 export const DRAG_TYPE = 'application/x-tablero-image';
 /** Categories shown as round thumbnails, all the same size (a framed token or a square picture alike) */
@@ -11,6 +11,10 @@ const ROUND = ['Tokens', 'Personajes', 'Criaturas'];
 
 export interface LibraryEvents {
   place(meta: ImageMeta): void;          // "Colocar en el tablero" / double click
+  /** (GM) 📖 a background (Fondos): the scene's, opened for everyone */
+  useAsBackground?(meta: ImageMeta): void;
+  /** (GM) ✂ a background cut to the scene view's shape */
+  cropBackground?(meta: ImageMeta): void;
   changed(list: ImageMeta[]): void;      // images added, renamed or deleted
   toast(msg: string, bad?: boolean): void;
   /** choose a sheet (the picker of sheets.ts) */
@@ -29,6 +33,8 @@ export class Library {
   private q = '';
   private category = '';
   private tags = new Set<string>();
+  /** the #tag filters, folded away (they took the thumbnails' room); the search finds tags too */
+  private showTags = (() => { try { return localStorage.getItem('raldamain.tablero.libTags') === '1'; } catch { return false; } })();
   private editing: string | null = null;
 
   constructor(private el: HTMLElement, private ev: LibraryEvents) {
@@ -57,6 +63,12 @@ export class Library {
       if (b) { this.category = b.dataset.cat === this.category ? '' : b.dataset.cat!; this.render(); }
     });
     this.$('lib-tags').addEventListener('click', e => {
+      if ((e.target as HTMLElement).closest('[data-tags-toggle]')) {
+        this.showTags = !this.showTags;
+        try { localStorage.setItem('raldamain.tablero.libTags', this.showTags ? '1' : '0'); } catch { /* private window */ }
+        this.render();
+        return;
+      }
       const b = (e.target as HTMLElement).closest<HTMLElement>('[data-tag]');
       if (!b) return;
       const t = b.dataset.tag!;
@@ -71,7 +83,8 @@ export class Library {
     grid.addEventListener('dblclick', e => {
       const t = (e.target as HTMLElement).closest<HTMLElement>('[data-id]');
       const m = t && this.get(t.dataset.id!);
-      if (m) this.ev.place(m);
+      if (m && m.category === BACKGROUNDS && this.ev.useAsBackground) this.ev.useAsBackground(m);   // (a background: into the scene)
+      else if (m) this.ev.place(m);
     });
     grid.addEventListener('dragstart', e => {
       const t = (e.target as HTMLElement).closest<HTMLElement>('[data-id]');
@@ -129,12 +142,15 @@ export class Library {
   render() {
     const cats = this.categories();
     const count = (c: string) => this.mine().filter(m => m.category === c).length;
-    this.$('lib-cats').innerHTML = cats.filter(c => count(c) || c === this.category)
+    this.$('lib-cats').innerHTML = cats.filter(c => count(c) || c === this.category || (c === BACKGROUNDS && this.ev.useAsBackground))   // (the GM: Fondos always there)
       .map(c => `<button class="chip ${c === this.category ? 'on' : ''}" data-cat="${esc(c)}">${esc(c)} <small>${count(c)}</small></button>`).join('');
     const tagCount = new Map<string, number>();
     for (const m of this.mine()) if (!this.category || m.category === this.category) for (const t of m.tags) tagCount.set(t, (tagCount.get(t) || 0) + 1);
     const tags = [...new Set([...tagCount.keys(), ...this.tags])].sort((a, b) => a.localeCompare(b, 'es'));
-    this.$('lib-tags').innerHTML = tags.map(t => `<button class="chip tag ${this.tags.has(t) ? 'on' : ''}" data-tag="${esc(t)}">#${esc(t)} <small>${tagCount.get(t) || 0}</small></button>`).join('');
+    // folded: only a button (and the tags being filtered by, to take them off)
+    const chip = (t: string) => `<button class="chip tag ${this.tags.has(t) ? 'on' : ''}" data-tag="${esc(t)}">#${esc(t)} <small>${tagCount.get(t) || 0}</small></button>`;
+    this.$('lib-tags').innerHTML = !tags.length ? '' : `<button class="chip tags-toggle ${this.showTags ? 'open' : ''}" data-tags-toggle title="${this.showTags ? 'Ocultar las etiquetas' : 'Filtrar por etiquetas (la búsqueda también las encuentra)'}"># Etiquetas <small>${tags.length}</small> ${this.showTags ? '▴' : '▾'}</button>`
+      + (this.showTags ? tags.map(chip).join('') : [...this.tags].map(chip).join(''));
     (this.$('lib-cat-dl') as HTMLDataListElement).innerHTML = cats.map(c => `<option value="${esc(c)}">`).join('');
     this.renderGrid();
     this.renderEdit();
@@ -153,7 +169,7 @@ export class Library {
     this.$('lib-count').textContent = shown.length === total ? `${total}` : `${shown.length} / ${total}`;
     this.$('lib-grid').innerHTML = shown.map(m => `
       <figure class="thumb ${m.id === this.editing ? 'on' : ''} ${ROUND.includes(m.category) ? 'round' : ''}" data-id="${esc(m.id)}" draggable="true" title="${esc(m.name)} · ${esc(m.category)}${m.tags.length ? ' · #' + esc(m.tags.join(' #')) : ''}">
-        <img src="${imageUrl(m)}" alt="" loading="lazy" draggable="false"><figcaption>${m.sheet ? '<span class="thumb-sheet" title="Con ficha">📜</span>' : ''}${esc(m.name)}</figcaption>
+        <img src="${imageSmallUrl(m, 256)}" alt="" loading="lazy" draggable="false"><figcaption>${m.sheet ? '<span class="thumb-sheet" title="Con ficha">📜</span>' : ''}${esc(m.name)}</figcaption>
       </figure>`).join('') || `<p class="muted">${total ? 'Ninguna imagen con estos filtros.' : 'Arrastra o pega imágenes en el tablero, o usa «Subir».'}</p>`;
   }
 
@@ -163,7 +179,7 @@ export class Library {
     box.hidden = !m;
     if (!m) return;
     box.innerHTML = `
-      <div class="edit-head"><img src="${imageUrl(m)}" alt=""><div><b>${esc(m.name)}</b><small>${m.width}×${m.height}px</small></div>
+      <div class="edit-head"><img src="${imageSmallUrl(m, 256)}" alt=""><div><b>${esc(m.name)}</b><small>${m.width}×${m.height}px</small></div>
         <button class="x" data-act="close" title="Cerrar">✕</button></div>
       <label>Nombre<input class="inp" data-f="name" value="${esc(m.name)}"></label>
       <label>Categoría<input class="inp" data-f="category" list="lib-cat-dl" value="${esc(m.category)}"></label>
@@ -173,7 +189,9 @@ export class Library {
       <label>Ficha <small class="muted">la llevarán sus tokens nuevos</small>
         <div class="sheet-field">${m.sheet ? `<span class="sheet-name" title="${esc(m.sheet)}">📜 ${esc(this.ev.sheetName(m.sheet))}</span>` : '<span class="muted">Sin ficha</span>'}
           <button class="btn small" data-act="sheet" data-pick-sheet>${m.sheet ? 'Cambiar…' : 'Elegir…'}</button></div></label>
-      <div class="row"><button class="btn gold" data-act="place">Colocar en el tablero</button>
+      <div class="row">${m.category === BACKGROUNDS && this.ev.useAsBackground
+        ? '<button class="btn gold" data-act="scene" title="Abrir la escena para todos con este fondo (o cambiar el de la escena abierta)">📖 Usar de fondo de escena</button><button class="btn" data-act="bgcrop" title="Recortarlo con la forma de la vista de escena (se guarda como otro fondo)">✂ Recortar</button><button class="btn" data-act="place">Colocar en el tablero</button>'
+        : '<button class="btn gold" data-act="place">Colocar en el tablero</button>'}
         <button class="btn danger" data-act="delete">Eliminar</button></div>`;
     const save = async (patch: Partial<ImageMeta>) => {
       try {
@@ -202,6 +220,8 @@ export class Library {
       this.ev.pickSheet({ x: r.left - 270, y: r.top - 120 }, m.sheet, sid => save({ sheet: sid || '' }));
     });
     box.querySelector('[data-act="place"]')!.addEventListener('click', () => this.ev.place(m));
+    box.querySelector('[data-act="scene"]')?.addEventListener('click', () => this.ev.useAsBackground?.(m));
+    box.querySelector('[data-act="bgcrop"]')?.addEventListener('click', () => this.ev.cropBackground?.(m));
     box.querySelector('[data-act="delete"]')!.addEventListener('click', async () => {
       const { boards } = await api.imageUsage(m.id);
       if (!confirm(`¿Eliminar «${m.name}» de la biblioteca?` + (boards.length ? `\n\nSe usa en: ${boards.join(', ')} (allí quedará un hueco marcado).` : ''))) return;

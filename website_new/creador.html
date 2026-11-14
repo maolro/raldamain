@@ -44,6 +44,20 @@
     <script src="./assets/js/builder/v-archpage.js?v=20261024" type="text/javascript"></script>
     --->
     <script src="./assets/js/builder/v-equipage.js?v=20261024" type="text/javascript"></script>
+    <!-- Opened inside the Tablero (✎ Editar on a token): only the builder, without the site around it -->
+    <script>
+        if (new URLSearchParams(location.search).has('tablero') && window.parent !== window)
+            document.documentElement.classList.add('tablero-embed');
+    </script>
+    <style>
+        html.tablero-embed #navbar-container, html.tablero-embed .builder-hero, html.tablero-embed body > footer { display: none !important; }
+        html.tablero-embed body { padding-top: 0 !important; margin-top: 0 !important; }
+        /* the tabs at the top, the two columns filling the rest of the window (no site bar nor banner to make room for) */
+        html.tablero-embed .builder-tabs { top: 0; }
+        html.tablero-embed .builder-layout { min-height: calc(100vh - 50px); }
+        html.tablero-embed .builder-form, html.tablero-embed .builder-preview { height: calc(100vh - 50px); top: 50px; }
+        html.tablero-embed body { overflow: hidden; }
+    </style>
 </head>
 
 <body>
@@ -90,6 +104,7 @@
                 <button v-if="tallerMode" @click="saveFicha" class="taller-save"
                     :title="fichaId ? 'Guarda en data/statblocks/' + fichaId + '.json' : 'Guarda la ficha en data/statblocks'">{{ fichaLabel }}</button>
                 <a v-if="tallerMode" href="/taller" class="taller-link" title="Volver a las fichas del Taller">📚 Fichas</a>
+                <button v-if="tableroMode" @click="saveToTablero" class="taller-save" title="Guardar los cambios en la ficha del token del Tablero">{{ tableroLabel }}</button>
             </div>
         </nav>
 
@@ -141,7 +156,7 @@
 
     <!-- Builder main.js (must be last) -->
     <script src="./assets/js/richtext.js?v=20261024"></script>
-    <script src="./assets/js/builder/main.js?v=20261106"></script>
+    <script src="./assets/js/builder/main.js?v=20261112"></script>
 </body>
 
 </html>

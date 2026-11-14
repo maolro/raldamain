@@ -1,1 +1,29 @@
-{}
+{
+ "culture": {
+  "Ayutanos": "#17e8da",
+  "Dairovios": "#383145",
+  "Elfos": "#79ec96",
+  "Geismarianos": "#4d24c6",
+  "Hakrapense": "#043e0e",
+  "Jaddi": "#483205",
+  "Kratenses": "#528bff",
+  "Leoninos": "#6c600e",
+  "Letemitas": "#dbd9a9",
+  "Mazarinos": "#0d6f06",
+  "Shetyen": "#86725f",
+  "Shinri": "#e9770c",
+  "Tangarinos": "#e8e230",
+  "Tapetíes": "#660872",
+  "Ustileses": "#e41111",
+  "Varios": "#878787"
+ },
+ "religion": {
+  "Camino de Yathanra": "#582604",
+  "Culto del Heredero": "#ff0000",
+  "Fe Espiritual": "#0adb18",
+  "Madre del Abismo": "#113d05",
+  "Mekhatimismo": "#e8f718",
+  "Ninguna": "#8c8c8c",
+  "Viejo Feynismo": "#e38502"
+ }
+}

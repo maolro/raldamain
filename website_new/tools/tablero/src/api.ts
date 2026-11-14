@@ -1,6 +1,6 @@
 // The Tablero server (tools/tablero.py). Every request carries this browser's key
 // (the GM's, or a player's from joining a room): the server decides what it may do.
-import type { ModelMeta, Board, BoardSummary, Campaign, Changes, ImageMeta, JoinInfo, RollRecord, RollTerm, RoomInfo, ShareStatus, SheetMeta, TileTagCategory } from './types';
+import type { ModelMeta, Board, BoardSummary, Campaign, Changes, ImageMeta, JoinInfo, RollRecord, RollTerm, RoomInfo, ShareStatus, SheetMeta, TileTagCategory, VNScene } from './types';
 import type { Playback, Playlist, Track } from './music';
 
 let KEY = '';
@@ -24,16 +24,28 @@ async function call<T>(method: string, url: string, body?: unknown): Promise<T> 
 }
 
 export const imageUrl = (m: ImageMeta) => `/img/${m.file}`;
+/** A lighter copy (tablero.py makes them): 256 / 1024 px at most, or 'full' (a big picture as a lighter
+ *  file, same size). Small pictures and SVGs: the picture itself. */
+export function imageSmallUrl(m: ImageMeta, size: 256 | 1024 | 'full'): string {
+  const big = Math.max(m.width || 0, m.height || 0);
+  if (m.file.endsWith('.svg') || m.file.endsWith('.gif') || (size !== 'full' && big && big <= size)) return imageUrl(m);
+  return `/img/${m.file}?w=${size}`;
+}
+/** Worth a first, quick look before the whole picture */
+export const needsPreview = (m: ImageMeta) => !m.tileset && !m.file.endsWith('.svg') && !m.file.endsWith('.gif') && Math.max(m.width || 0, m.height || 0) > 1024;
 export const modelFileUrl = (id: string, file: string) => `/models/${id}/${encodeURIComponent(file)}`;
 export const modelThumbUrl = (id: string) => `/models/${id}/thumb.png`;
+export const modelTopUrl = (id: string, v: number) => `/models/${id}/top.png?v=${v}`;
 
 export const api = {
   gmKey: () => call<{ key: string; lan: string }>('GET', '/api/gm-key'),
   join: (code: string, name: string, key?: string) => call<JoinInfo>('POST', '/api/join', { code, name, key }),
   images: () => call<ImageMeta[]>('GET', '/api/images'),
   models: () => call<ModelMeta[]>('GET', '/api/models'),
-  uploadModel: (files: File[], main: string, thumb: Blob | null, meta: { name: string; category: string }) => {
+  uploadModel: (files: File[], main: string, thumb: Blob | null, meta: { name: string; category: string; kind?: string; dims?: number[] }) => {
     const fd = new FormData();
+    if (meta.kind) fd.append('kind', meta.kind);
+    if (meta.dims) fd.append('dims', JSON.stringify(meta.dims));
     for (const f of files) fd.append('files', f, f.name);
     fd.append('main', main);
     if (thumb) fd.append('thumb', thumb, 'thumb.png');
@@ -41,7 +53,8 @@ export const api = {
     fd.append('category', meta.category);
     return call<ModelMeta>('POST', '/api/models', fd);
   },
-  updateModel: (id: string, patch: Partial<Pick<ModelMeta, 'name' | 'category' | 'tags' | 'scale'>>) => call<ModelMeta>('PATCH', `/api/models/${id}`, patch),
+  updateModel: (id: string, patch: Partial<Pick<ModelMeta, 'name' | 'category' | 'tags' | 'scale' | 'kind' | 'dims' | 'image' | 'sheet'>>) => call<ModelMeta>('PATCH', `/api/models/${id}`, patch),
+  uploadModelTop: (id: string, png: Blob) => { const fd = new FormData(); fd.append('file', png, 'top.png'); return call<ModelMeta>('POST', `/api/models/${id}/top`, fd); },
   deleteModel: (id: string) => call<{ ok: boolean }>('DELETE', `/api/models/${id}`),
   upload: (file: Blob, meta: { name: string; category: string; width: number; height: number; tags?: string[] }) => {
     const fd = new FormData();
@@ -70,6 +83,7 @@ export const api = {
   sheets: () => call<SheetMeta[]>('GET', '/api/sheets'),
   sheet: (id: string) => call<SheetMeta & { data: unknown }>('GET', `/api/sheets/${encodeURIComponent(id)}`),
   uploadSheet: (data: unknown, name: string) => call<SheetMeta>('POST', '/api/sheets', { data, name }),
+  updateSheet: (id: string, data: unknown) => call<SheetMeta>('PUT', `/api/sheets/${encodeURIComponent(id)}`, { data }),
   deleteSheet: (id: string) => call<{ ok: boolean }>('DELETE', `/api/sheets/${encodeURIComponent(id)}`),
   boards: () => call<BoardSummary[]>('GET', '/api/boards'),
   createBoard: (name: string, board?: Partial<Board>, campaign?: string) => call<Board>('POST', '/api/boards', { name, board, campaign }),
@@ -113,5 +127,6 @@ export const api = {
   musicPlaylist: (id: string, patch: { name?: string; tracks?: string[] }) => call<Playlist>('PATCH', `/api/music/playlists/${id}`, patch),
   musicPlaylistDelete: (id: string) => call<{ ok: boolean }>('DELETE', `/api/music/playlists/${id}`),
   music: (bid: string, body: Record<string, unknown>) => call<Playback>('POST', `/api/live/${bid}/music`, body),
+  vn: (bid: string, body: { on?: boolean; bg?: string | null }) => call<VNScene>('POST', `/api/live/${bid}/vn`, body),
   eventsUrl: (bid: string) => `/api/live/${bid}/events?key=${encodeURIComponent(KEY)}`,
 };

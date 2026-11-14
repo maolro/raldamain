@@ -10,7 +10,7 @@
 //   /jugar   a player: joins a room with its invite code; sees the Tokens layer, adds
 //            their own tokens, drawings and texts, and changes only what they control
 import './style.css';
-import { api, imageUrl, setKey } from './api';
+import { api, modelThumbUrl, modelTopUrl, imageUrl, imageSmallUrl, setKey } from './api';
 import { BoardView, type Pt, type Tool } from './board';
 import { DiceRoller } from './dice';
 import { DRAG_TYPE, Library } from './library';
@@ -20,14 +20,15 @@ import { Statuses } from './status';
 import { RULER_MODES, type RulerMode, type RulerShape } from './ruler';
 import { DEFAULT_FOG, fogOf, lightsOf, viewersOf } from './lighting';
 import { Music } from './music';
-import { firstLevel, levelName, levelOf, levelsOf } from './levels';
+import { VNView } from './vn';
+import { firstLevel, levelName, levelOf, levelsOf, setPage } from './levels';
 import { editPortal, LevelBar, newPortal, portalAt, campaignOptions, ScenesPanel } from './scenes';
 import { TilePainter } from './tilepaint';
 import { TileDialog, TileTags } from './tileadd';
 import { openRoofCells } from './tiles';
 import { cropDialog, cropImage } from './crop';
 import { readUvtt } from './uvtt';
-import { BARS, kindOf, LAYERS, type ModelMeta, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Portal, type Presence, type RoundEffect, type ShareStatus, type SheetStats } from './types';
+import { BACKGROUNDS, BARS, isScenery, kindOf, LAYERS, type ModelMeta, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Portal, type Presence, type RoundEffect, type ShareStatus, type SheetStats, type VNScene } from './types';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -39,6 +40,15 @@ const PREFS = 'raldamain.tablero.prefs';
 const PLAYER_KEYS = 'raldamain.tablero.player';   // { code: { key, name } }: this browser's place in each room
 const SWATCHES = ['#ffffff', '#111111', '#e03030', '#f08a24', '#fff200', '#3cb44b', '#3a8ee6', '#9b59d0', '#8b5a2b'];
 const PLAYER = location.pathname.startsWith('/jugar');
+// a piece of the app that didn't arrive (the Tablero was rebuilt while this page was open): this page's
+// files are gone, so load the new version (once a minute at most)
+addEventListener('vite:preloadError', () => {
+  let last = 0;
+  try { last = +(sessionStorage.getItem('tablero-reload') || 0); } catch { /* private window */ }
+  if (Date.now() - last < 60000) return;
+  try { sessionStorage.setItem('tablero-reload', String(Date.now())); } catch { /* private window */ }
+  location.reload();
+});
 declare const __BUILD__: string;   // (vite.config.ts: when this was built)
 document.body.classList.toggle('player', PLAYER);
 
@@ -114,6 +124,7 @@ const view = new BoardView({
 });
 view.canEdit = canEdit;
 view.badgeColor = it => {
+  if (isStructure(it)) return null;
   const pid = (it.controllers || [])[0];
   return pid && presence?.players[pid] ? presence.players[pid].color : null;
 };
@@ -122,12 +133,14 @@ const sheets = new Sheets(toast, () => me?.pid ?? null);
 const statuses = new Statuses();
 // under a token: its statuses, its ability uses (INSTINTO 2/3) and its turn-based effects (IRA 3)
 const shortName = (n: string) => (n.split(/\s+/)[0] || n).slice(0, 12);
-view.markers = it => [
+view.markers = it => isStructure(it) ? [] : ([
+  ...(it.elev ? [{ text: it.elev > 0 ? `↑ ${it.elev}` : `↓ ${-it.elev}`, color: '#3d4f63', title: `A ${Math.abs(it.elev)} casilla${Math.abs(it.elev) === 1 ? '' : 's'} ${it.elev > 0 ? 'de altura' : 'bajo el suelo'}` }] : []),
+  ...(it.prone ? [{ text: 'Tumbado', color: '#5a4a3a' }] : []),
   ...(it.statuses || []).map(s => ({ text: statuses.short(s), color: statuses.color(s.id) })),
   ...(it.uses || []).map(u => ({ text: `${shortName(u.name)} ${u.value}/${u.max}`, color: u.value > 0 ? '#6b5320' : '#3a3a3a' })),
   ...((board?.round?.effects) || []).filter(f => f.token === it.id)
     .map(f => (f.up ? { text: `${shortName(f.name)} ${f.up}`, color: '#2b5e8e' } : { text: `${shortName(f.name)} ${f.left}`, color: '#8e2b2b' })),
-];
+]);
 
 // actions and reactions per round: the sheet's, else 3 and 2; statuses take some away
 view.economy = it => {
@@ -145,6 +158,7 @@ view.economy = it => {
 
 const library = new Library($('library'), {
   place: meta => placeImages([meta], view.viewCenter()),
+  ...(PLAYER ? {} : { useAsBackground: (meta: ImageMeta) => useAsBackground(meta), cropBackground: (meta: ImageMeta) => cropBackground(meta) }),
   changed: list => view.setImages(list),
   toast,
   pickSheet: (at, current, done) => sheets.pick(at, { current, done }),
@@ -169,6 +183,8 @@ dice.onIncoming = () => {
 };
 
 const windows = new SheetWindows(sheets, {
+  edit: it => editSheet(it),
+  canEdit: it => canEdit(it),
   roll(item, roll, label, kind, stats) {
     showSide('dice');
     dice.load(rollWithStatuses(item, roll, kind, stats), label, { id: item.id, name: item.name || '' }, statusNote(item, roll, kind, stats));
@@ -269,8 +285,11 @@ function applyRemote(ch: Changes) {
     redo = redo.map(fix);
   }
   // an image nobody here knows yet (another player's token): fetch its details
-  if ((ch.upserts.some(i => i.image && !library.get(i.image)) || (ch.settings?.tilesets || []).some(id => !library.get(id))) && !libReload)
+  if ((ch.upserts.some(i => (i.image && !library.get(i.image)) || (i.portrait && !library.get(i.portrait))) || (ch.settings?.tilesets || []).some(id => !library.get(id))
+    ) && !libReload)
     libReload = window.setTimeout(() => { libReload = 0; library.load(); }, 200);
+  modelsMaybeNew(ch.upserts.map(i => i.model));
+  if (!isGM() && models && ch.upserts.some(i => i.model)) models.render();   // (a figure given to this player, or taken)
   // a sheet this browser doesn't know (the GM gave a player a token with its sheet)
   if (ch.upserts.some(i => i.sheet && !sheets.get(i.sheet)) && !sheetReload)
     sheetReload = window.setTimeout(() => { sheetReload = 0; sheets.load().then(() => windows.sync(B().items)); }, 200);
@@ -282,8 +301,18 @@ function applyRemote(ch: Changes) {
   renderRoundPanel();
   if (ch.settings) { fillGridPanel(); if (ch.settings.fog && view.tool === 'fog') renderFogPanel(); }
   followLevel();
+  syncVN();
 }
 let sheetReload = 0;
+
+/** Tokens turned in 3D before they had their own facing: the turn goes to their 3D figure,
+ *  their 2D picture stands upright again (structures keep theirs: they turn in both views) */
+function faceTokens(b: Board) {
+  for (const it of b.items) {
+    if (!it.rotation || !isToken(it) || (it.model && !modelById(it.model))) continue;   // (a model not known yet: next time)
+    it.facing = it.rotation; it.rotation = 0;
+  }
+}
 
 // ── live connection ─────────────────────────────────────────────────────────
 let fitted = '';
@@ -297,11 +326,13 @@ function connect(boardId: string) {
       dice.showWho = who.role === 'gm';
       dice.setHistory(rolls, `${b.id}:${who.pid || 'gm'}`);
       board = b;
+      faceTokens(b);
       const first = fitted !== b.id;
       fitted = b.id;
       if (first || !levelsOf(b).some(l => l.id === view.level)) view.level = firstLevel(b);
       view.setBoard(b, first);
       if (first) v3?.boardChanged();
+      syncVN();
       followLevel();
       arrived(b);
       windows.sync(b.items);
@@ -315,9 +346,14 @@ function connect(boardId: string) {
     remote: applyRemote,
     presence(p) { presence = p; renderPresence(); view.render(); scenesPanel.presenceChanged(); },
     roll(r) { dice.add(r, r.by === me?.pid || (!r.by && isGM())); },
-    ruler(r) { view.setRuler('cid:' + r.by, r.shape, r.color, r.who); },
+    ruler(r) { view.setRuler('cid:' + r.by, r.shape, r.color, r.who); v3?.setRuler('cid:' + r.by, r.shape, r.color, r.who); },
     ping(p) { if ((p.level || firstLevel(B())) === view.level) { view.ping(p, p.color, p.who); v3?.ping(p, p.color); } },
     music(p) { music.setState(p); },
+    vn(v) {   // 📖 the room's scene: opened, changed or closed by the GM
+      vnScene = v;
+      if (v.bg && !library.get(v.bg)) library.load().then(() => vnView.changed()).catch(() => {});
+      syncVN();
+    },
     scene(bid) { travelTo(bid); },
     image: imageChanged,
     status: setStatus,
@@ -566,8 +602,11 @@ async function enterRoom(info: JoinInfo) {
   history.replaceState(null, '', `/jugar?sala=${encodeURIComponent(info.code)}`);
   $('join').hidden = true;
   library.ownerFilter = m => m.owner === info.pid;
-  await Promise.all([library.load(), sheets.load(), statuses.load()]);
   connect(info.board);
+  library.load().catch(() => {});
+  sheets.load().then(() => { if (board) windows.sync(board.items); });
+  statuses.load().then(() => { if (board) { view.render(); hudFor = ''; updateHud(); } });
+  refreshModels();
 }
 
 $('join-form').addEventListener('submit', async e => {
@@ -597,6 +636,8 @@ function placeImages(metas: ImageMeta[], at: { x: number; y: number }) {
     if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, h); }
     const it = stamp({ id: uid(), kind: 'image', image: m.id, fit: !own, x, y, w, h, rotation: 0, layer, z: nextZ(layer), name: m.name });
     if (m.sheet && layer !== 'map') it.sheet = m.sheet;   // its sheet: the bars fill in from it
+    const fig = layer !== 'map' ? modelMetas.find(x => x.image === m.id && !isScenery(x)) : undefined;
+    if (fig) { it.model = fig.id; if (!it.sheet && fig.sheet) it.sheet = fig.sheet; }   // its figure, for 3D
     B().items.push(it);
     ids.push(it.id);
   });
@@ -635,21 +676,96 @@ stage.addEventListener('drop', e => {
 // paste: an image from the clipboard (screenshot, copied image) or tokens copied with Ctrl+C
 // Ctrl+C on the board puts what was copied in the computer's clipboard too (as a text mark), so an image
 // copied before it is no longer there: Ctrl+V then pastes the tokens, not that image (and works in another tab).
-const CLIP_ITEMS = 'tablero-items:', CLIP_TILES = 'tablero-tiles';
+const CLIP_ITEMS = 'tablero-items:', CLIP_TILES = 'tablero-tiles', CLIP_BG = 'tablero-fondo:';
 document.addEventListener('copy', e => {
   if (typing(e) || !board || !e.clipboardData) return;
   const sel = getSelection();
   if (sel && !sel.isCollapsed && sel.toString().trim()) return;   // text chosen in a panel: copy that
+  if (vnView.active) {   // 📖 Escena: its background (to paste in another scene, or as a picture in another program)
+    e.preventDefault();
+    const bg = isGM() ? vnView.background() : undefined;
+    if (!bg) return;
+    e.clipboardData.setData('text/plain', CLIP_BG + bg.id);
+    if (typeof ClipboardItem !== 'undefined' && navigator.clipboard?.write) {
+      const url = imageUrl(bg);
+      navigator.clipboard.write([new ClipboardItem({
+        'image/png': pngOf(url),
+        'text/plain': new Blob([CLIP_BG + bg.id], { type: 'text/plain' }),
+        'text/html': new Blob([`<img src="${esc(new URL(url, location.href).href)}" alt="${esc(bg.name)}">`], { type: 'text/html' }),
+      })]).catch(err => console.warn('No se pudo copiar el fondo', err));
+    }
+    return;
+  }
   if (view.tool === 'tiles' && painter.hasSelection()) e.clipboardData.setData('text/plain', CLIP_TILES);
-  else if (view.selectedItems().length) e.clipboardData.setData('text/plain', CLIP_ITEMS + JSON.stringify(view.selectedItems()));
-  else return;
+  else if (view.selectedItems().length) {
+    e.clipboardData.setData('text/plain', CLIP_ITEMS + JSON.stringify(view.selectedItems()));
+    copyPicture(view.selectedItems());
+  } else return;
   e.preventDefault();
 });
+
+/** A token's (or map's) picture: its library image, else its 3D model's thumbnail */
+function pictureOf(it: BoardItem): { url: string; name: string } | null {
+  const m = it.image ? library.get(it.image) : undefined;
+  if (m) return { url: imageUrl(m), name: m.name || it.name || 'imagen' };
+  if (it.model) return { url: modelThumbUrl(it.model), name: it.name || modelById(it.model)?.name || 'modelo' };
+  return null;
+}
+
+/** As a PNG (what other programs take from the clipboard) */
+async function pngOf(url: string): Promise<Blob> {
+  const blob = await (await fetch(url)).blob();
+  if (blob.type === 'image/png') return blob;
+  const bmp = await createImageBitmap(blob), c = document.createElement('canvas');
+  c.width = bmp.width; c.height = bmp.height;
+  c.getContext('2d')!.drawImage(bmp, 0, 0);
+  bmp.close();
+  return new Promise((ok, no) => c.toBlob(b => (b ? ok(b) : no(new Error('png'))), 'image/png'));
+}
+
+/** Copying tokens: the first one's picture goes to the computer's clipboard too, to paste it in
+ *  another program (Paint, Discord, a document…). Tablero still pastes the tokens: the text mark
+ *  goes with it and wins. */
+function copyPicture(items: BoardItem[]) {
+  const it = items.find(i => kindOf(i) === 'image' && pictureOf(i));
+  const pic = it && pictureOf(it);
+  if (!pic || typeof ClipboardItem === 'undefined' || !navigator.clipboard?.write) return;
+  const mark = CLIP_ITEMS + JSON.stringify(items);
+  const html = `<img src="${esc(new URL(pic.url, location.href).href)}" alt="${esc(pic.name)}">`;
+  navigator.clipboard.write([new ClipboardItem({
+    'image/png': pngOf(pic.url),
+    'text/plain': new Blob([mark], { type: 'text/plain' }),
+    'text/html': new Blob([html], { type: 'text/html' }),
+  })]).catch(err => console.warn('No se pudo copiar la imagen', err));
+}
+
+/** ⬇ The picture as a file */
+function downloadPicture(it: BoardItem) {
+  const pic = pictureOf(it);
+  if (!pic) return;
+  const a = document.createElement('a');
+  a.href = pic.url;
+  a.download = `${pic.name.replace(/[\\/:*?"<>|]+/g, '_')}${pic.url.match(/\.[a-z0-9]{2,5}$/i)?.[0] || '.png'}`;
+  document.body.append(a); a.click(); a.remove();
+}
 
 document.addEventListener('paste', e => {
   if (typing(e) || !board) return;
   const files = [...(e.clipboardData?.files || [])].filter(f => f.type.startsWith('image/'));
   const text = e.clipboardData?.getData('text/plain') || '';
+  if (vnView.active) {   // 📖 Escena (the GM): a copied background, or any picture (into Fondos), as the background
+    e.preventDefault();
+    if (!isGM()) return;
+    const id = text.startsWith(CLIP_BG) ? text.slice(CLIP_BG.length) : '';
+    if (id && library.get(id)) vnView.setBackground(id);
+    else if (text.startsWith(CLIP_ITEMS)) {   // a copied map or token: its picture
+      try {
+        const it = (JSON.parse(text.slice(CLIP_ITEMS.length)) as BoardItem[]).find(i => i?.image && library.get(i.image));
+        if (it) vnView.setBackground(it.image!);
+      } catch { /* not ours after all */ }
+    } else if (files.length) vnView.backgroundFrom(files[0] as File);
+    return;
+  }
   e.preventDefault();
   const at = view.pointer || view.viewCenter();
   if (view.tool === 'tiles' && painter.canPaste() && (!files.length || text === CLIP_TILES)) { painter.paste(at); return; }   // tiles copied with ✥ Mover
@@ -668,7 +784,6 @@ document.addEventListener('paste', e => {
 
 function copySelection() {
   clipboard = view.selectedItems().map(i => ({ ...i }));
-  if (clipboard.length) toast(`${clipboard.length} copiado${clipboard.length > 1 ? 's' : ''} · Ctrl+V para pegar`);
 }
 
 function pasteItems(at?: { x: number; y: number }, from = clipboard) {
@@ -755,13 +870,14 @@ function fitPageToMap(it: BoardItem, askCells: boolean) {
   }
   it.rotation = 0;
   it.x = 0; it.y = 0;
-  b.width = Math.max(1, Math.round(it.w / b.grid.size));
-  b.height = Math.max(1, Math.round(it.h / b.grid.size));
+  setPage(b, levelOf(b, it), Math.max(1, Math.round(it.w / b.grid.size)), Math.max(1, Math.round(it.h / b.grid.size)));
+  const pg = view.page();
   view.render();
   view.fit();
   fillGridPanel();
   commit();
-  toast(`Página de ${b.width} × ${b.height} casillas de ${Math.round(b.grid.size * 10) / 10} px, ajustada al mapa`);
+  levelBar.render();
+  toast(`Página${(b.levels?.length || 0) > 1 ? ` de «${levelName(b, view.level)}»` : ''} de ${pg.width} × ${pg.height} casillas de ${Math.round(b.grid.size * 10) / 10} px, ajustada al mapa`);
 }
 
 // ── pencil and text ─────────────────────────────────────────────────────────
@@ -879,7 +995,9 @@ function nudge(dx: number, dy: number) {
 }
 
 // ── sheets and bars ─────────────────────────────────────────────────────────
-const isToken = (it: BoardItem) => kindOf(it) === 'image' && it.layer !== 'map';
+const isToken = (it: BoardItem) => kindOf(it) === 'image' && it.layer !== 'map' && !isStructure(it);
+/** A 3D structure or prop (a building, a ruin, a table…): scenery, not a token, on any layer */
+function isStructure(it: BoardItem) { return !!it.model && (it.layer === 'map' || isScenery(modelById(it.model))); }
 
 /** The sheet's Impactos / Chi into a token's bars. A bar whose max is still the sheet's
  *  last value follows it (a full bar stays full); one changed by hand is left alone. */
@@ -898,7 +1016,7 @@ function applyStats(it: BoardItem, st: SheetStats): boolean {
   }
   if (!Object.keys(bars).length) delete it.bars;
   const econBefore = JSON.stringify(it.economy);
-  if (st.actions || st.reactions) it.economy = { actions: st.actions || 0, reactions: st.reactions || 0 };
+  if ((st.actions || st.reactions) && !it.economyHand) it.economy = { actions: st.actions || 0, reactions: st.reactions || 0 };
   return JSON.stringify([it.bars, it.sheetMax]) !== before || JSON.stringify(it.economy) !== econBefore;
 }
 
@@ -963,6 +1081,11 @@ function chooseSheet(items: BoardItem[], at: Pt) {
 
 function openSheet(it: BoardItem) {
   if (!it.sheet) return;
+  if (v3?.active) {   // 3D: above the token panel
+    const h = hud.getBoundingClientRect();
+    windows.open(it, { x: Math.max(8, h.left), y: Math.max(56, (hud.hidden ? innerHeight / 2 : h.top) - 560) });
+    return;
+  }
   const r = view.app.canvas.getBoundingClientRect(), p = view.toScreen({ x: it.x + it.w, y: it.y });
   windows.open(it, { x: r.left + p.x, y: r.top + p.y });
 }
@@ -973,8 +1096,15 @@ const hud = $('hud');
 let hudFor = '';
 function hudToken(): BoardItem | null {
   if (!board || view.busyIds().size) return null;
+  if (vnView.active) {   // 📖 Escena: a player's own character, always open; the GM, nothing (just the background)
+    if (isGM()) return null;
+    const m = vnView.mainOf(me?.pid || '');
+    if (!m || !canEdit(m)) return null;
+    if (view.selected.size !== 1 || !view.selected.has(m.id)) view.select([m.id]);
+    return m;
+  }
   const sel = view.selectedItems();
-  return sel.length === 1 && isToken(sel[0]) && canEdit(sel[0]) ? sel[0] : null;
+  return sel.length === 1 && (isToken(sel[0]) || (isStructure(sel[0]) && kindOf(sel[0]) === 'image')) && canEdit(sel[0]) ? sel[0] : null;   // (scenery: a slim panel)
 }
 
 function updateHud() {
@@ -985,25 +1115,164 @@ function updateHud() {
   if (hudFor !== it.id || !typingHere) renderHud(it);
   hudFor = it.id;
   hud.hidden = false;
-  const r = view.app.canvas.getBoundingClientRect(), p = view.topOf(it);
-  const x = r.left + p.x - hud.offsetWidth / 2, y = r.top + p.y - hud.offsetHeight - 8;
-  if (y < r.top - 40 || y > r.bottom || x + hud.offsetWidth < r.left || x > r.right) { hud.style.visibility = 'hidden'; return; }
+  // at the bottom of the board, like a game's unit panel (2D and 3D)
+  const r = $('stage').getBoundingClientRect();
   hud.style.visibility = '';
-  hud.style.left = `${Math.max(r.left + 4, Math.min(r.right - hud.offsetWidth - 4, x))}px`;
-  hud.style.top = `${Math.max(r.top + 4, y)}px`;
+  hud.style.left = `${Math.max(r.left + 8, r.left + (r.width - hud.offsetWidth) / 2)}px`;
+  hud.style.top = `${r.bottom - hud.offsetHeight - (v3?.active || vnView.active ? 34 : 30)}px`;
+  if (!statusPanel.hidden) placeStatusPanel();
 }
 
 function renderHud(it: BoardItem) {
+  hud.classList.add('hud-3d');
+  renderHud3d(it);
+}
+
+/** The panel's ⤢ Tamaño, ⇡ Altura, ⟳ Girar: on the selected tokens this browser may change */
+function adjustTokens(what: string, d: number) {
+  const its = view.selectedItems().filter(i => canEdit(i) && !i.locked), g = B().grid.size;
+  if (!its.length) return;
+  for (const it of its) {
+    if (what === 'size') {
+      const cx = it.x + it.w / 2, cy = it.y + it.h / 2;
+      const st = isProp(it) ? 0.5 : 1;   // (props: half a square at a time)
+      const w = Math.max(g * st, Math.round(it.w / g / st + d) * st * g), h = it.w !== it.h || isStructure(it) ? Math.max(g * st, Math.round(it.h / g / st + d) * st * g) : w;
+      it.w = w; it.h = h; it.x = cx - w / 2; it.y = cy - h / 2;
+    } else if (what === 'lift') {   // (below the floor too)
+      const e = Math.max(-50, Math.min(50, Math.round(((it.elev || 0) + d) * 4) / 4));
+      if (e) it.elev = e; else delete it.elev;
+    } else if (what === 'fig') {   // its 3D figure, 5% at a time
+      if (!it.model || isStructure(it)) continue;
+      const k = Math.max(0.3, Math.min(3, Math.round(((it.modelScale || 1) + d * 0.05) * 100) / 100));
+      if (k === 1) delete it.modelScale; else it.modelScale = k;
+    } else if (what === 'prone') {   // all down, unless all already are
+      if (its.every(i => i.prone)) delete it.prone; else it.prone = true;
+    } else if (what === 'angle') setAngle(it, d);
+    else setAngle(it, (isStructure(it) ? it.rotation || 0 : it.facing || 0) + d * TURN_STEP);   // ⟲ ⟳
+  }
+  view.render();
+  commit();
+}
+
+const TURN_STEP = 15;   // ⟲ ⟳ in the panel, degrees
+/** Turned to an angle: scenery turns in both views; a token's 3D figure faces it (its 2D picture stays upright) */
+function setAngle(it: BoardItem, deg: number) {
+  const a = Math.round(((deg % 360) + 360) % 360 * 10) / 10 % 360;
+  if (isStructure(it)) it.rotation = a;
+  else if (a) it.facing = a; else delete it.facing;
+}
+const isProp = (it: BoardItem) => !!it.model && modelById(it.model)?.kind === 'prop';
+/** ⟳ Girar: ⟲ ⟳ a step, or the degrees typed */
+function turnTool(it: BoardItem) {
+  const a = Math.round((isStructure(it) ? it.rotation || 0 : it.facing || 0) * 10) / 10;
+  return `<div class="hud3-tool" title="${isStructure(it) ? 'Su giro, en 2D y 3D' : 'Hacia dónde mira la figura en 3D (el token 2D no gira)'}: ${TURN_STEP}° cada vez (R / Mayús+R en 3D), o escribe los grados"><span class="hud3-label">⟳ Girar</span>
+    <button class="hud-btn" data-t3="turn:-1">⟲</button><span class="hud3-angle"><input data-angle value="${a}" inputmode="decimal">°</span><button class="hud-btn" data-t3="turn:1">⟳</button></div>`;
+}
+/** A structure's or prop's panel: its name, size, height and turn */
+function sceneryHud(it: BoardItem) {
+  const m = it.model ? modelById(it.model) : undefined, g = B().grid.size, n = (v: number) => Math.round(v / g * 10) / 10;
+  return `
+    <div class="hud3-portrait">${it.model ? `<img src="${esc(modelThumbUrl(it.model))}" alt="">` : '<span>?</span>'}</div>
+    <div class="hud3-main">
+      <div class="hud3-head"><input class="hud-name" data-name value="${esc(it.name || '')}" placeholder="Nombre" title="Nombre (Enter para cambiarlo)"></div>
+      <small class="muted">${isProp(it) ? '🪑 Objeto' : '🏛 Estructura'}${m ? ` · ${esc(m.name)}` : ''} · capa Mapa</small>
+    </div>
+    <div class="hud3-tools">
+      <div class="hud3-tool" title="Tamaño en casillas (+ / −)${isProp(it) ? ': media casilla cada vez' : ''}"><span class="hud3-label">⤢ Tamaño</span>
+        <button class="hud-btn" data-t3="size:-1">−</button><b>${n(it.w)}${it.w !== it.h ? `×${n(it.h)}` : ''}</b><button class="hud-btn" data-t3="size:1">+</button></div>
+      <div class="hud3-tool" title="Altura, en casillas (½ cada vez); negativa: bajo el suelo, que se abre sobre él (RePág / AvPág en 3D; con Mayús, ¼)"><span class="hud3-label">⇡ Altura</span>
+        <button class="hud-btn" data-t3="lift:-0.5">−</button><b>${it.elev || 0}</b><button class="hud-btn" data-t3="lift:0.5">+</button></div>
+      ${turnTool(it)}
+    </div>`;
+}
+
+/** Its status effects and ability uses (chips), and ✦ Estados: the panel to change them */
+function statusRow(it: BoardItem) {
+  const list = it.statuses || [], uses = it.uses || [];
+  if (!statuses.list.length && !uses.length) return '';
+  return `<div class="hud3-status">
+    ${statuses.list.length ? `<button class="hud-btn ${list.length ? 'on' : ''}" data-hud="status" title="Efectos de estado y usos de habilidades">✦ Estados${list.length ? ` <small>${list.length}</small>` : ''}</button>` : ''}
+    ${list.map(st => { const r = statuses.resolve(st);
+      return `<span class="hud3-chip" style="--c:${statuses.color(st.id)}" title="${esc(r ? statuses.summary(r.level) : '')}">${esc(statuses.label(st))}</span>`; }).join('')}
+    ${uses.map(u => `<span class="hud3-chip use ${u.value ? '' : 'spent'}" title="${esc(u.name)}: ${u.value} de ${u.max} usos">${esc(shortName(u.name))} ${u.value}/${u.max}</span>`).join('')}
+    ${!list.length && !uses.length ? '<small class="muted">Sin estados</small>' : ''}
+  </div>`;
+}
+
+/** The selected token's panel at the bottom (Fire Emblem style), in 2D and 3D: its portrait, name and stat block;
+ *  Impactos and Chi as bars (type a number, or -3 / +2); actions and reactions per round, and the
+ *  ones left this round (click a pip to spend it or give it back). The same fields as the 2D bubble. */
+function renderHud3d(it: BoardItem) {
+  if (isStructure(it)) { hud.innerHTML = sceneryHud(it); return; }
+  const meta = it.image ? library.get(it.image) : undefined;
+  // (📖 Escena: only the portrait the player chose; empty until they do)
+  const vnPic = vnView.active ? vnView.portraitOf(it) : undefined;
+  const pic = vnView.active ? (vnPic ? imageSmallUrl(vnPic, 256) : '') : meta ? imageSmallUrl(meta, 256) : it.model ? modelThumbUrl(it.model) : '';
   const sheet = it.sheet ? sheets.name(it.sheet) : '';
+  const eco = view.economy(it);
+  const pips = (kind: 'a' | 'r', n: number, used: number, color: string) => Array.from({ length: n }, (_, i) =>
+    `<button class="hud3-pip ${i < used ? 'used' : ''}" style="--c:${color}" data-spend="${kind}:${i}" title="${i < used ? 'Gastada: clic para devolverla' : 'Clic para gastarla'}"></button>`).join('');
   hud.innerHTML = `
-    <input class="hud-name" data-name value="${esc(it.name || '')}" placeholder="Nombre" title="Nombre del token (Enter para cambiarlo)" size="${Math.max(6, Math.min(22, (it.name || '').length + 1))}">
-    <button class="hud-btn" data-hud="sheet" data-pick-sheet title="${it.sheet ? `Abrir la ficha: ${esc(sheet)} (doble clic en el token)` : 'Elegir una ficha para este token'}">📜${it.sheet ? '' : '<small>＋</small>'}</button>
-    ${it.sheet ? '<button class="hud-btn small" data-hud="change" data-pick-sheet title="Cambiar o quitar la ficha">▾</button>' : ''}
-    ${BARS.map(b => {
-      const v = it.bars?.[b.id];
-      return `<span class="hud-bar" style="--c:${b.color}" title="${b.name}${it.sheetMax?.[b.id] !== undefined ? ` (ficha: ${it.sheetMax[b.id]})` : ''} · escribe un número, o -3 / +2 para restar o sumar · máx. vacío: sin barra">
-        <span class="hud-icon">${b.icon}</span><input data-bar="${b.id}" data-f="value" value="${v ? v.value : ''}" placeholder="–" inputmode="numeric"><span class="hud-sep">/</span><input data-bar="${b.id}" data-f="max" value="${v ? v.max : ''}" placeholder="máx" inputmode="numeric"></span>`;
-    }).join('')}`;
+    ${vnView.active
+      ? `<button class="hud3-portrait vn-pick" data-hud="portrait" title="Elegir tu retrato (este navegador lo recordará para las próximas escenas)">${pic ? `<img src="${esc(pic)}" alt="">` : '<span>🖼<small>Tu retrato</small></span>'}</button>`
+      : `<div class="hud3-portrait">${pic ? `<img src="${esc(pic)}" alt="">` : '<span>?</span>'}</div>`}
+    <div class="hud3-main">
+      <div class="hud3-head">
+        <input class="hud-name" data-name value="${esc(it.name || '')}" placeholder="Nombre" title="Nombre del token (Enter para cambiarlo)">
+        <button class="hud-btn" data-hud="sheet" data-pick-sheet title="${it.sheet ? `Abrir la ficha: ${esc(sheet)}` : 'Elegir una ficha para este token'}">📜${it.sheet ? ` <small>${esc(sheet)}</small>` : '<small>＋ ficha</small>'}</button>
+        ${it.sheet ? '<button class="hud-btn small" data-hud="change" data-pick-sheet title="Cambiar o quitar la ficha">▾</button>' : ''}
+      </div>
+      <div class="hud3-bars">${BARS.map(b => {
+        const v = it.bars?.[b.id], pct = v && v.max > 0 ? Math.max(0, Math.min(100, v.value / v.max * 100)) : 0;
+        return `<div class="hud3-bar" style="--c:${b.color}" title="${b.name} · escribe un número, o -3 / +2 para restar o sumar · máx. vacío: sin barra">
+          <span class="hud3-label">${b.icon} ${b.name}</span>
+          <span class="hud3-track"><span class="hud3-fill" style="width:${pct}%"></span></span>
+          <span class="hud3-nums"><input data-bar="${b.id}" data-f="value" value="${v ? v.value : ''}" placeholder="–" inputmode="numeric"><span class="hud-sep">/</span><input data-bar="${b.id}" data-f="max" value="${v ? v.max : ''}" placeholder="máx" inputmode="numeric"></span>
+        </div>`;
+      }).join('')}</div>
+      ${statusRow(it)}
+    </div>
+    <div class="hud3-tools">
+      <div class="hud3-tool" title="Tamaño en casillas (+ / −)"><span class="hud3-label">⤢ Tamaño</span>
+        <button class="hud-btn" data-t3="size:-1">−</button><b>${Math.round(it.w / B().grid.size * 10) / 10}</b><button class="hud-btn" data-t3="size:1">+</button></div>
+      <div class="hud3-tool" title="Altura sobre el suelo, en casillas (½ casilla cada vez); negativa: bajo el suelo (RePág / AvPág; con Mayús, ¼)"><span class="hud3-label">⇡ Altura</span>
+        <button class="hud-btn" data-t3="lift:-0.5">−</button><b>${it.elev || 0}</b><button class="hud-btn" data-t3="lift:0.5">+</button></div>
+      ${it.model && !isStructure(it) ? `<div class="hud3-tool" title="El tamaño de su figura 3D, 5% cada vez (sin cambiar sus casillas): para igualarla a las demás"><span class="hud3-label">⤡ Figura</span>
+        <button class="hud-btn" data-t3="fig:-1">−</button><b>${Math.round((it.modelScale || 1) * 100)}%</b><button class="hud-btn" data-t3="fig:1">+</button></div>` : ''}
+      ${turnTool(it)}
+      ${(() => { const trip = !!it.statuses?.some(s => s.id === 'tropezado');
+        return `<div class="hud3-tool" title="Tumbado en el suelo (derribado, muerto…). En 3D la figura se tumba (T)${trip ? '. Tropezado ya lo tumba mientras dure' : ''}"><span class="hud3-label">⤓ Tumbado</span>
+        <button class="hud-btn hud3-prone ${it.prone || trip ? 'on' : ''}" data-t3="prone:0">${it.prone ? 'Sí' : trip ? 'Tropezado' : 'No'}</button></div>`; })()}
+    </div>
+    <div class="hud3-econ">${ECON.map(e => {
+      const n = it.economy?.[e.id] ?? e.def, left = eco ? (e.id === 'actions' ? eco.actions : eco.reactions) : n, used = eco ? (e.id === 'actions' ? eco.usedA : eco.usedR) : 0;
+      return `<div class="hud3-econ-row" style="--c:${e.color}" title="${e.name} por ronda${it.economyHand ? ' (puesto a mano: vacía el campo para volver al de la ficha)' : ''} · Enter para cambiarlo">
+        <span class="hud3-label">${e.icon} ${e.name}</span><input data-econ="${e.id}" value="${n}" inputmode="numeric">
+        <span class="hud3-pips">${pips(e.id === 'actions' ? 'a' : 'r', left, used, e.color)}</span></div>`;
+    }).join('')}</div>`;
+}
+
+// actions and reactions per round, by hand (the circles beside the token follow)
+const ECON = [{ id: 'actions', name: 'Acciones', icon: '⚔', color: '#d4a017', def: 3 }, { id: 'reactions', name: 'Reacciones', icon: '↺', color: '#3a8ee6', def: 2 }] as const;
+function applyEconInput(inp: HTMLInputElement) {
+  const it = view.item(hudFor);
+  if (!it || !canEdit(it)) return;
+  inp.dataset.done = '1';
+  const key = inp.dataset.econ as 'actions' | 'reactions', raw = inp.value.trim();
+  if (!raw) {   // empty: the sheet's again (or the usual 3 and 2)
+    delete it.economyHand;
+    delete it.economy;
+    view.render(); commit(); renderHud(it);
+    fillFromSheet([it.id]);
+    return;
+  }
+  const n = Number(raw.replace(',', '.'));
+  if (!Number.isFinite(n)) { renderHud(it); return; }
+  it.economy = { actions: it.economy?.actions ?? 3, reactions: it.economy?.reactions ?? 2, [key]: Math.max(0, Math.min(9, Math.round(n))) };
+  it.economyHand = true;
+  view.render();
+  commit();
+  renderHud(it);
 }
 
 // ── actions and reactions this round ──
@@ -1144,31 +1413,18 @@ const statusBtn = $<HTMLButtonElement>('status-btn');
 const statusPanel = $('status-panel');
 let statusFor = '';
 
+/** The status panel belongs to the selected token: another one (or none) closes it. (Its ✦ Estados
+ *  button is in the token panel at the bottom; the old floating ✦ beside the token stays hidden.) */
 function placeStatusButton(it: BoardItem | null) {
-  if (!it || !statuses.list.length) {
-    statusBtn.hidden = true;
-    if (!statusPanel.hidden && (!it || it.id !== statusFor)) statusPanel.hidden = true;
-    return;
-  }
-  if (!statusPanel.hidden && it.id !== statusFor) statusPanel.hidden = true;
-  const r = view.app.canvas.getBoundingClientRect(), p = view.rightOf(it);
-  const list = it.statuses || [];
-  statusBtn.hidden = false;
-  statusBtn.textContent = list.length ? `✦ ${list.length}` : '✦';
-  statusBtn.classList.toggle('on', list.length > 0);
-  statusBtn.title = list.length ? `Efectos de estado:\n${list.map(s => statuses.label(s)).join('\n')}` : 'Añadir efectos de estado';
-  const x = r.left + p.x + 8, y = r.top + p.y - statusBtn.offsetHeight / 2;
-  const inside = x > r.left && x < r.right - 10 && y > r.top - 10 && y < r.bottom;
-  statusBtn.style.visibility = inside ? '' : 'hidden';
-  statusBtn.style.left = `${Math.min(r.right - statusBtn.offsetWidth - 4, x)}px`;
-  statusBtn.style.top = `${y}px`;
-  if (!statusPanel.hidden) placeStatusPanel();
+  statusBtn.hidden = true;
+  if (!statusPanel.hidden && (!it || it.id !== statusFor)) statusPanel.hidden = true;
 }
 
 function placeStatusPanel() {
-  const b = statusBtn.getBoundingClientRect(), w = statusPanel.offsetWidth, h = statusPanel.offsetHeight;
-  statusPanel.style.left = `${b.right + 8 + w > innerWidth ? Math.max(8, b.left - w - 8) : b.right + 8}px`;
-  statusPanel.style.top = `${Math.max(56, Math.min(innerHeight - h - 8, b.top - 40))}px`;
+  // above the token panel's ✦ Estados button
+  const a = hud.querySelector<HTMLElement>('[data-hud="status"]') || hud, b = a.getBoundingClientRect(), w = statusPanel.offsetWidth, h = statusPanel.offsetHeight;
+  statusPanel.style.left = `${Math.max(8, Math.min(innerWidth - w - 8, b.left))}px`;
+  statusPanel.style.top = `${Math.max(56, hud.getBoundingClientRect().top - h - 8)}px`;
 }
 
 function renderStatusPanel() {
@@ -1235,7 +1491,7 @@ function setTokenStatus(id: string, level: number | null) {
   renderStatusPanel();
 }
 
-statusBtn.addEventListener('click', () => {
+function toggleStatusPanel() {
   const it = hudToken();
   if (!it) return;
   if (!statusPanel.hidden && statusFor === it.id) { statusPanel.hidden = true; return; }
@@ -1243,7 +1499,8 @@ statusBtn.addEventListener('click', () => {
   renderStatusPanel();
   statusPanel.hidden = false;
   placeStatusPanel();
-});
+}
+statusBtn.addEventListener('click', toggleStatusPanel);
 statusPanel.addEventListener('keydown', e => {
   e.stopPropagation();
   if (e.key === 'Enter' && (e.target as HTMLElement).matches('[data-use-name], [data-use-max]')) changeUses('add');
@@ -1308,26 +1565,70 @@ hud.addEventListener('keydown', e => {
     else if (e.key === 'Escape') { e.preventDefault(); inp.value = view.item(hudFor)?.name || ''; inp.blur(); }
     return;
   }
+  if (inp.dataset?.angle !== undefined) {   // ⟳ Girar: the degrees typed
+    if (e.key === 'Enter') { e.preventDefault(); applyAngle(inp); }
+    else if (e.key === 'Escape') { e.preventDefault(); inp.dataset.done = '1'; inp.blur(); const it = view.item(hudFor); if (it) renderHud(it); }
+    return;
+  }
+  if (inp.dataset?.econ) {
+    if (e.key === 'Enter') { e.preventDefault(); applyEconInput(inp); }
+    else if (e.key === 'Escape') { e.preventDefault(); inp.blur(); }
+    return;
+  }
   if (!inp.dataset?.bar) return;
   if (e.key === 'Enter') { e.preventDefault(); applyBarInput(inp); hud.querySelector<HTMLInputElement>(`[data-bar="${inp.dataset.bar}"][data-f="${inp.dataset.f}"]`)?.select(); }
   else if (e.key === 'Escape') { e.preventDefault(); inp.blur(); }
 });
-hud.addEventListener('focusin', e => { const inp = e.target as HTMLInputElement; if (inp.dataset?.bar) setTimeout(() => inp.select(), 0); });
+hud.addEventListener('focusin', e => { const inp = e.target as HTMLInputElement; if (inp.dataset?.bar || inp.dataset?.econ || inp.dataset?.angle !== undefined) setTimeout(() => inp.select(), 0); });
+/** ⟳ Girar: the degrees typed, on the selected (that this browser may change) */
+function applyAngle(inp: HTMLInputElement) {
+  inp.dataset.done = '1';
+  const n = Number(inp.value.trim().replace(',', '.').replace('°', ''));
+  const it = view.item(hudFor);
+  if (Number.isFinite(n) && inp.value.trim()) adjustTokens('angle', n);
+  const now = view.item(hudFor) || it;
+  if (now) renderHud(now);
+}
 hud.addEventListener('focusout', e => {
   const inp = e.target as HTMLInputElement;
+  if (inp.dataset?.angle !== undefined) { if (inp.isConnected && !inp.dataset.done) applyAngle(inp); return; }
   if (inp.dataset?.name !== undefined) { applyName(inp); return; }
+  if (inp.dataset?.econ) {
+    const it = view.item(hudFor), key = inp.dataset.econ as 'actions' | 'reactions';
+    if (inp.isConnected && !inp.dataset.done && it && inp.value.trim() !== String(it.economy?.[key] ?? (key === 'actions' ? 3 : 2))) applyEconInput(inp);
+    return;
+  }
   if (!inp.dataset?.bar || !inp.isConnected || inp.dataset.done) return;
   const it = view.item(hudFor);
   const v = it?.bars?.[inp.dataset.bar as BarId];
   if (inp.value.trim() !== String(v ? v[inp.dataset.f as 'value' | 'max'] : '')) applyBarInput(inp);
 });
 hud.addEventListener('click', e => {
+  const t3 = (e.target as HTMLElement).closest<HTMLElement>('[data-t3]');
+  if (t3) {   // size, height, turning
+    const [what, d] = t3.dataset.t3!.split(':');
+    adjustTokens(what, +d);
+    const it = view.item(hudFor);
+    if (it) renderHud(it);
+    return;
+  }
+  if ((e.target as HTMLElement).closest('[data-hud="portrait"]')) { vnView.pickPortrait(); return; }
+  const sb = (e.target as HTMLElement).closest<HTMLElement>('[data-hud="status"]');
+  if (sb) { toggleStatusPanel(); return; }
+  const pip = (e.target as HTMLElement).closest<HTMLElement>('[data-spend]');
+  if (pip && hudFor) {   // 3D panel: spend an action / reaction (or give it back)
+    const [kind, i] = pip.dataset.spend!.split(':');
+    spendEconomy(hudFor, kind as 'a' | 'r', +i);
+    const it = view.item(hudFor);
+    if (it) renderHud(it);
+    return;
+  }
   const b = (e.target as HTMLElement).closest<HTMLElement>('[data-hud]');
   const it = view.item(hudFor);
   if (!b || !it) return;
   const r = b.getBoundingClientRect();
   if (b.dataset.hud === 'sheet' && it.sheet) openSheet(it);
-  else chooseSheet([it], { x: r.left, y: r.bottom + 6 });
+  else chooseSheet([it], { x: r.left, y: v3?.active ? Math.max(56, r.top - 430) : r.bottom + 6 });   // (3D: the panel is at the bottom)
 });
 
 // ── ✂ cropping a picture (a map: a piece of it, to build levels and layers) ──
@@ -1367,6 +1668,57 @@ async function cropItem(item: BoardItem) {
   } catch (e) { setStatus(''); toast('No se pudo recortar: ' + (e as Error).message, true); }
 }
 
+// ── ✎ Editar: a token's character stat block in the Creador ─────────────────
+// The website's Creador de personajes opens over the board with the token's stat block; «Guardar en el
+// token» saves it: into the same sheet if it is this browser's to change (its uploader's, or the GM's;
+// every token with it follows), else as a new sheet of their own, given to this token.
+async function editSheet(it: BoardItem) {
+  const sid = it.sheet, meta = sid ? sheets.get(sid) : undefined;
+  if (!sid || !meta || meta.kind !== 'pj' || !canEdit(it)) return;
+  let data: unknown;
+  try { data = (await api.sheet(sid)).data; } catch (e) { toast('No se pudo leer la ficha: ' + (e as Error).message, true); return; }
+  const back = document.createElement('div');
+  back.className = 'creador-back';
+  back.innerHTML = `<div class="creador-box" role="dialog" aria-label="Editar la ficha">
+    <div class="creador-bar"><b>✎ ${esc(it.name || meta.name)}</b><small class="muted">Creador de personajes · «Guardar en el token» guarda los cambios</small>
+      <span class="grow"></span><button class="x" data-c="close" title="Cerrar (lo no guardado se pierde)">✕</button></div>
+    <iframe src="/creador?tablero=1" title="Creador de personajes"></iframe></div>`;
+  document.body.appendChild(back);
+  const frame = back.querySelector('iframe')!;
+  const close = () => { removeEventListener('message', onMsg); back.remove(); };
+  back.querySelector('[data-c="close"]')!.addEventListener('click', close);
+  const reply = (m: unknown) => frame.contentWindow?.postMessage(m, location.origin);
+  async function onMsg(e: MessageEvent) {
+    if (e.origin !== location.origin || e.source !== frame.contentWindow || !e.data) return;
+    if (e.data.type === 'creador-ready') reply({ type: 'creador-load', data });
+    else if (e.data.type === 'creador-save') {
+      try {
+        const cur = view.item(it.id) || it, nowSid = cur.sheet || sid!, m = sheets.get(nowSid);
+        let id = nowSid;
+        if (m && m.source === 'upload' && (isGM() || m.owner === me?.pid)) {
+          const up = await api.updateSheet(nowSid, e.data.data);
+          Object.assign(m, up);
+        } else {   // not theirs to change: their own copy, on this token
+          const up = await api.uploadSheet(e.data.data, String((e.data.data as { name?: string }).name || meta!.name));
+          if (!sheets.get(up.id)) sheets.list.push(up);
+          id = up.id;
+        }
+        data = e.data.data;
+        sheets.forget(id);
+        cur.sheet = id;
+        cur.sheetRev = Date.now();   // (open windows of it, here and elsewhere, read it again)
+        view.render();
+        commit();
+        windows.sync(B().items);
+        hudFor = ''; updateHud();
+        reply({ type: 'creador-saved', ok: true });
+        toast(`📜 Ficha de ${cur.name || 'el token'} guardada`);
+      } catch (err) { reply({ type: 'creador-saved', ok: false, error: (err as Error).message }); }
+    }
+  }
+  addEventListener('message', onMsg);
+}
+
 // ── context menu ────────────────────────────────────────────────────────────
 type Entry = [string, string, () => void, string?];
 function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
@@ -1386,6 +1738,7 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
       entries.push([tokens.some(i => i.sheet) ? 'Cambiar ficha…' : 'Elegir ficha…', tokens.length > 1 ? `${tokens.length} tokens` : '', () => chooseSheet(tokens, at)]);
       if (tokens.some(i => i.sheet)) entries.push(['Barras desde la ficha', 'llenas', () => resetBars(tokens)]);
       if (isGM()) entries.push(['💡 Luz y visión…', 'iluminación', () => openLightVision(tokens, at)]);
+      entries.push(['🧊 Modelo 3D…', tokens.some(i => i.model) ? (modelById(tokens[0].model)?.name || 'figura') : 'su figura en 3D', () => chooseModel(tokens, at)]);
       if (isGM() && levelsOf(B()).length > 1)
         entries.push(...levelsOf(B()).filter(l => l.id !== view.level).map(l => [`⇅ Llevar a «${l.name}»`, 'nivel', () => toLevel(tokens, l.id)] as Entry));
       if (isGM()) {
@@ -1399,6 +1752,7 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
     }
     if (kindOf(item) === 'image') {
       if (sel.length === 1 && canEdit(item)) entries.push(['✂ Recortar…', item.layer === 'map' ? 'un trozo del mapa' : 'la imagen', () => cropItem(item)]);
+      if (sel.length === 1 && pictureOf(item)) entries.push(['⬇ Descargar imagen', 'guardarla', () => downloadPicture(item)]);
       if (item.layer === 'map' && isGM()) entries.push(['Ajustar la página a este mapa', '', () => fitPageToMap(item, false)],
         ['Ajustar cuadrícula y página al mapa…', 'casillas', () => fitPageToMap(item, true)]);
       if (isGM()) {
@@ -1422,7 +1776,7 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
     entries.push(['-', '', () => {}],
       [locked ? 'Desbloquear' : 'Bloquear', 'no se mueve', () => { sel.forEach(i => (i.locked = !locked)); view.render(); commit(); }],
       ['Duplicar', 'Ctrl+D', () => pasteItems(undefined, sel)],
-      ['Copiar', 'Ctrl+C', copySelection],
+      ['Copiar', 'Ctrl+C', () => { copySelection(); copyPicture(sel); }],
       ['Eliminar', 'Supr', deleteSelected]);
   } else {
     const w = view.clientToWorld(at.x, at.y);
@@ -1453,8 +1807,8 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
   menu.querySelectorAll<HTMLElement>('[data-i]').forEach(b => b.addEventListener('click', () => { menu.hidden = true; entries[+b.dataset.i!][2](); }));
   menu.hidden = false;
   const r = menu.getBoundingClientRect();
-  menu.style.left = `${Math.min(at.x, innerWidth - r.width - 8)}px`;
-  menu.style.top = `${Math.min(at.y, innerHeight - r.height - 8)}px`;
+  menu.style.left = `${Math.max(8, Math.min(at.x, innerWidth - r.width - 8))}px`;
+  menu.style.top = `${Math.max(8, Math.min(at.y, innerHeight - r.height - 8))}px`;   // (taller than the window: it scrolls)
 }
 document.addEventListener('pointerdown', e => {
   const t = e.target as HTMLElement | null;
@@ -1462,7 +1816,7 @@ document.addEventListener('pointerdown', e => {
   if (!t?.closest?.('#room-panel, #invite-btn')) $('room-panel').hidden = true;
   if (!t?.closest?.('#players-panel, #presence')) $('players-panel').hidden = true;
   if (!t?.closest?.('#share-panel, #share-btn')) $('share-panel').hidden = true;
-  if (!t?.closest?.('#status-panel, #status-btn')) statusPanel.hidden = true;
+  if (!t?.closest?.('#status-panel, #status-btn, #hud')) statusPanel.hidden = true;
   if (!t?.closest?.('#lv-panel, #menu')) $('lv-panel').hidden = true;
   if (!t?.closest?.('#portal-panel, #menu')) $('portal-panel').hidden = true;
   if (!t?.closest?.('#scenes-panel, #scenes-btn, #campaign-pick') && scenesPanel.open) $('scenes-panel').hidden = true;
@@ -1481,6 +1835,7 @@ function showMyRuler(shape: RulerShape | null, done: boolean) {
   const had = !!myRuler;
   myRuler = shape;
   view.setRuler('me', shape, myColor());
+  v3?.setRuler('me', shape, myColor());
   if (rulerPublic() && (shape || had)) sendRuler(done);
 }
 
@@ -1855,6 +2210,8 @@ function setLevel(id: string) {
   finishWall();
   fogSel = null;
   view.setLevel(id);
+  v3?.levelChanged();
+  fillGridPanel();
   if (view.tool === 'fog') renderFogPanel();
   levelBar.render();
 }
@@ -2026,15 +2383,13 @@ async function importMap(file: File, asLevel: boolean) {
     library.render();
     view.setImages(library.list);
     if (asLevel && board) {
-      const b = B(), g = b.grid.size, lv = { id: uid(), name: map.name.slice(0, 40) };
+      const b = B(), g = b.grid.size, lv = { id: uid(), name: map.name.slice(0, 40), width: map.cols, height: map.rows };
       b.levels = [...levelsOf(b).map(l => ({ ...l })), lv];
       b.items.push({ id: uid(), kind: 'image', image: meta.id, x: 0, y: 0, w: map.cols * g, h: map.rows * g, rotation: 0, layer: 'map', z: nextZ('map'), name: map.name, locked: true, level: lv.id });
       const f = fogEdit(), add = map.fog(g, lv.id);
       f.walls.push(...add.walls);
       f.lights.push(...add.lights);
       if (add.walls.length) f.on = true;
-      b.width = Math.max(b.width, map.cols);
-      b.height = Math.max(b.height, map.rows);
       view.render();
       commit();
       setLevel(lv.id);
@@ -2187,8 +2542,10 @@ function fillGridPanel() {
   $<HTMLInputElement>('g-size').value = String(g.size);
   $<HTMLInputElement>('g-color').value = g.color;
   $<HTMLInputElement>('g-opacity').value = String(g.opacity);
-  $<HTMLInputElement>('p-width').value = String(board.width);
-  $<HTMLInputElement>('p-height').value = String(board.height);
+  const pg = view.page();
+  $<HTMLInputElement>('p-width').value = String(pg.width);
+  $<HTMLInputElement>('p-height').value = String(pg.height);
+  $('p-which').textContent = (board.levels?.length || 0) > 1 ? `de «${levelName(board, view.level)}»` : '';
   $<HTMLInputElement>('p-bg').value = board.background;
 }
 let gridCommit = 0;
@@ -2208,14 +2565,16 @@ $('g-snap').addEventListener('change', e => gridChanged(() => (B().grid.snap = (
 $('g-size').addEventListener('input', () => gridChanged(() => (B().grid.size = num('g-size', 10, 400, B().grid.size))));
 $('g-color').addEventListener('input', e => gridChanged(() => (B().grid.color = (e.target as HTMLInputElement).value)));
 $('g-opacity').addEventListener('input', e => gridChanged(() => (B().grid.opacity = Number((e.target as HTMLInputElement).value))));
-$('p-width').addEventListener('input', () => gridChanged(() => (B().width = Math.round(num('p-width', 1, 300, B().width)))));
-$('p-height').addEventListener('input', () => gridChanged(() => (B().height = Math.round(num('p-height', 1, 300, B().height)))));
+// the page of the level shown (each floor its own size: an interior isn't the shape of the street)
+$('p-width').addEventListener('input', () => gridChanged(() => { const p = view.page(); setPage(B(), view.level, Math.round(num('p-width', 1, 300, p.width)), p.height); }));
+$('p-height').addEventListener('input', () => gridChanged(() => { const p = view.page(); setPage(B(), view.level, p.width, Math.round(num('p-height', 1, 300, p.height))); }));
 $('p-bg').addEventListener('input', e => gridChanged(() => (B().background = (e.target as HTMLInputElement).value)));
 
 // ── keyboard ────────────────────────────────────────────────────────────────
 document.addEventListener('keydown', e => {
   if (typing(e) || !board) return;
   const ctrl = e.ctrlKey || e.metaKey, k = e.key.toLowerCase();
+  if (vnView.active && !(ctrl && ['z', 'y'].includes(k))) return;   // 📖 Escena: the board underneath stays as it is
   // 3D: the keys move the camera; undo, copy / paste / duplicate, delete and Esc still work
   if (v3?.active && !(ctrl && ['z', 'y', 'c', 'v', 'd'].includes(k)) && !['delete', 'backspace', 'escape'].includes(k)) return;
   if (k === ' ' && !view.spaceDown) { view.spaceDown = true; view.app.canvas.style.cursor = 'grab'; e.preventDefault(); return; }
@@ -2248,6 +2607,49 @@ document.addEventListener('keyup', e => {
   if (e.key === ' ') { view.spaceDown = false; view.setTool(view.tool); }
 });
 
+// ── 3D models: their list (just names and settings: the 2D board needs it too) ──
+let modelMetas: ModelMeta[] = [];
+const modelById = (id?: string) => (id ? modelMetas.find(m => m.id === id) : undefined);
+let modelsReload = 0;
+async function refreshModels() {
+  try { modelMetas = await api.models(); } catch { return; }
+  if (models) { models.list = modelMetas; models.loaded = true; models.render(); }
+  if (board) faceTokens(board);
+  view.render();
+  v3?.changed();
+}
+/** A token of a model this browser doesn't know (someone placed it): fetch the list again, once */
+function modelsMaybeNew(ids: (string | undefined)[]) {
+  if (ids.some(id => id && !modelById(id)) && !modelsReload)
+    modelsReload = window.setTimeout(() => { modelsReload = 0; refreshModels(); }, 300);
+}
+
+// In 2D, a model's token without a picture of its own: a figure shows its thumbnail; a structure (on the
+// map layer) its view from straight above, which this browser (the GM's) makes the first time
+view.modelPic = it => {
+  const m = modelById(it.model);
+  if (!it.model) return null;
+  if (m && isScenery(m)) {
+    if (m.top) return { key: `mt:${m.id}:${m.top}`, url: modelTopUrl(m.id, m.top), contain: true };
+    makeTopView(m);
+  }
+  return { key: 'm:' + it.model, url: modelThumbUrl(it.model) };
+};
+const topsAsked = new Set<string>();
+async function makeTopView(m: ModelMeta) {
+  if (!isGM() || topsAsked.has(m.id)) return;
+  topsAsked.add(m.id);
+  try {
+    const { loadModel, serverSource, topView } = await import('./models3d');
+    const png = await topView(await loadModel(serverSource(m)));
+    if (!png) return;
+    const r = await api.uploadModelTop(m.id, png);
+    Object.assign(m, r);
+    if (models) { const x = models.get(m.id); if (x && x !== m) Object.assign(x, r); }
+    view.render();
+  } catch (e) { console.warn('No se pudo hacer la vista desde arriba de', m.name, e); }
+}
+
 // ── 🧊 Vista 3D ─────────────────────────────────────────────────────────────
 // The same scene in 3D (view3d.ts, loaded the first time it is asked for). The 2D board keeps
 // running underneath: the 3D view is drawn from it and follows every change.
@@ -2255,19 +2657,63 @@ document.addEventListener('keyup', e => {
 let v3: import('./view3d').View3D | null = null;
 let models: import('./modellib').ModelLibrary | null = null;
 let modelsAsked = 0;
+let skyCommit = 0;
 
 /** Put a library model on the board as a token (Tokens nuevos: its size in squares) */
+const STRUCTURE_SQUARES = 6;   // a structure's longer side when placed (× its Tamaño), in squares
+const PROP_SQUARES = 1;        // a prop's (in half squares)
 function placeModel(m: ModelMeta, at: { x: number; y: number }) {
   if (!board) return;
-  const g = board.grid.size, n = Number(prefs.newSize) || 1, w = g * n;
-  const layer: LayerId = view.activeLayer === 'map' ? 'tokens' : view.activeLayer;
-  let x = at.x - w / 2, y = at.y - w / 2;
-  if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, w); }
-  const it = stamp({ id: uid(), kind: 'image', model: m.id, fit: true, x, y, w, h: w, rotation: 0, layer, z: nextZ(layer), name: m.name });
+  const g = board.grid.size;
+  let it: BoardItem;
+  if (isScenery(m) && isGM()) {
+    // on the map layer, at its own proportions (a prop: to half squares)
+    const prop = m.kind === 'prop', step = prop ? 0.5 : 1;
+    const [sx, , sz] = m.dims || [1, 1, 1], big = Math.max(sx, sz), n = (prop ? PROP_SQUARES : STRUCTURE_SQUARES) * (m.scale || 1);
+    const w = Math.max(step, Math.round(n * sx / big / step) * step) * g, h = Math.max(step, Math.round(n * sz / big / step) * step) * g;
+    let x = at.x - w / 2, y = at.y - h / 2;
+    if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, h); }
+    it = stamp({ id: uid(), kind: 'image', model: m.id, fit: false, x, y, w, h, rotation: 0, layer: 'map', z: nextZ('map'), name: m.name });
+  } else {
+    const n = Number(prefs.newSize) || 1, w = g * n;
+    const layer: LayerId = view.activeLayer === 'map' ? 'tokens' : view.activeLayer;
+    let x = at.x - w / 2, y = at.y - w / 2;
+    if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, w); }
+    it = stamp({ id: uid(), kind: 'image', model: m.id, fit: true, x, y, w, h: w, rotation: 0, layer, z: nextZ(layer), name: m.name });
+    if (m.image && library.get(m.image)) it.image = m.image;   // its 2D picture
+    if (m.sheet) it.sheet = m.sheet;
+  }
   B().items.push(it);
   view.render();
   view.select([it.id]);
   commit();
+  if (it.sheet) fillFromSheet([it.id]);
+}
+
+/** 🧊 Modelo 3D… (token menu): the figure it shows in 3D (its 2D picture stays) */
+function chooseModel(tokens: BoardItem[], at: { x: number; y: number }) {
+  const menu = $('menu'), figs = modelMetas.filter(m => !isScenery(m)).sort((a, b) => a.name.localeCompare(b.name, 'es'));
+  const cur = tokens.length === 1 ? tokens[0].model : undefined;
+  const set = (id: string | null) => {
+    for (const t of tokens) {
+      if (id) { t.model = id; const m = modelById(id); if (m?.sheet && !t.sheet) t.sheet = m.sheet; }
+      else delete t.model;
+    }
+    view.render(); commit();
+    fillFromSheet(tokens.map(t => t.id));
+  };
+  menu.innerHTML = `<div class="title">🧊 Modelo 3D</div>` + (figs.length ? figs.map((m, i) =>
+    `<button data-m="${i}">${m.id === cur ? '☑ ' : ''}${esc(m.name)}<small>${esc(m.category)}</small></button>`).join('')
+    : '<div class="muted" style="padding:6px 10px">No hay figuras en la biblioteca 3D</div>')
+    + (tokens.some(t => t.model) ? '<hr><button data-m="none">Quitar el modelo<small>en 3D, su imagen de pie</small></button>' : '');
+  menu.querySelectorAll<HTMLElement>('[data-m]').forEach(b => b.addEventListener('click', () => {
+    menu.hidden = true;
+    set(b.dataset.m === 'none' ? null : figs[+b.dataset.m!].id);
+  }));
+  menu.hidden = false;
+  const r = menu.getBoundingClientRect();
+  menu.style.left = `${Math.max(8, Math.min(at.x, innerWidth - r.width - 8))}px`;
+  menu.style.top = `${Math.max(8, Math.min(at.y, innerHeight - r.height - 8))}px`;   // (taller than the window: it scrolls)
 }
 
 async function set3D(on: boolean) {
@@ -2283,16 +2729,21 @@ async function set3D(on: boolean) {
       const [{ View3D }, { ModelLibrary }] = await Promise.all([import('./view3d'), import('./modellib')]);
       models = new ModelLibrary($('models'), {
         place: m => placeModel(m, view.viewCenter()),
-        changed: () => { view.render(); v3?.changed(); },
+        changed: list => { modelMetas = list; view.render(); v3?.changed(); },
         toast,
-      }, isGM());
+        images: () => library.list,
+        sheetName: id => sheets.name(id),
+        pickSheet: (at, current, done) => sheets.pick(at, { current, done }),
+      }, isGM(), isGM() ? null : me?.pid || null);
+      if (!isGM()) models.shown = m => m.owner === me?.pid || !!board?.items.some(i => i.model === m.id && (i.controllers || []).includes(me?.pid || '-'));   // (a player: their uploads and their figures)
+      if (modelMetas.length) { models.list = modelMetas; models.loaded = true; models.render(); }
       v3 = new View3D(stage, {
         view, image: id => library.get(id), isGM, badgeColor: it => view.badgeColor(it), ping: at => sendPing(at),
-        model: id => models?.get(id),
+        model: id => modelById(id),
         missingModel() {   // (a token of a model this browser doesn't know yet: at most every few seconds)
-          if (!models || Date.now() - modelsAsked < 4000) return;
+          if (Date.now() - modelsAsked < 4000) return;
           modelsAsked = Date.now();
-          models.load(true);
+          refreshModels();
         },
         canEdit,
         change(kind, ids) {
@@ -2303,28 +2754,135 @@ async function set3D(on: boolean) {
         menu: (it, at) => openMenu(it, at),
         open: it => openSheet(it),
         dropModel: (id, at) => { const m = models?.get(id); if (m) placeModel(m, at); },
+        tool: () => view.tool,
+        setSky: hour => {   // (GM) saved with the board: everyone's 3D view follows
+          if (!board || !isGM()) return;
+          B().sky = { hour };
+          clearTimeout(skyCommit);
+          skyCommit = window.setTimeout(commit, 300);
+        },
+        ruler: (shape, done) => showMyRuler(shape, done),
+        rulerMode: () => prefs.ruler,
       });
-      view.onRendered = () => v3?.changed();
+      view.onRendered = () => { v3?.changed(); vnView.changed(); };
     } catch (err) {
-      toast(`No se pudo abrir la vista 3D: ${(err as Error).message}`, true);
+      toast(`No se pudo abrir la vista 3D (¿se actualizó el Tablero? recarga la página): ${(err as Error).message}`, true);
       set3D(false);
       return;
     } finally { setStatus('Conectado'); }
   }
   if (!document.body.classList.contains('mode-3d') !== !on) return;   // (switched back while it loaded)
-  if (on) { $('menu').hidden = true; showMyRuler(null, true); view.app.ticker.stop(); models?.load(); }
+  if (on) { $('menu').hidden = true; showMyRuler(null, true); view.app.ticker.stop(); models?.load(); if (view.tool !== 'select' && view.tool !== 'ruler') setTool('select'); }
   else view.app.ticker.start();
   v3?.show(on);
+  hudFor = ''; updateHud();   // (the token panel: at the bottom in 3D, over the token in 2D)
 }
-$('mode-2d').addEventListener('click', () => set3D(false));
-$('mode-3d').addEventListener('click', () => set3D(true));
+$('mode-2d').addEventListener('click', () => { showVN(false); set3D(false); });
+$('mode-3d').addEventListener('click', () => { showVN(false); set3D(true); });
+
+// ── 📖 Escena ───────────────────────────────────────────────────────────────
+// The light-novel moments (vn.ts): the GM opens a scene for everyone (a background, the people in it,
+// what they say) and the party's main characters stand along the bottom with their values.
+let vnLibAsked = 0;
+let vnScene: VNScene = { on: false };   // the room's (tablero.py sends it, and every change)
+/** (GM) Change the scene, for everyone in the room (shown here at once) */
+function setScene(v: VNScene) {
+  if (!isGM() || !live) return;
+  vnScene = v;
+  api.vn(live.boardId, { on: v.on, bg: v.bg ?? null }).catch(err => toast('No se pudo cambiar la escena: ' + (err as Error).message, true));
+  syncVN();
+}
+const vnView = new VNView(stage, {
+  board: () => board,
+  scene: () => vnScene,
+  setScene,
+  me: () => me,
+  isGM,
+  image: id => {
+    const m = library.get(id);
+    if (!m && Date.now() - vnLibAsked > 5000) { vnLibAsked = Date.now(); library.load(); }   // (a portrait just given: its details)
+    return m;
+  },
+  images: () => library.list,
+  isToken,
+  canEdit,
+  commit: () => { view.render(); commit(); live?.push(); },   // (push: sent even if it matches the last undo step)
+  upload: async (file, category) => { setStatus('Subiendo imagen…', 'saving'); const m = (await library.upload([file], category))[0] || null; setStatus('Conectado'); return m; },
+  mainChanged: () => { hudFor = ''; updateHud(); },
+  leave: () => showVN(false),
+  crop: meta => cropBackground(meta),
+  end: () => { if (board && isGM()) setScene({ ...vnScene, on: false }); },
+  toast,
+});
+view.onRendered = () => { v3?.changed(); vnView.changed(); };
+
+/** (GM) ✂ A background cut to the scene view's shape (what the players see of it): a new background in
+ *  Fondos; the scene, if it shows the original, shows the cut one */
+async function cropBackground(meta: ImageMeta) {
+  if (!board || !isGM()) return;
+  const url = imageUrl(meta), probe = new Image();
+  probe.src = url;
+  try { await probe.decode(); } catch { toast('No se pudo cargar la imagen', true); return; }
+  const natW = probe.naturalWidth, natH = probe.naturalHeight, r = stage.getBoundingClientRect();
+  const ans = await cropDialog({ url, natW, natH, item: { x: 0, y: 0, w: natW, h: natH }, grid: 1, name: meta.name, aspect: r.width / Math.max(1, r.height) });
+  if (!ans) return;
+  setStatus('Recortando…', 'saving');
+  try {
+    const type = /\.(jpe?g)$/i.test(meta.file || '') ? 'image/jpeg' : /\.webp$/i.test(meta.file || '') ? 'image/webp' : 'image/png';
+    const blob = await cropImage(url, ans, type);
+    const name = `${(meta.name || 'Fondo').replace(/ \(recorte( \d+)?\)$/, '')} (recorte)`.slice(0, 80);
+    const up = await api.upload(blob, { name, category: BACKGROUNDS, width: ans.w, height: ans.h, tags: meta.tags || [] });
+    if (!library.get(up.id)) library.list.push(up);
+    library.render();
+    view.setImages(library.list);
+    if (vnScene.bg === meta.id) vnView.setBackground(up.id);
+    setStatus('');
+    toast(`✂ Recortado: «${name}» en Fondos`);
+  } catch (e) { setStatus(''); toast('No se pudo recortar: ' + (e as Error).message, true); }
+}
+
+/** (GM) A library background: the scene's, opened for everyone (or changed, if it is open) */
+function useAsBackground(meta: ImageMeta) {
+  if (!board || !isGM()) return;
+  setScene({ ...vnScene, on: true, bg: meta.id });
+}
+
+function showVN(on: boolean) {
+  if (on === vnView.active) return;
+  vnView.show(on);
+  document.body.classList.toggle('mode-vn', on);
+  $('mode-vn').classList.toggle('on', on);
+  $('mode-2d').classList.toggle('on', !on && !prefs.mode3d);
+  $('mode-3d').classList.toggle('on', !on && !!prefs.mode3d);
+  if (on) { $('menu').hidden = true; showMyRuler(null, true); }
+  else if (!isGM()) view.select([]);
+  hudFor = '';
+  updateHud();
+}
+/** The scene opened or closed (by the GM, here or elsewhere): everyone in it, or back to the board */
+let vnWasOn = false;
+function syncVN() {
+  const on = !!vnScene.on;
+  $('mode-vn').hidden = !isGM() && !on;
+  $('mode-vn').classList.toggle('live', on);
+  if (on && !vnWasOn) showVN(true);
+  else if (!on && vnWasOn) showVN(false);
+  vnWasOn = on;
+  vnView.changed();
+}
+$('mode-vn').addEventListener('click', () => {
+  if (!board) return;
+  if (isGM() && !vnScene.on) setScene({ ...vnScene, on: true });   // (opened for the whole room)
+  else showVN(true);
+});
 
 // ── start ───────────────────────────────────────────────────────────────────
 // for the browser console (and tests): window.tablero.view / .board() / .me()
 (window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, statuses, music, painter, scenes: scenesPanel, levelBar,
-  board: () => board, me: () => me, v3: () => v3, models: () => models, build: typeof __BUILD__ === 'string' ? __BUILD__ : '',   /* (a builder started before the setting) */ m3d: () => import('./models3d'), presence: () => presence, live: () => live, importMap };
+  board: () => board, me: () => me, v3: () => v3, models: () => models, build: typeof __BUILD__ === 'string' ? __BUILD__ : '',   /* (a builder started before the setting) */ m3d: () => import('./models3d'), presence: () => presence, live: () => live, importMap, vn: () => vnView, scene: () => vnScene };
 (async () => {
   await view.init(stage);
+  (window as unknown as { tablero: { ready?: boolean } }).tablero.ready = true;   // (tablero.py's page check: it started)
   bindDoubleClick();
   if (prefs.mode3d) set3D(true);
   fillToolOptions();
@@ -2348,7 +2906,7 @@ $('mode-3d').addEventListener('click', () => set3D(true));
     return;
   }
   library.ownerFilter = m => !m.owner;
-  await Promise.all([library.load(), sheets.load(), statuses.load(), music.loadLibrary()]);
+  await Promise.all([library.load(), sheets.load(), statuses.load(), music.loadLibrary(), refreshModels()]);
   refreshShare();
   openBoard(await refreshBoardList());
 })().catch(e => { console.error(e); toast('No se pudo iniciar el tablero: ' + (e as Error).message, true); });

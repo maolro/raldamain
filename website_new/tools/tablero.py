@@ -90,6 +90,7 @@ CLIENT = TOOLS / "tablero"
 DIST = CLIENT / "dist"
 STORAGE = Path(os.environ.get("TABLERO_STORAGE") or CLIENT / "storage")  # TABLERO_STORAGE: elsewhere (tests)
 IMAGES = STORAGE / "images"
+ESCENAS = STORAGE / "escenas"  # 📖 Escena of each room (open or not, its background)
 LIBRARY = STORAGE / "library.json"
 BOARDS = STORAGE / "boards"
 ROOMS = STORAGE / "rooms.json"
@@ -125,7 +126,7 @@ IMAGE_TYPES = {"image/png": "png", "image/jpeg": "jpg", "image/webp": "webp", "i
 MAX_IMAGE = 40 * 1024 * 1024  # bytes
 PLAYER_COLORS = ["#e6194b", "#3cb44b", "#4363d8", "#f58231", "#911eb4", "#42d4f4", "#f032e6", "#bfef45", "#fabed4", "#dcbeff"]
 BOARD_SETTINGS = ("name", "width", "height", "background", "grid", "fog", "round",  # (fog: hidden areas, lighting, walls; round: ⏱)
-                  "levels", "portals", "arrival", "tilesets", "tileSpans")  # floors · stairs and doors to other levels or scenes · where arrivals appear · the tile palette · big tiles' sizes
+                  "levels", "portals", "arrival", "tilesets", "tileSpans", "sky", "vn")  # floors · stairs and doors to other levels or scenes · where arrivals appear · the tile palette · big tiles' sizes
 # tiles: chunks of 16×16 cells, "<level>|<layer>|<cx>|<cy>" → 256 cells of 4 characters each (tiles.ts encodes them)
 TILE_KEY_RE = re.compile(r"^[a-z0-9_-]{1,24}\|(floor|walls|deco|roof)\|-?\d{1,4}\|-?\d{1,4}$")
 TILE_CHUNK_RE = re.compile(r"^[A-Za-z0-9_-]{1024}$")
@@ -259,13 +260,115 @@ def lan_ip() -> str:
 
 # ─────────────────────────────────────────────────────────────── client
 
+# ── is the build whole? ──
+# vite --watch rewrites dist/ in place, and a rebuild can end with some of its files missing (2026-11-10:
+# the page loaded and then waited forever for a piece of its drawing engine). Every file the page asks for,
+# and every one those import, must be there; if not, it is built again here and the page waits for it.
+_build_state = {"key": None, "ok": True}
+_building = threading.Lock()
+
+
+def _build_files_missing() -> list[str]:
+    page, app_dir = DIST / "index.html", DIST / "app"
+    try:
+        key = (page.stat().st_mtime_ns, tuple(sorted((p.name, p.stat().st_size) for p in app_dir.iterdir())))
+    except OSError:
+        return ["index.html"]
+    if key == _build_state["key"]:
+        return _build_state["missing"]
+    todo = re.findall(r'/app/([A-Za-z0-9_.-]+\.(?:js|css))', page.read_text(encoding="utf-8", errors="ignore"))
+    seen, missing = set(), []
+    while todo:
+        name = todo.pop()
+        if name in seen:
+            continue
+        seen.add(name)
+        f = app_dir / name
+        if not f.is_file():
+            missing.append(name)
+            continue
+        if name.endswith(".js"):   # what it imports (./x.js) and preloads ("app/x.js")
+            text = f.read_text(encoding="utf-8", errors="ignore")
+            todo += re.findall(r'["\'`]\./([A-Za-z0-9_.-]+\.(?:js|css))["\'`]', text)
+            todo += re.findall(r'["\'`]app/([A-Za-z0-9_.-]+\.(?:js|css))["\'`]', text)
+    _build_state.update(key=key, missing=missing)
+    return missing
+
+
+def _rebuild_client():
+    """A full build (in the background, one at a time): the page shows «Preparando…» meanwhile"""
+    if not _building.acquire(blocking=False):
+        return
+    def run():
+        try:
+            npm = _npm()
+            if npm:
+                print(" ⚠ compilación incompleta: compilando el Tablero de nuevo…", flush=True)
+                subprocess.run([npm, "run", "build"], cwd=CLIENT, check=False, capture_output=True)
+        finally:
+            _building.release()
+    threading.Thread(target=run, daemon=True).start()
+
+
+def _preparing(note=""):
+    return Response("<!doctype html><html><head><meta http-equiv='refresh' content='4'></head>"
+                    "<body style='background:#111;color:#ddd;font-family:sans-serif;padding:2rem'>"
+                    "<h2 style='color:#fff200'>Preparando el Tablero…</h2><p>Compilando el cliente" + note + ". "
+                    "Esta página se recargará sola.</p></body></html>", mimetype="text/html",
+                    headers={"Cache-Control": "no-store", "CDN-Cache-Control": "no-store"})
+
+
 def _page():
     page = DIST / "index.html"
+    missing = _build_files_missing() if page.exists() else []
+    if missing:   # being written right now? a moment, then build it whole
+        for _ in range(16):
+            time.sleep(0.5)
+            missing = _build_files_missing()
+            if not missing:
+                break
+        if missing:
+            _rebuild_client()
+            return _preparing(" (faltaban " + ", ".join(missing[:3]) + ")")
     if not page.exists():
         return Response("<!doctype html><html><body style='background:#111;color:#ddd;font-family:sans-serif;padding:2rem'>"
                         "<h2>Preparando el Tablero…</h2><p>Compilando el cliente (la primera vez tarda un poco). "
                         "Esta página se recargará sola.</p></body></html>", mimetype="text/html")
-    return Response(page.read_text(encoding="utf-8"), mimetype="text/html", headers={"Cache-Control": "no-cache"})
+    # (the build's files keep their own /app/ addresses: vite's loader asks for them there too, and two
+    # addresses for one script load it twice. What keeps caches right: this page is never kept, a missing
+    # file is waited for and its "not found" never kept, and each build names its files anew)
+    html = page.read_text(encoding="utf-8").replace("</body>", _PAGE_GUARD + "</body>", 1)
+    return Response(html, mimetype="text/html",
+                    headers={"Cache-Control": "no-store", "CDN-Cache-Control": "no-store"})
+
+
+def _build_stamp() -> str:
+    try:
+        return str(int((DIST / "index.html").stat().st_mtime))
+    except OSError:
+        return "0"
+
+
+# The page checks itself: no styles or no app after a while (a file that didn't arrive) → it reloads once
+# (at most once a minute), and if that doesn't help it says so instead of staying white.
+_PAGE_GUARD = """<script>(function () {
+  var K = 'tablero-reload';
+  function bad() {
+    var styled = getComputedStyle(document.documentElement).getPropertyValue('--gold').trim() !== '';
+    return !styled || !window.tablero || !window.tablero.ready;
+  }
+  addEventListener('load', function () { var tries = 0; (function check() {   // (once every file arrived, or failed)
+    if (!bad()) return;
+    if (++tries < 20) { setTimeout(check, 1000); return; }   // (the app still starting: up to 20 s)
+    var last = 0; try { last = +sessionStorage.getItem(K) || 0; } catch (e) {}
+    if (Date.now() - last > 60000) { try { sessionStorage.setItem(K, Date.now()); } catch (e) {} location.reload(); return; }
+    var d = document.createElement('div');
+    d.style.cssText = 'position:fixed;inset:0;z-index:99999;background:#111;color:#eee;font:16px system-ui,sans-serif;display:grid;place-items:center;text-align:center;padding:2rem';
+    d.innerHTML = '<div><h2 style="color:#fff200">El Tablero no se cargó bien</h2><p>Puede que se esté actualizando. Espera unos segundos y pulsa el botón.</p>'
+      + '<button style="background:#fff200;border:0;border-radius:6px;padding:8px 18px;font-weight:700;cursor:pointer" onclick="location.reload()">Recargar</button></div>';
+    document.body.appendChild(d);
+  })(); });
+})();</script>"""
 
 
 @app.route("/")
@@ -276,6 +379,16 @@ def index():
 @app.route("/jugar")
 def player_page():
     return _page()
+
+
+@app.route("/app/v<stamp>/<path:name>")
+def client_assets_versioned(stamp, name):
+    """A build's file (the page asks for them under its build's folder). Named by their content: kept
+    for a long time by browsers and caches, as the next build's folder is another address."""
+    resp = client_assets(name)
+    if resp.status_code == 200:
+        resp.headers["Cache-Control"] = "public, max-age=604800, immutable"
+    return resp
 
 
 @app.route("/app/<path:name>")
@@ -289,6 +402,15 @@ def client_assets(name):
     if not f.is_file():   # (and that answer is never kept by a cache)
         return Response("no existe", status=404, mimetype="text/plain", headers={"Cache-Control": "no-store"})
     resp = send_from_directory(DIST / "app", name)
+    resp.headers["Cache-Control"] = "no-cache"
+    return resp
+
+
+@app.route("/creador")
+def creador_page():
+    """The website's Creador de personajes: opened by the board (✎ Editar) on a token's stat block,
+    which it gets and gives back by messages (its «Tablero» mode)."""
+    resp = send_from_directory(SITE, "creador.html")
     resp.headers["Cache-Control"] = "no-cache"
     return resp
 
@@ -308,6 +430,10 @@ def sheet_page_files(name):
     return resp
 
 
+# the website's files the stat block reads: fresh for 2 minutes, then used while checked again in the background
+SITE_CACHE = "public, max-age=120, stale-while-revalidate=86400"
+
+
 @app.route("/assets/<path:name>")
 def site_assets(name):
     """The website's scripts, styles and pictures (the stat block code), read-only.
@@ -317,7 +443,7 @@ def site_assets(name):
         resp = send_from_directory(old_build, name)
     else:
         resp = send_from_directory(SITE / "assets", name)
-    resp.headers["Cache-Control"] = "no-cache"
+    resp.headers["Cache-Control"] = SITE_CACHE
     return resp
 
 
@@ -327,7 +453,7 @@ def site_data(name):
     if not name.endswith(".json"):
         abort(404)
     resp = send_from_directory(SITE / "data", name)
-    resp.headers["Cache-Control"] = "no-cache"
+    resp.headers["Cache-Control"] = SITE_CACHE
     return resp
 
 
@@ -337,9 +463,69 @@ def dice_images(name):
     return send_from_directory(TOOLS.parent / "dice", name)
 
 
+# what each kind of picture is (Windows' own list may not know them: a browser then refuses them, with nosniff)
+IMAGE_MIME = {"png": "image/png", "jpg": "image/jpeg", "jpeg": "image/jpeg", "webp": "image/webp", "gif": "image/gif", "svg": "image/svg+xml", "avif": "image/avif"}
+
+# Smaller copies of the pictures (WebP, made once and kept): ?w=256 for the library's thumbnails,
+# ?w=1024 for the board's first look (then the picture itself), ?w=full for a big picture as a
+# lighter file of the same size (a 35 MB map PNG is a few MB of WebP). Small pictures: the original.
+PREVIEWS = IMAGES / "_previews"
+PREVIEW_SIZES = {"256": 256, "1024": 1024, "full": 0}
+FULL_REENCODE = 3 * 1024 * 1024  # 'full' only for originals bigger than this
+_preview_locks: dict = {}
+
+
+def _preview(name: str, size: str):
+    """The copy of IMAGES/name at that size (made the first time it is asked for), or None: the original will do."""
+    w = PREVIEW_SIZES.get(size or "")
+    src = IMAGES / name
+    if w is None or "/" in name or "\\" in name or not src.is_file() or src.suffix.lower() in (".svg", ".gif"):
+        return None
+    out = PREVIEWS / f"{src.stem}-{size}.webp"
+    if out.is_file():
+        return out
+    if not w and src.stat().st_size <= FULL_REENCODE:
+        return None
+    with _lock:
+        lk = _preview_locks.setdefault(out.name, threading.Lock())
+    with lk:
+        if out.is_file():
+            return out
+        try:
+            from PIL import Image
+            with Image.open(src) as im:
+                if w and max(im.size) <= w:
+                    return None
+                alpha = im.mode in ("RGBA", "LA", "PA") or (im.mode == "P" and "transparency" in im.info)
+                im = im.convert("RGBA" if alpha else "RGB")
+                im.thumbnail((w or 16383, w or 16383), Image.LANCZOS)
+                PREVIEWS.mkdir(parents=True, exist_ok=True)
+                tmp = PREVIEWS / f"{out.stem}.{os.getpid()}.tmp"
+                im.save(tmp, "WEBP", quality=80 if w else 90, method=4)
+            os.replace(tmp, out)
+            return out
+        except Exception as e:  # (a picture Pillow can't read: the original)
+            print(f"[tablero] sin copia reducida de {name}: {e}", flush=True)
+            return None
+
+
+def _warm_previews(names, delay=0.0):
+    """Make the copies ahead (in the background): the first player to ask doesn't wait for them"""
+    def run():
+        time.sleep(delay)
+        for n in names:
+            for size in PREVIEW_SIZES:
+                _preview(n, size)
+    threading.Thread(target=run, daemon=True, name="previews").start()
+
+
 @app.route("/img/<name>")
 def image_file(name):
-    resp = send_from_directory(IMAGES, name)
+    small = _preview(name, request.args.get("w", "")) if request.args.get("w") else None
+    if small:
+        resp = send_from_directory(PREVIEWS, small.name, mimetype="image/webp")
+    else:
+        resp = send_from_directory(IMAGES, name, mimetype=IMAGE_MIME.get(Path(name).suffix.lower().lstrip(".")))
     resp.headers["Cache-Control"] = "public, max-age=31536000, immutable"  # named by content: never changes
     # an uploaded picture is only ever a picture: an SVG opened on its own runs no script
     resp.headers["Content-Security-Policy"] = "default-src 'none'; img-src 'self' data:; style-src 'unsafe-inline'; sandbox"
@@ -362,7 +548,8 @@ def _visible_image_ids(code: str, pid: str) -> set:
     if not bid or not (BOARDS / f"{bid}.json").exists():
         return set()
     b = session(bid).visible("player")
-    return {it.get("image") for it in b["items"] if it.get("image")} | set(b.get("tilesets") or [])
+    scene = {hub_for(bid).vn.get("bg")}  # 📖 Escena: the room's background
+    return ({it.get(k) for it in b["items"] for k in ("image", "portrait") if it.get(k)} | set(b.get("tilesets") or []) | scene) - {None}
 
 
 @app.route("/api/images")
@@ -417,6 +604,7 @@ def api_image_upload():
         if not stored:
             IMAGES.mkdir(parents=True, exist_ok=True)
             (IMAGES / file).write_bytes(data)
+            _warm_previews([file])
         name = (request.form.get("name") or Path(f.filename or "imagen").stem or "imagen").strip()[:80]
         meta = {"id": iid, "file": file, "sha1": sha, "name": name,
                 "category": (request.form.get("category") or "Otros").strip()[:40],
@@ -546,6 +734,7 @@ def api_image_replace(iid):
         if not stored:
             IMAGES.mkdir(parents=True, exist_ok=True)
             (IMAGES / file).write_bytes(data)
+            _warm_previews([file])
         meta.update(file=file, sha1=sha, width=int(float(request.form.get("width") or 0)),
                     height=int(float(request.form.get("height") or 0)))
         tile = int(float(request.form.get("tile") or 0))
@@ -595,7 +784,12 @@ def api_image_delete(iid):
 # ─────────────────────────────────────────────────────────────── 3D models (Vista 3D)
 # A model is one .obj / .fbx / .glb / .gltf with the files it needs (.mtl, .bin, textures), kept
 # together in models/<id>/ under their own names (that is how the model asks for them), plus
-# thumb.png: how it looks from above, drawn by the browser on upload (the 2D board shows that).
+# thumb.png: how it looks from above, drawn by the browser on upload (the library and 2D tokens show that).
+#
+# kind: "figure" (a token: on a base, may come with its 2D image and its stat block), "structure" (a
+# building, a ruin, a tree…: placed on the map layer at its own proportions, dims, and in 2D drawn as
+# top.png, its exact view from straight above, which the GM's browser makes the first time it's needed)
+# or "prop" (furniture and decor: as a structure, but placed at about a square).
 
 MODEL_ID_RE = re.compile(r"^[a-f0-9]{16}$")
 MODEL_FILE_RE = re.compile(r"^[A-Za-z0-9 _.()+-]{1,120}$")
@@ -605,6 +799,15 @@ def _model_file_name(name: str) -> str | None:
     """Only the file's own name (no folders), and nothing odd in it"""
     base = Path((name or "").replace("\\", "/")).name.strip()
     return base if MODEL_FILE_RE.match(base) and base not in (".", "..") else None
+
+
+def _model_dims(v):
+    """[x, y, z]: its size (in its own units), from the browser"""
+    try:
+        d = [float(x) for x in (json.loads(v) if isinstance(v, str) else v)][:3]
+        return d if len(d) == 3 and all(0 < x < 1e7 for x in d) else None
+    except (TypeError, ValueError):
+        return None
 
 
 def _models_seen_by(code: str, pid: str) -> set:
@@ -620,17 +823,20 @@ def api_models():
     if not w:
         abort(403)
     lib = _read(MODEL_INDEX, [])
-    if w[0] == "player":   # the ones on the board they can see
+    if w[0] == "player":   # their own, and the ones on the board they can see
         shown = _models_seen_by(w[2], w[1])
-        lib = [m for m in lib if m.get("id") in shown]
+        lib = [m for m in lib if m.get("id") in shown or m.get("owner") == w[1]]
     return jsonify(lib)
 
 
 @app.route("/api/models", methods=["POST"])
 def api_model_upload():
-    """multipart (GM): files (the model and what it needs), main (which one is the model), thumb (PNG),
-    name, category, tags. The same set of files twice is stored once."""
-    need_gm()
+    """multipart: files (the model and what it needs), main (which one is the model), thumb (PNG),
+    name, category, tags. The same set of files twice is stored once. A player's: theirs (a figure)."""
+    w = who()
+    if not w:
+        abort(403)
+    owner = w[1] if w[0] == "player" else None
     files = request.files.getlist("files")
     main = _model_file_name(request.form.get("main") or "")
     if not files or not main or Path(main).suffix.lower().lstrip(".") not in MODEL_MAIN:
@@ -649,7 +855,7 @@ def api_model_upload():
         got[name] = data
     if main not in got:
         return jsonify({"error": "el modelo no está entre los archivos"}), 400
-    h = hashlib.sha1()
+    h = hashlib.sha1((owner or "").encode())   # (a player's copy is theirs, apart from anyone else's)
     for name in sorted(got):
         h.update(name.encode() + b"\0" + hashlib.sha1(got[name]).digest())
     mid = h.hexdigest()[:16]
@@ -669,7 +875,13 @@ def api_model_upload():
         meta = {"id": mid, "name": (request.form.get("name") or Path(main).stem).strip()[:80] or "Modelo",
                 "category": (request.form.get("category") or "Figuras").strip()[:40],
                 "tags": _clean_tags(request.form.get("tags") or ""), "main": main, "files": sorted(got),
-                "size": total, "thumb": (folder / "thumb.png").exists(), "scale": 1, "created": time.time()}
+                "size": total, "thumb": (folder / "thumb.png").exists(), "scale": 1, "created": time.time(),
+                "kind": request.form.get("kind") if request.form.get("kind") in ("structure", "prop") and not owner else "figure"}
+        if owner:
+            meta["owner"] = owner
+        dims = _model_dims(request.form.get("dims"))
+        if dims:
+            meta["dims"] = dims
         lib.append(meta)
         _write(MODEL_INDEX, lib)
     return jsonify(meta)
@@ -677,14 +889,21 @@ def api_model_upload():
 
 @app.route("/api/models/<mid>", methods=["PATCH"])
 def api_model_update(mid):
-    """(GM) name, category, tags, scale (how big it looks: 1 = fills its squares)"""
-    need_gm()
+    """(GM, or the player who uploaded it) name, category, tags, scale (how big it looks: 1 = fills its
+    squares), kind (figure / structure: the GM), dims, and for figures the 2D image and the stat block its tokens get"""
+    w = who()
+    if not w:
+        abort(403)
     body = request.get_json(force=True) or {}
     with _lock:
         lib = _read(MODEL_INDEX, [])
         meta = next((m for m in lib if m.get("id") == mid), None)
         if not meta:
             return jsonify({"error": "no existe"}), 404
+        if w[0] == "player" and meta.get("owner") != w[1]:
+            abort(403)
+        if w[0] == "player":
+            body.pop("kind", None)
         if "name" in body:
             meta["name"] = str(body["name"]).strip()[:80] or meta["name"]
         if "category" in body:
@@ -696,17 +915,64 @@ def api_model_update(mid):
                 meta["scale"] = max(0.05, min(20.0, float(body["scale"])))
             except (TypeError, ValueError):
                 pass
+        if body.get("kind") in ("figure", "structure", "prop"):
+            meta["kind"] = body["kind"]
+        if "dims" in body and _model_dims(body["dims"]):
+            meta["dims"] = _model_dims(body["dims"])
+        if "image" in body:   # its 2D picture (an image of the library)
+            iid = str(body["image"] or "")
+            if iid and not any(m.get("id") == iid for m in _read(LIBRARY, [])):
+                return jsonify({"error": "esa imagen no está en la biblioteca"}), 400
+            if iid:
+                meta["image"] = iid
+            else:
+                meta.pop("image", None)
+        if "sheet" in body:   # the stat block its tokens get
+            sid = str(body["sheet"] or "")
+            if sid and not _sheet_choosable(sid, w):
+                return jsonify({"error": "ficha no válida"}), 400
+            if sid:
+                meta["sheet"] = sid
+            else:
+                meta.pop("sheet", None)
+        _write(MODEL_INDEX, lib)
+    return jsonify(meta)
+
+
+@app.route("/api/models/<mid>/top", methods=["POST"])
+def api_model_top(mid):
+    """(GM) top.png: the model seen from straight above, filling its footprint (the 2D board's picture of
+    a structure). Made by the GM's browser the first time a structure needs it."""
+    need_gm()
+    if not MODEL_ID_RE.match(mid):
+        abort(404)
+    f = request.files.get("file")
+    data = f.read(8 * 1024 * 1024 + 1) if f else b""
+    if not data or len(data) > 8 * 1024 * 1024 or data[:8] != b"\x89PNG\r\n\x1a\n":
+        return jsonify({"error": "falta la imagen (PNG)"}), 400
+    with _lock:
+        lib = _read(MODEL_INDEX, [])
+        meta = next((m for m in lib if m.get("id") == mid), None)
+        if not meta:
+            return jsonify({"error": "no existe"}), 404
+        (MODELS / mid / "top.png").write_bytes(data)
+        meta["top"] = int(time.time())   # (a new picture: a new address)
         _write(MODEL_INDEX, lib)
     return jsonify(meta)
 
 
 @app.route("/api/models/<mid>", methods=["DELETE"])
 def api_model_delete(mid):
-    need_gm()
+    w = who()
+    if not w:
+        abort(403)
     if not MODEL_ID_RE.match(mid):
         abort(404)
     with _lock:
         lib = _read(MODEL_INDEX, [])
+        meta = next((m for m in lib if m.get("id") == mid), None)
+        if w[0] == "player" and (not meta or meta.get("owner") != w[1]):   # (a player: only their own)
+            abort(403)
         _write(MODEL_INDEX, [m for m in lib if m.get("id") != mid])
         shutil.rmtree(MODELS / mid, ignore_errors=True)
     return jsonify({"ok": True})
@@ -781,8 +1047,8 @@ def sheet_data(sid: str):
 
 
 def _controlled_sheets(w) -> set:
-    """Sheets of the tokens this player controls on their room's board."""
-    bid = (rooms().get(w[2]) or {}).get("board")
+    """Sheets of the tokens this player controls in their scene (the room's, or their own if the GM split the party)."""
+    bid = player_scene(rooms().get(w[2]) or {}, w[1])
     s = session(bid) if bid else None
     if not s or s.board is None:
         return set()
@@ -832,6 +1098,38 @@ def api_sheet_get(sid):
     if data is None:
         return jsonify({"error": "no se pudo leer la ficha"}), 404
     return jsonify({**meta, "data": data})
+
+
+@app.route("/api/sheets/<sid>", methods=["PUT"])
+def api_sheet_update(sid):
+    """{data}: a new version of an uploaded stat block (edited in the Creador from the board): by
+    whoever uploaded it, or the GM. Every token with it follows."""
+    w = who()
+    if not w:
+        abort(403)
+    if (request.content_length or 0) > MAX_SHEET:
+        return jsonify({"error": "la ficha pasa de 2 MB"}), 400
+    meta = sheet_meta(sid)
+    if not meta or meta.get("source") != "upload":
+        return jsonify({"error": "esta ficha no se puede cambiar aquí"}), 400
+    if w[0] == "player" and meta.get("owner") != w[1]:
+        abort(403)
+    d = (request.get_json(force=True, silent=True) or {}).get("data")
+    if sheet_kind(d) != meta.get("kind"):
+        return jsonify({"error": "no es una ficha del mismo tipo"}), 400
+    with _lock:
+        index = uploaded_sheets()
+        m = next((x for x in index if x.get("id") == sid), None)
+        if m is None:
+            return jsonify({"error": "no existe esa ficha"}), 404
+        _write(SHEETS / f"{sid[3:]}.json", d)
+        m["name"] = str(d.get("name") or m.get("name") or "Ficha").strip()[:80]
+        if isinstance(d.get("level"), (int, float)):
+            m["level"] = d["level"]
+        m["sha1"] = hashlib.sha1(json.dumps(d, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
+        m["updated"] = time.time()
+        _write(SHEET_INDEX, index)
+    return jsonify(m)
 
 
 @app.route("/api/sheets", methods=["POST"])
@@ -1109,6 +1407,30 @@ def _order(n: int, shuffle: bool, first: int | None) -> list[int]:
     return order
 
 
+@app.route("/api/live/<bid>/vn", methods=["POST"])
+def live_vn(bid):
+    """(GM) 📖 Escena, for the whole room (every player, in whatever scene they are): {on?, bg?}"""
+    role, pid, code = need_board(bid)
+    if role != "gm":
+        abort(403)
+    body = request.get_json(force=True) or {}
+    h = hub_for(bid)
+    with h.lock:
+        v = dict(h.vn)
+        if "on" in body:
+            v["on"] = bool(body["on"])
+        if "bg" in body:
+            if body.get("bg"):
+                v["bg"] = str(body["bg"])[:80]
+            else:
+                v.pop("bg", None)
+        h.vn = v
+        ESCENAS.mkdir(parents=True, exist_ok=True)
+        _write(h.vn_path(), v)
+    h.send(lambda r, q: _event("vn", v))
+    return jsonify(v)
+
+
 @app.route("/api/live/<bid>/music", methods=["POST"])
 def live_music(bid):
     """The GM's controls: {action: play | toggle | next | prev | seek | shuffle | repeat | stop, ...}
@@ -1256,6 +1578,7 @@ class Hub:
         self.key = key   # "sala:<code>" or "b:<board>"
         self.lock = threading.RLock()
         self.music = new_playback()   # (not saved)
+        self.vn = _read(self.vn_path(), None) or {"on": False}   # 📖 Escena: open or not, and its background (saved)
         self._music_timer: threading.Timer | None = None
         self.rolls: list[dict] = _read(self.rolls_path(), None)
         if self.rolls is None:   # a room opened on a board: that board's rolls so far
@@ -1264,6 +1587,9 @@ class Hub:
 
     def rolls_path(self) -> Path:
         return ROLLS / (f"sala-{self.key[5:]}.json" if self.key.startswith("sala:") else f"{self.key[2:]}.json")
+
+    def vn_path(self) -> Path:
+        return ESCENAS / (f"sala-{self.key[5:]}.json" if self.key.startswith("sala:") else f"{self.key[2:]}.json")
 
     def rolls_for(self, role: str, pid: str | None) -> list[dict]:
         """The GM: every roll. A player: their own, and the other players' public ones."""
@@ -1341,7 +1667,7 @@ def live_events(bid):
         try:
             yield "retry: 1500\n\n"
             yield _event("snapshot", {"board": s.visible(role, pid), "me": me, "rolls": h.rolls_for(role, pid),
-                                      "music": playback_view(h)})
+                                      "music": playback_view(h), "vn": h.vn})
             broadcast_presence()
             while True:
                 try:
@@ -2210,6 +2536,8 @@ if __name__ == "__main__":
         print(f"\nTablero de Raldamain  ->  {url}   (jugadores: {url}jugar"
               + (f" · en la red: http://{lan_ip()}:{PORT}/jugar" if LAN else "") + ")\n", flush=True)
         watcher = prepare_client(watch=os.environ.get("LIVE_RELOAD", "1") != "0")
+    if IMAGES.is_dir():  # the copies of the pictures already there (once: then they are kept)
+        _warm_previews(sorted(f.name for f in IMAGES.iterdir() if f.is_file()), delay=5)
     try:
         # the page reloads after every rebuild of the client (unless a change is still being sent)
         live_reload.run(app, PORT, url, watch=["tools/tablero/dist/index.html", "tools/tablero/dist/app/*",

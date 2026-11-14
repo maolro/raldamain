@@ -10,6 +10,18 @@ export const firstLevel = (b: Board) => levelsOf(b)[0].id;
 export const levelOf = (b: Board, x: { level?: string }) => x.level || firstLevel(b);
 export const levelName = (b: Board, id: string) => levelsOf(b).find(l => l.id === id)?.name || '¿?';
 
+/** A level's page, in squares: its own size (an interior, a cellar…), else the board's */
+export function pageOf(b: Board, level: string): { width: number; height: number } {
+  const l = b.levels?.find(x => x.id === level);
+  return { width: l?.width || b.width, height: l?.height || b.height };
+}
+
+/** Give a level its page size (with a single level, the board's own) */
+export function setPage(b: Board, level: string, width: number, height: number) {
+  if (!b.levels?.length) { b.width = width; b.height = height; return; }
+  b.levels = b.levels.map(l => (l.id === level ? { ...l, width, height } : l));
+}
+
 /** Write every thing's level down (before the first level changes: reordering, deleting) */
 export function pinLevels(b: Board) {
   const first = firstLevel(b);
