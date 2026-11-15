@@ -65,9 +65,12 @@
     0
    ],
    "el": 14,
+   "group": "",
+   "local": {},
    "mode": "ideo",
    "name": "Casco Antiguo",
    "pop": 120000,
+   "seed": "Casco Antiguo",
    "slates": {
     "C": {
      "loyalty": 0.95,
@@ -175,14 +178,15 @@
      ]
     }
    },
+   "split": false,
    "spread": 4,
+   "subSpread": 1.5,
    "turnout": 80,
    "v": {
     "C": 12,
     "S": 30,
     "U": 9
    },
-   "seed": "Casco Antiguo",
    "w": [
     1,
     1,
@@ -192,11 +196,7 @@
     1,
     1,
     1
-   ],
-   "local": {},
-   "group": "",
-   "split": false,
-   "subSpread": 1.5
+   ]
   },
   {
    "center": [
@@ -210,9 +210,12 @@
     0
    ],
    "el": 20,
+   "group": "",
+   "local": {},
    "mode": "ideo",
    "name": "Ensanche",
    "pop": 40000,
+   "seed": "Ensanche",
    "slates": {
     "C": {
      "loyalty": 0.95,
@@ -338,14 +341,15 @@
      ]
     }
    },
+   "split": false,
    "spread": 4,
+   "subSpread": 1.5,
    "turnout": 82,
    "v": {
     "C": 2,
     "S": 20,
     "U": 60
    },
-   "seed": "Ensanche",
    "w": [
     1,
     1,
@@ -355,11 +359,7 @@
     1,
     1,
     1
-   ],
-   "local": {},
-   "group": "",
-   "split": false,
-   "subSpread": 1.5
+   ]
   },
   {
    "center": [
@@ -373,9 +373,12 @@
     -3
    ],
    "el": 6,
+   "group": "",
+   "local": {},
    "mode": "ideo",
    "name": "Distrito Portuario",
    "pop": 100000,
+   "seed": "Distrito Portuario",
    "slates": {
     "C": {
      "loyalty": 0.95,
@@ -467,14 +470,15 @@
      ]
     }
    },
+   "split": false,
    "spread": 4,
+   "subSpread": 1.5,
    "turnout": 75,
    "v": {
     "C": 14,
     "S": 29,
     "U": 31
    },
-   "seed": "Distrito Portuario",
    "w": [
     1,
     1,
@@ -484,11 +488,7 @@
     1,
     1,
     1
-   ],
-   "local": {},
-   "group": "",
-   "split": false,
-   "subSpread": 1.5
+   ]
   },
   {
    "center": [
@@ -502,9 +502,12 @@
     0
    ],
    "el": 4,
+   "group": "",
+   "local": {},
    "mode": "ideo",
    "name": "Distrito Industrial",
    "pop": 200000,
+   "seed": "Distrito Industrial",
    "slates": {
     "C": {
      "loyalty": 0.95,
@@ -592,14 +595,15 @@
      ]
     }
    },
+   "split": false,
    "spread": 4,
+   "subSpread": 1.5,
    "turnout": 60,
    "v": {
     "C": 31,
     "S": 14,
     "U": 24
    },
-   "seed": "Distrito Industrial",
    "w": [
     1,
     1,
@@ -609,11 +613,7 @@
     1,
     1,
     1
-   ],
-   "local": {},
-   "group": "",
-   "split": false,
-   "subSpread": 1.5
+   ]
   },
   {
    "center": [
@@ -627,9 +627,12 @@
     -3
    ],
    "el": 10,
+   "group": "",
+   "local": {},
    "mode": "ideo",
    "name": "Ciudad Universitaria",
    "pop": 30000,
+   "seed": "Ciudad Universitaria",
    "slates": {
     "C": {
      "loyalty": 0.95,
@@ -729,14 +732,15 @@
      ]
     }
    },
+   "split": false,
    "spread": 4,
+   "subSpread": 1.5,
    "turnout": 80,
    "v": {
     "C": 20,
     "S": 50,
     "U": 14
    },
-   "seed": "Ciudad Universitaria",
    "w": [
     1,
     1,
@@ -746,11 +750,7 @@
     1,
     1,
     1
-   ],
-   "local": {},
-   "group": "",
-   "split": false,
-   "subSpread": 1.5
+   ]
   },
   {
    "center": [
@@ -764,9 +764,12 @@
     3
    ],
    "el": 6,
+   "group": "",
+   "local": {},
    "mode": "ideo",
    "name": "Monte Kelsar",
    "pop": 10000,
+   "seed": "Monte Kelsar",
    "slates": {
     "C": {
      "loyalty": 0.95,
@@ -864,14 +867,15 @@
      ]
     }
    },
+   "split": false,
    "spread": 4,
+   "subSpread": 1.5,
    "turnout": 80,
    "v": {
     "C": 1,
     "S": 8,
     "U": 72
    },
-   "seed": "Monte Kelsar",
    "w": [
     1,
     1,
@@ -881,11 +885,7 @@
     1,
     1,
     1
-   ],
-   "local": {},
-   "group": "",
-   "split": false,
-   "subSpread": 1.5
+   ]
   }
  ],
  "editP": "p1",
@@ -1200,7 +1200,7 @@
    "pos": [
     7,
     1,
-    0,
+    -1,
     2,
     0,
     3,
@@ -2446,6 +2446,7 @@
   {
    "appeal": 0.3,
    "cand": "Flavio Marqueda",
+   "charisma": 0,
    "color": "#2a78d6",
    "id": "U",
    "name": "Unionistas",
@@ -2459,12 +2460,12 @@
     6,
     2
    ],
-   "charisma": 0,
    "reputation": -0.3
   },
   {
    "appeal": 0.1,
    "cand": "Clara Montiel",
+   "charisma": 0,
    "color": "#eb6834",
    "id": "S",
    "name": "Soberanistas",
@@ -2478,12 +2479,12 @@
     -3,
     -4
    ],
-   "charisma": 0,
    "reputation": 0
   },
   {
    "appeal": 0,
    "cand": "Rosa Ibarzábal",
+   "charisma": 0.2,
    "color": "#b3242f",
    "id": "C",
    "name": "Carmesí",
@@ -2497,7 +2498,6 @@
     -4,
     -3
    ],
-   "charisma": 0.2,
    "reputation": 0
   }
  ],
@@ -2713,14 +2713,14 @@
   "threshold": 0,
   "thresholdScope": "district",
   "bonus": 0,
+  "gerry": 0,
+  "gerryBy": "",
   "national": {
    "seats": 0,
    "method": "dhondt",
    "mode": "parallel",
    "threshold": 0
-  },
-  "gerry": 0,
-  "gerryBy": ""
+  }
  },
  "version": 2
 }
