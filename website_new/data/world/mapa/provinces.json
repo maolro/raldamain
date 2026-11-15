@@ -978,9 +978,12 @@
  },
  "344": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial"
+   "Telares mecánicos",
+   "Fundiciones",
+   "Talleres de armas",
+   "Muelles fluviales del Brezán",
+   "Barrios obreros",
+   "Mercado"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
@@ -988,13 +991,13 @@
    {
     "culture": "Ustileses",
     "group": "Ustileses del Heredero",
-    "pct": 44,
+    "pct": 32,
     "religion": "Culto del Heredero"
    },
    {
     "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
+    "pct": 48,
     "religion": "Viejo Feynismo"
    },
    {
@@ -1006,49 +1009,45 @@
    {
     "culture": "Kratenses",
     "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
-   },
-   {
-    "culture": "Mazarinos",
-    "group": "Mazarinos",
     "pct": 4,
-    "religion": "Viejo Feynismo"
+    "religion": "Fe Espiritual"
    },
    {
     "culture": "Varios",
     "group": "Otros",
-    "pct": 3,
+    "pct": 4,
     "religion": "Varias"
    }
   ],
   "dev": {
-   "tax": 9,
-   "prod": 9,
-   "man": 6
+   "man": 4,
+   "prod": 14,
+   "tax": 9
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
-  "fort": 3,
+  "economy": "El corazón industrial de Deverencia: los principales telares, fundiciones y manufacturas se apiñan a lo largo del río Brezán, que baja hasta Deverentio. Aquí se hace la riqueza de la ciudad, con mano de obra barata llegada de las regiones más pobres del imperio.",
+  "estates": "Alta burguesía industrial (Galeasis, Tintorello, Marqueda), capataces y gremios, obreros; fuerte presencia del Movimiento Carmesí",
+  "fort": 2,
   "governor": {
    "name": "Florin Galeasis",
-   "title": "Conde de Brezanica"
+   "title": "Conde de Brezanica (título comprado)"
   },
   "language": "Ustilés",
-  "name": "Brezanica",
-  "notes": "Condado de Brezanica (Deverenzia), en manos de la casa Galeasis: llanura, vino.",
+  "name": "Cuenca del Brezán",
+  "notes": "Deverencia Sur. La Cuenca del Brezán es la cara más rica y a la vez la más miserable de Deverencia: chimeneas, río ennegrecido, barrios obreros hacinados de migrantes. El conde Galeasis, banquero que compró su título, gobierna para las fábricas; la clase obrera escucha cada vez más al Movimiento Carmesí.",
   "owner": "pais1",
-  "population": 1587000,
-  "region": "Deverenzia",
-  "religion": "Culto del Heredero",
+  "population": 1900000,
+  "region": "Deverencia",
+  "religion": "Viejo Feynismo",
   "resources": [
-   "Vino",
    "Paño",
-   "Vidrio"
+   "Hierro",
+   "Vidrio",
+   "Armas de fuego"
   ],
   "settlement": "Brezanica",
   "terrain": "Llanura",
-  "tradeGood": "Vino",
-  "unrest": "Liberal y autonomista"
+  "tradeGood": "Paño",
+  "unrest": "Muy alta: huelgas y agitación del Movimiento Carmesí"
  },
  "493": {
   "buildings": [
@@ -2532,7 +2531,7 @@
  },
  "117": {
   "name": "Thakram",
-  "owner": "pais5"
+  "owner": "chothgar_de_yathan_ra"
  },
  "361": {
   "buildings": [
@@ -3292,7 +3291,7 @@
   "unrest": "Frontera disputada"
  },
  "96": {
-  "owner": "pais5",
+  "owner": "chothgar_de_yathan_ra",
   "name": "Prakshena"
  },
  "130": {
@@ -3361,151 +3360,134 @@
  },
  "308": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial"
+   "Puestos de vigilancia en los pasos",
+   "Aldeas de montaña"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
   "demographics": [
    {
+    "group": "Montañeses de Haizene",
     "culture": "Ustileses",
+    "religion": "Viejo Feynismo",
+    "pct": 55
+   },
+   {
+    "group": "Gentes de las tradiciones antiguas",
+    "culture": "Ustileses",
+    "religion": "Fe Espiritual",
+    "pct": 30
+   },
+   {
     "group": "Ustileses del Heredero",
-    "pct": 44,
-    "religion": "Culto del Heredero"
-   },
-   {
     "culture": "Ustileses",
-    "group": "Ustileses feynistas",
-    "pct": 32,
-    "religion": "Viejo Feynismo"
+    "religion": "Culto del Heredero",
+    "pct": 10
    },
    {
-    "culture": "Ustileses",
-    "group": "Ustileses no creyentes",
-    "pct": 12,
-    "religion": "Ninguna"
-   },
-   {
-    "culture": "Kratenses",
-    "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
-   },
-   {
-    "culture": "Mazarinos",
-    "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
-   },
-   {
+    "group": "Fugitivos de Dairov",
     "culture": "Varios",
-    "group": "Otros",
-    "pct": 3,
-    "religion": "Varias"
+    "religion": "Varias",
+    "pct": 5
    }
   ],
   "dev": {
-   "tax": 6,
-   "prod": 5,
+   "tax": 1,
+   "prod": 2,
    "man": 2
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
-  "fort": 3,
+  "estates": "Clanes de montaña, pastores",
+  "fort": 2,
   "governor": {
-   "name": "Casimiro Goicoetxea",
-   "title": "Conde de Oliveto"
+   "title": "Conde de Ibarluze",
+   "name": "Casimiro Goicoetxea"
   },
   "language": "Ustilés",
-  "name": "Oliveto",
-  "notes": "Condado de Oliveto (Deverenzia), en manos de la casa Goicoetxea: colinas, grano.",
+  "name": "Sierra de Haizene",
+  "notes": "Deverencia Norte. Cordillera alta y fría que separa Deverencia del resto del Ustal y hace frontera con Dairov. Sus gentes desconfían de los forasteros y conservan tradiciones antiguas que el imperio no ha logrado erradicar. Sus pasos son una ruta de huida para quienes escapan de Dairov, aunque pocos salen de la sierra con vida.",
   "owner": "pais1",
-  "population": 732000,
-  "region": "Deverenzia",
-  "religion": "Culto del Heredero",
+  "population": 220000,
+  "region": "Deverencia",
+  "religion": "Viejo Feynismo",
   "resources": [
-   "Grano",
+   "Ganado",
    "Lana",
-   "Vino"
+   "Madera"
   ],
-  "settlement": "Oliveto",
-  "terrain": "Colinas",
-  "tradeGood": "Grano",
-  "unrest": "Liberal y autonomista"
+  "settlement": "Ibarluze",
+  "terrain": "Montañas",
+  "tradeGood": "Ganado",
+  "unrest": "Cerrada a forasteros; tradiciones antiguas sin erradicar",
+  "economy": "Pastoreo y madera en aldeas de montaña aisladas."
  },
  "302": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial",
-   "Puerto"
+   "Arrozales",
+   "Diques",
+   "Aldeas sobre pilotes"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
   "demographics": [
    {
-    "culture": "Ustileses",
-    "group": "Ustileses del Heredero",
-    "pct": 44,
-    "religion": "Culto del Heredero"
-   },
-   {
-    "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
-    "religion": "Viejo Feynismo"
-   },
-   {
     "culture": "Ustileses",
+    "religion": "Viejo Feynismo",
+    "pct": 50
+   },
+   {
+    "group": "Ustileses del Heredero",
+    "culture": "Ustileses",
+    "religion": "Culto del Heredero",
+    "pct": 28
+   },
+   {
+    "group": "Gentes de las tradiciones antiguas",
+    "culture": "Ustileses",
+    "religion": "Fe Espiritual",
+    "pct": 10
+   },
+   {
     "group": "Ustileses no creyentes",
-    "pct": 12,
-    "religion": "Ninguna"
+    "culture": "Ustileses",
+    "religion": "Ninguna",
+    "pct": 5
    },
    {
-    "culture": "Kratenses",
-    "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
-   },
-   {
-    "culture": "Mazarinos",
-    "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
-   },
-   {
+    "group": "Forajidos y gentes sin papeles",
     "culture": "Varios",
-    "group": "Otros",
-    "pct": 3,
-    "religion": "Varias"
+    "religion": "Varias",
+    "pct": 7
    }
   ],
   "dev": {
-   "tax": 7,
+   "tax": 4,
    "prod": 5,
-   "man": 4
+   "man": 2
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
-  "fort": 3,
+  "estates": "Arroceros, barqueros, terratenientes del delta",
+  "fort": 1,
   "governor": {
-   "name": "Anastasio Tavares",
-   "title": "Conde de Lipana"
+   "title": "Conde de Paludella",
+   "name": "Anastasio Tavares"
   },
   "language": "Ustilés",
-  "name": "Lipana",
-  "notes": "Condado de Lipana (Deverenzia), en manos de la casa Tavares: costa, pescado.",
+  "name": "Delta del Ardi",
+  "notes": "Deverencia Norte. El río Ardi muere aquí en un delta inmenso. Sus marismas casi infranqueables y la bruma que las cubre alimentan rumores de espíritus y brujas, y hacen del delta un escondite ideal para bandidos y forajidos.",
   "owner": "pais1",
-  "population": 968000,
-  "region": "Deverenzia",
-  "religion": "Culto del Heredero",
+  "population": 740000,
+  "region": "Deverencia",
+  "religion": "Viejo Feynismo",
   "resources": [
+   "Arroz",
    "Pescado",
-   "Vidrio"
+   "Junco"
   ],
-  "settlement": "Lipana",
-  "terrain": "Costa",
-  "tradeGood": "Pescado",
-  "unrest": "Liberal y autonomista"
+  "settlement": "Paludella",
+  "terrain": "Pantano",
+  "tradeGood": "Arroz",
+  "unrest": "Bandidaje en las marismas",
+  "economy": "El enorme delta del Ardi es tierra ideal para el arroz, que alimenta a los barrios obreros de la Cuenca."
  },
  "346": {
   "name": "Miyatori",
@@ -3776,7 +3758,7 @@
  },
  "178": {
   "name": "Maansiriya",
-  "owner": "pais5"
+  "owner": "chothgar_de_yathan_ra"
  },
  "66": {
   "buildings": [
@@ -4202,7 +4184,7 @@
   "owner": "pais3"
  },
  "183": {
-  "owner": "pais5"
+  "owner": "chothgar_de_yathan_ra"
  },
  "132": {
   "name": "",
@@ -4630,9 +4612,9 @@
    }
   ],
   "dev": {
-   "tax": 5,
+   "man": 1,
    "prod": 5,
-   "man": 1
+   "tax": 5
   },
   "estates": "Grandes Casas, gremios, burguesía mercantil",
   "fort": 2,
@@ -4641,11 +4623,11 @@
    "title": "Vizconde de Fontanella"
   },
   "language": "Ustilés",
-  "name": "Fontanella",
+  "name": "Elorrio",
   "notes": "Vizcondado de Fontanella (Deverenzia), en manos de la casa Cardenas: colinas, grano.",
   "owner": "pais1",
   "population": 596000,
-  "region": "Deverenzia",
+  "region": "El Ustal",
   "religion": "Culto del Heredero",
   "resources": [
    "Grano",
@@ -5556,7 +5538,7 @@
   "language": "Ayutano",
   "name": "Shigrun",
   "notes": "Sede del Jarl Rodvald y de Ilayda, hermana de Ayhan, que atan el reino nórdico a la dinastía ayhánida. Ayutan eligió el mekhatimismo hace dos siglos; el Jarl gobierna asesorado por las asambleas tribales y el Culto de los Ancestros conserva su millet.",
-  "owner": "pais3",
+  "owner": "ayutan",
   "population": 401000,
   "region": "Ayutan",
   "religion": "Mekhatimismo",
@@ -6178,9 +6160,11 @@
  },
  "363": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial"
+   "Base militar del ejército ustilés",
+   "Castillo de San Pantor",
+   "Encomienda de la Orden de Ascensión",
+   "Cuarteles",
+   "Mercado"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
@@ -6188,67 +6172,56 @@
    {
     "culture": "Ustileses",
     "group": "Ustileses del Heredero",
-    "pct": 44,
+    "pct": 58,
     "religion": "Culto del Heredero"
    },
    {
     "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
+    "pct": 30,
     "religion": "Viejo Feynismo"
    },
    {
     "culture": "Ustileses",
     "group": "Ustileses no creyentes",
-    "pct": 12,
+    "pct": 8,
     "religion": "Ninguna"
-   },
-   {
-    "culture": "Kratenses",
-    "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
-   },
-   {
-    "culture": "Mazarinos",
-    "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
    },
    {
     "culture": "Varios",
     "group": "Otros",
-    "pct": 3,
+    "pct": 4,
     "religion": "Varias"
    }
   ],
   "dev": {
-   "tax": 5,
-   "prod": 4,
-   "man": 4
+   "man": 7,
+   "prod": 5,
+   "tax": 5
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
-  "fort": 3,
+  "economy": "Llanura cerealista que abastece a la principal base militar de la región; los caminos hacia Sairenia pasan por aquí.",
+  "estates": "Mando militar regional, Caballeros de la Orden de Ascensión, campesinos",
+  "fort": 5,
   "governor": {
    "name": "Alaia Calderon",
    "title": "Condesa de Metilene"
   },
   "language": "Ustilés",
   "name": "Metilene",
-  "notes": "Condado de Salinella (Deverenzia), en manos de la casa Calderon: llanura, paño.",
+  "notes": "Deverencia Sur. Llanura al sur de las montañas de Carrasta, paso entre Deverencia y Sairenia y sede de la principal base del ejército ustilés en la región. Sobre un pilar de basalto se alza el Castillo de San Pantor, base regional de los Caballeros de la Orden de Ascensión, que vigilan los caminos y persiguen el bandidaje.",
   "owner": "pais1",
-  "population": 718000,
-  "region": "Deverenzia",
+  "population": 740000,
+  "region": "Deverencia",
   "religion": "Culto del Heredero",
   "resources": [
-   "Paño",
-   "Vidrio",
-   "Madera"
+   "Grano",
+   "Caballos",
+   "Basalto"
   ],
   "settlement": "Metilene",
   "terrain": "Llanura",
-  "tradeGood": "Paño",
-  "unrest": "Liberal y autonomista"
+  "tradeGood": "Grano",
+  "unrest": "Leal; muy militarizada"
  },
  "29": {
   "climate": "Subártico",
@@ -7001,76 +6974,71 @@
  },
  "343": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial"
+   "Gran acueducto rakashita",
+   "Pueblo sobre el acueducto",
+   "Molinos"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
   "demographics": [
    {
-    "culture": "Ustileses",
-    "group": "Ustileses del Heredero",
-    "pct": 44,
-    "religion": "Culto del Heredero"
-   },
-   {
-    "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
-    "religion": "Viejo Feynismo"
-   },
-   {
     "culture": "Ustileses",
+    "religion": "Viejo Feynismo",
+    "pct": 42
+   },
+   {
+    "group": "Ustileses del Heredero",
+    "culture": "Ustileses",
+    "religion": "Culto del Heredero",
+    "pct": 40
+   },
+   {
     "group": "Ustileses no creyentes",
-    "pct": 12,
-    "religion": "Ninguna"
+    "culture": "Ustileses",
+    "religion": "Ninguna",
+    "pct": 8
    },
    {
-    "culture": "Kratenses",
-    "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
-   },
-   {
-    "culture": "Mazarinos",
     "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
+    "culture": "Mazarinos",
+    "religion": "Viejo Feynismo",
+    "pct": 6
    },
    {
-    "culture": "Varios",
     "group": "Otros",
-    "pct": 3,
-    "religion": "Varias"
+    "culture": "Varios",
+    "religion": "Varias",
+    "pct": 4
    }
   ],
   "dev": {
    "tax": 3,
-   "prod": 3,
-   "man": 1
+   "prod": 4,
+   "man": 2
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
-  "fort": 2,
+  "estates": "Baronía, aldeanos, molineros",
+  "fort": 1,
   "governor": {
-   "name": "Argina Sorian",
-   "title": "Baronesa de Buenaguardia"
+   "title": "Baronesa de Pontiavolo",
+   "name": "Argina Sorian"
   },
   "language": "Ustilés",
-  "name": "Buenaguardia",
-  "notes": "Baronía de Buenaguardia (Deverenzia), en manos de la casa Sorian: bosques, madera.",
+  "name": "Pontiavolo",
+  "notes": "Deverencia Sur. Pontiavolo debe su nombre al gran acueducto rakashita que cruza el valle, con un pueblo entero construido sobre sus arcos.",
   "owner": "pais1",
-  "population": 323000,
-  "region": "Deverenzia",
-  "religion": "Culto del Heredero",
+  "population": 340000,
+  "region": "Deverencia",
+  "religion": "Viejo Feynismo",
   "resources": [
    "Madera",
-   "Vino"
+   "Grano"
   ],
-  "settlement": "Buenaguardia",
+  "settlement": "Pontiavolo",
   "terrain": "Bosque",
   "tradeGood": "Madera",
-  "unrest": "Liberal y autonomista"
+  "unrest": "Tranquila",
+  "economy": "Tierra de bosques y molinos; el gran acueducto rakashita aún lleva agua a la llanura."
  },
  "163": {
   "name": "",
@@ -7078,76 +7046,68 @@
  },
  "342": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial"
+   "Minas de la casa Tintorello",
+   "Canteras de mármol",
+   "Fundición de bronce estigio",
+   "Cuartel de la guardia de minas"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
   "demographics": [
    {
     "culture": "Ustileses",
+    "group": "Ustileses feynistas",
+    "pct": 58,
+    "religion": "Viejo Feynismo"
+   },
+   {
+    "culture": "Ustileses",
     "group": "Ustileses del Heredero",
-    "pct": 44,
+    "pct": 24,
     "religion": "Culto del Heredero"
    },
    {
     "culture": "Ustileses",
-    "group": "Ustileses feynistas",
-    "pct": 32,
-    "religion": "Viejo Feynismo"
-   },
-   {
-    "culture": "Ustileses",
     "group": "Ustileses no creyentes",
-    "pct": 12,
+    "pct": 14,
     "religion": "Ninguna"
-   },
-   {
-    "culture": "Kratenses",
-    "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
-   },
-   {
-    "culture": "Mazarinos",
-    "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
    },
    {
     "culture": "Varios",
     "group": "Otros",
-    "pct": 3,
+    "pct": 4,
     "religion": "Varias"
    }
   ],
   "dev": {
-   "tax": 5,
-   "prod": 4,
-   "man": 3
+   "man": 3,
+   "prod": 8,
+   "tax": 3
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
-  "fort": 3,
+  "economy": "Enormes depósitos de hierro, carbón, mármol y bronce estigio que alimentan las fábricas de Deverentio y han hecho la fortuna de la casa Tintorello.",
+  "estates": "Casa Tintorello (dueña de las minas), capataces, mineros; núcleo del Movimiento Carmesí",
+  "fort": 2,
   "governor": {
-   "name": "Abondio Nogarola",
-   "title": "Conde de Segoris"
+   "name": "Abondio Tintorello",
+   "title": "Conde de Carrasta"
   },
   "language": "Ustilés",
-  "name": "Segoris",
-  "notes": "Condado de Bielopolia (Deverenzia), en manos de la casa Nogarola: llanura, grano.",
+  "name": "Carrasta",
+  "notes": "Deverencia Sur. Comarca de valles profundos y riscos de roca volcánica, marcada por décadas de minería. Los mineros, en pésimas condiciones, han protagonizado varias huelgas recientes, respondidas con dura represión: Carrasta es uno de los focos del Movimiento Carmesí.",
   "owner": "pais1",
-  "population": 681000,
-  "region": "Deverenzia",
-  "religion": "Culto del Heredero",
+  "population": 660000,
+  "region": "Deverencia",
+  "religion": "Viejo Feynismo",
   "resources": [
-   "Grano",
-   "Madera"
+   "Hierro",
+   "Carbón",
+   "Mármol",
+   "Bronce estigio"
   ],
-  "settlement": "Segoris",
-  "terrain": "Llanura",
-  "tradeGood": "Grano",
-  "unrest": "Liberal y autonomista"
+  "settlement": "Carrasta",
+  "terrain": "Montañas",
+  "tradeGood": "Hierro",
+  "unrest": "Huelgas mineras duramente reprimidas; foco del Movimiento Carmesí"
  },
  "126": {
   "buildings": [
@@ -7465,9 +7425,9 @@
    }
   ],
   "dev": {
-   "tax": 3,
+   "man": 1,
    "prod": 3,
-   "man": 1
+   "tax": 3
   },
   "estates": "Grandes Casas, gremios, burguesía mercantil",
   "fort": 2,
@@ -7480,7 +7440,7 @@
   "notes": "Baronía de Fuentesanta (Deverenzia), en manos de la casa Sabadin: bosques, grano.",
   "owner": "pais1",
   "population": 323000,
-  "region": "Deverenzia",
+  "region": "El Ustal",
   "religion": "Culto del Heredero",
   "resources": [
    "Grano",
@@ -8325,10 +8285,11 @@
  },
  "322": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial",
-   "Puerto"
+   "Base naval de la Flota Hespérea",
+   "Arsenal",
+   "Puerto",
+   "Ruinas natáneas",
+   "Mercado"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
@@ -8336,66 +8297,62 @@
    {
     "culture": "Ustileses",
     "group": "Ustileses del Heredero",
-    "pct": 44,
+    "pct": 50,
     "religion": "Culto del Heredero"
    },
    {
     "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
+    "pct": 30,
     "religion": "Viejo Feynismo"
    },
    {
     "culture": "Ustileses",
     "group": "Ustileses no creyentes",
-    "pct": 12,
+    "pct": 10,
     "religion": "Ninguna"
    },
    {
     "culture": "Kratenses",
     "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
-   },
-   {
-    "culture": "Mazarinos",
-    "group": "Mazarinos",
     "pct": 4,
-    "religion": "Viejo Feynismo"
+    "religion": "Fe Espiritual"
    },
    {
     "culture": "Varios",
     "group": "Otros",
-    "pct": 3,
+    "pct": 6,
     "religion": "Varias"
    }
   ],
   "dev": {
-   "tax": 4,
-   "prod": 4,
-   "man": 3
+   "man": 6,
+   "prod": 7,
+   "tax": 6
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
-  "fort": 2,
+  "economy": "Puerto secundario de la región, a la sombra de Deverentio; vive de la base naval de la Flota Hespérea, la pesca y el cabotaje.",
+  "estates": "Almirantazgo de la Flota Hespérea, armadores, pescadores, anticuarios",
+  "fort": 4,
   "governor": {
    "name": "Juliana Abadeli",
    "title": "Vizcondesa de Tarsica"
   },
   "language": "Ustilés",
   "name": "Tarsica",
-  "notes": "Vizcondado de Radovia (Deverenzia), en manos de la casa Abadeli: costa, pescado.",
+  "notes": "Deverencia Sur. Tarsica, la rival histórica de Deverentio, alberga la base naval de la Flota Hespérea de Ustilus. Sus ruinas de supuesto origen natáneo no tienen explicación: la región nunca estuvo bajo dominio natáneo, y se cree que son lo único que queda de una colonización fracasada por motivos desconocidos. Son un gran tesoro arqueológico, pero sus bóvedas más profundas siguen sin explorar: muchos temen despertar la maldición que destruyó la colonia.",
   "owner": "pais1",
-  "population": 602000,
-  "region": "Deverenzia",
+  "population": 880000,
+  "region": "Deverencia",
   "religion": "Culto del Heredero",
   "resources": [
    "Pescado",
+   "Sal",
    "Madera"
   ],
   "settlement": "Tarsica",
   "terrain": "Costa",
   "tradeGood": "Pescado",
-  "unrest": "Liberal y autonomista"
+  "unrest": "Estable; vieja rivalidad con Deverentio"
  },
  "284": {
   "owner": "pais4",
@@ -10838,7 +10795,7 @@
   },
   "language": "Ayutano",
   "name": "Kuzyort",
-  "owner": "pais3",
+  "owner": "ayutan",
   "population": 196000,
   "region": "Ayutan",
   "religion": "Mekhatimismo",
@@ -10986,76 +10943,71 @@
  },
  "314": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial"
+   "Campamento militar (misión desconocida)",
+   "Puesto de los Caballeros de Ustilus",
+   "Ermita"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
   "demographics": [
    {
-    "culture": "Ustileses",
-    "group": "Ustileses del Heredero",
-    "pct": 44,
-    "religion": "Culto del Heredero"
-   },
-   {
-    "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
-    "religion": "Viejo Feynismo"
-   },
-   {
     "culture": "Ustileses",
-    "group": "Ustileses no creyentes",
-    "pct": 12,
-    "religion": "Ninguna"
+    "religion": "Viejo Feynismo",
+    "pct": 52
    },
    {
-    "culture": "Kratenses",
-    "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
+    "group": "Gentes de las tradiciones antiguas",
+    "culture": "Ustileses",
+    "religion": "Fe Espiritual",
+    "pct": 20
    },
    {
-    "culture": "Mazarinos",
-    "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
+    "group": "Ustileses del Heredero",
+    "culture": "Ustileses",
+    "religion": "Culto del Heredero",
+    "pct": 14
    },
    {
-    "culture": "Varios",
+    "group": "Sectas abisales",
+    "culture": "Ustileses",
+    "religion": "Madre del Abismo",
+    "pct": 4
+   },
+   {
     "group": "Otros",
-    "pct": 3,
-    "religion": "Varias"
+    "culture": "Varios",
+    "religion": "Varias",
+    "pct": 10
    }
   ],
   "dev": {
-   "tax": 2,
-   "prod": 2,
-   "man": 2
+   "tax": 1,
+   "prod": 1,
+   "man": 1
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
-  "fort": 2,
+  "estates": "Leñadores, tropas ustilesas, Caballeros de Ustilus e inquisidores feynistas",
+  "fort": 3,
   "governor": {
-   "name": "Selina Fero",
-   "title": "Baronesa de Medvegna"
+   "title": "Baronesa de Basozabal",
+   "name": "Selina Fero"
   },
   "language": "Ustilés",
-  "name": "Medvegna",
-  "notes": "Baronía de Medvegna (Deverenzia), en manos de la casa Fero: bosques, paño.",
+  "name": "Basozabal",
+  "notes": "Deverencia Norte. Extenso bosque de las tierras altas, oculto por una niebla casi perpetua que llega de Dairov: incluso de día está oscuro. Famoso por su brujería y sus sectas abisales, ha sufrido muchas cazas de los Caballeros de Ustilus y la Iglesia Feynista. La reciente aparición de criaturas mutadas alimenta teorías de todo tipo, desde nuevos abisales hasta un laboratorio secreto ustilés, y la presencia de tropas con una misión desconocida no hace más que avivarlas.",
   "owner": "pais1",
-  "population": 230000,
-  "region": "Deverenzia",
-  "religion": "Culto del Heredero",
+  "population": 150000,
+  "region": "Deverencia",
+  "religion": "Viejo Feynismo",
   "resources": [
-   "Paño",
-   "Madera"
+   "Madera",
+   "Hierbas"
   ],
-  "settlement": "Medvegna",
+  "settlement": "Basozabal",
   "terrain": "Bosque",
-  "tradeGood": "Paño",
-  "unrest": "Liberal y autonomista"
+  "tradeGood": "Madera",
+  "unrest": "Cazas de brujas; criaturas mutadas y rumores",
+  "economy": "Madera y hierbas de un bosque casi siempre en penumbra."
  },
  "170": {
   "buildings": [
@@ -11451,76 +11403,67 @@
  },
  "327": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial"
+   "Monasterio de San Girolamo",
+   "Sepulcro de San Girolamo",
+   "Santuario",
+   "Aldeas de peregrinos"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
   "demographics": [
    {
-    "culture": "Ustileses",
-    "group": "Ustileses del Heredero",
-    "pct": 44,
-    "religion": "Culto del Heredero"
-   },
-   {
-    "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
-    "religion": "Viejo Feynismo"
-   },
-   {
     "culture": "Ustileses",
-    "group": "Ustileses no creyentes",
-    "pct": 12,
-    "religion": "Ninguna"
+    "religion": "Viejo Feynismo",
+    "pct": 78
    },
    {
-    "culture": "Kratenses",
-    "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
+    "group": "Ustileses del Heredero",
+    "culture": "Ustileses",
+    "religion": "Culto del Heredero",
+    "pct": 8
    },
    {
-    "culture": "Mazarinos",
-    "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
+    "group": "Gentes de las tradiciones antiguas",
+    "culture": "Ustileses",
+    "religion": "Fe Espiritual",
+    "pct": 8
    },
    {
+    "group": "Refugiados del monasterio",
     "culture": "Varios",
-    "group": "Otros",
-    "pct": 3,
-    "religion": "Varias"
+    "religion": "Varias",
+    "pct": 6
    }
   ],
   "dev": {
-   "tax": 3,
-   "prod": 3,
-   "man": 1
+   "tax": 2,
+   "prod": 1,
+   "man": 2
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
+  "estates": "Monjes feynistas de San Girolamo, peregrinos, pastores",
   "fort": 2,
   "governor": {
-   "name": "Zarino Etxeberri",
-   "title": "Barón de Clatina"
+   "title": "Barón de Mendisarat",
+   "name": "Zarino Etxeberri"
   },
   "language": "Ustilés",
-  "name": "Clatina",
-  "notes": "Baronía de Zlatina (Deverenzia), en manos de la casa Etxeberri: colinas, madera.",
+  "name": "Mendisarat",
+  "notes": "Deverencia Norte. Monte solitario y aserrado en las tierras altas cerca de Dairov, venerado por los antiguos ustales como lugar de descanso de un espíritu poderoso. Hoy alberga un gran monasterio feynista en torno al sepulcro de San Girolamo, que según la tradición consagró la montaña y encerró bajo ella al espíritu. Aun bajo el Heredero sigue siendo un bastión feynista, y sus monjes dan santuario a quienes huyen de la justicia, para irritación constante del Imperio.",
   "owner": "pais1",
-  "population": 325000,
-  "region": "Deverenzia",
-  "religion": "Culto del Heredero",
+  "population": 160000,
+  "region": "Deverencia",
+  "religion": "Viejo Feynismo",
   "resources": [
    "Madera",
-   "Lana"
+   "Lana",
+   "Cera"
   ],
-  "settlement": "Clatina",
-  "terrain": "Colinas",
+  "settlement": "Mendisarat",
+  "terrain": "Montañas",
   "tradeGood": "Madera",
-  "unrest": "Liberal y autonomista"
+  "unrest": "Feynista y desafiante: el santuario irrita al Imperio",
+  "economy": "Peregrinaciones al sepulcro de San Girolamo, cera, lana y madera."
  },
  "270": {
   "name": "",
@@ -12033,77 +11976,73 @@
  },
  "330": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial"
+   "Bodegas",
+   "Palacetes de verano",
+   "Mercado del vino",
+   "Iglesia"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
   "demographics": [
    {
-    "culture": "Ustileses",
     "group": "Ustileses del Heredero",
-    "pct": 44,
-    "religion": "Culto del Heredero"
+    "culture": "Ustileses",
+    "religion": "Culto del Heredero",
+    "pct": 46
    },
    {
-    "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
-    "religion": "Viejo Feynismo"
-   },
-   {
     "culture": "Ustileses",
+    "religion": "Viejo Feynismo",
+    "pct": 36
+   },
+   {
     "group": "Ustileses no creyentes",
-    "pct": 12,
-    "religion": "Ninguna"
+    "culture": "Ustileses",
+    "religion": "Ninguna",
+    "pct": 8
    },
    {
-    "culture": "Kratenses",
-    "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
-   },
-   {
-    "culture": "Mazarinos",
     "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
+    "culture": "Mazarinos",
+    "religion": "Viejo Feynismo",
+    "pct": 6
    },
    {
-    "culture": "Varios",
     "group": "Otros",
-    "pct": 3,
-    "religion": "Varias"
+    "culture": "Varios",
+    "religion": "Varias",
+    "pct": 4
    }
   ],
   "dev": {
-   "tax": 3,
-   "prod": 3,
-   "man": 3
+   "tax": 6,
+   "prod": 5,
+   "man": 2
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
-  "fort": 2,
+  "estates": "Viejas familias vinateras, nobles y burgueses con palacetes de verano, aparceros",
+  "fort": 1,
   "governor": {
-   "name": "Patricia Vaqueiro",
-   "title": "Vizcondesa de Gorizza"
+   "title": "Vizcondesa de Garfani",
+   "name": "Patricia Vaqueiro"
   },
   "language": "Ustilés",
-  "name": "Gorizza",
-  "notes": "Vizcondado de Gorizza (Deverenzia), en manos de la casa Vaqueiro: llanura, madera.",
+  "name": "Garfani",
+  "notes": "Deverencia Sur. Garfani, tierra de colinas rojizas y vino. Lejos del humo de la Cuenca y con mejor clima, varios nobles y grandes burgueses tienen aquí sus palacetes de verano.",
   "owner": "pais1",
-  "population": 427000,
-  "region": "Deverenzia",
+  "population": 560000,
+  "region": "Deverencia",
   "religion": "Culto del Heredero",
   "resources": [
-   "Madera",
    "Vino",
-   "Grano"
+   "Uva",
+   "Aceite"
   ],
-  "settlement": "Gorizza",
-  "terrain": "Llanura",
-  "tradeGood": "Madera",
-  "unrest": "Liberal y autonomista"
+  "settlement": "Garfani",
+  "terrain": "Colinas",
+  "tradeGood": "Vino",
+  "unrest": "Tranquila y próspera",
+  "economy": "Colinas rojizas y vastos viñedos de fama secular. Los aranceles ustileses protegen su vino de la competencia extranjera."
  },
  "166": {
   "name": "",
@@ -13902,11 +13841,11 @@
    }
   ],
   "dev": {
-   "tax": 5,
-   "prod": 5,
-   "man": 2
+   "tax": 9,
+   "prod": 9,
+   "man": 4
   },
-  "economy": "Ciudad rica y cosmopolita, famosa por su vidrio soplado y su cristalería, que se exporta hasta Klonum. Las Grandes Casas controlan la banca (Botticceli), el armamento (Marqueda), la minería (Tintorello), el sector naval (Archesi), la construcción (Gundolfo), los medios (Elisondo), la agroalimentación (Rossino), el entretenimiento (Hachuel) y las artes (Fideli). La Compañía de las Indias y la Casa de la Moneda tienen aquí su sede.",
+  "economy": "Ciudad rica y cosmopolita, famosa por su vidrio soplado y su cristalería, que se exporta hasta Klonum. Las Grandes Casas controlan la banca (Botticceli), el armamento (Marqueda), la minería (Tintorello), el sector naval (Archesi), la construcción (Gundolfo), los medios (Elisondo), la agroalimentación (Rossino), el entretenimiento (Hachuel) y las artes (Fideli). La Compañía de las Indias y la Casa de la Moneda tienen aquí su sede. Las grandes fábricas textiles de la Cuenca del Brezán, el comercio exterior y la innovación técnica la hacen una de las ciudades más ricas de Ustilus; también una de las más desiguales y contaminadas.",
   "estates": "Grandes Casas (Marqueda, Botticceli, Tintorello, Hachuel, Fideli, Archesi, Gundolfo, Elisondo, Rossino), gremios, clero, guarnición",
   "fort": 4,
   "governor": {
@@ -13929,10 +13868,10 @@
   ],
   "language": "Ustilés",
   "name": "Deverentio",
-  "notes": "Capital de las provincias occidentales de Ustilus y una de las ciudades más importantes del Imperio. Sus habitantes son conocidos por su mentalidad abierta y liberal y su amor por las artes, y la ciudad es refugio habitual de quienes se oponen a las autoridades. Históricamente gobernada por la casa Fideli, mecenas de artistas y pensadores y defensora de las causas reformistas en las Cortes. Su Carnaval, de dos semanas, es legendario.\n\nCiudad Libre de Deverentio en 4099: el Consejo de Cien (40 electores institucionales de seis estamentos y 60 escaños de distrito) elige al alcalde. Se enfrentan los Unionistas del alcalde Flavio Marqueda (Casa Marqueda, armamento) y los Soberanistas de Gregorio Salgado. Tras el asesinato de Salgado, Clara Montiel toma la candidatura soberanista, y la represión empuja a la irrupción del Movimiento Carmesí de Rosa Ibarzábal.",
+  "notes": "Fundada por el Príncipe Kelsar de Mazarín, Deverentio fue la cabeza del Reino de Deverent, una de las grandes potencias del Ustal hasta su unión con Elyon para formar Ustilus. Orgullosa de ser cofundadora del imperio, es leal hasta la médula pero resiente que la corte no la trate como a una igual. Capital de las provincias occidentales de Ustilus y una de las ciudades más importantes del Imperio. Sus habitantes son conocidos por su mentalidad abierta y liberal y su amor por las artes, y la ciudad es refugio habitual de quienes se oponen a las autoridades. Históricamente gobernada por la casa Fideli, mecenas de artistas y pensadores y defensora de las causas reformistas en las Cortes. Su Carnaval, de dos semanas, es legendario.\n\nCiudad Libre de Deverentio en 4099: el Consejo de Cien (40 electores institucionales de seis estamentos y 60 escaños de distrito) elige al alcalde. Se enfrentan los Unionistas del alcalde Flavio Marqueda (Casa Marqueda, armamento) y los Soberanistas de Gregorio Salgado. Tras el asesinato de Salgado, Clara Montiel toma la candidatura soberanista, y la represión empuja a la irrupción del Movimiento Carmesí de Rosa Ibarzábal.",
   "owner": "pais1",
   "population": 654000,
-  "region": "Deverenzia",
+  "region": "Deverencia",
   "religion": "Culto del Heredero",
   "resources": [
    "Vidrio",
@@ -14708,7 +14647,7 @@
  },
  "121": {
   "name": "Vaaryl",
-  "owner": "pais5"
+  "owner": "chothgar_de_yathan_ra"
  },
  "277": {
   "name": "",
@@ -15214,77 +15153,64 @@
  },
  "306": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial"
+   "La Roca del Olvido (prisión imperial)",
+   "Guarnición de la prisión"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
   "demographics": [
    {
-    "culture": "Ustileses",
-    "group": "Ustileses del Heredero",
-    "pct": 44,
-    "religion": "Culto del Heredero"
-   },
-   {
-    "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
-    "religion": "Viejo Feynismo"
-   },
-   {
     "culture": "Ustileses",
-    "group": "Ustileses no creyentes",
-    "pct": 12,
-    "religion": "Ninguna"
+    "religion": "Viejo Feynismo",
+    "pct": 55
    },
    {
-    "culture": "Kratenses",
-    "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
+    "group": "Ustileses del Heredero",
+    "culture": "Ustileses",
+    "religion": "Culto del Heredero",
+    "pct": 25
    },
    {
-    "culture": "Mazarinos",
-    "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
+    "group": "Gentes de las tradiciones antiguas",
+    "culture": "Ustileses",
+    "religion": "Fe Espiritual",
+    "pct": 12
    },
    {
+    "group": "Guardias y familias",
     "culture": "Varios",
-    "group": "Otros",
-    "pct": 3,
-    "religion": "Varias"
+    "religion": "Varias",
+    "pct": 8
    }
   ],
   "dev": {
-   "tax": 2,
+   "tax": 1,
    "prod": 2,
    "man": 2
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
-  "fort": 1,
+  "estates": "Alcaidía imperial de la Roca, guardias, leñadores",
+  "fort": 6,
   "governor": {
-   "name": "Octavio Calandri",
-   "title": "Señor de Kamenizza"
+   "title": "Señor de Otsandi",
+   "name": "Octavio Calandri"
   },
   "language": "Ustilés",
-  "name": "Kamenizza",
-  "notes": "Señorío de Kamenizza (Deverenzia), en manos de la casa Calandri: colinas, madera.",
+  "name": "Otsandi",
+  "notes": "Deverencia Norte. El valle de Otsandi tiene mala fama incluso entre las tierras embrujadas de la frontera con Dairov. Aquí está la Roca del Olvido, la prisión más temida de Ustilus: quien entra desaparece para siempre y nadie ha escapado jamás, por eso el imperio envía allí a sus enemigos más peligrosos.",
   "owner": "pais1",
-  "population": 193000,
-  "region": "Deverenzia",
-  "religion": "Culto del Heredero",
+  "population": 150000,
+  "region": "Deverencia",
+  "religion": "Viejo Feynismo",
   "resources": [
    "Madera",
-   "Lana",
-   "Paño"
+   "Piedra"
   ],
-  "settlement": "Kamenizza",
+  "settlement": "Otsandi",
   "terrain": "Colinas",
   "tradeGood": "Madera",
-  "unrest": "Liberal y autonomista"
+  "unrest": "Silenciosa y temida",
+  "economy": "Poco más que leña y el sustento de la prisión."
  },
  "9": {
   "name": "",
@@ -16662,78 +16588,73 @@
  },
  "287": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial",
-   "Puerto"
+   "Puerto pesquero",
+   "Calas de contrabandistas",
+   "Faro",
+   "Mercado"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
   "demographics": [
    {
-    "culture": "Ustileses",
-    "group": "Ustileses del Heredero",
-    "pct": 44,
-    "religion": "Culto del Heredero"
-   },
-   {
-    "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
-    "religion": "Viejo Feynismo"
-   },
-   {
     "culture": "Ustileses",
+    "religion": "Viejo Feynismo",
+    "pct": 46
+   },
+   {
+    "group": "Ustileses del Heredero",
+    "culture": "Ustileses",
+    "religion": "Culto del Heredero",
+    "pct": 28
+   },
+   {
     "group": "Ustileses no creyentes",
-    "pct": 12,
-    "religion": "Ninguna"
+    "culture": "Ustileses",
+    "religion": "Ninguna",
+    "pct": 10
    },
    {
-    "culture": "Kratenses",
     "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
+    "culture": "Kratenses",
+    "religion": "Fe Espiritual",
+    "pct": 6
    },
    {
-    "culture": "Mazarinos",
-    "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
-   },
-   {
+    "group": "Marineros y gentes de paso",
     "culture": "Varios",
-    "group": "Otros",
-    "pct": 3,
-    "religion": "Varias"
+    "religion": "Varias",
+    "pct": 10
    }
   ],
   "dev": {
-   "tax": 2,
-   "prod": 2,
-   "man": 2
+   "tax": 5,
+   "prod": 4,
+   "man": 3
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
+  "estates": "Pescadores, redes de contrabando, sociedades secretas",
   "fort": 2,
   "governor": {
-   "name": "Cresensa Vilar",
-   "title": "Baronesa de Dembreva"
+   "title": "Baronesa de Lipana",
+   "name": "Cresensa Vilar"
   },
   "language": "Ustilés",
-  "name": "Dembreva",
-  "notes": "Baronía de Dubrava (Deverenzia), en manos de la casa Vilar: costa, vidrio.",
+  "name": "Lipana",
+  "notes": "Deverencia Norte. El asentamiento más poblado del norte de Deverencia. Acantilados, corrientes fuertes y mal tiempo casi todo el año la hacen difícil de navegar y de controlar, y erradicar sus redes de contrabando ha resultado imposible: el Imperio las tolera e incluso las usa para transportes que requieren discreción.",
   "owner": "pais1",
-  "population": 225000,
-  "region": "Deverenzia",
-  "religion": "Culto del Heredero",
+  "population": 520000,
+  "region": "Deverencia",
+  "religion": "Viejo Feynismo",
   "resources": [
-   "Vidrio",
    "Pescado",
-   "Paño"
+   "Contrabando",
+   "Sal"
   ],
-  "settlement": "Dembreva",
+  "settlement": "Lipana",
   "terrain": "Costa",
-  "tradeGood": "Vidrio",
-  "unrest": "Liberal y autonomista"
+  "tradeGood": "Pescado",
+  "unrest": "Ingobernable bajo la superficie, tolerada por el Imperio",
+  "economy": "Comunidad pesquera y nodo de contrabando de personas y mercancías, para criminales y organizaciones secretas por igual."
  },
  "385": {
   "buildings": [
@@ -17330,77 +17251,72 @@
  },
  "379": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial",
-   "Puerto"
+   "Termas de Gorizza",
+   "Balnearios",
+   "Villas de recreo",
+   "Iglesia"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
   "demographics": [
    {
-    "culture": "Ustileses",
     "group": "Ustileses del Heredero",
-    "pct": 44,
-    "religion": "Culto del Heredero"
+    "culture": "Ustileses",
+    "religion": "Culto del Heredero",
+    "pct": 48
    },
    {
-    "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
-    "religion": "Viejo Feynismo"
-   },
-   {
     "culture": "Ustileses",
+    "religion": "Viejo Feynismo",
+    "pct": 32
+   },
+   {
     "group": "Ustileses no creyentes",
-    "pct": 12,
-    "religion": "Ninguna"
+    "culture": "Ustileses",
+    "religion": "Ninguna",
+    "pct": 10
    },
    {
-    "culture": "Kratenses",
-    "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
-   },
-   {
-    "culture": "Mazarinos",
     "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
+    "culture": "Mazarinos",
+    "religion": "Viejo Feynismo",
+    "pct": 5
    },
    {
+    "group": "Visitantes y extranjeros",
     "culture": "Varios",
-    "group": "Otros",
-    "pct": 3,
-    "religion": "Varias"
+    "religion": "Varias",
+    "pct": 5
    }
   ],
   "dev": {
-   "tax": 2,
+   "tax": 4,
    "prod": 2,
    "man": 2
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
+  "estates": "Dueños de los balnearios, servicio, visitantes nobles, burgueses y militares",
   "fort": 1,
   "governor": {
-   "name": "Viviana Nogueira",
-   "title": "Señora de Soprarrocca"
+   "title": "Señora de Gorizza",
+   "name": "Viviana Nogueira"
   },
   "language": "Ustilés",
-  "name": "Soprarrocca",
-  "notes": "Señorío de Soprarrocca (Deverenzia), en manos de la casa Nogueira: costa, pescado.",
+  "name": "Gorizza",
+  "notes": "Deverencia Sur. A varios kilómetros al sur de Deverentio, las termas de Gorizza reciben a nobles, burgueses y militares. Una larga tradición manda dejar toda enemistad fuera de las termas, y por eso son el lugar preferido para que facciones enfrentadas negocien.",
   "owner": "pais1",
-  "population": 204000,
-  "region": "Deverenzia",
+  "population": 231000,
+  "region": "Deverencia",
   "religion": "Culto del Heredero",
   "resources": [
    "Pescado",
-   "Vidrio"
+   "Aguas termales"
   ],
-  "settlement": "Soprarrocca",
+  "settlement": "Gorizza",
   "terrain": "Costa",
   "tradeGood": "Pescado",
-  "unrest": "Liberal y autonomista"
+  "unrest": "Pacífica: neutral por tradición",
+  "economy": "Pequeña ciudad pintoresca que vive de sus aguas termales, uno de los grandes destinos de recreo de todo Deverent."
  },
  "375": {
   "name": "Tatenai",
@@ -17409,77 +17325,64 @@
  },
  "293": {
   "buildings": [
-   "Mercado",
-   "Taller",
-   "Palacio señorial",
-   "Puerto"
+   "Colonia de artistas",
+   "Aldeas dispersas"
   ],
   "climate": "Mediterráneo",
   "culture": "Ustileses",
   "demographics": [
    {
-    "culture": "Ustileses",
-    "group": "Ustileses del Heredero",
-    "pct": 44,
-    "religion": "Culto del Heredero"
-   },
-   {
-    "culture": "Ustileses",
     "group": "Ustileses feynistas",
-    "pct": 32,
-    "religion": "Viejo Feynismo"
-   },
-   {
     "culture": "Ustileses",
-    "group": "Ustileses no creyentes",
-    "pct": 12,
-    "religion": "Ninguna"
+    "religion": "Viejo Feynismo",
+    "pct": 50
    },
    {
-    "culture": "Kratenses",
-    "group": "Kratenses",
-    "pct": 5,
-    "religion": "Fe Espiritual"
+    "group": "Gentes de las tradiciones antiguas",
+    "culture": "Ustileses",
+    "religion": "Fe Espiritual",
+    "pct": 25
    },
    {
-    "culture": "Mazarinos",
-    "group": "Mazarinos",
-    "pct": 4,
-    "religion": "Viejo Feynismo"
+    "group": "Ustileses del Heredero",
+    "culture": "Ustileses",
+    "religion": "Culto del Heredero",
+    "pct": 15
    },
    {
+    "group": "Artistas y viajeros",
     "culture": "Varios",
-    "group": "Otros",
-    "pct": 3,
-    "religion": "Varias"
+    "religion": "Varias",
+    "pct": 10
    }
   ],
   "dev": {
-   "tax": 2,
-   "prod": 2,
-   "man": 2
+   "tax": 1,
+   "prod": 1,
+   "man": 1
   },
-  "estates": "Grandes Casas, gremios, burguesía mercantil",
+  "estates": "Pastores, artistas excéntricos",
   "fort": 1,
   "governor": {
-   "name": "Nicolo Quisada",
-   "title": "Señor de Nevagarda"
+   "title": "Señor de Nevagarda",
+   "name": "Nicolo Quisada"
   },
   "language": "Ustilés",
-  "name": "Nevagarda",
-  "notes": "Señorío de Novigrada (Deverenzia), en manos de la casa Quisada: costa, pescado.",
+  "name": "Urgain",
+  "notes": "Deverencia Norte. Colinas junto a la frontera dairovia donde el Plano Onírico está muy cerca: paisajes surrealistas, entidades extrañas, y es fácil perderse para siempre. Aun así, artistas excéntricos vienen en busca de inspiración; se dice que pasar demasiado tiempo aquí lleva a la grandeza o a la locura.",
   "owner": "pais1",
-  "population": 206000,
-  "region": "Deverenzia",
-  "religion": "Culto del Heredero",
+  "population": 170000,
+  "region": "Deverencia",
+  "religion": "Viejo Feynismo",
   "resources": [
-   "Pescado",
-   "Madera"
+   "Lana",
+   "Pigmentos"
   ],
   "settlement": "Nevagarda",
-  "terrain": "Costa",
-  "tradeGood": "Pescado",
-  "unrest": "Liberal y autonomista"
+  "terrain": "Colinas",
+  "tradeGood": "Lana",
+  "unrest": "Inquietante: gente que se pierde",
+  "economy": "Pastoreo pobre; algunos artistas y mecenas traen dinero buscando inspiración."
  },
  "59": {
   "name": "Svaikal",

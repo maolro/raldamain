@@ -1,15 +1,15 @@
 {
  "pais1": {
   "adjective": "Ustileses",
+  "capital": "360",
   "color": "#871e22",
   "culture": "Ustileses",
   "detected": "#871e22",
   "government": "Monarquía absoluta",
   "name": "Ustilus",
+  "notes": "Regiones (4099):\n• El Ustal: el corazón de la Corona en torno a Trono de Feyn, el Ustal original. El más «puramente» ustilés y devoto; las Cortes y los Caballeros, vecinos de puerta.\n• Deverencia: las provincias occidentales, el antiguo Reino de Deverent fundado por el Príncipe Kelsar de Mazarín, cofundador de Ustilus junto a Elyon: leal y orgullosa, pero resentida de no ser tratada como igual. Hoy una de las regiones más ricas e industrializadas del imperio (comercio exterior, innovación, fábricas textiles), destino de una enorme migración interna. La alta burguesía ha desplazado a la vieja nobleza y compra títulos; es también una de las regiones más desiguales y contaminadas, y el Movimiento Carmesí crece entre los obreros. Al sur, la industria del Brezán, los viñedos de Garfani y los puertos; al norte, las tierras embrujadas de la frontera con Dairov.\n• Sairenia: la riviera del suroeste, dote de la reina Sairena. Viñedos, olivares y villas de los grandes; cabeza de playa rakashita y de las primeras en alzarse con Acrodio.\n• Elyonia: la costa sur del antiguo Reino de Elyon, aristocracia colona empobrecida, familias criminales y Polvo de Ángel.\n• Las Marcas: la frontera norte frente a Kratoi, Dairov e Iskaria; castillos, encomiendas de los Caballeros y el trauma de la pérdida de Kratoi (4025).\n• La Campiña: los latifundios del este; el granero del imperio y su miseria, bandolerismo y servidumbre por deudas tras la abolición.\n• Islas Hespéreas: las islas del Océano Hespéreo, anexionadas en 4055; bases navales y una minoría kratense.\n• Thalos: mayoría hobgoblin; antiguas plantaciones esclavistas, la Guerra de la Legión, independencia bajo los Oni, reconquista en 4030 y abolición en 4040.\n• Pradjati: el istmo del Canal Continental, mezcla de ustileses, temash y jaddi, con Rizad; tensiones religiosas y culturales.\n• Tamashkhan: el desierto del sur, tierra temash bajo dominio colonial ustilés.",
   "rank": "Imperio",
-  "religion": "Culto del Heredero",
-  "capital": "360",
-  "notes": "Regiones (4099):\n• El Ustal: el corazón de la Corona en torno a Trono de Feyn, el Ustal original. El más «puramente» ustilés y devoto; las Cortes y los Caballeros, vecinos de puerta.\n• Deverenzia: las provincias occidentales, el antiguo Reino de Deverent de los exiliados mazarinos. Artes, vidrio, carnaval, liberalismo; las Grandes Casas y la elección de Deverentio.\n• Sairenia: la riviera del suroeste, dote de la reina Sairena. Viñedos, olivares y villas de los grandes; cabeza de playa rakashita y de las primeras en alzarse con Acrodio.\n• Elyonia: la costa sur del antiguo Reino de Elyon, aristocracia colona empobrecida, familias criminales y Polvo de Ángel.\n• Las Marcas: la frontera norte frente a Kratoi, Dairov e Iskaria; castillos, encomiendas de los Caballeros y el trauma de la pérdida de Kratoi (4025).\n• La Campiña: los latifundios del este; el granero del imperio y su miseria, bandolerismo y servidumbre por deudas tras la abolición.\n• Islas Hespéreas: las islas del Océano Hespéreo, anexionadas en 4055; bases navales y una minoría kratense.\n• Thalos: mayoría hobgoblin; antiguas plantaciones esclavistas, la Guerra de la Legión, independencia bajo los Oni, reconquista en 4030 y abolición en 4040.\n• Pradjati: el istmo del Canal Continental, mezcla de ustileses, temash y jaddi, con Rizad; tensiones religiosas y culturales.\n• Tamashkhan: el desierto del sur, tierra temash bajo dominio colonial ustilés."
+  "religion": "Culto del Heredero"
  },
  "pais2": {
   "adjective": "Kratense",
@@ -77,13 +77,13 @@
   "religion": "Fe Espiritual"
  },
  "pais5": {
-  "color": "#7c5724",
-  "detected": "#7c5724",
-  "name": "Chothgar Mori",
-  "rank": "Sapranato",
   "adjective": "Chothgar",
+  "color": "#500707",
   "culture": "Chothgar",
-  "religion": "Culto del Heredero"
+  "detected": "#7c5724",
+  "name": "El Sapranato",
+  "religion": "Culto del Heredero",
+  "allies": "Ustilus"
  },
  "pais6": {
   "color": "#45824a",
@@ -142,9 +142,9 @@
   "detected": "#592316"
  },
  "pais12": {
-  "name": "País 12",
   "color": "#fefefe",
-  "detected": "#fefefe"
+  "detected": "#fefefe",
+  "name": "Sin Dueño"
  },
  "pais13": {
   "name": "País 13",
@@ -283,5 +283,9 @@
   "name": "Ayután",
   "color": "#82b7c4",
   "overlord": "pais3"
+ },
+ "chothgar_de_yathan_ra": {
+  "name": "Chothgar de Yathan'ra",
+  "color": "#52360f"
  }
 }
