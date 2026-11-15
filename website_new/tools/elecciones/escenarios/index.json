@@ -14,6 +14,12 @@
     "file": "deverentio/4099-sesion-3.json",
     "desc": "Escenario guardado de la campaña: la fragmentación del voto tras el asesinato de Salgado y la irrupción carmesí.",
     "published": true
+   },
+   {
+    "name": "4099 · Sesión 4",
+    "file": "deverentio/4099-sesion-4.json",
+    "desc": "Escenario guardado de la campaña: el voto tras la represión en la universidad de Deverentio",
+    "published": true
    }
   ]
  },
