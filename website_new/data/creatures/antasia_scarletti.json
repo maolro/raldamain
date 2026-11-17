@@ -35,7 +35,22 @@
     "acciones": 3,
     "reacciones": 2
   },
-  "traits": [],
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +7 + 2d6 o sufre un Veneno Paralizante. Mientras permanezca envenenado, recibe Ralentizado I y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo.",
+      "name": "Veneno Paralizante",
+      "tags": [
+        "Pasiva",
+        "Afliccion"
+      ],
+      "ability_id": "ab_1793181368747",
+      "mod_tpl": {
+        "desc": "Al impactar con un ataque Físico, el afectado debe tener éxito en un tiro VOL +MOD o sufre un Veneno Paralizante. Mientras permanezca envenenado, recibe Ralentizado I y cada ronda deberá repetir el tiro o el nivel del efecto aumentará por un grado. Cada éxito en el tiro reducirá el efecto por un paso, y se recuperará si lo reduce por completo."
+      }
+    }
+  ],
   "actions": [
     {
       "attacks": 1,
@@ -66,6 +81,41 @@
       ],
       "ability_id": "ab_1794055098497",
       "damage": "4d6 + 5 Perforante",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "LOW",
+      "name": "Dardo",
+      "range": "Medio",
+      "tags": [
+        "Arma",
+        "Ataque",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793184653681",
+      "damage": "2d6 + 5 Perforante",
+      "bonus": "+7 + 2d6",
+      "desc": "Al impactar, provoca los efectos de Veneno Paralizante."
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Fuego",
+      "damage_tier": "MID",
+      "name": "Bomba",
+      "range": "Medio",
+      "tags": [
+        "Arma",
+        "Area"
+      ],
+      "ability_id": "ab_1794054811526",
+      "damage": "2d6 + 5 Fuego",
       "bonus": "+7 + 2d6"
     },
     {
@@ -107,23 +157,6 @@
         "Area"
       ],
       "ability_id": "ab_1794912414875"
-    },
-    {
-      "area": "Radio Corto",
-      "attacks": 1,
-      "bonus_scaled": true,
-      "cost": 1,
-      "damage_base_type": "Fuego",
-      "damage_tier": "MID",
-      "name": "Bomba",
-      "range": "Medio",
-      "tags": [
-        "Arma",
-        "Area"
-      ],
-      "ability_id": "ab_1794054811526",
-      "damage": "2d6 + 5 Fuego",
-      "bonus": "+7 + 2d6"
     }
   ],
   "reactions": [
