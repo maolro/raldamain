@@ -1,0 +1,194 @@
+{
+  "id": "antasia_scarletti",
+  "name": "Antasia Scarletti",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+7+2d6",
+    "VOL": "+7+1d6",
+    "MEN": "+7+1d6"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 12,
+      "categories": "Físico",
+      "tier_tpl": "T+1"
+    },
+    {
+      "value": 12,
+      "categories": "Magia",
+      "tier_tpl": "T+1"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "name": "Revólver",
+      "range": "Lejano",
+      "tags": [
+        "Arma"
+      ],
+      "ability_id": "ab_1794055180343",
+      "damage": "3d6 + 5 Perforante",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "HIGH",
+      "desc": "Debe emplear una Acción para recargar. ",
+      "name": "Fusil",
+      "range": "Lejano",
+      "tags": [
+        "Arma"
+      ],
+      "ability_id": "ab_1794055098497",
+      "damage": "4d6 + 5 Perforante",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque recibe un modificador +2, aumenta su daño base por un dado y provoca Herido I al impactar.",
+      "name": "Ataque Furtivo",
+      "tags": [
+        "Marcial",
+        "Mejora",
+        "Asesino"
+      ],
+      "ability_id": "ab_1791817547641"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque puede afectar a hasta tres objetivos que pueda alcanzar y aumenta su daño base por un dado. Los efectos adicionales que añada se aplican a todos los ataques.",
+      "name": "Ataque Triple",
+      "tags": [
+        "Asesino",
+        "Mejora",
+        "Marcial"
+      ],
+      "ability_id": "ab_1793184569612"
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Crea una nube de humo en el área afectada, cegando a todas las criaturas en ella y otorgando ocultamiento. El humo se disipará al final de la siguiente ronda.",
+      "name": "Bomba de Humo",
+      "range": "Medio",
+      "tags": [
+        "Arma",
+        "Area"
+      ],
+      "ability_id": "ab_1794912414875"
+    },
+    {
+      "area": "Radio Corto",
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Fuego",
+      "damage_tier": "MID",
+      "name": "Bomba",
+      "range": "Medio",
+      "tags": [
+        "Arma",
+        "Area"
+      ],
+      "ability_id": "ab_1794054811526",
+      "damage": "2d6 + 5 Fuego",
+      "bonus": "+7 + 2d6"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Se oculta de tal manera que es Invisible, impidiendo que pueda ser detectado. Debe encontrarse bajo cubierta u ocultamiento para emplear esta habilidad, y sus efectos acabarán cuando ataque.",
+      "name": "Acechar",
+      "tags": [
+        "Rastrear"
+      ],
+      "ability_id": "ab_1793014889431"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "En respuesta a fallar un ataque o que dicho ataque sea detenido con una habilidad defensiva, recupera las acciones gastadas como si este nunca se hubiera hecho.",
+      "name": "Finta Engañosa",
+      "tags": [
+        "Asesino"
+      ],
+      "ability_id": "ab_1794054180167"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Repite un tiro de Ataque, Defensa o Salvación que involucre la Destreza y se queda con el resultado que más le convenga.",
+      "name": "Instinto de Supervivencia",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "ab_1791818387137"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Miniboss",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "mid",
+    "MEN": "mid"
+  },
+  "image": "antasia_scarletti.jpg",
+  "image_v": "63b42e7829"
+}
