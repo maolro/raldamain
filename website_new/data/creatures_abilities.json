@@ -4298,5 +4298,27 @@
     "move": "",
     "attacks": 2,
     "desc": "Prende objetos inflamables en el área afectada."
+  },
+  {
+    "id": "ab_1794912414875",
+    "name": "Bomba de Humo",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Arma",
+      "Area"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Crea una nube de humo en el área afectada, cegando a todas las criaturas en ella y otorgando ocultamiento. El humo se disipará al final de la siguiente ronda."
   }
 ]
