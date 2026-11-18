@@ -22,6 +22,17 @@
     }
   },
   {
+    "id": "elfos",
+    "name": "Elfos",
+    "count": {
+      "names": 200,
+      "m": 100,
+      "f": 100,
+      "surnames": 100,
+      "places": 0
+    }
+  },
+  {
     "id": "iskarianos",
     "name": "Iskarianos",
     "count": {
