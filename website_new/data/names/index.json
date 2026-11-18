@@ -25,9 +25,9 @@
     "id": "elfos",
     "name": "Elfos",
     "count": {
-      "names": 200,
-      "m": 100,
-      "f": 100,
+      "names": 197,
+      "m": 98,
+      "f": 99,
       "surnames": 100,
       "places": 0
     }

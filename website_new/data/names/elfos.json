@@ -7,22 +7,12 @@
     {
       "name": "Aaltheon",
       "gender": "m",
-      "meaning": "«el de las olas» · élfico"
-    },
-    {
-      "name": "Aamuel",
-      "gender": "m",
-      "meaning": "«el del alba» · élfico"
-    },
-    {
-      "name": "Aarnion",
-      "gender": "m",
-      "meaning": "«el del bosque antiguo» · élfico"
+      "meaning": "«hijo de las olas» · élfico"
     },
     {
       "name": "Aethvel",
       "gender": "m",
-      "meaning": "«hermano del alma» · élfico"
+      "meaning": "«hermano del vínculo del alma» · élfico"
     },
     {
       "name": "Afonael",
@@ -30,89 +20,94 @@
       "meaning": "«el del río» · élfico"
     },
     {
-      "name": "Arianjoki",
+      "name": "Amuel",
       "gender": "m",
-      "meaning": "«el río de plata» · élfico"
+      "meaning": "«el del alba» · élfico"
+    },
+    {
+      "name": "Arnion",
+      "gender": "m",
+      "meaning": "«hijo del bosque antiguo» · élfico"
     },
     {
       "name": "Arvoth",
       "gender": "m",
-      "meaning": "«el digno» · élfico"
+      "meaning": "«el de gran dignidad» · élfico"
     },
     {
       "name": "Aurivel",
       "gender": "m",
-      "meaning": "«hermano dorado» · élfico"
+      "meaning": "«hermano del oro» · élfico"
     },
     {
-      "name": "Belenus",
+      "name": "Belentil",
       "gender": "m",
       "meaning": "«el brillante» · élfico arcaico"
     },
     {
-      "name": "Branuuli",
+      "name": "Branuil",
       "gender": "m",
-      "meaning": "«cuervo del viento» · élfico"
+      "meaning": "«cuervo de la brisa» · élfico"
     },
     {
-      "name": "Calonmiel",
+      "name": "Calonmel",
       "gender": "m",
       "meaning": "«el de corazón y mente» · élfico"
     },
     {
-      "name": "Canelvo",
+      "name": "Caneldos",
       "gender": "m",
-      "meaning": "«el cantor» · élfico"
+      "meaning": "«el de las melodías» · élfico"
     },
     {
-      "name": "Derwaino",
+      "name": "Derwain",
       "gender": "m",
-      "meaning": "«el roble sereno» · élfico"
+      "meaning": "«roble sereno» · élfico"
     },
     {
-      "name": "Eirauvo",
+      "name": "Eiravel",
       "gender": "m",
-      "meaning": "«el de la nieve» · élfico"
+      "meaning": "«hermano de la nevada» · élfico"
     },
     {
-      "name": "Eiruvo",
+      "name": "Eiru",
       "gender": "m",
-      "meaning": "«el de la luz interior» · élfico"
+      "meaning": "«luz interior» · élfico"
     },
     {
-      "name": "Eirvael",
+      "name": "Eirvel",
       "gender": "m",
-      "meaning": "«corazón de brisa» · élfico"
+      "meaning": "«hermano de la luz interior» · élfico"
     },
     {
-      "name": "Elaivo",
+      "name": "Elaivel",
       "gender": "m",
-      "meaning": "«el del aliento» · élfico"
+      "meaning": "«hermano del aliento» · élfico"
     },
     {
-      "name": "Glasvael",
+      "name": "Glasvel",
       "gender": "m",
-      "meaning": "«el de la brisa azul» · élfico"
+      "meaning": "«hermano del azul» · élfico"
     },
     {
-      "name": "Haapen",
+      "name": "Haeain",
       "gender": "m",
-      "meaning": "«el álamo temblón» · élfico"
+      "meaning": "«el plateado» · élfico"
     },
     {
-      "name": "Hallveo",
+      "name": "Halvadel",
       "gender": "m",
       "meaning": "«el de la escarcha» · élfico"
     },
     {
-      "name": "Heulvaro",
+      "name": "Haradel",
       "gender": "m",
-      "meaning": "«el del sol» · élfico"
+      "meaning": "«el gris» · élfico"
     },
     {
-      "name": "Hopeain",
+      "name": "Helvuar",
       "gender": "m",
-      "meaning": "«el plateado» · élfico"
+      "meaning": "«guardián del sol» · élfico"
     },
     {
       "name": "Ilmavel",
@@ -120,159 +115,159 @@
       "meaning": "«hermano del aire» · élfico"
     },
     {
-      "name": "Iltaro",
+      "name": "Iltar",
       "gender": "m",
       "meaning": "«el del atardecer» · élfico"
     },
     {
       "name": "Ilvaren",
       "gender": "m",
-      "meaning": "«el del aire del atardecer» · élfico"
+      "meaning": "«guardián del aire» · élfico"
     },
     {
-      "name": "Jäälor",
+      "name": "Jaalor",
       "gender": "m",
-      "meaning": "«el del hielo» · élfico"
+      "meaning": "«señor del hielo» · élfico"
     },
     {
-      "name": "Järvion",
+      "name": "Jarvion",
       "gender": "m",
-      "meaning": "«el del lago» · élfico"
+      "meaning": "«hijo del lago» · élfico"
     },
     {
-      "name": "Jokivar",
+      "name": "Jolvar",
       "gender": "m",
-      "meaning": "«el del río» · élfico"
+      "meaning": "«guardián de la corriente» · élfico"
     },
     {
-      "name": "Joutsar",
+      "name": "Jotsar",
       "gender": "m",
-      "meaning": "«el cisne» · élfico"
+      "meaning": "«el del cisne» · élfico"
     },
     {
-      "name": "Kaislin",
-      "gender": "m",
-      "meaning": "«el junco» · élfico"
-    },
-    {
-      "name": "Kanteli",
+      "name": "Kaentel",
       "gender": "m",
       "meaning": "«el arpista» · élfico"
     },
     {
-      "name": "Karhion",
+      "name": "Kaislin",
       "gender": "m",
-      "meaning": "«el oso» · élfico"
+      "meaning": "«el que se dobla como el junco» · élfico"
     },
     {
-      "name": "Kesäro",
+      "name": "Karthion",
+      "gender": "m",
+      "meaning": "«hijo del oso» · élfico"
+    },
+    {
+      "name": "Kelain",
+      "gender": "m",
+      "meaning": "«reflejo de la luna» · élfico"
+    },
+    {
+      "name": "Kesiar",
       "gender": "m",
       "meaning": "«el del verano» · élfico"
     },
     {
-      "name": "Kevaith",
+      "name": "Kevaleth",
       "gender": "m",
-      "meaning": "«el de la primavera» · élfico"
+      "meaning": "«el de las primaveras» · élfico"
     },
     {
       "name": "Kiveth",
       "gender": "m",
-      "meaning": "«el de la piedra» · élfico"
+      "meaning": "«el de las piedras» · élfico"
     },
     {
-      "name": "Koivael",
+      "name": "Koivel",
       "gender": "m",
-      "meaning": "«el abedul» · élfico"
+      "meaning": "«el del abedul» · élfico"
     },
     {
-      "name": "Koskaro",
+      "name": "Koskar",
       "gender": "m",
       "meaning": "«el de los rápidos» · élfico"
     },
     {
       "name": "Kotkar",
       "gender": "m",
-      "meaning": "«el águila» · élfico"
+      "meaning": "«el del águila» · élfico"
     },
     {
       "name": "Kultaren",
       "gender": "m",
-      "meaning": "«el dorado» · élfico"
+      "meaning": "«nacido del ámbar» · élfico"
     },
     {
-      "name": "Kuulaino",
+      "name": "Kunvar",
       "gender": "m",
-      "meaning": "«ola de luna» · élfico"
+      "meaning": "«guardián de la luna» · élfico"
     },
     {
-      "name": "Kuuvaro",
-      "gender": "m",
-      "meaning": "«el que sigue la luna» · élfico"
-    },
-    {
-      "name": "Kuuvel",
+      "name": "Kunvel",
       "gender": "m",
       "meaning": "«hermano de la luna» · élfico"
     },
     {
-      "name": "Laaksen",
+      "name": "Laasken",
       "gender": "m",
       "meaning": "«el del valle» · élfico"
     },
     {
       "name": "Lainaur",
       "gender": "m",
-      "meaning": "«ola dorada» · élfico"
+      "meaning": "«espuma dorada» · élfico"
     },
     {
       "name": "Laorvel",
       "gender": "m",
-      "meaning": "«hermano del bosque» · élfico"
+      "meaning": "«hermano del corazón del bosque» · élfico"
     },
     {
       "name": "Larnaval",
       "gender": "m",
-      "meaning": "«el gran árbol» · élfico"
+      "meaning": "«el del gran árbol» · élfico"
     },
     {
       "name": "Laulin",
       "gender": "m",
-      "meaning": "«el cantor» · élfico"
+      "meaning": "«el que canta» · élfico"
     },
     {
-      "name": "Linnuven",
+      "name": "Linnuvien",
       "gender": "m",
-      "meaning": "«el pájaro» · élfico"
+      "meaning": "«pájaro del remanso» · élfico"
     },
     {
-      "name": "Lloerion",
+      "name": "Llhoerion",
       "gender": "m",
-      "meaning": "«el de la luna» · élfico"
+      "meaning": "«hijo del plenilunio» · élfico"
     },
     {
-      "name": "Luenvaino",
+      "name": "Luenvain",
       "gender": "m",
-      "meaning": "«el arroyo tranquilo» · élfico"
+      "meaning": "«arroyo sereno» · élfico"
     },
     {
-      "name": "Lugh",
+      "name": "Lughain",
       "gender": "m",
       "meaning": "«el luminoso» · élfico arcaico"
     },
     {
-      "name": "Lumeth",
+      "name": "Luneth",
       "gender": "m",
-      "meaning": "«el de la nieve» · élfico"
+      "meaning": "«el de las nieves» · élfico"
     },
     {
-      "name": "Meldaro",
+      "name": "Meldar",
       "gender": "m",
-      "meaning": "«el de las estrellas» · élfico"
+      "meaning": "«el de la estrella» · élfico"
     },
     {
-      "name": "Merivael",
+      "name": "Merivel",
       "gender": "m",
-      "meaning": "«el de la brisa del mar» · élfico"
+      "meaning": "«hermano del mar abierto» · élfico"
     },
     {
       "name": "Merunvel",
@@ -282,25 +277,25 @@
     {
       "name": "Metsavel",
       "gender": "m",
-      "meaning": "«hermano del bosque» · élfico"
+      "meaning": "«hermano de la espesura» · élfico"
     },
     {
-      "name": "Mielvar",
-      "gender": "m",
-      "meaning": "«el de mente serena» · élfico"
-    },
-    {
-      "name": "Morvalo",
+      "name": "Morval",
       "gender": "m",
       "meaning": "«luz del mar» · élfico"
     },
     {
-      "name": "Nantoveli",
+      "name": "Naelvar",
       "gender": "m",
-      "meaning": "«hermano del arroyo» · élfico"
+      "meaning": "«guardián de la mente» · élfico"
     },
     {
-      "name": "Nuada",
+      "name": "Nantovel",
+      "gender": "m",
+      "meaning": "«hermano de la cañada» · élfico"
+    },
+    {
+      "name": "Nuadan",
       "gender": "m",
       "meaning": "«el que alcanza» · élfico arcaico"
     },
@@ -312,37 +307,37 @@
     {
       "name": "Oigeth",
       "gender": "m",
-      "meaning": "«el justo» · élfico"
+      "meaning": "«el de la justicia» · élfico"
     },
     {
-      "name": "Omandu",
+      "name": "Omand",
       "gender": "m",
-      "meaning": "«la conciencia» · élfico"
+      "meaning": "«el consciente» · élfico"
     },
     {
-      "name": "Päivanen",
+      "name": "Paivan",
       "gender": "m",
       "meaning": "«el del día» · élfico"
     },
     {
-      "name": "Pihlaro",
+      "name": "Pilavel",
       "gender": "m",
-      "meaning": "«el serbal» · élfico"
+      "meaning": "«hermano de las nubes» · élfico"
     },
     {
-      "name": "Pilvael",
+      "name": "Pilhar",
       "gender": "m",
-      "meaning": "«el de las nubes» · élfico"
+      "meaning": "«el del serbal» · élfico"
     },
     {
-      "name": "Puunor",
+      "name": "Puhnor",
       "gender": "m",
-      "meaning": "«el del árbol» · élfico"
+      "meaning": "«señor de los árboles» · élfico"
     },
     {
       "name": "Rahvel",
       "gender": "m",
-      "meaning": "«el del pueblo» · élfico"
+      "meaning": "«hermano del pueblo» · élfico"
     },
     {
       "name": "Rantaval",
@@ -355,34 +350,34 @@
       "meaning": "«el de la aurora» · élfico"
     },
     {
-      "name": "Rhosvael",
+      "name": "Rhosvel",
       "gender": "m",
-      "meaning": "«el del brezal» · élfico"
+      "meaning": "«hermano del brezal» · élfico"
     },
     {
-      "name": "Runoel",
+      "name": "Rundel",
       "gender": "m",
-      "meaning": "«el poeta» · élfico"
+      "meaning": "«el de las runas» · élfico"
     },
     {
       "name": "Saarion",
       "gender": "m",
-      "meaning": "«el de la isla» · élfico"
+      "meaning": "«hijo de la isla» · élfico"
     },
     {
       "name": "Sammelin",
       "gender": "m",
-      "meaning": "«el del musgo» · élfico"
+      "meaning": "«el que crece como el musgo» · élfico"
     },
     {
       "name": "Sateron",
       "gender": "m",
-      "meaning": "«el de la lluvia» · élfico"
+      "meaning": "«nacido de la lluvia» · élfico"
     },
     {
       "name": "Seruvel",
       "gender": "m",
-      "meaning": "«el de las estrellas» · élfico"
+      "meaning": "«hermano del lucero» · élfico"
     },
     {
       "name": "Sielvain",
@@ -390,104 +385,99 @@
       "meaning": "«alma serena» · élfico"
     },
     {
-      "name": "Silvaino",
+      "name": "Sielvarren",
       "gender": "m",
-      "meaning": "«luz de las aguas tranquilas» · élfico"
-    },
-    {
-      "name": "Silvarren",
-      "gender": "m",
-      "meaning": "«el de la luz plena» · élfico"
+      "meaning": "«guardián de las almas» · élfico"
     },
     {
       "name": "Susael",
       "gender": "m",
-      "meaning": "«el lobo» · élfico"
+      "meaning": "«el del lobo» · élfico"
     },
     {
-      "name": "Syksael",
+      "name": "Syksel",
       "gender": "m",
       "meaning": "«el del otoño» · élfico"
     },
     {
-      "name": "Tähjarvo",
+      "name": "Tahijar",
       "gender": "m",
-      "meaning": "«lago de estrellas» · élfico"
+      "meaning": "«lago de los astros» · élfico"
     },
     {
-      "name": "Tähtion",
+      "name": "Tahtion",
       "gender": "m",
-      "meaning": "«el de las estrellas» · élfico"
+      "meaning": "«hijo de los astros» · élfico"
     },
     {
       "name": "Taivalor",
       "gender": "m",
-      "meaning": "«el que recorre el cielo» · élfico"
+      "meaning": "«señor de las travesías» · élfico"
     },
     {
       "name": "Taivoren",
       "gender": "m",
-      "meaning": "«el del cielo» · élfico"
+      "meaning": "«nacido del cielo» · élfico"
     },
     {
       "name": "Talvion",
       "gender": "m",
-      "meaning": "«el del invierno» · élfico"
+      "meaning": "«hijo del invierno» · élfico"
     },
     {
-      "name": "Tanuuli",
+      "name": "Tanuul",
       "gender": "m",
-      "meaning": "«fuego y viento» · élfico"
+      "meaning": "«fuego y brisa» · élfico"
     },
     {
-      "name": "Taranis",
+      "name": "Taran",
       "gender": "m",
       "meaning": "«el del trueno» · élfico arcaico"
     },
     {
-      "name": "Thalvaro",
+      "name": "Thalvar",
       "gender": "m",
       "meaning": "«el que cabalga el viento» · élfico"
     },
     {
-      "name": "Thalveo",
+      "name": "Thalven",
       "gender": "m",
       "meaning": "«el ventoso» · élfico"
     },
     {
+      "name": "Thulion",
+      "gender": "m",
+      "meaning": "«hijo de la brisa» · élfico"
+    },
+    {
       "name": "Tulvain",
       "gender": "m",
-      "meaning": "«fuego sereno» · élfico"
+      "meaning": "«llama serena» · élfico"
     },
     {
-      "name": "Tuulion",
-      "gender": "m",
-      "meaning": "«el del viento» · élfico"
-    },
-    {
-      "name": "Unelvo",
+      "name": "Unel",
       "gender": "m",
       "meaning": "«el soñador» · élfico"
     },
     {
-      "name": "Usvael",
+      "name": "Usvel",
       "gender": "m",
-      "meaning": "«el de la neblina» · élfico"
+      "meaning": "«el de la niebla» · élfico"
     },
     {
-      "name": "Vällien",
+      "name": "Vallien",
       "gender": "m",
       "meaning": "«el libre» · élfico"
     },
     {
       "name": "Valoren",
       "gender": "m",
-      "meaning": "«el de la luz» · élfico"
+      "meaning": "«nacido de la luz» · élfico"
     },
     {
-      "name": "Véarnion",
+      "name": "Vearnion",
       "gender": "m",
-      "meaning": "«el sagrado» · élfico"
+      "meaning": "«hijo de lo sagrado» · élfico"
     },
     {
       "name": "Velmor",
@@ -497,12 +487,12 @@
     {
       "name": "Vesiron",
       "gender": "m",
-      "meaning": "«el del agua» · élfico"
+      "meaning": "«nacido del agua» · élfico"
     },
     {
       "name": "Vuorel",
       "gender": "m",
-      "meaning": "«el de la montaña» · élfico"
+      "meaning": "«el del monte» · élfico"
     },
     {
       "name": "Aaltia",
@@ -510,14 +500,9 @@
       "meaning": "«la ola» · élfico"
     },
     {
-      "name": "Aamuna",
+      "name": "Aamuviel",
       "gender": "f",
-      "meaning": "«el alba» · élfico"
-    },
-    {
-      "name": "Aamuvael",
-      "gender": "f",
-      "meaning": "«brisa del alba» · élfico"
+      "meaning": "«doncella del alba» · élfico"
     },
     {
       "name": "Aarnia",
@@ -527,15 +512,20 @@
     {
       "name": "Aethirna",
       "gender": "f",
-      "meaning": "«la amada» · élfico"
+      "meaning": "«la del vínculo del alma» · élfico"
     },
     {
       "name": "Afonia",
       "gender": "f",
-      "meaning": "«el río» · élfico"
+      "meaning": "«la del río» · élfico"
     },
     {
-      "name": "Arianvesi",
+      "name": "Amuna",
+      "gender": "f",
+      "meaning": "«el alba» · élfico"
+    },
+    {
+      "name": "Aranvesi",
       "gender": "f",
       "meaning": "«agua de plata» · élfico"
     },
@@ -547,12 +537,17 @@
     {
       "name": "Auria",
       "gender": "f",
-      "meaning": "«el oro» · élfico"
+      "meaning": "«la de oro» · élfico"
     },
     {
-      "name": "Branuula",
+      "name": "Braneula",
       "gender": "f",
-      "meaning": "«cuerva del viento» · élfico"
+      "meaning": "«cuerva de la brisa» · élfico"
+    },
+    {
+      "name": "Caenelle",
+      "gender": "f",
+      "meaning": "«la cancioncilla» · élfico"
     },
     {
       "name": "Calonna",
@@ -560,34 +555,29 @@
       "meaning": "«la del corazón» · élfico"
     },
     {
-      "name": "Canelle",
+      "name": "Daenu",
       "gender": "f",
-      "meaning": "«la canción» · élfico"
-    },
-    {
-      "name": "Danu",
-      "gender": "f",
-      "meaning": "«la de las aguas, la madre» · élfico arcaico"
+      "meaning": "«madre de las aguas» · élfico arcaico"
     },
     {
       "name": "Derwia",
       "gender": "f",
-      "meaning": "«el roble» · élfico"
+      "meaning": "«la del roble» · élfico"
     },
     {
       "name": "Eiranne",
       "gender": "f",
-      "meaning": "«la de la nieve» · élfico"
+      "meaning": "«la de la nevada» · élfico"
     },
     {
-      "name": "Eirenvesi",
+      "name": "Eirenviel",
       "gender": "f",
-      "meaning": "«agua del corazón» · élfico"
+      "meaning": "«doncella de la luz interior» · élfico"
     },
     {
       "name": "Elainna",
       "gender": "f",
-      "meaning": "«cada respiración» · élfico"
+      "meaning": "«cada aliento» · élfico"
     },
     {
       "name": "Glasaine",
@@ -595,9 +585,14 @@
       "meaning": "«la azul» · élfico"
     },
     {
-      "name": "Haapia",
+      "name": "Haepha",
       "gender": "f",
-      "meaning": "«el álamo temblón» · élfico"
+      "meaning": "«la del álamo temblón» · élfico"
+    },
+    {
+      "name": "Haephela",
+      "gender": "f",
+      "meaning": "«la de los álamos plateados» · élfico"
     },
     {
       "name": "Hallaine",
@@ -605,19 +600,14 @@
       "meaning": "«la escarcha» · élfico"
     },
     {
+      "name": "Helvesiel",
+      "gender": "f",
+      "meaning": "«doncella del agua soleada» · élfico"
+    },
+    {
       "name": "Heulaine",
       "gender": "f",
       "meaning": "«la del sol» · élfico"
-    },
-    {
-      "name": "Heulvesi",
-      "gender": "f",
-      "meaning": "«agua del sol» · élfico"
-    },
-    {
-      "name": "Hopella",
-      "gender": "f",
-      "meaning": "«la plateada» · élfico"
     },
     {
       "name": "Ileria",
@@ -627,42 +617,42 @@
     {
       "name": "Ilmaine",
       "gender": "f",
-      "meaning": "«el aire» · élfico"
+      "meaning": "«la del aire» · élfico"
     },
     {
       "name": "Iltaine",
       "gender": "f",
-      "meaning": "«el atardecer» · élfico"
+      "meaning": "«la del atardecer» · élfico"
     },
     {
-      "name": "Iltavael",
+      "name": "Iltaviel",
       "gender": "f",
-      "meaning": "«brisa del atardecer» · élfico"
+      "meaning": "«doncella del atardecer» · élfico"
+    },
+    {
+      "name": "Jaekelle",
+      "gender": "f",
+      "meaning": "«la pequeña corriente» · élfico"
     },
     {
       "name": "Jaelle",
       "gender": "f",
-      "meaning": "«el hielo» · élfico"
+      "meaning": "«el carámbano» · élfico"
     },
     {
-      "name": "Järvina",
+      "name": "Jaervina",
       "gender": "f",
       "meaning": "«la del lago» · élfico"
     },
     {
-      "name": "Jokelle",
+      "name": "Jathsenna",
       "gender": "f",
-      "meaning": "«la del río» · élfico"
-    },
-    {
-      "name": "Joutsenna",
-      "gender": "f",
-      "meaning": "«el cisne» · élfico"
+      "meaning": "«la del cisne» · élfico"
     },
     {
       "name": "Kaislenna",
       "gender": "f",
-      "meaning": "«el junco» · élfico"
+      "meaning": "«la del junco» · élfico"
     },
     {
       "name": "Kantela",
@@ -670,9 +660,14 @@
       "meaning": "«el arpa» · élfico"
     },
     {
-      "name": "Kesäine",
+      "name": "Kesaine",
       "gender": "f",
-      "meaning": "«el verano» · élfico"
+      "meaning": "«la del verano» · élfico"
+    },
+    {
+      "name": "Keukaine",
+      "gender": "f",
+      "meaning": "«la flor» · élfico"
     },
     {
       "name": "Kevaita",
@@ -682,47 +677,42 @@
     {
       "name": "Koivenna",
       "gender": "f",
-      "meaning": "«el abedul» · élfico"
+      "meaning": "«la del abedul» · élfico"
     },
     {
       "name": "Koskaine",
       "gender": "f",
-      "meaning": "«los rápidos» · élfico"
-    },
-    {
-      "name": "Kukkaine",
-      "gender": "f",
-      "meaning": "«la flor» · élfico"
+      "meaning": "«la de los rápidos» · élfico"
     },
     {
       "name": "Kultaine",
       "gender": "f",
-      "meaning": "«la dorada» · élfico"
+      "meaning": "«la del ámbar» · élfico"
     },
     {
-      "name": "Kuunelle",
+      "name": "Kunelle",
       "gender": "f",
-      "meaning": "«luz de luna» · élfico"
+      "meaning": "«la lunita» · élfico"
     },
     {
-      "name": "Kuusenna",
+      "name": "Kusenna",
       "gender": "f",
-      "meaning": "«el abeto» · élfico"
+      "meaning": "«la del abeto» · élfico"
     },
     {
-      "name": "Kuutela",
+      "name": "Kutela",
       "gender": "f",
       "meaning": "«la de la luna» · élfico"
     },
     {
-      "name": "Laaksia",
-      "gender": "f",
-      "meaning": "«el valle» · élfico"
-    },
-    {
       "name": "Lainelle",
       "gender": "f",
-      "meaning": "«la ola» · élfico"
+      "meaning": "«la pequeña espuma» · élfico"
+    },
+    {
+      "name": "Laksia",
+      "gender": "f",
+      "meaning": "«la del valle» · élfico"
     },
     {
       "name": "Laornia",
@@ -742,7 +732,7 @@
     {
       "name": "Lloeria",
       "gender": "f",
-      "meaning": "«la de la luna» · élfico"
+      "meaning": "«la del plenilunio» · élfico"
     },
     {
       "name": "Luenna",
@@ -752,12 +742,12 @@
     {
       "name": "Lumetta",
       "gender": "f",
-      "meaning": "«la de la nieve» · élfico"
+      "meaning": "«la pequeña nieve» · élfico"
     },
     {
-      "name": "Lumivael",
+      "name": "Lumiviel",
       "gender": "f",
-      "meaning": "«brisa de nieve» · élfico"
+      "meaning": "«doncella de la nieve» · élfico"
     },
     {
       "name": "Mansia",
@@ -765,24 +755,24 @@
       "meaning": "«la fresa silvestre» · élfico"
     },
     {
-      "name": "Marjaine",
+      "name": "Maraine",
       "gender": "f",
       "meaning": "«la baya» · élfico"
     },
     {
       "name": "Meldaine",
       "gender": "f",
-      "meaning": "«la de las estrellas» · élfico"
+      "meaning": "«la de la estrella» · élfico"
     },
     {
-      "name": "Meldajarvi",
+      "name": "Meldaviel",
       "gender": "f",
-      "meaning": "«lago de las estrellas» · élfico"
+      "meaning": "«doncella de las estrellas» · élfico"
     },
     {
       "name": "Merivaine",
       "gender": "f",
-      "meaning": "«la del mar sereno» · élfico"
+      "meaning": "«el mar abierto en calma» · élfico"
     },
     {
       "name": "Merunna",
@@ -792,22 +782,22 @@
     {
       "name": "Metsaine",
       "gender": "f",
-      "meaning": "«la del bosque» · élfico"
+      "meaning": "«la de la espesura» · élfico"
     },
     {
       "name": "Mielaine",
       "gender": "f",
-      "meaning": "«la de mente serena» · élfico"
+      "meaning": "«la pensativa» · élfico"
     },
     {
       "name": "Morvaina",
       "gender": "f",
-      "meaning": "«el mar sereno» · élfico"
+      "meaning": "«el mar en calma» · élfico"
     },
     {
       "name": "Nantelle",
       "gender": "f",
-      "meaning": "«el arroyo» · élfico"
+      "meaning": "«la pequeña cañada» · élfico"
     },
     {
       "name": "Nuithanna",
@@ -822,17 +812,17 @@
     {
       "name": "Omandia",
       "gender": "f",
-      "meaning": "«la conciencia» · élfico"
+      "meaning": "«la consciente» · élfico"
     },
     {
-      "name": "Päivia",
+      "name": "Paivia",
       "gender": "f",
       "meaning": "«la del día» · élfico"
     },
     {
       "name": "Pihlaine",
       "gender": "f",
-      "meaning": "«el serbal» · élfico"
+      "meaning": "«la del serbal» · élfico"
     },
     {
       "name": "Pilvia",
@@ -847,7 +837,7 @@
     {
       "name": "Rantaine",
       "gender": "f",
-      "meaning": "«la orilla» · élfico"
+      "meaning": "«la de la orilla» · élfico"
     },
     {
       "name": "Revona",
@@ -855,49 +845,44 @@
       "meaning": "«la aurora» · élfico"
     },
     {
-      "name": "Revonna",
-      "gender": "f",
-      "meaning": "«la de la aurora» · élfico"
-    },
-    {
       "name": "Rhosaine",
       "gender": "f",
-      "meaning": "«el brezal» · élfico"
+      "meaning": "«la del brezal» · élfico"
     },
     {
       "name": "Runelle",
       "gender": "f",
-      "meaning": "«el poema» · élfico"
+      "meaning": "«la pequeña runa» · élfico"
     },
     {
-      "name": "Ruusenna",
+      "name": "Rusenna",
       "gender": "f",
       "meaning": "«la rosa» · élfico"
     },
     {
-      "name": "Saarelle",
-      "gender": "f",
-      "meaning": "«la isla» · élfico"
-    },
-    {
       "name": "Sammela",
       "gender": "f",
-      "meaning": "«el musgo» · élfico"
+      "meaning": "«la del musgo» · élfico"
+    },
+    {
+      "name": "Sarelle",
+      "gender": "f",
+      "meaning": "«la isleta» · élfico"
     },
     {
       "name": "Satella",
       "gender": "f",
-      "meaning": "«la lluvia» · élfico"
+      "meaning": "«la llovizna» · élfico"
     },
     {
       "name": "Serenna",
       "gender": "f",
-      "meaning": "«la estrella» · élfico"
+      "meaning": "«el lucero» · élfico"
     },
     {
-      "name": "Seruuli",
+      "name": "Seruliel",
       "gender": "f",
-      "meaning": "«estrella del viento» · élfico"
+      "meaning": "«doncella del lucero y la brisa» · élfico"
     },
     {
       "name": "Sieluna",
@@ -907,42 +892,42 @@
     {
       "name": "Sielvaine",
       "gender": "f",
-      "meaning": "«alma serena» · élfico"
+      "meaning": "«la del alma serena» · élfico"
     },
     {
       "name": "Silvaina",
       "gender": "f",
-      "meaning": "«luz serena» · élfico"
+      "meaning": "«luz plena y serena» · élfico"
     },
     {
-      "name": "Tähtiarvi",
+      "name": "Tahtarviel",
       "gender": "f",
-      "meaning": "«lago de estrellas» · élfico"
+      "meaning": "«doncella del lago de los astros» · élfico"
     },
     {
-      "name": "Tähtinne",
+      "name": "Tahtinne",
       "gender": "f",
-      "meaning": "«la estrella» · élfico"
+      "meaning": "«el astro» · élfico"
     },
     {
-      "name": "Tähvaine",
+      "name": "Tahvaine",
       "gender": "f",
-      "meaning": "«estrella serena» · élfico"
+      "meaning": "«astro sereno» · élfico"
     },
     {
       "name": "Taivelle",
       "gender": "f",
-      "meaning": "«la del cielo» · élfico"
+      "meaning": "«el cielito» · élfico"
     },
     {
       "name": "Talvenne",
       "gender": "f",
-      "meaning": "«el invierno» · élfico"
+      "meaning": "«la del invierno» · élfico"
     },
     {
-      "name": "Tannuli",
+      "name": "Tannuliel",
       "gender": "f",
-      "meaning": "«fuego y viento» · élfico"
+      "meaning": "«doncella del fuego y la brisa» · élfico"
     },
     {
       "name": "Thalvenna",
@@ -950,9 +935,9 @@
       "meaning": "«la del viento» · élfico"
     },
     {
-      "name": "Tuulia",
+      "name": "Thulia",
       "gender": "f",
-      "meaning": "«la del viento» · élfico"
+      "meaning": "«la brisa» · élfico"
     },
     {
       "name": "Unelva",
@@ -962,27 +947,27 @@
     {
       "name": "Usvaelle",
       "gender": "f",
-      "meaning": "«la de la neblina» · élfico"
+      "meaning": "«la pequeña niebla» · élfico"
     },
     {
       "name": "Usvanne",
       "gender": "f",
-      "meaning": "«la neblina» · élfico"
+      "meaning": "«la niebla» · élfico"
     },
     {
-      "name": "Vällinne",
-      "gender": "f",
-      "meaning": "«la libre» · élfico"
-    },
-    {
-      "name": "Valoa",
+      "name": "Valda",
       "gender": "f",
       "meaning": "«la luz» · élfico"
     },
     {
-      "name": "Véarnelle",
+      "name": "Vallinne",
       "gender": "f",
-      "meaning": "«la sagrada» · élfico"
+      "meaning": "«la libre» · élfico"
+    },
+    {
+      "name": "Vearnelle",
+      "gender": "f",
+      "meaning": "«la consagrada» · élfico"
     },
     {
       "name": "Velenna",
@@ -997,18 +982,18 @@
     {
       "name": "Vienaine",
       "gender": "f",
-      "meaning": "«la del río lento» · élfico"
+      "meaning": "«la del remanso» · élfico"
     },
     {
       "name": "Vuorenna",
       "gender": "f",
-      "meaning": "«la montaña» · élfico"
+      "meaning": "«la del monte» · élfico"
     }
   ],
   "surnames": [
     {
       "name": "ap Aamuna",
-      "meaning": "«de la estirpe de Aamuna» · élfico"
+      "meaning": "«de la estirpe de Amuna» · élfico"
     },
     {
       "name": "ap Aarnia",
@@ -1016,7 +1001,7 @@
     },
     {
       "name": "ap Aarnion",
-      "meaning": "«de la estirpe de Aarnion» · élfico"
+      "meaning": "«de la estirpe de Arnion» · élfico"
     },
     {
       "name": "ap Aethirna",
@@ -1031,76 +1016,76 @@
       "meaning": "«de la estirpe de Arvoth» · élfico"
     },
     {
-      "name": "ap Belenus",
-      "meaning": "«de la estirpe de Belenus» · élfico arcaico"
+      "name": "ap Belentil",
+      "meaning": "«de la estirpe de Belentil» · élfico arcaico"
     },
     {
-      "name": "ap Branuula",
-      "meaning": "«de la estirpe de Branuula» · élfico"
+      "name": "ap Branul",
+      "meaning": "«de la estirpe de Braneula» · élfico"
     },
     {
-      "name": "ap Calonmiel",
-      "meaning": "«de la estirpe de Calonmiel» · élfico"
+      "name": "ap Caesenna",
+      "meaning": "«de la estirpe de Jathsenna» · élfico"
+    },
+    {
+      "name": "ap Calonmel",
+      "meaning": "«de la estirpe de Calonmel» · élfico"
     },
     {
       "name": "ap Calonna",
       "meaning": "«de la estirpe de Calonna» · élfico"
     },
     {
-      "name": "ap Danu",
-      "meaning": "«de la estirpe de Danu» · élfico arcaico"
+      "name": "ap Carhion",
+      "meaning": "«de la estirpe de Karthion» · élfico"
+    },
+    {
+      "name": "ap Carviena",
+      "meaning": "«de la estirpe de Jaervina» · élfico"
+    },
+    {
+      "name": "ap Ceutela",
+      "meaning": "«de la estirpe de Kutela» · élfico"
+    },
+    {
+      "name": "ap Coivenna",
+      "meaning": "«de la estirpe de Koivenna» · élfico"
+    },
+    {
+      "name": "ap Cothkar",
+      "meaning": "«de la estirpe de Kotkar» · élfico"
+    },
+    {
+      "name": "ap Cultaine",
+      "meaning": "«de la estirpe de Kultaine» · élfico"
+    },
+    {
+      "name": "ap Culvel",
+      "meaning": "«de la estirpe de Kunvel» · élfico"
+    },
+    {
+      "name": "ap Danun",
+      "meaning": "«de la estirpe de Daenu» · élfico arcaico"
     },
     {
       "name": "ap Hallaine",
       "meaning": "«de la estirpe de Hallaine» · élfico"
     },
     {
+      "name": "ap Hepelia",
+      "meaning": "«de la estirpe de Haephela» · élfico"
+    },
+    {
       "name": "ap Heulaine",
       "meaning": "«de la estirpe de Heulaine» · élfico"
     },
     {
-      "name": "ap Heulvaro",
-      "meaning": "«de la estirpe de Heulvaro» · élfico"
-    },
-    {
-      "name": "ap Hopella",
-      "meaning": "«de la estirpe de Hopella» · élfico"
+      "name": "ap Heulvar",
+      "meaning": "«de la estirpe de Helvuar» · élfico"
     },
     {
       "name": "ap Ileria",
       "meaning": "«de la estirpe de Ileria» · élfico"
-    },
-    {
-      "name": "ap Järvina",
-      "meaning": "«de la estirpe de Järvina» · élfico"
-    },
-    {
-      "name": "ap Joutsenna",
-      "meaning": "«de la estirpe de Joutsenna» · élfico"
-    },
-    {
-      "name": "ap Karhion",
-      "meaning": "«de la estirpe de Karhion» · élfico"
-    },
-    {
-      "name": "ap Koivenna",
-      "meaning": "«de la estirpe de Koivenna» · élfico"
-    },
-    {
-      "name": "ap Kotkar",
-      "meaning": "«de la estirpe de Kotkar» · élfico"
-    },
-    {
-      "name": "ap Kultaine",
-      "meaning": "«de la estirpe de Kultaine» · élfico"
-    },
-    {
-      "name": "ap Kuutela",
-      "meaning": "«de la estirpe de Kuutela» · élfico"
-    },
-    {
-      "name": "ap Kuuvel",
-      "meaning": "«de la estirpe de Kuuvel» · élfico"
     },
     {
       "name": "ap Lainelle",
@@ -1123,8 +1108,8 @@
       "meaning": "«de la estirpe de Luenna» · élfico"
     },
     {
-      "name": "ap Lugh",
-      "meaning": "«de la estirpe de Lugh» · élfico arcaico"
+      "name": "ap Lughain",
+      "meaning": "«de la estirpe de Lughain» · élfico arcaico"
     },
     {
       "name": "ap Meldaine",
@@ -1132,7 +1117,7 @@
     },
     {
       "name": "ap Meldaro",
-      "meaning": "«de la estirpe de Meldaro» · élfico"
+      "meaning": "«de la estirpe de Meldar» · élfico"
     },
     {
       "name": "ap Merivaine",
@@ -1143,16 +1128,16 @@
       "meaning": "«de la estirpe de Mielaine» · élfico"
     },
     {
-      "name": "ap Morvaina",
+      "name": "ap Morvain",
       "meaning": "«de la estirpe de Morvaina» · élfico"
     },
     {
-      "name": "ap Morvalo",
-      "meaning": "«de la estirpe de Morvalo» · élfico"
+      "name": "ap Morval",
+      "meaning": "«de la estirpe de Morval» · élfico"
     },
     {
-      "name": "ap Nuada",
-      "meaning": "«de la estirpe de Nuada» · élfico arcaico"
+      "name": "ap Nuadan",
+      "meaning": "«de la estirpe de Nuadan» · élfico arcaico"
     },
     {
       "name": "ap Nuithanna",
@@ -1163,47 +1148,43 @@
       "meaning": "«de la estirpe de Pihlaine» · élfico"
     },
     {
+      "name": "ap Raenelle",
+      "meaning": "«de la estirpe de Runelle» · élfico"
+    },
+    {
       "name": "ap Revona",
       "meaning": "«de la estirpe de Revona» · élfico"
     },
     {
-      "name": "ap Revonna",
-      "meaning": "«de la estirpe de Revonna» · élfico"
-    },
-    {
-      "name": "ap Runelle",
-      "meaning": "«de la estirpe de Runelle» · élfico"
-    },
-    {
-      "name": "ap Ruusenna",
-      "meaning": "«de la estirpe de Ruusenna» · élfico"
+      "name": "ap Rusenna",
+      "meaning": "«de la estirpe de Rusenna» · élfico"
     },
     {
       "name": "ap Serenna",
       "meaning": "«de la estirpe de Serenna» · élfico"
     },
     {
-      "name": "ap Seruuli",
-      "meaning": "«de la estirpe de Seruuli» · élfico"
+      "name": "ap Serul",
+      "meaning": "«de la estirpe de Seruliel» · élfico"
     },
     {
       "name": "ap Sieluna",
       "meaning": "«de la estirpe de Sieluna» · élfico"
     },
     {
+      "name": "ap Sielvarren",
+      "meaning": "«de la estirpe de Sielvarren» · élfico"
+    },
+    {
       "name": "ap Silvaina",
       "meaning": "«de la estirpe de Silvaina» · élfico"
     },
     {
-      "name": "ap Silvarren",
-      "meaning": "«de la estirpe de Silvarren» · élfico"
+      "name": "ap Tahtin",
+      "meaning": "«de la estirpe de Tahtinne» · élfico"
     },
     {
-      "name": "ap Tähtinne",
-      "meaning": "«de la estirpe de Tähtinne» · élfico"
-    },
-    {
-      "name": "ap Taivelle",
+      "name": "ap Taivel",
       "meaning": "«de la estirpe de Taivelle» · élfico"
     },
     {
@@ -1211,36 +1192,52 @@
       "meaning": "«de la estirpe de Taivoren» · élfico"
     },
     {
-      "name": "ap Thalvenna",
+      "name": "ap Thalvenn",
       "meaning": "«de la estirpe de Thalvenna» · élfico"
     },
     {
-      "name": "ap Tuulia",
-      "meaning": "«de la estirpe de Tuulia» · élfico"
+      "name": "ap Thulia",
+      "meaning": "«de la estirpe de Thulia» · élfico"
     },
     {
-      "name": "ap Véarnelle",
-      "meaning": "«de la estirpe de Véarnelle» · élfico"
+      "name": "ap Vearnel",
+      "meaning": "«de la estirpe de Vearnelle» · élfico"
     },
     {
       "name": "ap Velenna",
       "meaning": "«de la estirpe de Velenna» · élfico"
     },
     {
-      "name": "iin Aamuvaara",
-      "meaning": "«de la colina del alba» · élfico"
+      "name": "ap Vienain",
+      "meaning": "«de la estirpe de Vienaine» · élfico"
     },
     {
-      "name": "iin Aarnio",
+      "name": "iin Aarniel",
       "meaning": "«del bosque antiguo» · élfico"
     },
     {
-      "name": "iin Afonkoski",
-      "meaning": "«de los rápidos del río» · élfico"
+      "name": "iin Afonac",
+      "meaning": "«de la ribera» · élfico"
     },
     {
-      "name": "iin Annwn",
+      "name": "iin Amuvar",
+      "meaning": "«de la atalaya del alba» · élfico"
+    },
+    {
+      "name": "iin Anwen",
       "meaning": "«del otro mundo» · élfico arcaico"
+    },
+    {
+      "name": "iin Coivul",
+      "meaning": "«del abedular» · élfico"
+    },
+    {
+      "name": "iin Craesic",
+      "meaning": "«del abetal» · élfico"
+    },
+    {
+      "name": "iin Cuurant",
+      "meaning": "«de la orilla de la luna» · élfico"
     },
     {
       "name": "iin Derwikko",
@@ -1248,51 +1245,39 @@
     },
     {
       "name": "iin Eirenlaorn",
-      "meaning": "«del corazón del bosque antiguo» · élfico arcaico"
+      "meaning": "«de la luz interior del bosque» · élfico arcaico"
     },
     {
-      "name": "iin Glasvuori",
+      "name": "iin Glasvuor",
       "meaning": "«del monte azul» · élfico"
     },
     {
-      "name": "iin Haapala",
+      "name": "iin Hanphal",
       "meaning": "«del bosque de álamos» · élfico"
     },
     {
-      "name": "iin Heulmaa",
+      "name": "iin Helunman",
       "meaning": "«de la tierra del sol» · élfico"
     },
     {
-      "name": "iin Iltajoki",
-      "meaning": "«del río del atardecer» · élfico"
+      "name": "iin Iltaneth",
+      "meaning": "«de los atardeceres» · élfico"
     },
     {
-      "name": "iin Järvenmaa",
-      "meaning": "«de la tierra de los lagos» · élfico"
+      "name": "iin Javanmar",
+      "meaning": "«de la llanura de los lagos» · élfico"
     },
     {
-      "name": "iin Kaislikko",
+      "name": "iin Kaislic",
       "meaning": "«del juncal» · élfico"
-    },
-    {
-      "name": "iin Koivula",
-      "meaning": "«del abedular» · élfico"
     },
     {
       "name": "iin Koskela",
       "meaning": "«de los rápidos» · élfico"
     },
     {
-      "name": "iin Kuuranta",
-      "meaning": "«de la orilla de la luna» · élfico"
-    },
-    {
-      "name": "iin Kuusikko",
-      "meaning": "«del abetal» · élfico"
-    },
-    {
-      "name": "iin Laaksola",
-      "meaning": "«del valle» · élfico"
+      "name": "iin Laacadin",
+      "meaning": "«de la fortaleza del valle» · élfico"
     },
     {
       "name": "iin Laornith",
@@ -1303,15 +1288,15 @@
       "meaning": "«del gran árbol» · élfico"
     },
     {
-      "name": "iin Lloerjärvi",
-      "meaning": "«del lago de la luna» · élfico"
+      "name": "iin Lloervin",
+      "meaning": "«del remanso del plenilunio» · élfico"
     },
     {
-      "name": "iin Luénith",
-      "meaning": "«de las corrientes» · élfico"
+      "name": "iin Luenith",
+      "meaning": "«de los arroyos» · élfico"
     },
     {
-      "name": "iin Lumila",
+      "name": "iin Lumil",
       "meaning": "«de las nieves» · élfico"
     },
     {
@@ -1319,16 +1304,16 @@
       "meaning": "«de las estrellas» · élfico"
     },
     {
-      "name": "iin Meldavuori",
+      "name": "iin Meldavuor",
       "meaning": "«del monte de las estrellas» · élfico"
     },
     {
-      "name": "iin Morvaara",
+      "name": "iin Morvaar",
       "meaning": "«de la colina del mar» · élfico"
     },
     {
       "name": "iin Nantola",
-      "meaning": "«del lugar del arroyo» · élfico"
+      "meaning": "«de la cañada» · élfico"
     },
     {
       "name": "iin Neronvain",
@@ -1339,44 +1324,44 @@
       "meaning": "«de la noche» · élfico"
     },
     {
-      "name": "iin Pihlajisto",
-      "meaning": "«del serbal» · élfico"
+      "name": "iin Pihladan",
+      "meaning": "«del recinto de los serbales» · élfico"
     },
     {
-      "name": "iin Pohjola",
-      "meaning": "«del norte» · élfico arcaico"
+      "name": "iin Pohdol",
+      "meaning": "«del prado del norte» · élfico arcaico"
     },
     {
-      "name": "iin Rantala",
+      "name": "iin Rantal",
       "meaning": "«de la orilla» · élfico"
     },
     {
       "name": "iin Revontaival",
-      "meaning": "«del cielo de la aurora» · élfico"
+      "meaning": "«de la travesía de la aurora» · élfico"
     },
     {
-      "name": "iin Rhoslaakso",
-      "meaning": "«del valle de brezo» · élfico"
+      "name": "iin Rhoslac",
+      "meaning": "«del brezal» · élfico"
     },
     {
-      "name": "iin Saarela",
+      "name": "iin Saarel",
       "meaning": "«de la isla» · élfico"
     },
     {
-      "name": "iin Sammalvesi",
-      "meaning": "«del agua musgosa» · élfico"
+      "name": "iin Sammal",
+      "meaning": "«del musgal» · élfico"
     },
     {
-      "name": "iin Seruranta",
-      "meaning": "«de la orilla de las estrellas» · élfico"
+      "name": "iin Serurant",
+      "meaning": "«de la orilla de los luceros» · élfico"
     },
     {
       "name": "iin Silir",
-      "meaning": "«de la luz» · élfico"
+      "meaning": "«de la luz plena» · élfico"
     },
     {
-      "name": "iin Tähtimaa",
-      "meaning": "«de la tierra de las estrellas» · élfico"
+      "name": "iin Tahtimor",
+      "meaning": "«del mar de los astros» · élfico"
     },
     {
       "name": "iin Taranogh",
@@ -1391,20 +1376,20 @@
       "meaning": "«de Thiamashte» · élfico"
     },
     {
-      "name": "iin Tuulela",
-      "meaning": "«del lugar de los vientos» · élfico"
+      "name": "iin Tuuliel",
+      "meaning": "«del lugar de las brisas» · élfico"
     },
     {
-      "name": "iin Usvalaakso",
+      "name": "iin Usdalac",
       "meaning": "«del valle de la niebla» · élfico"
     },
     {
-      "name": "iin Véarnula",
+      "name": "iin Vearnul",
       "meaning": "«del lugar sagrado» · élfico"
     },
     {
-      "name": "iin Vuorela",
-      "meaning": "«de la montaña» · élfico"
+      "name": "iin Vuorel",
+      "meaning": "«del monte» · élfico"
     }
   ],
   "surname_rules": [],
