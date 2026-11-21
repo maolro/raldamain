@@ -1,0 +1,137 @@
+{
+  "id": "vira_revilo",
+  "name": "Vira Révilo",
+  "type": "Humanoide",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+7+1d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7+1d6"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 12,
+      "categories": "Físico",
+      "tier_tpl": "T+1"
+    }
+  ],
+  "immune": [],
+  "senses": "Vista a Ciegas",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Cortante",
+      "damage_tier": "MID",
+      "name": "Espada",
+      "range": "Adyacente",
+      "tags": [
+        "Arma",
+        "Fisico",
+        "Ataque"
+      ],
+      "ability_id": "ab_1793105102759",
+      "damage": "3d6 + 5 Cortante",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante/Cortante",
+      "damage_tier": "LOW",
+      "desc": "De manera alternativa a un ataque, puede arrastrar un objeto metálico hasta un paso en cualquier dirección (+7 + 2d6 FÍS si desarma)",
+      "name": "Ferrokinesia",
+      "range": "Medio",
+      "tags": [
+        "Metal",
+        "Ataque"
+      ],
+      "ability_id": "ab_1795283802243",
+      "mod_tpl": {
+        "desc": "De manera alternativa a un ataque, puede arrastrar un objeto metálico hasta un paso en cualquier dirección (+MOD FÍS si desarma)"
+      },
+      "damage": "2d6 + 5 Perforante/Cortante",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Su siguiente ataque afectará a cada objetivo en un radio corto y aumenta su daño por un dado adicional. Además, puede moverse antes o después de atacar sin provocar aperturas.",
+      "name": "Ataque Torbellino",
+      "tags": [
+        "Duelo",
+        "Marcial",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793232469761"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Hasta tres aliados que alcance reciben Ventaja en su siguiente tiro de ataque o defensa.",
+      "name": "Voz del Comandante",
+      "range": "Medio",
+      "tags": [
+        "Presencia"
+      ],
+      "ability_id": "ab_1793231214913"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD+1"
+      },
+      "bonus": "+7 + 3d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Detiene automáticamente un ataque hecho con un objeto metálico, o redirige un ataque metálico que haya logrado detener hacia un objetivo diferente.",
+      "name": "Repulsión Magnética",
+      "tags": [
+        "Metal"
+      ],
+      "ability_id": "ab_1795283577648"
+    },
+    {
+      "cost": 1,
+      "desc": "Obtiene +10 a un tiro de Esquiva o de salvación Físico, y se mueve hasta un paso sin provocar aperturas.",
+      "name": "Evasión",
+      "tags": [
+        "Reflejos",
+        "Defensiva"
+      ],
+      "ability_id": "evasion_1778692238910"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "save_scale": {
+    "FÍS": "mid",
+    "VOL": "bonus",
+    "MEN": "mid"
+  }
+}
