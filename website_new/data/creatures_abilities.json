@@ -4341,5 +4341,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Detiene automáticamente un ataque hecho con un objeto metálico, o redirige un ataque metálico que haya logrado detener hacia un objetivo diferente."
+  },
+  {
+    "id": "ab_1795283624702",
+    "name": "Nube de Cuchillas",
+    "type": "action",
+    "tier": "II",
+    "tags": [
+      "Metal"
+    ],
+    "cost": "2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "Radio Corto",
+    "damage": "",
+    "damage_tier": "MID",
+    "damage_base_type": "Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Mantiene este efecto durante el resto de la ronda, pudiendo ataca de nuevo a cada objetivo que entre en su posición por primera vez.\n"
   }
 ]
