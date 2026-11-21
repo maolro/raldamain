@@ -4320,5 +4320,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Crea una nube de humo en el área afectada, cegando a todas las criaturas en ella y otorgando ocultamiento. El humo se disipará al final de la siguiente ronda."
+  },
+  {
+    "id": "ab_1795283577648",
+    "name": "Repulsión Magnética",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Metal"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Detiene automáticamente un ataque hecho con un objeto metálico, o redirige un ataque metálico que haya logrado detener hacia un objetivo diferente."
   }
 ]
