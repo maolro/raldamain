@@ -4362,5 +4362,27 @@
     "move": "",
     "attacks": 1,
     "desc": "Mantiene este efecto durante el resto de la ronda, pudiendo ataca de nuevo a cada objetivo que entre en su posición por primera vez.\n"
+  },
+  {
+    "id": "ab_1795283802243",
+    "name": "Ferrokinesia",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Metal",
+      "Ataque"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": true,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "LOW",
+    "damage_base_type": "Perforante/Cortante",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "De manera alternativa a un ataque, puede arrastrar un objeto metálico hasta un paso en cualquier dirección (+MOD FÍS si desarma)"
   }
 ]
