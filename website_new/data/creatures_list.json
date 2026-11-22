@@ -442,5 +442,15 @@
     "image": "creatures/elemental_fuego.jpg",
     "description": "",
     "image_v": "db8a2bf7a8"
+  },
+  {
+    "id": "antasia_scarletti",
+    "name": "Antasia Scarletti",
+    "type": "Humanoide",
+    "level": 5,
+    "size": "Mediano",
+    "image": "antasia_scarletti.jpg",
+    "description": "",
+    "image_v": "63b42e7829"
   }
 ]
