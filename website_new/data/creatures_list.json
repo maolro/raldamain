@@ -483,5 +483,15 @@
     "image": "capitan_ustilus.jpg",
     "description": "",
     "image_v": "579afe9d69"
+  },
+  {
+    "id": "lara_pedralba_estudiante",
+    "name": "Lara Pedralba (estudiante)",
+    "type": "Humanoide",
+    "level": 2,
+    "size": "Mediano",
+    "image": "lara_pedralba_estudiante.jpg",
+    "description": "",
+    "image_v": "4f81bb0acd"
   }
 ]
