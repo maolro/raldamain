@@ -462,5 +462,15 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "dagredo_merante",
+    "name": "Dagredo Merante",
+    "type": "Humanoide",
+    "level": 5,
+    "size": "Mediano",
+    "image": "dagredo_merante.jpg",
+    "description": "",
+    "image_v": "f6db8e9695"
   }
 ]
