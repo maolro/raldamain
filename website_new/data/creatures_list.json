@@ -473,5 +473,15 @@
     "image": "dagredo_merante.jpg",
     "description": "",
     "image_v": "f6db8e9695"
+  },
+  {
+    "id": "capitan_ustilus",
+    "name": "Capitán Ustilus",
+    "type": "Humanoide",
+    "level": 2,
+    "size": "Mediano",
+    "image": "capitan_ustilus.jpg",
+    "description": "",
+    "image_v": "579afe9d69"
   }
 ]
