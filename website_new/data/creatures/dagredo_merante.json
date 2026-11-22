@@ -124,5 +124,8 @@
     "FÍS": "bonus",
     "VOL": "mid",
     "MEN": "mid"
-  }
+  },
+  "tier": "Aliado",
+  "image": "dagredo_merante.jpg",
+  "image_v": "f6db8e9695"
 }
