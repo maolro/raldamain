@@ -156,5 +156,7 @@
     "VOL": "mid",
     "FÍS": "mid"
   },
-  "tier": "Miniboss"
+  "tier": "Miniboss",
+  "image": "lara_pedralba_estudiante.jpg",
+  "image_v": "4f81bb0acd"
 }
