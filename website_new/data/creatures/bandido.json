@@ -123,5 +123,7 @@
     "VOL": "mid",
     "MEN": "low"
   },
-  "tier": "Esbirro"
+  "tier": "Esbirro",
+  "image": "bandido.jpg",
+  "image_v": "e17764d0db"
 }

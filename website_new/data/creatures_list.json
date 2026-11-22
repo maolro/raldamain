@@ -402,8 +402,9 @@
     "type": "Humanoide",
     "level": 0,
     "size": "Mediano",
-    "image": "",
-    "description": ""
+    "image": "bandido.jpg",
+    "description": "",
+    "image_v": "e17764d0db"
   },
   {
     "id": "druida",
