@@ -452,5 +452,14 @@
     "image": "antasia_scarletti.jpg",
     "description": "",
     "image_v": "63b42e7829"
+  },
+  {
+    "id": "espia",
+    "name": "Espía",
+    "type": "Humanoide",
+    "level": 2,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
