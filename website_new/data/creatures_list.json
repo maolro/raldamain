@@ -460,8 +460,9 @@
     "type": "Humanoide",
     "level": 2,
     "size": "Mediano",
-    "image": "",
-    "description": ""
+    "image": "espia.jpg",
+    "description": "",
+    "image_v": "91e0e1a414"
   },
   {
     "id": "dagredo_merante",
