@@ -133,7 +133,7 @@
     {
       "rank": "IV",
       "title": "Experto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Maestría de Arma",
@@ -141,8 +141,8 @@
             "Duelo",
             "Duradera"
           ],
-          "cost": "2 acciones, 2 chi",
-          "desc": "Entra en un estado donde recibe Ventaja en todos sus tiros relacionados con armas y puede moverse al atacar o defenderse sin provocar aperturas.",
+          "cost": "2 Acciones, 2 Chi",
+          "desc": "Mientras esta habilidad permanezca activa, recibes Ventaja en todos tus tiros relacionados con Estilo Duelista y Esquiva además que tus ataques reciben un dado de daño adicional. Podrás también moverte antes o después de atacar sin provocar aperturas.",
           "empower": "(1 Reacción) Reduce el daño de un ataque enemigo a la mitad.",
           "toggle": {
             "label": "Maestría Duelista",
@@ -153,25 +153,26 @@
             "adv_tags": [
               "Duelo"
             ]
-          }
+          },
+          "duration": "6 Rondas"
         },
         {
-          "name": "Cortar el Acero",
+          "name": "Contrataque",
+          "tags": [
+            "Duelo",
+            "Reacción"
+          ],
+          "cost": "1 Reacción, 2 Chi",
+          "desc": "En respuesta a recibir un ataque enemigo, puedes hacer un ataque inmediato que, si impacta, hará que el golpe falle de manera automática. No se podrán emplear Reacciones defensivas contra este ataque ni mejorarlo con otras habilidades."
+        },
+        {
+          "name": "Filo Imperceptible",
           "tags": [
             "Duelo",
             "Mejora"
           ],
-          "cost": "1 chi",
-          "desc": "Su ataque elimina un contador de escudo del objetivo y rompe su armadura. Si el objetivo ha detenido el ataque con Parada, rompe el arma en su lugar."
-        },
-        {
-          "name": "Impacto Aéreo",
-          "tags": [
-            "Duelo",
-            "Mejora"
-          ],
-          "cost": "2 chi",
-          "desc": "Vuela dos pasos antes de atacar y tira un dado de daño adicional. Los objetivos voladores tienen Desventaja al defenderse. Si hiere a un objetivo volador, este debe superar un tiro de salvación Físico o cae al suelo."
+          "cost": "2 Chi",
+          "desc": "Tu siguiente ataque recibirá dos dados de daño adicional y el objetivo deberá tirar para defenderse su modificador Mental como si se tratase de un tiro de salvación. Aún así, es posible emplear Reacciones defensivas. "
         }
       ]
     },
