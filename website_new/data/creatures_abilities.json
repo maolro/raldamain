@@ -4427,5 +4427,26 @@
     "move": "",
     "attacks": 1,
     "desc": "El afectado tira MEN +MOD o queda Sorprendido frente a su siguiente ataque, recibiendo así Desventaja en su tiro defensivo y siendo incapaz de emplear Reacciones. Puede además moverse hasta un paso en cualquier dirección sin provocar aperturas."
+  },
+  {
+    "id": "ab_1795450896129",
+    "name": "Multiataque",
+    "type": "action",
+    "tier": "III",
+    "tags": [
+      "Mejora"
+    ],
+    "cost": "1 o 2",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Hace dos ataques con un arma o hechizo de Rango I con coste base igual a las acciones empleadas para esta habilidad. No consume una ranura."
   }
 ]
