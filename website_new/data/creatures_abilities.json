@@ -4452,5 +4452,28 @@
     "move": "",
     "attacks": 1,
     "desc": "En respuesta a recibir un ataque enemigo, puede hacer un ataque inmediato que, si impacta, hará que el golpe falle de manera automática. Este ataque no puede ser mejorado y emplear Reacciones defensivas para detenerlo harán que el atacante falle automáticamente."
+  },
+  {
+    "id": "ab_1795451849586",
+    "name": "Filo Imperceptible",
+    "type": "action",
+    "tier": "IV",
+    "tags": [
+      "Duelo",
+      "Mejora",
+      "Marcial"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Su siguiente ataque recibirá dos dados de daño adicional y el objetivo deberá tirar su modificador Mental para defenderse como si se tratase de un tiro de salvación. "
   }
 ]
