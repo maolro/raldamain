@@ -126,7 +126,7 @@
     {
       "rank": "IV",
       "title": "Experto",
-      "draft": true,
+      "draft": false,
       "abilities": [
         {
           "name": "Maestro Asesino",
@@ -154,7 +154,7 @@
             "Mejora"
           ],
           "cost": "2 Chi",
-          "desc": "Tu siguiente ataque aumenta su daño base por dos dados y el objetivo deberá tener éxito en un tiro de salvación de Voluntad o una parte del cuerpo quedará deshabilitada durante el resto del combate como si tuviese el efecto Herido IV.",
+          "desc": "Tu siguiente ataque aumenta su daño base por dos dados y el objetivo deberá tener éxito en un tiro de salvación de Voluntad o una parte del cuerpo quedará deshabilitada durante el resto del combate como si tuviese el efecto Herido IV. Este efecto cuenta como uno de categoría II para los propósitos de Sanación.",
           "name": "Asalto Quirúrgico",
           "toggle": {
             "label": "Asalto Quirúrgico",
@@ -162,13 +162,14 @@
           }
         },
         {
-          "name": "Furia Asesina",
+          "name": "Ataque Impredecible",
           "tags": [
             "Asesino",
             "Mejora"
           ],
+          "desc": "Antes de atacar, el objetivo debe tener éxito en un tiro de salvación Mental o contará como si estuviera Sorprendido frente a tu siguiente ataque, recibiendo así Desventaja en su tiro defensivo y no podrá usar Reacciones.",
           "cost": "2 Chi",
-          "desc": "Haz dos ataques adicionales contra el mismo objetivo, recibiendo +2 en el tiro de ataque y daño de cada asalto consecutivo. Este deberá emplear el mismo tiro defensivo que antes, pero los dos ataques siguientes no conservarán las mejoras que el anterior ni podrán Apuntarse."
+          "show_mod": true
         }
       ]
     },
