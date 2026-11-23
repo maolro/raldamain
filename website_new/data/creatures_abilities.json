@@ -4428,5 +4428,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Hace tres ataques contra el mismo objetivo, quien solo podrá defenderse una vez. Cada ataque consecutivo recibirá un modificador +2 en el tiro."
+  },
+  {
+    "id": "ab_1795450747035",
+    "name": "Ataque Impredecible",
+    "type": "action",
+    "tier": "IV",
+    "tags": [
+      "Asesino"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "El afectado tira MEN +MOD o queda Sorprendido frente a su siguiente ataque, recibiendo así Desventaja en su tiro defensivo y siendo incapaz de emplear Reacciones. Puede además moverse hasta un paso en cualquier dirección sin provocar aperturas."
   }
 ]
