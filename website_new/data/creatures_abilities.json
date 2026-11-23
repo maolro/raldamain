@@ -4408,28 +4408,6 @@
     "desc": "Su siguiente ataque recibe un modificador +2 y provoca dos dados adicionales de daño. Además, si este impacta el objetivo debe tener éxito en un tiro VOL +MOD o una parte de su cuerpo queda deshabilitada como si sufriese Herido IV en ese punto."
   },
   {
-    "id": "ab_1795450341439",
-    "name": "Furia Asesina",
-    "type": "action",
-    "tier": "IV",
-    "tags": [
-      "Asesino",
-      "Mejora"
-    ],
-    "cost": "2",
-    "bonus": "",
-    "bonus_scaled": false,
-    "range": "",
-    "area": "",
-    "damage": "",
-    "damage_tier": "",
-    "damage_base_type": "",
-    "save": "",
-    "move": "",
-    "attacks": 1,
-    "desc": "Hace tres ataques contra el mismo objetivo, quien solo podrá defenderse una vez. Cada ataque consecutivo recibirá un modificador +2 en el tiro."
-  },
-  {
     "id": "ab_1795450747035",
     "name": "Ataque Impredecible",
     "type": "action",
