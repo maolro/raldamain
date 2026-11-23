@@ -4434,7 +4434,8 @@
     "type": "action",
     "tier": "III",
     "tags": [
-      "Mejora"
+      "Mejora",
+      "Arma"
     ],
     "cost": "1 o 2",
     "bonus": "",
