@@ -4430,5 +4430,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Hace dos ataques con un arma o hechizo de Rango I con coste base igual a las acciones empleadas para esta habilidad. No consume una ranura."
+  },
+  {
+    "id": "ab_1795451717292",
+    "name": "Contrataque",
+    "type": "reaction",
+    "tier": "IV",
+    "tags": [
+      "Duelo"
+    ],
+    "cost": "",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "En respuesta a recibir un ataque enemigo, puede hacer un ataque inmediato que, si impacta, hará que el golpe falle de manera automática. Este ataque no puede ser mejorado y emplear Reacciones defensivas para detenerlo harán que el atacante falle automáticamente."
   }
 ]
