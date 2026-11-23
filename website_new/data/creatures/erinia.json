@@ -3,42 +3,208 @@
   "name": "Erinia",
   "type": "Infernal",
   "size": "Mediano",
-  "level": 11,
+  "level": 8,
   "description": "",
   "hits": 2,
   "saves": {
-    "FÍS": "+5",
-    "VOL": "+5",
-    "MEN": "+5"
+    "FÍS": "+9+2d6",
+    "VOL": "+9+1d6",
+    "MEN": "+9+1d6"
   },
   "umbrales": [
     {
-      "value": 15,
+      "value": 10,
       "categories": "General",
       "tier_tpl": "T"
+    },
+    {
+      "value": 15,
+      "categories": "Físico",
+      "tier_tpl": "T+1"
     }
   ],
   "immune": [],
   "senses": "",
-  "speed": "Paso 1",
+  "speed": "Paso 1, Vuelo 1",
   "combat": {
     "acciones": 2,
     "reacciones": 1
   },
-  "traits": [],
-  "actions": [],
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca 3d8 daño adicional de un elemento de su elección en ataques naturales.",
+      "effects": {
+        "extra_damage": [
+          {
+            "choose": true,
+            "dice": "DD",
+            "on": "fisicos",
+            "type": "Fuego",
+            "dice_value": "3d8"
+          }
+        ],
+        "immune": [
+          "Aflicciones",
+          "Mentales",
+          "Miedo"
+        ],
+        "senses": [
+          "Vista a Oscuras"
+        ],
+        "umbrales": [
+          {
+            "categories": "Magia",
+            "steps": 1,
+            "amount": 5
+          },
+          {
+            "categories": "Fuego, Frío",
+            "steps": 1,
+            "amount": 5
+          }
+        ]
+      },
+      "name": "Infernal",
+      "tags": [
+        "Infernal",
+        "Innata"
+      ],
+      "ability_id": "ab_1793366059338",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Infernal, recibiendo Inmunidad a efectos Mentales, Miedo y Aflicciones además que aumenta su Umbral Mágico por una categoría. Recibe también vista a oscuras, aumenta sus Umbrales a daño Fuego y Frío por una categoría adicional, y provoca DD daño adicional de un elemento de su elección en ataques naturales."
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "El daño de sus ataques no se puede curar. Además, al impactar con un ataque de arma o natural el afectado deberá tener éxito en un tiro VOL +9 + 2d6 o sufre una Maldición, la cual le provoca 3d8 daño Necrótico cada ronda y Enfermado I. Ambos efectos se pueden eliminar como si fueran un efecto de estado de categoría I. ",
+      "name": "Heridas Infernales",
+      "tags": [
+        "Infernal"
+      ],
+      "ability_id": "ab_1793631318284",
+      "mod_tpl": {
+        "desc": "El daño de sus ataques no se puede curar. Además, al impactar con un ataque de arma o natural el afectado deberá tener éxito en un tiro VOL +MOD o sufre una Maldición, la cual le provoca DD daño Necrótico cada ronda y Enfermado I. Ambos efectos se pueden eliminar como si fueran un efecto de estado de categoría I. "
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Hace dos ataques de Arco o Espada.",
+      "name": "Multiataque",
+      "ability_id": "ab_1795450896129"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "name": "Arco",
+      "range": "Lejano",
+      "tags": [
+        "Ataque",
+        "Arma",
+        "Fisico"
+      ],
+      "ability_id": "ab_1793105124177",
+      "damage": "3d8 + 6 Perforante",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Cortante",
+      "damage_tier": "MID",
+      "name": "Espada",
+      "range": "Adyacente",
+      "tags": [
+        "Arma",
+        "Fisico",
+        "Ataque"
+      ],
+      "ability_id": "ab_1793105102759",
+      "damage": "3d8 + 6 Cortante",
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "El objetivo está Enredado (FÍS +9 + 2d6 para escapar), o Agarrado si ya se encuentra Enredado. Mientras se encuentre Enredado o Agarrado por este efecto, no podrá lanzar hechizos. ",
+      "name": "Retener Persona",
+      "tags": [
+        "Protectora",
+        "Agarre"
+      ],
+      "ability_id": "ab_1793638445258",
+      "mod_tpl": {
+        "desc": "El objetivo está Enredado (FÍS +MOD para escapar), o Agarrado si ya se encuentra Enredado. Mientras se encuentre Enredado o Agarrado por este efecto, no podrá lanzar hechizos. "
+      },
+      "bonus": "+9 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "Hace tres ataques de coste máximo una Acción. Cada ataque consecutivo recibirá un modificador +2 al tiro de ataque y daño. ",
+      "name": "Combo Mortal",
+      "tags": [
+        "Duelo",
+        "Marcial",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793232584202"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Irradia una presencia sobrecogedora. Sus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y sus enemigos tiran VOL +9 + 2d6 o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados por ella.",
+      "name": "Presencia Divina",
+      "tags": [
+        "Divina",
+        "Miedo"
+      ],
+      "ability_id": "ab_1794088036458",
+      "mod_tpl": {
+        "desc": "Irradia una presencia sobrecogedora. Sus aliados reducen sus efectos de Miedo, Confusión o Desconcertado por un paso, y sus enemigos tiran VOL +MOD o sufren Miedo II hasta que se recuperen. Esta habilidad no afectará a enemigos de nivel mayor, y aquellos que tengan éxito no pueden volver a ser afectados por ella."
+      }
+    }
+  ],
   "reactions": [
     {
       "name": "Parada / Esquiva",
       "desc": "",
       "mod_tpl": {
-        "bonus": "+MOD"
+        "bonus": "+MOD+1"
       },
-      "bonus": "+11 + 3d6"
+      "bonus": "+9 + 3d6"
+    },
+    {
+      "ability_id": "salto-espacial_1778751219905",
+      "cost": 1,
+      "desc": "Añade +10 a su tiro de Esquiva y se teletransporta un paso al moverse.",
+      "name": "Salto Espacial",
+      "tags": [
+        "Espacial",
+        "Arcano"
+      ]
     }
   ],
   "lore": "",
   "tags": [],
   "published": false,
-  "tier": "Esbirro Élite"
+  "tier": "Esbirro Élite",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "mid",
+    "MEN": "mid"
+  }
 }
