@@ -129,16 +129,16 @@
       "draft": true,
       "abilities": [
         {
-          "name": "Maestría de Arma",
+          "name": "Maestro Asesino",
           "tags": [
             "Asesino",
             "Duradera"
           ],
-          "cost": "2 acciones, 2 chi",
+          "cost": "2 Acciones, 2 Chi",
           "duration": "Seis rondas",
-          "desc": "Entras en un estado que te otorga Ventaja en todos tus tiros relacionados con Estilo Asesino. Además, tus ataques provocan un dado de daño adicional y Herido-1 al impactar.",
+          "desc": "Entras en un estado que te otorga Ventaja en todos tus tiros relacionados con Estilo Asesino. Además, tus ataques cuentan todos como si estuvieran afectados por Ataque Furtivo, provocando así un dado de daño adicional y Herido I al impactar. ",
           "toggle": {
-            "label": "Maestría Asesino",
+            "label": "Maestro Asesino",
             "adv": [
               "Ataque"
             ],
@@ -149,13 +149,17 @@
           }
         },
         {
-          "name": "Impacto Deshabilitante",
           "tags": [
             "Asesino",
             "Mejora"
           ],
-          "cost": "2 chi",
-          "desc": "Al impactar, el objetivo debe superar un tiro de salvación de Voluntad o una parte de su cuerpo queda debilitada como si sufriese Herido-4 (Herida Crítica Incurable). Este efecto desaparece cuando el afectado reciba sanación. La parte del cuerpo afectada es aleatoria salvo que declares esta habilidad antes de atacar."
+          "cost": "2 Chi",
+          "desc": "Tu siguiente ataque aumenta su daño base por dos dados y el objetivo deberá tener éxito en un tiro de salvación de Voluntad o una parte del cuerpo quedará deshabilitada durante el resto del combate como si tuviese el efecto Herido IV.",
+          "name": "Asalto Quirúrgico",
+          "toggle": {
+            "label": "Asalto Quirúrgico",
+            "damage": "+2 dado"
+          }
         },
         {
           "name": "Furia Asesina",
@@ -163,8 +167,8 @@
             "Asesino",
             "Mejora"
           ],
-          "cost": "2 chi",
-          "desc": "Realizas tres ataques contra el mismo objetivo, quien solo tira una vez para defenderse. Tu tiro de ataque y daño aumenta en +1 por cada impacto consecutivo. Todos los ataques cuentan como Ataque Furtivo, provocando un dado de daño adicional y Herido-1 al impactar (no se acumula con dicha habilidad)."
+          "cost": "2 Chi",
+          "desc": "Haz dos ataques adicionales contra el mismo objetivo, recibiendo +2 en el tiro de ataque y daño de cada asalto consecutivo. Este deberá emplear el mismo tiro defensivo que antes, pero los dos ataques siguientes no conservarán las mejoras que el anterior ni podrán Apuntarse."
         }
       ]
     },
