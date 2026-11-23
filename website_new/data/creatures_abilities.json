@@ -4384,5 +4384,27 @@
     "move": "",
     "attacks": 1,
     "desc": "De manera alternativa a un ataque, puede arrastrar un objeto metálico hasta un paso en cualquier dirección (+MOD FÍS si desarma)"
+  },
+  {
+    "id": "ab_1795450278887",
+    "name": "Asalto Quirúrgico",
+    "type": "action",
+    "tier": "IV",
+    "tags": [
+      "Asesino",
+      "Mejora"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Su siguiente ataque recibe un modificador +2 y provoca dos dados adicionales de daño. Además, si este impacta el objetivo debe tener éxito en un tiro VOL +MOD o una parte de su cuerpo queda deshabilitada como si sufriese Herido IV en ese punto."
   }
 ]
