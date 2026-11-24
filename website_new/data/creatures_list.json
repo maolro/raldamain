@@ -502,5 +502,14 @@
     "size": "Mediano",
     "image": "",
     "description": ""
+  },
+  {
+    "id": "enjambre_de_muricelagos",
+    "name": "Enjambre de Muricélagos",
+    "type": "Bestia",
+    "level": 2,
+    "size": "Grande",
+    "image": "",
+    "description": ""
   }
 ]
