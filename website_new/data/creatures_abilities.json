@@ -4496,5 +4496,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Un objetivo que le haya impactado deberá tener éxito en un tiro VOL +MOD o falla automáticamente su ataque. "
+  },
+  {
+    "id": "ab_1795531208824",
+    "name": "Espasmos",
+    "type": "action",
+    "tier": "I",
+    "tags": [
+      "Sangre"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "VOL +MOD",
+    "move": "",
+    "attacks": 1,
+    "desc": "El objetivo se mueve de manera incontrolada, sufriendo Enfermado I y moviéndose un paso en una dirección aleatoria."
   }
 ]
