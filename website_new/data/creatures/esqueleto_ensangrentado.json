@@ -1,0 +1,113 @@
+{
+  "id": "esqueleto_ensangrentado",
+  "name": "Esqueleto Ensangrentado",
+  "type": "No-muerto",
+  "size": "Mediano",
+  "level": 0,
+  "description": "",
+  "hits": 1,
+  "saves": {
+    "FÍS": "+4",
+    "VOL": "+4",
+    "MEN": "+1"
+  },
+  "umbrales": [
+    {
+      "value": 2,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 6,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 1,
+    "reacciones": 0
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es un No-Muerto, recibiendo así Inmunidad a efectos Necróticos, Aflicciones, Miedo y Mentales, además que puede sentir la presencia de seres vivos a distancia media y no necesita comer ni respirar. No obstante, reducirá su umbral al daño Radiante por un paso y solo puede curarse con efectos Necróticos.",
+      "effects": {
+        "immune": [
+          "Necrótico",
+          "Aflicciones",
+          "Mentales",
+          "Miedo"
+        ],
+        "senses": [
+          "Sentido Vital"
+        ]
+      },
+      "name": "No-Muerto",
+      "tags": [
+        "Pasiva",
+        "Nigromancia"
+      ],
+      "ability_id": "ab_1793181456440"
+    },
+    {
+      "name": "Vida Profana",
+      "desc": "Si se encuentra sobre un lugar profanado, resucitará a 1 Impacto un turno después de que muera. Esta resurrección solo puede impedirse si es derrotado con un ataque Radiante o la influencia profana se elimina."
+    },
+    {
+      "name": "Heridas Malditas",
+      "effects": {
+        "extra_damage": [
+          {
+            "dice": "DD",
+            "type": "Necrótico",
+            "on": "fisicos",
+            "dice_value": "1d4"
+          }
+        ]
+      },
+      "desc": "Todos sus ataques físicos provocan 1d4 daño Necrótico adicional al impactar y Sangrado."
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Cortante",
+      "name": "Garra",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1791818049839",
+      "damage": "2d4 + 2 Cortante",
+      "bonus": "+4"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+4"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Esbirro",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}
