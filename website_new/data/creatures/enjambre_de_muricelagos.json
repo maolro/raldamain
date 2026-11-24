@@ -57,7 +57,6 @@
   "actions": [
     {
       "attacks": 1,
-      "bonus_scaled": true,
       "cost": "1",
       "damage": "2d6 + 4 Perforante",
       "damage_base_type": "Perforante",
@@ -65,12 +64,15 @@
       "name": "Mordisco",
       "range": "Adyacente",
       "ability_id": "ab_1791818158790",
-      "bonus": "",
+      "bonus": "+5 + 1d6",
       "desc": "Provoca 1d6 daño Necrótico adicional al impactar. Si este ataque provoca por lo menos un impacto, se curará un impacto.",
       "type": "action",
       "area": "",
       "save": "",
-      "move": ""
+      "move": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      }
     },
     {
       "attacks": 1,
