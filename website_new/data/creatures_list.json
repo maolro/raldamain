@@ -493,5 +493,14 @@
     "image": "lara_pedralba_estudiante.jpg",
     "description": "",
     "image_v": "4f81bb0acd"
+  },
+  {
+    "id": "perro",
+    "name": "Perro",
+    "type": "Animal",
+    "level": 0,
+    "size": "Mediano",
+    "image": "",
+    "description": ""
   }
 ]
