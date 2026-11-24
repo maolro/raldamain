@@ -62,14 +62,8 @@
       "damage": "2d6 + 4 Perforante",
       "damage_base_type": "Perforante",
       "damage_tier": "MID",
-      "name": "Aguijón",
+      "name": "Mordisco",
       "range": "Adyacente",
-      "tags": [
-        "Ataque",
-        "Fisico",
-        "Arma",
-        "Natural"
-      ],
       "ability_id": "ab_1791818158790",
       "bonus": "",
       "desc": "Provoca 1d6 daño Necrótico adicional al impactar. Si este ataque provoca por lo menos un impacto, se curará un impacto.",
