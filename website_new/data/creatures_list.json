@@ -248,7 +248,7 @@
     "id": "esqueleto",
     "name": "Esqueleto",
     "type": "No-muerto",
-    "level": 2,
+    "level": 0,
     "size": "Mediano",
     "image": "esqueleto.jpg",
     "description": "",
