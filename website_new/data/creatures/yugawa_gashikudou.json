@@ -1,0 +1,44 @@
+{
+  "id": "yugawa_gashikudou",
+  "name": "Yugawa Gashikudou",
+  "size": "Mediano",
+  "level": 5,
+  "description": "",
+  "hits": 6,
+  "saves": {
+    "FÍS": "+5",
+    "VOL": "+5",
+    "MEN": "+5"
+  },
+  "umbrales": [
+    {
+      "value": 8,
+      "categories": "General",
+      "tier_tpl": "T"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 3,
+    "reacciones": 2
+  },
+  "traits": [],
+  "actions": [],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+7 + 2d6"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Miniboss",
+  "type": "Espíritu"
+}
