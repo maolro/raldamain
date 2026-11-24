@@ -4475,5 +4475,26 @@
     "move": "",
     "attacks": 1,
     "desc": "Su siguiente ataque recibirá dos dados de daño adicional y el objetivo deberá tirar su modificador Mental para defenderse como si se tratase de un tiro de salvación. "
+  },
+  {
+    "id": "ab_1795531132403",
+    "name": "Defensa Sanguínea",
+    "type": "reaction",
+    "tier": "II",
+    "tags": [
+      "Sangre"
+    ],
+    "cost": "1",
+    "bonus": "",
+    "bonus_scaled": false,
+    "range": "Medio",
+    "area": "",
+    "damage": "",
+    "damage_tier": "",
+    "damage_base_type": "",
+    "save": "",
+    "move": "",
+    "attacks": 1,
+    "desc": "Un objetivo que le haya impactado deberá tener éxito en un tiro VOL +MOD o falla automáticamente su ataque. "
   }
 ]
