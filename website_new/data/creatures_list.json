@@ -497,7 +497,7 @@
   {
     "id": "perro",
     "name": "Perro",
-    "type": "Animal",
+    "type": "Bestia",
     "level": 0,
     "size": "Mediano",
     "image": "",

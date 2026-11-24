@@ -1,7 +1,7 @@
 {
   "id": "perro",
   "name": "Perro",
-  "type": "Animal",
+  "type": "Bestia",
   "size": "Mediano",
   "level": 0,
   "description": "",
