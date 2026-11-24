@@ -6,15 +6,25 @@
   "description": "",
   "hits": 6,
   "saves": {
-    "FÍS": "+5",
-    "VOL": "+5",
-    "MEN": "+5"
+    "FÍS": "+7+1d6",
+    "VOL": "+7+2d6",
+    "MEN": "+7+1d6"
   },
   "umbrales": [
     {
       "value": 8,
       "categories": "General",
       "tier_tpl": "T"
+    },
+    {
+      "value": 12,
+      "categories": "Físico",
+      "tier_tpl": "T+1"
+    },
+    {
+      "value": 12,
+      "categories": "Magia",
+      "tier_tpl": "T+1"
     }
   ],
   "immune": [],
@@ -24,8 +34,170 @@
     "acciones": 3,
     "reacciones": 2
   },
-  "traits": [],
-  "actions": [],
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Al matar a una criatura con un efecto que provoque daño Necrótico, resucitará su cadáver como un no-muerto de categoría inferior (normalmente un Zombi o Esqueleto).",
+      "name": "Crear No-Muerto",
+      "tags": [
+        "Nigromancia",
+        "Pasiva"
+      ],
+      "ability_id": "ab_1793180034692"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan 2d6 daño adicional de un elemento específico o aumentan su daño por un dado.",
+      "effects": {
+        "extra_damage": [
+          {
+            "choose": true,
+            "dice": "DD",
+            "on": "naturales",
+            "type": "Necrótico",
+            "dice_value": "2d6"
+          }
+        ],
+        "immune": [
+          "Aflicciones",
+          "Mentales",
+          "Miedo"
+        ],
+        "senses": [
+          "Sentido Mágico"
+        ],
+        "umbrales": [
+          {
+            "categories": "Magia",
+            "steps": 1,
+            "amount": 4
+          },
+          {
+            "categories": "Necrótico",
+            "choose": true,
+            "steps": 1,
+            "amount": 4
+          }
+        ]
+      },
+      "name": "Espiritual",
+      "tags": [
+        "Espiritu",
+        "Innata"
+      ],
+      "ability_id": "ab_1793366127728",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan DD daño adicional de un elemento específico o aumentan su daño por un dado."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage_base_type": "Cortante",
+      "damage_tier": "MID",
+      "name": "Garra",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1791818049839",
+      "damage": "3d6 + 5 Cortante",
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "damage_base_type": "Necrótico",
+      "damage_tier": "MID",
+      "desc": "Si este ataque provoca por lo menos un impacto, se recupera un impacto. Aquellos objetivos que hayan sufrido por lo menos un Impacto tendrán Desventaja en este tiro.",
+      "name": "Drenar Sangre",
+      "range": "Adyacente",
+      "save": "VOL +7 + 2d6",
+      "tags": [
+        "Sangre",
+        "Necrotico"
+      ],
+      "ability_id": "ab_1794137310303",
+      "mod_tpl": {
+        "save": "VOL +MOD"
+      },
+      "damage": "2d6 + 5 Necrótico"
+    },
+    {
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "El objetivo queda Enredado (+7 + 2d6 FÍS para escapar). En el caso que ya esté Enredado, este ataque impacta automáticamente y el afectado tira FÍS +7 + 2d6 o queda Agarrado. ",
+      "name": "Agarre",
+      "range": "Adyacente",
+      "tags": [
+        "Marcial",
+        "Ataque",
+        "Fisico",
+        "Agarre"
+      ],
+      "ability_id": "agarre_1791818660372",
+      "mod_tpl": {
+        "desc": "El objetivo queda Enredado (+MOD FÍS para escapar). En el caso que ya esté Enredado, este ataque impacta automáticamente y el afectado tira FÍS +MOD o queda Agarrado. "
+      },
+      "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "El objetivo se mueve de manera incontrolada, sufriendo Enfermado I y moviéndose un paso en una dirección aleatoria.",
+      "name": "Espasmos",
+      "range": "Medio",
+      "save": "VOL +7 + 2d6",
+      "tags": [
+        "Sangre"
+      ],
+      "ability_id": "ab_1795531208824",
+      "mod_tpl": {
+        "save": "VOL +MOD"
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 2,
+      "desc": "El objetivo tira VOL +7 + 2d6 o sufre un Vínculo Parasítico. Mientras permanezca activo, esta criatura puede transferirle hasta la mitad del daño que sufra. Esto hará que el daño sea Interno para ambos, ajustando así los impactos recibidos. El afectado puede repetir el tiro para intentar liberarse cada vez que sufra el daño.",
+      "name": "Vínculo Parasítico",
+      "range": "Adyacente",
+      "tags": [
+        "Nigromancia",
+        "Duradera"
+      ],
+      "ability_id": "ab_1793281481718",
+      "mod_tpl": {
+        "desc": "El objetivo tira VOL +MOD o sufre un Vínculo Parasítico. Mientras permanezca activo, esta criatura puede transferirle hasta la mitad del daño que sufra. Esto hará que el daño sea Interno para ambos, ajustando así los impactos recibidos. El afectado puede repetir el tiro para intentar liberarse cada vez que sufra el daño."
+      }
+    },
+    {
+      "area": "Radio Medio",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +7 + 2d6 o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior.",
+      "name": "Demostración Terrorífica",
+      "tags": [
+        "Miedo"
+      ],
+      "ability_id": "ab_1793014679586",
+      "mod_tpl": {
+        "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +MOD o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior."
+      }
+    }
+  ],
   "reactions": [
     {
       "name": "Parada / Esquiva",
@@ -34,11 +206,51 @@
         "bonus": "+MOD"
       },
       "bonus": "+7 + 2d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Un objetivo que le haya impactado deberá tener éxito en un tiro VOL +7 + 2d6 o falla automáticamente su ataque. ",
+      "name": "Defensa Sanguínea",
+      "range": "Medio",
+      "tags": [
+        "Sangre"
+      ],
+      "ability_id": "ab_1795531132403",
+      "mod_tpl": {
+        "desc": "Un objetivo que le haya impactado deberá tener éxito en un tiro VOL +MOD o falla automáticamente su ataque. "
+      }
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Se teletransporta a un lugar que se encuentre a oscuras, evitándo automáticamente un ataque dirigido a él. Esta habilidad solo puede usarse si se encuentra en un lugar a oscuras y no funciona contra ataques de área suficientemente grandes. ",
+      "name": "Salto Sombrío",
+      "tags": [
+        "Sombria"
+      ],
+      "ability_id": "ab_1793178426078"
+    },
+    {
+      "cost": 1,
+      "desc": "Un objetivo a distancia media repite un tiro y se queda con el resultado que más te convenga. Puede ser anulada con otras habilidades de repetición.",
+      "name": "Milagro Menor",
+      "tags": [
+        "Divina"
+      ],
+      "ability_id": "milagro-menor_1778753435883"
     }
   ],
   "lore": "",
   "tags": [],
   "published": false,
   "tier": "Miniboss",
-  "type": "Espíritu"
+  "type": "Espíritu",
+  "save_scale": {
+    "FÍS": "mid",
+    "VOL": "bonus",
+    "MEN": "mid"
+  }
 }
