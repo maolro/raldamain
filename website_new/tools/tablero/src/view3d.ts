@@ -1,7 +1,10 @@
 // 🧊 Vista 3D: the same scene seen in 3D (Three.js), next to the 2D board and always in step with it.
 //
 //   Floor     the level's map pictures and painted tiles, as the 2D board draws them (a picture of
-//             them taken by its own renderer), with the grid over it
+//             them taken by its own renderer)
+//   Grid      no edge: it reaches as far as the pieces placed (and the page), a few squares more, and
+//             fades out beyond — place further and it grows. It lies on the ground tiles' tops (each
+//             square at the height of the tile on it), so terraces keep their squares
 //   Walls     the lines drawn with Niebla y luz (closed doors in wood) and the tiles that block
 //             sight, raised to «Altura de muros»
 //   Pits      structures and props lowered below the floor open a hole in it (earth sides, a bottom),
@@ -10,8 +13,9 @@
 //             turn to the camera and lie down as it goes overhead
 //   Fog       the same as on the 2D board (players: hidden areas, darkness and what their tokens
 //             see; walls and tokens in the dark are not shown); roofs over the walls
-//   See-through  walls, structures and props between the camera and a token (or what it looks at)
-//             fade, so one sees inside buildings and behind walls (◌ in the bar turns it off)
+//   Darkness  (players) what they can't see stands as a wall of darkness, DARK_H squares tall: the
+//             fog's dark areas, and everything outside the map (its map pictures and ground tiles;
+//             none: the page) — the land beyond is never seen
 //   Camera    left drag: turn · right drag: move · wheel: zoom · WASD / arrows: move · Q / E: turn
 //             · buttons: from above, in perspective, from the side, turn, centre
 //
@@ -24,7 +28,9 @@ import type { BoardView, Pt } from './board';
 import { fitModel, fitStructure, modelCopy } from './models3d';
 import { MODEL_DRAG } from './modellib';
 import { cellCenter, measure, type RulerShape } from './ruler';
-import { isScenery, kindOf, type Board, type BoardItem, type ImageMeta, type ModelMeta } from './types';
+import { resizeScenery } from './sizing';
+import { isScenery, kindOf, LAYERS3D, type Board, type BoardItem, type ImageMeta, type Layer3D, type ModelMeta } from './types';
+import { hasStatus, LYING, OUT } from './status';
 
 export interface View3DHost {
   view: BoardView;
@@ -37,7 +43,7 @@ export interface View3DHost {
   /** a 3D model of the library (undefined: not known here yet) */
   model(id: string): ModelMeta | undefined;
   /** a token uses a model this browser doesn't know: fetch the library again */
-  missingModel(): void;
+  missingModel(id: string): void;
   /** may this browser move / change the token */
   canEdit(it: BoardItem): boolean;
   /** tokens moved or turned (live: still dragging; commit: done, one undo step) */
@@ -60,18 +66,30 @@ export interface View3DHost {
 const PREFS = 'raldamain.tablero.3d';
 const FLOOR_MAX = 4096, FOG_MAX = 1400, ROOF_MAX = 2048;
 const HIDDEN = 0.85;   // fog this dark hides a token or a wall from the players
-const FADE = 0.22;     // how much of a wall / structure in the way is still seen
 type Tween = { from: { polar: number; az: number; dist: number; target: THREE.Vector3 }; to: { polar: number; az: number; dist: number; target: THREE.Vector3 }; t0: number };
 type Standee = { group: THREE.Group; pivot: THREE.Group | null; card: THREE.Mesh | null; base: THREE.Mesh | null; ring: THREE.Mesh | null; sel: THREE.Object3D;
-  model: THREE.Group | null; key: string; h: number; gone?: boolean; stalk?: THREE.Mesh; pit?: THREE.Mesh; lying?: boolean;
-  /** in the way of the camera: how seen it is now (1 = solid), and where it is going */
-  fade?: number; fadeTo?: number };
-type WallSeg = { x1: number; z1: number; x2: number; z2: number; h: number };
+  model: THREE.Group | null; key: string; h: number; gone?: boolean; stalk?: THREE.Mesh; pit?: THREE.Mesh; lying?: boolean; ko?: THREE.Sprite };
 type Drag = { ids: string[]; from: Map<string, Pt>; start: Pt; moved: boolean; pointer: number; ruler?: Pt;
   /** clicked while already selected: a click without moving it deselects it */
   toggle?: string };
 const TURN = 15;   // R / Mayús+R: degrees a press
 type Ruler3 = { group: THREE.Group; label: THREE.Sprite };
+
+/** The red X of «fuera de combate» (one texture, shared by every token) */
+let koTex: THREE.Texture | null = null;
+function koTexture() {
+  if (koTex) return koTex;
+  const c = document.createElement('canvas'); c.width = c.height = 128;
+  const x = c.getContext('2d')!;
+  x.lineCap = 'round';
+  for (const [col, w] of [['rgba(0,0,0,0.6)', 30], ['#d01818', 20]] as const) {
+    x.strokeStyle = col; x.lineWidth = w;
+    x.beginPath(); x.moveTo(18, 18); x.lineTo(110, 110); x.moveTo(110, 18); x.lineTo(18, 110); x.stroke();
+  }
+  koTex = new THREE.CanvasTexture(c);
+  koTex.colorSpace = THREE.SRGBColorSpace;
+  return koTex;
+}
 
 export class View3D {
   readonly el: HTMLElement;
@@ -84,26 +102,21 @@ export class View3D {
   private hour = 12;
   private tint = new THREE.Color(0xffffff);   // how lit the unlit things (standees) look: darker at night
   private floor: THREE.Mesh<THREE.PlaneGeometry, THREE.MeshLambertMaterial>;
+  // the land around the page, out to the horizon (so the board doesn't float in the sky)
+  private ground: THREE.Mesh | null = null;
+  private groundMat = new THREE.MeshLambertMaterial({ color: 0x24221e, side: THREE.DoubleSide });
+  private groundSig = '';
   private fogPlane: THREE.Mesh<THREE.PlaneGeometry, THREE.MeshBasicMaterial>;
   private roofPlane: THREE.Mesh<THREE.PlaneGeometry, THREE.MeshBasicMaterial>;
-  private grid = new THREE.LineSegments(new THREE.BufferGeometry(), new THREE.LineBasicMaterial({ transparent: true, depthWrite: false }));
+  private zones = new THREE.Mesh(new THREE.BufferGeometry(), new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, vertexColors: true, side: THREE.DoubleSide }));
+  private grid = new THREE.LineSegments(new THREE.BufferGeometry(), new THREE.LineBasicMaterial({ transparent: true, depthWrite: false, vertexColors: true }));
   private walls: THREE.InstancedMesh | null = null;
   private wallMat = new THREE.MeshLambertMaterial({ color: 0xffffff });
-  // walls in the way of the camera: drawn by a see-through copy instead
-  private ghostWalls: THREE.InstancedMesh | null = null;
-  private ghostMat = new THREE.MeshLambertMaterial({ color: 0xffffff, transparent: true, opacity: FADE, depthWrite: false });
-  private wallSegs: WallSeg[] = [];
   // holes in the floor over lowered structures / props: in half squares (depth: 0 or below)
   private pits: THREE.Mesh | null = null;
   private pitMat = new THREE.MeshLambertMaterial({ color: 0x4a3c2e, side: THREE.DoubleSide });
   private pitSig = '';
   private pitGrid: { nx: number; nz: number; depth: Float32Array } | null = null;
-  private wallMats: THREE.Matrix4[] = [];
-  private wallFaded = new Set<number>();
-  private seeThrough = true;
-  private occPending = true;
-  private occAt = 0;
-  private lastFrame = 0;
   private standees = new Map<string, Standee>();
   private rulers = new Map<string, Ruler3>();
   private textures = new Map<string, THREE.Texture | 'loading'>();
@@ -111,6 +124,10 @@ export class View3D {
   private floorSig = '';
   private gridSig = '';
   private fogAlpha: { data: Uint8ClampedArray; w: number; h: number; k: number } | null = null;
+  /** (players) where the map is: its map pictures and ground tiles, in cells of 1/DARK_RES square */
+  private lit: { x0: number; z0: number; nx: number; nz: number; on: Uint8Array } | null = null;
+  private dark = new THREE.Mesh(new THREE.BufferGeometry(), new THREE.MeshBasicMaterial({ color: DARK_COLOR }));
+  private darkSig = '';
   private tween: Tween | null = null;
   private keys = new Set<string>();
   private dirty = true;
@@ -124,9 +141,20 @@ export class View3D {
   private dblAt = 0;
   active = false;
   wallH = 1.5;
+  /** ◧ Capas (this browser's): the layers not shown, and the ones clicks go through */
+  private hiddenKinds = new Set<Layer3D>();
+  private lockedKinds = new Set<Layer3D>();
+  /** (the GM) the layer being edited: only its things can be picked (as in 2D); set by the toolbar */
+  activeLayer: Layer3D = 'figure';
 
   constructor(host: HTMLElement, private h: View3DHost) {
-    try { const p = JSON.parse(localStorage.getItem(PREFS) || '{}'); if (p.wallH > 0) this.wallH = p.wallH; if (p.fade === false) this.seeThrough = false; } catch { /* defaults */ }
+    try {
+      const p = JSON.parse(localStorage.getItem(PREFS) || '{}');
+      if (p.wallH > 0) this.wallH = p.wallH;
+      const ok = (k: unknown): k is Layer3D => LAYERS3D.some(l => l.id === k);
+      if (Array.isArray(p.hidden)) this.hiddenKinds = new Set(p.hidden.filter(ok));
+      if (Array.isArray(p.locked)) this.lockedKinds = new Set(p.locked.filter(ok));
+    } catch { /* defaults */ }
     this.el = document.createElement('div');
     this.el.className = 'v3d';
     this.el.hidden = true;
@@ -142,8 +170,14 @@ export class View3D {
         <span class="v3d-sep"></span>
         <label class="v3d-wall v3d-sky" title="Hora del día: el sol (y de noche la luna), el color del cielo y la luz. La elige el GM para todos">☀ <input type="range" min="0" max="24" step="0.25" data-v3="hour"><span></span></label>
         <span class="v3d-sep"></span>
-        <button class="btn small ${this.seeThrough ? 'on' : ''}" data-v3="fade" title="Ver a través: los muros, edificios y objetos que tapan a un token (o lo que miras) se vuelven transparentes">◌ Ver a través</button>
         <label class="v3d-wall" title="Altura de los muros, en casillas">Muros <input type="range" min="0.25" max="3" step="0.25" data-v3="wallH"><span></span></label>
+        <span class="v3d-sep"></span>
+        <button class="btn small" data-v3="layers" title="Capas: mostrar u ocultar losetas, edificios, objetos, figuras y la capa GM, o bloquearlas (los clics las atraviesan). La que editas se elige en la barra de la izquierda">◧ Capas</button>
+      </div>
+      <div class="v3d-layers" hidden>
+        <div class="v3d-layers-head"><span></span><span title="Mostrar">👁</span><span title="Bloquear: los clics la atraviesan, no se puede elegir ni mover">🔒</span></div>
+        ${[...LAYERS3D].reverse().map(l => `<label class="v3d-layer" data-kind="${l.id}"><span>${l.icon} ${l.name}</span>
+          <input type="checkbox" data-show title="Mostrar ${l.name.toLowerCase()}"><input type="checkbox" data-lock title="Bloquear ${l.name.toLowerCase()}: los clics la atraviesan"></label>`).join('')}
       </div>
       <div class="v3d-help">Clic: elegir · arrastrar un token: moverlo · flechas: una casilla · R: girarlo 15° · T: tumbarlo · +/−: tamaño · RePág/AvPág: altura (también bajo el suelo) · clic derecho: su menú · arrastrar el suelo: girar la cámara · botón derecho: desplazar · rueda: zoom · WASD: mover · Q/E: girar · doble clic: aviso</div>`;
     host.appendChild(this.el);
@@ -168,6 +202,8 @@ export class View3D {
     this.roofPlane = new THREE.Mesh(plane(), new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, side: THREE.DoubleSide }));
     this.roofPlane.renderOrder = 3;
     this.grid.renderOrder = 1;
+    this.zones.renderOrder = 2;
+    this.scene.add(this.zones);
     this.scene.add(this.floor, this.grid, this.fogPlane, this.roofPlane);
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
@@ -187,6 +223,21 @@ export class View3D {
       this.savePrefs();
       this.syncWalls(); this.syncRoof(); this.dirty = true;
     });
+    const layers = this.el.querySelector<HTMLElement>('.v3d-layers')!;
+    layers.addEventListener('change', e => {
+      const box = e.target as HTMLInputElement, kind = box.closest<HTMLElement>('[data-kind]')?.dataset.kind as Layer3D | undefined;
+      if (!kind) return;
+      const set = box.hasAttribute('data-show') ? this.hiddenKinds : this.lockedKinds, on = box.hasAttribute('data-show') ? !box.checked : box.checked;
+      if (on) set.add(kind); else set.delete(kind);
+      if (this.hiddenKinds.has(kind) || this.lockedKinds.has(kind)) this.h.view.select([...this.h.view.selected].filter(id => {
+        const it = this.h.view.item(id);
+        return !it || this.layerOf(it) !== kind;
+      }));
+      this.savePrefs();
+      this.syncLayersUi();
+      this.syncTokens();
+    });
+    this.syncLayersUi();
     const hour = this.el.querySelector<HTMLInputElement>('[data-v3=hour]')!;
     hour.disabled = !this.h.isGM();
     hour.addEventListener('input', () => { this.setHour(Number(hour.value)); this.h.setSky(Number(hour.value)); });
@@ -200,12 +251,7 @@ export class View3D {
       else if (k === 'left') this.look({ az: this.controls.getAzimuthalAngle() - Math.PI / 4 });
       else if (k === 'right') this.look({ az: this.controls.getAzimuthalAngle() + Math.PI / 4 });
       else if (k === 'fit') this.fit(true);
-      else if (k === 'fade') {
-        this.seeThrough = !this.seeThrough;
-        b.classList.toggle('on', this.seeThrough);
-        this.savePrefs();
-        this.occPending = true; this.dirty = true;
-      }
+      else if (k === 'layers') layers.hidden = !layers.hidden;
     });
     const cv = this.renderer.domElement;
     this.el.addEventListener('pointerdown', e => this.pointerDown(e), true);   // (before the camera's own handling)
@@ -240,10 +286,6 @@ export class View3D {
     addEventListener('keydown', e => this.key(e, true));
     addEventListener('keyup', e => this.key(e, false));
     addEventListener('blur', () => this.keys.clear());
-  }
-
-  private savePrefs() {
-    try { localStorage.setItem(PREFS, JSON.stringify({ wallH: this.wallH, fade: this.seeThrough })); } catch { /* private window */ }
   }
 
   private get board(): Board | null { return this.h.view.board || null; }
@@ -291,6 +333,7 @@ export class View3D {
     this.syncGrid();
     this.syncWalls();
     this.syncRoof();
+    this.syncDark();
     this.syncTokens();
     this.dirty = true;
   }
@@ -302,6 +345,26 @@ export class View3D {
     const { W, H } = this.page();
     m.scale.set(W, 1, H);
     m.position.set(W / 2, y, H / 2);
+  }
+
+  /** The land around the page (a ring: the page itself is the floor, and its pits), fading into the sky
+   *  far off; the board never reaches the fog, however far the camera goes */
+  private syncGround() {
+    const { W, H } = this.page(), sig = `${W}x${H}`;
+    if (sig === this.groundSig) return;
+    this.groundSig = sig;
+    if (this.ground) { this.scene.remove(this.ground); this.ground.geometry.dispose(); }
+    const R = Math.max(W, H) * 4 + 400, V = (x: number, y: number) => new THREE.Vector2(x, y);
+    const shape = new THREE.Shape([V(-R, -R), V(W + R, -R), V(W + R, H + R), V(-R, H + R)]);
+    shape.holes.push(new THREE.Path([V(0, 0), V(0, H), V(W, H), V(W, 0)]));
+    const geo = new THREE.ShapeGeometry(shape);
+    geo.rotateX(Math.PI / 2);   // (its x, y: the floor's x, z)
+    this.ground = new THREE.Mesh(geo, this.groundMat);
+    this.ground.position.y = -0.02;
+    this.ground.receiveShadow = true;
+    this.scene.add(this.ground);
+    const near = Math.hypot(W, H) * 3 + 20;
+    this.scene.fog = new THREE.Fog(this.scene.background as THREE.Color, near, near + Math.max(150, R * 0.5));
   }
 
   private canvasTexture(c: HTMLCanvasElement, old?: THREE.Texture | null) {
@@ -323,6 +386,7 @@ export class View3D {
     mat.color.set(0xffffff);
     mat.needsUpdate = true;
     this.placePlane(this.floor, 0);
+    this.syncGround();
     // the sun's shadows cover the whole page
     this.placeSun();
   }
@@ -358,6 +422,7 @@ export class View3D {
     this.ambient.color = col([[0, '#4f5f94'], [5.5, '#56608c'], [7, '#ffd8c0'], [9, '#ffffff'], [16.5, '#ffffff'], [18.5, '#e8a888'], [20, '#4f5f94'], [24, '#4f5f94']]);
     this.ambient.intensity = at([[0, 0.48], [5, 0.48], [7, 0.62], [9, 0.75], [16.5, 0.75], [19, 0.55], [20.5, 0.48], [24, 0.48]]);
     this.scene.background = col([[0, '#05070f'], [5, '#0c1226'], [6.3, '#c97c5c'], [8, '#7fa9d8'], [12, '#86b8ea'], [16.5, '#7fa9d8'], [18.2, '#d6784a'], [19.5, '#1a1a38'], [21, '#05070f'], [24, '#05070f']]);
+    if (this.scene.fog) (this.scene.fog as THREE.Fog).color.copy(this.scene.background as THREE.Color);   // (the horizon: the sky's colour)
     // standees and the fog plane don't take light: tint them as the light goes
     const level = Math.min(1, this.ambient.intensity + this.sun.intensity * 0.4);
     this.tint.copy(this.ambient.color).lerp(new THREE.Color(0xffffff), 0.5).multiplyScalar(Math.min(1, level * 1.1));
@@ -368,9 +433,9 @@ export class View3D {
   private sunDir = new THREE.Vector3(-0.45, 1.2, -0.7).normalize();
   private placeSun() {
     if (!this.board) return;
-    const { W, H } = this.page(), r = Math.hypot(W, H) / 2 + 2;
-    this.sun.position.set(W / 2, 0, H / 2).addScaledVector(this.sunDir, r * 1.6);
-    this.sun.target.position.set(W / 2, 0, H / 2);
+    const e = this.extent(), cx = (e.x0 + e.x1) / 2, cz = (e.z0 + e.z1) / 2, r = Math.hypot(e.x1 - e.x0, e.z1 - e.z0) / 2 + 2;
+    this.sun.position.set(cx, 0, cz).addScaledVector(this.sunDir, r * 1.6);
+    this.sun.target.position.set(cx, 0, cz);
     Object.assign(this.sun.shadow.camera, { left: -r, right: r, top: r, bottom: -r, near: 0.1, far: r * 4 });
     this.sun.shadow.camera.updateProjectionMatrix();
   }
@@ -392,8 +457,13 @@ export class View3D {
     }
   }
 
-  /** How dark the fog is at a board point, for this player (0 = clear) */
+  /** How dark the fog is at a board point, for this player (0 = clear; outside the map: 1) */
   private fogAt(x: number, y: number) {
+    const L = this.lit;
+    if (L) {
+      const i = Math.floor(x / this.g * DARK_RES) - L.x0, j = Math.floor(y / this.g * DARK_RES) - L.z0;
+      if (i < 0 || j < 0 || i >= L.nx || j >= L.nz || !L.on[j * L.nx + i]) return 1;
+    }
     const f = this.fogAlpha;
     if (!f) return 0;
     const px = Math.floor(x * f.k), py = Math.floor(y * f.k);
@@ -401,37 +471,156 @@ export class View3D {
     return f.data[(py * f.w + px) * 4 + 3] / 255;
   }
 
+  /** Where the scene is (squares): the page and every piece on this level, a few squares around —
+   *  no edge of its own: it grows as pieces are placed further */
+  private extent() {
+    const pg = this.h.view.page(), g = this.g, M = GRID_MARGIN;
+    let x0 = 0, z0 = 0, x1 = pg.width, z1 = pg.height;
+    for (const it of this.board?.items || []) {
+      if (!this.h.view.here(it)) continue;
+      x0 = Math.min(x0, it.x / g); z0 = Math.min(z0, it.y / g);
+      x1 = Math.max(x1, (it.x + it.w) / g); z1 = Math.max(z1, (it.y + it.h) / g);
+    }
+    return { x0: Math.floor(x0) - M, z0: Math.floor(z0) - M, x1: Math.ceil(x1) + M, z1: Math.ceil(z1) + M };
+  }
+
+  /** (players) The darkness: every cell they can't see — fog that dark, or off the map — a block of
+   *  darkness DARK_H tall (its sides only where it meets what they see), and a lid over all beyond with
+   *  a rim around it, facing in. Its faces show only from outside: from within, one sees out */
+  private syncDark() {
+    const b = this.board;
+    if (!b || this.h.isGM()) {
+      this.lit = null;
+      if (this.dark.parent) { this.scene.remove(this.dark); this.darkSig = ''; }
+      return;
+    }
+    const g = this.g, e = this.extent(), R = DARK_RES;
+    const x0 = e.x0 * R, z0 = e.z0 * R, nx = (e.x1 - e.x0) * R, nz = (e.z1 - e.z0) * R;
+    // the map: its pictures (map layer) and its ground tiles; none of either: the page
+    const areas = b.items.filter(it => this.h.view.here(it) && it.layer === 'map' && !it.roof
+      && (it.model ? this.isTile(it) : kindOf(it) === 'image' && !!it.image));
+    if (!areas.length) { const pg = this.h.view.page(); areas.push({ x: 0, y: 0, w: pg.width * g, h: pg.height * g } as BoardItem); }
+    const on = new Uint8Array(nx * nz);
+    for (const a of areas) {
+      const i0 = Math.max(0, Math.round(a.x / g * R) - x0), i1 = Math.min(nx, Math.round((a.x + a.w) / g * R) - x0);
+      const j0 = Math.max(0, Math.round(a.y / g * R) - z0), j1 = Math.min(nz, Math.round((a.y + a.h) / g * R) - z0);
+      for (let j = j0; j < j1; j++) on.fill(1, j * nx + i0, j * nx + Math.max(i0, i1));
+    }
+    this.lit = { x0, z0, nx, nz, on };
+    // dark: off the map, or fog dark enough to hide a token
+    const dk = new Uint8Array(nx * nz);
+    for (let j = 0; j < nz; j++) for (let i = 0; i < nx; i++)
+      dk[j * nx + i] = this.fogAt((x0 + i + 0.5) / R * g, (z0 + j + 0.5) / R * g) > HIDDEN ? 1 : 0;
+    const sig = `${x0},${z0},${nx},${nz}:` + dk.join('');
+    if (sig === this.darkSig) return;
+    this.darkSig = sig;
+    const pos: number[] = [], Hh = DARK_H;
+    const quad = (a: number[], b2: number[], c: number[], d: number[]) => pos.push(...a, ...b2, ...c, ...a, ...c, ...d);
+    const isDark = (i: number, j: number) => i < 0 || j < 0 || i >= nx || j >= nz || dk[j * nx + i] === 1;
+    for (let j = 0; j < nz; j++) for (let i = 0; i < nx; i++) {
+      if (!dk[j * nx + i]) continue;
+      const ax = (x0 + i) / R, bx = (x0 + i + 1) / R, az = (z0 + j) / R, bz = (z0 + j + 1) / R;
+      quad([ax, Hh, az], [ax, Hh, bz], [bx, Hh, bz], [bx, Hh, az]);   // its top
+      // its sides, facing what can be seen
+      if (!isDark(i, j - 1)) quad([ax, 0, az], [ax, Hh, az], [bx, Hh, az], [bx, 0, az]);
+      if (!isDark(i, j + 1)) quad([bx, 0, bz], [bx, Hh, bz], [ax, Hh, bz], [ax, 0, bz]);
+      if (!isDark(i - 1, j)) quad([ax, 0, bz], [ax, Hh, bz], [ax, Hh, az], [ax, 0, az]);
+      if (!isDark(i + 1, j)) quad([bx, 0, az], [bx, Hh, az], [bx, Hh, bz], [bx, 0, bz]);
+    }
+    // beyond: a lid to the horizon, and its rim down to the ground (nothing out there is seen)
+    const X0 = e.x0, X1 = e.x1, Z0 = e.z0, Z1 = e.z1, F = 4000;
+    quad([X0 - F, Hh, Z0 - F], [X0 - F, Hh, Z1 + F], [X0, Hh, Z1 + F], [X0, Hh, Z0 - F]);
+    quad([X1, Hh, Z0 - F], [X1, Hh, Z1 + F], [X1 + F, Hh, Z1 + F], [X1 + F, Hh, Z0 - F]);
+    quad([X0, Hh, Z0 - F], [X0, Hh, Z0], [X1, Hh, Z0], [X1, Hh, Z0 - F]);
+    quad([X0, Hh, Z1], [X0, Hh, Z1 + F], [X1, Hh, Z1 + F], [X1, Hh, Z1]);
+    quad([X1, 0, Z0], [X1, Hh, Z0], [X0, Hh, Z0], [X0, 0, Z0]);   // (the rim, facing in)
+    quad([X0, 0, Z1], [X0, Hh, Z1], [X1, Hh, Z1], [X1, 0, Z1]);
+    quad([X0, 0, Z0], [X0, Hh, Z0], [X0, Hh, Z1], [X0, 0, Z1]);
+    quad([X1, 0, Z1], [X1, Hh, Z1], [X1, Hh, Z0], [X1, 0, Z0]);
+    this.dark.geometry.dispose();
+    this.dark.geometry = new THREE.BufferGeometry();
+    this.dark.geometry.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+    // (one-sided: a camera inside the darkness still sees out to what is lit)
+    if (!this.dark.parent) this.scene.add(this.dark);
+    this.dirty = true;
+  }
+
+  /** The grid over the scene's extent, fading out around it; each square at the top of the ground tile
+   *  on it (raised or sunk), so the squares stay on the terraces instead of under them */
   private syncGrid() {
-    const b = this.board!, gr = b.grid, pg = this.h.view.page();
-    const sig = JSON.stringify([pg.width, pg.height, gr.show, gr.color, gr.opacity]);
+    const b = this.board!, gr = b.grid, g = this.g, e = this.extent(), F = GRID_FADE;
+    const tiles = this.board!.items.filter(it => this.h.view.here(it) && this.isTile(it) && !this.hiddenKinds.has('tile'));
+    const sig = JSON.stringify([e, gr.show, gr.color, gr.opacity, gr.zoneShow, gr.zone, tiles.map(t => [t.x, t.y, t.w, t.h, t.elev || 0])]);
     if (sig === this.gridSig) return;
     this.gridSig = sig;
     this.grid.visible = gr.show !== false;
-    const pts: number[] = [];
-    for (let x = 0; x <= pg.width; x++) pts.push(x, 0.01, 0, x, 0.01, pg.height);
-    for (let y = 0; y <= pg.height; y++) pts.push(0, 0.01, y, pg.width, 0.01, y);
+    const X0 = e.x0 - F, Z0 = e.z0 - F, nx = e.x1 - e.x0 + 2 * F, nz = e.z1 - e.z0 + 2 * F;
+    // each square's ground: the highest tile whose footprint holds its centre (none: the floor, 0)
+    const top = new Float32Array(nx * nz), has = new Uint8Array(nx * nz);
+    for (const t of tiles) {
+      const h = t.elev || 0;
+      const i0 = Math.max(0, Math.ceil(t.x / g - 0.5) - X0), i1 = Math.min(nx - 1, Math.floor((t.x + t.w) / g - 0.5) - X0);
+      const j0 = Math.max(0, Math.ceil(t.y / g - 0.5) - Z0), j1 = Math.min(nz - 1, Math.floor((t.y + t.h) / g - 0.5) - Z0);
+      for (let j = j0; j <= j1; j++) for (let i = i0; i <= i1; i++) {
+        const k = j * nx + i;
+        if (!has[k] || h > top[k]) { top[k] = h; has[k] = 1; }
+      }
+    }
+    const H = (i: number, j: number) => (i < 0 || j < 0 || i >= nx || j >= nz ? null : top[j * nx + i] + GRID_LIFT);
+    // how far outside the scene: full inside, gone F squares out
+    const fade = (x: number, z: number) => {
+      const d = Math.max(e.x0 - x, x - e.x1, e.z0 - z, z - e.z1, 0);
+      return Math.max(0, 1 - d / F);
+    };
+    const pos: number[] = [], col: number[] = [];
+    // zone markers: every Zn squares (from the page's corner), a flat ribbon ZONE_W wide over the line
+    const Zn = gr.zoneShow ? Math.max(2, Math.round(gr.zone || 8)) : 0, onZone = (v: number) => Zn > 0 && ((v % Zn) + Zn) % Zn === 0;
+    const zpos: number[] = [], zcol: number[] = [], hw = ZONE_W / 2;
+    const seg = (ax: number, az: number, bx: number, bz: number, y: number) => {
+      pos.push(ax, y, az, bx, y, bz);
+      col.push(1, 1, 1, fade(ax, az), 1, 1, 1, fade(bx, bz));
+      if (!(ax === bx ? onZone(ax) : onZone(az))) return;
+      const ox = ax === bx ? hw : 0, oz = ax === bx ? 0 : hw, zy = y + 0.002, fa = fade(ax, az), fb = fade(bx, bz);
+      zpos.push(ax - ox, zy, az - oz, bx - ox, zy, bz - oz, bx + ox, zy, bz + oz, ax - ox, zy, az - oz, bx + ox, zy, bz + oz, ax + ox, zy, az + oz);
+      zcol.push(1, 1, 1, fa, 1, 1, 1, fb, 1, 1, 1, fb, 1, 1, 1, fa, 1, 1, 1, fb, 1, 1, 1, fa);
+    };
+    // an edge between two squares: once at their height, or once at each where they differ (a terrace's rim)
+    for (let j = 0; j <= nz; j++) for (let i = 0; i < nx; i++) {   // along x, at z = Z0 + j
+      const a = H(i, j - 1), c = H(i, j), x = X0 + i, z = Z0 + j;
+      if (a !== null) seg(x, z, x + 1, z, a);
+      if (c !== null && c !== a) seg(x, z, x + 1, z, c);
+    }
+    for (let i = 0; i <= nx; i++) for (let j = 0; j < nz; j++) {   // along z, at x = X0 + i
+      const a = H(i - 1, j), c = H(i, j), x = X0 + i, z = Z0 + j;
+      if (a !== null) seg(x, z, x, z + 1, a);
+      if (c !== null && c !== a) seg(x, z, x, z + 1, c);
+    }
     this.grid.geometry.dispose();
     this.grid.geometry = new THREE.BufferGeometry();
-    this.grid.geometry.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
+    this.grid.geometry.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+    this.grid.geometry.setAttribute('color', new THREE.Float32BufferAttribute(col, 4));
     this.grid.material.color.set(gr.color || '#c9a227');
     this.grid.material.opacity = gr.opacity ?? 0.35;
+    this.grid.material.needsUpdate = true;
+    this.zones.geometry.dispose();
+    this.zones.geometry = new THREE.BufferGeometry();
+    this.zones.geometry.setAttribute('position', new THREE.Float32BufferAttribute(zpos, 3));
+    this.zones.geometry.setAttribute('color', new THREE.Float32BufferAttribute(zcol, 4));
+    this.zones.visible = this.grid.visible && zpos.length > 0;
+    this.zones.material.color.set(gr.color || '#c9a227');
+    this.zones.material.opacity = Math.min(1, (gr.opacity ?? 0.35) * 2);
+    this.zones.material.needsUpdate = true;
+    this.placeSun();   // (the shadows: over all of it)
   }
 
   private syncWalls() {
     if (!this.board) return;
     const g = this.g, segs = this.h.view.wallSegments(), H = this.wallH, T = 0.14;
-    if (this.walls) { this.scene.remove(this.walls); this.walls.geometry.dispose(); this.walls.dispose(); this.walls = null; }
-    if (this.ghostWalls) { this.scene.remove(this.ghostWalls); this.ghostWalls.dispose(); this.ghostWalls = null; }
-    this.wallSegs = []; this.wallMats = []; this.wallFaded = new Set(); this.occPending = true;
+    if (this.walls) { this.scene.remove(this.walls); this.walls.dispose(); this.walls = null; }
     if (!segs.length) return;
     const geo = new THREE.BoxGeometry(1, 1, 1);
     const mesh = new THREE.InstancedMesh(geo, this.wallMat, segs.length);
     mesh.castShadow = mesh.receiveShadow = true;
-    mesh.frustumCulled = false;   // (its instances come and go to the see-through copy)
-    const ghost = new THREE.InstancedMesh(geo, this.ghostMat, segs.length);
-    ghost.frustumCulled = false;
-    ghost.renderOrder = 1;
-    ghost.visible = false;
     const m = new THREE.Matrix4(), q = new THREE.Quaternion(), up = new THREE.Vector3(0, 1, 0);
     const stone = new THREE.Color(0x8a8278), wood = new THREE.Color(0x7a4f28);
     segs.forEach(({ seg: [x1, y1, x2, y2], door }, i) => {
@@ -443,17 +632,11 @@ export class View3D {
         hidden ? new THREE.Vector3(0, 0, 0) : new THREE.Vector3(len + T * 0.98, h, door ? T * 0.6 : T));
       mesh.setMatrixAt(i, m);
       mesh.setColorAt(i, door ? wood : stone);
-      ghost.setMatrixAt(i, ZERO);
-      ghost.setColorAt(i, door ? wood : stone);
-      this.wallMats.push(m.clone());
-      this.wallSegs.push({ x1: x1 / g, z1: y1 / g, x2: x2 / g, z2: y2 / g, h: hidden ? 0 : h });
     });
-    mesh.instanceMatrix.needsUpdate = ghost.instanceMatrix.needsUpdate = true;
+    mesh.instanceMatrix.needsUpdate = true;
     if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
-    if (ghost.instanceColor) ghost.instanceColor.needsUpdate = true;
     this.walls = mesh;
-    this.ghostWalls = ghost;
-    this.scene.add(mesh, ghost);
+    this.scene.add(mesh);
   }
 
   private syncRoof() {
@@ -469,15 +652,16 @@ export class View3D {
   }
 
   // ── pits: the floor opened over lowered scenery ─────────────────────────────
-  /** Structures and props below the floor: each half square they cover is opened in the floor (an
-   *  alpha map on it) down to the deepest of them, with earth sides where it meets shallower ground
-   *  (stepped terraces too) and a bottom under them */
+  /** Structures and props below the floor, and tiles (sunk by their thickness: their top is the ground):
+   *  each half square they cover is opened in the floor (an alpha map on it) down to the deepest of
+   *  them, with earth sides where it meets shallower ground (stepped terraces too) and a bottom under them */
   private syncPits() {
     const b = this.board;
     if (!b) return;
     const g = this.g, { W, H } = this.page(), R = PIT_RES;
-    const sunk = this.tokens().filter(it => (it.elev || 0) < 0 && this.isStructure(it));
-    const sig = JSON.stringify([W, H, g, sunk.map(i => [i.x, i.y, i.w, i.h, i.rotation || 0, i.elev])]);
+    const deep = (it: BoardItem) => (it.elev || 0) - (this.isTile(it) ? this.tileDepth(it) : 0);
+    const sunk = this.tokens().filter(it => this.isStructure(it) && ((it.elev || 0) < 0 || (this.isTile(it) && (it.elev || 0) <= 0)));
+    const sig = JSON.stringify([W, H, g, sunk.map(i => [i.x, i.y, i.w, i.h, i.rotation || 0, deep(i)])]);
     if (sig === this.pitSig) return;
     this.pitSig = sig;
     this.dirty = true;
@@ -490,13 +674,14 @@ export class View3D {
     }
     const nx = Math.max(1, Math.ceil(W * R)), nz = Math.max(1, Math.ceil(H * R)), depth = new Float32Array(nx * nz);
     for (const it of sunk) {   // the half squares whose middle is inside its footprint (turned as on the board)
+      const d = deep(it);
       const a = (it.rotation || 0) * Math.PI / 180, cos = Math.cos(a), sin = Math.sin(a);
       const cx = (it.x + it.w / 2) / g, cz = (it.y + it.h / 2) / g, hw = it.w / g / 2, hh = it.h / g / 2, rad = Math.hypot(hw, hh);
       for (let j = Math.max(0, Math.floor((cz - rad) * R)); j < Math.min(nz, Math.ceil((cz + rad) * R)); j++)
         for (let i = Math.max(0, Math.floor((cx - rad) * R)); i < Math.min(nx, Math.ceil((cx + rad) * R)); i++) {
           const px = (i + 0.5) / R - cx, pz = (j + 0.5) / R - cz;
           const lx = px * cos + pz * sin, lz = -px * sin + pz * cos;
-          if (Math.abs(lx) <= hw + 1e-6 && Math.abs(lz) <= hh + 1e-6) depth[j * nx + i] = Math.min(depth[j * nx + i], it.elev!);
+          if (Math.abs(lx) <= hw + 1e-6 && Math.abs(lz) <= hh + 1e-6) depth[j * nx + i] = Math.min(depth[j * nx + i], d);
         }
     }
     this.pitGrid = { nx, nz, depth };
@@ -571,16 +756,43 @@ export class View3D {
     const b = this.board, gm = this.h.isGM();
     if (!b) return [];
     return b.items.filter(it => kindOf(it) === 'image' && !it.roof && this.h.view.here(it)
-      && (it.layer === 'tokens' || (gm && it.layer === 'gm') || (it.layer === 'map' && !!it.model)));
+      && (it.layer === 'tokens' || (gm && it.layer === 'gm') || (it.layer === 'map' && !!it.model))
+      && !this.hiddenKinds.has(this.layerOf(it)));
   }
 
   /** A model on the map layer, or a structure / prop: scenery (at its footprint, no base) */
   private isStructure(it: BoardItem) { return !!it.model && (it.layer === 'map' || isScenery(this.h.model(it.model))); }
   /** a prop (furniture, decor): sized in half squares */
   private isProp(it: BoardItem) { return !!it.model && this.h.model(it.model)?.kind === 'prop'; }
+  private isTile(it: BoardItem) { return !!it.model && this.h.model(it.model)?.kind === 'tile'; }
+  /** Its ◧ layer: the GM's, or its model's kind (a model on the map layer: a building; a picture's token: a figure) */
+  layerOf(it: BoardItem): Layer3D {
+    if (it.layer === 'gm') return 'gm';
+    const k = it.model ? this.h.model(it.model)?.kind : undefined;
+    return k && k !== 'figure' ? k : it.model && it.layer === 'map' ? 'structure' : 'figure';
+  }
+  /** A tile's thickness (squares): it is sunk by it, its top on the ground */
+  private tileDepth(it: BoardItem) {
+    const [dx, dy, dz] = this.h.model(it.model!)?.dims || [1, 0.1, 1];
+    return dy * Math.min(it.w / this.g / Math.max(dx, 1e-6), it.h / this.g / Math.max(dz, 1e-6));
+  }
+  private savePrefs() {
+    try { localStorage.setItem(PREFS, JSON.stringify({ wallH: this.wallH, hidden: [...this.hiddenKinds], locked: [...this.lockedKinds] })); } catch { /* private window */ }
+  }
+  private syncLayersUi() {
+    this.el.querySelectorAll<HTMLElement>('.v3d-layer').forEach(row => {
+      const k = row.dataset.kind as Layer3D;
+      row.querySelector<HTMLInputElement>('[data-show]')!.checked = !this.hiddenKinds.has(k);
+      row.querySelector<HTMLInputElement>('[data-lock]')!.checked = this.lockedKinds.has(k);
+      row.classList.toggle('off', this.hiddenKinds.has(k));
+    });
+    const n = this.hiddenKinds.size + this.lockedKinds.size, btn = this.el.querySelector<HTMLElement>('[data-v3=layers]')!;
+    btn.textContent = n ? `◧ Capas (${n})` : '◧ Capas';
+    btn.classList.toggle('on', n > 0);
+  }
 
   /** Lying on the ground: put down by hand (⤓), or Tropezado while it lasts */
-  private isLying(it: BoardItem) { return !this.isStructure(it) && (!!it.prone || !!it.statuses?.some(s => s.id === 'tropezado')); }
+  private isLying(it: BoardItem) { return !this.isStructure(it) && hasStatus(it, ...LYING); }
 
   /** A figure's model standing on its base, or lying on its back over it (its feet where it stands) */
   private layModel(s: Standee) {
@@ -595,7 +807,10 @@ export class View3D {
   private attachModel(s: Standee, it: BoardItem, meta: ModelMeta) {
     modelCopy(meta).then(copy => {
       if (s.gone) return;
-      if (this.isStructure(it)) { fitStructure(copy, it.w / this.g, it.h / this.g); copy.position.y = 0; }
+      if (this.isStructure(it)) {
+        fitStructure(copy, it.w / this.g, it.h / this.g);
+        copy.position.y = this.isTile(it) ? -(copy.userData.size as THREE.Vector3).y * copy.scale.y : 0;   // (a tile: sunk, its top the ground)
+      }
       else { fitModel(copy, Math.min(it.w, it.h) / this.g, (meta.scale || 1) * (it.modelScale || 1)); copy.position.y = 0.08; }
       if (it.layer === 'gm') copy.traverse(o => {
         const m = o as THREE.Mesh;
@@ -611,33 +826,43 @@ export class View3D {
   private syncTokens() {
     if (!this.board || !this.active) return;
     this.syncPits();
-    const g = this.g, alive = new Set<string>();
-    for (const it of this.tokens()) {
+    const g = this.g, alive = new Set<string>(), shown = this.tokens();
+    // raised ground (tiles lifted: terraces, a hill): what stands on it stands on its top, its own
+    // height counted from there
+    const raised = shown.filter(i => this.isTile(i) && (i.elev || 0) > 0);
+    const groundAt = (x: number, y: number) => {
+      let top = 0;
+      for (const t of raised) if (x >= t.x && x < t.x + t.w && y >= t.y && y < t.y + t.h) top = Math.max(top, t.elev || 0);
+      return top;
+    };
+    for (const it of shown) {
       const cx = it.x + it.w / 2, cy = it.y + it.h / 2;
-      if (this.fogAt(cx, cy) > HIDDEN) continue;   // in the dark for this player
+      if (this.fogAt(cx, cy) > HIDDEN && !(!this.h.isGM() && this.h.canEdit(it))) continue;   // in the dark for this player (not their own)
       alive.add(it.id);
       const model = it.model ? this.h.model(it.model) : undefined;
-      if (it.model && !model) this.h.missingModel();
-      const meta = !it.model && it.image ? this.h.image(it.image) : undefined;
+      if (it.model && !model) this.h.missingModel(it.model);
+      // (a model kept in another player's browser: here, the token's 2D picture standing)
+      const mid = it.model && !model && it.model.startsWith('local-') ? undefined : it.model;
+      const meta = !mid && it.image ? this.h.image(it.image) : undefined;
       const tex = meta ? this.texture(meta) : null;
       const color = this.h.badgeColor(it) || (it.layer === 'gm' ? '#7a7a7a' : '#c9a227');
-      const key = [model ? `${model.id}*${model.scale}*${model.kind}*${it.modelScale || 1}` : it.model ? 'm?' : '', tex ? meta!.id : '', it.w, it.h, it.fit, color, it.layer].join('|');
+      const key = [model ? `${model.id}*${model.scale}*${model.kind}*${it.modelScale || 1}` : mid ? 'm?' : '', tex ? meta!.id : '', it.w, it.h, it.fit, color, it.layer].join('|');
       let s = this.standees.get(it.id);
       if (s && s.key !== key) { this.dropStandee(s); this.standees.delete(it.id); s = undefined; }
       if (!s) {
-        s = this.isStructure(it) ? this.makeStructure(it) : this.makeStandee(it, it.model ? null : tex, color, !!it.model);
+        s = this.isStructure(it) ? this.makeStructure(it) : this.makeStandee(it, mid ? null : tex, color, !!mid);
         s.key = key;
         s.group.userData.itemId = it.id;
         this.standees.set(it.id, s);
         this.scene.add(s.group);
         if (model) this.attachModel(s, it, model);
       }
-      const elev = it.elev || 0;
-      s.group.position.set(cx / g, elev, cy / g);
+      const elev = it.elev || 0, under = this.isTile(it) || !raised.length ? 0 : groundAt(cx, cy);
+      s.group.position.set(cx / g, under + elev, cy / g);
       // a structure turns as on the 2D board; a figure looks where it faces (its 2D picture stays upright)
       s.group.rotation.y = !it.model ? 0 : -((this.isStructure(it) ? it.rotation : it.facing) || 0) * Math.PI / 180;   // (standees face the camera instead)
       // raised: a thin post down to its square, so one sees where it stands
-      if (elev > 0 && !s.stalk) {
+      if (elev > 0 && !s.stalk && !this.isStructure(it)) {   // (scenery is raised on purpose: ground, a ledge — no post)
         s.stalk = new THREE.Mesh(new THREE.CylinderGeometry(0.025, 0.025, 1, 8), new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.7 }));
         s.group.add(s.stalk);
       }
@@ -652,6 +877,19 @@ export class View3D {
       if (s.pit) { s.pit.visible = elev < 0 && this.pitDepth(cx / g, cy / g) > elev + 0.01; s.pit.position.y = -elev + 0.025; }   // (in a pit: seen already)
       const lying = this.isLying(it);
       if (s.lying !== lying) { s.lying = lying; this.layModel(s); }
+      // fuera de combate: a red X over it, facing the camera, seen through whatever is in front
+      const out = hasStatus(it, OUT);
+      if (out && !s.ko && !this.isStructure(it)) {
+        s.ko = new THREE.Sprite(new THREE.SpriteMaterial({ map: koTexture(), depthTest: false, transparent: true }));
+        s.ko.renderOrder = 10;
+        s.group.add(s.ko);
+      }
+      if (s.ko) {
+        s.ko.visible = out;
+        const k = Math.max(0.6, Math.min(it.w, it.h) / g * 0.9);
+        s.ko.scale.set(k, k, 1);
+        s.ko.position.y = lying ? 0.35 : Math.max(0.5, Math.min(s.h || 1, 3) * 0.5);
+      }
       s.sel.visible = this.h.view.selected.has(it.id);
     }
     for (const [id, s] of this.standees) if (!alive.has(id)) { this.dropStandee(s); this.standees.delete(id); }
@@ -709,9 +947,9 @@ export class View3D {
 
   private dropStandee(s: Standee) {
     s.gone = true;
-    if ((s.fade ?? 1) < 1) this.setFade(s, 1);   // (its see-through materials)
     this.scene.remove(s.group);
     for (const m of [s.card, s.base, s.ring, s.sel, s.stalk || null, s.pit || null] as (THREE.Mesh | null)[]) if (m) { m.geometry.dispose(); (m.material as THREE.Material).dispose(); }
+    s.ko?.material.dispose();   // (its texture is shared)
     // (a model's copy shares its geometry and textures with the other tokens: nothing of it to free)
   }
 
@@ -731,8 +969,8 @@ export class View3D {
       let o: THREE.Object3D | null = h.object;
       while (o && !o.userData.itemId) o = o.parent;
       const it = o ? this.h.view.item(o.userData.itemId) : undefined;
-      if (it && this.isStructure(it) && (this.standees.get(it.id)?.fade ?? 1) < 0.9) continue;   // (see-through: what is behind it)
-      if (it && !(this.isStructure(it) && !this.h.canEdit(it))) return it;
+      if (it && !(this.isStructure(it) && !this.h.canEdit(it)) && !this.lockedKinds.has(this.layerOf(it))
+        && (!this.h.isGM() || this.layerOf(it) === this.activeLayer)) return it;   // (the GM: the layer being edited, as in 2D)
     }
     return undefined;
   }
@@ -758,7 +996,8 @@ export class View3D {
       if (ids.has(it.id)) ids.delete(it.id); else ids.add(it.id);
       view.select([...ids]);
     } else if (!view.selected.has(it.id)) view.select([it.id]);
-    const ids = view.selectedItems().filter(i => this.h.canEdit(i) && !i.locked).map(i => i.id);
+    const ids = view.withGroup(view.selectedItems().filter(i => this.h.canEdit(i) && !i.locked)).map(i => i.id);   // (and who rides with them)
+    if (ids.includes(it.id)) ids.unshift(...ids.splice(ids.indexOf(it.id), 1));   // (the one held leads: it snaps to the grid)
     const at = this.floorAt(e.clientX, e.clientY);
     this.controls.enabled = false;   // a token clicked: the camera stays put
     if (!ids.includes(it.id) || !at) { this.drag = { ids: [], from: new Map(), start: { x: 0, y: 0 }, moved: false, pointer: e.pointerId, toggle }; return; }
@@ -830,10 +1069,11 @@ export class View3D {
   }
 
   /** + / −: one square bigger or smaller (it keeps its middle) */
-  resizeSelected(d: number) {
+  resizeSelected(d: number, fine = false) {
     const its = this.editable(), g = this.g;
     if (!its.length) return;
     for (const it of its) {
+      if (this.isStructure(it)) { resizeScenery(it, this.h.model(it.model!)?.dims, g, d, fine); continue; }   // (its model's proportions)
       const cx = it.x + it.w / 2, cy = it.y + it.h / 2, st = this.isProp(it) ? 0.5 : 1;   // (props: half a square at a time)
       const w = Math.max(g * st, Math.round(it.w / g / st + d) * st * g), h = it.layer === 'map' || it.w !== it.h ? Math.max(g * st, Math.round(it.h / g / st + d) * st * g) : w;
       it.w = w; it.h = h; it.x = cx - w / 2; it.y = cy - h / 2;
@@ -853,8 +1093,12 @@ export class View3D {
   proneSelected() {
     const its = this.editable().filter(i => !this.isStructure(i));
     if (!its.length) return;
-    const down = !its.every(i => i.prone);
-    for (const it of its) { if (down) it.prone = true; else delete it.prone; }
+    const down = !its.every(i => hasStatus(i, 'tumbado'));
+    for (const it of its) {
+      const rest = (it.statuses || []).filter(s => s.id !== 'tumbado');
+      if (down) rest.push({ id: 'tumbado', level: 0 });
+      if (rest.length) it.statuses = rest; else delete it.statuses;
+    }
     this.h.change('commit', its.map(i => i.id));
   }
 
@@ -967,76 +1211,6 @@ export class View3D {
     }
   }
 
-  // ── see-through: what hides a token from the camera ──────────────────────────
-  /** Walls, structures and props between the camera and the tokens it sees (or the point it looks
-   *  at) fade; the rest are solid again */
-  private occlude() {
-    const C = this.camera.position, pts: THREE.Vector3[] = [];
-    let looked = -1;   // (the point looked at: a structure around it isn't "in the way")
-    if (this.seeThrough && this.board) {
-      this.camera.updateMatrixWorld();
-      const fr = new THREE.Frustum().setFromProjectionMatrix(new THREE.Matrix4().multiplyMatrices(this.camera.projectionMatrix, this.camera.matrixWorldInverse));
-      looked = pts.push(this.controls.target.clone().setY(Math.max(0.3, this.controls.target.y))) - 1;
-      for (const s of this.standees.values()) {
-        if (!s.base && !s.pivot) continue;   // (scenery)
-        const p = s.group.position.clone();
-        p.y += s.lying ? 0.25 : 0.7;   // (about its middle)
-        if (fr.containsPoint(p)) pts.push(p);
-      }
-    }
-    // walls drawn with Niebla y luz
-    const faded = new Set<number>();
-    if (pts.length) this.wallSegs.forEach((w, i) => { if (w.h > 0 && pts.some(p => wallBlocks(C, p, w))) faded.add(i); });
-    if (faded.size !== this.wallFaded.size || [...faded].some(i => !this.wallFaded.has(i))) {
-      this.wallFaded = faded;
-      const solid = this.walls, ghost = this.ghostWalls;
-      if (solid && ghost) {
-        this.wallMats.forEach((m, i) => { const f = faded.has(i); solid.setMatrixAt(i, f ? ZERO : m); ghost.setMatrixAt(i, f ? m : ZERO); });
-        solid.instanceMatrix.needsUpdate = ghost.instanceMatrix.needsUpdate = true;
-        ghost.visible = faded.size > 0;
-      }
-      this.dirty = true;
-    }
-    // structures and props
-    const box = new THREE.Box3(), ray = new THREE.Ray(), hit = new THREE.Vector3();
-    for (const s of this.standees.values()) {
-      if (s.base || s.pivot || !s.model) continue;
-      let block = false;
-      if (pts.length) {
-        box.setFromObject(s.model);
-        block = box.containsPoint(C);   // the camera inside it
-        for (let k = 0; !block && k < pts.length; k++) {
-          const p = pts[k];
-          if (k === looked && box.containsPoint(p)) continue;   // looking at it, not past it
-          ray.origin.copy(C); ray.direction.subVectors(p, C).normalize();
-          block = !!ray.intersectBox(box, hit) && hit.distanceTo(C) < p.distanceTo(C) - 0.15;
-        }
-      }
-      const to = block ? FADE : 1;
-      if ((s.fadeTo ?? 1) !== to) { s.fadeTo = to; this.dirty = true; }
-    }
-  }
-
-  /** How seen a structure's model is (1: solid, as loaded; less: see-through copies of its materials) */
-  private setFade(s: Standee, f: number) {
-    s.fade = f;
-    s.model?.traverse(o => {
-      const m = o as THREE.Mesh, u = m.userData as { solid?: THREE.Material | THREE.Material[] };
-      if (!m.isMesh) return;
-      if (f >= 0.999) {   // solid again: its own materials back
-        if (u.solid) { ([] as THREE.Material[]).concat(m.material).forEach(x => x.dispose()); m.material = u.solid; delete u.solid; }
-        return;
-      }
-      if (!u.solid) {
-        u.solid = m.material;
-        m.material = Array.isArray(m.material) ? m.material.map(x => x.clone()) : m.material.clone();
-        ([] as THREE.Material[]).concat(m.material).forEach(x => { x.transparent = true; x.depthWrite = false; x.needsUpdate = true; });
-      }
-      const orig = ([] as THREE.Material[]).concat(u.solid);
-      ([] as THREE.Material[]).concat(m.material).forEach((x, i) => { x.opacity = (orig[i]?.opacity ?? 1) * f; });
-    });
-  }
-
   // ── pings ─────────────────────────────────────────────────────────────────
   ping(p: Pt, color: string) {
     if (!this.active || !this.board) return;
@@ -1073,6 +1247,9 @@ export class View3D {
   private fitKey() { return this.board ? `${this.board.id}|${JSON.stringify(this.h.view.page())}` : ''; }
   /** Another level shown: if its page has another size, frame it */
   levelChanged() { if (this.active && this.board && this.fitted !== this.fitKey()) this.fit(true); }
+
+  /** The camera goes (smoothly) to look at a board point */
+  focus(p: Pt) { if (this.board) this.look({ target: new THREE.Vector3(p.x / this.g, 0, p.y / this.g) }); }
 
   /** Go smoothly to another angle (what isn't given stays) */
   private look(to: { polar?: number; az?: number; dist?: number; target?: THREE.Vector3 }) {
@@ -1114,7 +1291,7 @@ export class View3D {
       if (down) this.stepSelected(k);
       return;
     }
-    if (down && (k === '+' || k === '=' || k === '-' || k === '_') && this.editable().length) { e.preventDefault(); this.resizeSelected(k === '-' || k === '_' ? -1 : 1); return; }
+    if (down && (k === '+' || k === '=' || k === '-' || k === '_') && this.editable().length) { e.preventDefault(); this.resizeSelected(k === '-' || k === '_' ? -1 : 1, e.shiftKey); return; }
     if (down && (k === 'pageup' || k === 'pagedown') && this.editable().length) { e.preventDefault(); this.liftSelected((k === 'pageup' ? 1 : -1) * (e.shiftKey ? 0.25 : 1)); return; }   // (Mayús: a quarter)
     const move = ['w', 'a', 's', 'd', ...arrows];
     if (move.includes(k)) { e.preventDefault(); if (down) this.keys.add(k); else this.keys.delete(k); }
@@ -1124,6 +1301,17 @@ export class View3D {
   }
 
   /** One frame: camera moves, pings, and a render if anything changed */
+  /** What the 3D view shows now, small (a slab's picture) */
+  async snapshot(px = 360): Promise<Blob | null> {
+    if (!this.active) return null;
+    this.renderer.render(this.scene, this.camera);   // (read right after drawing: the buffer is still there)
+    const src = this.renderer.domElement, k = px / Math.max(src.width, src.height, 1);
+    const c = document.createElement('canvas');
+    c.width = Math.max(1, Math.round(src.width * k)); c.height = Math.max(1, Math.round(src.height * k));
+    c.getContext('2d')!.drawImage(src, 0, 0, c.width, c.height);
+    return new Promise(ok => c.toBlob(ok, 'image/jpeg', 0.82));
+  }
+
   private frame() {
     const now = performance.now();
     if (this.tween) {
@@ -1157,17 +1345,6 @@ export class View3D {
       this.dirty = true;
     }
     if (this.controls.update()) this.dirty = true;   // (damping still moving)
-    // what is in the way of the camera: checked a few times a second while things move
-    if (this.dirty) this.occPending = true;
-    if (this.occPending && now - this.occAt > 100) { this.occPending = false; this.occAt = now; this.occlude(); }
-    const dt = Math.min(100, now - (this.lastFrame || now)); this.lastFrame = now;
-    for (const s of this.standees.values()) {   // fading in and out
-      const cur = s.fade ?? 1, to = s.fadeTo ?? 1;
-      if (cur === to || !s.model) continue;
-      const step = dt / 180 * (1 - FADE);
-      this.setFade(s, to < cur ? Math.max(to, cur - step) : Math.min(to, cur + step));
-      this.dirty = true;
-    }
     if (!this.dirty) return;
     this.dirty = false;
     this.faceCamera();
@@ -1175,18 +1352,11 @@ export class View3D {
   }
 }
 
-const ZERO = new THREE.Matrix4().makeScale(0, 0, 0);
 const PIT_RES = 2;   // the floor's holes: cells per square
-
-/** Does the wall stand between the camera C and the point P: the line from one to the other crosses
- *  it over the floor, low enough to hit it, and not right at P (a wall just behind a token isn't in the way) */
-function wallBlocks(C: THREE.Vector3, P: THREE.Vector3, w: WallSeg) {
-  const dx = P.x - C.x, dz = P.z - C.z, ex = w.x2 - w.x1, ez = w.z2 - w.z1;
-  const den = dx * ez - dz * ex;
-  if (Math.abs(den) < 1e-9) return false;   // (along it)
-  const t = ((w.x1 - C.x) * ez - (w.z1 - C.z) * ex) / den, u = ((w.x1 - C.x) * dz - (w.z1 - C.z) * dx) / den;
-  if (u < -0.02 || u > 1.02 || t <= 0) return false;
-  if (Math.hypot(dx, dz) * (1 - t) < 0.2) return false;   // (at P, or past it)
-  const y = C.y + (P.y - C.y) * t;
-  return y >= 0 && y <= w.h + 0.05;
-}
+const GRID_MARGIN = 4;   // the grid: squares beyond the furthest piece (and the page) at full strength…
+const GRID_FADE = 10;    // …then fading out over these
+const DARK_H = 9;          // (players) the wall of darkness: squares tall (over the trees)
+const DARK_RES = 2;        // its cells a square (half squares: a field of view's edge stays round enough)
+const DARK_COLOR = 0x030305;
+const GRID_LIFT = 0.02;  // above the ground (a tile's top, or the floor)
+const ZONE_W = 0.08;     // a zone marker's width (squares)

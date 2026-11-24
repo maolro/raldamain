@@ -51,6 +51,9 @@ function dropFrame(f: HTMLIFrameElement) {
 
 export interface PickOptions {
   current?: string;
+  /** only these sheets (and no ⬆ Subir): e.g. the ready-made characters' */
+  only?: (s: SheetMeta) => boolean;
+  title?: string;
   /** chosen sheet, or null for "no sheet" */
   done(sid: string | null): void;
 }
@@ -119,21 +122,22 @@ export class Sheets {
   pick(at: { x: number; y: number }, opts: PickOptions) {
     const box = this.picker;
     box.innerHTML = `
-      <h3>Ficha</h3>
+      <h3>${esc(opts.title || 'Ficha')}</h3>
       <input class="inp" data-q placeholder="Buscar ficha…" value="${esc(this.q)}">
       <div class="lib-chips" data-kinds></div>
       <div class="sheet-list" data-list></div>
       <div class="row">
-        <label class="btn small" title="Una ficha del Creador (Descargar) o del Bestiario (Descargar ficha)">⬆ Subir .json
+        <label class="btn small" title="Una ficha del Creador (Descargar) o del Bestiario (Descargar ficha)" ${opts.only ? 'hidden' : ''}>⬆ Subir .json
           <input type="file" accept=".json,application/json" hidden data-file></label>
         ${opts.current ? '<button class="btn small danger" data-none>Quitar ficha</button>' : ''}
       </div>`;
     const render = () => {
       const kinds: [typeof this.kind, string][] = [['', 'Todas'], ['pj', 'Personajes'], ['criatura', 'Criaturas'], ['upload', 'Subidas']];
-      box.querySelector('[data-kinds]')!.innerHTML = kinds.filter(([k]) => !k || this.list.some(s => this.matchKind(s, k)))
+      const list = opts.only ? this.list.filter(opts.only) : this.list;
+      box.querySelector('[data-kinds]')!.innerHTML = opts.only ? '' : kinds.filter(([k]) => !k || this.list.some(s => this.matchKind(s, k)))
         .map(([k, n]) => `<button class="chip ${k === this.kind ? 'on' : ''}" data-kind="${k}">${n}</button>`).join('');
       const q = plain(this.q);
-      const shown = this.list.filter(s => this.matchKind(s, this.kind) && (!q || plain(s.name).includes(q) || s.id.includes(q)))
+      const shown = list.filter(s => (opts.only || this.matchKind(s, this.kind)) && (!q || plain(s.name).includes(q) || s.id.includes(q)))
         .sort((a, b) => a.name.localeCompare(b.name, 'es'));
       const mine = (s: SheetMeta) => s.source === 'upload' && (s.owner || null) === this.myPid();
       box.querySelector('[data-list]')!.innerHTML = shown.slice(0, 300).map(s => `
@@ -270,6 +274,7 @@ export class SheetWindows {
   sync(items: BoardItem[]) {
     const byId = new Map(items.map(i => [i.id, i]));
     for (const [id, w] of [...this.wins]) {
+      if (id.startsWith('perfil-') || id.startsWith('lib-')) continue;   // (📖 Escena: a character kept in the room, no board token: see refresh)
       const it = byId.get(id);
       if (!it || !it.sheet) { this.close(id); continue; }
       w.item = it;
@@ -279,6 +284,17 @@ export class SheetWindows {
         if (it.sheetRev !== w.rev) { w.rev = it.sheetRev; w.load(); }   // (its stat block was edited: read it again)
       }
     }
+  }
+
+  /** One window's token changed (a scene character's: another sheet, or its stat block edited) */
+  refresh(item: BoardItem) {
+    const w = this.wins.get(item.id);
+    if (!w) return;
+    if (!item.sheet) { this.close(item.id); return; }
+    if (item.sheet !== w.sid) { const at = { x: parseFloat(w.el.style.left) - 24, y: parseFloat(w.el.style.top) + 60 }; this.close(item.id); this.open(item, at); return; }
+    w.item = item;
+    this.title(w);
+    if (item.sheetRev !== w.rev) { w.rev = item.sheetRev; w.load(); }
   }
 
   closeAll() { for (const id of [...this.wins.keys()]) this.close(id); }

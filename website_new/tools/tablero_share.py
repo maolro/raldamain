@@ -103,10 +103,15 @@ def status() -> dict:
     pid = _pid()
     if not pid:
         return out
-    log = _log_tail(LOG)
-    if re.search(r"Registered tunnel connection", log):
+    # this run's log (from its last "Starting tunnel"), whole: a long game pushes the "Registered" lines
+    # far back, past any tail
+    log = _log_tail(LOG, 4_000_000)
+    log = log[max(0, log.rfind("Starting tunnel")):]
+    up, down = log.rfind("Registered tunnel connection"), log.rfind("Unregistered tunnel connection")
+    if up >= 0 and up > down:
         return {**out, "state": "on", "pid": pid}
-    err = [l for l in log.splitlines() if " ERR " in l]
+    # (not errors: a page closed or reloaded drops its live connection — "stream … canceled by remote")
+    err = [l for l in log.splitlines() if " ERR " in l and "canceled by remote" not in l]
     return {**out, "state": "starting", "pid": pid, "message": err[-1][-200:] if err else ""}
 
 

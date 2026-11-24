@@ -5,12 +5,15 @@
 //   ⬆ Subir   choose the model (.obj, .fbx, .glb, .gltf) together with its .mtl / .bin and textures, or a
 //             .zip with them (Meshy's: .obj + .mtl + .png). Zips and big .obj files are read in the
 //             background, made lighter (Detalle: how many triangles) and kept as one .glb
+//             A player's are kept in their own browser (localmodels.ts), not on the server: only they see
+//             the model; everyone else, the token's 2D picture
 //   click: its options (name, category, size, delete) · double click or drag onto the 3D view: place it
 //   Tipo   Figura: a token on a base, which may come with its 2D picture (tokens of it show that in 2D)
 //          and its stat block · Estructura: a building, a ruin, a tree… placed on the map layer at its own
 //          proportions (in 2D: its view from straight above, part of the map)
 import { api, imageUrl, modelThumbUrl } from './api';
-import { convertObj, extOf, groupFiles, loadModel, MODEL_EXT, needsConversion, PART_EXT, thumbnail } from './models3d';
+import { convertObj, extOf, groupFiles, lightenModel, loadModel, MODEL_EXT, needsConversion, PART_EXT, thumbnail } from './models3d';
+import { deleteLocal, listLocal, saveLocal, updateLocal } from './localmodels';
 import type { ImageMeta, ModelMeta, ModelKind } from './types';
 
 export const MODEL_DRAG = 'application/x-tablero-model';
@@ -29,18 +32,20 @@ export interface ModelLibraryEvents {
   sheetName(id: string): string;
   pickSheet(at: { x: number; y: number }, current: string | undefined, done: (sid: string | null) => void): void;
 }
-export const kindOf = (m: ModelMeta | undefined): ModelKind => m?.kind === 'structure' || m?.kind === 'prop' ? m.kind : 'figure';
-const KIND_NAME: Record<ModelKind, string> = { figure: '🧍 Figura', structure: '🏛 Estructura', prop: '🪑 Objeto' };
-const KIND_ICON: Record<ModelKind, string> = { figure: '', structure: '🏛 ', prop: '🪑 ' };
+export const kindOf = (m: ModelMeta | undefined): ModelKind => m?.kind === 'structure' || m?.kind === 'prop' || m?.kind === 'tile' ? m.kind : 'figure';
+const KIND_NAME: Record<ModelKind, string> = { figure: '🧍 Figura', structure: '🏛 Estructura', prop: '🪑 Objeto', tile: '🟫 Loseta' };
+const KIND_ICON: Record<ModelKind, string> = { figure: '', structure: '🏛 ', prop: '🪑 ', tile: '🟫 ' };
 const KIND_HELP: Record<ModelKind, string> = {
   figure: 'un token sobre su peana',
   structure: 'va en la capa Mapa, a su tamaño; en 2D se ve desde arriba',
   prop: 'mobiliario y decorado: en la capa Mapa, de una casilla o así; gira con R; en 2D se ve desde arriba',
+  tile: 'suelo (hierba, adoquines, tarima…): hundida en el suelo, su cara de arriba es el suelo que pisan los demás; en 2D se ve desde arriba, debajo de todo',
 };
 const KIND_SIZE: Record<ModelKind, string> = {
   figure: '1 = ocupa sus casillas · también cambia al redimensionar el token en 2D',
   structure: 'al colocarla: 1 = 6 casillas de lado · las ya puestas se redimensionan en el tablero (2D y 3D coinciden)',
   prop: 'al colocarlo: 1 = 1 casilla su lado mayor (va de media en media casilla) · los ya puestos se redimensionan en el tablero',
+  tile: 'al colocarla: 1 = 2 casillas de lado · las ya puestas se redimensionan en el tablero',
 };
 
 export class ModelLibrary {
@@ -54,15 +59,15 @@ export class ModelLibrary {
   private loading: Promise<void> | null = null;
 
   /** may change it (the GM: all; a player: their uploads) */
-  private mayEdit(m: ModelMeta) { return this.gm || (!!m.owner && m.owner === this.me); }
+  private mayEdit(m: ModelMeta) { return m.local || this.gm || (!!m.owner && m.owner === this.me); }
 
   constructor(private el: HTMLElement, private ev: ModelLibraryEvents, private gm: boolean, private me: string | null = null) {
     el.innerHTML = `
       <div class="lib-head">
         <h2>Modelos 3D</h2><span class="lib-count" data-m="count"></span>
-        ${gm || me ? `<select class="inp small" data-m="detail" title="Detalle de los modelos grandes al importarlos (.zip, .obj de más de 25 MB): cuantos menos triángulos, más rápido para todos">
+        ${gm || me ? `<select class="inp small" data-m="detail" title="Detalle de los modelos al subirlos: los que pasan de esto se aligeran (y sus texturas, a 2048 px como mucho). Los objetos y las losetas, que se repiten mucho, se quedan en menos: un quinto, y como mucho 30.000 / 10.000. Cuantos menos triángulos, más rápido para todos">
             ${DETAIL.map(([n, t]) => `<option value="${n}">${t}</option>`).join('')}</select>
-          <label class="btn small" title="Elige el modelo (.obj, .fbx, .glb, .gltf) junto con sus materiales (.mtl, .bin) y texturas (.png, .jpg, .tga…), o un .zip con ellos">⬆ Subir
+          <label class="btn small" title="Elige el modelo (.obj, .fbx, .glb, .gltf) junto con sus materiales (.mtl, .bin) y texturas (.png, .jpg, .tga…), o un .zip con ellos${gm ? '' : '. Se guarda en tu navegador: solo tú lo ves en 3D; los demás ven la imagen 2D de tu ficha'}">⬆ Subir
           <input type="file" data-m="file" accept="${[...MODEL_EXT, ...PART_EXT, 'zip'].map(e => '.' + e).join(',')}" multiple hidden></label>` : ''}
       </div>
       <div class="model-busy muted" data-m="busy" hidden></div>
@@ -107,11 +112,11 @@ export class ModelLibrary {
   load(force = false): Promise<void> {
     if (this.loaded && !force) return Promise.resolve();
     if (this.loading && !force) return this.loading;
-    this.loading = api.models().then(list => {
-      this.list = list;
+    this.loading = Promise.all([api.models(), listLocal()]).then(([list, mine]) => {
+      this.list = [...list, ...mine];
       this.loaded = true;
       this.render();
-      this.ev.changed(list);
+      this.ev.changed(this.list);
     }).catch(e => this.ev.toast('No se pudieron cargar los modelos: ' + (e as Error).message, true))
       .finally(() => { this.loading = null; });
     return this.loading;
@@ -132,7 +137,9 @@ export class ModelLibrary {
       busy.hidden = false;
       try {
         const target = Number((this.$('detail') as HTMLSelectElement | null)?.value) || 150000;
-        const made = await convertObj(send, target, t => { busy.textContent = '⏳ ' + t; });
+        const unpacked: File[] = [];   // (a zip with a .glb / .gltf / .fbx: its files, loaded as if chosen)
+        const made = await convertObj(send, target, t => { busy.textContent = '⏳ ' + t; }, unpacked);
+        rest.push(...unpacked);
         for (const m of made) {
           if (m.origTris > m.tris) this.ev.toast(`«${m.file.name.replace(/\.glb$/, '')}»: ${m.origTris.toLocaleString('es')} → ${m.tris.toLocaleString('es')} triángulos`);
           groups.push({ main: m.file, parts: [] });
@@ -149,18 +156,48 @@ export class ModelLibrary {
       this.ev.toast(`Preparando «${main.name}»…`);
       try {
         const model = await loadModel({ main: main.name, files: all.map(f => f.name), url: n => urls.get(n) || n });
-        const thumb = await thumbnail(model);
         const sz = model.userData.size as { x: number; y: number; z: number };
-        // in a furniture / decor category: a prop; wider than tall, or in a buildings' category: a structure
-        // (the GM can change it; a player's: a figure)
-        const kind: ModelKind = !this.gm ? 'figure' : /mueble|mobiliario|objeto|decor|prop|interior|atrezzo/i.test(this.category) ? 'prop'
+        // in a ground category, or flat as a slab: a tile; in a furniture / decor category: a prop; wider
+        // than tall, or in a buildings' category: a structure (the GM can change it; a player's: a figure)
+        const kind: ModelKind = !this.gm ? 'figure' : /suelo|loseta|terreno|pavimento|tile|ground|baldosa/i.test(this.category) || sz.y < Math.max(sz.x, sz.z) * 0.2 ? 'tile'
+          : /mueble|mobiliario|objeto|decor|prop|interior|atrezzo/i.test(this.category) ? 'prop'
           : /edific|estructur|construc|casa|ruina/i.test(this.category) || Math.max(sz.x, sz.z) > sz.y * 1.3 ? 'structure' : 'figure';
-        const meta = await api.uploadModel(all, main.name, thumb, { name: main.name.replace(/\.[^.]+$/, ''),
-          category: this.category || (kind === 'structure' ? 'Edificios' : kind === 'prop' ? 'Objetos' : 'Figuras'), kind, dims: [sz.x, sz.y, sz.z] });
+        // lighter: fewer triangles (props and tiles, repeated all over a map: far fewer), smaller textures
+        const detail = Number((this.$('detail') as HTMLSelectElement | null)?.value) || 150000;
+        const target = kind === 'tile' ? Math.min(10000, detail / 5) : kind === 'prop' ? Math.min(30000, detail / 5) : detail;
+        const busy = this.$('busy');
+        let send = all, sendMain = main.name;
+        try {
+          busy.hidden = false;
+          // (props and tiles: smaller textures too — they are seen small and many times)
+          const origBytes = all.reduce((a, f) => a + f.size, 0);
+          const lite = await lightenModel(model, Math.round(target), main.name, t => { busy.textContent = '⏳ ' + t; },
+            { maxTex: kind === 'prop' || kind === 'tile' ? 1024 : 2048, origBytes });
+          if (lite) {
+            send = [lite.file]; sendMain = lite.file.name;
+            const said = [lite.origTris > lite.tris ? `${lite.origTris.toLocaleString('es')} → ${lite.tris.toLocaleString('es')} triángulos` : '',
+              lite.joined ? `${lite.joined} piezas menos que dibujar` : '', lite.bytes < origBytes ? `${mb(origBytes)} → ${mb(lite.bytes)}` : ''].filter(Boolean).join(' · ');
+            this.ev.toast(`«${main.name.replace(/\.[^.]+$/, '')}» aligerado: ${said}`);
+          }
+        } catch (e) { console.warn('No se pudo aligerar', main.name, e); }
+        finally { busy.hidden = true; }
+        const thumb = await thumbnail(model);
+        const name = main.name.replace(/\.[^.]+$/, ''), category = this.category || (kind === 'structure' ? 'Edificios' : kind === 'prop' ? 'Objetos' : kind === 'tile' ? 'Suelos' : 'Figuras');
+        let meta: ModelMeta;
+        if (this.gm) meta = await api.uploadModel(send, sendMain, thumb, { name, category, kind, dims: [sz.x, sz.y, sz.z] });
+        else {
+          // a player's: kept in their browser, as one .glb (whatever was chosen: packed as it loaded)
+          let glb = send.length === 1 && /\.glb$/i.test(sendMain) ? send[0] : null;
+          if (!glb) {
+            const { GLTFExporter } = await import('three/addons/exporters/GLTFExporter.js');
+            glb = new File([await new GLTFExporter().parseAsync(model, { binary: true, maxTextureSize: 2048 }) as ArrayBuffer], `${name.replace(/[^A-Za-z0-9 _()+-]/g, '').trim() || 'modelo'}.glb`, { type: 'model/gltf-binary' });
+          }
+          meta = await saveLocal(glb, thumb, { name, category, kind: 'figure', dims: [sz.x, sz.y, sz.z], owner: this.me || undefined });
+        }
         if (!this.get(meta.id)) this.list.push(meta);
         else this.ev.toast(`«${meta.name}» ya estaba en la biblioteca`);
         this.editing = meta.id;
-        this.ev.toast(`«${meta.name}» añadido (${mb(meta.size)})`);
+        this.ev.toast(`«${meta.name}» añadido (${mb(meta.size)})${meta.local ? ' · guardado en este navegador: solo tú lo ves en 3D' : ''}`);
       } catch (e) {
         this.ev.toast(`No se pudo subir ${main.name}: ${(e as Error).message}`, true);
       } finally {
@@ -203,10 +240,10 @@ export class ModelLibrary {
     const gm = this.gm, mine = this.mayEdit(m);
     box.innerHTML = `
       <div class="edit-head">${m.thumb ? `<img src="${modelThumbUrl(m.id)}" alt="">` : ''}<div><b>${esc(m.name)}</b>
-        <small>${esc(m.main)} · ${m.files.length} archivo${m.files.length > 1 ? 's' : ''} · ${mb(m.size)}</small></div>
+        <small>${m.local ? '💾 en este navegador · ' : ''}${esc(m.main)} · ${m.files.length} archivo${m.files.length > 1 ? 's' : ''} · ${mb(m.size)}</small></div>
         <button class="x" data-act="close" title="Cerrar">✕</button></div>
       ${mine ? `${gm ? `<label>Tipo <small class="muted">${KIND_HELP[kindOf(m)]}</small>
-        <select class="inp" data-f="kind">${(['figure', 'structure', 'prop'] as ModelKind[]).map(k => `<option value="${k}" ${kindOf(m) === k ? 'selected' : ''}>${KIND_NAME[k]}</option>`).join('')}</select></label>` : ''}
+        <select class="inp" data-f="kind">${(['figure', 'structure', 'prop', 'tile'] as ModelKind[]).map(k => `<option value="${k}" ${kindOf(m) === k ? 'selected' : ''}>${KIND_NAME[k]}</option>`).join('')}</select></label>` : ''}
       ${kindOf(m) === 'figure' ? `<label>Imagen 2D <small class="muted">sus tokens se ven así en 2D (y al colocar esa imagen en 2D llevará este modelo)</small>
         <div class="model-img">${m.image && this.ev.images().find(i => i.id === m.image) ? `<img src="${imageUrl(this.ev.images().find(i => i.id === m.image)!)}" alt="">` : ''}
         <select class="inp" data-f="image"><option value="">— su imagen desde arriba —</option>
@@ -222,7 +259,7 @@ export class ModelLibrary {
       <div class="row"><button class="btn gold" data-act="place">Colocar en el tablero</button>
         ${mine ? '<button class="btn danger" data-act="delete">Eliminar</button>' : ''}</div>`;
     const save = async (patch: Partial<ModelMeta>) => {
-      try { Object.assign(m, await api.updateModel(m.id, patch)); this.render(); this.ev.changed(this.list); }
+      try { Object.assign(m, m.local ? await updateLocal(m.id, patch) : await api.updateModel(m.id, patch)); this.render(); this.ev.changed(this.list); }
       catch (e) { this.ev.toast('No se pudo guardar: ' + (e as Error).message, true); }
     };
     box.querySelectorAll<HTMLInputElement>('[data-f]').forEach(inp => inp.addEventListener('change', () =>
@@ -235,7 +272,8 @@ export class ModelLibrary {
     box.querySelector('[data-act="place"]')!.addEventListener('click', () => this.ev.place(m));
     box.querySelector('[data-act="delete"]')?.addEventListener('click', async () => {
       if (!confirm(`¿Eliminar el modelo «${m.name}»? Los tokens que lo usan quedarán vacíos.`)) return;
-      await api.deleteModel(m.id);
+      try { if (m.local) await deleteLocal(m.id); else await api.deleteModel(m.id); }
+      catch (e) { this.ev.toast('No se pudo eliminar: ' + (e as Error).message, true); return; }
       this.list = this.list.filter(x => x.id !== m.id);
       this.editing = null;
       this.render();

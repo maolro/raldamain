@@ -13823,13 +13823,13 @@
    },
    {
     "culture": "Kratenses",
-    "group": "Kratenses exiliados y comerciantes",
+    "group": "Kratenses",
     "pct": 6,
     "religion": "Fe Espiritual"
    },
    {
     "culture": "Tapetíes",
-    "group": "Tapetíes y extranjeros",
+    "group": "Tapetíes",
     "pct": 5,
     "religion": "Prisdevelianismo"
    },
@@ -13841,9 +13841,9 @@
    }
   ],
   "dev": {
-   "tax": 9,
+   "man": 4,
    "prod": 9,
-   "man": 4
+   "tax": 9
   },
   "economy": "Ciudad rica y cosmopolita, famosa por su vidrio soplado y su cristalería, que se exporta hasta Klonum. Las Grandes Casas controlan la banca (Botticceli), el armamento (Marqueda), la minería (Tintorello), el sector naval (Archesi), la construcción (Gundolfo), los medios (Elisondo), la agroalimentación (Rossino), el entretenimiento (Hachuel) y las artes (Fideli). La Compañía de las Indias y la Casa de la Moneda tienen aquí su sede. Las grandes fábricas textiles de la Cuenca del Brezán, el comercio exterior y la innovación técnica la hacen una de las ciudades más ricas de Ustilus; también una de las más desiguales y contaminadas.",
   "estates": "Grandes Casas (Marqueda, Botticceli, Tintorello, Hachuel, Fideli, Archesi, Gundolfo, Elisondo, Rossino), gremios, clero, guarnición",

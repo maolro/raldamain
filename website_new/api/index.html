@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API | Raldamain</title>
+    <meta name="description" content="La API de Raldamain: rangos, equipo, criaturas, fichas y reglas en JSON para cualquier aplicación.">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="/assets/js/components.js"></script>
+    <style>
+        .api { max-width: 960px; margin: 0 auto; padding: 2rem 16px 4rem; line-height: 1.6; }
+        .api h2 { font-family: var(--font-heading); color: var(--accent-gold); margin: 2.5rem 0 .75rem; }
+        .api h3 { font-family: var(--font-heading); margin: 1.5rem 0 .5rem; }
+        .api p, .api li { color: var(--text-main); }
+        .api .muted { color: var(--text-muted); }
+        .api code { background: var(--secondary-black); padding: 1px 6px; border-radius: 3px; font-size: .92em; overflow-wrap: anywhere; }
+        .api pre { background: var(--secondary-black); border: 1px solid #333; border-left: 3px solid var(--accent-gold); padding: 12px 14px; overflow-x: auto; border-radius: 4px; }
+        .api pre code { background: none; padding: 0; }
+        .api table { width: 100%; border-collapse: collapse; margin: .5rem 0 1rem; display: block; overflow-x: auto; }
+        .api th, .api td { text-align: left; padding: 7px 10px; border-bottom: 1px solid #333; vertical-align: top; }
+        .api th { color: var(--accent-gold); font-family: var(--font-heading); font-weight: 700; white-space: nowrap; }
+        .api td:first-child { white-space: nowrap; }
+        .api .base { font-size: 1.1rem; }
+        .api a { color: var(--accent-gold); }
+    </style>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <header class="hero" style="height: 30vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/images/world_map.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1>API de Raldamain</h1>
+            <p>Los datos del juego en JSON, para cualquier aplicación</p>
+        </div>
+    </header>
+
+    <main class="api">
+        <p class="base">Dirección base: <code>https://raldamain.com/api/v1</code></p>
+        <p>Solo lectura (<code>GET</code>), sin clave y abierta a cualquier web o aplicación (CORS). Sirve lo mismo que publica la web,
+            leído al momento de los archivos del juego: un cambio guardado en los editores aparece aquí en cuanto la web se actualiza.
+            Las criaturas y objetos sin publicar no salen (dan <code>404</code>).</p>
+        <p class="muted">Empieza por <a href="/api/v1"><code>/api/v1</code></a>: lista todo lo que hay y cuántos de cada uno.</p>
+
+        <h2>Colecciones</h2>
+        <table>
+            <tr><th>Lista</th><th>Uno</th><th>Qué es</th></tr>
+            <tr><td><a href="/api/v1/ranks"><code>/ranks</code></a></td><td><code>/ranks/{id}</code></td><td>Rangos: niveles, habilidades, fundamentos.</td></tr>
+            <tr><td><a href="/api/v1/equipment"><code>/equipment</code></a></td><td><code>/equipment/{slot}/{id}</code></td><td>El equipo de las fichas (armas, armaduras, cabeza, bolsa), cada uno con la habilidad que da en <code>ability</code>. <code>/equipment/weapons</code> da solo las armas.</td></tr>
+            <tr><td><a href="/api/v1/items"><code>/items</code></a></td><td><code>/items/{id}</code></td><td>El catálogo de objetos de la web (objetos mágicos y demás).</td></tr>
+            <tr><td><a href="/api/v1/creatures"><code>/creatures</code></a></td><td><code>/creatures/{id}</code></td><td>Criaturas del Bestiario, con su bloque de estadísticas.</td></tr>
+            <tr><td><a href="/api/v1/statblocks"><code>/statblocks</code></a></td><td><code>/statblocks/{id}</code></td><td>Fichas de personaje (formato del Creador): características, rangos, talentos, equipo.</td></tr>
+            <tr><td><a href="/api/v1/status-effects"><code>/status-effects</code></a></td><td><code>/status-effects/{id}</code></td><td>Efectos de estado y sus penalizadores por nivel.</td></tr>
+            <tr><td><a href="/api/v1/builder"><code>/builder</code></a></td><td><code>/builder/{nombre}</code></td><td>Las tablas de creación de personajes tal como están guardadas: <code>talents</code>, <code>races</code>, <code>archetypes</code>, <code>arcane-specs</code>, <code>divine-patrons</code>, <code>equipment</code>, <code>equipment-abilities</code>.</td></tr>
+        </table>
+        <p>Una <b>lista</b> es un array con el resumen de cada uno, más <code>url</code> (su dirección en la API) e <code>image_url</code> cuando tiene imagen.
+            <b>Uno</b> es el documento completo, exactamente como está guardado. Las direcciones también valen terminadas en <code>.json</code>.</p>
+
+        <h2>Filtrar las listas</h2>
+        <table>
+            <tr><th>Parámetro</th><th>Qué hace</th></tr>
+            <tr><td><code>q=duelista</code></td><td>Busca en el nombre y la descripción (sin tildes ni mayúsculas).</td></tr>
+            <tr><td><code>&lt;campo&gt;=&lt;valor&gt;</code></td><td>Filtra por un campo de la lista: <code>category=Marcial</code>, <code>type=Bestia</code>, <code>draft=false</code>, <code>rarity=Rara</code>… Sin tildes ni mayúsculas; en un campo que es una lista, que lo contenga.</td></tr>
+            <tr><td><code>min_level=5&amp;max_level=8</code></td><td>Nivel mínimo y máximo.</td></tr>
+            <tr><td><code>fields=id,name</code></td><td>Solo esos campos.</td></tr>
+            <tr><td><code>limit=20&amp;offset=40</code></td><td>Paginación. El total va en la cabecera <code>X-Total-Count</code>.</td></tr>
+            <tr><td><code>full=1</code></td><td>Cada uno con su documento completo en <code>document</code> (una sola petición en vez de una por elemento).</td></tr>
+        </table>
+
+        <h2>Ejemplos</h2>
+        <h3>JavaScript (en el navegador o en Node)</h3>
+<pre><code>const API = 'https://raldamain.com/api/v1';
+
+// los rangos marciales
+const marciales = await fetch(`${API}/ranks?category=marcial`).then(r =&gt; r.json());
+
+// uno entero
+const coloso = await fetch(`${API}/ranks/estilo_coloso`).then(r =&gt; r.json());
+
+// criaturas de nivel 5 a 8, con su bloque completo
+const criaturas = await fetch(`${API}/creatures?min_level=5&amp;max_level=8&amp;full=1`).then(r =&gt; r.json());
+criaturas.forEach(c =&gt; console.log(c.name, c.document.hits));</code></pre>
+        <h3>Python</h3>
+<pre><code>import json, urllib.request
+API = "https://raldamain.com/api/v1"
+armas = json.load(urllib.request.urlopen(f"{API}/equipment/weapons"))
+for a in armas:
+    print(a["name"], a["ability"] and a["ability"].get("damage"))</code></pre>
+        <h3>Terminal</h3>
+<pre><code>curl https://raldamain.com/api/v1/statblocks/arthor</code></pre>
+
+        <h2>Detalles</h2>
+        <ul>
+            <li>Errores: un JSON <code>{"error": "…"}</code> con su código (<code>404</code> si no existe o no está publicado, <code>405</code> si no es <code>GET</code>).</li>
+            <li>Las respuestas se pueden guardar 60 segundos (<code>Cache-Control</code>); después, pregunta de nuevo.</li>
+            <li>La versión va en la dirección: si la forma de las respuestas cambia, será en <code>/api/v2</code>.</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2020 Raldamain Studios. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -53,12 +53,14 @@
             "id": "f6a90bb8c279d513",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.13.7"
+                "file": "website_new/data/campaign/modulos/lista_de_modulos.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.13.7"
+              "icon": "lucide-file",
+              "title": "lista_de_modulos"
             }
           },
           {
@@ -233,12 +235,25 @@
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
       "bases:Create new base": false
     }
   },
   "active": "f6a90bb8c279d513",
   "lastOpenFiles": [
+    "website_new/data/creatures/esqueleto_ensangrentado.json",
+    "website_new/api/index.html",
+    "website_new/api",
+    "website_new/tools/sedjstPRr",
+    "website_new/functions/api/v1/index.js",
+    "website_new/tools/sedINQZkM",
+    "website_new/tools/__pycache__/raldamain_api.cpython-312.pyc",
+    "website_new/tools/raldamain_api.py",
+    "website_new/functions/api/v1/sedNG0PDV",
+    "website_new/data/statblocks_list.json",
+    "website_new/functions/api/v1/[[path]].js",
+    "website_new/data/world/culturas/aven.md",
+    "website_new/data/campaign/modulos/lista_de_modulos.md",
+    "website_new/data/world/continentes/Raldamain.md",
     "en/timeline/3_age of succession.md",
     "en/timeline/2_age of humanity.md",
     "en/timeline/1_age of gods.md",
@@ -260,30 +275,16 @@
     "website_new/data/world/culturas/urlok.md",
     "website_new/data/world/culturas/dairovios.md",
     "website_new/data/world/culturas/ayutanos.md",
-    "website_new/data/world/culturas/aven.md",
     "campaign/caballeros de ustilus/personajes/zarxa.md",
-    "campaign/caballeros de ustilus/4_razas y culturas.md",
-    "campaign/caballeros de ustilus/personajes/zanshillah.md",
-    "campaign/caballeros de ustilus/personajes/xingonu.md",
     "campaign/caballeros de ustilus/personajes/thirion.jpg",
     "campaign/caballeros de ustilus/personajes/minjee.jpg",
     "en/locations/artificial/settlements/cities/feynthrone.jpg",
     "en/locations/artificial/settlements/cities/andir.jpg",
     "rules/rangos/ocultismo/magia_mental.jpg",
     "website_new/assets/images/ranks/bombas.jpg",
-    "website_new/assets/images/ranks/Unconfirmed 325148.crdownload",
-    "website_new/data/ranks/magia_bombas.json",
-    "website_new/data/ranks/bombas.json",
     "website_new/assets/images/ranks/magia_metal.jpg",
-    "website_new/assets/images/ranks/Unconfirmed 562089.crdownload",
-    "website_new/data/ranks/magia_metal.json",
     "website_new/assets/images/ranks/magia_tormenta.jpg",
-    "website_new/assets/images/ranks/Unconfirmed 868610.crdownload",
     "website_new/assets/images/ranks/magia_tierra.jpg",
-    "website_new/assets/images/ranks/Unconfirmed 681912.crdownload",
-    "website_new/assets/images/ranks/magia_hielo.jpg",
-    "website_new/assets/images/ranks/Unconfirmed 692285.crdownload",
-    "website_new/assets/images/ranks/Unconfirmed 675235.crdownload",
-    "website_new/data/characters"
+    "website_new/assets/images/ranks/magia_hielo.jpg"
   ]
 }

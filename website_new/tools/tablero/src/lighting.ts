@@ -1,7 +1,9 @@
 // Niebla y luz: what players can see.
 //
 //   Hidden areas    the GM hides (or reveals) rectangles: black for players, at the
-//                   chosen density. Works on its own, lighting on or off.
+//                   chosen density. Works on its own, lighting on or off — and over it:
+//                   a hidden area stays dark whatever lights it, a revealed one is seen
+//                   whatever the darkness or the fields of view say.
 //   Lighting        (board.fog.on) an ambient darkness (0 day … 1 pitch black);
 //                   light sources (placed on the board, or carried by tokens) light
 //                   their surroundings, bright and then dim; walls block light and
@@ -107,6 +109,8 @@ export class FogLayer {
     this.dark.visible = this.sight.visible = false;
     if (!fog.on) return;
     const segs = segmentsOf(fog, W, H);
+    // the GM's revealed areas cut through the lighting too (their hidden ones are drawn over all of it, above)
+    const reveals = fog.areas.filter(a => a.op === 'reveal');
     if (fog.darkness > 0) {
       this.dark.visible = true;
       this.draw(this.rts[1], k, s => {
@@ -115,6 +119,7 @@ export class FogLayer {
         for (const p of dims) { s.erase(gr => gr.poly(p)); s.polyFill(p, fog.darkness * 0.5); }
         for (const l of view.lights) if (l.bright > 0) s.erase(gr => gr.poly(visibility(l.x, l.y, segs, l.bright)));
         if (asPlayer) for (const v of view.viewers) if (v.dark > 0) s.erase(gr => gr.poly(visibility(v.x, v.y, segs, v.dark)));
+        for (const a of reveals) s.erase(gr => gr.rect(a.x, a.y, a.w, a.h));   // (revealed by hand: lit, whatever the light)
       });
     }
     if (asPlayer && view.viewers.length) {
@@ -123,6 +128,7 @@ export class FogLayer {
       this.draw(this.rts[2], k, s => {
         s.fill(0, 0, W, H, 1);
         for (const v of view.viewers) s.erase(gr => gr.poly(visibility(v.x, v.y, segs, v.range > 0 ? v.range : far)));
+        for (const a of reveals) s.erase(gr => gr.rect(a.x, a.y, a.w, a.h));   // (revealed by hand: seen, out of sight or not)
       });
     }
   }

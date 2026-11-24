@@ -11,7 +11,6 @@
   <header class="top">
     <span class="brand">Tablero</span>
     <span class="gm-only top-group">
-      <select id="campaign-pick" class="inp" title="Campaña: elige una para ver todas sus escenas"></select>
       <button class="btn small scene-btn" id="scenes-btn" title="Escenas: abrirlas, crearlas, etiquetarlas y llevar al grupo de una a otra">🗺 <span id="scene-name">Escenas</span> ▾</button>
       <button class="btn small" id="board-rename" title="Cambiar el nombre">✎</button>
       <button class="btn small danger" id="board-delete" title="Eliminar este tablero">🗑</button>
@@ -22,12 +21,7 @@
     <button class="btn small" id="redo" title="Rehacer (Ctrl+Y)">↷</button>
     <span class="status" id="status"></span>
     <span class="round-chip" id="round-chip" hidden title="Ronda de combate · clic: los efectos por rondas"></span>
-    <label class="newsize" title="Tamaño de los tokens que añades (arrastrando, pegando o desde la biblioteca)">Tokens nuevos
-      <select id="new-size" class="inp">
-        <option value="1">1×1</option><option value="2">2×2</option><option value="3">3×3</option><option value="4">4×4</option>
-        <option value="orig">Tamaño original</option>
-      </select></label>
-    <span class="mode-toggle" role="group" aria-label="Vista">
+    <span class="mode-toggle view-toggle" role="group" aria-label="Vista">
       <button class="on" id="mode-2d" title="Tablero 2D: editar, mover tokens, dibujar…">2D</button><button id="mode-3d" title="Vista 3D de la escena: suelo, muros y figuras (solo para mirar, por ahora)">🧊 3D</button><button id="mode-vn" title="📖 Escena: un momento de novela visual (diálogos, llegadas…): un fondo, los personajes y el grupo abajo. El GM la abre para todos" hidden>📖 Escena</button>
     </span>
     <span class="grow"></span>
@@ -89,6 +83,10 @@
     <label>Tamaño de casilla (px)<input class="inp" type="number" id="g-size" min="10" max="400" step="1"></label>
     <label>Color<input type="color" id="g-color"></label>
     <label>Opacidad<input type="range" id="g-opacity" min="0" max="1" step="0.05"></label>
+    <div class="row2 zone-row">
+      <label class="check" title="Una línea más gruesa cada tantas casillas, encima de la cuadrícula: zonas para orientarse y medir a ojo (2D y 3D)"><input type="checkbox" id="g-zone-show"> Zonas</label>
+      <label>cada (casillas)<input class="inp" type="number" id="g-zone" min="2" max="100" step="1"></label>
+    </div>
     <small class="muted" title="Cada nivel puede tener su propio tamaño de página">Página <span id="p-which"></span></small>
     <div class="row2">
       <label>Ancho (casillas)<input class="inp" type="number" id="p-width" min="1" max="300"></label>

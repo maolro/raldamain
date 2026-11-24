@@ -38,6 +38,7 @@ except ImportError:
 
 BASE = Path(__file__).resolve().parent.parent           # website_new/
 STATBLOCKS = BASE / "data" / "statblocks"
+STATBLOCK_INDEX = BASE / "data" / "statblocks_list.json"   # the API's list of them (/api/v1/statblocks)
 CREATURES = BASE / "data" / "creatures"
 CREATURE_INDEX = BASE / "data" / "creatures_list.json"
 CREATURE_ABILITIES = BASE / "data" / "creatures_abilities.json"
@@ -185,7 +186,8 @@ def api_ficha_put(fid):
         return jsonify({"error": "no parece una ficha del Creador"}), 400
     STATBLOCKS.mkdir(parents=True, exist_ok=True)
     (STATBLOCKS / f"{fid}.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-    DB.record([STATBLOCKS / f"{fid}.json"])
+    index_statblocks()
+    DB.record([STATBLOCKS / f"{fid}.json", STATBLOCK_INDEX])
     reload_roster()
     return jsonify({"ok": True, "id": fid})
 
@@ -196,9 +198,29 @@ def api_ficha_delete(fid):
     if not ID_RE.match(fid) or not p.exists():
         abort(404)
     p.unlink()
-    DB.record([p])
+    index_statblocks()
+    DB.record([p, STATBLOCK_INDEX])
     reload_roster()
     return jsonify({"ok": True})
+
+
+def index_statblocks() -> list:
+    """data/statblocks_list.json, from the folder: what the Raldamain API lists (/api/v1/statblocks)."""
+    out = []
+    for p in sorted(STATBLOCKS.glob("*.json")):
+        try:
+            d = json.loads(p.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        if not isinstance(d, dict) or "stats" not in d:
+            continue
+        out.append({"id": p.stem, "name": d.get("name") or p.stem, "level": d.get("level") or 1,
+                    "race": (d.get("race") or {}).get("name", "") if isinstance(d.get("race"), dict) else "",
+                    "ranks": [r.get("id") for r in d.get("ranks") or [] if isinstance(r, dict) and r.get("id") and r.get("rank")]})
+    text = json.dumps(out, ensure_ascii=False, indent=2) + "\n"
+    if not STATBLOCK_INDEX.exists() or STATBLOCK_INDEX.read_text(encoding="utf-8") != text:
+        STATBLOCK_INDEX.write_text(text, encoding="utf-8")
+    return out
 
 
 # ─────────────────────────────────────────────────────────────── bestiario API

@@ -40,6 +40,9 @@ body { display: grid; grid-template: 48px minmax(0, 1fr) / 56px minmax(0, 1fr) 3
 .tool:hover { border-color: var(--gold-dim); }
 .tool.on { background: var(--gold); color: var(--black); border-color: var(--gold); }
 .tool.layer { width: 46px; font: 700 9px var(--body); letter-spacing: 0; height: 30px; padding: 0; }
+/* 3D: its own layers (Losetas, Objetos, Edificios, Figuras, GM): an icon over the name */
+.tool.layer3d { height: 38px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; font-size: 14px; line-height: 1; }
+.tool.layer3d small { font: 700 7.5px var(--body); letter-spacing: 0; }
 .zoom span { font-size: 11px; color: var(--muted); }
 
 /* board */
@@ -365,6 +368,12 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .lvl-chip { background: var(--panel2); color: var(--text); border: 1px solid #3a3a3a; border-radius: 12px; padding: 2px 10px; cursor: pointer; font: 700 12px var(--body); white-space: nowrap; }
 .lvl-chip.on { background: var(--gold); color: var(--black); border-color: var(--gold); }
 .lvl-btn { background: none; border: 1px solid transparent; color: var(--muted); border-radius: 10px; padding: 1px 6px; cursor: pointer; font-size: 13px; }
+/* 📖 Escena beside the levels (the GM): over the scene too; 👥 where the players are; «Llevar aquí» stands out */
+body.mode-vn #level-bar { z-index: 9; }
+.lvl-scene.on { background: #e05555; border-color: #e05555; color: #fff; }
+.lvl-room { font-size: 12px; }
+.lvl-btn.lvl-bring { color: #fff; background: #3a8ee6; border-color: #3a8ee6; font: 700 12px var(--body); }
+.lvl-btn.lvl-bring:hover { color: #fff; filter: brightness(1.15); }
 .lvl-btn:hover { color: var(--gold); border-color: #444; } .lvl-btn.on { color: var(--gold); } .lvl-btn:disabled { opacity: .3; pointer-events: none; }
 .lvl-sep { width: 1px; height: 16px; background: #444; }
 .travel { position: absolute; inset: 0; z-index: 9; background: #050505; display: grid; place-items: center; animation: travel-in .25s ease; }
@@ -432,6 +441,7 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .sc-ghead-row:hover .x { opacity: 1; }
 .scenes-panel h3 { display: flex; align-items: center; gap: 6px; }
 .sc-title { cursor: default; }
+.scenes-panel .sc-view { width: auto; min-width: 0; max-width: 190px; flex: 0 1 auto; padding: 2px 6px; font: 400 12px var(--body); }
 .sc-rename { margin-left: auto; }
 .sc-ghead .sc-party { margin-left: auto; }
 .sc-arrow { width: 10px; color: var(--muted); }
@@ -473,7 +483,6 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .v3d canvas { display: block; width: 100%; height: 100%; outline: none; }
 .v3d-bar { position: absolute; top: 10px; left: 0; right: 0; margin: 0 auto; width: max-content; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: center;
   background: rgba(20,20,20,.88); border: 1px solid var(--gold-dim); border-radius: 8px; padding: 6px 8px; max-width: calc(100% - 24px); }
-.v3d-bar .btn.on { background: var(--gold); color: var(--black); }
 .v3d-sep { width: 1px; align-self: stretch; background: var(--gold-dim); margin: 0 2px; }
 .v3d-wall { display: flex; gap: 6px; align-items: center; font-size: 12px; color: var(--muted); }
 .v3d-wall input { width: 90px; }
@@ -481,9 +490,9 @@ body.player .gm-only, body:not(.player) .player-only { display: none !important;
 .v3d-help { position: absolute; bottom: 8px; left: 0; right: 0; margin: 0 auto; width: max-content; font-size: 12px; color: var(--muted); background: rgba(10,10,10,.7);
   padding: 3px 10px; border-radius: 6px; pointer-events: none; white-space: nowrap; max-width: calc(100% - 16px); overflow: hidden; text-overflow: ellipsis; }
 body.mode-3d .level-bar { z-index: 4; top: 60px; }
-/* 3D: the selector, the ruler, the grid (and the rounds) stay; the rest is the 2D board's */
-body.mode-3d .tools .tool:not([data-tool=select]):not([data-tool=ruler]):not(#grid-btn):not(#round-btn),
-body.mode-3d #layers, body.mode-3d .tools .zoom, body.mode-3d .tool-opts:not(#ruler-opts), body.mode-3d #help, body.mode-3d .newsize { display: none !important; }
+/* 3D: the selector, the ruler, the grid (and the rounds) and its own layers stay; the rest is the 2D board's */
+body.mode-3d .tools .tool:not([data-tool=select]):not([data-tool=ruler]):not(#grid-btn):not(#round-btn):not(.layer3d),
+body.mode-3d .tools .zoom, body.mode-3d .tool-opts:not(#ruler-opts), body.mode-3d #help, body.mode-3d .newsize { display: none !important; }
 body.mode-3d #ruler-opts, body.mode-3d #grid-panel { z-index: 8; }
 .thumb-none { aspect-ratio: 1; display: grid; place-items: center; font-size: 32px; background: #1a1a1a; border-radius: 3px; }
 body.mode-3d #status-btn { display: none !important; }
@@ -540,10 +549,12 @@ body.mode-3d #ruler-opts { top: 108px; }
 #status-panel { z-index: 16; }
 .hud3-tool .hud-btn.hud3-prone { grid-column: span 3; width: auto; padding: 0 6px; }
 .hud3-tool .hud-btn.hud3-prone.on { border-color: var(--gold); color: var(--gold); }
+.hud3-tool .hud-btn.hud3-ko.on { border-color: #e03030; color: #ff5050; }
+.hud3-tool .hud3-label.hud3-wrap { white-space: normal; line-height: 1.05; font-size: 11px; }
 
 /* ── 📖 Escena ── */
 .mode-toggle #mode-vn.live:not(.on) { box-shadow: inset 0 -2px 0 #e05555; }
-body.mode-vn .tools > *, body.mode-vn #level-bar, body.mode-vn .tool-opts, body.mode-vn #help, body.mode-vn .newsize, body.mode-vn #status-btn { visibility: hidden; }
+body.mode-vn .tools > *, body.player.mode-vn #level-bar, body.mode-vn .tool-opts, body.mode-vn #help, body.mode-vn .newsize, body.mode-vn #status-btn { visibility: hidden; }
 .vn { position: absolute; inset: 0; z-index: 7; overflow: hidden; background: #08080b; user-select: none; }
 .vn-bg { position: absolute; inset: 0; background: center / cover no-repeat; }
 .vn-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,.35), transparent 18%, transparent 55%, rgba(0,0,0,.7)); }
@@ -621,3 +632,78 @@ aside.tools { min-height: 0; overflow-y: auto; scrollbar-width: none; }
 .hud3-angle { display: inline-flex; align-items: center; gap: 1px; font-weight: 700; }
 .hud3-angle input { width: 42px; text-align: right; background: transparent; border: 1px solid transparent; border-radius: 4px; color: inherit; font: inherit; padding: 1px 2px; }
 .hud3-angle input:hover, .hud3-angle input:focus { border-color: var(--gold-dim); background: rgba(0,0,0,.35); outline: none; }
+
+/* the room's mode (🗺 Mapa / 📖 Escena, the GM's): in the scene, no 2D / 3D to switch to */
+body.mode-vn .view-toggle, body.mode-vn .newsize { display: none; }
+
+/* the party (the GM, in 📖 Escena): the connected players' characters down the left side */
+.party-strip { position: absolute; left: 10px; top: 64px; z-index: 20; display: flex; flex-direction: column; gap: 8px;
+  max-height: calc(100% - 230px); overflow-y: auto; scrollbar-width: none; }
+.party-pc { width: 66px; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 4px 5px; cursor: pointer;
+  background: rgba(17,17,17,.88); border: 1px solid var(--gold-dim); border-radius: 8px; color: #ddd; font: 700 10px var(--body); }
+.party-pc:hover:not(:disabled) { border-color: var(--gold); }
+.party-pc.on { border-color: var(--gold); box-shadow: 0 0 0 2px var(--gold); }
+.party-pc:disabled { opacity: .5; cursor: default; }
+.party-pic { width: 54px; height: 54px; border-radius: 6px; overflow: hidden; border: 2px solid var(--c); display: grid; place-items: center; background: #222; }
+.party-pic img { width: 100%; height: 100%; object-fit: cover; }
+.party-pic b { font: 700 22px var(--display, serif); color: var(--c); }
+.party-name { max-width: 60px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.party-hp { width: 54px; height: 4px; background: #333; border-radius: 2px; overflow: hidden; }
+.party-hp span { display: block; height: 100%; }
+
+/* 👁 the GM looking privately at the other view */
+body.gm-peek #stage { box-shadow: inset 0 0 0 3px #3a8ee6; }
+
+/* ◧ Capas (3D): each layer shown / locked */
+.v3d-bar .btn.on { background: #3a8ee6; border-color: #3a8ee6; color: #fff; }
+.v3d-layers { position: absolute; top: 56px; right: 12px; width: max-content; z-index: 30;
+  background: rgba(20,20,20,.94); border: 1px solid var(--gold-dim); border-radius: 8px; padding: 8px 10px;
+  display: grid; gap: 4px; font-size: 13px; box-shadow: 0 6px 20px #0008; }
+.v3d-layers-head, .v3d-layer { display: grid; grid-template-columns: 9em 2em 2em; align-items: center; justify-items: center; }
+.v3d-layers-head span:first-child, .v3d-layer span { justify-self: start; }
+.v3d-layers-head { color: var(--muted); font-size: 12px; }
+.v3d-layer { cursor: pointer; }
+.v3d-layer.off span { opacity: 0.45; text-decoration: line-through; }
+
+/* 📖 Escena: a player's kept character (portrait and stat block) */
+.vn-me { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.vn-mine { display: inline-flex; align-items: center; gap: 5px; }
+.vn-mine img { width: 22px; height: 22px; object-fit: cover; border-radius: 4px; }
+.party-name small { display: block; font-size: 10px; opacity: 0.7; font-weight: normal; }
+.hud-prof-name { font-size: 16px; color: var(--gold); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 18em; }
+
+/* 🎲 Generar terreno */
+.gen-back { position: fixed; inset: 0; z-index: 60; background: rgba(0,0,0,.6); display: grid; place-items: center; padding: 16px; }
+.gen-box { width: min(560px, 100%); max-height: calc(100vh - 32px); overflow: auto; background: var(--panel); border: 1px solid var(--gold-dim); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 12px; }
+.gen-head { display: flex; align-items: center; justify-content: space-between; font: 700 16px var(--heading); color: var(--gold); }
+.gen-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
+.gen-grid label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+.gen-seed { display: flex; gap: 6px; align-items: center; }
+.gen-seed .inp { min-width: 0; flex: 1; }
+.gen-sec { font: 700 12px var(--body); color: var(--gold); margin-bottom: 4px; }
+.gen-role { display: flex; justify-content: space-between; gap: 10px; font-size: 12px; padding: 3px 0; border-bottom: 1px solid #262626; }
+.gen-role small { color: var(--muted); text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 55%; }
+.gen-role.missing span { color: #e07a5a; }
+.gen-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+@media (max-width: 520px) { .gen-grid { grid-template-columns: 1fr; } }
+.gen-role { align-items: center; }
+.gen-role select.inp { width: 55%; flex: 0 0 55%; padding: 2px 4px; font-size: 12px; }
+/* 🧱 Losas (main.ts slabDialog): save a level's pieces, place them again */
+.slab-save { display: flex; flex-direction: column; gap: 8px; }
+.slab-name { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+.slab-layers { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 14px; font-size: 12px; }
+.slab-layers label, .slab-sel { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+.slab-layers small { margin-left: auto; color: var(--muted); }
+.slab-where { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.slab-where select { width: auto; }
+.slab-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.slab-card { border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #161616; display: flex; flex-direction: column; }
+.slab-card img, .slab-none { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: grid; place-items: center; font-size: 32px; background: #0d0d0d; }
+.slab-info { padding: 6px 8px; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.slab-info b { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.slab-info small { font-size: 11px; }
+.slab-info span { display: flex; gap: 4px; margin-top: 2px; }
+.slab-info .btn[data-act="place"] { flex: 1; }
+.slab-placed { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12px; padding: 4px 0; border-bottom: 1px solid #262626; }
+.slab-placed > span:last-child { display: flex; gap: 4px; }
+@media (max-width: 520px) { .slab-layers { grid-template-columns: 1fr; } }

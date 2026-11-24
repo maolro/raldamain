@@ -9,7 +9,7 @@
 //   4. its texture (map_Kd in the .mtl, or the picture in the zip) at most 2048 px, as JPEG
 //
 // The page then makes a .glb of it (models3d.ts → modellib.ts): one small file for everyone.
-import { MeshoptSimplifier } from 'meshoptimizer';
+import { MeshoptSimplifier } from 'meshoptimizer/simplifier';
 
 /** a .zip, or loose files (the .obj with its .mtl and pictures) */
 export interface ObjIn { files: File[]; target: number }
@@ -19,7 +19,7 @@ export interface ObjOut {
   texture: Blob | null; texName: string;
   tris: number; origTris: number;
 }
-type Msg = { type: 'progress'; text: string } | { type: 'done'; models: ObjOut[] } | { type: 'error'; message: string };
+type Msg = { type: 'progress'; text: string } | { type: 'done'; models: ObjOut[]; files: File[] } | { type: 'error'; message: string };
 const say = (m: Msg, transfer: Transferable[] = []) => (self as unknown as Worker).postMessage(m, transfer);
 
 // ── zip ──────────────────────────────────────────────────────────────────────
@@ -191,17 +191,17 @@ async function build(name: string, pos: Float32Array, uv: Float32Array | null, c
   if (target > 0 && origTris > target) {
     say({ type: 'progress', text: `${name}: simplificando ${origTris.toLocaleString('es')} → ${target.toLocaleString('es')} triángulos` });
     await MeshoptSimplifier.ready;
-    MeshoptSimplifier.useExperimentalFeatures = true;
-    // what to keep besides the shape: where the texture goes (seams) and the shading
+    // what to keep besides the shape: where the texture goes and the shading (its seams may be crossed:
+    // a model cut into many texture islands — Meshy's — hardly got lighter otherwise)
     const attrs = new Float32Array(nv * 5);
     for (let v = 0; v < nv; v++) {
       attrs[5 * v] = U ? U[2 * v] : 0; attrs[5 * v + 1] = U ? U[2 * v + 1] : 0;
       attrs[5 * v + 2] = N[3 * v]; attrs[5 * v + 3] = N[3 * v + 1]; attrs[5 * v + 4] = N[3 * v + 2];
     }
-    const [out] = MeshoptSimplifier.simplifyWithAttributes(indices, P, 3, attrs, 5, [1, 1, 0.5, 0.5, 0.5], null, target * 3, 1, []);
+    const [out] = MeshoptSimplifier.simplifyWithAttributes(indices, P, 3, attrs, 5, [1, 1, 0.5, 0.5, 0.5], null, target * 3, 1, ['Permissive']);
     idx = out;
     if (idx.length / 3 > target * 1.5) {   // (the seams held it back: shape only, once more)
-      const [again] = MeshoptSimplifier.simplify(idx, P, 3, target * 3, 1, []);
+      const [again] = MeshoptSimplifier.simplify(idx, P, 3, target * 3, 1, ['Permissive']);
       idx = again;
     }
   }
@@ -286,11 +286,19 @@ self.onmessage = async (ev: MessageEvent<ObjIn>) => {
     const { files, target } = ev.data;
     const zips = files.filter(f => /\.zip$/i.test(f.name)), loose = files.filter(f => !/\.zip$/i.test(f.name));
     const models: ObjOut[] = [];
-    for (const z of zips) models.push(...await fromSource(await zipSrc(z), z.name, target));
+    const files_: File[] = [];   // (a zip with a .glb / .gltf / .fbx instead: its files, taken out as they are)
+    for (const z of zips) {
+      const src = await zipSrc(z);
+      if (src.entries.some(e => /\.obj$/i.test(e.name))) { models.push(...await fromSource(src, z.name, target)); continue; }
+      const keep = src.entries.filter(e => !e.name.endsWith('/') && !/(^|\/)(__MACOSX|\.)/.test(e.name) && /\.(glb|gltf|fbx|bin|mtl|png|jpe?g|webp|tga|bmp|gif)$/i.test(e.name));
+      if (!keep.some(e => /\.(glb|gltf|fbx)$/i.test(e.name))) throw new Error(`${z.name}: no hay ningún modelo (.obj, .fbx, .glb o .gltf)`);
+      say({ type: 'progress', text: `${z.name}: abriendo` });
+      for (const e of keep) files_.push(new File([await src.blob(e)], base(e.name)));
+    }
     if (loose.some(f => /\.obj$/i.test(f.name))) models.push(...await fromSource(filesSrc(loose), 'archivos', target));
     const transfer: Transferable[] = [];
     for (const m of models) transfer.push(m.positions.buffer, m.normals.buffer, m.indices.buffer, ...(m.uvs ? [m.uvs.buffer] : []));
-    say({ type: 'done', models }, transfer);
+    say({ type: 'done', models, files: files_ }, transfer);
   } catch (e) {
     say({ type: 'error', message: (e as Error).message || String(e) });
   }

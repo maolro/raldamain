@@ -10,25 +10,27 @@
 //   /jugar   a player: joins a room with its invite code; sees the Tokens layer, adds
 //            their own tokens, drawings and texts, and changes only what they control
 import './style.css';
-import { api, modelThumbUrl, modelTopUrl, imageUrl, imageSmallUrl, setKey } from './api';
+import { api, slabThumbUrl, modelThumbUrl, modelTopUrl, imageUrl, imageSmallUrl, setKey } from './api';
 import { BoardView, type Pt, type Tool } from './board';
 import { DiceRoller } from './dice';
 import { DRAG_TYPE, Library } from './library';
 import { applyTiles, Live } from './live';
 import { SheetWindows, Sheets } from './sheets';
-import { Statuses } from './status';
+import { Statuses, migrateFlags } from './status';
 import { RULER_MODES, type RulerMode, type RulerShape } from './ruler';
 import { DEFAULT_FOG, fogOf, lightsOf, viewersOf } from './lighting';
 import { Music } from './music';
 import { VNView } from './vn';
 import { firstLevel, levelName, levelOf, levelsOf, setPage } from './levels';
-import { editPortal, LevelBar, newPortal, portalAt, campaignOptions, ScenesPanel } from './scenes';
+import { editPortal, LevelBar, newPortal, portalAt, ScenesPanel } from './scenes';
+import { resizeScenery } from './sizing';
+import { isLocalModel, listLocal } from './localmodels';
 import { TilePainter } from './tilepaint';
 import { TileDialog, TileTags } from './tileadd';
 import { openRoofCells } from './tiles';
 import { cropDialog, cropImage } from './crop';
 import { readUvtt } from './uvtt';
-import { BACKGROUNDS, BARS, isScenery, kindOf, LAYERS, type ModelMeta, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Portal, type Presence, type RoundEffect, type ShareStatus, type SheetStats, type VNScene } from './types';
+import { type Profile, BACKGROUNDS, BARS, isPredetermined, isScenery, kindOf, LAYERS, LAYERS3D, layer2dOf, type Layer3D, type ModelMeta, type SlabData, type SlabMeta, type BarId, type Board, type BoardItem, type Changes, type ImageMeta, type JoinInfo, type LayerId, type Me, type Portal, type Presence, type RoundEffect, type ShareStatus, type SheetStats, type VNScene } from './types';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
 const esc = (s: unknown) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
@@ -54,7 +56,7 @@ document.body.classList.toggle('player', PLAYER);
 
 // tool settings, kept in this browser
 const prefs = { pen: { color: '#e03030', width: 6 }, text: { color: '#ffffff', size: 36 }, newSize: '1', side: 'library',
-  ruler: 'line' as RulerMode, mode3d: false };
+  ruler: 'line' as RulerMode, mode3d: false, layer3d: 'figure' as Layer3D };
 try { const p = JSON.parse(localStorage.getItem(PREFS) || '{}'); Object.assign(prefs.pen, p.pen); Object.assign(prefs.text, p.text); if (p.newSize) prefs.newSize = p.newSize; if (p.side) prefs.side = p.side; if (p.ruler) prefs.ruler = p.ruler; if (p.mode3d) prefs.mode3d = true; } catch { /* defaults */ }
 const savePrefs = () => { try { localStorage.setItem(PREFS, JSON.stringify(prefs)); } catch { /* private window */ } };
 
@@ -107,7 +109,7 @@ const view = new BoardView({
     if (kind === 'commit') commit();
     else if (!liveTimer) liveTimer = window.setTimeout(() => { liveTimer = 0; live?.push(true); }, 60);  // others see it move
   },
-  selection() { v3?.selectionChanged(); },   // (the 2D overlay draws itself)
+  selection() { v3?.selectionChanged(); renderParty(); },   // (the 2D overlay draws itself)
   view(zoom) { $('zoom-label').textContent = `${Math.round(zoom * 100)}%`; updateHud(); },
   contextMenu(item, at) {
     if (view.tool === 'fog' && wallDraft) { finishWall(); return; }   // right click ends the wall being drawn
@@ -135,7 +137,6 @@ const statuses = new Statuses();
 const shortName = (n: string) => (n.split(/\s+/)[0] || n).slice(0, 12);
 view.markers = it => isStructure(it) ? [] : ([
   ...(it.elev ? [{ text: it.elev > 0 ? `↑ ${it.elev}` : `↓ ${-it.elev}`, color: '#3d4f63', title: `A ${Math.abs(it.elev)} casilla${Math.abs(it.elev) === 1 ? '' : 's'} ${it.elev > 0 ? 'de altura' : 'bajo el suelo'}` }] : []),
-  ...(it.prone ? [{ text: 'Tumbado', color: '#5a4a3a' }] : []),
   ...(it.statuses || []).map(s => ({ text: statuses.short(s), color: statuses.color(s.id) })),
   ...(it.uses || []).map(u => ({ text: `${shortName(u.name)} ${u.value}/${u.max}`, color: u.value > 0 ? '#6b5320' : '#3a3a3a' })),
   ...((board?.round?.effects) || []).filter(f => f.token === it.id)
@@ -163,6 +164,19 @@ const library = new Library($('library'), {
   toast,
   pickSheet: (at, current, done) => sheets.pick(at, { current, done }),
   sheetName: id => sheets.name(id),
+  ...(PLAYER ? {
+    openSheet: (m: ImageMeta) => {   // 🎁 a token the GM gave: its sheet, before placing it
+      if (!m.sheet) return;
+      windows.open({ id: 'lib-' + m.id, kind: 'image', image: m.id, x: 0, y: 0, w: 70, h: 70, rotation: 0, layer: 'tokens', z: 0, name: m.name, sheet: m.sheet, controllers: [] },
+        { x: Math.max(8, innerWidth - 760), y: 80 });
+    },
+  } : {
+    players: async () => {
+      if (!board) return [];
+      const r = await api.room(B().id);
+      return Object.entries(r.players || {}).map(([pid, p]) => ({ pid, name: p.name }));
+    },
+  }),
 });
 
 const dice = new DiceRoller($('dice'), toast);
@@ -183,8 +197,8 @@ dice.onIncoming = () => {
 };
 
 const windows = new SheetWindows(sheets, {
-  edit: it => editSheet(it),
-  canEdit: it => canEdit(it),
+  edit: it => it.id.startsWith('perfil-') ? void editProfileSheet(it.id.slice(7)) : editSheet(it),
+  canEdit: it => it.id.startsWith('perfil-') ? isGM() || it.id === 'perfil-' + (me?.pid || '-') : canEdit(it),   // (📖 Escena: their own character; the GM anyone's)
   roll(item, roll, label, kind, stats) {
     showSide('dice');
     dice.load(rollWithStatuses(item, roll, kind, stats), label, { id: item.id, name: item.name || '' }, statusNote(item, roll, kind, stats));
@@ -327,6 +341,7 @@ function connect(boardId: string) {
       dice.setHistory(rolls, `${b.id}:${who.pid || 'gm'}`);
       board = b;
       faceTokens(b);
+      migrateFlags(b.items);
       const first = fitted !== b.id;
       fitted = b.id;
       if (first || !levelsOf(b).some(l => l.id === view.level)) view.level = firstLevel(b);
@@ -344,7 +359,7 @@ function connect(boardId: string) {
       renderRole();
     },
     remote: applyRemote,
-    presence(p) { presence = p; renderPresence(); view.render(); scenesPanel.presenceChanged(); },
+    presence(p) { presence = p; watchProfileRevs(); renderPresence(); levelBar.render(); view.render(); scenesPanel.presenceChanged(); renderParty(); if (hudFor.startsWith('perfil:')) { hudFor = hud.contains(document.activeElement) ? hudFor : ''; updateHud(); } },
     roll(r) { dice.add(r, r.by === me?.pid || (!r.by && isGM())); },
     ruler(r) { view.setRuler('cid:' + r.by, r.shape, r.color, r.who); v3?.setRuler('cid:' + r.by, r.shape, r.color, r.who); },
     ping(p) { if ((p.level || firstLevel(B())) === view.level) { view.ping(p, p.color, p.who); v3?.ping(p, p.color); } },
@@ -359,6 +374,7 @@ function connect(boardId: string) {
     status: setStatus,
     closed(info) {
       if (!PLAYER) { if (info.deleted) toast('Este tablero se ha eliminado', true); return; }
+      if ((info as { merged?: boolean }).merged) { location.reload(); return; }   // (the GM joined them with their old self: in again, as them)
       forgetRoom(me ? currentCode : '');
       showJoin(info.kicked ? 'El GM te ha sacado de la sala.' : info.deleted ? 'El GM ha eliminado el tablero.' : 'El GM ha cerrado la sala.');
     },
@@ -395,7 +411,7 @@ $('presence').addEventListener('click', () => {
 function renderPlayersPanel() {
   const p = presence, all = p ? Object.entries(p.players) : [];
   const here = all.filter(([pid]) => p!.online.includes(pid)), away = all.filter(([pid]) => !p!.online.includes(pid));
-  const kick = (pid: string) => isGM() ? `<button class="x" data-kick="${esc(pid)}" title="Sacar de la sala">✕</button>` : '';
+  const kick = (pid: string) => isGM() ? `<button class="x" data-merge="${esc(pid)}" title="Es la misma persona que otro jugador (perdió su acceso y entró de nuevo): juntarlos, recupera su biblioteca, fichas y tokens">⤵</button><button class="x" data-kick="${esc(pid)}" title="Sacar de la sala">✕</button>` : '';
   const body = $('players-body');
   body.innerHTML = `<div class="room-players">
       ${PLAYER ? `<div class="room-player"><span class="dot" style="background:#fff200"></span>GM <span class="state ${p?.gm ? 'on' : ''}">${p?.gm ? '● conectado' : '○ fuera'}</span></div>` : ''}
@@ -403,6 +419,24 @@ function renderPlayersPanel() {
         <span class="state on">● conectado</span>${kick(pid)}</div>`).join('') || (PLAYER ? '' : '<span class="muted">Nadie conectado ahora.</span>')}</div>
     ${away.length ? `<small class="muted players-away">Fuera: ${away.map(([pid, x]) => `<span class="away">${esc(x.name)}${kick(pid)}</span>`).join(', ')}</small>` : ''}
 `;
+  body.querySelectorAll<HTMLElement>('[data-merge]').forEach(b => b.addEventListener('click', e => {
+    const pid = b.dataset.merge!, others = all.filter(([q]) => q !== pid);
+    const menu = $('menu');
+    menu.innerHTML = `<div class="title">⤵ ${esc(playerName(pid))} es la misma persona que…</div>` + (others.length
+      ? others.map(([q, x]) => `<button data-into="${esc(q)}">${esc(x.name)}<small>${p!.online.includes(q) ? 'conectado' : 'fuera'}</small></button>`).join('')
+      : '<div class="muted" style="padding:6px 10px">No hay otros jugadores</div>');
+    menu.querySelectorAll<HTMLElement>('[data-into]').forEach(o => o.addEventListener('click', async () => {
+      menu.hidden = true;
+      const into = o.dataset.into!;
+      if (!board || !confirm(`¿Juntar a «${playerName(pid)}» con «${playerName(into)}»?\n\nTodo lo de «${playerName(pid)}» (biblioteca, modelos, fichas, tokens) pasa a «${playerName(into)}», y su navegador vuelve a ser «${playerName(into)}». «${playerName(pid)}» desaparece de la sala.`)) return;
+      try { const r = await api.mergePlayer(B().id, pid, into); toast(`⤵ Juntados: ${playerName(into)} recupera lo suyo${r.tokens ? ` (${r.tokens} tokens)` : ''}`); }
+      catch (err) { toast('No se pudo: ' + (err as Error).message, true); }
+    }));
+    menu.hidden = false;
+    const r = menu.getBoundingClientRect();
+    menu.style.left = `${Math.max(8, Math.min(e.clientX - r.width, innerWidth - r.width - 8))}px`;
+    menu.style.top = `${Math.max(8, Math.min(e.clientY + 8, innerHeight - r.height - 8))}px`;
+  }));
   body.querySelectorAll<HTMLElement>('[data-kick]').forEach(b => b.addEventListener('click', async () => {
     if (!board || !confirm(`¿Sacar a ${playerName(b.dataset.kick!)} de la sala? Tendrá que volver a entrar con el código.`)) return;
     await api.kick(B().id, b.dataset.kick!);
@@ -413,10 +447,9 @@ function renderPlayersPanel() {
 /** Each scene's campaign (a new scene from the top bar goes into the open one's) and name */
 let boardCampaign: Record<string, string> = {}, boardNames: Record<string, string> = {};
 async function refreshBoardList(selectId?: string) {
-  const [list, camps] = await Promise.all([api.boards(), api.campaigns().catch(() => [])]);
+  const list = await api.boards();
   boardCampaign = Object.fromEntries(list.map(b => [b.id, b.campaign]));
   boardNames = Object.fromEntries(list.map(b => [b.id, b.name]));
-  $('campaign-pick').innerHTML = campaignOptions(list, camps, scenesPanel.view);
   const id = selectId || localStorage.getItem(LAST_BOARD) || list[0]?.id;
   const open = list.some(b => b.id === id) ? id! : list[0].id;
   labelScene(board?.id || open);
@@ -433,15 +466,12 @@ function openBoard(id: string) {
   localStorage.setItem(LAST_BOARD, id);
   labelScene(id);
   scenesPanel.follow(boardCampaign[id] || '');
-  $<HTMLSelectElement>('campaign-pick').value = scenesPanel.view;
   $('room-panel').hidden = true;
   presence = null;
   renderPresence();
   connect(id);
 }
 
-// picking a campaign shows all its scenes (🗺 Escenas)
-$('campaign-pick').addEventListener('change', e => scenesPanel.show((e.target as HTMLSelectElement).value));
 $('board-rename').addEventListener('click', async () => {
   const name = prompt('Nuevo nombre del tablero:', B().name);
   if (!name || name === B().name) return;
@@ -601,7 +631,8 @@ async function enterRoom(info: JoinInfo) {
   setKey(info.key);
   history.replaceState(null, '', `/jugar?sala=${encodeURIComponent(info.code)}`);
   $('join').hidden = true;
-  library.ownerFilter = m => m.owner === info.pid;
+  library.ownerFilter = m => m.owner === info.pid || !!m.givenTo?.includes(info.pid);   // (and the ones the GM gave them)
+  library.me = info.pid;
   connect(info.board);
   library.load().catch(() => {});
   sheets.load().then(() => { if (board) windows.sync(board.items); });
@@ -623,14 +654,14 @@ $('leave-btn').addEventListener('click', () => { if (confirm('¿Salir de la sala
 // ── adding images ───────────────────────────────────────────────────────────
 const nextZ = (layer: LayerId) => Math.max(0, ...B().items.filter(i => i.layer === layer).map(i => i.z)) + 1;
 
-/** Put images on the active layer around a point: maps at their own size; tokens n×n squares
- *  (the "Tokens nuevos" size, 1×1 by default) with the whole image fitted inside, or at their own size */
+/** Put images on the active layer around a point: maps at their own size; tokens 1×1 square with the
+ *  whole image fitted inside (resized afterwards with ⤢ Tamaño) */
 function placeImages(metas: ImageMeta[], at: { x: number; y: number }) {
   if (!board) return;
   const g = board.grid.size, layer = view.activeLayer, ids: string[] = [];
-  const cells = Number(prefs.newSize) || 0;   // 0 = "Tamaño original"
+  const cells = 1;
   metas.forEach((m, n) => {
-    const own = layer === 'map' || !cells;
+    const own = layer === 'map';
     const w = own ? (m.width || g * 4) : g * cells, h = own ? (m.height || g * 4) : g * cells;
     let x = at.x - w / 2 + n * (own ? g : w), y = at.y - h / 2;
     if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, h); }
@@ -681,6 +712,21 @@ document.addEventListener('copy', e => {
   if (typing(e) || !board || !e.clipboardData) return;
   const sel = getSelection();
   if (sel && !sel.isCollapsed && sel.toString().trim()) return;   // text chosen in a panel: copy that
+  const libSel = library.copyable();
+  if (libSel.length) {   // the pictures chosen in the library (Fondos…): to paste as a scene's background, or on the map
+    e.preventDefault();
+    const mark = CLIP_BG + libSel.map(m => m.id).join(',');
+    e.clipboardData.setData('text/plain', mark);
+    if (typeof ClipboardItem !== 'undefined' && navigator.clipboard?.write) {
+      const url = imageUrl(libSel[0]);
+      navigator.clipboard.write([new ClipboardItem({
+        'image/png': pngOf(url),
+        'text/plain': new Blob([mark], { type: 'text/plain' }),
+      })]).catch(err => console.warn('No se pudo copiar la imagen', err));
+    }
+    toast(libSel.length > 1 ? `${libSel.length} imágenes copiadas` : `«${libSel[0].name}» copiada`);
+    return;
+  }
   if (vnView.active) {   // 📖 Escena: its background (to paste in another scene, or as a picture in another program)
     e.preventDefault();
     const bg = isGM() ? vnView.background() : undefined;
@@ -756,8 +802,8 @@ document.addEventListener('paste', e => {
   if (vnView.active) {   // 📖 Escena (the GM): a copied background, or any picture (into Fondos), as the background
     e.preventDefault();
     if (!isGM()) return;
-    const id = text.startsWith(CLIP_BG) ? text.slice(CLIP_BG.length) : '';
-    if (id && library.get(id)) vnView.setBackground(id);
+    const id = text.startsWith(CLIP_BG) ? text.slice(CLIP_BG.length).split(',').find(x => library.get(x)) || '' : '';
+    if (id) vnView.setBackground(id);
     else if (text.startsWith(CLIP_ITEMS)) {   // a copied map or token: its picture
       try {
         const it = (JSON.parse(text.slice(CLIP_ITEMS.length)) as BoardItem[]).find(i => i?.image && library.get(i.image));
@@ -778,6 +824,11 @@ document.addEventListener('paste', e => {
     return;
   }
   if (text === CLIP_TILES) return;
+  if (text.startsWith(CLIP_BG)) {   // pictures copied from the library (or a scene's background): on the map
+    const metas = text.slice(CLIP_BG.length).split(',').map(id => library.get(id)).filter((m): m is ImageMeta => !!m);
+    if (metas.length) placeImages(metas, at);
+    return;
+  }
   if (files.length) addFiles(files, at);
   else if (clipboard.length) pasteItems(at);
 });
@@ -821,6 +872,16 @@ function toFront(front: boolean) {
   }
   view.render();
   commit();
+}
+
+/** (3D) Off the GM layer: a piece of scenery to the map, a figure to the tokens */
+function fromGmLayer() {
+  for (const it of view.selectedItems()) {
+    const l: LayerId = it.model && isScenery(modelById(it.model)) ? 'map' : 'tokens';
+    it.layer = l; it.z = nextZ(l);
+  }
+  view.render(); view.select([]); commit();
+  toast('Fuera de la capa GM: los jugadores ya lo ven');
 }
 
 function moveToLayer(layer: LayerId) {
@@ -987,7 +1048,7 @@ function sendPing(at: { x: number; y: number }) {
 }
 
 function nudge(dx: number, dy: number) {
-  const items = view.selectedItems().filter(i => !i.locked && canEdit(i));
+  const items = view.withGroup(view.selectedItems().filter(i => !i.locked && canEdit(i)));
   if (!items.length) return;
   for (const it of items) { it.x += dx; it.y += dy; }
   view.render();
@@ -1090,14 +1151,119 @@ function openSheet(it: BoardItem) {
   windows.open(it, { x: r.left + p.x, y: r.top + p.y });
 }
 
+// ── 📖 Escena: each player's character (kept in the room: portrait, stat block, Impactos / Chi) ──
+// In the scene the panel at the bottom shows it, not a board token: a player their own, always; the GM
+// the one chosen in the party strip.
+let partyPick = '';   // (the GM) the player whose character the panel shows
+const profileRevs = new Map<string, number | undefined>();   // each character's stat block, as last read here
+/** The room's word came: a character whose stat block someone else edited (the GM a player's, or the
+ *  player in another tab) is read again: its name, its open window */
+function watchProfileRevs() {
+  const edited: string[] = [];
+  for (const [pid, pr] of Object.entries(presence?.players || {})) {
+    const known = profileRevs.has(pid), was = profileRevs.get(pid);
+    profileRevs.set(pid, pr.sheetRev);
+    if (known && was !== pr.sheetRev && pr.sheet) { sheets.forget(pr.sheet); edited.push(pid); }
+  }
+  if (edited.length) void sheets.load().then(() => {
+    for (const pid of edited) { const pr = presence?.players[pid]; if (pr) windows.refresh({ ...profileItem(pid, pr), sheetRev: pr.sheetRev }); }
+    hudFor = hud.contains(document.activeElement) ? hudFor : ''; updateHud(); renderParty();
+  });
+}
+function profileOf(pid: string): (Profile & { name: string }) | null {
+  if (!pid) return null;
+  // (the room's word, which follows the GM's changes too; this player's own just saved, until it comes)
+  return presence?.players[pid] || (!isGM() && me?.pid === pid ? me : null);
+}
+/** Keep a player's character (null: this player's own; the GM: anyone's). A new stat block: its
+ *  Impactos and Chi, full. */
+async function saveProfile(pid: string | null, p: { portrait?: string | null; sheet?: string | null; bars?: Profile['bars'] | null }, keepBars = false) {
+  try {
+    const body: Parameters<typeof api.setProfile>[0] = { ...p, ...(p.sheet !== undefined && !keepBars ? { bars: null } : {}), ...(keepBars ? { edited: true } : {}), ...(pid ? { pid } : {}) };
+    const r = await api.setProfile(body);
+    if (p.sheet) {   // its Impactos and Chi, full, once the sheet is read (a moment); its stat block edited: the new maxima, the damage kept
+      const sid = p.sheet, old = keepBars ? p.bars || {} : {};
+      sheets.statsOf(sid, true).then(st => {
+        const now = profileOf(pid || me?.pid || '');
+        if (now && now.sheet !== sid) return;   // (another chosen meanwhile)
+        const bars: Profile['bars'] = {}, cur = (keepBars && now?.bars) || old;
+        const fill = (id: BarId, max: number) => {
+          if (max <= 0) return;
+          const o = cur[id];
+          bars[id] = { value: o ? Math.max(0, Math.min(max, o.value + max - o.max)) : max, max };
+        };
+        fill('hp', st.hits);
+        fill('chi', st.chi);
+        if (keepBars && JSON.stringify(bars) === JSON.stringify(cur)) return;
+        void saveProfile(pid, { bars });
+      }).catch(err => toast(`No se pudieron leer los valores de la ficha: ${(err as Error).message}`, true));
+    }
+    for (const target of [pid ? undefined : me, presence?.players[pid || me?.pid || '']]) {
+      if (target) { delete target.portrait; delete target.sheet; delete target.bars; delete target.sheetRev; Object.assign(target, r); }
+    }
+    profileRevs.set(pid || me?.pid || '', r.sheetRev);   // (this browser's own edit: its windows already follow)
+    hudFor = '';
+    updateHud();
+    renderParty();
+    return true;
+  } catch (e) { toast('No se pudo guardar: ' + (e as Error).message, true); return false; }
+}
+/** Its stat block in a window: a token of no board (it has no statuses, nothing to move) */
+const profileItem = (pid: string, pr: Profile & { name: string }): BoardItem => ({ id: 'perfil-' + pid, kind: 'image', x: 0, y: 0, w: 70, h: 70, rotation: 0,
+  layer: 'tokens', z: 0, name: pr.sheet ? sheets.name(pr.sheet) : pr.name, sheet: pr.sheet, bars: pr.bars, controllers: [] });
+function renderProfileHud(pid: string, pr: Profile & { name: string }) {
+  hud.classList.add('hud-3d');
+  hud.dataset.prof = pid;   // (whose character it shows)
+  const own = !isGM(), por = pr.portrait ? library.get(pr.portrait) : undefined, pic = por ? imageSmallUrl(por, 256) : '';
+  const sheet = pr.sheet ? sheets.name(pr.sheet) : '';
+  hud.innerHTML = `
+    ${own ? `<button class="hud3-portrait vn-pick" data-prof="portrait" title="Elegir tu retrato (se guarda para todas las escenas, en cualquier dispositivo)">${pic ? `<img src="${esc(pic)}" alt="">` : '<span>🖼<small>Tu retrato</small></span>'}</button>`
+      : `<div class="hud3-portrait">${pic ? `<img src="${esc(pic)}" alt="">` : `<span>${esc(pr.name.slice(0, 1).toUpperCase())}</span>`}</div>`}
+    <div class="hud3-main">
+      <div class="hud3-head">
+        <b class="hud-name hud-prof-name" title="${esc(pr.name)}">${esc(sheet || pr.name)}</b>
+        ${pr.sheet ? `<button class="hud-btn" data-prof="open" title="Abrir la ficha: ${esc(sheet)}">📜 <small>Ficha</small></button>` : ''}
+        ${pr.sheet && sheets.get(pr.sheet)?.kind === 'pj' ? `<button class="hud-btn" data-prof="edit" title="Editar la ficha en el Creador de personajes (${own ? 'se guarda como tuya' : `se guarda como la de ${esc(pr.name)}`}; la preparada no cambia)">✎ <small>Editar</small></button>` : ''}
+        <button class="hud-btn ${pr.sheet ? 'small' : ''}" data-prof="pick" title="${own ? 'Elegir tu ficha entre los personajes preparados (se guarda)' : `Elegir la ficha de ${esc(pr.name)}`}">${pr.sheet ? '▾' : '📜 <small>＋ Elegir ficha</small>'}</button>
+      </div>
+      <div class="hud3-bars">${BARS.map(b => {
+        const v = pr.bars?.[b.id], pct = v && v.max > 0 ? Math.max(0, Math.min(100, v.value / v.max * 100)) : 0;
+        return `<div class="hud3-bar" style="--c:${b.color}" title="${b.name} · escribe un número, o -3 / +2 para restar o sumar (se guarda)">
+          <span class="hud3-label">${b.icon} ${b.name}</span>
+          <span class="hud3-track"><span class="hud3-fill" style="width:${pct}%"></span></span>
+          <span class="hud3-nums"><input data-pbar="${b.id}" data-f="value" value="${v ? v.value : ''}" placeholder="–" inputmode="numeric"><span class="hud-sep">/</span><input data-pbar="${b.id}" data-f="max" value="${v ? v.max : ''}" placeholder="máx" inputmode="numeric"></span>
+        </div>`;
+      }).join('')}</div>
+    </div>`;
+}
+/** Impactos / Chi typed in the scene's panel (a number, or -3 / +2): kept in the room */
+function applyProfileBar(inp: HTMLInputElement) {
+  const pid = hudFor.startsWith('perfil:') ? hudFor.slice(7) : '', pr = profileOf(pid);
+  if (!pr || inp.dataset.done) return;
+  inp.dataset.done = '1';
+  const id = inp.dataset.pbar as BarId, f = inp.dataset.f as 'value' | 'max';
+  const bars: NonNullable<Profile['bars']> = JSON.parse(JSON.stringify(pr.bars || {})), bar = bars[id];
+  const txt = inp.value.trim().replace(/[−–]/g, '-'), cur = bar ? bar[f] : 0;
+  let n: number | null = null;
+  if (/^[+-]\s*\d+$/.test(txt)) n = cur + Number(txt.replace(/\s/g, ''));
+  else if (/^=?\s*\d+$/.test(txt)) n = Number(txt.replace(/[=\s]/g, ''));
+  else if (txt === '' && f === 'max') n = 0;
+  if (n === null) { renderProfileHud(pid, pr); return; }
+  if (f === 'max') { if (n <= 0) delete bars[id]; else if (!bar) bars[id] = { value: n, max: n }; else bar.max = n; }
+  else if (!bar) { if (n > 0) bars[id] = { value: n, max: n }; }
+  else bar.value = Math.max(0, n);
+  if (JSON.stringify(bars) === JSON.stringify(pr.bars || {})) { renderProfileHud(pid, pr); return; }
+  void saveProfile(isGM() ? pid : null, { bars });
+}
+
 // The token HUD (Roll20's bubbles): over the selected token, its sheet button and its
 // bars. Type a number to set a value, or -3 / +2 to take away / add.
 const hud = $('hud');
 let hudFor = '';
 function hudToken(): BoardItem | null {
   if (!board || view.busyIds().size) return null;
-  if (vnView.active) {   // 📖 Escena: a player's own character, always open; the GM, nothing (just the background)
-    if (isGM()) return null;
+  if (vnView.active) {   // 📖 Escena: a player's own character, always open; the GM, the one chosen in the party strip
+    if (isGM()) { const sel = view.selectedItems(); return sel.length === 1 && isToken(sel[0]) ? sel[0] : null; }
     const m = vnView.mainOf(me?.pid || '');
     if (!m || !canEdit(m)) return null;
     if (view.selected.size !== 1 || !view.selected.has(m.id)) view.select([m.id]);
@@ -1108,12 +1274,19 @@ function hudToken(): BoardItem | null {
 }
 
 function updateHud() {
-  const it = hudToken();
+  const it = vnView.active && board ? null : hudToken();
   placeStatusButton(it);
-  if (!it) { hud.hidden = true; hudFor = ''; return; }
-  const typingHere = hud.contains(document.activeElement);
-  if (hudFor !== it.id || !typingHere) renderHud(it);
-  hudFor = it.id;
+  if (vnView.active && board) {   // 📖 Escena: the character kept in the room
+    const pid = isGM() ? partyPick : me?.pid || '', pr = profileOf(pid);
+    if (!pr) { hud.hidden = true; hudFor = ''; return; }
+    if (hudFor !== 'perfil:' + pid || !hud.contains(document.activeElement)) renderProfileHud(pid, pr);
+    hudFor = 'perfil:' + pid;
+  } else if (!it) { hud.hidden = true; hudFor = ''; return; }
+  else {
+    const typingHere = hud.contains(document.activeElement);
+    if (hudFor !== it.id || !typingHere) renderHud(it);
+    hudFor = it.id;
+  }
   hud.hidden = false;
   // at the bottom of the board, like a game's unit panel (2D and 3D)
   const r = $('stage').getBoundingClientRect();
@@ -1133,7 +1306,8 @@ function adjustTokens(what: string, d: number) {
   const its = view.selectedItems().filter(i => canEdit(i) && !i.locked), g = B().grid.size;
   if (!its.length) return;
   for (const it of its) {
-    if (what === 'size') {
+    if ((what === 'size' || what === 'scale') && isStructure(it)) resizeScenery(it, modelById(it.model)?.dims, g, d, what === 'scale');   // (scenery: its model's proportions)
+    else if (what === 'size') {
       const cx = it.x + it.w / 2, cy = it.y + it.h / 2;
       const st = isProp(it) ? 0.5 : 1;   // (props: half a square at a time)
       const w = Math.max(g * st, Math.round(it.w / g / st + d) * st * g), h = it.w !== it.h || isStructure(it) ? Math.max(g * st, Math.round(it.h / g / st + d) * st * g) : w;
@@ -1145,8 +1319,6 @@ function adjustTokens(what: string, d: number) {
       if (!it.model || isStructure(it)) continue;
       const k = Math.max(0.3, Math.min(3, Math.round(((it.modelScale || 1) + d * 0.05) * 100) / 100));
       if (k === 1) delete it.modelScale; else it.modelScale = k;
-    } else if (what === 'prone') {   // all down, unless all already are
-      if (its.every(i => i.prone)) delete it.prone; else it.prone = true;
     } else if (what === 'angle') setAngle(it, d);
     else setAngle(it, (isStructure(it) ? it.rotation || 0 : it.facing || 0) + d * TURN_STEP);   // ⟲ ⟳
   }
@@ -1175,11 +1347,13 @@ function sceneryHud(it: BoardItem) {
     <div class="hud3-portrait">${it.model ? `<img src="${esc(modelThumbUrl(it.model))}" alt="">` : '<span>?</span>'}</div>
     <div class="hud3-main">
       <div class="hud3-head"><input class="hud-name" data-name value="${esc(it.name || '')}" placeholder="Nombre" title="Nombre (Enter para cambiarlo)"></div>
-      <small class="muted">${isProp(it) ? '🪑 Objeto' : '🏛 Estructura'}${m ? ` · ${esc(m.name)}` : ''} · capa Mapa</small>
+      <small class="muted">${isProp(it) ? '🪑 Objeto' : modelById(it.model)?.kind === 'tile' ? '🟫 Loseta' : '🏛 Estructura'}${m ? ` · ${esc(m.name)}` : ''} · capa Mapa</small>
     </div>
     <div class="hud3-tools">
-      <div class="hud3-tool" title="Tamaño en casillas (+ / −)${isProp(it) ? ': media casilla cada vez' : ''}"><span class="hud3-label">⤢ Tamaño</span>
+      <div class="hud3-tool" title="Tamaño en casillas, media casilla cada vez (+ / − en 3D), con las proporciones del modelo"><span class="hud3-label">⤢ Tamaño</span>
         <button class="hud-btn" data-t3="size:-1">−</button><b>${n(it.w)}${it.w !== it.h ? `×${n(it.h)}` : ''}</b><button class="hud-btn" data-t3="size:1">+</button></div>
+      <div class="hud3-tool" title="Ajuste fino: un 5% cada vez (Mayús + / − en 3D)"><span class="hud3-label">🔍 Escala</span>
+        <button class="hud-btn" data-t3="scale:-1">−</button><b>5%</b><button class="hud-btn" data-t3="scale:1">+</button></div>
       <div class="hud3-tool" title="Altura, en casillas (½ cada vez); negativa: bajo el suelo, que se abre sobre él (RePág / AvPág en 3D; con Mayús, ¼)"><span class="hud3-label">⇡ Altura</span>
         <button class="hud-btn" data-t3="lift:-0.5">−</button><b>${it.elev || 0}</b><button class="hud-btn" data-t3="lift:0.5">+</button></div>
       ${turnTool(it)}
@@ -1207,13 +1381,13 @@ function renderHud3d(it: BoardItem) {
   const meta = it.image ? library.get(it.image) : undefined;
   // (📖 Escena: only the portrait the player chose; empty until they do)
   const vnPic = vnView.active ? vnView.portraitOf(it) : undefined;
-  const pic = vnView.active ? (vnPic ? imageSmallUrl(vnPic, 256) : '') : meta ? imageSmallUrl(meta, 256) : it.model ? modelThumbUrl(it.model) : '';
+  const pic = vnView.active && !isGM() ? (vnPic ? imageSmallUrl(vnPic, 256) : '') : vnPic ? imageSmallUrl(vnPic, 256) : meta ? imageSmallUrl(meta, 256) : it.model ? modelThumbUrl(it.model) : '';
   const sheet = it.sheet ? sheets.name(it.sheet) : '';
   const eco = view.economy(it);
   const pips = (kind: 'a' | 'r', n: number, used: number, color: string) => Array.from({ length: n }, (_, i) =>
     `<button class="hud3-pip ${i < used ? 'used' : ''}" style="--c:${color}" data-spend="${kind}:${i}" title="${i < used ? 'Gastada: clic para devolverla' : 'Clic para gastarla'}"></button>`).join('');
   hud.innerHTML = `
-    ${vnView.active
+    ${vnView.active && !isGM()
       ? `<button class="hud3-portrait vn-pick" data-hud="portrait" title="Elegir tu retrato (este navegador lo recordará para las próximas escenas)">${pic ? `<img src="${esc(pic)}" alt="">` : '<span>🖼<small>Tu retrato</small></span>'}</button>`
       : `<div class="hud3-portrait">${pic ? `<img src="${esc(pic)}" alt="">` : '<span>?</span>'}</div>`}
     <div class="hud3-main">
@@ -1240,9 +1414,6 @@ function renderHud3d(it: BoardItem) {
       ${it.model && !isStructure(it) ? `<div class="hud3-tool" title="El tamaño de su figura 3D, 5% cada vez (sin cambiar sus casillas): para igualarla a las demás"><span class="hud3-label">⤡ Figura</span>
         <button class="hud-btn" data-t3="fig:-1">−</button><b>${Math.round((it.modelScale || 1) * 100)}%</b><button class="hud-btn" data-t3="fig:1">+</button></div>` : ''}
       ${turnTool(it)}
-      ${(() => { const trip = !!it.statuses?.some(s => s.id === 'tropezado');
-        return `<div class="hud3-tool" title="Tumbado en el suelo (derribado, muerto…). En 3D la figura se tumba (T)${trip ? '. Tropezado ya lo tumba mientras dure' : ''}"><span class="hud3-label">⤓ Tumbado</span>
-        <button class="hud-btn hud3-prone ${it.prone || trip ? 'on' : ''}" data-t3="prone:0">${it.prone ? 'Sí' : trip ? 'Tropezado' : 'No'}</button></div>`; })()}
     </div>
     <div class="hud3-econ">${ECON.map(e => {
       const n = it.economy?.[e.id] ?? e.def, left = eco ? (e.id === 'actions' ? eco.actions : eco.reactions) : n, used = eco ? (e.id === 'actions' ? eco.usedA : eco.usedR) : 0;
@@ -1575,11 +1746,16 @@ hud.addEventListener('keydown', e => {
     else if (e.key === 'Escape') { e.preventDefault(); inp.blur(); }
     return;
   }
+  if (inp.dataset?.pbar) {
+    if (e.key === 'Enter') { e.preventDefault(); applyProfileBar(inp); }
+    else if (e.key === 'Escape') { e.preventDefault(); inp.dataset.done = '1'; inp.blur(); hudFor = ''; updateHud(); }
+    return;
+  }
   if (!inp.dataset?.bar) return;
   if (e.key === 'Enter') { e.preventDefault(); applyBarInput(inp); hud.querySelector<HTMLInputElement>(`[data-bar="${inp.dataset.bar}"][data-f="${inp.dataset.f}"]`)?.select(); }
   else if (e.key === 'Escape') { e.preventDefault(); inp.blur(); }
 });
-hud.addEventListener('focusin', e => { const inp = e.target as HTMLInputElement; if (inp.dataset?.bar || inp.dataset?.econ || inp.dataset?.angle !== undefined) setTimeout(() => inp.select(), 0); });
+hud.addEventListener('focusin', e => { const inp = e.target as HTMLInputElement; if (inp.dataset?.bar || inp.dataset?.pbar || inp.dataset?.econ || inp.dataset?.angle !== undefined) setTimeout(() => inp.select(), 0); });
 /** ⟳ Girar: the degrees typed, on the selected (that this browser may change) */
 function applyAngle(inp: HTMLInputElement) {
   inp.dataset.done = '1';
@@ -1593,6 +1769,11 @@ hud.addEventListener('focusout', e => {
   const inp = e.target as HTMLInputElement;
   if (inp.dataset?.angle !== undefined) { if (inp.isConnected && !inp.dataset.done) applyAngle(inp); return; }
   if (inp.dataset?.name !== undefined) { applyName(inp); return; }
+  if (inp.dataset?.pbar) {
+    const pr = profileOf(hudFor.slice(7)), v = pr?.bars?.[inp.dataset.pbar as BarId];
+    if (inp.isConnected && !inp.dataset.done && inp.value.trim() !== String(v ? v[inp.dataset.f as 'value' | 'max'] : '')) applyProfileBar(inp);
+    return;
+  }
   if (inp.dataset?.econ) {
     const it = view.item(hudFor), key = inp.dataset.econ as 'actions' | 'reactions';
     if (inp.isConnected && !inp.dataset.done && it && inp.value.trim() !== String(it.economy?.[key] ?? (key === 'actions' ? 3 : 2))) applyEconInput(inp);
@@ -1613,6 +1794,21 @@ hud.addEventListener('click', e => {
     return;
   }
   if ((e.target as HTMLElement).closest('[data-hud="portrait"]')) { vnView.pickPortrait(); return; }
+  const prof = (e.target as HTMLElement).closest<HTMLElement>('[data-prof]');
+  if (prof && hudFor.startsWith('perfil:')) {   // 📖 Escena: the character kept in the room
+    const pid = hudFor.slice(7), pr = profileOf(pid), r = prof.getBoundingClientRect(), at = { x: r.left, y: Math.max(56, r.top - 430) };
+    if (!pr) return;
+    if (prof.dataset.prof === 'portrait' && !isGM()) vnView.pickPortrait();
+    else if (prof.dataset.prof === 'open' && pr.sheet) {
+      const h = hud.getBoundingClientRect();
+      windows.open(profileItem(pid, pr), { x: Math.max(8, h.left), y: Math.max(56, h.top - 560) });
+    } else if (prof.dataset.prof === 'edit' && pr.sheet) void editProfileSheet(pid);
+    else if (prof.dataset.prof === 'pick') {
+      if (isGM()) sheets.pick(at, { current: pr.sheet, done: sid => void saveProfile(pid, { sheet: sid }), only: s => isPredetermined(s) || s.owner === pid, title: `Ficha de ${pr.name}` });
+      else vnView.pickSheet(at);
+    }
+    return;
+  }
   const sb = (e.target as HTMLElement).closest<HTMLElement>('[data-hud="status"]');
   if (sb) { toggleStatusPanel(); return; }
   const pip = (e.target as HTMLElement).closest<HTMLElement>('[data-spend]');
@@ -1628,6 +1824,7 @@ hud.addEventListener('click', e => {
   if (!b || !it) return;
   const r = b.getBoundingClientRect();
   if (b.dataset.hud === 'sheet' && it.sheet) openSheet(it);
+  else if (vnView.active && !isGM()) vnView.pickSheet({ x: r.left, y: Math.max(56, r.top - 430) });   // (📖 Escena: their kept character's)
   else chooseSheet([it], { x: r.left, y: v3?.active ? Math.max(56, r.top - 430) : r.bottom + 6 });   // (3D: the panel is at the bottom)
 });
 
@@ -1677,10 +1874,59 @@ async function editSheet(it: BoardItem) {
   if (!sid || !meta || meta.kind !== 'pj' || !canEdit(it)) return;
   let data: unknown;
   try { data = (await api.sheet(sid)).data; } catch (e) { toast('No se pudo leer la ficha: ' + (e as Error).message, true); return; }
+  openCreador(it.name || meta.name, data, async d => {
+    const cur = view.item(it.id) || it, nowSid = cur.sheet || sid!, m = sheets.get(nowSid);
+    let id = nowSid;
+    if (m && m.source === 'upload' && (isGM() || m.owner === me?.pid)) {
+      const up = await api.updateSheet(nowSid, d);
+      Object.assign(m, up);
+    } else {   // not theirs to change: their own copy, on this token
+      const up = await api.uploadSheet(d, String((d as { name?: string }).name || meta!.name));
+      if (!sheets.get(up.id)) sheets.list.push(up);
+      id = up.id;
+    }
+    sheets.forget(id);
+    cur.sheet = id;
+    cur.sheetRev = Date.now();   // (open windows of it, here and elsewhere, read it again)
+    view.render();
+    commit();
+    windows.sync(B().items);
+    hudFor = ''; updateHud();
+    toast(`📜 Ficha de ${cur.name || 'el token'} guardada`);
+  });
+}
+
+/** 📖 Escena: a player's character's stat block in the Creador. Saved as the player's own (their
+ *  upload changed; a ready-made one copied, so it stays as it was for everyone); its Impactos and Chi
+ *  follow the new maxima, the damage taken kept. */
+async function editProfileSheet(pid: string) {
+  const pr = profileOf(pid), sid = pr?.sheet, meta = sid ? sheets.get(sid) : undefined;
+  if (!pr || !sid || !meta || meta.kind !== 'pj' || !(isGM() || pid === me?.pid)) return;
+  let data: unknown;
+  try { data = (await api.sheet(sid)).data; } catch (e) { toast('No se pudo leer la ficha: ' + (e as Error).message, true); return; }
+  openCreador(sheets.name(sid), data, async d => {
+    const now = profileOf(pid) || pr, nowSid = now.sheet || sid, m = sheets.get(nowSid);
+    let id = nowSid;
+    if (m && m.source === 'upload' && m.owner === pid) Object.assign(m, await api.updateSheet(nowSid, d));
+    else {
+      const up = await api.uploadSheet(d, String((d as { name?: string }).name || meta.name), isGM() ? pid : undefined);
+      const have = sheets.get(up.id);
+      if (have) Object.assign(have, up); else sheets.list.push(up);
+      id = up.id;
+    }
+    sheets.forget(id);
+    if (!await saveProfile(isGM() ? pid : null, { sheet: id, bars: now.bars || {} }, true)) throw new Error('no se pudo guardar el personaje');
+    windows.refresh({ ...profileItem(pid, { ...now, sheet: id }), sheetRev: profileOf(pid)?.sheetRev });
+    toast(`📜 Ficha de ${sheets.name(id)} guardada`);
+  }, 'Guardar en el token');
+}
+
+/** The website's Creador de personajes over the board, with a stat block; its «Guardar…» calls save */
+function openCreador(title: string, data: unknown, save: (d: unknown) => Promise<void>, saveLabel = 'Guardar en el token') {
   const back = document.createElement('div');
   back.className = 'creador-back';
   back.innerHTML = `<div class="creador-box" role="dialog" aria-label="Editar la ficha">
-    <div class="creador-bar"><b>✎ ${esc(it.name || meta.name)}</b><small class="muted">Creador de personajes · «Guardar en el token» guarda los cambios</small>
+    <div class="creador-bar"><b>✎ ${esc(title)}</b><small class="muted">Creador de personajes · «${esc(saveLabel)}» guarda los cambios</small>
       <span class="grow"></span><button class="x" data-c="close" title="Cerrar (lo no guardado se pierde)">✕</button></div>
     <iframe src="/creador?tablero=1" title="Creador de personajes"></iframe></div>`;
   document.body.appendChild(back);
@@ -1693,26 +1939,9 @@ async function editSheet(it: BoardItem) {
     if (e.data.type === 'creador-ready') reply({ type: 'creador-load', data });
     else if (e.data.type === 'creador-save') {
       try {
-        const cur = view.item(it.id) || it, nowSid = cur.sheet || sid!, m = sheets.get(nowSid);
-        let id = nowSid;
-        if (m && m.source === 'upload' && (isGM() || m.owner === me?.pid)) {
-          const up = await api.updateSheet(nowSid, e.data.data);
-          Object.assign(m, up);
-        } else {   // not theirs to change: their own copy, on this token
-          const up = await api.uploadSheet(e.data.data, String((e.data.data as { name?: string }).name || meta!.name));
-          if (!sheets.get(up.id)) sheets.list.push(up);
-          id = up.id;
-        }
+        await save(e.data.data);
         data = e.data.data;
-        sheets.forget(id);
-        cur.sheet = id;
-        cur.sheetRev = Date.now();   // (open windows of it, here and elsewhere, read it again)
-        view.render();
-        commit();
-        windows.sync(B().items);
-        hudFor = ''; updateHud();
         reply({ type: 'creador-saved', ok: true });
-        toast(`📜 Ficha de ${cur.name || 'el token'} guardada`);
       } catch (err) { reply({ type: 'creador-saved', ok: false, error: (err as Error).message }); }
     }
   }
@@ -1729,8 +1958,21 @@ function openMenu(item: BoardItem | null, at: { x: number; y: number }) {
   if (item && sel.length) {
     const locked = sel.every(i => i.locked);
     entries.push(['Al frente', '', () => toFront(true)], ['Al fondo', '', () => toFront(false)], ['-', '', () => {}]);
-    if (isGM()) entries.push(...LAYERS.filter(l => l.id !== item.layer).map(l => [`Mover a capa ${l.name}`, '', () => moveToLayer(l.id)] as Entry), ['-', '', () => {}]);
+    if (isGM() && in3D()) entries.push(item.layer === 'gm'
+      ? ['👁 Sacar de la capa GM', 'los jugadores lo verán', () => fromGmLayer()]
+      : ['👑 Mover a la capa GM', 'solo tú lo verás', () => moveToLayer('gm')], ['-', '', () => {}]);
+    else if (isGM()) entries.push(...LAYERS.filter(l => l.id !== item.layer).map(l => [`Mover a capa ${l.name}`, '', () => moveToLayer(l.id)] as Entry), ['-', '', () => {}]);
     if (kindOf(item) === 'text') entries.push(['Editar texto', 'doble clic', () => openTextEditor({ x: item.x, y: item.y }, item)]);
+    // 🔗 grouping: any of them (tokens, a carriage, a horse…), to move together
+    const mine = sel.filter(i => canEdit(i) && kindOf(i) === 'image');
+    if (mine.length >= 2 && !(mine.every(i => i.group) && new Set(mine.map(i => i.group)).size === 1))
+      entries.push(['🔗 Agrupar', 'al mover uno, se mueven todos', () => groupItems(mine)]);
+    if (mine.some(i => i.group)) {
+      const with_ = mine.length === 1 ? groupNames(mine[0]) : [];
+      entries.push(['⛓ Desagrupar', with_.length ? `con ${with_.slice(0, 3).join(', ')}${with_.length > 3 ? '…' : ''}` : 'se moverán por separado', () => ungroupItems(mine)],
+        ['🔗 Seleccionar el grupo', '', () => { view.select(B().items.filter(i => i.group && mine.some(m => m.group === i.group) && levelOf(B(), i) === view.level).map(i => i.id)); updateHud(); }]);
+    }
+    if (mine.length >= 2 || mine.some(i => i.group)) entries.push(['-', '', () => {}]);
     const tokens = sel.filter(i => isToken(i) && canEdit(i));
     if (tokens.length) {
       entries.push(['§Ficha y barras', '', () => {}]);
@@ -1819,7 +2061,7 @@ document.addEventListener('pointerdown', e => {
   if (!t?.closest?.('#status-panel, #status-btn, #hud')) statusPanel.hidden = true;
   if (!t?.closest?.('#lv-panel, #menu')) $('lv-panel').hidden = true;
   if (!t?.closest?.('#portal-panel, #menu')) $('portal-panel').hidden = true;
-  if (!t?.closest?.('#scenes-panel, #scenes-btn, #campaign-pick') && scenesPanel.open) $('scenes-panel').hidden = true;
+  if (!t?.closest?.('#scenes-panel, #scenes-btn') && scenesPanel.open) $('scenes-panel').hidden = true;
 });
 
 // ── ruler: lines, radii and cones in squares ────────────────────────────────
@@ -2225,7 +2467,200 @@ const levelBar = new LevelBar($('level-bar'), {
   changed() { view.render(); commit(); followLevel(); },
   roofs: { get shown() { return roofsShown; }, toggle() { roofsShown = !roofsShown; view.roofAlpha = roofsShown ? 0.8 : 0.12; view.applyRoofs(); } },
   importMap,
+  slabs: () => void slabDialog(),
+  scene: {   // (📖 Escena beside the levels: the GM's view, and where the room is)
+    gmIn: () => vnView.active,
+    roomIn: () => !!vnScene.on,
+    party: () => Object.keys(presence?.players || {}).length > 0,
+    view(on) { if (!board || !isGM()) return; gmPeek = on !== !!vnScene.on; syncVN(); },
+    bring() {   // the players go where the GM is looking
+      if (!board || !isGM()) return;
+      const on = vnView.active;
+      gmPeek = false;
+      if (on !== !!vnScene.on) setScene({ ...vnScene, on }); else syncVN();
+    },
+  },
 });
+
+// ── 🧱 Losas ───────────────────────────────────────────────────────────────
+// A level's pieces (all, or some of its 3D layers, or only those selected) saved apart, to be placed
+// again in other scenes: a side of the mountain, a camp, a ruin… Placed on a new level, or on this one
+// (where they were, or in the middle of the view); placed pieces remember their slab (gen "losa:…"), so
+// the ones of a slab can be selected or taken away together (a moment that comes and goes).
+type SlabLayer = 'tile' | 'prop' | 'structure' | 'map' | 'figure' | 'gm';
+const SLAB_LAYERS: { id: SlabLayer; name: string; on: boolean }[] = [
+  { id: 'tile', name: '🟫 Losetas', on: true }, { id: 'prop', name: '🪑 Objetos', on: true }, { id: 'structure', name: '🏛 Estructuras', on: true },
+  { id: 'map', name: '🖼 Mapa 2D (imágenes, dibujos)', on: true }, { id: 'figure', name: '🧍 Figuras', on: false }, { id: 'gm', name: '👑 Capa GM', on: true },
+];
+function slabLayerOf(it: BoardItem): SlabLayer {
+  if (it.layer === 'gm') return 'gm';
+  if (it.layer !== 'map') return 'figure';
+  const k = it.model ? modelById(it.model)?.kind : undefined;
+  return k === 'tile' || k === 'prop' ? k : it.model ? 'structure' : 'map';
+}
+/** the players' figures (their characters) are never copied */
+const playersOwn = (it: BoardItem) => slabLayerOf(it) === 'figure' && (!!it.owner || !!it.mainOf?.length);
+/** (what a copy doesn't take: who it is, where, its turn's state, the players') */
+const SLAB_DROP = ['id', 'level', 'z', 'owner', 'controllers', 'mainOf', 'used', 'gen'] as const;
+let slabList: SlabMeta[] = [];
+
+async function slabDialog() {
+  if (!board || !isGM()) return;
+  if (!modelMetas.length) await refreshModels();
+  const b = B(), lvl = view.level, here = b.items.filter(i => levelOf(b, i) === lvl);
+  const sel = view.selectedItems().filter(i => levelOf(b, i) === lvl);
+  const count = (l: SlabLayer, from = here) => from.filter(i => slabLayerOf(i) === l && !playersOwn(i)).length;
+  const back = document.createElement('div');
+  back.className = 'gen-back';
+  back.innerHTML = `<div class="gen-box slab-box" role="dialog" aria-label="Losas">
+    <div class="gen-head"><b>🧱 Losas</b><button class="x" data-s="close" title="Cerrar">✕</button></div>
+    <div class="gen-sec">Guardar «${esc(levelName(b, lvl))}» como losa</div>
+    <div class="slab-save">
+      <label class="slab-name">Nombre <input class="inp" data-s="name" value="${esc(levelName(b, lvl))}"></label>
+      <div class="slab-layers">${SLAB_LAYERS.map(l => `<label class="${count(l.id) ? '' : 'muted'}"><input type="checkbox" data-layer="${l.id}" ${l.on && count(l.id) ? 'checked' : ''} ${count(l.id) ? '' : 'disabled'}> ${l.name} <small data-n="${l.id}">${count(l.id)}</small></label>`).join('')}</div>
+      ${sel.length ? `<label class="slab-sel"><input type="checkbox" data-s="sel"> Solo lo seleccionado (${sel.length})</label>` : ''}
+      <div class="gen-foot"><small class="muted">${in3D() ? 'Su imagen: lo que ves ahora en la vista 3D.' : 'Ábrelo en 3D para que la losa guarde su imagen.'} Las figuras de los jugadores no se guardan.</small><button class="btn" data-s="save">Guardar losa</button></div>
+    </div>
+    <div data-s="placed"></div>
+    <div class="gen-sec slab-where">Tus losas <small class="muted">· colocar en</small>
+      <select class="inp small" data-s="where"><option value="new">un nivel nuevo</option><option value="orig">este nivel, en su sitio</option><option value="view">este nivel, en el centro de la vista</option></select></div>
+    <div class="slab-list" data-s="list"><p class="muted">Cargando…</p></div>
+  </div>`;
+  document.body.appendChild(back);
+  const q = <T extends HTMLElement = HTMLInputElement>(k: string) => back.querySelector(`[data-s="${k}"]`) as T;
+  const close = () => back.remove();
+  q('close').addEventListener('click', close);
+  back.addEventListener('mousedown', e => { if (e.target === back) close(); });
+  const onlySel = () => !!q('sel')?.checked;
+  q('sel')?.addEventListener('change', () => {
+    for (const l of SLAB_LAYERS) back.querySelector(`[data-n="${l.id}"]`)!.textContent = String(count(l.id, onlySel() ? sel : here));
+  });
+  // the slabs placed on this level: select them, or take them away
+  const renderPlaced = () => {
+    const by = new Map<string, number>();
+    for (const i of B().items) if (levelOf(B(), i) === lvl && i.gen?.startsWith('losa:')) by.set(i.gen, (by.get(i.gen) || 0) + 1);
+    q('placed').innerHTML = by.size ? `<div class="gen-sec">Losas en este nivel</div>` + [...by].map(([g, n]) => {
+      const name = slabList.find(x => x.id === g.split(':')[1])?.name || 'Losa';
+      return `<div class="slab-placed"><span>🧱 ${esc(name)} <small class="muted">${n} piezas</small></span><span>
+        <button class="btn small" data-placed-sel="${esc(g)}" title="Seleccionar sus piezas (para moverlas juntas)">Seleccionar</button>
+        <button class="btn small danger" data-placed-del="${esc(g)}" title="Quitar sus piezas de este nivel">Quitar</button></span></div>`;
+    }).join('') : '';
+  };
+  const renderList = () => {
+    q('list').innerHTML = slabList.length ? [...slabList].sort((x, y) => y.created - x.created).map(m => `
+      <div class="slab-card" data-slab="${esc(m.id)}">
+        ${m.thumb ? `<img src="${slabThumbUrl(m.id)}" alt="" loading="lazy">` : '<div class="slab-none">🧱</div>'}
+        <div class="slab-info"><b title="${esc(m.name)}">${esc(m.name)}</b><small class="muted">${m.n} piezas · ${m.w} × ${m.h} casillas</small>
+          <span><button class="btn small gold" data-act="place">Colocar</button><button class="btn small" data-act="rename" title="Cambiar el nombre">✎</button><button class="btn small danger" data-act="del" title="Eliminar la losa (lo ya colocado se queda)">🗑</button></span></div>
+      </div>`).join('') : '<p class="muted">Aún no hay losas. Guarda un nivel arriba para reutilizarlo en otras escenas.</p>';
+    renderPlaced();
+  };
+  api.slabs().then(l => { slabList = l; renderList(); }).catch(e => { q('list').innerHTML = `<p class="muted">No se pudieron cargar: ${esc((e as Error).message)}</p>`; });
+  renderPlaced();
+
+  q('save').addEventListener('click', async () => {
+    const layers = new Set([...back.querySelectorAll<HTMLInputElement>('[data-layer]:checked')].map(c => c.dataset.layer as SlabLayer));
+    const take = (onlySel() ? sel : here).filter(i => layers.has(slabLayerOf(i)) && !playersOwn(i)).sort((x, y) => x.z - y.z);
+    if (!take.length) { toast('No hay piezas en las capas elegidas', true); return; }
+    // (in squares from its corner, a whole square: any board's grid fits it)
+    const g = B().grid.size, ox = Math.floor(Math.min(...take.map(i => i.x)) / g), oy = Math.floor(Math.min(...take.map(i => i.y)) / g);
+    const items = take.map(i => {
+      const c: Record<string, unknown> = JSON.parse(JSON.stringify(i));
+      for (const k of SLAB_DROP) delete c[k];
+      c.x = (i.x - ox * g) / g; c.y = (i.y - oy * g) / g; c.w = i.w / g; c.h = i.h / g;
+      if (i.fontSize) c.fontSize = i.fontSize / g;
+      return c as Partial<BoardItem>;
+    });
+    const w = Math.ceil(Math.max(...items.map(i => i.x! + i.w!))), h = Math.ceil(Math.max(...items.map(i => i.y! + i.h!)));
+    const L = levelsOf(B()).find(l => l.id === lvl);
+    const btn = q<HTMLButtonElement>('save');
+    btn.disabled = true; btn.textContent = 'Guardando…';
+    try {
+      const thumb = in3D() ? await v3!.snapshot().catch(() => null) : null;
+      const meta = await api.saveSlab({ name: q('name').value.trim() || levelName(B(), lvl), w, h, layers: [...layers], items, ox, oy,
+        lw: L?.width || B().width, lh: L?.height || B().height }, thumb);
+      slabList.push(meta);
+      renderList();
+      toast(`🧱 Losa «${meta.name}» guardada (${meta.n} piezas)`);
+    } catch (e) { toast('No se pudo guardar la losa: ' + (e as Error).message, true); }
+    finally { btn.disabled = false; btn.textContent = 'Guardar losa'; }
+  });
+
+  back.addEventListener('click', async e => {
+    const t = e.target as HTMLElement;
+    const ps = t.closest<HTMLElement>('[data-placed-sel]')?.dataset.placedSel, pd = t.closest<HTMLElement>('[data-placed-del]')?.dataset.placedDel;
+    if (ps) { selectSlabPieces(ps); close(); return; }
+    if (pd) {
+      const n = B().items.filter(i => i.gen === pd && levelOf(B(), i) === lvl).length;
+      if (!confirm(`¿Quitar las ${n} piezas de esta losa de este nivel? (la losa sigue guardada)`)) return;
+      B().items = B().items.filter(i => !(i.gen === pd && levelOf(B(), i) === lvl));
+      view.select([]); view.render(); commit(); v3?.changed(); renderPlaced();
+      return;
+    }
+    const card = t.closest<HTMLElement>('[data-slab]'), act = t.closest<HTMLElement>('[data-act]')?.dataset.act;
+    const m = card && slabList.find(x => x.id === card.dataset.slab);
+    if (!m || !act) return;
+    if (act === 'rename') {
+      const name = prompt('Nombre de la losa:', m.name);
+      if (!name?.trim()) return;
+      try { Object.assign(m, await api.renameSlab(m.id, name.trim())); renderList(); } catch (err) { toast('No se pudo: ' + (err as Error).message, true); }
+    } else if (act === 'del') {
+      if (!confirm(`¿Eliminar la losa «${m.name}»? Lo que ya colocaste de ella se queda en sus escenas.`)) return;
+      try { await api.deleteSlab(m.id); slabList = slabList.filter(x => x !== m); renderList(); } catch (err) { toast('No se pudo: ' + (err as Error).message, true); }
+    } else if (act === 'place') {
+      const where = q<HTMLSelectElement>('where').value as 'new' | 'orig' | 'view';
+      try { const d = await api.slab(m.id); close(); placeSlab(m, d, where); }
+      catch (err) { toast('No se pudo abrir la losa: ' + (err as Error).message, true); }
+    }
+  });
+}
+
+/** Select a placed slab's pieces (on the level shown), to move them together */
+function selectSlabPieces(gen: string) {
+  const b = B(), ids = b.items.filter(i => i.gen === gen && levelOf(b, i) === view.level).map(i => i.id);
+  view.select(ids);
+  updateHud();
+  toast(`${ids.length} piezas seleccionadas: arrástralas para mover la losa entera`);
+}
+
+let lastSlab: { level: string; gen: string; n: number } | null = null;
+function placeSlab(m: SlabMeta, d: SlabData, where: 'new' | 'orig' | 'view') {
+  const b = B(), g = b.grid.size;
+  let level = view.level, ox = d.ox, oy = d.oy;
+  if (where === 'new') {
+    const lv = { id: uid(), name: m.name.slice(0, 40), width: Math.max(Math.round(d.lw) || 0, Math.ceil(d.ox + m.w)), height: Math.max(Math.round(d.lh) || 0, Math.ceil(d.oy + m.h)) };
+    b.levels = [...levelsOf(b).map(l => ({ ...l })), lv];
+    level = lv.id;
+  } else if (where === 'view') {
+    const c = view.viewCenter();
+    ox = Math.round(c.x / g - m.w / 2); oy = Math.round(c.y / g - m.h / 2);
+  }
+  const first = firstLevel(b) === level, gen = `losa:${m.id}:${uid().slice(0, 4)}`;
+  // (in the slab's own order; its tiles under everything on the map layer)
+  const isTile = (s: Partial<BoardItem>) => (s.layer || 'map') === 'map' && !!s.model && modelById(s.model)?.kind === 'tile';
+  let zt = Math.min(0, ...b.items.filter(i => i.layer === 'map').map(i => i.z)) - d.items.filter(isTile).length - 1;
+  const zs: Partial<Record<LayerId, number>> = {};
+  const ids: string[] = [];
+  for (const s of d.items) {
+    const lay = (s.layer || 'map') as LayerId;
+    let z: number;
+    if (isTile(s)) z = zt++;
+    else { zs[lay] ??= nextZ(lay); z = zs[lay]!++; }
+    const it = { ...JSON.parse(JSON.stringify(s)), id: uid(), x: (s.x! + ox) * g, y: (s.y! + oy) * g, w: s.w! * g, h: s.h! * g, z, layer: lay, rotation: s.rotation || 0, gen } as BoardItem;
+    if (s.fontSize) it.fontSize = s.fontSize * g;
+    if (!first) it.level = level;
+    b.items.push(it);
+    ids.push(it.id);
+  }
+  modelsMaybeNew(d.items.map(i => i.model));
+  view.render();
+  commit();
+  setLevel(level);
+  view.select(ids);
+  v3?.changed();
+  lastSlab = { level, gen, n: ids.length };
+  toast(`🧱 «${m.name}»: ${ids.length} piezas${where === 'new' ? ' en un nivel nuevo' : ''} · seleccionadas: arrástralas para moverla`);
+}
 
 /** Tokens to another level of the scene (the GM, from the token's menu) */
 function toLevel(items: BoardItem[], level: string) {
@@ -2500,7 +2935,6 @@ function fillToolOptions() {
     const cur = box.dataset.for === 'pen' ? prefs.pen.color : prefs.text.color;
     box.innerHTML = SWATCHES.map(c => `<button style="background:${c}" data-color="${c}" class="${c === cur.toLowerCase() ? 'on' : ''}" title="${c}"></button>`).join('');
   });
-  $<HTMLSelectElement>('new-size').value = prefs.newSize;
 }
 document.querySelectorAll<HTMLElement>('.swatches').forEach(box => box.addEventListener('click', e => {
   const c = (e.target as HTMLElement).dataset.color;
@@ -2512,17 +2946,46 @@ $('pen-color').addEventListener('input', e => { prefs.pen.color = (e.target as H
 $('pen-width').addEventListener('input', e => { prefs.pen.width = Number((e.target as HTMLInputElement).value); savePrefs(); fillToolOptions(); });
 $('text-color').addEventListener('input', e => { prefs.text.color = (e.target as HTMLInputElement).value; savePrefs(); fillToolOptions(); });
 $('text-size').addEventListener('input', e => { prefs.text.size = Number((e.target as HTMLInputElement).value); savePrefs(); fillToolOptions(); });
-$('new-size').addEventListener('change', e => { prefs.newSize = (e.target as HTMLSelectElement).value; savePrefs(); });
 document.querySelectorAll<HTMLElement>('[data-tool]').forEach(b => b.addEventListener('click', () => setTool(b.dataset.tool as Tool)));
 
-$('layers').innerHTML = LAYERS.map(l =>
-  `<button class="tool layer ${l.id === view.activeLayer ? 'on' : ''}" data-layer="${l.id}" title="Capa ${l.name}: ${l.hint}">${l.name.toUpperCase()}</button>`).join('');
+// The layers down the side: 2D's (Mapa / Tokens / GM), or in 3D its own (Losetas, Objetos, Edificios,
+// Figuras, GM): the one being edited — only its things are picked, and new ones go there
+const BAR3D: Layer3D[] = ['tile', 'prop', 'structure', 'figure', 'gm'];
+const in3D = () => document.body.classList.contains('mode-3d') && !!v3?.active;   // (the class first: at start v3 isn't declared yet)
+function renderLayerButtons() {
+  if (in3D()) {
+    const cur = v3!.activeLayer;
+    $('layers').innerHTML = BAR3D.map(id => {
+      const l = LAYERS3D.find(x => x.id === id)!;
+      return `<button class="tool layer layer3d ${id === cur ? 'on' : ''}" data-layer3="${id}" title="Capa ${l.name}: ${l.hint}">${l.icon}<small>${l.name.toUpperCase()}</small></button>`;
+    }).join('');
+  } else {
+    $('layers').innerHTML = LAYERS.map(l =>
+      `<button class="tool layer ${l.id === view.activeLayer ? 'on' : ''}" data-layer="${l.id}" title="Capa ${l.name}: ${l.hint}">${l.name.toUpperCase()}</button>`).join('');
+  }
+}
 function setLayer(l: LayerId) {
   if (!isGM()) return;
   view.setActiveLayer(l);
   document.querySelectorAll<HTMLElement>('[data-layer]').forEach(b => b.classList.toggle('on', b.dataset.layer === l));
 }
-document.querySelectorAll<HTMLElement>('[data-layer]').forEach(b => b.addEventListener('click', () => setLayer(b.dataset.layer as LayerId)));
+/** (3D) the layer being edited: what isn't on it, no longer chosen */
+function setLayer3(l: Layer3D) {
+  if (!isGM() || !v3) return;
+  v3.activeLayer = l;
+  prefs.layer3d = l; savePrefs();
+  view.setActiveLayer(layer2dOf(l));
+  const keep = view.selectedItems().filter(i => v3!.layerOf(i) === l).map(i => i.id);
+  if (keep.length !== view.selected.size) view.select(keep);
+  renderLayerButtons();
+  hudFor = ''; updateHud();
+}
+$('layers').addEventListener('click', e => {
+  const b = (e.target as HTMLElement).closest<HTMLElement>('[data-layer], [data-layer3]');
+  if (!b) return;
+  if (b.dataset.layer3) setLayer3(b.dataset.layer3 as Layer3D); else setLayer(b.dataset.layer as LayerId);
+});
+renderLayerButtons();
 
 $('zoom-in').addEventListener('click', () => view.zoomBy(1.25));
 $('zoom-out').addEventListener('click', () => view.zoomBy(0.8));
@@ -2542,6 +3005,8 @@ function fillGridPanel() {
   $<HTMLInputElement>('g-size').value = String(g.size);
   $<HTMLInputElement>('g-color').value = g.color;
   $<HTMLInputElement>('g-opacity').value = String(g.opacity);
+  $<HTMLInputElement>('g-zone-show').checked = !!g.zoneShow;
+  $<HTMLInputElement>('g-zone').value = String(g.zone || 8);
   const pg = view.page();
   $<HTMLInputElement>('p-width').value = String(pg.width);
   $<HTMLInputElement>('p-height').value = String(pg.height);
@@ -2565,6 +3030,8 @@ $('g-snap').addEventListener('change', e => gridChanged(() => (B().grid.snap = (
 $('g-size').addEventListener('input', () => gridChanged(() => (B().grid.size = num('g-size', 10, 400, B().grid.size))));
 $('g-color').addEventListener('input', e => gridChanged(() => (B().grid.color = (e.target as HTMLInputElement).value)));
 $('g-opacity').addEventListener('input', e => gridChanged(() => (B().grid.opacity = Number((e.target as HTMLInputElement).value))));
+$('g-zone-show').addEventListener('change', e => gridChanged(() => { B().grid.zoneShow = (e.target as HTMLInputElement).checked; B().grid.zone ||= 8; }));
+$('g-zone').addEventListener('input', () => gridChanged(() => { B().grid.zone = Math.round(num('g-zone', 2, 100, B().grid.zone || 8)); }));
 // the page of the level shown (each floor its own size: an interior isn't the shape of the street)
 $('p-width').addEventListener('input', () => gridChanged(() => { const p = view.page(); setPage(B(), view.level, Math.round(num('p-width', 1, 300, p.width)), p.height); }));
 $('p-height').addEventListener('input', () => gridChanged(() => { const p = view.page(); setPage(B(), view.level, p.width, Math.round(num('p-height', 1, 300, p.height))); }));
@@ -2583,7 +3050,7 @@ document.addEventListener('keydown', e => {
   else if (ctrl && k === 'c' && view.tool === 'tiles' && painter.hasSelection()) painter.copy();
   else if (ctrl && k === 'c') copySelection();
   else if (ctrl && k === 'd') { e.preventDefault(); pasteItems(undefined, view.selectedItems()); }
-  else if (ctrl && k === 'a') { e.preventDefault(); view.select(board.items.filter(i => i.layer === view.activeLayer && canEdit(i)).map(i => i.id)); }
+  else if (ctrl && k === 'a') { e.preventDefault(); view.select(board.items.filter(i => (in3D() && isGM() ? view.here(i) && v3!.layerOf(i) === v3!.activeLayer : i.layer === view.activeLayer) && canEdit(i)).map(i => i.id)); }
   else if ((k === 'delete' || k === 'backspace') && view.tool === 'fog' && fogSel) { e.preventDefault(); deleteFogSel(); }
   else if ((k === 'delete' || k === 'backspace') && view.tool === 'tiles' && painter.hasSelection()) { e.preventDefault(); painter.deleteSelection(); }
   else if (k === 'delete' || k === 'backspace') { e.preventDefault(); deleteSelected(); }
@@ -2612,7 +3079,7 @@ let modelMetas: ModelMeta[] = [];
 const modelById = (id?: string) => (id ? modelMetas.find(m => m.id === id) : undefined);
 let modelsReload = 0;
 async function refreshModels() {
-  try { modelMetas = await api.models(); } catch { return; }
+  try { const [list, mine] = await Promise.all([api.models(), listLocal()]); modelMetas = [...list, ...mine]; } catch { return; }
   if (models) { models.list = modelMetas; models.loaded = true; models.render(); }
   if (board) faceTokens(board);
   view.render();
@@ -2620,15 +3087,41 @@ async function refreshModels() {
 }
 /** A token of a model this browser doesn't know (someone placed it): fetch the list again, once */
 function modelsMaybeNew(ids: (string | undefined)[]) {
-  if (ids.some(id => id && !modelById(id)) && !modelsReload)
+  if (ids.some(id => id && !isLocalModel(id) && !modelById(id)) && !modelsReload)   // (another's own, in their browser: never here)
     modelsReload = window.setTimeout(() => { modelsReload = 0; refreshModels(); }, 300);
 }
 
 // In 2D, a model's token without a picture of its own: a figure shows its thumbnail; a structure (on the
 // map layer) its view from straight above, which this browser (the GM's) makes the first time
+// 🔗 Grupos: a rider and their mount, the people in a carriage… move together, each still its own token
+view.withGroup = items => {
+  if (!board) return items;
+  const groups = new Set(items.map(i => i.group).filter(Boolean)), have = new Set(items.map(i => i.id));
+  if (!groups.size) return items;
+  const lvl = new Set(items.map(i => levelOf(B(), i)));
+  return [...items, ...B().items.filter(i => i.group && groups.has(i.group) && !have.has(i.id) && !i.locked && canEdit(i) && lvl.has(levelOf(B(), i)))];
+};
+function groupItems(items: BoardItem[]) {
+  const id = uid();
+  const old = new Set(items.map(i => i.group).filter(Boolean));   // (joining groups: one)
+  for (const it of B().items) if ((it.group && old.has(it.group)) || items.includes(it)) it.group = id;
+  view.render(); commit();
+  const n = B().items.filter(i => i.group === id).length;
+  toast(`🔗 ${n} agrupados: al mover uno se mueven todos (cada uno se sigue eligiendo solo)`);
+}
+function ungroupItems(items: BoardItem[]) {
+  const gone = new Set(items.map(i => i.group).filter(Boolean));
+  for (const it of items) delete it.group;
+  // (a group left with one: no group)
+  for (const g of gone) { const rest = B().items.filter(i => i.group === g); if (rest.length === 1) delete rest[0].group; }
+  view.render(); commit();
+  toast('⛓ Desagrupados');
+}
+const groupNames = (it: BoardItem) => B().items.filter(i => i.group === it.group && i.id !== it.id).map(i => i.name || 'token');
+view.isGroundTile = it => !!it.model && modelById(it.model)?.kind === 'tile';
 view.modelPic = it => {
   const m = modelById(it.model);
-  if (!it.model) return null;
+  if (!it.model || (!m && isLocalModel(it.model))) return null;   // (another player's own model: only they have it)
   if (m && isScenery(m)) {
     if (m.top) return { key: `mt:${m.id}:${m.top}`, url: modelTopUrl(m.id, m.top), contain: true };
     makeTopView(m);
@@ -2662,6 +3155,7 @@ let skyCommit = 0;
 /** Put a library model on the board as a token (Tokens nuevos: its size in squares) */
 const STRUCTURE_SQUARES = 6;   // a structure's longer side when placed (× its Tamaño), in squares
 const PROP_SQUARES = 1;        // a prop's (in half squares)
+const TILE_SQUARES = 2;        // a tile's
 function placeModel(m: ModelMeta, at: { x: number; y: number }) {
   if (!board) return;
   const g = board.grid.size;
@@ -2669,13 +3163,16 @@ function placeModel(m: ModelMeta, at: { x: number; y: number }) {
   if (isScenery(m) && isGM()) {
     // on the map layer, at its own proportions (a prop: to half squares)
     const prop = m.kind === 'prop', step = prop ? 0.5 : 1;
-    const [sx, , sz] = m.dims || [1, 1, 1], big = Math.max(sx, sz), n = (prop ? PROP_SQUARES : STRUCTURE_SQUARES) * (m.scale || 1);
+    const [sx, , sz] = m.dims || [1, 1, 1], big = Math.max(sx, sz), n = (prop ? PROP_SQUARES : m.kind === 'tile' ? TILE_SQUARES : STRUCTURE_SQUARES) * (m.scale || 1);
     const w = Math.max(step, Math.round(n * sx / big / step) * step) * g, h = Math.max(step, Math.round(n * sz / big / step) * step) * g;
     let x = at.x - w / 2, y = at.y - h / 2;
     if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, h); }
-    it = stamp({ id: uid(), kind: 'image', model: m.id, fit: false, x, y, w, h, rotation: 0, layer: 'map', z: nextZ('map'), name: m.name });
+    // (a tile: under everything else on the map layer, in 2D too)
+    const lay: LayerId = in3D() && v3!.activeLayer === 'gm' ? 'gm' : 'map';   // (the GM layer: only the GM sees it)
+    const z = m.kind === 'tile' && lay === 'map' ? Math.min(0, ...B().items.filter(i => i.layer === 'map').map(i => i.z)) - 1 : nextZ(lay);
+    it = stamp({ id: uid(), kind: 'image', model: m.id, fit: false, x, y, w, h, rotation: 0, layer: lay, z, name: m.name });
   } else {
-    const n = Number(prefs.newSize) || 1, w = g * n;
+    const w = g;   // (a new token: 1×1, resized with ⤢ Tamaño)
     const layer: LayerId = view.activeLayer === 'map' ? 'tokens' : view.activeLayer;
     let x = at.x - w / 2, y = at.y - w / 2;
     if (B().grid.snap) { x = view.snapPos(x, w); y = view.snapPos(y, w); }
@@ -2684,6 +3181,7 @@ function placeModel(m: ModelMeta, at: { x: number; y: number }) {
     if (m.sheet) it.sheet = m.sheet;
   }
   B().items.push(it);
+  if (in3D() && isGM() && v3!.layerOf(it) !== v3!.activeLayer) setLayer3(v3!.layerOf(it));   // (so it can be moved now)
   view.render();
   view.select([it.id]);
   commit();
@@ -2735,12 +3233,13 @@ async function set3D(on: boolean) {
         sheetName: id => sheets.name(id),
         pickSheet: (at, current, done) => sheets.pick(at, { current, done }),
       }, isGM(), isGM() ? null : me?.pid || null);
-      if (!isGM()) models.shown = m => m.owner === me?.pid || !!board?.items.some(i => i.model === m.id && (i.controllers || []).includes(me?.pid || '-'));   // (a player: their uploads and their figures)
+      if (!isGM()) models.shown = m => !!m.local || m.owner === me?.pid || !!board?.items.some(i => i.model === m.id && (i.controllers || []).includes(me?.pid || '-'));   // (a player: their uploads and their figures)
       if (modelMetas.length) { models.list = modelMetas; models.loaded = true; models.render(); }
       v3 = new View3D(stage, {
         view, image: id => library.get(id), isGM, badgeColor: it => view.badgeColor(it), ping: at => sendPing(at),
         model: id => modelById(id),
-        missingModel() {   // (a token of a model this browser doesn't know yet: at most every few seconds)
+        missingModel(id) {
+          if (isLocalModel(id)) return;   // (kept in another player's browser: their token's 2D picture instead)   // (a token of a model this browser doesn't know yet: at most every few seconds)
           if (Date.now() - modelsAsked < 4000) return;
           modelsAsked = Date.now();
           refreshModels();
@@ -2764,7 +3263,7 @@ async function set3D(on: boolean) {
         ruler: (shape, done) => showMyRuler(shape, done),
         rulerMode: () => prefs.ruler,
       });
-      view.onRendered = () => { v3?.changed(); vnView.changed(); };
+      view.onRendered = () => { v3?.changed(); vnView.changed(); renderParty(); };
     } catch (err) {
       toast(`No se pudo abrir la vista 3D (¿se actualizó el Tablero? recarga la página): ${(err as Error).message}`, true);
       set3D(false);
@@ -2775,10 +3274,17 @@ async function set3D(on: boolean) {
   if (on) { $('menu').hidden = true; showMyRuler(null, true); view.app.ticker.stop(); models?.load(); if (view.tool !== 'select' && view.tool !== 'ruler') setTool('select'); }
   else view.app.ticker.start();
   v3?.show(on);
+  if (on && v3 && isGM()) {
+    if (!LAYERS3D.some(l => l.id === prefs.layer3d)) prefs.layer3d = 'figure';
+    v3.activeLayer = prefs.layer3d;
+    // (opening the page in 3D: no board yet — its layer is just noted, nothing to reselect)
+    if (board) view.setActiveLayer(layer2dOf(prefs.layer3d)); else view.activeLayer = layer2dOf(prefs.layer3d);
+  }
+  renderLayerButtons();
   hudFor = ''; updateHud();   // (the token panel: at the bottom in 3D, over the token in 2D)
 }
-$('mode-2d').addEventListener('click', () => { showVN(false); set3D(false); });
-$('mode-3d').addEventListener('click', () => { showVN(false); set3D(true); });
+$('mode-2d').addEventListener('click', () => { if (!vnView.active) set3D(false); });   // (📖 Escena: the room's mode, the GM's to change)
+$('mode-3d').addEventListener('click', () => { if (!vnView.active) set3D(true); });
 
 // ── 📖 Escena ───────────────────────────────────────────────────────────────
 // The light-novel moments (vn.ts): the GM opens a scene for everyone (a background, the people in it,
@@ -2809,12 +3315,18 @@ const vnView = new VNView(stage, {
   commit: () => { view.render(); commit(); live?.push(); },   // (push: sent even if it matches the last undo step)
   upload: async (file, category) => { setStatus('Subiendo imagen…', 'saving'); const m = (await library.upload([file], category))[0] || null; setStatus('Conectado'); return m; },
   mainChanged: () => { hudFor = ''; updateHud(); },
+  saveProfile: p => saveProfile(null, p),
+  chooseSheet: (at, current, done) => sheets.pick(at, { current, done, only: s => isPredetermined(s) || (!!me?.pid && s.owner === me.pid), title: 'Tu ficha (personajes preparados)' }),
+  sheetName: sid => sheets.name(sid),
   leave: () => showVN(false),
   crop: meta => cropBackground(meta),
-  end: () => { if (board && isGM()) setScene({ ...vnScene, on: false }); },
+  end: () => {   // 🗺 Volver al mapa: the room (or, looking at it privately, just the GM)
+    if (!board || !isGM()) return;
+    if (gmPeek) { gmPeek = false; syncVN(); } else setScene({ ...vnScene, on: false });
+  },
   toast,
 });
-view.onRendered = () => { v3?.changed(); vnView.changed(); };
+view.onRendered = () => { v3?.changed(); vnView.changed(); renderParty(); };
 
 /** (GM) ✂ A background cut to the scene view's shape (what the players see of it): a new background in
  *  Fondos; the scene, if it shows the original, shows the cut one */
@@ -2854,32 +3366,70 @@ function showVN(on: boolean) {
   $('mode-vn').classList.toggle('on', on);
   $('mode-2d').classList.toggle('on', !on && !prefs.mode3d);
   $('mode-3d').classList.toggle('on', !on && !!prefs.mode3d);
-  if (on) { $('menu').hidden = true; showMyRuler(null, true); }
-  else if (!isGM()) view.select([]);
+  if (on) { $('menu').hidden = true; showMyRuler(null, true); if (isGM()) view.select([]); }   // (the GM: the party strip's choice)
+  else view.select([]);
+  library.showOnly(on && isGM() ? BACKGROUNDS : null);   // (📖 Escena: the library shows only Fondos)
   hudFor = '';
   updateHud();
+  renderParty();
 }
-/** The scene opened or closed (by the GM, here or elsewhere): everyone in it, or back to the board */
-let vnWasOn = false;
+/** The room's mode, which the GM sets (🗺 Mapa / 📖 Escena) and everyone follows: the scene is its own
+ *  space, not a view one switches to. The GM alone may look at the other one (👁) to prepare it. */
+let gmPeek = false;
 function syncVN() {
-  const on = !!vnScene.on;
-  $('mode-vn').hidden = !isGM() && !on;
-  $('mode-vn').classList.toggle('live', on);
-  if (on && !vnWasOn) showVN(true);
-  else if (!on && vnWasOn) showVN(false);
-  vnWasOn = on;
+  const room = !!vnScene.on, mine = isGM() && gmPeek ? !room : room;
+  document.body.classList.toggle('gm-peek', gmPeek);   // (the GM alone somewhere else: a blue frame)
+  if (mine !== vnView.active) showVN(mine);
   vnView.changed();
+  levelBar.render();   // (its 📖 Escena and 👥)
 }
-$('mode-vn').addEventListener('click', () => {
-  if (!board) return;
-  if (isGM() && !vnScene.on) setScene({ ...vnScene, on: true });   // (opened for the whole room)
-  else showVN(true);
+
+// ── the party (the GM, in 📖 Escena): the connected players' characters down the side ──
+// Each one's main character (★): its portrait, name and Impactos. A click shows its values in the panel
+// below (again: hides them).
+const party = document.createElement('div');
+party.className = 'party-strip';
+party.hidden = true;
+stage.append(party);
+let partySig = '';
+function renderParty() {
+  const p = presence, b = board;
+  const online = isGM() && b && p && vnView.active ? p.online.filter(pid => p.players[pid]) : [];
+  if (!online.length) { party.hidden = true; partySig = ''; return; }
+  const rows = online.map(pid => {   // (each one's character kept in the room)
+    const pl = p!.players[pid], por = pl.portrait ? library.get(pl.portrait) : undefined;
+    if (pl.portrait && !por && Date.now() - vnLibAsked > 5000) { vnLibAsked = Date.now(); void library.load(); }
+    const hp = pl.bars?.hp;
+    return { name: pl.name, color: pl.color, id: pid, tname: pl.sheet ? sheets.name(pl.sheet) : '', pic: por ? imageSmallUrl(por, 256) : '',
+      hp: hp && hp.max > 0 ? Math.max(0, Math.min(1, hp.value / hp.max)) : null, hpText: hp ? `${hp.value}/${hp.max}` : '', on: partyPick === pid };
+  });
+  party.hidden = false;
+  const sig = JSON.stringify(rows);
+  if (sig === partySig) return;
+  partySig = sig;
+  const hpColor = BARS.find(x => x.id === 'hp')?.color || '#d64545';
+  party.innerHTML = rows.map(r => `
+    <button class="party-pc ${r.on ? 'on' : ''}" data-party="${esc(r.id)}" style="--c:${esc(r.color)}"
+      title="${esc(r.name)}${r.tname ? ` · ${esc(r.tname)}` : ' · aún sin ficha'} · clic: su personaje abajo">
+      <span class="party-pic">${r.pic ? `<img src="${esc(r.pic)}" alt="" draggable="false">` : `<b>${esc(r.name.slice(0, 1).toUpperCase())}</b>`}</span>
+      <span class="party-name">${esc(r.name)}${r.tname ? `<small>${esc(r.tname)}</small>` : ''}</span>
+      ${r.hp != null ? `<span class="party-hp" title="Impactos ${esc(r.hpText)}"><span style="width:${Math.round(r.hp * 100)}%;background:${hpColor}"></span></span>` : ''}
+    </button>`).join('');
+}
+party.addEventListener('click', e => {
+  const pid = (e.target as HTMLElement).closest<HTMLElement>('[data-party]')?.dataset.party;
+  if (!pid || !board) return;
+  partyPick = partyPick === pid ? '' : pid;
+  hudFor = '';
+  updateHud();
+  renderParty();
 });
+party.addEventListener('pointerdown', e => e.stopPropagation());
 
 // ── start ───────────────────────────────────────────────────────────────────
 // for the browser console (and tests): window.tablero.view / .board() / .me()
 (window as unknown as { tablero: unknown }).tablero = { view, library, dice, sheets, windows, statuses, music, painter, scenes: scenesPanel, levelBar,
-  board: () => board, me: () => me, v3: () => v3, models: () => models, build: typeof __BUILD__ === 'string' ? __BUILD__ : '',   /* (a builder started before the setting) */ m3d: () => import('./models3d'), presence: () => presence, live: () => live, importMap, vn: () => vnView, scene: () => vnScene };
+  board: () => board, me: () => me, v3: () => v3, slab: () => lastSlab, models: () => models, build: typeof __BUILD__ === 'string' ? __BUILD__ : '',   /* (a builder started before the setting) */ m3d: () => import('./models3d'), presence: () => presence, live: () => live, importMap, vn: () => vnView, scene: () => vnScene };
 (async () => {
   await view.init(stage);
   (window as unknown as { tablero: { ready?: boolean } }).tablero.ready = true;   // (tablero.py's page check: it started)
@@ -2893,7 +3443,17 @@ $('mode-vn').addEventListener('click', () => {
     const saved = code ? savedRooms()[code] : undefined;
     currentCode = code;
     if (saved) {
-      try { await enterRoom(await api.join(code, '', saved.key)); return; } catch { forgetRoom(code); }
+      // the server answering that the room or the key is gone: forget it. Anything else (the server
+      // restarting, the network, the page being rebuilt): keep it, and try again
+      for (let tries = 0; ; tries++) {
+        try { await enterRoom(await api.join(code, '', saved.key)); return; }
+        catch (e) {
+          const st = (e as { status?: number }).status;
+          if (st === 400 || st === 404) { forgetRoom(code); break; }
+          setStatus(`Reconectando con la sala… (${tries + 1})`, 'saving');
+          await new Promise(r => setTimeout(r, Math.min(10000, 1500 * (tries + 1))));
+        }
+      }
     }
     showJoin();
     return;

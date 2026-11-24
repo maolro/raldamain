@@ -78,6 +78,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import tablero_share  # noqa: E402  (the Cloudflare Tunnel: tablero.raldamain.com)
+import raldamain_api  # noqa: E402  (the game's data, from the Raldamain API: raldamain.com/api/v1)
 
 try:
     from flask import Flask, Response, abort, jsonify, request, send_from_directory
@@ -102,6 +103,9 @@ CAMPAIGNS = STORAGE / "campaigns.json"   # [{id, name}]: sets of scenes (a board
 MUSIC = STORAGE / "music"
 MODELS = STORAGE / "models"              # 3D models: models/<id>/ holds the model, its materials and textures
 MODEL_INDEX = STORAGE / "models.json"
+SLABS = STORAGE / "slabs"                # 🧱 Losas: a level's pieces saved to be placed again (slabs/<id>.json, <id>.jpg)
+SLAB_INDEX = STORAGE / "slabs.json"
+MAX_SLAB = 8 * 1024 * 1024  # bytes (its pieces, as JSON)
 MODEL_MAIN = {"obj", "fbx", "glb", "gltf"}                       # what a model is
 MODEL_PARTS = {"mtl", "bin", "png", "jpg", "jpeg", "webp", "tga", "bmp", "gif"}   # what comes with it
 MAX_MODEL = 120 * 1024 * 1024  # bytes, all its files together
@@ -180,6 +184,15 @@ def rooms() -> dict:
     return _read(ROOMS, {})
 
 
+def _has_key(p: dict, key: str) -> bool:
+    """This player's key, or one of their other browsers' (kept when two of them were joined)"""
+    return bool(key) and any(secrets.compare_digest(key, k) for k in [p.get("key", ""), *(p.get("keys") or [])] if k)
+
+
+def _online_players() -> set:
+    return {pid for s in list(SESSIONS.values()) for (_, role, pid) in list(s.subs.values()) if role == "player"}
+
+
 def who():
     """('gm', None, None) · ('player', player id, room code) · None, from the request's key."""
     key = request.headers.get("X-Tablero-Key") or request.args.get("key") or ""
@@ -189,7 +202,7 @@ def who():
         return ("gm", None, None)
     for code, room in rooms().items():
         for pid, p in (room.get("players") or {}).items():
-            if secrets.compare_digest(key, p.get("key", "")):
+            if _has_key(p, key):
                 return ("player", pid, code)
     return None
 
@@ -320,6 +333,8 @@ def _preparing(note=""):
 
 def _page():
     page = DIST / "index.html"
+    if page.exists():
+        _build_state.pop("gone", None)
     missing = _build_files_missing() if page.exists() else []
     if missing:   # being written right now? a moment, then build it whole
         for _ in range(16):
@@ -331,9 +346,12 @@ def _page():
             _rebuild_client()
             return _preparing(" (faltaban " + ", ".join(missing[:3]) + ")")
     if not page.exists():
-        return Response("<!doctype html><html><body style='background:#111;color:#ddd;font-family:sans-serif;padding:2rem'>"
-                        "<h2>Preparando el Tablero…</h2><p>Compilando el cliente (la primera vez tarda un poco). "
-                        "Esta página se recargará sola.</p></body></html>", mimetype="text/html")
+        # (vite --watch empties dist/ first; one stuck there — 2026-11-15, after a package changed under it —
+        # would leave the page waiting forever: after 20 s it is built here)
+        since = _build_state.setdefault("gone", time.time())
+        if time.time() - since > 20:
+            _rebuild_client()
+        return _preparing(" (la primera vez tarda un poco)")
     # (the build's files keep their own /app/ addresses: vite's loader asks for them there too, and two
     # addresses for one script load it twice. What keeps caches right: this page is never kept, a missing
     # file is waited for and its "not found" never kept, and each build names its files anew)
@@ -447,12 +465,52 @@ def site_assets(name):
     return resp
 
 
+def _strip_links(items):
+    """A list from the API as its file was (without the url / image_url the API adds)"""
+    return [{k: v for k, v in e.items() if k not in ("url", "image_url")} for e in items] if isinstance(items, list) else items
+
+
+# the website's data files the stat block code asks for → the Raldamain API's answer (and how to make it the file again)
+_DATA_API = [
+    (re.compile(r"ranks_list\.json"), lambda m: "ranks", _strip_links),
+    (re.compile(r"ranks/([^/]+)\.json"), lambda m: f"ranks/{m[1]}", None),
+    (re.compile(r"creatures_list\.json"), lambda m: "creatures", _strip_links),
+    (re.compile(r"creatures/([^/]+)\.json"), lambda m: f"creatures/{m[1]}", None),
+    (re.compile(r"statblocks/([^/]+)\.json"), lambda m: f"statblocks/{m[1]}", None),
+    (re.compile(r"equipment_list\.json"), lambda m: "items", _strip_links),
+    (re.compile(r"equipment/([^/]+)\.json"), lambda m: f"items/{m[1]}", None),
+    (re.compile(r"builder/([^/]+)\.json"), lambda m: f"builder/{m[1]}", None),
+    (re.compile(r"status_effects\.json"), lambda m: "status-effects", lambda l: {"effects": _strip_links(l)}),
+]
+
+
+def data_from_api(name: str):
+    """A data/ file's content from the Raldamain API; None when the API doesn't have it (not published,
+    or not something it serves) or can't be reached: then the local file."""
+    for rx, path, shape in _DATA_API:
+        m = rx.fullmatch(name)
+        if m:
+            try:
+                d = raldamain_api.get(path(m))
+            except raldamain_api.Unavailable:
+                return None
+            return None if d is None else (shape(d) if shape else d)
+    return None
+
+
 @app.route("/data/<path:name>")
 def site_data(name):
-    """The website's public data (ranks, equipment…) that the character stat block reads."""
+    """The website's public data (ranks, equipment…) that the character stat block reads: from the
+    Raldamain API (what the website publishes), else the local file (offline; GM-only things)."""
     if not name.endswith(".json"):
         abort(404)
-    resp = send_from_directory(SITE / "data", name)
+    d = data_from_api(name)
+    if d is not None:
+        resp = jsonify(d)
+        resp.headers["X-Raldamain-Source"] = "api"
+    else:
+        resp = send_from_directory(SITE / "data", name)
+        resp.headers["X-Raldamain-Source"] = "local"
     resp.headers["Cache-Control"] = SITE_CACHE
     return resp
 
@@ -558,9 +616,9 @@ def api_images():
     if not w:
         abort(403)
     lib = _read(LIBRARY, [])
-    if w[0] == "player":  # their own images, and the ones on the board they can see
+    if w[0] == "player":  # their own images, the ones the GM gave them, and the ones on the board they can see
         shown = _visible_image_ids(w[2], w[1])
-        lib = [m for m in lib if m.get("owner") == w[1] or m.get("id") in shown]
+        lib = [m for m in lib if m.get("owner") == w[1] or w[1] in (m.get("givenTo") or []) or m.get("id") in shown]
     return jsonify(lib)
 
 
@@ -650,6 +708,12 @@ def api_image_update(iid):
                 meta["sheet"] = sid
             else:
                 meta.pop("sheet", None)
+        if "givenTo" in body and w[0] == "gm":  # (GM) 🎁 given to these players: in their libraries, to place it and see its sheet
+            pids = [p for p in (body["givenTo"] or []) if isinstance(p, str) and re.fullmatch(r"[A-Za-z0-9_-]{1,40}", p)]
+            if pids:
+                meta["givenTo"] = sorted(set(pids))[:50]
+            else:
+                meta.pop("givenTo", None)
         if "tileset" in body:  # a tileset: its tile size, and the tiles that block sight (walls)
             ts = body["tileset"]
             if isinstance(ts, dict) and isinstance(ts.get("size"), (int, float)) and 4 <= ts["size"] <= 1024:
@@ -789,7 +853,8 @@ def api_image_delete(iid):
 # kind: "figure" (a token: on a base, may come with its 2D image and its stat block), "structure" (a
 # building, a ruin, a tree…: placed on the map layer at its own proportions, dims, and in 2D drawn as
 # top.png, its exact view from straight above, which the GM's browser makes the first time it's needed)
-# or "prop" (furniture and decor: as a structure, but placed at about a square).
+# "prop" (furniture and decor: as a structure, but placed at about a square) or "tile" (ground: grass,
+# paving, a floor…: as a structure, but sunk into the floor, its top the ground others stand on).
 
 MODEL_ID_RE = re.compile(r"^[a-f0-9]{16}$")
 MODEL_FILE_RE = re.compile(r"^[A-Za-z0-9 _.()+-]{1,120}$")
@@ -876,7 +941,7 @@ def api_model_upload():
                 "category": (request.form.get("category") or "Figuras").strip()[:40],
                 "tags": _clean_tags(request.form.get("tags") or ""), "main": main, "files": sorted(got),
                 "size": total, "thumb": (folder / "thumb.png").exists(), "scale": 1, "created": time.time(),
-                "kind": request.form.get("kind") if request.form.get("kind") in ("structure", "prop") and not owner else "figure"}
+                "kind": request.form.get("kind") if request.form.get("kind") in ("structure", "prop", "tile") and not owner else "figure"}
         if owner:
             meta["owner"] = owner
         dims = _model_dims(request.form.get("dims"))
@@ -915,7 +980,7 @@ def api_model_update(mid):
                 meta["scale"] = max(0.05, min(20.0, float(body["scale"])))
             except (TypeError, ValueError):
                 pass
-        if body.get("kind") in ("figure", "structure", "prop"):
+        if body.get("kind") in ("figure", "structure", "prop", "tile"):
             meta["kind"] = body["kind"]
         if "dims" in body and _model_dims(body["dims"]):
             meta["dims"] = _model_dims(body["dims"])
@@ -990,6 +1055,97 @@ def model_file(mid, name):
     return resp
 
 
+# ─────────────────────────────────────────────────────────────── 🧱 Losas (GM)
+# A level's pieces (or some of its layers) saved apart, to be placed again in other scenes: a side of a
+# mountain, a camp, a ruin… Positions in squares from the slab's corner (any board's grid fits it).
+# slabs.json: [{id, name, w, h, n, created, thumb, layers}]; slabs/<id>.json: {items, ox, oy, lw, lh}
+
+SLAB_ID_RE = re.compile(r"^[a-f0-9]{12}$")
+
+
+@app.route("/api/slabs")
+def api_slabs():
+    need_gm()
+    return jsonify(_read(SLAB_INDEX, []))
+
+
+@app.route("/api/slabs/<sid>")
+def api_slab(sid):
+    need_gm()
+    if not SLAB_ID_RE.match(sid) or not (SLABS / f"{sid}.json").exists():
+        abort(404)
+    return jsonify(_read(SLABS / f"{sid}.json", {}))
+
+
+@app.route("/api/slabs", methods=["POST"])
+def api_slab_save():
+    """multipart: data (JSON: name, w, h, layers, items, ox, oy, lw, lh), thumb (JPEG, optional)"""
+    need_gm()
+    raw = (request.files.get("data").read(MAX_SLAB + 1) if request.files.get("data") else (request.form.get("data") or "").encode())
+    if not raw or len(raw) > MAX_SLAB:
+        return jsonify({"error": "la losa es demasiado grande"}), 400
+    try:
+        body = json.loads(raw)
+        items = [i for i in body.get("items") or [] if isinstance(i, dict)]
+        w, h = float(body.get("w") or 0), float(body.get("h") or 0)
+    except (ValueError, TypeError):
+        return jsonify({"error": "losa no válida"}), 400
+    if not items:
+        return jsonify({"error": "no hay piezas que guardar"}), 400
+    sid = secrets.token_hex(6)
+    thumb = request.files.get("thumb")
+    tdata = thumb.read(2 * 1024 * 1024 + 1) if thumb else b""
+    SLABS.mkdir(parents=True, exist_ok=True)
+    num = lambda k: float(body.get(k) or 0) if isinstance(body.get(k), (int, float)) else 0
+    _write(SLABS / f"{sid}.json", {"items": items, "ox": num("ox"), "oy": num("oy"), "lw": num("lw"), "lh": num("lh")})
+    has_thumb = bool(tdata) and len(tdata) <= 2 * 1024 * 1024 and tdata.startswith(bytes([0xFF, 0xD8, 0xFF]))
+    if has_thumb:
+        (SLABS / f"{sid}.jpg").write_bytes(tdata)
+    meta = {"id": sid, "name": str(body.get("name") or "Losa").strip()[:60] or "Losa", "w": round(w, 2), "h": round(h, 2),
+            "n": len(items), "created": time.time(), "thumb": has_thumb,
+            "layers": [str(x)[:12] for x in (body.get("layers") or [])][:8]}
+    with _lock:
+        lib = _read(SLAB_INDEX, [])
+        lib.append(meta)
+        _write(SLAB_INDEX, lib)
+    return jsonify(meta)
+
+
+@app.route("/api/slabs/<sid>", methods=["PATCH"])
+def api_slab_rename(sid):
+    need_gm()
+    body = request.get_json(force=True) or {}
+    with _lock:
+        lib = _read(SLAB_INDEX, [])
+        meta = next((m for m in lib if m.get("id") == sid), None)
+        if not meta:
+            return jsonify({"error": "no existe"}), 404
+        if "name" in body:
+            meta["name"] = str(body["name"]).strip()[:60] or meta["name"]
+        _write(SLAB_INDEX, lib)
+    return jsonify(meta)
+
+
+@app.route("/api/slabs/<sid>", methods=["DELETE"])
+def api_slab_delete(sid):
+    need_gm()
+    if not SLAB_ID_RE.match(sid):
+        abort(404)
+    with _lock:
+        _write(SLAB_INDEX, [m for m in _read(SLAB_INDEX, []) if m.get("id") != sid])
+    for f in (SLABS / f"{sid}.json", SLABS / f"{sid}.jpg"):
+        f.unlink(missing_ok=True)
+    return jsonify({"ok": True})
+
+
+@app.route("/slabs/<sid>.jpg")
+def slab_thumb(sid):
+    """(its picture: named by a random id, as the models' files)"""
+    if not SLAB_ID_RE.match(sid):
+        abort(404)
+    return send_from_directory(SLABS, f"{sid}.jpg")
+
+
 # ─────────────────────────────────────────────────────────────── stat blocks (fichas)
 
 _repo_cache: dict[str, tuple] = {}
@@ -1006,8 +1162,33 @@ def sheet_kind(d) -> str | None:
     return None
 
 
+REPO_API = {"pj": "statblocks", "cr": "creatures"}
+
+
 def repo_sheets() -> list[dict]:
-    """The Taller's characters and the Bestiario's creatures (cached by file date)."""
+    """The Taller's characters and the Bestiario's creatures: the Raldamain API's (statblocks,
+    the published creatures), then the local files it doesn't have (unpublished creatures: the GM's)."""
+    local = _local_repo_sheets()
+    out, seen = [], set()
+    for prefix, coll in REPO_API.items():
+        try:
+            items = raldamain_api.get(coll) or []
+        except raldamain_api.Unavailable:
+            continue
+        for e in items:
+            if not isinstance(e, dict) or not e.get("id"):
+                continue
+            meta = {"id": f"{prefix}:{e['id']}", "name": str(e.get("name") or e["id"]),
+                    "kind": "criatura" if prefix == "cr" else "pj", "source": "repo"}
+            if isinstance(e.get("level"), (int, float)):
+                meta["level"] = e["level"]
+            out.append(meta)
+            seen.add(meta["id"])
+    return out + [m for m in local if m["id"] not in seen]
+
+
+def _local_repo_sheets() -> list[dict]:
+    """The Taller's characters and the Bestiario's creatures in data/ (cached by file date)."""
     out = []
     for prefix, folder in REPO_SHEETS.items():
         for p in sorted(folder.glob("*.json")):
@@ -1042,6 +1223,13 @@ def sheet_meta(sid: str) -> dict | None:
 
 def sheet_data(sid: str):
     prefix, name = sid.split(":", 1)
+    if prefix in REPO_API:   # (from the Raldamain API; the local file if it isn't there: unpublished, offline)
+        try:
+            d = raldamain_api.get(f"{REPO_API[prefix]}/{name}")
+            if d is not None:
+                return d
+        except raldamain_api.Unavailable:
+            pass
     path = SHEETS / f"{name}.json" if prefix == "up" else REPO_SHEETS[prefix] / f"{name}.json"
     return _read(path, None)
 
@@ -1057,12 +1245,25 @@ def _controlled_sheets(w) -> set:
                 if it.get("sheet") and it.get("layer") == "tokens" and w[1] in (it.get("controllers") or [])}
 
 
+def _predetermined(meta: dict) -> bool:
+    """A ready-made character's sheet, for any player to take: the Taller's characters, and the
+    character sheets the GM uploaded (not a creature: those stay the GM's)"""
+    return meta.get("kind") == "pj" and (meta.get("source") == "repo" or (meta.get("source") == "upload" and not meta.get("owner")))
+
+
+def _given_sheets(pid: str) -> set:
+    """The sheets of the library tokens the GM gave this player (🎁)"""
+    return {m.get("sheet") for m in _read(LIBRARY, []) if m.get("sheet") and pid in (m.get("givenTo") or [])}
+
+
 def _sheet_choosable(sid: str, w) -> bool:
-    """May put this sheet on a token or a library image: the GM any; a player their own uploads."""
+    """May put this sheet on a token or a library image: the GM any; a player their own uploads,
+    the ready-made characters' sheets, and those of the tokens the GM gave them."""
     meta = sheet_meta(sid)
     if not meta:
         return False
-    return w[0] == "gm" or (meta.get("source") == "upload" and meta.get("owner") == w[1])
+    return (w[0] == "gm" or (meta.get("source") == "upload" and meta.get("owner") == w[1]) or _predetermined(meta)
+            or (w[0] == "player" and sid in _given_sheets(w[1])))
 
 
 def _sheet_readable(sid: str, w) -> bool:
@@ -1071,16 +1272,16 @@ def _sheet_readable(sid: str, w) -> bool:
 
 @app.route("/api/sheets")
 def api_sheets():
-    """GM: every sheet. A player: their uploads and the sheets of the tokens they control."""
+    """GM: every sheet. A player: their uploads, the ready-made characters' and the sheets of the tokens they control."""
     w = who()
     if not w:
         abort(403)
     ups = uploaded_sheets()
     if w[0] == "gm":
         return jsonify(repo_sheets() + ups)
-    mine = _controlled_sheets(w)
+    mine = _controlled_sheets(w) | _given_sheets(w[1])
     out = [m for m in ups if m.get("owner") == w[1]]
-    out += [m for m in repo_sheets() + ups if m["id"] in mine and m not in out]
+    out += [m for m in repo_sheets() + ups if (m["id"] in mine or _predetermined(m)) and m not in out]
     return jsonify(out)
 
 
@@ -1147,6 +1348,8 @@ def api_sheet_upload():
     if not kind:
         return jsonify({"error": "no parece una ficha (ni del Creador ni del Bestiario)"}), 400
     owner = w[1] if w[0] == "player" else None
+    if w[0] == "gm" and isinstance(body.get("owner"), str) and re.fullmatch(r"[A-Za-z0-9_-]{1,40}", body["owner"]):
+        owner = body["owner"]   # (the GM editing a player's character: their own copy, not a ready-made one for all)
     sha = hashlib.sha1(json.dumps(d, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
     with _lock:
         index = uploaded_sheets()
@@ -1637,7 +1840,8 @@ def broadcast_presence():
             players = room.get("players") or {}
             cache[code] = _event("presence", {
                 "code": code, "online": sorted(p for p in players if p in online), "gm": gm, "scene": room.get("board") or "",
-                "players": {p: {"name": x.get("name"), "color": x.get("color"), "scene": player_scene(room, p)} for p, x in players.items()}})
+                "players": {p: {"name": x.get("name"), "color": x.get("color"), "scene": player_scene(room, p),
+                                **{k: x[k] for k in PROFILE_KEYS if x.get(k)}} for p, x in players.items()}})
         return cache[code]
 
     for s, q, role, pid in subs:
@@ -1661,6 +1865,9 @@ def live_events(bid):
     players = (rooms().get(code or room_for(bid)) or {}).get("players") or {}
     me = {"role": role, "pid": pid, "cid": cid, "name": (players.get(pid) or {}).get("name", "GM") if pid else "GM",
           "color": (players.get(pid) or {}).get("color", "#fff200") if pid else "#fff200"}
+    for k in PROFILE_KEYS:   # (a player's character, kept from session to session)
+        if (players.get(pid) or {}).get(k):
+            me[k] = players[pid][k]
     h = hub_for(bid)
 
     def stream():
@@ -2016,11 +2223,150 @@ def api_room_kick(bid, pid):
     with _lock:
         all_rooms = rooms()
         room = all_rooms.get(room_for(bid, all_rooms)) or {}
-        (room.get("players") or {}).pop(pid, None)
+        out = (room.get("players") or {}).pop(pid, None)
+        if out:   # (their keys stop working; back by their name, it is all theirs again)
+            out.pop("keys", None)
+            out["key"] = ""
+            room.setdefault("gone", {})[pid] = out
         _write(ROOMS, all_rooms)
     _to_players({pid}, lambda p: _event("closed", {"kicked": True}))
     broadcast_presence()
     return jsonify({"ok": True})
+
+
+@app.route("/api/boards/<bid>/players/<pid>/merge", methods=["POST"])
+def api_room_merge(bid, pid):
+    """{into}: the GM says this player is the same person as `into` (they lost their key and came back
+    as someone new). Everything of theirs becomes `into`'s — library images, models, uploaded sheets, the
+    tokens they own or control — and `into` takes their key, so their browser is the old one again.
+    `into`'s own profile (portrait, sheet, bars) is kept; what it lacks is taken from the new one."""
+    need_gm()
+    into = str((request.get_json(force=True, silent=True) or {}).get("into") or "")
+    if not into or into == pid:
+        return jsonify({"error": "elige con quién"}), 400
+    with _lock:
+        all_rooms = rooms()
+        room = all_rooms.get(room_for(bid, all_rooms)) or {}
+        players = room.get("players") or {}
+        src, dst = players.get(pid) or (room.get("gone") or {}).get(pid), players.get(into)
+        if not src or not dst:
+            return jsonify({"error": "ese jugador no está en la sala"}), 404
+        # (both browsers go on working: every key of the two)
+        dst["keys"] = [k for k in dict.fromkeys([*(dst.get("keys") or []), src.get("key", ""), *(src.get("keys") or [])]) if k and k != dst.get("key")][-8:]
+        for k in (*PROFILE_KEYS, "board"):
+            if k in src and k not in dst:
+                dst[k] = src[k]
+        players.pop(pid, None)
+        (room.get("gone") or {}).pop(pid, None)
+        _write(ROOMS, all_rooms)
+        swap = lambda v: into if v == pid else v
+        lib = _read(LIBRARY, [])
+        for m in lib:
+            if m.get("owner") == pid:
+                m["owner"] = into
+            if pid in (m.get("givenTo") or []):
+                m["givenTo"] = sorted({swap(x) for x in m["givenTo"]})
+        _write(LIBRARY, lib)
+        mods = _read(MODEL_INDEX, [])
+        for m in mods:
+            if m.get("owner") == pid:
+                m["owner"] = into
+        _write(MODEL_INDEX, mods)
+        index = uploaded_sheets()
+        for m in index:
+            if m.get("owner") == pid:
+                m["owner"] = into
+        _write(SHEET_INDEX, index)
+    # their tokens, on every scene (the open ones in memory, sent to whoever is looking)
+    moved = 0
+    for f in sorted(BOARDS.glob("*.json")):
+        s = session(f.stem)
+        changed = []
+        with s.lock:
+            for it in (s.board or {}).get("items") or []:
+                touched = False
+                if it.get("owner") == pid:
+                    it["owner"] = into; touched = True
+                for k in ("controllers", "mainOf"):
+                    if pid in (it.get(k) or []):
+                        it[k] = list(dict.fromkeys(swap(x) for x in it[k])); touched = True
+                if touched:
+                    changed.append(json.loads(json.dumps(it)))
+        if changed:
+            moved += len(changed)
+            s.schedule_save()
+            s.send(lambda r, p: _event("changes", {"upserts": [player_item(it, p) for it in changed if it.get("layer") != "gm"] if r == "player" else changed}))
+    _to_players({pid}, lambda p: _event("closed", {"merged": True}))   # (their page: in again, as the one they are now)
+    broadcast_presence()
+    return jsonify({"ok": True, "tokens": moved})
+
+
+PROFILE_KEYS = ("portrait", "sheet", "bars", "sheetRev")
+
+
+def _clean_bars(v) -> dict | None:
+    """{hp: {value, max}, chi: {value, max}} as whole numbers (0…9999); None: not that shape"""
+    if not isinstance(v, dict):
+        return None
+    out = {}
+    for k in ("hp", "chi"):
+        b = v.get(k)
+        if b is None:
+            continue
+        if not isinstance(b, dict) or not all(isinstance(b.get(f), (int, float)) for f in ("value", "max")):
+            return None
+        out[k] = {f: max(0, min(9999, int(b[f]))) for f in ("value", "max")}
+    return out
+
+
+@app.route("/api/me/profile", methods=["POST"])
+def api_my_profile():
+    """{portrait?, sheet?, bars?}: a player's character in 📖 Escena (the player's own; the GM, with pid,
+    anyone's): its portrait (a library image), stat block (one they may choose: a ready-made character's,
+    or their own) and its Impactos / Chi now, kept in the room from session to session. null: none."""
+    w = who()
+    if not w:
+        abort(403)
+    body = request.get_json(force=True) or {}
+    with _lock:
+        all_rooms = rooms()
+        if w[0] == "gm":
+            pid = str(body.get("pid") or "")
+            p = next((r["players"][pid] for r in all_rooms.values() if pid in (r.get("players") or {})), None)
+        else:
+            p = ((all_rooms.get(w[2]) or {}).get("players") or {}).get(w[1])
+        if p is None:
+            abort(403 if w[0] == "player" else 404)
+        if "portrait" in body:
+            iid = body["portrait"]
+            if iid is None:
+                p.pop("portrait", None)
+            elif isinstance(iid, str) and any(m.get("id") == iid for m in _read(LIBRARY, [])):
+                p["portrait"] = iid
+            else:
+                return jsonify({"error": "esa imagen no está en la biblioteca"}), 400
+        if "sheet" in body:
+            sid = body["sheet"]
+            if sid is None:
+                p.pop("sheet", None)
+            elif isinstance(sid, str) and _sheet_choosable(sid, w):
+                p["sheet"] = sid
+            else:
+                return jsonify({"error": "no puedes elegir esa ficha"}), 400
+        if body.get("edited") and p.get("sheet"):   # (its stat block changed: everyone's windows read it again)
+            p["sheetRev"] = int(time.time() * 1000)
+        if "bars" in body:
+            bars = _clean_bars(body["bars"]) if body["bars"] is not None else {}
+            if bars is None:
+                return jsonify({"error": "valores no válidos"}), 400
+            if bars:
+                p["bars"] = bars
+            else:
+                p.pop("bars", None)
+        _write(ROOMS, all_rooms)
+        out = {k: p[k] for k in PROFILE_KEYS if p.get(k)}
+    broadcast_presence()   # (the GM's party strip)
+    return jsonify(out)
 
 
 @app.route("/api/join", methods=["POST"])
@@ -2039,7 +2385,22 @@ def api_join():
             return jsonify({"error": "No hay ninguna sala con ese código. Pídeselo de nuevo al GM."}), 404
         players = room.setdefault("players", {})
         key = str(body.get("key") or "")
-        pid = next((p for p, v in players.items() if key and secrets.compare_digest(key, v.get("key", ""))), None)
+        pid = next((p for p, v in players.items() if _has_key(v, key)), None)
+        fresh = None
+        if pid is None and name:
+            same = lambda v: (v.get("name") or "").strip().casefold() == name.casefold()
+            online = _online_players()
+            named = [p for p, v in sorted(players.items(), key=lambda kv: kv[1].get("joined", 0)) if same(v)]
+            # (one not here now first; one here too: the same person on another device)
+            pid = next((p for p in named if p not in online), named[0] if named else None)
+            if pid is None:   # (taken out of the room by the GM: back, with what was theirs)
+                gone = room.get("gone") or {}
+                pid = next((p for p, v in gone.items() if same(v)), None)
+                if pid:
+                    players[pid] = gone.pop(pid)
+            if pid:   # their account, from this browser too
+                fresh = secrets.token_urlsafe(18)
+                players[pid]["keys"] = [*(players[pid].get("keys") or []), fresh][-8:]
         if pid is None:
             if not name:
                 return jsonify({"error": "Escribe tu nombre."}), 400
@@ -2052,7 +2413,8 @@ def api_join():
         _write(ROOMS, all_rooms)
         p = players[pid]
     broadcast_presence()
-    return jsonify({"code": code, "board": player_scene(room, pid), "pid": pid, "key": p["key"], "name": p["name"], "color": p["color"]})
+    return jsonify({"code": code, "board": player_scene(room, pid), "pid": pid, "key": fresh or (key if _has_key(p, key) else p["key"]),
+                    "name": p["name"], "color": p["color"]})
 
 
 # ─────────────────────────────────────────────────────────────── scenes: moving people

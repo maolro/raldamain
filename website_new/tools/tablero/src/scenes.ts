@@ -84,7 +84,7 @@ export class ScenesPanel {
     el.addEventListener('keydown', e => e.stopPropagation());
     el.addEventListener('dblclick', e => {
       const t = e.target as HTMLElement;
-      const h = t.closest<HTMLElement>('.sc-ghead[data-id]'), id = h ? h.dataset.id! : t.closest('[data-sc-title]') ? this.filter : '';
+      const h = t.closest<HTMLElement>('.sc-ghead[data-id]'), id = h ? h.dataset.id! : '';
       if (!id || id === NONE || id === ALL) return;
       this.renameCampaign(id);
     });
@@ -131,8 +131,8 @@ export class ScenesPanel {
     const players = Object.entries(p?.players || {});
     const sceneOf = (pid: string) => p?.players[pid]?.scene || party;
     const camp = this.camps.find(c => c.id === this.filter);
-    const title = camp ? `📁 ${esc(camp.name)}` : this.filter === NONE ? 'Sin campaña' : 'Todas las campañas';
-    this.el.innerHTML = `<h3>🗺 Escenas <small class="sc-title muted" ${camp ? 'data-sc-title title="Doble clic: cambiar el nombre"' : ''}>· ${title}</small>
+    // (📁 the campaign shown: a click, another one)
+    this.el.innerHTML = `<h3>🗺 Escenas <select class="inp sc-view" data-sc-view title="📁 Campaña: elige cuál ver (sus escenas; una nueva escena va a ella)">${campaignOptions(this.list, this.camps, this.filter)}</select>
         ${camp ? `<button class="btn small sc-rename" data-sc="camp-rename" data-id="${esc(camp.id)}" title="Cambiar el nombre de la campaña">✎ Renombrar</button>` : ''}</h3>
       <div class="sc-actions">
         <button class="btn small" data-sc="new" title="${camp ? `En «${esc(camp.name)}»` : 'Nueva escena'}">＋ Nueva escena</button>
@@ -312,6 +312,7 @@ export class ScenesPanel {
   private async change(e: Event) {
     const t = e.target as HTMLInputElement | HTMLSelectElement;
     if (t.matches('[data-sc-tokens]')) { this.tokens = (t as HTMLInputElement).checked; return; }
+    if (t.matches('[data-sc-view]')) { this.setFilter(t.value); this.render(); return; }
     const sc = (t as HTMLElement).dataset.scCamp;
     if (sc) {
       try {
@@ -368,6 +369,19 @@ export interface LevelHost {
   /** roofs: shown (the GM sees them a little see-through) or hidden */
   roofs: { shown: boolean; toggle(): void };
   importMap(file: File, asLevel: boolean): Promise<void>;
+  /** (the GM) 🧱 Losas: save this level's pieces, or place a saved slab */
+  slabs?(): void;
+  /** (the GM) 📖 Escena beside the levels: where the GM looks (the map or the scene) and where the room is */
+  scene?: {
+    gmIn(): boolean;
+    roomIn(): boolean;
+    /** someone is in the room (👥 shows where) */
+    party(): boolean;
+    /** the GM looks at the scene (true) or the map (false): only them, unless the room is there already */
+    view(on: boolean): void;
+    /** the players (the room) go where the GM looks */
+    bring(): void;
+  };
 }
 
 export class LevelBar {
@@ -398,8 +412,17 @@ export class LevelBar {
     }
     this.el.hidden = false;
     const i = levels.findIndex(l => l.id === cur);
-    this.el.innerHTML = levels.map(l => `<button class="lvl-chip ${l.id === cur ? 'on' : ''}" data-lvl="${esc(l.id)}" title="${esc(l.name)} · doble clic: cambiar el nombre">${esc(l.name)}</button>`).join('')
-      + `<button class="lvl-btn" data-lvl-act="add" title="Nuevo nivel (otro piso, un sótano, el interior de un edificio…)">＋</button>
+    // 📖 Escena, after the levels: the GM looks there (alone, if the room is on the map); 👥 marks where the
+    // players are, and «👥 Llevar aquí» takes them where the GM is looking
+    const sc = this.host.scene, inScene = !!sc?.gmIn(), roomScene = !!sc?.roomIn();
+    const room = (where: string) => !sc?.party() ? '' : `<span class="lvl-room" title="Los jugadores están ${where}">👥</span>`;
+    const chips = levels.map(l => `<button class="lvl-chip ${l.id === cur && !inScene ? 'on' : ''}" data-lvl="${esc(l.id)}" title="${esc(l.name)} · doble clic: cambiar el nombre">${esc(l.name)}</button>`).join('')
+      + (sc ? `${roomScene ? '' : room('en el mapa')}<span class="lvl-sep"></span>
+        <button class="lvl-chip lvl-scene ${inScene ? 'on' : ''}" data-lvl-act="scene" title="📖 Escena: el fondo, los personajes y el grupo abajo${roomScene ? '' : ' · solo la miras tú: los jugadores siguen en el mapa'}">📖 Escena${roomScene ? ' ' + room('en la escena') : ''}</button>
+        ${inScene !== roomScene ? `<button class="lvl-btn lvl-bring" data-lvl-act="bring" title="Llevar a los jugadores ${inScene ? 'a la escena' : 'al mapa'} (lo que estás viendo)">👥 Llevar aquí</button>` : ''}` : '');
+    if (inScene) { this.el.innerHTML = chips; return; }   // (the scene: no level tools)
+    this.el.innerHTML = chips
+      + `<span class="lvl-sep"></span>${this.host.slabs ? '<button class="lvl-btn" data-lvl-act="slabs" title="🧱 Losas: guarda este nivel (o algunas de sus capas) para reutilizarlo en otras escenas, o coloca una losa guardada">🧱</button>' : ''}<button class="lvl-btn" data-lvl-act="add" title="Nuevo nivel (otro piso, un sótano, el interior de un edificio…)">＋</button>
       <label class="lvl-btn" title="Nuevo nivel desde un mapa de Dungeondraft & co. (.dd2vtt)">⇪<input type="file" data-lvl-import accept=".dd2vtt,.uvtt,.df2vtt,.json" hidden></label>
       ${levels.length > 1 ? `<span class="lvl-sep"></span>
         <button class="lvl-btn" data-lvl-act="left" ${i <= 0 ? 'disabled' : ''} title="Mover este nivel a la izquierda">◀</button>
@@ -427,9 +450,12 @@ export class LevelBar {
   private click(e: Event) {
     const t = e.target as HTMLElement;
     const lv = t.closest<HTMLElement>('[data-lvl]');
-    if (lv) { this.host.setLevel(lv.dataset.lvl!); return; }
+    if (lv) { if (this.host.scene?.gmIn()) this.host.scene.view(false); this.host.setLevel(lv.dataset.lvl!); return; }
     const act = t.closest<HTMLElement>('[data-lvl-act]')?.dataset.lvlAct;
     if (!act || !this.host.gm || !this.host.board()) return;
+    if (act === 'scene') { this.host.scene?.view(true); return; }
+    if (act === 'slabs') { this.host.slabs?.(); return; }
+    if (act === 'bring') { this.host.scene?.bring(); return; }
     const cur = this.host.level();
     if (act === 'roofs') { this.host.roofs.toggle(); this.render(); return; }
     if (act === 'add') {

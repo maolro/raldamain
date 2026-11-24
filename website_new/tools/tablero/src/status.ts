@@ -28,6 +28,20 @@ const join = (a: string[]) => a.length < 2 ? (a[0] || '') : `${a.slice(0, -1).jo
 // marker colours, by effect (stable: from its id)
 const COLORS = ['#e07b39', '#9b59d0', '#3cb44b', '#e6194b', '#42a5f5', '#c9a227', '#20c997', '#f032e6'];
 
+/** Statuses with a look of their own: lying down (3D) and out of the fight (a red X) */
+export const LYING = ['tumbado', 'tropezado'], OUT = 'fuera-de-combate';
+export const hasStatus = (it: BoardItem, ...ids: string[]) => !!it.statuses?.some(s => ids.includes(s.id));
+/** The first versions kept these as fields of the token: now they are statuses */
+export function migrateFlags(items: BoardItem[]) {
+  for (const it of items) {
+    for (const [f, id] of [['prone', 'tumbado'], ['ko', OUT]] as const) {
+      if (!it[f]) { delete it[f]; continue; }
+      delete it[f];
+      if (!hasStatus(it, id)) (it.statuses ||= []).push({ id, level: 0 });
+    }
+  }
+}
+
 export class Statuses {
   list: StatusEffect[] = [];
 

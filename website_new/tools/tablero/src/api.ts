@@ -1,6 +1,6 @@
 // The Tablero server (tools/tablero.py). Every request carries this browser's key
 // (the GM's, or a player's from joining a room): the server decides what it may do.
-import type { ModelMeta, Board, BoardSummary, Campaign, Changes, ImageMeta, JoinInfo, RollRecord, RollTerm, RoomInfo, ShareStatus, SheetMeta, TileTagCategory, VNScene } from './types';
+import type { Profile, ModelMeta, SlabData, SlabMeta, Board, BoardSummary, Campaign, Changes, ImageMeta, JoinInfo, RollRecord, RollTerm, RoomInfo, ShareStatus, SheetMeta, TileTagCategory, VNScene } from './types';
 import type { Playback, Playlist, Track } from './music';
 
 let KEY = '';
@@ -33,13 +33,19 @@ export function imageSmallUrl(m: ImageMeta, size: 256 | 1024 | 'full'): string {
 }
 /** Worth a first, quick look before the whole picture */
 export const needsPreview = (m: ImageMeta) => !m.tileset && !m.file.endsWith('.svg') && !m.file.endsWith('.gif') && Math.max(m.width || 0, m.height || 0) > 1024;
-export const modelFileUrl = (id: string, file: string) => `/models/${id}/${encodeURIComponent(file)}`;
-export const modelThumbUrl = (id: string) => `/models/${id}/thumb.png`;
+/** A player's own models, kept in their browser (localmodels.ts): id → its .glb and thumbnail (blob: URLs) */
+export const localModelUrls = new Map<string, { main: string; thumb: string }>();
+const NO_THUMB = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><text x="32" y="44" font-size="34" text-anchor="middle">🧊</text></svg>');
+export const modelFileUrl = (id: string, file: string) => (id.startsWith('local-') ? localModelUrls.get(id)?.main || '' : `/models/${id}/${encodeURIComponent(file)}`);
+export const modelThumbUrl = (id: string) => (id.startsWith('local-') ? localModelUrls.get(id)?.thumb || NO_THUMB : `/models/${id}/thumb.png`);
+export const slabThumbUrl = (id: string) => `/slabs/${id}.jpg`;
 export const modelTopUrl = (id: string, v: number) => `/models/${id}/top.png?v=${v}`;
 
 export const api = {
   gmKey: () => call<{ key: string; lan: string }>('GET', '/api/gm-key'),
   join: (code: string, name: string, key?: string) => call<JoinInfo>('POST', '/api/join', { code, name, key }),
+  /** (a player) their character's portrait and stat block, kept in the room (null: none) */
+  setProfile: (p: { portrait?: string | null; sheet?: string | null; bars?: Profile['bars'] | null; pid?: string; edited?: boolean }) => call<Profile>('POST', '/api/me/profile', p),
   images: () => call<ImageMeta[]>('GET', '/api/images'),
   models: () => call<ModelMeta[]>('GET', '/api/models'),
   uploadModel: (files: File[], main: string, thumb: Blob | null, meta: { name: string; category: string; kind?: string; dims?: number[] }) => {
@@ -56,6 +62,16 @@ export const api = {
   updateModel: (id: string, patch: Partial<Pick<ModelMeta, 'name' | 'category' | 'tags' | 'scale' | 'kind' | 'dims' | 'image' | 'sheet'>>) => call<ModelMeta>('PATCH', `/api/models/${id}`, patch),
   uploadModelTop: (id: string, png: Blob) => { const fd = new FormData(); fd.append('file', png, 'top.png'); return call<ModelMeta>('POST', `/api/models/${id}/top`, fd); },
   deleteModel: (id: string) => call<{ ok: boolean }>('DELETE', `/api/models/${id}`),
+  slabs: () => call<SlabMeta[]>('GET', '/api/slabs'),
+  slab: (id: string) => call<SlabData>('GET', `/api/slabs/${id}`),
+  saveSlab: (data: SlabData & { name: string; w: number; h: number; layers: string[] }, thumb: Blob | null) => {
+    const fd = new FormData();
+    fd.append('data', new Blob([JSON.stringify(data)], { type: 'application/json' }), 'slab.json');
+    if (thumb) fd.append('thumb', thumb, 'thumb.jpg');
+    return call<SlabMeta>('POST', '/api/slabs', fd);
+  },
+  renameSlab: (id: string, name: string) => call<SlabMeta>('PATCH', `/api/slabs/${id}`, { name }),
+  deleteSlab: (id: string) => call<{ ok: boolean }>('DELETE', `/api/slabs/${id}`),
   upload: (file: Blob, meta: { name: string; category: string; width: number; height: number; tags?: string[] }) => {
     const fd = new FormData();
     if (meta.tags?.length) fd.append('tags', meta.tags.join(','));
@@ -66,7 +82,7 @@ export const api = {
     fd.append('height', String(meta.height));
     return call<ImageMeta>('POST', '/api/images', fd);
   },
-  updateImage: (id: string, patch: Partial<Pick<ImageMeta, 'name' | 'category' | 'tags' | 'sheet' | 'tileset' | 'rule'>> | { tileset: null }) =>
+  updateImage: (id: string, patch: Partial<Pick<ImageMeta, 'name' | 'category' | 'tags' | 'sheet' | 'tileset' | 'rule' | 'givenTo'>> | { tileset: null }) =>
     call<ImageMeta>('PATCH', `/api/images/${id}`, patch),
   tileTags: () => call<TileTagCategory[]>('GET', '/api/tiletags'),
   saveTileTags: (cats: TileTagCategory[]) => call<TileTagCategory[]>('PUT', '/api/tiletags', cats),
@@ -82,7 +98,7 @@ export const api = {
   deleteImage: (id: string) => call<{ ok: boolean }>('DELETE', `/api/images/${id}`),
   sheets: () => call<SheetMeta[]>('GET', '/api/sheets'),
   sheet: (id: string) => call<SheetMeta & { data: unknown }>('GET', `/api/sheets/${encodeURIComponent(id)}`),
-  uploadSheet: (data: unknown, name: string) => call<SheetMeta>('POST', '/api/sheets', { data, name }),
+  uploadSheet: (data: unknown, name: string, owner?: string) => call<SheetMeta>('POST', '/api/sheets', { data, name, ...(owner ? { owner } : {}) }),
   updateSheet: (id: string, data: unknown) => call<SheetMeta>('PUT', `/api/sheets/${encodeURIComponent(id)}`, { data }),
   deleteSheet: (id: string) => call<{ ok: boolean }>('DELETE', `/api/sheets/${encodeURIComponent(id)}`),
   boards: () => call<BoardSummary[]>('GET', '/api/boards'),
@@ -104,6 +120,8 @@ export const api = {
   room: (bid: string) => call<RoomInfo>('GET', `/api/boards/${bid}/room`),
   openRoom: (bid: string) => call<RoomInfo>('POST', `/api/boards/${bid}/room`),
   closeRoom: (bid: string) => call<{ ok: boolean }>('DELETE', `/api/boards/${bid}/room`),
+  /** (GM) this player is the same person as `into`: theirs becomes `into`'s, and their browser is `into` again */
+  mergePlayer: (bid: string, pid: string, into: string) => call<{ ok: boolean; tokens: number }>('POST', `/api/boards/${bid}/players/${pid}/merge`, { into }),
   kick: (bid: string, pid: string) => call<{ ok: boolean }>('DELETE', `/api/boards/${bid}/players/${pid}`),
   changes: (bid: string, body: Changes & { cid: string }) =>
     call<{ ok: boolean; refused: (Board['items'][number] | { id: string; removed: true })[] }>('POST', `/api/live/${bid}/changes`, body),

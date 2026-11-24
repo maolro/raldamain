@@ -1,0 +1,409 @@
+[
+  {
+    "id": "acechador-abisal-niv-2",
+    "name": "Acechador Abisal (niv 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "estilo_asesino",
+      "ascendencia_abisal",
+      "guerrero_divino"
+    ]
+  },
+  {
+    "id": "acechador-abisal-niv-5",
+    "name": "Acechador Abisal (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "ira",
+      "estilo_duelista",
+      "ascendencia_abisal",
+      "fortitud"
+    ]
+  },
+  {
+    "id": "acechador-abisal-niv-8",
+    "name": "Acechador Abisal (niv 8)",
+    "level": 8,
+    "race": "",
+    "ranks": [
+      "ascendencia_abisal",
+      "estilo_duelista",
+      "fortitud",
+      "guerrero_divino"
+    ]
+  },
+  {
+    "id": "arthor",
+    "name": "Arthor",
+    "level": 2,
+    "race": "Humano",
+    "ranks": [
+      "magia_metal",
+      "mente_desencadenada",
+      "magia_protectora"
+    ]
+  },
+  {
+    "id": "asesino-sacro-niv-8",
+    "name": "Asesino Sacro (niv 8)",
+    "level": 8,
+    "race": "",
+    "ranks": [
+      "estilo_asesino",
+      "reflejos",
+      "rastrear",
+      "guerrero_divino"
+    ]
+  },
+  {
+    "id": "caballero-infernal-niv-8",
+    "name": "Caballero Infernal (niv 8)",
+    "level": 8,
+    "race": "",
+    "ranks": [
+      "guerrero_divino",
+      "ascendencia_infernal",
+      "estilo_coloso",
+      "fortitud"
+    ]
+  },
+  {
+    "id": "campeon-abisal-niv-8",
+    "name": "Líder Abisal (niv 8)",
+    "level": 8,
+    "race": "",
+    "ranks": [
+      "ascendencia_abisal",
+      "estilo_duelista",
+      "presencia",
+      "guerrero_divino"
+    ]
+  },
+  {
+    "id": "cazador-niv-5",
+    "name": "Cazador (Niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "estilo_asesino",
+      "reflejos",
+      "rastrear",
+      "ascendencia_primigenia"
+    ]
+  },
+  {
+    "id": "clerigo-celestial-niv-2",
+    "name": "Clérigo Celestial (niv 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "magia_divina",
+      "magia_vida",
+      "ascendencia_celestial"
+    ]
+  },
+  {
+    "id": "druida-niv-5",
+    "name": "Druida (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "magia_naturaleza",
+      "magia_divina",
+      "rastrear",
+      "presencia"
+    ]
+  },
+  {
+    "id": "druida",
+    "name": "Druida (niv 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "magia_naturaleza",
+      "magia_divina",
+      "ascendencia_primigenia"
+    ]
+  },
+  {
+    "id": "elementalista-niv-2",
+    "name": "Elementalista (niv 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "magia_fuego",
+      "estilo_duelista",
+      "mente_desencadenada"
+    ]
+  },
+  {
+    "id": "elementalista",
+    "name": "Elementalista (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "magia_fuego",
+      "reflejos",
+      "mente_desencadenada",
+      "estilo_duelista"
+    ]
+  },
+  {
+    "id": "embaucador-niv-5",
+    "name": "Embaucador (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "magia_ilusoria",
+      "magia_divina",
+      "presencia",
+      "ascendencia_primigenia"
+    ]
+  },
+  {
+    "id": "embaucador",
+    "name": "Embaucador (nivel 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "presencia",
+      "magia_divina",
+      "magia_ilusoria"
+    ]
+  },
+  {
+    "id": "guerrero-abisal-niv-2",
+    "name": "Guerrero Abisal (niv 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "ascendencia_abisal",
+      "estilo_coloso",
+      "fortitud"
+    ]
+  },
+  {
+    "id": "guerrero-abisal-niv-5",
+    "name": "Guerrero Abisal (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "ascendencia_abisal",
+      "estilo_coloso",
+      "fortitud",
+      "guerrero_divino"
+    ]
+  },
+  {
+    "id": "hechicero-infernal-niv-2",
+    "name": "Hechicero Infernal (niv 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "ascendencia_infernal",
+      "magia_fuego",
+      "magia_divina"
+    ]
+  },
+  {
+    "id": "hechicero-infernal-niv-5",
+    "name": "Hechicero Infernal (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "ascendencia_infernal",
+      "magia_mental",
+      "magia_ilusoria",
+      "magia_divina"
+    ]
+  },
+  {
+    "id": "lider",
+    "name": "Luchador (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "estilo_duelista",
+      "reflejos",
+      "presencia",
+      "ira"
+    ]
+  },
+  {
+    "id": "mago-niv-2",
+    "name": "Mago (niv 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "magia_evocacion",
+      "magia_protectora",
+      "mente_desencadenada"
+    ]
+  },
+  {
+    "id": "mago-niv-5",
+    "name": "Mago (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "magia_evocacion",
+      "magia_espacial",
+      "mente_desencadenada",
+      "magia_protectora"
+    ]
+  },
+  {
+    "id": "maton",
+    "name": "Tanque (niv 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "estilo_coloso",
+      "ira",
+      "fortitud"
+    ]
+  },
+  {
+    "id": "paladin-niv-2",
+    "name": "Paladín (niv 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "estilo_coloso",
+      "ascendencia_celestial",
+      "guerrero_divino"
+    ]
+  },
+  {
+    "id": "paladin-niv-5",
+    "name": "Paladín (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "estilo_coloso",
+      "guerrero_divino",
+      "ira",
+      "fortitud"
+    ]
+  },
+  {
+    "id": "picaro-niv-2",
+    "name": "Pícaro (niv 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "estilo_asesino",
+      "reflejos",
+      "rastrear"
+    ]
+  },
+  {
+    "id": "picaro-niv-8",
+    "name": "Pícaro (niv 8)",
+    "level": 8,
+    "race": "",
+    "ranks": [
+      "estilo_asesino",
+      "reflejos",
+      "rastrear",
+      "ira"
+    ]
+  },
+  {
+    "id": "picaro",
+    "name": "Luchador (niv 2)",
+    "level": 2,
+    "race": "",
+    "ranks": [
+      "estilo_duelista",
+      "ira",
+      "presencia"
+    ]
+  },
+  {
+    "id": "profeta-abisal-niv-11",
+    "name": "Profeta Abisal (niv 11)",
+    "level": 11,
+    "race": "",
+    "ranks": [
+      "magia_divina",
+      "ascendencia_abisal",
+      "mente_desencadenada",
+      "presencia"
+    ]
+  },
+  {
+    "id": "sanador",
+    "name": "Clérigo Celestial (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "magia_divina",
+      "magia_vida",
+      "presencia",
+      "ascendencia_celestial"
+    ]
+  },
+  {
+    "id": "sectario-abisal-niv-5",
+    "name": "Sectario Abisal (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "magia_divina",
+      "ascendencia_abisal",
+      "presencia",
+      "magia_mental"
+    ]
+  },
+  {
+    "id": "shinobi-niv-5",
+    "name": "Shinobi (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "estilo_asesino",
+      "magia_sombria",
+      "reflejos",
+      "rastrear"
+    ]
+  },
+  {
+    "id": "tanque-niv-11",
+    "name": "Tanque (niv 11)",
+    "level": 11,
+    "race": "",
+    "ranks": [
+      "estilo_coloso",
+      "ira",
+      "fortitud",
+      "presencia"
+    ]
+  },
+  {
+    "id": "tanque-niv-8",
+    "name": "Tanque (niv 8)",
+    "level": 8,
+    "race": "",
+    "ranks": [
+      "estilo_coloso",
+      "fortitud",
+      "ira",
+      "presencia"
+    ]
+  },
+  {
+    "id": "tanque",
+    "name": "Tanque (niv 5)",
+    "level": 5,
+    "race": "",
+    "ranks": [
+      "estilo_coloso",
+      "fortitud",
+      "ira",
+      "presencia"
+    ]
+  }
+]

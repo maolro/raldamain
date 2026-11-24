@@ -7,6 +7,7 @@
 import { Application, Assets, Container, FederatedPointerEvent, Graphics, Rectangle, Sprite, Text, Texture } from 'pixi.js';
 import { imageSmallUrl, imageUrl, needsPreview } from './api';
 import { BARS, kindOf, type Board, type BoardItem, type ImageMeta, type LayerId } from './types';
+import { hasStatus, OUT } from './status';
 import { cellCenter, drawRuler, type RulerMode, type RulerShape } from './ruler';
 import { FogLayer, type FogView } from './lighting';
 import { FIRST_LEVEL, levelFog, levelOf, pageOf } from './levels';
@@ -99,6 +100,13 @@ export class BoardView {
   fogMarks: (g: Graphics, zoom: number) => void = () => {};
   private fog!: FogLayer;
   private fogMarksG = new Graphics();
+  /** (players) black over everything off the map: its map pictures and ground tiles (none: the page) */
+  private offMapG = new Graphics();
+  private offMapSig = '';
+  /** 🔗 what moves with these: they, and the ones grouped with them (on their level) that may be moved here */
+  withGroup: (items: BoardItem[]) => BoardItem[] = items => items;
+  /** a ground tile (a 3D model of the kind «Loseta»): part of the map, as its pictures */
+  isGroundTile: (it: BoardItem) => boolean = () => false;
   /** the level shown (players: where their token is) */
   level = FIRST_LEVEL;
   /** is this roof (an image marked as roof) open for this screen: one of its tokens is under it */
@@ -142,7 +150,7 @@ export class BoardView {
     host.appendChild(this.app.canvas);
     for (const l of Object.values(this.layers)) l.sortableChildren = true;
     this.fog = new FogLayer(this.app.renderer);
-    this.fogMarksG.eventMode = 'none';
+    this.fogMarksG.eventMode = this.offMapG.eventMode = 'none';
     this.layers.gm.alpha = 0.6;   // the GM sees the GM layer see-through
     this.levelMarksG.eventMode = this.tileMarksG.eventMode = 'none';
     for (const c of [...Object.values(this.tilesBelow), this.roofTiles]) c.eventMode = 'none';
@@ -151,7 +159,7 @@ export class BoardView {
     this.roofLayer.addChild(this.roofTiles);
     // page, maps, tiles, grid, portals, tokens, roofs, GM notes, fog… and what is being edited on top
     this.world.addChild(this.pageG, this.layers.map, this.tilesBelow.floor, this.tilesBelow.walls, this.tilesBelow.deco, this.gridG,
-      this.levelMarksG, this.layers.tokens, this.roofLayer, this.layers.gm, this.fog.container, this.fogMarksG, this.tileMarksG,
+      this.levelMarksG, this.layers.tokens, this.roofLayer, this.layers.gm, this.fog.container, this.offMapG, this.fogMarksG, this.tileMarksG,
       this.drawG, this.overlay, this.marqueeG, this.rulerLayer);
     this.app.stage.addChild(this.world);
     const stage = this.app.stage;
@@ -305,11 +313,52 @@ export class BoardView {
     this.fogPending = requestAnimationFrame(() => {
       this.fogPending = 0;
       if (!this.board) return;
-      this.fog.update(this.levelBoard(), this.fogView());
+      const fv = this.fogView();
+      this.fog.update(this.levelBoard(), fv);
+      this.drawOffMap(fv.mode !== 'gm');
       this.drawFogMarks();
       this.applyRoofs();
       this.onRendered();
     });
+  }
+
+  /** (players, and the GM looking as them) Off the map, black: the squares (in halves) that no map picture
+   *  or ground tile covers, and all around beyond the page and what is placed. As the 3D view's darkness. */
+  private drawOffMap(asPlayer: boolean) {
+    const b = this.board, g = b.grid.size, R = 2, pg = this.page();
+    const areas = asPlayer ? b.items.filter(it => this.here(it) && it.layer === 'map' && !it.roof
+      && (it.model ? this.isGroundTile(it) : kindOf(it) === 'image' && !!it.image)) : [];
+    let x0 = 0, y0 = 0, x1 = pg.width, y1 = pg.height;
+    for (const it of b.items) if (this.here(it)) {
+      x0 = Math.min(x0, it.x / g); y0 = Math.min(y0, it.y / g); x1 = Math.max(x1, (it.x + it.w) / g); y1 = Math.max(y1, (it.y + it.h) / g);
+    }
+    const X0 = Math.floor(x0) * R, Y0 = Math.floor(y0) * R, nx = (Math.ceil(x1) - Math.floor(x0)) * R, ny = (Math.ceil(y1) - Math.floor(y0)) * R;
+    const sig = asPlayer ? JSON.stringify([X0, Y0, nx, ny, g, areas.length ? areas.map(a => [a.x, a.y, a.w, a.h]) : pg]) : '';
+    if (sig === this.offMapSig) return;
+    this.offMapSig = sig;
+    const G = this.offMapG.clear();
+    if (!asPlayer) return;
+    if (!areas.length) areas.push({ x: 0, y: 0, w: pg.width * g, h: pg.height * g } as BoardItem);
+    const on = new Uint8Array(nx * ny);
+    for (const a of areas) {
+      const i0 = Math.max(0, Math.round(a.x / g * R) - X0), i1 = Math.min(nx, Math.round((a.x + a.w) / g * R) - X0);
+      const j0 = Math.max(0, Math.round(a.y / g * R) - Y0), j1 = Math.min(ny, Math.round((a.y + a.h) / g * R) - Y0);
+      for (let j = j0; j < j1; j++) on.fill(1, j * nx + i0, j * nx + Math.max(i0, i1));
+    }
+    const c = g / R, L = X0 * c, T = Y0 * c, Rt = (X0 + nx) * c, Bt = (Y0 + ny) * c, F = 1e6;
+    // each row: its runs of squares off the map
+    for (let j = 0; j < ny; j++) {
+      let i = 0;
+      while (i < nx) {
+        if (on[j * nx + i]) { i++; continue; }
+        const s = i;
+        while (i < nx && !on[j * nx + i]) i++;
+        G.rect((X0 + s) * c, (Y0 + j) * c, (i - s) * c + 0.5, c + 0.5);
+      }
+    }
+    // and all around (the board never ends)
+    G.rect(L - F, T - F, Rt - L + 2 * F, F).rect(L - F, Bt, Rt - L + 2 * F, F).rect(L - F, T, F, Bt - T).rect(Rt, T, F, Bt - T);
+    G.fill({ color: 0x000000 });
   }
 
   drawFogMarks() {
@@ -616,7 +665,7 @@ export class BoardView {
   private renderBars(it: BoardItem) {
     const bars = BARS.map(b => ({ b, v: it.bars?.[b.id] })).filter(x => x.v && x.v.max > 0);
     let g = this.barViews.get(it.id);
-    if (!bars.length || kindOf(it) !== 'image' || !this.here(it)) {
+    if ((!bars.length && !hasStatus(it, OUT)) || kindOf(it) !== 'image' || !this.here(it)) {
       if (g) { g.destroy(); this.barViews.delete(it.id); }
       return;
     }
@@ -636,6 +685,13 @@ export class BoardView {
       if (f > 0) g!.rect(cx - w / 2, y, w * f, h).fill({ color: b.color });
       g!.rect(cx - w / 2, y, w, h).stroke({ width: Math.max(1, h / 6), color: 0x000000 });
     });
+    if (hasStatus(it, OUT)) {   // fuera de combate: a red X over the token (dark edged, to show on any picture)
+      const r = Math.min(bw, bh) * 0.42, cy = it.y + it.h / 2, lw = Math.max(3, r * 0.22);
+      for (const [c, wd] of [[0x000000, lw * 1.5], [0xd01818, lw]] as const) {
+        g.moveTo(cx - r, cy - r).lineTo(cx + r, cy + r).moveTo(cx + r, cy - r).lineTo(cx - r, cy + r)
+          .stroke({ width: wd, color: c, alpha: c ? 0.95 : 0.6, cap: 'round' });
+      }
+    }
   }
 
   /** Screen position of the middle of an item's top edge, bars included (for the token HUD) */
@@ -697,6 +753,12 @@ export class BoardView {
     for (let x = 0; x <= pg.width; x++) this.gridG.moveTo(x * g.size, 0).lineTo(x * g.size, H);
     for (let y = 0; y <= pg.height; y++) this.gridG.moveTo(0, y * g.size).lineTo(W, y * g.size);
     this.gridG.stroke({ width: 1 / s, color: g.color || '#c9a227', alpha: g.opacity ?? 0.35 });
+    const z = Math.max(2, Math.round(g.zone || 8));
+    if (g.zoneShow) {   // zone markers: every z squares, thicker and stronger
+      for (let x = 0; x <= pg.width; x += z) this.gridG.moveTo(x * g.size, 0).lineTo(x * g.size, H);
+      for (let y = 0; y <= pg.height; y += z) this.gridG.moveTo(0, y * g.size).lineTo(W, y * g.size);
+      this.gridG.stroke({ width: 3.5 / s, color: g.color || '#c9a227', alpha: Math.min(1, (g.opacity ?? 0.35) * 2) });
+    }
   }
 
   /** Selection outlines and handles (constant size on screen, so redrawn on zoom) */
@@ -776,6 +838,13 @@ export class BoardView {
     this.viewChanged();
   }
 
+  /** The board point p in the middle of the screen (the zoom stays) */
+  centerOn(p: Pt) {
+    const z = this.zoom;
+    this.world.position.set(this.app.screen.width / 2 - p.x * z, this.app.screen.height / 2 - p.y * z);
+    this.viewChanged();
+  }
+
   zoomBy(factor: number) {
     this.zoomAt({ x: this.app.screen.width / 2, y: this.app.screen.height / 2 }, factor);
   }
@@ -842,7 +911,7 @@ export class BoardView {
     this.drawFogMarks();   // (its lines keep their width on screen)
     for (const r of this.rulers.values()) drawRuler(r.box, r.shape, this.board.grid.size, this.zoom, r.color, r.who);   // (text keeps its size)
     if (this.board) for (const it of this.board.items) {   // (their size follows the zoom)
-      if (it.bars) this.renderBars(it);
+      if (it.bars || it.statuses) this.renderBars(it);
       this.renderMarkers(it);
     }
     this.drawOverlay();
@@ -908,7 +977,7 @@ export class BoardView {
         if (this.selected.has(id)) this.selected.delete(id); else this.selected.add(id);
         this.select([...this.selected]);
       } else if (!this.selected.has(id)) this.select([id]);
-      const movable = this.selectedItems().filter(i => !i.locked);
+      const movable = this.withGroup(this.selectedItems().filter(i => !i.locked));   // (and who rides with them)
       if (movable.length) this.drag = { kind: 'move', start: p, orig: new Map(movable.map(i => [i.id, { x: i.x, y: i.y }])), moved: false };
       return;
     }

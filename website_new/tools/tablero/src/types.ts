@@ -53,20 +53,38 @@ export interface BoardItem {
   used?: { a: number; r: number };                     // spent this round (Nueva ronda empties them)
   level?: string;       // the level (floor) it is on (missing: the first one)
   elev?: number;        // how high it is (squares above the floor; below it if negative; 3D)
+  gen?: string;         // where it came from: "losa:<slab id>" (🧱 placed from a slab), "imagen:…", an old 🎲 terrain's seed
   facing?: number;      // 3D: where a token's figure looks (degrees); its 2D picture is never turned by it
   portrait?: string;    // 📖 Escena: its portrait (an image id; missing: its own picture)
   mainOf?: string[];    // the players whose main character it is (the one shown in the scenes)
   modelScale?: number;  // 3D: this token's figure bigger or smaller (× the library's size; 1 = as the others)
   sheetRev?: number;    // its stat block edited (✎ Editar): open windows of it read it again
-  prone?: boolean;      // lying on the ground (knocked down, dead…; 3D)
+  prone?: boolean;      // (old: now the status «tumbado»; turned into it when the board is opened)
+  ko?: boolean;         // (old: now the status «fuera-de-combate»)
   roof?: boolean;       // image: a roof, drawn over the tokens, that opens when one of yours goes under it
+  group?: string;       // 🔗 grouped (a rider and their horse, the people in a carriage): moving one moves the others
+                        // (each still selected, and its sheet seen, on its own)
 }
 
 /** figure: a token on a base · structure: a building, a ruin, a tree… on the map layer · prop: furniture
- *  and decor (a table, a barrel, a wall piece…): like a structure, but placed at a square or so */
-export type ModelKind = 'figure' | 'structure' | 'prop';
-/** scenery (a structure or a prop): on the map layer at its footprint, no base, seen from above in 2D */
-export const isScenery = (m?: { kind?: ModelKind }) => m?.kind === 'structure' || m?.kind === 'prop';
+ *  and decor (a table, a barrel, a wall piece…): like a structure, but placed at a square or so ·
+ *  tile: ground (grass, paving, a floor…): like a structure, but sunk into the floor, its top the ground */
+export type ModelKind = 'figure' | 'structure' | 'prop' | 'tile';
+/** scenery (a structure, a prop or a tile): on the map layer at its footprint, no base, seen from above in 2D */
+export const isScenery = (m?: { kind?: ModelKind }) => m?.kind === 'structure' || m?.kind === 'prop' || m?.kind === 'tile';
+/** A 3D board's layer: its models' kind, or the GM's (only the GM sees it, see-through) */
+export type Layer3D = ModelKind | 'gm';
+/** The 3D board's layers, bottom to top (◧ Capas: each shown or hidden, and locked so clicks go through
+ *  it; the GM's toolbar: the one being edited, where new things go) */
+export const LAYERS3D = [
+  { id: 'tile', name: 'Losetas', icon: '🟫', hint: 'el suelo: losetas de terreno, caminos, baldosas' },
+  { id: 'structure', name: 'Edificios', icon: '🏛', hint: 'edificios, muros, rocas grandes' },
+  { id: 'prop', name: 'Objetos', icon: '🪑', hint: 'muebles, árboles, decoración' },
+  { id: 'figure', name: 'Figuras', icon: '🧍', hint: 'personajes y criaturas' },
+  { id: 'gm', name: 'GM', icon: '👑', hint: 'solo para el GM: los jugadores no lo ven (tú, medio transparente)' },
+] as const satisfies readonly { id: Layer3D; name: string; icon: string; hint: string }[];
+/** The 2D layer a 3D layer's things are on */
+export const layer2dOf = (l: Layer3D): LayerId => (l === 'gm' ? 'gm' : l === 'figure' ? 'tokens' : 'map');
 
 /** A 3D model in the Vista 3D's library (tablero.py: models/<id>/<files>) */
 export interface ModelMeta {
@@ -87,6 +105,7 @@ export interface ModelMeta {
   sheet?: string;      // figures: the stat block their tokens get
   duplicate?: boolean;
   owner?: string;      // a player's upload: theirs (missing: the GM's)
+  local?: boolean;     // kept only in this browser (localmodels.ts: id "local-…"); others see its token's 2D picture
 }
 
 /** A status effect on a token: data/status_effects.json's id and the level's index */
@@ -107,6 +126,8 @@ export interface GridSettings {
   snap: boolean;
   color: string;
   opacity: number;
+  zoneShow?: boolean;   // zone markers: a thicker line every `zone` squares, over the grid (from the page's corner)
+  zone?: number;        // (squares; missing: 8)
 }
 
 export interface Board {
@@ -128,6 +149,10 @@ export interface Board {
   vn?: VNScene;         // 📖 Escena: the GM's light-novel moment (vn.ts)
   tileSpans?: Record<string, [number, number]>;   // big tiles: "<level>|<layer>|<x>|<y>" → squares it covers [w, h]
 }
+
+/** 🧱 A slab: a level's pieces saved to be placed again (positions in squares from its corner) */
+export interface SlabMeta { id: string; name: string; w: number; h: number; n: number; created: number; thumb: boolean; layers: string[] }
+export interface SlabData { items: Partial<BoardItem>[]; ox: number; oy: number; lw: number; lh: number }
 
 /** A floor of a scene */
 /** 📖 Escena: a background, the people standing in it (the GM's portraits), what is being said */
@@ -178,6 +203,7 @@ export interface ImageMeta {
   duplicate?: boolean;  // upload answer: this image was already in the library
   owner?: string;       // the player who uploaded it (missing: the GM)
   sheet?: string;       // the stat block its tokens get (SheetMeta.id)
+  givenTo?: string[];   // 🎁 (GM) given to these players: in their libraries, to place it and see its sheet
   tileset?: { size: number; solid: number[] };   // a tileset: its tiles' size (px) and the ones that block sight
   rule?: import('./tiles').TileRule;   // a single tile (🧩 Casillas): what it is (its layer, if it blocks sight)
   span?: [number, number];   // a single tile's default size when painted: squares across and down (none: 1×1)
@@ -202,7 +228,12 @@ export const BACKGROUNDS = 'Fondos';   // 📖 Escena's backgrounds: their own s
 export const DEFAULT_CATEGORIES = ['Personajes', 'Criaturas', 'Tokens', 'Mapas', BACKGROUNDS, 'Tilesets', 'Casillas', 'Objetos', 'Efectos', 'Otros'];
 
 /** Who this browser is in the live board (from the server) */
-export interface Me { role: 'gm' | 'player'; pid: string | null; cid: string; name: string; color: string }
+/** A player's character in 📖 Escena, kept in the room from session to session: its portrait, its stat
+ *  block and its Impactos / Chi now */
+export interface Profile { portrait?: string; sheet?: string; bars?: Partial<Record<BarId, Bar>>; /** its stat block last edited (windows of it read it again) */ sheetRev?: number }
+export interface Me extends Profile { role: 'gm' | 'player'; pid: string | null; cid: string; name: string; color: string }
+/** A ready-made character's sheet, which any player may take (not a creature's) */
+export const isPredetermined = (s: SheetMeta) => s.kind === 'pj' && (s.source === 'repo' || (s.source === 'upload' && !s.owner));
 
 /** Who is in the room */
 export interface Presence {
@@ -210,7 +241,7 @@ export interface Presence {
   online: string[];     // player ids connected now
   gm: boolean;          // is the GM connected
   scene?: string;       // the party's scene
-  players: Record<string, { name: string; color: string; scene?: string }>;
+  players: Record<string, { name: string; color: string; scene?: string } & Profile>;
 }
 
 /** A batch of board changes (sent and received) */

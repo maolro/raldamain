@@ -18,6 +18,32 @@
   ],
   "effects": [
     {
+      "id": "tumbado",
+      "name": "Tumbado",
+      "description": "Tumbado en el suelo (derribado, dormido…). En 3D la figura se tumba (T).",
+      "levels": [
+        {
+          "name": "",
+          "penalties": [],
+          "notes": "En 3D la figura se tumba."
+        }
+      ]
+    },
+    {
+      "id": "fuera-de-combate",
+      "name": "Fuera de combate",
+      "description": "Muerto o moribundo: una X roja sobre el token, en 2D y 3D.",
+      "levels": [
+        {
+          "name": "",
+          "penalties": [],
+          "no_actions": true,
+          "no_reactions": true,
+          "notes": "Una X roja sobre el token."
+        }
+      ]
+    },
+    {
       "id": "tropezado",
       "name": "Tropezado",
       "description": "Está en el suelo (Derribado). Levantarse cuesta 1 acción.",

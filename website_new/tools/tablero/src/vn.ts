@@ -3,8 +3,9 @@
 // bottom, their own character's panel (Impactos, Chi, states, actions and reactions), always open.
 // The GM opens and closes it for the whole room: every player is taken into it, whatever map they are on
 // (it is the room's, like its music; tablero.py keeps it).
-// Each player picks their main token (★) and may give it a portrait (empty until they do): this
-// browser remembers that portrait and puts it on their main token in the next scenes that lack one.
+// Each player has their character here, apart from the board's tokens: a portrait (empty until they
+// choose one), a ready-made stat block and its Impactos / Chi, in the panel along the bottom. All kept in
+// the room (tablero.py, the player's entry), from session to session and on any device.
 import { imageSmallUrl } from './api';
 import { BACKGROUNDS, type Board, type BoardItem, type ImageMeta, type Me, type VNScene } from './types';
 
@@ -34,12 +35,18 @@ export interface VNHost {
   crop(meta: ImageMeta): void;
   /** this player's main character changed (its panel follows) */
   mainChanged(): void;
+  /** (a player) keep their character's portrait / stat block in the room */
+  saveProfile(p: { portrait?: string | null; sheet?: string | null }): Promise<boolean>;
+  /** (a player) choose among the ready-made characters' stat blocks */
+  chooseSheet(at: { x: number; y: number }, current: string | undefined, done: (sid: string | null) => void): void;
+  sheetName(sid: string): string;
   toast(m: string): void;
 }
 
-type Remembered = { image: string; name?: string };
+// (this browser: the main character's name; and, from before it was kept in the room, a portrait)
+type Remembered = { image?: string; name?: string };
 function remembered(): Remembered | null {
-  try { const r = JSON.parse(localStorage.getItem(REMEMBER) || 'null'); return r && typeof r.image === 'string' ? r : null; } catch { return null; }
+  try { const r = JSON.parse(localStorage.getItem(REMEMBER) || 'null'); return r && typeof r === 'object' ? r : null; } catch { return null; }
 }
 function remember(r: Remembered) { try { localStorage.setItem(REMEMBER, JSON.stringify(r)); } catch { /* private window */ } }
 
@@ -48,7 +55,7 @@ export class VNView {
   active = false;
   private sig = '';
   private imgSig = '';
-  private applied = new Set<string>();   // tokens this browser already gave the remembered portrait
+  private migrated = false;
 
   constructor(stage: HTMLElement, private h: VNHost) {
     this.el = document.createElement('div');
@@ -63,11 +70,10 @@ export class VNView {
           <label class="btn small" title="Subir una imagen como fondo (o pégala aquí con Ctrl+V)">⇪ Fondo<input type="file" accept="image/*" data-vn="bgfile" hidden></label>
           <button class="btn small" data-vn="crop" title="Recortar el fondo con la forma de esta vista: lo que verán los jugadores (se guarda como otro fondo)">✂ Recortar</button>
           <span class="vn-sep"></span>
-          <button class="btn small danger" data-vn="end" title="Cerrar la escena para todos: vuelven al tablero">Terminar escena</button>
+          <button class="btn small" data-vn="end" title="Pasar a toda la sala al mapa (como 🗺 Mapa arriba)">🗺 Volver al mapa</button>
         </div>
         <div class="vn-me" hidden></div>
         <span class="grow"></span>
-        <button class="btn small" data-vn="leave" title="Volver al tablero (la escena sigue para los demás)">🗺 Ver el tablero</button>
       </div>
       <input type="file" accept="image/*" data-vn="portraitfile" hidden>`;
     stage.append(this.el);
@@ -110,9 +116,10 @@ export class VNView {
     if (!this.active) return;
     const b = this.board();
     if (!b) return;
-    this.applyRemembered();
-    const pid = this.h.me()?.pid || '-';
-    const sig = JSON.stringify([this.h.scene().bg, this.h.isGM(), this.mainOf(pid)?.id, b.items.filter(i => (i.controllers || []).includes(pid)).map(i => [i.id, i.name])]);
+    this.applyProfile();
+    const me = this.h.me(), pid = me?.pid || '-';
+    const sig = JSON.stringify([this.h.scene().bg, this.h.isGM(), this.mainOf(pid)?.id, b.items.filter(i => (i.controllers || []).includes(pid)).map(i => [i.id, i.name]),
+      me?.portrait, me?.sheet, me?.sheet ? this.h.sheetName(me.sheet) : '']);
     const imgs = this.h.images().filter(m => !m.tileset);
     const imgSig = imgs.map(m => m.id).join(',') + (this.h.scene().bg || '');
     if (imgSig !== this.imgSig) { this.imgSig = imgSig; this.fillSelect(imgs); this.sig = ''; }
@@ -138,15 +145,9 @@ export class VNView {
     if (bgEl.style.backgroundImage !== url) bgEl.style.backgroundImage = url;
     (this.el.querySelector('.vn-empty') as HTMLElement).hidden = !!bgMeta || !gm;
     (this.el.querySelector('.vn-gm') as HTMLElement).hidden = !gm;
-    // a player: which of their tokens is their character (if they have more than one)
-    const meEl = this.el.querySelector<HTMLElement>('.vn-me')!;
-    const mine = gm ? [] : b.items.filter(i => this.h.isToken(i) && i.layer === 'tokens' && (i.controllers || []).includes(pid));
-    const main = this.mainOf(pid);
-    meEl.hidden = gm || mine.length === 1;
-    meEl.innerHTML = mine.length > 1
-      ? `<select class="inp vn-main" data-vn="main" title="Tu personaje principal: el que sale en las escenas">${mine.map(i =>
-        `<option value="${esc(i.id)}" ${i.id === main?.id ? 'selected' : ''}>★ ${esc(i.name || 'Token')}</option>`).join('')}</select>`
-      : '<small class="muted">No controlas ningún token en esta escena</small>';
+    // (a player: their character is the panel at the bottom, not a token)
+    (this.el.querySelector('.vn-me') as HTMLElement).hidden = true;
+    void b; void pid;
   }
 
   /** The background shown (its library entry), if any */
@@ -155,10 +156,14 @@ export class VNView {
   /** (GM) This picture as the background */
   setBackground(id: string) { this.editVN(v => { v.bg = id; }); }
 
-  /** (GM) A picture from the computer (pasted, dropped): into the library's Fondos, and the background */
+  /** (GM) A picture pasted from the computer: into the library's Fondos — and the background only if the
+   *  scene has none yet (one shown stays: the new one waits in Fondos, to be chosen) */
   async backgroundFrom(file: File) {
+    const had = this.background();
     const m = await this.h.upload(file, BACKGROUNDS);
-    if (m) this.setBackground(m.id);
+    if (!m) return;
+    if (!had) this.setBackground(m.id);
+    else this.h.toast(`«${m.name}» guardado en Fondos · el fondo sigue siendo «${had.name}» (arrástralo a la escena para cambiarlo)`);
   }
 
   // ── changes ───────────────────────────────────────────────────────────────
@@ -192,6 +197,19 @@ export class VNView {
     else if (act === 'crop') { const bg = this.background(); if (bg) this.h.crop(bg); else this.h.toast('Elige antes un fondo'); }
   }
 
+  /** 📜 This player chooses their stat block, among the ready-made characters' */
+  pickSheet(at: { x: number; y: number }) {
+    this.h.chooseSheet(at, this.h.me()?.sheet, sid => void this.setSheetChoice(sid));
+  }
+
+  private async setSheetChoice(sid: string | null) {
+    if (!await this.h.saveProfile({ sheet: sid })) return;
+    this.h.toast(sid ? `Ficha guardada: ${this.h.sheetName(sid)}` : 'Ficha quitada');
+    this.sig = '';
+    this.changed();
+    this.h.mainChanged();
+  }
+
   private async change(e: Event) {
     const t = e.target as HTMLInputElement;
     const act = t.dataset.vn;
@@ -206,10 +224,10 @@ export class VNView {
       t.value = '';
       const m = await this.h.upload(f, 'Retratos');
       if (!m) return;
-      const it = this.mainOf(this.h.me()?.pid || '');
-      remember({ image: m.id, name: it?.name });
-      if (it && this.h.canEdit(it)) { it.portrait = m.id; this.applied.add(it.id); this.h.commit(); }
-      this.h.toast(it ? `Retrato de ${it.name || 'tu personaje'} guardado (y recordado en este navegador)` : 'Retrato recordado: irá a tu personaje en cuanto tengas uno');
+      if (!await this.h.saveProfile({ portrait: m.id })) return;
+      this.h.toast('Retrato guardado');
+      this.sig = '';
+      this.changed();
       this.h.mainChanged();
     }
   }
@@ -231,14 +249,11 @@ export class VNView {
     this.h.mainChanged();
   }
 
-  /** The portrait this browser remembers, onto this player's main character if it has none */
-  private applyRemembered() {
-    const pid = this.h.me()?.pid, r = remembered();
-    if (!pid || !r) return;
-    const it = this.mainOf(pid);
-    if (!it || it.portrait || this.applied.has(it.id) || !this.h.canEdit(it)) return;
-    this.applied.add(it.id);
-    it.portrait = r.image;
-    this.h.commit();
+  /** A portrait this browser remembered from before: kept in the room now */
+  private applyProfile() {
+    const me = this.h.me();
+    if (!me?.pid || this.h.isGM() || this.migrated) return;
+    const r = remembered();
+    if (r?.image && !me.portrait) { this.migrated = true; void this.h.saveProfile({ portrait: r.image }); }
   }
 }
