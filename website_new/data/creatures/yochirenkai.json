@@ -1,0 +1,199 @@
+{
+  "id": "yochirenkai",
+  "name": "Yochirenkai",
+  "type": "Espíritu",
+  "size": "Mediano",
+  "level": 2,
+  "description": "",
+  "hits": 2,
+  "saves": {
+    "FÍS": "+5+1d6",
+    "VOL": "+5+1d6",
+    "MEN": "+2"
+  },
+  "umbrales": [
+    {
+      "value": 4,
+      "categories": "General",
+      "tier_tpl": "T"
+    },
+    {
+      "value": 12,
+      "categories": "Físico",
+      "tier_tpl": "T+2"
+    }
+  ],
+  "immune": [],
+  "senses": "",
+  "speed": "Paso 1",
+  "combat": {
+    "acciones": 2,
+    "reacciones": 1
+  },
+  "traits": [
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan 1d6 daño adicional de un elemento específico o aumentan su daño por un dado.",
+      "effects": {
+        "extra_damage": [
+          {
+            "choose": true,
+            "dice": "DD",
+            "on": "naturales",
+            "type": "Necrótico",
+            "dice_value": "1d6"
+          }
+        ],
+        "immune": [
+          "Aflicciones",
+          "Mentales",
+          "Miedo"
+        ],
+        "senses": [
+          "Sentido Mágico"
+        ],
+        "umbrales": [
+          {
+            "categories": "Magia",
+            "steps": 1,
+            "amount": 4
+          },
+          {
+            "categories": "",
+            "choose": true,
+            "steps": 1,
+            "amount": 4
+          }
+        ]
+      },
+      "name": "Espiritual",
+      "tags": [
+        "Espiritu",
+        "Innata"
+      ],
+      "ability_id": "ab_1793366127728",
+      "mod_tpl": {
+        "desc": "Es de naturaleza Espiritual, recibiendo Inmunidad a Aflicciones, efectos Mentales y Miedo además que aumenta su Umbral Mágico por un paso. Tiene también sentido mágico, aumenta su Umbral a un elemento específico por una categoría adicional y sus ataques naturales provocan DD daño adicional de un elemento específico o aumentan su daño por un dado."
+      }
+    }
+  ],
+  "actions": [
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "damage": "2d6 + 4 Perforante",
+      "damage_base_type": "Perforante",
+      "damage_tier": "MID",
+      "desc": "El objetivo está Enredado (+5 + 1d6 FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada.",
+      "name": "Mordisco",
+      "range": "Adyacente",
+      "tags": [
+        "Ataque",
+        "Fisico",
+        "Arma",
+        "Natural"
+      ],
+      "ability_id": "ab_1793008689989",
+      "mod_tpl": {
+        "desc": "El objetivo está Enredado (+MOD FÍS para escapar). Si es de un tamaño igual o superior, esta criatura también quedará Enredada."
+      },
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": true,
+      "cost": 1,
+      "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +5 + 1d6 o es empujado un paso y cae Tropezado.",
+      "name": "Ataque Poderoso",
+      "tags": [
+        "Mejora",
+        "Maniobra",
+        "Marcial",
+        "Coloso"
+      ],
+      "ability_id": "ab_1791812854218",
+      "mod_tpl": {
+        "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +MOD o es empujado un paso y cae Tropezado."
+      },
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "damage_base_type": "Necrótico",
+      "damage_tier": "MID",
+      "desc": "Si este ataque provoca por lo menos un impacto, se recupera un impacto. Aquellos objetivos que hayan sufrido por lo menos un Impacto tendrán Desventaja en este tiro.",
+      "name": "Drenar Sangre",
+      "range": "Adyacente",
+      "save": "VOL +5 + 1d6",
+      "tags": [
+        "Sangre",
+        "Necrotico"
+      ],
+      "ability_id": "ab_1794137310303",
+      "mod_tpl": {
+        "save": "VOL +MOD"
+      },
+      "damage": "1d6 + 4 Necrótico"
+    },
+    {
+      "area": "Radio Medio",
+      "attacks": 1,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +5 + 1d6 o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior.",
+      "name": "Demostración Terrorífica",
+      "tags": [
+        "Miedo"
+      ],
+      "ability_id": "ab_1793014679586",
+      "mod_tpl": {
+        "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +MOD o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior."
+      }
+    },
+    {
+      "attacks": 0,
+      "bonus_scaled": false,
+      "cost": 1,
+      "desc": "Si combate junto a un aliado, hace un ataque de coste 1 con Ventaja, y le otorga una Ventaja también a su aliado en su siguiente ataque. Estas mejoras no se acumulan con Voz del Comandante",
+      "name": "Combate en Equipo",
+      "tags": [
+        "Presencia",
+        "Mejora"
+      ],
+      "ability_id": "ab_1793014528491"
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Parada / Esquiva",
+      "desc": "",
+      "mod_tpl": {
+        "bonus": "+MOD"
+      },
+      "bonus": "+5 + 1d6"
+    },
+    {
+      "cost": 1,
+      "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba o reduce un efecto de estado por un paso.",
+      "name": "Segundo Aliento",
+      "tags": [
+        "Fortitud",
+        "Defensiva"
+      ],
+      "ability_id": "segundo-aliento_1791462133271"
+    }
+  ],
+  "lore": "",
+  "tags": [],
+  "published": false,
+  "tier": "Esbirro Élite",
+  "save_scale": {
+    "FÍS": "bonus",
+    "VOL": "bonus",
+    "MEN": "low"
+  }
+}
