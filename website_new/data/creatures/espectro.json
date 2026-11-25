@@ -13,12 +13,14 @@
   },
   "umbrales": [
     {
-      "value": 4,
-      "categories": "General, Radiante"
+      "value": 8,
+      "categories": "General, Radiante",
+      "tier_tpl": "T"
     },
     {
-      "value": 8,
-      "categories": "Magia"
+      "value": 12,
+      "categories": "Magia",
+      "tier_tpl": "T+1"
     }
   ],
   "immune": [
