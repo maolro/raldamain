@@ -71,7 +71,7 @@
       "attacks": 1,
       "bonus_scaled": false,
       "cost": 1,
-      "desc": "El objetivo debe tener éxito en un tiro FÍS +5 + 1d6 o es empujado un paso en cualquier dirección y sufre 1d6 + 4 daño Contundente.",
+      "desc": "El objetivo es empujado un paso en cualquier dirección y sufre 1d6 + 4 daño Contundente.",
       "name": "Arrastre Telekinético",
       "range": "Medio",
       "tags": [
@@ -80,8 +80,10 @@
       ],
       "ability_id": "ab_1793230527481",
       "mod_tpl": {
-        "desc": "El objetivo debe tener éxito en un tiro FÍS +MOD o es empujado un paso en cualquier dirección y sufre LOW daño Contundente."
-      }
+        "desc": "El objetivo es empujado un paso en cualquier dirección y sufre LOW daño Contundente.",
+        "save": "FÍS +MOD"
+      },
+      "save": "FÍS +5 + 1d6"
     },
     {
       "attacks": 1,
@@ -105,15 +107,16 @@
       "attacks": 1,
       "bonus_scaled": false,
       "cost": 1,
-      "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +5 + 1d6 o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior.",
+      "desc": "Todos sus objetivos sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior.",
       "name": "Demostración Terrorífica",
       "tags": [
         "Miedo"
       ],
       "ability_id": "ab_1793014679586",
       "mod_tpl": {
-        "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +MOD o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior."
-      }
+        "save": "VOL +MOD"
+      },
+      "save": "VOL +5 + 1d6"
     }
   ],
   "reactions": [
