@@ -67,39 +67,6 @@
       }
     },
     {
-      "attacks": 1,
-      "cost": 1,
-      "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +5 + 1d6 o es empujado un paso y cae Tropezado.",
-      "name": "Ataque Poderoso",
-      "tags": [
-        "Mejora",
-        "Maniobra",
-        "Marcial",
-        "Coloso"
-      ],
-      "ability_id": "ab_1791812854218",
-      "mod_tpl": {
-        "desc": "Aumenta el daño de su siguiente ataque por un dado. Además, el objetivo debe tener éxito en un tiro FÍS +MOD o es empujado un paso y cae Tropezado.",
-        "bonus": "+MOD"
-      },
-      "bonus": "+5 + 1d6"
-    },
-    {
-      "area": "Radio Medio",
-      "attacks": 1,
-      "bonus_scaled": false,
-      "cost": 1,
-      "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +5 + 1d6 o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior.",
-      "name": "Demostración Terrorífica",
-      "tags": [
-        "Miedo"
-      ],
-      "ability_id": "ab_1793014679586",
-      "mod_tpl": {
-        "desc": "Todos sus enemigos deben tener éxito en un tiro VOL +MOD o sufren Miedo I. Aquellos que tengan éxito no pueden volver a ser afectados por esta habilidad, y no funciona contra enemigos de nivel superior."
-      }
-    },
-    {
       "attacks": 0,
       "bonus_scaled": false,
       "cost": 1,
@@ -114,22 +81,9 @@
   ],
   "reactions": [
     {
-      "name": "Esquiva",
-      "desc": "",
-      "bonus": "+5"
-    },
-    {
-      "name": "Parada",
+      "name": "Parada / Esquiva",
       "desc": "",
       "bonus": "+5+1d6"
-    },
-    {
-      "name": "Segundo Aliento",
-      "desc": "Aumenta sus umbrales por 4 contra el siguiente ataque que reciba, o reduce un efecto de estado por un paso.",
-      "tags": [
-        "Fortitud"
-      ],
-      "cost": 1
     }
   ],
   "lore": "",
@@ -140,5 +94,5 @@
     "VOL": "bonus",
     "MEN": "low"
   },
-  "tier": "Esbirro Élite"
+  "tier": "Esbirro"
 }
