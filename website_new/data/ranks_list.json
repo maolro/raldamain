@@ -393,6 +393,6 @@
     "image": "magia_de_almas.jpg",
     "description": "",
     "draft": true,
-    "partial": false
+    "partial": true
   }
 ]

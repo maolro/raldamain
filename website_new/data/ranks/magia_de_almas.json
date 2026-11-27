@@ -8,8 +8,97 @@
   "description": "",
   "fundamentals": [
     "<strong>Reserva de Chi:</strong> Incrementa por Rango x 2.",
-    "<strong>Estadística principal:</strong> Carisma + Rango.",
-    "<strong>Parada mágica:</strong> Usas esta magia para tiros de parada y salvaciones."
+    "<strong>Estadística principal:</strong> Inteligencia + Rango."
   ],
-  "levels": []
+  "levels": [
+    {
+      "rank": "I",
+      "title": "Iniciado",
+      "draft": false,
+      "abilities": [
+        {
+          "name": "Exorcismo",
+          "tags": [
+            "Almas"
+          ],
+          "desc": "Un Extraplanario o No-Muerto debe tener éxito en un tiro de salvación de Voluntad o sufre 1d6 + INT daño Fuerza. Si reduce al objetivo a 0 Impactos, no podrá volver a ser invocado en un día. Esta habilidad también puede emplearse para eliminar efectos Ambientales que originen de fuentes Extraplanarias.",
+          "cost": "1 Acción",
+          "range": "Medio",
+          "show_mod": true
+        },
+        {
+          "tags": [
+            "Almas",
+            "Mejora"
+          ],
+          "desc": "Canalizas un alma para recibir Ventaja en todos los tiros relacionados con una estadística de tu elección además de la capacidad de emplear dos hechizos o técnicas de combate de Rango I (la naturaleza de esos beneficios debe ser permitida por el DJ). Este efecto durará hasta 6 rondas y cuando acabe reduces tu Cordura en 1 por cada dos rondas pasadas en él.",
+          "name": "Canalizar Ánima",
+          "cost": "1 Acción",
+          "duration": "Max 6 Rondas",
+          "spell_grants": [
+            {
+              "count": 2,
+              "from_rank": 1,
+              "sources": [
+                "cat:Arcano",
+                "cat:Ocultismo",
+                "cat:Elementalismo",
+                "rank:estilo_asesino",
+                "rank:estilo_coloso",
+                "rank:estilo_duelista"
+              ],
+              "spell_rank": 1
+            }
+          ],
+          "condition": "Canalizar Ánima",
+          "adv_stats": [
+            "FUE",
+            "DES",
+            "CON",
+            "INT",
+            "SAB",
+            "CAR"
+          ]
+        },
+        {
+          "name": "Sentido de Muerte",
+          "tags": [
+            "Almas",
+            "Pasiva"
+          ],
+          "desc": "Eres capaz de detectar no-muertos y presencias espectrales a distancia media además de percibir su posición exacta aunque sean invisibles u ocultos. "
+        }
+      ]
+    },
+    {
+      "rank": "II",
+      "title": "Adepto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "III",
+      "title": "Profesional",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "IV",
+      "title": "Experto",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "V",
+      "title": "Maestro",
+      "draft": true,
+      "abilities": []
+    },
+    {
+      "rank": "VI",
+      "title": "Leyenda",
+      "draft": true,
+      "abilities": []
+    }
+  ]
 }
