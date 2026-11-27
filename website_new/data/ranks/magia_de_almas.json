@@ -50,15 +50,17 @@
               "spell_rank": 1
             }
           ],
-          "condition": "Canalizar Ánima",
-          "adv_stats": [
-            "FUE",
-            "DES",
-            "CON",
-            "INT",
-            "SAB",
-            "CAR"
-          ]
+          "toggle": {
+            "label": "Canalizar Ánima",
+            "adv_stats": [
+              "CAR",
+              "SAB",
+              "INT",
+              "CON",
+              "DES",
+              "FUE"
+            ]
+          }
         },
         {
           "name": "Sentido de Muerte",
