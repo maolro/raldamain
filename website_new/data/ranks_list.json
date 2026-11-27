@@ -385,5 +385,14 @@
     "description": "",
     "draft": true,
     "partial": false
+  },
+  {
+    "id": "magia_de_almas",
+    "name": "Magia de Almas",
+    "category": "Ocultismo",
+    "image": "magia_de_almas.jpg",
+    "description": "",
+    "draft": true,
+    "partial": false
   }
 ]
